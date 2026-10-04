@@ -260,18 +260,64 @@ export function parseList(s) {
 // ---------------------------------------------------------------------------
 // Structured values
 
-// `"40"` -> 40, `"10000 + 7000 + 30000"` -> 47000, anything else -> null.
-export function parseHealth(s) {
-  if (s == null) return null;
-  const text = cleanText(s);
-  if (!text) return null;
+// One health line -> number, or null when the line is not numeric. Accepts a
+// "Name:" prefix on part/biome lines ("* Thungr: 4200", "Meadows: 30"),
+// thousands separators ("12,500") and "+"-joined phases ("10000 + 7000").
+function parseHealthLine(line) {
+  const colon = line.indexOf(':');
+  const expression = colon === -1 ? line : line.slice(colon + 1);
   let sum = 0;
-  for (const part of text.split('+')) {
-    const token = part.trim();
+  for (const term of expression.split('+')) {
+    const token = term.replace(/[,\s]/g, '');
     if (!/^\d+(?:\.\d+)?$/.test(token)) return null;
     sum += Number(token);
   }
   return sum;
+}
+
+// `"40"` -> 40, `"12,500"` -> 12500; phases (`10000 + 7000 + 30000`) and named
+// parts (`* Thungr: 4200` / `* Zil: 2400`) are summed, anything else -> null.
+export function parseHealth(s) {
+  if (s == null) return null;
+  const lines = parseList(s);
+  if (lines.length === 0) return null;
+  let sum = 0;
+  for (const line of lines) {
+    const value = parseHealthLine(line);
+    if (value === null) return null;
+    sum += value;
+  }
+  return sum;
+}
+
+// Per-biome health lines (`Meadows: 30<br>Black Forest: 40`, Skeleton) ->
+// `{ "<biomeId>": number }` when every line is "<Biome title>: N", else null.
+// `biomeByTitle` maps wiki biome titles ("Black Forest") to biome ids.
+export function parseHealthByBiome(s, biomeByTitle) {
+  if (s == null || !biomeByTitle) return null;
+  const lines = parseList(s);
+  if (lines.length === 0) return null;
+  const out = {};
+  for (const line of lines) {
+    const match = line.match(/^(.+?):\s*(.+)$/);
+    const biomeId = match ? biomeByTitle.get(match[1].trim()) : undefined;
+    if (!biomeId) return null;
+    const value = parseHealthLine(match[2]);
+    if (value === null) return null;
+    out[biomeId] = value;
+  }
+  return out;
+}
+
+// Star levels the infobox actually lists: non-empty `health Nstar` or
+// `damage Nstar` (Bat/Ulv/Hexen stop at 1★, Lord Reto only lists 2★).
+// Sorted ascending; may be empty (fish {{infobox item}} carries no stats).
+export function listedStarLevels(infobox) {
+  return [0, 1, 2].filter(
+    (star) =>
+      Boolean(cleanText(infobox?.[`health ${star}star`] ?? '')) ||
+      Boolean(cleanText(infobox?.[`damage ${star}star`] ?? '')),
+  );
 }
 
 // Damage term: "14 Slash", "Fire 80" (type-first), "100 Frost (x22)",
@@ -293,8 +339,32 @@ function parseDamagePart(damagePart) {
   return damage;
 }
 
+// Damage-term scan for colon-less lines: terms anywhere in the text, in both
+// orders ("30 Blunt", "Fire 80"), case-insensitive. Returns the leading name
+// (text before the first term, "Attack" when the line starts with a number)
+// and `damage: {}` when the line has no damage term at all.
+const DAMAGE_TERM_SCAN_RE = new RegExp(
+  `(\\d+(?:\\.\\d+)?)\\s+(${DAMAGE_TYPES.join('|')})\\b|(${DAMAGE_TYPES.join('|')})\\s+(\\d+(?:\\.\\d+)?)`,
+  'gi',
+);
+
+function scanDamage(content) {
+  const damage = {};
+  let firstIndex = -1;
+  for (const match of content.matchAll(DAMAGE_TERM_SCAN_RE)) {
+    if (firstIndex === -1) firstIndex = match.index;
+    const type = (match[2] ?? match[3]).toLowerCase();
+    damage[type] = Math.max(damage[type] ?? 0, Number(match[1] ?? match[4]));
+  }
+  if (firstIndex === -1) return { name: cleanText(content).trim(), damage: {} };
+  const name = cleanText(content.slice(0, firstIndex)).trim();
+  return { name: name || 'Attack', damage };
+}
+
 // Attack lines -> [{ name, damage, raw }].
 // - `Name: 14 Slash, 10 Blunt` -> name + typed damage map
+// - `Mace 30 Blunt, 45 Poison` (no colon) -> damage terms anywhere in the
+//   line, leading words are the name ("Attack" for bare `100 Frost`)
 // - `** Cleave` nested under `* Axe` -> name "Axe – Cleave"
 // - `'''Phase 1'''` heading -> name prefix "Phase 1 – …"
 // - `100 Frost (x22)` -> 100 (multiplier ignored)
@@ -334,12 +404,21 @@ export function parseAttacks(s) {
     if (/^\d+(?:\.\d+)?$/.test(content)) return;
     nameStack.length = depth; // deeper groupings no longer apply
     const colon = content.indexOf(':');
-    const namePart = cleanText(colon === -1 ? content : content.slice(0, colon)).trim();
-    const damagePart = colon === -1 ? '' : content.slice(colon + 1).trim();
     const raw = cleanText(content);
+    let namePart;
+    let damage;
+    if (colon === -1) {
+      // Colon-less line: damage terms anywhere ("Mace 30 Blunt, 45 Poison",
+      // "100 Frost"); leading words are the name, "Attack" when it starts
+      // with a number. No damage term -> unparsable, keeps `damage: {}`.
+      const scanned = scanDamage(content);
+      namePart = scanned.name;
+      damage = scanned.damage;
+    } else {
+      namePart = cleanText(content.slice(0, colon)).trim();
+      damage = parseDamagePart(content.slice(colon + 1).trim());
+    }
     if (depth > 0) nameStack[depth - 1] = namePart;
-
-    const damage = damagePart ? parseDamagePart(damagePart) : {};
     const hasDamage = Object.keys(damage).length > 0;
     // A bullet without damage is a grouping header unless nothing is nested under it.
     const next = items.slice(index + 1).find((later) => !later.heading);
@@ -354,16 +433,42 @@ export function parseAttacks(s) {
   return attacks;
 }
 
+// Weak-point fields: `weak point` names the body part(s), `wp <tier>` lists
+// the damage types hitting that part at that tier (`wp veryweak = Pierce`;
+// Seeker Soldier lists a whole `wp weak = Blunt, Pierce, …` set).
+// -> [{ part: "Head", modifiers: { pierce: "veryweak" } }], [] when absent.
+export function parseWeakPoints(infobox) {
+  const parts = [];
+  const tiers = []; // { tier, type }
+  for (const [field, value] of Object.entries(infobox ?? {})) {
+    const key = String(field).toLowerCase().replace(/[\s_]+/g, '');
+    if (/^weakpoints?$/.test(key)) {
+      for (const part of parseList(value)) parts.push(part);
+    } else if (key.startsWith('wp') && MODIFIER_TIERS.includes(key.slice(2))) {
+      for (const item of parseList(value).flatMap((entry) => entry.split(','))) {
+        const type = item.trim().toLowerCase().replace(/[\s_]+/g, '');
+        if (DAMAGE_TYPES.includes(type)) tiers.push({ tier: key.slice(2), type });
+      }
+    }
+  }
+  if (parts.length === 0 || tiers.length === 0) return [];
+  const modifiers = {};
+  for (const { tier, type } of tiers) modifiers[type] = tier;
+  return parts.map((part) => ({ part, modifiers }));
+}
+
 // Modifier fields of an infobox. Values are split on commas, <br> and bullets.
 // Damage types land in `modifiers` (type -> tier), everything else
 // (Stagger, Knockback, …) in `otherImmunities`. Fields whose name contains
 // "weak"/"resist" but are not a known tier are reported in `unknown`.
+// Weak-point fields (`weak point`, `wp <tier>`) belong to parseWeakPoints.
 export function parseModifiers(infobox) {
   const modifiers = {};
   const otherImmunities = [];
   const unknown = [];
   for (const [field, value] of Object.entries(infobox ?? {})) {
     const key = String(field).toLowerCase().replace(/[\s_]+/g, '');
+    if (/^weakpoints?$/.test(key) || key.startsWith('wp')) continue;
     const isKnownTier = MODIFIER_TIERS.includes(key);
     if (!isKnownTier && !/weak|resist/.test(key)) continue;
     const values = parseList(value)
