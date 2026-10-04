@@ -6,13 +6,16 @@ import assert from 'node:assert/strict';
 
 import {
   cleanText,
+  listedStarLevels,
   parseAttacks,
   parseHealth,
+  parseHealthByBiome,
   parseImage,
   parseInfobox,
   parseLinks,
   parseList,
   parseModifiers,
+  parseWeakPoints,
   slug,
 } from './wikitext.mjs';
 
@@ -233,6 +236,84 @@ test('parseHealth', () => {
   assert.equal(parseHealth('Unknown'), null);
   assert.equal(parseHealth(''), null);
   assert.equal(parseHealth(null), null);
+});
+
+test('parseHealth: thousands separators (The Queen, Yagluth)', () => {
+  assert.equal(parseHealth('12,500'), 12500);
+  assert.equal(parseHealth('10,000'), 10000);
+});
+
+test('parseHealth: named parts are summed (Zil & Thungr)', () => {
+  assert.equal(parseHealth('* Thungr: 4200<br>  \n* Zil: 2400'), 6600);
+  assert.equal(parseHealth('Thungr: 4200\nZil: 2400'), 6600, '<br> and bullet variants agree');
+});
+
+const BIOME_IDS = new Map([
+  ['Meadows', 'meadows'],
+  ['Black Forest', 'black-forest'],
+  ['Swamp', 'swamp'],
+  ['Mountain', 'mountain'],
+  ['Deep North', 'deep-north'],
+]);
+
+test('parseHealthByBiome: per-biome lines (Skeleton)', () => {
+  assert.deepEqual(
+    parseHealthByBiome('Meadows: 30<br>Black Forest: 40<br>Swamp: 60<br>Mountain: 75<br>Deep North: 100', BIOME_IDS),
+    { meadows: 30, 'black-forest': 40, swamp: 60, mountain: 75, 'deep-north': 100 },
+  );
+  assert.equal(parseHealthByBiome('* Thungr: 4200\n* Zil: 2400', BIOME_IDS), null, 'part names are not biomes');
+  assert.equal(parseHealthByBiome('40', BIOME_IDS), null, 'plain number is not per-biome');
+  assert.equal(parseHealthByBiome('', BIOME_IDS), null);
+});
+
+test('listedStarLevels: only levels the infobox actually lists', () => {
+  assert.deepEqual(listedStarLevels(parseInfobox(GREYDWARF, 'creature')), [0, 1, 2]);
+  const hexen = parseInfobox(
+    `{{infobox creature
+| health 0star = 800
+| damage 0star = * Magicblast: 120 Lightning
+| health 1star = 1600
+| damage 1star = * Magicblast: 180 Lightning
+| health 2star =
+| damage 2star =}}`,
+    'creature',
+  );
+  assert.deepEqual(listedStarLevels(hexen), [0, 1], 'empty 2★ fields do not list a level');
+  const reto = parseInfobox(
+    '{{infobox creature| image 2star = Lord Reto.png| health 2star = 7500| damage 2star = * Swing: 480 Slash}}',
+    'creature',
+  );
+  assert.deepEqual(listedStarLevels(reto), [2], 'Lord Reto only lists 2★');
+  assert.deepEqual(listedStarLevels({}), [], 'no stats at all');
+});
+
+test('parseWeakPoints: part + wp tier fields (Troll, Seeker Soldier)', () => {
+  const troll = parseInfobox('{{infobox creature| weak point = Head| wp veryweak = Pierce| wp immune = Spirit}}', 'creature');
+  assert.deepEqual(parseWeakPoints(troll), [{ part: 'Head', modifiers: { pierce: 'veryweak', spirit: 'immune' } }]);
+  const soldier = parseInfobox(
+    '{{infobox creature| weak point = Abdomen| wp weak = Blunt, Pierce, Slash, Fire, Frost, Lightning| wp immune = Spirit}}',
+    'creature',
+  );
+  assert.deepEqual(parseWeakPoints(soldier), [
+    {
+      part: 'Abdomen',
+      modifiers: { blunt: 'weak', pierce: 'weak', slash: 'weak', fire: 'weak', frost: 'weak', lightning: 'weak', spirit: 'immune' },
+    },
+  ]);
+  assert.deepEqual(parseWeakPoints(parseInfobox(GREYDWARF, 'creature')), [], 'no weak-point fields');
+  // Weak-point fields must not surface as unknown modifier fields.
+  assert.deepEqual(parseModifiers(troll).unknown, []);
+});
+
+test('parseAttacks: colon-less damage lines', () => {
+  const mace = parseAttacks('* Mace 30 Blunt, 45 Poison');
+  assert.deepEqual(mace[0], { name: 'Mace', damage: { blunt: 30, poison: 45 }, raw: 'Mace 30 Blunt, 45 Poison' });
+  assert.deepEqual(parseAttacks('100 Frost')[0], { name: 'Attack', damage: { frost: 100 }, raw: '100 Frost' });
+  assert.deepEqual(parseAttacks('* 40 poison')[0].damage, { poison: 40 }, 'lowercase damage types');
+  // Lines without a damage type stay unparsed (`damage: {}`).
+  assert.deepEqual(parseAttacks('* No attacks')[0].damage, {});
+  assert.deepEqual(parseAttacks('* Heal: 20 Health over 4 seconds')[0].damage, {});
+  assert.deepEqual(parseAttacks('* Protect: 100 Shield')[0].damage, {});
 });
 
 test('parseModifiers: Greydwarf damage types map to tiers', () => {

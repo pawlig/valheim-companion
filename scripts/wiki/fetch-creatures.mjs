@@ -6,7 +6,7 @@
 // a warm cache makes no network calls and rewrites identical files. `--refresh`
 // bypasses the cache. data/overrides.json (if present) is applied last.
 
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -14,14 +14,17 @@ import { MwApi, api } from './api.mjs';
 import {
   cleanText,
   findTemplateRange,
+  listedStarLevels,
   parseAttacks,
   parseHealth,
+  parseHealthByBiome,
   parseImage,
   parseInfobox,
   parseLinks,
   parseList,
   parseModifiers,
   parseTemplates,
+  parseWeakPoints,
   slug,
 } from './wikitext.mjs';
 
@@ -50,6 +53,7 @@ const BIOMES = [
 const SECTIONS = ['boss', 'miniboss', 'hostile', 'passive', 'fish'];
 const biomeByTitle = new Map(BIOMES.map((biome) => [biome.title, biome]));
 const biomeById = new Map(BIOMES.map((biome) => [biome.id, biome]));
+const biomeIdByTitle = new Map(BIOMES.map((biome) => [biome.title, biome.id]));
 
 const wikiPageUrl = (title) => `${WIKI_URL}/w/${encodeURIComponent(title.replace(/ /g, '_'))}`;
 const creatureImage = (id, star) => `img/creatures/${id}-${star}.png`;
@@ -108,6 +112,7 @@ async function mainInner() {
     noImage: [],
     emptyDamage: [],
     fandomFallbacks: [],
+    orphanImages: [],
     openQuestions: [],
   };
 
@@ -223,22 +228,33 @@ async function mainInner() {
     for (const entry of assignments) sectionByKey.set(`${entry.biomeId}:${id}`, entry.section);
     if (locationAssigned) console.log(`  location-assigned: ${name} -> ${biomeIds.join(', ')}`);
 
-    const hasStars = Boolean(info['health 1star']);
-    const starDefs = hasStars ? [0, 1, 2] : [0];
+    // Star levels the infobox actually lists (Bat/Ulv/Hexen stop at 1★,
+    // Lord Reto only has 2★). Pages without star stats (fish use
+    // {{infobox item}}) keep a degenerate 0★ level so their image survives.
+    const plainImageFile = parseImage(info.image);
+    let starDefs = listedStarLevels(info);
+    if (starDefs.length === 0 && (plainImageFile || parseImage(info['image 0star']))) starDefs = [0];
+    const hasStars = starDefs.length > 1;
     const { modifiers, otherImmunities, unknown } = parseModifiers(info);
     for (const item of unknown) report.unknownModifiers.push(`${name}: ${item.field} = ${item.value}`);
 
-    // Some pages only carry a 2★ image (Lord Reto) or a plain `image` (fish);
-    // fall back to whatever image field exists.
-    const zeroStarFile =
-      parseImage(info['image 0star']) ??
-      parseImage(info.image) ??
-      parseImage(info['image 2star']) ??
-      parseImage(info['image 1star']);
-    const starFiles = {};
-    for (const star of starDefs) {
-      starFiles[star] = parseImage(info[`image ${star}star`]) ?? zeroStarFile;
+    // Image per level; a level without its own image falls back to the
+    // nearest lower level, else the first available (DATA-SCHEMA). Fish pages
+    // only carry a plain `image` field.
+    const imageFiles = new Map(); // star level -> file, for levels the infobox names
+    for (const star of [0, 1, 2]) {
+      const file = parseImage(info[`image ${star}star`]);
+      if (file) imageFiles.set(star, file);
     }
+    const firstAvailableImage = imageFiles.size
+      ? imageFiles.get([...imageFiles.keys()].sort((a, b) => a - b)[0])
+      : plainImageFile;
+    const imageForLevel = (star) => {
+      for (let level = star; level >= 0; level -= 1) if (imageFiles.has(level)) return imageFiles.get(level);
+      return firstAvailableImage;
+    };
+    const starFiles = {};
+    for (const star of starDefs) starFiles[star] = imageForLevel(star);
     const attacksByStar = {};
     for (const star of starDefs) {
       attacksByStar[star] = parseAttacks(info[`damage ${star}star`] ?? '');
@@ -249,11 +265,6 @@ async function mainInner() {
       }
     }
 
-    if (!info['image 0star'] && info['image 2star'] && !info['image 1star']) {
-      report.openQuestions.push(
-        `${name}: page has only 2★ fields (image/health/damage); 0★ record uses the 2★ image, star stats are lost.`,
-      );
-    }
     if (id === 'fish') {
       report.openQuestions.push(
         '"Fish" is the umbrella page of the fishing mechanic with a {{infobox creature}}; it landed in Ocean. Candidate for exclude.creatures in overrides.json.',
@@ -274,18 +285,21 @@ async function mainInner() {
       faction: cleanText(info.faction) || null,
       behavior: cleanText(info.behavior) || null,
       tameable: yesNo(info.tameable),
-      weakPoints: Object.keys(info).some(
-        (key) => /^weak ?points?$/.test(key.replace(/_/g, ' ')) && cleanText(info[key]),
-      ),
+      weakPoints: parseWeakPoints(info),
       stagger: cleanText(info.stagger) || null,
       hasStars,
-      stars: starDefs.map((star) => ({
-        star,
-        image: null, // filled after downloads
-        health: parseHealth(info[`health ${star}star`]),
-        healthText: cleanText(info[`health ${star}star`]) || null,
-        attacks: attacksByStar[star],
-      })),
+      stars: starDefs.map((star) => {
+        const healthRaw = info[`health ${star}star`] ?? '';
+        const healthByBiome = parseHealthByBiome(healthRaw, biomeIdByTitle);
+        return {
+          star,
+          image: null, // filled after downloads
+          health: healthByBiome ? null : parseHealth(healthRaw),
+          ...(healthByBiome ? { healthByBiome } : {}), // absent unless per-biome
+          healthText: parseList(healthRaw).join('\n') || null,
+          attacks: attacksByStar[star],
+        };
+      }),
       abilities: parseList(info.abilities),
       modifiers,
       otherImmunities,
@@ -305,8 +319,22 @@ async function mainInner() {
   }
 
   // 6. Images ---------------------------------------------------------------
+  // Overrides are read before the downloads: image files of creatures in
+  // exclude.creatures would be orphans (deleted in step 8), so requesting
+  // them would re-download and delete them again on every run.
+  const overridesPath = path.join(DATA_DIR, 'overrides.json');
+  const overrides = existsSync(overridesPath) ? JSON.parse(readFileSync(overridesPath, 'utf8')) : null;
+  const excludedIds = new Set(overrides?.exclude?.creatures ?? []);
+  const excludedImages = []; // creature image files dropped by exclusions
+  for (const item of built) {
+    if (!excludedIds.has(item.record.id)) continue;
+    for (const star of item.starDefs) excludedImages.push(creatureImage(item.record.id, star));
+    if (item.trophyFile) excludedImages.push(trophyImage(item.record.id));
+  }
+
   const jobs = []; // { file, width, dest }
   for (const item of built) {
+    if (excludedIds.has(item.record.id)) continue;
     for (const star of item.starDefs) {
       const file = item.starFiles[star];
       if (file) jobs.push({ file, width: CREATURE_IMG_WIDTH, dest: creatureImage(item.record.id, star) });
@@ -355,49 +383,94 @@ async function mainInner() {
     }
   }
 
+  // Files from earlier runs that this run no longer requests (dropped star
+  // levels, e.g. Lord Reto moved 0★ -> 2★). When every job of a creature
+  // shares one source image, a shifted dest reuses the stale file's bytes —
+  // same thumb, no download. Ids are [a-z0-9-], safe in the RegExp below.
+  const creaturesDir = abs('img/creatures');
+  const requestedDests = new Set(jobs.map((job) => job.dest));
+  const staleCreatureFiles = existsSync(creaturesDir) ? readdirSync(creaturesDir) : [];
+  const reuseShiftedImage = (dest) => {
+    const match = dest.match(/^img\/creatures\/(.+)-(\d)\.png$/);
+    if (!match) return false;
+    const id = match[1];
+    const sources = new Set(
+      jobs.filter((job) => job.dest.startsWith(`img/creatures/${id}-`)).map((job) => `${job.width}|${job.file}`),
+    );
+    if (sources.size !== 1) return false;
+    const candidates = staleCreatureFiles.filter(
+      (file) => new RegExp(`^${id}-\\d\\.png$`).test(file) && !requestedDests.has(`img/creatures/${file}`),
+    );
+    if (candidates.length !== 1) return false;
+    copyFileSync(abs(`img/creatures/${candidates[0]}`), abs(dest));
+    console.log(`  reused img/creatures/${candidates[0]} as ${dest} (star level shifted)`);
+    return true;
+  };
+
   console.log(`downloading ${jobs.length} images…`);
   const dests = new Set();
   for (const job of jobs) {
     if (dests.has(job.dest)) continue;
     dests.add(job.dest);
+    if (existsSync(abs(job.dest))) continue;
+    if (reuseShiftedImage(job.dest)) continue;
     const url = urlByKey.get(`${job.width}|${job.file}`);
     if (!url) continue;
     await api.download(url, abs(job.dest));
   }
 
-  // Fill image paths into the records.
+  // Fill image paths into the records: own level, else the nearest lower
+  // level's file, else the first available. Excluded creatures are skipped —
+  // their files were never requested.
   for (const item of built) {
+    if (excludedIds.has(item.record.id)) continue;
     const { record } = item;
-    const zeroPath = existsSync(abs(creatureImage(record.id, 0))) ? creatureImage(record.id, 0) : null;
-    for (const star of record.stars) {
-      star.image = existsSync(abs(creatureImage(record.id, star.star)))
-        ? creatureImage(record.id, star.star)
-        : zeroPath;
-    }
-    if (!zeroPath) report.noImage.push(record.name);
+    const own = record.stars.map((star) =>
+      existsSync(abs(creatureImage(record.id, star.star))) ? creatureImage(record.id, star.star) : null,
+    );
+    record.stars.forEach((star, index) => {
+      let image = own[index];
+      for (let lower = index - 1; image === null && lower >= 0; lower -= 1) image = own[lower];
+      star.image = image ?? own.find(Boolean) ?? null;
+    });
+    if (!own.some(Boolean)) report.noImage.push(record.name);
     if (record.trophy) {
       record.trophy.image = existsSync(abs(trophyImage(record.id))) ? trophyImage(record.id) : null;
     }
   }
 
   // 7. Overrides (data/overrides.json, orchestrator-owned) ------------------
-  const overridesPath = path.join(DATA_DIR, 'overrides.json');
-  if (existsSync(overridesPath)) {
+  // Exclusions were already honored by the image jobs in step 6.
+  if (overrides) {
     console.log('applying data/overrides.json…');
-    const overrides = JSON.parse(readFileSync(overridesPath, 'utf8'));
-    const excluded = new Set(overrides.exclude?.creatures ?? []);
     for (const item of built) {
       const patch = overrides.creatures?.[item.record.id];
       if (patch) Object.assign(item.record, Object.fromEntries(Object.entries(patch).filter(([key]) => key !== 'reason')));
     }
-    const kept = built.filter((item) => !excluded.has(item.record.id));
+    const kept = built.filter((item) => !excludedIds.has(item.record.id));
     if (kept.length !== built.length) console.log(`  excluded ${built.length - kept.length} creatures`);
     built.length = 0;
     built.push(...kept);
   }
+  report.orphanImages = [...new Set(excludedImages)].sort(byCodepoint);
 
   // 8. Output files ----------------------------------------------------------
   let creatures = built.map((item) => item.record).sort((a, b) => byCodepoint(a.name, b.name));
+
+  // Images no final record references (excluded creatures; stale files from
+  // earlier runs, e.g. dropped star levels) are deleted from img/creatures/.
+  const referencedImages = new Set();
+  for (const creature of creatures) {
+    for (const star of creature.stars) if (star.image) referencedImages.add(star.image);
+    if (creature.trophy?.image) referencedImages.add(creature.trophy.image);
+  }
+  if (existsSync(creaturesDir)) {
+    for (const file of readdirSync(creaturesDir)) {
+      if (referencedImages.has(`img/creatures/${file}`)) continue;
+      rmSync(abs(`img/creatures/${file}`));
+      console.log(`  removed orphan image: img/creatures/${file}`);
+    }
+  }
   // Drop creatures excluded by overrides from the section lists as well.
   const finalSectionByKey = new Map(
     [...sectionByKey.entries()].filter(([key]) => creatures.some((creature) => creature.id === key.split(':')[1])),
@@ -462,6 +535,18 @@ function renderReport(report, biomeRecords, creatures) {
       for (const entry of entries) lines.push(`- ${entry}`);
       lines.push('');
     }
+  }
+
+  lines.push('## Orphan images removed', '');
+  if (report.orphanImages.length === 0) lines.push('(none)', '');
+  else {
+    lines.push(
+      `${report.orphanImages.length} files in img/creatures/ are referenced by no record in creatures.json ` +
+        `(creatures excluded via overrides.json) and are deleted:`,
+      '',
+    );
+    for (const file of report.orphanImages) lines.push(`- ${file}`);
+    lines.push('');
   }
 
   lines.push('## Open questions', '');
