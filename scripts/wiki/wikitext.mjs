@@ -118,11 +118,17 @@ function templateInner(text, start) {
   return text.slice(start + 2, end === -1 ? text.length : end - 2);
 }
 
-// Range of the first `{{infobox <name>…}}` (case-insensitive) in the text.
+// Template-name pattern: spaces (or underscores — `{{Infobox_creature}}`)
+// between words, matched case-insensitively.
+function templateNamePattern(templateName) {
+  return escapeRegExp(templateName).replace(/[ _]/g, '[\\s_]+');
+}
+
+// Range of the first `{{<templateName>…}}` (case-insensitive) in the text.
 // `end` is just past the closing '}}' (or the end of text when unbalanced).
-export function findTemplateRange(wikitext, name) {
+export function findTemplateRange(wikitext, templateName) {
   const text = String(wikitext ?? '');
-  const re = new RegExp(`\\{\\{\\s*infobox\\s+${escapeRegExp(name)}(?=[\\s|}])`, 'i');
+  const re = new RegExp(`\\{\\{\\s*${templateNamePattern(templateName)}(?=[\\s|}])`, 'i');
   const match = re.exec(text);
   if (!match) return null;
   const end = findTemplateEnd(text, match.index);
@@ -134,14 +140,14 @@ function escapeRegExp(s) {
 }
 
 // All instances of `{{infobox <name>…}}` as param objects, in document order.
-export function parseTemplates(wikitext, name) {
+export function parseTemplates(wikitext, templateName) {
   const text = String(wikitext ?? '');
-  const re = new RegExp(`\\{\\{\\s*infobox\\s+${escapeRegExp(name)}(?=[\\s|}])`, 'gi');
+  const re = new RegExp(`\\{\\{\\s*${templateNamePattern(templateName)}(?=[\\s|}])`, 'gi');
   const out = [];
   let match;
   while ((match = re.exec(text)) !== null) {
-    const end = findTemplateEnd(text, match.index);
     out.push(parseTemplateParams(templateInner(text, match.index)));
+    const end = findTemplateEnd(text, match.index);
     re.lastIndex = end === -1 ? text.length : end;
   }
   return out;
@@ -167,8 +173,9 @@ function parseTemplateParams(inner) {
 }
 
 // First `{{infobox <name>…}}` of a page, or null.
+// First `{{infobox <name>…}}` of a page, or null.
 export function parseInfobox(wikitext, name) {
-  return parseTemplates(wikitext, name)[0] ?? null;
+  return parseTemplates(wikitext, `infobox ${name}`)[0] ?? null;
 }
 
 // ---------------------------------------------------------------------------
@@ -184,13 +191,14 @@ export function cleanText(s) {
   text = text.replace(/<br\s*\/?>/gi, '\n');
   // remaining HTML tags (refs, small, …)
   text = text.replace(/<[^>]*>/g, '');
-  // common entities
+  // common entities and behavior switches (__TOC__, __NOTOC__, …)
   text = text
     .replace(/&nbsp;/gi, ' ')
     .replace(/&amp;/gi, '&')
     .replace(/&lt;/gi, '<')
     .replace(/&gt;/gi, '>')
-    .replace(/&quot;/gi, '"');
+    .replace(/&quot;/gi, '"')
+    .replace(/__[A-Z_]+__/g, '');
   // templates, innermost first (bounded: gallery/infobox nesting is shallow)
   for (let pass = 0; pass < 10; pass += 1) {
     const next = text.replace(/\{\{([^{}]*)\}\}/g, (whole, inner) => {
@@ -264,16 +272,21 @@ export function parseHealth(s) {
   return sum;
 }
 
+// Damage term: "14 Slash", "Fire 80" (type-first), "100 Frost (x22)",
+// "50 Pierce every 0.5s" (trailing words). Multipliers in (xN) are ignored.
 const DAMAGE_TERM_RE = new RegExp(
-  `^(\\d+(?:\\.\\d+)?)\\s+(${DAMAGE_TYPES.join('|')})(?:\\s*\\(\\s*x\\s*\\d+\\s*\\))?\\s*$`,
+  `^(?:(\\d+(?:\\.\\d+)?)\\s+(${DAMAGE_TYPES.join('|')})|(${DAMAGE_TYPES.join('|')})\\s+(\\d+(?:\\.\\d+)?))(?:\\s*\\(\\s*x\\s*\\d+\\s*\\))?(?:\\s+[^(),+]*?)?$`,
   'i',
 );
 
 function parseDamagePart(damagePart) {
   const damage = {};
-  for (const term of damagePart.split(',')) {
+  for (const term of damagePart.split(/[,+]/)) {
     const match = term.trim().match(DAMAGE_TERM_RE);
-    if (match) damage[match[2].toLowerCase()] = Number(match[1]);
+    if (!match) continue;
+    const type = (match[2] ?? match[3]).toLowerCase();
+    const value = Number(match[1] ?? match[4]);
+    damage[type] = Math.max(damage[type] ?? 0, value);
   }
   return damage;
 }
@@ -315,9 +328,11 @@ export function parseAttacks(s) {
       return;
     }
     const { depth, content } = item;
+    // A bare number (e.g. damage 0star = "0") is a stat, not an attack.
+    if (/^\d+(?:\.\d+)?$/.test(content)) return;
     nameStack.length = depth; // deeper groupings no longer apply
     const colon = content.indexOf(':');
-    const namePart = (colon === -1 ? content : content.slice(0, colon)).trim();
+    const namePart = cleanText(colon === -1 ? content : content.slice(0, colon)).trim();
     const damagePart = colon === -1 ? '' : content.slice(colon + 1).trim();
     const raw = cleanText(content);
     if (depth > 0) nameStack[depth - 1] = namePart;
