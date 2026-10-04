@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "scripts": {
+    "fetch:creatures": "node scripts/wiki/fetch-creatures.mjs",
+    "test": "node --test 'scripts/**/*.test.mjs'"
+  }
+}

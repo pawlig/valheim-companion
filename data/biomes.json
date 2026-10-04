@@ -1,0 +1,258 @@
+[
+  {
+    "id": "meadows",
+    "name": "Meadows",
+    "order": 1,
+    "gearTier": 1,
+    "image": "img/biomes/meadows.png",
+    "wiki": "https://valheim.weirdgloop.org/w/Meadows",
+    "creatures": {
+      "boss": [
+        "eikthyr"
+      ],
+      "miniboss": [],
+      "hostile": [
+        "boar",
+        "greyling",
+        "neck"
+      ],
+      "passive": [
+        "deer",
+        "gull"
+      ],
+      "fish": []
+    }
+  },
+  {
+    "id": "black-forest",
+    "name": "Black Forest",
+    "order": 2,
+    "gearTier": 2,
+    "image": "img/biomes/black-forest.png",
+    "wiki": "https://valheim.weirdgloop.org/w/Black_Forest",
+    "creatures": {
+      "boss": [
+        "the-elder"
+      ],
+      "miniboss": [
+        "brenna"
+      ],
+      "hostile": [
+        "ghost",
+        "greydwarf",
+        "greydwarf-brute",
+        "greydwarf-shaman",
+        "rancid-remains",
+        "skeleton",
+        "troll"
+      ],
+      "passive": [
+        "crow",
+        "deer",
+        "gull"
+      ],
+      "fish": []
+    }
+  },
+  {
+    "id": "swamp",
+    "name": "Swamp",
+    "order": 3,
+    "gearTier": 3,
+    "image": "img/biomes/swamp.png",
+    "wiki": "https://valheim.weirdgloop.org/w/Swamp",
+    "creatures": {
+      "boss": [
+        "bonemass"
+      ],
+      "miniboss": [],
+      "hostile": [
+        "abomination",
+        "blob",
+        "draugr",
+        "draugr-elite",
+        "kvastur",
+        "leech",
+        "oozer",
+        "skeleton",
+        "surtling",
+        "wraith",
+        "writhan"
+      ],
+      "passive": [],
+      "fish": []
+    }
+  },
+  {
+    "id": "ocean",
+    "name": "Ocean",
+    "order": 4,
+    "gearTier": 3,
+    "image": "img/biomes/ocean.png",
+    "wiki": "https://valheim.weirdgloop.org/w/Ocean",
+    "creatures": {
+      "boss": [],
+      "miniboss": [],
+      "hostile": [
+        "serpent"
+      ],
+      "passive": [
+        "gull",
+        "leviathan"
+      ],
+      "fish": []
+    }
+  },
+  {
+    "id": "mountain",
+    "name": "Mountain",
+    "order": 5,
+    "gearTier": 4,
+    "image": "img/biomes/mountain.png",
+    "wiki": "https://valheim.weirdgloop.org/w/Mountain",
+    "creatures": {
+      "boss": [
+        "moder"
+      ],
+      "miniboss": [
+        "geirrhafa"
+      ],
+      "hostile": [
+        "drake",
+        "draugr",
+        "fenring",
+        "skeleton",
+        "stone-golem",
+        "wolf"
+      ],
+      "passive": [],
+      "fish": []
+    }
+  },
+  {
+    "id": "plains",
+    "name": "Plains",
+    "order": 6,
+    "gearTier": 5,
+    "image": "img/biomes/plains.png",
+    "wiki": "https://valheim.weirdgloop.org/w/Plains",
+    "creatures": {
+      "boss": [
+        "yagluth"
+      ],
+      "miniboss": [
+        "zil-thungr"
+      ],
+      "hostile": [
+        "deathsquito",
+        "fuling",
+        "fuling-berserker",
+        "fuling-shaman",
+        "growth",
+        "lox"
+      ],
+      "passive": [
+        "gull"
+      ],
+      "fish": []
+    }
+  },
+  {
+    "id": "mistlands",
+    "name": "Mistlands",
+    "order": 7,
+    "gearTier": 6,
+    "image": "img/biomes/mistlands.png",
+    "wiki": "https://valheim.weirdgloop.org/w/Mistlands",
+    "creatures": {
+      "boss": [
+        "the-queen"
+      ],
+      "miniboss": [],
+      "hostile": [
+        "gjall",
+        "mistile",
+        "seeker",
+        "seeker-soldier",
+        "tick"
+      ],
+      "passive": [
+        "dvergr-mage",
+        "dvergr-rogue",
+        "hare"
+      ],
+      "fish": []
+    }
+  },
+  {
+    "id": "ashlands",
+    "name": "Ashlands",
+    "order": 8,
+    "gearTier": 7,
+    "image": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Ashlands",
+    "creatures": {
+      "boss": [
+        "fader"
+      ],
+      "miniboss": [
+        "lord-reto"
+      ],
+      "hostile": [
+        "asksvin",
+        "bonemaw",
+        "charred-marksman",
+        "charred-twitcher",
+        "charred-warlock",
+        "charred-warrior",
+        "fallen-valkyrie",
+        "lava-blob",
+        "morgen",
+        "skugg",
+        "volture"
+      ],
+      "passive": [
+        "ash-crow",
+        "ashlands-dvergr"
+      ],
+      "fish": []
+    }
+  },
+  {
+    "id": "deep-north",
+    "name": "Deep North",
+    "order": 9,
+    "gearTier": 8,
+    "image": "img/biomes/deep-north.png",
+    "wiki": "https://valheim.weirdgloop.org/w/Deep_North",
+    "creatures": {
+      "boss": [
+        "kall-fimbulbringer"
+      ],
+      "miniboss": [],
+      "hostile": [
+        "barka",
+        "captive-fuling",
+        "elaking",
+        "eyeless-one",
+        "fallen-warrior",
+        "gammeltroll",
+        "greydwarf-deep-north",
+        "greydwarf-shaman-deep-north",
+        "hexen",
+        "imprisoned-dvergr",
+        "krigen",
+        "moose",
+        "moose-calf",
+        "shapeless-pulp",
+        "skeleton",
+        "tiny-pulp"
+      ],
+      "passive": [
+        "seal",
+        "shadow"
+      ],
+      "fish": []
+    }
+  }
+]

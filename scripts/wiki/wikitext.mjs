@@ -118,11 +118,11 @@ function templateInner(text, start) {
   return text.slice(start + 2, end === -1 ? text.length : end - 2);
 }
 
-// Range of the first `{{infobox <name>…}}` (case-insensitive) in the text.
+// Range of the first `{{<templateName>…}}` (case-insensitive) in the text.
 // `end` is just past the closing '}}' (or the end of text when unbalanced).
-export function findTemplateRange(wikitext, name) {
+export function findTemplateRange(wikitext, templateName) {
   const text = String(wikitext ?? '');
-  const re = new RegExp(`\\{\\{\\s*infobox\\s+${escapeRegExp(name)}(?=[\\s|}])`, 'i');
+  const re = new RegExp(`\\{\\{\\s*${escapeRegExp(templateName)}(?=[\\s|}])`, 'i');
   const match = re.exec(text);
   if (!match) return null;
   const end = findTemplateEnd(text, match.index);
@@ -134,14 +134,14 @@ function escapeRegExp(s) {
 }
 
 // All instances of `{{infobox <name>…}}` as param objects, in document order.
-export function parseTemplates(wikitext, name) {
+export function parseTemplates(wikitext, templateName) {
   const text = String(wikitext ?? '');
-  const re = new RegExp(`\\{\\{\\s*infobox\\s+${escapeRegExp(name)}(?=[\\s|}])`, 'gi');
+  const re = new RegExp(`\\{\\{\\s*${escapeRegExp(templateName)}(?=[\\s|}])`, 'gi');
   const out = [];
   let match;
   while ((match = re.exec(text)) !== null) {
-    const end = findTemplateEnd(text, match.index);
     out.push(parseTemplateParams(templateInner(text, match.index)));
+    const end = findTemplateEnd(text, match.index);
     re.lastIndex = end === -1 ? text.length : end;
   }
   return out;
@@ -167,8 +167,9 @@ function parseTemplateParams(inner) {
 }
 
 // First `{{infobox <name>…}}` of a page, or null.
+// First `{{infobox <name>…}}` of a page, or null.
 export function parseInfobox(wikitext, name) {
-  return parseTemplates(wikitext, name)[0] ?? null;
+  return parseTemplates(wikitext, `infobox ${name}`)[0] ?? null;
 }
 
 // ---------------------------------------------------------------------------
@@ -184,13 +185,14 @@ export function cleanText(s) {
   text = text.replace(/<br\s*\/?>/gi, '\n');
   // remaining HTML tags (refs, small, …)
   text = text.replace(/<[^>]*>/g, '');
-  // common entities
+  // common entities and behavior switches (__TOC__, __NOTOC__, …)
   text = text
     .replace(/&nbsp;/gi, ' ')
     .replace(/&amp;/gi, '&')
     .replace(/&lt;/gi, '<')
     .replace(/&gt;/gi, '>')
-    .replace(/&quot;/gi, '"');
+    .replace(/&quot;/gi, '"')
+    .replace(/__[A-Z_]+__/g, '');
   // templates, innermost first (bounded: gallery/infobox nesting is shallow)
   for (let pass = 0; pass < 10; pass += 1) {
     const next = text.replace(/\{\{([^{}]*)\}\}/g, (whole, inner) => {
