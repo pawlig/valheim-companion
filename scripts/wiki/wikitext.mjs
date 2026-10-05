@@ -621,6 +621,11 @@ export function parseQualityTables(wikitext) {
 
     const durMatch = sectionText.match(/durability\s+per\s+piece:\s*(\d+)/i);
     const durability = durMatch ? parseInt(durMatch[1], 10) : null;
+    const capeDurMatch = sectionText.match(/cape\s+durability:\s*(\d+)/i);
+    const capeDurability = capeDurMatch ? parseInt(capeDurMatch[1], 10) : null;
+
+    const stationMatch = sectionText.match(/(?:workbench|forge|frost\s+foundry|black\s+forge|station|galdr\s+table|artisan\s+table)\s+level:\s*(\d+)/i);
+    const sectionStationLevel = stationMatch ? parseInt(stationMatch[1], 10) : null;
 
     const tableMatch = sectionText.match(/\{\|[\s\S]*?\|\}/);
     const qualityMap = new Map();
@@ -662,7 +667,7 @@ export function parseQualityTables(wikitext) {
 
       let armor = null;
       for (let c = pieceIndex + 1; c < cells.length; c++) {
-        const clean = cells[c].replace(/'''?/g, '').trim();
+        const clean = cleanText(cells[c]).replace(/<[^>]*>/g, '').replace(/'''?/g, '').trim();
         const numMatch = clean.match(/^(\d+(?:\.\d+)?)$/);
         if (numMatch) {
           armor = parseFloat(numMatch[1]);
@@ -672,20 +677,29 @@ export function parseQualityTables(wikitext) {
 
       const numericCells = cells
         .map((cell) => {
-          const clean = cell.replace(/'''?/g, '').trim();
+          const clean = cleanText(cell).replace(/<[^>]*>/g, '').replace(/'''?/g, '').trim();
           const m = clean.match(/^(\d+(?:\.\d+)?)$/);
           return m ? parseFloat(m[1]) : null;
         })
         .filter((n) => n !== null);
 
       let stationLevel = null;
-      if (numericCells.length >= 2) {
+      if (numericCells.length >= 3) {
         stationLevel = numericCells[numericCells.length - 2];
-      } else if (numericCells.length === 1) {
+      } else if (numericCells.length === 2 && !sectionStationLevel) {
+        stationLevel = numericCells[numericCells.length - 2];
+      } else if (sectionStationLevel != null) {
+        stationLevel = sectionStationLevel;
+      } else if (numericCells.length > 0) {
         stationLevel = numericCells[0];
       }
 
-      const pieceData = { armor, durability, stationLevel };
+      const pieceDurability =
+        (pieceName.toLowerCase().includes('cape') || pieceName.toLowerCase().includes('cloak')) && capeDurability != null
+          ? capeDurability
+          : durability;
+
+      const pieceData = { armor, durability: pieceDurability, stationLevel };
       qualityMap.set(pieceName, pieceData);
       qualityMap[pieceName] = pieceData;
     }

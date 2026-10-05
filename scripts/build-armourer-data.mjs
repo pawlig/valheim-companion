@@ -1,0 +1,80 @@
+// Builds apps/armourer/data/data.js from data/*.json for the Armourer frontend.
+// Follows docs/DATA-SCHEMA.md § apps/armourer/data/data.js.
+
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const DATA_DIR = path.join(REPO_ROOT, 'data');
+const ARMOURER_DATA_DIR = path.join(REPO_ROOT, 'apps', 'armourer', 'data');
+
+export function buildArmourerBundle() {
+  const biomesPath = path.join(DATA_DIR, 'biomes.json');
+  const armorPath = path.join(DATA_DIR, 'armor.json');
+  const itemsPath = path.join(DATA_DIR, 'items.json');
+
+  if (!existsSync(biomesPath)) throw new Error('Missing data/biomes.json');
+  if (!existsSync(armorPath)) throw new Error('Missing data/armor.json');
+  if (!existsSync(itemsPath)) throw new Error('Missing data/items.json');
+
+  const biomes = JSON.parse(readFileSync(biomesPath, 'utf8'));
+  const armor = JSON.parse(readFileSync(armorPath, 'utf8'));
+  const itemsList = JSON.parse(readFileSync(itemsPath, 'utf8'));
+
+  const items = {};
+  for (const item of itemsList) {
+    items[item.id] = item;
+  }
+
+  // Validate that every material in armor exists in items
+  const missingItems = new Set();
+  for (const entry of armor) {
+    for (const piece of entry.pieces ?? []) {
+      for (const level of piece.levels ?? []) {
+        for (const mat of level.materials ?? []) {
+          if (!items[mat.item]) {
+            missingItems.add(mat.item);
+          }
+        }
+      }
+    }
+  }
+
+  if (missingItems.size > 0) {
+    console.warn(`warning: ${missingItems.size} referenced materials missing from items.json:`, [...missingItems]);
+  }
+
+  return {
+    generatedAt: new Date().toISOString(),
+    source: {
+      name: 'Valheim Wiki',
+      url: 'https://valheim.weirdgloop.org',
+      license: 'CC BY-SA 4.0',
+    },
+    biomes,
+    armor,
+    items,
+  };
+}
+
+export function main() {
+  console.log('building apps/armourer/data/data.js…');
+  const bundle = buildArmourerBundle();
+  mkdirSync(ARMOURER_DATA_DIR, { recursive: true });
+  const outputPath = path.join(ARMOURER_DATA_DIR, 'data.js');
+  const content = `window.VA_DATA = ${JSON.stringify(bundle, null, 2)};\n`;
+  if (!existsSync(outputPath) || readFileSync(outputPath, 'utf8') !== content) {
+    writeFileSync(outputPath, content, 'utf8');
+  }
+  console.log(`done: built apps/armourer/data/data.js (${(content.length / 1024).toFixed(1)} kB)`);
+}
+
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
+  try {
+    main();
+  } catch (err) {
+    console.error('Fatal error in build-armourer-data:', err.message);
+    process.exit(1);
+  }
+}
