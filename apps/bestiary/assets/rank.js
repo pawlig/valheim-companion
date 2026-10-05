@@ -84,6 +84,15 @@
     vanguard: { type: 'damage', types: ['pierce'], amount: 0.1 },
   };
 
+  // Default backstab multipliers by weapon category (VC-5b): the wiki lists
+  // backstab only for a fraction of weapons, but in game nearly every weapon
+  // can backstab. Knives default to 6x, magic and bombs to 1x, the rest to 3x.
+  const DEFAULT_BACKSTAB = {
+    knife: 6,
+    magic: 1,
+    bomb: 1,
+  };
+
   const DEFAULT_PLAYER = {
     skills: {
       swords: 50,
@@ -136,6 +145,13 @@
       if (sets.includes('fenris')) val += 15;
     }
     return Math.min(100, Math.max(0, val));
+  }
+
+  // Backstab multiplier: explicit weapon value, else category default, else 3.
+  // For bows and crossbows the launcher's backstab applies, not the ammo's —
+  // perHit receives the launcher as `weapon`, ammo is never consulted here.
+  function backstabOf(weapon) {
+    return weapon?.backstab ?? DEFAULT_BACKSTAB[weapon?.category] ?? 3;
   }
 
   // Damage map at requested quality: damage + perLevel * (q - 1)
@@ -251,7 +267,7 @@
     }
 
     const diffMult = DIFFICULTY[player?.difficulty] ?? 1;
-    const sneakMult = player?.sneak && weapon?.backstab ? weapon.backstab : 1;
+    const sneakMult = player?.sneak ? backstabOf(weapon) : 1;
     const staggerMult = player?.staggered ? 2 : 1;
     const sitMult = sneakMult * staggerMult;
 
@@ -286,6 +302,9 @@
     }
 
     const notes = buildNotes(combined, mods);
+    if (player?.sneak) {
+      notes.push(`Sneak ×${sneakMult}`);
+    }
 
     return {
       avg: avgSum,
@@ -704,6 +723,7 @@
     SKILLS,
     DIFFICULTY,
     SET_BONUSES,
+    DEFAULT_BACKSTAB,
     DEFAULT_PLAYER,
     skillFactor,
     effectiveSkill,
