@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 // The same editor runs as a standalone SPA in the EasyPanel container.
 export default defineConfig({
+  base: '/signs/',
   plugins: [react()],
   resolve: { alias: { '@': fileURLToPath(new URL('.', import.meta.url)) } },
   css: { postcss: { plugins: [tailwindcss()] } },

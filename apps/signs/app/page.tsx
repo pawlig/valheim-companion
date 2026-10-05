@@ -295,18 +295,26 @@ export default function Page() {
     <DirectionProvider direction={locale === 'ar' ? 'rtl' : 'ltr'}>
       <div className="app-shell">
         <header className="site-header">
-          <a
-            href="/"
-            className="brand"
-            aria-label={t('Runopis – editor cedulí')}
-          >
-            <span className="brand-mark">
-              <Feather size={24} />
-            </span>
-            <span>
-              RUNOPIS<span className="brand-sub">VALHEIM SIGN STUDIO</span>
-            </span>
-          </a>
+          <div className="flex flex-col justify-center gap-1">
+            <a
+              href="/"
+              className="text-xs text-[#a5b0a4] hover:text-[#d2d8cb] transition-colors inline-flex items-center gap-1 opacity-80 hover:opacity-100"
+            >
+              ← Valheim Companion
+            </a>
+            <a
+              href={import.meta.env.BASE_URL}
+              className="brand"
+              aria-label={t('Runopis – editor cedulí')}
+            >
+              <span className="brand-mark">
+                <Feather size={24} />
+              </span>
+              <span>
+                RUNOPIS<span className="brand-sub">VALHEIM SIGN STUDIO</span>
+              </span>
+            </a>
+          </div>
           <div className="header-right">
             <label className="language-picker">
               <span aria-hidden="true">◎</span>
@@ -746,7 +754,7 @@ export default function Page() {
                 </div>
                 <div className="sign-scene" ref={signScene}>
                   <img
-                    src="/sign-scene.png"
+                    src={`${import.meta.env.BASE_URL}sign-scene.png`}
                     alt={t('Prázdná dřevěná cedule v severském lese')}
                     width={1536}
                     height={1024}

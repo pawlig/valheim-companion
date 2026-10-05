@@ -1,65 +1,43 @@
-# Runopis — cedule pro Valheim
+# Runopis — Valheim Sign Editor
 
-Vícejazyčný rich text editor s živým náhledem cedule, barvami, formátováním vybraného textu, posuny, symboly, předlohami, ručním kódem a kopírováním do hry. Přehled značek a odkazy na zdroje najdeš přímo v aplikaci.
+Multilingual rich text editor with live preview for Valheim wooden signs.
+Colors, font styling, offsets, symbols, presets, manual markup, and copying to game.
 
-**[Vyzkoušet živou aplikaci → valheim-signs.teuferon.click](https://valheim-signs.teuferon.click/)**
+Runopis is a section of **Valheim Companion** hosted under `/signs/`.
 
-Editor si můžeš vyzkoušet přímo v prohlížeči bez instalace.
+## Building
 
-## Jazyky rozhraní
-
-Přepínač v horní liště nabízí češtinu, angličtinu, němčinu, španělštinu, francouzštinu, portugalštinu, čínštinu, hindštinu, arabštinu, bengálštinu, ruštinu, japonštinu a indonéštinu. Přeložené jsou ovládací prvky, průvodce, upozornění i předlohy. Arabské rozhraní používá směr zprava doleva.
-
-Výchozí volba **Automaticky podle prohlížeče** vybírá první podporovaný jazyk z `navigator.languages`, případně z `navigator.language`. Rozpoznává regionální varianty jako `de-AT`, `pt-BR` a `en-US`. Pokud se jazyk nepodaří určit nebo žádný není podporovaný, použije angličtinu. Čínština používá společný překlad ve zjednodušeném písmu.
-
-Ruční volba má přednost a ukládá se v prohlížeči pod klíčem `runopis.language`. K automatické detekci se lze kdykoli vrátit. Při zablokovaném úložišti funguje volba pro aktuální načtení stránky. Přepnutí jazyka nepřekládá ani nemaže rozepsaný nápis a nemění generovaný kód. Kliknutí na předlohu vloží její text ve zvoleném jazyce.
-
-Překlady jsou v `lib/locales/messages.json`, detekce a anglická záloha v `lib/i18n.ts`. Testy ověřují úplnost slovníků, shodu proměnných v překladech, pořadí detekce i zachování obsahu náhledu. Překlady neprošly jazykovou korekturou rodilými mluvčími.
-
-## EasyPanel
-
-1. Vytvoř **App** službu a v **Source** připoj tento repozitář (nebo nahraj archiv celého projektu).
-2. **Build Path:** `/` — kořen této aplikace obsahující Dockerfile a package.json. Při použití nadřazeného repozitáře nastav cestu `/web`.
-3. V **Build** vyber **Dockerfile**, cesta `Dockerfile`.
-4. V **Domains** nastav cílový port **80**, protokol **HTTP** a zapni HTTPS pro veřejnou doménu.
-5. Klikni na **Deploy**.
-
-Nepotřebuješ proměnné prostředí, databázi ani diskové svazky. HTTPS umožní přímé kopírování do schránky; pokud ho prohlížeč nepovolí, aplikace označí kód pro ruční kopírování. Není třeba měnit příkaz spuštění. Healthcheck je na `/healthz`.
-
-[Oficiální dokumentace EasyPanel App Service](https://easypanel.io/docs/services/app)
-
-## Lokální Docker
+The site is built from the repository root:
 
 ```sh
-docker compose up --build -d
+npm run build
 ```
 
-Otevři http://localhost:8080. Samostatně:
-
-```sh
-docker build -t valheim-runopis .
-docker run --rm -p 8080:80 valheim-runopis
-```
-
-Docker používá Node 24 pouze při buildu, výsledný kontejner servíruje statické soubory přes nginx. Nepotřebuje Sites ani Cloudflare účet. Tagy základních obrazů přijímají aktualizace v dané řadě; při požadavku na identický obraz je připni na digest.
-
-## Vývoj
-
-Node 22.13+ (doporučeno 24).
+Or built directly within `apps/signs`:
 
 ```sh
 npm ci
-npm run dev:docker
+npm run build
 ```
 
-Výchozí Vite port je 5173. `npm run build:docker` vytvoří samostatný web v `dist-static`. `npm test` ověřuje generátor a parser; `npm run typecheck` kontroluje typy. `npm run dev` / `npm run build` slouží pro variantu Sites, samostatný Docker je na nich nezávislý.
+The output is written to `dist-static/`.
 
-## Přesnost a limity
+For local development inside `apps/signs`:
 
-Výchozí rozpočet je 50 jednotek vstupu včetně značek. Počítadlo ukazuje UTF-16 jednotky (obvyklé počítání Unity/C#), navíc UTF‑8 bajty. Zdroje se v jednotce limitu rozcházejí; text s diakritikou proto dostane upozornění, pokud přesáhne 50 bajtů. Profil 999 je pro odpovídající mod, limit vanilla hry nijak nemění.
+```sh
+npm run dev        # Vite dev server
+npm test           # Test parser & generator
+npm run typecheck  # TypeScript check
+npm run lint       # Linter
+```
 
-Náhled je aproximace přes bezpečný parser a React textové uzly, nikoli spouštění HTML. Náhled používá font Norse od Joëla Carrouchého. Přesné měřítko ve hře, auto-sizing, vzhled materiálu, řádkové zarovnání, fontové assety a některé složité TMP značky nelze v prohlížeči zaručit. Neznámé značky mají upozornění. Značky s assety vyžadují nastavení ve hře; nejsou prezentovány jako zaručené vanilla funkce.
+## Interface Languages
 
-[Rešerše a zdroje](docs/rich-text-research.md)
+Supports 13 languages: Czech, English, German, Spanish, French, Portuguese, Chinese, Hindi, Arabic (RTL), Bengali, Russian, Japanese, and Indonesian.
 
-Obrázek náhledu je originální generovaná ilustrace, ne screenshot hry. Runopis není oficiální produkt Iron Gate ani Coffee Stain.
+The default choice is automatic detection via `navigator.languages`. A manual language selector is available in the header.
+
+## Limits & Accuracy
+
+Default budget is 50 input units including markup tags (UTF-16 code units / UTF-8 bytes).
+Preview approximates TextMesh Pro rendering with safe React nodes and Joël Carrouché's Norse font.
