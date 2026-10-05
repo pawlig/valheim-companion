@@ -7,16 +7,16 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 | Tier | Biome | Count |
 |---|---|---|
 | 1 | meadows | 12 |
-| 2 | black-forest | 11 |
+| 2 | black-forest | 12 |
 | 3 | swamp | 13 |
 | 3 | ocean | 2 |
-| 4 | mountain | 10 |
-| 5 | plains | 9 |
+| 4 | mountain | 11 |
+| 5 | plains | 10 |
 | 6 | mistlands | 14 |
 | 7 | ashlands | 36 |
-| 8 | deep-north | 39 |
+| 8 | deep-north | 42 |
 | null | (none) | 1 |
-| **Total** | | **147** |
+| **Total** | | **153** |
 
 ## Weapons per category
 
@@ -28,7 +28,7 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 - **bow**: 12
 - **club**: 12
 - **crossbow**: 8
-- **fists**: 1
+- **fists**: 7
 - **knife**: 10
 - **magic**: 9
 - **pickaxe**: 4
@@ -36,6 +36,15 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 - **sledge**: 6
 - **spear**: 13
 - **sword**: 21
+
+## Added in VC-6
+
+- **Flesh Rippers**: Category:Unarmed
+- **Frostfire Knucklechains**: Category:Unarmed
+- **Nord Knucklechains**: Category:Unarmed
+- **Paws of the Bear**: Category:Unarmed
+- **Thunderblood Knucklechains**: Category:Unarmed
+- **Vilebone Maulclaws**: Category:Unarmed
 
 ## Weapons with null tier
 

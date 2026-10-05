@@ -12403,6 +12403,48 @@ window.VC_DATA = {
       "biome": "ashlands",
       "description": "Dense yet spiked flametal, perfect for bashing enemy faces in."
     },
+    "flesh-rippers": {
+      "id": "flesh-rippers",
+      "name": "Flesh Rippers",
+      "wiki": "https://valheim.weirdgloop.org/w/Flesh_Rippers",
+      "gameId": "FistFenrirClaw",
+      "category": "fists",
+      "hands": "1h",
+      "type": "fists",
+      "image": "img/weapons/flesh-rippers.png",
+      "station": "Forge",
+      "stationLevel": 3,
+      "maxQuality": 4,
+      "damage": {
+        "slash": 60
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 60
+      },
+      "stamina": 10,
+      "knockback": null,
+      "skill": "fists",
+      "backstab": null,
+      "materials": [
+        {
+          "name": "Fenris Hair",
+          "amount": 10
+        },
+        {
+          "name": "Fenris Claw",
+          "amount": 6
+        },
+        {
+          "name": "Silver",
+          "amount": 10
+        }
+      ],
+      "quantity": null,
+      "tier": 4,
+      "biome": "mountain",
+      "description": "If claws work for wolves, why not for a viking?"
+    },
     "flint-axe": {
       "id": "flint-axe",
       "name": "Flint Axe",
@@ -12983,6 +13025,56 @@ window.VC_DATA = {
       "tier": 8,
       "biome": "deep-north",
       "description": "The choice between a fiery end and a frozen one is simple: Both at the same time."
+    },
+    "frostfire-knucklechains": {
+      "id": "frostfire-knucklechains",
+      "name": "Frostfire Knucklechains",
+      "wiki": "https://valheim.weirdgloop.org/w/Frostfire_Knucklechains",
+      "gameId": "FistGold_FrostFire",
+      "category": "fists",
+      "hands": "1h",
+      "type": "fists",
+      "image": "img/weapons/frostfire-knucklechains.png",
+      "station": "Black Forge",
+      "stationLevel": 4,
+      "maxQuality": 4,
+      "damage": {
+        "blunt": 80,
+        "fire": 12,
+        "frost": 88
+      },
+      "perLevel": {
+        "slash": 8,
+        "fire": 3,
+        "frost": 3
+      },
+      "damageMax": {
+        "blunt": 80,
+        "fire": 21,
+        "frost": 97
+      },
+      "stamina": 14,
+      "knockback": 20,
+      "skill": "fists",
+      "backstab": null,
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Knucklechains",
+          "amount": 1
+        },
+        {
+          "name": "Frostfire Essence",
+          "amount": 1
+        }
+      ],
+      "quantity": null,
+      "tier": 8,
+      "biome": "deep-north",
+      "description": "A slight risk of frostbite is inevitable."
     },
     "frostfire-mace": {
       "id": "frostfire-mace",
@@ -14409,6 +14501,46 @@ window.VC_DATA = {
       "biome": "deep-north",
       "description": "A striking weapon, both visually and lethally."
     },
+    "nord-knucklechains": {
+      "id": "nord-knucklechains",
+      "name": "Nord Knucklechains",
+      "wiki": "https://valheim.weirdgloop.org/w/Nord_Knucklechains",
+      "gameId": "FistGold",
+      "category": "fists",
+      "hands": "1h",
+      "type": "Fists",
+      "image": "img/weapons/nord-knucklechains.png",
+      "station": "Frost Foundry",
+      "stationLevel": 4,
+      "maxQuality": 4,
+      "damage": {
+        "blunt": 114
+      },
+      "perLevel": {
+        "slash": 8
+      },
+      "damageMax": {
+        "blunt": 114
+      },
+      "stamina": 14,
+      "knockback": null,
+      "skill": "fists",
+      "backstab": null,
+      "materials": [
+        {
+          "name": "Cast Nord Knucklechains",
+          "amount": 1
+        },
+        {
+          "name": "Liquid Frost",
+          "amount": 5
+        }
+      ],
+      "quantity": null,
+      "tier": 8,
+      "biome": "deep-north",
+      "description": "Wrap your fists in the hardest of metals, to ensure your foes feel the strength behind your blows."
+    },
     "nord-mace": {
       "id": "nord-mace",
       "name": "Nord Mace",
@@ -14692,6 +14824,48 @@ window.VC_DATA = {
       "tier": 3,
       "biome": "swamp",
       "description": "The stench is unbearable..."
+    },
+    "paws-of-the-bear": {
+      "id": "paws-of-the-bear",
+      "name": "Paws of the Bear",
+      "wiki": "https://valheim.weirdgloop.org/w/Paws_of_the_Bear",
+      "gameId": "FistBjornClaw",
+      "category": "fists",
+      "hands": "1h",
+      "type": "fists",
+      "image": "img/weapons/paws-of-the-bear.png",
+      "station": "Workbench",
+      "stationLevel": 2,
+      "maxQuality": 4,
+      "damage": {
+        "slash": 25
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 25
+      },
+      "stamina": 6,
+      "knockback": null,
+      "skill": "fists",
+      "backstab": null,
+      "materials": [
+        {
+          "name": "Bear Hide",
+          "amount": 2
+        },
+        {
+          "name": "Bear Paw",
+          "amount": 2
+        },
+        {
+          "name": "Leather Scraps",
+          "amount": 4
+        }
+      ],
+      "quantity": null,
+      "tier": 2,
+      "biome": "black-forest",
+      "description": "Made for tearing and rending."
     },
     "poison-arrow": {
       "id": "poison-arrow",
@@ -16358,6 +16532,53 @@ window.VC_DATA = {
       "biome": "deep-north",
       "description": "Anyone wielding this weapon is sure to be very frightening indeed."
     },
+    "thunderblood-knucklechains": {
+      "id": "thunderblood-knucklechains",
+      "name": "Thunderblood Knucklechains",
+      "wiki": "https://valheim.weirdgloop.org/w/Thunderblood_Knucklechains",
+      "gameId": "FistGold_BloodLightning",
+      "category": "fists",
+      "hands": "1h",
+      "type": "fists",
+      "image": "img/weapons/thunderblood-knucklechains.png",
+      "station": "Black Forge",
+      "stationLevel": 4,
+      "maxQuality": 4,
+      "damage": {
+        "blunt": 122,
+        "lightning": 45
+      },
+      "perLevel": {
+        "slash": 8,
+        "lightning": 5
+      },
+      "damageMax": {
+        "blunt": 122,
+        "lightning": 60
+      },
+      "stamina": 14,
+      "knockback": 20,
+      "skill": "fists",
+      "backstab": null,
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Knucklechains",
+          "amount": 1
+        },
+        {
+          "name": "Thunderblood Essence",
+          "amount": 1
+        }
+      ],
+      "quantity": null,
+      "tier": 8,
+      "biome": "deep-north",
+      "description": "A fury comes over you as you fight with these weapons, your blood roaring like thunder in your ears... It seems appropriate."
+    },
     "thunderblood-mace": {
       "id": "thunderblood-mace",
       "name": "Thunderblood Mace",
@@ -16644,6 +16865,54 @@ window.VC_DATA = {
       "tier": 7,
       "biome": "ashlands",
       "description": "Summons a raging beast to cause death and destruction."
+    },
+    "vilebone-maulclaws": {
+      "id": "vilebone-maulclaws",
+      "name": "Vilebone Maulclaws",
+      "wiki": "https://valheim.weirdgloop.org/w/Vilebone_Maulclaws",
+      "gameId": "FistBjornUndeadClaw",
+      "category": "fists",
+      "hands": "1h",
+      "type": "fists",
+      "image": "img/weapons/vilebone-maulclaws.png",
+      "station": "Forge",
+      "stationLevel": 4,
+      "maxQuality": 4,
+      "damage": {
+        "slash": 20,
+        "pierce": 60
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 20,
+        "pierce": 60
+      },
+      "stamina": 12,
+      "knockback": null,
+      "skill": "fists",
+      "backstab": null,
+      "materials": [
+        {
+          "name": "Bear Hide",
+          "amount": 2
+        },
+        {
+          "name": "Vile Ribcage",
+          "amount": 2
+        },
+        {
+          "name": "Black Metal",
+          "amount": 2
+        },
+        {
+          "name": "Linen Thread",
+          "amount": 4
+        }
+      ],
+      "quantity": null,
+      "tier": 5,
+      "biome": "plains",
+      "description": "These claws will rend flesh and bone alike."
     },
     "voidcaller": {
       "id": "voidcaller",

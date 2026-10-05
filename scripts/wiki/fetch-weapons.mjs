@@ -178,7 +178,7 @@ function determineCategory(typeStr) {
   if (t === 'spear') return 'spear';
   if (t === 'polearm' || t === 'atgeir') return 'polearm';
   if (t === 'knife' || t === 'dagger' || t === 'knife 2h') return 'knife';
-  if (t === 'fist' || t === 'fists') return 'fists';
+  if (t === 'fist' || t === 'fists' || t === 'unarmed') return 'fists';
   if (t === 'pickaxe') return 'pickaxe';
   if (t === 'bow') return 'bow';
   if (t === 'crossbow') return 'crossbow';
@@ -295,22 +295,74 @@ async function main() {
     }
   }
 
-  // 2. Fetch category member titles
-  const categories = ['Weapons', 'Arrows', 'Bolts', 'Bombs', 'Magic'];
-  console.log(`fetching category members for: ${categories.join(', ')}…`);
-  const memberTitles = new Set();
-  for (const cat of categories) {
-    const members = await api.getCategory(cat);
-    for (const title of members) memberTitles.add(title);
+  // 2. Fetch category member titles recursively
+  const BASELINE_CATEGORIES = ['Category:Weapons', 'Category:Arrows', 'Category:Bolts', 'Category:Bombs', 'Category:Magic'];
+  const visitedCategories = new Set();
+  const pageCategories = new Map();
+
+  async function getCategoryMembers(catTitle, cmtype) {
+    const titles = [];
+    let cmcontinue;
+    const cmtitle = catTitle.startsWith('Category:') ? catTitle : `Category:${catTitle}`;
+    do {
+      const params = {
+        action: 'query',
+        list: 'categorymembers',
+        cmtitle,
+        cmlimit: 500,
+        cmtype,
+        format: 'json',
+        formatversion: 2,
+      };
+      if (cmcontinue) params.cmcontinue = cmcontinue;
+      const body = await api.request(params);
+      for (const member of body.query?.categorymembers ?? []) {
+        titles.push(member.title);
+      }
+      cmcontinue = body.continue?.cmcontinue;
+    } while (cmcontinue);
+    return titles;
   }
-  const allTitles = [...memberTitles].sort(byCodepoint);
-  console.log(`found ${allTitles.length} unique titles across categories`);
+
+  async function walkCategory(catTitle, depth = 0) {
+    const categoryName = catTitle.startsWith('Category:') ? catTitle : `Category:${catTitle}`;
+    if (visitedCategories.has(categoryName)) return;
+    visitedCategories.add(categoryName);
+
+    console.log(`fetching members of ${categoryName} (depth ${depth})…`);
+    const pages = await getCategoryMembers(categoryName, 'page');
+    for (const pageTitle of pages) {
+      if (!pageCategories.has(pageTitle)) {
+        pageCategories.set(pageTitle, new Set());
+      }
+      pageCategories.get(pageTitle).add(categoryName);
+    }
+
+    if (depth < 2) {
+      const subcats = await getCategoryMembers(categoryName, 'subcat');
+      for (const subcat of subcats) {
+        await walkCategory(subcat, depth + 1);
+      }
+    }
+  }
+
+  await walkCategory('Category:Weapons', 0);
+
+  for (const baseCat of BASELINE_CATEGORIES) {
+    if (!visitedCategories.has(baseCat)) {
+      await walkCategory(baseCat, 1);
+    }
+  }
+
+  const allTitles = [...pageCategories.keys()].sort(byCodepoint);
+  console.log(`found ${allTitles.length} unique titles across all categories and subcategories`);
 
   // 3. Fetch wikitext for all pages
   const allPages = await api.getWikitext(allTitles);
 
   // 4. Parse weapons and apply exclusion rules
   const report = {
+    addedInVC6: [],
     excluded: [],
     weaponsByTier: {},
     unresolvedMaterials: [],
@@ -450,6 +502,15 @@ async function main() {
       biome: null,
       description: cleanText(ib.description || ''),
     });
+
+    const catsForTitle = [...(pageCategories.get(title) ?? [])].sort(byCodepoint);
+    const isBaseline = catsForTitle.some((c) => BASELINE_CATEGORIES.includes(c));
+    if (!isBaseline) {
+      report.addedInVC6.push({
+        name: cleanText(title),
+        categories: catsForTitle,
+      });
+    }
   }
 
   // 5. Fetch material pages and secondary source/location pages
@@ -790,6 +851,16 @@ function renderReport(report, weapons, materials) {
     lines.push(`- **${cat}**: ${cnt}`);
   }
   lines.push('');
+
+  lines.push('## Added in VC-6', '');
+  if (!report.addedInVC6 || report.addedInVC6.length === 0) {
+    lines.push('(none)', '');
+  } else {
+    for (const item of [...report.addedInVC6].sort((a, b) => byCodepoint(a.name, b.name))) {
+      lines.push(`- **${item.name}**: ${item.categories.join(', ')}`);
+    }
+    lines.push('');
+  }
 
   lines.push('## Weapons with null tier', '');
   if (report.weaponsWithNullTier.length === 0) {

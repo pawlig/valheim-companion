@@ -667,14 +667,12 @@
         "notes": []
       },
       {
-        "weapon": "bronze-atgeir",
-        "score": 16,
-        "min": 12,
-        "max": 19,
-        "raw": 45,
-        "notes": [
-          "×0.5 Pierce"
-        ]
+        "weapon": "paws-of-the-bear",
+        "score": 18,
+        "min": 14,
+        "max": 21,
+        "raw": 25,
+        "notes": []
       }
     ],
     "bow": {
@@ -13634,15 +13632,15 @@
         ]
       },
       {
-        "weapon": "frostfire-greatsword",
-        "score": 185,
-        "min": 145,
-        "max": 224,
-        "raw": 334,
+        "weapon": "frostfire-knucklechains",
+        "score": 193,
+        "min": 152,
+        "max": 235,
+        "raw": 198,
         "notes": [
+          "×1.5 Blunt",
           "×1.5 Frost",
-          "×0.5 Fire",
-          "×0.5 Slash"
+          "×0.5 Fire"
         ]
       }
     ],
@@ -13967,15 +13965,15 @@
         ]
       },
       {
-        "weapon": "frostfire-greatsword",
-        "score": 185,
-        "min": 145,
-        "max": 224,
-        "raw": 334,
+        "weapon": "frostfire-knucklechains",
+        "score": 193,
+        "min": 152,
+        "max": 235,
+        "raw": 198,
         "notes": [
+          "×1.5 Blunt",
           "×1.5 Frost",
-          "×0.5 Fire",
-          "×0.5 Slash"
+          "×0.5 Fire"
         ]
       }
     ],
