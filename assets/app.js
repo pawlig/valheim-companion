@@ -258,6 +258,31 @@
   }
 
   /**
+   * Filter recommendation weapon notes:
+   * ×0 Chop and ×0 Pickaxe are hidden.
+   * ×0 Spirit is shown only if spirit is explicitly defined on creature.modifiers.
+   * @param {Array<string>} [notes]
+   * @param {object} [creature]
+   * @returns {Array<string>}
+   */
+  function filterWeaponNotes(notes, creature) {
+    if (!notes || notes.length === 0) return [];
+    return notes.filter(n => {
+      // ×0 Chop and ×0 Pickaxe are never shown
+      if (n === '×0 Chop' || n === '×0 Pickaxe') return false;
+      if (n.startsWith('×0') && (n.includes('Chop') || n.includes('Pickaxe'))) return false;
+
+      // spirit ×0 only if spirit is explicitly defined in creature.modifiers
+      if (n.startsWith('×0') && n.includes('Spirit')) {
+        const hasExplicitSpirit = creature && creature.modifiers && creature.modifiers.spirit !== undefined;
+        if (!hasExplicitSpirit) return false;
+      }
+
+      return true;
+    });
+  }
+
+  /**
    * Helper: create a button representing a recommended weapon row
    * @param {string} weaponId
    * @param {number|null} score
@@ -459,7 +484,9 @@
           const attName = el('span', 'attack-name', att.name || 'Attack');
           row.appendChild(attName);
 
-          const dmgEntries = att.damage ? Object.entries(att.damage) : [];
+          const dmgEntries = att.damage
+            ? Object.entries(att.damage).filter(([type]) => type !== 'chop' && type !== 'pickaxe')
+            : [];
           if (dmgEntries.length > 0) {
             const damagesDiv = el('div', 'attack-damages');
             dmgEntries.forEach(([type, val]) => {
@@ -484,9 +511,24 @@
     const rec = data.recommendations && data.recommendations[recKey];
     const modifiers = (rec && rec.modifiers) || (creature.modifiers) || {};
 
-    const nonNeutralMods = Object.entries(modifiers).filter(([, val]) => {
+    const nonNeutralMods = Object.entries(modifiers).filter(([type, val]) => {
       const num = parseModTier(val, data.modTiers);
-      return num !== 1;
+      if (num === 1) return false;
+
+      // chop and pickaxe only when multiplier > 0 (Stone Golem: Pickaxe ×2)
+      if ((type === 'chop' || type === 'pickaxe') && num <= 0) {
+        return false;
+      }
+
+      // spirit ×0 only if spirit is explicitly defined in creature.modifiers
+      if (type === 'spirit' && num === 0) {
+        const hasExplicitSpirit = creature.modifiers && creature.modifiers.spirit !== undefined;
+        if (!hasExplicitSpirit) {
+          return false;
+        }
+      }
+
+      return true;
     });
 
     if (nonNeutralMods.length > 0 || (creature.otherImmunities && creature.otherImmunities.length > 0)) {
@@ -535,7 +577,7 @@
         const meleeGroup = el('div', 'rec-group');
         meleeGroup.appendChild(el('span', 'rec-group-title', 'Melee'));
         rec.melee.slice(0, 3).forEach(m => {
-          meleeGroup.appendChild(createWeaponRowBtn(m.weapon, m.score, m.notes, null, data));
+          meleeGroup.appendChild(createWeaponRowBtn(m.weapon, m.score, filterWeaponNotes(m.notes, creature), null, data));
         });
         recGroups.appendChild(meleeGroup);
       }
@@ -549,10 +591,10 @@
 
         if (rec.arrows && rec.arrows.length > 0) {
           rec.arrows.forEach(arr => {
-            bowGroup.appendChild(createWeaponRowBtn(arr.weapon, arr.score, arr.notes, null, data));
+            bowGroup.appendChild(createWeaponRowBtn(arr.weapon, arr.score, filterWeaponNotes(arr.notes, creature), null, data));
           });
         } else if (rec.bow) {
-          bowGroup.appendChild(createWeaponRowBtn(rec.bow.weapon, rec.bow.score, [], null, data));
+          bowGroup.appendChild(createWeaponRowBtn(rec.bow.weapon, rec.bow.score, filterWeaponNotes(rec.bow.notes, creature), null, data));
         }
         recGroups.appendChild(bowGroup);
       }
@@ -566,10 +608,10 @@
 
         if (rec.bolts && rec.bolts.length > 0) {
           rec.bolts.forEach(bolt => {
-            xbowGroup.appendChild(createWeaponRowBtn(bolt.weapon, bolt.score, bolt.notes, null, data));
+            xbowGroup.appendChild(createWeaponRowBtn(bolt.weapon, bolt.score, filterWeaponNotes(bolt.notes, creature), null, data));
           });
         } else if (rec.crossbow) {
-          xbowGroup.appendChild(createWeaponRowBtn(rec.crossbow.weapon, rec.crossbow.score, [], null, data));
+          xbowGroup.appendChild(createWeaponRowBtn(rec.crossbow.weapon, rec.crossbow.score, filterWeaponNotes(rec.crossbow.notes, creature), null, data));
         }
         recGroups.appendChild(xbowGroup);
       }
@@ -578,7 +620,7 @@
       if (!isRangedOnly && rec.magic) {
         const magicGroup = el('div', 'rec-group');
         magicGroup.appendChild(el('span', 'rec-group-title', 'Magic'));
-        magicGroup.appendChild(createWeaponRowBtn(rec.magic.weapon, rec.magic.score, rec.magic.notes, null, data));
+        magicGroup.appendChild(createWeaponRowBtn(rec.magic.weapon, rec.magic.score, filterWeaponNotes(rec.magic.notes, creature), null, data));
         recGroups.appendChild(magicGroup);
       }
 
@@ -586,21 +628,30 @@
       if (!isRangedOnly && rec.bomb) {
         const bombGroup = el('div', 'rec-group');
         bombGroup.appendChild(el('span', 'rec-group-title', 'Bomb'));
-        bombGroup.appendChild(createWeaponRowBtn(rec.bomb.weapon, rec.bomb.score, rec.bomb.notes, null, data));
+        bombGroup.appendChild(createWeaponRowBtn(rec.bomb.weapon, rec.bomb.score, filterWeaponNotes(rec.bomb.notes, creature), null, data));
         recGroups.appendChild(bombGroup);
       }
 
       // 6. Avoid
       if (rec.avoid && rec.avoid.length > 0) {
-        const avoidRow = el('div', 'rec-avoid-row');
-        avoidRow.appendChild(el('span', 'rec-avoid-label', 'Avoid:'));
-        const avoidChips = el('div', 'modifiers-chips');
-        rec.avoid.forEach(av => {
-          const chip = el('span', 'mod-chip ' + getModClass(av.mult), capitalize(av.type) + ' (×' + av.mult + ')');
-          avoidChips.appendChild(chip);
+        const filteredAvoid = rec.avoid.filter(av => {
+          if ((av.type === 'chop' || av.type === 'pickaxe') && av.mult <= 0) return false;
+          if (av.type === 'spirit' && av.mult === 0) {
+            return creature.modifiers && creature.modifiers.spirit !== undefined;
+          }
+          return true;
         });
-        avoidRow.appendChild(avoidChips);
-        recGroups.appendChild(avoidRow);
+        if (filteredAvoid.length > 0) {
+          const avoidRow = el('div', 'rec-avoid-row');
+          avoidRow.appendChild(el('span', 'rec-avoid-label', 'Avoid:'));
+          const avoidChips = el('div', 'modifiers-chips');
+          filteredAvoid.forEach(av => {
+            const chip = el('span', 'mod-chip ' + getModClass(av.mult), capitalize(av.type) + ' (×' + av.mult + ')');
+            avoidChips.appendChild(chip);
+          });
+          avoidRow.appendChild(avoidChips);
+          recGroups.appendChild(avoidRow);
+        }
       }
 
       if (recGroups.children.length > 0 || rec.tip) {
