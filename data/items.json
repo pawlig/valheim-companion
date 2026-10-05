@@ -1,0 +1,1839 @@
+[
+  {
+    "id": "amber-pearl",
+    "name": "Amber Pearl",
+    "image": "img/items/amber-pearl.png",
+    "biome": "meadows",
+    "tier": 1,
+    "sources": [
+      {
+        "text": "* Burial Chambers",
+        "kind": "location"
+      },
+      {
+        "text": "* Troll Cave",
+        "kind": "location"
+      },
+      {
+        "text": "* Sunken Crypts",
+        "kind": "location"
+      },
+      {
+        "text": "* Stone Grave",
+        "kind": "other"
+      },
+      {
+        "text": "* Viking Graveyard",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Amber_Pearl"
+  },
+  {
+    "id": "ancient-bark",
+    "name": "Ancient Bark",
+    "image": "img/items/ancient-bark.png",
+    "biome": "swamp",
+    "tier": 3,
+    "sources": [
+      {
+        "text": "Ancient Tree in Swamp biomes",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Ancient_Bark"
+  },
+  {
+    "id": "anglerfish",
+    "name": "Anglerfish",
+    "image": "img/items/anglerfish.png",
+    "biome": "ashlands",
+    "tier": 7,
+    "sources": [
+      {
+        "text": "Fishing",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Anglerfish"
+  },
+  {
+    "id": "asksvin-hide",
+    "name": "Asksvin Hide",
+    "image": "img/items/asksvin-hide.png",
+    "biome": "ashlands",
+    "tier": 7,
+    "sources": [
+      {
+        "text": "Asksvin",
+        "kind": "creature",
+        "creatureId": "asksvin",
+        "biomes": [
+          "ashlands"
+        ]
+      },
+      {
+        "text": "Asksvin Hatchling",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Asksvin_Hide"
+  },
+  {
+    "id": "bear-hide",
+    "name": "Bear Hide",
+    "image": "img/items/bear-hide.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Bear",
+        "kind": "creature",
+        "creatureId": "bear",
+        "biomes": [
+          "black-forest"
+        ]
+      },
+      {
+        "text": "Vile",
+        "kind": "creature",
+        "creatureId": "vile",
+        "biomes": [
+          "plains"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Bear_Hide"
+  },
+  {
+    "id": "bear-paw",
+    "name": "Bear Paw",
+    "image": "img/items/bear-paw.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Bear",
+        "kind": "creature",
+        "creatureId": "bear",
+        "biomes": [
+          "black-forest"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Bear_Paw"
+  },
+  {
+    "id": "bear-trophy",
+    "name": "Bear Trophy",
+    "image": "img/items/bear-trophy.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Bear_Trophy"
+  },
+  {
+    "id": "bloodgold",
+    "name": "Bloodgold",
+    "image": "img/items/bloodgold.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Blast Furnace",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Blast Furnace",
+      "materials": [
+        {
+          "item": "petrified-tissue",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Bloodgold"
+  },
+  {
+    "id": "blueberries",
+    "name": "Blueberries",
+    "image": "img/items/blueberries.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Blueberry bushes in the Black Forest biome",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Blueberries"
+  },
+  {
+    "id": "bone-fragments",
+    "name": "Bone Fragments",
+    "image": "img/items/bone-fragments.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Skeleton",
+        "kind": "creature",
+        "creatureId": "skeleton",
+        "biomes": [
+          "black-forest",
+          "swamp",
+          "mountain",
+          "deep-north"
+        ]
+      },
+      {
+        "text": "Rancid Remains",
+        "kind": "creature",
+        "creatureId": "rancid-remains",
+        "biomes": [
+          "black-forest"
+        ]
+      },
+      {
+        "text": "Skugg",
+        "kind": "creature",
+        "creatureId": "skugg",
+        "biomes": [
+          "ashlands"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Bone_Fragments"
+  },
+  {
+    "id": "bronze",
+    "name": "Bronze",
+    "image": "img/items/bronze.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Forge",
+        "kind": "station"
+      },
+      {
+        "text": "Smelter",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Forge",
+      "materials": [
+        {
+          "item": "copper",
+          "amount": 2
+        },
+        {
+          "item": "tin",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Bronze"
+  },
+  {
+    "id": "carapace",
+    "name": "Carapace",
+    "image": "img/items/carapace.png",
+    "biome": "mistlands",
+    "tier": 6,
+    "sources": [
+      {
+        "text": "Seeker",
+        "kind": "creature",
+        "creatureId": "seeker",
+        "biomes": [
+          "mistlands"
+        ]
+      },
+      {
+        "text": "Seeker Soldier",
+        "kind": "creature",
+        "creatureId": "seeker-soldier",
+        "biomes": [
+          "mistlands"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Carapace"
+  },
+  {
+    "id": "cast-breastplate-of-the-protector",
+    "name": "Cast Breastplate of the Protector",
+    "image": "img/items/cast-breastplate-of-the-protector.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-helmet-of-the-protector",
+          "amount": 1
+        },
+        {
+          "item": "moose-hide",
+          "amount": 4
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Breastplate_of_the_Protector"
+  },
+  {
+    "id": "cast-chestpiece-of-the-vanguard",
+    "name": "Cast Chestpiece of the Vanguard",
+    "image": "img/items/cast-chestpiece-of-the-vanguard.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "seal-pelt",
+          "amount": 5
+        },
+        {
+          "item": "mould-hood-of-the-vanguard",
+          "amount": 1
+        },
+        {
+          "item": "moose-hide",
+          "amount": 5
+        },
+        {
+          "item": "moose-sinew",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Chestpiece_of_the_Vanguard"
+  },
+  {
+    "id": "cast-headdress-of-the-caller",
+    "name": "Cast Headdress of the Caller",
+    "image": "img/items/cast-headdress-of-the-caller.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Galdr Table level 3",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Galdr Table level 3",
+      "materials": [
+        {
+          "item": "moose-sinew",
+          "amount": 2
+        },
+        {
+          "item": "mould-headdress-of-the-caller",
+          "amount": 1
+        },
+        {
+          "item": "moose-trophy",
+          "amount": 1
+        },
+        {
+          "item": "nornathread",
+          "amount": 3
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Headdress_of_the_Caller"
+  },
+  {
+    "id": "cast-helmet-of-the-protector",
+    "name": "Cast Helmet of the Protector",
+    "image": "img/items/cast-helmet-of-the-protector.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-helmet-of-the-protector",
+          "amount": 1
+        },
+        {
+          "item": "moose-hide",
+          "amount": 4
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Helmet_of_the_Protector"
+  },
+  {
+    "id": "cast-hood-of-the-vanguard",
+    "name": "Cast Hood of the Vanguard",
+    "image": "img/items/cast-hood-of-the-vanguard.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "seal-pelt",
+          "amount": 5
+        },
+        {
+          "item": "mould-hood-of-the-vanguard",
+          "amount": 1
+        },
+        {
+          "item": "moose-hide",
+          "amount": 5
+        },
+        {
+          "item": "moose-sinew",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Hood_of_the_Vanguard"
+  },
+  {
+    "id": "cast-robes-of-the-caller",
+    "name": "Cast Robes of the Caller",
+    "image": "img/items/cast-robes-of-the-caller.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Galdr Table level 3",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Galdr Table level 3",
+      "materials": [
+        {
+          "item": "moose-sinew",
+          "amount": 2
+        },
+        {
+          "item": "mould-headdress-of-the-caller",
+          "amount": 1
+        },
+        {
+          "item": "moose-trophy",
+          "amount": 1
+        },
+        {
+          "item": "nornathread",
+          "amount": 3
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Robes_of_the_Caller"
+  },
+  {
+    "id": "cast-trousers-of-the-caller",
+    "name": "Cast Trousers of the Caller",
+    "image": "img/items/cast-trousers-of-the-caller.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Galdr Table level 3",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Galdr Table level 3",
+      "materials": [
+        {
+          "item": "moose-sinew",
+          "amount": 2
+        },
+        {
+          "item": "mould-headdress-of-the-caller",
+          "amount": 1
+        },
+        {
+          "item": "moose-trophy",
+          "amount": 1
+        },
+        {
+          "item": "nornathread",
+          "amount": 3
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Trousers_of_the_Caller"
+  },
+  {
+    "id": "cast-trousers-of-the-protector",
+    "name": "Cast Trousers of the Protector",
+    "image": "img/items/cast-trousers-of-the-protector.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-helmet-of-the-protector",
+          "amount": 1
+        },
+        {
+          "item": "moose-hide",
+          "amount": 4
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Trousers_of_the_Protector"
+  },
+  {
+    "id": "cast-trousers-of-the-vanguard",
+    "name": "Cast Trousers of the Vanguard",
+    "image": "img/items/cast-trousers-of-the-vanguard.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "seal-pelt",
+          "amount": 5
+        },
+        {
+          "item": "mould-hood-of-the-vanguard",
+          "amount": 1
+        },
+        {
+          "item": "moose-hide",
+          "amount": 5
+        },
+        {
+          "item": "moose-sinew",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Trousers_of_the_Vanguard"
+  },
+  {
+    "id": "chain",
+    "name": "Chain",
+    "image": "img/items/chain.png",
+    "biome": "swamp",
+    "tier": 3,
+    "sources": [
+      {
+        "text": "Wraith",
+        "kind": "creature",
+        "creatureId": "wraith",
+        "biomes": [
+          "swamp"
+        ]
+      },
+      {
+        "text": "Sunken Crypts",
+        "kind": "location"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Chain"
+  },
+  {
+    "id": "charred-bone",
+    "name": "Charred Bone",
+    "image": "img/items/charred-bone.png",
+    "biome": "ashlands",
+    "tier": 7,
+    "sources": [
+      {
+        "text": "Charred Warrior",
+        "kind": "creature",
+        "creatureId": "charred-warrior",
+        "biomes": [
+          "ashlands"
+        ]
+      },
+      {
+        "text": "Charred Marksman",
+        "kind": "creature",
+        "creatureId": "charred-marksman",
+        "biomes": [
+          "ashlands"
+        ]
+      },
+      {
+        "text": "Charred Warlock",
+        "kind": "creature",
+        "creatureId": "charred-warlock",
+        "biomes": [
+          "ashlands"
+        ]
+      },
+      {
+        "text": "Charred Twitcher",
+        "kind": "creature",
+        "creatureId": "charred-twitcher",
+        "biomes": [
+          "ashlands"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Charred_Bone"
+  },
+  {
+    "id": "coal",
+    "name": "Coal",
+    "image": "img/items/coal.png",
+    "biome": "swamp",
+    "tier": 3,
+    "sources": [
+      {
+        "text": "Surtling",
+        "kind": "creature",
+        "creatureId": "surtling",
+        "biomes": [
+          "swamp"
+        ]
+      },
+      {
+        "text": "Burning Meat",
+        "kind": "other"
+      },
+      {
+        "text": "Charcoal Kiln",
+        "kind": "station"
+      },
+      {
+        "text": "Obliterator",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Coal"
+  },
+  {
+    "id": "copper",
+    "name": "Copper",
+    "image": "img/items/copper.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Smelter",
+        "kind": "station"
+      },
+      {
+        "text": "Dvergr metal wall",
+        "kind": "other"
+      }
+    ],
+    "recipe": {
+      "station": "Smelter",
+      "materials": [
+        {
+          "item": "copper-ore",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Copper"
+  },
+  {
+    "id": "copper-ore",
+    "name": "Copper Ore",
+    "image": "img/items/copper-ore.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Copper Deposit",
+        "kind": "location"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Copper_Ore"
+  },
+  {
+    "id": "coral-cod",
+    "name": "Coral Cod",
+    "image": "img/items/coral-cod.png",
+    "biome": "ocean",
+    "tier": 3,
+    "sources": [
+      {
+        "text": "Fishing",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Coral_Cod"
+  },
+  {
+    "id": "crown-jewel",
+    "name": "Crown Jewel",
+    "image": "img/items/crown-jewel.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Kall Fimbulbringer",
+        "kind": "creature",
+        "creatureId": "kall-fimbulbringer",
+        "biomes": [
+          "deep-north"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Crown_Jewel"
+  },
+  {
+    "id": "cultist-trophy",
+    "name": "Cultist Trophy",
+    "image": "img/items/cultist-trophy.png",
+    "biome": "mountain",
+    "tier": 4,
+    "sources": [],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Cultist_Trophy"
+  },
+  {
+    "id": "dandelion",
+    "name": "Dandelion",
+    "image": "img/items/dandelion.png",
+    "biome": "meadows",
+    "tier": 1,
+    "sources": [
+      {
+        "text": "Meadows biome",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Dandelion"
+  },
+  {
+    "id": "deer-hide",
+    "name": "Deer Hide",
+    "image": "img/items/deer-hide.png",
+    "biome": "meadows",
+    "tier": 1,
+    "sources": [
+      {
+        "text": "Deer",
+        "kind": "creature",
+        "creatureId": "deer",
+        "biomes": [
+          "meadows",
+          "black-forest"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Deer_Hide"
+  },
+  {
+    "id": "drake-trophy",
+    "name": "Drake Trophy",
+    "image": "img/items/drake-trophy.png",
+    "biome": "mountain",
+    "tier": 4,
+    "sources": [],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Drake_Trophy"
+  },
+  {
+    "id": "elaking-hair-bundle",
+    "name": "Elaking Hair Bundle",
+    "image": "img/items/elaking-hair-bundle.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Elaking",
+        "kind": "creature",
+        "creatureId": "elaking",
+        "biomes": [
+          "deep-north"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Elaking_Hair_Bundle"
+  },
+  {
+    "id": "feathers",
+    "name": "Feathers",
+    "image": "img/items/feathers.png",
+    "biome": "meadows",
+    "tier": 1,
+    "sources": [
+      {
+        "text": "Birds",
+        "kind": "other"
+      },
+      {
+        "text": "Chests",
+        "kind": "location"
+      },
+      {
+        "text": "Felled trees",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Feathers"
+  },
+  {
+    "id": "fenris-hair",
+    "name": "Fenris Hair",
+    "image": "img/items/fenris-hair.png",
+    "biome": "mountain",
+    "tier": 4,
+    "sources": [
+      {
+        "text": "Frost Caves",
+        "kind": "location"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Fenris_Hair"
+  },
+  {
+    "id": "flametal",
+    "name": "Flametal",
+    "image": "img/items/flametal.png",
+    "biome": "ashlands",
+    "tier": 7,
+    "sources": [
+      {
+        "text": "Blast Furnace",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Blast Furnace",
+      "materials": [
+        {
+          "item": "flametal-ore",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Flametal"
+  },
+  {
+    "id": "flametal-ore",
+    "name": "Flametal Ore",
+    "image": "img/items/flametal-ore.png",
+    "biome": "ashlands",
+    "tier": 7,
+    "sources": [
+      {
+        "text": "Flametal Ore Vein in the Ashlands biome",
+        "kind": "location"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Flametal_Ore"
+  },
+  {
+    "id": "flax",
+    "name": "Flax",
+    "image": "img/items/flax.png",
+    "biome": "plains",
+    "tier": 5,
+    "sources": [
+      {
+        "text": "Fuling Village in the Plains biome.",
+        "kind": "location"
+      },
+      {
+        "text": "Abandoned Village Barrels.",
+        "kind": "location"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Flax"
+  },
+  {
+    "id": "giant-herring",
+    "name": "Giant Herring",
+    "image": "img/items/giant-herring.png",
+    "biome": "swamp",
+    "tier": 3,
+    "sources": [
+      {
+        "text": "Fishing",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Giant_Herring"
+  },
+  {
+    "id": "grouper",
+    "name": "Grouper",
+    "image": "img/items/grouper.png",
+    "biome": "plains",
+    "tier": 5,
+    "sources": [
+      {
+        "text": "Fishing",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Grouper"
+  },
+  {
+    "id": "iron",
+    "name": "Iron",
+    "image": "img/items/iron.png",
+    "biome": "swamp",
+    "tier": 3,
+    "sources": [
+      {
+        "text": "Smelter",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Smelter",
+      "materials": [
+        {
+          "item": "scrap-iron",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Iron"
+  },
+  {
+    "id": "leather-scraps",
+    "name": "Leather Scraps",
+    "image": "img/items/leather-scraps.png",
+    "biome": "meadows",
+    "tier": 1,
+    "sources": [
+      {
+        "text": "Boar",
+        "kind": "creature",
+        "creatureId": "boar",
+        "biomes": [
+          "meadows"
+        ]
+      },
+      {
+        "text": "Bat",
+        "kind": "creature",
+        "creatureId": "bat",
+        "biomes": [
+          "mountain"
+        ]
+      },
+      {
+        "text": "Muddy Scrap Piles",
+        "kind": "location"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Leather_Scraps"
+  },
+  {
+    "id": "leather-straps",
+    "name": "Leather Straps",
+    "image": "img/items/leather-straps.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Krigen",
+        "kind": "creature",
+        "creatureId": "krigen",
+        "biomes": [
+          "deep-north"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Leather_Straps"
+  },
+  {
+    "id": "linen-thread",
+    "name": "Linen Thread",
+    "image": "img/items/linen-thread.png",
+    "biome": "plains",
+    "tier": 5,
+    "sources": [
+      {
+        "text": "Spinning Wheel",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Spinning Wheel",
+      "materials": [
+        {
+          "item": "flax",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Linen_Thread"
+  },
+  {
+    "id": "liquid-frost",
+    "name": "Liquid Frost",
+    "image": "img/items/liquid-frost.png",
+    "biome": null,
+    "tier": null,
+    "sources": [
+      {
+        "text": "Frigid Kiln",
+        "kind": "station"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Liquid_Frost"
+  },
+  {
+    "id": "lox-pelt",
+    "name": "Lox Pelt",
+    "image": "img/items/lox-pelt.png",
+    "biome": "plains",
+    "tier": 5,
+    "sources": [
+      {
+        "text": "Lox",
+        "kind": "creature",
+        "creatureId": "lox",
+        "biomes": [
+          "plains"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Lox_Pelt"
+  },
+  {
+    "id": "magmafish",
+    "name": "Magmafish",
+    "image": "img/items/magmafish.png",
+    "biome": "ashlands",
+    "tier": 7,
+    "sources": [
+      {
+        "text": "Fishing",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Magmafish"
+  },
+  {
+    "id": "mandible",
+    "name": "Mandible",
+    "image": "img/items/mandible.png",
+    "biome": "mistlands",
+    "tier": 6,
+    "sources": [
+      {
+        "text": "Seeker Soldier",
+        "kind": "creature",
+        "creatureId": "seeker-soldier",
+        "biomes": [
+          "mistlands"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Mandible"
+  },
+  {
+    "id": "moose-hide",
+    "name": "Moose Hide",
+    "image": "img/items/moose-hide.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Moose",
+        "kind": "creature",
+        "creatureId": "moose",
+        "biomes": [
+          "deep-north"
+        ]
+      },
+      {
+        "text": "Bedrolls in Mörkhalla.",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Moose_Hide"
+  },
+  {
+    "id": "moose-sinew",
+    "name": "Moose Sinew",
+    "image": "img/items/moose-sinew.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Moose",
+        "kind": "creature",
+        "creatureId": "moose",
+        "biomes": [
+          "deep-north"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Moose_Sinew"
+  },
+  {
+    "id": "moose-trophy",
+    "name": "Moose Trophy",
+    "image": "img/items/moose-trophy.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Moose_Trophy"
+  },
+  {
+    "id": "morgen-heart",
+    "name": "Morgen Heart",
+    "image": "img/items/morgen-heart.png",
+    "biome": "ashlands",
+    "tier": 7,
+    "sources": [
+      {
+        "text": "Morgen",
+        "kind": "creature",
+        "creatureId": "morgen",
+        "biomes": [
+          "ashlands"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Morgen_Heart"
+  },
+  {
+    "id": "morgen-sinew",
+    "name": "Morgen Sinew",
+    "image": "img/items/morgen-sinew.png",
+    "biome": "ashlands",
+    "tier": 7,
+    "sources": [
+      {
+        "text": "Morgen",
+        "kind": "creature",
+        "creatureId": "morgen",
+        "biomes": [
+          "ashlands"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Morgen_Sinew"
+  },
+  {
+    "id": "mould-headdress-of-the-caller",
+    "name": "Mould Headdress of the Caller",
+    "image": "img/items/mould-headdress-of-the-caller.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Galdr Table level 3",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Galdr Table level 3",
+      "materials": [
+        {
+          "item": "moose-sinew",
+          "amount": 2
+        },
+        {
+          "item": "mould-headdress-of-the-caller",
+          "amount": 1
+        },
+        {
+          "item": "moose-trophy",
+          "amount": 1
+        },
+        {
+          "item": "nornathread",
+          "amount": 3
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Headdress_of_the_Caller"
+  },
+  {
+    "id": "mould-helmet-of-the-protector",
+    "name": "Mould Helmet of the Protector",
+    "image": "img/items/mould-helmet-of-the-protector.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-helmet-of-the-protector",
+          "amount": 1
+        },
+        {
+          "item": "moose-hide",
+          "amount": 4
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Helmet_of_the_Protector"
+  },
+  {
+    "id": "mould-hood-of-the-vanguard",
+    "name": "Mould Hood of the Vanguard",
+    "image": "img/items/mould-hood-of-the-vanguard.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "seal-pelt",
+          "amount": 5
+        },
+        {
+          "item": "mould-hood-of-the-vanguard",
+          "amount": 1
+        },
+        {
+          "item": "moose-hide",
+          "amount": 5
+        },
+        {
+          "item": "moose-sinew",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Hood_of_the_Vanguard"
+  },
+  {
+    "id": "nornathread",
+    "name": "Nornathread",
+    "image": "img/items/nornathread.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Hexen",
+        "kind": "creature",
+        "creatureId": "hexen",
+        "biomes": [
+          "deep-north"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Nornathread"
+  },
+  {
+    "id": "northern-salmon",
+    "name": "Northern Salmon",
+    "image": "img/items/northern-salmon.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Fishing",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Northern_Salmon"
+  },
+  {
+    "id": "perch",
+    "name": "Perch",
+    "image": "img/items/perch.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Fishing",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Perch"
+  },
+  {
+    "id": "petrified-tissue",
+    "name": "Petrified Tissue",
+    "image": "img/items/petrified-tissue.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Petrified Gammeltroll",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Petrified_Tissue"
+  },
+  {
+    "id": "pike",
+    "name": "Pike",
+    "image": "img/items/pike.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Fishing",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Pike"
+  },
+  {
+    "id": "pufferfish",
+    "name": "Pufferfish",
+    "image": "img/items/pufferfish.png",
+    "biome": "mistlands",
+    "tier": 6,
+    "sources": [
+      {
+        "text": "Fishing",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Pufferfish"
+  },
+  {
+    "id": "refined-eitr",
+    "name": "Refined Eitr",
+    "image": "img/items/refined-eitr.png",
+    "biome": "mistlands",
+    "tier": 6,
+    "sources": [
+      {
+        "text": "Eitr Refinery",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Eitr Refinery",
+      "materials": [
+        {
+          "item": "sap",
+          "amount": 1
+        },
+        {
+          "item": "soft-tissue",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Refined_Eitr"
+  },
+  {
+    "id": "root",
+    "name": "Root",
+    "image": "img/items/root.png",
+    "biome": "swamp",
+    "tier": 3,
+    "sources": [],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Root"
+  },
+  {
+    "id": "roots",
+    "name": "Roots",
+    "image": "img/items/roots.png",
+    "biome": "swamp",
+    "tier": 3,
+    "sources": [],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Roots"
+  },
+  {
+    "id": "sap",
+    "name": "Sap",
+    "image": "img/items/sap.png",
+    "biome": "mistlands",
+    "tier": 6,
+    "sources": [
+      {
+        "text": "Mistlands biome",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Sap"
+  },
+  {
+    "id": "scale-hide",
+    "name": "Scale Hide",
+    "image": "img/items/scale-hide.png",
+    "biome": "mistlands",
+    "tier": 6,
+    "sources": [
+      {
+        "text": "Hare",
+        "kind": "creature",
+        "creatureId": "hare",
+        "biomes": [
+          "mistlands"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Scale_Hide"
+  },
+  {
+    "id": "scrap-iron",
+    "name": "Scrap Iron",
+    "image": "img/items/scrap-iron.png",
+    "biome": "swamp",
+    "tier": 3,
+    "sources": [
+      {
+        "text": "Muddy Scrap Pile",
+        "kind": "location"
+      },
+      {
+        "text": "Sunken Crypts Chests",
+        "kind": "location"
+      },
+      {
+        "text": "Oozers",
+        "kind": "creature",
+        "creatureId": "oozer",
+        "biomes": [
+          "swamp"
+        ]
+      },
+      {
+        "text": "Ancient Sword",
+        "kind": "other"
+      },
+      {
+        "text": "Ancient Armor",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Scrap_Iron"
+  },
+  {
+    "id": "seal-pelt",
+    "name": "Seal Pelt",
+    "image": "img/items/seal-pelt.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Seal",
+        "kind": "creature",
+        "creatureId": "seal",
+        "biomes": [
+          "deep-north"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Seal_Pelt"
+  },
+  {
+    "id": "silver",
+    "name": "Silver",
+    "image": "img/items/silver.png",
+    "biome": "mountain",
+    "tier": 4,
+    "sources": [
+      {
+        "text": "Smelting",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Smelting",
+      "materials": [
+        {
+          "item": "silver-ore",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Silver"
+  },
+  {
+    "id": "silver-ore",
+    "name": "Silver Ore",
+    "image": "img/items/silver-ore.png",
+    "biome": "mountain",
+    "tier": 4,
+    "sources": [
+      {
+        "text": "Silver Veins in Mountain biome",
+        "kind": "location"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Silver_Ore"
+  },
+  {
+    "id": "soft-tissue",
+    "name": "Soft Tissue",
+    "image": "img/items/soft-tissue.png",
+    "biome": "mistlands",
+    "tier": 6,
+    "sources": [
+      {
+        "text": "* Mined from Ancient skulls",
+        "kind": "location"
+      },
+      {
+        "text": "* Dropped from Dvergr Crates",
+        "kind": "other"
+      },
+      {
+        "text": "* Dropped from Dvergr",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Soft_Tissue"
+  },
+  {
+    "id": "tetra",
+    "name": "Tetra",
+    "image": "img/items/tetra.png",
+    "biome": "mountain",
+    "tier": 4,
+    "sources": [
+      {
+        "text": "Fishing",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Tetra"
+  },
+  {
+    "id": "tin",
+    "name": "Tin",
+    "image": "img/items/tin.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Smelter",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Smelter",
+      "materials": [
+        {
+          "item": "tin-ore",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Tin"
+  },
+  {
+    "id": "tin-ore",
+    "name": "Tin Ore",
+    "image": "img/items/tin-ore.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Tin Deposit",
+        "kind": "location"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Tin_Ore"
+  },
+  {
+    "id": "troll-hide",
+    "name": "Troll Hide",
+    "image": "img/items/troll-hide.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Troll",
+        "kind": "creature",
+        "creatureId": "troll",
+        "biomes": [
+          "black-forest"
+        ]
+      },
+      {
+        "text": "Trollfish bonus drop",
+        "kind": "creature",
+        "creatureId": "trollfish",
+        "biomes": [
+          "black-forest"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Troll_Hide"
+  },
+  {
+    "id": "trollfish",
+    "name": "Trollfish",
+    "image": "img/items/trollfish.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Fishing",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Trollfish"
+  },
+  {
+    "id": "tuna",
+    "name": "Tuna",
+    "image": "img/items/tuna.png",
+    "biome": "ocean",
+    "tier": 3,
+    "sources": [
+      {
+        "text": "Fishing",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Tuna"
+  },
+  {
+    "id": "vile-ribcage",
+    "name": "Vile Ribcage",
+    "image": "img/items/vile-ribcage.png",
+    "biome": "plains",
+    "tier": 5,
+    "sources": [
+      {
+        "text": "Vile",
+        "kind": "creature",
+        "creatureId": "vile",
+        "biomes": [
+          "plains"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Vile_Ribcage"
+  },
+  {
+    "id": "vile-trophy",
+    "name": "Vile Trophy",
+    "image": "img/items/vile-trophy.png",
+    "biome": "plains",
+    "tier": 5,
+    "sources": [],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Vile_Trophy"
+  },
+  {
+    "id": "wolf-fang",
+    "name": "Wolf Fang",
+    "image": "img/items/wolf-fang.png",
+    "biome": "mountain",
+    "tier": 4,
+    "sources": [
+      {
+        "text": "Wolf",
+        "kind": "creature",
+        "creatureId": "wolf",
+        "biomes": [
+          "mountain"
+        ]
+      },
+      {
+        "text": "Fenring",
+        "kind": "creature",
+        "creatureId": "fenring",
+        "biomes": [
+          "mountain"
+        ]
+      },
+      {
+        "text": "Ulv",
+        "kind": "creature",
+        "creatureId": "ulv",
+        "biomes": [
+          "mountain"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Wolf_Fang"
+  },
+  {
+    "id": "wolf-pelt",
+    "name": "Wolf Pelt",
+    "image": "img/items/wolf-pelt.png",
+    "biome": "mountain",
+    "tier": 4,
+    "sources": [
+      {
+        "text": "Wolf",
+        "kind": "creature",
+        "creatureId": "wolf",
+        "biomes": [
+          "mountain"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Wolf_Pelt"
+  },
+  {
+    "id": "wolf-trophy",
+    "name": "Wolf Trophy",
+    "image": "img/items/wolf-trophy.png",
+    "biome": "mountain",
+    "tier": 4,
+    "sources": [],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Wolf_Trophy"
+  },
+  {
+    "id": "writhan-roots",
+    "name": "Writhan Roots",
+    "image": "img/items/writhan-roots.png",
+    "biome": "swamp",
+    "tier": 3,
+    "sources": [
+      {
+        "text": "Writhan",
+        "kind": "creature",
+        "creatureId": "writhan",
+        "biomes": [
+          "swamp"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Writhan_Roots"
+  }
+]

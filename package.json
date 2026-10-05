@@ -8,6 +8,7 @@
     "fetch:weapons": "node scripts/wiki/fetch-weapons.mjs",
     "recommend": "node scripts/recommend.mjs",
     "build:data": "node scripts/build-data.mjs",
-    "data": "node scripts/wiki/fetch-weapons.mjs && node scripts/recommend.mjs && node scripts/build-data.mjs"
+    "data": "node scripts/wiki/fetch-weapons.mjs && node scripts/recommend.mjs && node scripts/build-data.mjs",
+    "armor": "node scripts/wiki/fetch-armor.mjs && node scripts/build-armourer-data.mjs"
   }
 }
