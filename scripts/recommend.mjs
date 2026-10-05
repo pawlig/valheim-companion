@@ -428,10 +428,11 @@ export async function main() {
   }
 
   mkdirSync(DATA_DIR, { recursive: true });
-  writeFileSync(
-    path.join(DATA_DIR, 'recommendations.json'),
-    `${JSON.stringify(recommendations, null, 2)}\n`,
-  );
+  const dest = path.join(DATA_DIR, 'recommendations.json');
+  const content = `${JSON.stringify(recommendations, null, 2)}\n`;
+  if (!existsSync(dest) || readFileSync(dest, 'utf8') !== content) {
+    writeFileSync(dest, content);
+  }
   console.log(`done: computed recommendations for ${Object.keys(recommendations).length} pairs`);
 }
 

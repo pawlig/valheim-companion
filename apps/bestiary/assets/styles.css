@@ -77,6 +77,27 @@ body {
   padding-bottom: 20px;
 }
 
+.hub-nav {
+  margin-bottom: 12px;
+}
+
+.hub-nav a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--accent-gold);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.15s ease, color 0.15s ease;
+}
+
+.hub-nav a:hover,
+.hub-nav a:focus-visible {
+  opacity: 1;
+  color: var(--accent-gold-hover);
+  text-decoration: underline;
+}
+
 .header-main {
   text-align: center;
   margin-bottom: 20px;

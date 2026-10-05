@@ -4,12 +4,13 @@
 // Validates that every weapon id referenced in recommendations exists in weapons.json,
 // and every creature id in biomes.json exists in creatures.json. Exits with code 1 on mismatch.
 
-import { readFileSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = path.join(REPO_ROOT, 'data');
+const BESTIARY_DATA_DIR = path.join(REPO_ROOT, 'apps', 'bestiary', 'data');
 
 const DAMAGE_TYPES = [
   'blunt',
@@ -134,12 +135,15 @@ export function buildDataBundle() {
 }
 
 export function main() {
-  console.log('building data/data.js…');
+  console.log('building apps/bestiary/data/data.js…');
   const bundle = buildDataBundle();
-  const outputPath = path.join(DATA_DIR, 'data.js');
+  mkdirSync(BESTIARY_DATA_DIR, { recursive: true });
+  const outputPath = path.join(BESTIARY_DATA_DIR, 'data.js');
   const content = `window.VC_DATA = ${JSON.stringify(bundle, null, 2)};\n`;
-  writeFileSync(outputPath, content, 'utf8');
-  console.log(`done: built data/data.js (${(content.length / 1024).toFixed(1)} kB)`);
+  if (!existsSync(outputPath) || readFileSync(outputPath, 'utf8') !== content) {
+    writeFileSync(outputPath, content, 'utf8');
+  }
+  console.log(`done: built apps/bestiary/data/data.js (${(content.length / 1024).toFixed(1)} kB)`);
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {

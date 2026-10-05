@@ -59,7 +59,7 @@ const wikiPageUrl = (title) => `${WIKI_URL}/w/${encodeURIComponent(title.replace
 const creatureImage = (id, star) => `img/creatures/${id}-${star}.png`;
 const trophyImage = (id) => `img/creatures/${id}-trophy.png`;
 const biomeImage = (id) => `img/biomes/${id}.png`;
-const abs = (relative) => path.join(REPO_ROOT, relative);
+const abs = (relative) => path.join(REPO_ROOT, 'apps', 'bestiary', relative);
 const byCodepoint = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
 
 // First prose paragraph after the infobox: headings, tables, lists and
@@ -505,9 +505,13 @@ async function mainInner() {
     .map((creature) => `${creature.name} (location: ${creature.location ?? 'n/a'})`);
 
   mkdirSync(DATA_DIR, { recursive: true });
-  writeFileSync(path.join(DATA_DIR, 'biomes.json'), `${JSON.stringify(biomeRecords, null, 2)}\n`);
-  writeFileSync(path.join(DATA_DIR, 'creatures.json'), `${JSON.stringify(creatures, null, 2)}\n`);
-  writeFileSync(path.join(DATA_DIR, 'report.md'), renderReport(report, biomeRecords, creatures));
+  const writeIfChanged = (dest, content) => {
+    if (existsSync(dest) && readFileSync(dest, 'utf8') === content) return;
+    writeFileSync(dest, content);
+  };
+  writeIfChanged(path.join(DATA_DIR, 'biomes.json'), `${JSON.stringify(biomeRecords, null, 2)}\n`);
+  writeIfChanged(path.join(DATA_DIR, 'creatures.json'), `${JSON.stringify(creatures, null, 2)}\n`);
+  writeIfChanged(path.join(DATA_DIR, 'report.md'), renderReport(report, biomeRecords, creatures));
   console.log(`done: ${creatures.length} creatures, ${biomeRecords.length} biomes`);
 }
 

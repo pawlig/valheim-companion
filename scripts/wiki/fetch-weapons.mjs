@@ -17,7 +17,7 @@ const DATA_DIR = path.join(REPO_ROOT, 'data');
 const WIKI_URL = 'https://valheim.weirdgloop.org';
 const WEAPON_IMG_WIDTH = 96;
 
-const abs = (rel) => path.join(REPO_ROOT, rel);
+const abs = (rel) => path.join(REPO_ROOT, 'apps', 'bestiary', rel);
 const byCodepoint = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
 const wikiPageUrl = (title) => `${WIKI_URL}/w/${encodeURIComponent(title.replace(/ /g, '_'))}`;
 
@@ -714,9 +714,13 @@ async function main() {
 
   // 9. Write outputs
   mkdirSync(DATA_DIR, { recursive: true });
-  writeFileSync(path.join(DATA_DIR, 'weapons.json'), `${JSON.stringify(parsedWeapons, null, 2)}\n`);
-  writeFileSync(path.join(DATA_DIR, 'materials.json'), `${JSON.stringify(allResolvedMaterials, null, 2)}\n`);
-  writeFileSync(path.join(DATA_DIR, 'report-weapons.md'), renderReport(report, parsedWeapons, allResolvedMaterials));
+  const writeIfChanged = (dest, content) => {
+    if (existsSync(dest) && readFileSync(dest, 'utf8') === content) return;
+    writeFileSync(dest, content);
+  };
+  writeIfChanged(path.join(DATA_DIR, 'weapons.json'), `${JSON.stringify(parsedWeapons, null, 2)}\n`);
+  writeIfChanged(path.join(DATA_DIR, 'materials.json'), `${JSON.stringify(allResolvedMaterials, null, 2)}\n`);
+  writeIfChanged(path.join(DATA_DIR, 'report-weapons.md'), renderReport(report, parsedWeapons, allResolvedMaterials));
 
   console.log(`done: ${parsedWeapons.length} weapons, ${allResolvedMaterials.length} materials`);
 }
