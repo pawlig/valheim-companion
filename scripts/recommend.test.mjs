@@ -8,6 +8,14 @@ import {
   buildNotes,
   rangedScore,
   recommendFor,
+  skillFactor,
+  effectiveSkill,
+  weaponDamage,
+  perHit,
+  creatureHp,
+  DEFAULT_PLAYER,
+  DIFFICULTY,
+  SET_BONUSES,
 } from './recommend.mjs';
 
 test('score: weapon with fire 10 against veryweak fire (mult 2) scores 20', () => {
@@ -351,4 +359,110 @@ test('recommendFor end-to-end: draugr in swamp has battleaxe raw 70 and empty no
   assert.equal(rec.melee[0].weapon, 'battleaxe');
   assert.equal(rec.melee[0].raw, 70);
   assert.deepEqual(rec.melee[0].notes, []);
+});
+
+test('skillFactor: exact values at L0, L50, L75, and L100', () => {
+  assert.deepEqual(skillFactor(0), { min: 0.25, max: 0.55, avg: 0.40 });
+  assert.deepEqual(skillFactor(50), { min: 0.55, max: 0.85, avg: 0.70 });
+  assert.deepEqual(skillFactor(75), { min: 0.70, max: 1.0, avg: 0.85 });
+  assert.deepEqual(skillFactor(100), { min: 0.85, max: 1.0, avg: 0.925 });
+});
+
+test('effectiveSkill: root set raises Bows from 90 to capped 100, not 105', () => {
+  const player = { ...DEFAULT_PLAYER, skills: { bows: 90 }, sets: ['root'] };
+  assert.equal(effectiveSkill(player, 'bows'), 100);
+  assert.notEqual(effectiveSkill(player, 'bows'), 105);
+});
+
+test('difficulty: veryhard multiplies player damage by 0.7', () => {
+  const creature = { modifiers: {} };
+  const weapon = { category: 'sword', skill: 'swords', damage: { slash: 100 } };
+  const playerNormal = { ...DEFAULT_PLAYER, difficulty: 'normal' };
+  const playerVeryHard = { ...DEFAULT_PLAYER, difficulty: 'veryhard' };
+  const hitNormal = perHit(weapon, null, creature, playerNormal);
+  const hitVeryHard = perHit(weapon, null, creature, playerVeryHard);
+  assert.ok(Math.abs(hitVeryHard.avg / hitNormal.avg - 0.7) < 1e-9);
+});
+
+test('creatureHp: 3 players -> HP x 1.6, 9 players -> HP x 2.2', () => {
+  const creature = { stars: [{ star: 0, health: 100 }] };
+  const hp1 = creatureHp(creature, 0, 'meadows', { players: 1 });
+  const hp3 = creatureHp(creature, 0, 'meadows', { players: 3 });
+  const hp9 = creatureHp(creature, 0, 'meadows', { players: 9 });
+  assert.equal(hp1, 100);
+  assert.equal(hp3, 160);
+  assert.equal(hp9, 220);
+});
+
+test('sneak: attack with knife having backstab 6 multiplies damage by 6', () => {
+  const creature = { modifiers: {} };
+  const knife = { category: 'knife', skill: 'knives', backstab: 6, damage: { slash: 50 } };
+  const playerNormal = { ...DEFAULT_PLAYER, sneak: false };
+  const playerSneak = { ...DEFAULT_PLAYER, sneak: true };
+  const hitNormal = perHit(knife, null, creature, playerNormal);
+  const hitSneak = perHit(knife, null, creature, playerSneak);
+  assert.equal(hitSneak.avg, hitNormal.avg * 6);
+});
+
+test('staggered: staggered target doubles damage (x2)', () => {
+  const creature = { modifiers: {} };
+  const weapon = { category: 'club', skill: 'clubs', damage: { blunt: 50 } };
+  const playerNormal = { ...DEFAULT_PLAYER, staggered: false };
+  const playerStaggered = { ...DEFAULT_PLAYER, staggered: true };
+  const hitNormal = perHit(weapon, null, creature, playerNormal);
+  const hitStaggered = perHit(weapon, null, creature, playerStaggered);
+  assert.equal(hitStaggered.avg, hitNormal.avg * 2);
+});
+
+test('quality: weaponDamage and perHit scale from quality 1 to max', () => {
+  const frostner = {
+    category: 'club',
+    skill: 'clubs',
+    maxQuality: 4,
+    damage: { blunt: 35, frost: 40, spirit: 20 },
+    perLevel: { frost: 6, blunt: 0 },
+    damageMax: { blunt: 35, frost: 58, spirit: 20 },
+  };
+  const d1 = weaponDamage(frostner, 1);
+  const dMax = weaponDamage(frostner, 'max');
+  assert.equal(d1.frost, 40);
+  assert.equal(dMax.frost, 58);
+
+  const creature = { modifiers: {} };
+  const player1 = { ...DEFAULT_PLAYER, quality: 1 };
+  const playerMax = { ...DEFAULT_PLAYER, quality: 'max' };
+  const hit1 = perHit(frostner, null, creature, player1);
+  const hitMax = perHit(frostner, null, creature, playerMax);
+  assert.equal(hit1.raw, 75);
+  assert.equal(hitMax.raw, 93);
+  assert.ok(hitMax.avg > hit1.avg);
+});
+
+test('Greydwarf against Fire Arrow: ratio of avg at Bows 0 vs 100 is 0.40 / 0.925', () => {
+  const greydwarf = {
+    modifiers: { fire: 'veryweak', spirit: 'immune' },
+  };
+  const bow = {
+    category: 'bow',
+    skill: 'bows',
+    maxQuality: 1,
+    damage: { pierce: 32 },
+  };
+  const arrow = {
+    category: 'arrow',
+    skill: 'bows',
+    maxQuality: 1,
+    damage: { pierce: 11, fire: 22 },
+  };
+  const player0 = {
+    ...DEFAULT_PLAYER,
+    skills: { bows: 0 },
+  };
+  const player100 = {
+    ...DEFAULT_PLAYER,
+    skills: { bows: 100 },
+  };
+  const hit0 = perHit(bow, arrow, greydwarf, player0);
+  const hit100 = perHit(bow, arrow, greydwarf, player100);
+  assert.ok(Math.abs(hit0.avg / hit100.avg - 0.40 / 0.925) < 1e-9);
 });

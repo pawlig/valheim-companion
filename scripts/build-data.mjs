@@ -130,7 +130,6 @@ export function buildDataBundle() {
     biomes,
     creatures,
     weapons,
-    recommendations,
   };
 }
 
