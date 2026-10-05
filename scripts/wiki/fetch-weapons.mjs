@@ -11,6 +11,7 @@ import { fileURLToPath } from 'node:url';
 
 import { api, MwApi } from './api.mjs';
 import { cleanText, parseImage, parseInfobox, parseLinks, parseTemplates, slug } from './wikitext.mjs';
+import { BASE_MATERIAL_TABLE, createMaterialResolver } from './materials.mjs';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const DATA_DIR = path.join(REPO_ROOT, 'data');
