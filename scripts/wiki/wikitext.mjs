@@ -526,3 +526,240 @@ export function slug(name) {
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
 }
+
+// All `{{infobox <name>…}}` templates on a page, handling nested templates
+// (like {{InfoboxTabber}} and <tabber>).
+export function parseAllInfoboxes(wikitext, name) {
+  const templateName = String(name ?? '').toLowerCase().startsWith('infobox ') ? name : `infobox ${name}`;
+  return parseTemplates(wikitext, templateName);
+}
+
+// Parses material lists like "* 20 [[Iron]]" or "* [[Bronze]] x2" or "* [[Liquid Frost]] x5 (Fuel)"
+// Returns [{ name, amount, fuel }]. Missing amount defaults to 1.
+export function parseMaterialList(s) {
+  if (!s) return [];
+  const text = String(s);
+  const normalized = text.replace(/<br\s*\/?>/gi, '\n');
+  const lines = normalized.split('\n');
+  const chunks = [];
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed) continue;
+    const parts = trimmed.split(/(?<=\S)\s+\*\s+/);
+    for (const part of parts) {
+      if (part.trim()) chunks.push(part.trim());
+    }
+  }
+
+  const results = [];
+  for (let chunk of chunks) {
+    const fuel = Boolean(/\(\s*fuel\s*\)/i.test(chunk));
+    chunk = chunk.replace(/\(\s*fuel\s*\)/gi, '').trim();
+    chunk = chunk.replace(/^[\s*#:-]+/, '').trim();
+    if (!chunk || chunk.toLowerCase() === 'n/a') continue;
+
+    let amount = 1;
+    let namePart = chunk;
+
+    const startMatch = chunk.match(/^(\d+)\s*(?:x|\*|:)?\s+(.+)$/i);
+    const endMatch = chunk.match(/^(.+?)\s*(?:x|\*|:|\()\s*(\d+)\)?$/i);
+
+    if (startMatch) {
+      amount = parseInt(startMatch[1], 10);
+      namePart = startMatch[2].trim();
+    } else if (endMatch) {
+      amount = parseInt(endMatch[2], 10);
+      namePart = endMatch[1].trim();
+    } else {
+      const endNumMatch = chunk.match(/^(.+?)\s+(\d+)$/);
+      if (endNumMatch) {
+        amount = parseInt(endNumMatch[2], 10);
+        namePart = endNumMatch[1].trim();
+      } else {
+        amount = 1;
+        namePart = chunk;
+      }
+    }
+
+    const linkMatch = namePart.match(/\[\[([^|\]]+)(?:\|([^\]]+))?\]\]/);
+    let name;
+    if (linkMatch) {
+      name = (linkMatch[2] ?? linkMatch[1]).trim();
+    } else {
+      name = cleanText(namePart).trim();
+    }
+    name = name.replace(/^\[+|\]+$/g, '').trim();
+
+    if (name) {
+      results.push({ name, amount, fuel });
+    }
+  }
+  return results;
+}
+
+// Parses "=== Quality N ===" tables on armor pages.
+// Returns map for each quality: piece name -> { armor, durability, stationLevel }.
+export function parseQualityTables(wikitext) {
+  const text = String(wikitext ?? '');
+  const qualityRegex = /={2,4}\s*Quality\s*(\d+)\s*={2,4}/gi;
+  const sections = [];
+  let match;
+  while ((match = qualityRegex.exec(text)) !== null) {
+    const quality = parseInt(match[1], 10);
+    const start = qualityRegex.lastIndex;
+    sections.push({ quality, start });
+  }
+
+  const result = new Map();
+
+  for (let i = 0; i < sections.length; i++) {
+    const { quality, start } = sections[i];
+    const end = i + 1 < sections.length ? sections[i + 1].start : text.length;
+    const rawSection = text.slice(start, end);
+    const headingMatch = rawSection.search(/(?:^|\n)={2,4}[^=\n]+={2,4}/);
+    const sectionText = headingMatch !== -1 ? rawSection.slice(0, headingMatch) : rawSection;
+
+    const durMatch = sectionText.match(/durability\s+per\s+piece:\s*(\d+)/i);
+    const durability = durMatch ? parseInt(durMatch[1], 10) : null;
+
+    const tableMatch = sectionText.match(/\{\|[\s\S]*?\|\}/);
+    const qualityMap = new Map();
+    result.set(quality, qualityMap);
+    result[quality] = qualityMap;
+
+    if (!tableMatch) continue;
+
+    const tableText = tableMatch[0];
+    const rawRows = tableText.split(/(?:^|\n)\s*\|-+/);
+
+    for (const rawRow of rawRows) {
+      if (!rawRow.trim()) continue;
+      if (/full\s*set/i.test(rawRow)) continue;
+
+      const cells = splitRowIntoCells(rawRow);
+      if (cells.length === 0) continue;
+
+      let pieceName = null;
+      let pieceIndex = -1;
+
+      for (let c = 0; c < cells.length; c++) {
+        const itemLinkMatch = cells[c].match(/\{\{\s*item\s*link\s*\|\s*([^|}]+)/i);
+        if (itemLinkMatch) {
+          pieceName = itemLinkMatch[1].trim();
+          pieceIndex = c;
+          break;
+        }
+        const linkMatch = cells[c].match(/\[\[([^|\]]+)(?:\|([^\]]+))?\]\]/);
+        if (linkMatch) {
+          pieceName = (linkMatch[2] ?? linkMatch[1]).trim();
+          pieceIndex = c;
+          break;
+        }
+      }
+
+      if (!pieceName || pieceIndex === -1) continue;
+      if (/full\s*set/i.test(pieceName)) continue;
+
+      let armor = null;
+      for (let c = pieceIndex + 1; c < cells.length; c++) {
+        const clean = cells[c].replace(/'''?/g, '').trim();
+        const numMatch = clean.match(/^(\d+(?:\.\d+)?)$/);
+        if (numMatch) {
+          armor = parseFloat(numMatch[1]);
+          break;
+        }
+      }
+
+      const numericCells = cells
+        .map((cell) => {
+          const clean = cell.replace(/'''?/g, '').trim();
+          const m = clean.match(/^(\d+(?:\.\d+)?)$/);
+          return m ? parseFloat(m[1]) : null;
+        })
+        .filter((n) => n !== null);
+
+      let stationLevel = null;
+      if (numericCells.length >= 2) {
+        stationLevel = numericCells[numericCells.length - 2];
+      } else if (numericCells.length === 1) {
+        stationLevel = numericCells[0];
+      }
+
+      const pieceData = { armor, durability, stationLevel };
+      qualityMap.set(pieceName, pieceData);
+      qualityMap[pieceName] = pieceData;
+    }
+  }
+
+  return result;
+}
+
+function cleanCellContent(raw) {
+  let templateDepth = 0;
+  let linkDepth = 0;
+  let splitIndex = -1;
+  for (let i = 0; i < raw.length; i++) {
+    const two = raw.slice(i, i + 2);
+    if (two === '{{' || two === '[[') {
+      if (two === '{{') templateDepth++;
+      else linkDepth++;
+      i++;
+      continue;
+    }
+    if (two === '}}' || two === ']]') {
+      if (two === '}}') templateDepth--;
+      else linkDepth--;
+      i++;
+      continue;
+    }
+    if (raw[i] === '|' && templateDepth === 0 && linkDepth === 0) {
+      splitIndex = i;
+      break;
+    }
+  }
+  if (splitIndex !== -1) {
+    return raw.slice(splitIndex + 1).trim();
+  }
+  return raw.trim();
+}
+
+function splitRowIntoCells(rowText) {
+  const cells = [];
+  const lines = rowText.split('\n');
+  for (let rawLine of lines) {
+    let line = rawLine.trim();
+    if (!line.startsWith('|')) continue;
+    line = line.slice(1);
+
+    let templateDepth = 0;
+    let linkDepth = 0;
+    let current = '';
+    for (let i = 0; i < line.length; i++) {
+      const two = line.slice(i, i + 2);
+      if (two === '{{' || two === '[[') {
+        if (two === '{{') templateDepth++;
+        else linkDepth++;
+        current += two;
+        i++;
+        continue;
+      }
+      if (two === '}}' || two === ']]') {
+        if (two === '}}') templateDepth--;
+        else linkDepth--;
+        current += two;
+        i++;
+        continue;
+      }
+      if (two === '||' && templateDepth === 0 && linkDepth === 0) {
+        cells.push(cleanCellContent(current));
+        current = '';
+        i++;
+        continue;
+      }
+      current += line[i];
+    }
+    cells.push(cleanCellContent(current));
+  }
+  return cells;
+}
+
