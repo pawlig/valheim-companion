@@ -767,9 +767,10 @@
    * @param {Array<string>} [notes]
    * @param {string|null} [sublabel]
    * @param {object} data
+   * @param {{min?: number, max?: number, hits?: number|null}} [hitInfo]
    * @returns {HTMLElement}
    */
-  function createWeaponRowBtn(weaponId, score, notes, sublabel, data) {
+  function createWeaponRowBtn(weaponId, score, notes, sublabel, data, hitInfo) {
     const weapon = data.weapons[weaponId];
     const btn = el('button', 'weapon-btn');
     btn.type = 'button';
@@ -793,7 +794,16 @@
     }
 
     if (score !== null && score !== undefined) {
-      right.appendChild(el('span', 'weapon-score', String(score)));
+      const scoreBox = el('div', 'weapon-score-box');
+      const scoreEl = el('span', 'weapon-score', String(score));
+      if (hitInfo && hitInfo.min !== undefined && hitInfo.max !== undefined) {
+        scoreEl.title = hitInfo.min + '–' + hitInfo.max + ' per hit';
+      }
+      scoreBox.appendChild(scoreEl);
+      if (hitInfo && hitInfo.hits !== undefined && hitInfo.hits !== null) {
+        scoreBox.appendChild(el('span', 'weapon-hits', '≈ ' + hitInfo.hits + ' hits'));
+      }
+      right.appendChild(scoreBox);
     }
     btn.appendChild(right);
 
@@ -932,6 +942,125 @@
     attacksSection.appendChild(attacksList);
     card.appendChild(attacksSection);
 
+    // Recommendations (VC-5): computed live in the browser from the shared
+    // ranking core, so they follow the "Your character" panel settings.
+    const weaponsArray = Object.values(data.weapons);
+    let recBox = null;
+
+    const hitInfoFor = (weapon, ammo) => {
+      if (!weapon || !window.VCRank || !playerState) return null;
+      const hit = window.VCRank.perHit(weapon, ammo || null, creature, playerState);
+      const hp = window.VCRank.creatureHp(creature, starsList[currentStarIndex].star, biome.id, playerState);
+      const hits = hit.avg > 0 && hp > 0 ? Math.ceil(hp / hit.avg) : null;
+      return { min: Math.round(hit.min), max: Math.round(hit.max), hits };
+    };
+
+    const renderRec = () => {
+      if (!recBox || !window.VCRank || !playerState) return;
+      const rec = window.VCRank.recommend(creature, biome, weaponsArray, playerState);
+      recBox.textContent = '';
+
+      const isRangedOnly = creature.kind === 'passive' || creature.kind === 'fish';
+
+      // Tip row
+      if (rec.tip) {
+        recBox.appendChild(el('div', 'rec-tip', rec.tip));
+      }
+
+      const recGroups = el('div', 'rec-groups');
+      const bowWeapon = rec.bow ? data.weapons[rec.bow.weapon] : null;
+      const xbowWeapon = rec.crossbow ? data.weapons[rec.crossbow.weapon] : null;
+
+      // 1. Melee (up to 3 rows, only if not ranged only)
+      if (!isRangedOnly && rec.melee && rec.melee.length > 0) {
+        const meleeGroup = el('div', 'rec-group');
+        meleeGroup.appendChild(el('span', 'rec-group-title', 'Melee'));
+        rec.melee.slice(0, 3).forEach(m => {
+          const w = data.weapons[m.weapon];
+          meleeGroup.appendChild(createWeaponRowBtn(m.weapon, m.score, filterWeaponNotes(m.notes, creature), null, data, hitInfoFor(w, null)));
+        });
+        recGroups.appendChild(meleeGroup);
+      }
+
+      // 2. Bow + arrows
+      if (rec.bow || (rec.arrows && rec.arrows.length > 0)) {
+        const bowGroup = el('div', 'rec-group');
+        const bowName = bowWeapon ? bowWeapon.name : 'Bow';
+        bowGroup.appendChild(el('span', 'rec-group-title', 'Bow + Arrows (' + bowName + ')'));
+
+        if (rec.arrows && rec.arrows.length > 0) {
+          rec.arrows.forEach(arr => {
+            const a = data.weapons[arr.weapon];
+            bowGroup.appendChild(createWeaponRowBtn(arr.weapon, arr.score, filterWeaponNotes(arr.notes, creature), null, data, hitInfoFor(bowWeapon, a)));
+          });
+        } else if (rec.bow) {
+          bowGroup.appendChild(createWeaponRowBtn(rec.bow.weapon, rec.bow.score, filterWeaponNotes(rec.bow.notes, creature), null, data, hitInfoFor(bowWeapon, null)));
+        }
+        recGroups.appendChild(bowGroup);
+      }
+
+      // 3. Crossbow + bolts
+      if (rec.crossbow || (rec.bolts && rec.bolts.length > 0)) {
+        const xbowGroup = el('div', 'rec-group');
+        const xbowName = xbowWeapon ? xbowWeapon.name : 'Crossbow';
+        xbowGroup.appendChild(el('span', 'rec-group-title', 'Crossbow + Bolts (' + xbowName + ')'));
+
+        if (rec.bolts && rec.bolts.length > 0) {
+          rec.bolts.forEach(bolt => {
+            const b = data.weapons[bolt.weapon];
+            xbowGroup.appendChild(createWeaponRowBtn(bolt.weapon, bolt.score, filterWeaponNotes(bolt.notes, creature), null, data, hitInfoFor(xbowWeapon, b)));
+          });
+        } else if (rec.crossbow) {
+          xbowGroup.appendChild(createWeaponRowBtn(rec.crossbow.weapon, rec.crossbow.score, filterWeaponNotes(rec.crossbow.notes, creature), null, data, hitInfoFor(xbowWeapon, null)));
+        }
+        recGroups.appendChild(xbowGroup);
+      }
+
+      // 4. Magic (only if not ranged only)
+      if (!isRangedOnly && rec.magic) {
+        const magicGroup = el('div', 'rec-group');
+        magicGroup.appendChild(el('span', 'rec-group-title', 'Magic'));
+        const w = data.weapons[rec.magic.weapon];
+        magicGroup.appendChild(createWeaponRowBtn(rec.magic.weapon, rec.magic.score, filterWeaponNotes(rec.magic.notes, creature), null, data, hitInfoFor(w, null)));
+        recGroups.appendChild(magicGroup);
+      }
+
+      // 5. Bomb (only if not ranged only)
+      if (!isRangedOnly && rec.bomb) {
+        const bombGroup = el('div', 'rec-group');
+        bombGroup.appendChild(el('span', 'rec-group-title', 'Bomb'));
+        const w = data.weapons[rec.bomb.weapon];
+        bombGroup.appendChild(createWeaponRowBtn(rec.bomb.weapon, rec.bomb.score, filterWeaponNotes(rec.bomb.notes, creature), null, data, hitInfoFor(w, null)));
+        recGroups.appendChild(bombGroup);
+      }
+
+      // 6. Avoid
+      if (rec.avoid && rec.avoid.length > 0) {
+        const filteredAvoid = rec.avoid.filter(av => {
+          if ((av.type === 'chop' || av.type === 'pickaxe') && av.mult <= 0) return false;
+          if (av.type === 'spirit' && av.mult === 0) {
+            return creature.modifiers && creature.modifiers.spirit !== undefined;
+          }
+          return true;
+        });
+        if (filteredAvoid.length > 0) {
+          const avoidRow = el('div', 'rec-avoid-row');
+          avoidRow.appendChild(el('span', 'rec-avoid-label', 'Avoid:'));
+          const avoidChips = el('div', 'modifiers-chips');
+          filteredAvoid.forEach(av => {
+            const chip = el('span', 'mod-chip ' + getModClass(av.mult), capitalize(av.type) + ' (×' + av.mult + ')');
+            avoidChips.appendChild(chip);
+          });
+          avoidRow.appendChild(avoidChips);
+          recGroups.appendChild(avoidRow);
+        }
+      }
+
+      if (recGroups.children.length > 0) {
+        recBox.appendChild(recGroups);
+      }
+    };
+
     // Helper to update star-dependent views (image, HP, attacks)
     const updateStarView = () => {
       const starObj = starsList[currentStarIndex];
@@ -986,13 +1115,16 @@
       } else {
         attacksList.appendChild(el('div', 'attack-raw', 'No attacks'));
       }
+
+      // Hits-to-kill depends on the selected star level
+      renderRec();
     };
     updateStarView();
 
     // Weaknesses & Resistances
-    const recKey = biome.id + ':' + creature.id;
-    const rec = data.recommendations && data.recommendations[recKey];
-    const modifiers = (rec && rec.modifiers) || (creature.modifiers) || {};
+    const modifiers = window.VCRank
+      ? window.VCRank.effectiveModifiers(creature)
+      : (creature.modifiers || {});
 
     const nonNeutralMods = Object.entries(modifiers).filter(([type, val]) => {
       const num = parseModTier(val, data.modTiers);
@@ -1043,102 +1175,12 @@
       card.appendChild(modSection);
     }
 
-    // Best Weapons Section
-    if (rec) {
-      const recBox = el('div', 'recommendations-box');
-      const isRangedOnly = creature.kind === 'passive' || creature.kind === 'fish';
-
-      // Tip row
-      if (rec.tip) {
-        recBox.appendChild(el('div', 'rec-tip', rec.tip));
-      }
-
-      const recGroups = el('div', 'rec-groups');
-
-      // 1. Melee (up to 3 rows, only if not ranged only)
-      if (!isRangedOnly && rec.melee && rec.melee.length > 0) {
-        const meleeGroup = el('div', 'rec-group');
-        meleeGroup.appendChild(el('span', 'rec-group-title', 'Melee'));
-        rec.melee.slice(0, 3).forEach(m => {
-          meleeGroup.appendChild(createWeaponRowBtn(m.weapon, m.score, filterWeaponNotes(m.notes, creature), null, data));
-        });
-        recGroups.appendChild(meleeGroup);
-      }
-
-      // 2. Bow + arrows
-      if (rec.bow || (rec.arrows && rec.arrows.length > 0)) {
-        const bowGroup = el('div', 'rec-group');
-        const bowWeapon = rec.bow ? data.weapons[rec.bow.weapon] : null;
-        const bowName = bowWeapon ? bowWeapon.name : 'Bow';
-        bowGroup.appendChild(el('span', 'rec-group-title', 'Bow + Arrows (' + bowName + ')'));
-
-        if (rec.arrows && rec.arrows.length > 0) {
-          rec.arrows.forEach(arr => {
-            bowGroup.appendChild(createWeaponRowBtn(arr.weapon, arr.score, filterWeaponNotes(arr.notes, creature), null, data));
-          });
-        } else if (rec.bow) {
-          bowGroup.appendChild(createWeaponRowBtn(rec.bow.weapon, rec.bow.score, filterWeaponNotes(rec.bow.notes, creature), null, data));
-        }
-        recGroups.appendChild(bowGroup);
-      }
-
-      // 3. Crossbow + bolts
-      if (rec.crossbow || (rec.bolts && rec.bolts.length > 0)) {
-        const xbowGroup = el('div', 'rec-group');
-        const xbowWeapon = rec.crossbow ? data.weapons[rec.crossbow.weapon] : null;
-        const xbowName = xbowWeapon ? xbowWeapon.name : 'Crossbow';
-        xbowGroup.appendChild(el('span', 'rec-group-title', 'Crossbow + Bolts (' + xbowName + ')'));
-
-        if (rec.bolts && rec.bolts.length > 0) {
-          rec.bolts.forEach(bolt => {
-            xbowGroup.appendChild(createWeaponRowBtn(bolt.weapon, bolt.score, filterWeaponNotes(bolt.notes, creature), null, data));
-          });
-        } else if (rec.crossbow) {
-          xbowGroup.appendChild(createWeaponRowBtn(rec.crossbow.weapon, rec.crossbow.score, filterWeaponNotes(rec.crossbow.notes, creature), null, data));
-        }
-        recGroups.appendChild(xbowGroup);
-      }
-
-      // 4. Magic (only if not ranged only)
-      if (!isRangedOnly && rec.magic) {
-        const magicGroup = el('div', 'rec-group');
-        magicGroup.appendChild(el('span', 'rec-group-title', 'Magic'));
-        magicGroup.appendChild(createWeaponRowBtn(rec.magic.weapon, rec.magic.score, filterWeaponNotes(rec.magic.notes, creature), null, data));
-        recGroups.appendChild(magicGroup);
-      }
-
-      // 5. Bomb (only if not ranged only)
-      if (!isRangedOnly && rec.bomb) {
-        const bombGroup = el('div', 'rec-group');
-        bombGroup.appendChild(el('span', 'rec-group-title', 'Bomb'));
-        bombGroup.appendChild(createWeaponRowBtn(rec.bomb.weapon, rec.bomb.score, filterWeaponNotes(rec.bomb.notes, creature), null, data));
-        recGroups.appendChild(bombGroup);
-      }
-
-      // 6. Avoid
-      if (rec.avoid && rec.avoid.length > 0) {
-        const filteredAvoid = rec.avoid.filter(av => {
-          if ((av.type === 'chop' || av.type === 'pickaxe') && av.mult <= 0) return false;
-          if (av.type === 'spirit' && av.mult === 0) {
-            return creature.modifiers && creature.modifiers.spirit !== undefined;
-          }
-          return true;
-        });
-        if (filteredAvoid.length > 0) {
-          const avoidRow = el('div', 'rec-avoid-row');
-          avoidRow.appendChild(el('span', 'rec-avoid-label', 'Avoid:'));
-          const avoidChips = el('div', 'modifiers-chips');
-          filteredAvoid.forEach(av => {
-            const chip = el('span', 'mod-chip ' + getModClass(av.mult), capitalize(av.type) + ' (×' + av.mult + ')');
-            avoidChips.appendChild(chip);
-          });
-          avoidRow.appendChild(avoidChips);
-          recGroups.appendChild(avoidRow);
-        }
-      }
-
-      if (recGroups.children.length > 0 || rec.tip) {
-        recBox.appendChild(recGroups);
+    // Best Weapons Section (VC-5: live recommendations, re-rendered when
+    // character settings or the selected star level change)
+    if (window.VCRank && playerState) {
+      recBox = el('div', 'recommendations-box');
+      renderRec();
+      if (recBox.children.length > 0) {
         card.appendChild(recBox);
       }
     }
@@ -1263,6 +1305,12 @@
     details.appendChild(detailsContent);
     card.appendChild(details);
 
+    // Re-render recommendations when the player character settings change
+    // (keeps expanded details and the selected star level intact)
+    card.refreshForPlayer = () => {
+      renderRec();
+    };
+
     return card;
   }
 
@@ -1361,17 +1409,22 @@
     const headRow = el('tr');
     headRow.appendChild(el('th', null, 'Weapon / Ammo'));
     headRow.appendChild(el('th', null, 'Max Damage'));
+    const yourAvgTh = el('th', null, 'Your avg');
+    yourAvgTh.title = 'Average per-hit damage with your skills, difficulty and upgrade level (no creature modifiers)';
+    headRow.appendChild(yourAvgTh);
     headRow.appendChild(el('th', null, 'Stamina'));
     headRow.appendChild(el('th', null, 'Materials'));
     thead.appendChild(headRow);
     table.appendChild(thead);
 
     const tbody = el('tbody');
+    const yourAvgCells = []; // { cell, weapon } pairs for live updates
+
     sortedCategories.forEach(cat => {
       // Category group header row
       const catRow = el('tr', 'weapon-category-header');
       const catTd = el('td', null, capitalize(cat) + ' (' + categoriesMap[cat].length + ')');
-      catTd.colSpan = 4;
+      catTd.colSpan = 5;
       catRow.appendChild(catTd);
       tbody.appendChild(catRow);
 
@@ -1404,6 +1457,11 @@
         }
         row.appendChild(dmgTd);
 
+        // Your avg (live, no creature modifiers)
+        const avgTd = el('td', 'weapon-your-avg', '—');
+        yourAvgCells.push({ cell: avgTd, weapon });
+        row.appendChild(avgTd);
+
         // Stamina
         const staminaTd = el('td', null, weapon.stamina !== null && weapon.stamina !== undefined ? String(weapon.stamina) : '—');
         row.appendChild(staminaTd);
@@ -1424,6 +1482,23 @@
     table.appendChild(tbody);
     tableWrapper.appendChild(table);
     section.appendChild(tableWrapper);
+
+    // "Your avg" column: average per-hit damage without creature modifiers,
+    // with the player's skills, difficulty and upgrade level. Situational
+    // multipliers (sneak, stagger) are excluded because they are not typical hits.
+    const updateYourAvg = () => {
+      if (!window.VCRank || !playerState) return;
+      const basePlayer = { ...playerState, sneak: false, staggered: false };
+      for (const { cell, weapon } of yourAvgCells) {
+        const hit = window.VCRank.perHit(weapon, null, null, basePlayer);
+        cell.textContent = String(Math.round(hit.avg));
+        cell.title = hit.min !== hit.max
+          ? Math.round(hit.min) + '–' + Math.round(hit.max) + ' per hit'
+          : String(Math.round(hit.avg));
+      }
+    };
+    section.refreshForPlayer = updateYourAvg;
+    updateYourAvg();
 
     return section;
   }
@@ -1663,7 +1738,7 @@
     body.appendChild(modGroup);
 
     // Note
-    const note = el('p', 'legend-note', 'Scores = per-hit damage at max upgrade quality vs. this creature; fire/poison DoT counted at face value.');
+    const note = el('p', 'legend-note', 'Damage = average per hit with your skills (primary attack). Combo finisher ×2, secondary attacks, Dvergr buff and DoT ticking are not included.');
     body.appendChild(note);
 
     details.appendChild(body);

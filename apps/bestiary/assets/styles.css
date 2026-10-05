@@ -1033,6 +1033,28 @@ body {
   color: var(--accent-gold);
 }
 
+/* VC-5: score column with hits-to-kill line under it */
+.weapon-score-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+}
+
+.weapon-hits {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.weapon-your-avg {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--accent-gold);
+  white-space: nowrap;
+}
+
 .rec-notes {
   display: flex;
   gap: 4px;
