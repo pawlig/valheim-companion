@@ -130,6 +130,22 @@
     }
   }
 
+  function getStoredArmoryAll() {
+    try {
+      return localStorage.getItem('vc.armoryAll') === 'true';
+    } catch {
+      return false;
+    }
+  }
+
+  function setStoredArmoryAll(val) {
+    try {
+      localStorage.setItem('vc.armoryAll', String(val));
+    } catch {
+      // LocalStorage unavailable, ignore
+    }
+  }
+
   // ---------------------------------------------------------------------------
   // Player character settings (VC-5)
   // ---------------------------------------------------------------------------
@@ -254,6 +270,7 @@
   const playerFirstVisit = loadedPlayerState ? loadedPlayerState.firstVisit : false;
 
   let cardRefreshTimer = null;
+  let armoryController = null;
 
   /**
    * Debounced refresh of everything already rendered that depends on the
@@ -280,6 +297,9 @@
         sectionEl.refreshForPlayer();
       }
     });
+    if (armoryController && typeof armoryController.refresh === 'function') {
+      armoryController.refresh();
+    }
   }
 
   /**

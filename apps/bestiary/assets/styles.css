@@ -1573,3 +1573,263 @@ body {
   }
 }
 
+/* ==========================================================================
+   Armory Section (VC-6)
+   ========================================================================== */
+
+.armory-section {
+  margin-top: 36px;
+  margin-bottom: 36px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+}
+
+.armory-header {
+  margin-bottom: 16px;
+}
+
+.armory-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  margin: 0 0 4px 0;
+  letter-spacing: 0.02em;
+}
+
+.armory-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin: 0;
+}
+
+.armory-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.armory-controls-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.armory-search-box {
+  flex: 1 1 200px;
+  max-width: 320px;
+}
+
+.armory-search-box input {
+  width: 100%;
+  padding: 7px 12px;
+  border-radius: var(--radius-sm);
+  background: #11151b;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  font-size: 0.85rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.armory-search-box input:focus {
+  border-color: var(--accent-gold);
+}
+
+.armory-select {
+  padding: 7px 12px;
+  border-radius: var(--radius-sm);
+  background: #11151b;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  font-size: 0.85rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.armory-select:focus {
+  border-color: var(--accent-gold);
+}
+
+.armory-toggle-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  cursor: pointer;
+  user-select: none;
+  margin-left: auto;
+}
+
+.armory-toggle-label input {
+  cursor: pointer;
+  accent-color: var(--accent-gold);
+}
+
+.armory-damage-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.armory-damage-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-right: 4px;
+}
+
+.armory-chip-btn {
+  background: #191f27;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 3px 8px;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.armory-chip-btn:hover {
+  border-color: var(--accent-gold);
+  color: var(--text-main);
+}
+
+.armory-chip-btn.active {
+  border-color: var(--accent-gold);
+  background-color: rgba(217, 164, 65, 0.2);
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+.armory-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background: #14181f;
+}
+
+.armory-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  min-width: 860px;
+}
+
+.armory-table th {
+  text-align: left;
+  padding: 8px 10px;
+  background-color: #191f27;
+  color: var(--text-dim);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.armory-table th.sortable {
+  cursor: pointer;
+}
+
+.armory-table th.sortable:hover {
+  color: var(--accent-gold);
+}
+
+.armory-sort-indicator {
+  font-size: 0.7rem;
+  color: var(--accent-gold);
+  margin-left: 3px;
+}
+
+.armory-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  vertical-align: middle;
+}
+
+.armory-table tr.armory-row {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.armory-table tr.armory-row:hover {
+  background-color: rgba(217, 164, 65, 0.08);
+}
+
+/* Sticky Name column */
+.armory-col-name {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background-color: #14181f;
+  font-weight: 600;
+  color: var(--text-main);
+  white-space: nowrap;
+}
+
+.armory-table th.armory-col-name {
+  background-color: #191f27;
+  z-index: 3;
+}
+
+.armory-table tr.armory-row:hover .armory-col-name {
+  background-color: #1c212a;
+}
+
+.armory-col-icon {
+  width: 36px;
+  padding: 4px 6px;
+  text-align: center;
+}
+
+.armory-weapon-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  background-color: #0c0e12;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.armory-locked-row td {
+  background-color: rgba(0, 0, 0, 0.28);
+  color: var(--text-muted);
+  font-style: italic;
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.armory-empty-row td {
+  text-align: center;
+  padding: 24px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.armory-backstab-default {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  margin-left: 3px;
+}
+
+@media (max-width: 600px) {
+  .armory-section {
+    padding: 14px 12px;
+  }
+  .armory-toggle-label {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+
