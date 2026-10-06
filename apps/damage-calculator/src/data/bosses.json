@@ -8,7 +8,9 @@
     "image": "/items/eikthyr.png",
     "health": 500,
     "biome": "meadows",
-    "resistances": {}
+    "resistances": {
+      "spirit": "neutral"
+    }
   },
   {
     "slug": "the-elder",
@@ -54,6 +56,10 @@
     "biome": "mountain",
     "resistances": {
       "fire": "weak",
+      "blunt": "neutral",
+      "slash": "neutral",
+      "pierce": "neutral",
+      "poison": "neutral",
       "frost": "immune",
       "spirit": "immune"
     }

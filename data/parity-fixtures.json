@@ -2449,6 +2449,414 @@
   },
   {
     "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 30,
+    "openingPerHit": 30,
+    "cycleSeconds": 3.44,
+    "dps": 34.883720930232556,
+    "timeToKill": 63.06666666666667
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 30,
+    "openingPerHit": 90,
+    "cycleSeconds": 3.44,
+    "dps": 52.32558139534884,
+    "timeToKill": 42.044444444444444
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 90,
+    "openingPerHit": 90,
+    "cycleSeconds": 2.16,
+    "dps": 41.666666666666664,
+    "timeToKill": 52.800000000000004
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 90,
+    "openingPerHit": 270,
+    "cycleSeconds": 2.16,
+    "dps": 124.99999999999999,
+    "timeToKill": 17.6
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 33.6,
+    "openingPerHit": 33.6,
+    "cycleSeconds": 3.44,
+    "dps": 39.06976744186047,
+    "timeToKill": 56.3095238095238
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 33.6,
+    "openingPerHit": 100.80000000000001,
+    "cycleSeconds": 3.44,
+    "dps": 58.6046511627907,
+    "timeToKill": 37.53968253968254
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 100.80000000000001,
+    "openingPerHit": 100.80000000000001,
+    "cycleSeconds": 2.16,
+    "dps": 46.66666666666667,
+    "timeToKill": 47.14285714285714
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 100.80000000000001,
+    "openingPerHit": 302.40000000000003,
+    "cycleSeconds": 2.16,
+    "dps": 140,
+    "timeToKill": 15.714285714285714
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 52.50000000000001,
+    "openingPerHit": 52.50000000000001,
+    "cycleSeconds": 3.44,
+    "dps": 61.04651162790699,
+    "timeToKill": 36.03809523809523
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 52.50000000000001,
+    "openingPerHit": 157.50000000000003,
+    "cycleSeconds": 3.44,
+    "dps": 91.56976744186048,
+    "timeToKill": 24.02539682539682
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 157.50000000000003,
+    "openingPerHit": 157.50000000000003,
+    "cycleSeconds": 2.16,
+    "dps": 72.91666666666667,
+    "timeToKill": 30.17142857142857
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 157.50000000000003,
+    "openingPerHit": 472.5000000000001,
+    "cycleSeconds": 2.16,
+    "dps": 218.75000000000003,
+    "timeToKill": 10.057142857142855
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 58.800000000000004,
+    "openingPerHit": 58.800000000000004,
+    "cycleSeconds": 3.44,
+    "dps": 68.37209302325581,
+    "timeToKill": 32.17687074829932
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 58.800000000000004,
+    "openingPerHit": 176.4,
+    "cycleSeconds": 3.44,
+    "dps": 102.55813953488372,
+    "timeToKill": 21.45124716553288
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 176.4,
+    "openingPerHit": 176.4,
+    "cycleSeconds": 2.16,
+    "dps": 81.66666666666666,
+    "timeToKill": 26.938775510204085
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 176.4,
+    "openingPerHit": 529.2,
+    "cycleSeconds": 2.16,
+    "dps": 245,
+    "timeToKill": 8.979591836734693
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 69.375,
+    "openingPerHit": 69.375,
+    "cycleSeconds": 3.44,
+    "dps": 80.6686046511628,
+    "timeToKill": 27.27207207207207
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 69.375,
+    "openingPerHit": 208.125,
+    "cycleSeconds": 3.44,
+    "dps": 121.00290697674419,
+    "timeToKill": 18.18138138138138
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 208.125,
+    "openingPerHit": 208.125,
+    "cycleSeconds": 2.16,
+    "dps": 96.35416666666666,
+    "timeToKill": 22.832432432432434
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 208.125,
+    "openingPerHit": 624.375,
+    "cycleSeconds": 2.16,
+    "dps": 289.0625,
+    "timeToKill": 7.610810810810811
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 77.7,
+    "openingPerHit": 77.7,
+    "cycleSeconds": 3.44,
+    "dps": 90.34883720930233,
+    "timeToKill": 24.350064350064347
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 77.7,
+    "openingPerHit": 233.10000000000002,
+    "cycleSeconds": 3.44,
+    "dps": 135.5232558139535,
+    "timeToKill": 16.23337623337623
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 233.10000000000002,
+    "openingPerHit": 233.10000000000002,
+    "cycleSeconds": 2.16,
+    "dps": 107.91666666666667,
+    "timeToKill": 20.386100386100384
+  },
+  {
+    "inputs": {
+      "weapon": "krom",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 233.10000000000002,
+    "openingPerHit": 699.3000000000001,
+    "cycleSeconds": 2.16,
+    "dps": 323.75,
+    "timeToKill": 6.795366795366795
+  },
+  {
+    "inputs": {
       "weapon": "mistwalker",
       "ammo": null,
       "target": "greydwarf",
@@ -4897,6 +5305,414 @@
   },
   {
     "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 23,
+    "openingPerHit": 23,
+    "cycleSeconds": 2.46,
+    "dps": 37.39837398373984,
+    "timeToKill": 58.82608695652174
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 23,
+    "openingPerHit": 69,
+    "cycleSeconds": 2.46,
+    "dps": 56.09756097560976,
+    "timeToKill": 39.21739130434782
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 69,
+    "openingPerHit": 69,
+    "cycleSeconds": 1.84,
+    "dps": 37.5,
+    "timeToKill": 58.666666666666664
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 69,
+    "openingPerHit": 207,
+    "cycleSeconds": 1.84,
+    "dps": 112.5,
+    "timeToKill": 19.555555555555557
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 26.6,
+    "openingPerHit": 26.6,
+    "cycleSeconds": 2.46,
+    "dps": 43.25203252032521,
+    "timeToKill": 50.86466165413533
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 26.600000000000005,
+    "openingPerHit": 79.80000000000001,
+    "cycleSeconds": 2.46,
+    "dps": 64.87804878048782,
+    "timeToKill": 33.90977443609022
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 79.80000000000001,
+    "openingPerHit": 79.80000000000001,
+    "cycleSeconds": 1.84,
+    "dps": 43.36956521739131,
+    "timeToKill": 50.726817042606505
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 79.8,
+    "openingPerHit": 239.4,
+    "cycleSeconds": 1.84,
+    "dps": 130.1086956521739,
+    "timeToKill": 16.908939014202172
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 40.25000000000001,
+    "openingPerHit": 40.25000000000001,
+    "cycleSeconds": 2.46,
+    "dps": 65.44715447154472,
+    "timeToKill": 33.61490683229813
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 40.25000000000001,
+    "openingPerHit": 120.75000000000003,
+    "cycleSeconds": 2.46,
+    "dps": 98.1707317073171,
+    "timeToKill": 22.40993788819875
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 120.75000000000003,
+    "openingPerHit": 120.75000000000003,
+    "cycleSeconds": 1.84,
+    "dps": 65.62500000000001,
+    "timeToKill": 33.52380952380952
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 120.75000000000004,
+    "openingPerHit": 362.2500000000001,
+    "cycleSeconds": 1.84,
+    "dps": 196.87500000000006,
+    "timeToKill": 11.174603174603172
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 46.550000000000004,
+    "openingPerHit": 46.550000000000004,
+    "cycleSeconds": 2.46,
+    "dps": 75.69105691056912,
+    "timeToKill": 29.06552094522019
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 46.55000000000001,
+    "openingPerHit": 139.65000000000003,
+    "cycleSeconds": 2.46,
+    "dps": 113.53658536585368,
+    "timeToKill": 19.377013963480124
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 139.65000000000003,
+    "openingPerHit": 139.65000000000003,
+    "cycleSeconds": 1.84,
+    "dps": 75.8967391304348,
+    "timeToKill": 28.986752595775148
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 139.65,
+    "openingPerHit": 418.95000000000005,
+    "cycleSeconds": 1.84,
+    "dps": 227.69021739130437,
+    "timeToKill": 9.662250865258383
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 53.1875,
+    "openingPerHit": 53.1875,
+    "cycleSeconds": 2.46,
+    "dps": 86.48373983739837,
+    "timeToKill": 25.43830787309048
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 53.1875,
+    "openingPerHit": 159.5625,
+    "cycleSeconds": 2.46,
+    "dps": 129.72560975609755,
+    "timeToKill": 16.958871915393654
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 159.5625,
+    "openingPerHit": 159.5625,
+    "cycleSeconds": 1.84,
+    "dps": 86.71875,
+    "timeToKill": 25.36936936936937
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 159.5625,
+    "openingPerHit": 478.6875,
+    "cycleSeconds": 1.84,
+    "dps": 260.15625,
+    "timeToKill": 8.456456456456456
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 61.5125,
+    "openingPerHit": 61.5125,
+    "cycleSeconds": 2.46,
+    "dps": 100.02032520325204,
+    "timeToKill": 21.995529363950414
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 61.51250000000001,
+    "openingPerHit": 184.53750000000002,
+    "cycleSeconds": 2.46,
+    "dps": 150.03048780487808,
+    "timeToKill": 14.663686242633608
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 184.53750000000002,
+    "openingPerHit": 184.53750000000002,
+    "cycleSeconds": 1.84,
+    "dps": 100.2921195652174,
+    "timeToKill": 21.935920883289302
+  },
+  {
+    "inputs": {
+      "weapon": "mistwalker",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 184.5375,
+    "openingPerHit": 553.6125,
+    "cycleSeconds": 1.84,
+    "dps": 300.87635869565213,
+    "timeToKill": 7.311973627763103
+  },
+  {
+    "inputs": {
       "weapon": "iron-sledge",
       "ammo": null,
       "target": "greydwarf",
@@ -7342,6 +8158,414 @@
     "cycleSeconds": 1.7,
     "dps": 79.44117647058825,
     "timeToKill": 591.6327286190299
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 11,
+    "openingPerHit": 11,
+    "cycleSeconds": 1.7,
+    "dps": 6.470588235294118,
+    "timeToKill": 340
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 11,
+    "openingPerHit": 22,
+    "cycleSeconds": 1.7,
+    "dps": 12.941176470588236,
+    "timeToKill": 170
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 11,
+    "openingPerHit": 11,
+    "cycleSeconds": 1.7,
+    "dps": 6.470588235294118,
+    "timeToKill": 340
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 11,
+    "openingPerHit": 22,
+    "cycleSeconds": 1.7,
+    "dps": 12.941176470588236,
+    "timeToKill": 170
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 14.600000000000001,
+    "openingPerHit": 14.600000000000001,
+    "cycleSeconds": 1.7,
+    "dps": 8.588235294117649,
+    "timeToKill": 256.1643835616438
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 14.600000000000001,
+    "openingPerHit": 29.200000000000003,
+    "cycleSeconds": 1.7,
+    "dps": 17.176470588235297,
+    "timeToKill": 128.0821917808219
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 14.600000000000001,
+    "openingPerHit": 14.600000000000001,
+    "cycleSeconds": 1.7,
+    "dps": 8.588235294117649,
+    "timeToKill": 256.1643835616438
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 14.600000000000001,
+    "openingPerHit": 29.200000000000003,
+    "cycleSeconds": 1.7,
+    "dps": 17.176470588235297,
+    "timeToKill": 128.0821917808219
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 19.250000000000004,
+    "openingPerHit": 19.250000000000004,
+    "cycleSeconds": 1.7,
+    "dps": 11.323529411764708,
+    "timeToKill": 194.28571428571425
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 19.250000000000004,
+    "openingPerHit": 38.50000000000001,
+    "cycleSeconds": 1.7,
+    "dps": 22.647058823529417,
+    "timeToKill": 97.14285714285712
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 19.250000000000004,
+    "openingPerHit": 19.250000000000004,
+    "cycleSeconds": 1.7,
+    "dps": 11.323529411764708,
+    "timeToKill": 194.28571428571425
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 19.250000000000004,
+    "openingPerHit": 38.50000000000001,
+    "cycleSeconds": 1.7,
+    "dps": 22.647058823529417,
+    "timeToKill": 97.14285714285712
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 25.55,
+    "openingPerHit": 25.55,
+    "cycleSeconds": 1.7,
+    "dps": 15.029411764705884,
+    "timeToKill": 146.37964774951075
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 25.55,
+    "openingPerHit": 51.1,
+    "cycleSeconds": 1.7,
+    "dps": 30.058823529411768,
+    "timeToKill": 73.18982387475538
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 25.55,
+    "openingPerHit": 25.55,
+    "cycleSeconds": 1.7,
+    "dps": 15.029411764705884,
+    "timeToKill": 146.37964774951075
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 25.55,
+    "openingPerHit": 51.1,
+    "cycleSeconds": 1.7,
+    "dps": 30.058823529411768,
+    "timeToKill": 73.18982387475538
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 25.4375,
+    "openingPerHit": 25.4375,
+    "cycleSeconds": 1.7,
+    "dps": 14.963235294117647,
+    "timeToKill": 147.02702702702703
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 25.4375,
+    "openingPerHit": 50.875,
+    "cycleSeconds": 1.7,
+    "dps": 29.926470588235293,
+    "timeToKill": 73.51351351351352
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 25.4375,
+    "openingPerHit": 25.4375,
+    "cycleSeconds": 1.7,
+    "dps": 14.963235294117647,
+    "timeToKill": 147.02702702702703
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 25.4375,
+    "openingPerHit": 50.875,
+    "cycleSeconds": 1.7,
+    "dps": 29.926470588235293,
+    "timeToKill": 73.51351351351352
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 33.7625,
+    "openingPerHit": 33.7625,
+    "cycleSeconds": 1.7,
+    "dps": 19.86029411764706,
+    "timeToKill": 110.77378748611623
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 33.7625,
+    "openingPerHit": 67.525,
+    "cycleSeconds": 1.7,
+    "dps": 39.72058823529412,
+    "timeToKill": 55.38689374305812
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 33.7625,
+    "openingPerHit": 33.7625,
+    "cycleSeconds": 1.7,
+    "dps": 19.86029411764706,
+    "timeToKill": 110.77378748611623
+  },
+  {
+    "inputs": {
+      "weapon": "iron-sledge",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 33.7625,
+    "openingPerHit": 67.525,
+    "cycleSeconds": 1.7,
+    "dps": 39.72058823529412,
+    "timeToKill": 55.38689374305812
   },
   {
     "inputs": {
@@ -9793,6 +11017,414 @@
   },
   {
     "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 13,
+    "openingPerHit": 13,
+    "cycleSeconds": 2.98,
+    "dps": 17.449664429530202,
+    "timeToKill": 126.07692307692307
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 13,
+    "openingPerHit": 39,
+    "cycleSeconds": 2.98,
+    "dps": 26.174496644295303,
+    "timeToKill": 84.05128205128204
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 13,
+    "openingPerHit": 13,
+    "cycleSeconds": 1.56,
+    "dps": 8.333333333333334,
+    "timeToKill": 264
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 13,
+    "openingPerHit": 39,
+    "cycleSeconds": 1.56,
+    "dps": 25,
+    "timeToKill": 88
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 16.6,
+    "openingPerHit": 16.6,
+    "cycleSeconds": 2.98,
+    "dps": 22.281879194630875,
+    "timeToKill": 98.73493975903614
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 16.6,
+    "openingPerHit": 49.800000000000004,
+    "cycleSeconds": 2.98,
+    "dps": 33.42281879194631,
+    "timeToKill": 65.82329317269075
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 16.6,
+    "openingPerHit": 16.6,
+    "cycleSeconds": 1.56,
+    "dps": 10.641025641025642,
+    "timeToKill": 206.7469879518072
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 16.6,
+    "openingPerHit": 49.800000000000004,
+    "cycleSeconds": 1.56,
+    "dps": 31.923076923076923,
+    "timeToKill": 68.91566265060241
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 22.750000000000004,
+    "openingPerHit": 22.750000000000004,
+    "cycleSeconds": 2.98,
+    "dps": 30.536912751677857,
+    "timeToKill": 72.04395604395603
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 22.750000000000004,
+    "openingPerHit": 68.25000000000001,
+    "cycleSeconds": 2.98,
+    "dps": 45.80536912751679,
+    "timeToKill": 48.029304029304015
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 22.750000000000004,
+    "openingPerHit": 22.750000000000004,
+    "cycleSeconds": 1.56,
+    "dps": 14.583333333333336,
+    "timeToKill": 150.85714285714283
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 22.750000000000004,
+    "openingPerHit": 68.25000000000001,
+    "cycleSeconds": 1.56,
+    "dps": 43.75000000000001,
+    "timeToKill": 50.28571428571428
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 29.050000000000004,
+    "openingPerHit": 29.050000000000004,
+    "cycleSeconds": 2.98,
+    "dps": 38.99328859060403,
+    "timeToKill": 56.41996557659208
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 29.05,
+    "openingPerHit": 87.15,
+    "cycleSeconds": 2.98,
+    "dps": 58.48993288590604,
+    "timeToKill": 37.61331038439472
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 29.050000000000004,
+    "openingPerHit": 29.050000000000004,
+    "cycleSeconds": 1.56,
+    "dps": 18.621794871794872,
+    "timeToKill": 118.14113597246127
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 29.05,
+    "openingPerHit": 87.15,
+    "cycleSeconds": 1.56,
+    "dps": 55.86538461538462,
+    "timeToKill": 39.380378657487086
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 30.0625,
+    "openingPerHit": 30.0625,
+    "cycleSeconds": 2.98,
+    "dps": 40.352348993288594,
+    "timeToKill": 54.51975051975052
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 30.0625,
+    "openingPerHit": 90.1875,
+    "cycleSeconds": 2.98,
+    "dps": 60.52852348993289,
+    "timeToKill": 36.34650034650035
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 30.0625,
+    "openingPerHit": 30.0625,
+    "cycleSeconds": 1.56,
+    "dps": 19.270833333333332,
+    "timeToKill": 114.16216216216218
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 30.0625,
+    "openingPerHit": 90.1875,
+    "cycleSeconds": 1.56,
+    "dps": 57.8125,
+    "timeToKill": 38.054054054054056
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 38.3875,
+    "openingPerHit": 38.3875,
+    "cycleSeconds": 2.98,
+    "dps": 51.5268456375839,
+    "timeToKill": 42.696190166069684
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 38.3875,
+    "openingPerHit": 115.16250000000001,
+    "cycleSeconds": 2.98,
+    "dps": 77.29026845637584,
+    "timeToKill": 28.46412677737979
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 38.3875,
+    "openingPerHit": 38.3875,
+    "cycleSeconds": 1.56,
+    "dps": 24.607371794871796,
+    "timeToKill": 89.4041028980788
+  },
+  {
+    "inputs": {
+      "weapon": "iron-atgeir",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 38.3875,
+    "openingPerHit": 115.16250000000001,
+    "cycleSeconds": 1.56,
+    "dps": 73.82211538461539,
+    "timeToKill": 29.801367632692934
+  },
+  {
+    "inputs": {
       "weapon": "copper-knife",
       "ammo": null,
       "target": "greydwarf",
@@ -12238,6 +13870,414 @@
     "cycleSeconds": 1.52,
     "dps": 246.46381578947367,
     "timeToKill": 190.69736403069737
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 4.800000000000001,
+    "openingPerHit": 4.800000000000001,
+    "cycleSeconds": 1.74,
+    "dps": 11.034482758620692,
+    "timeToKill": 199.37499999999994
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 4.800000000000001,
+    "openingPerHit": 28.800000000000004,
+    "cycleSeconds": 1.74,
+    "dps": 24.827586206896555,
+    "timeToKill": 88.6111111111111
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 14.400000000000002,
+    "openingPerHit": 14.400000000000002,
+    "cycleSeconds": 1.52,
+    "dps": 9.473684210526317,
+    "timeToKill": 232.2222222222222
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 14.4,
+    "openingPerHit": 86.4,
+    "cycleSeconds": 1.52,
+    "dps": 56.8421052631579,
+    "timeToKill": 38.7037037037037
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 6,
+    "openingPerHit": 6,
+    "cycleSeconds": 1.74,
+    "dps": 13.793103448275863,
+    "timeToKill": 159.5
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 6,
+    "openingPerHit": 36,
+    "cycleSeconds": 1.74,
+    "dps": 31.03448275862069,
+    "timeToKill": 70.88888888888889
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 18,
+    "openingPerHit": 18,
+    "cycleSeconds": 1.52,
+    "dps": 11.842105263157894,
+    "timeToKill": 185.7777777777778
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 18,
+    "openingPerHit": 108,
+    "cycleSeconds": 1.52,
+    "dps": 71.05263157894737,
+    "timeToKill": 30.962962962962962
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 8.4,
+    "openingPerHit": 8.4,
+    "cycleSeconds": 1.74,
+    "dps": 19.310344827586206,
+    "timeToKill": 113.92857142857143
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 8.4,
+    "openingPerHit": 50.400000000000006,
+    "cycleSeconds": 1.74,
+    "dps": 43.44827586206897,
+    "timeToKill": 50.63492063492063
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 25.200000000000003,
+    "openingPerHit": 25.200000000000003,
+    "cycleSeconds": 1.52,
+    "dps": 16.578947368421055,
+    "timeToKill": 132.69841269841268
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 25.200000000000003,
+    "openingPerHit": 151.20000000000002,
+    "cycleSeconds": 1.52,
+    "dps": 99.47368421052633,
+    "timeToKill": 22.116402116402114
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 10.500000000000002,
+    "openingPerHit": 10.500000000000002,
+    "cycleSeconds": 1.74,
+    "dps": 24.13793103448276,
+    "timeToKill": 91.14285714285714
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 10.500000000000002,
+    "openingPerHit": 63.000000000000014,
+    "cycleSeconds": 1.74,
+    "dps": 54.31034482758622,
+    "timeToKill": 40.5079365079365
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 31.500000000000007,
+    "openingPerHit": 31.500000000000007,
+    "cycleSeconds": 1.52,
+    "dps": 20.72368421052632,
+    "timeToKill": 106.15873015873015
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 31.50000000000001,
+    "openingPerHit": 189.00000000000006,
+    "cycleSeconds": 1.52,
+    "dps": 124.34210526315793,
+    "timeToKill": 17.693121693121686
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 11.100000000000001,
+    "openingPerHit": 11.100000000000001,
+    "cycleSeconds": 1.74,
+    "dps": 25.51724137931035,
+    "timeToKill": 86.2162162162162
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 11.100000000000001,
+    "openingPerHit": 66.60000000000001,
+    "cycleSeconds": 1.74,
+    "dps": 57.41379310344828,
+    "timeToKill": 38.31831831831832
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 33.300000000000004,
+    "openingPerHit": 33.300000000000004,
+    "cycleSeconds": 1.52,
+    "dps": 21.907894736842106,
+    "timeToKill": 100.42042042042041
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 33.300000000000004,
+    "openingPerHit": 199.8,
+    "cycleSeconds": 1.52,
+    "dps": 131.44736842105263,
+    "timeToKill": 16.736736736736738
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 13.875,
+    "openingPerHit": 13.875,
+    "cycleSeconds": 1.74,
+    "dps": 31.896551724137932,
+    "timeToKill": 68.97297297297297
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 13.875,
+    "openingPerHit": 83.25,
+    "cycleSeconds": 1.74,
+    "dps": 71.76724137931035,
+    "timeToKill": 30.654654654654653
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 41.625,
+    "openingPerHit": 41.625,
+    "cycleSeconds": 1.52,
+    "dps": 27.38486842105263,
+    "timeToKill": 80.33633633633634
+  },
+  {
+    "inputs": {
+      "weapon": "copper-knife",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 41.625,
+    "openingPerHit": 249.75,
+    "cycleSeconds": 1.52,
+    "dps": 164.30921052631578,
+    "timeToKill": 13.38938938938939
   },
   {
     "inputs": {
@@ -14689,6 +16729,414 @@
   },
   {
     "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 12,
+    "openingPerHit": 12,
+    "cycleSeconds": 1.48,
+    "dps": 24.324324324324326,
+    "timeToKill": 90.44444444444444
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 12,
+    "openingPerHit": 72,
+    "cycleSeconds": 1.48,
+    "dps": 64.86486486486487,
+    "timeToKill": 33.916666666666664
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 12,
+    "openingPerHit": 12,
+    "cycleSeconds": 1.48,
+    "dps": 8.108108108108109,
+    "timeToKill": 271.3333333333333
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 12,
+    "openingPerHit": 72,
+    "cycleSeconds": 1.48,
+    "dps": 48.64864864864865,
+    "timeToKill": 45.22222222222222
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 14.4,
+    "openingPerHit": 14.4,
+    "cycleSeconds": 1.48,
+    "dps": 29.189189189189193,
+    "timeToKill": 75.37037037037037
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 14.4,
+    "openingPerHit": 86.4,
+    "cycleSeconds": 1.48,
+    "dps": 77.83783783783784,
+    "timeToKill": 28.26388888888889
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 14.4,
+    "openingPerHit": 14.4,
+    "cycleSeconds": 1.48,
+    "dps": 9.72972972972973,
+    "timeToKill": 226.11111111111111
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 14.4,
+    "openingPerHit": 86.4,
+    "cycleSeconds": 1.48,
+    "dps": 58.378378378378386,
+    "timeToKill": 37.68518518518518
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 21.000000000000004,
+    "openingPerHit": 21.000000000000004,
+    "cycleSeconds": 1.48,
+    "dps": 42.56756756756758,
+    "timeToKill": 51.68253968253967
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 21.000000000000004,
+    "openingPerHit": 126.00000000000003,
+    "cycleSeconds": 1.48,
+    "dps": 113.51351351351353,
+    "timeToKill": 19.38095238095238
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 21.000000000000004,
+    "openingPerHit": 21.000000000000004,
+    "cycleSeconds": 1.48,
+    "dps": 14.189189189189191,
+    "timeToKill": 155.04761904761904
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 21.000000000000004,
+    "openingPerHit": 126.00000000000003,
+    "cycleSeconds": 1.48,
+    "dps": 85.13513513513516,
+    "timeToKill": 25.841269841269835
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 25.200000000000003,
+    "openingPerHit": 25.200000000000003,
+    "cycleSeconds": 1.48,
+    "dps": 51.08108108108109,
+    "timeToKill": 43.06878306878306
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 25.200000000000003,
+    "openingPerHit": 151.20000000000002,
+    "cycleSeconds": 1.48,
+    "dps": 136.21621621621622,
+    "timeToKill": 16.15079365079365
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 25.200000000000003,
+    "openingPerHit": 25.200000000000003,
+    "cycleSeconds": 1.48,
+    "dps": 17.027027027027028,
+    "timeToKill": 129.2063492063492
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 25.200000000000003,
+    "openingPerHit": 151.20000000000002,
+    "cycleSeconds": 1.48,
+    "dps": 102.16216216216218,
+    "timeToKill": 21.53439153439153
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 27.75,
+    "openingPerHit": 27.75,
+    "cycleSeconds": 1.48,
+    "dps": 56.25,
+    "timeToKill": 39.111111111111114
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 27.75,
+    "openingPerHit": 166.5,
+    "cycleSeconds": 1.48,
+    "dps": 150,
+    "timeToKill": 14.666666666666666
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 27.75,
+    "openingPerHit": 27.75,
+    "cycleSeconds": 1.48,
+    "dps": 18.75,
+    "timeToKill": 117.33333333333333
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 27.75,
+    "openingPerHit": 166.5,
+    "cycleSeconds": 1.48,
+    "dps": 112.5,
+    "timeToKill": 19.555555555555557
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 33.300000000000004,
+    "openingPerHit": 33.300000000000004,
+    "cycleSeconds": 1.48,
+    "dps": 67.5,
+    "timeToKill": 32.592592592592595
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 33.300000000000004,
+    "openingPerHit": 199.8,
+    "cycleSeconds": 1.48,
+    "dps": 180.00000000000003,
+    "timeToKill": 12.22222222222222
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 33.300000000000004,
+    "openingPerHit": 33.300000000000004,
+    "cycleSeconds": 1.48,
+    "dps": 22.500000000000004,
+    "timeToKill": 97.77777777777776
+  },
+  {
+    "inputs": {
+      "weapon": "flesh-rippers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 33.300000000000004,
+    "openingPerHit": 199.8,
+    "cycleSeconds": 1.48,
+    "dps": 135,
+    "timeToKill": 16.296296296296298
+  },
+  {
+    "inputs": {
       "weapon": "huntsman-bow",
       "ammo": "fire-arrow",
       "target": "greydwarf",
@@ -17137,6 +19585,414 @@
   },
   {
     "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 23.800000000000004,
+    "openingPerHit": 23.800000000000004,
+    "cycleSeconds": 2.5,
+    "dps": 9.520000000000001,
+    "timeToKill": 231.09243697478988
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 23.8,
+    "openingPerHit": 71.4,
+    "cycleSeconds": 2.5,
+    "dps": 28.560000000000002,
+    "timeToKill": 77.03081232492997
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 23.800000000000004,
+    "openingPerHit": 23.800000000000004,
+    "cycleSeconds": 2.5,
+    "dps": 9.520000000000001,
+    "timeToKill": 231.09243697478988
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 23.8,
+    "openingPerHit": 71.4,
+    "cycleSeconds": 2.5,
+    "dps": 28.560000000000002,
+    "timeToKill": 77.03081232492997
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 25.6,
+    "openingPerHit": 25.6,
+    "cycleSeconds": 2.5,
+    "dps": 10.24,
+    "timeToKill": 214.84375
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 25.600000000000005,
+    "openingPerHit": 76.80000000000001,
+    "cycleSeconds": 2.5,
+    "dps": 30.720000000000006,
+    "timeToKill": 71.61458333333331
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 25.6,
+    "openingPerHit": 25.6,
+    "cycleSeconds": 2.5,
+    "dps": 10.24,
+    "timeToKill": 214.84375
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 25.600000000000005,
+    "openingPerHit": 76.80000000000001,
+    "cycleSeconds": 2.5,
+    "dps": 30.720000000000006,
+    "timeToKill": 71.61458333333331
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 41.650000000000006,
+    "openingPerHit": 41.650000000000006,
+    "cycleSeconds": 1.5,
+    "dps": 27.76666666666667,
+    "timeToKill": 79.23169267707082
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 41.650000000000006,
+    "openingPerHit": 124.95000000000002,
+    "cycleSeconds": 1.5,
+    "dps": 83.30000000000001,
+    "timeToKill": 26.410564225690273
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 41.650000000000006,
+    "openingPerHit": 41.650000000000006,
+    "cycleSeconds": 1.5,
+    "dps": 27.76666666666667,
+    "timeToKill": 79.23169267707082
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 41.650000000000006,
+    "openingPerHit": 124.95000000000002,
+    "cycleSeconds": 1.5,
+    "dps": 83.30000000000001,
+    "timeToKill": 26.410564225690273
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 44.800000000000004,
+    "openingPerHit": 44.800000000000004,
+    "cycleSeconds": 1.5,
+    "dps": 29.86666666666667,
+    "timeToKill": 73.66071428571428
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 44.80000000000001,
+    "openingPerHit": 134.40000000000003,
+    "cycleSeconds": 1.5,
+    "dps": 89.60000000000002,
+    "timeToKill": 24.553571428571423
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 44.800000000000004,
+    "openingPerHit": 44.800000000000004,
+    "cycleSeconds": 1.5,
+    "dps": 29.86666666666667,
+    "timeToKill": 73.66071428571428
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 44.80000000000001,
+    "openingPerHit": 134.40000000000003,
+    "cycleSeconds": 1.5,
+    "dps": 89.60000000000002,
+    "timeToKill": 24.553571428571423
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 55.03750000000001,
+    "openingPerHit": 55.03750000000001,
+    "cycleSeconds": 0.8,
+    "dps": 68.796875,
+    "timeToKill": 31.978196684079037
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 55.0375,
+    "openingPerHit": 165.1125,
+    "cycleSeconds": 0.8,
+    "dps": 206.390625,
+    "timeToKill": 10.659398894693012
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 55.03750000000001,
+    "openingPerHit": 55.03750000000001,
+    "cycleSeconds": 0.8,
+    "dps": 68.796875,
+    "timeToKill": 31.978196684079037
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 55.0375,
+    "openingPerHit": 165.1125,
+    "cycleSeconds": 0.8,
+    "dps": 206.390625,
+    "timeToKill": 10.659398894693012
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 59.2,
+    "openingPerHit": 59.2,
+    "cycleSeconds": 0.8,
+    "dps": 74,
+    "timeToKill": 29.72972972972973
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 59.20000000000001,
+    "openingPerHit": 177.60000000000002,
+    "cycleSeconds": 0.8,
+    "dps": 222.00000000000003,
+    "timeToKill": 9.909909909909908
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 59.2,
+    "openingPerHit": 59.2,
+    "cycleSeconds": 0.8,
+    "dps": 74,
+    "timeToKill": 29.72972972972973
+  },
+  {
+    "inputs": {
+      "weapon": "huntsman-bow",
+      "ammo": "fire-arrow",
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 59.20000000000001,
+    "openingPerHit": 177.60000000000002,
+    "cycleSeconds": 0.8,
+    "dps": 222.00000000000003,
+    "timeToKill": 9.909909909909908
+  },
+  {
+    "inputs": {
       "weapon": "arbalest",
       "ammo": "iron-bolt",
       "target": "greydwarf",
@@ -19582,6 +22438,414 @@
     "cycleSeconds": 3.5999999999999996,
     "dps": 96.73958333333336,
     "timeToKill": 485.84042209540206
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 48.400000000000006,
+    "openingPerHit": 48.400000000000006,
+    "cycleSeconds": 5.3500000000000005,
+    "dps": 9.046728971962617,
+    "timeToKill": 243.1818181818182
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 48.400000000000006,
+    "openingPerHit": 145.20000000000002,
+    "cycleSeconds": 5.3500000000000005,
+    "dps": 27.140186915887853,
+    "timeToKill": 81.06060606060605
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 48.400000000000006,
+    "openingPerHit": 48.400000000000006,
+    "cycleSeconds": 5.3500000000000005,
+    "dps": 9.046728971962617,
+    "timeToKill": 243.1818181818182
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 48.400000000000006,
+    "openingPerHit": 145.20000000000002,
+    "cycleSeconds": 5.3500000000000005,
+    "dps": 27.140186915887853,
+    "timeToKill": 81.06060606060605
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 50.2,
+    "openingPerHit": 50.2,
+    "cycleSeconds": 5.3500000000000005,
+    "dps": 9.383177570093457,
+    "timeToKill": 234.46215139442234
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 50.20000000000001,
+    "openingPerHit": 150.60000000000002,
+    "cycleSeconds": 5.3500000000000005,
+    "dps": 28.149532710280376,
+    "timeToKill": 78.15405046480743
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 50.2,
+    "openingPerHit": 50.2,
+    "cycleSeconds": 5.3500000000000005,
+    "dps": 9.383177570093457,
+    "timeToKill": 234.46215139442234
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 50.20000000000001,
+    "openingPerHit": 150.60000000000002,
+    "cycleSeconds": 5.3500000000000005,
+    "dps": 28.149532710280376,
+    "timeToKill": 78.15405046480743
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 84.7,
+    "openingPerHit": 84.7,
+    "cycleSeconds": 4.475,
+    "dps": 18.92737430167598,
+    "timeToKill": 116.23376623376623
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 84.7,
+    "openingPerHit": 254.10000000000002,
+    "cycleSeconds": 4.475,
+    "dps": 56.78212290502794,
+    "timeToKill": 38.74458874458874
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 84.7,
+    "openingPerHit": 84.7,
+    "cycleSeconds": 4.475,
+    "dps": 18.92737430167598,
+    "timeToKill": 116.23376623376623
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 84.7,
+    "openingPerHit": 254.10000000000002,
+    "cycleSeconds": 4.475,
+    "dps": 56.78212290502794,
+    "timeToKill": 38.74458874458874
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 87.85000000000001,
+    "openingPerHit": 87.85000000000001,
+    "cycleSeconds": 4.475,
+    "dps": 19.63128491620112,
+    "timeToKill": 112.06602162777459
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 87.85000000000001,
+    "openingPerHit": 263.55,
+    "cycleSeconds": 4.475,
+    "dps": 58.89385474860336,
+    "timeToKill": 37.355340542591534
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 87.85000000000001,
+    "openingPerHit": 87.85000000000001,
+    "cycleSeconds": 4.475,
+    "dps": 19.63128491620112,
+    "timeToKill": 112.06602162777459
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 87.85000000000001,
+    "openingPerHit": 263.55,
+    "cycleSeconds": 4.475,
+    "dps": 58.89385474860336,
+    "timeToKill": 37.355340542591534
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 111.92500000000001,
+    "openingPerHit": 111.92500000000001,
+    "cycleSeconds": 3.5999999999999996,
+    "dps": 31.090277777777786,
+    "timeToKill": 70.76167076167074
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 111.92500000000001,
+    "openingPerHit": 335.77500000000003,
+    "cycleSeconds": 3.5999999999999996,
+    "dps": 93.27083333333336,
+    "timeToKill": 23.58722358722358
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 111.92500000000001,
+    "openingPerHit": 111.92500000000001,
+    "cycleSeconds": 3.5999999999999996,
+    "dps": 31.090277777777786,
+    "timeToKill": 70.76167076167074
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 111.92500000000001,
+    "openingPerHit": 335.77500000000003,
+    "cycleSeconds": 3.5999999999999996,
+    "dps": 93.27083333333336,
+    "timeToKill": 23.58722358722358
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 116.0875,
+    "openingPerHit": 116.0875,
+    "cycleSeconds": 3.5999999999999996,
+    "dps": 32.246527777777786,
+    "timeToKill": 68.22439969850326
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 116.08750000000002,
+    "openingPerHit": 348.26250000000005,
+    "cycleSeconds": 3.5999999999999996,
+    "dps": 96.73958333333336,
+    "timeToKill": 22.741466566167755
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 116.0875,
+    "openingPerHit": 116.0875,
+    "cycleSeconds": 3.5999999999999996,
+    "dps": 32.246527777777786,
+    "timeToKill": 68.22439969850326
+  },
+  {
+    "inputs": {
+      "weapon": "arbalest",
+      "ammo": "iron-bolt",
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 116.08750000000002,
+    "openingPerHit": 348.26250000000005,
+    "cycleSeconds": 3.5999999999999996,
+    "dps": 96.73958333333336,
+    "timeToKill": 22.741466566167755
   },
   {
     "inputs": {
@@ -22033,6 +25297,414 @@
   },
   {
     "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 7,
+    "openingPerHit": 7,
+    "cycleSeconds": 2.46,
+    "dps": 11.382113821138212,
+    "timeToKill": 193.28571428571428
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 7,
+    "openingPerHit": 21,
+    "cycleSeconds": 2.46,
+    "dps": 17.073170731707318,
+    "timeToKill": 128.85714285714286
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 21,
+    "openingPerHit": 21,
+    "cycleSeconds": 1.84,
+    "dps": 11.41304347826087,
+    "timeToKill": 192.76190476190476
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 21,
+    "openingPerHit": 63,
+    "cycleSeconds": 1.84,
+    "dps": 34.23913043478261,
+    "timeToKill": 64.25396825396825
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 10.600000000000001,
+    "openingPerHit": 10.600000000000001,
+    "cycleSeconds": 2.46,
+    "dps": 17.23577235772358,
+    "timeToKill": 127.64150943396224
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 10.600000000000001,
+    "openingPerHit": 31.800000000000004,
+    "cycleSeconds": 2.46,
+    "dps": 25.85365853658537,
+    "timeToKill": 85.0943396226415
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 31.800000000000004,
+    "openingPerHit": 31.800000000000004,
+    "cycleSeconds": 1.84,
+    "dps": 17.282608695652176,
+    "timeToKill": 127.29559748427671
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 31.8,
+    "openingPerHit": 95.4,
+    "cycleSeconds": 1.84,
+    "dps": 51.84782608695652,
+    "timeToKill": 42.43186582809224
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 12.250000000000002,
+    "openingPerHit": 12.250000000000002,
+    "cycleSeconds": 2.46,
+    "dps": 19.918699186991873,
+    "timeToKill": 110.44897959183672
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 12.250000000000002,
+    "openingPerHit": 36.75000000000001,
+    "cycleSeconds": 2.46,
+    "dps": 29.878048780487813,
+    "timeToKill": 73.63265306122447
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 36.75000000000001,
+    "openingPerHit": 36.75000000000001,
+    "cycleSeconds": 1.84,
+    "dps": 19.972826086956523,
+    "timeToKill": 110.14965986394557
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 36.75000000000001,
+    "openingPerHit": 110.25000000000003,
+    "cycleSeconds": 1.84,
+    "dps": 59.91847826086958,
+    "timeToKill": 36.71655328798185
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 18.55,
+    "openingPerHit": 18.55,
+    "cycleSeconds": 2.46,
+    "dps": 30.16260162601626,
+    "timeToKill": 72.93800539083557
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 18.55,
+    "openingPerHit": 55.650000000000006,
+    "cycleSeconds": 2.46,
+    "dps": 45.243902439024396,
+    "timeToKill": 48.625336927223714
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 55.650000000000006,
+    "openingPerHit": 55.650000000000006,
+    "cycleSeconds": 1.84,
+    "dps": 30.244565217391305,
+    "timeToKill": 72.7403414195867
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 55.650000000000006,
+    "openingPerHit": 166.95000000000002,
+    "cycleSeconds": 1.84,
+    "dps": 90.73369565217392,
+    "timeToKill": 24.246780473195564
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 16.1875,
+    "openingPerHit": 16.1875,
+    "cycleSeconds": 2.46,
+    "dps": 26.321138211382113,
+    "timeToKill": 83.58301158301158
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 16.1875,
+    "openingPerHit": 48.5625,
+    "cycleSeconds": 2.46,
+    "dps": 39.48170731707317,
+    "timeToKill": 55.72200772200772
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 48.5625,
+    "openingPerHit": 48.5625,
+    "cycleSeconds": 1.84,
+    "dps": 26.392663043478258,
+    "timeToKill": 83.35649935649937
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 48.5625,
+    "openingPerHit": 145.6875,
+    "cycleSeconds": 1.84,
+    "dps": 79.17798913043478,
+    "timeToKill": 27.785499785499788
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 24.512500000000003,
+    "openingPerHit": 24.512500000000003,
+    "cycleSeconds": 2.46,
+    "dps": 39.85772357723578,
+    "timeToKill": 55.19632840387556
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 24.512500000000003,
+    "openingPerHit": 73.53750000000001,
+    "cycleSeconds": 2.46,
+    "dps": 59.78658536585367,
+    "timeToKill": 36.797552269250374
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 73.53750000000001,
+    "openingPerHit": 73.53750000000001,
+    "cycleSeconds": 1.84,
+    "dps": 39.966032608695656,
+    "timeToKill": 55.04674485806561
+  },
+  {
+    "inputs": {
+      "weapon": "bronze-sword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 73.53750000000001,
+    "openingPerHit": 220.6125,
+    "cycleSeconds": 1.84,
+    "dps": 119.89809782608695,
+    "timeToKill": 18.34891495268854
+  },
+  {
+    "inputs": {
       "weapon": "frostner",
       "ammo": null,
       "target": "greydwarf",
@@ -24478,6 +28150,414 @@
     "cycleSeconds": 1.72,
     "dps": 258.13953488372096,
     "timeToKill": 182.07207207207205
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 15,
+    "openingPerHit": 15,
+    "cycleSeconds": 2.46,
+    "dps": 24.390243902439025,
+    "timeToKill": 90.2
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 15,
+    "openingPerHit": 45,
+    "cycleSeconds": 2.46,
+    "dps": 36.58536585365854,
+    "timeToKill": 60.13333333333333
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 37.5,
+    "openingPerHit": 37.5,
+    "cycleSeconds": 1.72,
+    "dps": 21.802325581395348,
+    "timeToKill": 100.90666666666667
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 37.5,
+    "openingPerHit": 112.5,
+    "cycleSeconds": 1.72,
+    "dps": 65.40697674418605,
+    "timeToKill": 33.635555555555555
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 18.6,
+    "openingPerHit": 18.6,
+    "cycleSeconds": 2.46,
+    "dps": 30.243902439024392,
+    "timeToKill": 72.74193548387096
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 18.6,
+    "openingPerHit": 55.800000000000004,
+    "cycleSeconds": 2.46,
+    "dps": 45.36585365853659,
+    "timeToKill": 48.494623655913976
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 46.5,
+    "openingPerHit": 46.5,
+    "cycleSeconds": 1.72,
+    "dps": 27.03488372093023,
+    "timeToKill": 81.3763440860215
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 46.5,
+    "openingPerHit": 139.5,
+    "cycleSeconds": 1.72,
+    "dps": 81.1046511627907,
+    "timeToKill": 27.125448028673834
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 26.250000000000004,
+    "openingPerHit": 26.250000000000004,
+    "cycleSeconds": 2.46,
+    "dps": 42.6829268292683,
+    "timeToKill": 51.54285714285714
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 26.250000000000004,
+    "openingPerHit": 78.75000000000001,
+    "cycleSeconds": 2.46,
+    "dps": 64.02439024390245,
+    "timeToKill": 34.36190476190476
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 65.62500000000001,
+    "openingPerHit": 65.62500000000001,
+    "cycleSeconds": 1.72,
+    "dps": 38.15406976744187,
+    "timeToKill": 57.66095238095237
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 65.62500000000001,
+    "openingPerHit": 196.87500000000006,
+    "cycleSeconds": 1.72,
+    "dps": 114.46220930232562,
+    "timeToKill": 19.220317460317453
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 32.550000000000004,
+    "openingPerHit": 32.550000000000004,
+    "cycleSeconds": 2.46,
+    "dps": 52.92682926829269,
+    "timeToKill": 41.56682027649769
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 32.550000000000004,
+    "openingPerHit": 97.65,
+    "cycleSeconds": 2.46,
+    "dps": 79.39024390243902,
+    "timeToKill": 27.71121351766513
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 81.375,
+    "openingPerHit": 81.375,
+    "cycleSeconds": 1.72,
+    "dps": 47.31104651162791,
+    "timeToKill": 46.50076804915515
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 81.375,
+    "openingPerHit": 244.125,
+    "cycleSeconds": 1.72,
+    "dps": 141.93313953488374,
+    "timeToKill": 15.500256016385046
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 34.6875,
+    "openingPerHit": 34.6875,
+    "cycleSeconds": 2.46,
+    "dps": 56.40243902439025,
+    "timeToKill": 39.005405405405405
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 34.6875,
+    "openingPerHit": 104.0625,
+    "cycleSeconds": 2.46,
+    "dps": 84.60365853658537,
+    "timeToKill": 26.0036036036036
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 86.71875,
+    "openingPerHit": 86.71875,
+    "cycleSeconds": 1.72,
+    "dps": 50.41787790697674,
+    "timeToKill": 43.63531531531532
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 86.71875,
+    "openingPerHit": 260.15625,
+    "cycleSeconds": 1.72,
+    "dps": 151.25363372093022,
+    "timeToKill": 14.545105105105106
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 43.0125,
+    "openingPerHit": 43.0125,
+    "cycleSeconds": 2.46,
+    "dps": 69.9390243902439,
+    "timeToKill": 31.45597210113339
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 43.01250000000001,
+    "openingPerHit": 129.03750000000002,
+    "cycleSeconds": 2.46,
+    "dps": 104.90853658536588,
+    "timeToKill": 20.970648067422257
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 107.53125,
+    "openingPerHit": 107.53125,
+    "cycleSeconds": 1.72,
+    "dps": 62.518168604651166,
+    "timeToKill": 35.18977041557687
+  },
+  {
+    "inputs": {
+      "weapon": "frostner",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 107.53125,
+    "openingPerHit": 322.59375,
+    "cycleSeconds": 1.72,
+    "dps": 187.55450581395348,
+    "timeToKill": 11.729923471858957
   },
   {
     "inputs": {
@@ -26929,6 +31009,414 @@
   },
   {
     "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 42,
+    "openingPerHit": 42,
+    "cycleSeconds": 3.44,
+    "dps": 48.83720930232558,
+    "timeToKill": 45.047619047619044
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 42,
+    "openingPerHit": 126,
+    "cycleSeconds": 3.44,
+    "dps": 73.25581395348837,
+    "timeToKill": 30.03174603174603
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 126,
+    "openingPerHit": 126,
+    "cycleSeconds": 2.16,
+    "dps": 58.33333333333333,
+    "timeToKill": 37.714285714285715
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 126,
+    "openingPerHit": 378,
+    "cycleSeconds": 2.16,
+    "dps": 175,
+    "timeToKill": 12.571428571428571
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 48,
+    "openingPerHit": 48,
+    "cycleSeconds": 3.44,
+    "dps": 55.81395348837209,
+    "timeToKill": 39.416666666666664
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 48,
+    "openingPerHit": 144,
+    "cycleSeconds": 3.44,
+    "dps": 83.72093023255815,
+    "timeToKill": 26.277777777777775
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 144,
+    "openingPerHit": 144,
+    "cycleSeconds": 2.16,
+    "dps": 66.66666666666666,
+    "timeToKill": 33.00000000000001
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 144,
+    "openingPerHit": 432,
+    "cycleSeconds": 2.16,
+    "dps": 200,
+    "timeToKill": 11
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 73.5,
+    "openingPerHit": 73.5,
+    "cycleSeconds": 3.44,
+    "dps": 85.46511627906978,
+    "timeToKill": 25.741496598639454
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 73.5,
+    "openingPerHit": 220.5,
+    "cycleSeconds": 3.44,
+    "dps": 128.19767441860466,
+    "timeToKill": 17.160997732426303
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 220.5,
+    "openingPerHit": 220.5,
+    "cycleSeconds": 2.16,
+    "dps": 102.08333333333333,
+    "timeToKill": 21.551020408163268
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 220.5,
+    "openingPerHit": 661.5,
+    "cycleSeconds": 2.16,
+    "dps": 306.25,
+    "timeToKill": 7.183673469387755
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 84.00000000000001,
+    "openingPerHit": 84.00000000000001,
+    "cycleSeconds": 3.44,
+    "dps": 97.67441860465118,
+    "timeToKill": 22.52380952380952
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 84.00000000000001,
+    "openingPerHit": 252.00000000000006,
+    "cycleSeconds": 3.44,
+    "dps": 146.51162790697677,
+    "timeToKill": 15.015873015873014
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 252.00000000000006,
+    "openingPerHit": 252.00000000000006,
+    "cycleSeconds": 2.16,
+    "dps": 116.66666666666669,
+    "timeToKill": 18.857142857142854
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 252.00000000000009,
+    "openingPerHit": 756.0000000000002,
+    "cycleSeconds": 2.16,
+    "dps": 350.00000000000006,
+    "timeToKill": 6.285714285714285
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 97.125,
+    "openingPerHit": 97.125,
+    "cycleSeconds": 3.44,
+    "dps": 112.93604651162791,
+    "timeToKill": 19.48005148005148
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 97.125,
+    "openingPerHit": 291.375,
+    "cycleSeconds": 3.44,
+    "dps": 169.40406976744185,
+    "timeToKill": 12.986700986700987
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 291.375,
+    "openingPerHit": 291.375,
+    "cycleSeconds": 2.16,
+    "dps": 134.89583333333331,
+    "timeToKill": 16.308880308880312
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 291.375,
+    "openingPerHit": 874.125,
+    "cycleSeconds": 2.16,
+    "dps": 404.6875,
+    "timeToKill": 5.436293436293436
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 111,
+    "openingPerHit": 111,
+    "cycleSeconds": 3.44,
+    "dps": 129.06976744186048,
+    "timeToKill": 17.045045045045043
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 111,
+    "openingPerHit": 333,
+    "cycleSeconds": 3.44,
+    "dps": 193.6046511627907,
+    "timeToKill": 11.363363363363364
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 333,
+    "openingPerHit": 333,
+    "cycleSeconds": 2.16,
+    "dps": 154.16666666666666,
+    "timeToKill": 14.270270270270272
+  },
+  {
+    "inputs": {
+      "weapon": "nord-greatsword",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 333,
+    "openingPerHit": 999,
+    "cycleSeconds": 2.16,
+    "dps": 462.49999999999994,
+    "timeToKill": 4.756756756756757
+  },
+  {
+    "inputs": {
       "weapon": "staff-of-embers",
       "ammo": null,
       "target": "greydwarf",
@@ -29377,6 +33865,414 @@
   },
   {
     "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 96,
+    "openingPerHit": 96,
+    "cycleSeconds": 1.1,
+    "dps": 87.27272727272727,
+    "timeToKill": 25.208333333333336
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 96,
+    "openingPerHit": 288,
+    "cycleSeconds": 1.1,
+    "dps": 261.8181818181818,
+    "timeToKill": 8.402777777777779
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 96,
+    "openingPerHit": 96,
+    "cycleSeconds": 1.1,
+    "dps": 87.27272727272727,
+    "timeToKill": 25.208333333333336
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 96,
+    "openingPerHit": 288,
+    "cycleSeconds": 1.1,
+    "dps": 261.8181818181818,
+    "timeToKill": 8.402777777777779
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 106.80000000000001,
+    "openingPerHit": 106.80000000000001,
+    "cycleSeconds": 1.1,
+    "dps": 97.0909090909091,
+    "timeToKill": 22.659176029962545
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 106.80000000000001,
+    "openingPerHit": 320.40000000000003,
+    "cycleSeconds": 1.1,
+    "dps": 291.27272727272725,
+    "timeToKill": 7.5530586766541825
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 106.80000000000001,
+    "openingPerHit": 106.80000000000001,
+    "cycleSeconds": 1.1,
+    "dps": 97.0909090909091,
+    "timeToKill": 22.659176029962545
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 106.80000000000001,
+    "openingPerHit": 320.40000000000003,
+    "cycleSeconds": 1.1,
+    "dps": 291.27272727272725,
+    "timeToKill": 7.5530586766541825
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 168.00000000000003,
+    "openingPerHit": 168.00000000000003,
+    "cycleSeconds": 1.1,
+    "dps": 152.72727272727275,
+    "timeToKill": 14.404761904761903
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 168.00000000000003,
+    "openingPerHit": 504.0000000000001,
+    "cycleSeconds": 1.1,
+    "dps": 458.18181818181824,
+    "timeToKill": 4.8015873015873005
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 168.00000000000003,
+    "openingPerHit": 168.00000000000003,
+    "cycleSeconds": 1.1,
+    "dps": 152.72727272727275,
+    "timeToKill": 14.404761904761903
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 168.00000000000003,
+    "openingPerHit": 504.0000000000001,
+    "cycleSeconds": 1.1,
+    "dps": 458.18181818181824,
+    "timeToKill": 4.8015873015873005
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 186.9,
+    "openingPerHit": 186.9,
+    "cycleSeconds": 1.1,
+    "dps": 169.9090909090909,
+    "timeToKill": 12.948100588550027
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 186.9,
+    "openingPerHit": 560.7,
+    "cycleSeconds": 1.1,
+    "dps": 509.72727272727275,
+    "timeToKill": 4.316033529516676
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 186.9,
+    "openingPerHit": 186.9,
+    "cycleSeconds": 1.1,
+    "dps": 169.9090909090909,
+    "timeToKill": 12.948100588550027
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 186.9,
+    "openingPerHit": 560.7,
+    "cycleSeconds": 1.1,
+    "dps": 509.72727272727275,
+    "timeToKill": 4.316033529516676
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 222,
+    "openingPerHit": 222,
+    "cycleSeconds": 1.1,
+    "dps": 201.8181818181818,
+    "timeToKill": 10.9009009009009
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 222,
+    "openingPerHit": 666,
+    "cycleSeconds": 1.1,
+    "dps": 605.4545454545454,
+    "timeToKill": 3.633633633633634
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 222,
+    "openingPerHit": 222,
+    "cycleSeconds": 1.1,
+    "dps": 201.8181818181818,
+    "timeToKill": 10.9009009009009
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 222,
+    "openingPerHit": 666,
+    "cycleSeconds": 1.1,
+    "dps": 605.4545454545454,
+    "timeToKill": 3.633633633633634
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 246.97500000000002,
+    "openingPerHit": 246.97500000000002,
+    "cycleSeconds": 1.1,
+    "dps": 224.52272727272728,
+    "timeToKill": 9.798562607551371
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 246.97500000000002,
+    "openingPerHit": 740.9250000000001,
+    "cycleSeconds": 1.1,
+    "dps": 673.5681818181819,
+    "timeToKill": 3.266187535850457
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 246.97500000000002,
+    "openingPerHit": 246.97500000000002,
+    "cycleSeconds": 1.1,
+    "dps": 224.52272727272728,
+    "timeToKill": 9.798562607551371
+  },
+  {
+    "inputs": {
+      "weapon": "staff-of-embers",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 246.97500000000002,
+    "openingPerHit": 740.9250000000001,
+    "cycleSeconds": 1.1,
+    "dps": 673.5681818181819,
+    "timeToKill": 3.266187535850457
+  },
+  {
+    "inputs": {
       "weapon": "iron-pickaxe",
       "ammo": null,
       "target": "greydwarf",
@@ -31822,5 +36718,3269 @@
     "cycleSeconds": 1.4,
     "dps": 47.571428571428584,
     "timeToKill": 987.9879879879877
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 6.6000000000000005,
+    "openingPerHit": 6.6000000000000005,
+    "cycleSeconds": 1.4,
+    "dps": 4.714285714285715,
+    "timeToKill": 466.6666666666666
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 6.6000000000000005,
+    "openingPerHit": 19.8,
+    "cycleSeconds": 1.4,
+    "dps": 14.142857142857144,
+    "timeToKill": 155.55555555555554
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 6.6000000000000005,
+    "openingPerHit": 6.6000000000000005,
+    "cycleSeconds": 1.4,
+    "dps": 4.714285714285715,
+    "timeToKill": 466.6666666666666
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 6.6000000000000005,
+    "openingPerHit": 19.8,
+    "cycleSeconds": 1.4,
+    "dps": 14.142857142857144,
+    "timeToKill": 155.55555555555554
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 9.600000000000001,
+    "openingPerHit": 9.600000000000001,
+    "cycleSeconds": 1.4,
+    "dps": 6.8571428571428585,
+    "timeToKill": 320.83333333333326
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 9.600000000000001,
+    "openingPerHit": 28.800000000000004,
+    "cycleSeconds": 1.4,
+    "dps": 20.571428571428577,
+    "timeToKill": 106.94444444444441
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 9.600000000000001,
+    "openingPerHit": 9.600000000000001,
+    "cycleSeconds": 1.4,
+    "dps": 6.8571428571428585,
+    "timeToKill": 320.83333333333326
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 9.600000000000001,
+    "openingPerHit": 28.800000000000004,
+    "cycleSeconds": 1.4,
+    "dps": 20.571428571428577,
+    "timeToKill": 106.94444444444441
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 11.55,
+    "openingPerHit": 11.55,
+    "cycleSeconds": 1.4,
+    "dps": 8.250000000000002,
+    "timeToKill": 266.66666666666663
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 11.550000000000002,
+    "openingPerHit": 34.650000000000006,
+    "cycleSeconds": 1.4,
+    "dps": 24.750000000000007,
+    "timeToKill": 88.88888888888886
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 11.55,
+    "openingPerHit": 11.55,
+    "cycleSeconds": 1.4,
+    "dps": 8.250000000000002,
+    "timeToKill": 266.66666666666663
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 11.550000000000002,
+    "openingPerHit": 34.650000000000006,
+    "cycleSeconds": 1.4,
+    "dps": 24.750000000000007,
+    "timeToKill": 88.88888888888886
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 16.8,
+    "openingPerHit": 16.8,
+    "cycleSeconds": 1.4,
+    "dps": 12.000000000000002,
+    "timeToKill": 183.33333333333331
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 16.8,
+    "openingPerHit": 50.400000000000006,
+    "cycleSeconds": 1.4,
+    "dps": 36.00000000000001,
+    "timeToKill": 61.1111111111111
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 16.8,
+    "openingPerHit": 16.8,
+    "cycleSeconds": 1.4,
+    "dps": 12.000000000000002,
+    "timeToKill": 183.33333333333331
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 16.8,
+    "openingPerHit": 50.400000000000006,
+    "cycleSeconds": 1.4,
+    "dps": 36.00000000000001,
+    "timeToKill": 61.1111111111111
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 15.262500000000001,
+    "openingPerHit": 15.262500000000001,
+    "cycleSeconds": 1.4,
+    "dps": 10.901785714285715,
+    "timeToKill": 201.8018018018018
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 15.262500000000001,
+    "openingPerHit": 45.7875,
+    "cycleSeconds": 1.4,
+    "dps": 32.705357142857146,
+    "timeToKill": 67.26726726726726
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 15.262500000000001,
+    "openingPerHit": 15.262500000000001,
+    "cycleSeconds": 1.4,
+    "dps": 10.901785714285715,
+    "timeToKill": 201.8018018018018
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 15.262500000000001,
+    "openingPerHit": 45.7875,
+    "cycleSeconds": 1.4,
+    "dps": 32.705357142857146,
+    "timeToKill": 67.26726726726726
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 22.200000000000003,
+    "openingPerHit": 22.200000000000003,
+    "cycleSeconds": 1.4,
+    "dps": 15.85714285714286,
+    "timeToKill": 138.73873873873873
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 22.200000000000003,
+    "openingPerHit": 66.60000000000001,
+    "cycleSeconds": 1.4,
+    "dps": 47.571428571428584,
+    "timeToKill": 46.24624624624624
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 22.200000000000003,
+    "openingPerHit": 22.200000000000003,
+    "cycleSeconds": 1.4,
+    "dps": 15.85714285714286,
+    "timeToKill": 138.73873873873873
+  },
+  {
+    "inputs": {
+      "weapon": "iron-pickaxe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 22.200000000000003,
+    "openingPerHit": 66.60000000000001,
+    "cycleSeconds": 1.4,
+    "dps": 47.571428571428584,
+    "timeToKill": 46.24624624624624
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 24,
+    "openingPerHit": 24,
+    "cycleSeconds": 2.58,
+    "dps": 37.2093023255814,
+    "timeToKill": 1.075
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 24,
+    "openingPerHit": 72,
+    "cycleSeconds": 2.58,
+    "dps": 55.81395348837209,
+    "timeToKill": 0.7166666666666667
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 36,
+    "openingPerHit": 36,
+    "cycleSeconds": 2,
+    "dps": 18,
+    "timeToKill": 2.2222222222222223
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 36,
+    "openingPerHit": 108,
+    "cycleSeconds": 2,
+    "dps": 54,
+    "timeToKill": 0.7407407407407407
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 30,
+    "openingPerHit": 30,
+    "cycleSeconds": 2.58,
+    "dps": 46.51162790697674,
+    "timeToKill": 0.8600000000000001
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 30,
+    "openingPerHit": 90,
+    "cycleSeconds": 2.58,
+    "dps": 69.76744186046511,
+    "timeToKill": 0.5733333333333334
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 45,
+    "openingPerHit": 45,
+    "cycleSeconds": 2,
+    "dps": 22.5,
+    "timeToKill": 1.7777777777777777
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 45,
+    "openingPerHit": 135,
+    "cycleSeconds": 2,
+    "dps": 67.5,
+    "timeToKill": 0.5925925925925926
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 42.00000000000001,
+    "openingPerHit": 42.00000000000001,
+    "cycleSeconds": 2.58,
+    "dps": 65.11627906976746,
+    "timeToKill": 0.6142857142857141
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 42.00000000000001,
+    "openingPerHit": 126.00000000000003,
+    "cycleSeconds": 2.58,
+    "dps": 97.67441860465118,
+    "timeToKill": 0.40952380952380946
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 63.000000000000014,
+    "openingPerHit": 63.000000000000014,
+    "cycleSeconds": 2,
+    "dps": 31.500000000000007,
+    "timeToKill": 1.2698412698412695
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 63.00000000000002,
+    "openingPerHit": 189.00000000000006,
+    "cycleSeconds": 2,
+    "dps": 94.50000000000003,
+    "timeToKill": 0.42328042328042315
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 52.50000000000001,
+    "openingPerHit": 52.50000000000001,
+    "cycleSeconds": 2.58,
+    "dps": 81.39534883720931,
+    "timeToKill": 0.4914285714285714
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 52.50000000000001,
+    "openingPerHit": 157.50000000000003,
+    "cycleSeconds": 2.58,
+    "dps": 122.09302325581397,
+    "timeToKill": 0.3276190476190476
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 78.75000000000001,
+    "openingPerHit": 78.75000000000001,
+    "cycleSeconds": 2,
+    "dps": 39.37500000000001,
+    "timeToKill": 1.0158730158730156
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 78.75000000000001,
+    "openingPerHit": 236.25000000000006,
+    "cycleSeconds": 2,
+    "dps": 118.12500000000003,
+    "timeToKill": 0.33862433862433855
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 55.5,
+    "openingPerHit": 55.5,
+    "cycleSeconds": 2.58,
+    "dps": 86.04651162790698,
+    "timeToKill": 0.46486486486486484
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 55.5,
+    "openingPerHit": 166.5,
+    "cycleSeconds": 2.58,
+    "dps": 129.06976744186045,
+    "timeToKill": 0.30990990990990996
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 83.25,
+    "openingPerHit": 83.25,
+    "cycleSeconds": 2,
+    "dps": 41.625,
+    "timeToKill": 0.960960960960961
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 83.25,
+    "openingPerHit": 249.75,
+    "cycleSeconds": 2,
+    "dps": 124.875,
+    "timeToKill": 0.3203203203203203
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 69.375,
+    "openingPerHit": 69.375,
+    "cycleSeconds": 2.58,
+    "dps": 107.55813953488372,
+    "timeToKill": 0.37189189189189187
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 69.375,
+    "openingPerHit": 208.125,
+    "cycleSeconds": 2.58,
+    "dps": 161.3372093023256,
+    "timeToKill": 0.24792792792792792
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 104.0625,
+    "openingPerHit": 104.0625,
+    "cycleSeconds": 2,
+    "dps": 52.03125,
+    "timeToKill": 0.7687687687687688
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "greydwarf",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 104.0625,
+    "openingPerHit": 312.1875,
+    "cycleSeconds": 2,
+    "dps": 156.09375,
+    "timeToKill": 0.25625625625625625
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 24,
+    "openingPerHit": 24,
+    "cycleSeconds": 2.58,
+    "dps": 37.2093023255814,
+    "timeToKill": 16.125
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 24,
+    "openingPerHit": 72,
+    "cycleSeconds": 2.58,
+    "dps": 55.81395348837209,
+    "timeToKill": 10.75
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 36,
+    "openingPerHit": 36,
+    "cycleSeconds": 2,
+    "dps": 18,
+    "timeToKill": 33.333333333333336
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 36,
+    "openingPerHit": 108,
+    "cycleSeconds": 2,
+    "dps": 54,
+    "timeToKill": 11.11111111111111
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 30,
+    "openingPerHit": 30,
+    "cycleSeconds": 2.58,
+    "dps": 46.51162790697674,
+    "timeToKill": 12.9
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 30,
+    "openingPerHit": 90,
+    "cycleSeconds": 2.58,
+    "dps": 69.76744186046511,
+    "timeToKill": 8.6
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 45,
+    "openingPerHit": 45,
+    "cycleSeconds": 2,
+    "dps": 22.5,
+    "timeToKill": 26.666666666666668
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 45,
+    "openingPerHit": 135,
+    "cycleSeconds": 2,
+    "dps": 67.5,
+    "timeToKill": 8.88888888888889
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 42.00000000000001,
+    "openingPerHit": 42.00000000000001,
+    "cycleSeconds": 2.58,
+    "dps": 65.11627906976746,
+    "timeToKill": 9.214285714285712
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 42.00000000000001,
+    "openingPerHit": 126.00000000000003,
+    "cycleSeconds": 2.58,
+    "dps": 97.67441860465118,
+    "timeToKill": 6.1428571428571415
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 63.000000000000014,
+    "openingPerHit": 63.000000000000014,
+    "cycleSeconds": 2,
+    "dps": 31.500000000000007,
+    "timeToKill": 19.047619047619044
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 63.00000000000002,
+    "openingPerHit": 189.00000000000006,
+    "cycleSeconds": 2,
+    "dps": 94.50000000000003,
+    "timeToKill": 6.349206349206347
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 52.50000000000001,
+    "openingPerHit": 52.50000000000001,
+    "cycleSeconds": 2.58,
+    "dps": 81.39534883720931,
+    "timeToKill": 7.371428571428571
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 52.50000000000001,
+    "openingPerHit": 157.50000000000003,
+    "cycleSeconds": 2.58,
+    "dps": 122.09302325581397,
+    "timeToKill": 4.914285714285714
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 78.75000000000001,
+    "openingPerHit": 78.75000000000001,
+    "cycleSeconds": 2,
+    "dps": 39.37500000000001,
+    "timeToKill": 15.238095238095235
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 78.75000000000001,
+    "openingPerHit": 236.25000000000006,
+    "cycleSeconds": 2,
+    "dps": 118.12500000000003,
+    "timeToKill": 5.079365079365078
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 55.5,
+    "openingPerHit": 55.5,
+    "cycleSeconds": 2.58,
+    "dps": 86.04651162790698,
+    "timeToKill": 6.972972972972973
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 55.5,
+    "openingPerHit": 166.5,
+    "cycleSeconds": 2.58,
+    "dps": 129.06976744186045,
+    "timeToKill": 4.648648648648649
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 83.25,
+    "openingPerHit": 83.25,
+    "cycleSeconds": 2,
+    "dps": 41.625,
+    "timeToKill": 14.414414414414415
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 83.25,
+    "openingPerHit": 249.75,
+    "cycleSeconds": 2,
+    "dps": 124.875,
+    "timeToKill": 4.804804804804805
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 69.375,
+    "openingPerHit": 69.375,
+    "cycleSeconds": 2.58,
+    "dps": 107.55813953488372,
+    "timeToKill": 5.578378378378378
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 69.375,
+    "openingPerHit": 208.125,
+    "cycleSeconds": 2.58,
+    "dps": 161.3372093023256,
+    "timeToKill": 3.7189189189189187
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 104.0625,
+    "openingPerHit": 104.0625,
+    "cycleSeconds": 2,
+    "dps": 52.03125,
+    "timeToKill": 11.531531531531531
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "troll",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 104.0625,
+    "openingPerHit": 312.1875,
+    "cycleSeconds": 2,
+    "dps": 156.09375,
+    "timeToKill": 3.843843843843844
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 24,
+    "openingPerHit": 24,
+    "cycleSeconds": 2.58,
+    "dps": 37.2093023255814,
+    "timeToKill": 2.6875
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 24,
+    "openingPerHit": 72,
+    "cycleSeconds": 2.58,
+    "dps": 55.81395348837209,
+    "timeToKill": 1.7916666666666667
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 36,
+    "openingPerHit": 36,
+    "cycleSeconds": 2,
+    "dps": 18,
+    "timeToKill": 5.555555555555555
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 36,
+    "openingPerHit": 108,
+    "cycleSeconds": 2,
+    "dps": 54,
+    "timeToKill": 1.8518518518518519
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 30,
+    "openingPerHit": 30,
+    "cycleSeconds": 2.58,
+    "dps": 46.51162790697674,
+    "timeToKill": 2.15
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 30,
+    "openingPerHit": 90,
+    "cycleSeconds": 2.58,
+    "dps": 69.76744186046511,
+    "timeToKill": 1.4333333333333333
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 45,
+    "openingPerHit": 45,
+    "cycleSeconds": 2,
+    "dps": 22.5,
+    "timeToKill": 4.444444444444445
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 45,
+    "openingPerHit": 135,
+    "cycleSeconds": 2,
+    "dps": 67.5,
+    "timeToKill": 1.4814814814814814
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 42.00000000000001,
+    "openingPerHit": 42.00000000000001,
+    "cycleSeconds": 2.58,
+    "dps": 65.11627906976746,
+    "timeToKill": 1.5357142857142854
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 42.00000000000001,
+    "openingPerHit": 126.00000000000003,
+    "cycleSeconds": 2.58,
+    "dps": 97.67441860465118,
+    "timeToKill": 1.0238095238095237
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 63.000000000000014,
+    "openingPerHit": 63.000000000000014,
+    "cycleSeconds": 2,
+    "dps": 31.500000000000007,
+    "timeToKill": 3.174603174603174
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 63.00000000000002,
+    "openingPerHit": 189.00000000000006,
+    "cycleSeconds": 2,
+    "dps": 94.50000000000003,
+    "timeToKill": 1.058201058201058
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 52.50000000000001,
+    "openingPerHit": 52.50000000000001,
+    "cycleSeconds": 2.58,
+    "dps": 81.39534883720931,
+    "timeToKill": 1.2285714285714284
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 52.50000000000001,
+    "openingPerHit": 157.50000000000003,
+    "cycleSeconds": 2.58,
+    "dps": 122.09302325581397,
+    "timeToKill": 0.8190476190476189
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 78.75000000000001,
+    "openingPerHit": 78.75000000000001,
+    "cycleSeconds": 2,
+    "dps": 39.37500000000001,
+    "timeToKill": 2.539682539682539
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 78.75000000000001,
+    "openingPerHit": 236.25000000000006,
+    "cycleSeconds": 2,
+    "dps": 118.12500000000003,
+    "timeToKill": 0.8465608465608464
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 55.5,
+    "openingPerHit": 55.5,
+    "cycleSeconds": 2.58,
+    "dps": 86.04651162790698,
+    "timeToKill": 1.162162162162162
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 55.5,
+    "openingPerHit": 166.5,
+    "cycleSeconds": 2.58,
+    "dps": 129.06976744186045,
+    "timeToKill": 0.7747747747747749
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 83.25,
+    "openingPerHit": 83.25,
+    "cycleSeconds": 2,
+    "dps": 41.625,
+    "timeToKill": 2.4024024024024024
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 83.25,
+    "openingPerHit": 249.75,
+    "cycleSeconds": 2,
+    "dps": 124.875,
+    "timeToKill": 0.8008008008008008
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 69.375,
+    "openingPerHit": 69.375,
+    "cycleSeconds": 2.58,
+    "dps": 107.55813953488372,
+    "timeToKill": 0.9297297297297297
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 69.375,
+    "openingPerHit": 208.125,
+    "cycleSeconds": 2.58,
+    "dps": 161.3372093023256,
+    "timeToKill": 0.6198198198198198
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 104.0625,
+    "openingPerHit": 104.0625,
+    "cycleSeconds": 2,
+    "dps": 52.03125,
+    "timeToKill": 1.921921921921922
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "draugr",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 104.0625,
+    "openingPerHit": 312.1875,
+    "cycleSeconds": 2,
+    "dps": 156.09375,
+    "timeToKill": 0.6406406406406406
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 12,
+    "openingPerHit": 12,
+    "cycleSeconds": 2.58,
+    "dps": 18.6046511627907,
+    "timeToKill": 43
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 12,
+    "openingPerHit": 36,
+    "cycleSeconds": 2.58,
+    "dps": 27.906976744186046,
+    "timeToKill": 28.666666666666668
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 18,
+    "openingPerHit": 18,
+    "cycleSeconds": 2,
+    "dps": 9,
+    "timeToKill": 88.88888888888889
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 18,
+    "openingPerHit": 54,
+    "cycleSeconds": 2,
+    "dps": 27,
+    "timeToKill": 29.62962962962963
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 15,
+    "openingPerHit": 15,
+    "cycleSeconds": 2.58,
+    "dps": 23.25581395348837,
+    "timeToKill": 34.4
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 15,
+    "openingPerHit": 45,
+    "cycleSeconds": 2.58,
+    "dps": 34.883720930232556,
+    "timeToKill": 22.933333333333334
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 22.5,
+    "openingPerHit": 22.5,
+    "cycleSeconds": 2,
+    "dps": 11.25,
+    "timeToKill": 71.11111111111111
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 22.5,
+    "openingPerHit": 67.5,
+    "cycleSeconds": 2,
+    "dps": 33.75,
+    "timeToKill": 23.703703703703702
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 21.000000000000004,
+    "openingPerHit": 21.000000000000004,
+    "cycleSeconds": 2.58,
+    "dps": 32.55813953488373,
+    "timeToKill": 24.571428571428566
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 21.000000000000004,
+    "openingPerHit": 63.000000000000014,
+    "cycleSeconds": 2.58,
+    "dps": 48.83720930232559,
+    "timeToKill": 16.38095238095238
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 31.500000000000007,
+    "openingPerHit": 31.500000000000007,
+    "cycleSeconds": 2,
+    "dps": 15.750000000000004,
+    "timeToKill": 50.793650793650784
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 31.50000000000001,
+    "openingPerHit": 94.50000000000003,
+    "cycleSeconds": 2,
+    "dps": 47.250000000000014,
+    "timeToKill": 16.931216931216927
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 26.250000000000004,
+    "openingPerHit": 26.250000000000004,
+    "cycleSeconds": 2.58,
+    "dps": 40.697674418604656,
+    "timeToKill": 19.657142857142855
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 26.250000000000004,
+    "openingPerHit": 78.75000000000001,
+    "cycleSeconds": 2.58,
+    "dps": 61.04651162790699,
+    "timeToKill": 13.104761904761903
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 39.37500000000001,
+    "openingPerHit": 39.37500000000001,
+    "cycleSeconds": 2,
+    "dps": 19.687500000000004,
+    "timeToKill": 40.634920634920626
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 39.37500000000001,
+    "openingPerHit": 118.12500000000003,
+    "cycleSeconds": 2,
+    "dps": 59.062500000000014,
+    "timeToKill": 13.544973544973542
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 27.75,
+    "openingPerHit": 27.75,
+    "cycleSeconds": 2.58,
+    "dps": 43.02325581395349,
+    "timeToKill": 18.594594594594593
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 27.75,
+    "openingPerHit": 83.25,
+    "cycleSeconds": 2.58,
+    "dps": 64.53488372093022,
+    "timeToKill": 12.396396396396398
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 41.625,
+    "openingPerHit": 41.625,
+    "cycleSeconds": 2,
+    "dps": 20.8125,
+    "timeToKill": 38.43843843843844
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 41.625,
+    "openingPerHit": 124.875,
+    "cycleSeconds": 2,
+    "dps": 62.4375,
+    "timeToKill": 12.812812812812814
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 34.6875,
+    "openingPerHit": 34.6875,
+    "cycleSeconds": 2.58,
+    "dps": 53.77906976744186,
+    "timeToKill": 14.875675675675675
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 34.6875,
+    "openingPerHit": 104.0625,
+    "cycleSeconds": 2.58,
+    "dps": 80.6686046511628,
+    "timeToKill": 9.917117117117117
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 52.03125,
+    "openingPerHit": 52.03125,
+    "cycleSeconds": 2,
+    "dps": 26.015625,
+    "timeToKill": 30.75075075075075
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "stone-golem",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 52.03125,
+    "openingPerHit": 156.09375,
+    "cycleSeconds": 2,
+    "dps": 78.046875,
+    "timeToKill": 10.25025025025025
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 12,
+    "openingPerHit": 12,
+    "cycleSeconds": 2.58,
+    "dps": 18.6046511627907,
+    "timeToKill": 80.625
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 12,
+    "openingPerHit": 36,
+    "cycleSeconds": 2.58,
+    "dps": 27.906976744186046,
+    "timeToKill": 53.75
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 18,
+    "openingPerHit": 18,
+    "cycleSeconds": 2,
+    "dps": 9,
+    "timeToKill": 166.66666666666666
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 18,
+    "openingPerHit": 54,
+    "cycleSeconds": 2,
+    "dps": 27,
+    "timeToKill": 55.55555555555556
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 15,
+    "openingPerHit": 15,
+    "cycleSeconds": 2.58,
+    "dps": 23.25581395348837,
+    "timeToKill": 64.5
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 15,
+    "openingPerHit": 45,
+    "cycleSeconds": 2.58,
+    "dps": 34.883720930232556,
+    "timeToKill": 43
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 22.5,
+    "openingPerHit": 22.5,
+    "cycleSeconds": 2,
+    "dps": 11.25,
+    "timeToKill": 133.33333333333334
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 22.5,
+    "openingPerHit": 67.5,
+    "cycleSeconds": 2,
+    "dps": 33.75,
+    "timeToKill": 44.44444444444444
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 21.000000000000004,
+    "openingPerHit": 21.000000000000004,
+    "cycleSeconds": 2.58,
+    "dps": 32.55813953488373,
+    "timeToKill": 46.07142857142856
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 21.000000000000004,
+    "openingPerHit": 63.000000000000014,
+    "cycleSeconds": 2.58,
+    "dps": 48.83720930232559,
+    "timeToKill": 30.714285714285708
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 31.500000000000007,
+    "openingPerHit": 31.500000000000007,
+    "cycleSeconds": 2,
+    "dps": 15.750000000000004,
+    "timeToKill": 95.23809523809521
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 31.50000000000001,
+    "openingPerHit": 94.50000000000003,
+    "cycleSeconds": 2,
+    "dps": 47.250000000000014,
+    "timeToKill": 31.746031746031736
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 26.250000000000004,
+    "openingPerHit": 26.250000000000004,
+    "cycleSeconds": 2.58,
+    "dps": 40.697674418604656,
+    "timeToKill": 36.857142857142854
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 26.250000000000004,
+    "openingPerHit": 78.75000000000001,
+    "cycleSeconds": 2.58,
+    "dps": 61.04651162790699,
+    "timeToKill": 24.571428571428566
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 39.37500000000001,
+    "openingPerHit": 39.37500000000001,
+    "cycleSeconds": 2,
+    "dps": 19.687500000000004,
+    "timeToKill": 76.19047619047618
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 39.37500000000001,
+    "openingPerHit": 118.12500000000003,
+    "cycleSeconds": 2,
+    "dps": 59.062500000000014,
+    "timeToKill": 25.396825396825392
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 27.75,
+    "openingPerHit": 27.75,
+    "cycleSeconds": 2.58,
+    "dps": 43.02325581395349,
+    "timeToKill": 34.86486486486486
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 27.75,
+    "openingPerHit": 83.25,
+    "cycleSeconds": 2.58,
+    "dps": 64.53488372093022,
+    "timeToKill": 23.243243243243246
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 41.625,
+    "openingPerHit": 41.625,
+    "cycleSeconds": 2,
+    "dps": 20.8125,
+    "timeToKill": 72.07207207207207
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 41.625,
+    "openingPerHit": 124.875,
+    "cycleSeconds": 2,
+    "dps": 62.4375,
+    "timeToKill": 24.024024024024023
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 34.6875,
+    "openingPerHit": 34.6875,
+    "cycleSeconds": 2.58,
+    "dps": 53.77906976744186,
+    "timeToKill": 27.89189189189189
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 34.6875,
+    "openingPerHit": 104.0625,
+    "cycleSeconds": 2.58,
+    "dps": 80.6686046511628,
+    "timeToKill": 18.594594594594593
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 52.03125,
+    "openingPerHit": 52.03125,
+    "cycleSeconds": 2,
+    "dps": 26.015625,
+    "timeToKill": 57.65765765765766
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "seeker-soldier",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 52.03125,
+    "openingPerHit": 156.09375,
+    "cycleSeconds": 2,
+    "dps": 78.046875,
+    "timeToKill": 19.21921921921922
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 24,
+    "openingPerHit": 24,
+    "cycleSeconds": 2.58,
+    "dps": 37.2093023255814,
+    "timeToKill": 1263.125
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 24,
+    "openingPerHit": 72,
+    "cycleSeconds": 2.58,
+    "dps": 55.81395348837209,
+    "timeToKill": 842.0833333333334
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 36,
+    "openingPerHit": 36,
+    "cycleSeconds": 2,
+    "dps": 18,
+    "timeToKill": 2611.1111111111113
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 36,
+    "openingPerHit": 108,
+    "cycleSeconds": 2,
+    "dps": 54,
+    "timeToKill": 870.3703703703703
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 30,
+    "openingPerHit": 30,
+    "cycleSeconds": 2.58,
+    "dps": 46.51162790697674,
+    "timeToKill": 1010.5000000000001
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 30,
+    "openingPerHit": 90,
+    "cycleSeconds": 2.58,
+    "dps": 69.76744186046511,
+    "timeToKill": 673.6666666666667
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 45,
+    "openingPerHit": 45,
+    "cycleSeconds": 2,
+    "dps": 22.5,
+    "timeToKill": 2088.8888888888887
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 45,
+    "openingPerHit": 135,
+    "cycleSeconds": 2,
+    "dps": 67.5,
+    "timeToKill": 696.2962962962963
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 42.00000000000001,
+    "openingPerHit": 42.00000000000001,
+    "cycleSeconds": 2.58,
+    "dps": 65.11627906976746,
+    "timeToKill": 721.7857142857141
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 42.00000000000001,
+    "openingPerHit": 126.00000000000003,
+    "cycleSeconds": 2.58,
+    "dps": 97.67441860465118,
+    "timeToKill": 481.1904761904761
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 63.000000000000014,
+    "openingPerHit": 63.000000000000014,
+    "cycleSeconds": 2,
+    "dps": 31.500000000000007,
+    "timeToKill": 1492.0634920634918
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 63.00000000000002,
+    "openingPerHit": 189.00000000000006,
+    "cycleSeconds": 2,
+    "dps": 94.50000000000003,
+    "timeToKill": 497.3544973544972
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 52.50000000000001,
+    "openingPerHit": 52.50000000000001,
+    "cycleSeconds": 2.58,
+    "dps": 81.39534883720931,
+    "timeToKill": 577.4285714285713
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 52.50000000000001,
+    "openingPerHit": 157.50000000000003,
+    "cycleSeconds": 2.58,
+    "dps": 122.09302325581397,
+    "timeToKill": 384.9523809523809
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 78.75000000000001,
+    "openingPerHit": 78.75000000000001,
+    "cycleSeconds": 2,
+    "dps": 39.37500000000001,
+    "timeToKill": 1193.6507936507935
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 78.75000000000001,
+    "openingPerHit": 236.25000000000006,
+    "cycleSeconds": 2,
+    "dps": 118.12500000000003,
+    "timeToKill": 397.8835978835978
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 55.5,
+    "openingPerHit": 55.5,
+    "cycleSeconds": 2.58,
+    "dps": 86.04651162790698,
+    "timeToKill": 546.2162162162161
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 55.5,
+    "openingPerHit": 166.5,
+    "cycleSeconds": 2.58,
+    "dps": 129.06976744186045,
+    "timeToKill": 364.1441441441442
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 83.25,
+    "openingPerHit": 83.25,
+    "cycleSeconds": 2,
+    "dps": 41.625,
+    "timeToKill": 1129.129129129129
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 83.25,
+    "openingPerHit": 249.75,
+    "cycleSeconds": 2,
+    "dps": 124.875,
+    "timeToKill": 376.37637637637636
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 69.375,
+    "openingPerHit": 69.375,
+    "cycleSeconds": 2.58,
+    "dps": 107.55813953488372,
+    "timeToKill": 436.97297297297297
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 69.375,
+    "openingPerHit": 208.125,
+    "cycleSeconds": 2.58,
+    "dps": 161.3372093023256,
+    "timeToKill": 291.3153153153153
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 104.0625,
+    "openingPerHit": 104.0625,
+    "cycleSeconds": 2,
+    "dps": 52.03125,
+    "timeToKill": 903.3033033033033
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "kall-fimbulbringer",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 104.0625,
+    "openingPerHit": 312.1875,
+    "cycleSeconds": 2,
+    "dps": 156.09375,
+    "timeToKill": 301.1011011011011
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 32,
+    "openingPerHit": 32,
+    "cycleSeconds": 2.58,
+    "dps": 49.61240310077519,
+    "timeToKill": 44.34375000000001
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 32,
+    "openingPerHit": 96,
+    "cycleSeconds": 2.58,
+    "dps": 74.4186046511628,
+    "timeToKill": 29.5625
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 48,
+    "openingPerHit": 48,
+    "cycleSeconds": 2,
+    "dps": 24,
+    "timeToKill": 91.66666666666667
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 48,
+    "openingPerHit": 144,
+    "cycleSeconds": 2,
+    "dps": 72,
+    "timeToKill": 30.555555555555557
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 38.6,
+    "openingPerHit": 38.6,
+    "cycleSeconds": 2.58,
+    "dps": 59.84496124031008,
+    "timeToKill": 36.76165803108808
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 38.6,
+    "openingPerHit": 115.80000000000001,
+    "cycleSeconds": 2.58,
+    "dps": 89.76744186046513,
+    "timeToKill": 24.507772020725387
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 57.900000000000006,
+    "openingPerHit": 57.900000000000006,
+    "cycleSeconds": 2,
+    "dps": 28.950000000000003,
+    "timeToKill": 75.99309153713298
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 0,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 57.900000000000006,
+    "openingPerHit": 173.70000000000002,
+    "cycleSeconds": 2,
+    "dps": 86.85000000000001,
+    "timeToKill": 25.33103051237766
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 56,
+    "openingPerHit": 56,
+    "cycleSeconds": 2.58,
+    "dps": 86.82170542635659,
+    "timeToKill": 25.339285714285715
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 56,
+    "openingPerHit": 168,
+    "cycleSeconds": 2.58,
+    "dps": 130.2325581395349,
+    "timeToKill": 16.892857142857142
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 84,
+    "openingPerHit": 84,
+    "cycleSeconds": 2,
+    "dps": 42,
+    "timeToKill": 52.38095238095238
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 84.00000000000001,
+    "openingPerHit": 252.00000000000003,
+    "cycleSeconds": 2,
+    "dps": 126.00000000000001,
+    "timeToKill": 17.46031746031746
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 67.55000000000001,
+    "openingPerHit": 67.55000000000001,
+    "cycleSeconds": 2.58,
+    "dps": 104.72868217054265,
+    "timeToKill": 21.00666173205033
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 67.55000000000001,
+    "openingPerHit": 202.65000000000003,
+    "cycleSeconds": 2.58,
+    "dps": 157.093023255814,
+    "timeToKill": 14.004441154700219
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 101.32500000000002,
+    "openingPerHit": 101.32500000000002,
+    "cycleSeconds": 2,
+    "dps": 50.66250000000001,
+    "timeToKill": 43.424623735504554
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 50,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 101.325,
+    "openingPerHit": 303.975,
+    "cycleSeconds": 2,
+    "dps": 151.9875,
+    "timeToKill": 14.47487457850152
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 74,
+    "openingPerHit": 74,
+    "cycleSeconds": 2.58,
+    "dps": 114.72868217054263,
+    "timeToKill": 19.175675675675677
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 74,
+    "openingPerHit": 222,
+    "cycleSeconds": 2.58,
+    "dps": 172.09302325581396,
+    "timeToKill": 12.783783783783782
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 111,
+    "openingPerHit": 111,
+    "cycleSeconds": 2,
+    "dps": 55.5,
+    "timeToKill": 39.63963963963964
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 1,
+      "qualityMode": "1",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 111,
+    "openingPerHit": 333,
+    "cycleSeconds": 2,
+    "dps": 166.5,
+    "timeToKill": 13.213213213213214
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": false
+    },
+    "perHit": 89.2625,
+    "openingPerHit": 89.2625,
+    "cycleSeconds": 2.58,
+    "dps": 138.39147286821705,
+    "timeToKill": 15.896933202632685
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "primary",
+      "backstab": true
+    },
+    "perHit": 89.2625,
+    "openingPerHit": 267.7875,
+    "cycleSeconds": 2.58,
+    "dps": 207.5872093023256,
+    "timeToKill": 10.59795546842179
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": false
+    },
+    "perHit": 133.89375,
+    "openingPerHit": 133.89375,
+    "cycleSeconds": 2,
+    "dps": 66.946875,
+    "timeToKill": 32.861877421462914
+  },
+  {
+    "inputs": {
+      "weapon": "iron-axe",
+      "ammo": null,
+      "target": "barka",
+      "skillLevel": 100,
+      "quality": 4,
+      "qualityMode": "max",
+      "attack": "secondary",
+      "backstab": true
+    },
+    "perHit": 133.89375,
+    "openingPerHit": 401.68125000000003,
+    "cycleSeconds": 2,
+    "dps": 200.84062500000002,
+    "timeToKill": 10.953959140487637
   }
 ]

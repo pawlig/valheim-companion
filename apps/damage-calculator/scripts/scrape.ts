@@ -761,10 +761,11 @@ const BOSS_PAGES: { title: string; biome: BiomeId; note?: string }[] = [
 
 const RESISTANCE_FIELDS: Record<
   string,
-  "very-weak" | "weak" | "resistant" | "very-resistant" | "immune"
+  "very-weak" | "weak" | "neutral" | "resistant" | "very-resistant" | "immune"
 > = {
   veryweak: "very-weak",
   weak: "weak",
+  neutral: "neutral",
   resistant: "resistant",
   veryresistant: "very-resistant",
   immune: "immune",
@@ -968,9 +969,12 @@ function cleanWikiText(raw: string): string {
  *
  * Chop and pickaxe are kept when — and only when — the wiki lists them
  * explicitly for the creature (Stone Golem is very weak to pickaxe, Kvastur
- * weak to chop); the engine counts terrain damage only against such targets.
+ * weak to chop, Barka neutral to chop); the engine counts terrain damage only
+ * against such targets. `neutral` is published the same way for ordinary
+ * damage types (Eikthyr lists "Spirit: neutral"), which the default tier
+ * already models, and for terrain types it is what makes them count at x1.
  * Pure cannot come out of labelToDamageType and stays dropped, as do "Stagger"
- * and other non damage-type entries. */
+ * and other non damage-type entries ("All" on the bird pages). */
 function parseResistances(
   fields: Record<string, string>,
 ): Creature["resistances"] {

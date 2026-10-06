@@ -229,6 +229,8 @@
     "biome": "swamp",
     "resistances": {
       "fire": "weak",
+      "lightning": "neutral",
+      "slash": "neutral",
       "blunt": "resistant",
       "pierce": "very-resistant",
       "frost": "immune",
@@ -936,6 +938,7 @@
     "biome": "deep-north",
     "resistances": {
       "fire": "weak",
+      "chop": "neutral",
       "blunt": "resistant",
       "slash": "resistant",
       "pierce": "resistant",

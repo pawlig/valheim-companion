@@ -25,7 +25,7 @@ import {
 } from "../src/data/attack-profiles";
 import { backstabMultiplier, calculate } from "../src/lib/damage";
 import { ammoItems, bosses, enemies, recipes, weapons } from "../src/lib/data";
-import type { Ammo, Creature, DamageType, Weapon } from "../src/lib/types";
+import { COMBAT_DAMAGE_TYPES, type Ammo, type Creature, type DamageType, type Weapon } from "../src/lib/types";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "..");
 const OUT_DIR = join(ROOT, "data");
@@ -35,7 +35,10 @@ mkdirSync(OUT_DIR, { recursive: true });
 /* ------------------------------------------------------------------ *
  * 1. weapon-quality.json
  * { "<slug>": { "<typ>": [q1, q2, q3, q4] } }
- * Excludes chop, pickaxe, pure; only qualities the weapon actually has.
+ * Excludes pure only; chop and pickaxe are exported as well because a few
+ * creatures publish explicit terrain modifiers (Stone Golem, Kvastur, Barka),
+ * and there the per-quality scaling matters for parity. Only qualities the
+ * weapon actually has are included.
  * ------------------------------------------------------------------ */
 
 function getMaxQuality(item: Weapon | Ammo): number {
@@ -55,22 +58,15 @@ function getMaxQuality(item: Weapon | Ammo): number {
 
 const weaponQuality: Record<string, Partial<Record<DamageType, number[]>>> = {};
 
-const COMBAT_TYPES: DamageType[] = [
-  "blunt",
-  "pierce",
-  "slash",
-  "fire",
-  "frost",
-  "lightning",
-  "poison",
-  "spirit",
-];
+/* Combat types plus the terrain types that some creatures are explicitly
+ * vulnerable to; pure stays out because it never applies to creatures. */
+const EXPORTED_TYPES: DamageType[] = [...COMBAT_DAMAGE_TYPES, "chop", "pickaxe"];
 
 for (const item of [...weapons, ...ammoItems]) {
   const maxQ = getMaxQuality(item);
   const dmgMap: Partial<Record<DamageType, number[]>> = {};
 
-  for (const dt of COMBAT_TYPES) {
+  for (const dt of EXPORTED_TYPES) {
     const rawArr = item.damage?.[dt];
     if (rawArr && Array.isArray(rawArr)) {
       const sliced = rawArr.slice(0, maxQ);
@@ -169,7 +165,7 @@ console.log("Wrote data/attack-profiles.json");
 /* ------------------------------------------------------------------ *
  * 3. parity-fixtures.json
  * Grid of calculate() results for parity tests:
- *  13 weapons x 6 targets x 3 skills x 2 qualities x 2 attacks x 2 backstabs
+ *  14 weapons x 7 targets x 3 skills x 2 qualities x 2 attacks x 2 backstabs
  * ------------------------------------------------------------------ */
 
 const GRID_WEAPONS: { weaponSlug: string; ammoSlug?: string }[] = [
@@ -188,6 +184,10 @@ const GRID_WEAPONS: { weaponSlug: string; ammoSlug?: string }[] = [
   // Exercises the explicit pickaxe weakness: Stone Golem counts pickaxe x2,
   // every other grid target ignores the pickaxe component.
   { weaponSlug: "iron-pickaxe" },
+  // Exercises the explicit neutral chop tier: Barka counts chop x1, the other
+  // grid targets ignore the chop component (Kvastur's weakness x1.5 is checked
+  // in verify-engine.ts instead).
+  { weaponSlug: "iron-axe" },
 ];
 
 const GRID_TARGET_SLUGS = [
@@ -197,6 +197,8 @@ const GRID_TARGET_SLUGS = [
   "stone-golem",
   "seeker-soldier",
   "kall-fimbulbringer",
+  // The one grid target with an explicit neutral terrain modifier (chop).
+  "barka",
 ];
 
 const SKILL_LEVELS = [0, 50, 100];
