@@ -59,6 +59,83 @@ const KNOWN_STATIONS = [
 
 const KNOWN_NPCS = ['haldor', 'hildir', 'bog-witch'];
 
+export function resolvePieceName(boxTitle, pageTitle) {
+  const fromBox = boxTitle ? cleanText(boxTitle).trim() : '';
+  if (fromBox) return fromBox;
+  const fromPage = pageTitle ? cleanText(pageTitle).trim() : '';
+  if (fromPage) return fromPage;
+  return pageTitle ? String(pageTitle).trim() : '';
+}
+
+export function parseTrophySource(itemName, creatures, creatureByName, creaturesBySlug) {
+  const trophyMatch = itemName.match(/^(.+?)\s+Trophy$/i);
+  if (!trophyMatch) return null;
+  const creaturePart = trophyMatch[1].trim();
+  const creatureSlug = slug(creaturePart);
+  const c =
+    creaturesBySlug?.get(creatureSlug) ??
+    creatureByName?.get(creaturePart.toLowerCase()) ??
+    creatures?.find((cr) => cr.name.toLowerCase() === creaturePart.toLowerCase() || cr.id === creatureSlug);
+  if (!c) return null;
+  return {
+    text: creaturePart,
+    kind: 'creature',
+    creatureId: c.id,
+    biomes: c.biomes,
+  };
+}
+
+export function parseConversionRecipe(wt, matName, sources = []) {
+  if (!wt) return null;
+  const re = /\{\{Item\s+link\|([^|}]+)(?:\|(\d+))?\}\}\s*can be converted to\s*(?:(\d+)\s+)?.*?(?:at\s+(?:a\s+)?\[\[([^\]]+)\]\]|\.|$)/i;
+  const match = wt.match(re);
+  if (match) {
+    const inputItemName = cleanText(match[1]).trim();
+    const inputAmount = match[2] ? parseInt(match[2], 10) : 1;
+    const yields = match[3] ? parseInt(match[3], 10) : 1;
+    const station = (match[4] ? cleanText(match[4]).trim() : null) ??
+      sources.find((s) => s.kind === 'station')?.text ??
+      'Crafting';
+    return {
+      station,
+      materials: [{ name: inputItemName, amount: inputAmount }],
+      yields,
+    };
+  }
+  return null;
+}
+
+export function resolveRecipeBiomes(items) {
+  const itemsById = new Map(items.map((it) => [it.id, it]));
+  let changed = true;
+  while (changed) {
+    changed = false;
+    for (const it of items) {
+      if (it.biome == null && it.recipe?.materials?.length > 0) {
+        let maxTier = -1;
+        let maxBiome = null;
+        let allKnown = true;
+        for (const rm of it.recipe.materials) {
+          const matItem = itemsById.get(rm.item);
+          if (matItem && matItem.biome && matItem.tier != null) {
+            if (matItem.tier > maxTier) {
+              maxTier = matItem.tier;
+              maxBiome = matItem.biome;
+            }
+          } else {
+            allKnown = false;
+          }
+        }
+        if (allKnown && maxTier > 0 && maxBiome) {
+          it.biome = maxBiome;
+          it.tier = maxTier;
+          changed = true;
+        }
+      }
+    }
+  }
+}
+
 function parseSlot(typeStr) {
   const t = String(typeStr ?? '').toLowerCase().trim();
   if (t.includes('head') || t.includes('helmet') || t.includes('hood') || t.includes('hat') || t.includes('cap') || t.includes('circlet') || t.includes('scarf') || t.includes('crown')) return 'head';
@@ -146,8 +223,13 @@ function parseSetBonus(box, pieceCount) {
 
 function extractDescription(wikitext) {
   if (!wikitext) return '';
-  // Remove infoboxes and templates from start
-  let body = wikitext.replace(/\{\{[\s\S]*?\}\}/g, '').trim();
+  // Remove infoboxes and templates from start (handle nested templates)
+  let body = wikitext;
+  for (let pass = 0; pass < 10; pass += 1) {
+    const next = body.replace(/\{\{([^{}]*)\}\}/g, '');
+    if (next === body) break;
+    body = next;
+  }
   body = body.replace(/==[\s\S]*$/, '').trim(); // cut at first header
   const lines = body.split('\n').map((l) => cleanText(l).trim()).filter((l) => l.length > 10 && !l.startsWith('{|'));
   const desc = lines[0] ?? '';
@@ -284,7 +366,7 @@ async function main() {
     const boxes = parseAllInfoboxes(wt, 'armor');
     if (boxes.length > 1) {
       for (const b of boxes) {
-        const pieceTitle = cleanText(b.title || title).trim();
+        const pieceTitle = resolvePieceName(b.title, title);
         multiPieceSetPieceNames.add(pieceTitle.toLowerCase());
         multiPieceSetPieceSlugs.add(slug(pieceTitle));
       }
@@ -320,7 +402,7 @@ async function main() {
     // Deduplication rule:
     // "Stejný díl uvedený na stránce setu i na samostatné stránce (Troll Hide Cape) se v single neduplikuje, zůstane jen v setu."
     if (boxes.length === 1) {
-      const singlePieceName = cleanText(firstBox.title || title).trim();
+      const singlePieceName = resolvePieceName(firstBox.title, title);
       const singlePieceSlug = slug(singlePieceName);
       const pageTitleSlug = slug(title);
       if (
@@ -341,7 +423,10 @@ async function main() {
     const pieces = [];
 
     for (const b of boxes) {
-      const pieceName = cleanText(b.title || title).trim();
+      const pieceName = resolvePieceName(b.title, title);
+      if (!pieceName) {
+        throw new Error(`Piece on page "${title}" has empty name`);
+      }
       const pieceId = slug(pieceName);
       const slot = parseSlot(b.type);
       const gameId = b.id ? cleanText(b.id).trim() : null;
@@ -373,7 +458,7 @@ async function main() {
         const matsParsed = parseMaterialList(matRaw);
         const materials = matsParsed.map((m) => {
           referencedMaterials.add(m.name);
-          const itemObj = { item: slug(m.name), amount: m.amount };
+          const itemObj = { item: slug(m.name), rawName: m.name, amount: m.amount };
           if (m.fuel) itemObj.fuel = true;
           return itemObj;
         });
