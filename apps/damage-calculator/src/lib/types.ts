@@ -108,6 +108,7 @@ export type RecipeBook = Record<string, Recipe>;
 export type ResistanceTier =
   | "very-weak"
   | "weak"
+  | "neutral"
   | "resistant"
   | "very-resistant"
   | "immune";
@@ -141,9 +142,10 @@ export const RESISTANCE_MULTIPLIER: Record<ModifierTier, number> = {
   immune: 0,
 };
 
-/** `neutral` is not a resistance tier — it is the default when a target has
- *  no entry for a damage type — but it shares the same modifier scale. */
-export type ModifierTier = ResistanceTier | "neutral";
+/** `neutral` doubles as the default when a target has no entry for a damage
+ *  type, and as an explicitly published tier (Barka lists "Chop: neutral"),
+ *  so it lives inside ResistanceTier and shares the same modifier scale. */
+export type ModifierTier = ResistanceTier;
 
 export const RESISTANCE_LABEL: Record<ModifierTier, string> = {
   "very-weak": "Very weak",

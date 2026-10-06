@@ -628,6 +628,23 @@ check(
   135,
 );
 
+// Barka publishes an explicit neutral chop modifier, so the axe's chop counts
+// at x1 even though it is terrain damage: slash 60 x0.5 (resistant) + chop
+// 50 x1 = 80.
+check("Barka is explicitly neutral to chop", creature("Barka").resistances.chop, "neutral");
+check(
+  "Iron Axe Q1 vs Barka counts chop x1",
+  calculate({
+    weapon: weapon("Iron Axe"),
+    quality: 1,
+    target: creature("Barka"),
+    skillLevel: 100,
+    skillMode: "max",
+    attack: "primary",
+  }).perHit,
+  80,
+);
+
 // Catapult ammo is pure terrain damage and therefore does nothing to a boss.
 check(
   "Explosive Payload deals no creature damage",

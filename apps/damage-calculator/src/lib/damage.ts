@@ -111,8 +111,10 @@ export function damageAtQuality(
  *
  * The wiki files chop and pickaxe under terrain damage (woodcutting / mining):
  * they do nothing to creatures in general. A few targets publish an explicit
- * modifier anyway — Stone Golem is very weak to pickaxe, Kvastur weak to chop —
- * and only a listed modifier above zero (so not immunity) makes the type count. */
+ * modifier anyway — Stone Golem is very weak to pickaxe, Kvastur weak to chop,
+ * Barka neutral to chop — and any listed tier with a multiplier above zero
+ * makes the type count: an explicit neutral counts at x1, only immunity (x0)
+ * keeps it out. */
 function terrainTypeCounts(target: Creature, type: DamageType): boolean {
   const tier = target.resistances[type];
   return tier !== undefined && (RESISTANCE_MULTIPLIER[tier] ?? 0) > 0;
