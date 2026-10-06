@@ -392,9 +392,12 @@ async function main() {
     }
 
     const firstBox = boxes[0];
-    const isCosmetic =
-      (!firstBox['materials 1'] || firstBox['materials 1'].trim() === '') &&
-      (firstBox.source && /hildir|haldor|npc/i.test(firstBox.source));
+    // NPC merchandise (Hildir / Haldor) has no crafting materials on purpose;
+    // anything else without them (Crown of Roots) cannot be crafted at all.
+    const noCraftMaterials = !firstBox['materials 1'] || firstBox['materials 1'].trim() === '';
+    const npcSource = Boolean(firstBox.source && /hildir|haldor|npc/i.test(firstBox.source));
+    const isCosmetic = noCraftMaterials && npcSource;
+    const isNotCraftable = noCraftMaterials && !npcSource;
 
     // Deduplication rule:
     // "Stejný díl uvedený na stránce setu i na samostatné stránce (Troll Hide Cape) se v single neduplikuje, zůstane jen v setu."
@@ -424,8 +427,10 @@ async function main() {
       (boxes.some((b) => b.description && /\(DLC item\)/i.test(b.description)) ||
         /\(DLC item\)/i.test(wt) ||
         /\(DLC item\)/i.test(description));
-    const isSpecial = title !== 'Crown of Valheim' && (Boolean(seasonTag) || isDlc);
-    const specialTag = seasonTag || (isDlc ? 'DLC' : null);
+    const isSpecial =
+      title !== 'Crown of Valheim' && (Boolean(seasonTag) || isDlc || isNotCraftable);
+    const specialTag =
+      seasonTag || (isDlc ? 'DLC' : null) || (isNotCraftable ? 'Not craftable' : null);
 
     let kind = 'single';
     if (isSpecial) {
@@ -457,11 +462,13 @@ async function main() {
         imageFile = cleanText(b.image).trim();
       }
 
-      // Build levels
+      // Build levels. Quality 1 always exists (with no materials when the
+      // piece is not craftable); a level beyond quality 1 exists only when the
+      // infobox lists upgrade materials for it — empty `materials 2..4` fields
+      // (Crown of Valheim, Crown of Roots) are not upgrades.
       const levels = [];
-      let maxQ = 0;
-      while (b[`materials ${maxQ + 1}`] != null) maxQ += 1;
-      if (maxQ === 0 && !isCosmetic && b.materials) maxQ = 1;
+      let maxQ = 1;
+      while (parseMaterialList(b[`materials ${maxQ + 1}`]).length > 0) maxQ += 1;
 
       const baseArmor = b.armor ? parseFloat(b.armor) : 0;
       const baseDurability = b.durability ? parseInt(b.durability, 10) : null;
@@ -545,11 +552,16 @@ async function main() {
           armorSource = 'rendered';
           usedEstimate = false;
         } else {
+          // Unreachable for pieces whose every upgrade level carries materials
+          // by the maxQ rule above; kept as a reported fallback for a wiki page
+          // that documents upgrade materials but no quality table.
           armorSource = 'estimate';
-          let reason = 'only 1 quality level on wiki';
-          if (pieceName === 'Crown of Valheim') reason = 'only 1 quality level on wiki (cannot be upgraded)';
-          if (pieceName === 'Crown of Roots') reason = 'only 1 quality level on wiki (cosmetic item)';
-          report.estimatedArmor.push({ piece: pieceName, set: title, levels: levels.length, reason });
+          report.estimatedArmor.push({
+            piece: pieceName,
+            set: title,
+            levels: levels.length,
+            reason: 'quality table missing for upgrade levels with materials',
+          });
         }
       } else {
         armorSource = 'table';
