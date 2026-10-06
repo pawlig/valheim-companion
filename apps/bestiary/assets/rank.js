@@ -372,10 +372,10 @@
 
   // Full recommendation for a creature in a given biome with player character settings
   function recommend(creature, biome, weapons, player = DEFAULT_PLAYER) {
-    const gearTier = biome.gearTier;
+    const tier = biome.tier ?? biome.order ?? biome.gearTier;
     const mods = effectiveModifiers(creature);
 
-    const candidates = weapons.filter((w) => w.tier != null && w.tier <= gearTier);
+    const candidates = weapons.filter((w) => w.tier != null && w.tier <= tier);
 
     // 1. Melee: top 3 from distinct categories
     const meleeCandidates = candidates.filter((w) => {
@@ -701,7 +701,7 @@
     const tip = tipPrefix + immuneSuffix;
 
     return {
-      gearTier,
+      tier,
       modifiers: mods,
       melee,
       bow: bowObj,

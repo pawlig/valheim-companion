@@ -18,7 +18,7 @@ Stupně (`ModTier`): `veryweak` (2), `weak` (1.5), `slightlyweak` (1.25), `neutr
     "id": "meadows",
     "name": "Meadows",
     "order": 1,
-    "gearTier": 1,
+    "tier": 1,
     "image": "img/biomes/meadows.png",
     "wiki": "https://valheim.weirdgloop.org/w/Meadows",
     "creatures": {
@@ -31,6 +31,8 @@ Stupně (`ModTier`): `veryweak` (2), `weak` (1.5), `slightlyweak` (1.25), `neutr
   }
 ]
 ```
+
+`order` a `tier` jsou shodné (tier = order): 1 Meadows, 2 Black Forest, 3 Ocean, 4 Swamp, 5 Mountain, 6 Plains, 7 Mistlands, 8 Ashlands, 9 Deep North (viz `docs/ANALYZA.md` § 14).
 
 `boss` vs `miniboss`: miniboss = stránka je v `Category:Minibosses`. `fish` = stránka je v `Category:Fish`. Ostatní z pole `passive` biomu jde do `passive`.
 

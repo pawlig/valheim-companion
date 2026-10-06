@@ -66,9 +66,9 @@ test('effectiveModifiers: applies ModTier strings correctly', () => {
   assert.equal(mods.spirit, 0);
 });
 
-test('tier filter: recommendFor does not recommend weapons of higher tier than biome.gearTier', () => {
+test('tier filter: recommendFor does not recommend weapons of higher tier than biome.tier', () => {
   const creature = { id: 'test-creature', modifiers: {} };
-  const biome = { id: 'meadows', gearTier: 1 };
+  const biome = { id: 'meadows', tier: 1 };
   const weapons = [
     {
       id: 'club',
@@ -88,7 +88,7 @@ test('tier filter: recommendFor does not recommend weapons of higher tier than b
       id: 'iron-mace',
       name: 'Iron Mace',
       category: 'club',
-      tier: 3,
+      tier: 4,
       damageMax: { blunt: 55 },
     },
   ];
@@ -100,7 +100,7 @@ test('tier filter: recommendFor does not recommend weapons of higher tier than b
 
 test('melee diversity: top 3 melee weapons come from distinct categories', () => {
   const creature = { id: 'test-creature', modifiers: {} };
-  const biome = { id: 'black-forest', gearTier: 2 };
+  const biome = { id: 'black-forest', tier: 2 };
   const weapons = [
     { id: 'sword-1', name: 'Sword A', category: 'sword', tier: 2, damageMax: { slash: 50 } },
     { id: 'sword-2', name: 'Sword B', category: 'sword', tier: 2, damageMax: { slash: 45 } },
@@ -119,7 +119,7 @@ test('melee diversity: top 3 melee weapons come from distinct categories', () =>
 
 test('pickaxe candidacy: pickaxes are excluded when creature pickaxe multiplier is 0', () => {
   const creature = { id: 'boar', modifiers: {} };
-  const biome = { id: 'meadows', gearTier: 1 };
+  const biome = { id: 'meadows', tier: 1 };
   const weapons = [
     { id: 'antler-pickaxe', name: 'Antler Pickaxe', category: 'pickaxe', tier: 1, damageMax: { pickaxe: 20 } },
     { id: 'club', name: 'Club', category: 'club', tier: 1, damageMax: { blunt: 12 } },
@@ -133,10 +133,10 @@ test('pickaxe candidacy: pickaxes are excluded when creature pickaxe multiplier 
 
 test('pickaxe candidacy: pickaxes are included when creature has pickaxe multiplier > 0', () => {
   const golem = { id: 'stone-golem', modifiers: { pickaxe: 'veryweak', blunt: 'neutral', slash: 'resistant' } };
-  const biome = { id: 'mountain', gearTier: 4 };
+  const biome = { id: 'mountain', tier: 5 };
   const weapons = [
     { id: 'bronze-pickaxe', name: 'Bronze Pickaxe', category: 'pickaxe', tier: 2, damageMax: { pickaxe: 37, pierce: 25 } },
-    { id: 'iron-sword', name: 'Iron Sword', category: 'sword', tier: 3, damageMax: { slash: 55 } },
+    { id: 'iron-sword', name: 'Iron Sword', category: 'sword', tier: 4, damageMax: { slash: 55 } },
   ];
 
   const rec = recommendFor(golem, biome, weapons);
@@ -158,7 +158,7 @@ test('tip formatting: weak elemental generates weakness tip and appends immunity
     id: 'greydwarf',
     modifiers: { fire: 'veryweak', spirit: 'immune' },
   };
-  const biome = { id: 'black-forest', gearTier: 2 };
+  const biome = { id: 'black-forest', tier: 2 };
   const weapons = [
     { id: 'bronze-sword', name: 'Bronze Sword', category: 'sword', tier: 2, damageMax: { slash: 35 } },
     { id: 'finewood-bow', name: 'Finewood Bow', category: 'bow', tier: 2, damageMax: { pierce: 32 } },
@@ -172,7 +172,7 @@ test('tip formatting: weak elemental generates weakness tip and appends immunity
 
 test('tip formatting: no elemental weakness falls back to best raw melee', () => {
   const creature = { id: 'dummy', modifiers: {} };
-  const biome = { id: 'meadows', gearTier: 1 };
+  const biome = { id: 'meadows', tier: 1 };
   const weapons = [
     { id: 'flint-axe', name: 'Flint Axe', category: 'axe', tier: 1, damageMax: { slash: 20 } },
     { id: 'club', name: 'Club', category: 'club', tier: 1, damageMax: { blunt: 12 } },
@@ -184,19 +184,19 @@ test('tip formatting: no elemental weakness falls back to best raw melee', () =>
 
 test('tie-breaking: prefers lower tier, then alphabetical name on score tie', () => {
   const creature = { id: 'dummy', modifiers: {} };
-  const biome = { id: 'swamp', gearTier: 3 };
+  const biome = { id: 'swamp', tier: 4 };
   const weapons = [
-    { id: 'sword-t3', name: 'Sword HighTier', category: 'sword', tier: 3, damageMax: { slash: 30 } },
+    { id: 'sword-t4', name: 'Sword HighTier', category: 'sword', tier: 4, damageMax: { slash: 30 } },
     { id: 'club-t1', name: 'Club LowTier', category: 'club', tier: 1, damageMax: { blunt: 30 } },
     { id: 'spear-t1-b', name: 'Spear B', category: 'spear', tier: 1, damageMax: { pierce: 30 } },
     { id: 'spear-t1-a', name: 'Spear A', category: 'spear', tier: 1, damageMax: { pierce: 30 } },
   ];
 
   const rec = recommendFor(creature, biome, weapons);
-  // Tier 1 weapons win over Tier 3 on equal score 30
+  // Tier 1 weapons win over Tier 4 on equal score 30
   assert.equal(rec.melee[0].weapon, 'club-t1');
   assert.equal(rec.melee[1].weapon, 'spear-t1-a');
-  assert.equal(rec.melee[2].weapon, 'sword-t3');
+  assert.equal(rec.melee[2].weapon, 'sword-t4');
 });
 
 test('tool damage: chop and pickaxe excluded from raw and notes when multiplier is 0', () => {
@@ -240,7 +240,7 @@ test('tip formatting: finds pickaxe weakness and excludes chop/pickaxe from immu
       spirit: 'immune',
     },
   };
-  const biome = { id: 'mountain', gearTier: 4 };
+  const biome = { id: 'mountain', tier: 5 };
   const weapons = [
     {
       id: 'bronze-pickaxe',
@@ -253,7 +253,7 @@ test('tip formatting: finds pickaxe weakness and excludes chop/pickaxe from immu
       id: 'iron-mace',
       name: 'Iron Mace',
       category: 'club',
-      tier: 3,
+      tier: 4,
       damageMax: { blunt: 55 },
     },
   ];
@@ -272,20 +272,20 @@ test('ineffective recommendations: drops magic and bomb when score < 0.5 * raw',
     id: 'fire-resistant-creature',
     modifiers: { fire: 'veryresistant', blunt: 'veryresistant' },
   };
-  const biome = { id: 'ashlands', gearTier: 7 };
+  const biome = { id: 'ashlands', tier: 8 };
   const weapons = [
     {
       id: 'staff-of-embers',
       name: 'Staff of Embers',
       category: 'magic',
-      tier: 6,
+      tier: 7,
       damageMax: { blunt: 10, fire: 100 },
     },
     {
       id: 'test-bomb',
       name: 'Heavy Bomb',
       category: 'bomb',
-      tier: 6,
+      tier: 7,
       damageMax: { blunt: 100 },
     },
   ];
@@ -302,7 +302,7 @@ test('ineffective recommendations: filters out arrows and bolts with score < 0.5
     id: 'bonemass',
     modifiers: { pierce: 'veryresistant' },
   };
-  const biome = { id: 'swamp', gearTier: 3 };
+  const biome = { id: 'swamp', tier: 4 };
   const weapons = [
     {
       id: 'finewood-bow',
@@ -315,21 +315,21 @@ test('ineffective recommendations: filters out arrows and bolts with score < 0.5
       id: 'ironhead-arrow',
       name: 'Ironhead Arrow',
       category: 'arrow',
-      tier: 3,
+      tier: 4,
       damageMax: { pierce: 42 },
     },
     {
       id: 'arbalest',
       name: 'Arbalest',
       category: 'crossbow',
-      tier: 3,
+      tier: 4,
       damageMax: { pierce: 200 },
     },
     {
       id: 'iron-bolt',
       name: 'Iron Bolt',
       category: 'bolt',
-      tier: 3,
+      tier: 4,
       damageMax: { pierce: 42 },
     },
   ];
@@ -345,13 +345,13 @@ test('recommendFor end-to-end: draugr in swamp has battleaxe raw 70 and empty no
     id: 'draugr',
     modifiers: { fire: 'resistant', poison: 'immune' },
   };
-  const biome = { id: 'swamp', gearTier: 3 };
+  const biome = { id: 'swamp', tier: 4 };
   const weapons = [
     {
       id: 'battleaxe',
       name: 'Battleaxe',
       category: 'battleaxe',
-      tier: 3,
+      tier: 4,
       damageMax: { slash: 70, chop: 40 },
     },
   ];

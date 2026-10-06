@@ -37,18 +37,7 @@ const CREATURE_IMG_WIDTH = 320;
 const TROPHY_IMG_WIDTH = 128;
 const BIOME_IMG_WIDTH = 960;
 
-// Biome order and gear tiers per docs/ANALYZA.md § 2.
-const BIOMES = [
-  { title: 'Meadows', id: 'meadows', order: 1, gearTier: 1 },
-  { title: 'Black Forest', id: 'black-forest', order: 2, gearTier: 2 },
-  { title: 'Swamp', id: 'swamp', order: 3, gearTier: 3 },
-  { title: 'Ocean', id: 'ocean', order: 4, gearTier: 3 },
-  { title: 'Mountain', id: 'mountain', order: 5, gearTier: 4 },
-  { title: 'Plains', id: 'plains', order: 6, gearTier: 5 },
-  { title: 'Mistlands', id: 'mistlands', order: 7, gearTier: 6 },
-  { title: 'Ashlands', id: 'ashlands', order: 8, gearTier: 7 },
-  { title: 'Deep North', id: 'deep-north', order: 9, gearTier: 8 },
-];
+import { BIOMES } from './biomes.mjs';
 
 const SECTIONS = ['boss', 'miniboss', 'hostile', 'passive', 'fish'];
 const biomeByTitle = new Map(BIOMES.map((biome) => [biome.title, biome]));
@@ -482,7 +471,7 @@ async function mainInner() {
     id: biome.id,
     name: biome.title,
     order: biome.order,
-    gearTier: biome.gearTier,
+    tier: biome.order,
     image: existsSync(abs(biomeImage(biome.id))) ? biomeImage(biome.id) : null,
     wiki: wikiPageUrl(biome.title),
     creatures: Object.fromEntries(SECTIONS.map((section) => [section, []])),

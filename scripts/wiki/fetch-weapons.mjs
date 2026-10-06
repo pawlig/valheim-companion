@@ -11,6 +11,7 @@ import { fileURLToPath } from 'node:url';
 
 import { api, MwApi } from './api.mjs';
 import { cleanText, parseImage, parseInfobox, parseLinks, parseTemplates, slug } from './wikitext.mjs';
+import { BIOMES, tierOf } from './biomes.mjs';
 import { BASE_MATERIAL_TABLE, createMaterialResolver } from './materials.mjs';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -29,18 +30,7 @@ function lowercaseExceptFirst(s) {
 
 const DAMAGE_TYPES = ['blunt', 'slash', 'pierce', 'chop', 'pickaxe', 'fire', 'frost', 'lightning', 'poison', 'spirit'];
 
-const BIOMES = [
-  { id: 'meadows', tier: 1 },
-  { id: 'black-forest', tier: 2 },
-  { id: 'swamp', tier: 3 },
-  { id: 'ocean', tier: 3 },
-  { id: 'mountain', tier: 4 },
-  { id: 'plains', tier: 5 },
-  { id: 'mistlands', tier: 6 },
-  { id: 'ashlands', tier: 7 },
-  { id: 'deep-north', tier: 8 },
-];
-const tierByBiome = new Map(BIOMES.map((b) => [b.id, b.tier]));
+const tierByBiome = new Map(BIOMES.map((b) => [b.id, tierOf(b.id)]));
 
 const BIOME_KEYWORDS = [
   ['deep north', 'deep-north'],
@@ -446,7 +436,7 @@ async function main() {
   // 7. Compute tiers for all kept weapons
   for (const w of parsedWeapons) {
     if (w.name.toLowerCase() === 'bare fists') {
-      w.tier = 1;
+      w.tier = tierOf('meadows');
       w.biome = 'meadows';
     } else if (w.materials.length === 0) {
       w.tier = null;

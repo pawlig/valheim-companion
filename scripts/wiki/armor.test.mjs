@@ -256,7 +256,7 @@ test('parseConversionRecipe extracts input item, amount and station', () => {
 
 test('resolveRecipeBiomes assigns max tier and biome from recipe materials', () => {
   const items = [
-    { id: 'ice', name: 'Ice', biome: 'deep-north', tier: 8, recipe: null },
+    { id: 'ice', name: 'Ice', biome: 'deep-north', tier: 9, recipe: null },
     {
       id: 'liquid-frost',
       name: 'Liquid Frost',
@@ -285,7 +285,7 @@ test('resolveRecipeBiomes assigns max tier and biome from recipe materials', () 
 
   const lf = items.find((i) => i.id === 'liquid-frost');
   assert.equal(lf.biome, 'deep-north');
-  assert.equal(lf.tier, 8);
+  assert.equal(lf.tier, 9);
 
   const mb = items.find((i) => i.id === 'mystery-brew');
   assert.equal(mb.biome, null);
