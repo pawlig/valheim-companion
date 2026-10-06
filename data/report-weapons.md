@@ -8,13 +8,13 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 |---|---|---|
 | 1 | meadows | 12 |
 | 2 | black-forest | 12 |
-| 3 | swamp | 13 |
 | 3 | ocean | 2 |
-| 4 | mountain | 11 |
-| 5 | plains | 10 |
-| 6 | mistlands | 14 |
-| 7 | ashlands | 36 |
-| 8 | deep-north | 42 |
+| 4 | swamp | 13 |
+| 5 | mountain | 11 |
+| 6 | plains | 10 |
+| 7 | mistlands | 14 |
+| 8 | ashlands | 36 |
+| 9 | deep-north | 42 |
 | null | (none) | 1 |
 | **Total** | | **153** |
 

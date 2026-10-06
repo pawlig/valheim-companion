@@ -3,7 +3,7 @@
     "id": "meadows",
     "name": "Meadows",
     "order": 1,
-    "gearTier": 1,
+    "tier": 1,
     "image": "img/biomes/meadows.png",
     "wiki": "https://valheim.weirdgloop.org/w/Meadows",
     "creatures": {
@@ -30,7 +30,7 @@
     "id": "black-forest",
     "name": "Black Forest",
     "order": 2,
-    "gearTier": 2,
+    "tier": 2,
     "image": "img/biomes/black-forest.png",
     "wiki": "https://valheim.weirdgloop.org/w/Black_Forest",
     "creatures": {
@@ -63,10 +63,34 @@
     }
   },
   {
+    "id": "ocean",
+    "name": "Ocean",
+    "order": 3,
+    "tier": 3,
+    "image": "img/biomes/ocean.png",
+    "wiki": "https://valheim.weirdgloop.org/w/Ocean",
+    "creatures": {
+      "boss": [],
+      "miniboss": [],
+      "hostile": [
+        "serpent"
+      ],
+      "passive": [
+        "gull",
+        "leviathan"
+      ],
+      "fish": [
+        "coral-cod",
+        "pufferfish",
+        "tuna"
+      ]
+    }
+  },
+  {
     "id": "swamp",
     "name": "Swamp",
-    "order": 3,
-    "gearTier": 3,
+    "order": 4,
+    "tier": 4,
     "image": "img/biomes/swamp.png",
     "wiki": "https://valheim.weirdgloop.org/w/Swamp",
     "creatures": {
@@ -94,34 +118,10 @@
     }
   },
   {
-    "id": "ocean",
-    "name": "Ocean",
-    "order": 4,
-    "gearTier": 3,
-    "image": "img/biomes/ocean.png",
-    "wiki": "https://valheim.weirdgloop.org/w/Ocean",
-    "creatures": {
-      "boss": [],
-      "miniboss": [],
-      "hostile": [
-        "serpent"
-      ],
-      "passive": [
-        "gull",
-        "leviathan"
-      ],
-      "fish": [
-        "coral-cod",
-        "pufferfish",
-        "tuna"
-      ]
-    }
-  },
-  {
     "id": "mountain",
     "name": "Mountain",
     "order": 5,
-    "gearTier": 4,
+    "tier": 5,
     "image": "img/biomes/mountain.png",
     "wiki": "https://valheim.weirdgloop.org/w/Mountain",
     "creatures": {
@@ -152,7 +152,7 @@
     "id": "plains",
     "name": "Plains",
     "order": 6,
-    "gearTier": 5,
+    "tier": 6,
     "image": "img/biomes/plains.png",
     "wiki": "https://valheim.weirdgloop.org/w/Plains",
     "creatures": {
@@ -185,7 +185,7 @@
     "id": "mistlands",
     "name": "Mistlands",
     "order": 7,
-    "gearTier": 6,
+    "tier": 7,
     "image": "img/biomes/mistlands.png",
     "wiki": "https://valheim.weirdgloop.org/w/Mistlands",
     "creatures": {
@@ -216,7 +216,7 @@
     "id": "ashlands",
     "name": "Ashlands",
     "order": 8,
-    "gearTier": 7,
+    "tier": 8,
     "image": "img/biomes/ashlands.png",
     "wiki": "https://valheim.weirdgloop.org/w/Ashlands",
     "creatures": {
@@ -252,7 +252,7 @@
     "id": "deep-north",
     "name": "Deep North",
     "order": 9,
-    "gearTier": 8,
+    "tier": 9,
     "image": "img/biomes/deep-north.png",
     "wiki": "https://valheim.weirdgloop.org/w/Deep_North",
     "creatures": {

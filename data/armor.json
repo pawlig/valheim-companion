@@ -5,7 +5,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Ashen_Cape",
     "kind": "single",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "setBonus": null,
     "pieces": [
       {
@@ -87,7 +87,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Ask_Set",
     "kind": "set",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "setBonus": {
       "name": "Ask's endurance",
       "pieces": 3,
@@ -392,7 +392,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Asksvin_Cloak",
     "kind": "single",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "setBonus": null,
     "pieces": [
       {
@@ -1130,7 +1130,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Caller_Set",
     "kind": "set",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "setBonus": null,
     "pieces": [
       {
@@ -1419,7 +1419,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Cape_of_Oden",
     "kind": "set",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "setBonus": null,
     "pieces": [
       {
@@ -1509,7 +1509,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Cape_of_the_Caller",
     "kind": "single",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "setBonus": null,
     "pieces": [
       {
@@ -1730,7 +1730,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Carapace_Armor",
     "kind": "set",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "setBonus": null,
     "pieces": [
       {
@@ -2190,7 +2190,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Crown_of_Valheim",
     "kind": "single",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "setBonus": null,
     "pieces": [
       {
@@ -2286,7 +2286,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Eitr-weave_Set",
     "kind": "set",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "setBonus": null,
     "pieces": [
       {
@@ -2648,7 +2648,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Embla_Set",
     "kind": "set",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "setBonus": null,
     "pieces": [
       {
@@ -2990,7 +2990,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Fenris_Set",
     "kind": "set",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "setBonus": {
       "name": "Fenris blessing",
       "pieces": 3,
@@ -3283,7 +3283,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Fishing_Hat",
     "kind": "single",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "setBonus": null,
     "pieces": [
       {
@@ -3533,7 +3533,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Flametal_Armor",
     "kind": "set",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "setBonus": null,
     "pieces": [
       {
@@ -3990,7 +3990,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Hood_of_Oden",
     "kind": "set",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "setBonus": null,
     "pieces": [
       {
@@ -4080,7 +4080,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Iron_Armor",
     "kind": "set",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "setBonus": null,
     "pieces": [
       {
@@ -4607,7 +4607,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Lox_Fur_Set",
     "kind": "set",
     "biome": "plains",
-    "tier": 5,
+    "tier": 6,
     "setBonus": {
       "name": "Boon of the Lox",
       "pieces": 3,
@@ -5017,7 +5017,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Moose_Hide_Cape",
     "kind": "single",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "setBonus": null,
     "pieces": [
       {
@@ -5123,7 +5123,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Padded_Armor",
     "kind": "set",
     "biome": "plains",
-    "tier": 5,
+    "tier": 6,
     "setBonus": null,
     "pieces": [
       {
@@ -5438,7 +5438,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Pointy_Hat",
     "kind": "single",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "setBonus": null,
     "pieces": [
       {
@@ -5520,7 +5520,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Protector_Armor",
     "kind": "set",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "setBonus": null,
     "pieces": [
       {
@@ -5886,7 +5886,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Root_Set",
     "kind": "set",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "setBonus": {
       "name": "Improved archery",
       "pieces": 3,
@@ -7059,7 +7059,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Vanguard_Set",
     "kind": "set",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "setBonus": {
       "name": "Vanguard",
       "pieces": 3,
@@ -7358,7 +7358,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Vilebone_Set",
     "kind": "set",
     "biome": "plains",
-    "tier": 5,
+    "tier": 6,
     "setBonus": {
       "name": "Vilebone Wrath",
       "pieces": 3,
@@ -7636,7 +7636,7 @@
     "wiki": "https://valheim.weirdgloop.org/w/Wolf_Armor",
     "kind": "set",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "setBonus": null,
     "pieces": [
       {

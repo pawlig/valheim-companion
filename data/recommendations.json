@@ -1,6 +1,6 @@
 {
   "meadows:boar": {
-    "gearTier": 1,
+    "tier": 1,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -79,7 +79,7 @@
     "tip": "No elemental weakness — best raw option: Early Axes (31). Immune to Spirit."
   },
   "meadows:deer": {
-    "gearTier": 1,
+    "tier": 1,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -158,7 +158,7 @@
     "tip": "No elemental weakness — best raw option: Early Axes (31). Immune to Spirit."
   },
   "meadows:eikthyr": {
-    "gearTier": 1,
+    "tier": 1,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -237,7 +237,7 @@
     "tip": "No elemental weakness — best raw option: Early Axes (31)."
   },
   "meadows:greyling": {
-    "gearTier": 1,
+    "tier": 1,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -318,7 +318,7 @@
     "tip": "Very weak to Fire (×2): Fire Arrow hits for 54 effective. Immune to Spirit."
   },
   "meadows:gull": {
-    "gearTier": 1,
+    "tier": 1,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -397,7 +397,7 @@
     "tip": "No elemental weakness — best raw option: Early Axes (31)."
   },
   "meadows:neck": {
-    "gearTier": 1,
+    "tier": 1,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -478,7 +478,7 @@
     "tip": "Weak to Fire (×1.5): Fire Arrow hits for 46 effective. Immune to Spirit."
   },
   "meadows:perch": {
-    "gearTier": 1,
+    "tier": 1,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -557,7 +557,7 @@
     "tip": "No elemental weakness — best raw option: Early Axes (31)."
   },
   "meadows:pike": {
-    "gearTier": 1,
+    "tier": 1,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -636,7 +636,7 @@
     "tip": "No elemental weakness — best raw option: Early Axes (31)."
   },
   "black-forest:bear": {
-    "gearTier": 2,
+    "tier": 2,
     "modifiers": {
       "blunt": 0.5,
       "slash": 1,
@@ -731,7 +731,7 @@
     "tip": "Weak to Fire (×1.5): Fire Arrow hits for 38 effective. Immune to Spirit."
   },
   "black-forest:brenna": {
-    "gearTier": 2,
+    "tier": 2,
     "modifiers": {
       "blunt": 1.5,
       "slash": 1,
@@ -827,7 +827,7 @@
     "tip": "Weak to Blunt (×1.5): Bronze Mace hits for 37 effective. Immune to Fire, Poison."
   },
   "black-forest:crow": {
-    "gearTier": 2,
+    "tier": 2,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -906,7 +906,7 @@
     "tip": "No elemental weakness — best raw option: Early Axes (31)."
   },
   "black-forest:deer": {
-    "gearTier": 2,
+    "tier": 2,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -985,7 +985,7 @@
     "tip": "No elemental weakness — best raw option: Early Axes (31). Immune to Spirit."
   },
   "black-forest:ghost": {
-    "gearTier": 2,
+    "tier": 2,
     "modifiers": {
       "blunt": 0.5,
       "slash": 0.5,
@@ -1089,7 +1089,7 @@
     "tip": "No elemental weakness — best raw option: Early Axes (16). Immune to Poison."
   },
   "black-forest:greydwarf": {
-    "gearTier": 2,
+    "tier": 2,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -1170,7 +1170,7 @@
     "tip": "Very weak to Fire (×2): Fire Arrow hits for 61 effective. Immune to Spirit."
   },
   "black-forest:greydwarf-brute": {
-    "gearTier": 2,
+    "tier": 2,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -1251,7 +1251,7 @@
     "tip": "Very weak to Fire (×2): Fire Arrow hits for 61 effective. Immune to Spirit."
   },
   "black-forest:greydwarf-shaman": {
-    "gearTier": 2,
+    "tier": 2,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -1332,7 +1332,7 @@
     "tip": "Very weak to Fire (×2): Fire Arrow hits for 61 effective. Immune to Spirit."
   },
   "black-forest:gull": {
-    "gearTier": 2,
+    "tier": 2,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -1411,7 +1411,7 @@
     "tip": "No elemental weakness — best raw option: Early Axes (31)."
   },
   "black-forest:perch": {
-    "gearTier": 2,
+    "tier": 2,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -1490,7 +1490,7 @@
     "tip": "No elemental weakness — best raw option: Early Axes (31)."
   },
   "black-forest:pike": {
-    "gearTier": 2,
+    "tier": 2,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -1569,7 +1569,7 @@
     "tip": "No elemental weakness — best raw option: Early Axes (31)."
   },
   "black-forest:rancid-remains": {
-    "gearTier": 2,
+    "tier": 2,
     "modifiers": {
       "blunt": 1.5,
       "slash": 1,
@@ -1662,7 +1662,7 @@
     "tip": "Weak to Blunt (×1.5): Bronze Mace hits for 37 effective. Immune to Poison."
   },
   "black-forest:skeleton": {
-    "gearTier": 2,
+    "tier": 2,
     "modifiers": {
       "blunt": 1.5,
       "slash": 1,
@@ -1755,7 +1755,7 @@
     "tip": "Weak to Blunt (×1.5): Bronze Mace hits for 37 effective. Immune to Poison."
   },
   "black-forest:the-elder": {
-    "gearTier": 2,
+    "tier": 2,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -1836,7 +1836,7 @@
     "tip": "Very weak to Fire (×2): Fire Arrow hits for 61 effective. Immune to Poison, Spirit."
   },
   "black-forest:troll": {
-    "gearTier": 2,
+    "tier": 2,
     "modifiers": {
       "blunt": 0.5,
       "slash": 1,
@@ -1930,7 +1930,7 @@
     "tip": "Weak to Pierce (×1.5): Bronzehead Arrow hits for 67 effective. Immune to Spirit."
   },
   "black-forest:trollfish": {
-    "gearTier": 2,
+    "tier": 2,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -2008,8 +2008,487 @@
     "avoid": [],
     "tip": "No elemental weakness — best raw option: Early Axes (31)."
   },
+  "ocean:coral-cod": {
+    "tier": 3,
+    "modifiers": {
+      "blunt": 1,
+      "slash": 1,
+      "pierce": 1,
+      "chop": 0,
+      "pickaxe": 0,
+      "fire": 1,
+      "frost": 1,
+      "lightning": 1,
+      "poison": 1,
+      "spirit": 0
+    },
+    "melee": [
+      {
+        "weapon": "early-axes",
+        "score": 31,
+        "min": 25,
+        "max": 38,
+        "raw": 45,
+        "notes": []
+      },
+      {
+        "weapon": "bronze-atgeir",
+        "score": 31,
+        "min": 25,
+        "max": 38,
+        "raw": 45,
+        "notes": []
+      },
+      {
+        "weapon": "abyssal-razor",
+        "score": 28,
+        "min": 22,
+        "max": 34,
+        "raw": 40,
+        "notes": []
+      }
+    ],
+    "bow": {
+      "weapon": "finewood-bow",
+      "score": 22,
+      "min": 18,
+      "max": 27
+    },
+    "arrows": [
+      {
+        "weapon": "fire-arrow",
+        "score": 46,
+        "min": 36,
+        "max": 55,
+        "raw": 65,
+        "notes": []
+      },
+      {
+        "weapon": "bronzehead-arrow",
+        "score": 45,
+        "min": 35,
+        "max": 54,
+        "raw": 64,
+        "notes": []
+      },
+      {
+        "weapon": "flinthead-arrow",
+        "score": 41,
+        "min": 32,
+        "max": 50,
+        "raw": 59,
+        "notes": []
+      }
+    ],
+    "crossbow": null,
+    "bolts": [],
+    "magic": null,
+    "bomb": null,
+    "avoid": [],
+    "tip": "No elemental weakness — best raw option: Early Axes (31)."
+  },
+  "ocean:gull": {
+    "tier": 3,
+    "modifiers": {
+      "blunt": 1,
+      "slash": 1,
+      "pierce": 1,
+      "chop": 0,
+      "pickaxe": 0,
+      "fire": 1,
+      "frost": 1,
+      "lightning": 1,
+      "poison": 1,
+      "spirit": 0
+    },
+    "melee": [
+      {
+        "weapon": "early-axes",
+        "score": 31,
+        "min": 25,
+        "max": 38,
+        "raw": 45,
+        "notes": []
+      },
+      {
+        "weapon": "bronze-atgeir",
+        "score": 31,
+        "min": 25,
+        "max": 38,
+        "raw": 45,
+        "notes": []
+      },
+      {
+        "weapon": "abyssal-razor",
+        "score": 28,
+        "min": 22,
+        "max": 34,
+        "raw": 40,
+        "notes": []
+      }
+    ],
+    "bow": {
+      "weapon": "finewood-bow",
+      "score": 22,
+      "min": 18,
+      "max": 27
+    },
+    "arrows": [
+      {
+        "weapon": "fire-arrow",
+        "score": 46,
+        "min": 36,
+        "max": 55,
+        "raw": 65,
+        "notes": []
+      },
+      {
+        "weapon": "bronzehead-arrow",
+        "score": 45,
+        "min": 35,
+        "max": 54,
+        "raw": 64,
+        "notes": []
+      },
+      {
+        "weapon": "flinthead-arrow",
+        "score": 41,
+        "min": 32,
+        "max": 50,
+        "raw": 59,
+        "notes": []
+      }
+    ],
+    "crossbow": null,
+    "bolts": [],
+    "magic": null,
+    "bomb": null,
+    "avoid": [],
+    "tip": "No elemental weakness — best raw option: Early Axes (31)."
+  },
+  "ocean:leviathan": {
+    "tier": 3,
+    "modifiers": {
+      "blunt": 1,
+      "slash": 1,
+      "pierce": 1,
+      "chop": 0,
+      "pickaxe": 0,
+      "fire": 1,
+      "frost": 1,
+      "lightning": 1,
+      "poison": 1,
+      "spirit": 0
+    },
+    "melee": [
+      {
+        "weapon": "early-axes",
+        "score": 31,
+        "min": 25,
+        "max": 38,
+        "raw": 45,
+        "notes": []
+      },
+      {
+        "weapon": "bronze-atgeir",
+        "score": 31,
+        "min": 25,
+        "max": 38,
+        "raw": 45,
+        "notes": []
+      },
+      {
+        "weapon": "abyssal-razor",
+        "score": 28,
+        "min": 22,
+        "max": 34,
+        "raw": 40,
+        "notes": []
+      }
+    ],
+    "bow": {
+      "weapon": "finewood-bow",
+      "score": 22,
+      "min": 18,
+      "max": 27
+    },
+    "arrows": [
+      {
+        "weapon": "fire-arrow",
+        "score": 46,
+        "min": 36,
+        "max": 55,
+        "raw": 65,
+        "notes": []
+      },
+      {
+        "weapon": "bronzehead-arrow",
+        "score": 45,
+        "min": 35,
+        "max": 54,
+        "raw": 64,
+        "notes": []
+      },
+      {
+        "weapon": "flinthead-arrow",
+        "score": 41,
+        "min": 32,
+        "max": 50,
+        "raw": 59,
+        "notes": []
+      }
+    ],
+    "crossbow": null,
+    "bolts": [],
+    "magic": null,
+    "bomb": null,
+    "avoid": [],
+    "tip": "No elemental weakness — best raw option: Early Axes (31)."
+  },
+  "ocean:pufferfish": {
+    "tier": 3,
+    "modifiers": {
+      "blunt": 1,
+      "slash": 1,
+      "pierce": 1,
+      "chop": 0,
+      "pickaxe": 0,
+      "fire": 1,
+      "frost": 1,
+      "lightning": 1,
+      "poison": 1,
+      "spirit": 0
+    },
+    "melee": [
+      {
+        "weapon": "early-axes",
+        "score": 31,
+        "min": 25,
+        "max": 38,
+        "raw": 45,
+        "notes": []
+      },
+      {
+        "weapon": "bronze-atgeir",
+        "score": 31,
+        "min": 25,
+        "max": 38,
+        "raw": 45,
+        "notes": []
+      },
+      {
+        "weapon": "abyssal-razor",
+        "score": 28,
+        "min": 22,
+        "max": 34,
+        "raw": 40,
+        "notes": []
+      }
+    ],
+    "bow": {
+      "weapon": "finewood-bow",
+      "score": 22,
+      "min": 18,
+      "max": 27
+    },
+    "arrows": [
+      {
+        "weapon": "fire-arrow",
+        "score": 46,
+        "min": 36,
+        "max": 55,
+        "raw": 65,
+        "notes": []
+      },
+      {
+        "weapon": "bronzehead-arrow",
+        "score": 45,
+        "min": 35,
+        "max": 54,
+        "raw": 64,
+        "notes": []
+      },
+      {
+        "weapon": "flinthead-arrow",
+        "score": 41,
+        "min": 32,
+        "max": 50,
+        "raw": 59,
+        "notes": []
+      }
+    ],
+    "crossbow": null,
+    "bolts": [],
+    "magic": null,
+    "bomb": null,
+    "avoid": [],
+    "tip": "No elemental weakness — best raw option: Early Axes (31)."
+  },
+  "ocean:serpent": {
+    "tier": 3,
+    "modifiers": {
+      "blunt": 1,
+      "slash": 1,
+      "pierce": 1,
+      "chop": 0,
+      "pickaxe": 0,
+      "fire": 0,
+      "frost": 1.5,
+      "lightning": 1,
+      "poison": 0.5,
+      "spirit": 0
+    },
+    "melee": [
+      {
+        "weapon": "early-axes",
+        "score": 31,
+        "min": 25,
+        "max": 38,
+        "raw": 45,
+        "notes": []
+      },
+      {
+        "weapon": "bronze-atgeir",
+        "score": 31,
+        "min": 25,
+        "max": 38,
+        "raw": 45,
+        "notes": []
+      },
+      {
+        "weapon": "abyssal-razor",
+        "score": 28,
+        "min": 22,
+        "max": 34,
+        "raw": 40,
+        "notes": []
+      }
+    ],
+    "bow": {
+      "weapon": "finewood-bow",
+      "score": 22,
+      "min": 18,
+      "max": 27
+    },
+    "arrows": [
+      {
+        "weapon": "bronzehead-arrow",
+        "score": 45,
+        "min": 35,
+        "max": 54,
+        "raw": 64,
+        "notes": []
+      },
+      {
+        "weapon": "flinthead-arrow",
+        "score": 41,
+        "min": 32,
+        "max": 50,
+        "raw": 59,
+        "notes": []
+      },
+      {
+        "weapon": "wood-arrow",
+        "score": 38,
+        "min": 30,
+        "max": 46,
+        "raw": 54,
+        "notes": []
+      }
+    ],
+    "crossbow": null,
+    "bolts": [],
+    "magic": null,
+    "bomb": null,
+    "avoid": [
+      {
+        "type": "fire",
+        "mult": 0
+      }
+    ],
+    "tip": "No elemental weakness — best raw option: Early Axes (31). Immune to Fire, Spirit."
+  },
+  "ocean:tuna": {
+    "tier": 3,
+    "modifiers": {
+      "blunt": 1,
+      "slash": 1,
+      "pierce": 1,
+      "chop": 0,
+      "pickaxe": 0,
+      "fire": 1,
+      "frost": 1,
+      "lightning": 1,
+      "poison": 1,
+      "spirit": 0
+    },
+    "melee": [
+      {
+        "weapon": "early-axes",
+        "score": 31,
+        "min": 25,
+        "max": 38,
+        "raw": 45,
+        "notes": []
+      },
+      {
+        "weapon": "bronze-atgeir",
+        "score": 31,
+        "min": 25,
+        "max": 38,
+        "raw": 45,
+        "notes": []
+      },
+      {
+        "weapon": "abyssal-razor",
+        "score": 28,
+        "min": 22,
+        "max": 34,
+        "raw": 40,
+        "notes": []
+      }
+    ],
+    "bow": {
+      "weapon": "finewood-bow",
+      "score": 22,
+      "min": 18,
+      "max": 27
+    },
+    "arrows": [
+      {
+        "weapon": "fire-arrow",
+        "score": 46,
+        "min": 36,
+        "max": 55,
+        "raw": 65,
+        "notes": []
+      },
+      {
+        "weapon": "bronzehead-arrow",
+        "score": 45,
+        "min": 35,
+        "max": 54,
+        "raw": 64,
+        "notes": []
+      },
+      {
+        "weapon": "flinthead-arrow",
+        "score": 41,
+        "min": 32,
+        "max": 50,
+        "raw": 59,
+        "notes": []
+      }
+    ],
+    "crossbow": null,
+    "bolts": [],
+    "magic": null,
+    "bomb": null,
+    "avoid": [],
+    "tip": "No elemental weakness — best raw option: Early Axes (31)."
+  },
   "swamp:abomination": {
-    "gearTier": 3,
+    "tier": 4,
     "modifiers": {
       "blunt": 0.5,
       "slash": 1,
@@ -2098,7 +2577,7 @@
     "tip": "Weak to Fire (×1.5): Fire Arrow hits for 32 effective. Immune to Frost, Poison, Spirit."
   },
   "swamp:blob": {
-    "gearTier": 3,
+    "tier": 4,
     "modifiers": {
       "blunt": 1.5,
       "slash": 0.5,
@@ -2237,7 +2716,7 @@
     "tip": "Weak to Blunt (×1.5): Iron Mace hits for 58 effective. Immune to Poison."
   },
   "swamp:bonemass": {
-    "gearTier": 3,
+    "tier": 4,
     "modifiers": {
       "blunt": 1.5,
       "slash": 0.5,
@@ -2324,7 +2803,7 @@
     "tip": "Weak to Blunt (×1.5): Iron Mace hits for 58 effective. Immune to Poison."
   },
   "swamp:draugr": {
-    "gearTier": 3,
+    "tier": 4,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -2437,7 +2916,7 @@
     "tip": "No elemental weakness — best raw option: Battleaxe (49). Immune to Poison."
   },
   "swamp:draugr-elite": {
-    "gearTier": 3,
+    "tier": 4,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -2550,7 +3029,7 @@
     "tip": "No elemental weakness — best raw option: Battleaxe (49). Immune to Poison."
   },
   "swamp:giant-herring": {
-    "gearTier": 3,
+    "tier": 4,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -2658,7 +3137,7 @@
     "tip": "No elemental weakness — best raw option: Battleaxe (49)."
   },
   "swamp:kvastur": {
-    "gearTier": 3,
+    "tier": 4,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -2772,7 +3251,7 @@
     "tip": "Very weak to Fire (×2): Fire Arrow hits for 68 effective. Immune to Poison, Spirit."
   },
   "swamp:leech": {
-    "gearTier": 3,
+    "tier": 4,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -2885,7 +3364,7 @@
     "tip": "No elemental weakness — best raw option: Battleaxe (49). Immune to Fire, Spirit."
   },
   "swamp:oozer": {
-    "gearTier": 3,
+    "tier": 4,
     "modifiers": {
       "blunt": 1.5,
       "slash": 0.5,
@@ -3024,7 +3503,7 @@
     "tip": "Weak to Blunt (×1.5): Iron Mace hits for 58 effective. Immune to Poison."
   },
   "swamp:skeleton": {
-    "gearTier": 3,
+    "tier": 4,
     "modifiers": {
       "blunt": 1.5,
       "slash": 1,
@@ -3154,7 +3633,7 @@
     "tip": "Weak to Blunt (×1.5): Iron Mace hits for 58 effective. Immune to Poison."
   },
   "swamp:surtling": {
-    "gearTier": 3,
+    "tier": 4,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -3267,7 +3746,7 @@
     "tip": "No elemental weakness — best raw option: Battleaxe (49). Immune to Fire, Poison, Spirit."
   },
   "swamp:wraith": {
-    "gearTier": 3,
+    "tier": 4,
     "modifiers": {
       "blunt": 0.5,
       "slash": 0.5,
@@ -3407,7 +3886,7 @@
     "tip": "Weak to Fire (×1.5): Fire Arrow hits for 42 effective. Immune to Frost, Poison."
   },
   "swamp:writhan": {
-    "gearTier": 3,
+    "tier": 4,
     "modifiers": {
       "blunt": 0.5,
       "slash": 1.5,
@@ -3531,661 +4010,8 @@
     ],
     "tip": "Weak to Slash (×1.5): Battleaxe hits for 74 effective. Immune to Poison."
   },
-  "ocean:coral-cod": {
-    "gearTier": 3,
-    "modifiers": {
-      "blunt": 1,
-      "slash": 1,
-      "pierce": 1,
-      "chop": 0,
-      "pickaxe": 0,
-      "fire": 1,
-      "frost": 1,
-      "lightning": 1,
-      "poison": 1,
-      "spirit": 0
-    },
-    "melee": [
-      {
-        "weapon": "battleaxe",
-        "score": 49,
-        "min": 39,
-        "max": 60,
-        "raw": 70,
-        "notes": []
-      },
-      {
-        "weapon": "iron-atgeir",
-        "score": 46,
-        "min": 36,
-        "max": 55,
-        "raw": 65,
-        "notes": []
-      },
-      {
-        "weapon": "iron-axe",
-        "score": 42,
-        "min": 33,
-        "max": 51,
-        "raw": 60,
-        "notes": []
-      }
-    ],
-    "bow": {
-      "weapon": "huntsman-bow",
-      "score": 29,
-      "min": 23,
-      "max": 36
-    },
-    "arrows": [
-      {
-        "weapon": "ironhead-arrow",
-        "score": 59,
-        "min": 46,
-        "max": 71,
-        "raw": 84,
-        "notes": []
-      },
-      {
-        "weapon": "fire-arrow",
-        "score": 52,
-        "min": 41,
-        "max": 64,
-        "raw": 75,
-        "notes": []
-      },
-      {
-        "weapon": "bronzehead-arrow",
-        "score": 52,
-        "min": 41,
-        "max": 63,
-        "raw": 74,
-        "notes": []
-      }
-    ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 140,
-      "min": 110,
-      "max": 170
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 169,
-        "min": 133,
-        "max": 206,
-        "raw": 242,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 162,
-        "min": 128,
-        "max": 197,
-        "raw": 232,
-        "notes": []
-      }
-    ],
-    "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 5,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
-    "avoid": [],
-    "tip": "No elemental weakness — best raw option: Battleaxe (49)."
-  },
-  "ocean:gull": {
-    "gearTier": 3,
-    "modifiers": {
-      "blunt": 1,
-      "slash": 1,
-      "pierce": 1,
-      "chop": 0,
-      "pickaxe": 0,
-      "fire": 1,
-      "frost": 1,
-      "lightning": 1,
-      "poison": 1,
-      "spirit": 0
-    },
-    "melee": [
-      {
-        "weapon": "battleaxe",
-        "score": 49,
-        "min": 39,
-        "max": 60,
-        "raw": 70,
-        "notes": []
-      },
-      {
-        "weapon": "iron-atgeir",
-        "score": 46,
-        "min": 36,
-        "max": 55,
-        "raw": 65,
-        "notes": []
-      },
-      {
-        "weapon": "iron-axe",
-        "score": 42,
-        "min": 33,
-        "max": 51,
-        "raw": 60,
-        "notes": []
-      }
-    ],
-    "bow": {
-      "weapon": "huntsman-bow",
-      "score": 29,
-      "min": 23,
-      "max": 36
-    },
-    "arrows": [
-      {
-        "weapon": "ironhead-arrow",
-        "score": 59,
-        "min": 46,
-        "max": 71,
-        "raw": 84,
-        "notes": []
-      },
-      {
-        "weapon": "fire-arrow",
-        "score": 52,
-        "min": 41,
-        "max": 64,
-        "raw": 75,
-        "notes": []
-      },
-      {
-        "weapon": "bronzehead-arrow",
-        "score": 52,
-        "min": 41,
-        "max": 63,
-        "raw": 74,
-        "notes": []
-      }
-    ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 140,
-      "min": 110,
-      "max": 170
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 169,
-        "min": 133,
-        "max": 206,
-        "raw": 242,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 162,
-        "min": 128,
-        "max": 197,
-        "raw": 232,
-        "notes": []
-      }
-    ],
-    "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 5,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
-    "avoid": [],
-    "tip": "No elemental weakness — best raw option: Battleaxe (49)."
-  },
-  "ocean:leviathan": {
-    "gearTier": 3,
-    "modifiers": {
-      "blunt": 1,
-      "slash": 1,
-      "pierce": 1,
-      "chop": 0,
-      "pickaxe": 0,
-      "fire": 1,
-      "frost": 1,
-      "lightning": 1,
-      "poison": 1,
-      "spirit": 0
-    },
-    "melee": [
-      {
-        "weapon": "battleaxe",
-        "score": 49,
-        "min": 39,
-        "max": 60,
-        "raw": 70,
-        "notes": []
-      },
-      {
-        "weapon": "iron-atgeir",
-        "score": 46,
-        "min": 36,
-        "max": 55,
-        "raw": 65,
-        "notes": []
-      },
-      {
-        "weapon": "iron-axe",
-        "score": 42,
-        "min": 33,
-        "max": 51,
-        "raw": 60,
-        "notes": []
-      }
-    ],
-    "bow": {
-      "weapon": "huntsman-bow",
-      "score": 29,
-      "min": 23,
-      "max": 36
-    },
-    "arrows": [
-      {
-        "weapon": "ironhead-arrow",
-        "score": 59,
-        "min": 46,
-        "max": 71,
-        "raw": 84,
-        "notes": []
-      },
-      {
-        "weapon": "fire-arrow",
-        "score": 52,
-        "min": 41,
-        "max": 64,
-        "raw": 75,
-        "notes": []
-      },
-      {
-        "weapon": "bronzehead-arrow",
-        "score": 52,
-        "min": 41,
-        "max": 63,
-        "raw": 74,
-        "notes": []
-      }
-    ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 140,
-      "min": 110,
-      "max": 170
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 169,
-        "min": 133,
-        "max": 206,
-        "raw": 242,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 162,
-        "min": 128,
-        "max": 197,
-        "raw": 232,
-        "notes": []
-      }
-    ],
-    "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 5,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
-    "avoid": [],
-    "tip": "No elemental weakness — best raw option: Battleaxe (49)."
-  },
-  "ocean:pufferfish": {
-    "gearTier": 3,
-    "modifiers": {
-      "blunt": 1,
-      "slash": 1,
-      "pierce": 1,
-      "chop": 0,
-      "pickaxe": 0,
-      "fire": 1,
-      "frost": 1,
-      "lightning": 1,
-      "poison": 1,
-      "spirit": 0
-    },
-    "melee": [
-      {
-        "weapon": "battleaxe",
-        "score": 49,
-        "min": 39,
-        "max": 60,
-        "raw": 70,
-        "notes": []
-      },
-      {
-        "weapon": "iron-atgeir",
-        "score": 46,
-        "min": 36,
-        "max": 55,
-        "raw": 65,
-        "notes": []
-      },
-      {
-        "weapon": "iron-axe",
-        "score": 42,
-        "min": 33,
-        "max": 51,
-        "raw": 60,
-        "notes": []
-      }
-    ],
-    "bow": {
-      "weapon": "huntsman-bow",
-      "score": 29,
-      "min": 23,
-      "max": 36
-    },
-    "arrows": [
-      {
-        "weapon": "ironhead-arrow",
-        "score": 59,
-        "min": 46,
-        "max": 71,
-        "raw": 84,
-        "notes": []
-      },
-      {
-        "weapon": "fire-arrow",
-        "score": 52,
-        "min": 41,
-        "max": 64,
-        "raw": 75,
-        "notes": []
-      },
-      {
-        "weapon": "bronzehead-arrow",
-        "score": 52,
-        "min": 41,
-        "max": 63,
-        "raw": 74,
-        "notes": []
-      }
-    ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 140,
-      "min": 110,
-      "max": 170
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 169,
-        "min": 133,
-        "max": 206,
-        "raw": 242,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 162,
-        "min": 128,
-        "max": 197,
-        "raw": 232,
-        "notes": []
-      }
-    ],
-    "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 5,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
-    "avoid": [],
-    "tip": "No elemental weakness — best raw option: Battleaxe (49)."
-  },
-  "ocean:serpent": {
-    "gearTier": 3,
-    "modifiers": {
-      "blunt": 1,
-      "slash": 1,
-      "pierce": 1,
-      "chop": 0,
-      "pickaxe": 0,
-      "fire": 0,
-      "frost": 1.5,
-      "lightning": 1,
-      "poison": 0.5,
-      "spirit": 0
-    },
-    "melee": [
-      {
-        "weapon": "battleaxe",
-        "score": 49,
-        "min": 39,
-        "max": 60,
-        "raw": 70,
-        "notes": []
-      },
-      {
-        "weapon": "iron-atgeir",
-        "score": 46,
-        "min": 36,
-        "max": 55,
-        "raw": 65,
-        "notes": []
-      },
-      {
-        "weapon": "iron-axe",
-        "score": 42,
-        "min": 33,
-        "max": 51,
-        "raw": 60,
-        "notes": []
-      }
-    ],
-    "bow": {
-      "weapon": "huntsman-bow",
-      "score": 29,
-      "min": 23,
-      "max": 36
-    },
-    "arrows": [
-      {
-        "weapon": "ironhead-arrow",
-        "score": 59,
-        "min": 46,
-        "max": 71,
-        "raw": 84,
-        "notes": []
-      },
-      {
-        "weapon": "bronzehead-arrow",
-        "score": 52,
-        "min": 41,
-        "max": 63,
-        "raw": 74,
-        "notes": []
-      },
-      {
-        "weapon": "flinthead-arrow",
-        "score": 48,
-        "min": 38,
-        "max": 59,
-        "raw": 69,
-        "notes": []
-      }
-    ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 140,
-      "min": 110,
-      "max": 170
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 169,
-        "min": 133,
-        "max": 206,
-        "raw": 242,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 162,
-        "min": 128,
-        "max": 197,
-        "raw": 232,
-        "notes": []
-      }
-    ],
-    "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 5,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
-    "avoid": [
-      {
-        "type": "fire",
-        "mult": 0
-      }
-    ],
-    "tip": "No elemental weakness — best raw option: Battleaxe (49). Immune to Fire, Spirit."
-  },
-  "ocean:tuna": {
-    "gearTier": 3,
-    "modifiers": {
-      "blunt": 1,
-      "slash": 1,
-      "pierce": 1,
-      "chop": 0,
-      "pickaxe": 0,
-      "fire": 1,
-      "frost": 1,
-      "lightning": 1,
-      "poison": 1,
-      "spirit": 0
-    },
-    "melee": [
-      {
-        "weapon": "battleaxe",
-        "score": 49,
-        "min": 39,
-        "max": 60,
-        "raw": 70,
-        "notes": []
-      },
-      {
-        "weapon": "iron-atgeir",
-        "score": 46,
-        "min": 36,
-        "max": 55,
-        "raw": 65,
-        "notes": []
-      },
-      {
-        "weapon": "iron-axe",
-        "score": 42,
-        "min": 33,
-        "max": 51,
-        "raw": 60,
-        "notes": []
-      }
-    ],
-    "bow": {
-      "weapon": "huntsman-bow",
-      "score": 29,
-      "min": 23,
-      "max": 36
-    },
-    "arrows": [
-      {
-        "weapon": "ironhead-arrow",
-        "score": 59,
-        "min": 46,
-        "max": 71,
-        "raw": 84,
-        "notes": []
-      },
-      {
-        "weapon": "fire-arrow",
-        "score": 52,
-        "min": 41,
-        "max": 64,
-        "raw": 75,
-        "notes": []
-      },
-      {
-        "weapon": "bronzehead-arrow",
-        "score": 52,
-        "min": 41,
-        "max": 63,
-        "raw": 74,
-        "notes": []
-      }
-    ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 140,
-      "min": 110,
-      "max": 170
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 169,
-        "min": 133,
-        "max": 206,
-        "raw": 242,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 162,
-        "min": 128,
-        "max": 197,
-        "raw": 232,
-        "notes": []
-      }
-    ],
-    "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 5,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
-    "avoid": [],
-    "tip": "No elemental weakness — best raw option: Battleaxe (49)."
-  },
   "mountain:bat": {
-    "gearTier": 4,
+    "tier": 5,
     "modifiers": {
       "blunt": 0.5,
       "slash": 0.5,
@@ -4330,7 +4156,7 @@
     "tip": "Weak to Fire (×1.5): Fire Arrow hits for 43 effective. Immune to Frost, Poison."
   },
   "mountain:cultist": {
-    "gearTier": 4,
+    "tier": 5,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -4457,7 +4283,7 @@
     "tip": "Weak to Poison (×1.5): Poison Arrow hits for 127 effective. Immune to Fire."
   },
   "mountain:drake": {
-    "gearTier": 4,
+    "tier": 5,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -4580,7 +4406,7 @@
     "tip": "Weak to Fire (×1.5): Fire Arrow hits for 78 effective. Immune to Frost, Spirit."
   },
   "mountain:draugr": {
-    "gearTier": 4,
+    "tier": 5,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -4712,7 +4538,7 @@
     "tip": "No elemental weakness — best raw option: Frostner (65). Immune to Poison."
   },
   "mountain:fenring": {
-    "gearTier": 4,
+    "tier": 5,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -4839,7 +4665,7 @@
     "tip": "Weak to Fire (×1.5): Fire Arrow hits for 71 effective."
   },
   "mountain:geirrhafa": {
-    "gearTier": 4,
+    "tier": 5,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -4962,7 +4788,7 @@
     "tip": "Weak to Fire (×1.5): Fire Arrow hits for 78 effective. Immune to Frost."
   },
   "mountain:moder": {
-    "gearTier": 4,
+    "tier": 5,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -5085,7 +4911,7 @@
     "tip": "Weak to Fire (×1.5): Fire Arrow hits for 78 effective. Immune to Frost, Spirit."
   },
   "mountain:skeleton": {
-    "gearTier": 4,
+    "tier": 5,
     "modifiers": {
       "blunt": 1.5,
       "slash": 1,
@@ -5210,7 +5036,7 @@
     "tip": "Weak to Blunt (×1.5): Iron Mace hits for 58 effective. Immune to Poison."
   },
   "mountain:stone-golem": {
-    "gearTier": 4,
+    "tier": 5,
     "modifiers": {
       "blunt": 1,
       "slash": 0.5,
@@ -5325,7 +5151,7 @@
     "tip": "Very weak to Pickaxe (×2): Bronze Pickaxe hits for 61 effective. Immune to Fire, Frost, Poison, Spirit."
   },
   "mountain:tetra": {
-    "gearTier": 4,
+    "tier": 5,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -5442,7 +5268,7 @@
     "tip": "No elemental weakness — best raw option: Frostner (65)."
   },
   "mountain:ulv": {
-    "gearTier": 4,
+    "tier": 5,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -5569,7 +5395,7 @@
     "tip": "Weak to Poison (×1.5): Poison Arrow hits for 127 effective."
   },
   "mountain:wolf": {
-    "gearTier": 4,
+    "tier": 5,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -5686,7 +5512,7 @@
     "tip": "No elemental weakness — best raw option: Frostner (65). Immune to Spirit."
   },
   "plains:chicken": {
-    "gearTier": 5,
+    "tier": 6,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -5799,7 +5625,7 @@
     "tip": "No elemental weakness — best raw option: Porcupine (79). Immune to Spirit."
   },
   "plains:deathsquito": {
-    "gearTier": 5,
+    "tier": 6,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -5912,7 +5738,7 @@
     "tip": "No elemental weakness — best raw option: Porcupine (79). Immune to Spirit."
   },
   "plains:fuling": {
-    "gearTier": 5,
+    "tier": 6,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -6025,7 +5851,7 @@
     "tip": "No elemental weakness — best raw option: Porcupine (79). Immune to Spirit."
   },
   "plains:fuling-berserker": {
-    "gearTier": 5,
+    "tier": 6,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -6138,7 +5964,7 @@
     "tip": "No elemental weakness — best raw option: Porcupine (79). Immune to Spirit."
   },
   "plains:fuling-shaman": {
-    "gearTier": 5,
+    "tier": 6,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -6251,7 +6077,7 @@
     "tip": "No elemental weakness — best raw option: Porcupine (79). Immune to Spirit."
   },
   "plains:grouper": {
-    "gearTier": 5,
+    "tier": 6,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -6364,7 +6190,7 @@
     "tip": "No elemental weakness — best raw option: Porcupine (79)."
   },
   "plains:growth": {
-    "gearTier": 5,
+    "tier": 6,
     "modifiers": {
       "blunt": 1.5,
       "slash": 0.5,
@@ -6494,7 +6320,7 @@
     "tip": "Weak to Blunt (×1.5): Porcupine hits for 75 effective. Immune to Poison."
   },
   "plains:gull": {
-    "gearTier": 5,
+    "tier": 6,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -6607,7 +6433,7 @@
     "tip": "No elemental weakness — best raw option: Porcupine (79)."
   },
   "plains:hen": {
-    "gearTier": 5,
+    "tier": 6,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -6720,7 +6546,7 @@
     "tip": "No elemental weakness — best raw option: Porcupine (79). Immune to Spirit."
   },
   "plains:lox": {
-    "gearTier": 5,
+    "tier": 6,
     "modifiers": {
       "blunt": 0.5,
       "slash": 0.5,
@@ -6851,7 +6677,7 @@
     "tip": "Weak to Fire (×1.5): Fire Arrow hits for 78 effective. Immune to Spirit."
   },
   "plains:vile": {
-    "gearTier": 5,
+    "tier": 6,
     "modifiers": {
       "blunt": 0.5,
       "slash": 0.5,
@@ -6996,7 +6822,7 @@
     "tip": "Weak to Fire (×1.5): Fire Arrow hits for 43 effective. Immune to Poison."
   },
   "plains:yagluth": {
-    "gearTier": 5,
+    "tier": 6,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -7079,7 +6905,7 @@
     "tip": "No elemental weakness — best raw option: Black Metal Battleaxe (77). Immune to Poison."
   },
   "plains:zil-thungr": {
-    "gearTier": 5,
+    "tier": 6,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -7192,7 +7018,7 @@
     "tip": "No elemental weakness — best raw option: Porcupine (79). Immune to Spirit."
   },
   "mistlands:anglerfish": {
-    "gearTier": 6,
+    "tier": 7,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -7318,7 +7144,7 @@
     "tip": "No elemental weakness — best raw option: Krom (105)."
   },
   "mistlands:dvergr-mage": {
-    "gearTier": 6,
+    "tier": 7,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -7454,7 +7280,7 @@
     "tip": "No elemental weakness — best raw option: Krom (105). Immune to Spirit."
   },
   "mistlands:dvergr-rogue": {
-    "gearTier": 6,
+    "tier": 7,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -7580,7 +7406,7 @@
     "tip": "No elemental weakness — best raw option: Krom (105). Immune to Spirit."
   },
   "mistlands:gjall": {
-    "gearTier": 6,
+    "tier": 7,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -7712,7 +7538,7 @@
     "tip": "No elemental weakness — best raw option: Krom (105). Immune to Spirit."
   },
   "mistlands:hare": {
-    "gearTier": 6,
+    "tier": 7,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -7838,7 +7664,7 @@
     "tip": "No elemental weakness — best raw option: Krom (105). Immune to Spirit."
   },
   "mistlands:mistile": {
-    "gearTier": 6,
+    "tier": 7,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -7964,7 +7790,7 @@
     "tip": "No elemental weakness — best raw option: Krom (105)."
   },
   "mistlands:pufferfish": {
-    "gearTier": 6,
+    "tier": 7,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -8090,7 +7916,7 @@
     "tip": "No elemental weakness — best raw option: Krom (105)."
   },
   "mistlands:seeker": {
-    "gearTier": 6,
+    "tier": 7,
     "modifiers": {
       "blunt": 0.5,
       "slash": 0.5,
@@ -8242,7 +8068,7 @@
     "tip": "No elemental weakness — best raw option: Himminafl (70). Immune to Spirit."
   },
   "mistlands:seeker-brood": {
-    "gearTier": 6,
+    "tier": 7,
     "modifiers": {
       "blunt": 0.5,
       "slash": 0.5,
@@ -8394,7 +8220,7 @@
     "tip": "No elemental weakness — best raw option: Himminafl (70). Immune to Spirit."
   },
   "mistlands:seeker-soldier": {
-    "gearTier": 6,
+    "tier": 7,
     "modifiers": {
       "blunt": 0.5,
       "slash": 0.5,
@@ -8546,7 +8372,7 @@
     "tip": "No elemental weakness — best raw option: Himminafl (70). Immune to Spirit."
   },
   "mistlands:the-queen": {
-    "gearTier": 6,
+    "tier": 7,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -8680,7 +8506,7 @@
     "tip": "No elemental weakness — best raw option: Krom (105). Immune to Spirit."
   },
   "mistlands:tick": {
-    "gearTier": 6,
+    "tier": 7,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -8817,7 +8643,7 @@
     "tip": "Weak to Pierce (×1.5): Carapace Bolt hits for 286 effective. Immune to Spirit."
   },
   "ashlands:ash-crow": {
-    "gearTier": 7,
+    "tier": 8,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -8937,7 +8763,7 @@
     "tip": "No elemental weakness — best raw option: Primal Slayer (139)."
   },
   "ashlands:ashlands-dvergr": {
-    "gearTier": 7,
+    "tier": 8,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -9057,7 +8883,7 @@
     "tip": "No elemental weakness — best raw option: Primal Slayer (139). Immune to Spirit."
   },
   "ashlands:asksvin": {
-    "gearTier": 7,
+    "tier": 8,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -9187,7 +9013,7 @@
     "tip": "No elemental weakness — best raw option: Scourging Slayer (139). Immune to Spirit."
   },
   "ashlands:bonemaw": {
-    "gearTier": 7,
+    "tier": 8,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -9319,7 +9145,7 @@
     "tip": "Weak to Frost (×1.5): Frost Arrow hits for 146 effective. Immune to Fire, Spirit."
   },
   "ashlands:charred-marksman": {
-    "gearTier": 7,
+    "tier": 8,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -9462,7 +9288,7 @@
     "tip": "Weak to Spirit (×1.5): Silver Sword hits for 100 effective. Immune to Poison."
   },
   "ashlands:charred-twitcher": {
-    "gearTier": 7,
+    "tier": 8,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -9605,7 +9431,7 @@
     "tip": "Weak to Spirit (×1.5): Silver Sword hits for 100 effective. Immune to Poison."
   },
   "ashlands:charred-warlock": {
-    "gearTier": 7,
+    "tier": 8,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -9753,7 +9579,7 @@
     "tip": "Weak to Spirit (×1.5): Silver Sword hits for 100 effective. Immune to Poison."
   },
   "ashlands:charred-warrior": {
-    "gearTier": 7,
+    "tier": 8,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -9896,7 +9722,7 @@
     "tip": "Weak to Spirit (×1.5): Silver Sword hits for 100 effective. Immune to Poison."
   },
   "ashlands:fader": {
-    "gearTier": 7,
+    "tier": 8,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -10034,7 +9860,7 @@
     "tip": "No elemental weakness — best raw option: Primal Slayer (139). Immune to Fire, Spirit."
   },
   "ashlands:fallen-valkyrie": {
-    "gearTier": 7,
+    "tier": 8,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -10166,7 +9992,7 @@
     "tip": "Weak to Spirit (×1.5): Silver Arrow hits for 137 effective. Immune to Poison."
   },
   "ashlands:lava-blob": {
-    "gearTier": 7,
+    "tier": 8,
     "modifiers": {
       "blunt": 1.5,
       "slash": 1,
@@ -10327,7 +10153,7 @@
     "tip": "Weak to Blunt (×1.5): Storm Star hits for 171 effective. Immune to Fire."
   },
   "ashlands:lord-reto": {
-    "gearTier": 7,
+    "tier": 8,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -10475,7 +10301,7 @@
     "tip": "Weak to Spirit (×1.5): Silver Sword hits for 100 effective. Immune to Poison."
   },
   "ashlands:magmafish": {
-    "gearTier": 7,
+    "tier": 8,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -10595,7 +10421,7 @@
     "tip": "No elemental weakness — best raw option: Primal Slayer (139)."
   },
   "ashlands:morgen": {
-    "gearTier": 7,
+    "tier": 8,
     "modifiers": {
       "blunt": 0.5,
       "slash": 0.5,
@@ -10759,7 +10585,7 @@
     "tip": "Weak to Lightning (×1.5): Himminafl hits for 91 effective."
   },
   "ashlands:skugg": {
-    "gearTier": 7,
+    "tier": 8,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -10919,7 +10745,7 @@
     "tip": "No elemental weakness — best raw option: Scourging Slayer (135). Immune to Poison."
   },
   "ashlands:volture": {
-    "gearTier": 7,
+    "tier": 8,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -11045,7 +10871,7 @@
     "tip": "Weak to Frost (×1.5): Frost Arrow hits for 146 effective. Immune to Poison."
   },
   "deep-north:barka": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 0.5,
       "slash": 0.5,
@@ -11228,7 +11054,7 @@
     "tip": "Weak to Fire (×1.5): Trollstav hits for 385 effective. Immune to Poison, Spirit."
   },
   "deep-north:captive-fuling": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -11354,7 +11180,7 @@
     "tip": "No elemental weakness — best raw option: Frostfire Sledge (244). Immune to Spirit."
   },
   "deep-north:elaking": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -11486,7 +11312,7 @@
     "tip": "Weak to Fire (×1.5): Trollstav hits for 315 effective. Immune to Spirit."
   },
   "deep-north:eyeless-one": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -11616,7 +11442,7 @@
     "tip": "No elemental weakness — best raw option: Thunderblood Sledge (228). Immune to Spirit."
   },
   "deep-north:fallen-warrior": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 0.5,
       "slash": 0.5,
@@ -11781,7 +11607,7 @@
     "tip": "Weak to Spirit (×1.5): Silver Arrow hits for 173 effective. Immune to Poison."
   },
   "deep-north:frysling": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -11936,7 +11762,7 @@
     "tip": "Weak to Frost (×1.5): Frostfire Crossbow hits for 281 effective. Immune to Fire, Poison, Spirit."
   },
   "deep-north:gammeltroll": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 0.5,
       "slash": 0.5,
@@ -12098,7 +11924,7 @@
     "tip": "Weak to Pickaxe (×1.5): Ember Charge hits for 145 effective. Immune to Fire, Spirit."
   },
   "deep-north:greydwarf-deep-north": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -12243,7 +12069,7 @@
     "tip": "Very weak to Fire (×2): Trollstav hits for 420 effective."
   },
   "deep-north:greydwarf-shaman-deep-north": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -12388,7 +12214,7 @@
     "tip": "Very weak to Fire (×2): Trollstav hits for 420 effective. Immune to Spirit."
   },
   "deep-north:hexen": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -12524,7 +12350,7 @@
     "tip": "Weak to Fire (×1.5): Trollstav hits for 315 effective. Immune to Poison, Spirit."
   },
   "deep-north:imprisoned-dvergr": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -12650,7 +12476,7 @@
     "tip": "No elemental weakness — best raw option: Frostfire Sledge (244). Immune to Spirit."
   },
   "deep-north:kall-fimbulbringer": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -12791,7 +12617,7 @@
     "tip": "No elemental weakness — best raw option: Thunderblood Sledge (207). Immune to Spirit."
   },
   "deep-north:krigen": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -12936,7 +12762,7 @@
     "tip": "No elemental weakness — best raw option: Thunderblood Sledge (228). Immune to Poison, Spirit."
   },
   "deep-north:moose": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 0.5,
       "slash": 0.5,
@@ -13082,7 +12908,7 @@
     "tip": "Weak to Fire (×1.5): Trollstav hits for 315 effective. Immune to Spirit."
   },
   "deep-north:moose-calf": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 0.5,
       "slash": 0.5,
@@ -13228,7 +13054,7 @@
     "tip": "Weak to Fire (×1.5): Trollstav hits for 315 effective. Immune to Spirit."
   },
   "deep-north:northern-salmon": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -13354,7 +13180,7 @@
     "tip": "No elemental weakness — best raw option: Frostfire Sledge (244)."
   },
   "deep-north:seal": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 1,
       "slash": 1,
@@ -13495,7 +13321,7 @@
     "tip": "Weak to Fire (×1.5): Trollstav hits for 315 effective. Immune to Spirit."
   },
   "deep-north:shadow": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 0,
       "slash": 0,
@@ -13593,7 +13419,7 @@
     "tip": "No elemental weakness — best raw option: Bare Fists (0). Immune to Blunt, Slash, Pierce, Fire, Frost, Lightning, Poison, Spirit."
   },
   "deep-north:shapeless-pulp": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 1.5,
       "slash": 0.5,
@@ -13768,7 +13594,7 @@
     "tip": "Weak to Blunt (×1.5): Frostfire Sledge hits for 351 effective. Immune to Poison."
   },
   "deep-north:skeleton": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 1.5,
       "slash": 1,
@@ -13926,7 +13752,7 @@
     "tip": "Weak to Blunt (×1.5): Thunderblood Sledge hits for 320 effective. Immune to Poison."
   },
   "deep-north:tiny-pulp": {
-    "gearTier": 8,
+    "tier": 9,
     "modifiers": {
       "blunt": 1.5,
       "slash": 0.5,

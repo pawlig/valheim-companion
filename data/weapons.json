@@ -123,7 +123,7 @@
       }
     ],
     "quantity": null,
-    "tier": 3,
+    "tier": 4,
     "biome": "swamp",
     "description": "Despite its gnarled look, this spear is strong and perfectly balanced."
   },
@@ -205,7 +205,7 @@
       }
     ],
     "quantity": null,
-    "tier": 3,
+    "tier": 4,
     "biome": "swamp",
     "description": "A slow but powerful weapon."
   },
@@ -254,7 +254,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Risen again from the ashes, this bow holds unyielding strength."
   },
@@ -327,7 +327,7 @@
       }
     ],
     "quantity": null,
-    "tier": 3,
+    "tier": 4,
     "biome": "swamp",
     "description": "Skull-splitter, a warrior's joy."
   },
@@ -374,7 +374,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Let your rage take over and face the slaughter."
   },
@@ -416,7 +416,7 @@
       }
     ],
     "quantity": 3,
-    "tier": 6,
+    "tier": 7,
     "biome": "mistlands",
     "description": "Handle with care."
   },
@@ -458,7 +458,7 @@
       }
     ],
     "quantity": null,
-    "tier": 5,
+    "tier": 6,
     "biome": "plains",
     "description": "A vicious hewing-axe of almost unbreakable black metal."
   },
@@ -502,7 +502,7 @@
       }
     ],
     "quantity": null,
-    "tier": 5,
+    "tier": 6,
     "biome": "plains",
     "description": "A perfectly-balanced axe forged from dark metal with an emerald sheen."
   },
@@ -546,7 +546,7 @@
       }
     ],
     "quantity": null,
-    "tier": 5,
+    "tier": 6,
     "biome": "plains",
     "description": "Green shall be the last thing your foes see before you cleave them in half."
   },
@@ -588,7 +588,7 @@
       }
     ],
     "quantity": 20,
-    "tier": 5,
+    "tier": 6,
     "biome": "plains",
     "description": "A sleek bolt of dark metal."
   },
@@ -632,7 +632,7 @@
       }
     ],
     "quantity": null,
-    "tier": 5,
+    "tier": 6,
     "biome": "plains",
     "description": "A darkling blade. Strong and sharp."
   },
@@ -675,7 +675,7 @@
       }
     ],
     "quantity": null,
-    "tier": 6,
+    "tier": 7,
     "biome": "mistlands",
     "description": "A good strong pick of glistening dark metal."
   },
@@ -717,7 +717,7 @@
       }
     ],
     "quantity": null,
-    "tier": 5,
+    "tier": 6,
     "biome": "plains",
     "description": "A thing of death and beauty. It catches the light with a greenish glow."
   },
@@ -764,7 +764,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "The closer you are to death, the harder you are sure to hit."
   },
@@ -809,7 +809,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Arrows loosed from this bow will tear into flesh with unmatched ferocity."
   },
@@ -853,7 +853,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "The blood all but soaks into this mace, and it always yearns for more."
   },
@@ -895,7 +895,7 @@
       }
     ],
     "quantity": 20,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "An arrow forged of perhaps the hardest materials in this world..."
   },
@@ -937,7 +937,7 @@
       }
     ],
     "quantity": 20,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "A bolt forged of perhaps the hardest materials in this world..."
   },
@@ -1315,7 +1315,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "If it bleeds, you can kill it."
   },
@@ -1357,7 +1357,7 @@
       }
     ],
     "quantity": 20,
-    "tier": 6,
+    "tier": 7,
     "biome": "mistlands",
     "description": "Heavy and pointy, this one's gonna hurt."
   },
@@ -1399,7 +1399,7 @@
       }
     ],
     "quantity": 20,
-    "tier": 6,
+    "tier": 7,
     "biome": "mistlands",
     "description": "A heavy and solid bolt."
   },
@@ -1441,7 +1441,7 @@
       }
     ],
     "quantity": null,
-    "tier": 6,
+    "tier": 7,
     "biome": "mistlands",
     "description": "Sharpened to jagged perfection, this spear is sure to be deadly."
   },
@@ -1483,7 +1483,7 @@
       }
     ],
     "quantity": 20,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "This arrow has been whittled into shape from a charred femur, and it's as hard as any metal."
   },
@@ -1525,7 +1525,7 @@
       }
     ],
     "quantity": 20,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "A sturdy bone from a forearm, shaped into a deadly bolt."
   },
@@ -1683,7 +1683,7 @@
       }
     ],
     "quantity": null,
-    "tier": 4,
+    "tier": 5,
     "biome": "mountain",
     "description": "It's see-through and tears through."
   },
@@ -1725,7 +1725,7 @@
       }
     ],
     "quantity": null,
-    "tier": 6,
+    "tier": 7,
     "biome": "mistlands",
     "description": "This mighty sledge yearns to wreak havoc."
   },
@@ -1775,7 +1775,7 @@
       }
     ],
     "quantity": null,
-    "tier": 4,
+    "tier": 5,
     "biome": "mountain",
     "description": "Dark wood strung with glistening sinew. A vicious thing."
   },
@@ -1823,7 +1823,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "What happens next may shock you."
   },
@@ -1877,7 +1877,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "The sword that was broken is whole once more. Its flames burn hot, fuelled by the memories of ancient warriors."
   },
@@ -1964,7 +1964,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "A chill that goes right through to the bone."
   },
@@ -2006,7 +2006,7 @@
       }
     ],
     "quantity": 10,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "Trapped embers, ready to burst. Caution is advised."
   },
@@ -2052,7 +2052,7 @@
       }
     ],
     "quantity": null,
-    "tier": 4,
+    "tier": 5,
     "biome": "mountain",
     "description": "Even in death, the wolf's tooth aches for flesh."
   },
@@ -2186,7 +2186,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Dense yet spiked flametal, perfect for bashing enemy faces in."
   },
@@ -2228,7 +2228,7 @@
       }
     ],
     "quantity": null,
-    "tier": 4,
+    "tier": 5,
     "biome": "mountain",
     "description": "If claws work for wolves, why not for a viking?"
   },
@@ -2444,7 +2444,7 @@
       }
     ],
     "quantity": 20,
-    "tier": 4,
+    "tier": 5,
     "biome": "mountain",
     "description": "A shard of piercing ice."
   },
@@ -2494,7 +2494,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "Let the flames begin to devour, while the ice claims whatever remains."
   },
@@ -2547,7 +2547,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "Burn it all to the ground, or freeze it in an eternal moment of destruction..."
   },
@@ -2600,7 +2600,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "Keep your head cool as you draw, and then let your fury loose with your arrows."
   },
@@ -2653,7 +2653,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "If your enemies don't freeze as you take aim, they are sure to do so once they are hit."
   },
@@ -2706,7 +2706,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "A cut from this blade stings like ice, then burns like the flame."
   },
@@ -2759,7 +2759,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "Strike your foes with a frozen inferno!"
   },
@@ -2809,7 +2809,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "The choice between a fiery end and a frozen one is simple: Both at the same time."
   },
@@ -2859,7 +2859,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "A slight risk of frostbite is inevitable."
   },
@@ -2909,7 +2909,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "Are those sparks that fly as this weapon finds its impact, or are they shards of ice?"
   },
@@ -2959,7 +2959,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "Is it so cold that it's burning, or so hot that it's freezing?"
   },
@@ -3009,7 +3009,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "Dipped in frozen flames, this spear spells certain doom."
   },
@@ -3059,7 +3059,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "Flames dance along this blade, but are they hot or cold?"
   },
@@ -3112,7 +3112,7 @@
       }
     ],
     "quantity": null,
-    "tier": 4,
+    "tier": 5,
     "biome": "mountain",
     "description": "The dead fear silver. Remind them why."
   },
@@ -3163,7 +3163,7 @@
       }
     ],
     "quantity": null,
-    "tier": 6,
+    "tier": 7,
     "biome": "mistlands",
     "description": "It might not be a hammer, but Thor himself would still approve of this weapon."
   },
@@ -3209,7 +3209,7 @@
       }
     ],
     "quantity": null,
-    "tier": 3,
+    "tier": 4,
     "biome": "swamp",
     "description": "Finely worked and strung. A huntsman's joy."
   },
@@ -3251,7 +3251,7 @@
       }
     ],
     "quantity": null,
-    "tier": 3,
+    "tier": 4,
     "biome": "swamp",
     "description": "Blood-drinker, skull-cracker, death-bringer."
   },
@@ -3295,7 +3295,7 @@
       }
     ],
     "quantity": null,
-    "tier": 3,
+    "tier": 4,
     "biome": "swamp",
     "description": "Sharp and strong, a woodcutter's friend."
   },
@@ -3337,7 +3337,7 @@
       }
     ],
     "quantity": 20,
-    "tier": 3,
+    "tier": 4,
     "biome": "swamp",
     "description": "A sturdy iron missile."
   },
@@ -3379,7 +3379,7 @@
       }
     ],
     "quantity": null,
-    "tier": 3,
+    "tier": 4,
     "biome": "swamp",
     "description": "A fist-sized lump of iron on a wooden shaft."
   },
@@ -3419,7 +3419,7 @@
       }
     ],
     "quantity": null,
-    "tier": 3,
+    "tier": 4,
     "biome": "swamp",
     "description": "A sturdy tool of hardened iron."
   },
@@ -3465,7 +3465,7 @@
       }
     ],
     "quantity": null,
-    "tier": 3,
+    "tier": 4,
     "biome": "swamp",
     "description": "A mighty hammer, worthy of a champion."
   },
@@ -3507,7 +3507,7 @@
       }
     ],
     "quantity": null,
-    "tier": 3,
+    "tier": 4,
     "biome": "swamp",
     "description": "The straight line between life and death runs along the edge of this blade."
   },
@@ -3549,7 +3549,7 @@
       }
     ],
     "quantity": 20,
-    "tier": 3,
+    "tier": 4,
     "biome": "swamp",
     "description": "Capped with iron and flighted with dark feathers."
   },
@@ -3602,7 +3602,7 @@
       }
     ],
     "quantity": null,
-    "tier": 6,
+    "tier": 7,
     "biome": "mistlands",
     "description": "Not even the giants of old could weather the poisonous bite of this weapon."
   },
@@ -3648,7 +3648,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "If the force of your blow isn't enough to knock your enemies to the ground, perhaps the primal roots will hold them down for you."
   },
@@ -3690,7 +3690,7 @@
       }
     ],
     "quantity": null,
-    "tier": 6,
+    "tier": 7,
     "biome": "mistlands",
     "description": "As deadly as it is shiny, and it's very shiny."
   },
@@ -3728,7 +3728,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "Simply point, and you shall summon the wrath of the sky."
   },
@@ -3780,7 +3780,7 @@
       }
     ],
     "quantity": null,
-    "tier": 6,
+    "tier": 7,
     "biome": "mistlands",
     "description": "The faint glow seems to slice through the mist."
   },
@@ -3818,7 +3818,7 @@
       }
     ],
     "quantity": 20,
-    "tier": 5,
+    "tier": 6,
     "biome": "plains",
     "description": "The final stitch."
   },
@@ -3860,7 +3860,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Named after the evil dragon that dwells by the roots of the world tree, this sword heralds doom for those who cross its path."
   },
@@ -3902,7 +3902,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "If you bleed, your foes are sure to do so as well."
   },
@@ -3946,7 +3946,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Tangle your foes in roots, like the namesake of this blade."
   },
@@ -3990,7 +3990,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "The power of lightning dances along the blade of this sword, a promise of the pain to come."
   },
@@ -4030,7 +4030,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "The edge of this weapon is as deadly as it is shiny."
   },
@@ -4072,7 +4072,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "A finely detailed axe, for finely cutting down your enemies."
   },
@@ -4115,7 +4115,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "This bow shall find its target with a golden precision."
   },
@@ -4158,7 +4158,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "An incredible force is bound to this weapon, waiting to be unleashed."
   },
@@ -4201,7 +4201,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "A flash of gold is the last thing your foes will ever see."
   },
@@ -4244,7 +4244,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "A mighty axe fit for a mighty warrior."
   },
@@ -4284,7 +4284,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "A striking weapon, both visually and lethally."
   },
@@ -4324,7 +4324,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "Wrap your fists in the hardest of metals, to ensure your foes feel the strength behind your blows."
   },
@@ -4364,7 +4364,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "Hit hard and fast, and leave your foe no time to recover."
   },
@@ -4404,7 +4404,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "With this weapon, your blows will be heavy as that of a troll."
   },
@@ -4444,7 +4444,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "A golden opportunity to strike."
   },
@@ -4484,7 +4484,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "Even in the faintest sunlight, this weapon glimmers."
   },
@@ -4524,7 +4524,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "A caged snowflake, endless patterns emerging from within..."
   },
@@ -4566,7 +4566,7 @@
       }
     ],
     "quantity": 20,
-    "tier": 4,
+    "tier": 5,
     "biome": "mountain",
     "description": "A sliver of darkness."
   },
@@ -4608,7 +4608,7 @@
       }
     ],
     "quantity": 5,
-    "tier": 3,
+    "tier": 4,
     "biome": "swamp",
     "description": "The stench is unbearable..."
   },
@@ -4698,7 +4698,7 @@
       }
     ],
     "quantity": 20,
-    "tier": 4,
+    "tier": 5,
     "biome": "mountain",
     "description": "A bitter sting from afar."
   },
@@ -4749,7 +4749,7 @@
       }
     ],
     "quantity": null,
-    "tier": 5,
+    "tier": 6,
     "biome": "plains",
     "description": "A deadly weapon, bristling with fiendish spikes."
   },
@@ -4798,7 +4798,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Your most primal instincts take over, and the nature around you reaches out to aid you."
   },
@@ -4844,7 +4844,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "The blade works in tandem with the primal forces of the world, seeking death and slaughter."
   },
@@ -4892,7 +4892,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Rips your foes apart, simple as that."
   },
@@ -4939,7 +4939,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Like the twisting branch was made to seek the sun, this bow was made to seek the slaughter."
   },
@@ -4983,7 +4983,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "If the bolt doesn't pin your foe in place, the roots surging up from the ground surely will."
   },
@@ -5029,7 +5029,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "The lightning bound into this blade is erratic, ever searching for something to strike."
   },
@@ -5073,7 +5073,7 @@
       }
     ],
     "quantity": 20,
-    "tier": 4,
+    "tier": 5,
     "biome": "mountain",
     "description": "A needle to calm restless spirits."
   },
@@ -5123,7 +5123,7 @@
       }
     ],
     "quantity": null,
-    "tier": 4,
+    "tier": 5,
     "biome": "mountain",
     "description": "A savage piece of pain."
   },
@@ -5173,7 +5173,7 @@
       }
     ],
     "quantity": null,
-    "tier": 4,
+    "tier": 5,
     "biome": "mountain",
     "description": "Purest of metals, nothing unclean can abide its touch."
   },
@@ -5217,7 +5217,7 @@
       }
     ],
     "quantity": null,
-    "tier": 5,
+    "tier": 6,
     "biome": "plains",
     "description": "Stab once for those who've betrayed you, and twice for those you hate."
   },
@@ -5261,7 +5261,7 @@
       }
     ],
     "quantity": null,
-    "tier": 6,
+    "tier": 7,
     "biome": "mistlands",
     "description": "Will find skulls to split even in the thickest of mists."
   },
@@ -5305,7 +5305,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "This mighty blade thirsts for the blood of foes."
   },
@@ -5343,7 +5343,7 @@
       }
     ],
     "quantity": 10,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Everyone knows you can't breathe in the smoke."
   },
@@ -5390,7 +5390,7 @@
       }
     ],
     "quantity": null,
-    "tier": 6,
+    "tier": 7,
     "biome": "mistlands",
     "description": "Using this bow is backbreaking work but so worth it."
   },
@@ -5436,7 +5436,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Split your enemies' hearts in two."
   },
@@ -5478,7 +5478,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "A small sacrifice must be made for every battle..."
   },
@@ -5522,7 +5522,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Nature's forces burst through the ground wherever this spear strikes."
   },
@@ -5564,7 +5564,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Let the crack of thunder split the air."
   },
@@ -5610,7 +5610,7 @@
       }
     ],
     "quantity": null,
-    "tier": 6,
+    "tier": 7,
     "biome": "mistlands",
     "description": "The sweltering heat of Muspelheim seems almost pathetic when compared to what this staff can do..."
   },
@@ -5656,7 +5656,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Only those with patience and focus will be able to harness the true power of this staff."
   },
@@ -5700,7 +5700,7 @@
       }
     ],
     "quantity": null,
-    "tier": 6,
+    "tier": 7,
     "biome": "mistlands",
     "description": "A staff as cold as the three-year winter that will herald the end of times."
   },
@@ -5751,7 +5751,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Ancient natural forces lie curled and dormant within this staff, ready to be unleashed."
   },
@@ -5882,7 +5882,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Let your arrows fly as swift as the lightning strikes."
   },
@@ -5926,7 +5926,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "The bolts will tear through your enemies like a particularly nasty gale."
   },
@@ -5972,7 +5972,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Particularly effective on cloudy mornings."
   },
@@ -6019,7 +6019,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "The heavens shall sound their praise as you make your enemies bleed."
   },
@@ -6069,7 +6069,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "As this axe cuts through wood and blood alike, a resounding thunderous crack shall be heard throughout the land."
   },
@@ -6119,7 +6119,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "Lightning dances along the string, waiting to be unleashed."
   },
@@ -6169,7 +6169,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "The bow is pulled taut with unreleased power, like the air before a lightning strike."
   },
@@ -6218,7 +6218,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "The blade is already bloodied, yet it sparks in want of more."
   },
@@ -6268,7 +6268,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "As you cleave your foes in two, their blood shall sing like a thunderstorm."
   },
@@ -6315,7 +6315,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "Anyone wielding this weapon is sure to be very frightening indeed."
   },
@@ -6362,7 +6362,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "A fury comes over you as you fight with these weapons, your blood roaring like thunder in your ears... It seems appropriate."
   },
@@ -6409,7 +6409,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "A weapon to rival perhaps even that of the thunder god himself..."
   },
@@ -6456,7 +6456,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "As this weapon strikes true, the blow shall echo throughout the world..."
   },
@@ -6503,7 +6503,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "May it strike like lightning, quick and fierce."
   },
@@ -6550,7 +6550,7 @@
       }
     ],
     "quantity": null,
-    "tier": 8,
+    "tier": 9,
     "biome": "deep-north",
     "description": "As the blood runs along the blade, it awakens the storm within."
   },
@@ -6599,7 +6599,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Carnage spreads around you when you wield these axes, such that Thor himself would be proud."
   },
@@ -6649,7 +6649,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Summons a raging beast to cause death and destruction."
   },
@@ -6697,7 +6697,7 @@
       }
     ],
     "quantity": null,
-    "tier": 5,
+    "tier": 6,
     "biome": "plains",
     "description": "These claws will rend flesh and bone alike."
   },
@@ -6804,7 +6804,7 @@
       }
     ],
     "quantity": null,
-    "tier": 7,
+    "tier": 8,
     "biome": "ashlands",
     "description": "Ready to rend your enemies to pieces."
   }

@@ -8,8 +8,8 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 |---|---|---|---|---|---|---|
 | Meadows | 1 | 0 | 3 | 2 | 2 | 8 |
 | Black Forest | 1 | 1 | 8 | 3 | 3 | 16 |
-| Swamp | 1 | 0 | 11 | 0 | 1 | 13 |
 | Ocean | 0 | 0 | 1 | 2 | 3 | 6 |
+| Swamp | 1 | 0 | 11 | 0 | 1 | 13 |
 | Mountain | 1 | 1 | 9 | 0 | 1 | 12 |
 | Plains | 1 | 1 | 7 | 3 | 1 | 13 |
 | Mistlands | 1 | 0 | 6 | 3 | 2 | 12 |

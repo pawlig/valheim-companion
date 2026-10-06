@@ -2,33 +2,33 @@
   {
     "name": "Ancient Bark",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "how": "table"
   },
   {
     "name": "Ash Fang",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "wiki",
     "note": "crafted from Ashwood, Charred Bone, Flametal, Bonemaw Tooth"
   },
   {
     "name": "Ashwood",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "table"
   },
   {
     "name": "Asksvin Bladder",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "wiki",
     "note": "linked creature Asksvin"
   },
   {
     "name": "Asksvin Hide",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "table"
   },
   {
@@ -48,33 +48,33 @@
   {
     "name": "Berserkir Axes",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "wiki",
     "note": "crafted from Charred Bone, Flametal, Asksvin Hide"
   },
   {
     "name": "Bilebag",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "how": "table"
   },
   {
     "name": "Black Metal",
     "biome": "plains",
-    "tier": 5,
+    "tier": 6,
     "how": "table"
   },
   {
     "name": "Bloodgold",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Petrified Tissue"
   },
   {
     "name": "Bloodstone",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "wiki",
     "note": "found in Charred Fortress (ashlands)"
   },
@@ -87,7 +87,7 @@
   {
     "name": "Bonemaw Tooth",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "table"
   },
   {
@@ -99,124 +99,124 @@
   {
     "name": "Carapace",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "how": "table"
   },
   {
     "name": "Cast Echo Spike",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Nornathread, Frostfire Essence, Mould Echo Spike"
   },
   {
     "name": "Cast Lightning Strike",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Nornathread, Thunderblood Essence, Mould Lightning Strike"
   },
   {
     "name": "Cast Nord Atgeir",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Atgeir, Timberwood"
   },
   {
     "name": "Cast Nord Axe",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Axe, Timberwood"
   },
   {
     "name": "Cast Nord Bow",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Bow, Timberwood"
   },
   {
     "name": "Cast Nord Crossbow",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Crossbow, Timberwood"
   },
   {
     "name": "Cast Nord Dagger",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Dagger, Timberwood"
   },
   {
     "name": "Cast Nord Greataxe",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Greataxe, Timberwood"
   },
   {
     "name": "Cast Nord Greatsword",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Greatsword, Frozen Branch"
   },
   {
     "name": "Cast Nord Knucklechains",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Knucklechains, Long Claws"
   },
   {
     "name": "Cast Nord Mace",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Mace, Timberwood"
   },
   {
     "name": "Cast Nord Sledge",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Sledge, Timberwood"
   },
   {
     "name": "Cast Nord Spear",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Spear, Timberwood"
   },
   {
     "name": "Cast Nord Sword",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Sword, Timberwood"
   },
   {
     "name": "Cast Northern Vengeance",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Ice, Nornathread, Hexen Trophy, Mould Northern Vengeance"
   },
   {
     "name": "Celestial Feather",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "table"
   },
   {
     "name": "Charred Bone",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "table"
   },
   {
@@ -240,7 +240,7 @@
   {
     "name": "Crystal",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "how": "table"
   },
   {
@@ -266,28 +266,28 @@
   {
     "name": "Draugr Elite Trophy",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "how": "wiki",
     "note": "drops from creature Draugr Elite"
   },
   {
     "name": "Dyrnwyn blade fragment",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "wiki",
     "note": "crafted from Dyrnwyn hilt fragment, Dyrnwyn blade fragment, Dyrnwyn tip fragment, Flametal, Bloodstone"
   },
   {
     "name": "Dyrnwyn hilt fragment",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "wiki",
     "note": "crafted from Dyrnwyn hilt fragment, Dyrnwyn blade fragment, Dyrnwyn tip fragment, Flametal, Bloodstone"
   },
   {
     "name": "Dyrnwyn tip fragment",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "wiki",
     "note": "crafted from Dyrnwyn hilt fragment, Dyrnwyn blade fragment, Dyrnwyn tip fragment, Flametal, Bloodstone"
   },
@@ -307,19 +307,19 @@
   {
     "name": "Fenris Claw",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "how": "table"
   },
   {
     "name": "Fenris Hair",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "how": "table"
   },
   {
     "name": "Fiddlehead",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "wiki",
     "note": "mentioned biome ashlands"
   },
@@ -332,13 +332,13 @@
   {
     "name": "Flametal",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "table"
   },
   {
     "name": "Flametal Mace",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "wiki",
     "note": "crafted from Charred Bone, Flametal, Sulfur, Asksvin Hide"
   },
@@ -351,20 +351,20 @@
   {
     "name": "Freeze Gland",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "how": "table"
   },
   {
     "name": "Frostfire Essence",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "lead mentioned creature Fallen Warrior"
   },
   {
     "name": "Guck",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "how": "table"
   },
   {
@@ -376,19 +376,19 @@
   {
     "name": "Iolite",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "how": "table"
   },
   {
     "name": "Iron",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "how": "table"
   },
   {
     "name": "Jade",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "how": "table"
   },
   {
@@ -400,32 +400,32 @@
   {
     "name": "Linen",
     "biome": "plains",
-    "tier": 5,
+    "tier": 6,
     "how": "table"
   },
   {
     "name": "Linen Thread",
     "biome": "plains",
-    "tier": 5,
+    "tier": 6,
     "how": "table"
   },
   {
     "name": "Liquid Frost",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "structure Frigid Kiln built from Stone, Frostcore, Ice"
   },
   {
     "name": "Mandible",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "how": "table"
   },
   {
     "name": "Morgen Sinew",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "table"
   },
   {
@@ -438,122 +438,122 @@
   {
     "name": "Needle",
     "biome": "plains",
-    "tier": 5,
+    "tier": 6,
     "how": "table"
   },
   {
     "name": "Nidhögg",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "wiki",
     "note": "crafted from Charred Bone, Flametal, Asksvin Hide"
   },
   {
     "name": "Nord Atgeir",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Atgeir, Timberwood"
   },
   {
     "name": "Nord Axe",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Axe, Timberwood"
   },
   {
     "name": "Nord Bow",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Bow, Timberwood"
   },
   {
     "name": "Nord Crossbow",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Crossbow, Timberwood"
   },
   {
     "name": "Nord Dagger",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Dagger, Timberwood"
   },
   {
     "name": "Nord Greataxe",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Greataxe, Timberwood"
   },
   {
     "name": "Nord Greatsword",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Greatsword, Frozen Branch"
   },
   {
     "name": "Nord Knucklechains",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Knucklechains, Long Claws"
   },
   {
     "name": "Nord Mace",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Mace, Timberwood"
   },
   {
     "name": "Nord Sledge",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Sledge, Timberwood"
   },
   {
     "name": "Nord Spear",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Spear, Timberwood"
   },
   {
     "name": "Nord Sword",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Sword, Timberwood"
   },
   {
     "name": "Obsidian",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "how": "table"
   },
   {
     "name": "Ooze",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "how": "table"
   },
   {
     "name": "Proustite Powder",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "table"
   },
   {
     "name": "Refined Eitr",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "how": "table"
   },
   {
@@ -565,59 +565,59 @@
   {
     "name": "Ripper",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "wiki",
     "note": "crafted from Ashwood, Flametal, Morgen Sinew, Bonemaw Tooth"
   },
   {
     "name": "Root",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "how": "table"
   },
   {
     "name": "Sap",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "how": "table"
   },
   {
     "name": "Scale Hide",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "how": "table"
   },
   {
     "name": "Seal Pelt",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "linked creature Seal"
   },
   {
     "name": "Silver",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "how": "table"
   },
   {
     "name": "Slayer",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "wiki",
     "note": "crafted from Flametal, Asksvin Hide, Morgen Sinew"
   },
   {
     "name": "Smoke Puff",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "wiki",
     "note": "mentioned biome ashlands"
   },
   {
     "name": "Splitnir",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "wiki",
     "note": "crafted from Ashwood, Flametal, Asksvin Hide, Bonemaw Tooth"
   },
@@ -630,7 +630,7 @@
   {
     "name": "Sulfur",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "how": "table"
   },
   {
@@ -642,14 +642,14 @@
   {
     "name": "Thunderblood Essence",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "wiki",
     "note": "lead mentioned creature Fallen Warrior"
   },
   {
     "name": "Timberwood",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "how": "table"
   },
   {
@@ -668,21 +668,21 @@
   {
     "name": "Vile Ribcage",
     "biome": "plains",
-    "tier": 5,
+    "tier": 6,
     "how": "wiki",
     "note": "linked creature Vile"
   },
   {
     "name": "Wisp",
     "biome": "plains",
-    "tier": 5,
+    "tier": 6,
     "how": "wiki",
     "note": "structure Wisp Fountain built from Stone, Torn Spirit"
   },
   {
     "name": "Wolf Fang",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "how": "table"
   },
   {
@@ -694,13 +694,13 @@
   {
     "name": "Yggdrasil Wood",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "how": "table"
   },
   {
     "name": "Ymir Flesh",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "how": "wiki",
     "note": "purchased from Haldor after The Elder"
   }

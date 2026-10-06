@@ -14,8 +14,8 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 |---|---|---|
 | meadows | 2 | 3 |
 | black-forest | 5 | 15 |
-| swamp | 5 | 9 |
 | ocean | 0 | 0 |
+| swamp | 5 | 9 |
 | mountain | 2 | 7 |
 | plains | 3 | 11 |
 | mistlands | 2 | 7 |

@@ -35,7 +35,7 @@
     "name": "Ancient Bark",
     "image": "img/items/ancient-bark.png",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "sources": [
       {
         "text": "Ancient Tree in Swamp biomes",
@@ -50,7 +50,7 @@
     "name": "Anglerfish",
     "image": "img/items/anglerfish.png",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "sources": [
       {
         "text": "Fishing",
@@ -65,7 +65,7 @@
     "name": "Asksvin Hide",
     "image": "img/items/asksvin-hide.png",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "sources": [
       {
         "text": "Asksvin",
@@ -153,7 +153,7 @@
     "name": "Bloodgold",
     "image": "img/items/bloodgold.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Blast Furnace",
@@ -262,7 +262,7 @@
     "name": "Carapace",
     "image": "img/items/carapace.png",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "sources": [
       {
         "text": "Seeker",
@@ -289,7 +289,7 @@
     "name": "Cast Breastplate of the Protector",
     "image": "img/items/cast-breastplate-of-the-protector.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Black Forge level 4",
@@ -321,7 +321,7 @@
     "name": "Cast Chestpiece of the Vanguard",
     "image": "img/items/cast-chestpiece-of-the-vanguard.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Black Forge level 4",
@@ -357,7 +357,7 @@
     "name": "Cast Headdress of the Caller",
     "image": "img/items/cast-headdress-of-the-caller.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Galdr Table level 3",
@@ -393,7 +393,7 @@
     "name": "Cast Helmet of the Protector",
     "image": "img/items/cast-helmet-of-the-protector.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Black Forge level 4",
@@ -425,7 +425,7 @@
     "name": "Cast Hood of the Vanguard",
     "image": "img/items/cast-hood-of-the-vanguard.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Black Forge level 4",
@@ -461,7 +461,7 @@
     "name": "Cast Robes of the Caller",
     "image": "img/items/cast-robes-of-the-caller.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Galdr Table level 3",
@@ -497,7 +497,7 @@
     "name": "Cast Trousers of the Caller",
     "image": "img/items/cast-trousers-of-the-caller.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Galdr Table level 3",
@@ -533,7 +533,7 @@
     "name": "Cast Trousers of the Protector",
     "image": "img/items/cast-trousers-of-the-protector.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Black Forge level 4",
@@ -565,7 +565,7 @@
     "name": "Cast Trousers of the Vanguard",
     "image": "img/items/cast-trousers-of-the-vanguard.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Black Forge level 4",
@@ -601,7 +601,7 @@
     "name": "Chain",
     "image": "img/items/chain.png",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "sources": [
       {
         "text": "Wraith",
@@ -624,7 +624,7 @@
     "name": "Charred Bone",
     "image": "img/items/charred-bone.png",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "sources": [
       {
         "text": "Charred Warrior",
@@ -667,7 +667,7 @@
     "name": "Coal",
     "image": "img/items/coal.png",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "sources": [
       {
         "text": "Surtling",
@@ -756,7 +756,7 @@
     "name": "Crown Jewel",
     "image": "img/items/crown-jewel.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Kall Fimbulbringer",
@@ -775,7 +775,7 @@
     "name": "Cultist Trophy",
     "image": "img/items/cultist-trophy.png",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "sources": [
       {
         "text": "Cultist",
@@ -829,7 +829,7 @@
     "name": "Drake Trophy",
     "image": "img/items/drake-trophy.png",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "sources": [
       {
         "text": "Drake",
@@ -848,7 +848,7 @@
     "name": "Elaking Hair Bundle",
     "image": "img/items/elaking-hair-bundle.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Elaking",
@@ -890,7 +890,7 @@
     "name": "Fenris Hair",
     "image": "img/items/fenris-hair.png",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "sources": [
       {
         "text": "Frost Caves",
@@ -905,7 +905,7 @@
     "name": "Flametal",
     "image": "img/items/flametal.png",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "sources": [
       {
         "text": "Blast Furnace",
@@ -929,7 +929,7 @@
     "name": "Flametal Ore",
     "image": "img/items/flametal-ore.png",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "sources": [
       {
         "text": "Flametal Ore Vein in the Ashlands biome",
@@ -944,7 +944,7 @@
     "name": "Flax",
     "image": "img/items/flax.png",
     "biome": "plains",
-    "tier": 5,
+    "tier": 6,
     "sources": [
       {
         "text": "Fuling Village in the Plains biome.",
@@ -963,7 +963,7 @@
     "name": "Giant Herring",
     "image": "img/items/giant-herring.png",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "sources": [
       {
         "text": "Fishing",
@@ -978,7 +978,7 @@
     "name": "Grouper",
     "image": "img/items/grouper.png",
     "biome": "plains",
-    "tier": 5,
+    "tier": 6,
     "sources": [
       {
         "text": "Fishing",
@@ -993,7 +993,7 @@
     "name": "Ice",
     "image": "img/items/ice.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Ice Sheet",
@@ -1039,7 +1039,7 @@
     "name": "Iron",
     "image": "img/items/iron.png",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "sources": [
       {
         "text": "Smelter",
@@ -1094,7 +1094,7 @@
     "name": "Leather Straps",
     "image": "img/items/leather-straps.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Krigen",
@@ -1113,7 +1113,7 @@
     "name": "Linen Thread",
     "image": "img/items/linen-thread.png",
     "biome": "plains",
-    "tier": 5,
+    "tier": 6,
     "sources": [
       {
         "text": "Spinning Wheel",
@@ -1137,7 +1137,7 @@
     "name": "Liquid Frost",
     "image": "img/items/liquid-frost.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Frigid Kiln",
@@ -1161,7 +1161,7 @@
     "name": "Lox Pelt",
     "image": "img/items/lox-pelt.png",
     "biome": "plains",
-    "tier": 5,
+    "tier": 6,
     "sources": [
       {
         "text": "Lox",
@@ -1180,7 +1180,7 @@
     "name": "Magmafish",
     "image": "img/items/magmafish.png",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "sources": [
       {
         "text": "Fishing",
@@ -1195,7 +1195,7 @@
     "name": "Mandible",
     "image": "img/items/mandible.png",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "sources": [
       {
         "text": "Seeker Soldier",
@@ -1214,7 +1214,7 @@
     "name": "Moose Hide",
     "image": "img/items/moose-hide.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Moose",
@@ -1237,7 +1237,7 @@
     "name": "Moose Sinew",
     "image": "img/items/moose-sinew.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Moose",
@@ -1256,7 +1256,7 @@
     "name": "Moose Trophy",
     "image": "img/items/moose-trophy.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Moose",
@@ -1275,7 +1275,7 @@
     "name": "Morgen Heart",
     "image": "img/items/morgen-heart.png",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "sources": [
       {
         "text": "Morgen",
@@ -1294,7 +1294,7 @@
     "name": "Morgen Sinew",
     "image": "img/items/morgen-sinew.png",
     "biome": "ashlands",
-    "tier": 7,
+    "tier": 8,
     "sources": [
       {
         "text": "Morgen",
@@ -1313,7 +1313,7 @@
     "name": "Mould Headdress of the Caller",
     "image": "img/items/mould-headdress-of-the-caller.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Galdr Table level 3",
@@ -1349,7 +1349,7 @@
     "name": "Mould Helmet of the Protector",
     "image": "img/items/mould-helmet-of-the-protector.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Black Forge level 4",
@@ -1381,7 +1381,7 @@
     "name": "Mould Hood of the Vanguard",
     "image": "img/items/mould-hood-of-the-vanguard.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Black Forge level 4",
@@ -1417,7 +1417,7 @@
     "name": "Nornathread",
     "image": "img/items/nornathread.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Hexen",
@@ -1436,7 +1436,7 @@
     "name": "Northern Salmon",
     "image": "img/items/northern-salmon.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Fishing",
@@ -1466,7 +1466,7 @@
     "name": "Petrified Tissue",
     "image": "img/items/petrified-tissue.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Petrified Gammeltroll",
@@ -1496,7 +1496,7 @@
     "name": "Pufferfish",
     "image": "img/items/pufferfish.png",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "sources": [
       {
         "text": "Fishing",
@@ -1511,7 +1511,7 @@
     "name": "Refined Eitr",
     "image": "img/items/refined-eitr.png",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "sources": [
       {
         "text": "Eitr Refinery",
@@ -1539,7 +1539,7 @@
     "name": "Root",
     "image": "img/items/root.png",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "sources": [],
     "recipe": null,
     "wiki": "https://valheim.weirdgloop.org/w/Root"
@@ -1549,7 +1549,7 @@
     "name": "Sap",
     "image": "img/items/sap.png",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "sources": [
       {
         "text": "Mistlands biome",
@@ -1564,7 +1564,7 @@
     "name": "Scale Hide",
     "image": "img/items/scale-hide.png",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "sources": [
       {
         "text": "Hare",
@@ -1583,7 +1583,7 @@
     "name": "Scrap Iron",
     "image": "img/items/scrap-iron.png",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "sources": [
       {
         "text": "Muddy Scrap Pile",
@@ -1618,7 +1618,7 @@
     "name": "Seal Pelt",
     "image": "img/items/seal-pelt.png",
     "biome": "deep-north",
-    "tier": 8,
+    "tier": 9,
     "sources": [
       {
         "text": "Seal",
@@ -1637,7 +1637,7 @@
     "name": "Silver",
     "image": "img/items/silver.png",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "sources": [
       {
         "text": "Smelting",
@@ -1661,7 +1661,7 @@
     "name": "Silver Ore",
     "image": "img/items/silver-ore.png",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "sources": [
       {
         "text": "Silver Veins in Mountain biome",
@@ -1676,7 +1676,7 @@
     "name": "Soft Tissue",
     "image": "img/items/soft-tissue.png",
     "biome": "mistlands",
-    "tier": 6,
+    "tier": 7,
     "sources": [
       {
         "text": "* Mined from Ancient skulls",
@@ -1699,7 +1699,7 @@
     "name": "Tetra",
     "image": "img/items/tetra.png",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "sources": [
       {
         "text": "Fishing",
@@ -1810,7 +1810,7 @@
     "name": "Vile Ribcage",
     "image": "img/items/vile-ribcage.png",
     "biome": "plains",
-    "tier": 5,
+    "tier": 6,
     "sources": [
       {
         "text": "Vile",
@@ -1829,7 +1829,7 @@
     "name": "Vile Trophy",
     "image": "img/items/vile-trophy.png",
     "biome": "plains",
-    "tier": 5,
+    "tier": 6,
     "sources": [
       {
         "text": "Vile",
@@ -1848,7 +1848,7 @@
     "name": "Wolf Fang",
     "image": "img/items/wolf-fang.png",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "sources": [
       {
         "text": "Wolf",
@@ -1883,7 +1883,7 @@
     "name": "Wolf Pelt",
     "image": "img/items/wolf-pelt.png",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "sources": [
       {
         "text": "Wolf",
@@ -1902,7 +1902,7 @@
     "name": "Wolf Trophy",
     "image": "img/items/wolf-trophy.png",
     "biome": "mountain",
-    "tier": 4,
+    "tier": 5,
     "sources": [
       {
         "text": "Wolf",
@@ -1921,7 +1921,7 @@
     "name": "Writhan Roots",
     "image": "img/items/writhan-roots.png",
     "biome": "swamp",
-    "tier": 3,
+    "tier": 4,
     "sources": [
       {
         "text": "Writhan",

@@ -1,5 +1,5 @@
 window.VA_DATA = {
-  "generatedAt": "2026-10-06T06:43:40.748Z",
+  "generatedAt": "2026-10-06T07:25:30.986Z",
   "source": {
     "name": "Valheim Wiki",
     "url": "https://valheim.weirdgloop.org",
@@ -10,7 +10,7 @@ window.VA_DATA = {
       "id": "meadows",
       "name": "Meadows",
       "order": 1,
-      "gearTier": 1,
+      "tier": 1,
       "image": "../bestiary/img/biomes/meadows.png",
       "wiki": "https://valheim.weirdgloop.org/w/Meadows",
       "creatures": {
@@ -37,7 +37,7 @@ window.VA_DATA = {
       "id": "black-forest",
       "name": "Black Forest",
       "order": 2,
-      "gearTier": 2,
+      "tier": 2,
       "image": "../bestiary/img/biomes/black-forest.png",
       "wiki": "https://valheim.weirdgloop.org/w/Black_Forest",
       "creatures": {
@@ -70,10 +70,34 @@ window.VA_DATA = {
       }
     },
     {
+      "id": "ocean",
+      "name": "Ocean",
+      "order": 3,
+      "tier": 3,
+      "image": "../bestiary/img/biomes/ocean.png",
+      "wiki": "https://valheim.weirdgloop.org/w/Ocean",
+      "creatures": {
+        "boss": [],
+        "miniboss": [],
+        "hostile": [
+          "serpent"
+        ],
+        "passive": [
+          "gull",
+          "leviathan"
+        ],
+        "fish": [
+          "coral-cod",
+          "pufferfish",
+          "tuna"
+        ]
+      }
+    },
+    {
       "id": "swamp",
       "name": "Swamp",
-      "order": 3,
-      "gearTier": 3,
+      "order": 4,
+      "tier": 4,
       "image": "../bestiary/img/biomes/swamp.png",
       "wiki": "https://valheim.weirdgloop.org/w/Swamp",
       "creatures": {
@@ -101,34 +125,10 @@ window.VA_DATA = {
       }
     },
     {
-      "id": "ocean",
-      "name": "Ocean",
-      "order": 4,
-      "gearTier": 3,
-      "image": "../bestiary/img/biomes/ocean.png",
-      "wiki": "https://valheim.weirdgloop.org/w/Ocean",
-      "creatures": {
-        "boss": [],
-        "miniboss": [],
-        "hostile": [
-          "serpent"
-        ],
-        "passive": [
-          "gull",
-          "leviathan"
-        ],
-        "fish": [
-          "coral-cod",
-          "pufferfish",
-          "tuna"
-        ]
-      }
-    },
-    {
       "id": "mountain",
       "name": "Mountain",
       "order": 5,
-      "gearTier": 4,
+      "tier": 5,
       "image": "../bestiary/img/biomes/mountain.png",
       "wiki": "https://valheim.weirdgloop.org/w/Mountain",
       "creatures": {
@@ -159,7 +159,7 @@ window.VA_DATA = {
       "id": "plains",
       "name": "Plains",
       "order": 6,
-      "gearTier": 5,
+      "tier": 6,
       "image": "../bestiary/img/biomes/plains.png",
       "wiki": "https://valheim.weirdgloop.org/w/Plains",
       "creatures": {
@@ -192,7 +192,7 @@ window.VA_DATA = {
       "id": "mistlands",
       "name": "Mistlands",
       "order": 7,
-      "gearTier": 6,
+      "tier": 7,
       "image": "../bestiary/img/biomes/mistlands.png",
       "wiki": "https://valheim.weirdgloop.org/w/Mistlands",
       "creatures": {
@@ -223,7 +223,7 @@ window.VA_DATA = {
       "id": "ashlands",
       "name": "Ashlands",
       "order": 8,
-      "gearTier": 7,
+      "tier": 8,
       "image": "../bestiary/img/biomes/ashlands.png",
       "wiki": "https://valheim.weirdgloop.org/w/Ashlands",
       "creatures": {
@@ -259,7 +259,7 @@ window.VA_DATA = {
       "id": "deep-north",
       "name": "Deep North",
       "order": 9,
-      "gearTier": 8,
+      "tier": 9,
       "image": "../bestiary/img/biomes/deep-north.png",
       "wiki": "https://valheim.weirdgloop.org/w/Deep_North",
       "creatures": {
@@ -303,7 +303,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Ashen_Cape",
       "kind": "single",
       "biome": "ashlands",
-      "tier": 7,
+      "tier": 8,
       "setBonus": null,
       "pieces": [
         {
@@ -385,7 +385,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Ask_Set",
       "kind": "set",
       "biome": "ashlands",
-      "tier": 7,
+      "tier": 8,
       "setBonus": {
         "name": "Ask's endurance",
         "pieces": 3,
@@ -690,7 +690,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Asksvin_Cloak",
       "kind": "single",
       "biome": "ashlands",
-      "tier": 7,
+      "tier": 8,
       "setBonus": null,
       "pieces": [
         {
@@ -1428,7 +1428,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Caller_Set",
       "kind": "set",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "setBonus": null,
       "pieces": [
         {
@@ -1717,7 +1717,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Cape_of_Oden",
       "kind": "set",
       "biome": "swamp",
-      "tier": 3,
+      "tier": 4,
       "setBonus": null,
       "pieces": [
         {
@@ -1807,7 +1807,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Cape_of_the_Caller",
       "kind": "single",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "setBonus": null,
       "pieces": [
         {
@@ -2028,7 +2028,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Carapace_Armor",
       "kind": "set",
       "biome": "mistlands",
-      "tier": 6,
+      "tier": 7,
       "setBonus": null,
       "pieces": [
         {
@@ -2488,7 +2488,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Crown_of_Valheim",
       "kind": "single",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "setBonus": null,
       "pieces": [
         {
@@ -2584,7 +2584,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Eitr-weave_Set",
       "kind": "set",
       "biome": "mistlands",
-      "tier": 6,
+      "tier": 7,
       "setBonus": null,
       "pieces": [
         {
@@ -2946,7 +2946,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Embla_Set",
       "kind": "set",
       "biome": "ashlands",
-      "tier": 7,
+      "tier": 8,
       "setBonus": null,
       "pieces": [
         {
@@ -3288,7 +3288,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Fenris_Set",
       "kind": "set",
       "biome": "mountain",
-      "tier": 4,
+      "tier": 5,
       "setBonus": {
         "name": "Fenris blessing",
         "pieces": 3,
@@ -3581,7 +3581,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Fishing_Hat",
       "kind": "single",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "setBonus": null,
       "pieces": [
         {
@@ -3831,7 +3831,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Flametal_Armor",
       "kind": "set",
       "biome": "ashlands",
-      "tier": 7,
+      "tier": 8,
       "setBonus": null,
       "pieces": [
         {
@@ -4288,7 +4288,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Hood_of_Oden",
       "kind": "set",
       "biome": "swamp",
-      "tier": 3,
+      "tier": 4,
       "setBonus": null,
       "pieces": [
         {
@@ -4378,7 +4378,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Iron_Armor",
       "kind": "set",
       "biome": "swamp",
-      "tier": 3,
+      "tier": 4,
       "setBonus": null,
       "pieces": [
         {
@@ -4905,7 +4905,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Lox_Fur_Set",
       "kind": "set",
       "biome": "plains",
-      "tier": 5,
+      "tier": 6,
       "setBonus": {
         "name": "Boon of the Lox",
         "pieces": 3,
@@ -5315,7 +5315,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Moose_Hide_Cape",
       "kind": "single",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "setBonus": null,
       "pieces": [
         {
@@ -5421,7 +5421,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Padded_Armor",
       "kind": "set",
       "biome": "plains",
-      "tier": 5,
+      "tier": 6,
       "setBonus": null,
       "pieces": [
         {
@@ -5736,7 +5736,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Pointy_Hat",
       "kind": "single",
       "biome": "swamp",
-      "tier": 3,
+      "tier": 4,
       "setBonus": null,
       "pieces": [
         {
@@ -5818,7 +5818,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Protector_Armor",
       "kind": "set",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "setBonus": null,
       "pieces": [
         {
@@ -6184,7 +6184,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Root_Set",
       "kind": "set",
       "biome": "swamp",
-      "tier": 3,
+      "tier": 4,
       "setBonus": {
         "name": "Improved archery",
         "pieces": 3,
@@ -7357,7 +7357,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Vanguard_Set",
       "kind": "set",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "setBonus": {
         "name": "Vanguard",
         "pieces": 3,
@@ -7656,7 +7656,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Vilebone_Set",
       "kind": "set",
       "biome": "plains",
-      "tier": 5,
+      "tier": 6,
       "setBonus": {
         "name": "Vilebone Wrath",
         "pieces": 3,
@@ -7934,7 +7934,7 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Wolf_Armor",
       "kind": "set",
       "biome": "mountain",
-      "tier": 4,
+      "tier": 5,
       "setBonus": null,
       "pieces": [
         {
@@ -8346,7 +8346,7 @@ window.VA_DATA = {
       "name": "Ancient Bark",
       "image": "img/items/ancient-bark.png",
       "biome": "swamp",
-      "tier": 3,
+      "tier": 4,
       "sources": [
         {
           "text": "Ancient Tree in Swamp biomes",
@@ -8361,7 +8361,7 @@ window.VA_DATA = {
       "name": "Anglerfish",
       "image": "img/items/anglerfish.png",
       "biome": "ashlands",
-      "tier": 7,
+      "tier": 8,
       "sources": [
         {
           "text": "Fishing",
@@ -8376,7 +8376,7 @@ window.VA_DATA = {
       "name": "Asksvin Hide",
       "image": "img/items/asksvin-hide.png",
       "biome": "ashlands",
-      "tier": 7,
+      "tier": 8,
       "sources": [
         {
           "text": "Asksvin",
@@ -8464,7 +8464,7 @@ window.VA_DATA = {
       "name": "Bloodgold",
       "image": "img/items/bloodgold.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Blast Furnace",
@@ -8573,7 +8573,7 @@ window.VA_DATA = {
       "name": "Carapace",
       "image": "img/items/carapace.png",
       "biome": "mistlands",
-      "tier": 6,
+      "tier": 7,
       "sources": [
         {
           "text": "Seeker",
@@ -8600,7 +8600,7 @@ window.VA_DATA = {
       "name": "Cast Breastplate of the Protector",
       "image": "img/items/cast-breastplate-of-the-protector.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Black Forge level 4",
@@ -8632,7 +8632,7 @@ window.VA_DATA = {
       "name": "Cast Chestpiece of the Vanguard",
       "image": "img/items/cast-chestpiece-of-the-vanguard.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Black Forge level 4",
@@ -8668,7 +8668,7 @@ window.VA_DATA = {
       "name": "Cast Headdress of the Caller",
       "image": "img/items/cast-headdress-of-the-caller.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Galdr Table level 3",
@@ -8704,7 +8704,7 @@ window.VA_DATA = {
       "name": "Cast Helmet of the Protector",
       "image": "img/items/cast-helmet-of-the-protector.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Black Forge level 4",
@@ -8736,7 +8736,7 @@ window.VA_DATA = {
       "name": "Cast Hood of the Vanguard",
       "image": "img/items/cast-hood-of-the-vanguard.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Black Forge level 4",
@@ -8772,7 +8772,7 @@ window.VA_DATA = {
       "name": "Cast Robes of the Caller",
       "image": "img/items/cast-robes-of-the-caller.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Galdr Table level 3",
@@ -8808,7 +8808,7 @@ window.VA_DATA = {
       "name": "Cast Trousers of the Caller",
       "image": "img/items/cast-trousers-of-the-caller.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Galdr Table level 3",
@@ -8844,7 +8844,7 @@ window.VA_DATA = {
       "name": "Cast Trousers of the Protector",
       "image": "img/items/cast-trousers-of-the-protector.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Black Forge level 4",
@@ -8876,7 +8876,7 @@ window.VA_DATA = {
       "name": "Cast Trousers of the Vanguard",
       "image": "img/items/cast-trousers-of-the-vanguard.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Black Forge level 4",
@@ -8912,7 +8912,7 @@ window.VA_DATA = {
       "name": "Chain",
       "image": "img/items/chain.png",
       "biome": "swamp",
-      "tier": 3,
+      "tier": 4,
       "sources": [
         {
           "text": "Wraith",
@@ -8935,7 +8935,7 @@ window.VA_DATA = {
       "name": "Charred Bone",
       "image": "img/items/charred-bone.png",
       "biome": "ashlands",
-      "tier": 7,
+      "tier": 8,
       "sources": [
         {
           "text": "Charred Warrior",
@@ -8978,7 +8978,7 @@ window.VA_DATA = {
       "name": "Coal",
       "image": "img/items/coal.png",
       "biome": "swamp",
-      "tier": 3,
+      "tier": 4,
       "sources": [
         {
           "text": "Surtling",
@@ -9067,7 +9067,7 @@ window.VA_DATA = {
       "name": "Crown Jewel",
       "image": "img/items/crown-jewel.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Kall Fimbulbringer",
@@ -9086,7 +9086,7 @@ window.VA_DATA = {
       "name": "Cultist Trophy",
       "image": "img/items/cultist-trophy.png",
       "biome": "mountain",
-      "tier": 4,
+      "tier": 5,
       "sources": [
         {
           "text": "Cultist",
@@ -9140,7 +9140,7 @@ window.VA_DATA = {
       "name": "Drake Trophy",
       "image": "img/items/drake-trophy.png",
       "biome": "mountain",
-      "tier": 4,
+      "tier": 5,
       "sources": [
         {
           "text": "Drake",
@@ -9159,7 +9159,7 @@ window.VA_DATA = {
       "name": "Elaking Hair Bundle",
       "image": "img/items/elaking-hair-bundle.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Elaking",
@@ -9201,7 +9201,7 @@ window.VA_DATA = {
       "name": "Fenris Hair",
       "image": "img/items/fenris-hair.png",
       "biome": "mountain",
-      "tier": 4,
+      "tier": 5,
       "sources": [
         {
           "text": "Frost Caves",
@@ -9216,7 +9216,7 @@ window.VA_DATA = {
       "name": "Flametal",
       "image": "img/items/flametal.png",
       "biome": "ashlands",
-      "tier": 7,
+      "tier": 8,
       "sources": [
         {
           "text": "Blast Furnace",
@@ -9240,7 +9240,7 @@ window.VA_DATA = {
       "name": "Flametal Ore",
       "image": "img/items/flametal-ore.png",
       "biome": "ashlands",
-      "tier": 7,
+      "tier": 8,
       "sources": [
         {
           "text": "Flametal Ore Vein in the Ashlands biome",
@@ -9255,7 +9255,7 @@ window.VA_DATA = {
       "name": "Flax",
       "image": "img/items/flax.png",
       "biome": "plains",
-      "tier": 5,
+      "tier": 6,
       "sources": [
         {
           "text": "Fuling Village in the Plains biome.",
@@ -9274,7 +9274,7 @@ window.VA_DATA = {
       "name": "Giant Herring",
       "image": "img/items/giant-herring.png",
       "biome": "swamp",
-      "tier": 3,
+      "tier": 4,
       "sources": [
         {
           "text": "Fishing",
@@ -9289,7 +9289,7 @@ window.VA_DATA = {
       "name": "Grouper",
       "image": "img/items/grouper.png",
       "biome": "plains",
-      "tier": 5,
+      "tier": 6,
       "sources": [
         {
           "text": "Fishing",
@@ -9304,7 +9304,7 @@ window.VA_DATA = {
       "name": "Ice",
       "image": "img/items/ice.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Ice Sheet",
@@ -9350,7 +9350,7 @@ window.VA_DATA = {
       "name": "Iron",
       "image": "img/items/iron.png",
       "biome": "swamp",
-      "tier": 3,
+      "tier": 4,
       "sources": [
         {
           "text": "Smelter",
@@ -9405,7 +9405,7 @@ window.VA_DATA = {
       "name": "Leather Straps",
       "image": "img/items/leather-straps.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Krigen",
@@ -9424,7 +9424,7 @@ window.VA_DATA = {
       "name": "Linen Thread",
       "image": "img/items/linen-thread.png",
       "biome": "plains",
-      "tier": 5,
+      "tier": 6,
       "sources": [
         {
           "text": "Spinning Wheel",
@@ -9448,7 +9448,7 @@ window.VA_DATA = {
       "name": "Liquid Frost",
       "image": "img/items/liquid-frost.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Frigid Kiln",
@@ -9472,7 +9472,7 @@ window.VA_DATA = {
       "name": "Lox Pelt",
       "image": "img/items/lox-pelt.png",
       "biome": "plains",
-      "tier": 5,
+      "tier": 6,
       "sources": [
         {
           "text": "Lox",
@@ -9491,7 +9491,7 @@ window.VA_DATA = {
       "name": "Magmafish",
       "image": "img/items/magmafish.png",
       "biome": "ashlands",
-      "tier": 7,
+      "tier": 8,
       "sources": [
         {
           "text": "Fishing",
@@ -9506,7 +9506,7 @@ window.VA_DATA = {
       "name": "Mandible",
       "image": "img/items/mandible.png",
       "biome": "mistlands",
-      "tier": 6,
+      "tier": 7,
       "sources": [
         {
           "text": "Seeker Soldier",
@@ -9525,7 +9525,7 @@ window.VA_DATA = {
       "name": "Moose Hide",
       "image": "img/items/moose-hide.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Moose",
@@ -9548,7 +9548,7 @@ window.VA_DATA = {
       "name": "Moose Sinew",
       "image": "img/items/moose-sinew.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Moose",
@@ -9567,7 +9567,7 @@ window.VA_DATA = {
       "name": "Moose Trophy",
       "image": "img/items/moose-trophy.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Moose",
@@ -9586,7 +9586,7 @@ window.VA_DATA = {
       "name": "Morgen Heart",
       "image": "img/items/morgen-heart.png",
       "biome": "ashlands",
-      "tier": 7,
+      "tier": 8,
       "sources": [
         {
           "text": "Morgen",
@@ -9605,7 +9605,7 @@ window.VA_DATA = {
       "name": "Morgen Sinew",
       "image": "img/items/morgen-sinew.png",
       "biome": "ashlands",
-      "tier": 7,
+      "tier": 8,
       "sources": [
         {
           "text": "Morgen",
@@ -9624,7 +9624,7 @@ window.VA_DATA = {
       "name": "Mould Headdress of the Caller",
       "image": "img/items/mould-headdress-of-the-caller.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Galdr Table level 3",
@@ -9660,7 +9660,7 @@ window.VA_DATA = {
       "name": "Mould Helmet of the Protector",
       "image": "img/items/mould-helmet-of-the-protector.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Black Forge level 4",
@@ -9692,7 +9692,7 @@ window.VA_DATA = {
       "name": "Mould Hood of the Vanguard",
       "image": "img/items/mould-hood-of-the-vanguard.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Black Forge level 4",
@@ -9728,7 +9728,7 @@ window.VA_DATA = {
       "name": "Nornathread",
       "image": "img/items/nornathread.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Hexen",
@@ -9747,7 +9747,7 @@ window.VA_DATA = {
       "name": "Northern Salmon",
       "image": "img/items/northern-salmon.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Fishing",
@@ -9777,7 +9777,7 @@ window.VA_DATA = {
       "name": "Petrified Tissue",
       "image": "img/items/petrified-tissue.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Petrified Gammeltroll",
@@ -9807,7 +9807,7 @@ window.VA_DATA = {
       "name": "Pufferfish",
       "image": "img/items/pufferfish.png",
       "biome": "mistlands",
-      "tier": 6,
+      "tier": 7,
       "sources": [
         {
           "text": "Fishing",
@@ -9822,7 +9822,7 @@ window.VA_DATA = {
       "name": "Refined Eitr",
       "image": "img/items/refined-eitr.png",
       "biome": "mistlands",
-      "tier": 6,
+      "tier": 7,
       "sources": [
         {
           "text": "Eitr Refinery",
@@ -9850,7 +9850,7 @@ window.VA_DATA = {
       "name": "Root",
       "image": "img/items/root.png",
       "biome": "swamp",
-      "tier": 3,
+      "tier": 4,
       "sources": [],
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Root"
@@ -9860,7 +9860,7 @@ window.VA_DATA = {
       "name": "Sap",
       "image": "img/items/sap.png",
       "biome": "mistlands",
-      "tier": 6,
+      "tier": 7,
       "sources": [
         {
           "text": "Mistlands biome",
@@ -9875,7 +9875,7 @@ window.VA_DATA = {
       "name": "Scale Hide",
       "image": "img/items/scale-hide.png",
       "biome": "mistlands",
-      "tier": 6,
+      "tier": 7,
       "sources": [
         {
           "text": "Hare",
@@ -9894,7 +9894,7 @@ window.VA_DATA = {
       "name": "Scrap Iron",
       "image": "img/items/scrap-iron.png",
       "biome": "swamp",
-      "tier": 3,
+      "tier": 4,
       "sources": [
         {
           "text": "Muddy Scrap Pile",
@@ -9929,7 +9929,7 @@ window.VA_DATA = {
       "name": "Seal Pelt",
       "image": "img/items/seal-pelt.png",
       "biome": "deep-north",
-      "tier": 8,
+      "tier": 9,
       "sources": [
         {
           "text": "Seal",
@@ -9948,7 +9948,7 @@ window.VA_DATA = {
       "name": "Silver",
       "image": "img/items/silver.png",
       "biome": "mountain",
-      "tier": 4,
+      "tier": 5,
       "sources": [
         {
           "text": "Smelting",
@@ -9972,7 +9972,7 @@ window.VA_DATA = {
       "name": "Silver Ore",
       "image": "img/items/silver-ore.png",
       "biome": "mountain",
-      "tier": 4,
+      "tier": 5,
       "sources": [
         {
           "text": "Silver Veins in Mountain biome",
@@ -9987,7 +9987,7 @@ window.VA_DATA = {
       "name": "Soft Tissue",
       "image": "img/items/soft-tissue.png",
       "biome": "mistlands",
-      "tier": 6,
+      "tier": 7,
       "sources": [
         {
           "text": "* Mined from Ancient skulls",
@@ -10010,7 +10010,7 @@ window.VA_DATA = {
       "name": "Tetra",
       "image": "img/items/tetra.png",
       "biome": "mountain",
-      "tier": 4,
+      "tier": 5,
       "sources": [
         {
           "text": "Fishing",
@@ -10121,7 +10121,7 @@ window.VA_DATA = {
       "name": "Vile Ribcage",
       "image": "img/items/vile-ribcage.png",
       "biome": "plains",
-      "tier": 5,
+      "tier": 6,
       "sources": [
         {
           "text": "Vile",
@@ -10140,7 +10140,7 @@ window.VA_DATA = {
       "name": "Vile Trophy",
       "image": "img/items/vile-trophy.png",
       "biome": "plains",
-      "tier": 5,
+      "tier": 6,
       "sources": [
         {
           "text": "Vile",
@@ -10159,7 +10159,7 @@ window.VA_DATA = {
       "name": "Wolf Fang",
       "image": "img/items/wolf-fang.png",
       "biome": "mountain",
-      "tier": 4,
+      "tier": 5,
       "sources": [
         {
           "text": "Wolf",
@@ -10194,7 +10194,7 @@ window.VA_DATA = {
       "name": "Wolf Pelt",
       "image": "img/items/wolf-pelt.png",
       "biome": "mountain",
-      "tier": 4,
+      "tier": 5,
       "sources": [
         {
           "text": "Wolf",
@@ -10213,7 +10213,7 @@ window.VA_DATA = {
       "name": "Wolf Trophy",
       "image": "img/items/wolf-trophy.png",
       "biome": "mountain",
-      "tier": 4,
+      "tier": 5,
       "sources": [
         {
           "text": "Wolf",
@@ -10232,7 +10232,7 @@ window.VA_DATA = {
       "name": "Writhan Roots",
       "image": "img/items/writhan-roots.png",
       "biome": "swamp",
-      "tier": 3,
+      "tier": 4,
       "sources": [
         {
           "text": "Writhan",
