@@ -84,13 +84,26 @@
     vanguard: { type: 'damage', types: ['pierce'], amount: 0.1 },
   };
 
-  // Default backstab multipliers by weapon category (VC-5b): the wiki lists
-  // backstab only for a fraction of weapons, but in game nearly every weapon
-  // can backstab. Knives default to 6x, magic and bombs to 1x, the rest to 3x.
+  // Attack timing constants from Damage Calculator (VC-11)
+  const BOW_DRAW_BASE = 2.5;
+  const BOW_DRAW_PER_SKILL = 0.02;
+  const BOW_MIN_INTERVAL = 0.8;
+  const CROSSBOW_RELOAD_BASE = 3.5;
+  const CROSSBOW_RELOAD_PER_SKILL = 0.5;
+  const CROSSBOW_READYING = 1.15;
+  const CROSSBOW_FIRING = 0.7;
+
+  // Default backstab multipliers by weapon category / slug (VC-11):
+  // Knives and Flesh Rippers 6x, sledges (2H clubs) 2x, magic/bombs 1x, rest 3x.
   const DEFAULT_BACKSTAB = {
     knife: 6,
+    sledge: 2,
     magic: 1,
     bomb: 1,
+  };
+
+  const BACKSTAB_BY_SLUG = {
+    'flesh-rippers': 6,
   };
 
   const DEFAULT_PLAYER = {
@@ -114,6 +127,7 @@
     sets: [],
     sneak: false,
     staggered: false,
+    rankBy: 'dps',
   };
 
   const byCodepoint = (a, b) => (a < b ? -1 : a > b ? 1 : 0);
@@ -147,18 +161,38 @@
     return Math.min(100, Math.max(0, val));
   }
 
-  // Backstab multiplier: explicit weapon value, else category default, else 3.
-  // For bows and crossbows the launcher's backstab applies, not the ammo's —
-  // perHit receives the launcher as `weapon`, ammo is never consulted here.
+  // Backstab multiplier: explicit weapon value, slug exception, else category default, else 3.
   function backstabOf(weapon) {
-    return weapon?.backstab ?? DEFAULT_BACKSTAB[weapon?.category] ?? 3;
+    if (!weapon) return 3;
+    const slug = weapon.id || weapon.slug;
+    if (weapon.backstab != null) return weapon.backstab;
+    if (slug && BACKSTAB_BY_SLUG[slug] != null) return BACKSTAB_BY_SLUG[slug];
+    if (weapon.category && DEFAULT_BACKSTAB[weapon.category] != null) {
+      return DEFAULT_BACKSTAB[weapon.category];
+    }
+    return 3;
   }
 
-  // Damage map at requested quality: damage + perLevel * (q - 1)
-  function weaponDamage(weapon, quality = 'max') {
+  // Damage map at requested quality: weaponQuality[slug][typ][q-1] if available,
+  // otherwise legacy calculation: damage + perLevel * (q - 1).
+  function weaponDamage(weapon, quality = 'max', qualityMap = null) {
     if (!weapon) return {};
     const maxQ = weapon.maxQuality || 1;
     const q = quality === 'max' ? maxQ : Math.max(1, Math.min(Number(quality) || 1, maxQ));
+    const slug = weapon.id || weapon.slug;
+    const wq = qualityMap || globalThis.VC_DATA?.weaponQuality || globalThis._weaponQuality;
+
+    if (slug && wq && wq[slug]) {
+      const res = {};
+      for (const [dt, arr] of Object.entries(wq[slug])) {
+        if (Array.isArray(arr) && arr.length > 0) {
+          const idx = Math.min(arr.length - 1, q - 1);
+          res[dt] = arr[idx] ?? 0;
+        }
+      }
+      return res;
+    }
+
     const baseDmg = weapon.damage || weapon.damageMax || {};
     const res = {};
     for (const [dt, baseVal] of Object.entries(baseDmg)) {
@@ -166,6 +200,111 @@
       res[dt] = (baseVal || 0) + step * (q - 1);
     }
     return res;
+  }
+
+  function clampSkill(level) {
+    return Math.max(0, Math.min(100, Number(level) || 0));
+  }
+
+  function bowDrawSeconds(skillLevel) {
+    const cfg = globalThis.VC_DATA?.attackProfiles?.bow || globalThis._attackProfiles?.bow || {
+      drawBase: BOW_DRAW_BASE,
+      drawPerSkill: BOW_DRAW_PER_SKILL,
+      minInterval: BOW_MIN_INTERVAL,
+    };
+    return cfg.drawBase - cfg.drawPerSkill * clampSkill(skillLevel);
+  }
+
+  function bowCycleSeconds(skillLevel) {
+    const cfg = globalThis.VC_DATA?.attackProfiles?.bow || globalThis._attackProfiles?.bow || {
+      drawBase: BOW_DRAW_BASE,
+      drawPerSkill: BOW_DRAW_PER_SKILL,
+      minInterval: BOW_MIN_INTERVAL,
+    };
+    return Math.max(cfg.minInterval, bowDrawSeconds(skillLevel));
+  }
+
+  function crossbowReloadSeconds(skillLevel) {
+    const cfg = globalThis.VC_DATA?.attackProfiles?.crossbow || globalThis._attackProfiles?.crossbow || {
+      reloadBase: CROSSBOW_RELOAD_BASE,
+      reloadPerSkill: CROSSBOW_RELOAD_PER_SKILL,
+      readying: CROSSBOW_READYING,
+      firing: CROSSBOW_FIRING,
+    };
+    return cfg.reloadBase * (1 - clampSkill(skillLevel) / 200);
+  }
+
+  function crossbowCycleSeconds(skillLevel) {
+    const cfg = globalThis.VC_DATA?.attackProfiles?.crossbow || globalThis._attackProfiles?.crossbow || {
+      reloadBase: CROSSBOW_RELOAD_BASE,
+      reloadPerSkill: CROSSBOW_RELOAD_PER_SKILL,
+      readying: CROSSBOW_READYING,
+      firing: CROSSBOW_FIRING,
+    };
+    return crossbowReloadSeconds(skillLevel) + cfg.readying + cfg.firing;
+  }
+
+  const DEFAULT_CATEGORY_PROFILES = {
+    sword: { timing: { kind: 'fixed', seconds: 2.46 }, comboMults: [1, 1, 2], damageMult: 1, confidence: 'wiki' },
+    knife: { timing: { kind: 'fixed', seconds: 1.74 }, comboMults: [1, 1, 2], damageMult: 1, confidence: 'wiki' },
+    club: { timing: { kind: 'fixed', seconds: 2.46 }, comboMults: [1, 1, 2], damageMult: 1, confidence: 'wiki' },
+    axe: { timing: { kind: 'fixed', seconds: 2.58 }, comboMults: [1, 1, 2], damageMult: 1, confidence: 'wiki' },
+    'dual-axe': { timing: { kind: 'fixed', seconds: 3.62 }, comboMults: [1, 1, 1, 1, 2, 2], damageMult: 1, confidence: 'wiki' },
+    spear: { timing: { kind: 'fixed', seconds: 0.68 }, comboMults: [1], damageMult: 1, confidence: 'wiki' },
+    polearm: { timing: { kind: 'fixed', seconds: 2.98 }, comboMults: [1, 1, 2], damageMult: 1, confidence: 'wiki' },
+    greatsword: { timing: { kind: 'fixed', seconds: 3.44 }, comboMults: [1, 1, 2], damageMult: 1, confidence: 'wiki' },
+    battleaxe: { timing: { kind: 'fixed', seconds: 3.2 }, comboMults: [1, 1, 2], damageMult: 1, confidence: 'wiki' },
+    sledge: { timing: { kind: 'fixed', seconds: 1.7 }, comboMults: [1], damageMult: 1, confidence: 'wiki' },
+    pickaxe: { timing: { kind: 'fixed', seconds: 1.4 }, comboMults: [1], damageMult: 1, confidence: 'wiki' },
+    fists: { timing: { kind: 'fixed', seconds: 1.48 }, comboMults: [1, 2], damageMult: 1, confidence: 'wiki' },
+    bow: { timing: { kind: 'bow' }, comboMults: [1], damageMult: 1, confidence: 'wiki' },
+    crossbow: { timing: { kind: 'crossbow' }, comboMults: [1], damageMult: 1, confidence: 'model' },
+    magic: { timing: { kind: 'fixed', seconds: 1.1 }, comboMults: [1], damageMult: 1, confidence: 'estimate' },
+    bomb: { timing: { kind: 'fixed', seconds: 1.2 }, comboMults: [1], damageMult: 1, confidence: 'estimate' },
+  };
+
+  const DEFAULT_SECONDARY_PROFILES = {
+    sword: { timing: { kind: 'fixed', seconds: 1.84 }, comboMults: [1], damageMult: 3, confidence: 'wiki' },
+    knife: { timing: { kind: 'fixed', seconds: 1.52 }, comboMults: [1], damageMult: 3, confidence: 'wiki' },
+    club: { timing: { kind: 'fixed', seconds: 1.72 }, comboMults: [1], damageMult: 2.5, confidence: 'wiki' },
+    axe: { timing: { kind: 'fixed', seconds: 2 }, comboMults: [1], damageMult: 1.5, confidence: 'wiki' },
+    'dual-axe': { timing: { kind: 'fixed', seconds: 1.93 }, comboMults: [1], damageMult: 1.5, confidence: 'wiki' },
+    spear: { timing: { kind: 'fixed', seconds: 1.04 }, comboMults: [1], damageMult: 1.5, confidence: 'wiki' },
+    polearm: { timing: { kind: 'fixed', seconds: 1.56 }, comboMults: [1], damageMult: 1, confidence: 'wiki' },
+    greatsword: { timing: { kind: 'fixed', seconds: 2.16 }, comboMults: [1], damageMult: 3, confidence: 'wiki' },
+    battleaxe: { timing: { kind: 'fixed', seconds: 0.84 }, comboMults: [1], damageMult: 0.5, confidence: 'wiki' },
+    fists: { timing: { kind: 'fixed', seconds: 1.48 }, comboMults: [1], damageMult: 1, confidence: 'wiki' },
+  };
+
+  function attackProfileFor(weapon, attackKind = 'primary') {
+    if (!weapon) return null;
+    const slug = weapon.id || weapon.slug;
+    const profiles = globalThis.VC_DATA?.attackProfiles || globalThis._attackProfiles;
+    const wProf = profiles?.weapons?.[slug] || profiles?.[slug];
+    if (wProf) {
+      if (attackKind === 'secondary') {
+        return wProf.secondary || wProf.primary;
+      }
+      return wProf.primary;
+    }
+    const cat = weapon.category || 'sword';
+    if (attackKind === 'secondary') {
+      const sec = DEFAULT_SECONDARY_PROFILES[cat];
+      return sec || DEFAULT_CATEGORY_PROFILES[cat] || { timing: { kind: 'fixed', seconds: 2 }, comboMults: [1], damageMult: 1, confidence: 'wiki' };
+    }
+    return DEFAULT_CATEGORY_PROFILES[cat] || { timing: { kind: 'fixed', seconds: 2 }, comboMults: [1], damageMult: 1, confidence: 'wiki' };
+  }
+
+  function hasSecondaryAttack(weapon) {
+    if (!weapon) return false;
+    const slug = weapon.id || weapon.slug;
+    const profiles = globalThis.VC_DATA?.attackProfiles || globalThis._attackProfiles;
+    const wProf = profiles?.weapons?.[slug] || profiles?.[slug];
+    if (wProf) {
+      return wProf.secondary !== null && wProf.secondary !== undefined;
+    }
+    const cat = weapon.category || '';
+    return DEFAULT_SECONDARY_PROFILES[cat] !== undefined;
   }
 
   // Effective numeric damage multipliers per ANALYZA § 4
@@ -261,7 +400,7 @@
 
     const skillName = weapon?.skill ?? null;
     let factor = { min: 1, max: 1, avg: 1 };
-    if (skillName) {
+    if (skillName && weapon?.skillScaled !== false) {
       const effSkill = effectiveSkill(player, skillName);
       factor = skillFactor(effSkill);
     }
@@ -361,7 +500,7 @@
     // Both score >= 0.5 * raw and damage ratio >= 0.5 are satisfied when not heavily resisted
     const skillName = weapon?.skill ?? null;
     let factorAvg = 1;
-    if (skillName) {
+    if (skillName && weapon?.skillScaled !== false) {
       factorAvg = skillFactor(effectiveSkill(player, skillName)).avg;
     }
     const diffMult = DIFFICULTY[player?.difficulty] ?? 1;
@@ -370,12 +509,99 @@
     return hit.avg >= 0.5 * unresistedAvg;
   }
 
+  function timeToKill(health, perHit, openingPerHit, profile, cycleSeconds, dps) {
+    if (!(perHit > 0) || !(health > 0)) {
+      return Infinity;
+    }
+    const hitTimes = profile?.hitTimes;
+    const comboMults = profile?.comboMults || [1];
+    if (hitTimes && hitTimes.length === comboMults.length) {
+      let dealt = 0;
+      for (let cycle = 0; cycle < 100000; cycle++) {
+        for (let hit = 0; hit < hitTimes.length; hit++) {
+          const opening = cycle === 0 && hit === 0;
+          dealt += (opening ? openingPerHit : perHit) * comboMults[hit];
+          if (dealt >= health) {
+            return cycle * cycleSeconds + hitTimes[hit];
+          }
+        }
+      }
+    }
+    return dps > 0 ? health / dps : Infinity;
+  }
+
+  // Detailed timing, cycle damage, DPS and TTK per weapon attack (VC-11)
+  function attackStats(weapon, ammo = null, creature = null, player = DEFAULT_PLAYER, attackKind = 'primary') {
+    if (!weapon) return null;
+    const profile = attackProfileFor(weapon, attackKind);
+    const skillName = weapon.skill ?? null;
+    const effSkill = effectiveSkill(player, skillName);
+
+    const timing = profile?.cycle || profile?.timing || { kind: 'fixed', seconds: 2 };
+    let cycleSeconds = 2;
+    if (timing.kind === 'fixed') {
+      cycleSeconds = timing.seconds ?? 2;
+    } else if (timing.kind === 'bow') {
+      cycleSeconds = bowCycleSeconds(effSkill);
+    } else if (timing.kind === 'crossbow') {
+      cycleSeconds = crossbowCycleSeconds(effSkill);
+    }
+
+    const damageMult = profile?.damageMult ?? 1;
+    const comboMults = profile?.comboMults ?? [1];
+
+    // Steady normal hit without backstab/sneak bonus
+    const playerWithoutSneak = { ...player, sneak: false };
+    const baseHit = perHit(weapon, ammo, creature, playerWithoutSneak);
+    const steadyPerHit = baseHit.avg * damageMult;
+
+    // Opening hit: with backstab if player has sneak
+    const backstabApplied = player?.sneak === true;
+    const bsMult = backstabOf(weapon);
+    const openingMult = backstabApplied ? bsMult : 1;
+    const openingPerHit = steadyPerHit * openingMult;
+
+    // Cycle damage: first combo hit takes opening bonus, subsequent combo hits take steady damage
+    const firstWeight = comboMults[0] ?? 1;
+    const restWeight = comboMults.reduce((sum, mult) => sum + mult, 0) - firstWeight;
+    const cycleDamage = openingPerHit * firstWeight + steadyPerHit * restWeight;
+
+    const dps = cycleSeconds > 0 ? cycleDamage / cycleSeconds : 0;
+
+    let targetHealth = 0;
+    if (creature) {
+      if (typeof creature.health === 'number' && !creature.stars) {
+        targetHealth = creature.health;
+      } else {
+        targetHealth = creatureHp(creature, player?.star ?? 0, player?.biomeId ?? null, player);
+        if (targetHealth === 0 && creature.health != null) targetHealth = creature.health;
+      }
+    }
+
+    const ttk = timeToKill(targetHealth, steadyPerHit, openingPerHit, profile, cycleSeconds, dps);
+
+    return {
+      perHit: steadyPerHit,
+      openingPerHit,
+      cycleSeconds,
+      cycleDamage,
+      dps,
+      timeToKill: ttk,
+      comboMults,
+      damageMult,
+      confidence: profile?.confidence || 'wiki',
+      isSecondary: attackKind === 'secondary',
+    };
+  }
+
   // Full recommendation for a creature in a given biome with player character settings
   function recommend(creature, biome, weapons, player = DEFAULT_PLAYER) {
     const tier = biome.tier ?? biome.order ?? biome.gearTier;
     const mods = effectiveModifiers(creature);
+    const rankBy = player?.rankBy === 'hit' ? 'hit' : 'dps';
 
     const candidates = weapons.filter((w) => w.tier != null && w.tier <= tier);
+    const hp = creatureHp(creature, player?.star ?? 0, biome?.id, player);
 
     // 1. Melee: top 3 from distinct categories
     const meleeCandidates = candidates.filter((w) => {
@@ -385,15 +611,36 @@
     });
 
     const scoredMelee = meleeCandidates.map((w) => {
+      const prim = attackStats(w, null, creature, player, 'primary');
+      const hasSec = hasSecondaryAttack(w);
+      const sec = hasSec ? attackStats(w, null, creature, player, 'secondary') : null;
+
+      let chosen = prim;
+      let isSecondary = false;
+      if (rankBy === 'dps' && sec && sec.dps > prim.dps) {
+        chosen = sec;
+        isSecondary = true;
+      }
+
+      const scoreVal = rankBy === 'dps' ? chosen.dps : chosen.perHit;
       const hit = perHit(w, null, creature, player);
+      const hits = chosen.perHit > 0 && hp > 0 ? Math.ceil(hp / chosen.perHit) : null;
+
       return {
         weapon: w.id,
         name: w.name,
         category: w.category,
         tier: w.tier,
-        score: Math.round(hit.avg),
-        min: Math.round(hit.min),
-        max: Math.round(hit.max),
+        score: Math.round(scoreVal),
+        dps: chosen.dps,
+        perHit: chosen.perHit,
+        cycleSeconds: chosen.cycleSeconds,
+        isSecondary,
+        confidence: chosen.confidence,
+        timeToKill: chosen.timeToKill,
+        hits,
+        min: Math.round(hit.min * (chosen.damageMult || 1)),
+        max: Math.round(hit.max * (chosen.damageMult || 1)),
         raw: hit.raw,
         notes: hit.notes,
         rawWeapon: w,
@@ -414,6 +661,13 @@
         melee.push({
           weapon: m.weapon,
           score: m.score,
+          dps: m.dps,
+          perHit: m.perHit,
+          cycleSeconds: m.cycleSeconds,
+          isSecondary: m.isSecondary,
+          confidence: m.confidence,
+          timeToKill: m.timeToKill,
+          hits: m.hits,
           min: m.min,
           max: m.max,
           raw: m.raw,
@@ -429,12 +683,21 @@
     let arrowList = [];
     if (bows.length > 0) {
       const scoredBows = bows.map((b) => {
+        const stats = attackStats(b, null, creature, player, 'primary');
+        const scoreVal = rankBy === 'dps' ? stats.dps : stats.perHit;
         const hit = perHit(b, null, creature, player);
+        const hits = stats.perHit > 0 && hp > 0 ? Math.ceil(hp / stats.perHit) : null;
         return {
           weapon: b.id,
           name: b.name,
           tier: b.tier,
-          score: Math.round(hit.avg),
+          score: Math.round(scoreVal),
+          dps: stats.dps,
+          perHit: stats.perHit,
+          cycleSeconds: stats.cycleSeconds,
+          confidence: stats.confidence,
+          timeToKill: stats.timeToKill,
+          hits,
           min: Math.round(hit.min),
           max: Math.round(hit.max),
           rawWeapon: b,
@@ -449,19 +712,34 @@
       bowObj = {
         weapon: bestBow.weapon,
         score: bestBow.score,
+        dps: bestBow.dps,
+        perHit: bestBow.perHit,
+        cycleSeconds: bestBow.cycleSeconds,
+        confidence: bestBow.confidence,
+        timeToKill: bestBow.timeToKill,
+        hits: bestBow.hits,
         min: bestBow.min,
         max: bestBow.max,
       };
 
       const arrows = candidates.filter((w) => w.category === 'arrow');
       const scoredArrows = arrows.map((a) => {
+        const stats = attackStats(bestBow.rawWeapon, a, creature, player, 'primary');
         const hit = perHit(bestBow.rawWeapon, a, creature, player);
         const effective = isEffectiveAttack(bestBow.rawWeapon, a, creature, player, hit);
+        const scoreVal = rankBy === 'dps' ? stats.dps : stats.perHit;
+        const hits = stats.perHit > 0 && hp > 0 ? Math.ceil(hp / stats.perHit) : null;
         return {
           weapon: a.id,
           name: a.name,
           tier: a.tier,
-          score: Math.round(hit.avg),
+          score: Math.round(scoreVal),
+          dps: stats.dps,
+          perHit: stats.perHit,
+          cycleSeconds: stats.cycleSeconds,
+          confidence: stats.confidence,
+          timeToKill: stats.timeToKill,
+          hits,
           min: Math.round(hit.min),
           max: Math.round(hit.max),
           raw: hit.raw,
@@ -480,6 +758,12 @@
         .map((a) => ({
           weapon: a.weapon,
           score: a.score,
+          dps: a.dps,
+          perHit: a.perHit,
+          cycleSeconds: a.cycleSeconds,
+          confidence: a.confidence,
+          timeToKill: a.timeToKill,
+          hits: a.hits,
           min: a.min,
           max: a.max,
           raw: a.raw,
@@ -493,12 +777,21 @@
     let boltList = [];
     if (crossbows.length > 0) {
       const scoredCrossbows = crossbows.map((c) => {
+        const stats = attackStats(c, null, creature, player, 'primary');
+        const scoreVal = rankBy === 'dps' ? stats.dps : stats.perHit;
         const hit = perHit(c, null, creature, player);
+        const hits = stats.perHit > 0 && hp > 0 ? Math.ceil(hp / stats.perHit) : null;
         return {
           weapon: c.id,
           name: c.name,
           tier: c.tier,
-          score: Math.round(hit.avg),
+          score: Math.round(scoreVal),
+          dps: stats.dps,
+          perHit: stats.perHit,
+          cycleSeconds: stats.cycleSeconds,
+          confidence: stats.confidence,
+          timeToKill: stats.timeToKill,
+          hits,
           min: Math.round(hit.min),
           max: Math.round(hit.max),
           rawWeapon: c,
@@ -513,19 +806,34 @@
       crossbowObj = {
         weapon: bestCrossbow.weapon,
         score: bestCrossbow.score,
+        dps: bestCrossbow.dps,
+        perHit: bestCrossbow.perHit,
+        cycleSeconds: bestCrossbow.cycleSeconds,
+        confidence: bestCrossbow.confidence,
+        timeToKill: bestCrossbow.timeToKill,
+        hits: bestCrossbow.hits,
         min: bestCrossbow.min,
         max: bestCrossbow.max,
       };
 
       const bolts = candidates.filter((w) => w.category === 'bolt');
       const scoredBolts = bolts.map((b) => {
+        const stats = attackStats(bestCrossbow.rawWeapon, b, creature, player, 'primary');
         const hit = perHit(bestCrossbow.rawWeapon, b, creature, player);
         const effective = isEffectiveAttack(bestCrossbow.rawWeapon, b, creature, player, hit);
+        const scoreVal = rankBy === 'dps' ? stats.dps : stats.perHit;
+        const hits = stats.perHit > 0 && hp > 0 ? Math.ceil(hp / stats.perHit) : null;
         return {
           weapon: b.id,
           name: b.name,
           tier: b.tier,
-          score: Math.round(hit.avg),
+          score: Math.round(scoreVal),
+          dps: stats.dps,
+          perHit: stats.perHit,
+          cycleSeconds: stats.cycleSeconds,
+          confidence: stats.confidence,
+          timeToKill: stats.timeToKill,
+          hits,
           min: Math.round(hit.min),
           max: Math.round(hit.max),
           raw: hit.raw,
@@ -544,6 +852,12 @@
         .map((b) => ({
           weapon: b.weapon,
           score: b.score,
+          dps: b.dps,
+          perHit: b.perHit,
+          cycleSeconds: b.cycleSeconds,
+          confidence: b.confidence,
+          timeToKill: b.timeToKill,
+          hits: b.hits,
           min: b.min,
           max: b.max,
           raw: b.raw,
@@ -556,13 +870,31 @@
     let magicObj = null;
     if (magics.length > 0) {
       const scoredMagic = magics.map((m) => {
+        const prim = attackStats(m, null, creature, player, 'primary');
+        const hasSec = hasSecondaryAttack(m);
+        const sec = hasSec ? attackStats(m, null, creature, player, 'secondary') : null;
+        let chosen = prim;
+        let isSecondary = false;
+        if (rankBy === 'dps' && sec && sec.dps > prim.dps) {
+          chosen = sec;
+          isSecondary = true;
+        }
         const hit = perHit(m, null, creature, player);
         const effective = isEffectiveAttack(m, null, creature, player, hit);
+        const scoreVal = rankBy === 'dps' ? chosen.dps : chosen.perHit;
+        const hits = chosen.perHit > 0 && hp > 0 ? Math.ceil(hp / chosen.perHit) : null;
         return {
           weapon: m.id,
           name: m.name,
           tier: m.tier,
-          score: Math.round(hit.avg),
+          score: Math.round(scoreVal),
+          dps: chosen.dps,
+          perHit: chosen.perHit,
+          cycleSeconds: chosen.cycleSeconds,
+          isSecondary,
+          confidence: chosen.confidence,
+          timeToKill: chosen.timeToKill,
+          hits,
           min: Math.round(hit.min),
           max: Math.round(hit.max),
           raw: hit.raw,
@@ -577,13 +909,21 @@
       });
       const effectiveMagic = scoredMagic.filter((m) => m.effective);
       if (effectiveMagic.length > 0) {
+        const bestMagic = effectiveMagic[0];
         magicObj = {
-          weapon: effectiveMagic[0].weapon,
-          score: effectiveMagic[0].score,
-          min: effectiveMagic[0].min,
-          max: effectiveMagic[0].max,
-          raw: effectiveMagic[0].raw,
-          notes: effectiveMagic[0].notes,
+          weapon: bestMagic.weapon,
+          score: bestMagic.score,
+          dps: bestMagic.dps,
+          perHit: bestMagic.perHit,
+          cycleSeconds: bestMagic.cycleSeconds,
+          isSecondary: bestMagic.isSecondary,
+          confidence: bestMagic.confidence,
+          timeToKill: bestMagic.timeToKill,
+          hits: bestMagic.hits,
+          min: bestMagic.min,
+          max: bestMagic.max,
+          raw: bestMagic.raw,
+          notes: bestMagic.notes,
         };
       }
     }
@@ -593,13 +933,22 @@
     let bombObj = null;
     if (bombs.length > 0) {
       const scoredBombs = bombs.map((b) => {
+        const stats = attackStats(b, null, creature, player, 'primary');
         const hit = perHit(b, null, creature, player);
         const effective = isEffectiveAttack(b, null, creature, player, hit);
+        const scoreVal = rankBy === 'dps' ? stats.dps : stats.perHit;
+        const hits = stats.perHit > 0 && hp > 0 ? Math.ceil(hp / stats.perHit) : null;
         return {
           weapon: b.id,
           name: b.name,
           tier: b.tier,
-          score: Math.round(hit.avg),
+          score: Math.round(scoreVal),
+          dps: stats.dps,
+          perHit: stats.perHit,
+          cycleSeconds: stats.cycleSeconds,
+          confidence: stats.confidence,
+          timeToKill: stats.timeToKill,
+          hits,
           min: Math.round(hit.min),
           max: Math.round(hit.max),
           raw: hit.raw,
@@ -614,13 +963,20 @@
       });
       const effectiveBombs = scoredBombs.filter((b) => b.effective);
       if (effectiveBombs.length > 0) {
+        const bestBomb = effectiveBombs[0];
         bombObj = {
-          weapon: effectiveBombs[0].weapon,
-          score: effectiveBombs[0].score,
-          min: effectiveBombs[0].min,
-          max: effectiveBombs[0].max,
-          raw: effectiveBombs[0].raw,
-          notes: effectiveBombs[0].notes,
+          weapon: bestBomb.weapon,
+          score: bestBomb.score,
+          dps: bestBomb.dps,
+          perHit: bestBomb.perHit,
+          cycleSeconds: bestBomb.cycleSeconds,
+          confidence: bestBomb.confidence,
+          timeToKill: bestBomb.timeToKill,
+          hits: bestBomb.hits,
+          min: bestBomb.min,
+          max: bestBomb.max,
+          raw: bestBomb.raw,
+          notes: bestBomb.notes,
         };
       }
     }
@@ -686,7 +1042,8 @@
     if (!tipPrefix) {
       const topMelee = scoredMelee[0];
       if (topMelee) {
-        tipPrefix = `No elemental weakness \u2014 best raw option: ${topMelee.name} (${topMelee.score}).`;
+        const displayVal = rankBy === 'dps' ? (topMelee.raw || Math.round(topMelee.perHit)) : topMelee.score;
+        tipPrefix = `No elemental weakness \u2014 best raw option: ${topMelee.name} (${displayVal}).`;
       } else {
         tipPrefix = 'No recommended weapons found for this biome.';
       }
@@ -715,6 +1072,11 @@
     };
   }
 
+  function setData(data) {
+    if (data?.weaponQuality) globalThis._weaponQuality = data.weaponQuality;
+    if (data?.attackProfiles) globalThis._attackProfiles = data.attackProfiles;
+  }
+
   globalThis.VCRank = {
     DAMAGE_TYPES,
     COMBAT_DAMAGE_TYPES,
@@ -737,5 +1099,14 @@
     creatureHp,
     recommend,
     capitalize,
+    bowDrawSeconds,
+    bowCycleSeconds,
+    crossbowReloadSeconds,
+    crossbowCycleSeconds,
+    attackProfileFor,
+    hasSecondaryAttack,
+    attackStats,
+    backstabOf,
+    setData,
   };
 })();
