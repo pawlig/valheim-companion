@@ -488,6 +488,14 @@ body {
   font-size: 0.78rem;
 }
 
+.badge-tag {
+  background-color: rgba(144, 202, 249, 0.15);
+  color: #90caf9;
+  border: 1px solid rgba(144, 202, 249, 0.4);
+  text-transform: none;
+  font-size: 0.78rem;
+}
+
 .badge-slot {
   background-color: #12161b;
   color: var(--text-muted);

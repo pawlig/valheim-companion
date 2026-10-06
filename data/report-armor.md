@@ -12,10 +12,10 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 
 | Biome | Sets/Entries | Pieces |
 |---|---|---|
-| meadows | 2 | 3 |
+| meadows | 1 | 2 |
 | black-forest | 5 | 15 |
 | ocean | 0 | 0 |
-| swamp | 5 | 9 |
+| swamp | 2 | 6 |
 | mountain | 2 | 7 |
 | plains | 3 | 11 |
 | mistlands | 2 | 7 |
@@ -47,4 +47,5 @@ None.
 ## Open questions
 
 - Cosmetic items from Hildir / Haldor have no crafting materials or levels (`levels: []`, `biome: null`, `tier: null`).
+- DLC and seasonal armor pieces (Cape of Oden, Hood of Oden, Pointy Hat, Midsummer Crown) have `kind: "special"` and `tag: "DLC"` / `"Halloween"` / `"Midsummer"`, and are shown in their own section.
 - Pieces like Troll Hide Cape, Deer Hide Cape, Wolf Fur Cape, Feather Cape exist both as standalone wiki pages and as set pieces. Standalone duplicates are omitted to preserve set integrity.

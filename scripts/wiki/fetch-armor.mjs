@@ -396,13 +396,6 @@ async function main() {
       (!firstBox['materials 1'] || firstBox['materials 1'].trim() === '') &&
       (firstBox.source && /hildir|haldor|npc/i.test(firstBox.source));
 
-    let kind = 'single';
-    if (isCosmetic) {
-      kind = 'cosmetic';
-    } else if (boxes.length > 1 || boxes.some((b) => b['set pieces'] && b['set pieces'].trim() !== '')) {
-      kind = 'set';
-    }
-
     // Deduplication rule:
     // "Stejný díl uvedený na stránce setu i na samostatné stránce (Troll Hide Cape) se v single neduplikuje, zůstane jen v setu."
     if (boxes.length === 1) {
@@ -423,6 +416,25 @@ async function main() {
 
     const qTables = parseQualityTables(wt);
     const description = extractDescription(wt);
+
+    const seasonBox = boxes.find((b) => b.season && b.season.trim());
+    const seasonTag = seasonBox ? cleanText(seasonBox.season).trim() : null;
+    const isDlc =
+      title !== 'Crown of Valheim' &&
+      (boxes.some((b) => b.description && /\(DLC item\)/i.test(b.description)) ||
+        /\(DLC item\)/i.test(wt) ||
+        /\(DLC item\)/i.test(description));
+    const isSpecial = title !== 'Crown of Valheim' && (Boolean(seasonTag) || isDlc);
+    const specialTag = seasonTag || (isDlc ? 'DLC' : null);
+
+    let kind = 'single';
+    if (isSpecial) {
+      kind = 'special';
+    } else if (isCosmetic) {
+      kind = 'cosmetic';
+    } else if (boxes.length > 1 || boxes.some((b) => b['set pieces'] && b['set pieces'].trim() !== '')) {
+      kind = 'set';
+    }
 
     const pieces = [];
 
@@ -556,6 +568,7 @@ async function main() {
         movementSpeed,
         resistances,
         description,
+        ...(isSpecial ? { kind: 'special', tag: specialTag } : {}),
         _imageFile: imageFile,
       });
     }
@@ -569,6 +582,7 @@ async function main() {
       name: title,
       wiki: wikiPageUrl(title),
       kind,
+      ...(isSpecial ? { tag: specialTag } : {}),
       biome: null, // filled after material resolution
       tier: null,  // filled after material resolution
       setBonus,
@@ -790,7 +804,7 @@ async function main() {
   const itemsById = new Map(allItems.map((i) => [i.id, i]));
 
   for (const a of parsedArmor) {
-    if (a.kind === 'cosmetic') {
+    if (a.kind === 'cosmetic' || a.kind === 'special') {
       a.tier = null;
       a.biome = null;
       continue;
@@ -959,6 +973,7 @@ function renderReport(report, armor, items) {
     '## Open questions',
     '',
     '- Cosmetic items from Hildir / Haldor have no crafting materials or levels (`levels: []`, `biome: null`, `tier: null`).',
+    '- DLC and seasonal armor pieces (Cape of Oden, Hood of Oden, Pointy Hat, Midsummer Crown) have `kind: "special"` and `tag: "DLC"` / `"Halloween"` / `"Midsummer"`, and are shown in their own section.',
     '- Pieces like Troll Hide Cape, Deer Hide Cape, Wolf Fur Cape, Feather Cape exist both as standalone wiki pages and as set pieces. Standalone duplicates are omitted to preserve set integrity.',
     ''
   );

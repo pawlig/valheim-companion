@@ -1,5 +1,5 @@
 window.VA_DATA = {
-  "generatedAt": "2026-10-06T09:14:46.046Z",
+  "generatedAt": "2026-10-06T09:25:47.422Z",
   "source": {
     "name": "Valheim Wiki",
     "url": "https://valheim.weirdgloop.org",
@@ -1715,9 +1715,10 @@ window.VA_DATA = {
       "id": "cape-of-oden",
       "name": "Cape of Oden",
       "wiki": "https://valheim.weirdgloop.org/w/Cape_of_Oden",
-      "kind": "set",
-      "biome": "swamp",
-      "tier": 4,
+      "kind": "special",
+      "tag": "DLC",
+      "biome": null,
+      "tier": null,
       "setBonus": null,
       "pieces": [
         {
@@ -1797,7 +1798,9 @@ window.VA_DATA = {
           "weight": 4,
           "movementSpeed": 0,
           "resistances": [],
-          "description": "Cape of Oden is a DLC armor piece. It is only available for the early supporters of Valheim via a Steam code sent out in an email from Iron Gate Studios to those who signed up for the Valheim Beta. Check your email if you signed up!"
+          "description": "Cape of Oden is a DLC armor piece. It is only available for the early supporters of Valheim via a Steam code sent out in an email from Iron Gate Studios to those who signed up for the Valheim Beta. Check your email if you signed up!",
+          "kind": "special",
+          "tag": "DLC"
         }
       ]
     },
@@ -4286,9 +4289,10 @@ window.VA_DATA = {
       "id": "hood-of-oden",
       "name": "Hood of Oden",
       "wiki": "https://valheim.weirdgloop.org/w/Hood_of_Oden",
-      "kind": "set",
-      "biome": "swamp",
-      "tier": 4,
+      "kind": "special",
+      "tag": "DLC",
+      "biome": null,
+      "tier": null,
       "setBonus": null,
       "pieces": [
         {
@@ -4368,7 +4372,9 @@ window.VA_DATA = {
           "weight": 1,
           "movementSpeed": 0,
           "resistances": [],
-          "description": "Hood of Oden is a DLC armor piece. It is only available for the early supporters of Valheim via a Steam code sent out in an email from Iron Gate Studios to those who signed up for the Valheim Beta. Check your email if you signed up!"
+          "description": "Hood of Oden is a DLC armor piece. It is only available for the early supporters of Valheim via a Steam code sent out in an email from Iron Gate Studios to those who signed up for the Valheim Beta. Check your email if you signed up!",
+          "kind": "special",
+          "tag": "DLC"
         }
       ]
     },
@@ -5275,9 +5281,10 @@ window.VA_DATA = {
       "id": "midsummer-crown",
       "name": "Midsummer Crown",
       "wiki": "https://valheim.weirdgloop.org/w/Midsummer_Crown",
-      "kind": "single",
-      "biome": "meadows",
-      "tier": 1,
+      "kind": "special",
+      "tag": "Midsummer",
+      "biome": null,
+      "tier": null,
       "setBonus": null,
       "pieces": [
         {
@@ -5305,7 +5312,9 @@ window.VA_DATA = {
           "weight": 1,
           "movementSpeed": 0,
           "resistances": [],
-          "description": "Midsummer crown is a seasonal armor piece available during midsummer."
+          "description": "Midsummer crown is a seasonal armor piece available during midsummer.",
+          "kind": "special",
+          "tag": "Midsummer"
         }
       ]
     },
@@ -5734,9 +5743,10 @@ window.VA_DATA = {
       "id": "pointy-hat",
       "name": "Pointy Hat",
       "wiki": "https://valheim.weirdgloop.org/w/Pointy_Hat",
-      "kind": "single",
-      "biome": "swamp",
-      "tier": 4,
+      "kind": "special",
+      "tag": "Halloween",
+      "biome": null,
+      "tier": null,
       "setBonus": null,
       "pieces": [
         {
@@ -5808,7 +5818,9 @@ window.VA_DATA = {
           "weight": 3,
           "movementSpeed": 0,
           "resistances": [],
-          "description": "Pointy hat is an armor piece which can be crafted and upgraded at the Workbench. It is only available during the Halloween seasonal event, – ."
+          "description": "Pointy hat is an armor piece which can be crafted and upgraded at the Workbench. It is only available during the Halloween seasonal event, – .",
+          "kind": "special",
+          "tag": "Halloween"
         }
       ]
     },

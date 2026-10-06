@@ -420,9 +420,12 @@
     const armorByBiome = new Map();
     sortedBiomes.forEach(b => armorByBiome.set(b.id, []));
     const cosmetics = [];
+    const dlcSeasonal = [];
 
     data.armor.forEach(armor => {
-      if (armor.kind === 'cosmetic' || !armor.biome) {
+      if (armor.kind === 'special') {
+        dlcSeasonal.push(armor);
+      } else if (armor.kind === 'cosmetic' || !armor.biome) {
         cosmetics.push(armor);
       } else if (armorByBiome.has(armor.biome)) {
         armorByBiome.get(armor.biome).push(armor);
@@ -526,6 +529,57 @@
         biomesContainer.appendChild(biomeCard);
       });
 
+      // Render DLC & seasonal section (collapsed by default)
+      if (dlcSeasonal.length > 0) {
+        const dlcCard = el('section', 'biome-card');
+        const headerBtn = el('button', 'biome-header');
+        headerBtn.type = 'button';
+        headerBtn.id = 'dlc-seasonal-header';
+        headerBtn.setAttribute('aria-controls', 'dlc-seasonal-content');
+        headerBtn.setAttribute('aria-expanded', 'false');
+
+        const headerContent = el('div', 'biome-header-content');
+        const badge = el('span', 'biome-order-badge', 'Special');
+        const nameHeading = el('span', 'biome-name', 'DLC & seasonal');
+        const countBadge = el('span', 'biome-count-badge', dlcSeasonal.length + (dlcSeasonal.length === 1 ? ' item' : ' items'));
+
+        headerContent.appendChild(badge);
+        headerContent.appendChild(nameHeading);
+        headerContent.appendChild(countBadge);
+
+        const chevron = el('span', 'biome-chevron', '▼');
+        chevron.setAttribute('aria-hidden', 'true');
+
+        headerBtn.appendChild(headerContent);
+        headerBtn.appendChild(chevron);
+
+        const contentWrapper = el('div', 'biome-content-wrapper');
+        contentWrapper.id = 'dlc-seasonal-content';
+        contentWrapper.setAttribute('role', 'region');
+        contentWrapper.setAttribute('aria-labelledby', 'dlc-seasonal-header');
+        contentWrapper.setAttribute('inert', '');
+
+        headerBtn.addEventListener('click', function () {
+          const isExpanded = headerBtn.getAttribute('aria-expanded') === 'true';
+          const nextState = !isExpanded;
+          headerBtn.setAttribute('aria-expanded', String(nextState));
+          if (nextState) {
+            contentWrapper.removeAttribute('inert');
+          } else {
+            contentWrapper.setAttribute('inert', '');
+          }
+        });
+
+        dlcSeasonal.forEach(armor => {
+          const setCard = renderSetCard(armor);
+          contentWrapper.appendChild(setCard);
+        });
+
+        dlcCard.appendChild(headerBtn);
+        dlcCard.appendChild(contentWrapper);
+        cosmeticsContainer.appendChild(dlcCard);
+      }
+
       // Render Cosmetics section (collapsed by default)
       if (cosmetics.length > 0) {
         const cosmeticCard = el('section', 'biome-card');
@@ -620,6 +674,12 @@
         const bonusText = armor.setBonus.name;
         const bonusBadge = el('span', 'badge badge-bonus', bonusText);
         badgesRow.appendChild(bonusBadge);
+      }
+
+      // Special tag badge (DLC, Halloween, Midsummer, etc.)
+      if (armor.tag) {
+        const tagBadge = el('span', 'badge badge-tag', armor.tag);
+        badgesRow.appendChild(tagBadge);
       }
 
       infoCol.appendChild(titleRow);
@@ -758,6 +818,10 @@
         }
         const nameText = el('span', 'piece-name-text', piece.name);
         pieceCell.appendChild(nameText);
+        if (piece.tag) {
+          const tagBadge = el('span', 'badge badge-tag', piece.tag);
+          pieceCell.appendChild(tagBadge);
+        }
         tdPiece.appendChild(pieceCell);
 
         // Slot cell
