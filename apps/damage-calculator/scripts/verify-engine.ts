@@ -26,7 +26,7 @@ import {
 } from "../src/lib/damage";
 import { buildGuideStep, lockedFor, qualityFor } from "../src/lib/guide";
 import {
-  COMBAT_DAMAGE_TYPES,
+  ALL_DAMAGE_TYPES,
   type Ammo,
   type Creature,
   type DamageType,
@@ -568,8 +568,8 @@ check(
   120,
 );
 
-// Creatures are immune to pickaxe damage (Damage#Pickaxe), so only the
-// physical component of a pickaxe counts.
+// Creatures without an explicit modifier are immune to pickaxe damage
+// (Damage#Pickaxe), so only the physical component of a pickaxe counts.
 check(
   "Iron Pickaxe Q1 vs Eikthyr counts pierce only",
   calculate({
@@ -581,6 +581,51 @@ check(
     attack: "primary",
   }).perHit,
   33,
+);
+
+// Terrain damage counts only against targets that publish an explicit
+// modifier for it: Stone Golem is very weak to pickaxe, so there the pickaxe
+// component counts too — pierce 33 x0.5 (resistant) + pickaxe 33 x2 = 82.5.
+check(
+  "Iron Pickaxe Q1 vs Stone Golem counts pickaxe x2",
+  calculate({
+    weapon: weapon("Iron Pickaxe"),
+    quality: 1,
+    target: creature("Stone Golem"),
+    skillLevel: 100,
+    skillMode: "max",
+    attack: "primary",
+  }).perHit,
+  82.5,
+);
+
+// Troll lists no chop modifier, so an axe's chop component stays terrain
+// damage against it: slash 60 x1 = 60.
+check(
+  "Iron Axe Q1 vs Troll ignores chop",
+  calculate({
+    weapon: weapon("Iron Axe"),
+    quality: 1,
+    target: creature("Troll"),
+    skillLevel: 100,
+    skillMode: "max",
+    attack: "primary",
+  }).perHit,
+  60,
+);
+
+// Kvastur is explicitly weak to chop: slash 60 x1 + chop 50 x1.5 = 135.
+check(
+  "Iron Axe Q1 vs Kvastur counts chop x1.5",
+  calculate({
+    weapon: weapon("Iron Axe"),
+    quality: 1,
+    target: creature("Kvastur"),
+    skillLevel: 100,
+    skillMode: "max",
+    attack: "primary",
+  }).perHit,
+  135,
 );
 
 // Catapult ammo is pure terrain damage and therefore does nothing to a boss.
@@ -720,12 +765,13 @@ check(
   true,
 );
 check(
-  "creature resistances are combat damage only",
+  "creature resistances are combat or explicitly listed terrain types",
   enemies.every((e) =>
-    Object.keys(e.resistances).every((type) =>
-      (COMBAT_DAMAGE_TYPES as readonly DamageType[]).includes(
-        type as DamageType,
-      ),
+    Object.keys(e.resistances).every(
+      (type) =>
+        (ALL_DAMAGE_TYPES as readonly DamageType[]).includes(
+          type as DamageType,
+        ) && type !== "pure",
     ),
   ),
   true,

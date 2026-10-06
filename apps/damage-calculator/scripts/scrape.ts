@@ -42,7 +42,6 @@ import {
 } from "../src/data/materials";
 import {
   ALL_DAMAGE_TYPES,
-  COMBAT_DAMAGE_TYPES,
   type Ammo,
   type Creature,
   type CreatureKind,
@@ -66,9 +65,10 @@ const IMAGE_DIR = join(ROOT, "public", "items");
  * Damage types — imported from the app (see the import block) rather than
  * duplicated here, so the scraper and the engine cannot drift apart. The
  * wiki's taxonomy (https://valheim.weirdgloop.org/wiki/Damage) files Chop,
- * Pickaxe and Pure under *terrain* damage, which is why the engine counts only
- * COMBAT_DAMAGE_TYPES against bosses. Every item's terrain values are still
- * scraped and committed for completeness.
+ * Pickaxe and Pure under *terrain* damage, which is why the engine counts
+ * terrain damage only against targets with an explicit chop/pickaxe modifier.
+ * Every item's terrain values are still scraped and committed for
+ * completeness.
  * ------------------------------------------------------------------ */
 
 /* ------------------------------------------------------------------ *
@@ -966,9 +966,11 @@ function cleanWikiText(raw: string): string {
 
 /** Resistance fields of a creature infobox into the app's shape.
  *
- * Terrain damage types are dropped: the engine never counts chop, pickaxe or
- * pure damage against creatures, so keeping them would only add chips that can
- * never matter. "Stagger" and other non damage-type entries are ignored. */
+ * Chop and pickaxe are kept when — and only when — the wiki lists them
+ * explicitly for the creature (Stone Golem is very weak to pickaxe, Kvastur
+ * weak to chop); the engine counts terrain damage only against such targets.
+ * Pure cannot come out of labelToDamageType and stays dropped, as do "Stagger"
+ * and other non damage-type entries. */
 function parseResistances(
   fields: Record<string, string>,
 ): Creature["resistances"] {
@@ -978,9 +980,7 @@ function parseResistances(
     if (!value) continue;
     for (const entry of value.split(/[,\n]/)) {
       const type = labelToDamageType(cleanWikiText(entry));
-      if (!type || !(COMBAT_DAMAGE_TYPES as readonly DamageType[]).includes(type)) {
-        continue;
-      }
+      if (!type || type === "pure") continue;
       out[type] = tier;
     }
   }

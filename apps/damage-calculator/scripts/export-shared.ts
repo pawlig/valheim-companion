@@ -169,7 +169,7 @@ console.log("Wrote data/attack-profiles.json");
 /* ------------------------------------------------------------------ *
  * 3. parity-fixtures.json
  * Grid of calculate() results for parity tests:
- *  12 weapons x 6 targets x 3 skills x 2 qualities x 2 attacks x 2 backstabs
+ *  13 weapons x 6 targets x 3 skills x 2 qualities x 2 attacks x 2 backstabs
  * ------------------------------------------------------------------ */
 
 const GRID_WEAPONS: { weaponSlug: string; ammoSlug?: string }[] = [
@@ -185,6 +185,9 @@ const GRID_WEAPONS: { weaponSlug: string; ammoSlug?: string }[] = [
   { weaponSlug: "frostner" },
   { weaponSlug: "nord-greatsword" },
   { weaponSlug: "staff-of-embers" },
+  // Exercises the explicit pickaxe weakness: Stone Golem counts pickaxe x2,
+  // every other grid target ignores the pickaxe component.
+  { weaponSlug: "iron-pickaxe" },
 ];
 
 const GRID_TARGET_SLUGS = [

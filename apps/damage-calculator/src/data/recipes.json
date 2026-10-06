@@ -1487,6 +1487,54 @@
       ]
     ]
   },
+  "charred-arrow": {
+    "station": "Black Forge",
+    "stationLevel": 1,
+    "qualities": [
+      [
+        {
+          "name": "Charred Bone",
+          "quantity": 4
+        },
+        {
+          "name": "Feathers",
+          "quantity": 2
+        },
+        {
+          "name": "Ashwood",
+          "quantity": 8
+        }
+      ],
+      [],
+      [],
+      []
+    ],
+    "quantity": 20
+  },
+  "charred-bolt": {
+    "station": "Black Forge",
+    "stationLevel": 1,
+    "qualities": [
+      [
+        {
+          "name": "Ashwood",
+          "quantity": 8
+        },
+        {
+          "name": "Charred Bone",
+          "quantity": 2
+        },
+        {
+          "name": "Feathers",
+          "quantity": 2
+        }
+      ],
+      [],
+      [],
+      []
+    ],
+    "quantity": 20
+  },
   "club": {
     "station": "Crafting_Menu#Player_Inventory",
     "stationLevel": 1,
@@ -3410,54 +3458,6 @@
         }
       ]
     ]
-  },
-  "charred-arrow": {
-    "station": "Black Forge",
-    "stationLevel": 1,
-    "qualities": [
-      [
-        {
-          "name": "Charred Bone",
-          "quantity": 4
-        },
-        {
-          "name": "Feathers",
-          "quantity": 2
-        },
-        {
-          "name": "Ashwood",
-          "quantity": 8
-        }
-      ],
-      [],
-      [],
-      []
-    ],
-    "quantity": 20
-  },
-  "charred-bolt": {
-    "station": "Black Forge",
-    "stationLevel": 1,
-    "qualities": [
-      [
-        {
-          "name": "Ashwood",
-          "quantity": 8
-        },
-        {
-          "name": "Charred Bone",
-          "quantity": 2
-        },
-        {
-          "name": "Feathers",
-          "quantity": 2
-        }
-      ],
-      [],
-      [],
-      []
-    ],
-    "quantity": 20
   },
   "iron-atgeir": {
     "station": "Forge",

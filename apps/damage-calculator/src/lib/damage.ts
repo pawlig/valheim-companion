@@ -9,6 +9,7 @@ import {
 } from "@/data/attack-profiles";
 import type { WeaponClass } from "@/data/weapon-class";
 import {
+  ALL_DAMAGE_TYPES,
   COMBAT_DAMAGE_TYPES,
   DAMAGE_LABEL,
   RESISTANCE_MULTIPLIER,
@@ -106,10 +107,27 @@ export function damageAtQuality(
   return values[index] ?? 0;
 }
 
-/** The damage types this weapon (plus ammo) actually deals. */
-export function damageTypesFor(weapon: Weapon, ammo?: Ammo | null): DamageType[] {
+/** Whether a terrain damage type can hurt the target at all.
+ *
+ * The wiki files chop and pickaxe under terrain damage (woodcutting / mining):
+ * they do nothing to creatures in general. A few targets publish an explicit
+ * modifier anyway — Stone Golem is very weak to pickaxe, Kvastur weak to chop —
+ * and only a listed modifier above zero (so not immunity) makes the type count. */
+function terrainTypeCounts(target: Creature, type: DamageType): boolean {
+  const tier = target.resistances[type];
+  return tier !== undefined && (RESISTANCE_MULTIPLIER[tier] ?? 0) > 0;
+}
+
+/** The damage types this weapon (plus ammo) deals that can hurt the target:
+ *  every combat type it carries, plus chop/pickaxe where the target is
+ *  explicitly vulnerable to them. */
+export function damageTypesFor(
+  weapon: Weapon,
+  ammo: Ammo | null | undefined,
+  target: Creature,
+): DamageType[] {
   const present = new Set<DamageType>();
-  for (const type of COMBAT_DAMAGE_TYPES) {
+  for (const type of ALL_DAMAGE_TYPES) {
     let hasDamage = false;
     for (let q = 1; q <= MAX_QUALITY; q++) {
       if (
@@ -122,7 +140,12 @@ export function damageTypesFor(weapon: Weapon, ammo?: Ammo | null): DamageType[]
     }
     if (hasDamage) present.add(type);
   }
-  return COMBAT_DAMAGE_TYPES.filter((t) => present.has(t));
+  return ALL_DAMAGE_TYPES.filter(
+    (t) =>
+      present.has(t) &&
+      ((COMBAT_DAMAGE_TYPES as readonly DamageType[]).includes(t) ||
+        terrainTypeCounts(target, t)),
+  );
 }
 
 /* ------------------------------------------------------------------ *
@@ -239,7 +262,7 @@ export function calculate(input: CalculationInput): CalculationResult {
   const openingMult = backstabApplied ? backstabMult : 1;
 
   const lines: DamageLine[] = [];
-  for (const type of damageTypesFor(weapon, ammo)) {
+  for (const type of damageTypesFor(weapon, ammo, target)) {
     const base =
       damageAtQuality(weapon.damage, type, quality) +
       (ammo ? damageAtQuality(ammo.damage, type, quality) : 0);

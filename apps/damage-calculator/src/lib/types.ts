@@ -19,8 +19,9 @@ export type QualityValues = [number, number, number, number];
 
 export type DamageMap = Partial<Record<DamageType, QualityValues>>;
 
-/** Damage types that actually hurt creatures. `chop` and `pickaxe` are
- *  terrain damage (woodcutting / mining) and are ignored against creatures. */
+/** Damage types that always hurt creatures. `chop` and `pickaxe` are terrain
+ *  damage (woodcutting / mining); they count only against the few targets that
+ *  publish an explicit modifier for them (see damage.ts). */
 export const COMBAT_DAMAGE_TYPES = [
   "blunt",
   "pierce",

@@ -294,8 +294,10 @@
     "biome": "swamp",
     "resistances": {
       "fire": "very-weak",
+      "chop": "weak",
       "poison": "immune",
-      "spirit": "immune"
+      "spirit": "immune",
+      "pickaxe": "immune"
     }
   },
   {
@@ -469,6 +471,7 @@
     "health": 800,
     "biome": "mountain",
     "resistances": {
+      "pickaxe": "very-weak",
       "pierce": "resistant",
       "slash": "resistant",
       "fire": "immune",
@@ -777,21 +780,6 @@
     }
   },
   {
-    "slug": "fallen-valkyrie",
-    "name": "Fallen Valkyrie",
-    "wikiTitle": "Fallen Valkyrie",
-    "wikiUrl": "https://valheim.weirdgloop.org/wiki/Fallen_Valkyrie",
-    "image": "/items/fallen-valkyrie.png",
-    "kind": "enemy",
-    "health": 1500,
-    "biome": "ashlands",
-    "resistances": {
-      "spirit": "weak",
-      "fire": "resistant",
-      "poison": "immune"
-    }
-  },
-  {
     "slug": "charred-marksman",
     "name": "Charred Marksman",
     "wikiTitle": "Charred Marksman",
@@ -857,6 +845,21 @@
     }
   },
   {
+    "slug": "fallen-valkyrie",
+    "name": "Fallen Valkyrie",
+    "wikiTitle": "Fallen Valkyrie",
+    "wikiUrl": "https://valheim.weirdgloop.org/wiki/Fallen_Valkyrie",
+    "image": "/items/fallen-valkyrie.png",
+    "kind": "enemy",
+    "health": 1500,
+    "biome": "ashlands",
+    "resistances": {
+      "spirit": "weak",
+      "fire": "resistant",
+      "poison": "immune"
+    }
+  },
+  {
     "slug": "lava-blob",
     "name": "Lava Blob",
     "wikiTitle": "Lava Blob",
@@ -902,6 +905,7 @@
     "biome": "ashlands",
     "resistances": {
       "pierce": "resistant",
+      "pickaxe": "resistant",
       "fire": "resistant",
       "lightning": "resistant",
       "poison": "immune"
@@ -998,6 +1002,7 @@
     "health": 3000,
     "biome": "deep-north",
     "resistances": {
+      "pickaxe": "weak",
       "blunt": "resistant",
       "slash": "resistant",
       "pierce": "resistant",

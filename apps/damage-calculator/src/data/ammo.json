@@ -119,6 +119,40 @@
     "biome": "mistlands"
   },
   {
+    "slug": "charred-arrow",
+    "name": "Charred arrow",
+    "wikiTitle": "Charred Arrow",
+    "wikiUrl": "https://valheim.weirdgloop.org/wiki/Charred_Arrow",
+    "image": "/items/charred-arrow.png",
+    "kind": "arrow",
+    "damage": {
+      "pierce": [
+        82,
+        82,
+        82,
+        82
+      ]
+    },
+    "biome": "ashlands"
+  },
+  {
+    "slug": "charred-bolt",
+    "name": "Charred bolt",
+    "wikiTitle": "Charred Bolt",
+    "wikiUrl": "https://valheim.weirdgloop.org/wiki/Charred_Bolt",
+    "image": "/items/charred-bolt.png",
+    "kind": "bolt",
+    "damage": {
+      "pierce": [
+        82,
+        82,
+        82,
+        82
+      ]
+    },
+    "biome": "ashlands"
+  },
+  {
     "slug": "fire-arrow",
     "name": "Fire arrow",
     "wikiTitle": "Fire Arrow",
@@ -180,40 +214,6 @@
       ]
     },
     "biome": "mountain"
-  },
-  {
-    "slug": "charred-arrow",
-    "name": "Charred arrow",
-    "wikiTitle": "Charred Arrow",
-    "wikiUrl": "https://valheim.weirdgloop.org/wiki/Charred_Arrow",
-    "image": "/items/charred-arrow.png",
-    "kind": "arrow",
-    "damage": {
-      "pierce": [
-        82,
-        82,
-        82,
-        82
-      ]
-    },
-    "biome": "ashlands"
-  },
-  {
-    "slug": "charred-bolt",
-    "name": "Charred bolt",
-    "wikiTitle": "Charred Bolt",
-    "wikiUrl": "https://valheim.weirdgloop.org/wiki/Charred_Bolt",
-    "image": "/items/charred-bolt.png",
-    "kind": "bolt",
-    "damage": {
-      "pierce": [
-        82,
-        82,
-        82,
-        82
-      ]
-    },
-    "biome": "ashlands"
   },
   {
     "slug": "iron-bolt",
