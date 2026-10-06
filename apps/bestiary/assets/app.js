@@ -220,6 +220,7 @@
 
     player.sneak = raw.sneak === true;
     player.staggered = raw.staggered === true;
+    player.rankBy = raw.rankBy === 'hit' ? 'hit' : 'dps';
 
     return player;
   }
@@ -320,6 +321,7 @@
     let sneakCheckbox = null;
     let staggeredCheckbox = null;
     let summaryEl = null;
+    let updateRankButtons = null;
 
     const updateCharacterSummary = () => {
       const skills = window.VCRank.SKILLS;
@@ -327,11 +329,13 @@
       const diffLabel = DIFFICULTY_OPTIONS.find((d) => d.id === player.difficulty);
       const playersStr = player.players + (player.players === 1 ? ' player' : ' players');
       const qualityStr = player.quality === 'max' ? 'Max quality' : 'Quality ' + player.quality;
+      const rankByStr = player.rankBy === 'hit' ? 'Per hit' : 'DPS';
       summaryEl.textContent =
         'Your character · avg skill ' + avg +
         ' · ' + (diffLabel ? diffLabel.short : 'Normal') +
         ' · ' + playersStr +
-        ' · ' + qualityStr;
+        ' · ' + qualityStr +
+        ' · ' + rankByStr;
     };
 
     const updateSkillBadges = () => {
@@ -374,6 +378,7 @@
       if (qualitySelect) qualitySelect.value = String(player.quality);
       if (sneakCheckbox) sneakCheckbox.checked = player.sneak;
       if (staggeredCheckbox) staggeredCheckbox.checked = player.staggered;
+      if (updateRankButtons) updateRankButtons();
     };
 
     const details = el('details', 'character-panel');
@@ -540,10 +545,42 @@
     worldBlock.appendChild(worldRow);
     body.appendChild(worldBlock);
 
-    // Weapons (upgrade level)
+    // Weapons (upgrade level + rank by)
     const weaponsBlock = el('div', 'character-block');
     weaponsBlock.appendChild(el('span', 'character-block-title', 'Weapons'));
     const weaponsRow = el('div', 'character-fields-row');
+
+    const rankGroup = el('div', 'char-field-group');
+    rankGroup.appendChild(el('span', 'char-field-label', 'Rank by'));
+    const rankToggle = el('div', 'char-rank-toggle');
+    rankToggle.setAttribute('role', 'radiogroup');
+    rankToggle.setAttribute('aria-label', 'Rank by');
+    const dpsBtn = el('button', 'rank-toggle-btn' + (player.rankBy !== 'hit' ? ' active' : ''), 'Damage per second');
+    dpsBtn.type = 'button';
+    const hitBtn = el('button', 'rank-toggle-btn' + (player.rankBy === 'hit' ? ' active' : ''), 'Damage per hit');
+    hitBtn.type = 'button';
+
+    updateRankButtons = () => {
+      dpsBtn.className = 'rank-toggle-btn' + (player.rankBy !== 'hit' ? ' active' : '');
+      hitBtn.className = 'rank-toggle-btn' + (player.rankBy === 'hit' ? ' active' : '');
+    };
+
+    dpsBtn.addEventListener('click', () => {
+      player.rankBy = 'dps';
+      updateRankButtons();
+      onPlayerChange();
+    });
+    hitBtn.addEventListener('click', () => {
+      player.rankBy = 'hit';
+      updateRankButtons();
+      onPlayerChange();
+    });
+
+    rankToggle.appendChild(dpsBtn);
+    rankToggle.appendChild(hitBtn);
+    rankGroup.appendChild(rankToggle);
+    weaponsRow.appendChild(rankGroup);
+
     const qualityGroup = el('div', 'char-field-group');
     qualityGroup.appendChild(el('span', 'char-field-label', 'Upgrade level'));
     qualitySelect = document.createElement('select');
@@ -615,6 +652,7 @@
       player.sets = [...fresh.sets];
       player.sneak = fresh.sneak;
       player.staggered = fresh.staggered;
+      player.rankBy = fresh.rankBy || 'dps';
       syncAllInputs();
       onPlayerChange();
     });
@@ -787,10 +825,10 @@
    * @param {Array<string>} [notes]
    * @param {string|null} [sublabel]
    * @param {object} data
-   * @param {{min?: number, max?: number, hits?: number|null}} [hitInfo]
+   * @param {object} [recItem]
    * @returns {HTMLElement}
    */
-  function createWeaponRowBtn(weaponId, score, notes, sublabel, data, hitInfo) {
+  function createWeaponRowBtn(weaponId, score, notes, sublabel, data, recItem) {
     const weapon = data.weapons[weaponId];
     const btn = el('button', 'weapon-btn');
     btn.type = 'button';
@@ -802,6 +840,10 @@
 
     const nameText = sublabel ? weaponName + ' (' + sublabel + ')' : weaponName;
     left.appendChild(el('span', 'weapon-btn-name', nameText));
+
+    if (recItem && recItem.isSecondary) {
+      left.appendChild(el('span', 'badge badge-secondary', 'secondary'));
+    }
     btn.appendChild(left);
 
     const right = el('div', 'weapon-btn-right');
@@ -813,16 +855,49 @@
       right.appendChild(notesDiv);
     }
 
-    if (score !== null && score !== undefined) {
+    if ((score !== null && score !== undefined) || recItem) {
       const scoreBox = el('div', 'weapon-score-box');
-      const scoreEl = el('span', 'weapon-score', String(score));
-      if (hitInfo && hitInfo.min !== undefined && hitInfo.max !== undefined) {
-        scoreEl.title = hitInfo.min + '–' + hitInfo.max + ' per hit';
+      const rankBy = playerState?.rankBy === 'hit' ? 'hit' : 'dps';
+
+      // 1. Large number according to rankBy (187/s or 120)
+      let mainScoreText = '';
+      if (rankBy === 'hit') {
+        const val = recItem?.perHit != null ? Math.round(recItem.perHit) : Math.round(score || 0);
+        mainScoreText = String(val);
+      } else {
+        const val = recItem?.dps != null ? Math.round(recItem.dps) : Math.round(score || 0);
+        mainScoreText = val + '/s';
+      }
+      const scoreEl = el('span', 'weapon-score', mainScoreText);
+      if (recItem && recItem.min !== undefined && recItem.max !== undefined) {
+        scoreEl.title = recItem.min + '–' + recItem.max + ' per hit';
       }
       scoreBox.appendChild(scoreEl);
-      if (hitInfo && hitInfo.hits !== undefined && hitInfo.hits !== null) {
-        scoreBox.appendChild(el('span', 'weapon-hits', '≈ ' + hitInfo.hits + ' hits'));
+
+      // 2. Subline: "per hit 120 · cycle 2.5 s" (with estimate icon if confidence === 'estimate')
+      if (recItem && recItem.perHit != null && recItem.cycleSeconds != null) {
+        const subline = el('div', 'weapon-subline');
+        const hitVal = Math.round(recItem.perHit);
+        const cycleVal = Number(recItem.cycleSeconds.toFixed(2));
+        subline.appendChild(document.createTextNode('per hit ' + hitVal + ' · cycle ' + cycleVal + ' s'));
+        if (recItem.confidence === 'estimate') {
+          const estSpan = el('span', 'timing-estimate', ' ~');
+          estSpan.title = 'estimated timing';
+          subline.appendChild(estSpan);
+        }
+        scoreBox.appendChild(subline);
       }
+
+      // 3. Hits / TTK: "≈ N hits · ≈ X s"
+      if (recItem && recItem.hits != null) {
+        let hitsText = '≈ ' + recItem.hits + ' hits';
+        if (recItem.timeToKill != null && Number.isFinite(recItem.timeToKill)) {
+          const ttkVal = recItem.timeToKill < 10 ? recItem.timeToKill.toFixed(1) : Math.round(recItem.timeToKill);
+          hitsText += ' · ≈ ' + ttkVal + ' s';
+        }
+        scoreBox.appendChild(el('span', 'weapon-hits', hitsText));
+      }
+
       right.appendChild(scoreBox);
     }
     btn.appendChild(right);
@@ -996,8 +1071,7 @@
         const meleeGroup = el('div', 'rec-group');
         meleeGroup.appendChild(el('span', 'rec-group-title', 'Melee'));
         rec.melee.slice(0, 3).forEach(m => {
-          const w = data.weapons[m.weapon];
-          meleeGroup.appendChild(createWeaponRowBtn(m.weapon, m.score, filterWeaponNotes(m.notes, creature), null, data, hitInfoFor(w, null)));
+          meleeGroup.appendChild(createWeaponRowBtn(m.weapon, m.score, filterWeaponNotes(m.notes, creature), null, data, m));
         });
         recGroups.appendChild(meleeGroup);
       }
@@ -1010,11 +1084,10 @@
 
         if (rec.arrows && rec.arrows.length > 0) {
           rec.arrows.forEach(arr => {
-            const a = data.weapons[arr.weapon];
-            bowGroup.appendChild(createWeaponRowBtn(arr.weapon, arr.score, filterWeaponNotes(arr.notes, creature), null, data, hitInfoFor(bowWeapon, a)));
+            bowGroup.appendChild(createWeaponRowBtn(arr.weapon, arr.score, filterWeaponNotes(arr.notes, creature), null, data, arr));
           });
         } else if (rec.bow) {
-          bowGroup.appendChild(createWeaponRowBtn(rec.bow.weapon, rec.bow.score, filterWeaponNotes(rec.bow.notes, creature), null, data, hitInfoFor(bowWeapon, null)));
+          bowGroup.appendChild(createWeaponRowBtn(rec.bow.weapon, rec.bow.score, filterWeaponNotes(rec.bow.notes, creature), null, data, rec.bow));
         }
         recGroups.appendChild(bowGroup);
       }
@@ -1027,11 +1100,10 @@
 
         if (rec.bolts && rec.bolts.length > 0) {
           rec.bolts.forEach(bolt => {
-            const b = data.weapons[bolt.weapon];
-            xbowGroup.appendChild(createWeaponRowBtn(bolt.weapon, bolt.score, filterWeaponNotes(bolt.notes, creature), null, data, hitInfoFor(xbowWeapon, b)));
+            xbowGroup.appendChild(createWeaponRowBtn(bolt.weapon, bolt.score, filterWeaponNotes(bolt.notes, creature), null, data, bolt));
           });
         } else if (rec.crossbow) {
-          xbowGroup.appendChild(createWeaponRowBtn(rec.crossbow.weapon, rec.crossbow.score, filterWeaponNotes(rec.crossbow.notes, creature), null, data, hitInfoFor(xbowWeapon, null)));
+          xbowGroup.appendChild(createWeaponRowBtn(rec.crossbow.weapon, rec.crossbow.score, filterWeaponNotes(rec.crossbow.notes, creature), null, data, rec.crossbow));
         }
         recGroups.appendChild(xbowGroup);
       }
@@ -1040,8 +1112,7 @@
       if (!isRangedOnly && rec.magic) {
         const magicGroup = el('div', 'rec-group');
         magicGroup.appendChild(el('span', 'rec-group-title', 'Magic'));
-        const w = data.weapons[rec.magic.weapon];
-        magicGroup.appendChild(createWeaponRowBtn(rec.magic.weapon, rec.magic.score, filterWeaponNotes(rec.magic.notes, creature), null, data, hitInfoFor(w, null)));
+        magicGroup.appendChild(createWeaponRowBtn(rec.magic.weapon, rec.magic.score, filterWeaponNotes(rec.magic.notes, creature), null, data, rec.magic));
         recGroups.appendChild(magicGroup);
       }
 
@@ -1049,8 +1120,7 @@
       if (!isRangedOnly && rec.bomb) {
         const bombGroup = el('div', 'rec-group');
         bombGroup.appendChild(el('span', 'rec-group-title', 'Bomb'));
-        const w = data.weapons[rec.bomb.weapon];
-        bombGroup.appendChild(createWeaponRowBtn(rec.bomb.weapon, rec.bomb.score, filterWeaponNotes(rec.bomb.notes, creature), null, data, hitInfoFor(w, null)));
+        bombGroup.appendChild(createWeaponRowBtn(rec.bomb.weapon, rec.bomb.score, filterWeaponNotes(rec.bomb.notes, creature), null, data, rec.bomb));
         recGroups.appendChild(bombGroup);
       }
 
@@ -1397,17 +1467,21 @@
   }
 
   /**
-   * Compute average per-hit damage for a weapon with player settings without creature modifiers.
+  /**
+   * Compute average per-hit damage and attack stats (DPS, cycle) for a weapon with player settings without creature modifiers.
    * For arrows and bolts, pairs with the best available launcher (bow/crossbow) of equal or lower tier.
    * @param {object} weapon
    * @param {object} data
    * @param {object} player
    * @returns {object|null}
    */
-  function computeWeaponAvgHit(weapon, data, player) {
+  function computeWeaponStats(weapon, data, player) {
     if (!window.VCRank || !player || !weapon) return null;
     const basePlayer = { ...player, sneak: false, staggered: false };
     const allWeapons = data?.weapons ? Object.values(data.weapons) : [];
+
+    let launcher = weapon;
+    let ammo = null;
 
     if (weapon.category === 'arrow') {
       const ammoTier = weapon.tier ?? Infinity;
@@ -1420,7 +1494,8 @@
           if (a.tier !== b.tier) return a.tier - b.tier;
           return a.name.localeCompare(b.name);
         });
-        return window.VCRank.perHit(bows[0], weapon, null, basePlayer);
+        launcher = bows[0];
+        ammo = weapon;
       }
     } else if (weapon.category === 'bolt') {
       const ammoTier = weapon.tier ?? Infinity;
@@ -1433,11 +1508,27 @@
           if (a.tier !== b.tier) return a.tier - b.tier;
           return a.name.localeCompare(b.name);
         });
-        return window.VCRank.perHit(crossbows[0], weapon, null, basePlayer);
+        launcher = crossbows[0];
+        ammo = weapon;
       }
     }
 
-    return window.VCRank.perHit(weapon, null, null, basePlayer);
+    const hit = window.VCRank.perHit(launcher, ammo, null, basePlayer);
+    const stats = window.VCRank.attackStats(launcher, ammo, null, basePlayer, 'primary');
+
+    return {
+      hit,
+      stats,
+      avg: hit ? Math.round(hit.avg) : 0,
+      dps: stats ? Math.round(stats.dps) : 0,
+      cycleSeconds: stats ? stats.cycleSeconds : null,
+      confidence: stats?.confidence || 'wiki',
+    };
+  }
+
+  function computeWeaponAvgHit(weapon, data, player) {
+    const s = computeWeaponStats(weapon, data, player);
+    return s ? s.hit : null;
   }
 
   /**
@@ -1809,6 +1900,12 @@
     const note = el('p', 'legend-note', 'Damage = average per hit with your skills (primary attack). Combo finisher ×2, secondary attacks, Dvergr buff and DoT ticking are not included.');
     body.appendChild(note);
 
+    const calcLinkPara = el('p', 'legend-calculator-link');
+    const calcLink = el('a', 'legend-link', 'Detailed breakdown → Damage Calculator');
+    calcLink.href = '../damage-calculator/';
+    calcLinkPara.appendChild(calcLink);
+    body.appendChild(calcLinkPara);
+
     details.appendChild(body);
     container.appendChild(details);
   }
@@ -1832,8 +1929,8 @@
     container.appendChild(header);
 
     // State
-    let sortColumn = 'biome';
-    let sortDirection = 'asc';
+    let sortColumn = 'yourDps';
+    let sortDirection = 'desc';
     let searchQuery = '';
     let selectedCategory = 'all';
     let selectedDamageType = null;
@@ -1942,6 +2039,8 @@
       { key: 'biome', label: 'Biome (Tier)', cls: 'sortable' },
       { key: null, label: 'Damage', cls: '' },
       { key: 'yourAvg', label: 'Your avg', cls: 'sortable', title: 'Average per-hit damage with your skills, difficulty and upgrade level (no creature modifiers)' },
+      { key: 'yourDps', label: 'Your DPS', cls: 'sortable', title: 'Cycle DPS with your skills, difficulty, upgrade level and timing' },
+      { key: 'cycle', label: 'Cycle', cls: 'sortable', title: 'Attack cycle duration in seconds' },
       { key: 'stamina', label: 'Stamina', cls: 'sortable' },
       { key: null, label: 'Backstab', cls: '' },
       { key: null, label: 'Materials', cls: '' },
@@ -1967,7 +2066,7 @@
             sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
           } else {
             sortColumn = col.key;
-            sortDirection = col.key === 'yourAvg' ? 'desc' : 'asc';
+            sortDirection = (col.key === 'yourAvg' || col.key === 'yourDps') ? 'desc' : 'asc';
           }
           updateSortHeaderIndicators();
           renderTableBody();
@@ -2032,8 +2131,9 @@
       return (w.damageMax?.[dt] ?? 0) > 0 || (w.damage?.[dt] ?? 0) > 0;
     }
 
-    function createWeaponRow(w, hit) {
+    function createWeaponRow(w, weaponStats) {
       const row = el('tr', 'armory-row');
+      const hit = weaponStats?.hit || (weaponStats?.avg !== undefined ? weaponStats : null);
 
       // 1. Icon
       const iconTd = el('td', 'armory-col-icon');
@@ -2080,7 +2180,7 @@
 
       // 7. Your avg
       const avgTd = el('td', 'weapon-your-avg');
-      if (hit) {
+      if (hit && hit.avg !== undefined) {
         const avgVal = Math.round(hit.avg);
         avgTd.textContent = String(avgVal);
         avgTd.title = hit.min !== hit.max
@@ -2091,10 +2191,34 @@
       }
       row.appendChild(avgTd);
 
-      // 8. Stamina
+      // 8. Your DPS
+      const dpsTd = el('td', 'weapon-your-dps');
+      if (weaponStats?.dps != null && weaponStats.dps > 0) {
+        dpsTd.textContent = weaponStats.dps + '/s';
+      } else {
+        dpsTd.textContent = '—';
+      }
+      row.appendChild(dpsTd);
+
+      // 9. Cycle
+      const cycleTd = el('td', 'weapon-cycle');
+      if (weaponStats?.cycleSeconds != null && weaponStats.cycleSeconds > 0) {
+        const cycleStr = Number(weaponStats.cycleSeconds.toFixed(2)) + ' s';
+        cycleTd.textContent = cycleStr;
+        if (weaponStats.confidence === 'estimate') {
+          const est = el('span', 'timing-estimate', ' ~');
+          est.title = 'estimated timing';
+          cycleTd.appendChild(est);
+        }
+      } else {
+        cycleTd.textContent = '—';
+      }
+      row.appendChild(cycleTd);
+
+      // 10. Stamina
       row.appendChild(el('td', null, w.stamina !== null && w.stamina !== undefined ? String(w.stamina) : '—'));
 
-      // 9. Backstab
+      // 11. Backstab
       const bsTd = el('td');
       if (w.backstab != null) {
         bsTd.textContent = w.backstab + '×';
@@ -2105,7 +2229,7 @@
       }
       row.appendChild(bsTd);
 
-      // 10. Materials
+      // 12. Materials
       const matTd = el('td', 'weapon-materials');
       if (w.materials && w.materials.length > 0) {
         matTd.textContent = w.materials.map(m => m.name + (m.amount ? ' ×' + m.amount : '')).join(', ');
@@ -2121,7 +2245,7 @@
     function createLockedRow(biome, count) {
       const tr = el('tr', 'armory-locked-row');
       const td = el('td');
-      td.colSpan = 10;
+      td.colSpan = 12;
       td.textContent = '🔒 ' + count + ' weapons from ' + biome.name + ' — open the biome to reveal';
       tr.appendChild(td);
       return tr;
@@ -2146,11 +2270,14 @@
         if (selectedDamageType && !matchesDamageType(w, selectedDamageType)) continue;
         if (searchQuery && !w.name.toLowerCase().includes(searchQuery)) continue;
 
-        const hit = computeWeaponAvgHit(w, data, playerState);
+        const weaponStats = computeWeaponStats(w, data, playerState);
         visible.push({
           weapon: w,
-          hit,
-          avg: hit ? Math.round(hit.avg) : 0,
+          stats: weaponStats,
+          hit: weaponStats?.hit,
+          avg: weaponStats?.avg || 0,
+          dps: weaponStats?.dps || 0,
+          cycle: weaponStats?.cycleSeconds || 0,
         });
       }
 
@@ -2162,7 +2289,7 @@
         if (showAll && sortDirection === 'desc') {
           const specialItems = visible.filter(it => !it.weapon.biome);
           specialItems.sort((a, b) => b.weapon.name.localeCompare(a.weapon.name));
-          specialItems.forEach(it => tbody.appendChild(createWeaponRow(it.weapon, it.hit)));
+          specialItems.forEach(it => tbody.appendChild(createWeaponRow(it.weapon, it.stats)));
         }
 
         sortedBiomes.forEach(biome => {
@@ -2173,7 +2300,7 @@
                 ? a.weapon.name.localeCompare(b.weapon.name)
                 : b.weapon.name.localeCompare(a.weapon.name);
             });
-            biomeItems.forEach(it => tbody.appendChild(createWeaponRow(it.weapon, it.hit)));
+            biomeItems.forEach(it => tbody.appendChild(createWeaponRow(it.weapon, it.stats)));
           } else {
             // Locked biome
             const count = allWeapons.filter(w => w.biome === biome.id).length;
@@ -2187,15 +2314,29 @@
         if (showAll && sortDirection === 'asc') {
           const specialItems = visible.filter(it => !it.weapon.biome);
           specialItems.sort((a, b) => a.weapon.name.localeCompare(b.weapon.name));
-          specialItems.forEach(it => tbody.appendChild(createWeaponRow(it.weapon, it.hit)));
+          specialItems.forEach(it => tbody.appendChild(createWeaponRow(it.weapon, it.stats)));
         }
       } else {
-        // Sorted by name, yourAvg, or stamina
+        // Sorted by name, yourAvg, yourDps, cycle, or stamina
         visible.sort((a, b) => {
           if (sortColumn === 'name') {
             return sortDirection === 'asc'
               ? a.weapon.name.localeCompare(b.weapon.name)
               : b.weapon.name.localeCompare(a.weapon.name);
+          }
+          if (sortColumn === 'yourDps') {
+            const diff = a.dps - b.dps;
+            return sortDirection === 'asc'
+              ? (diff || a.weapon.name.localeCompare(b.weapon.name))
+              : (-diff || a.weapon.name.localeCompare(b.weapon.name));
+          }
+          if (sortColumn === 'cycle') {
+            const aCyc = a.cycle > 0 ? a.cycle : (sortDirection === 'asc' ? 9999 : -1);
+            const bCyc = b.cycle > 0 ? b.cycle : (sortDirection === 'asc' ? 9999 : -1);
+            const diff = aCyc - bCyc;
+            return sortDirection === 'asc'
+              ? (diff || a.weapon.name.localeCompare(b.weapon.name))
+              : (-diff || a.weapon.name.localeCompare(b.weapon.name));
           }
           if (sortColumn === 'yourAvg') {
             const diff = a.avg - b.avg;
@@ -2214,7 +2355,7 @@
           return 0;
         });
 
-        visible.forEach(it => tbody.appendChild(createWeaponRow(it.weapon, it.hit)));
+        visible.forEach(it => tbody.appendChild(createWeaponRow(it.weapon, it.stats)));
 
         // Append locked biome rows at the bottom
         if (!showAll) {
