@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import vm from 'node:vm';
 
 test('stations data: smelting, kiln and processing stations have wiki-accurate parameters', () => {
   const stations = JSON.parse(readFileSync('data/stations.json', 'utf8'));
@@ -127,4 +128,52 @@ test('smoke test: Iron Armor Q4 smelting calculation matches station parameters'
   const seconds = totalSeconds1Smelter % 60;
   const timeFormatted = `${minutes}:${String(seconds).padStart(2, '0')}`;
   assert.equal(timeFormatted, '82:30', '1 smelter time must format to 82:30 min');
+});
+
+test('VACart.calculateSmelting computes accurate smelting parameters across furnace counts and items', () => {
+  const context = vm.createContext({ console });
+  vm.runInContext(readFileSync('apps/armourer/assets/app.js', 'utf8'), context);
+  vm.runInContext(readFileSync('apps/armourer/data/data.js', 'utf8').replace('window.VA_DATA', 'globalThis.VA_DATA'), context);
+  const { calculateSmelting, calculateCartMaterials } = context.VACart;
+  const data = context.VA_DATA;
+
+  const ironArmor = data.armor.find((a) => a.id === 'iron-armor');
+  assert.ok(ironArmor);
+  const cartIron = ironArmor.pieces.map((p) => ({
+    pieceId: p.id,
+    have: 0,
+    want: p.levels[p.levels.length - 1].quality
+  }));
+
+  const s1 = calculateSmelting(cartIron, data, { furnaceCount: 1 });
+  assert.equal(s1.totalBars, 165);
+  assert.equal(s1.totalCoal, 330);
+  assert.equal(s1.totalKilnWood, 330);
+  assert.equal(s1.furnaceCount, 1);
+  assert.equal(s1.seconds, 4950);
+  assert.equal(s1.timeFormatted, '82:30');
+
+  const s2 = calculateSmelting(cartIron, data, { furnaceCount: 2 });
+  assert.equal(s2.furnaceCount, 2);
+  assert.equal(s2.seconds, 83 * 30);
+  assert.equal(s2.timeFormatted, '41:30');
+
+  const s4 = calculateSmelting(cartIron, data, { furnaceCount: 4 });
+  assert.equal(s4.furnaceCount, 4);
+  assert.equal(s4.seconds, 42 * 30);
+  assert.equal(s4.timeFormatted, '21:00');
+
+  // Verify cart with weapons
+  const cartWithWeapon = [
+    ...cartIron,
+    { pieceId: 'iron-sword', isWeapon: true, have: 0, want: 4 }
+  ];
+  const sWeapon = calculateSmelting(cartWithWeapon, data, { furnaceCount: 1 });
+  assert.equal(sWeapon.totalBars, 255);
+  assert.equal(sWeapon.totalCoal, 510);
+  assert.equal(sWeapon.totalKilnWood, 510);
+
+  const calc = calculateCartMaterials(cartWithWeapon, data, { breakdown: true, furnaceCount: 1 });
+  assert.equal(calc.hasNonTeleportable, true);
+  assert.ok(calc.materials.some((m) => m.item === 'scrap-iron' && m.teleportable === false));
 });

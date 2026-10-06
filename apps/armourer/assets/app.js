@@ -992,22 +992,24 @@
       if (weapon.image) {
         const img = el('img', 'piece-icon-img');
         img.src = weapon.image;
-        img.alt = entityName(weapon);
+        img.alt = weapon.name;
         img.loading = 'lazy';
         summaryLeft.appendChild(img);
       }
 
       const infoCol = el('div', 'set-summary-info');
       const titleRow = el('div', 'set-title-row');
-      const title = el('h3', 'set-title', entityName(weapon));
+      const title = el('h3', 'set-title', weapon.name);
       titleRow.appendChild(title);
 
       const badgesRow = el('div', 'set-badges-row');
 
       // Category badge
-      const catKey = categoryLabels[weapon.category] || weapon.category;
-      const catBadge = el('span', 'badge badge-tag', t(catKey));
-      badgesRow.appendChild(catBadge);
+      const catKey = categoryLabels[weapon.category] || (weapon.category ? (weapon.category.charAt(0).toUpperCase() + weapon.category.slice(1)) : '');
+      if (catKey) {
+        const catBadge = el('span', 'badge badge-tag', catKey);
+        badgesRow.appendChild(catBadge);
+      }
 
       // Hands badge
       if (weapon.hands) {
@@ -1045,9 +1047,9 @@
 
       // Have select
       const haveWrap = el('div', 'weapon-level-select-wrap');
-      const haveLabel = el('span', 'metric-label', 'Have');
+      const haveLabel = el('span', 'metric-label', t('Have'));
       const haveSelect = el('select', 'level-select');
-      const optHave0 = el('option', null, 'None');
+      const optHave0 = el('option', null, t('None'));
       optHave0.value = '0';
       haveSelect.appendChild(optHave0);
       for (let q = 1; q < maxQ; q++) {
@@ -1061,7 +1063,7 @@
 
       // Want select
       const wantWrap = el('div', 'weapon-level-select-wrap');
-      const wantLabel = el('span', 'metric-label', 'Want');
+      const wantLabel = el('span', 'metric-label', t('Want'));
       const wantSelect = el('select', 'level-select');
       for (let q = 1; q <= maxQ; q++) {
         const opt = el('option', null, 'Q' + q);
@@ -1097,7 +1099,7 @@
       });
 
       // Add button
-      const addBtn = el('button', 'action-btn action-btn-primary action-btn-sm', '+ Add');
+      const addBtn = el('button', 'action-btn action-btn-primary action-btn-sm', t('+ Add'));
       addBtn.type = 'button';
       addBtn.addEventListener('click', e => {
         e.stopPropagation();
@@ -1117,7 +1119,7 @@
       });
 
       // Details toggle
-      const toggleDetailsBtn = el('button', 'set-detail-toggle-btn', 'Details ▾');
+      const toggleDetailsBtn = el('button', 'set-detail-toggle-btn', t('Details ▾'));
       toggleDetailsBtn.type = 'button';
 
       summaryRight.appendChild(haveWrap);
@@ -1176,7 +1178,7 @@
       }
 
       const costsSection = el('div', 'detail-costs-section');
-      const costsTitle = el('h4', 'detail-section-title', 'Crafting & Upgrade Costs');
+      const costsTitle = el('h4', 'detail-section-title', t('Crafting & Upgrade Costs'));
       costsSection.appendChild(costsTitle);
 
       const costsGrid = el('div', 'costs-grid');
@@ -1189,8 +1191,8 @@
         const costCard = el('div', 'cost-card');
         const costHeader = el('div', 'cost-card-header');
 
-        const qualityName = el('span', 'cost-piece-name', entityName(weapon) + ' · Q' + lvl.quality + (lvl.quality === 1 ? ' (' + t('Craft') + ')' : ' (' + t('Upgrade') + ')'));
-        const stName = stationName(weapon.station || 'Station');
+        const qualityName = el('span', 'cost-piece-name', weapon.name + ' · Q' + lvl.quality + (lvl.quality === 1 ? ' (' + t('Craft') + ')' : ' (' + t('Upgrade') + ')'));
+        const stName = weapon.station || 'Station';
         const stText = lvl.stationLevel ? stName + ' ' + t('Level {level}', { level: lvl.stationLevel }) : stName;
         const stBadge = el('span', 'cost-station-badge', stText);
 
@@ -1202,16 +1204,17 @@
         lvl.materials.forEach(mat => {
           const itemData = data.items && data.items[mat.item];
           const matPill = el('div', 'cost-mat-pill');
+          const matName = (itemData && itemData.name) || mat.item;
 
           if (itemData && itemData.image) {
             const icon = el('img', 'cost-mat-icon');
             icon.src = itemData.image;
-            icon.alt = entityName(itemData) || mat.item;
+            icon.alt = matName;
             icon.loading = 'lazy';
             matPill.appendChild(icon);
           }
 
-          const label = el('span', null, mat.amount + '× ' + (itemData ? entityName(itemData) : mat.item));
+          const label = el('span', null, mat.amount + '× ' + matName);
           matPill.appendChild(label);
 
           if (itemData && itemData.teleportable === false) {
@@ -1582,6 +1585,11 @@
             const label = el('span', null, mat.amount + '× ' + (itemData ? entityName(itemData) : mat.item));
             matPill.appendChild(label);
 
+            if (itemData && itemData.teleportable === false) {
+              const tpBadge = el('span', 'badge badge-teleport-warning', t("Can't be teleported"));
+              matPill.appendChild(tpBadge);
+            }
+
             if (mat.fuel) {
               const fuelBadge = el('span', 'badge badge-fuel', 'fuel');
               matPill.appendChild(fuelBadge);
@@ -1876,16 +1884,27 @@
       cartContent.appendChild(breakdownBox);
 
       // 3. Calculate Materials & Steps
+      const furnaceCount = getStoredFurnaces();
       const calc = calculateCartMaterials(cart, data, {
         breakdown,
         openBiomes: new Set(getStoredOpenBiomes()),
-        showAll
+        showAll,
+        furnaceCount
       });
 
       // 4. Materials List Section
       const matsSection = el('div', 'cart-materials-section');
       const matsTitle = el('h3', 'cart-section-title', 'Total Materials');
       matsSection.appendChild(matsTitle);
+
+      if (calc.hasNonTeleportable) {
+        const tpWarning = el('div', 'cart-teleport-warning');
+        const tpIcon = el('span', 'cart-warning-icon', '⚠');
+        const tpText = el('span', 'cart-warning-text', t('Contains materials that cannot be teleported through portals.'));
+        tpWarning.appendChild(tpIcon);
+        tpWarning.appendChild(tpText);
+        matsSection.appendChild(tpWarning);
+      }
 
       const matsList = el('div', 'materials-list');
       calc.materials.forEach(mat => {
@@ -1912,6 +1931,11 @@
         if (mat.fuel) {
           const fuelBadge = el('span', 'badge badge-fuel', 'fuel');
           right.appendChild(fuelBadge);
+        }
+
+        if (mat.teleportable === false) {
+          const tpBadge = el('span', 'badge badge-teleport-warning', t("Can't be teleported"));
+          right.appendChild(tpBadge);
         }
 
         mat.sources.forEach(src => {
@@ -1949,6 +1973,65 @@
         });
 
         cartContent.appendChild(stepsSection);
+      }
+
+      // Smelting Planner Section (if any bars to smelt)
+      if (calc.smelting && calc.smelting.totalBars > 0) {
+        const smeltingSection = el('div', 'smelting-section');
+        const smeltingHeader = el('div', 'smelting-header');
+        const smeltingTitle = el('h3', 'cart-section-title', t('Smelting Planner'));
+        smeltingHeader.appendChild(smeltingTitle);
+
+        const furnaceRow = el('div', 'smelting-furnace-row');
+        const furnaceLabel = el('span', 'metric-label', t('Furnaces:'));
+        const furnaceSelect = el('select', 'level-select furnace-select');
+        for (let f = 1; f <= 8; f++) {
+          const opt = el('option', null, t('{count} × furnace', { count: f }));
+          opt.value = String(f);
+          furnaceSelect.appendChild(opt);
+        }
+        furnaceSelect.value = String(furnaceCount);
+        furnaceSelect.addEventListener('change', () => {
+          setStoredFurnaces(parseInt(furnaceSelect.value, 10));
+          renderCart();
+        });
+        furnaceRow.appendChild(furnaceLabel);
+        furnaceRow.appendChild(furnaceSelect);
+        smeltingHeader.appendChild(furnaceRow);
+        smeltingSection.appendChild(smeltingHeader);
+
+        const metricsBox = el('div', 'smelting-metrics-box');
+
+        const barsRow = el('div', 'cart-summary-metric');
+        const barsLabel = el('span', 'metric-label', t('Total bars to smelt:'));
+        const barsVal = el('span', 'metric-value', String(calc.smelting.totalBars));
+        barsRow.appendChild(barsLabel);
+        barsRow.appendChild(barsVal);
+        metricsBox.appendChild(barsRow);
+
+        const coalRow = el('div', 'cart-summary-metric');
+        const coalLabel = el('span', 'metric-label', t('Coal needed:'));
+        const coalVal = el('span', 'metric-value metric-value-gold', String(calc.smelting.totalCoal));
+        coalRow.appendChild(coalLabel);
+        coalRow.appendChild(coalVal);
+        metricsBox.appendChild(coalRow);
+
+        const woodRow = el('div', 'cart-summary-metric');
+        const woodLabel = el('span', 'metric-label', t('Wood in Charcoal Kiln:'));
+        const woodVal = el('span', 'metric-value', String(calc.smelting.totalKilnWood));
+        woodRow.appendChild(woodLabel);
+        woodRow.appendChild(woodVal);
+        metricsBox.appendChild(woodRow);
+
+        const timeRow = el('div', 'cart-summary-metric');
+        const timeLabel = el('span', 'metric-label', t('Time per furnace:'));
+        const timeVal = el('span', 'metric-value metric-value-gold', t('{time} min', { time: calc.smelting.timeFormatted }));
+        timeRow.appendChild(timeLabel);
+        timeRow.appendChild(timeVal);
+        metricsBox.appendChild(timeRow);
+
+        smeltingSection.appendChild(metricsBox);
+        cartContent.appendChild(smeltingSection);
       }
 
       // 6. Summary Box
@@ -2008,31 +2091,38 @@
     }
 
     function renderCartPieceRow(item, showSetName) {
-      const armor = data.armor.find(a => a.id === item.setId);
+      const armor = item.setId ? data.armor.find(a => a.id === item.setId) : null;
       const piece = armor?.pieces.find(p => p.id === item.pieceId);
-      const maxQ = piece?.levels && piece.levels.length > 0 ? piece.levels[piece.levels.length - 1].quality : 4;
+      const weapon = !piece ? (data.weapons || []).find(w => w.id === item.pieceId) : null;
+      const maxQ = piece ? (piece.levels && piece.levels.length > 0 ? piece.levels[piece.levels.length - 1].quality : 4)
+                         : (weapon ? (weapon.maxQuality || weapon.levels?.length || 1) : 4);
 
       const row = el('div', 'cart-piece-row');
 
       const info = el('div', 'cart-piece-info');
-      if (piece?.image) {
+      const itemImage = piece?.image || weapon?.image;
+      const itemName = weapon ? weapon.name : (piece ? entityName(piece) : item.pieceId);
+      if (itemImage) {
         const icon = el('img', 'cart-piece-icon');
-        icon.src = piece.image;
-        icon.alt = entityName(piece);
+        icon.src = itemImage;
+        icon.alt = itemName;
         icon.loading = 'lazy';
         info.appendChild(icon);
       }
 
-      const nameLabel = el('span', 'cart-piece-name', showSetName && armor ? entityName(piece) + ' (' + entityName(armor) + ')' : entityName(piece) || item.pieceId);
+      const displayName = weapon
+        ? weapon.name
+        : (showSetName && armor ? entityName(piece) + ' (' + entityName(armor) + ')' : entityName(piece) || item.pieceId);
+      const nameLabel = el('span', 'cart-piece-name', displayName);
       info.appendChild(nameLabel);
       row.appendChild(info);
 
       const selectsBox = el('div', 'cart-levels-selects');
 
       // Have Select
-      const haveLabel = el('span', 'metric-label', 'Have');
+      const haveLabel = el('span', 'metric-label', t('Have'));
       const haveSelect = el('select', 'level-select');
-      const optHave0 = el('option', null, 'None');
+      const optHave0 = el('option', null, t('None'));
       optHave0.value = '0';
       haveSelect.appendChild(optHave0);
 
@@ -2055,7 +2145,7 @@
       });
 
       // Want Select
-      const wantLabel = el('span', 'metric-label', 'Want');
+      const wantLabel = el('span', 'metric-label', t('Want'));
       const wantSelect = el('select', 'level-select');
 
       for (let q = 1; q <= maxQ; q++) {
@@ -2078,7 +2168,7 @@
 
       const removeBtn = el('button', 'cart-remove-btn', '✕');
       removeBtn.type = 'button';
-      removeBtn.title = t('Remove piece');
+      removeBtn.title = weapon ? t('Remove weapon') : t('Remove piece');
       removeBtn.addEventListener('click', function () {
         cart = cart.filter(i => i.id !== item.id);
         saveAndRenderCart();
@@ -2101,7 +2191,8 @@
       picker.options[0].textContent = t('Auto (browser)');
       const accordion = [...document.querySelectorAll('.biome-header')].map(header => ({ id: header.id, open: header.getAttribute('aria-expanded') === 'true' }));
       const detailStates = [...document.querySelectorAll('.set-card')].map(card => ({
-        id: card.dataset.armorId, open: !card.querySelector('.set-detail').hasAttribute('inert'),
+        id: card.dataset.armorId || card.dataset.weaponId,
+        open: !card.querySelector('.set-detail').hasAttribute('inert'),
         level: card.querySelector('.level-pill-btn.active')?.dataset.level,
       }));
       renderCatalog();
@@ -2110,7 +2201,7 @@
         if (header && (header.getAttribute('aria-expanded') === 'true') !== state.open) header.click();
       });
       detailStates.filter(state => state.open).forEach(state => {
-        const card = document.querySelector('.set-card[data-armor-id="' + state.id + '"]');
+        const card = document.querySelector('.set-card[data-armor-id="' + state.id + '"], .set-card[data-weapon-id="' + state.id + '"]');
         card?.querySelector('.set-detail-toggle-btn').click();
         card?.querySelector('.level-pill-btn[data-level="' + state.level + '"]')?.click();
       });
@@ -2124,6 +2215,109 @@
 
     renderCatalog();
     renderCart();
+
+    function handleDeepLink() {
+      const hash = window.location.hash || '';
+      if (!hash) return;
+
+      const matchSet = hash.match(/^#set=([a-zA-Z0-9_-]+)/);
+      const matchItem = hash.match(/^#item=([a-zA-Z0-9_-]+)/);
+
+      if (matchSet) {
+        const setId = matchSet[1];
+        const armor = (data.armor || []).find(a => a.id === setId);
+        if (!armor) return;
+
+        switchCatalogTab('armor');
+
+        if (armor.biome) {
+          const open = new Set(getStoredOpenBiomes());
+          if (!open.has(armor.biome)) {
+            open.add(armor.biome);
+            setStoredOpenBiomes([...open]);
+            renderCatalog();
+            renderCart();
+          }
+
+          const headerBtn = document.getElementById('biome-header-' + armor.biome);
+          const content = document.getElementById('biome-content-' + armor.biome);
+          if (headerBtn && content) {
+            headerBtn.setAttribute('aria-expanded', 'true');
+            content.removeAttribute('inert');
+          }
+        }
+
+        const card = document.querySelector(`.set-card[data-armor-id="${setId}"]`);
+        if (card) {
+          card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          card.classList.add('deep-link-highlight');
+          setTimeout(() => card.classList.remove('deep-link-highlight'), 2200);
+        }
+      } else if (matchItem) {
+        const itemId = matchItem[1];
+        const weapon = (data.weapons || []).find(w => w.id === itemId);
+        if (weapon) {
+          switchCatalogTab('weapons');
+
+          if (weapon.biome) {
+            const open = new Set(getStoredOpenBiomes());
+            if (!open.has(weapon.biome)) {
+              open.add(weapon.biome);
+              setStoredOpenBiomes([...open]);
+              renderCatalog();
+              renderCart();
+            }
+
+            const headerBtn = document.getElementById('weapons-biome-header-' + weapon.biome);
+            const content = document.getElementById('weapons-biome-content-' + weapon.biome);
+            if (headerBtn && content) {
+              headerBtn.setAttribute('aria-expanded', 'true');
+              content.removeAttribute('inert');
+            }
+          }
+
+          const card = document.querySelector(`.weapon-card[data-weapon-id="${itemId}"]`);
+          if (card) {
+            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            card.classList.add('deep-link-highlight');
+            setTimeout(() => card.classList.remove('deep-link-highlight'), 2200);
+          }
+          return;
+        }
+
+        const armorWithPiece = (data.armor || []).find(a => a.id === itemId || (a.pieces || []).some(p => p.id === itemId));
+        if (armorWithPiece) {
+          switchCatalogTab('armor');
+
+          if (armorWithPiece.biome) {
+            const open = new Set(getStoredOpenBiomes());
+            if (!open.has(armorWithPiece.biome)) {
+              open.add(armorWithPiece.biome);
+              setStoredOpenBiomes([...open]);
+              renderCatalog();
+              renderCart();
+            }
+
+            const headerBtn = document.getElementById('biome-header-' + armorWithPiece.biome);
+            const content = document.getElementById('biome-content-' + armorWithPiece.biome);
+            if (headerBtn && content) {
+              headerBtn.setAttribute('aria-expanded', 'true');
+              content.removeAttribute('inert');
+            }
+          }
+
+          const card = document.querySelector(`.set-card[data-armor-id="${armorWithPiece.id}"]`);
+          if (card) {
+            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            card.classList.add('deep-link-highlight');
+            setTimeout(() => card.classList.remove('deep-link-highlight'), 2200);
+          }
+        }
+      }
+    }
+
+    window.addEventListener('hashchange', handleDeepLink);
+    handleDeepLink();
   }
 
   function buildFooter(footer, data) {
