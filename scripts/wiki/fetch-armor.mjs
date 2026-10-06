@@ -18,8 +18,8 @@ import {
   parseQualityTables,
   parseTemplates,
   slug,
-} from './wikitext.mjs';
-import { BASE_MATERIAL_TABLE, BIOMES, createMaterialResolver } from './materials.mjs';
+import { BIOMES } from './biomes.mjs';
+import { BASE_MATERIAL_TABLE, createMaterialResolver } from './materials.mjs';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const DATA_DIR = path.join(REPO_ROOT, 'data');
