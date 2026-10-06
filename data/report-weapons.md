@@ -6,17 +6,17 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 
 | Tier | Biome | Count |
 |---|---|---|
-| 1 | meadows | 12 |
-| 2 | black-forest | 12 |
+| 1 | meadows | 14 |
+| 2 | black-forest | 14 |
 | 3 | ocean | 2 |
-| 4 | swamp | 13 |
-| 5 | mountain | 11 |
-| 6 | plains | 10 |
-| 7 | mistlands | 14 |
-| 8 | ashlands | 36 |
-| 9 | deep-north | 42 |
-| null | (none) | 1 |
-| **Total** | | **153** |
+| 4 | swamp | 18 |
+| 5 | mountain | 12 |
+| 6 | plains | 12 |
+| 7 | mistlands | 16 |
+| 8 | ashlands | 38 |
+| 9 | deep-north | 45 |
+| null | (none) | 0 |
+| **Total** | | **171** |
 
 ## Weapons per category
 
@@ -29,10 +29,11 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 - **club**: 12
 - **crossbow**: 8
 - **fists**: 7
-- **knife**: 10
+- **knife**: 9
 - **magic**: 9
 - **pickaxe**: 4
 - **polearm**: 7
+- **shield**: 19
 - **sledge**: 6
 - **spear**: 13
 - **sword**: 21
@@ -48,7 +49,7 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 
 ## Weapons with null tier
 
-- Voidcaller
+(none)
 
 ## Missing weapon icons
 
@@ -62,23 +63,16 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 
 - **Arrows**: no {{infobox weapon}} (category/disambiguation page)
 - **Axes**: no {{infobox weapon}} (category/disambiguation page)
-- **Banded Shield**: excluded type (Shield Round)
 - **Basalt Bomb**: zero direct damage
 - **Black Metal Missile**: excluded type (Missile)
-- **Black Metal Shield**: excluded type (Shield Round)
-- **Black Metal Tower Shield**: excluded type (Shield Tower)
 - **Blob Bombs**: no {{infobox weapon}} (category/disambiguation page)
 - **Blood magic**: no {{infobox weapon}} (category/disambiguation page)
 - **Bloodgold Missile**: excluded type (Missile)
 - **Bloodgold Payload**: excluded type (Catapult Ammo)
 - **Bolts**: no {{infobox weapon}} (category/disambiguation page)
 - **Bombs**: no {{infobox weapon}} (category/disambiguation page)
-- **Bone Tower Shield**: excluded type (Shield Tower)
 - **Bows**: no {{infobox weapon}} (category/disambiguation page)
-- **Bronze Buckler**: excluded type (Shield Buckler)
 - **Butcher Knife**: zero direct damage
-- **Carapace Buckler**: excluded type (Shield Buckler)
-- **Carapace Shield**: excluded type (Shield Round)
 - **Cheat Sledge**: cheat weapon
 - **Cheat Sword**: cheat weapon
 - **Clubs**: no {{infobox weapon}} (category/disambiguation page)
@@ -89,26 +83,16 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 - **Explosive Payload**: excluded type (Catapult Ammo)
 - **Fists**: no {{infobox weapon}} (category/disambiguation page)
 - **Flametal Missile**: excluded type (Missile)
-- **Flametal Shield**: excluded type (Shield Round)
-- **Flametal Tower Shield**: excluded type (Shield Tower)
 - **Grausten Payload**: excluded type (Catapult Ammo)
-- **Iron Buckler**: excluded type (Shield Buckler)
-- **Iron Tower Shield**: excluded type (Shield Tower)
-- **Iron shield**: excluded type (Shield Tower)
-- **Knight shield**: excluded type (Shield Round)
+- **Iron shield**: unfinished/console item
+- **Knight shield**: unfinished/console item
 - **Knives**: no {{infobox weapon}} (category/disambiguation page)
 - **Magic**: no {{infobox weapon}} (category/disambiguation page)
 - **Missiles**: no {{infobox weapon}} (category/disambiguation page)
-- **Nord Buckler**: excluded type (Shield Buckler)
-- **Nord Greatshield**: excluded type (Shield Tower)
-- **Nord Shield**: excluded type (Shield Round)
 - **Pickaxes**: no {{infobox weapon}} (category/disambiguation page)
 - **Polearms**: no {{infobox weapon}} (category/disambiguation page)
 - **Salvaged Lantern**: torch/lantern
-- **Serpent Scale Shield**: excluded type (Shield Tower)
-- **Shield of Roots**: excluded type (Shield Round)
 - **Shields**: no {{infobox weapon}} (category/disambiguation page)
-- **Silver Shield**: excluded type (Shield Round)
 - **Snow Shovel**: snowball/snow shovel
 - **Snowball**: snowball/snow shovel
 - **Sparkler**: zero direct damage
@@ -117,9 +101,8 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 - **Staff of Protection**: zero direct damage
 - **Swords**: no {{infobox weapon}} (category/disambiguation page)
 - **Torch**: torch/lantern
+- **Voidcaller**: unfinished/console item
 - **Weapons**: no {{infobox weapon}} (category/disambiguation page)
-- **Wood Shield**: excluded type (Shield Round)
-- **Wood Tower Shield**: excluded type (Shield Tower)
 - **Wooden Missile**: excluded type (Missile)
 - **Wooden Weapons**: no {{infobox weapon}} (category/disambiguation page)
 

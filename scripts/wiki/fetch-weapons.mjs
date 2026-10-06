@@ -11,7 +11,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { api, MwApi } from './api.mjs';
-import { cleanText, parseImage, parseInfobox, parseLinks, parseTemplates, slug } from './wikitext.mjs';
+import { cleanText, parseImage, parseInfobox, parseLinks, parseMaterialList, parseTemplates, slug } from './wikitext.mjs';
 import { BIOMES, tierOf } from './biomes.mjs';
 import { BASE_MATERIAL_TABLE, createMaterialResolver } from './materials.mjs';
 
@@ -110,6 +110,8 @@ function determineSkill(category, typeStr) {
       return 'crossbows';
     case 'magic':
       return (typeStr || '').toLowerCase().includes('blood') ? 'blood-magic' : 'elemental-magic';
+    case 'shield':
+      return 'blocking';
     case 'bomb':
       return null;
     default:
@@ -294,8 +296,14 @@ async function main() {
 
     // Category mapping
     const category = determineCategory(ib.type);
-    if (!category || category === 'shield') {
+    if (!category) {
       report.excluded.push({ title, reason: `excluded type (${ib.type ?? 'none'})` });
+      continue;
+    }
+
+    // Exclude unfinished / console items
+    if (wt.includes('{{Unfinished}}') || ib.source === 'Console' || ib.source === 'n/a') {
+      report.excluded.push({ title, reason: 'unfinished/console item' });
       continue;
     }
 
@@ -311,15 +319,10 @@ async function main() {
         }
       }
     }
-    if (totalDmg === 0) {
+    if (totalDmg === 0 && category !== 'shield') {
       report.excluded.push({ title, reason: 'zero direct damage' });
       continue;
     }
-
-    // Recipe parsing
-    const recipeText = ib['materials 1'] ?? ib['materials'] ?? '';
-    const materials = parseRecipe(recipeText);
-    for (const item of materials) referencedMaterials.add(item.name);
 
     // Max quality: count of "materials N"
     let maxQuality = 1;
@@ -329,6 +332,46 @@ async function main() {
       let q = 1;
       while (ib[`materials ${q}`] != null) q += 1;
       maxQuality = Math.max(1, q - 1);
+    }
+
+    // Station level and upgrade row
+    const upgradeRowMatch = wt.match(/\{\{Upgrade station row\|[^|}]*\|[^|}]*(?:\|start=(\d+))?/i);
+    const startFromRow = upgradeRowMatch && upgradeRowMatch[1] ? parseInt(upgradeRowMatch[1], 10) : null;
+    const baseCraftingLevel = startFromRow ?? (ib['crafting level'] ? parseInt(ib['crafting level'], 10) || 1 : 1);
+    const resolvedStationLevel = Number.isFinite(baseCraftingLevel) ? baseCraftingLevel : 1;
+
+    // Parse levels
+    const levels = [];
+    for (let q = 1; q <= maxQuality; q++) {
+      const matRaw = ib[`materials ${q}`] ?? (q === 1 ? ib.materials : null);
+      const matsParsed = parseMaterialList(matRaw);
+      const levelMaterials = matsParsed.map((m) => {
+        referencedMaterials.add(m.name);
+        const obj = {
+          item: slug(m.name),
+          name: m.name,
+          amount: m.amount,
+        };
+        if (m.fuel) obj.fuel = true;
+        return obj;
+      });
+      levels.push({
+        quality: q,
+        stationLevel: resolvedStationLevel + (q - 1),
+        materials: levelMaterials,
+      });
+    }
+
+    // Level 1 materials for backward compatibility
+    const materials = levels[0]?.materials.map((m) => {
+      const res = { name: m.name, amount: m.amount };
+      if (m.fuel) res.fuel = true;
+      return res;
+    }) ?? [];
+
+    if (category === 'shield' && materials.length === 0) {
+      report.excluded.push({ title, reason: 'no craftable materials' });
+      continue;
     }
 
     // Damage per level and damageMax
@@ -358,10 +401,12 @@ async function main() {
     }
     const imageFile = parseImage(imageRaw);
 
-    let recommendable = true;
+    let recommendable = category !== 'shield';
     let note = null;
 
-    if (category === 'bomb') {
+    if (category === 'shield') {
+      recommendable = false;
+    } else if (category === 'bomb') {
       const renderedHtml = await api.getRenderedText(title);
       let foundExtraDamage = false;
       if (renderedHtml) {
@@ -417,8 +462,10 @@ async function main() {
       imageFile,
       image: null,
       station: ib.source ? cleanText(ib.source) : null,
-      stationLevel: ib['crafting level'] ? parseInt(ib['crafting level'], 10) || null : null,
+      stationLevel: resolvedStationLevel,
       maxQuality,
+      levels,
+      materials,
       damage,
       perLevel,
       damageMax,
@@ -426,12 +473,16 @@ async function main() {
       knockback: ib.knockback ? parseInt(ib.knockback, 10) || null : null,
       skill: determineSkill(category, ib.type),
       backstab: parseBackstab(ib.backstab),
-      materials,
       quantity: ib.quantity ? parseInt(ib.quantity, 10) || null : null,
       tier: null,
       biome: null,
       description: cleanText(ib.description || ''),
     };
+    if (ib.weight) weaponEntry.weight = parseFloat(ib.weight) || null;
+    if (ib['block armor']) weaponEntry.blockArmor = parseFloat(ib['block armor']) || null;
+    if (ib['block force']) weaponEntry.blockForce = parseFloat(ib['block force']) || null;
+    if (ib['parry bonus']) weaponEntry.parryBonus = parseFloat(ib['parry bonus']) || null;
+    if (ib['movement speed']) weaponEntry.movementSpeed = cleanText(ib['movement speed']);
     if (recommendable === false) {
       weaponEntry.recommendable = false;
       weaponEntry.note = note;
