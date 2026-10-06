@@ -39,6 +39,20 @@
       </div>
       <h1 class="hub-title">Valheim Companion</h1>
       <p class="hub-subtitle" data-i18n="Tools for your Valheim journey.">Tools for your Valheim journey.</p>
+      <div class="hub-search-container" role="search">
+        <div class="hub-search-input-wrapper">
+          <svg class="hub-search-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clip-rule="evenodd" />
+          </svg>
+          <input type="search" id="hub-search-input" class="hub-search-input"
+            placeholder="Search creatures, weapons, armor, items…"
+            aria-label="Search creatures, weapons, armor, items"
+            autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+            data-i18n-attr="placeholder:Search creatures, weapons, armor, items…;aria-label:Search creatures, weapons, armor, items" />
+          <button type="button" id="hub-search-clear" class="hub-search-clear" aria-label="Clear search" data-i18n-attr="aria-label:Clear search" hidden>✕</button>
+        </div>
+        <div id="hub-search-results" class="hub-search-results" role="listbox" aria-label="Search results" data-i18n-attr="aria-label:Search results" hidden></div>
+      </div>
     </header>
 
     <main class="hub-main">
@@ -101,6 +115,7 @@
   <script src="/shared/i18n/languages.js"></script>
   <script src="/shared/i18n/core.js"></script>
   <script src="locales/messages.js"></script>
+  <script src="data/search.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
