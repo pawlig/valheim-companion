@@ -1136,6 +1136,55 @@ body {
   text-decoration: underline;
 }
 
+.page-footer .support {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+.page-footer .support strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.page-footer .support a {
+  display: inline-flex;
+  border-radius: 6px;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.page-footer .support a:hover {
+  text-decoration: none;
+  opacity: 0.95;
+}
+
+.page-footer .support a:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 3px;
+  text-decoration: none;
+}
+
+.page-footer .support img {
+  display: block;
+  height: 36px;
+  width: 143px;
+  border-radius: 6px;
+}
+
+@media (max-width: 640px) {
+  .page-footer .support {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .armourer-layout {

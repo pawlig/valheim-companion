@@ -606,6 +606,12 @@ export default function Home() {
         <p>
           <MethodologyLink />
         </p>
+        <p className="support">
+          <span><strong>Free, ad-free and made in my spare time.</strong> If it helped your run, you can buy me a coffee.</span>
+          <a href="https://ko-fi.com/N2A528ACE3" target="_blank" rel="noopener noreferrer">
+            <img src="/support/kofi.png" alt="Buy Me a Coffee at ko-fi.com" width={143} height={36} loading="lazy" />
+          </a>
+        </p>
       </footer>
     </main>
   );

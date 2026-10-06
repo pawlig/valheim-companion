@@ -257,6 +257,47 @@ body {
   text-decoration: underline;
 }
 
+.support {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.support strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.hub-footer .support a {
+  display: inline-flex;
+  border-radius: 6px;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.hub-footer .support a:hover {
+  text-decoration: none;
+  opacity: 0.95;
+}
+
+.hub-footer .support a:focus-visible {
+  outline: 2px solid var(--border-focus);
+  outline-offset: 3px;
+  text-decoration: none;
+}
+
+.support img {
+  display: block;
+  height: 36px;
+  width: 143px;
+  border-radius: 6px;
+}
+
 /* Prefers reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .hub-card,
@@ -287,5 +328,10 @@ body {
   }
   .card-title {
     font-size: 1.55rem;
+  }
+  .support {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
   }
 }

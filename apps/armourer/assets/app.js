@@ -1423,6 +1423,29 @@
 
     const p2 = el('p', null, 'Fan project, not affiliated with Iron Gate.');
     footer.appendChild(p2);
+
+    const pSupport = el('p', 'support');
+    const spanText = el('span');
+    const strong = el('strong', null, 'Free, ad-free and made in my spare time.');
+    spanText.appendChild(strong);
+    spanText.appendChild(document.createTextNode(' If it helped your run, you can buy me a coffee.'));
+    pSupport.appendChild(spanText);
+
+    const aKofi = el('a');
+    aKofi.href = 'https://ko-fi.com/N2A528ACE3';
+    aKofi.target = '_blank';
+    aKofi.rel = 'noopener noreferrer';
+
+    const imgKofi = document.createElement('img');
+    imgKofi.src = '/support/kofi.png';
+    imgKofi.alt = 'Buy Me a Coffee at ko-fi.com';
+    imgKofi.width = 143;
+    imgKofi.height = 36;
+    imgKofi.loading = 'lazy';
+    aKofi.appendChild(imgKofi);
+
+    pSupport.appendChild(aKofi);
+    footer.appendChild(pSupport);
   }
 
   // Auto-init on DOMContentLoaded if in browser

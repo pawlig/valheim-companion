@@ -230,3 +230,47 @@
 .animate-rise-in {
   animation: rise-in 0.35s ease-out both;
 }
+
+.support {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 8px;
+}
+
+.support strong {
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.support a {
+  display: inline-flex;
+  border-radius: 6px;
+  line-height: 0;
+}
+
+.support a:hover {
+  opacity: 0.95;
+}
+
+.support a:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.support img {
+  display: block;
+  height: 36px;
+  width: 143px;
+  border-radius: 6px;
+}
+
+@media (max-width: 640px) {
+  .support {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
