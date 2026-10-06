@@ -128,6 +128,59 @@
     }
   }
 
+  function getStoredCatalogTab() {
+    try {
+      return localStorage.getItem('va.catalogTab') || 'armor';
+    } catch {
+      return 'armor';
+    }
+  }
+
+  function setStoredCatalogTab(val) {
+    try {
+      localStorage.setItem('va.catalogTab', String(val));
+    } catch {
+      // LocalStorage unavailable, ignore
+    }
+  }
+
+  function getStoredFurnaces() {
+    try {
+      const val = parseInt(localStorage.getItem('va.furnaces') || '1', 10);
+      return val >= 1 && val <= 8 ? val : 1;
+    } catch {
+      return 1;
+    }
+  }
+
+  function setStoredFurnaces(val) {
+    try {
+      localStorage.setItem('va.furnaces', String(val));
+    } catch {
+      // LocalStorage unavailable, ignore
+    }
+  }
+
+  const categoryLabels = {
+    spear: 'Spear',
+    knife: 'Knife',
+    pickaxe: 'Pickaxe',
+    crossbow: 'Crossbow',
+    bow: 'Bow',
+    shield: 'Shield',
+    fists: 'Fists',
+    battleaxe: 'Battleaxe',
+    axe: 'Axe',
+    bomb: 'Bomb',
+    polearm: 'Polearm',
+    bolt: 'Bolt',
+    sword: 'Sword',
+    club: 'Club',
+    arrow: 'Arrow',
+    sledge: 'Sledge',
+    magic: 'Magic'
+  };
+
   function getActionVerb(station) {
     const s = (station || '').toLowerCase();
     if (s.includes('smelt') || s.includes('blast furnace') || s.includes('smelting')) return 'Smelt';
@@ -149,6 +202,105 @@
   }
 
   /**
+   * Pure calculation function: calculates smelting parameters (bars, coal, kiln wood, time)
+   * from items in cart and wiki station parameters.
+   */
+  function calculateSmelting(cart, data, options) {
+    const opts = options || {};
+    const furnaceCount = Math.max(1, Math.min(8, parseInt(opts.furnaceCount || 1, 10) || 1));
+    if (!cart || !Array.isArray(cart) || !data) {
+      return {
+        totalBars: 0,
+        totalCoal: 0,
+        totalKilnWood: 0,
+        furnaceCount,
+        seconds: 0,
+        timeFormatted: '0:00',
+        barsByItem: {}
+      };
+    }
+
+    const pieceMap = new Map();
+    (data.armor || []).forEach(a => {
+      (a.pieces || []).forEach(p => pieceMap.set(p.id, p));
+    });
+    const weaponMap = new Map();
+    (data.weapons || []).forEach(w => weaponMap.set(w.id, w));
+
+    const rawMats = new Map();
+    cart.forEach(item => {
+      const piece = pieceMap.get(item.pieceId) || weaponMap.get(item.pieceId);
+      if (!piece) return;
+      const have = typeof item.have === 'number' ? item.have : 0;
+      const want = typeof item.want === 'number' ? item.want : 1;
+      (piece.levels || []).forEach(lvl => {
+        if (lvl.quality > have && lvl.quality <= want) {
+          (lvl.materials || []).forEach(m => {
+            rawMats.set(m.item, (rawMats.get(m.item) || 0) + m.amount);
+          });
+        }
+      });
+    });
+
+    const smeltedBars = {};
+    function expand(itemId, qty, depth, visited) {
+      if (depth > 5 || visited.has(itemId)) return;
+      const itemInfo = data.items && data.items[itemId];
+      if (!itemInfo || !itemInfo.recipe) return;
+
+      const st = (itemInfo.recipe.station || '').toLowerCase();
+      if (st.includes('smelter') || st.includes('blast furnace')) {
+        smeltedBars[itemId] = (smeltedBars[itemId] || 0) + qty;
+      }
+
+      visited.add(itemId);
+      const yields = itemInfo.recipe.yields || 1;
+      const batches = qty / yields;
+      (itemInfo.recipe.materials || []).forEach(sub => {
+        expand(sub.item, sub.amount * batches, depth + 1, new Set(visited));
+      });
+    }
+
+    rawMats.forEach((qty, itemId) => {
+      expand(itemId, qty, 0, new Set());
+    });
+
+    const smelter = (data.stations || []).find(s => s.id === 'smelter') || { secondsPerItem: 30, fuel: { perItem: 2 } };
+    const blastFurnace = (data.stations || []).find(s => s.id === 'blast-furnace') || { secondsPerItem: 30, fuel: { perItem: 2 } };
+    const kiln = (data.stations || []).find(s => s.id === 'charcoal-kiln') || { conversions: [{ ratio: 1 }] };
+
+    let totalBars = 0;
+    let totalCoal = 0;
+    for (const [itemId, qty] of Object.entries(smeltedBars)) {
+      totalBars += qty;
+      const item = data.items && data.items[itemId];
+      const isBlast = (item?.recipe?.station || '').toLowerCase().includes('blast');
+      const st = isBlast ? blastFurnace : smelter;
+      const coalPerBar = st.fuel?.perItem ?? 2;
+      totalCoal += qty * coalPerBar;
+    }
+
+    const kilnRatio = kiln.conversions?.[0]?.ratio ?? 1;
+    const totalKilnWood = totalCoal * kilnRatio;
+    const secondsPerItem = smelter.secondsPerItem ?? 30;
+    const barsPerFurnace = Math.ceil(totalBars / furnaceCount);
+    const totalSeconds = barsPerFurnace * secondsPerItem;
+    const minutes = Math.floor(totalSeconds / 60);
+    const seconds = totalSeconds % 60;
+    const timeFormatted = minutes + ':' + String(seconds).padStart(2, '0');
+
+    return {
+      totalBars,
+      totalCoal,
+      totalKilnWood,
+      furnaceCount,
+      seconds: totalSeconds,
+      timeFormatted,
+      barsByItem: smeltedBars
+    };
+  }
+
+  /**
    * Pure calculation function: calculates raw materials, breakdown,
    * intermediate steps, total armor, total weight and active set bonus.
    */
@@ -159,6 +311,8 @@
         materials: [],
         canBreakDown: false,
         craftingSteps: [],
+        hasNonTeleportable: false,
+        smelting: calculateSmelting([], data, opts),
         summary: { totalArmor: 0, totalWeight: 0, activeSetBonuses: [] }
       };
     }
@@ -176,6 +330,11 @@
       });
     });
 
+    const weaponMap = new Map();
+    (data.weapons || []).forEach(w => {
+      weaponMap.set(w.id, w);
+    });
+
     const biomesByOrder = new Map();
     (data.biomes || []).forEach(b => {
       biomesByOrder.set(b.id, b);
@@ -189,39 +348,59 @@
 
     cart.forEach(item => {
       const entry = pieceMap.get(item.pieceId);
-      if (!entry) return;
-      const { piece, armor } = entry;
+      if (entry) {
+        const { piece, armor } = entry;
+        // Accumulate unique set piece counts
+        setPieceCounts.set(armor.id, (setPieceCounts.get(armor.id) || 0) + 1);
 
-      // Accumulate unique set piece counts
-      setPieceCounts.set(armor.id, (setPieceCounts.get(armor.id) || 0) + 1);
-
-      // Weight
-      if (typeof piece.weight === 'number') {
-        totalWeight += piece.weight;
-      }
-
-      // Armor at Want level
-      if (piece.levels && piece.levels.length > 0) {
-        const wantLevel = piece.levels.find(l => l.quality === item.want);
-        if (wantLevel && typeof wantLevel.armor === 'number') {
-          totalArmor += wantLevel.armor;
+        // Weight
+        if (typeof piece.weight === 'number') {
+          totalWeight += piece.weight;
         }
-      }
 
-      // Materials for q in (Have, Want]
-      const have = typeof item.have === 'number' ? item.have : 0;
-      const want = typeof item.want === 'number' ? item.want : 1;
+        // Armor at Want level
+        if (piece.levels && piece.levels.length > 0) {
+          const wantLevel = piece.levels.find(l => l.quality === item.want);
+          if (wantLevel && typeof wantLevel.armor === 'number') {
+            totalArmor += wantLevel.armor;
+          }
+        }
 
-      (piece.levels || []).forEach(lvl => {
-        if (lvl.quality > have && lvl.quality <= want) {
-          (lvl.materials || []).forEach(m => {
-            const current = rawMats.get(m.item) || { amount: 0, fuel: false };
-            current.amount += m.amount;
-            if (m.fuel) current.fuel = true;
-            rawMats.set(m.item, current);
+        // Materials for q in (Have, Want]
+        const have = typeof item.have === 'number' ? item.have : 0;
+        const want = typeof item.want === 'number' ? item.want : 1;
+
+        (piece.levels || []).forEach(lvl => {
+          if (lvl.quality > have && lvl.quality <= want) {
+            (lvl.materials || []).forEach(m => {
+              const current = rawMats.get(m.item) || { amount: 0, fuel: false };
+              current.amount += m.amount;
+              if (m.fuel) current.fuel = true;
+              rawMats.set(m.item, current);
+            });
+          }
+        });
+      } else {
+        const weapon = weaponMap.get(item.pieceId);
+        if (weapon) {
+          if (typeof weapon.weight === 'number') {
+            totalWeight += weapon.weight;
+          }
+          const have = typeof item.have === 'number' ? item.have : 0;
+          const want = typeof item.want === 'number' ? item.want : (weapon.maxQuality || 1);
+
+          (weapon.levels || []).forEach(lvl => {
+            if (lvl.quality > have && lvl.quality <= want) {
+              (lvl.materials || []).forEach(m => {
+                const current = rawMats.get(m.item) || { amount: 0, fuel: false };
+                current.amount += m.amount;
+                if (m.fuel) current.fuel = true;
+                rawMats.set(m.item, current);
+              });
+            }
           });
         }
-      });
+      }
     });
 
     // Active set bonuses
@@ -344,6 +523,7 @@
         image,
         amount: val.amount,
         fuel: val.fuel,
+        teleportable: itemData ? itemData.teleportable !== false : true,
         sources: formattedSources
       });
     });
@@ -351,10 +531,15 @@
     // Sort materials deterministically by name
     materials.sort((a, b) => a.name.localeCompare(b.name));
 
+    const hasNonTeleportable = materials.some(m => !m.teleportable);
+    const smelting = calculateSmelting(cart, data, { furnaceCount: opts.furnaceCount || 1 });
+
     return {
       materials,
       canBreakDown: [...rawMats.keys()].some(id => data.items?.[id]?.recipe?.materials?.length),
       craftingSteps,
+      hasNonTeleportable,
+      smelting,
       summary: {
         totalArmor,
         totalWeight,
@@ -377,6 +562,11 @@
 
     const biomesContainer = document.getElementById('biomes-container');
     const cosmeticsContainer = document.getElementById('cosmetics-container');
+    const weaponsBiomesContainer = document.getElementById('weapons-biomes-container');
+    const tabArmor = document.getElementById('tab-armor');
+    const tabWeapons = document.getElementById('tab-weapons');
+    const viewArmor = document.getElementById('catalog-armor-view');
+    const viewWeapons = document.getElementById('catalog-weapons-view');
     const toggleSpoilers = document.getElementById('toggle-spoilers');
     const btnCollapseAll = document.getElementById('btn-collapse-all');
     const btnResetProgress = document.getElementById('btn-reset-progress');
@@ -387,6 +577,34 @@
 
     // Initial state
     let showAll = getStoredShowAll();
+    let activeCatalogTab = getStoredCatalogTab();
+
+    function switchCatalogTab(tab) {
+      activeCatalogTab = tab;
+      setStoredCatalogTab(tab);
+      const isArmor = tab === 'armor';
+      if (tabArmor) {
+        tabArmor.classList.toggle('active', isArmor);
+        tabArmor.setAttribute('aria-selected', String(isArmor));
+      }
+      if (tabWeapons) {
+        tabWeapons.classList.toggle('active', !isArmor);
+        tabWeapons.setAttribute('aria-selected', String(!isArmor));
+      }
+      if (viewArmor) {
+        viewArmor.classList.toggle('active', isArmor);
+        if (isArmor) viewArmor.removeAttribute('hidden'); else viewArmor.setAttribute('hidden', '');
+      }
+      if (viewWeapons) {
+        viewWeapons.classList.toggle('active', !isArmor);
+        if (!isArmor) viewWeapons.removeAttribute('hidden'); else viewWeapons.setAttribute('hidden', '');
+      }
+    }
+
+    if (tabArmor) tabArmor.addEventListener('click', () => switchCatalogTab('armor'));
+    if (tabWeapons) tabWeapons.addEventListener('click', () => switchCatalogTab('weapons'));
+    switchCatalogTab(activeCatalogTab);
+
     if (toggleSpoilers) {
       toggleSpoilers.checked = showAll;
       toggleSpoilers.addEventListener('change', function () {
@@ -437,6 +655,15 @@
         cosmetics.push(armor);
       } else if (armorByBiome.has(armor.biome)) {
         armorByBiome.get(armor.biome).push(armor);
+      }
+    });
+
+    // Group weapons by biome
+    const weaponsByBiome = new Map();
+    sortedBiomes.forEach(b => weaponsByBiome.set(b.id, []));
+    (data.weapons || []).forEach(w => {
+      if (weaponsByBiome.has(w.biome)) {
+        weaponsByBiome.get(w.biome).push(w);
       }
     });
 
@@ -648,6 +875,365 @@
         cosmeticCard.appendChild(headerBtn);
         cosmeticCard.appendChild(contentWrapper);
         cosmeticsContainer.appendChild(cosmeticCard);
+      }
+
+      renderWeaponsCatalog();
+    }
+
+    /**
+     * Render Weapons Catalog by Biome
+     */
+    function renderWeaponsCatalog() {
+      if (!weaponsBiomesContainer) return;
+      weaponsBiomesContainer.textContent = '';
+
+      const openBiomes = new Set(getStoredOpenBiomes());
+
+      sortedBiomes.forEach(biome => {
+        const weapons = weaponsByBiome.get(biome.id) || [];
+        if (weapons.length === 0) return;
+
+        const isUnlocked = showAll || openBiomes.has(biome.id);
+        const biomeCard = el('section', 'biome-card');
+        biomeCard.dataset.biomeId = biome.id;
+
+        const headerBtn = el('button', 'biome-header');
+        headerBtn.type = 'button';
+        headerBtn.id = 'weapons-biome-header-' + biome.id;
+        headerBtn.setAttribute('aria-controls', 'weapons-biome-content-' + biome.id);
+        headerBtn.setAttribute('aria-expanded', String(isUnlocked));
+
+        if (biome.image) {
+          headerBtn.style.backgroundImage = 'url("' + biome.image + '")';
+        }
+
+        const headerContent = el('div', 'biome-header-content');
+        const orderBadge = el('span', 'biome-order-badge', t('Biome {order}', { order: biome.order }));
+        const nameHeading = el('span', 'biome-name', biomeName(biome));
+        const countBadge = el('span', 'biome-count-badge', t('{count} weapons', { count: weapons.length }));
+
+        headerContent.appendChild(orderBadge);
+        headerContent.appendChild(nameHeading);
+        headerContent.appendChild(countBadge);
+
+        const chevron = el('span', 'biome-chevron', '▼');
+        chevron.setAttribute('aria-hidden', 'true');
+
+        headerBtn.appendChild(headerContent);
+        headerBtn.appendChild(chevron);
+
+        const contentWrapper = el('div', 'biome-content-wrapper');
+        contentWrapper.id = 'weapons-biome-content-' + biome.id;
+        contentWrapper.setAttribute('role', 'region');
+        contentWrapper.setAttribute('aria-labelledby', 'weapons-biome-header-' + biome.id);
+
+        if (!isUnlocked) {
+          contentWrapper.setAttribute('inert', '');
+          headerBtn.setAttribute('aria-expanded', 'false');
+
+          const lockedBanner = el('div', 'biome-locked-banner');
+          const lockedText = el('div', 'locked-text');
+          const lockIcon = el('span', 'locked-icon', '🔒');
+          const lockMsg = el('span', null, t('Biome {order} — open it in the Bestiary or reveal here', { order: biome.order }));
+          lockedText.appendChild(lockIcon);
+          lockedText.appendChild(lockMsg);
+
+          const revealBtn = el('button', 'action-btn action-btn-primary', 'Reveal');
+          revealBtn.type = 'button';
+          revealBtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            const current = new Set(getStoredOpenBiomes());
+            current.add(biome.id);
+            setStoredOpenBiomes(Array.from(current));
+            renderCatalog();
+            renderCart();
+          });
+
+          lockedBanner.appendChild(lockedText);
+          lockedBanner.appendChild(revealBtn);
+          biomeCard.appendChild(headerBtn);
+          biomeCard.appendChild(lockedBanner);
+        } else {
+          headerBtn.addEventListener('click', function () {
+            const isExpanded = headerBtn.getAttribute('aria-expanded') === 'true';
+            const nextState = !isExpanded;
+            headerBtn.setAttribute('aria-expanded', String(nextState));
+            if (nextState) {
+              contentWrapper.removeAttribute('inert');
+            } else {
+              contentWrapper.setAttribute('inert', '');
+            }
+          });
+
+          weapons.forEach(w => {
+            const card = renderWeaponCard(w);
+            contentWrapper.appendChild(card);
+          });
+
+          biomeCard.appendChild(headerBtn);
+          biomeCard.appendChild(contentWrapper);
+        }
+
+        weaponsBiomesContainer.appendChild(biomeCard);
+      });
+    }
+
+    /**
+     * Render Weapon Card
+     */
+    function renderWeaponCard(weapon) {
+      const card = el('div', 'set-card weapon-card');
+      card.dataset.weaponId = weapon.id;
+
+      const summary = el('div', 'set-summary weapon-summary');
+
+      // Left: icon + name + badges
+      const summaryLeft = el('div', 'set-summary-left');
+      if (weapon.image) {
+        const img = el('img', 'piece-icon-img');
+        img.src = weapon.image;
+        img.alt = entityName(weapon);
+        img.loading = 'lazy';
+        summaryLeft.appendChild(img);
+      }
+
+      const infoCol = el('div', 'set-summary-info');
+      const titleRow = el('div', 'set-title-row');
+      const title = el('h3', 'set-title', entityName(weapon));
+      titleRow.appendChild(title);
+
+      const badgesRow = el('div', 'set-badges-row');
+
+      // Category badge
+      const catKey = categoryLabels[weapon.category] || weapon.category;
+      const catBadge = el('span', 'badge badge-tag', t(catKey));
+      badgesRow.appendChild(catBadge);
+
+      // Hands badge
+      if (weapon.hands) {
+        const handsBadge = el('span', 'badge badge-slot', weapon.hands);
+        badgesRow.appendChild(handsBadge);
+      }
+
+      // Shield block armor & parry
+      if (weapon.category === 'shield' || typeof weapon.blockArmor === 'number') {
+        if (typeof weapon.blockArmor === 'number') {
+          const blockBadge = el('span', 'badge badge-armor', t('Block Armor: {value}', { value: weapon.blockArmor }));
+          badgesRow.appendChild(blockBadge);
+        }
+        if (typeof weapon.parryBonus === 'number' && weapon.parryBonus > 1) {
+          const parryBadge = el('span', 'badge badge-bonus', t('Parry Bonus: {bonus}×', { bonus: weapon.parryBonus }));
+          badgesRow.appendChild(parryBadge);
+        }
+      }
+
+      // Weapon damage
+      const dmgEntries = Object.entries(weapon.damage || {});
+      if (dmgEntries.length > 0) {
+        const dmgText = dmgEntries.map(([dtype, val]) => t(dtype.charAt(0).toUpperCase() + dtype.slice(1)) + ' ' + val).join(', ');
+        const dmgBadge = el('span', 'badge badge-armor', dmgText);
+        badgesRow.appendChild(dmgBadge);
+      }
+
+      infoCol.appendChild(titleRow);
+      infoCol.appendChild(badgesRow);
+      summaryLeft.appendChild(infoCol);
+
+      // Right: Have/Want selects + Add button + Details toggle
+      const summaryRight = el('div', 'weapon-controls-row');
+      const maxQ = weapon.maxQuality || (weapon.levels?.length || 1);
+
+      // Have select
+      const haveWrap = el('div', 'weapon-level-select-wrap');
+      const haveLabel = el('span', 'metric-label', 'Have');
+      const haveSelect = el('select', 'level-select');
+      const optHave0 = el('option', null, 'None');
+      optHave0.value = '0';
+      haveSelect.appendChild(optHave0);
+      for (let q = 1; q < maxQ; q++) {
+        const opt = el('option', null, 'Q' + q);
+        opt.value = String(q);
+        haveSelect.appendChild(opt);
+      }
+      haveSelect.value = '0';
+      haveWrap.appendChild(haveLabel);
+      haveWrap.appendChild(haveSelect);
+
+      // Want select
+      const wantWrap = el('div', 'weapon-level-select-wrap');
+      const wantLabel = el('span', 'metric-label', 'Want');
+      const wantSelect = el('select', 'level-select');
+      for (let q = 1; q <= maxQ; q++) {
+        const opt = el('option', null, 'Q' + q);
+        opt.value = String(q);
+        wantSelect.appendChild(opt);
+      }
+      wantSelect.value = String(maxQ);
+      wantWrap.appendChild(wantLabel);
+      wantWrap.appendChild(wantSelect);
+
+      haveSelect.addEventListener('change', () => {
+        const h = parseInt(haveSelect.value, 10);
+        let w = parseInt(wantSelect.value, 10);
+        if (w <= h) {
+          wantSelect.value = String(Math.min(maxQ, h + 1));
+        }
+        for (let i = 0; i < wantSelect.options.length; i++) {
+          const q = parseInt(wantSelect.options[i].value, 10);
+          wantSelect.options[i].disabled = q <= h;
+        }
+      });
+
+      wantSelect.addEventListener('change', () => {
+        const w = parseInt(wantSelect.value, 10);
+        let h = parseInt(haveSelect.value, 10);
+        if (h >= w) {
+          haveSelect.value = String(Math.max(0, w - 1));
+        }
+        for (let i = 0; i < haveSelect.options.length; i++) {
+          const q = parseInt(haveSelect.options[i].value, 10);
+          haveSelect.options[i].disabled = q >= w && q > 0;
+        }
+      });
+
+      // Add button
+      const addBtn = el('button', 'action-btn action-btn-primary action-btn-sm', '+ Add');
+      addBtn.type = 'button';
+      addBtn.addEventListener('click', e => {
+        e.stopPropagation();
+        cart.push({
+          id: weapon.id + '_' + Math.random().toString(36).slice(2, 7),
+          setId: null,
+          pieceId: weapon.id,
+          isWeapon: true,
+          have: parseInt(haveSelect.value, 10),
+          want: parseInt(wantSelect.value, 10),
+          groupId: null
+        });
+        saveAndRenderCart();
+        if (window.innerWidth <= 1024 && cartPanel) {
+          cartPanel.classList.add('open');
+        }
+      });
+
+      // Details toggle
+      const toggleDetailsBtn = el('button', 'set-detail-toggle-btn', 'Details ▾');
+      toggleDetailsBtn.type = 'button';
+
+      summaryRight.appendChild(haveWrap);
+      summaryRight.appendChild(wantWrap);
+      summaryRight.appendChild(addBtn);
+      summaryRight.appendChild(toggleDetailsBtn);
+
+      summary.appendChild(summaryLeft);
+      summary.appendChild(summaryRight);
+
+      // Detail container
+      const detailContainer = el('div', 'weapon-detail set-detail');
+      detailContainer.setAttribute('inert', '');
+      let detailRendered = false;
+
+      function toggleDetails() {
+        const isOpen = !detailContainer.hasAttribute('inert');
+        if (isOpen) {
+          detailContainer.setAttribute('inert', '');
+          toggleDetailsBtn.textContent = t('Details ▾');
+        } else {
+          if (!detailRendered) {
+            renderWeaponDetail(weapon, detailContainer, data);
+            detailRendered = true;
+          }
+          detailContainer.removeAttribute('inert');
+          toggleDetailsBtn.textContent = t('Details ▴');
+        }
+      }
+
+      summary.addEventListener('click', e => {
+        if (e.target.closest('button') || e.target.closest('select')) return;
+        toggleDetails();
+      });
+
+      toggleDetailsBtn.addEventListener('click', e => {
+        e.stopPropagation();
+        toggleDetails();
+      });
+
+      card.appendChild(summary);
+      card.appendChild(detailContainer);
+
+      return card;
+    }
+
+    /**
+     * Render Weapon Detail (Costs & station level)
+     */
+    function renderWeaponDetail(weapon, container, data) {
+      container.textContent = '';
+
+      if (weapon.description) {
+        const desc = el('p', 'weapon-desc', weapon.description);
+        container.appendChild(desc);
+      }
+
+      const costsSection = el('div', 'detail-costs-section');
+      const costsTitle = el('h4', 'detail-section-title', 'Crafting & Upgrade Costs');
+      costsSection.appendChild(costsTitle);
+
+      const costsGrid = el('div', 'costs-grid');
+      let hasAnyCost = false;
+
+      (weapon.levels || []).forEach(lvl => {
+        if (!lvl.materials || lvl.materials.length === 0) return;
+        hasAnyCost = true;
+
+        const costCard = el('div', 'cost-card');
+        const costHeader = el('div', 'cost-card-header');
+
+        const qualityName = el('span', 'cost-piece-name', entityName(weapon) + ' · Q' + lvl.quality + (lvl.quality === 1 ? ' (' + t('Craft') + ')' : ' (' + t('Upgrade') + ')'));
+        const stName = stationName(weapon.station || 'Station');
+        const stText = lvl.stationLevel ? stName + ' ' + t('Level {level}', { level: lvl.stationLevel }) : stName;
+        const stBadge = el('span', 'cost-station-badge', stText);
+
+        costHeader.appendChild(qualityName);
+        costHeader.appendChild(stBadge);
+        costCard.appendChild(costHeader);
+
+        const matsList = el('div', 'cost-materials-list');
+        lvl.materials.forEach(mat => {
+          const itemData = data.items && data.items[mat.item];
+          const matPill = el('div', 'cost-mat-pill');
+
+          if (itemData && itemData.image) {
+            const icon = el('img', 'cost-mat-icon');
+            icon.src = itemData.image;
+            icon.alt = entityName(itemData) || mat.item;
+            icon.loading = 'lazy';
+            matPill.appendChild(icon);
+          }
+
+          const label = el('span', null, mat.amount + '× ' + (itemData ? entityName(itemData) : mat.item));
+          matPill.appendChild(label);
+
+          if (itemData && itemData.teleportable === false) {
+            const tpBadge = el('span', 'badge badge-teleport-warning', t("Can't be teleported"));
+            matPill.appendChild(tpBadge);
+          }
+
+          if (mat.fuel) {
+            const fuelBadge = el('span', 'badge badge-fuel', 'fuel');
+            matPill.appendChild(fuelBadge);
+          }
+
+          matsList.appendChild(matPill);
+        });
+
+        costCard.appendChild(matsList);
+        costsGrid.appendChild(costCard);
+      });
+
+      if (hasAnyCost) {
+        costsSection.appendChild(costsGrid);
+        container.appendChild(costsSection);
       }
     }
 
@@ -1597,6 +2183,7 @@
 
   return {
     calculateCartMaterials,
+    calculateSmelting,
     calculateTotalArmor,
     getStoredOpenBiomes,
     setStoredOpenBiomes,
@@ -1605,6 +2192,10 @@
     getStoredCart,
     setStoredCart,
     getStoredBreakdown,
-    setStoredBreakdown
+    setStoredBreakdown,
+    getStoredCatalogTab,
+    setStoredCatalogTab,
+    getStoredFurnaces,
+    setStoredFurnaces
   };
 });

@@ -247,6 +247,47 @@ body {
   gap: 24px;
 }
 
+/* Catalog Tabs */
+.catalog-tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 4px;
+}
+
+.catalog-tab-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -6px;
+  transition: all 0.15s ease;
+}
+
+.catalog-tab-btn:hover {
+  color: var(--text-main);
+}
+
+.catalog-tab-btn.active {
+  color: var(--accent-gold);
+  border-bottom-color: var(--accent-gold);
+}
+
+.catalog-view {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.catalog-view[hidden] {
+  display: none;
+}
+
 /* Biome Card & Accordion */
 .biome-card {
   background-color: var(--bg-card);
@@ -522,6 +563,15 @@ body {
   color: #ff8a65;
   border: 1px solid rgba(255, 100, 61, 0.35);
   font-size: 0.7rem;
+}
+
+.badge-teleport-warning {
+  background-color: rgba(239, 83, 80, 0.15);
+  color: #ef5350;
+  border: 1px solid rgba(239, 83, 80, 0.4);
+  text-transform: none;
+  font-weight: 600;
+  font-size: 0.75rem;
 }
 
 .badge-count {
@@ -947,6 +997,29 @@ body {
   margin-bottom: 4px;
 }
 
+.cart-teleport-warning {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(239, 83, 80, 0.12);
+  border: 1px solid rgba(239, 83, 80, 0.4);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  color: #ffcdd2;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.cart-warning-icon {
+  font-size: 1rem;
+  color: #ef5350;
+  flex-shrink: 0;
+}
+
+.cart-warning-text {
+  line-height: 1.35;
+}
+
 .materials-list {
   display: flex;
   flex-direction: column;
@@ -1088,6 +1161,101 @@ body {
 .cart-actions .action-btn {
   flex: 1;
   justify-content: center;
+}
+
+/* Smelting Planner */
+.smelting-section {
+  background-color: #12171c;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.smelting-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(46, 55, 66, 0.6);
+}
+
+.smelting-header .cart-section-title {
+  margin: 0;
+}
+
+.smelting-furnace-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.furnace-select {
+  min-width: 90px;
+}
+
+.smelting-metrics-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Weapon Cards & Controls */
+.weapon-card {
+  margin-bottom: 12px;
+}
+
+.weapon-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.weapon-controls-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.weapon-level-select-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.weapon-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+/* Deep Link Highlight Animation */
+@keyframes deepLinkPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(217, 164, 65, 0.7);
+    border-color: var(--accent-gold);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(217, 164, 65, 0);
+    border-color: var(--accent-gold);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(217, 164, 65, 0);
+  }
+}
+
+.deep-link-highlight {
+  animation: deepLinkPulse 1.8s ease-out;
+  border-color: var(--accent-gold) !important;
 }
 
 /* Mobile Floating Cart Bar */

@@ -65,9 +65,18 @@
     </header>
 
     <div class="armourer-layout">
-      <main class="armourer-catalog" aria-label="Armor Sets" data-i18n-attr="aria-label:Armor Sets">
-        <div id="biomes-container" class="biomes-container"></div>
-        <div id="cosmetics-container" class="cosmetics-container"></div>
+      <main class="armourer-catalog" aria-label="Catalog" data-i18n-attr="aria-label:Catalog">
+        <div id="catalog-tabs" class="catalog-tabs" role="tablist" aria-label="Catalog sections" data-i18n-attr="aria-label:Catalog sections">
+          <button type="button" role="tab" id="tab-armor" class="catalog-tab-btn active" aria-selected="true" aria-controls="catalog-armor-view" data-i18n="Armor Sets">Armor Sets</button>
+          <button type="button" role="tab" id="tab-weapons" class="catalog-tab-btn" aria-selected="false" aria-controls="catalog-weapons-view" data-i18n="Weapons & Shields">Weapons & Shields</button>
+        </div>
+        <div id="catalog-armor-view" class="catalog-view active" role="tabpanel" aria-labelledby="tab-armor">
+          <div id="biomes-container" class="biomes-container"></div>
+          <div id="cosmetics-container" class="cosmetics-container"></div>
+        </div>
+        <div id="catalog-weapons-view" class="catalog-view" role="tabpanel" aria-labelledby="tab-weapons" hidden>
+          <div id="weapons-biomes-container" class="biomes-container"></div>
+        </div>
       </main>
 
       <!-- Shopping cart panel: sticky on desktop, sliding drawer on mobile -->
