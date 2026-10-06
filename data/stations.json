@@ -1,0 +1,155 @@
+[
+  {
+    "id": "smelter",
+    "name": "Smelter",
+    "wiki": "https://valheim.weirdgloop.org/w/Smelter",
+    "type": "smelting",
+    "secondsPerItem": 30,
+    "fuel": {
+      "item": "coal",
+      "name": "Coal",
+      "count": 1,
+      "secondsPerUnit": 15,
+      "perItem": 2
+    },
+    "capacity": {
+      "fuel": 20,
+      "input": 10
+    },
+    "conversions": [
+      {
+        "input": "copper-ore",
+        "output": "copper",
+        "ratio": 1
+      },
+      {
+        "input": "copper-scrap",
+        "output": "copper",
+        "ratio": 1
+      },
+      {
+        "input": "tin-ore",
+        "output": "tin",
+        "ratio": 1
+      },
+      {
+        "input": "scrap-iron",
+        "output": "iron",
+        "ratio": 1
+      },
+      {
+        "input": "iron-ore",
+        "output": "iron",
+        "ratio": 1
+      },
+      {
+        "input": "silver-ore",
+        "output": "silver",
+        "ratio": 1
+      },
+      {
+        "input": "scrap-bronze",
+        "output": "bronze",
+        "ratio": 1
+      }
+    ],
+    "names": {
+      "cs": "Huť",
+      "ru": "Плавильня"
+    }
+  },
+  {
+    "id": "blast-furnace",
+    "name": "Blast Furnace",
+    "wiki": "https://valheim.weirdgloop.org/w/Blast_Furnace",
+    "type": "smelting",
+    "secondsPerItem": 30,
+    "fuel": {
+      "item": "coal",
+      "name": "Coal",
+      "count": 1,
+      "secondsPerUnit": 15,
+      "perItem": 2
+    },
+    "capacity": {
+      "fuel": 20,
+      "input": 10
+    },
+    "conversions": [
+      {
+        "input": "black-metal-scrap",
+        "output": "black-metal",
+        "ratio": 1
+      },
+      {
+        "input": "flametal-ore",
+        "output": "flametal",
+        "ratio": 1
+      },
+      {
+        "input": "petrified-tissue",
+        "output": "bloodgold",
+        "ratio": 1
+      }
+    ],
+    "names": {
+      "cs": "Vysoká pec",
+      "fr": "Haut fourneau",
+      "ru": "Доменная печь"
+    }
+  },
+  {
+    "id": "charcoal-kiln",
+    "name": "Charcoal Kiln",
+    "wiki": "https://valheim.weirdgloop.org/w/Charcoal_Kiln",
+    "type": "kiln",
+    "secondsPerItem": 15,
+    "fuel": null,
+    "capacity": {
+      "input": 25
+    },
+    "conversions": [
+      {
+        "input": "wood",
+        "output": "coal",
+        "ratio": 1
+      },
+      {
+        "input": "finewood",
+        "output": "coal",
+        "ratio": 1
+      },
+      {
+        "input": "corewood",
+        "output": "coal",
+        "ratio": 1
+      }
+    ],
+    "names": {
+      "cs": "Milíř",
+      "ru": "Углевыжигательная печь"
+    }
+  },
+  {
+    "id": "spinning-wheel",
+    "name": "Spinning Wheel",
+    "wiki": "https://valheim.weirdgloop.org/w/Spinning_Wheel",
+    "type": "processing",
+    "secondsPerItem": 30,
+    "fuel": null,
+    "capacity": {
+      "input": 40
+    },
+    "conversions": [
+      {
+        "input": "flax",
+        "output": "linen-thread",
+        "ratio": 1
+      }
+    ],
+    "names": {
+      "cs": "Kolovrat",
+      "ru": "Прялка"
+    }
+  }
+]

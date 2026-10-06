@@ -1,5 +1,5 @@
 window.VC_DATA = {
-  "generatedAt": "2026-10-06T12:01:49.000Z",
+  "generatedAt": "2026-10-06T12:25:43.886Z",
   "source": {
     "name": "Valheim Wiki",
     "url": "https://valheim.weirdgloop.org",
@@ -10733,17 +10733,29 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 2,
       "maxQuality": 1,
-      "damage": {
-        "pierce": 10
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 10
-      },
-      "stamina": 15,
-      "knockback": null,
-      "skill": "spears",
-      "backstab": 1,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 8
+            },
+            {
+              "item": "chitin",
+              "name": "Chitin",
+              "amount": 30
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 3
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Finewood",
@@ -10758,10 +10770,22 @@ window.VC_DATA = {
           "amount": 3
         }
       ],
+      "damage": {
+        "pierce": 10
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 10
+      },
+      "stamina": 15,
+      "knockback": null,
+      "skill": "spears",
+      "backstab": 1,
       "quantity": null,
       "tier": 3,
       "biome": "ocean",
       "description": "The ocean's wrath.",
+      "blockArmor": 21,
       "names": {
         "cs": "Harpuna z hlubin",
         "fr": "Harpon abyssal",
@@ -10780,19 +10804,62 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 2,
       "maxQuality": 4,
-      "damage": {
-        "slash": 20,
-        "pierce": 20
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 20,
-        "pierce": 20
-      },
-      "stamina": 8,
-      "knockback": null,
-      "skill": "knives",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 4
+            },
+            {
+              "item": "chitin",
+              "name": "Chitin",
+              "amount": 20
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "chitin",
+              "name": "Chitin",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "chitin",
+              "name": "Chitin",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "chitin",
+              "name": "Chitin",
+              "amount": 40
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Finewood",
@@ -10807,6 +10874,19 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "slash": 20,
+        "pierce": 20
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 20,
+        "pierce": 20
+      },
+      "stamina": 8,
+      "knockback": null,
+      "skill": "knives",
+      "backstab": null,
       "quantity": null,
       "tier": 3,
       "biome": "ocean",
@@ -10829,17 +10909,92 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 3,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 55
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 55
-      },
-      "stamina": 10,
-      "knockback": null,
-      "skill": "spears",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "troll-hide",
+              "name": "Troll Hide",
+              "amount": 4
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 10
+            },
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "troll-hide",
+              "name": "Troll Hide",
+              "amount": 1
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 5
+            },
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "troll-hide",
+              "name": "Troll Hide",
+              "amount": 2
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 10
+            },
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "troll-hide",
+              "name": "Troll Hide",
+              "amount": 4
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 20
+            },
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 20
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Troll Hide",
@@ -10854,10 +11009,22 @@ window.VC_DATA = {
           "amount": 10
         }
       ],
+      "damage": {
+        "pierce": 55
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 55
+      },
+      "stamina": 10,
+      "knockback": null,
+      "skill": "spears",
+      "backstab": null,
       "quantity": null,
       "tier": 4,
       "biome": "swamp",
       "description": "Despite its gnarled look, this spear is strong and perfectly balanced.",
+      "blockArmor": 21,
       "names": {
         "cs": "Kopí ze starověkého dřeva",
         "fr": "Lance en écorce ancienne",
@@ -10876,6 +11043,34 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 1,
       "maxQuality": 1,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 10
+            },
+            {
+              "item": "hard-antler",
+              "name": "Hard Antler",
+              "amount": 1
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Wood",
+          "amount": 10
+        },
+        {
+          "name": "Hard Antler",
+          "amount": 1
+        }
+      ],
       "damage": {
         "pierce": 18,
         "pickaxe": 18
@@ -10889,16 +11084,6 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "pickaxes",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Wood",
-          "amount": 10
-        },
-        {
-          "name": "Hard Antler",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 1,
       "biome": "meadows",
@@ -10920,17 +11105,92 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 200
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 200
-      },
-      "stamina": 1,
-      "knockback": null,
-      "skill": "crossbows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 10
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 8
+            },
+            {
+              "item": "root",
+              "name": "Root",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 5
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 4
+            },
+            {
+              "item": "root",
+              "name": "Root",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 10
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 8
+            },
+            {
+              "item": "root",
+              "name": "Root",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 20
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 16
+            },
+            {
+              "item": "root",
+              "name": "Root",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -10945,10 +11205,22 @@ window.VC_DATA = {
           "amount": 4
         }
       ],
+      "damage": {
+        "pierce": 200
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 200
+      },
+      "stamina": 1,
+      "knockback": null,
+      "skill": "crossbows",
+      "backstab": null,
       "quantity": null,
       "tier": 4,
       "biome": "swamp",
       "description": "A slow but powerful weapon.",
+      "blockForce": null,
       "names": {
         "ru": "Арбалет"
       }
@@ -10965,20 +11237,112 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 3,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 82
-      },
-      "perLevel": {
-        "pierce": 4,
-        "spirit": 5
-      },
-      "damageMax": {
-        "pierce": 94
-      },
-      "stamina": 14,
-      "knockback": 25,
-      "skill": "bows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 10
+            },
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 16
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 5
+            },
+            {
+              "item": "bonemaw-tooth",
+              "name": "Bonemaw Tooth",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 5
+            },
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 10
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 5
+            },
+            {
+              "item": "bonemaw-tooth",
+              "name": "Bonemaw Tooth",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 10
+            },
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 20
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 10
+            },
+            {
+              "item": "bonemaw-tooth",
+              "name": "Bonemaw Tooth",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 20
+            },
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 40
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 20
+            },
+            {
+              "item": "bonemaw-tooth",
+              "name": "Bonemaw Tooth",
+              "amount": 20
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Ashwood",
@@ -10997,12 +11361,122 @@ window.VC_DATA = {
           "amount": 5
         }
       ],
+      "damage": {
+        "pierce": 82
+      },
+      "perLevel": {
+        "pierce": 4,
+        "spirit": 5
+      },
+      "damageMax": {
+        "pierce": 94
+      },
+      "stamina": 14,
+      "knockback": 25,
+      "skill": "bows",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Risen again from the ashes, this bow holds unyielding strength.",
+      "blockArmor": 3,
       "names": {
         "ru": "Пепельный клык"
+      }
+    },
+    "banded-shield": {
+      "id": "banded-shield",
+      "name": "Banded Shield",
+      "wiki": "https://valheim.weirdgloop.org/w/Banded_Shield",
+      "gameId": "ShieldBanded",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Round",
+      "image": "img/weapons/banded-shield.png",
+      "station": "Forge",
+      "stationLevel": 2,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 20
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 8
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Finewood",
+          "amount": 10
+        },
+        {
+          "name": "Iron",
+          "amount": 8
+        }
+      ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
+      "quantity": null,
+      "tier": 4,
+      "biome": "swamp",
+      "description": "Banded with hoops of iron, a true warrior's companion.",
+      "blockArmor": 42,
+      "blockForce": 40,
+      "parryBonus": 1.5,
+      "movementSpeed": "-5%",
+      "recommendable": false,
+      "note": null,
+      "names": {
+        "cs": "Vyztužený štít",
+        "fr": "Bouclier bandé",
+        "ru": "Укрепленный щит"
       }
     },
     "bare-fists": {
@@ -11015,8 +11489,16 @@ window.VC_DATA = {
       "type": "Fists",
       "image": "img/weapons/bare-fists.png",
       "station": "Always available",
-      "stationLevel": null,
+      "stationLevel": 1,
       "maxQuality": 1,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": []
+        }
+      ],
+      "materials": [],
       "damage": {
         "blunt": 5
       },
@@ -11028,11 +11510,13 @@ window.VC_DATA = {
       "knockback": 40,
       "skill": "fists",
       "backstab": 3,
-      "materials": [],
       "quantity": null,
       "tier": 1,
       "biome": "meadows",
       "description": "",
+      "blockArmor": 2,
+      "blockForce": null,
+      "parryBonus": 1.5,
       "names": {}
     },
     "battleaxe": {
@@ -11047,19 +11531,77 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 2,
       "maxQuality": 4,
-      "damage": {
-        "slash": 70,
-        "chop": 40
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 70,
-        "chop": 40
-      },
-      "stamina": 16,
-      "knockback": 70,
-      "skill": "axes",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 30
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 35
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 5
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 15
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 10
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 20
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 60
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Ancient Bark",
@@ -11074,10 +11616,24 @@ window.VC_DATA = {
           "amount": 4
         }
       ],
+      "damage": {
+        "slash": 70,
+        "chop": 40
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 70,
+        "chop": 40
+      },
+      "stamina": 16,
+      "knockback": 70,
+      "skill": "axes",
+      "backstab": null,
       "quantity": null,
       "tier": 4,
       "biome": "swamp",
       "description": "Skull-splitter, a warrior's joy.",
+      "blockArmor": 28,
       "names": {
         "cs": "Bojová sekera",
         "de": "Streitaxt",
@@ -11097,6 +11653,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 3,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 15
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 24
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 15
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 30
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 60
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Charred Bone",
+          "amount": 15
+        },
+        {
+          "name": "Flametal",
+          "amount": 24
+        },
+        {
+          "name": "Asksvin Hide",
+          "amount": 3
+        }
+      ],
       "damage": {
         "slash": 140,
         "chop": 80
@@ -11113,24 +11754,15 @@ window.VC_DATA = {
       "knockback": 20,
       "skill": "axes",
       "backstab": 3,
-      "materials": [
-        {
-          "name": "Charred Bone",
-          "amount": 15
-        },
-        {
-          "name": "Flametal",
-          "amount": 24
-        },
-        {
-          "name": "Asksvin Hide",
-          "amount": 3
-        }
-      ],
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Let your rage take over and face the slaughter.",
+      "weight": 2,
+      "blockArmor": 57,
+      "blockForce": 20,
+      "parryBonus": 2,
+      "movementSpeed": "-5%",
       "names": {
         "de": "Berserkir-Äxte",
         "ru": "Топоры берсеркира"
@@ -11148,17 +11780,29 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 1,
       "maxQuality": 1,
-      "damage": {
-        "blunt": 5
-      },
-      "perLevel": {},
-      "damageMax": {
-        "blunt": 5
-      },
-      "stamina": 8,
-      "knockback": 40,
-      "skill": null,
-      "backstab": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "sap",
+              "name": "Sap",
+              "amount": 1
+            },
+            {
+              "item": "bilebag",
+              "name": "Bilebag",
+              "amount": 1
+            },
+            {
+              "item": "resin",
+              "name": "Resin",
+              "amount": 3
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Sap",
@@ -11173,10 +11817,24 @@ window.VC_DATA = {
           "amount": 3
         }
       ],
+      "damage": {
+        "blunt": 5
+      },
+      "perLevel": {},
+      "damageMax": {
+        "blunt": 5
+      },
+      "stamina": 8,
+      "knockback": 40,
+      "skill": null,
+      "backstab": 3,
       "quantity": 3,
       "tier": 7,
       "biome": "mistlands",
       "description": "Handle with care.",
+      "weight": 0.3,
+      "blockArmor": 2,
+      "parryBonus": 1.5,
       "recommendable": false,
       "note": "Area/DoT damage not listed on the wiki",
       "names": {
@@ -11195,17 +11853,77 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 105
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 105
-      },
-      "stamina": 18,
-      "knockback": null,
-      "skill": "polearms",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 30
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 15
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 30
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 60
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 20
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Finewood",
@@ -11220,10 +11938,22 @@ window.VC_DATA = {
           "amount": 5
         }
       ],
+      "damage": {
+        "pierce": 105
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 105
+      },
+      "stamina": 18,
+      "knockback": null,
+      "skill": "polearms",
+      "backstab": null,
       "quantity": null,
       "tier": 6,
       "biome": "plains",
       "description": "A vicious hewing-axe of almost unbreakable black metal.",
+      "blockArmor": 52,
       "names": {
         "cs": "Atgeir z černého kovu",
         "fr": "Atgeir en sombracier",
@@ -11242,19 +11972,77 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "slash": 100,
-        "chop": 60
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 100,
-        "chop": 60
-      },
-      "stamina": 14,
-      "knockback": 60,
-      "skill": "axes",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 6
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 20
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 10
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 20
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 40
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 20
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Finewood",
@@ -11269,10 +12057,24 @@ window.VC_DATA = {
           "amount": 5
         }
       ],
+      "damage": {
+        "slash": 100,
+        "chop": 60
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 100,
+        "chop": 60
+      },
+      "stamina": 14,
+      "knockback": 60,
+      "skill": "axes",
+      "backstab": null,
       "quantity": null,
       "tier": 6,
       "biome": "plains",
       "description": "A perfectly-balanced axe forged from dark metal with an emerald sheen.",
+      "blockArmor": 39,
       "names": {
         "cs": "Sekera z černého kovu",
         "de": "Schwarzmetall-Axt",
@@ -11290,21 +12092,79 @@ window.VC_DATA = {
       "type": "Axe 2h",
       "image": "img/weapons/black-metal-battleaxe.png",
       "station": "Forge",
-      "stationLevel": 4,
+      "stationLevel": 3,
       "maxQuality": 4,
-      "damage": {
-        "slash": 110,
-        "chop": 60
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 110,
-        "chop": 60
-      },
-      "stamina": 20,
-      "knockback": 70,
-      "skill": "axes",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "linen-thread",
+              "name": "Linen",
+              "amount": 5
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 30
+            },
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "linen-thread",
+              "name": "Linen",
+              "amount": 5
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 15
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "linen-thread",
+              "name": "Linen",
+              "amount": 10
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "linen-thread",
+              "name": "Linen",
+              "amount": 20
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 60
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Linen",
@@ -11319,10 +12179,25 @@ window.VC_DATA = {
           "amount": 10
         }
       ],
+      "damage": {
+        "slash": 110,
+        "chop": 60
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 110,
+        "chop": 60
+      },
+      "stamina": 20,
+      "knockback": 70,
+      "skill": "axes",
+      "backstab": null,
       "quantity": null,
       "tier": 6,
       "biome": "plains",
       "description": "Green shall be the last thing your foes see before you cleave them in half.",
+      "blockArmor": 52,
+      "movementSpeed": "-15%",
       "names": {
         "ru": "Боевой топор из черного металла"
       }
@@ -11339,17 +12214,29 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 2,
       "maxQuality": 1,
-      "damage": {
-        "pierce": 62
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 62
-      },
-      "stamina": null,
-      "knockback": null,
-      "skill": "crossbows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 8
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 2
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -11364,6 +12251,17 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 62
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 62
+      },
+      "stamina": null,
+      "knockback": null,
+      "skill": "crossbows",
+      "backstab": null,
       "quantity": 20,
       "tier": 6,
       "biome": "plains",
@@ -11385,19 +12283,77 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "slash": 34,
-        "pierce": 34
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 34,
-        "pierce": 34
-      },
-      "stamina": 12,
-      "knockback": null,
-      "skill": "knives",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 4
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 10
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 4
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 8
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 16
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 20
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Finewood",
@@ -11412,6 +12368,19 @@ window.VC_DATA = {
           "amount": 5
         }
       ],
+      "damage": {
+        "slash": 34,
+        "pierce": 34
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 34,
+        "pierce": 34
+      },
+      "stamina": 12,
+      "knockback": null,
+      "skill": "knives",
+      "backstab": null,
       "quantity": null,
       "tier": 6,
       "biome": "plains",
@@ -11434,6 +12403,82 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 2,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 3
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 25
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 1
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 15
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 2
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 4
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 60
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Yggdrasil Wood",
+          "amount": 3
+        },
+        {
+          "name": "Black Metal",
+          "amount": 25
+        }
+      ],
       "damage": {
         "pierce": 49,
         "pickaxe": 49
@@ -11450,22 +12495,124 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "pickaxes",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Yggdrasil Wood",
-          "amount": 3
-        },
-        {
-          "name": "Black Metal",
-          "amount": 25
-        }
-      ],
       "quantity": null,
       "tier": 7,
       "biome": "mistlands",
       "description": "A good strong pick of glistening dark metal.",
       "names": {
         "ru": "Кирка из черного металла"
+      }
+    },
+    "black-metal-shield": {
+      "id": "black-metal-shield",
+      "name": "Black Metal Shield",
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Metal_Shield",
+      "gameId": "ShieldBlackmetal",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Round",
+      "image": "img/weapons/black-metal-shield.png",
+      "station": "Forge",
+      "stationLevel": 3,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 8
+            },
+            {
+              "item": "chain",
+              "name": "Chain",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 4
+            },
+            {
+              "item": "chain",
+              "name": "Chain",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 20
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 8
+            },
+            {
+              "item": "chain",
+              "name": "Chain",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Finewood",
+          "amount": 10
+        },
+        {
+          "name": "Black Metal",
+          "amount": 8
+        },
+        {
+          "name": "Chain",
+          "amount": 5
+        }
+      ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
+      "quantity": null,
+      "tier": 6,
+      "biome": "plains",
+      "description": "Fashioned from the strongest metal, able to turn even the deadliest blades.",
+      "blockArmor": 78,
+      "blockForce": 50,
+      "recommendable": false,
+      "note": null,
+      "names": {
+        "cs": "Štít z černého kovu",
+        "fr": "Bouclier en sombracier",
+        "ru": "Щит из черного металла"
       }
     },
     "black-metal-sword": {
@@ -11480,17 +12627,77 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "slash": 95
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 95
-      },
-      "stamina": 14,
-      "knockback": null,
-      "skill": "swords",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 2
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 20
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 10
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 20
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 40
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 20
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Finewood",
@@ -11505,15 +12712,139 @@ window.VC_DATA = {
           "amount": 5
         }
       ],
+      "damage": {
+        "slash": 95
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 95
+      },
+      "stamina": 14,
+      "knockback": null,
+      "skill": "swords",
+      "backstab": null,
       "quantity": null,
       "tier": 6,
       "biome": "plains",
       "description": "A thing of death and beauty. It catches the light with a greenish glow.",
+      "blockArmor": 39,
       "names": {
         "cs": "Meč z černokovu",
         "de": "Schwarzmetall-Schwert",
         "fr": "Épée en sombracier",
         "ru": "Меч из черного металла"
+      }
+    },
+    "black-metal-tower-shield": {
+      "id": "black-metal-tower-shield",
+      "name": "Black Metal Tower Shield",
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Metal_Tower_Shield",
+      "gameId": "ShieldBlackmetalTower",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Tower",
+      "image": "img/weapons/black-metal-tower-shield.png",
+      "station": "Forge",
+      "stationLevel": 3,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 15
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 10
+            },
+            {
+              "item": "chain",
+              "name": "Chain",
+              "amount": 7
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 4
+            },
+            {
+              "item": "chain",
+              "name": "Chain",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 20
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 8
+            },
+            {
+              "item": "chain",
+              "name": "Chain",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Finewood",
+          "amount": 15
+        },
+        {
+          "name": "Black Metal",
+          "amount": 10
+        },
+        {
+          "name": "Chain",
+          "amount": 7
+        }
+      ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
+      "quantity": null,
+      "tier": 6,
+      "biome": "plains",
+      "description": "A tower shield of gleaming dark metal.",
+      "blockArmor": 104,
+      "blockForce": 150,
+      "recommendable": false,
+      "note": null,
+      "names": {
+        "cs": "Pavéza z černého kovu",
+        "fr": "Écu en sombracier",
+        "ru": "Башенный щит из черного металла"
       }
     },
     "bleeding-berserkir-axes": {
@@ -11528,6 +12859,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "berserkir-axes",
+              "name": "Berserkir Axes",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 5
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 5
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 10
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 20
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Berserkir Axes",
+          "amount": 1
+        },
+        {
+          "name": "Flametal",
+          "amount": 5
+        },
+        {
+          "name": "Bloodstone",
+          "amount": 1
+        }
+      ],
       "damage": {
         "slash": 140,
         "chop": 80
@@ -11544,24 +12960,15 @@ window.VC_DATA = {
       "knockback": 20,
       "skill": "axes",
       "backstab": 3,
-      "materials": [
-        {
-          "name": "Berserkir Axes",
-          "amount": 1
-        },
-        {
-          "name": "Flametal",
-          "amount": 5
-        },
-        {
-          "name": "Bloodstone",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "The closer you are to death, the harder you are sure to hit.",
+      "weight": 2,
+      "blockArmor": 57,
+      "blockForce": 20,
+      "parryBonus": 2,
+      "movementSpeed": "-5%",
       "names": {
         "cs": "Krvavé berserkské sekery",
         "de": "Blutende Berserkir-Äxte",
@@ -11581,20 +12988,77 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 82
-      },
-      "perLevel": {
-        "pierce": 4,
-        "spirit": 5
-      },
-      "damageMax": {
-        "pierce": 94
-      },
-      "stamina": 14,
-      "knockback": 25,
-      "skill": "bows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ash-fang",
+              "name": "Ash Fang",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 5
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 5
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 10
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 20
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Ash Fang",
@@ -11609,10 +13073,25 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "pierce": 82
+      },
+      "perLevel": {
+        "pierce": 4,
+        "spirit": 5
+      },
+      "damageMax": {
+        "pierce": 94
+      },
+      "stamina": 14,
+      "knockback": 25,
+      "skill": "bows",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Arrows loosed from this bow will tear into flesh with unmatched ferocity.",
+      "blockArmor": 3,
       "names": {
         "ru": "Кровавый клык"
       }
@@ -11629,19 +13108,77 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "blunt": 135
-      },
-      "perLevel": {
-        "blunt": 6
-      },
-      "damageMax": {
-        "blunt": 153
-      },
-      "stamina": 16,
-      "knockback": 100,
-      "skill": "clubs",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "flametal-mace",
+              "name": "Flametal Mace",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 16
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 32
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Flametal Mace",
@@ -11656,10 +13193,25 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "blunt": 135
+      },
+      "perLevel": {
+        "blunt": 6
+      },
+      "damageMax": {
+        "blunt": 153
+      },
+      "stamina": 16,
+      "knockback": 100,
+      "skill": "clubs",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "The blood all but soaks into this mace, and it always yearns for more.",
+      "blockArmor": 57,
+      "movementSpeed": "-5%",
       "names": {
         "de": "Blutprügel",
         "fr": "Masse-sang",
@@ -11678,17 +13230,29 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 1,
-      "damage": {
-        "pierce": 100
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 100
-      },
-      "stamina": null,
-      "knockback": 15,
-      "skill": "bows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 1
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 8
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Bloodgold",
@@ -11703,10 +13267,22 @@ window.VC_DATA = {
           "amount": 8
         }
       ],
+      "damage": {
+        "pierce": 100
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 100
+      },
+      "stamina": null,
+      "knockback": 15,
+      "skill": "bows",
+      "backstab": null,
       "quantity": 20,
       "tier": 9,
       "biome": "deep-north",
       "description": "An arrow forged of perhaps the hardest materials in this world...",
+      "weight": 0.1,
       "names": {}
     },
     "bloodgold-bolt": {
@@ -11721,17 +13297,29 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 1,
-      "damage": {
-        "pierce": 92
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 92
-      },
-      "stamina": null,
-      "knockback": 15,
-      "skill": "crossbows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 1
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 8
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Bloodgold",
@@ -11746,10 +13334,22 @@ window.VC_DATA = {
           "amount": 8
         }
       ],
+      "damage": {
+        "pierce": 92
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 92
+      },
+      "stamina": null,
+      "knockback": 15,
+      "skill": "crossbows",
+      "backstab": null,
       "quantity": 20,
       "tier": 9,
       "biome": "deep-north",
       "description": "A bolt forged of perhaps the hardest materials in this world...",
+      "weight": 0.1,
       "names": {}
     },
     "bone-bolt": {
@@ -11764,6 +13364,34 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 1,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "bone-fragments",
+              "name": "Bone Fragments",
+              "amount": 8
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bone Fragments",
+          "amount": 8
+        },
+        {
+          "name": "Feathers",
+          "amount": 2
+        }
+      ],
       "damage": {
         "pierce": 32
       },
@@ -11775,16 +13403,6 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "crossbows",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bone Fragments",
-          "amount": 8
-        },
-        {
-          "name": "Feathers",
-          "amount": 2
-        }
-      ],
       "quantity": 20,
       "tier": 2,
       "biome": "black-forest",
@@ -11792,6 +13410,109 @@ window.VC_DATA = {
       "names": {
         "cs": "Kostěnná šipka",
         "ru": "Костяной болт"
+      }
+    },
+    "bone-tower-shield": {
+      "id": "bone-tower-shield",
+      "name": "Bone Tower Shield",
+      "wiki": "https://valheim.weirdgloop.org/w/Bone_Tower_Shield",
+      "gameId": "ShieldBoneTower",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Tower",
+      "image": "img/weapons/bone-tower-shield.png",
+      "station": "Workbench",
+      "stationLevel": 3,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 10
+            },
+            {
+              "item": "bone-fragments",
+              "name": "Bone Fragments",
+              "amount": 10
+            },
+            {
+              "item": "skeleton-trophy",
+              "name": "Skeleton Trophy",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 5
+            },
+            {
+              "item": "bone-fragments",
+              "name": "Bone Fragments",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 10
+            },
+            {
+              "item": "bone-fragments",
+              "name": "Bone Fragments",
+              "amount": 10
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Wood",
+          "amount": 10
+        },
+        {
+          "name": "Bone Fragments",
+          "amount": 10
+        },
+        {
+          "name": "Skeleton Trophy",
+          "amount": 3
+        }
+      ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
+      "quantity": null,
+      "tier": 2,
+      "biome": "black-forest",
+      "description": "The bones of dead warriors make for a good protection.",
+      "weight": 4,
+      "blockArmor": 32,
+      "blockForce": 100,
+      "recommendable": false,
+      "note": null,
+      "names": {
+        "cs": "Kostěná pavéza",
+        "fr": "Écu en os",
+        "ru": "Костяной башенный щит"
       }
     },
     "bronze-atgeir": {
@@ -11806,17 +13527,62 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 45
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 45
-      },
-      "stamina": 12,
-      "knockback": null,
-      "skill": "polearms",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 10
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 8
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 16
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -11831,10 +13597,22 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 45
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 45
+      },
+      "stamina": 12,
+      "knockback": null,
+      "skill": "polearms",
+      "backstab": null,
       "quantity": null,
       "tier": 2,
       "biome": "black-forest",
       "description": "A true warrior's tool.",
+      "blockArmor": 16,
       "names": {
         "cs": "Bronzový Atgeir",
         "fr": "Atgeir en bronze",
@@ -11853,19 +13631,77 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "slash": 40,
-        "chop": 40
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 40,
-        "chop": 40
-      },
-      "stamina": 8,
-      "knockback": 50,
-      "skill": "axes",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 4
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 8
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 4
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 8
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 16
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -11880,15 +13716,124 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "slash": 40,
+        "chop": 40
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 40,
+        "chop": 40
+      },
+      "stamina": 8,
+      "knockback": 50,
+      "skill": "axes",
+      "backstab": null,
       "quantity": null,
       "tier": 2,
       "biome": "black-forest",
       "description": "A bright and burnished blade, curved like a smile.",
+      "blockArmor": 12,
       "names": {
         "cs": "Bronzová sekera",
         "de": "Bronzeaxt",
         "fr": "Hache en bronze",
         "ru": "Бронзовый топор"
+      }
+    },
+    "bronze-buckler": {
+      "id": "bronze-buckler",
+      "name": "Bronze Buckler",
+      "wiki": "https://valheim.weirdgloop.org/w/Bronze_Buckler",
+      "gameId": "ShieldBronzeBuckler",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Buckler",
+      "image": "img/weapons/bronze-buckler.png",
+      "station": "Forge",
+      "stationLevel": 1,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 10
+            },
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 5
+            },
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 10
+            },
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 2
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bronze",
+          "amount": 10
+        },
+        {
+          "name": "Wood",
+          "amount": 4
+        }
+      ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
+      "quantity": null,
+      "tier": 2,
+      "biome": "black-forest",
+      "description": "A shield of burnished bronze, good to turn a blade or two.",
+      "weight": 3,
+      "blockArmor": 16,
+      "blockForce": 30,
+      "parryBonus": 2.5,
+      "recommendable": false,
+      "note": null,
+      "names": {
+        "cs": "Bronzový pukléř",
+        "fr": "Bouclier en bronze",
+        "ru": "Бронзовый баклер"
       }
     },
     "bronze-mace": {
@@ -11903,17 +13848,62 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "blunt": 35
-      },
-      "perLevel": {},
-      "damageMax": {
-        "blunt": 35
-      },
-      "stamina": 8,
-      "knockback": 80,
-      "skill": "clubs",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 4
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 8
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 16
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -11928,10 +13918,22 @@ window.VC_DATA = {
           "amount": 3
         }
       ],
+      "damage": {
+        "blunt": 35
+      },
+      "perLevel": {},
+      "damageMax": {
+        "blunt": 35
+      },
+      "stamina": 8,
+      "knockback": 80,
+      "skill": "clubs",
+      "backstab": null,
       "quantity": null,
       "tier": 2,
       "biome": "black-forest",
       "description": "A headache on a stick.",
+      "blockArmor": 12,
       "names": {
         "cs": "Bronzový palcát",
         "de": "Bronzener Streitkolben",
@@ -11951,6 +13953,82 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 1,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "corewood",
+              "name": "Corewood",
+              "amount": 3
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "corewood",
+              "name": "Corewood",
+              "amount": 1
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "corewood",
+              "name": "Corewood",
+              "amount": 2
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "corewood",
+              "name": "Corewood",
+              "amount": 4
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 20
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Corewood",
+          "amount": 3
+        },
+        {
+          "name": "Bronze",
+          "amount": 10
+        }
+      ],
       "damage": {
         "pierce": 25,
         "pickaxe": 25
@@ -11966,16 +14044,6 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "pickaxes",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Corewood",
-          "amount": 3
-        },
-        {
-          "name": "Bronze",
-          "amount": 10
-        }
-      ],
       "quantity": null,
       "tier": 2,
       "biome": "black-forest",
@@ -11997,17 +14065,92 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 35
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 35
-      },
-      "stamina": 8,
-      "knockback": null,
-      "skill": "spears",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 5
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 6
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 3
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 4
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 6
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 8
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 12
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 16
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -12022,10 +14165,22 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 35
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 35
+      },
+      "stamina": 8,
+      "knockback": null,
+      "skill": "spears",
+      "backstab": null,
       "quantity": null,
       "tier": 2,
       "biome": "black-forest",
       "description": "A sturdy spear with a head of burnished bronze.",
+      "blockArmor": 12,
       "names": {
         "cs": "Bronzové kopí",
         "fr": "Lance en bronze",
@@ -12044,17 +14199,92 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "slash": 35
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 35
-      },
-      "stamina": 8,
-      "knockback": null,
-      "skill": "swords",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 2
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 8
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 1
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 4
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 2
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 8
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 4
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 16
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -12069,10 +14299,22 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "slash": 35
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 35
+      },
+      "stamina": 8,
+      "knockback": null,
+      "skill": "swords",
+      "backstab": null,
       "quantity": null,
       "tier": 2,
       "biome": "black-forest",
       "description": "Blood-drinker. A thirsty friend.",
+      "blockArmor": 12,
       "names": {
         "cs": "Bronzový meč",
         "fr": "Épée en bronze",
@@ -12091,17 +14333,29 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 1,
       "maxQuality": 1,
-      "damage": {
-        "pierce": 32
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 32
-      },
-      "stamina": null,
-      "knockback": null,
-      "skill": "bows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 8
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 1
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -12116,6 +14370,17 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 32
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 32
+      },
+      "stamina": null,
+      "knockback": null,
+      "skill": "bows",
+      "backstab": null,
       "quantity": 20,
       "tier": 2,
       "biome": "black-forest",
@@ -12138,19 +14403,77 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "slash": 170
-      },
-      "perLevel": {
-        "slash": 6
-      },
-      "damageMax": {
-        "slash": 188
-      },
-      "stamina": 20,
-      "knockback": 55,
-      "skill": "swords",
-      "backstab": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "slayer",
+              "name": "Slayer",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 15
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 15
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 30
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 60
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Slayer",
@@ -12165,10 +14488,28 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "slash": 170
+      },
+      "perLevel": {
+        "slash": 6
+      },
+      "damageMax": {
+        "slash": 188
+      },
+      "stamina": 20,
+      "knockback": 55,
+      "skill": "swords",
+      "backstab": 3,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "If it bleeds, you can kill it.",
+      "weight": 4,
+      "blockArmor": 64,
+      "blockForce": 50,
+      "parryBonus": 2,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Жестокий убийца"
       }
@@ -12185,17 +14526,29 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 1,
-      "damage": {
-        "pierce": 72
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 72
-      },
-      "stamina": null,
-      "knockback": 15,
-      "skill": "bows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "carapace",
+              "name": "Carapace",
+              "amount": 4
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            },
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 8
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Carapace",
@@ -12210,6 +14563,17 @@ window.VC_DATA = {
           "amount": 8
         }
       ],
+      "damage": {
+        "pierce": 72
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 72
+      },
+      "stamina": null,
+      "knockback": 15,
+      "skill": "bows",
+      "backstab": null,
       "quantity": 20,
       "tier": 7,
       "biome": "mistlands",
@@ -12230,17 +14594,29 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 1,
-      "damage": {
-        "pierce": 72
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 72
-      },
-      "stamina": null,
-      "knockback": null,
-      "skill": "crossbows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 8
+            },
+            {
+              "item": "carapace",
+              "name": "Carapace",
+              "amount": 2
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -12255,6 +14631,17 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 72
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 72
+      },
+      "stamina": null,
+      "knockback": null,
+      "skill": "crossbows",
+      "backstab": null,
       "quantity": 20,
       "tier": 7,
       "biome": "mistlands",
@@ -12262,6 +14649,228 @@ window.VC_DATA = {
       "names": {
         "cs": "Šipka z krunýře",
         "ru": "Панцирный болт"
+      }
+    },
+    "carapace-buckler": {
+      "id": "carapace-buckler",
+      "name": "Carapace Buckler",
+      "wiki": "https://valheim.weirdgloop.org/w/Carapace_Buckler",
+      "gameId": "ShieldCarapaceBuckler",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Buckler",
+      "image": "img/weapons/carapace-buckler.png",
+      "station": "Black Forge",
+      "stationLevel": 1,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "carapace",
+              "name": "Carapace",
+              "amount": 16
+            },
+            {
+              "item": "scale-hide",
+              "name": "Scale Hide",
+              "amount": 3
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "carapace",
+              "name": "Carapace",
+              "amount": 8
+            },
+            {
+              "item": "scale-hide",
+              "name": "Scale Hide",
+              "amount": 3
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "carapace",
+              "name": "Carapace",
+              "amount": 16
+            },
+            {
+              "item": "scale-hide",
+              "name": "Scale Hide",
+              "amount": 6
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 6
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Carapace",
+          "amount": 16
+        },
+        {
+          "name": "Scale Hide",
+          "amount": 3
+        },
+        {
+          "name": "Refined Eitr",
+          "amount": 10
+        }
+      ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
+      "quantity": null,
+      "tier": 7,
+      "biome": "mistlands",
+      "description": "The skull of a seeker is solid but not heavy, which makes it perfect for a small and agile shield.",
+      "weight": 5,
+      "blockArmor": 78,
+      "blockForce": 50,
+      "parryBonus": 2.5,
+      "recommendable": false,
+      "note": null,
+      "names": {
+        "ru": "Панцирный баклер"
+      }
+    },
+    "carapace-shield": {
+      "id": "carapace-shield",
+      "name": "Carapace Shield",
+      "wiki": "https://valheim.weirdgloop.org/w/Carapace_Shield",
+      "gameId": "ShieldCarapace",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Round",
+      "image": "img/weapons/carapace-shield.png",
+      "station": "Black Forge",
+      "stationLevel": 1,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "carapace",
+              "name": "Carapace",
+              "amount": 20
+            },
+            {
+              "item": "scale-hide",
+              "name": "Scale Hide",
+              "amount": 3
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "carapace",
+              "name": "Carapace",
+              "amount": 10
+            },
+            {
+              "item": "scale-hide",
+              "name": "Scale Hide",
+              "amount": 3
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "carapace",
+              "name": "Carapace",
+              "amount": 20
+            },
+            {
+              "item": "scale-hide",
+              "name": "Scale Hide",
+              "amount": 6
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 6
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Carapace",
+          "amount": 20
+        },
+        {
+          "name": "Scale Hide",
+          "amount": 3
+        },
+        {
+          "name": "Refined Eitr",
+          "amount": 10
+        }
+      ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
+      "quantity": null,
+      "tier": 7,
+      "biome": "mistlands",
+      "description": "The almost unbreakable carapace of your enemies makes an excellent shield.",
+      "blockArmor": 96,
+      "blockForce": 60,
+      "recommendable": false,
+      "note": null,
+      "names": {
+        "ru": "Панцирный щит"
       }
     },
     "carapace-spear": {
@@ -12276,17 +14885,92 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 115
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 115
-      },
-      "stamina": 16,
-      "knockback": null,
-      "skill": "spears",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 10
+            },
+            {
+              "item": "carapace",
+              "name": "Carapace",
+              "amount": 4
+            },
+            {
+              "item": "mandible",
+              "name": "Mandible",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 5
+            },
+            {
+              "item": "carapace",
+              "name": "Carapace",
+              "amount": 4
+            },
+            {
+              "item": "mandible",
+              "name": "Mandible",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 10
+            },
+            {
+              "item": "carapace",
+              "name": "Carapace",
+              "amount": 8
+            },
+            {
+              "item": "mandible",
+              "name": "Mandible",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 20
+            },
+            {
+              "item": "carapace",
+              "name": "Carapace",
+              "amount": 16
+            },
+            {
+              "item": "mandible",
+              "name": "Mandible",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Yggdrasil Wood",
@@ -12301,10 +14985,23 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 115
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 115
+      },
+      "stamina": 16,
+      "knockback": null,
+      "skill": "spears",
+      "backstab": null,
       "quantity": null,
       "tier": 7,
       "biome": "mistlands",
       "description": "Sharpened to jagged perfection, this spear is sure to be deadly.",
+      "weight": 1.5,
+      "blockArmor": 48,
       "names": {
         "cs": "Kopí z krunýře",
         "de": "Chitin-Speer",
@@ -12324,17 +15021,29 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 1,
-      "damage": {
-        "pierce": 82
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 82
-      },
-      "stamina": null,
-      "knockback": 15,
-      "skill": "bows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 4
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            },
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 8
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Charred Bone",
@@ -12349,6 +15058,17 @@ window.VC_DATA = {
           "amount": 8
         }
       ],
+      "damage": {
+        "pierce": 82
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 82
+      },
+      "stamina": null,
+      "knockback": 15,
+      "skill": "bows",
+      "backstab": null,
       "quantity": 20,
       "tier": 8,
       "biome": "ashlands",
@@ -12369,17 +15089,29 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 1,
-      "damage": {
-        "pierce": 82
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 82
-      },
-      "stamina": null,
-      "knockback": null,
-      "skill": "crossbows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 8
+            },
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 2
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Ashwood",
@@ -12394,6 +15126,17 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 82
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 82
+      },
+      "stamina": null,
+      "knockback": null,
+      "skill": "crossbows",
+      "backstab": null,
       "quantity": 20,
       "tier": 8,
       "biome": "ashlands",
@@ -12415,6 +15158,58 @@ window.VC_DATA = {
       "station": "Player crafting menu",
       "stationLevel": 1,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 6
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "bone-fragments",
+              "name": "Bone Fragments",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "bone-fragments",
+              "name": "Bone Fragments",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bone-fragments",
+              "name": "Bone Fragments",
+              "amount": 20
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Wood",
+          "amount": 6
+        }
+      ],
       "damage": {
         "blunt": 12
       },
@@ -12426,16 +15221,12 @@ window.VC_DATA = {
       "knockback": 30,
       "skill": "clubs",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Wood",
-          "amount": 6
-        }
-      ],
       "quantity": null,
       "tier": 1,
       "biome": "meadows",
       "description": "A crude but useful weapon.",
+      "blockArmor": 3,
+      "blockForce": 20,
       "names": {
         "cs": "Palice",
         "de": "Keule",
@@ -12455,6 +15246,82 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 1,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 2
+            },
+            {
+              "item": "copper",
+              "name": "Copper",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "greydwarf-eye",
+              "name": "Greydwarf Eye",
+              "amount": 8
+            },
+            {
+              "item": "copper",
+              "name": "Copper",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "greydwarf-eye",
+              "name": "Greydwarf Eye",
+              "amount": 16
+            },
+            {
+              "item": "copper",
+              "name": "Copper",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "greydwarf-eye",
+              "name": "Greydwarf Eye",
+              "amount": 32
+            },
+            {
+              "item": "copper",
+              "name": "Copper",
+              "amount": 16
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Wood",
+          "amount": 2
+        },
+        {
+          "name": "Copper",
+          "amount": 8
+        }
+      ],
       "damage": {
         "slash": 12,
         "pierce": 12
@@ -12468,16 +15335,6 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "knives",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Wood",
-          "amount": 2
-        },
-        {
-          "name": "Copper",
-          "amount": 8
-        }
-      ],
       "quantity": null,
       "tier": 2,
       "biome": "black-forest",
@@ -12500,6 +15357,97 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 1,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 10
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 5
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 10
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 8
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 20
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 16
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Wood",
+          "amount": 10
+        },
+        {
+          "name": "Leather Scraps",
+          "amount": 8
+        }
+      ],
       "damage": {
         "pierce": 22
       },
@@ -12511,20 +15459,11 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "bows",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Wood",
-          "amount": 10
-        },
-        {
-          "name": "Leather Scraps",
-          "amount": 8
-        }
-      ],
       "quantity": null,
       "tier": 1,
       "biome": "meadows",
       "description": "A crude but functional bow.",
+      "blockArmor": 3,
       "names": {
         "cs": "Hrubý luk",
         "fr": "Arc",
@@ -12543,6 +15482,91 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 3,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 40
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 30
+            },
+            {
+              "item": "crystal",
+              "name": "Crystal",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 5
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 15
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 10
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 20
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 60
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Ancient Bark",
+          "amount": 40
+        },
+        {
+          "name": "Silver",
+          "amount": 30
+        },
+        {
+          "name": "Crystal",
+          "amount": 10
+        }
+      ],
       "damage": {
         "slash": 90,
         "chop": 50,
@@ -12558,24 +15582,11 @@ window.VC_DATA = {
       "knockback": 70,
       "skill": "axes",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Ancient Bark",
-          "amount": 40
-        },
-        {
-          "name": "Silver",
-          "amount": 30
-        },
-        {
-          "name": "Crystal",
-          "amount": 10
-        }
-      ],
       "quantity": null,
       "tier": 5,
       "biome": "mountain",
       "description": "It's see-through and tears through.",
+      "blockArmor": 40,
       "names": {
         "cs": "Křišťálová bitevní sekera",
         "de": "Kristallkampfaxt",
@@ -12595,17 +15606,92 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "blunt": 145
-      },
-      "perLevel": {},
-      "damageMax": {
-        "blunt": 145
-      },
-      "stamina": 28,
-      "knockback": 210,
-      "skill": "clubs",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 10
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 20
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 2
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 15
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 4
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 30
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 8
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 60
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 8
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Yggdrasil Wood",
@@ -12620,10 +15706,22 @@ window.VC_DATA = {
           "amount": 10
         }
       ],
+      "damage": {
+        "blunt": 145
+      },
+      "perLevel": {},
+      "damageMax": {
+        "blunt": 145
+      },
+      "stamina": 28,
+      "knockback": 210,
+      "skill": "clubs",
+      "backstab": null,
       "quantity": null,
       "tier": 7,
       "biome": "mistlands",
       "description": "This mighty sledge yearns to wreak havoc.",
+      "blockArmor": 52,
       "names": {
         "ru": "Разрушитель"
       }
@@ -12640,21 +15738,112 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 2,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 47,
-        "poison": 5
-      },
-      "perLevel": {
-        "poison": 5
-      },
-      "damageMax": {
-        "pierce": 47,
-        "poison": 20
-      },
-      "stamina": 10,
-      "knockback": 20,
-      "skill": "bows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 10
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 20
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 2
+            },
+            {
+              "item": "guck",
+              "name": "Guck",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 5
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 10
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 2
+            },
+            {
+              "item": "guck",
+              "name": "Guck",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 10
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 20
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 4
+            },
+            {
+              "item": "guck",
+              "name": "Guck",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 20
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 40
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 8
+            },
+            {
+              "item": "guck",
+              "name": "Guck",
+              "amount": 8
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Ancient Bark",
@@ -12673,10 +15862,26 @@ window.VC_DATA = {
           "amount": 10
         }
       ],
+      "damage": {
+        "pierce": 47,
+        "poison": 5
+      },
+      "perLevel": {
+        "poison": 5
+      },
+      "damageMax": {
+        "pierce": 47,
+        "poison": 20
+      },
+      "stamina": 10,
+      "knockback": 20,
+      "skill": "bows",
+      "backstab": null,
       "quantity": null,
       "tier": 5,
       "biome": "mountain",
       "description": "Dark wood strung with glistening sinew. A vicious thing.",
+      "blockArmor": 3,
       "names": {
         "cs": "Draugrův Tesák",
         "fr": "Croc de Draugr",
@@ -12695,19 +15900,112 @@ window.VC_DATA = {
       "station": "Galdr Table",
       "stationLevel": 2,
       "maxQuality": 4,
-      "damage": {
-        "lightning": 20
-      },
-      "perLevel": {
-        "lightning": 3
-      },
-      "damageMax": {
-        "lightning": 29
-      },
-      "stamina": null,
-      "knockback": 210,
-      "skill": "elemental-magic",
-      "backstab": 1,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 10
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 4
+            },
+            {
+              "item": "celestial-feather",
+              "name": "Celestial Feather",
+              "amount": 3
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 5
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 2
+            },
+            {
+              "item": "celestial-feather",
+              "name": "Celestial Feather",
+              "amount": 3
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 10
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 4
+            },
+            {
+              "item": "celestial-feather",
+              "name": "Celestial Feather",
+              "amount": 6
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 20
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "celestial-feather",
+              "name": "Celestial Feather",
+              "amount": 12
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Ashwood",
@@ -12726,10 +16024,28 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "lightning": 20
+      },
+      "perLevel": {
+        "lightning": 3
+      },
+      "damageMax": {
+        "lightning": 29
+      },
+      "stamina": null,
+      "knockback": 210,
+      "skill": "elemental-magic",
+      "backstab": 1,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "What happens next may shock you.",
+      "weight": 1.5,
+      "blockArmor": 48,
+      "blockForce": 20,
+      "parryBonus": 2,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Дундр"
       }
@@ -12746,21 +16062,87 @@ window.VC_DATA = {
       "station": "Black forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "slash": 145,
-        "fire": 10
-      },
-      "perLevel": {
-        "slash": 6
-      },
-      "damageMax": {
-        "slash": 163,
-        "fire": 10
-      },
-      "stamina": 16,
-      "knockback": 40,
-      "skill": "swords",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "dyrnwyn-hilt-fragment",
+              "name": "Dyrnwyn hilt fragment",
+              "amount": 1
+            },
+            {
+              "item": "dyrnwyn-blade-fragment",
+              "name": "Dyrnwyn blade fragment",
+              "amount": 1
+            },
+            {
+              "item": "dyrnwyn-tip-fragment",
+              "name": "Dyrnwyn tip fragment",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 20
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 10
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 20
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 40
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Dyrnwyn hilt fragment",
@@ -12783,10 +16165,29 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "slash": 145,
+        "fire": 10
+      },
+      "perLevel": {
+        "slash": 6
+      },
+      "damageMax": {
+        "slash": 163,
+        "fire": 10
+      },
+      "stamina": 16,
+      "knockback": 40,
+      "skill": "swords",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "The sword that was broken is whole once more. Its flames burn hot, fuelled by the memories of ancient warriors.",
+      "weight": 0.8,
+      "blockArmor": 57,
+      "blockForce": 20,
+      "parryBonus": 2,
       "names": {
         "cs": "Dyrnwyn",
         "ru": "Дирнвин"
@@ -12804,6 +16205,91 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 1,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "curious-axe-head",
+              "name": "Curious Axe Head",
+              "amount": 1
+            },
+            {
+              "item": "mysterious-axe-head",
+              "name": "Mysterious Axe Head",
+              "amount": 1
+            },
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 2
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 4
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 8
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 8
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Curious Axe Head",
+          "amount": 1
+        },
+        {
+          "name": "Mysterious Axe Head",
+          "amount": 1
+        },
+        {
+          "name": "Wood",
+          "amount": 4
+        }
+      ],
       "damage": {
         "slash": 30,
         "chop": 35
@@ -12820,24 +16306,15 @@ window.VC_DATA = {
       "knockback": 20,
       "skill": "axes",
       "backstab": 3,
-      "materials": [
-        {
-          "name": "Curious Axe Head",
-          "amount": 1
-        },
-        {
-          "name": "Mysterious Axe Head",
-          "amount": 1
-        },
-        {
-          "name": "Wood",
-          "amount": 4
-        }
-      ],
       "quantity": null,
       "tier": 1,
       "biome": "meadows",
       "description": "Mighty weapons from long ago, from a time when the world was still young and incomplete...",
+      "weight": 2,
+      "blockArmor": 4,
+      "blockForce": 20,
+      "parryBonus": 2,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Древние топоры"
       }
@@ -12854,6 +16331,97 @@ window.VC_DATA = {
       "station": "Frost Foundry",
       "stationLevel": 3,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "cast-echo-spike",
+              "name": "Cast Echo Spike",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 5
+            },
+            {
+              "item": "nornathread",
+              "name": "Nornathread",
+              "amount": 2
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "nornathread",
+              "name": "Nornathread",
+              "amount": 4
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nornathread",
+              "name": "Nornathread",
+              "amount": 8
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Cast Echo Spike",
+          "amount": 1
+        },
+        {
+          "name": "Liquid Frost",
+          "amount": 5
+        }
+      ],
       "damage": {
         "fire": 50,
         "frost": 50
@@ -12867,20 +16435,15 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "blood-magic",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Cast Echo Spike",
-          "amount": 1
-        },
-        {
-          "name": "Liquid Frost",
-          "amount": 5
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "A chill that goes right through to the bone.",
+      "weight": 0.3,
+      "blockArmor": 48,
+      "blockForce": 20,
+      "parryBonus": 2,
+      "movementSpeed": "-5%",
       "names": {}
     },
     "ember-charge": {
@@ -12895,6 +16458,34 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 1,
       "maxQuality": 1,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "seal-pelt",
+              "name": "Seal Pelt",
+              "amount": 2
+            },
+            {
+              "item": "embers",
+              "name": "Embers",
+              "amount": 1
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Seal Pelt",
+          "amount": 2
+        },
+        {
+          "name": "Embers",
+          "amount": 1
+        }
+      ],
       "damage": {
         "blunt": 140,
         "chop": 100,
@@ -12910,20 +16501,11 @@ window.VC_DATA = {
       "knockback": null,
       "skill": null,
       "backstab": null,
-      "materials": [
-        {
-          "name": "Seal Pelt",
-          "amount": 2
-        },
-        {
-          "name": "Embers",
-          "amount": 1
-        }
-      ],
       "quantity": 10,
       "tier": 9,
       "biome": "deep-north",
       "description": "Trapped embers, ready to burst. Caution is advised.",
+      "weight": 0.3,
       "names": {}
     },
     "fang-spear": {
@@ -12938,17 +16520,112 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 3,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 75
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 75
-      },
-      "stamina": 12,
-      "knockback": null,
-      "skill": "spears",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 10
+            },
+            {
+              "item": "wolf-fang",
+              "name": "Wolf Fang",
+              "amount": 4
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 5
+            },
+            {
+              "item": "wolf-fang",
+              "name": "Wolf Fang",
+              "amount": 2
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 1
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 10
+            },
+            {
+              "item": "wolf-fang",
+              "name": "Wolf Fang",
+              "amount": 4
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 20
+            },
+            {
+              "item": "wolf-fang",
+              "name": "Wolf Fang",
+              "amount": 8
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Ancient Bark",
@@ -12967,10 +16644,22 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 75
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 75
+      },
+      "stamina": 12,
+      "knockback": null,
+      "skill": "spears",
+      "backstab": null,
       "quantity": null,
       "tier": 5,
       "biome": "mountain",
       "description": "Even in death, the wolf's tooth aches for flesh.",
+      "blockArmor": 30,
       "names": {
         "cs": "Kopí z tesáku",
         "fr": "Lance en crocs",
@@ -12989,17 +16678,92 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 32
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 32
-      },
-      "stamina": 6,
-      "knockback": 5,
-      "skill": "bows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "corewood",
+              "name": "Corewood",
+              "amount": 10
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 5
+            },
+            {
+              "item": "corewood",
+              "name": "Corewood",
+              "amount": 5
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "corewood",
+              "name": "Corewood",
+              "amount": 10
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 20
+            },
+            {
+              "item": "corewood",
+              "name": "Corewood",
+              "amount": 20
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 8
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Finewood",
@@ -13014,6 +16778,17 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 32
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 32
+      },
+      "stamina": 6,
+      "knockback": 5,
+      "skill": "bows",
+      "backstab": null,
       "quantity": null,
       "tier": 2,
       "biome": "black-forest",
@@ -13036,19 +16811,29 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 2,
       "maxQuality": 1,
-      "damage": {
-        "pierce": 11,
-        "fire": 22
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 11,
-        "fire": 22
-      },
-      "stamina": null,
-      "knockback": null,
-      "skill": "bows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 8
+            },
+            {
+              "item": "resin",
+              "name": "Resin",
+              "amount": 8
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -13063,6 +16848,19 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 11,
+        "fire": 22
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 11,
+        "fire": 22
+      },
+      "stamina": null,
+      "knockback": null,
+      "skill": "bows",
+      "backstab": null,
       "quantity": 20,
       "tier": 1,
       "biome": "meadows",
@@ -13085,19 +16883,112 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 3,
       "maxQuality": 4,
-      "damage": {
-        "blunt": 135
-      },
-      "perLevel": {
-        "blunt": 6
-      },
-      "damageMax": {
-        "blunt": 153
-      },
-      "stamina": 16,
-      "knockback": 100,
-      "skill": "clubs",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 10
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 15
+            },
+            {
+              "item": "sulfur",
+              "name": "Sulfur",
+              "amount": 5
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 5
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "sulfur",
+              "name": "Sulfur",
+              "amount": 3
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 10
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 16
+            },
+            {
+              "item": "sulfur",
+              "name": "Sulfur",
+              "amount": 6
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 20
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 32
+            },
+            {
+              "item": "sulfur",
+              "name": "Sulfur",
+              "amount": 12
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 8
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Charred Bone",
@@ -13116,13 +17007,249 @@ window.VC_DATA = {
           "amount": 3
         }
       ],
+      "damage": {
+        "blunt": 135
+      },
+      "perLevel": {
+        "blunt": 6
+      },
+      "damageMax": {
+        "blunt": 153
+      },
+      "stamina": 16,
+      "knockback": 100,
+      "skill": "clubs",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Dense yet spiked flametal, perfect for bashing enemy faces in.",
+      "blockArmor": 57,
+      "movementSpeed": "-5%",
       "names": {
         "de": "Flammenkern-Streitkolben",
         "ru": "Огнеметаллическая булава"
+      }
+    },
+    "flametal-shield": {
+      "id": "flametal-shield",
+      "name": "Flametal Shield",
+      "wiki": "https://valheim.weirdgloop.org/w/Flametal_Shield",
+      "gameId": "ShieldFlametal",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Round",
+      "image": "img/weapons/flametal-shield.png",
+      "station": "Black Forge",
+      "stationLevel": 3,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 10
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 10
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 4
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 20
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Ashwood",
+          "amount": 10
+        },
+        {
+          "name": "Flametal",
+          "amount": 8
+        },
+        {
+          "name": "Asksvin Hide",
+          "amount": 2
+        }
+      ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
+      "quantity": null,
+      "tier": 8,
+      "biome": "ashlands",
+      "description": "The shield is and always will be a viking's most important weapon.",
+      "blockArmor": 114,
+      "blockForce": 50,
+      "recommendable": false,
+      "note": null,
+      "names": {
+        "ru": "Щит из огнеметалла"
+      }
+    },
+    "flametal-tower-shield": {
+      "id": "flametal-tower-shield",
+      "name": "Flametal Tower Shield",
+      "wiki": "https://valheim.weirdgloop.org/w/Flametal_Tower_Shield",
+      "gameId": "ShieldFlametalTower",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Tower",
+      "image": "img/weapons/flametal-tower-shield.png",
+      "station": "Black forge",
+      "stationLevel": 3,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 15
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 10
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 10
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 4
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 20
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Ashwood",
+          "amount": 15
+        },
+        {
+          "name": "Flametal",
+          "amount": 10
+        },
+        {
+          "name": "Asksvin Hide",
+          "amount": 5
+        }
+      ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
+      "quantity": null,
+      "tier": 8,
+      "biome": "ashlands",
+      "description": "The best defence is a great defence.",
+      "blockArmor": 140,
+      "blockForce": 150,
+      "movementSpeed": "-10%",
+      "recommendable": false,
+      "note": null,
+      "names": {
+        "ru": "Башенный щит из огнеметалла"
       }
     },
     "flesh-rippers": {
@@ -13137,17 +17264,92 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 3,
       "maxQuality": 4,
-      "damage": {
-        "slash": 60
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 60
-      },
-      "stamina": 10,
-      "knockback": null,
-      "skill": "fists",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "fenris-hair",
+              "name": "Fenris Hair",
+              "amount": 10
+            },
+            {
+              "item": "fenris-claw",
+              "name": "Fenris Claw",
+              "amount": 6
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "fenris-hair",
+              "name": "Fenris Hair",
+              "amount": 1
+            },
+            {
+              "item": "fenris-claw",
+              "name": "Fenris Claw",
+              "amount": 1
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "fenris-hair",
+              "name": "Fenris Hair",
+              "amount": 2
+            },
+            {
+              "item": "fenris-claw",
+              "name": "Fenris Claw",
+              "amount": 2
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "fenris-hair",
+              "name": "Fenris Hair",
+              "amount": 3
+            },
+            {
+              "item": "fenris-claw",
+              "name": "Fenris Claw",
+              "amount": 3
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 3
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Fenris Hair",
@@ -13162,6 +17364,17 @@ window.VC_DATA = {
           "amount": 10
         }
       ],
+      "damage": {
+        "slash": 60
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 60
+      },
+      "stamina": 10,
+      "knockback": null,
+      "skill": "fists",
+      "backstab": null,
       "quantity": null,
       "tier": 5,
       "biome": "mountain",
@@ -13182,6 +17395,82 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 1,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 4
+            },
+            {
+              "item": "flint",
+              "name": "Flint",
+              "amount": 6
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "flint",
+              "name": "Flint",
+              "amount": 3
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "flint",
+              "name": "Flint",
+              "amount": 6
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "flint",
+              "name": "Flint",
+              "amount": 12
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 8
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Wood",
+          "amount": 4
+        },
+        {
+          "name": "Flint",
+          "amount": 6
+        }
+      ],
       "damage": {
         "slash": 20,
         "chop": 30
@@ -13195,20 +17484,12 @@ window.VC_DATA = {
       "knockback": 50,
       "skill": "axes",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Wood",
-          "amount": 4
-        },
-        {
-          "name": "Flint",
-          "amount": 6
-        }
-      ],
       "quantity": null,
       "tier": 1,
       "biome": "meadows",
       "description": "Sharper than stone.",
+      "weight": 1.5,
+      "blockArmor": 4,
       "names": {
         "cs": "Sekera z pazourku",
         "de": "Feuersteinaxt",
@@ -13227,19 +17508,62 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "slash": 5,
-        "pierce": 5
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 5,
-        "pierce": 5
-      },
-      "stamina": 4,
-      "knockback": null,
-      "skill": "knives",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 2
+            },
+            {
+              "item": "flint",
+              "name": "Flint",
+              "amount": 4
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "flint",
+              "name": "Flint",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "flint",
+              "name": "Flint",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "flint",
+              "name": "Flint",
+              "amount": 8
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -13254,6 +17578,19 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "slash": 5,
+        "pierce": 5
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 5,
+        "pierce": 5
+      },
+      "stamina": 4,
+      "knockback": null,
+      "skill": "knives",
+      "backstab": null,
       "quantity": null,
       "tier": 1,
       "biome": "meadows",
@@ -13275,17 +17612,92 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 20
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 20
-      },
-      "stamina": 6,
-      "knockback": null,
-      "skill": "spears",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 5
+            },
+            {
+              "item": "flint",
+              "name": "Flint",
+              "amount": 10
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 3
+            },
+            {
+              "item": "flint",
+              "name": "Flint",
+              "amount": 5
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 6
+            },
+            {
+              "item": "flint",
+              "name": "Flint",
+              "amount": 10
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 12
+            },
+            {
+              "item": "flint",
+              "name": "Flint",
+              "amount": 20
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -13300,10 +17712,22 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 20
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 20
+      },
+      "stamina": 6,
+      "knockback": null,
+      "skill": "spears",
+      "backstab": null,
       "quantity": null,
       "tier": 1,
       "biome": "meadows",
       "description": "If your eye marks a thing for death, let your arm send the messenger.",
+      "blockArmor": 4,
       "names": {
         "cs": "Kopí z pazourku",
         "fr": "Lance en silex",
@@ -13322,17 +17746,29 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 2,
       "maxQuality": 1,
-      "damage": {
-        "pierce": 27
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 27
-      },
-      "stamina": null,
-      "knockback": null,
-      "skill": "bows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 8
+            },
+            {
+              "item": "flint",
+              "name": "Flint",
+              "amount": 2
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -13347,6 +17783,17 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 27
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 27
+      },
+      "stamina": null,
+      "knockback": null,
+      "skill": "bows",
+      "backstab": null,
       "quantity": 20,
       "tier": 1,
       "biome": "meadows",
@@ -13369,19 +17816,34 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 4,
       "maxQuality": 1,
-      "damage": {
-        "pierce": 26,
-        "frost": 52
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 26,
-        "frost": 52
-      },
-      "stamina": null,
-      "knockback": null,
-      "skill": "bows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 8
+            },
+            {
+              "item": "obsidian",
+              "name": "Obsidian",
+              "amount": 4
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            },
+            {
+              "item": "freeze-gland",
+              "name": "Freeze Gland",
+              "amount": 1
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -13400,6 +17862,19 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "pierce": 26,
+        "frost": 52
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 26,
+        "frost": 52
+      },
+      "stamina": null,
+      "knockback": null,
+      "skill": "bows",
+      "backstab": null,
       "quantity": 20,
       "tier": 5,
       "biome": "mountain",
@@ -13422,6 +17897,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-atgeir",
+              "name": "Nord Atgeir",
+              "amount": 1
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Atgeir",
+          "amount": 1
+        },
+        {
+          "name": "Frostfire Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "pierce": 148,
         "fire": 12,
@@ -13441,24 +18001,13 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "polearms",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Atgeir",
-          "amount": 1
-        },
-        {
-          "name": "Frostfire Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "Let the flames begin to devour, while the ice claims whatever remains.",
+      "weight": 2.5,
+      "blockArmor": 88,
+      "movementSpeed": "-5%",
       "names": {}
     },
     "frostfire-axe": {
@@ -13473,6 +18022,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-axe",
+              "name": "Nord Axe",
+              "amount": 1
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Axe",
+          "amount": 1
+        },
+        {
+          "name": "Frostfire Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "slash": 144,
         "chop": 90,
@@ -13495,24 +18129,11 @@ window.VC_DATA = {
       "knockback": 60,
       "skill": "axes",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Axe",
-          "amount": 1
-        },
-        {
-          "name": "Frostfire Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "Burn it all to the ground, or freeze it in an eternal moment of destruction...",
+      "blockArmor": 66,
       "names": {}
     },
     "frostfire-bow": {
@@ -13527,6 +18148,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-bow",
+              "name": "Nord Bow",
+              "amount": 1
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Bow",
+          "amount": 1
+        },
+        {
+          "name": "Frostfire Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "pierce": 68,
         "fire": 12,
@@ -13549,24 +18255,11 @@ window.VC_DATA = {
       "knockback": 25,
       "skill": "bows",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Bow",
-          "amount": 1
-        },
-        {
-          "name": "Frostfire Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "Keep your head cool as you draw, and then let your fury loose with your arrows.",
+      "weight": 1.5,
       "names": {}
     },
     "frostfire-crossbow": {
@@ -13581,6 +18274,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-crossbow",
+              "name": "Nord Crossbow",
+              "amount": 1
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Crossbow",
+          "amount": 1
+        },
+        {
+          "name": "Frostfire Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "pierce": 232,
         "chop": 180,
@@ -13603,24 +18381,11 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "crossbows",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Crossbow",
-          "amount": 1
-        },
-        {
-          "name": "Frostfire Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "If your enemies don't freeze as you take aim, they are sure to do so once they are hit.",
+      "weight": 1.5,
       "names": {}
     },
     "frostfire-dagger": {
@@ -13635,6 +18400,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-dagger",
+              "name": "Nord Dagger",
+              "amount": 1
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Dagger",
+          "amount": 1
+        },
+        {
+          "name": "Frostfire Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "slash": 62,
         "pierce": 62,
@@ -13657,24 +18507,11 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "knives",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Dagger",
-          "amount": 1
-        },
-        {
-          "name": "Frostfire Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "A cut from this blade stings like ice, then burns like the flame.",
+      "weight": 0.3,
       "names": {}
     },
     "frostfire-greataxe": {
@@ -13689,6 +18526,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-greataxe",
+              "name": "Nord Greataxe",
+              "amount": 1
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Greataxe",
+          "amount": 1
+        },
+        {
+          "name": "Frostfire Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "slash": 154,
         "chop": 40,
@@ -13711,24 +18633,13 @@ window.VC_DATA = {
       "knockback": 70,
       "skill": "axes",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Greataxe",
-          "amount": 1
-        },
-        {
-          "name": "Frostfire Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "Strike your foes with a frozen inferno!",
+      "weight": 2.5,
+      "blockArmor": 76,
+      "movementSpeed": "-20%",
       "names": {}
     },
     "frostfire-greatsword": {
@@ -13743,6 +18654,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-greatsword",
+              "name": "Nord Greatsword",
+              "amount": 1
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Greatsword",
+          "amount": 1
+        },
+        {
+          "name": "Frostfire Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "slash": 186,
         "fire": 12,
@@ -13762,24 +18758,12 @@ window.VC_DATA = {
       "knockback": 55,
       "skill": "swords",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Greatsword",
-          "amount": 1
-        },
-        {
-          "name": "Frostfire Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "The choice between a fiery end and a frozen one is simple: Both at the same time.",
+      "weight": 4,
+      "blockArmor": 76,
       "names": {}
     },
     "frostfire-knucklechains": {
@@ -13794,6 +18778,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-knucklechains",
+              "name": "Nord Knucklechains",
+              "amount": 1
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Knucklechains",
+          "amount": 1
+        },
+        {
+          "name": "Frostfire Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "blunt": 80,
         "fire": 12,
@@ -13813,24 +18882,11 @@ window.VC_DATA = {
       "knockback": 20,
       "skill": "fists",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Knucklechains",
-          "amount": 1
-        },
-        {
-          "name": "Frostfire Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "A slight risk of frostbite is inevitable.",
+      "weight": 2,
       "names": {}
     },
     "frostfire-mace": {
@@ -13845,6 +18901,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-mace",
+              "name": "Nord Mace",
+              "amount": 1
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Mace",
+          "amount": 1
+        },
+        {
+          "name": "Frostfire Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "blunt": 142,
         "fire": 12,
@@ -13864,24 +19005,12 @@ window.VC_DATA = {
       "knockback": 90,
       "skill": "clubs",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Mace",
-          "amount": 1
-        },
-        {
-          "name": "Frostfire Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "Are those sparks that fly as this weapon finds its impact, or are they shards of ice?",
+      "weight": 2,
+      "blockArmor": 66,
       "names": {}
     },
     "frostfire-sledge": {
@@ -13896,6 +19025,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-sledge",
+              "name": "Nord Sledge",
+              "amount": 1
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Sledge",
+          "amount": 1
+        },
+        {
+          "name": "Frostfire Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "blunt": 200,
         "fire": 12,
@@ -13915,24 +19129,13 @@ window.VC_DATA = {
       "knockback": 210,
       "skill": "clubs",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Sledge",
-          "amount": 1
-        },
-        {
-          "name": "Frostfire Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "Is it so cold that it's burning, or so hot that it's freezing?",
+      "weight": 4,
+      "blockArmor": 52,
+      "movementSpeed": "-20%",
       "names": {}
     },
     "frostfire-spear": {
@@ -13947,6 +19150,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-spear",
+              "name": "Nord Spear",
+              "amount": 1
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Spear",
+          "amount": 1
+        },
+        {
+          "name": "Frostfire Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "pierce": 148,
         "fire": 12,
@@ -13966,24 +19254,12 @@ window.VC_DATA = {
       "knockback": 20,
       "skill": "spears",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Spear",
-          "amount": 1
-        },
-        {
-          "name": "Frostfire Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "Dipped in frozen flames, this spear spells certain doom.",
+      "weight": 1.5,
+      "blockArmor": 66,
       "names": {}
     },
     "frostfire-sword": {
@@ -13998,6 +19274,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-sword",
+              "name": "Nord Sword",
+              "amount": 1
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "frostfire-essence",
+              "name": "Frostfire Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Sword",
+          "amount": 1
+        },
+        {
+          "name": "Frostfire Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "slash": 138,
         "fire": 12,
@@ -14017,24 +19378,13 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "swords",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Sword",
-          "amount": 1
-        },
-        {
-          "name": "Frostfire Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "Flames dance along this blade, but are they hot or cold?",
+      "weight": 0.8,
+      "blockArmor": 66,
+      "movementSpeed": "-5%",
       "names": {}
     },
     "frostner": {
@@ -14049,24 +19399,67 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 3,
       "maxQuality": 4,
-      "damage": {
-        "blunt": 35,
-        "frost": 40,
-        "spirit": 20
-      },
-      "perLevel": {
-        "blunt": 0,
-        "frost": 6
-      },
-      "damageMax": {
-        "blunt": 35,
-        "frost": 58,
-        "spirit": 20
-      },
-      "stamina": 12,
-      "knockback": 100,
-      "skill": "clubs",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 10
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 30
+            },
+            {
+              "item": "ymir-flesh",
+              "name": "Ymir Flesh",
+              "amount": 5
+            },
+            {
+              "item": "freeze-gland",
+              "name": "Freeze Gland",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 15
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 60
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Ancient Bark",
@@ -14085,10 +19478,29 @@ window.VC_DATA = {
           "amount": 5
         }
       ],
+      "damage": {
+        "blunt": 35,
+        "frost": 40,
+        "spirit": 20
+      },
+      "perLevel": {
+        "blunt": 0,
+        "frost": 6
+      },
+      "damageMax": {
+        "blunt": 35,
+        "frost": 58,
+        "spirit": 20
+      },
+      "stamina": 12,
+      "knockback": 100,
+      "skill": "clubs",
+      "backstab": null,
       "quantity": null,
       "tier": 5,
       "biome": "mountain",
       "description": "The dead fear silver. Remind them why.",
+      "blockArmor": 30,
       "names": {
         "cs": "Frostner",
         "de": "Frostner",
@@ -14108,22 +19520,97 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 85,
-        "lightning": 40
-      },
-      "perLevel": {
-        "pierce": 0,
-        "lightning": 6
-      },
-      "damageMax": {
-        "pierce": 85,
-        "lightning": 58
-      },
-      "stamina": 20,
-      "knockback": null,
-      "skill": "polearms",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 10
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 15
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 5
+            },
+            {
+              "item": "mandible",
+              "name": "Mandible",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 15
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 5
+            },
+            {
+              "item": "mandible",
+              "name": "Mandible",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 30
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 10
+            },
+            {
+              "item": "mandible",
+              "name": "Mandible",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 60
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 20
+            },
+            {
+              "item": "mandible",
+              "name": "Mandible",
+              "amount": 8
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Yggdrasil Wood",
@@ -14142,10 +19629,28 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 85,
+        "lightning": 40
+      },
+      "perLevel": {
+        "pierce": 0,
+        "lightning": 6
+      },
+      "damageMax": {
+        "pierce": 85,
+        "lightning": 58
+      },
+      "stamina": 20,
+      "knockback": null,
+      "skill": "polearms",
+      "backstab": null,
       "quantity": null,
       "tier": 7,
       "biome": "mistlands",
       "description": "It might not be a hammer, but Thor himself would still approve of this weapon.",
+      "weight": 2.5,
+      "blockArmor": 64,
       "names": {
         "ru": "Химминафль"
       }
@@ -14162,17 +19667,112 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 42
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 42
-      },
-      "stamina": 8,
-      "knockback": 10,
-      "skill": "bows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 20
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 10
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 5
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 10
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 5
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 20
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 10
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 20
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 40
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 20
+            },
+            {
+              "item": "deer-hide",
+              "name": "Deer Hide",
+              "amount": 8
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Finewood",
@@ -14191,6 +19791,17 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 42
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 42
+      },
+      "stamina": 8,
+      "knockback": 10,
+      "skill": "bows",
+      "backstab": null,
       "quantity": null,
       "tier": 4,
       "biome": "swamp",
@@ -14213,17 +19824,77 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 2,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 65
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 65
-      },
-      "stamina": 14,
-      "knockback": null,
-      "skill": "polearms",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 10
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 30
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 15
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 30
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 60
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -14238,10 +19909,22 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 65
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 65
+      },
+      "stamina": 14,
+      "knockback": null,
+      "skill": "polearms",
+      "backstab": null,
       "quantity": null,
       "tier": 4,
       "biome": "swamp",
       "description": "Blood-drinker, skull-cracker, death-bringer.",
+      "blockArmor": 28,
       "names": {
         "cs": "Železný Atgeir",
         "fr": "Atgeir en fer",
@@ -14260,19 +19943,77 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 2,
       "maxQuality": 4,
-      "damage": {
-        "slash": 60,
-        "chop": 50
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 60,
-        "chop": 50
-      },
-      "stamina": 10,
-      "knockback": 50,
-      "skill": "axes",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 4
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 20
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 10
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 20
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 40
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -14287,10 +20028,24 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "slash": 60,
+        "chop": 50
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 60,
+        "chop": 50
+      },
+      "stamina": 10,
+      "knockback": 50,
+      "skill": "axes",
+      "backstab": null,
       "quantity": null,
       "tier": 4,
       "biome": "swamp",
       "description": "Sharp and strong, a woodcutter's friend.",
+      "blockArmor": 21,
       "names": {
         "cs": "Železná sekera",
         "de": "Eisenaxt",
@@ -14310,17 +20065,29 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 1,
-      "damage": {
-        "pierce": 42
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 42
-      },
-      "stamina": null,
-      "knockback": null,
-      "skill": "crossbows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 8
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 1
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -14335,6 +20102,17 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 42
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 42
+      },
+      "stamina": null,
+      "knockback": null,
+      "skill": "crossbows",
+      "backstab": null,
       "quantity": 20,
       "tier": 4,
       "biome": "swamp",
@@ -14342,6 +20120,101 @@ window.VC_DATA = {
       "names": {
         "cs": "Železná Šipka",
         "ru": "Железный болт"
+      }
+    },
+    "iron-buckler": {
+      "id": "iron-buckler",
+      "name": "Iron Buckler",
+      "wiki": "https://valheim.weirdgloop.org/w/Iron_Buckler",
+      "gameId": "ShieldIronBuckler",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Buckler",
+      "image": "img/weapons/iron-buckler.png",
+      "station": "Forge",
+      "stationLevel": 2,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 10
+            },
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 5
+            },
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 10
+            },
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 2
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Iron",
+          "amount": 10
+        },
+        {
+          "name": "Ancient Bark",
+          "amount": 4
+        }
+      ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
+      "quantity": null,
+      "tier": 4,
+      "biome": "swamp",
+      "description": "Its lightness and curved center makes it excellent for deflecting attacks.",
+      "weight": 4,
+      "blockArmor": 28,
+      "blockForce": 30,
+      "parryBonus": 2.5,
+      "movementSpeed": "-5%",
+      "recommendable": false,
+      "note": null,
+      "names": {
+        "fr": "Bouclier en fer",
+        "ru": "Железный баклер"
       }
     },
     "iron-mace": {
@@ -14356,17 +20229,62 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 2,
       "maxQuality": 4,
-      "damage": {
-        "blunt": 55
-      },
-      "perLevel": {},
-      "damageMax": {
-        "blunt": 55
-      },
-      "stamina": 10,
-      "knockback": 90,
-      "skill": "clubs",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 4
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 20
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 40
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -14381,10 +20299,22 @@ window.VC_DATA = {
           "amount": 3
         }
       ],
+      "damage": {
+        "blunt": 55
+      },
+      "perLevel": {},
+      "damageMax": {
+        "blunt": 55
+      },
+      "stamina": 10,
+      "knockback": 90,
+      "skill": "clubs",
+      "backstab": null,
       "quantity": null,
       "tier": 4,
       "biome": "swamp",
       "description": "A fist-sized lump of iron on a wooden shaft.",
+      "blockArmor": 21,
       "names": {
         "cs": "Železný palcát",
         "de": "Eiserner Streitkolben",
@@ -14404,6 +20334,82 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 2,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "corewood",
+              "name": "Corewood",
+              "amount": 3
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "corewood",
+              "name": "Corewood",
+              "amount": 1
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "corewood",
+              "name": "Corewood",
+              "amount": 2
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "corewood",
+              "name": "Corewood",
+              "amount": 4
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 40
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Corewood",
+          "amount": 3
+        },
+        {
+          "name": "Iron",
+          "amount": 20
+        }
+      ],
       "damage": {
         "pierce": 33,
         "pickaxe": 33
@@ -14417,16 +20423,6 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "pickaxes",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Corewood",
-          "amount": 3
-        },
-        {
-          "name": "Iron",
-          "amount": 20
-        }
-      ],
       "quantity": null,
       "tier": 4,
       "biome": "swamp",
@@ -14448,17 +20444,97 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 2,
       "maxQuality": 4,
-      "damage": {
-        "blunt": 55
-      },
-      "perLevel": {},
-      "damageMax": {
-        "blunt": 55
-      },
-      "stamina": 20,
-      "knockback": 200,
-      "skill": "clubs",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 10
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 30
+            },
+            {
+              "item": "ymir-flesh",
+              "name": "Ymir Flesh",
+              "amount": 4
+            },
+            {
+              "item": "draugr-elite-trophy",
+              "name": "Draugr Elite Trophy",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 2
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 15
+            },
+            {
+              "item": "ymir-flesh",
+              "name": "Ymir Flesh",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 4
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 30
+            },
+            {
+              "item": "ymir-flesh",
+              "name": "Ymir Flesh",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "ancient-bark",
+              "name": "Ancient Bark",
+              "amount": 8
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 60
+            },
+            {
+              "item": "ymir-flesh",
+              "name": "Ymir Flesh",
+              "amount": 8
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Ancient Bark",
@@ -14477,10 +20553,22 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "blunt": 55
+      },
+      "perLevel": {},
+      "damageMax": {
+        "blunt": 55
+      },
+      "stamina": 20,
+      "knockback": 200,
+      "skill": "clubs",
+      "backstab": null,
       "quantity": null,
       "tier": 4,
       "biome": "swamp",
       "description": "A mighty hammer, worthy of a champion.",
+      "blockArmor": 28,
       "names": {
         "cs": "Železné velké kladivo",
         "fr": "Masse de fer",
@@ -14499,17 +20587,92 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 2,
       "maxQuality": 4,
-      "damage": {
-        "slash": 55
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 55
-      },
-      "stamina": 10,
-      "knockback": null,
-      "skill": "swords",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 2
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 20
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 1
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 10
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 2
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 20
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 4
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 40
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 8
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -14524,15 +20687,121 @@ window.VC_DATA = {
           "amount": 3
         }
       ],
+      "damage": {
+        "slash": 55
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 55
+      },
+      "stamina": 10,
+      "knockback": null,
+      "skill": "swords",
+      "backstab": null,
       "quantity": null,
       "tier": 4,
       "biome": "swamp",
       "description": "The straight line between life and death runs along the edge of this blade.",
+      "blockArmor": 21,
       "names": {
         "cs": "Železný meč",
         "de": "Eisenschwert",
         "fr": "Épée en fer",
         "ru": "Железный меч"
+      }
+    },
+    "iron-tower-shield": {
+      "id": "iron-tower-shield",
+      "name": "Iron Tower Shield",
+      "wiki": "https://valheim.weirdgloop.org/w/Iron_Tower_Shield",
+      "gameId": "ShieldIronTower",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Tower",
+      "image": "img/weapons/iron-tower-shield.png",
+      "station": "Forge",
+      "stationLevel": 2,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 15
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 20
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 10
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Finewood",
+          "amount": 15
+        },
+        {
+          "name": "Iron",
+          "amount": 10
+        }
+      ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
+      "quantity": null,
+      "tier": 4,
+      "biome": "swamp",
+      "description": "A tall shield of strong iron.",
+      "weight": 4,
+      "blockArmor": 52,
+      "blockForce": 100,
+      "recommendable": false,
+      "note": null,
+      "names": {
+        "cs": "Pavéza ze železa",
+        "fr": "Écu en fer",
+        "ru": "Железный башенный щит"
       }
     },
     "ironhead-arrow": {
@@ -14547,17 +20816,29 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 2,
       "maxQuality": 1,
-      "damage": {
-        "pierce": 42
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 42
-      },
-      "stamina": null,
-      "knockback": null,
-      "skill": "bows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 8
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 1
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -14572,6 +20853,17 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 42
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 42
+      },
+      "stamina": null,
+      "knockback": null,
+      "skill": "bows",
+      "backstab": null,
       "quantity": 20,
       "tier": 4,
       "biome": "swamp",
@@ -14594,24 +20886,97 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "slash": 80,
-        "chop": 70,
-        "poison": 40
-      },
-      "perLevel": {
-        "slash": 5,
-        "poison": 0
-      },
-      "damageMax": {
-        "slash": 95,
-        "chop": 70,
-        "poison": 40
-      },
-      "stamina": 16,
-      "knockback": null,
-      "skill": "axes",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 5
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 15
+            },
+            {
+              "item": "bilebag",
+              "name": "Bilebag",
+              "amount": 3
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 10
+            },
+            {
+              "item": "bilebag",
+              "name": "Bilebag",
+              "amount": 1
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 20
+            },
+            {
+              "item": "bilebag",
+              "name": "Bilebag",
+              "amount": 2
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 40
+            },
+            {
+              "item": "bilebag",
+              "name": "Bilebag",
+              "amount": 4
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Yggdrasil Wood",
@@ -14630,10 +20995,31 @@ window.VC_DATA = {
           "amount": 10
         }
       ],
+      "damage": {
+        "slash": 80,
+        "chop": 70,
+        "poison": 40
+      },
+      "perLevel": {
+        "slash": 5,
+        "poison": 0
+      },
+      "damageMax": {
+        "slash": 95,
+        "chop": 70,
+        "poison": 40
+      },
+      "stamina": 16,
+      "knockback": null,
+      "skill": "axes",
+      "backstab": null,
       "quantity": null,
       "tier": 7,
       "biome": "mistlands",
       "description": "Not even the giants of old could weather the poisonous bite of this weapon.",
+      "weight": 2,
+      "blockArmor": 48,
+      "blockForce": 20,
       "names": {
         "cs": "Zhouba Jótunů",
         "de": "Jotun-Fluch",
@@ -14653,6 +21039,91 @@ window.VC_DATA = {
       "station": "Black forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "flametal-mace",
+              "name": "Flametal Mace",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 16
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 32
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Flametal Mace",
+          "amount": 1
+        },
+        {
+          "name": "Flametal",
+          "amount": 8
+        },
+        {
+          "name": "Jade",
+          "amount": 1
+        }
+      ],
       "damage": {
         "blunt": 135,
         "poison": 10
@@ -14668,24 +21139,12 @@ window.VC_DATA = {
       "knockback": 100,
       "skill": "clubs",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Flametal Mace",
-          "amount": 1
-        },
-        {
-          "name": "Flametal",
-          "amount": 8
-        },
-        {
-          "name": "Jade",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "If the force of your blow isn't enough to knock your enemies to the ground, perhaps the primal roots will hold them down for you.",
+      "blockArmor": 57,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Клоссен"
       }
@@ -14702,17 +21161,92 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "slash": 150
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 150
-      },
-      "stamina": 20,
-      "knockback": 55,
-      "skill": "swords",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 30
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 20
+            },
+            {
+              "item": "scale-hide",
+              "name": "Scale Hide",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 15
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 10
+            },
+            {
+              "item": "scale-hide",
+              "name": "Scale Hide",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 30
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 20
+            },
+            {
+              "item": "scale-hide",
+              "name": "Scale Hide",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 60
+            },
+            {
+              "item": "bronze",
+              "name": "Bronze",
+              "amount": 40
+            },
+            {
+              "item": "scale-hide",
+              "name": "Scale Hide",
+              "amount": 20
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Iron",
@@ -14727,10 +21261,22 @@ window.VC_DATA = {
           "amount": 5
         }
       ],
+      "damage": {
+        "slash": 150
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 150
+      },
+      "stamina": 20,
+      "knockback": 55,
+      "skill": "swords",
+      "backstab": null,
       "quantity": null,
       "tier": 7,
       "biome": "mistlands",
       "description": "As deadly as it is shiny, and it's very shiny.",
+      "blockArmor": 52,
       "names": {
         "cs": "Krom",
         "ru": "Кром"
@@ -14748,6 +21294,97 @@ window.VC_DATA = {
       "station": "Frost Foundry",
       "stationLevel": 3,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "cast-lightning-strike",
+              "name": "Cast Lightning Strike",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 5
+            },
+            {
+              "item": "nornathread",
+              "name": "Nornathread",
+              "amount": 2
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "nornathread",
+              "name": "Nornathread",
+              "amount": 4
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nornathread",
+              "name": "Nornathread",
+              "amount": 8
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Cast Lightning Strike",
+          "amount": 1
+        },
+        {
+          "name": "Liquid Frost",
+          "amount": 5
+        }
+      ],
       "damage": {
         "lightning": 300
       },
@@ -14759,20 +21396,13 @@ window.VC_DATA = {
       "knockback": 10,
       "skill": "elemental-magic",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Cast Lightning Strike",
-          "amount": 1
-        },
-        {
-          "name": "Liquid Frost",
-          "amount": 5
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "Simply point, and you shall summon the wrath of the sky.",
+      "weight": 0.3,
+      "blockArmor": 48,
+      "blockForce": 20,
       "names": {}
     },
     "mistwalker": {
@@ -14787,23 +21417,97 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "slash": 75,
-        "frost": 40
-      },
-      "perLevel": {
-        "slash": 0,
-        "frost": 6,
-        "spirit": 5
-      },
-      "damageMax": {
-        "slash": 75,
-        "frost": 58
-      },
-      "stamina": 16,
-      "knockback": null,
-      "skill": "swords",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 3
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 15
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 10
+            },
+            {
+              "item": "wisp",
+              "name": "Wisp",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 10
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 5
+            },
+            {
+              "item": "wisp",
+              "name": "Wisp",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 20
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 10
+            },
+            {
+              "item": "wisp",
+              "name": "Wisp",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 40
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 20
+            },
+            {
+              "item": "wisp",
+              "name": "Wisp",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Finewood",
@@ -14822,10 +21526,30 @@ window.VC_DATA = {
           "amount": 3
         }
       ],
+      "damage": {
+        "slash": 75,
+        "frost": 40
+      },
+      "perLevel": {
+        "slash": 0,
+        "frost": 6,
+        "spirit": 5
+      },
+      "damageMax": {
+        "slash": 75,
+        "frost": 58
+      },
+      "stamina": 16,
+      "knockback": null,
+      "skill": "swords",
+      "backstab": null,
       "quantity": null,
       "tier": 7,
       "biome": "mistlands",
       "description": "The faint glow seems to slice through the mist.",
+      "blockArmor": 48,
+      "blockForce": 20,
+      "parryBonus": 2,
       "names": {
         "cs": "Mlhošlap",
         "de": "Nebelbrecher",
@@ -14845,6 +21569,34 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 4,
       "maxQuality": 1,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "needle",
+              "name": "Needle",
+              "amount": 4
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Needle",
+          "amount": 4
+        },
+        {
+          "name": "Feathers",
+          "amount": 2
+        }
+      ],
       "damage": {
         "pierce": 62
       },
@@ -14856,16 +21608,6 @@ window.VC_DATA = {
       "knockback": 15,
       "skill": "bows",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Needle",
-          "amount": 4
-        },
-        {
-          "name": "Feathers",
-          "amount": 2
-        }
-      ],
       "quantity": 20,
       "tier": 6,
       "biome": "plains",
@@ -14888,17 +21630,77 @@ window.VC_DATA = {
       "station": "Black forge",
       "stationLevel": 3,
       "maxQuality": 4,
-      "damage": {
-        "slash": 135
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 135
-      },
-      "stamina": 16,
-      "knockback": 40,
-      "skill": "swords",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 3
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 12
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 10
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 20
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 40
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 8
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Charred Bone",
@@ -14913,10 +21715,23 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "slash": 135
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 135
+      },
+      "stamina": 16,
+      "knockback": 40,
+      "skill": "swords",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Named after the evil dragon that dwells by the roots of the world tree, this sword heralds doom for those who cross its path.",
+      "blockArmor": 57,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Нидхёгг"
       }
@@ -14933,17 +21748,77 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "slash": 135
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 135
-      },
-      "stamina": 16,
-      "knockback": 40,
-      "skill": "swords",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "nidhogg",
+              "name": "Nidhögg",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 6
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 6
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 12
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 24
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Nidhögg",
@@ -14958,10 +21833,23 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "slash": 135
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 135
+      },
+      "stamina": 16,
+      "knockback": 40,
+      "skill": "swords",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "If you bleed, your foes are sure to do so as well.",
+      "blockArmor": 57,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Кровоточащий нидхёгг"
       }
@@ -14978,19 +21866,77 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "slash": 135,
-        "poison": 10
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 135,
-        "poison": 10
-      },
-      "stamina": 16,
-      "knockback": 40,
-      "skill": "swords",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "nidhogg",
+              "name": "Nidhögg",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 6
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 6
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 12
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 24
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Nidhögg",
@@ -15005,10 +21951,25 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "slash": 135,
+        "poison": 10
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 135,
+        "poison": 10
+      },
+      "stamina": 16,
+      "knockback": 40,
+      "skill": "swords",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Tangle your foes in roots, like the namesake of this blade.",
+      "blockArmor": 57,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Первобытный нидхёгг"
       }
@@ -15025,19 +21986,77 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "slash": 135,
-        "lightning": 10
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 135,
-        "lightning": 10
-      },
-      "stamina": 16,
-      "knockback": 40,
-      "skill": "swords",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "nidhogg",
+              "name": "Nidhögg",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 6
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 6
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 12
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 24
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Nidhögg",
@@ -15052,10 +22071,25 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "slash": 135,
+        "lightning": 10
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 135,
+        "lightning": 10
+      },
+      "stamina": 16,
+      "knockback": 40,
+      "skill": "swords",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "The power of lightning dances along the blade of this sword, a promise of the pain to come.",
+      "blockArmor": 57,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Громовой нидхёгг"
       }
@@ -15072,6 +22106,82 @@ window.VC_DATA = {
       "station": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "cast-nord-atgeir",
+              "name": "Cast Nord Atgeir",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 20
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Cast Nord Atgeir",
+          "amount": 1
+        },
+        {
+          "name": "Liquid Frost",
+          "amount": 5
+        }
+      ],
       "damage": {
         "pierce": 182
       },
@@ -15085,20 +22195,13 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "polearms",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Cast Nord Atgeir",
-          "amount": 1
-        },
-        {
-          "name": "Liquid Frost",
-          "amount": 5
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "The edge of this weapon is as deadly as it is shiny.",
+      "weight": 2.5,
+      "blockArmor": 88,
+      "movementSpeed": "-5%",
       "names": {}
     },
     "nord-axe": {
@@ -15113,6 +22216,82 @@ window.VC_DATA = {
       "station": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "cast-nord-axe",
+              "name": "Cast Nord Axe",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 20
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Cast Nord Axe",
+          "amount": 1
+        },
+        {
+          "name": "Liquid Frost",
+          "amount": 5
+        }
+      ],
       "damage": {
         "slash": 176,
         "chop": 90
@@ -15128,20 +22307,13 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "axes",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Cast Nord Axe",
-          "amount": 1
-        },
-        {
-          "name": "Liquid Frost",
-          "amount": 5
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "A finely detailed axe, for finely cutting down your enemies.",
+      "weight": 2,
+      "blockArmor": 66,
+      "movementSpeed": "-5%",
       "names": {}
     },
     "nord-bow": {
@@ -15156,6 +22328,82 @@ window.VC_DATA = {
       "station": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "cast-nord-bow",
+              "name": "Cast Nord Bow",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 20
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Cast Nord Bow",
+          "amount": 1
+        },
+        {
+          "name": "Liquid Frost",
+          "amount": 5
+        }
+      ],
       "damage": {
         "pierce": 100,
         "spirit": 10
@@ -15172,9 +22420,79 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "bows",
       "backstab": null,
+      "quantity": null,
+      "tier": 9,
+      "biome": "deep-north",
+      "description": "This bow shall find its target with a golden precision.",
+      "weight": 1.5,
+      "movementSpeed": "-5%",
+      "names": {}
+    },
+    "nord-buckler": {
+      "id": "nord-buckler",
+      "name": "Nord Buckler",
+      "wiki": "https://valheim.weirdgloop.org/w/Nord_Buckler",
+      "gameId": "ShieldGoldBuckler",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Buckler",
+      "image": "img/weapons/nord-buckler.png",
+      "station": "Frost Foundry",
+      "stationLevel": 4,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "cast-nord-buckler",
+              "name": "Cast Nord Buckler",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 5
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 10
+            }
+          ]
+        }
+      ],
       "materials": [
         {
-          "name": "Cast Nord Bow",
+          "name": "Cast Nord Buckler",
           "amount": 1
         },
         {
@@ -15182,10 +22500,23 @@ window.VC_DATA = {
           "amount": 5
         }
       ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
-      "description": "This bow shall find its target with a golden precision.",
+      "description": "Stay safe, and do so in style.",
+      "weight": 4,
+      "blockArmor": 88,
+      "blockForce": 30,
+      "movementSpeed": "-5%",
+      "recommendable": false,
+      "note": null,
       "names": {}
     },
     "nord-crossbow": {
@@ -15200,6 +22531,82 @@ window.VC_DATA = {
       "station": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "cast-nord-crossbow",
+              "name": "Cast Nord Crossbow",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 20
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Cast Nord Crossbow",
+          "amount": 1
+        },
+        {
+          "name": "Liquid Frost",
+          "amount": 5
+        }
+      ],
       "damage": {
         "pierce": 264,
         "chop": 180
@@ -15216,20 +22623,11 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "crossbows",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Cast Nord Crossbow",
-          "amount": 1
-        },
-        {
-          "name": "Liquid Frost",
-          "amount": 5
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "An incredible force is bound to this weapon, waiting to be unleashed.",
+      "movementSpeed": "-5%",
       "names": {}
     },
     "nord-dagger": {
@@ -15244,6 +22642,82 @@ window.VC_DATA = {
       "station": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "cast-nord-dagger",
+              "name": "Cast Nord Dagger",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 20
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Cast Nord Dagger",
+          "amount": 1
+        },
+        {
+          "name": "Liquid Frost",
+          "amount": 5
+        }
+      ],
       "damage": {
         "slash": 75,
         "pierce": 75
@@ -15260,20 +22734,11 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "knives",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Cast Nord Dagger",
-          "amount": 1
-        },
-        {
-          "name": "Liquid Frost",
-          "amount": 5
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "A flash of gold is the last thing your foes will ever see.",
+      "movementSpeed": "0%",
       "names": {}
     },
     "nord-greataxe": {
@@ -15288,6 +22753,82 @@ window.VC_DATA = {
       "station": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "cast-nord-greataxe",
+              "name": "Cast Nord Greataxe",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 20
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Cast Nord Greataxe",
+          "amount": 1
+        },
+        {
+          "name": "Liquid Frost",
+          "amount": 5
+        }
+      ],
       "damage": {
         "slash": 188,
         "chop": 40
@@ -15304,9 +22845,79 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "axes",
       "backstab": null,
+      "quantity": null,
+      "tier": 9,
+      "biome": "deep-north",
+      "description": "A mighty axe fit for a mighty warrior.",
+      "blockArmor": 76,
+      "movementSpeed": "-20%",
+      "names": {}
+    },
+    "nord-greatshield": {
+      "id": "nord-greatshield",
+      "name": "Nord Greatshield",
+      "wiki": "https://valheim.weirdgloop.org/w/Nord_Greatshield",
+      "gameId": "ShieldGoldTower",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Tower",
+      "image": "img/weapons/nord-greatshield.png",
+      "station": "Frost Foundry",
+      "stationLevel": 4,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "cast-nord-greatshield",
+              "name": "Cast Nord Greatshield",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 20
+            }
+          ]
+        }
+      ],
       "materials": [
         {
-          "name": "Cast Nord Greataxe",
+          "name": "Cast Nord Greatshield",
           "amount": 1
         },
         {
@@ -15314,10 +22925,23 @@ window.VC_DATA = {
           "amount": 5
         }
       ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
-      "description": "A mighty axe fit for a mighty warrior.",
+      "description": "Stay safe, and do so in style.",
+      "weight": 5,
+      "blockArmor": 158,
+      "blockForce": 150,
+      "movementSpeed": "-10%",
+      "recommendable": false,
+      "note": null,
       "names": {}
     },
     "nord-greatsword": {
@@ -15332,6 +22956,82 @@ window.VC_DATA = {
       "station": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "cast-nord-greatsword",
+              "name": "Cast Nord Greatsword",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "frozen-branch",
+              "name": "Frozen Branch",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "frozen-branch",
+              "name": "Frozen Branch",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "frozen-branch",
+              "name": "Frozen Branch",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Cast Nord Greatsword",
+          "amount": 1
+        },
+        {
+          "name": "Liquid Frost",
+          "amount": 5
+        }
+      ],
       "damage": {
         "slash": 210
       },
@@ -15345,20 +23045,11 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "swords",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Cast Nord Greatsword",
-          "amount": 1
-        },
-        {
-          "name": "Liquid Frost",
-          "amount": 5
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "A striking weapon, both visually and lethally.",
+      "blockArmor": 76,
       "names": {}
     },
     "nord-knucklechains": {
@@ -15373,6 +23064,82 @@ window.VC_DATA = {
       "station": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "cast-nord-knucklechains",
+              "name": "Cast Nord Knucklechains",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 20
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Cast Nord Knucklechains",
+          "amount": 1
+        },
+        {
+          "name": "Liquid Frost",
+          "amount": 5
+        }
+      ],
       "damage": {
         "blunt": 114
       },
@@ -15386,16 +23153,6 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "fists",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Cast Nord Knucklechains",
-          "amount": 1
-        },
-        {
-          "name": "Liquid Frost",
-          "amount": 5
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
@@ -15414,6 +23171,82 @@ window.VC_DATA = {
       "station": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "cast-nord-mace",
+              "name": "Cast Nord Mace",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 20
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Cast Nord Mace",
+          "amount": 1
+        },
+        {
+          "name": "Liquid Frost",
+          "amount": 5
+        }
+      ],
       "damage": {
         "blunt": 170
       },
@@ -15427,9 +23260,78 @@ window.VC_DATA = {
       "knockback": 90,
       "skill": "clubs",
       "backstab": null,
+      "quantity": null,
+      "tier": 9,
+      "biome": "deep-north",
+      "description": "Hit hard and fast, and leave your foe no time to recover.",
+      "blockArmor": 66,
+      "names": {}
+    },
+    "nord-shield": {
+      "id": "nord-shield",
+      "name": "Nord Shield",
+      "wiki": "https://valheim.weirdgloop.org/w/Nord_Shield",
+      "gameId": "ShieldGold",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Round",
+      "image": "img/weapons/nord-shield.png",
+      "station": "Frost Foundry",
+      "stationLevel": 4,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "cast-nord-shield",
+              "name": "Cast Nord Shield",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 8
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 16
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 10
+            }
+          ]
+        }
+      ],
       "materials": [
         {
-          "name": "Cast Nord Mace",
+          "name": "Cast Nord Shield",
           "amount": 1
         },
         {
@@ -15437,10 +23339,23 @@ window.VC_DATA = {
           "amount": 5
         }
       ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
-      "description": "Hit hard and fast, and leave your foe no time to recover.",
+      "description": "Stay safe, and do so in style.",
+      "weight": 5,
+      "blockArmor": 132,
+      "blockForce": 50,
+      "movementSpeed": "-5%",
+      "recommendable": false,
+      "note": null,
       "names": {}
     },
     "nord-sledge": {
@@ -15455,6 +23370,82 @@ window.VC_DATA = {
       "station": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "cast-nord-sledge",
+              "name": "Cast Nord Sledge",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 20
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Cast Nord Sledge",
+          "amount": 1
+        },
+        {
+          "name": "Liquid Frost",
+          "amount": 5
+        }
+      ],
       "damage": {
         "blunt": 225
       },
@@ -15468,20 +23459,12 @@ window.VC_DATA = {
       "knockback": 210,
       "skill": "clubs",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Cast Nord Sledge",
-          "amount": 1
-        },
-        {
-          "name": "Liquid Frost",
-          "amount": 5
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "With this weapon, your blows will be heavy as that of a troll.",
+      "blockArmor": 52,
+      "movementSpeed": "-20%",
       "names": {}
     },
     "nord-spear": {
@@ -15496,6 +23479,82 @@ window.VC_DATA = {
       "station": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "cast-nord-spear",
+              "name": "Cast Nord Spear",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 20
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Cast Nord Spear",
+          "amount": 1
+        },
+        {
+          "name": "Liquid Frost",
+          "amount": 5
+        }
+      ],
       "damage": {
         "pierce": 170
       },
@@ -15509,20 +23568,12 @@ window.VC_DATA = {
       "knockback": 20,
       "skill": "spears",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Cast Nord Spear",
-          "amount": 1
-        },
-        {
-          "name": "Liquid Frost",
-          "amount": 5
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "A golden opportunity to strike.",
+      "blockArmor": 66,
+      "movementSpeed": "-5%",
       "names": {}
     },
     "nord-sword": {
@@ -15537,6 +23588,82 @@ window.VC_DATA = {
       "station": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "cast-nord-sword",
+              "name": "Cast Nord Sword",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "timberwood",
+              "name": "Timberwood",
+              "amount": 20
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Cast Nord Sword",
+          "amount": 1
+        },
+        {
+          "name": "Liquid Frost",
+          "amount": 5
+        }
+      ],
       "damage": {
         "slash": 170
       },
@@ -15550,20 +23677,12 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "swords",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Cast Nord Sword",
-          "amount": 1
-        },
-        {
-          "name": "Liquid Frost",
-          "amount": 5
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "Even in the faintest sunlight, this weapon glimmers.",
+      "blockArmor": 66,
+      "movementSpeed": "-5%",
       "names": {}
     },
     "northern-vengeance": {
@@ -15578,6 +23697,82 @@ window.VC_DATA = {
       "station": "Frost Foundry",
       "stationLevel": 3,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "cast-northern-vengeance",
+              "name": "Cast Northern Vengeance",
+              "amount": 1
+            },
+            {
+              "item": "liquid-frost",
+              "name": "Liquid Frost",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ice",
+              "name": "Ice",
+              "amount": 5
+            },
+            {
+              "item": "nornathread",
+              "name": "Nornathread",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "ice",
+              "name": "Ice",
+              "amount": 10
+            },
+            {
+              "item": "nornathread",
+              "name": "Nornathread",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "ice",
+              "name": "Ice",
+              "amount": 20
+            },
+            {
+              "item": "nornathread",
+              "name": "Nornathread",
+              "amount": 8
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Cast Northern Vengeance",
+          "amount": 1
+        },
+        {
+          "name": "Liquid Frost",
+          "amount": 5
+        }
+      ],
       "damage": {
         "frost": 75
       },
@@ -15591,20 +23786,13 @@ window.VC_DATA = {
       "knockback": 10,
       "skill": "blood-magic",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Cast Northern Vengeance",
-          "amount": 1
-        },
-        {
-          "name": "Liquid Frost",
-          "amount": 5
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "A caged snowflake, endless patterns emerging from within...",
+      "weight": 0.3,
+      "blockArmor": 48,
+      "blockForce": 20,
       "names": {}
     },
     "obsidian-arrow": {
@@ -15619,17 +23807,29 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 3,
       "maxQuality": 1,
-      "damage": {
-        "pierce": 52
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 52
-      },
-      "stamina": null,
-      "knockback": null,
-      "skill": "bows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 8
+            },
+            {
+              "item": "obsidian",
+              "name": "Obsidian",
+              "amount": 4
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -15644,6 +23844,17 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 52
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 52
+      },
+      "stamina": null,
+      "knockback": null,
+      "skill": "bows",
+      "backstab": null,
       "quantity": 20,
       "tier": 5,
       "biome": "mountain",
@@ -15666,17 +23877,29 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 1,
       "maxQuality": 1,
-      "damage": {
-        "blunt": 5
-      },
-      "perLevel": {},
-      "damageMax": {
-        "blunt": 5
-      },
-      "stamina": 8,
-      "knockback": 40,
-      "skill": null,
-      "backstab": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 5
+            },
+            {
+              "item": "ooze",
+              "name": "Ooze",
+              "amount": 5
+            },
+            {
+              "item": "resin",
+              "name": "Resin",
+              "amount": 3
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Leather Scraps",
@@ -15691,10 +23914,24 @@ window.VC_DATA = {
           "amount": 3
         }
       ],
+      "damage": {
+        "blunt": 5
+      },
+      "perLevel": {},
+      "damageMax": {
+        "blunt": 5
+      },
+      "stamina": 8,
+      "knockback": 40,
+      "skill": null,
+      "backstab": 3,
       "quantity": 5,
       "tier": 4,
       "biome": "swamp",
       "description": "The stench is unbearable...",
+      "weight": 0.3,
+      "blockArmor": 2,
+      "parryBonus": 1.5,
       "recommendable": false,
       "note": "Area/DoT damage not listed on the wiki",
       "names": {
@@ -15715,17 +23952,77 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 2,
       "maxQuality": 4,
-      "damage": {
-        "slash": 25
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 25
-      },
-      "stamina": 6,
-      "knockback": null,
-      "skill": "fists",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "bear-hide",
+              "name": "Bear Hide",
+              "amount": 2
+            },
+            {
+              "item": "bear-paw",
+              "name": "Bear Paw",
+              "amount": 2
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "bear-hide",
+              "name": "Bear Hide",
+              "amount": 2
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bear-hide",
+              "name": "Bear Hide",
+              "amount": 4
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bear-hide",
+              "name": "Bear Hide",
+              "amount": 6
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 6
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Bear Hide",
@@ -15740,6 +24037,17 @@ window.VC_DATA = {
           "amount": 4
         }
       ],
+      "damage": {
+        "slash": 25
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 25
+      },
+      "stamina": 6,
+      "knockback": null,
+      "skill": "fists",
+      "backstab": null,
       "quantity": null,
       "tier": 2,
       "biome": "black-forest",
@@ -15760,19 +24068,34 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 3,
       "maxQuality": 1,
-      "damage": {
-        "pierce": 26,
-        "poison": 52
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 26,
-        "poison": 52
-      },
-      "stamina": null,
-      "knockback": null,
-      "skill": "bows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 8
+            },
+            {
+              "item": "obsidian",
+              "name": "Obsidian",
+              "amount": 4
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            },
+            {
+              "item": "ooze",
+              "name": "Ooze",
+              "amount": 2
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -15791,6 +24114,19 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 26,
+        "poison": 52
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 26,
+        "poison": 52
+      },
+      "stamina": null,
+      "knockback": null,
+      "skill": "bows",
+      "backstab": null,
       "quantity": 20,
       "tier": 5,
       "biome": "mountain",
@@ -15813,22 +24149,82 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "blunt": 50,
-        "pierce": 45
-      },
-      "perLevel": {
-        "blunt": 0,
-        "pierce": 6
-      },
-      "damageMax": {
-        "blunt": 50,
-        "pierce": 63
-      },
-      "stamina": 14,
-      "knockback": 100,
-      "skill": "clubs",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 5
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 20
+            },
+            {
+              "item": "needle",
+              "name": "Needle",
+              "amount": 5
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 2
+            },
+            {
+              "item": "needle",
+              "name": "Needle",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 4
+            },
+            {
+              "item": "needle",
+              "name": "Needle",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 8
+            },
+            {
+              "item": "needle",
+              "name": "Needle",
+              "amount": 8
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Finewood",
@@ -15847,10 +24243,27 @@ window.VC_DATA = {
           "amount": 10
         }
       ],
+      "damage": {
+        "blunt": 50,
+        "pierce": 45
+      },
+      "perLevel": {
+        "blunt": 0,
+        "pierce": 6
+      },
+      "damageMax": {
+        "blunt": 50,
+        "pierce": 63
+      },
+      "stamina": 14,
+      "knockback": 100,
+      "skill": "clubs",
+      "backstab": null,
       "quantity": null,
       "tier": 6,
       "biome": "plains",
       "description": "A deadly weapon, bristling with fiendish spikes.",
+      "blockArmor": 39,
       "names": {
         "cs": "Pichlavý palcát",
         "de": "Stachelschwein",
@@ -15870,6 +24283,91 @@ window.VC_DATA = {
       "station": "Black forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "berserkir-axes",
+              "name": "Berserkir Axes",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 5
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 5
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 10
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 20
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Berserkir Axes",
+          "amount": 1
+        },
+        {
+          "name": "Flametal",
+          "amount": 5
+        },
+        {
+          "name": "Jade",
+          "amount": 1
+        }
+      ],
       "damage": {
         "slash": 140,
         "chop": 80,
@@ -15888,24 +24386,15 @@ window.VC_DATA = {
       "knockback": 20,
       "skill": "axes",
       "backstab": 3,
-      "materials": [
-        {
-          "name": "Berserkir Axes",
-          "amount": 1
-        },
-        {
-          "name": "Flametal",
-          "amount": 5
-        },
-        {
-          "name": "Jade",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Your most primal instincts take over, and the nature around you reaches out to aid you.",
+      "weight": 2,
+      "blockArmor": 57,
+      "blockForce": 20,
+      "parryBonus": 2,
+      "movementSpeed": "-5%",
       "names": {
         "cs": "Prvotní berserkské sekery",
         "de": "Urweltliche Berserkir-Äxte",
@@ -15925,6 +24414,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "slayer",
+              "name": "Slayer",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 15
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 15
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 30
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 60
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Slayer",
+          "amount": 1
+        },
+        {
+          "name": "Flametal",
+          "amount": 15
+        },
+        {
+          "name": "Jade",
+          "amount": 1
+        }
+      ],
       "damage": {
         "slash": 170,
         "poison": 10
@@ -15940,24 +24514,15 @@ window.VC_DATA = {
       "knockback": 55,
       "skill": "swords",
       "backstab": 3,
-      "materials": [
-        {
-          "name": "Slayer",
-          "amount": 1
-        },
-        {
-          "name": "Flametal",
-          "amount": 15
-        },
-        {
-          "name": "Jade",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "The blade works in tandem with the primal forces of the world, seeking death and slaughter.",
+      "weight": 4,
+      "blockArmor": 64,
+      "blockForce": 50,
+      "parryBonus": 2,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Первобытный убийца"
       }
@@ -15974,19 +24539,112 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 3,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 220,
-        "chop": 160
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 220,
-        "chop": 160
-      },
-      "stamina": null,
-      "knockback": null,
-      "skill": "crossbows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 10
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "morgen-sinew",
+              "name": "Morgen Sinew",
+              "amount": 2
+            },
+            {
+              "item": "bonemaw-tooth",
+              "name": "Bonemaw Tooth",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 5
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 4
+            },
+            {
+              "item": "morgen-sinew",
+              "name": "Morgen Sinew",
+              "amount": 1
+            },
+            {
+              "item": "bonemaw-tooth",
+              "name": "Bonemaw Tooth",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 10
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "morgen-sinew",
+              "name": "Morgen Sinew",
+              "amount": 2
+            },
+            {
+              "item": "bonemaw-tooth",
+              "name": "Bonemaw Tooth",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 20
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 16
+            },
+            {
+              "item": "morgen-sinew",
+              "name": "Morgen Sinew",
+              "amount": 4
+            },
+            {
+              "item": "bonemaw-tooth",
+              "name": "Bonemaw Tooth",
+              "amount": 16
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Ashwood",
@@ -16005,10 +24663,24 @@ window.VC_DATA = {
           "amount": 4
         }
       ],
+      "damage": {
+        "pierce": 220,
+        "chop": 160
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 220,
+        "chop": 160
+      },
+      "stamina": null,
+      "knockback": null,
+      "skill": "crossbows",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Rips your foes apart, simple as that.",
+      "blockForce": null,
       "names": {
         "ru": "Разрыватель"
       }
@@ -16025,6 +24697,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ash-fang",
+              "name": "Ash Fang",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 5
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 5
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 10
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 20
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Ash Fang",
+          "amount": 1
+        },
+        {
+          "name": "Flametal",
+          "amount": 5
+        },
+        {
+          "name": "Jade",
+          "amount": 1
+        }
+      ],
       "damage": {
         "pierce": 82,
         "poison": 10
@@ -16041,24 +24798,11 @@ window.VC_DATA = {
       "knockback": 25,
       "skill": "bows",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Ash Fang",
-          "amount": 1
-        },
-        {
-          "name": "Flametal",
-          "amount": 5
-        },
-        {
-          "name": "Jade",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Like the twisting branch was made to seek the sun, this bow was made to seek the slaughter.",
+      "blockArmor": 3,
       "names": {
         "ru": "Корневой клык"
       }
@@ -16075,19 +24819,77 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 220,
-        "poison": 10
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 220,
-        "poison": 10
-      },
-      "stamina": 1,
-      "knockback": null,
-      "skill": "crossbows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ripper",
+              "name": "Ripper",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 16
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 32
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Ripper",
@@ -16102,10 +24904,24 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "pierce": 220,
+        "poison": 10
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 220,
+        "poison": 10
+      },
+      "stamina": 1,
+      "knockback": null,
+      "skill": "crossbows",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "If the bolt doesn't pin your foe in place, the roots surging up from the ground surely will.",
+      "blockForce": null,
       "names": {
         "ru": "Корневой разрыватель"
       }
@@ -16122,6 +24938,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "slayer",
+              "name": "Slayer",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 15
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 15
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 30
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 60
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Slayer",
+          "amount": 1
+        },
+        {
+          "name": "Flametal",
+          "amount": 15
+        },
+        {
+          "name": "Iolite",
+          "amount": 1
+        }
+      ],
       "damage": {
         "slash": 170,
         "lightning": 10
@@ -16137,27 +25038,223 @@ window.VC_DATA = {
       "knockback": 55,
       "skill": "swords",
       "backstab": 3,
-      "materials": [
-        {
-          "name": "Slayer",
-          "amount": 1
-        },
-        {
-          "name": "Flametal",
-          "amount": 15
-        },
-        {
-          "name": "Iolite",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "The lightning bound into this blade is erratic, ever searching for something to strike.",
+      "weight": 4,
+      "blockArmor": 64,
+      "blockForce": 50,
+      "parryBonus": 2,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Грозный убийца"
       }
+    },
+    "serpent-scale-shield": {
+      "id": "serpent-scale-shield",
+      "name": "Serpent Scale Shield",
+      "wiki": "https://valheim.weirdgloop.org/w/Serpent_Scale_Shield",
+      "gameId": "ShieldSerpentscale",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Tower",
+      "image": "img/weapons/serpent-scale-shield.png",
+      "station": "Forge",
+      "stationLevel": 3,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 4
+            },
+            {
+              "item": "serpent-scale",
+              "name": "Serpent Scale",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 2
+            },
+            {
+              "item": "serpent-scale",
+              "name": "Serpent Scale",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 20
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 4
+            },
+            {
+              "item": "serpent-scale",
+              "name": "Serpent Scale",
+              "amount": 8
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Finewood",
+          "amount": 10
+        },
+        {
+          "name": "Iron",
+          "amount": 4
+        },
+        {
+          "name": "Serpent Scale",
+          "amount": 8
+        }
+      ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
+      "quantity": null,
+      "tier": 4,
+      "biome": "swamp",
+      "description": "A sturdy shield of overlapping scales.",
+      "blockArmor": 60,
+      "blockForce": 100,
+      "movementSpeed": "-10%",
+      "recommendable": false,
+      "note": null,
+      "names": {
+        "cs": "Štít z hadích šupin",
+        "fr": "Bouclier ophidien",
+        "ru": "Щит из змеиной чешуи"
+      }
+    },
+    "shield-of-roots": {
+      "id": "shield-of-roots",
+      "name": "Shield of Roots",
+      "wiki": "https://valheim.weirdgloop.org/w/Shield_of_Roots",
+      "gameId": "ShieldRoots",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Round",
+      "image": "img/weapons/shield-of-roots.png",
+      "station": "Workbench",
+      "stationLevel": 2,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "writhan-roots",
+              "name": "Writhan Roots",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 5
+            },
+            {
+              "item": "writhan-roots",
+              "name": "Writhan Roots",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "writhan-roots",
+              "name": "Writhan Roots",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Finewood",
+          "amount": 10
+        },
+        {
+          "name": "Writhan Roots",
+          "amount": 1
+        }
+      ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": 40,
+      "skill": "blocking",
+      "backstab": null,
+      "quantity": null,
+      "tier": 4,
+      "biome": "swamp",
+      "description": "Malleable roots have been twisted into a surprisingly sturdy shield.",
+      "weight": 4,
+      "blockArmor": 48,
+      "blockForce": 40,
+      "parryBonus": 1.5,
+      "movementSpeed": "0%",
+      "recommendable": false,
+      "note": null,
+      "names": {}
     },
     "silver-arrow": {
       "id": "silver-arrow",
@@ -16171,19 +25268,29 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 3,
       "maxQuality": 1,
-      "damage": {
-        "pierce": 52,
-        "spirit": 20
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 52,
-        "spirit": 20
-      },
-      "stamina": null,
-      "knockback": null,
-      "skill": "bows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 8
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 1
+            },
+            {
+              "item": "feathers",
+              "name": "Feathers",
+              "amount": 2
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -16198,6 +25305,19 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "pierce": 52,
+        "spirit": 20
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 52,
+        "spirit": 20
+      },
+      "stamina": null,
+      "knockback": null,
+      "skill": "bows",
+      "backstab": null,
       "quantity": 20,
       "tier": 5,
       "biome": "mountain",
@@ -16220,21 +25340,112 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 3,
       "maxQuality": 4,
-      "damage": {
-        "slash": 25,
-        "pierce": 25,
-        "spirit": 12
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 25,
-        "pierce": 25,
-        "spirit": 12
-      },
-      "stamina": 10,
-      "knockback": null,
-      "skill": "knives",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 2
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 10
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 3
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 1
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 5
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 1
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 2
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 10
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 4
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 20
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -16253,6 +25464,21 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "slash": 25,
+        "pierce": 25,
+        "spirit": 12
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 25,
+        "pierce": 25,
+        "spirit": 12
+      },
+      "stamina": 10,
+      "knockback": null,
+      "skill": "knives",
+      "backstab": null,
       "quantity": null,
       "tier": 5,
       "biome": "mountain",
@@ -16260,6 +25486,99 @@ window.VC_DATA = {
       "names": {
         "fr": "Couteau en argent",
         "ru": "Серебряный нож"
+      }
+    },
+    "silver-shield": {
+      "id": "silver-shield",
+      "name": "Silver Shield",
+      "wiki": "https://valheim.weirdgloop.org/w/Silver_Shield",
+      "gameId": "ShieldSilver",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Round",
+      "image": "img/weapons/silver-shield.png",
+      "station": "Forge",
+      "stationLevel": 3,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 20
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 8
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Finewood",
+          "amount": 10
+        },
+        {
+          "name": "Silver",
+          "amount": 8
+        }
+      ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
+      "quantity": null,
+      "tier": 5,
+      "biome": "mountain",
+      "description": "A shield of radiant silver.",
+      "blockArmor": 60,
+      "blockForce": 40,
+      "recommendable": false,
+      "note": null,
+      "names": {
+        "cs": "Stříbrný štít",
+        "fr": "Bouclier en argent",
+        "ru": "Серебряный щит"
       }
     },
     "silver-sword": {
@@ -16274,21 +25593,112 @@ window.VC_DATA = {
       "station": "Forge",
       "stationLevel": 3,
       "maxQuality": 4,
-      "damage": {
-        "slash": 75,
-        "spirit": 30
-      },
-      "perLevel": {
-        "spirit": 5
-      },
-      "damageMax": {
-        "slash": 75,
-        "spirit": 45
-      },
-      "stamina": 12,
-      "knockback": null,
-      "skill": "swords",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 2
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 40
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 3
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 1
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 20
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 1
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 2
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 40
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 6
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 4
+            },
+            {
+              "item": "silver",
+              "name": "Silver",
+              "amount": 80
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 12
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Wood",
@@ -16307,10 +25717,27 @@ window.VC_DATA = {
           "amount": 5
         }
       ],
+      "damage": {
+        "slash": 75,
+        "spirit": 30
+      },
+      "perLevel": {
+        "spirit": 5
+      },
+      "damageMax": {
+        "slash": 75,
+        "spirit": 45
+      },
+      "stamina": 12,
+      "knockback": null,
+      "skill": "swords",
+      "backstab": null,
       "quantity": null,
       "tier": 5,
       "biome": "mountain",
       "description": "Purest of metals, nothing unclean can abide its touch.",
+      "weight": 1,
+      "blockArmor": 30,
       "names": {
         "cs": "Stříbrný meč",
         "de": "Silberschwert",
@@ -16330,19 +25757,77 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "slash": 45,
-        "pierce": 45
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 45,
-        "pierce": 45
-      },
-      "stamina": 14,
-      "knockback": null,
-      "skill": "knives",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 4
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 10
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 4
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 8
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 16
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 16
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Finewood",
@@ -16357,6 +25842,19 @@ window.VC_DATA = {
           "amount": 10
         }
       ],
+      "damage": {
+        "slash": 45,
+        "pierce": 45
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 45,
+        "pierce": 45
+      },
+      "stamina": 14,
+      "knockback": null,
+      "skill": "knives",
+      "backstab": null,
       "quantity": null,
       "tier": 6,
       "biome": "plains",
@@ -16377,19 +25875,77 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "slash": 130,
-        "chop": 70
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 130,
-        "chop": 70
-      },
-      "stamina": 22,
-      "knockback": 70,
-      "skill": "axes",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 15
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 30
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 5
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 15
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 10
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 20
+            },
+            {
+              "item": "iron",
+              "name": "Iron",
+              "amount": 60
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Yggdrasil Wood",
@@ -16404,10 +25960,24 @@ window.VC_DATA = {
           "amount": 10
         }
       ],
+      "damage": {
+        "slash": 130,
+        "chop": 70
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 130,
+        "chop": 70
+      },
+      "stamina": 22,
+      "knockback": 70,
+      "skill": "axes",
+      "backstab": null,
       "quantity": null,
       "tier": 7,
       "biome": "mistlands",
       "description": "Will find skulls to split even in the thickest of mists.",
+      "blockArmor": 64,
       "names": {
         "ru": "Крушитель черепов"
       }
@@ -16424,19 +25994,92 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 3,
       "maxQuality": 4,
-      "damage": {
-        "slash": 170
-      },
-      "perLevel": {
-        "slash": 6
-      },
-      "damageMax": {
-        "slash": 188
-      },
-      "stamina": 20,
-      "knockback": 55,
-      "skill": "swords",
-      "backstab": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 30
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 5
+            },
+            {
+              "item": "morgen-sinew",
+              "name": "Morgen Sinew",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 15
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 5
+            },
+            {
+              "item": "morgen-sinew",
+              "name": "Morgen Sinew",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 30
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 10
+            },
+            {
+              "item": "morgen-sinew",
+              "name": "Morgen Sinew",
+              "amount": 6
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 60
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 20
+            },
+            {
+              "item": "morgen-sinew",
+              "name": "Morgen Sinew",
+              "amount": 12
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Flametal",
@@ -16451,10 +26094,28 @@ window.VC_DATA = {
           "amount": 3
         }
       ],
+      "damage": {
+        "slash": 170
+      },
+      "perLevel": {
+        "slash": 6
+      },
+      "damageMax": {
+        "slash": 188
+      },
+      "stamina": 20,
+      "knockback": 55,
+      "skill": "swords",
+      "backstab": 3,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "This mighty blade thirsts for the blood of foes.",
+      "weight": 4,
+      "blockArmor": 64,
+      "blockForce": 50,
+      "parryBonus": 2,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Убийца"
       }
@@ -16471,6 +26132,34 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 1,
       "maxQuality": 1,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "smoke-puff",
+              "name": "Smoke Puff",
+              "amount": 1
+            },
+            {
+              "item": "asksvin-bladder",
+              "name": "Asksvin Bladder",
+              "amount": 1
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Smoke Puff",
+          "amount": 1
+        },
+        {
+          "name": "Asksvin Bladder",
+          "amount": 1
+        }
+      ],
       "damage": {
         "blunt": 5
       },
@@ -16482,20 +26171,14 @@ window.VC_DATA = {
       "knockback": 40,
       "skill": null,
       "backstab": 3,
-      "materials": [
-        {
-          "name": "Smoke Puff",
-          "amount": 1
-        },
-        {
-          "name": "Asksvin Bladder",
-          "amount": 1
-        }
-      ],
       "quantity": 10,
       "tier": 8,
       "biome": "ashlands",
       "description": "Everyone knows you can't breathe in the smoke.",
+      "weight": 0.3,
+      "blockArmor": 2,
+      "blockForce": null,
+      "parryBonus": 1.5,
       "recommendable": false,
       "note": "Area/DoT damage not listed on the wiki",
       "names": {
@@ -16514,6 +26197,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 1,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "bone-fragments",
+              "name": "Bone Fragments",
+              "amount": 40
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 5
+            },
+            {
+              "item": "bone-fragments",
+              "name": "Bone Fragments",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 10
+            },
+            {
+              "item": "bone-fragments",
+              "name": "Bone Fragments",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "finewood",
+              "name": "Finewood",
+              "amount": 20
+            },
+            {
+              "item": "bone-fragments",
+              "name": "Bone Fragments",
+              "amount": 80
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Finewood",
+          "amount": 10
+        },
+        {
+          "name": "Bone Fragments",
+          "amount": 40
+        },
+        {
+          "name": "Refined Eitr",
+          "amount": 10
+        }
+      ],
       "damage": {
         "pierce": 72,
         "spirit": 5
@@ -16530,20 +26298,6 @@ window.VC_DATA = {
       "knockback": 25,
       "skill": "bows",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Finewood",
-          "amount": 10
-        },
-        {
-          "name": "Bone Fragments",
-          "amount": 40
-        },
-        {
-          "name": "Refined Eitr",
-          "amount": 10
-        }
-      ],
       "quantity": null,
       "tier": 7,
       "biome": "mistlands",
@@ -16564,17 +26318,112 @@ window.VC_DATA = {
       "station": "Black forge",
       "stationLevel": 3,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 135
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 135
-      },
-      "stamina": 16,
-      "knockback": 20,
-      "skill": "spears",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 10
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 6
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 2
+            },
+            {
+              "item": "bonemaw-tooth",
+              "name": "Bonemaw Tooth",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 5
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 6
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 1
+            },
+            {
+              "item": "bonemaw-tooth",
+              "name": "Bonemaw Tooth",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 10
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 12
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 2
+            },
+            {
+              "item": "bonemaw-tooth",
+              "name": "Bonemaw Tooth",
+              "amount": 6
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 20
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 24
+            },
+            {
+              "item": "asksvin-hide",
+              "name": "Asksvin Hide",
+              "amount": 4
+            },
+            {
+              "item": "bonemaw-tooth",
+              "name": "Bonemaw Tooth",
+              "amount": 12
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Ashwood",
@@ -16593,10 +26442,23 @@ window.VC_DATA = {
           "amount": 3
         }
       ],
+      "damage": {
+        "pierce": 135
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 135
+      },
+      "stamina": 16,
+      "knockback": 20,
+      "skill": "spears",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Split your enemies' hearts in two.",
+      "blockArmor": 57,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Расколнир"
       }
@@ -16613,17 +26475,77 @@ window.VC_DATA = {
       "station": "Black forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 135
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 135
-      },
-      "stamina": 16,
-      "knockback": 20,
-      "skill": "spears",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "splitnir",
+              "name": "Splitnir",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 6
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 6
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 12
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 24
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Splitnir",
@@ -16638,10 +26560,23 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "pierce": 135
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 135
+      },
+      "stamina": 16,
+      "knockback": 20,
+      "skill": "spears",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "A small sacrifice must be made for every battle...",
+      "blockArmor": 57,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Кровоточащий расколнир"
       }
@@ -16658,19 +26593,77 @@ window.VC_DATA = {
       "station": "Black forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 135,
-        "poison": 10
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 135,
-        "poison": 10
-      },
-      "stamina": 16,
-      "knockback": 20,
-      "skill": "spears",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "splitnir",
+              "name": "Splitnir",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 6
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 6
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 12
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 24
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Splitnir",
@@ -16685,10 +26678,25 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "pierce": 135,
+        "poison": 10
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 135,
+        "poison": 10
+      },
+      "stamina": 16,
+      "knockback": 20,
+      "skill": "spears",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Nature's forces burst through the ground wherever this spear strikes.",
+      "blockArmor": 57,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Первобытный расколнир"
       }
@@ -16705,17 +26713,77 @@ window.VC_DATA = {
       "station": "Black forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 135
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 135
-      },
-      "stamina": 16,
-      "knockback": 20,
-      "skill": "spears",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "splitnir",
+              "name": "Splitnir",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 6
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 6
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 12
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 24
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Splitnir",
@@ -16730,10 +26798,23 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "pierce": 135
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 135
+      },
+      "stamina": 16,
+      "knockback": 20,
+      "skill": "spears",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Let the crack of thunder split the air.",
+      "blockArmor": 57,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Штормовой расколнир"
       }
@@ -16750,6 +26831,106 @@ window.VC_DATA = {
       "station": "Galdr Table",
       "stationLevel": 1,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 20
+            },
+            {
+              "item": "surtling-core",
+              "name": "Surtling Core",
+              "amount": 4
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 10
+            },
+            {
+              "item": "surtling-core",
+              "name": "Surtling Core",
+              "amount": 2
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 20
+            },
+            {
+              "item": "surtling-core",
+              "name": "Surtling Core",
+              "amount": 4
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 40
+            },
+            {
+              "item": "surtling-core",
+              "name": "Surtling Core",
+              "amount": 8
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 32
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Yggdrasil Wood",
+          "amount": 20
+        },
+        {
+          "name": "Surtling Core",
+          "amount": 4
+        },
+        {
+          "name": "Refined Eitr",
+          "amount": 16
+        }
+      ],
       "damage": {
         "blunt": 120,
         "fire": 120
@@ -16765,24 +26946,13 @@ window.VC_DATA = {
       "knockback": 100,
       "skill": "elemental-magic",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Yggdrasil Wood",
-          "amount": 20
-        },
-        {
-          "name": "Surtling Core",
-          "amount": 4
-        },
-        {
-          "name": "Refined Eitr",
-          "amount": 16
-        }
-      ],
       "quantity": null,
       "tier": 7,
       "biome": "mistlands",
       "description": "The sweltering heat of Muspelheim seems almost pathetic when compared to what this staff can do...",
+      "weight": 0.3,
+      "blockArmor": 48,
+      "blockForce": 20,
       "names": {
         "ru": "Посох огня"
       }
@@ -16799,6 +26969,106 @@ window.VC_DATA = {
       "station": "Galdr Table",
       "stationLevel": 2,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 15
+            },
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 5
+            },
+            {
+              "item": "proustite-powder",
+              "name": "Proustite Powder",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 5
+            },
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 3
+            },
+            {
+              "item": "proustite-powder",
+              "name": "Proustite Powder",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 10
+            },
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 6
+            },
+            {
+              "item": "proustite-powder",
+              "name": "Proustite Powder",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 20
+            },
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 12
+            },
+            {
+              "item": "proustite-powder",
+              "name": "Proustite Powder",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Charred Bone",
+          "amount": 15
+        },
+        {
+          "name": "Ashwood",
+          "amount": 5
+        },
+        {
+          "name": "Proustite Powder",
+          "amount": 8
+        }
+      ],
       "damage": {
         "blunt": 12,
         "fire": 12
@@ -16814,24 +27084,15 @@ window.VC_DATA = {
       "knockback": 100,
       "skill": "elemental-magic",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Charred Bone",
-          "amount": 15
-        },
-        {
-          "name": "Ashwood",
-          "amount": 5
-        },
-        {
-          "name": "Proustite Powder",
-          "amount": 8
-        }
-      ],
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Only those with patience and focus will be able to harness the true power of this staff.",
+      "weight": 0.3,
+      "blockArmor": 48,
+      "blockForce": 20,
+      "parryBonus": 2,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Посох раскалывания"
       }
@@ -16848,19 +27109,92 @@ window.VC_DATA = {
       "station": "Galdr Table",
       "stationLevel": 1,
       "maxQuality": 4,
-      "damage": {
-        "frost": 30
-      },
-      "perLevel": {
-        "frost": 2
-      },
-      "damageMax": {
-        "frost": 36
-      },
-      "stamina": null,
-      "knockback": 10,
-      "skill": "elemental-magic",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 20
+            },
+            {
+              "item": "freeze-gland",
+              "name": "Freeze Gland",
+              "amount": 4
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 10
+            },
+            {
+              "item": "freeze-gland",
+              "name": "Freeze Gland",
+              "amount": 2
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 8
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 20
+            },
+            {
+              "item": "freeze-gland",
+              "name": "Freeze Gland",
+              "amount": 4
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 16
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "yggdrasil-wood",
+              "name": "Yggdrasil Wood",
+              "amount": 40
+            },
+            {
+              "item": "freeze-gland",
+              "name": "Freeze Gland",
+              "amount": 8
+            },
+            {
+              "item": "refined-eitr",
+              "name": "Refined Eitr",
+              "amount": 32
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Yggdrasil Wood",
@@ -16875,10 +27209,28 @@ window.VC_DATA = {
           "amount": 16
         }
       ],
+      "damage": {
+        "frost": 30
+      },
+      "perLevel": {
+        "frost": 2
+      },
+      "damageMax": {
+        "frost": 36
+      },
+      "stamina": null,
+      "knockback": 10,
+      "skill": "elemental-magic",
+      "backstab": null,
       "quantity": null,
       "tier": 7,
       "biome": "mistlands",
       "description": "A staff as cold as the three-year winter that will herald the end of times.",
+      "weight": 0.3,
+      "blockArmor": 48,
+      "blockForce": 20,
+      "parryBonus": 2,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Посох льда"
       }
@@ -16895,22 +27247,112 @@ window.VC_DATA = {
       "station": "Galdr Table",
       "stationLevel": 2,
       "maxQuality": 4,
-      "damage": {
-        "blunt": 20,
-        "poison": 20
-      },
-      "perLevel": {
-        "blunt": 20,
-        "poison": 20
-      },
-      "damageMax": {
-        "blunt": 80,
-        "poison": 80
-      },
-      "stamina": null,
-      "knockback": null,
-      "skill": "elemental-magic",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 15
+            },
+            {
+              "item": "fiddlehead",
+              "name": "Fiddlehead",
+              "amount": 10
+            },
+            {
+              "item": "celestial-feather",
+              "name": "Celestial Feather",
+              "amount": 3
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 5
+            },
+            {
+              "item": "fiddlehead",
+              "name": "Fiddlehead",
+              "amount": 2
+            },
+            {
+              "item": "celestial-feather",
+              "name": "Celestial Feather",
+              "amount": 3
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 10
+            },
+            {
+              "item": "fiddlehead",
+              "name": "Fiddlehead",
+              "amount": 4
+            },
+            {
+              "item": "celestial-feather",
+              "name": "Celestial Feather",
+              "amount": 6
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "ashwood",
+              "name": "Ashwood",
+              "amount": 20
+            },
+            {
+              "item": "fiddlehead",
+              "name": "Fiddlehead",
+              "amount": 8
+            },
+            {
+              "item": "celestial-feather",
+              "name": "Celestial Feather",
+              "amount": 12
+            },
+            {
+              "item": "jade",
+              "name": "Jade",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Ashwood",
@@ -16929,10 +27371,30 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "blunt": 20,
+        "poison": 20
+      },
+      "perLevel": {
+        "blunt": 20,
+        "poison": 20
+      },
+      "damageMax": {
+        "blunt": 80,
+        "poison": 80
+      },
+      "stamina": null,
+      "knockback": null,
+      "skill": "elemental-magic",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Ancient natural forces lie curled and dormant within this staff, ready to be unleashed.",
+      "weight": 0.3,
+      "blockArmor": 48,
+      "parryBonus": 2,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Посох дикой природы"
       }
@@ -16949,19 +27411,107 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 2,
       "maxQuality": 4,
-      "damage": {
-        "blunt": 20,
-        "pierce": 5
-      },
-      "perLevel": {},
-      "damageMax": {
-        "blunt": 20,
-        "pierce": 5
-      },
-      "stamina": 12,
-      "knockback": 150,
-      "skill": "clubs",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "corewood",
+              "name": "Corewood",
+              "amount": 20
+            },
+            {
+              "item": "deer-trophy",
+              "name": "Deer Trophy",
+              "amount": 5
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "corewood",
+              "name": "Corewood",
+              "amount": 5
+            },
+            {
+              "item": "deer-trophy",
+              "name": "Deer Trophy",
+              "amount": 2
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 1
+            },
+            {
+              "item": "bone-fragments",
+              "name": "Bone Fragments",
+              "amount": 10
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "corewood",
+              "name": "Corewood",
+              "amount": 10
+            },
+            {
+              "item": "deer-trophy",
+              "name": "Deer Trophy",
+              "amount": 4
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            },
+            {
+              "item": "bone-fragments",
+              "name": "Bone Fragments",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "corewood",
+              "name": "Corewood",
+              "amount": 20
+            },
+            {
+              "item": "deer-trophy",
+              "name": "Deer Trophy",
+              "amount": 8
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            },
+            {
+              "item": "bone-fragments",
+              "name": "Bone Fragments",
+              "amount": 40
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Corewood",
@@ -16976,10 +27526,24 @@ window.VC_DATA = {
           "amount": 2
         }
       ],
+      "damage": {
+        "blunt": 20,
+        "pierce": 5
+      },
+      "perLevel": {},
+      "damageMax": {
+        "blunt": 20,
+        "pierce": 5
+      },
+      "stamina": 12,
+      "knockback": 150,
+      "skill": "clubs",
+      "backstab": null,
       "quantity": null,
       "tier": 2,
       "biome": "black-forest",
       "description": "A weapon worthy of the Gods! If you get hit with this, you'll know it…",
+      "blockArmor": 4,
       "names": {
         "cs": "Jelení palice",
         "fr": "Brise-cerf",
@@ -16998,6 +27562,67 @@ window.VC_DATA = {
       "station": "Player crafting menu",
       "stationLevel": 1,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 5
+            },
+            {
+              "item": "stone",
+              "name": "Stone",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "stone",
+              "name": "Stone",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "stone",
+              "name": "Stone",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "stone",
+              "name": "Stone",
+              "amount": 8
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Wood",
+          "amount": 5
+        },
+        {
+          "name": "Stone",
+          "amount": 4
+        }
+      ],
       "damage": {
         "slash": 15,
         "chop": 20
@@ -17011,20 +27636,12 @@ window.VC_DATA = {
       "knockback": 50,
       "skill": "axes",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Wood",
-          "amount": 5
-        },
-        {
-          "name": "Stone",
-          "amount": 4
-        }
-      ],
       "quantity": null,
       "tier": 1,
       "biome": "meadows",
       "description": "A crude axe for tree-felling.",
+      "weight": 1.5,
+      "blockArmor": 3,
       "names": {
         "cs": "Kamenná sekera",
         "de": "Steinaxt",
@@ -17043,6 +27660,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ash-fang",
+              "name": "Ash Fang",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 5
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 5
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 10
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 20
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Ash Fang",
+          "amount": 1
+        },
+        {
+          "name": "Flametal",
+          "amount": 5
+        },
+        {
+          "name": "Iolite",
+          "amount": 1
+        }
+      ],
       "damage": {
         "pierce": 82,
         "lightning": 10
@@ -17059,20 +27761,6 @@ window.VC_DATA = {
       "knockback": 25,
       "skill": "bows",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Ash Fang",
-          "amount": 1
-        },
-        {
-          "name": "Flametal",
-          "amount": 5
-        },
-        {
-          "name": "Iolite",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
@@ -17093,19 +27781,77 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 220,
-        "lightning": 10
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 220,
-        "lightning": 10
-      },
-      "stamina": 1,
-      "knockback": null,
-      "skill": "crossbows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ripper",
+              "name": "Ripper",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 16
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 32
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Ripper",
@@ -17120,10 +27866,24 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "pierce": 220,
+        "lightning": 10
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 220,
+        "lightning": 10
+      },
+      "stamina": 1,
+      "knockback": null,
+      "skill": "crossbows",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "The bolts will tear through your enemies like a particularly nasty gale.",
+      "blockForce": null,
       "names": {
         "ru": "Штормовой разрыватель"
       }
@@ -17140,6 +27900,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "flametal-mace",
+              "name": "Flametal Mace",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 16
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 32
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Flametal Mace",
+          "amount": 1
+        },
+        {
+          "name": "Flametal",
+          "amount": 8
+        },
+        {
+          "name": "Iolite",
+          "amount": 1
+        }
+      ],
       "damage": {
         "blunt": 135,
         "lightning": 10
@@ -17155,24 +28000,12 @@ window.VC_DATA = {
       "knockback": 100,
       "skill": "clubs",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Flametal Mace",
-          "amount": 1
-        },
-        {
-          "name": "Flametal",
-          "amount": 8
-        },
-        {
-          "name": "Iolite",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Particularly effective on cloudy mornings.",
+      "blockArmor": 57,
+      "movementSpeed": "-5%",
       "names": {
         "cs": "Bouřlivá hvězda",
         "de": "Sturmstern",
@@ -17192,6 +28025,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-atgeir",
+              "name": "Nord Atgeir",
+              "amount": 1
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Atgeir",
+          "amount": 1
+        },
+        {
+          "name": "Thunderblood Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "pierce": 192,
         "lightning": 45
@@ -17208,24 +28126,13 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "polearms",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Atgeir",
-          "amount": 1
-        },
-        {
-          "name": "Thunderblood Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "The heavens shall sound their praise as you make your enemies bleed.",
+      "weight": 2.5,
+      "blockArmor": 88,
+      "movementSpeed": "-5%",
       "names": {}
     },
     "thunderblood-axe": {
@@ -17240,6 +28147,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-axe",
+              "name": "Nord Axe",
+              "amount": 1
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Axe",
+          "amount": 1
+        },
+        {
+          "name": "Thunderblood Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "slash": 186,
         "chop": 90,
@@ -17259,24 +28251,13 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "axes",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Axe",
-          "amount": 1
-        },
-        {
-          "name": "Thunderblood Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "As this axe cuts through wood and blood alike, a resounding thunderous crack shall be heard throughout the land.",
+      "weight": 2,
+      "blockArmor": 66,
+      "movementSpeed": "-5%",
       "names": {}
     },
     "thunderblood-bow": {
@@ -17291,6 +28272,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-bow",
+              "name": "Nord Bow",
+              "amount": 1
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Bow",
+          "amount": 1
+        },
+        {
+          "name": "Thunderblood Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "pierce": 110,
         "lightning": 45,
@@ -17310,24 +28376,11 @@ window.VC_DATA = {
       "knockback": 25,
       "skill": "bows",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Bow",
-          "amount": 1
-        },
-        {
-          "name": "Thunderblood Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "Lightning dances along the string, waiting to be unleashed.",
+      "weight": 1.5,
       "names": {}
     },
     "thunderblood-crossbow": {
@@ -17342,6 +28395,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-crossbow",
+              "name": "Nord Crossbow",
+              "amount": 1
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Crossbow",
+          "amount": 1
+        },
+        {
+          "name": "Thunderblood Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "pierce": 274,
         "chop": 180,
@@ -17361,24 +28499,11 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "crossbows",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Crossbow",
-          "amount": 1
-        },
-        {
-          "name": "Thunderblood Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "The bow is pulled taut with unreleased power, like the air before a lightning strike.",
+      "weight": 1.5,
       "names": {}
     },
     "thunderblood-dagger": {
@@ -17393,6 +28518,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-dagger",
+              "name": "Nord Dagger",
+              "amount": 1
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Dagger",
+          "amount": 1
+        },
+        {
+          "name": "Thunderblood Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "slash": 80,
         "pierce": 80,
@@ -17411,24 +28621,11 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "knives",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Dagger",
-          "amount": 1
-        },
-        {
-          "name": "Thunderblood Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "The blade is already bloodied, yet it sparks in want of more.",
+      "weight": 0.3,
       "names": {}
     },
     "thunderblood-greataxe": {
@@ -17443,6 +28640,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-greataxe",
+              "name": "Nord Greataxe",
+              "amount": 1
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Greataxe",
+          "amount": 1
+        },
+        {
+          "name": "Thunderblood Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "slash": 198,
         "chop": 40,
@@ -17462,24 +28744,13 @@ window.VC_DATA = {
       "knockback": 70,
       "skill": "axes",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Greataxe",
-          "amount": 1
-        },
-        {
-          "name": "Thunderblood Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "As you cleave your foes in two, their blood shall sing like a thunderstorm.",
+      "weight": 2.5,
+      "blockArmor": 76,
+      "movementSpeed": "-20%",
       "names": {}
     },
     "thunderblood-greatsword": {
@@ -17494,6 +28765,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-greatsword",
+              "name": "Nord Greatsword",
+              "amount": 1
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Greatsword",
+          "amount": 1
+        },
+        {
+          "name": "Thunderblood Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "slash": 220,
         "lightning": 45
@@ -17510,24 +28866,12 @@ window.VC_DATA = {
       "knockback": 55,
       "skill": "swords",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Greatsword",
-          "amount": 1
-        },
-        {
-          "name": "Thunderblood Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "Anyone wielding this weapon is sure to be very frightening indeed.",
+      "weight": 4,
+      "blockArmor": 76,
       "names": {}
     },
     "thunderblood-knucklechains": {
@@ -17542,6 +28886,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-knucklechains",
+              "name": "Nord Knucklechains",
+              "amount": 1
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Knucklechains",
+          "amount": 1
+        },
+        {
+          "name": "Thunderblood Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "blunt": 122,
         "lightning": 45
@@ -17558,24 +28987,11 @@ window.VC_DATA = {
       "knockback": 20,
       "skill": "fists",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Knucklechains",
-          "amount": 1
-        },
-        {
-          "name": "Thunderblood Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "A fury comes over you as you fight with these weapons, your blood roaring like thunder in your ears... It seems appropriate.",
+      "weight": 2,
       "names": {}
     },
     "thunderblood-mace": {
@@ -17590,6 +29006,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-mace",
+              "name": "Nord Mace",
+              "amount": 1
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Mace",
+          "amount": 1
+        },
+        {
+          "name": "Thunderblood Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "blunt": 180,
         "lightning": 45
@@ -17606,24 +29107,12 @@ window.VC_DATA = {
       "knockback": 90,
       "skill": "clubs",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Mace",
-          "amount": 1
-        },
-        {
-          "name": "Thunderblood Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "A weapon to rival perhaps even that of the thunder god himself...",
+      "weight": 2,
+      "blockArmor": 66,
       "names": {}
     },
     "thunderblood-sledge": {
@@ -17638,6 +29127,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-sledge",
+              "name": "Nord Sledge",
+              "amount": 1
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Sledge",
+          "amount": 1
+        },
+        {
+          "name": "Thunderblood Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "blunt": 235,
         "lightning": 45
@@ -17654,24 +29228,13 @@ window.VC_DATA = {
       "knockback": 210,
       "skill": "clubs",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Sledge",
-          "amount": 1
-        },
-        {
-          "name": "Thunderblood Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "As this weapon strikes true, the blow shall echo throughout the world...",
+      "weight": 4,
+      "blockArmor": 52,
+      "movementSpeed": "-20%",
       "names": {}
     },
     "thunderblood-spear": {
@@ -17686,6 +29249,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-spear",
+              "name": "Nord Spear",
+              "amount": 1
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Spear",
+          "amount": 1
+        },
+        {
+          "name": "Thunderblood Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "pierce": 180,
         "lightning": 45
@@ -17702,24 +29350,12 @@ window.VC_DATA = {
       "knockback": 20,
       "skill": "spears",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Spear",
-          "amount": 1
-        },
-        {
-          "name": "Thunderblood Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "May it strike like lightning, quick and fierce.",
+      "weight": 1.5,
+      "blockArmor": 66,
       "names": {}
     },
     "thunderblood-sword": {
@@ -17734,6 +29370,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "nord-sword",
+              "name": "Nord Sword",
+              "amount": 1
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 10
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 20
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "bloodgold",
+              "name": "Bloodgold",
+              "amount": 40
+            },
+            {
+              "item": "thunderblood-essence",
+              "name": "Thunderblood Essence",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Bloodgold",
+          "amount": 20
+        },
+        {
+          "name": "Nord Sword",
+          "amount": 1
+        },
+        {
+          "name": "Thunderblood Essence",
+          "amount": 1
+        }
+      ],
       "damage": {
         "slash": 180,
         "lightning": 45
@@ -17750,24 +29471,13 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "swords",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Bloodgold",
-          "amount": 20
-        },
-        {
-          "name": "Nord Sword",
-          "amount": 1
-        },
-        {
-          "name": "Thunderblood Essence",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 9,
       "biome": "deep-north",
       "description": "As the blood runs along the blade, it awakens the storm within.",
+      "weight": 0.8,
+      "blockArmor": 66,
+      "movementSpeed": "-5%",
       "names": {}
     },
     "thundering-berserkir-axes": {
@@ -17782,6 +29492,91 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "berserkir-axes",
+              "name": "Berserkir Axes",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 5
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 5
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 10
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 20
+            },
+            {
+              "item": "iolite",
+              "name": "Iolite",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Berserkir Axes",
+          "amount": 1
+        },
+        {
+          "name": "Flametal",
+          "amount": 5
+        },
+        {
+          "name": "Iolite",
+          "amount": 1
+        }
+      ],
       "damage": {
         "slash": 140,
         "chop": 80,
@@ -17800,24 +29595,15 @@ window.VC_DATA = {
       "knockback": 20,
       "skill": "axes",
       "backstab": 3,
-      "materials": [
-        {
-          "name": "Berserkir Axes",
-          "amount": 1
-        },
-        {
-          "name": "Flametal",
-          "amount": 5
-        },
-        {
-          "name": "Iolite",
-          "amount": 1
-        }
-      ],
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Carnage spreads around you when you wield these axes, such that Thor himself would be proud.",
+      "weight": 2,
+      "blockArmor": 57,
+      "blockForce": 20,
+      "parryBonus": 2,
+      "movementSpeed": "-5%",
       "names": {
         "cs": "Hromové berserkské sekery",
         "de": "Donnernde Berserkir-Äxte",
@@ -17837,21 +29623,112 @@ window.VC_DATA = {
       "station": "Galdr Table",
       "stationLevel": 2,
       "maxQuality": 4,
-      "damage": {
-        "chop": 100,
-        "pickaxe": 100,
-        "fire": 300
-      },
-      "perLevel": {},
-      "damageMax": {
-        "chop": 100,
-        "pickaxe": 100,
-        "fire": 300
-      },
-      "stamina": null,
-      "knockback": null,
-      "skill": "blood-magic",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 15
+            },
+            {
+              "item": "troll-trophy",
+              "name": "Troll Trophy",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 3
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 5
+            },
+            {
+              "item": "troll-trophy",
+              "name": "Troll Trophy",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 3
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 10
+            },
+            {
+              "item": "troll-trophy",
+              "name": "Troll Trophy",
+              "amount": 2
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 6
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "charred-bone",
+              "name": "Charred Bone",
+              "amount": 20
+            },
+            {
+              "item": "troll-trophy",
+              "name": "Troll Trophy",
+              "amount": 4
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 12
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Charred Bone",
@@ -17870,10 +29747,29 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "chop": 100,
+        "pickaxe": 100,
+        "fire": 300
+      },
+      "perLevel": {},
+      "damageMax": {
+        "chop": 100,
+        "pickaxe": 100,
+        "fire": 300
+      },
+      "stamina": null,
+      "knockback": null,
+      "skill": "blood-magic",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Summons a raging beast to cause death and destruction.",
+      "weight": 0.3,
+      "blockArmor": 48,
+      "parryBonus": 2,
+      "movementSpeed": "-5%",
       "names": {
         "ru": "Тролль-посох"
       }
@@ -17888,21 +29784,114 @@ window.VC_DATA = {
       "type": "fists",
       "image": "img/weapons/vilebone-maulclaws.png",
       "station": "Forge",
-      "stationLevel": 4,
+      "stationLevel": 3,
       "maxQuality": 4,
-      "damage": {
-        "slash": 20,
-        "pierce": 60
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 20,
-        "pierce": 60
-      },
-      "stamina": 12,
-      "knockback": null,
-      "skill": "fists",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "bear-hide",
+              "name": "Bear Hide",
+              "amount": 2
+            },
+            {
+              "item": "vile-ribcage",
+              "name": "Vile Ribcage",
+              "amount": 2
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 2
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "bear-hide",
+              "name": "Bear Hide",
+              "amount": 1
+            },
+            {
+              "item": "vile-ribcage",
+              "name": "Vile Ribcage",
+              "amount": 1
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 1
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "bear-hide",
+              "name": "Bear Hide",
+              "amount": 2
+            },
+            {
+              "item": "vile-ribcage",
+              "name": "Vile Ribcage",
+              "amount": 2
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 2
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "bear-hide",
+              "name": "Bear Hide",
+              "amount": 3
+            },
+            {
+              "item": "vile-ribcage",
+              "name": "Vile Ribcage",
+              "amount": 3
+            },
+            {
+              "item": "black-metal",
+              "name": "Black Metal",
+              "amount": 3
+            },
+            {
+              "item": "linen-thread",
+              "name": "Linen Thread",
+              "amount": 6
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Bear Hide",
@@ -17921,6 +29910,19 @@ window.VC_DATA = {
           "amount": 4
         }
       ],
+      "damage": {
+        "slash": 20,
+        "pierce": 60
+      },
+      "perLevel": {},
+      "damageMax": {
+        "slash": 20,
+        "pierce": 60
+      },
+      "stamina": 12,
+      "knockback": null,
+      "skill": "fists",
+      "backstab": null,
       "quantity": null,
       "tier": 6,
       "biome": "plains",
@@ -17928,38 +29930,6 @@ window.VC_DATA = {
       "names": {
         "ru": "Гнилокостные когти"
       }
-    },
-    "voidcaller": {
-      "id": "voidcaller",
-      "name": "Voidcaller",
-      "wiki": "https://valheim.weirdgloop.org/w/Voidcaller",
-      "gameId": "KnifeVoid",
-      "category": "knife",
-      "hands": "1h",
-      "type": "Knife",
-      "image": "img/weapons/voidcaller.png",
-      "station": "The Void",
-      "stationLevel": null,
-      "maxQuality": 1,
-      "damage": {
-        "slash": 12,
-        "pierce": 12
-      },
-      "perLevel": {},
-      "damageMax": {
-        "slash": 12,
-        "pierce": 12
-      },
-      "stamina": 6,
-      "knockback": 10,
-      "skill": "knives",
-      "backstab": 6,
-      "materials": [],
-      "quantity": null,
-      "tier": null,
-      "biome": null,
-      "description": "Who shall answer the call of the Void?",
-      "names": {}
     },
     "wood-arrow": {
       "id": "wood-arrow",
@@ -17973,6 +29943,25 @@ window.VC_DATA = {
       "station": "Workbench",
       "stationLevel": 1,
       "maxQuality": 1,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 8
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Wood",
+          "amount": 8
+        }
+      ],
       "damage": {
         "pierce": 22
       },
@@ -17984,12 +29973,6 @@ window.VC_DATA = {
       "knockback": null,
       "skill": "bows",
       "backstab": null,
-      "materials": [
-        {
-          "name": "Wood",
-          "amount": 8
-        }
-      ],
       "quantity": 20,
       "tier": 1,
       "biome": "meadows",
@@ -17998,6 +29981,213 @@ window.VC_DATA = {
         "cs": "Dřevěný šíp",
         "fr": "Flèche en bois",
         "ru": "Деревянная стрела"
+      }
+    },
+    "wood-shield": {
+      "id": "wood-shield",
+      "name": "Wood Shield",
+      "wiki": "https://valheim.weirdgloop.org/w/Wood_Shield",
+      "gameId": "ShieldWood",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Round",
+      "image": "img/weapons/wood-shield.png",
+      "station": "Workbench",
+      "stationLevel": 1,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 10
+            },
+            {
+              "item": "resin",
+              "name": "Resin",
+              "amount": 4
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 5
+            },
+            {
+              "item": "resin",
+              "name": "Resin",
+              "amount": 2
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 10
+            },
+            {
+              "item": "resin",
+              "name": "Resin",
+              "amount": 4
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 4
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Wood",
+          "amount": 10
+        },
+        {
+          "name": "Resin",
+          "amount": 4
+        },
+        {
+          "name": "Leather Scraps",
+          "amount": 4
+        }
+      ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
+      "quantity": null,
+      "tier": 1,
+      "biome": "meadows",
+      "description": "A simple wooden shield.",
+      "weight": 4,
+      "blockArmor": 6,
+      "blockForce": 20,
+      "recommendable": false,
+      "note": null,
+      "names": {
+        "cs": "Dřevěný štít",
+        "fr": "Bouclier en bois",
+        "ru": "Деревянный щит"
+      }
+    },
+    "wood-tower-shield": {
+      "id": "wood-tower-shield",
+      "name": "Wood Tower Shield",
+      "wiki": "https://valheim.weirdgloop.org/w/Wood_Tower_Shield",
+      "gameId": "ShieldWoodTower",
+      "category": "shield",
+      "hands": "1h",
+      "type": "Shield Tower",
+      "image": "img/weapons/wood-tower-shield.png",
+      "station": "Workbench",
+      "stationLevel": 1,
+      "maxQuality": 3,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 1,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 10
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 6
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 2,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 5
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 3,
+          "materials": [
+            {
+              "item": "wood",
+              "name": "Wood",
+              "amount": 10
+            },
+            {
+              "item": "leather-scraps",
+              "name": "Leather Scraps",
+              "amount": 6
+            }
+          ]
+        }
+      ],
+      "materials": [
+        {
+          "name": "Wood",
+          "amount": 10
+        },
+        {
+          "name": "Leather Scraps",
+          "amount": 6
+        }
+      ],
+      "damage": {},
+      "perLevel": {},
+      "damageMax": {},
+      "stamina": null,
+      "knockback": null,
+      "skill": "blocking",
+      "backstab": null,
+      "quantity": null,
+      "tier": 1,
+      "biome": "meadows",
+      "description": "A rough but heavy wooden shield.",
+      "weight": 4,
+      "blockArmor": 10,
+      "blockForce": 100,
+      "recommendable": false,
+      "note": null,
+      "names": {
+        "cs": "Pavéza",
+        "fr": "Écu en bois",
+        "ru": "Деревянный башенный щит"
       }
     },
     "wound-ripper": {
@@ -18012,17 +30202,77 @@ window.VC_DATA = {
       "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
-      "damage": {
-        "pierce": 220
-      },
-      "perLevel": {},
-      "damageMax": {
-        "pierce": 220
-      },
-      "stamina": 1,
-      "knockback": null,
-      "skill": "crossbows",
-      "backstab": null,
+      "levels": [
+        {
+          "quality": 1,
+          "stationLevel": 4,
+          "materials": [
+            {
+              "item": "ripper",
+              "name": "Ripper",
+              "amount": 1
+            },
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 2,
+          "stationLevel": 5,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 8
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 1
+            }
+          ]
+        },
+        {
+          "quality": 3,
+          "stationLevel": 6,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 16
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 2
+            }
+          ]
+        },
+        {
+          "quality": 4,
+          "stationLevel": 7,
+          "materials": [
+            {
+              "item": "flametal",
+              "name": "Flametal",
+              "amount": 32
+            },
+            {
+              "item": "bloodstone",
+              "name": "Bloodstone",
+              "amount": 4
+            }
+          ]
+        }
+      ],
       "materials": [
         {
           "name": "Ripper",
@@ -18037,10 +30287,22 @@ window.VC_DATA = {
           "amount": 1
         }
       ],
+      "damage": {
+        "pierce": 220
+      },
+      "perLevel": {},
+      "damageMax": {
+        "pierce": 220
+      },
+      "stamina": 1,
+      "knockback": null,
+      "skill": "crossbows",
+      "backstab": null,
       "quantity": null,
       "tier": 8,
       "biome": "ashlands",
       "description": "Ready to rend your enemies to pieces.",
+      "blockForce": null,
       "names": {
         "ru": "Ранящий разрыватель"
       }
@@ -18122,6 +30384,89 @@ window.VC_DATA = {
         "de": "Seeteufel",
         "fr": "Poisson-pêcheur",
         "ru": "Удильщик"
+      }
+    },
+    "ash-fang": {
+      "id": "ash-fang",
+      "name": "Ash Fang",
+      "image": "img/items/ash-fang.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Black Forge",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge",
+        "materials": [
+          {
+            "item": "ashwood",
+            "amount": 10
+          },
+          {
+            "item": "charred-bone",
+            "amount": 16
+          },
+          {
+            "item": "flametal",
+            "amount": 5
+          },
+          {
+            "item": "bonemaw-tooth",
+            "amount": 5
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Ash_Fang",
+      "names": {
+        "ru": "Пепельный клык"
+      }
+    },
+    "ashwood": {
+      "id": "ashwood",
+      "name": "Ashwood",
+      "image": "img/items/ashwood.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Scorched Tree",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Ashwood",
+      "names": {
+        "ru": "Пепельная древесина"
+      }
+    },
+    "asksvin-bladder": {
+      "id": "asksvin-bladder",
+      "name": "Asksvin Bladder",
+      "image": "img/items/asksvin-bladder.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Asksvin",
+          "kind": "creature",
+          "creatureId": "asksvin",
+          "biomes": [
+            "ashlands"
+          ]
+        },
+        {
+          "text": "Asksvin Hatchling",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Asksvin_Bladder",
+      "names": {
+        "ru": "Мочевой пузырь пеплозавра"
       }
     },
     "asksvin-hide": {
@@ -18225,6 +30570,142 @@ window.VC_DATA = {
         "ru": "Категория:Трофеи"
       }
     },
+    "berserkir-axes": {
+      "id": "berserkir-axes",
+      "name": "Berserkir Axes",
+      "image": "img/items/berserkir-axes.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Black Forge",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge",
+        "materials": [
+          {
+            "item": "charred-bone",
+            "amount": 15
+          },
+          {
+            "item": "flametal",
+            "amount": 24
+          },
+          {
+            "item": "asksvin-hide",
+            "amount": 3
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Berserkir_Axes",
+      "names": {
+        "de": "Berserkir-Äxte",
+        "ru": "Топоры берсеркира"
+      }
+    },
+    "bilebag": {
+      "id": "bilebag",
+      "name": "Bilebag",
+      "image": "img/items/bilebag.png",
+      "biome": "mistlands",
+      "tier": 7,
+      "sources": [
+        {
+          "text": "Gjall",
+          "kind": "creature",
+          "creatureId": "gjall",
+          "biomes": [
+            "mistlands"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Bilebag",
+      "names": {
+        "cs": "Žlučník",
+        "ru": "Желчный мешок"
+      }
+    },
+    "black-metal": {
+      "id": "black-metal",
+      "name": "Black Metal",
+      "image": "img/items/black-metal.png",
+      "biome": "plains",
+      "tier": 6,
+      "sources": [
+        {
+          "text": "Blast Furnace",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Blast Furnace",
+        "materials": [
+          {
+            "item": "black-metal-scrap",
+            "amount": 1
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Metal",
+      "teleportable": false,
+      "names": {
+        "cs": "Černý kov",
+        "de": "Schwarzmetall",
+        "fr": "Sombracier",
+        "ru": "Черный металл"
+      }
+    },
+    "black-metal-scrap": {
+      "id": "black-metal-scrap",
+      "name": "Black Metal Scrap",
+      "image": "img/items/black-metal-scrap.png",
+      "biome": "plains",
+      "tier": 6,
+      "sources": [
+        {
+          "text": "Plains biome",
+          "kind": "other"
+        },
+        {
+          "text": "Fuling",
+          "kind": "creature",
+          "creatureId": "fuling",
+          "biomes": [
+            "plains"
+          ]
+        },
+        {
+          "text": "Fuling Berserker",
+          "kind": "creature",
+          "creatureId": "fuling-berserker",
+          "biomes": [
+            "plains"
+          ]
+        },
+        {
+          "text": "Fuling Shaman",
+          "kind": "creature",
+          "creatureId": "fuling-shaman",
+          "biomes": [
+            "plains"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Metal_Scrap",
+      "teleportable": false,
+      "names": {
+        "cs": "Šrot z černého kovu",
+        "de": "Schwarzmetall-Schrott",
+        "fr": "Morceau de sombracier",
+        "ru": "Кусок черного металла"
+      }
+    },
     "bloodgold": {
       "id": "bloodgold",
       "name": "Bloodgold",
@@ -18248,7 +30729,26 @@ window.VC_DATA = {
         "yields": 1
       },
       "wiki": "https://valheim.weirdgloop.org/w/Bloodgold",
+      "teleportable": false,
       "names": {}
+    },
+    "bloodstone": {
+      "id": "bloodstone",
+      "name": "Bloodstone",
+      "image": "img/items/bloodstone.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Charred Fortress",
+          "kind": "location"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Bloodstone",
+      "names": {
+        "ru": "Кровавый камень"
+      }
     },
     "blueberries": {
       "id": "blueberries",
@@ -18315,6 +30815,24 @@ window.VC_DATA = {
         "ru": "Обломки костей"
       }
     },
+    "bonemaw-tooth": {
+      "id": "bonemaw-tooth",
+      "name": "Bonemaw Tooth",
+      "image": "img/items/bonemaw-tooth.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Bonemaw Serpent",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Bonemaw_Tooth",
+      "names": {
+        "ru": "Зуб Костепасти"
+      }
+    },
     "bronze": {
       "id": "bronze",
       "name": "Bronze",
@@ -18346,6 +30864,7 @@ window.VC_DATA = {
         "yields": 1
       },
       "wiki": "https://valheim.weirdgloop.org/w/Bronze",
+      "teleportable": false,
       "names": {
         "cs": "Bronz",
         "de": "Bronze",
@@ -18456,6 +30975,43 @@ window.VC_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Chestpiece_of_the_Vanguard",
       "names": {}
     },
+    "cast-echo-spike": {
+      "id": "cast-echo-spike",
+      "name": "Cast Echo Spike",
+      "image": "img/items/cast-echo-spike.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Galdr Table level 3",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Galdr Table level 3",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 10
+          },
+          {
+            "item": "nornathread",
+            "amount": 4
+          },
+          {
+            "item": "frostfire-essence",
+            "amount": 1
+          },
+          {
+            "item": "mould-echo-spike",
+            "amount": 1
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Echo_Spike",
+      "names": {}
+    },
     "cast-headdress-of-the-caller": {
       "id": "cast-headdress-of-the-caller",
       "name": "Cast Headdress of the Caller",
@@ -18561,6 +31117,575 @@ window.VC_DATA = {
         "yields": 1
       },
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Hood_of_the_Vanguard",
+      "names": {}
+    },
+    "cast-lightning-strike": {
+      "id": "cast-lightning-strike",
+      "name": "Cast Lightning Strike",
+      "image": "img/items/cast-lightning-strike.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Galdr Table level 3",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Galdr Table level 3",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 10
+          },
+          {
+            "item": "nornathread",
+            "amount": 5
+          },
+          {
+            "item": "thunderblood-essence",
+            "amount": 1
+          },
+          {
+            "item": "mould-lightning-strike",
+            "amount": 1
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Lightning_Strike",
+      "names": {}
+    },
+    "cast-nord-atgeir": {
+      "id": "cast-nord-atgeir",
+      "name": "Cast Nord Atgeir",
+      "image": "img/items/cast-nord-atgeir.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-atgeir",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Atgeir",
+      "names": {}
+    },
+    "cast-nord-axe": {
+      "id": "cast-nord-axe",
+      "name": "Cast Nord Axe",
+      "image": "img/items/cast-nord-axe.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-axe",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Axe",
+      "names": {}
+    },
+    "cast-nord-bow": {
+      "id": "cast-nord-bow",
+      "name": "Cast Nord Bow",
+      "image": "img/items/cast-nord-bow.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-bow",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Bow",
+      "names": {}
+    },
+    "cast-nord-buckler": {
+      "id": "cast-nord-buckler",
+      "name": "Cast Nord Buckler",
+      "image": "img/items/cast-nord-buckler.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 10
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          },
+          {
+            "item": "mould-nord-buckler",
+            "amount": 1
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Buckler",
+      "names": {}
+    },
+    "cast-nord-crossbow": {
+      "id": "cast-nord-crossbow",
+      "name": "Cast Nord Crossbow",
+      "image": "img/items/cast-nord-crossbow.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-crossbow",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Crossbow",
+      "names": {}
+    },
+    "cast-nord-dagger": {
+      "id": "cast-nord-dagger",
+      "name": "Cast Nord Dagger",
+      "image": "img/items/cast-nord-dagger.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-dagger",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Dagger",
+      "names": {}
+    },
+    "cast-nord-greataxe": {
+      "id": "cast-nord-greataxe",
+      "name": "Cast Nord Greataxe",
+      "image": "img/items/cast-nord-greataxe.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-greataxe",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Greataxe",
+      "names": {}
+    },
+    "cast-nord-greatshield": {
+      "id": "cast-nord-greatshield",
+      "name": "Cast Nord Greatshield",
+      "image": "img/items/cast-nord-greatshield.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "timberwood",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-greatshield",
+            "amount": 1
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Greatshield",
+      "names": {}
+    },
+    "cast-nord-greatsword": {
+      "id": "cast-nord-greatsword",
+      "name": "Cast Nord Greatsword",
+      "image": "img/items/cast-nord-greatsword.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-greatsword",
+            "amount": 1
+          },
+          {
+            "item": "frozen-branch",
+            "amount": 2
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Greatsword",
+      "names": {}
+    },
+    "cast-nord-knucklechains": {
+      "id": "cast-nord-knucklechains",
+      "name": "Cast Nord Knucklechains",
+      "image": "img/items/cast-nord-knucklechains.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-knucklechains",
+            "amount": 1
+          },
+          {
+            "item": "long-claws",
+            "amount": 2
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Knucklechains",
+      "names": {}
+    },
+    "cast-nord-mace": {
+      "id": "cast-nord-mace",
+      "name": "Cast Nord Mace",
+      "image": "img/items/cast-nord-mace.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-mace",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Mace",
+      "names": {}
+    },
+    "cast-nord-shield": {
+      "id": "cast-nord-shield",
+      "name": "Cast Nord Shield",
+      "image": "img/items/cast-nord-shield.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 15
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          },
+          {
+            "item": "mould-nord-shield",
+            "amount": 1
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Shield",
+      "names": {}
+    },
+    "cast-nord-sledge": {
+      "id": "cast-nord-sledge",
+      "name": "Cast Nord Sledge",
+      "image": "img/items/cast-nord-sledge.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-sledge",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Sledge",
+      "names": {}
+    },
+    "cast-nord-spear": {
+      "id": "cast-nord-spear",
+      "name": "Cast Nord Spear",
+      "image": "img/items/cast-nord-spear.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-spear",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Spear",
+      "names": {}
+    },
+    "cast-nord-sword": {
+      "id": "cast-nord-sword",
+      "name": "Cast Nord Sword",
+      "image": "img/items/cast-nord-sword.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-sword",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Sword",
+      "names": {}
+    },
+    "cast-northern-vengeance": {
+      "id": "cast-northern-vengeance",
+      "name": "Cast Northern Vengeance",
+      "image": "img/items/cast-northern-vengeance.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Galdr Table level 3",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Galdr Table level 3",
+        "materials": [
+          {
+            "item": "ice",
+            "amount": 10
+          },
+          {
+            "item": "nornathread",
+            "amount": 5
+          },
+          {
+            "item": "hexen-trophy",
+            "amount": 1
+          },
+          {
+            "item": "mould-northern-vengeance",
+            "amount": 1
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Cast_Northern_Vengeance",
       "names": {}
     },
     "cast-robes-of-the-caller": {
@@ -18707,6 +31832,28 @@ window.VC_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Trousers_of_the_Vanguard",
       "names": {}
     },
+    "celestial-feather": {
+      "id": "celestial-feather",
+      "name": "Celestial Feather",
+      "image": "img/items/celestial-feather.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Fallen Valkyrie",
+          "kind": "creature",
+          "creatureId": "fallen-valkyrie",
+          "biomes": [
+            "ashlands"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Celestial_Feather",
+      "names": {
+        "ru": "Небесное перо"
+      }
+    },
     "chain": {
       "id": "chain",
       "name": "Chain",
@@ -18781,6 +31928,34 @@ window.VC_DATA = {
         "ru": "Обугленная кость"
       }
     },
+    "chitin": {
+      "id": "chitin",
+      "name": "Chitin",
+      "image": "img/items/chitin.png",
+      "biome": "ocean",
+      "tier": 3,
+      "sources": [
+        {
+          "text": "Abyssal Barnacle",
+          "kind": "other"
+        },
+        {
+          "text": "Coral Cod",
+          "kind": "creature",
+          "creatureId": "coral-cod",
+          "biomes": [
+            "ocean"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Chitin",
+      "names": {
+        "cs": "Chitin",
+        "fr": "Chitine",
+        "ru": "Хитин"
+      }
+    },
     "coal": {
       "id": "coal",
       "name": "Coal",
@@ -18845,6 +32020,7 @@ window.VC_DATA = {
         "yields": 1
       },
       "wiki": "https://valheim.weirdgloop.org/w/Copper",
+      "teleportable": false,
       "names": {
         "cs": "Měď",
         "de": "Kupfer",
@@ -18866,6 +32042,7 @@ window.VC_DATA = {
       ],
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Copper_Ore",
+      "teleportable": false,
       "names": {
         "cs": "Měděná ruda",
         "de": "Kupfererz",
@@ -18894,6 +32071,27 @@ window.VC_DATA = {
         "ru": "Коралловая треска"
       }
     },
+    "corewood": {
+      "id": "corewood",
+      "name": "Corewood",
+      "image": "img/items/corewood.png",
+      "biome": "black-forest",
+      "tier": 2,
+      "sources": [
+        {
+          "text": "Pine",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Corewood",
+      "names": {
+        "cs": "Jádrové dřevo",
+        "de": "Kernholz",
+        "fr": "Bois robuste",
+        "ru": "Цельная древесина"
+      }
+    },
     "crown-jewel": {
       "id": "crown-jewel",
       "name": "Crown Jewel",
@@ -18913,6 +32111,33 @@ window.VC_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Crown_Jewel",
       "names": {}
+    },
+    "crystal": {
+      "id": "crystal",
+      "name": "Crystal",
+      "image": "img/items/crystal.png",
+      "biome": "mountain",
+      "tier": 5,
+      "sources": [
+        {
+          "text": "Frost Blob",
+          "kind": "other"
+        },
+        {
+          "text": "Stone Golem",
+          "kind": "creature",
+          "creatureId": "stone-golem",
+          "biomes": [
+            "mountain"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Crystal",
+      "names": {
+        "cs": "Krystal",
+        "ru": "Кристалл"
+      }
     },
     "cultist-trophy": {
       "id": "cultist-trophy",
@@ -18935,6 +32160,24 @@ window.VC_DATA = {
       "names": {
         "cs": "Trofeje",
         "ru": "Категория:Трофеи"
+      }
+    },
+    "curious-axe-head": {
+      "id": "curious-axe-head",
+      "name": "Curious Axe Head",
+      "image": "img/items/curious-axe-head.png",
+      "biome": null,
+      "tier": null,
+      "sources": [
+        {
+          "text": "Abandoned House (version 6)",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Curious_Axe_Head",
+      "names": {
+        "ru": "Древние топоры"
       }
     },
     "dandelion": {
@@ -18984,6 +32227,30 @@ window.VC_DATA = {
         "ru": "Шкура оленя"
       }
     },
+    "deer-trophy": {
+      "id": "deer-trophy",
+      "name": "Deer Trophy",
+      "image": "img/items/deer-trophy.png",
+      "biome": "meadows",
+      "tier": 1,
+      "sources": [
+        {
+          "text": "Deer",
+          "kind": "creature",
+          "creatureId": "deer",
+          "biomes": [
+            "meadows",
+            "black-forest"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Deer_Trophy",
+      "names": {
+        "cs": "Trofeje",
+        "ru": "Категория:Трофеи"
+      }
+    },
     "drake-trophy": {
       "id": "drake-trophy",
       "name": "Drake Trophy",
@@ -19007,6 +32274,161 @@ window.VC_DATA = {
         "ru": "Категория:Трофеи"
       }
     },
+    "draugr-elite-trophy": {
+      "id": "draugr-elite-trophy",
+      "name": "Draugr Elite Trophy",
+      "image": "img/items/draugr-elite-trophy.png",
+      "biome": "swamp",
+      "tier": 4,
+      "sources": [
+        {
+          "text": "Draugr Elite",
+          "kind": "creature",
+          "creatureId": "draugr-elite",
+          "biomes": [
+            "swamp"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Draugr_Elite_Trophy",
+      "names": {
+        "cs": "Trofeje",
+        "ru": "Категория:Трофеи"
+      }
+    },
+    "dyrnwyn-blade-fragment": {
+      "id": "dyrnwyn-blade-fragment",
+      "name": "Dyrnwyn blade fragment",
+      "image": "img/items/dyrnwyn-blade-fragment.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Black forge",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black forge",
+        "materials": [
+          {
+            "item": "dyrnwyn-hilt-fragment",
+            "amount": 1
+          },
+          {
+            "item": "dyrnwyn-blade-fragment",
+            "amount": 1
+          },
+          {
+            "item": "dyrnwyn-tip-fragment",
+            "amount": 1
+          },
+          {
+            "item": "flametal",
+            "amount": 20
+          },
+          {
+            "item": "bloodstone",
+            "amount": 1
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Dyrnwyn_blade_fragment",
+      "names": {
+        "cs": "Dyrnwyn",
+        "ru": "Дирнвин"
+      }
+    },
+    "dyrnwyn-hilt-fragment": {
+      "id": "dyrnwyn-hilt-fragment",
+      "name": "Dyrnwyn hilt fragment",
+      "image": "img/items/dyrnwyn-hilt-fragment.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Black forge",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black forge",
+        "materials": [
+          {
+            "item": "dyrnwyn-hilt-fragment",
+            "amount": 1
+          },
+          {
+            "item": "dyrnwyn-blade-fragment",
+            "amount": 1
+          },
+          {
+            "item": "dyrnwyn-tip-fragment",
+            "amount": 1
+          },
+          {
+            "item": "flametal",
+            "amount": 20
+          },
+          {
+            "item": "bloodstone",
+            "amount": 1
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Dyrnwyn_hilt_fragment",
+      "names": {
+        "cs": "Dyrnwyn",
+        "ru": "Дирнвин"
+      }
+    },
+    "dyrnwyn-tip-fragment": {
+      "id": "dyrnwyn-tip-fragment",
+      "name": "Dyrnwyn tip fragment",
+      "image": "img/items/dyrnwyn-tip-fragment.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Black forge",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black forge",
+        "materials": [
+          {
+            "item": "dyrnwyn-hilt-fragment",
+            "amount": 1
+          },
+          {
+            "item": "dyrnwyn-blade-fragment",
+            "amount": 1
+          },
+          {
+            "item": "dyrnwyn-tip-fragment",
+            "amount": 1
+          },
+          {
+            "item": "flametal",
+            "amount": 20
+          },
+          {
+            "item": "bloodstone",
+            "amount": 1
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Dyrnwyn_tip_fragment",
+      "names": {
+        "cs": "Dyrnwyn",
+        "ru": "Дирнвин"
+      }
+    },
     "elaking-hair-bundle": {
       "id": "elaking-hair-bundle",
       "name": "Elaking Hair Bundle",
@@ -19025,6 +32447,22 @@ window.VC_DATA = {
       ],
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Elaking_Hair_Bundle",
+      "names": {}
+    },
+    "embers": {
+      "id": "embers",
+      "name": "Embers",
+      "image": "img/items/embers.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Eternal Pyre",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Embers",
       "names": {}
     },
     "feathers": {
@@ -19054,6 +32492,25 @@ window.VC_DATA = {
         "ru": "Перья"
       }
     },
+    "fenris-claw": {
+      "id": "fenris-claw",
+      "name": "Fenris Claw",
+      "image": "img/items/fenris-claw.png",
+      "biome": "mountain",
+      "tier": 5,
+      "sources": [
+        {
+          "text": "Frost Caves",
+          "kind": "location"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Fenris_Claw",
+      "names": {
+        "cs": "Fenridův dráp",
+        "ru": "Коготь Фенриса"
+      }
+    },
     "fenris-hair": {
       "id": "fenris-hair",
       "name": "Fenris Hair",
@@ -19071,6 +32528,50 @@ window.VC_DATA = {
       "names": {
         "cs": "Fenridovy chlupy",
         "ru": "Шерсть Фенриса"
+      }
+    },
+    "fiddlehead": {
+      "id": "fiddlehead",
+      "name": "Fiddlehead",
+      "image": "img/items/fiddlehead.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Gathered in the Ashlands",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Fiddlehead",
+      "names": {
+        "cs": "Houslihlavka",
+        "ru": "Рахис"
+      }
+    },
+    "finewood": {
+      "id": "finewood",
+      "name": "Finewood",
+      "image": "img/items/finewood.png",
+      "biome": "black-forest",
+      "tier": 2,
+      "sources": [
+        {
+          "text": "Birch",
+          "kind": "other"
+        },
+        {
+          "text": "Oak",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Finewood",
+      "names": {
+        "cs": "Jemné dřevo",
+        "de": "Edelholz",
+        "fr": "Bois précieux",
+        "ru": "Качественная древесина"
       }
     },
     "flametal": {
@@ -19096,11 +32597,52 @@ window.VC_DATA = {
         "yields": 1
       },
       "wiki": "https://valheim.weirdgloop.org/w/Flametal",
+      "teleportable": false,
       "names": {
         "cs": "Plamenný kov",
         "de": "Flammenkern",
         "fr": "Flametal",
         "ru": "Огнеметалл"
+      }
+    },
+    "flametal-mace": {
+      "id": "flametal-mace",
+      "name": "Flametal Mace",
+      "image": "img/items/flametal-mace.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Black Forge",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge",
+        "materials": [
+          {
+            "item": "charred-bone",
+            "amount": 10
+          },
+          {
+            "item": "flametal",
+            "amount": 15
+          },
+          {
+            "item": "sulfur",
+            "amount": 5
+          },
+          {
+            "item": "asksvin-hide",
+            "amount": 3
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Flametal_Mace",
+      "names": {
+        "de": "Flammenkern-Streitkolben",
+        "ru": "Огнеметаллическая булава"
       }
     },
     "flametal-ore": {
@@ -19117,6 +32659,7 @@ window.VC_DATA = {
       ],
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Flametal_Ore",
+      "teleportable": false,
       "names": {
         "cs": "Plamenná kovová ruda",
         "de": "Flammenkernerz",
@@ -19149,6 +32692,82 @@ window.VC_DATA = {
         "ru": "Лен"
       }
     },
+    "flint": {
+      "id": "flint",
+      "name": "Flint",
+      "image": "img/items/flint.png",
+      "biome": "meadows",
+      "tier": 1,
+      "sources": [
+        {
+          "text": "Shorelines of rivers and oceans",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Flint",
+      "names": {
+        "cs": "Pazourek",
+        "fr": "Silex",
+        "ru": "Кремень"
+      }
+    },
+    "freeze-gland": {
+      "id": "freeze-gland",
+      "name": "Freeze Gland",
+      "image": "img/items/freeze-gland.png",
+      "biome": "mountain",
+      "tier": 5,
+      "sources": [
+        {
+          "text": "Drake",
+          "kind": "creature",
+          "creatureId": "drake",
+          "biomes": [
+            "mountain"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Freeze_Gland",
+      "names": {
+        "cs": "Zmrzlá žláza",
+        "de": "Gefrorene Drüse",
+        "fr": "Glande gelée",
+        "ru": "Морозная железа"
+      }
+    },
+    "frostfire-essence": {
+      "id": "frostfire-essence",
+      "name": "Frostfire Essence",
+      "image": "img/items/frostfire-essence.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Frostfire_Essence",
+      "names": {}
+    },
+    "frozen-branch": {
+      "id": "frozen-branch",
+      "name": "Frozen Branch",
+      "image": "img/items/frozen-branch.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Barka",
+          "kind": "creature",
+          "creatureId": "barka",
+          "biomes": [
+            "deep-north"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Frozen_Branch",
+      "names": {}
+    },
     "giant-herring": {
       "id": "giant-herring",
       "name": "Giant Herring",
@@ -19170,6 +32789,47 @@ window.VC_DATA = {
         "ru": "Гигантская сельдь"
       }
     },
+    "greydwarf-eye": {
+      "id": "greydwarf-eye",
+      "name": "Greydwarf Eye",
+      "image": "img/items/greydwarf-eye.png",
+      "biome": "black-forest",
+      "tier": 2,
+      "sources": [
+        {
+          "text": "Greydwarf",
+          "kind": "creature",
+          "creatureId": "greydwarf",
+          "biomes": [
+            "black-forest"
+          ]
+        },
+        {
+          "text": "Greydwarf Brute",
+          "kind": "creature",
+          "creatureId": "greydwarf-brute",
+          "biomes": [
+            "black-forest"
+          ]
+        },
+        {
+          "text": "and Greydwarf Shaman",
+          "kind": "creature",
+          "creatureId": "greydwarf-shaman",
+          "biomes": [
+            "black-forest"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Greydwarf_Eye",
+      "names": {
+        "cs": "Oko šedého trpaslíka",
+        "de": "Grauzwergen-Auge",
+        "fr": "Œil de Naingris",
+        "ru": "Глаз грейдворфа"
+      }
+    },
     "grouper": {
       "id": "grouper",
       "name": "Grouper",
@@ -19189,6 +32849,83 @@ window.VC_DATA = {
         "de": "Zackenbarsch",
         "fr": "Mérou",
         "ru": "Групер"
+      }
+    },
+    "guck": {
+      "id": "guck",
+      "name": "Guck",
+      "image": "img/items/guck.png",
+      "biome": "swamp",
+      "tier": 4,
+      "sources": [
+        {
+          "text": "Abomination",
+          "kind": "creature",
+          "creatureId": "abomination",
+          "biomes": [
+            "swamp"
+          ]
+        },
+        {
+          "text": "Gucksack",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Guck",
+      "names": {
+        "cs": "Sliz",
+        "de": "Glibber",
+        "fr": "Viscosité",
+        "ru": "Слизь"
+      }
+    },
+    "hard-antler": {
+      "id": "hard-antler",
+      "name": "Hard Antler",
+      "image": "img/items/hard-antler.png",
+      "biome": "meadows",
+      "tier": 1,
+      "sources": [
+        {
+          "text": "Eikthyr",
+          "kind": "creature",
+          "creatureId": "eikthyr",
+          "biomes": [
+            "meadows"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Hard_Antler",
+      "names": {
+        "cs": "Tvrdý paroh",
+        "de": "Hartes Geweih",
+        "fr": "Bois dur",
+        "ru": "Твердый рог"
+      }
+    },
+    "hexen-trophy": {
+      "id": "hexen-trophy",
+      "name": "Hexen Trophy",
+      "image": "img/items/hexen-trophy.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Hexen",
+          "kind": "creature",
+          "creatureId": "hexen",
+          "biomes": [
+            "deep-north"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Hexen_Trophy",
+      "names": {
+        "cs": "Trofeje",
+        "ru": "Категория:Трофеи"
       }
     },
     "ice": {
@@ -19238,6 +32975,24 @@ window.VC_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Ice",
       "names": {}
     },
+    "iolite": {
+      "id": "iolite",
+      "name": "Iolite",
+      "image": "img/items/iolite.png",
+      "biome": "mistlands",
+      "tier": 7,
+      "sources": [
+        {
+          "text": "Charred Fortress",
+          "kind": "location"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Iolite",
+      "names": {
+        "ru": "Иолит"
+      }
+    },
     "iron": {
       "id": "iron",
       "name": "Iron",
@@ -19261,11 +33016,30 @@ window.VC_DATA = {
         "yields": 1
       },
       "wiki": "https://valheim.weirdgloop.org/w/Iron",
+      "teleportable": false,
       "names": {
         "cs": "Železo",
         "de": "Eisen",
         "fr": "Fer",
         "ru": "Железо"
+      }
+    },
+    "jade": {
+      "id": "jade",
+      "name": "Jade",
+      "image": "img/items/jade.png",
+      "biome": "mistlands",
+      "tier": 7,
+      "sources": [
+        {
+          "text": "Charred Fortress",
+          "kind": "location"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Jade",
+      "names": {
+        "ru": "Нефрит"
       }
     },
     "leather-scraps": {
@@ -19377,6 +33151,26 @@ window.VC_DATA = {
         "yields": 1
       },
       "wiki": "https://valheim.weirdgloop.org/w/Liquid_Frost",
+      "names": {}
+    },
+    "long-claws": {
+      "id": "long-claws",
+      "name": "Long Claws",
+      "image": "img/items/long-claws.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Eyeless One",
+          "kind": "creature",
+          "creatureId": "eyeless-one",
+          "biomes": [
+            "deep-north"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Long_Claws",
       "names": {}
     },
     "lox-pelt": {
@@ -19559,6 +33353,43 @@ window.VC_DATA = {
         "ru": "Сухожилие моргена"
       }
     },
+    "mould-echo-spike": {
+      "id": "mould-echo-spike",
+      "name": "Mould Echo Spike",
+      "image": "img/items/mould-echo-spike.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Galdr Table level 3",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Galdr Table level 3",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 10
+          },
+          {
+            "item": "nornathread",
+            "amount": 4
+          },
+          {
+            "item": "frostfire-essence",
+            "amount": 1
+          },
+          {
+            "item": "mould-echo-spike",
+            "amount": 1
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Echo_Spike",
+      "names": {}
+    },
     "mould-headdress-of-the-caller": {
       "id": "mould-headdress-of-the-caller",
       "name": "Mould Headdress of the Caller",
@@ -19666,6 +33497,1047 @@ window.VC_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Hood_of_the_Vanguard",
       "names": {}
     },
+    "mould-lightning-strike": {
+      "id": "mould-lightning-strike",
+      "name": "Mould Lightning Strike",
+      "image": "img/items/mould-lightning-strike.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Galdr Table level 3",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Galdr Table level 3",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 10
+          },
+          {
+            "item": "nornathread",
+            "amount": 5
+          },
+          {
+            "item": "thunderblood-essence",
+            "amount": 1
+          },
+          {
+            "item": "mould-lightning-strike",
+            "amount": 1
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Lightning_Strike",
+      "names": {}
+    },
+    "mould-nord-atgeir": {
+      "id": "mould-nord-atgeir",
+      "name": "Mould Nord Atgeir",
+      "image": "img/items/mould-nord-atgeir.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-atgeir",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Atgeir",
+      "names": {}
+    },
+    "mould-nord-axe": {
+      "id": "mould-nord-axe",
+      "name": "Mould Nord Axe",
+      "image": "img/items/mould-nord-axe.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-axe",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Axe",
+      "names": {}
+    },
+    "mould-nord-bow": {
+      "id": "mould-nord-bow",
+      "name": "Mould Nord Bow",
+      "image": "img/items/mould-nord-bow.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-bow",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Bow",
+      "names": {}
+    },
+    "mould-nord-buckler": {
+      "id": "mould-nord-buckler",
+      "name": "Mould Nord Buckler",
+      "image": "img/items/mould-nord-buckler.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 10
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          },
+          {
+            "item": "mould-nord-buckler",
+            "amount": 1
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Buckler",
+      "names": {}
+    },
+    "mould-nord-crossbow": {
+      "id": "mould-nord-crossbow",
+      "name": "Mould Nord Crossbow",
+      "image": "img/items/mould-nord-crossbow.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-crossbow",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Crossbow",
+      "names": {}
+    },
+    "mould-nord-dagger": {
+      "id": "mould-nord-dagger",
+      "name": "Mould Nord Dagger",
+      "image": "img/items/mould-nord-dagger.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-dagger",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Dagger",
+      "names": {}
+    },
+    "mould-nord-greataxe": {
+      "id": "mould-nord-greataxe",
+      "name": "Mould Nord Greataxe",
+      "image": "img/items/mould-nord-greataxe.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-greataxe",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Greataxe",
+      "names": {}
+    },
+    "mould-nord-greatshield": {
+      "id": "mould-nord-greatshield",
+      "name": "Mould Nord Greatshield",
+      "image": "img/items/mould-nord-greatshield.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "timberwood",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-greatshield",
+            "amount": 1
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Greatshield",
+      "names": {}
+    },
+    "mould-nord-greatsword": {
+      "id": "mould-nord-greatsword",
+      "name": "Mould Nord Greatsword",
+      "image": "img/items/mould-nord-greatsword.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-greatsword",
+            "amount": 1
+          },
+          {
+            "item": "frozen-branch",
+            "amount": 2
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Greatsword",
+      "names": {}
+    },
+    "mould-nord-knucklechains": {
+      "id": "mould-nord-knucklechains",
+      "name": "Mould Nord Knucklechains",
+      "image": "img/items/mould-nord-knucklechains.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-knucklechains",
+            "amount": 1
+          },
+          {
+            "item": "long-claws",
+            "amount": 2
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Knucklechains",
+      "names": {}
+    },
+    "mould-nord-mace": {
+      "id": "mould-nord-mace",
+      "name": "Mould Nord Mace",
+      "image": "img/items/mould-nord-mace.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-mace",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Mace",
+      "names": {}
+    },
+    "mould-nord-shield": {
+      "id": "mould-nord-shield",
+      "name": "Mould Nord Shield",
+      "image": "img/items/mould-nord-shield.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 15
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          },
+          {
+            "item": "mould-nord-shield",
+            "amount": 1
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Shield",
+      "names": {}
+    },
+    "mould-nord-sledge": {
+      "id": "mould-nord-sledge",
+      "name": "Mould Nord Sledge",
+      "image": "img/items/mould-nord-sledge.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-sledge",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Sledge",
+      "names": {}
+    },
+    "mould-nord-spear": {
+      "id": "mould-nord-spear",
+      "name": "Mould Nord Spear",
+      "image": "img/items/mould-nord-spear.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-spear",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Spear",
+      "names": {}
+    },
+    "mould-nord-sword": {
+      "id": "mould-nord-sword",
+      "name": "Mould Nord Sword",
+      "image": "img/items/mould-nord-sword.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-sword",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Sword",
+      "names": {}
+    },
+    "mould-northern-vengeance": {
+      "id": "mould-northern-vengeance",
+      "name": "Mould Northern Vengeance",
+      "image": "img/items/mould-northern-vengeance.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Galdr Table level 3",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Galdr Table level 3",
+        "materials": [
+          {
+            "item": "ice",
+            "amount": 10
+          },
+          {
+            "item": "nornathread",
+            "amount": 5
+          },
+          {
+            "item": "hexen-trophy",
+            "amount": 1
+          },
+          {
+            "item": "mould-northern-vengeance",
+            "amount": 1
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mould_Northern_Vengeance",
+      "names": {}
+    },
+    "mysterious-axe-head": {
+      "id": "mysterious-axe-head",
+      "name": "Mysterious Axe Head",
+      "image": "img/items/mysterious-axe-head.png",
+      "biome": null,
+      "tier": null,
+      "sources": [
+        {
+          "text": "Abandoned House (version 6)",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Mysterious_Axe_Head",
+      "names": {
+        "ru": "Древние топоры"
+      }
+    },
+    "needle": {
+      "id": "needle",
+      "name": "Needle",
+      "image": "img/items/needle.png",
+      "biome": "plains",
+      "tier": 6,
+      "sources": [
+        {
+          "text": "Deathsquito",
+          "kind": "creature",
+          "creatureId": "deathsquito",
+          "biomes": [
+            "plains"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Needle",
+      "names": {
+        "cs": "Jehla",
+        "ru": "Игла"
+      }
+    },
+    "nidhogg": {
+      "id": "nidhogg",
+      "name": "Nidhögg",
+      "image": "img/items/nidhogg.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Black forge",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black forge",
+        "materials": [
+          {
+            "item": "charred-bone",
+            "amount": 3
+          },
+          {
+            "item": "flametal",
+            "amount": 12
+          },
+          {
+            "item": "asksvin-hide",
+            "amount": 2
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Nidh%C3%B6gg",
+      "names": {
+        "ru": "Нидхёгг"
+      }
+    },
+    "nord-atgeir": {
+      "id": "nord-atgeir",
+      "name": "Nord Atgeir",
+      "image": "img/items/nord-atgeir.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-atgeir",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Nord_Atgeir",
+      "names": {}
+    },
+    "nord-axe": {
+      "id": "nord-axe",
+      "name": "Nord Axe",
+      "image": "img/items/nord-axe.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-axe",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Nord_Axe",
+      "names": {}
+    },
+    "nord-bow": {
+      "id": "nord-bow",
+      "name": "Nord Bow",
+      "image": "img/items/nord-bow.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-bow",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Nord_Bow",
+      "names": {}
+    },
+    "nord-crossbow": {
+      "id": "nord-crossbow",
+      "name": "Nord Crossbow",
+      "image": "img/items/nord-crossbow.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-crossbow",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Nord_Crossbow",
+      "names": {}
+    },
+    "nord-dagger": {
+      "id": "nord-dagger",
+      "name": "Nord Dagger",
+      "image": "img/items/nord-dagger.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-dagger",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Nord_Dagger",
+      "names": {}
+    },
+    "nord-greataxe": {
+      "id": "nord-greataxe",
+      "name": "Nord Greataxe",
+      "image": "img/items/nord-greataxe.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-greataxe",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Nord_Greataxe",
+      "names": {}
+    },
+    "nord-greatsword": {
+      "id": "nord-greatsword",
+      "name": "Nord Greatsword",
+      "image": "img/items/nord-greatsword.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-greatsword",
+            "amount": 1
+          },
+          {
+            "item": "frozen-branch",
+            "amount": 2
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Nord_Greatsword",
+      "names": {}
+    },
+    "nord-knucklechains": {
+      "id": "nord-knucklechains",
+      "name": "Nord Knucklechains",
+      "image": "img/items/nord-knucklechains.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-knucklechains",
+            "amount": 1
+          },
+          {
+            "item": "long-claws",
+            "amount": 2
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Nord_Knucklechains",
+      "names": {}
+    },
+    "nord-mace": {
+      "id": "nord-mace",
+      "name": "Nord Mace",
+      "image": "img/items/nord-mace.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-mace",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Nord_Mace",
+      "names": {}
+    },
+    "nord-sledge": {
+      "id": "nord-sledge",
+      "name": "Nord Sledge",
+      "image": "img/items/nord-sledge.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-sledge",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Nord_Sledge",
+      "names": {}
+    },
+    "nord-spear": {
+      "id": "nord-spear",
+      "name": "Nord Spear",
+      "image": "img/items/nord-spear.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-spear",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Nord_Spear",
+      "names": {}
+    },
+    "nord-sword": {
+      "id": "nord-sword",
+      "name": "Nord Sword",
+      "image": "img/items/nord-sword.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Black Forge level 4",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge level 4",
+        "materials": [
+          {
+            "item": "bloodgold",
+            "amount": 20
+          },
+          {
+            "item": "mould-nord-sword",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "amount": 10
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Nord_Sword",
+      "names": {}
+    },
     "nornathread": {
       "id": "nornathread",
       "name": "Nornathread",
@@ -19707,6 +34579,58 @@ window.VC_DATA = {
         "ru": "Северный лосось"
       }
     },
+    "obsidian": {
+      "id": "obsidian",
+      "name": "Obsidian",
+      "image": "img/items/obsidian.png",
+      "biome": "mountain",
+      "tier": 5,
+      "sources": [
+        {
+          "text": "Obsidian Deposit in the Mountain biome",
+          "kind": "location"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Obsidian",
+      "names": {
+        "cs": "Obsidián",
+        "ru": "Обсидиан"
+      }
+    },
+    "ooze": {
+      "id": "ooze",
+      "name": "Ooze",
+      "image": "img/items/ooze.png",
+      "biome": "swamp",
+      "tier": 4,
+      "sources": [
+        {
+          "text": "Blob",
+          "kind": "creature",
+          "creatureId": "blob",
+          "biomes": [
+            "swamp"
+          ]
+        },
+        {
+          "text": "Oozer",
+          "kind": "creature",
+          "creatureId": "oozer",
+          "biomes": [
+            "swamp"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Ooze",
+      "names": {
+        "cs": "Kal",
+        "de": "Schlamm",
+        "fr": "Gadoue",
+        "ru": "Жижа"
+      }
+    },
     "perch": {
       "id": "perch",
       "name": "Perch",
@@ -19742,6 +34666,7 @@ window.VC_DATA = {
       ],
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Petrified_Tissue",
+      "teleportable": false,
       "names": {}
     },
     "pike": {
@@ -19763,6 +34688,32 @@ window.VC_DATA = {
         "de": "Hecht",
         "fr": "Brochet",
         "ru": "Щука"
+      }
+    },
+    "proustite-powder": {
+      "id": "proustite-powder",
+      "name": "Proustite Powder",
+      "image": "img/items/proustite-powder.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Lava Blob",
+          "kind": "creature",
+          "creatureId": "lava-blob",
+          "biomes": [
+            "ashlands"
+          ]
+        },
+        {
+          "text": "Unstable Lava Rock",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Proustite_Powder",
+      "names": {
+        "ru": "Пруститовый порошок"
       }
     },
     "pufferfish": {
@@ -19816,6 +34767,134 @@ window.VC_DATA = {
       "names": {
         "cs": "Zpracovaný Éitr",
         "ru": "Переработанный эйтр"
+      }
+    },
+    "resin": {
+      "id": "resin",
+      "name": "Resin",
+      "image": "img/items/resin.png",
+      "biome": "meadows",
+      "tier": 1,
+      "sources": [
+        {
+          "text": "*Birch Trees",
+          "kind": "other"
+        },
+        {
+          "text": "*Beech Trees",
+          "kind": "other"
+        },
+        {
+          "text": "*Fir Trees",
+          "kind": "other"
+        },
+        {
+          "text": "*Pine Trees",
+          "kind": "other"
+        },
+        {
+          "text": "*Oak Trees",
+          "kind": "other"
+        },
+        {
+          "text": "*Yggdrasil Shoots",
+          "kind": "other"
+        },
+        {
+          "text": "*Greyling",
+          "kind": "creature",
+          "creatureId": "greyling",
+          "biomes": [
+            "meadows"
+          ]
+        },
+        {
+          "text": "*Greydwarf",
+          "kind": "creature",
+          "creatureId": "greydwarf",
+          "biomes": [
+            "black-forest"
+          ]
+        },
+        {
+          "text": "*Greydwarf Shaman",
+          "kind": "creature",
+          "creatureId": "greydwarf-shaman",
+          "biomes": [
+            "black-forest"
+          ]
+        },
+        {
+          "text": "*Greydwarf Brute",
+          "kind": "creature",
+          "creatureId": "greydwarf-brute",
+          "biomes": [
+            "black-forest"
+          ]
+        },
+        {
+          "text": "*Kvastur",
+          "kind": "creature",
+          "creatureId": "kvastur",
+          "biomes": [
+            "swamp"
+          ]
+        },
+        {
+          "text": "*Chest in Meadows",
+          "kind": "location"
+        },
+        {
+          "text": "*Barrel next to Greydwarf building spawns in Black Forest",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Resin",
+      "names": {
+        "cs": "Pryskyřice",
+        "de": "Harz",
+        "fr": "Résine",
+        "ru": "Смола"
+      }
+    },
+    "ripper": {
+      "id": "ripper",
+      "name": "Ripper",
+      "image": "img/items/ripper.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Black Forge",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge",
+        "materials": [
+          {
+            "item": "ashwood",
+            "amount": 10
+          },
+          {
+            "item": "flametal",
+            "amount": 8
+          },
+          {
+            "item": "morgen-sinew",
+            "amount": 2
+          },
+          {
+            "item": "bonemaw-tooth",
+            "amount": 4
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Ripper",
+      "names": {
+        "ru": "Разрыватель"
       }
     },
     "root": {
@@ -19946,6 +35025,7 @@ window.VC_DATA = {
       ],
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Scrap_Iron",
+      "teleportable": false,
       "names": {
         "cs": "Železný šrot",
         "de": "Eisenschrott",
@@ -19973,6 +35053,29 @@ window.VC_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Seal_Pelt",
       "names": {}
     },
+    "serpent-scale": {
+      "id": "serpent-scale",
+      "name": "Serpent Scale",
+      "image": "img/items/serpent-scale.png",
+      "biome": "ocean",
+      "tier": 3,
+      "sources": [
+        {
+          "text": "Serpent",
+          "kind": "creature",
+          "creatureId": "serpent",
+          "biomes": [
+            "ocean"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Serpent_Scale",
+      "names": {
+        "cs": "Šupina z hada",
+        "ru": "Чешуя змея"
+      }
+    },
     "silver": {
       "id": "silver",
       "name": "Silver",
@@ -19996,6 +35099,7 @@ window.VC_DATA = {
         "yields": 1
       },
       "wiki": "https://valheim.weirdgloop.org/w/Silver",
+      "teleportable": false,
       "names": {
         "cs": "Stříbro",
         "de": "Silber",
@@ -20017,11 +35121,92 @@ window.VC_DATA = {
       ],
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Silver_Ore",
+      "teleportable": false,
       "names": {
         "cs": "Stříbrná ruda",
         "de": "Silbererz",
         "fr": "Minerai d'argent",
         "ru": "Серебряная руда"
+      }
+    },
+    "skeleton-trophy": {
+      "id": "skeleton-trophy",
+      "name": "Skeleton Trophy",
+      "image": "img/items/skeleton-trophy.png",
+      "biome": "black-forest",
+      "tier": 2,
+      "sources": [
+        {
+          "text": "Skeleton",
+          "kind": "creature",
+          "creatureId": "skeleton",
+          "biomes": [
+            "black-forest",
+            "swamp",
+            "mountain",
+            "deep-north"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Skeleton_Trophy",
+      "names": {
+        "cs": "Trofeje",
+        "ru": "Категория:Трофеи"
+      }
+    },
+    "slayer": {
+      "id": "slayer",
+      "name": "Slayer",
+      "image": "img/items/slayer.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Black Forge",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge",
+        "materials": [
+          {
+            "item": "flametal",
+            "amount": 30
+          },
+          {
+            "item": "asksvin-hide",
+            "amount": 5
+          },
+          {
+            "item": "morgen-sinew",
+            "amount": 3
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Slayer",
+      "names": {
+        "ru": "Убийца"
+      }
+    },
+    "smoke-puff": {
+      "id": "smoke-puff",
+      "name": "Smoke Puff",
+      "image": "img/items/smoke-puff.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Found in the Ashlands biome",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Smoke_Puff",
+      "names": {
+        "cs": "Kouřovka",
+        "ru": "Дымчатый гриб"
       }
     },
     "soft-tissue": {
@@ -20053,6 +35238,147 @@ window.VC_DATA = {
         "ru": "Мягкая ткань"
       }
     },
+    "splitnir": {
+      "id": "splitnir",
+      "name": "Splitnir",
+      "image": "img/items/splitnir.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Black Forge",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Black Forge",
+        "materials": [
+          {
+            "item": "ashwood",
+            "amount": 10
+          },
+          {
+            "item": "flametal",
+            "amount": 6
+          },
+          {
+            "item": "asksvin-hide",
+            "amount": 2
+          },
+          {
+            "item": "bonemaw-tooth",
+            "amount": 3
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Splitnir",
+      "names": {
+        "ru": "Расколнир"
+      }
+    },
+    "stone": {
+      "id": "stone",
+      "name": "Stone",
+      "image": "img/items/stone.png",
+      "biome": "meadows",
+      "tier": 1,
+      "sources": [
+        {
+          "text": "Stones",
+          "kind": "other"
+        },
+        {
+          "text": "Greydwarf",
+          "kind": "creature",
+          "creatureId": "greydwarf",
+          "biomes": [
+            "black-forest"
+          ]
+        },
+        {
+          "text": "Greydwarf Brute",
+          "kind": "creature",
+          "creatureId": "greydwarf-brute",
+          "biomes": [
+            "black-forest"
+          ]
+        },
+        {
+          "text": "Stone Golem",
+          "kind": "creature",
+          "creatureId": "stone-golem",
+          "biomes": [
+            "mountain"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Stone",
+      "names": {
+        "cs": "Kámen",
+        "de": "Stein",
+        "fr": "Pierre",
+        "ru": "Камень"
+      }
+    },
+    "sulfur": {
+      "id": "sulfur",
+      "name": "Sulfur",
+      "image": "img/items/sulfur.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Lava Blob",
+          "kind": "creature",
+          "creatureId": "lava-blob",
+          "biomes": [
+            "ashlands"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Sulfur",
+      "names": {
+        "ru": "Сера"
+      }
+    },
+    "surtling-core": {
+      "id": "surtling-core",
+      "name": "Surtling Core",
+      "image": "img/items/surtling-core.png",
+      "biome": "black-forest",
+      "tier": 2,
+      "sources": [
+        {
+          "text": "Surtlings",
+          "kind": "creature",
+          "creatureId": "surtling",
+          "biomes": [
+            "swamp"
+          ]
+        },
+        {
+          "text": "Burial Chambers",
+          "kind": "location"
+        },
+        {
+          "text": "Bonfires",
+          "kind": "other"
+        },
+        {
+          "text": "Dvergr Lanterns",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Surtling_Core",
+      "names": {
+        "cs": "Jádro Surtlinga",
+        "ru": "Ядро суртлинга"
+      }
+    },
     "tetra": {
       "id": "tetra",
       "name": "Tetra",
@@ -20073,6 +35399,33 @@ window.VC_DATA = {
         "fr": "Tétra",
         "ru": "Тетра"
       }
+    },
+    "thunderblood-essence": {
+      "id": "thunderblood-essence",
+      "name": "Thunderblood Essence",
+      "image": "img/items/thunderblood-essence.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Thunderblood_Essence",
+      "names": {}
+    },
+    "timberwood": {
+      "id": "timberwood",
+      "name": "Timberwood",
+      "image": "img/items/timberwood.png",
+      "biome": "deep-north",
+      "tier": 9,
+      "sources": [
+        {
+          "text": "Trees in the Deep North",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Timberwood",
+      "names": {}
     },
     "tin": {
       "id": "tin",
@@ -20097,6 +35450,7 @@ window.VC_DATA = {
         "yields": 1
       },
       "wiki": "https://valheim.weirdgloop.org/w/Tin",
+      "teleportable": false,
       "names": {
         "cs": "Cín",
         "de": "Zinn",
@@ -20118,6 +35472,7 @@ window.VC_DATA = {
       ],
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Tin_Ore",
+      "teleportable": false,
       "names": {
         "cs": "Cínová ruda",
         "de": "Zinnerz",
@@ -20156,6 +35511,29 @@ window.VC_DATA = {
         "de": "Trollleder",
         "fr": "Peau de troll",
         "ru": "Шкура тролля"
+      }
+    },
+    "troll-trophy": {
+      "id": "troll-trophy",
+      "name": "Troll Trophy",
+      "image": "img/items/troll-trophy.png",
+      "biome": "black-forest",
+      "tier": 2,
+      "sources": [
+        {
+          "text": "Troll",
+          "kind": "creature",
+          "creatureId": "troll",
+          "biomes": [
+            "black-forest"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Troll_Trophy",
+      "names": {
+        "cs": "Trofeje",
+        "ru": "Категория:Трофеи"
       }
     },
     "trollfish": {
@@ -20245,6 +35623,25 @@ window.VC_DATA = {
         "ru": "Категория:Трофеи"
       }
     },
+    "wisp": {
+      "id": "wisp",
+      "name": "Wisp",
+      "image": "img/items/wisp.png",
+      "biome": null,
+      "tier": null,
+      "sources": [
+        {
+          "text": "Wisp Fountain",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Wisp",
+      "names": {
+        "cs": "Dušička",
+        "ru": "Светлячок"
+      }
+    },
     "wolf-fang": {
       "id": "wolf-fang",
       "name": "Wolf Fang",
@@ -20332,6 +35729,39 @@ window.VC_DATA = {
         "ru": "Категория:Трофеи"
       }
     },
+    "wood": {
+      "id": "wood",
+      "name": "Wood",
+      "image": "img/items/wood.png",
+      "biome": "meadows",
+      "tier": 1,
+      "sources": [
+        {
+          "text": "Bushes",
+          "kind": "other"
+        },
+        {
+          "text": "Greydwarfs",
+          "kind": "creature",
+          "creatureId": "greydwarf",
+          "biomes": [
+            "black-forest"
+          ]
+        },
+        {
+          "text": "Trees",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Wood",
+      "names": {
+        "cs": "Dřevo",
+        "de": "Holz",
+        "fr": "Bois",
+        "ru": "Древесина"
+      }
+    },
     "writhan-roots": {
       "id": "writhan-roots",
       "name": "Writhan Roots",
@@ -20351,6 +35781,47 @@ window.VC_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Writhan_Roots",
       "names": {}
+    },
+    "yggdrasil-wood": {
+      "id": "yggdrasil-wood",
+      "name": "Yggdrasil Wood",
+      "image": "img/items/yggdrasil-wood.png",
+      "biome": "mistlands",
+      "tier": 7,
+      "sources": [
+        {
+          "text": "Yggdrasil Shoot in Mistlands biomes",
+          "kind": "other"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Yggdrasil_Wood",
+      "names": {
+        "cs": "Dřevo Yggdrasilu",
+        "de": "Yggdrasil-Holz",
+        "fr": "Bois d'Yggdrasil",
+        "ru": "Древесина Иггдрасиля"
+      }
+    },
+    "ymir-flesh": {
+      "id": "ymir-flesh",
+      "name": "Ymir Flesh",
+      "image": "img/items/ymir-flesh.png",
+      "biome": "swamp",
+      "tier": 4,
+      "sources": [
+        {
+          "text": "Haldor",
+          "kind": "npc"
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Ymir_Flesh",
+      "names": {
+        "cs": "Maso Ymira",
+        "fr": "Chair d'Ymir",
+        "ru": "Плоть Имира"
+      }
     }
   },
   "armor": [

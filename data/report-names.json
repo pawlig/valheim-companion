@@ -6,14 +6,14 @@
       "percent": 61.3
     },
     "weapons": {
-      "count": 62,
-      "total": 153,
-      "percent": 40.5
+      "count": 72,
+      "total": 171,
+      "percent": 42.1
     },
     "items": {
-      "count": 54,
-      "total": 85,
-      "percent": 63.5
+      "count": 88,
+      "total": 191,
+      "percent": 46.1
     },
     "armor": {
       "count": 35,
@@ -29,6 +29,11 @@
       "count": 9,
       "total": 9,
       "percent": 100
+    },
+    "stations": {
+      "count": 4,
+      "total": 4,
+      "percent": 100
     }
   },
   "de": {
@@ -39,13 +44,13 @@
     },
     "weapons": {
       "count": 25,
-      "total": 153,
-      "percent": 16.3
+      "total": 171,
+      "percent": 14.6
     },
     "items": {
-      "count": 39,
-      "total": 85,
-      "percent": 45.9
+      "count": 54,
+      "total": 191,
+      "percent": 28.3
     },
     "armor": {
       "count": 2,
@@ -61,6 +66,11 @@
       "count": 4,
       "total": 9,
       "percent": 44.4
+    },
+    "stations": {
+      "count": 0,
+      "total": 4,
+      "percent": 0
     }
   },
   "es": {
@@ -71,12 +81,12 @@
     },
     "weapons": {
       "count": 0,
-      "total": 153,
+      "total": 171,
       "percent": 0
     },
     "items": {
       "count": 0,
-      "total": 85,
+      "total": 191,
       "percent": 0
     },
     "armor": {
@@ -93,6 +103,11 @@
       "count": 0,
       "total": 9,
       "percent": 0
+    },
+    "stations": {
+      "count": 0,
+      "total": 4,
+      "percent": 0
     }
   },
   "fr": {
@@ -102,14 +117,14 @@
       "percent": 50.9
     },
     "weapons": {
-      "count": 51,
-      "total": 153,
-      "percent": 33.3
+      "count": 62,
+      "total": 171,
+      "percent": 36.3
     },
     "items": {
-      "count": 41,
-      "total": 85,
-      "percent": 48.2
+      "count": 57,
+      "total": 191,
+      "percent": 29.8
     },
     "armor": {
       "count": 5,
@@ -125,6 +140,11 @@
       "count": 6,
       "total": 9,
       "percent": 66.7
+    },
+    "stations": {
+      "count": 1,
+      "total": 4,
+      "percent": 25
     }
   },
   "pt": {
@@ -135,12 +155,12 @@
     },
     "weapons": {
       "count": 0,
-      "total": 153,
+      "total": 171,
       "percent": 0
     },
     "items": {
       "count": 0,
-      "total": 85,
+      "total": 191,
       "percent": 0
     },
     "armor": {
@@ -157,6 +177,11 @@
       "count": 1,
       "total": 9,
       "percent": 11.1
+    },
+    "stations": {
+      "count": 0,
+      "total": 4,
+      "percent": 0
     }
   },
   "zh": {
@@ -167,12 +192,12 @@
     },
     "weapons": {
       "count": 0,
-      "total": 153,
+      "total": 171,
       "percent": 0
     },
     "items": {
       "count": 0,
-      "total": 85,
+      "total": 191,
       "percent": 0
     },
     "armor": {
@@ -189,6 +214,11 @@
       "count": 5,
       "total": 9,
       "percent": 55.6
+    },
+    "stations": {
+      "count": 0,
+      "total": 4,
+      "percent": 0
     }
   },
   "hi": {
@@ -199,12 +229,12 @@
     },
     "weapons": {
       "count": 0,
-      "total": 153,
+      "total": 171,
       "percent": 0
     },
     "items": {
       "count": 0,
-      "total": 85,
+      "total": 191,
       "percent": 0
     },
     "armor": {
@@ -220,6 +250,11 @@
     "biomes": {
       "count": 0,
       "total": 9,
+      "percent": 0
+    },
+    "stations": {
+      "count": 0,
+      "total": 4,
       "percent": 0
     }
   },
@@ -231,12 +266,12 @@
     },
     "weapons": {
       "count": 0,
-      "total": 153,
+      "total": 171,
       "percent": 0
     },
     "items": {
       "count": 0,
-      "total": 85,
+      "total": 191,
       "percent": 0
     },
     "armor": {
@@ -252,6 +287,11 @@
     "biomes": {
       "count": 0,
       "total": 9,
+      "percent": 0
+    },
+    "stations": {
+      "count": 0,
+      "total": 4,
       "percent": 0
     }
   },
@@ -263,12 +303,12 @@
     },
     "weapons": {
       "count": 0,
-      "total": 153,
+      "total": 171,
       "percent": 0
     },
     "items": {
       "count": 0,
-      "total": 85,
+      "total": 191,
       "percent": 0
     },
     "armor": {
@@ -285,6 +325,11 @@
       "count": 0,
       "total": 9,
       "percent": 0
+    },
+    "stations": {
+      "count": 0,
+      "total": 4,
+      "percent": 0
     }
   },
   "ru": {
@@ -294,14 +339,14 @@
       "percent": 80.2
     },
     "weapons": {
-      "count": 109,
-      "total": 153,
-      "percent": 71.2
+      "count": 124,
+      "total": 171,
+      "percent": 72.5
     },
     "items": {
-      "count": 61,
-      "total": 85,
-      "percent": 71.8
+      "count": 113,
+      "total": 191,
+      "percent": 59.2
     },
     "armor": {
       "count": 96,
@@ -317,6 +362,11 @@
       "count": 9,
       "total": 9,
       "percent": 100
+    },
+    "stations": {
+      "count": 4,
+      "total": 4,
+      "percent": 100
     }
   },
   "ja": {
@@ -327,12 +377,12 @@
     },
     "weapons": {
       "count": 0,
-      "total": 153,
+      "total": 171,
       "percent": 0
     },
     "items": {
       "count": 0,
-      "total": 85,
+      "total": 191,
       "percent": 0
     },
     "armor": {
@@ -348,6 +398,11 @@
     "biomes": {
       "count": 0,
       "total": 9,
+      "percent": 0
+    },
+    "stations": {
+      "count": 0,
+      "total": 4,
       "percent": 0
     }
   },
@@ -359,12 +414,12 @@
     },
     "weapons": {
       "count": 0,
-      "total": 153,
+      "total": 171,
       "percent": 0
     },
     "items": {
       "count": 0,
-      "total": 85,
+      "total": 191,
       "percent": 0
     },
     "armor": {
@@ -380,6 +435,11 @@
     "biomes": {
       "count": 0,
       "total": 9,
+      "percent": 0
+    },
+    "stations": {
+      "count": 0,
+      "total": 4,
       "percent": 0
     }
   }

@@ -6,7 +6,7 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 
 - Total armor sets/entries: 68
 - Total armor pieces: 113
-- Total items/materials: 85
+- Total items/materials: 191
 
 ## Biome breakdown
 
@@ -29,7 +29,11 @@ None. All pieces with quality upgrades found in quality tables.
 
 ## Materials without source or biome
 
-None.
+- **Curious Axe Head** (sources: 1, biome: null)
+- **Frostfire Essence** (sources: 0, biome: deep-north)
+- **Mysterious Axe Head** (sources: 1, biome: null)
+- **Thunderblood Essence** (sources: 0, biome: deep-north)
+- **Wisp** (sources: 1, biome: null)
 
 ## Skipped pages
 
@@ -42,6 +46,24 @@ None.
 - **Odin Set**: stránka bez {{infobox armor}}
 - **Troll Hide Cape**: duplikát dílu již obsaženého v setu
 - **Wolf Fur Cape**: duplikát dílu již obsaženého v setu
+
+## Non-teleportable items
+
+- **Black Metal** (id: black-metal)
+- **Black Metal Scrap** (id: black-metal-scrap)
+- **Bloodgold** (id: bloodgold)
+- **Bronze** (id: bronze)
+- **Copper** (id: copper)
+- **Copper Ore** (id: copper-ore)
+- **Flametal** (id: flametal)
+- **Flametal Ore** (id: flametal-ore)
+- **Iron** (id: iron)
+- **Petrified Tissue** (id: petrified-tissue)
+- **Scrap Iron** (id: scrap-iron)
+- **Silver** (id: silver)
+- **Silver Ore** (id: silver-ore)
+- **Tin** (id: tin)
+- **Tin Ore** (id: tin-ore)
 
 ## Open questions
 

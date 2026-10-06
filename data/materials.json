@@ -206,6 +206,14 @@
     "names": {}
   },
   {
+    "name": "Cast Nord Buckler",
+    "biome": "deep-north",
+    "tier": 9,
+    "how": "wiki",
+    "note": "crafted from Bloodgold, Timberwood, Mould Nord Buckler",
+    "names": {}
+  },
+  {
     "name": "Cast Nord Crossbow",
     "biome": "deep-north",
     "tier": 9,
@@ -230,6 +238,14 @@
     "names": {}
   },
   {
+    "name": "Cast Nord Greatshield",
+    "biome": "deep-north",
+    "tier": 9,
+    "how": "wiki",
+    "note": "crafted from Bloodgold, Timberwood, Mould Nord Greatshield",
+    "names": {}
+  },
+  {
     "name": "Cast Nord Greatsword",
     "biome": "deep-north",
     "tier": 9,
@@ -251,6 +267,14 @@
     "tier": 9,
     "how": "wiki",
     "note": "crafted from Bloodgold, Mould Nord Mace, Timberwood",
+    "names": {}
+  },
+  {
+    "name": "Cast Nord Shield",
+    "biome": "deep-north",
+    "tier": 9,
+    "how": "wiki",
+    "note": "crafted from Bloodgold, Timberwood, Mould Nord Shield",
     "names": {}
   },
   {
@@ -292,6 +316,18 @@
     "how": "table",
     "names": {
       "ru": "Небесное перо"
+    }
+  },
+  {
+    "name": "Chain",
+    "biome": "swamp",
+    "tier": 4,
+    "how": "wiki",
+    "note": "linked creature Wraith",
+    "names": {
+      "cs": "Řetěz",
+      "fr": "Chaîne",
+      "ru": "Цепь"
     }
   },
   {
@@ -541,6 +577,26 @@
     "names": {}
   },
   {
+    "name": "Frozen Branch",
+    "biome": "deep-north",
+    "tier": 9,
+    "how": "wiki",
+    "note": "linked creature Barka",
+    "names": {}
+  },
+  {
+    "name": "Greydwarf Eye",
+    "biome": "black-forest",
+    "tier": 2,
+    "how": "table",
+    "names": {
+      "cs": "Oko šedého trpaslíka",
+      "de": "Grauzwergen-Auge",
+      "fr": "Œil de Naingris",
+      "ru": "Глаз грейдворфа"
+    }
+  },
+  {
     "name": "Guck",
     "biome": "swamp",
     "tier": 4,
@@ -563,6 +619,13 @@
       "fr": "Bois dur",
       "ru": "Твердый рог"
     }
+  },
+  {
+    "name": "Ice",
+    "biome": "deep-north",
+    "tier": 9,
+    "how": "table",
+    "names": {}
   },
   {
     "name": "Iolite",
@@ -782,6 +845,14 @@
     "names": {}
   },
   {
+    "name": "Nornathread",
+    "biome": "deep-north",
+    "tier": 9,
+    "how": "wiki",
+    "note": "linked creature Hexen",
+    "names": {}
+  },
+  {
     "name": "Obsidian",
     "biome": "mountain",
     "tier": 5,
@@ -882,6 +953,16 @@
     "names": {}
   },
   {
+    "name": "Serpent Scale",
+    "biome": "ocean",
+    "tier": 3,
+    "how": "table",
+    "names": {
+      "cs": "Šupina z hada",
+      "ru": "Чешуя змея"
+    }
+  },
+  {
     "name": "Silver",
     "biome": "mountain",
     "tier": 5,
@@ -891,6 +972,17 @@
       "de": "Silber",
       "fr": "Argent",
       "ru": "Серебро"
+    }
+  },
+  {
+    "name": "Skeleton Trophy",
+    "biome": "black-forest",
+    "tier": 2,
+    "how": "wiki",
+    "note": "drops from creature Skeleton",
+    "names": {
+      "cs": "Trofeje",
+      "ru": "Категория:Трофеи"
     }
   },
   {
@@ -1035,6 +1127,14 @@
       "fr": "Bois",
       "ru": "Древесина"
     }
+  },
+  {
+    "name": "Writhan Roots",
+    "biome": "swamp",
+    "tier": 4,
+    "how": "wiki",
+    "note": "linked creature Writhan",
+    "names": {}
   },
   {
     "name": "Yggdrasil Wood",

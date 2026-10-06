@@ -604,6 +604,25 @@ async function main() {
   }
 
   // 5. Fetch material pages and sub-materials recursively (depth <= 3)
+  const weaponsPath = path.join(DATA_DIR, 'weapons.json');
+  if (existsSync(weaponsPath)) {
+    try {
+      const weaponsData = JSON.parse(readFileSync(weaponsPath, 'utf8'));
+      for (const w of weaponsData) {
+        for (const l of w.levels || []) {
+          for (const m of l.materials || []) {
+            if (m.name) referencedMaterials.add(m.name);
+          }
+        }
+        for (const m of w.materials || []) {
+          if (m.name) referencedMaterials.add(m.name);
+        }
+      }
+    } catch (err) {
+      console.warn('warning: failed to read weapons.json for material references:', err.message);
+    }
+  }
+
   console.log(`resolving materials (direct: ${referencedMaterials.size})…`);
   const allMaterialPages = {};
   const materialsToFetch = new Set(referencedMaterials);
@@ -674,12 +693,23 @@ async function main() {
 
   // Canonicalize materials using wiki redirects from getWikitext
   const armorSetTitles = new Set(parsedArmor.map((a) => a.name));
+  const weaponTitles = new Set();
+  const weaponsPathForTitles = path.join(DATA_DIR, 'weapons.json');
+  if (existsSync(weaponsPathForTitles)) {
+    try {
+      const wData = JSON.parse(readFileSync(weaponsPathForTitles, 'utf8'));
+      for (const w of wData) weaponTitles.add(w.name);
+    } catch {}
+  }
+
   const canonicalNameByRaw = new Map();
   for (const [rawName, page] of Object.entries(allMaterialPages)) {
     const target = page?.disambiguatedFrom ? rawName : (page?.title ?? rawName);
     if (target.toLowerCase() === 'trophies' && rawName.toLowerCase() !== 'trophies') {
       canonicalNameByRaw.set(rawName, rawName);
     } else if (armorSetTitles.has(target) && !armorSetTitles.has(rawName)) {
+      canonicalNameByRaw.set(rawName, rawName);
+    } else if (weaponTitles.has(target) && !weaponTitles.has(rawName)) {
       canonicalNameByRaw.set(rawName, rawName);
     } else {
       canonicalNameByRaw.set(rawName, target);
@@ -733,12 +763,15 @@ async function main() {
       allMaterialPages[matName] ??
       Object.values(allMaterialPages).find((p) => p?.title === matName);
     const wt = page?.wikitext ?? '';
-    const ib =
+    let ib =
       parseInfobox(wt, 'item') ||
       parseInfobox(wt, 'material') ||
-      parseInfobox(wt, 'structure') ||
-      parseInfobox(wt, 'weapon') ||
-      {};
+      parseInfobox(wt, 'structure');
+    if (!ib && wt.includes('tabber')) {
+      const allItemIbs = parseAllInfoboxes(wt, 'item');
+      ib = allItemIbs.find(x => slug(x.title || '') === slug(matName)) || allItemIbs[0];
+    }
+    if (!ib) ib = parseInfobox(wt, 'weapon') || {};
 
     const res = resolveMaterial(matName);
     const id = slug(matName);
@@ -797,6 +830,35 @@ async function main() {
 
   // 7b. Resolve biome & tier for items with biome: null based on recipe
   resolveRecipeBiomes(allItems);
+
+  // Fetch Category:Can't be Teleported
+  console.log("fetching non-teleportable category members…");
+  const nonTeleportableTitles = new Set();
+  let cmcontinue;
+  do {
+    const params = {
+      action: 'query',
+      list: 'categorymembers',
+      cmtitle: "Category:Can't be Teleported",
+      cmlimit: 500,
+      cmtype: 'page',
+      format: 'json',
+      formatversion: 2,
+    };
+    if (cmcontinue) params.cmcontinue = cmcontinue;
+    const body = await api.request(params);
+    for (const member of body.query?.categorymembers ?? []) {
+      nonTeleportableTitles.add(member.title.toLowerCase());
+      nonTeleportableTitles.add(slug(member.title));
+    }
+    cmcontinue = body.continue?.cmcontinue;
+  } while (cmcontinue);
+
+  for (const it of allItems) {
+    if (nonTeleportableTitles.has(it.name.toLowerCase()) || nonTeleportableTitles.has(it.id)) {
+      it.teleportable = false;
+    }
+  }
 
   // Populate report for materials without source or biome
   for (const it of allItems) {
@@ -980,6 +1042,16 @@ function renderReport(report, armor, items) {
   } else {
     for (const sp of report.skippedPages) {
       lines.push(`- **${sp.title}**: ${sp.reason}`);
+    }
+  }
+
+  lines.push('', '## Non-teleportable items', '');
+  const nonTeleportItems = items.filter((i) => i.teleportable === false);
+  if (nonTeleportItems.length === 0) {
+    lines.push('None.');
+  } else {
+    for (const it of nonTeleportItems) {
+      lines.push(`- **${it.name}** (id: ${it.id})`);
     }
   }
 

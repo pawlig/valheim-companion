@@ -31,7 +31,18 @@ export function buildArmourerBundle() {
     items[item.id] = item;
   }
 
-  // Validate that every material in armor exists in items
+  const stationsPath = path.join(DATA_DIR, 'stations.json');
+  const stations = existsSync(stationsPath) ? JSON.parse(readFileSync(stationsPath, 'utf8')) : [];
+
+  const weaponsPath = path.join(DATA_DIR, 'weapons.json');
+  const weapons = existsSync(weaponsPath)
+    ? JSON.parse(readFileSync(weaponsPath, 'utf8')).map((w) => ({
+        ...w,
+        image: w.image ? `../bestiary/${w.image}` : null,
+      }))
+    : [];
+
+  // Validate that every material in armor and weapons exists in items
   const missingItems = new Set();
   for (const entry of armor) {
     for (const piece of entry.pieces ?? []) {
@@ -40,6 +51,15 @@ export function buildArmourerBundle() {
           if (!items[mat.item]) {
             missingItems.add(mat.item);
           }
+        }
+      }
+    }
+  }
+  for (const w of weapons) {
+    for (const level of w.levels ?? []) {
+      for (const mat of level.materials ?? []) {
+        if (!items[mat.item]) {
+          missingItems.add(mat.item);
         }
       }
     }
@@ -67,6 +87,8 @@ export function buildArmourerBundle() {
     },
     biomes,
     armor,
+    weapons,
+    stations,
     items,
     creatures: Object.fromEntries(JSON.parse(readFileSync(path.join(DATA_DIR, 'creatures.json'), 'utf8')).map(creature => [creature.id, creature])),
   };
@@ -88,6 +110,7 @@ export function main() {
     armor: bundle.armor.flatMap(entry => entry.pieces),
     sets: bundle.armor,
     biomes: bundle.biomes,
+    stations: bundle.stations,
   };
   const coverage = {};
   for (const lang of ['cs', 'de', 'es', 'fr', 'pt', 'zh', 'hi', 'ar', 'bn', 'ru', 'ja', 'id']) {

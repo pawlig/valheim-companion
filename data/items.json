@@ -77,6 +77,89 @@
     }
   },
   {
+    "id": "ash-fang",
+    "name": "Ash Fang",
+    "image": "img/items/ash-fang.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black Forge",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge",
+      "materials": [
+        {
+          "item": "ashwood",
+          "amount": 10
+        },
+        {
+          "item": "charred-bone",
+          "amount": 16
+        },
+        {
+          "item": "flametal",
+          "amount": 5
+        },
+        {
+          "item": "bonemaw-tooth",
+          "amount": 5
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Ash_Fang",
+    "names": {
+      "ru": "Пепельный клык"
+    }
+  },
+  {
+    "id": "ashwood",
+    "name": "Ashwood",
+    "image": "img/items/ashwood.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Scorched Tree",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Ashwood",
+    "names": {
+      "ru": "Пепельная древесина"
+    }
+  },
+  {
+    "id": "asksvin-bladder",
+    "name": "Asksvin Bladder",
+    "image": "img/items/asksvin-bladder.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Asksvin",
+        "kind": "creature",
+        "creatureId": "asksvin",
+        "biomes": [
+          "ashlands"
+        ]
+      },
+      {
+        "text": "Asksvin Hatchling",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Asksvin_Bladder",
+    "names": {
+      "ru": "Мочевой пузырь пеплозавра"
+    }
+  },
+  {
     "id": "asksvin-hide",
     "name": "Asksvin Hide",
     "image": "img/items/asksvin-hide.png",
@@ -178,6 +261,142 @@
     }
   },
   {
+    "id": "berserkir-axes",
+    "name": "Berserkir Axes",
+    "image": "img/items/berserkir-axes.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black Forge",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge",
+      "materials": [
+        {
+          "item": "charred-bone",
+          "amount": 15
+        },
+        {
+          "item": "flametal",
+          "amount": 24
+        },
+        {
+          "item": "asksvin-hide",
+          "amount": 3
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Berserkir_Axes",
+    "names": {
+      "de": "Berserkir-Äxte",
+      "ru": "Топоры берсеркира"
+    }
+  },
+  {
+    "id": "bilebag",
+    "name": "Bilebag",
+    "image": "img/items/bilebag.png",
+    "biome": "mistlands",
+    "tier": 7,
+    "sources": [
+      {
+        "text": "Gjall",
+        "kind": "creature",
+        "creatureId": "gjall",
+        "biomes": [
+          "mistlands"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Bilebag",
+    "names": {
+      "cs": "Žlučník",
+      "ru": "Желчный мешок"
+    }
+  },
+  {
+    "id": "black-metal",
+    "name": "Black Metal",
+    "image": "img/items/black-metal.png",
+    "biome": "plains",
+    "tier": 6,
+    "sources": [
+      {
+        "text": "Blast Furnace",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Blast Furnace",
+      "materials": [
+        {
+          "item": "black-metal-scrap",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Black_Metal",
+    "teleportable": false,
+    "names": {
+      "cs": "Černý kov",
+      "de": "Schwarzmetall",
+      "fr": "Sombracier",
+      "ru": "Черный металл"
+    }
+  },
+  {
+    "id": "black-metal-scrap",
+    "name": "Black Metal Scrap",
+    "image": "img/items/black-metal-scrap.png",
+    "biome": "plains",
+    "tier": 6,
+    "sources": [
+      {
+        "text": "Plains biome",
+        "kind": "other"
+      },
+      {
+        "text": "Fuling",
+        "kind": "creature",
+        "creatureId": "fuling",
+        "biomes": [
+          "plains"
+        ]
+      },
+      {
+        "text": "Fuling Berserker",
+        "kind": "creature",
+        "creatureId": "fuling-berserker",
+        "biomes": [
+          "plains"
+        ]
+      },
+      {
+        "text": "Fuling Shaman",
+        "kind": "creature",
+        "creatureId": "fuling-shaman",
+        "biomes": [
+          "plains"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Black_Metal_Scrap",
+    "teleportable": false,
+    "names": {
+      "cs": "Šrot z černého kovu",
+      "de": "Schwarzmetall-Schrott",
+      "fr": "Morceau de sombracier",
+      "ru": "Кусок черного металла"
+    }
+  },
+  {
     "id": "bloodgold",
     "name": "Bloodgold",
     "image": "img/items/bloodgold.png",
@@ -200,7 +419,26 @@
       "yields": 1
     },
     "wiki": "https://valheim.weirdgloop.org/w/Bloodgold",
+    "teleportable": false,
     "names": {}
+  },
+  {
+    "id": "bloodstone",
+    "name": "Bloodstone",
+    "image": "img/items/bloodstone.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Charred Fortress",
+        "kind": "location"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Bloodstone",
+    "names": {
+      "ru": "Кровавый камень"
+    }
   },
   {
     "id": "blueberries",
@@ -268,6 +506,24 @@
     }
   },
   {
+    "id": "bonemaw-tooth",
+    "name": "Bonemaw Tooth",
+    "image": "img/items/bonemaw-tooth.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Bonemaw Serpent",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Bonemaw_Tooth",
+    "names": {
+      "ru": "Зуб Костепасти"
+    }
+  },
+  {
     "id": "bronze",
     "name": "Bronze",
     "image": "img/items/bronze.png",
@@ -298,6 +554,7 @@
       "yields": 1
     },
     "wiki": "https://valheim.weirdgloop.org/w/Bronze",
+    "teleportable": false,
     "names": {
       "cs": "Bronz",
       "de": "Bronze",
@@ -409,6 +666,43 @@
     "names": {}
   },
   {
+    "id": "cast-echo-spike",
+    "name": "Cast Echo Spike",
+    "image": "img/items/cast-echo-spike.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Galdr Table level 3",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Galdr Table level 3",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 10
+        },
+        {
+          "item": "nornathread",
+          "amount": 4
+        },
+        {
+          "item": "frostfire-essence",
+          "amount": 1
+        },
+        {
+          "item": "mould-echo-spike",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Echo_Spike",
+    "names": {}
+  },
+  {
     "id": "cast-headdress-of-the-caller",
     "name": "Cast Headdress of the Caller",
     "image": "img/items/cast-headdress-of-the-caller.png",
@@ -513,6 +807,575 @@
       "yields": 1
     },
     "wiki": "https://valheim.weirdgloop.org/w/Cast_Hood_of_the_Vanguard",
+    "names": {}
+  },
+  {
+    "id": "cast-lightning-strike",
+    "name": "Cast Lightning Strike",
+    "image": "img/items/cast-lightning-strike.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Galdr Table level 3",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Galdr Table level 3",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 10
+        },
+        {
+          "item": "nornathread",
+          "amount": 5
+        },
+        {
+          "item": "thunderblood-essence",
+          "amount": 1
+        },
+        {
+          "item": "mould-lightning-strike",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Lightning_Strike",
+    "names": {}
+  },
+  {
+    "id": "cast-nord-atgeir",
+    "name": "Cast Nord Atgeir",
+    "image": "img/items/cast-nord-atgeir.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-atgeir",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Atgeir",
+    "names": {}
+  },
+  {
+    "id": "cast-nord-axe",
+    "name": "Cast Nord Axe",
+    "image": "img/items/cast-nord-axe.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-axe",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Axe",
+    "names": {}
+  },
+  {
+    "id": "cast-nord-bow",
+    "name": "Cast Nord Bow",
+    "image": "img/items/cast-nord-bow.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-bow",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Bow",
+    "names": {}
+  },
+  {
+    "id": "cast-nord-buckler",
+    "name": "Cast Nord Buckler",
+    "image": "img/items/cast-nord-buckler.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 10
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        },
+        {
+          "item": "mould-nord-buckler",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Buckler",
+    "names": {}
+  },
+  {
+    "id": "cast-nord-crossbow",
+    "name": "Cast Nord Crossbow",
+    "image": "img/items/cast-nord-crossbow.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-crossbow",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Crossbow",
+    "names": {}
+  },
+  {
+    "id": "cast-nord-dagger",
+    "name": "Cast Nord Dagger",
+    "image": "img/items/cast-nord-dagger.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-dagger",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Dagger",
+    "names": {}
+  },
+  {
+    "id": "cast-nord-greataxe",
+    "name": "Cast Nord Greataxe",
+    "image": "img/items/cast-nord-greataxe.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-greataxe",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Greataxe",
+    "names": {}
+  },
+  {
+    "id": "cast-nord-greatshield",
+    "name": "Cast Nord Greatshield",
+    "image": "img/items/cast-nord-greatshield.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "timberwood",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-greatshield",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Greatshield",
+    "names": {}
+  },
+  {
+    "id": "cast-nord-greatsword",
+    "name": "Cast Nord Greatsword",
+    "image": "img/items/cast-nord-greatsword.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-greatsword",
+          "amount": 1
+        },
+        {
+          "item": "frozen-branch",
+          "amount": 2
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Greatsword",
+    "names": {}
+  },
+  {
+    "id": "cast-nord-knucklechains",
+    "name": "Cast Nord Knucklechains",
+    "image": "img/items/cast-nord-knucklechains.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-knucklechains",
+          "amount": 1
+        },
+        {
+          "item": "long-claws",
+          "amount": 2
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Knucklechains",
+    "names": {}
+  },
+  {
+    "id": "cast-nord-mace",
+    "name": "Cast Nord Mace",
+    "image": "img/items/cast-nord-mace.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-mace",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Mace",
+    "names": {}
+  },
+  {
+    "id": "cast-nord-shield",
+    "name": "Cast Nord Shield",
+    "image": "img/items/cast-nord-shield.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 15
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        },
+        {
+          "item": "mould-nord-shield",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Shield",
+    "names": {}
+  },
+  {
+    "id": "cast-nord-sledge",
+    "name": "Cast Nord Sledge",
+    "image": "img/items/cast-nord-sledge.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-sledge",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Sledge",
+    "names": {}
+  },
+  {
+    "id": "cast-nord-spear",
+    "name": "Cast Nord Spear",
+    "image": "img/items/cast-nord-spear.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-spear",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Spear",
+    "names": {}
+  },
+  {
+    "id": "cast-nord-sword",
+    "name": "Cast Nord Sword",
+    "image": "img/items/cast-nord-sword.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-sword",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Sword",
+    "names": {}
+  },
+  {
+    "id": "cast-northern-vengeance",
+    "name": "Cast Northern Vengeance",
+    "image": "img/items/cast-northern-vengeance.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Galdr Table level 3",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Galdr Table level 3",
+      "materials": [
+        {
+          "item": "ice",
+          "amount": 10
+        },
+        {
+          "item": "nornathread",
+          "amount": 5
+        },
+        {
+          "item": "hexen-trophy",
+          "amount": 1
+        },
+        {
+          "item": "mould-northern-vengeance",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Cast_Northern_Vengeance",
     "names": {}
   },
   {
@@ -660,6 +1523,28 @@
     "names": {}
   },
   {
+    "id": "celestial-feather",
+    "name": "Celestial Feather",
+    "image": "img/items/celestial-feather.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Fallen Valkyrie",
+        "kind": "creature",
+        "creatureId": "fallen-valkyrie",
+        "biomes": [
+          "ashlands"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Celestial_Feather",
+    "names": {
+      "ru": "Небесное перо"
+    }
+  },
+  {
     "id": "chain",
     "name": "Chain",
     "image": "img/items/chain.png",
@@ -734,6 +1619,34 @@
     }
   },
   {
+    "id": "chitin",
+    "name": "Chitin",
+    "image": "img/items/chitin.png",
+    "biome": "ocean",
+    "tier": 3,
+    "sources": [
+      {
+        "text": "Abyssal Barnacle",
+        "kind": "other"
+      },
+      {
+        "text": "Coral Cod",
+        "kind": "creature",
+        "creatureId": "coral-cod",
+        "biomes": [
+          "ocean"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Chitin",
+    "names": {
+      "cs": "Chitin",
+      "fr": "Chitine",
+      "ru": "Хитин"
+    }
+  },
+  {
     "id": "coal",
     "name": "Coal",
     "image": "img/items/coal.png",
@@ -797,6 +1710,7 @@
       "yields": 1
     },
     "wiki": "https://valheim.weirdgloop.org/w/Copper",
+    "teleportable": false,
     "names": {
       "cs": "Měď",
       "de": "Kupfer",
@@ -818,6 +1732,7 @@
     ],
     "recipe": null,
     "wiki": "https://valheim.weirdgloop.org/w/Copper_Ore",
+    "teleportable": false,
     "names": {
       "cs": "Měděná ruda",
       "de": "Kupfererz",
@@ -847,6 +1762,27 @@
     }
   },
   {
+    "id": "corewood",
+    "name": "Corewood",
+    "image": "img/items/corewood.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Pine",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Corewood",
+    "names": {
+      "cs": "Jádrové dřevo",
+      "de": "Kernholz",
+      "fr": "Bois robuste",
+      "ru": "Цельная древесина"
+    }
+  },
+  {
     "id": "crown-jewel",
     "name": "Crown Jewel",
     "image": "img/items/crown-jewel.png",
@@ -865,6 +1801,33 @@
     "recipe": null,
     "wiki": "https://valheim.weirdgloop.org/w/Crown_Jewel",
     "names": {}
+  },
+  {
+    "id": "crystal",
+    "name": "Crystal",
+    "image": "img/items/crystal.png",
+    "biome": "mountain",
+    "tier": 5,
+    "sources": [
+      {
+        "text": "Frost Blob",
+        "kind": "other"
+      },
+      {
+        "text": "Stone Golem",
+        "kind": "creature",
+        "creatureId": "stone-golem",
+        "biomes": [
+          "mountain"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Crystal",
+    "names": {
+      "cs": "Krystal",
+      "ru": "Кристалл"
+    }
   },
   {
     "id": "cultist-trophy",
@@ -887,6 +1850,24 @@
     "names": {
       "cs": "Trofeje",
       "ru": "Категория:Трофеи"
+    }
+  },
+  {
+    "id": "curious-axe-head",
+    "name": "Curious Axe Head",
+    "image": "img/items/curious-axe-head.png",
+    "biome": null,
+    "tier": null,
+    "sources": [
+      {
+        "text": "Abandoned House (version 6)",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Curious_Axe_Head",
+    "names": {
+      "ru": "Древние топоры"
     }
   },
   {
@@ -937,6 +1918,30 @@
     }
   },
   {
+    "id": "deer-trophy",
+    "name": "Deer Trophy",
+    "image": "img/items/deer-trophy.png",
+    "biome": "meadows",
+    "tier": 1,
+    "sources": [
+      {
+        "text": "Deer",
+        "kind": "creature",
+        "creatureId": "deer",
+        "biomes": [
+          "meadows",
+          "black-forest"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Deer_Trophy",
+    "names": {
+      "cs": "Trofeje",
+      "ru": "Категория:Трофеи"
+    }
+  },
+  {
     "id": "drake-trophy",
     "name": "Drake Trophy",
     "image": "img/items/drake-trophy.png",
@@ -960,6 +1965,161 @@
     }
   },
   {
+    "id": "draugr-elite-trophy",
+    "name": "Draugr Elite Trophy",
+    "image": "img/items/draugr-elite-trophy.png",
+    "biome": "swamp",
+    "tier": 4,
+    "sources": [
+      {
+        "text": "Draugr Elite",
+        "kind": "creature",
+        "creatureId": "draugr-elite",
+        "biomes": [
+          "swamp"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Draugr_Elite_Trophy",
+    "names": {
+      "cs": "Trofeje",
+      "ru": "Категория:Трофеи"
+    }
+  },
+  {
+    "id": "dyrnwyn-blade-fragment",
+    "name": "Dyrnwyn blade fragment",
+    "image": "img/items/dyrnwyn-blade-fragment.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black forge",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black forge",
+      "materials": [
+        {
+          "item": "dyrnwyn-hilt-fragment",
+          "amount": 1
+        },
+        {
+          "item": "dyrnwyn-blade-fragment",
+          "amount": 1
+        },
+        {
+          "item": "dyrnwyn-tip-fragment",
+          "amount": 1
+        },
+        {
+          "item": "flametal",
+          "amount": 20
+        },
+        {
+          "item": "bloodstone",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Dyrnwyn_blade_fragment",
+    "names": {
+      "cs": "Dyrnwyn",
+      "ru": "Дирнвин"
+    }
+  },
+  {
+    "id": "dyrnwyn-hilt-fragment",
+    "name": "Dyrnwyn hilt fragment",
+    "image": "img/items/dyrnwyn-hilt-fragment.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black forge",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black forge",
+      "materials": [
+        {
+          "item": "dyrnwyn-hilt-fragment",
+          "amount": 1
+        },
+        {
+          "item": "dyrnwyn-blade-fragment",
+          "amount": 1
+        },
+        {
+          "item": "dyrnwyn-tip-fragment",
+          "amount": 1
+        },
+        {
+          "item": "flametal",
+          "amount": 20
+        },
+        {
+          "item": "bloodstone",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Dyrnwyn_hilt_fragment",
+    "names": {
+      "cs": "Dyrnwyn",
+      "ru": "Дирнвин"
+    }
+  },
+  {
+    "id": "dyrnwyn-tip-fragment",
+    "name": "Dyrnwyn tip fragment",
+    "image": "img/items/dyrnwyn-tip-fragment.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black forge",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black forge",
+      "materials": [
+        {
+          "item": "dyrnwyn-hilt-fragment",
+          "amount": 1
+        },
+        {
+          "item": "dyrnwyn-blade-fragment",
+          "amount": 1
+        },
+        {
+          "item": "dyrnwyn-tip-fragment",
+          "amount": 1
+        },
+        {
+          "item": "flametal",
+          "amount": 20
+        },
+        {
+          "item": "bloodstone",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Dyrnwyn_tip_fragment",
+    "names": {
+      "cs": "Dyrnwyn",
+      "ru": "Дирнвин"
+    }
+  },
+  {
     "id": "elaking-hair-bundle",
     "name": "Elaking Hair Bundle",
     "image": "img/items/elaking-hair-bundle.png",
@@ -977,6 +2137,22 @@
     ],
     "recipe": null,
     "wiki": "https://valheim.weirdgloop.org/w/Elaking_Hair_Bundle",
+    "names": {}
+  },
+  {
+    "id": "embers",
+    "name": "Embers",
+    "image": "img/items/embers.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Eternal Pyre",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Embers",
     "names": {}
   },
   {
@@ -1007,6 +2183,25 @@
     }
   },
   {
+    "id": "fenris-claw",
+    "name": "Fenris Claw",
+    "image": "img/items/fenris-claw.png",
+    "biome": "mountain",
+    "tier": 5,
+    "sources": [
+      {
+        "text": "Frost Caves",
+        "kind": "location"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Fenris_Claw",
+    "names": {
+      "cs": "Fenridův dráp",
+      "ru": "Коготь Фенриса"
+    }
+  },
+  {
     "id": "fenris-hair",
     "name": "Fenris Hair",
     "image": "img/items/fenris-hair.png",
@@ -1023,6 +2218,50 @@
     "names": {
       "cs": "Fenridovy chlupy",
       "ru": "Шерсть Фенриса"
+    }
+  },
+  {
+    "id": "fiddlehead",
+    "name": "Fiddlehead",
+    "image": "img/items/fiddlehead.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Gathered in the Ashlands",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Fiddlehead",
+    "names": {
+      "cs": "Houslihlavka",
+      "ru": "Рахис"
+    }
+  },
+  {
+    "id": "finewood",
+    "name": "Finewood",
+    "image": "img/items/finewood.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Birch",
+        "kind": "other"
+      },
+      {
+        "text": "Oak",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Finewood",
+    "names": {
+      "cs": "Jemné dřevo",
+      "de": "Edelholz",
+      "fr": "Bois précieux",
+      "ru": "Качественная древесина"
     }
   },
   {
@@ -1048,11 +2287,52 @@
       "yields": 1
     },
     "wiki": "https://valheim.weirdgloop.org/w/Flametal",
+    "teleportable": false,
     "names": {
       "cs": "Plamenný kov",
       "de": "Flammenkern",
       "fr": "Flametal",
       "ru": "Огнеметалл"
+    }
+  },
+  {
+    "id": "flametal-mace",
+    "name": "Flametal Mace",
+    "image": "img/items/flametal-mace.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black Forge",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge",
+      "materials": [
+        {
+          "item": "charred-bone",
+          "amount": 10
+        },
+        {
+          "item": "flametal",
+          "amount": 15
+        },
+        {
+          "item": "sulfur",
+          "amount": 5
+        },
+        {
+          "item": "asksvin-hide",
+          "amount": 3
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Flametal_Mace",
+    "names": {
+      "de": "Flammenkern-Streitkolben",
+      "ru": "Огнеметаллическая булава"
     }
   },
   {
@@ -1069,6 +2349,7 @@
     ],
     "recipe": null,
     "wiki": "https://valheim.weirdgloop.org/w/Flametal_Ore",
+    "teleportable": false,
     "names": {
       "cs": "Plamenná kovová ruda",
       "de": "Flammenkernerz",
@@ -1102,6 +2383,82 @@
     }
   },
   {
+    "id": "flint",
+    "name": "Flint",
+    "image": "img/items/flint.png",
+    "biome": "meadows",
+    "tier": 1,
+    "sources": [
+      {
+        "text": "Shorelines of rivers and oceans",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Flint",
+    "names": {
+      "cs": "Pazourek",
+      "fr": "Silex",
+      "ru": "Кремень"
+    }
+  },
+  {
+    "id": "freeze-gland",
+    "name": "Freeze Gland",
+    "image": "img/items/freeze-gland.png",
+    "biome": "mountain",
+    "tier": 5,
+    "sources": [
+      {
+        "text": "Drake",
+        "kind": "creature",
+        "creatureId": "drake",
+        "biomes": [
+          "mountain"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Freeze_Gland",
+    "names": {
+      "cs": "Zmrzlá žláza",
+      "de": "Gefrorene Drüse",
+      "fr": "Glande gelée",
+      "ru": "Морозная железа"
+    }
+  },
+  {
+    "id": "frostfire-essence",
+    "name": "Frostfire Essence",
+    "image": "img/items/frostfire-essence.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Frostfire_Essence",
+    "names": {}
+  },
+  {
+    "id": "frozen-branch",
+    "name": "Frozen Branch",
+    "image": "img/items/frozen-branch.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Barka",
+        "kind": "creature",
+        "creatureId": "barka",
+        "biomes": [
+          "deep-north"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Frozen_Branch",
+    "names": {}
+  },
+  {
     "id": "giant-herring",
     "name": "Giant Herring",
     "image": "img/items/giant-herring.png",
@@ -1123,6 +2480,47 @@
     }
   },
   {
+    "id": "greydwarf-eye",
+    "name": "Greydwarf Eye",
+    "image": "img/items/greydwarf-eye.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Greydwarf",
+        "kind": "creature",
+        "creatureId": "greydwarf",
+        "biomes": [
+          "black-forest"
+        ]
+      },
+      {
+        "text": "Greydwarf Brute",
+        "kind": "creature",
+        "creatureId": "greydwarf-brute",
+        "biomes": [
+          "black-forest"
+        ]
+      },
+      {
+        "text": "and Greydwarf Shaman",
+        "kind": "creature",
+        "creatureId": "greydwarf-shaman",
+        "biomes": [
+          "black-forest"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Greydwarf_Eye",
+    "names": {
+      "cs": "Oko šedého trpaslíka",
+      "de": "Grauzwergen-Auge",
+      "fr": "Œil de Naingris",
+      "ru": "Глаз грейдворфа"
+    }
+  },
+  {
     "id": "grouper",
     "name": "Grouper",
     "image": "img/items/grouper.png",
@@ -1141,6 +2539,83 @@
       "de": "Zackenbarsch",
       "fr": "Mérou",
       "ru": "Групер"
+    }
+  },
+  {
+    "id": "guck",
+    "name": "Guck",
+    "image": "img/items/guck.png",
+    "biome": "swamp",
+    "tier": 4,
+    "sources": [
+      {
+        "text": "Abomination",
+        "kind": "creature",
+        "creatureId": "abomination",
+        "biomes": [
+          "swamp"
+        ]
+      },
+      {
+        "text": "Gucksack",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Guck",
+    "names": {
+      "cs": "Sliz",
+      "de": "Glibber",
+      "fr": "Viscosité",
+      "ru": "Слизь"
+    }
+  },
+  {
+    "id": "hard-antler",
+    "name": "Hard Antler",
+    "image": "img/items/hard-antler.png",
+    "biome": "meadows",
+    "tier": 1,
+    "sources": [
+      {
+        "text": "Eikthyr",
+        "kind": "creature",
+        "creatureId": "eikthyr",
+        "biomes": [
+          "meadows"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Hard_Antler",
+    "names": {
+      "cs": "Tvrdý paroh",
+      "de": "Hartes Geweih",
+      "fr": "Bois dur",
+      "ru": "Твердый рог"
+    }
+  },
+  {
+    "id": "hexen-trophy",
+    "name": "Hexen Trophy",
+    "image": "img/items/hexen-trophy.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Hexen",
+        "kind": "creature",
+        "creatureId": "hexen",
+        "biomes": [
+          "deep-north"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Hexen_Trophy",
+    "names": {
+      "cs": "Trofeje",
+      "ru": "Категория:Трофеи"
     }
   },
   {
@@ -1191,6 +2666,24 @@
     "names": {}
   },
   {
+    "id": "iolite",
+    "name": "Iolite",
+    "image": "img/items/iolite.png",
+    "biome": "mistlands",
+    "tier": 7,
+    "sources": [
+      {
+        "text": "Charred Fortress",
+        "kind": "location"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Iolite",
+    "names": {
+      "ru": "Иолит"
+    }
+  },
+  {
     "id": "iron",
     "name": "Iron",
     "image": "img/items/iron.png",
@@ -1213,11 +2706,30 @@
       "yields": 1
     },
     "wiki": "https://valheim.weirdgloop.org/w/Iron",
+    "teleportable": false,
     "names": {
       "cs": "Železo",
       "de": "Eisen",
       "fr": "Fer",
       "ru": "Железо"
+    }
+  },
+  {
+    "id": "jade",
+    "name": "Jade",
+    "image": "img/items/jade.png",
+    "biome": "mistlands",
+    "tier": 7,
+    "sources": [
+      {
+        "text": "Charred Fortress",
+        "kind": "location"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Jade",
+    "names": {
+      "ru": "Нефрит"
     }
   },
   {
@@ -1329,6 +2841,26 @@
       "yields": 1
     },
     "wiki": "https://valheim.weirdgloop.org/w/Liquid_Frost",
+    "names": {}
+  },
+  {
+    "id": "long-claws",
+    "name": "Long Claws",
+    "image": "img/items/long-claws.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Eyeless One",
+        "kind": "creature",
+        "creatureId": "eyeless-one",
+        "biomes": [
+          "deep-north"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Long_Claws",
     "names": {}
   },
   {
@@ -1512,6 +3044,43 @@
     }
   },
   {
+    "id": "mould-echo-spike",
+    "name": "Mould Echo Spike",
+    "image": "img/items/mould-echo-spike.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Galdr Table level 3",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Galdr Table level 3",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 10
+        },
+        {
+          "item": "nornathread",
+          "amount": 4
+        },
+        {
+          "item": "frostfire-essence",
+          "amount": 1
+        },
+        {
+          "item": "mould-echo-spike",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Echo_Spike",
+    "names": {}
+  },
+  {
     "id": "mould-headdress-of-the-caller",
     "name": "Mould Headdress of the Caller",
     "image": "img/items/mould-headdress-of-the-caller.png",
@@ -1619,6 +3188,1047 @@
     "names": {}
   },
   {
+    "id": "mould-lightning-strike",
+    "name": "Mould Lightning Strike",
+    "image": "img/items/mould-lightning-strike.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Galdr Table level 3",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Galdr Table level 3",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 10
+        },
+        {
+          "item": "nornathread",
+          "amount": 5
+        },
+        {
+          "item": "thunderblood-essence",
+          "amount": 1
+        },
+        {
+          "item": "mould-lightning-strike",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Lightning_Strike",
+    "names": {}
+  },
+  {
+    "id": "mould-nord-atgeir",
+    "name": "Mould Nord Atgeir",
+    "image": "img/items/mould-nord-atgeir.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-atgeir",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Atgeir",
+    "names": {}
+  },
+  {
+    "id": "mould-nord-axe",
+    "name": "Mould Nord Axe",
+    "image": "img/items/mould-nord-axe.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-axe",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Axe",
+    "names": {}
+  },
+  {
+    "id": "mould-nord-bow",
+    "name": "Mould Nord Bow",
+    "image": "img/items/mould-nord-bow.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-bow",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Bow",
+    "names": {}
+  },
+  {
+    "id": "mould-nord-buckler",
+    "name": "Mould Nord Buckler",
+    "image": "img/items/mould-nord-buckler.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 10
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        },
+        {
+          "item": "mould-nord-buckler",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Buckler",
+    "names": {}
+  },
+  {
+    "id": "mould-nord-crossbow",
+    "name": "Mould Nord Crossbow",
+    "image": "img/items/mould-nord-crossbow.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-crossbow",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Crossbow",
+    "names": {}
+  },
+  {
+    "id": "mould-nord-dagger",
+    "name": "Mould Nord Dagger",
+    "image": "img/items/mould-nord-dagger.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-dagger",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Dagger",
+    "names": {}
+  },
+  {
+    "id": "mould-nord-greataxe",
+    "name": "Mould Nord Greataxe",
+    "image": "img/items/mould-nord-greataxe.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-greataxe",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Greataxe",
+    "names": {}
+  },
+  {
+    "id": "mould-nord-greatshield",
+    "name": "Mould Nord Greatshield",
+    "image": "img/items/mould-nord-greatshield.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "timberwood",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-greatshield",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Greatshield",
+    "names": {}
+  },
+  {
+    "id": "mould-nord-greatsword",
+    "name": "Mould Nord Greatsword",
+    "image": "img/items/mould-nord-greatsword.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-greatsword",
+          "amount": 1
+        },
+        {
+          "item": "frozen-branch",
+          "amount": 2
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Greatsword",
+    "names": {}
+  },
+  {
+    "id": "mould-nord-knucklechains",
+    "name": "Mould Nord Knucklechains",
+    "image": "img/items/mould-nord-knucklechains.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-knucklechains",
+          "amount": 1
+        },
+        {
+          "item": "long-claws",
+          "amount": 2
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Knucklechains",
+    "names": {}
+  },
+  {
+    "id": "mould-nord-mace",
+    "name": "Mould Nord Mace",
+    "image": "img/items/mould-nord-mace.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-mace",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Mace",
+    "names": {}
+  },
+  {
+    "id": "mould-nord-shield",
+    "name": "Mould Nord Shield",
+    "image": "img/items/mould-nord-shield.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 15
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        },
+        {
+          "item": "mould-nord-shield",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Shield",
+    "names": {}
+  },
+  {
+    "id": "mould-nord-sledge",
+    "name": "Mould Nord Sledge",
+    "image": "img/items/mould-nord-sledge.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-sledge",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Sledge",
+    "names": {}
+  },
+  {
+    "id": "mould-nord-spear",
+    "name": "Mould Nord Spear",
+    "image": "img/items/mould-nord-spear.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-spear",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Spear",
+    "names": {}
+  },
+  {
+    "id": "mould-nord-sword",
+    "name": "Mould Nord Sword",
+    "image": "img/items/mould-nord-sword.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-sword",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Sword",
+    "names": {}
+  },
+  {
+    "id": "mould-northern-vengeance",
+    "name": "Mould Northern Vengeance",
+    "image": "img/items/mould-northern-vengeance.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Galdr Table level 3",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Galdr Table level 3",
+      "materials": [
+        {
+          "item": "ice",
+          "amount": 10
+        },
+        {
+          "item": "nornathread",
+          "amount": 5
+        },
+        {
+          "item": "hexen-trophy",
+          "amount": 1
+        },
+        {
+          "item": "mould-northern-vengeance",
+          "amount": 1
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mould_Northern_Vengeance",
+    "names": {}
+  },
+  {
+    "id": "mysterious-axe-head",
+    "name": "Mysterious Axe Head",
+    "image": "img/items/mysterious-axe-head.png",
+    "biome": null,
+    "tier": null,
+    "sources": [
+      {
+        "text": "Abandoned House (version 6)",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Mysterious_Axe_Head",
+    "names": {
+      "ru": "Древние топоры"
+    }
+  },
+  {
+    "id": "needle",
+    "name": "Needle",
+    "image": "img/items/needle.png",
+    "biome": "plains",
+    "tier": 6,
+    "sources": [
+      {
+        "text": "Deathsquito",
+        "kind": "creature",
+        "creatureId": "deathsquito",
+        "biomes": [
+          "plains"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Needle",
+    "names": {
+      "cs": "Jehla",
+      "ru": "Игла"
+    }
+  },
+  {
+    "id": "nidhogg",
+    "name": "Nidhögg",
+    "image": "img/items/nidhogg.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black forge",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black forge",
+      "materials": [
+        {
+          "item": "charred-bone",
+          "amount": 3
+        },
+        {
+          "item": "flametal",
+          "amount": 12
+        },
+        {
+          "item": "asksvin-hide",
+          "amount": 2
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Nidh%C3%B6gg",
+    "names": {
+      "ru": "Нидхёгг"
+    }
+  },
+  {
+    "id": "nord-atgeir",
+    "name": "Nord Atgeir",
+    "image": "img/items/nord-atgeir.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-atgeir",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Nord_Atgeir",
+    "names": {}
+  },
+  {
+    "id": "nord-axe",
+    "name": "Nord Axe",
+    "image": "img/items/nord-axe.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-axe",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Nord_Axe",
+    "names": {}
+  },
+  {
+    "id": "nord-bow",
+    "name": "Nord Bow",
+    "image": "img/items/nord-bow.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-bow",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Nord_Bow",
+    "names": {}
+  },
+  {
+    "id": "nord-crossbow",
+    "name": "Nord Crossbow",
+    "image": "img/items/nord-crossbow.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-crossbow",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Nord_Crossbow",
+    "names": {}
+  },
+  {
+    "id": "nord-dagger",
+    "name": "Nord Dagger",
+    "image": "img/items/nord-dagger.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-dagger",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Nord_Dagger",
+    "names": {}
+  },
+  {
+    "id": "nord-greataxe",
+    "name": "Nord Greataxe",
+    "image": "img/items/nord-greataxe.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-greataxe",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Nord_Greataxe",
+    "names": {}
+  },
+  {
+    "id": "nord-greatsword",
+    "name": "Nord Greatsword",
+    "image": "img/items/nord-greatsword.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-greatsword",
+          "amount": 1
+        },
+        {
+          "item": "frozen-branch",
+          "amount": 2
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Nord_Greatsword",
+    "names": {}
+  },
+  {
+    "id": "nord-knucklechains",
+    "name": "Nord Knucklechains",
+    "image": "img/items/nord-knucklechains.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-knucklechains",
+          "amount": 1
+        },
+        {
+          "item": "long-claws",
+          "amount": 2
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Nord_Knucklechains",
+    "names": {}
+  },
+  {
+    "id": "nord-mace",
+    "name": "Nord Mace",
+    "image": "img/items/nord-mace.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-mace",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Nord_Mace",
+    "names": {}
+  },
+  {
+    "id": "nord-sledge",
+    "name": "Nord Sledge",
+    "image": "img/items/nord-sledge.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-sledge",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Nord_Sledge",
+    "names": {}
+  },
+  {
+    "id": "nord-spear",
+    "name": "Nord Spear",
+    "image": "img/items/nord-spear.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-spear",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Nord_Spear",
+    "names": {}
+  },
+  {
+    "id": "nord-sword",
+    "name": "Nord Sword",
+    "image": "img/items/nord-sword.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Black Forge level 4",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge level 4",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 20
+        },
+        {
+          "item": "mould-nord-sword",
+          "amount": 1
+        },
+        {
+          "item": "timberwood",
+          "amount": 10
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Nord_Sword",
+    "names": {}
+  },
+  {
     "id": "nornathread",
     "name": "Nornathread",
     "image": "img/items/nornathread.png",
@@ -1660,6 +4270,58 @@
     }
   },
   {
+    "id": "obsidian",
+    "name": "Obsidian",
+    "image": "img/items/obsidian.png",
+    "biome": "mountain",
+    "tier": 5,
+    "sources": [
+      {
+        "text": "Obsidian Deposit in the Mountain biome",
+        "kind": "location"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Obsidian",
+    "names": {
+      "cs": "Obsidián",
+      "ru": "Обсидиан"
+    }
+  },
+  {
+    "id": "ooze",
+    "name": "Ooze",
+    "image": "img/items/ooze.png",
+    "biome": "swamp",
+    "tier": 4,
+    "sources": [
+      {
+        "text": "Blob",
+        "kind": "creature",
+        "creatureId": "blob",
+        "biomes": [
+          "swamp"
+        ]
+      },
+      {
+        "text": "Oozer",
+        "kind": "creature",
+        "creatureId": "oozer",
+        "biomes": [
+          "swamp"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Ooze",
+    "names": {
+      "cs": "Kal",
+      "de": "Schlamm",
+      "fr": "Gadoue",
+      "ru": "Жижа"
+    }
+  },
+  {
     "id": "perch",
     "name": "Perch",
     "image": "img/items/perch.png",
@@ -1694,6 +4356,7 @@
     ],
     "recipe": null,
     "wiki": "https://valheim.weirdgloop.org/w/Petrified_Tissue",
+    "teleportable": false,
     "names": {}
   },
   {
@@ -1715,6 +4378,32 @@
       "de": "Hecht",
       "fr": "Brochet",
       "ru": "Щука"
+    }
+  },
+  {
+    "id": "proustite-powder",
+    "name": "Proustite Powder",
+    "image": "img/items/proustite-powder.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Lava Blob",
+        "kind": "creature",
+        "creatureId": "lava-blob",
+        "biomes": [
+          "ashlands"
+        ]
+      },
+      {
+        "text": "Unstable Lava Rock",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Proustite_Powder",
+    "names": {
+      "ru": "Пруститовый порошок"
     }
   },
   {
@@ -1768,6 +4457,134 @@
     "names": {
       "cs": "Zpracovaný Éitr",
       "ru": "Переработанный эйтр"
+    }
+  },
+  {
+    "id": "resin",
+    "name": "Resin",
+    "image": "img/items/resin.png",
+    "biome": "meadows",
+    "tier": 1,
+    "sources": [
+      {
+        "text": "*Birch Trees",
+        "kind": "other"
+      },
+      {
+        "text": "*Beech Trees",
+        "kind": "other"
+      },
+      {
+        "text": "*Fir Trees",
+        "kind": "other"
+      },
+      {
+        "text": "*Pine Trees",
+        "kind": "other"
+      },
+      {
+        "text": "*Oak Trees",
+        "kind": "other"
+      },
+      {
+        "text": "*Yggdrasil Shoots",
+        "kind": "other"
+      },
+      {
+        "text": "*Greyling",
+        "kind": "creature",
+        "creatureId": "greyling",
+        "biomes": [
+          "meadows"
+        ]
+      },
+      {
+        "text": "*Greydwarf",
+        "kind": "creature",
+        "creatureId": "greydwarf",
+        "biomes": [
+          "black-forest"
+        ]
+      },
+      {
+        "text": "*Greydwarf Shaman",
+        "kind": "creature",
+        "creatureId": "greydwarf-shaman",
+        "biomes": [
+          "black-forest"
+        ]
+      },
+      {
+        "text": "*Greydwarf Brute",
+        "kind": "creature",
+        "creatureId": "greydwarf-brute",
+        "biomes": [
+          "black-forest"
+        ]
+      },
+      {
+        "text": "*Kvastur",
+        "kind": "creature",
+        "creatureId": "kvastur",
+        "biomes": [
+          "swamp"
+        ]
+      },
+      {
+        "text": "*Chest in Meadows",
+        "kind": "location"
+      },
+      {
+        "text": "*Barrel next to Greydwarf building spawns in Black Forest",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Resin",
+    "names": {
+      "cs": "Pryskyřice",
+      "de": "Harz",
+      "fr": "Résine",
+      "ru": "Смола"
+    }
+  },
+  {
+    "id": "ripper",
+    "name": "Ripper",
+    "image": "img/items/ripper.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black Forge",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge",
+      "materials": [
+        {
+          "item": "ashwood",
+          "amount": 10
+        },
+        {
+          "item": "flametal",
+          "amount": 8
+        },
+        {
+          "item": "morgen-sinew",
+          "amount": 2
+        },
+        {
+          "item": "bonemaw-tooth",
+          "amount": 4
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Ripper",
+    "names": {
+      "ru": "Разрыватель"
     }
   },
   {
@@ -1898,6 +4715,7 @@
     ],
     "recipe": null,
     "wiki": "https://valheim.weirdgloop.org/w/Scrap_Iron",
+    "teleportable": false,
     "names": {
       "cs": "Železný šrot",
       "de": "Eisenschrott",
@@ -1926,6 +4744,29 @@
     "names": {}
   },
   {
+    "id": "serpent-scale",
+    "name": "Serpent Scale",
+    "image": "img/items/serpent-scale.png",
+    "biome": "ocean",
+    "tier": 3,
+    "sources": [
+      {
+        "text": "Serpent",
+        "kind": "creature",
+        "creatureId": "serpent",
+        "biomes": [
+          "ocean"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Serpent_Scale",
+    "names": {
+      "cs": "Šupina z hada",
+      "ru": "Чешуя змея"
+    }
+  },
+  {
     "id": "silver",
     "name": "Silver",
     "image": "img/items/silver.png",
@@ -1948,6 +4789,7 @@
       "yields": 1
     },
     "wiki": "https://valheim.weirdgloop.org/w/Silver",
+    "teleportable": false,
     "names": {
       "cs": "Stříbro",
       "de": "Silber",
@@ -1969,11 +4811,92 @@
     ],
     "recipe": null,
     "wiki": "https://valheim.weirdgloop.org/w/Silver_Ore",
+    "teleportable": false,
     "names": {
       "cs": "Stříbrná ruda",
       "de": "Silbererz",
       "fr": "Minerai d'argent",
       "ru": "Серебряная руда"
+    }
+  },
+  {
+    "id": "skeleton-trophy",
+    "name": "Skeleton Trophy",
+    "image": "img/items/skeleton-trophy.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Skeleton",
+        "kind": "creature",
+        "creatureId": "skeleton",
+        "biomes": [
+          "black-forest",
+          "swamp",
+          "mountain",
+          "deep-north"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Skeleton_Trophy",
+    "names": {
+      "cs": "Trofeje",
+      "ru": "Категория:Трофеи"
+    }
+  },
+  {
+    "id": "slayer",
+    "name": "Slayer",
+    "image": "img/items/slayer.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black Forge",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge",
+      "materials": [
+        {
+          "item": "flametal",
+          "amount": 30
+        },
+        {
+          "item": "asksvin-hide",
+          "amount": 5
+        },
+        {
+          "item": "morgen-sinew",
+          "amount": 3
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Slayer",
+    "names": {
+      "ru": "Убийца"
+    }
+  },
+  {
+    "id": "smoke-puff",
+    "name": "Smoke Puff",
+    "image": "img/items/smoke-puff.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Found in the Ashlands biome",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Smoke_Puff",
+    "names": {
+      "cs": "Kouřovka",
+      "ru": "Дымчатый гриб"
     }
   },
   {
@@ -2006,6 +4929,147 @@
     }
   },
   {
+    "id": "splitnir",
+    "name": "Splitnir",
+    "image": "img/items/splitnir.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Black Forge",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Black Forge",
+      "materials": [
+        {
+          "item": "ashwood",
+          "amount": 10
+        },
+        {
+          "item": "flametal",
+          "amount": 6
+        },
+        {
+          "item": "asksvin-hide",
+          "amount": 2
+        },
+        {
+          "item": "bonemaw-tooth",
+          "amount": 3
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Splitnir",
+    "names": {
+      "ru": "Расколнир"
+    }
+  },
+  {
+    "id": "stone",
+    "name": "Stone",
+    "image": "img/items/stone.png",
+    "biome": "meadows",
+    "tier": 1,
+    "sources": [
+      {
+        "text": "Stones",
+        "kind": "other"
+      },
+      {
+        "text": "Greydwarf",
+        "kind": "creature",
+        "creatureId": "greydwarf",
+        "biomes": [
+          "black-forest"
+        ]
+      },
+      {
+        "text": "Greydwarf Brute",
+        "kind": "creature",
+        "creatureId": "greydwarf-brute",
+        "biomes": [
+          "black-forest"
+        ]
+      },
+      {
+        "text": "Stone Golem",
+        "kind": "creature",
+        "creatureId": "stone-golem",
+        "biomes": [
+          "mountain"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Stone",
+    "names": {
+      "cs": "Kámen",
+      "de": "Stein",
+      "fr": "Pierre",
+      "ru": "Камень"
+    }
+  },
+  {
+    "id": "sulfur",
+    "name": "Sulfur",
+    "image": "img/items/sulfur.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Lava Blob",
+        "kind": "creature",
+        "creatureId": "lava-blob",
+        "biomes": [
+          "ashlands"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Sulfur",
+    "names": {
+      "ru": "Сера"
+    }
+  },
+  {
+    "id": "surtling-core",
+    "name": "Surtling Core",
+    "image": "img/items/surtling-core.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Surtlings",
+        "kind": "creature",
+        "creatureId": "surtling",
+        "biomes": [
+          "swamp"
+        ]
+      },
+      {
+        "text": "Burial Chambers",
+        "kind": "location"
+      },
+      {
+        "text": "Bonfires",
+        "kind": "other"
+      },
+      {
+        "text": "Dvergr Lanterns",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Surtling_Core",
+    "names": {
+      "cs": "Jádro Surtlinga",
+      "ru": "Ядро суртлинга"
+    }
+  },
+  {
     "id": "tetra",
     "name": "Tetra",
     "image": "img/items/tetra.png",
@@ -2025,6 +5089,33 @@
       "fr": "Tétra",
       "ru": "Тетра"
     }
+  },
+  {
+    "id": "thunderblood-essence",
+    "name": "Thunderblood Essence",
+    "image": "img/items/thunderblood-essence.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Thunderblood_Essence",
+    "names": {}
+  },
+  {
+    "id": "timberwood",
+    "name": "Timberwood",
+    "image": "img/items/timberwood.png",
+    "biome": "deep-north",
+    "tier": 9,
+    "sources": [
+      {
+        "text": "Trees in the Deep North",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Timberwood",
+    "names": {}
   },
   {
     "id": "tin",
@@ -2049,6 +5140,7 @@
       "yields": 1
     },
     "wiki": "https://valheim.weirdgloop.org/w/Tin",
+    "teleportable": false,
     "names": {
       "cs": "Cín",
       "de": "Zinn",
@@ -2070,6 +5162,7 @@
     ],
     "recipe": null,
     "wiki": "https://valheim.weirdgloop.org/w/Tin_Ore",
+    "teleportable": false,
     "names": {
       "cs": "Cínová ruda",
       "de": "Zinnerz",
@@ -2108,6 +5201,29 @@
       "de": "Trollleder",
       "fr": "Peau de troll",
       "ru": "Шкура тролля"
+    }
+  },
+  {
+    "id": "troll-trophy",
+    "name": "Troll Trophy",
+    "image": "img/items/troll-trophy.png",
+    "biome": "black-forest",
+    "tier": 2,
+    "sources": [
+      {
+        "text": "Troll",
+        "kind": "creature",
+        "creatureId": "troll",
+        "biomes": [
+          "black-forest"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Troll_Trophy",
+    "names": {
+      "cs": "Trofeje",
+      "ru": "Категория:Трофеи"
     }
   },
   {
@@ -2198,6 +5314,25 @@
     }
   },
   {
+    "id": "wisp",
+    "name": "Wisp",
+    "image": "img/items/wisp.png",
+    "biome": null,
+    "tier": null,
+    "sources": [
+      {
+        "text": "Wisp Fountain",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Wisp",
+    "names": {
+      "cs": "Dušička",
+      "ru": "Светлячок"
+    }
+  },
+  {
     "id": "wolf-fang",
     "name": "Wolf Fang",
     "image": "img/items/wolf-fang.png",
@@ -2285,6 +5420,39 @@
     }
   },
   {
+    "id": "wood",
+    "name": "Wood",
+    "image": "img/items/wood.png",
+    "biome": "meadows",
+    "tier": 1,
+    "sources": [
+      {
+        "text": "Bushes",
+        "kind": "other"
+      },
+      {
+        "text": "Greydwarfs",
+        "kind": "creature",
+        "creatureId": "greydwarf",
+        "biomes": [
+          "black-forest"
+        ]
+      },
+      {
+        "text": "Trees",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Wood",
+    "names": {
+      "cs": "Dřevo",
+      "de": "Holz",
+      "fr": "Bois",
+      "ru": "Древесина"
+    }
+  },
+  {
     "id": "writhan-roots",
     "name": "Writhan Roots",
     "image": "img/items/writhan-roots.png",
@@ -2303,5 +5471,46 @@
     "recipe": null,
     "wiki": "https://valheim.weirdgloop.org/w/Writhan_Roots",
     "names": {}
+  },
+  {
+    "id": "yggdrasil-wood",
+    "name": "Yggdrasil Wood",
+    "image": "img/items/yggdrasil-wood.png",
+    "biome": "mistlands",
+    "tier": 7,
+    "sources": [
+      {
+        "text": "Yggdrasil Shoot in Mistlands biomes",
+        "kind": "other"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Yggdrasil_Wood",
+    "names": {
+      "cs": "Dřevo Yggdrasilu",
+      "de": "Yggdrasil-Holz",
+      "fr": "Bois d'Yggdrasil",
+      "ru": "Древесина Иггдрасиля"
+    }
+  },
+  {
+    "id": "ymir-flesh",
+    "name": "Ymir Flesh",
+    "image": "img/items/ymir-flesh.png",
+    "biome": "swamp",
+    "tier": 4,
+    "sources": [
+      {
+        "text": "Haldor",
+        "kind": "npc"
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Ymir_Flesh",
+    "names": {
+      "cs": "Maso Ymira",
+      "fr": "Chair d'Ymir",
+      "ru": "Плоть Имира"
+    }
   }
 ]
