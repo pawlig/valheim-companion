@@ -15,6 +15,7 @@ import {
   parseTrophySource,
   parseConversionRecipe,
   resolveRecipeBiomes,
+  resolveDisambiguationTitle,
 } from './fetch-armor.mjs';
 import { buildArmourerBundle } from '../build-armourer-data.mjs';
 import { statSync } from 'node:fs';
@@ -297,4 +298,15 @@ test('buildArmourerBundle uses deterministic generatedAt from data/armor.json mt
   const bundle = buildArmourerBundle();
   assert.equal(bundle.generatedAt, stat.mtime.toISOString());
 });
+
+test('resolveDisambiguationTitle detects Root disambiguation and returns Root (item)', () => {
+  const rootDisambig = `'''Root''' may refer to:
+*[[File:Root.png|30px]] [[Root (item)]], the [[Abomination]] drop.
+*[[File:Roots summoned by The Elder.png|30px]] [[Root (creature)]], summoned by [[The Elder]].
+{{disambig}}`;
+  assert.equal(resolveDisambiguationTitle(rootDisambig, 'Root'), 'Root (item)');
+  assert.equal(resolveDisambiguationTitle('{{infobox item|title=Iron}}', 'Iron'), null);
+  assert.equal(resolveDisambiguationTitle(null, 'Root'), null);
+});
+
 

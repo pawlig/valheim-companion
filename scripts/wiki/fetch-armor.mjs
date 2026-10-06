@@ -17,6 +17,7 @@ import {
   parseMaterialList,
   parseQualityTables,
   parseTemplates,
+  resolveDisambiguationTitle,
   slug,
 } from './wikitext.mjs';
 import { BIOMES } from './biomes.mjs';
@@ -59,6 +60,8 @@ const KNOWN_STATIONS = [
 ];
 
 const KNOWN_NPCS = ['haldor', 'hildir', 'bog-witch'];
+
+export { resolveDisambiguationTitle };
 
 export function resolvePieceName(boxTitle, pageTitle) {
   const fromBox = boxTitle ? cleanText(boxTitle).trim() : '';
@@ -559,6 +562,30 @@ async function main() {
     const fetched = await api.getWikitext(unvisited);
     Object.assign(allMaterialPages, fetched);
 
+    const disambigPairs = [];
+    for (const pageTitle of unvisited) {
+      const page = allMaterialPages[pageTitle];
+      if (!page?.wikitext) continue;
+      const targetTitle = resolveDisambiguationTitle(page.wikitext, pageTitle);
+      if (targetTitle) {
+        disambigPairs.push({ original: pageTitle, target: targetTitle });
+      }
+    }
+    if (disambigPairs.length > 0) {
+      const fetchedDisambigs = await api.getWikitext(disambigPairs.map((d) => d.target));
+      for (const d of disambigPairs) {
+        if (fetchedDisambigs[d.target]?.wikitext) {
+          allMaterialPages[d.target] = fetchedDisambigs[d.target];
+          allMaterialPages[d.original] = {
+            ...fetchedDisambigs[d.target],
+            disambiguatedFrom: d.original,
+            disambiguatedTo: d.target,
+            wiki: wikiPageUrl(d.target),
+          };
+        }
+      }
+    }
+
     for (const pageTitle of unvisited) {
       const page = allMaterialPages[pageTitle];
       if (!page?.wikitext) continue;
@@ -593,7 +620,7 @@ async function main() {
   const armorSetTitles = new Set(parsedArmor.map((a) => a.name));
   const canonicalNameByRaw = new Map();
   for (const [rawName, page] of Object.entries(allMaterialPages)) {
-    const target = page?.title ?? rawName;
+    const target = page?.disambiguatedFrom ? rawName : (page?.title ?? rawName);
     if (target.toLowerCase() === 'trophies' && rawName.toLowerCase() !== 'trophies') {
       canonicalNameByRaw.set(rawName, rawName);
     } else if (armorSetTitles.has(target) && !armorSetTitles.has(rawName)) {
@@ -707,7 +734,7 @@ async function main() {
       tier: res.tier,
       sources,
       recipe,
-      wiki: wikiPageUrl(matName),
+      wiki: page?.wiki ?? wikiPageUrl(matName),
       _imageFile: imageFile,
     });
   }

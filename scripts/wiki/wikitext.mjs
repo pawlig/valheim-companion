@@ -231,6 +231,28 @@ export function cleanText(s) {
   return text;
 }
 
+// Detect disambiguation pages for materials/items and return target item title.
+// Matches "may refer to", or absence of {{infobox item}} with a [[<Title> (item)]] link.
+export function resolveDisambiguationTitle(wt, pageTitle) {
+  if (!wt) return null;
+  const isDisambig =
+    /may refer to/i.test(wt) ||
+    (!wt.toLowerCase().includes('{{infobox item') &&
+      new RegExp(`\\[\\[${pageTitle}\\s*\\(item\\)\\]\\]`, 'i').test(wt));
+  if (isDisambig) {
+    const itemLinkMatch = wt.match(new RegExp(`\\[\\[(${pageTitle}\\s*\\(item\\))\\]\\]`, 'i'));
+    if (itemLinkMatch) {
+      return itemLinkMatch[1].trim();
+    }
+    const generalMatch = wt.match(/\[\[([^|\]]+\s*\(item\))\]\]/i);
+    if (generalMatch) {
+      return generalMatch[1].trim();
+    }
+    return `${pageTitle} (item)`;
+  }
+  return null;
+}
+
 // Link targets of `[[…]]` in order (label part of `[[A|B]]` is ignored).
 export function parseLinks(s) {
   if (!s) return [];

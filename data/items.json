@@ -1540,9 +1540,37 @@
     "image": "img/items/root.png",
     "biome": "swamp",
     "tier": 4,
-    "sources": [],
+    "sources": [
+      {
+        "text": "Abomination",
+        "kind": "creature",
+        "creatureId": "abomination",
+        "biomes": [
+          "swamp"
+        ]
+      }
+    ],
     "recipe": null,
-    "wiki": "https://valheim.weirdgloop.org/w/Root"
+    "wiki": "https://valheim.weirdgloop.org/w/Root_(item)"
+  },
+  {
+    "id": "roots",
+    "name": "Roots",
+    "image": "img/items/roots.png",
+    "biome": "swamp",
+    "tier": 4,
+    "sources": [
+      {
+        "text": "Abomination",
+        "kind": "creature",
+        "creatureId": "abomination",
+        "biomes": [
+          "swamp"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Root_(item)"
   },
   {
     "id": "sap",

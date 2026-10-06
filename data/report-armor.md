@@ -6,7 +6,7 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 
 - Total armor sets/entries: 68
 - Total armor pieces: 113
-- Total items/materials: 84
+- Total items/materials: 85
 
 ## Biome breakdown
 
@@ -48,7 +48,7 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 
 ## Materials without source or biome
 
-- **Root** (sources: 0, biome: swamp)
+None.
 
 ## Skipped pages
 
