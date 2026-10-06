@@ -1,5 +1,5 @@
 window.VA_DATA = {
-  "generatedAt": "2026-10-05T22:30:13.744Z",
+  "generatedAt": "2026-10-06T06:43:40.748Z",
   "source": {
     "name": "Valheim Wiki",
     "url": "https://valheim.weirdgloop.org",
@@ -1521,7 +1521,7 @@ window.VA_DATA = {
           "weight": 1,
           "movementSpeed": 0,
           "resistances": [],
-          "description": "|Chest Cast|"
+          "description": "The Caller Set is a Deep North-tier mage armor."
         },
         {
           "id": "robes-of-the-caller",
@@ -1615,7 +1615,7 @@ window.VA_DATA = {
           "resistances": [
             "Resistant vs Frost"
           ],
-          "description": "|Chest Cast|"
+          "description": "The Caller Set is a Deep North-tier mage armor."
         },
         {
           "id": "trousers-of-the-caller",
@@ -1707,7 +1707,7 @@ window.VA_DATA = {
           "weight": 5,
           "movementSpeed": -2,
           "resistances": [],
-          "description": "|Chest Cast|"
+          "description": "The Caller Set is a Deep North-tier mage armor."
         }
       ]
     },
@@ -5033,7 +5033,7 @@ window.VA_DATA = {
                   "amount": 8
                 },
                 {
-                  "item": "roots",
+                  "item": "root",
                   "amount": 2
                 }
               ]
@@ -5053,7 +5053,7 @@ window.VA_DATA = {
                   "amount": 4
                 },
                 {
-                  "item": "roots",
+                  "item": "root",
                   "amount": 1
                 }
               ]
@@ -5073,7 +5073,7 @@ window.VA_DATA = {
                   "amount": 8
                 },
                 {
-                  "item": "roots",
+                  "item": "root",
                   "amount": 2
                 }
               ]
@@ -5093,7 +5093,7 @@ window.VA_DATA = {
                   "amount": 16
                 },
                 {
-                  "item": "roots",
+                  "item": "root",
                   "amount": 4
                 }
               ]
@@ -5128,7 +5128,7 @@ window.VA_DATA = {
                   "amount": 8
                 },
                 {
-                  "item": "roots",
+                  "item": "root",
                   "amount": 2
                 }
               ]
@@ -5148,7 +5148,7 @@ window.VA_DATA = {
                   "amount": 4
                 },
                 {
-                  "item": "roots",
+                  "item": "root",
                   "amount": 1
                 }
               ]
@@ -5168,7 +5168,7 @@ window.VA_DATA = {
                   "amount": 8
                 },
                 {
-                  "item": "roots",
+                  "item": "root",
                   "amount": 2
                 }
               ]
@@ -5188,7 +5188,7 @@ window.VA_DATA = {
                   "amount": 16
                 },
                 {
-                  "item": "roots",
+                  "item": "root",
                   "amount": 4
                 }
               ]
@@ -5740,11 +5740,11 @@ window.VA_DATA = {
       "setBonus": null,
       "pieces": [
         {
-          "id": "",
-          "name": "",
+          "id": "pointy-hat",
+          "name": "Pointy Hat",
           "slot": "head",
           "gameId": "HelmetPointyHat",
-          "image": "img/armor/.png",
+          "image": "img/armor/pointy-hat.png",
           "station": "Workbench",
           "levels": [
             {
@@ -5808,7 +5808,7 @@ window.VA_DATA = {
           "weight": 3,
           "movementSpeed": 0,
           "resistances": [],
-          "description": "| image = Pointy_Hat.png"
+          "description": "Pointy hat is an armor piece which can be crafted and upgraded at the Workbench. It is only available during the Halloween seasonal event, – ."
         }
       ]
     },
@@ -5899,7 +5899,7 @@ window.VA_DATA = {
           "weight": 1,
           "movementSpeed": 0,
           "resistances": [],
-          "description": "|Chest Cast|"
+          "description": "The Protector Armor is a Deep North-tier armor."
         },
         {
           "id": "breastplate-of-the-protector",
@@ -5993,7 +5993,7 @@ window.VA_DATA = {
           "resistances": [
             "Resistant vs. Frost"
           ],
-          "description": "|Chest Cast|"
+          "description": "The Protector Armor is a Deep North-tier armor."
         },
         {
           "id": "trousers-of-the-protector",
@@ -6085,7 +6085,7 @@ window.VA_DATA = {
           "weight": 5,
           "movementSpeed": 0,
           "resistances": [],
-          "description": "|Chest Cast|"
+          "description": "The Protector Armor is a Deep North-tier armor."
         }
       ]
     },
@@ -7460,7 +7460,7 @@ window.VA_DATA = {
           "weight": 1,
           "movementSpeed": 0,
           "resistances": [],
-          "description": "|Chest Cast|"
+          "description": "The Vanguard Set is a Deep North-tier armor."
         },
         {
           "id": "chestpiece-of-the-vanguard",
@@ -7554,7 +7554,7 @@ window.VA_DATA = {
           "resistances": [
             "Resistant vs Frost"
           ],
-          "description": "|Chest Cast|"
+          "description": "The Vanguard Set is a Deep North-tier armor."
         },
         {
           "id": "trousers-of-the-vanguard",
@@ -7646,7 +7646,7 @@ window.VA_DATA = {
           "weight": 5,
           "movementSpeed": 0,
           "resistances": [],
-          "description": "|Chest Cast|"
+          "description": "The Vanguard Set is a Deep North-tier armor."
         }
       ]
     },
@@ -8446,7 +8446,16 @@ window.VA_DATA = {
       "image": "img/items/bear-trophy.png",
       "biome": "black-forest",
       "tier": 2,
-      "sources": [],
+      "sources": [
+        {
+          "text": "Bear",
+          "kind": "creature",
+          "creatureId": "bear",
+          "biomes": [
+            "black-forest"
+          ]
+        }
+      ],
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Bear_Trophy"
     },
@@ -9078,7 +9087,16 @@ window.VA_DATA = {
       "image": "img/items/cultist-trophy.png",
       "biome": "mountain",
       "tier": 4,
-      "sources": [],
+      "sources": [
+        {
+          "text": "Cultist",
+          "kind": "creature",
+          "creatureId": "cultist",
+          "biomes": [
+            "mountain"
+          ]
+        }
+      ],
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Cultist_Trophy"
     },
@@ -9123,7 +9141,16 @@ window.VA_DATA = {
       "image": "img/items/drake-trophy.png",
       "biome": "mountain",
       "tier": 4,
-      "sources": [],
+      "sources": [
+        {
+          "text": "Drake",
+          "kind": "creature",
+          "creatureId": "drake",
+          "biomes": [
+            "mountain"
+          ]
+        }
+      ],
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Drake_Trophy"
     },
@@ -9272,6 +9299,52 @@ window.VA_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Grouper"
     },
+    "ice": {
+      "id": "ice",
+      "name": "Ice",
+      "image": "img/items/ice.png",
+      "biome": "deep-north",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Ice Sheet",
+          "kind": "other"
+        },
+        {
+          "text": "Ice Pond",
+          "kind": "other"
+        },
+        {
+          "text": "Greydwarf",
+          "kind": "creature",
+          "creatureId": "greydwarf-deep-north",
+          "biomes": [
+            "deep-north"
+          ]
+        },
+        {
+          "text": "Greydwarf Shaman",
+          "kind": "creature",
+          "creatureId": "greydwarf-shaman-deep-north",
+          "biomes": [
+            "deep-north"
+          ]
+        },
+        {
+          "text": "Skeleton",
+          "kind": "creature",
+          "creatureId": "skeleton",
+          "biomes": [
+            "black-forest",
+            "swamp",
+            "mountain",
+            "deep-north"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Ice"
+    },
     "iron": {
       "id": "iron",
       "name": "Iron",
@@ -9374,15 +9447,24 @@ window.VA_DATA = {
       "id": "liquid-frost",
       "name": "Liquid Frost",
       "image": "img/items/liquid-frost.png",
-      "biome": null,
-      "tier": null,
+      "biome": "deep-north",
+      "tier": 8,
       "sources": [
         {
           "text": "Frigid Kiln",
           "kind": "station"
         }
       ],
-      "recipe": null,
+      "recipe": {
+        "station": "Frigid Kiln",
+        "materials": [
+          {
+            "item": "ice",
+            "amount": 5
+          }
+        ],
+        "yields": 1
+      },
       "wiki": "https://valheim.weirdgloop.org/w/Liquid_Frost"
     },
     "lox-pelt": {
@@ -9486,7 +9568,16 @@ window.VA_DATA = {
       "image": "img/items/moose-trophy.png",
       "biome": "deep-north",
       "tier": 8,
-      "sources": [],
+      "sources": [
+        {
+          "text": "Moose",
+          "kind": "creature",
+          "creatureId": "moose",
+          "biomes": [
+            "deep-north"
+          ]
+        }
+      ],
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Moose_Trophy"
     },
@@ -9763,16 +9854,6 @@ window.VA_DATA = {
       "sources": [],
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Root"
-    },
-    "roots": {
-      "id": "roots",
-      "name": "Roots",
-      "image": "img/items/roots.png",
-      "biome": "swamp",
-      "tier": 3,
-      "sources": [],
-      "recipe": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Roots"
     },
     "sap": {
       "id": "sap",
@@ -10060,7 +10141,16 @@ window.VA_DATA = {
       "image": "img/items/vile-trophy.png",
       "biome": "plains",
       "tier": 5,
-      "sources": [],
+      "sources": [
+        {
+          "text": "Vile",
+          "kind": "creature",
+          "creatureId": "vile",
+          "biomes": [
+            "plains"
+          ]
+        }
+      ],
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Vile_Trophy"
     },
@@ -10124,7 +10214,16 @@ window.VA_DATA = {
       "image": "img/items/wolf-trophy.png",
       "biome": "mountain",
       "tier": 4,
-      "sources": [],
+      "sources": [
+        {
+          "text": "Wolf",
+          "kind": "creature",
+          "creatureId": "wolf",
+          "biomes": [
+            "mountain"
+          ]
+        }
+      ],
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Wolf_Trophy"
     },

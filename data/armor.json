@@ -1223,7 +1223,7 @@
         "weight": 1,
         "movementSpeed": 0,
         "resistances": [],
-        "description": "|Chest Cast|"
+        "description": "The Caller Set is a Deep North-tier mage armor."
       },
       {
         "id": "robes-of-the-caller",
@@ -1317,7 +1317,7 @@
         "resistances": [
           "Resistant vs Frost"
         ],
-        "description": "|Chest Cast|"
+        "description": "The Caller Set is a Deep North-tier mage armor."
       },
       {
         "id": "trousers-of-the-caller",
@@ -1409,7 +1409,7 @@
         "weight": 5,
         "movementSpeed": -2,
         "resistances": [],
-        "description": "|Chest Cast|"
+        "description": "The Caller Set is a Deep North-tier mage armor."
       }
     ]
   },
@@ -4735,7 +4735,7 @@
                 "amount": 8
               },
               {
-                "item": "roots",
+                "item": "root",
                 "amount": 2
               }
             ]
@@ -4755,7 +4755,7 @@
                 "amount": 4
               },
               {
-                "item": "roots",
+                "item": "root",
                 "amount": 1
               }
             ]
@@ -4775,7 +4775,7 @@
                 "amount": 8
               },
               {
-                "item": "roots",
+                "item": "root",
                 "amount": 2
               }
             ]
@@ -4795,7 +4795,7 @@
                 "amount": 16
               },
               {
-                "item": "roots",
+                "item": "root",
                 "amount": 4
               }
             ]
@@ -4830,7 +4830,7 @@
                 "amount": 8
               },
               {
-                "item": "roots",
+                "item": "root",
                 "amount": 2
               }
             ]
@@ -4850,7 +4850,7 @@
                 "amount": 4
               },
               {
-                "item": "roots",
+                "item": "root",
                 "amount": 1
               }
             ]
@@ -4870,7 +4870,7 @@
                 "amount": 8
               },
               {
-                "item": "roots",
+                "item": "root",
                 "amount": 2
               }
             ]
@@ -4890,7 +4890,7 @@
                 "amount": 16
               },
               {
-                "item": "roots",
+                "item": "root",
                 "amount": 4
               }
             ]
@@ -5442,11 +5442,11 @@
     "setBonus": null,
     "pieces": [
       {
-        "id": "",
-        "name": "",
+        "id": "pointy-hat",
+        "name": "Pointy Hat",
         "slot": "head",
         "gameId": "HelmetPointyHat",
-        "image": "img/armor/.png",
+        "image": "img/armor/pointy-hat.png",
         "station": "Workbench",
         "levels": [
           {
@@ -5510,7 +5510,7 @@
         "weight": 3,
         "movementSpeed": 0,
         "resistances": [],
-        "description": "| image = Pointy_Hat.png"
+        "description": "Pointy hat is an armor piece which can be crafted and upgraded at the Workbench. It is only available during the Halloween seasonal event, – ."
       }
     ]
   },
@@ -5601,7 +5601,7 @@
         "weight": 1,
         "movementSpeed": 0,
         "resistances": [],
-        "description": "|Chest Cast|"
+        "description": "The Protector Armor is a Deep North-tier armor."
       },
       {
         "id": "breastplate-of-the-protector",
@@ -5695,7 +5695,7 @@
         "resistances": [
           "Resistant vs. Frost"
         ],
-        "description": "|Chest Cast|"
+        "description": "The Protector Armor is a Deep North-tier armor."
       },
       {
         "id": "trousers-of-the-protector",
@@ -5787,7 +5787,7 @@
         "weight": 5,
         "movementSpeed": 0,
         "resistances": [],
-        "description": "|Chest Cast|"
+        "description": "The Protector Armor is a Deep North-tier armor."
       }
     ]
   },
@@ -7162,7 +7162,7 @@
         "weight": 1,
         "movementSpeed": 0,
         "resistances": [],
-        "description": "|Chest Cast|"
+        "description": "The Vanguard Set is a Deep North-tier armor."
       },
       {
         "id": "chestpiece-of-the-vanguard",
@@ -7256,7 +7256,7 @@
         "resistances": [
           "Resistant vs Frost"
         ],
-        "description": "|Chest Cast|"
+        "description": "The Vanguard Set is a Deep North-tier armor."
       },
       {
         "id": "trousers-of-the-vanguard",
@@ -7348,7 +7348,7 @@
         "weight": 5,
         "movementSpeed": 0,
         "resistances": [],
-        "description": "|Chest Cast|"
+        "description": "The Vanguard Set is a Deep North-tier armor."
       }
     ]
   },

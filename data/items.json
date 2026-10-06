@@ -135,7 +135,16 @@
     "image": "img/items/bear-trophy.png",
     "biome": "black-forest",
     "tier": 2,
-    "sources": [],
+    "sources": [
+      {
+        "text": "Bear",
+        "kind": "creature",
+        "creatureId": "bear",
+        "biomes": [
+          "black-forest"
+        ]
+      }
+    ],
     "recipe": null,
     "wiki": "https://valheim.weirdgloop.org/w/Bear_Trophy"
   },
@@ -767,7 +776,16 @@
     "image": "img/items/cultist-trophy.png",
     "biome": "mountain",
     "tier": 4,
-    "sources": [],
+    "sources": [
+      {
+        "text": "Cultist",
+        "kind": "creature",
+        "creatureId": "cultist",
+        "biomes": [
+          "mountain"
+        ]
+      }
+    ],
     "recipe": null,
     "wiki": "https://valheim.weirdgloop.org/w/Cultist_Trophy"
   },
@@ -812,7 +830,16 @@
     "image": "img/items/drake-trophy.png",
     "biome": "mountain",
     "tier": 4,
-    "sources": [],
+    "sources": [
+      {
+        "text": "Drake",
+        "kind": "creature",
+        "creatureId": "drake",
+        "biomes": [
+          "mountain"
+        ]
+      }
+    ],
     "recipe": null,
     "wiki": "https://valheim.weirdgloop.org/w/Drake_Trophy"
   },
@@ -962,6 +989,52 @@
     "wiki": "https://valheim.weirdgloop.org/w/Grouper"
   },
   {
+    "id": "ice",
+    "name": "Ice",
+    "image": "img/items/ice.png",
+    "biome": "deep-north",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Ice Sheet",
+        "kind": "other"
+      },
+      {
+        "text": "Ice Pond",
+        "kind": "other"
+      },
+      {
+        "text": "Greydwarf",
+        "kind": "creature",
+        "creatureId": "greydwarf-deep-north",
+        "biomes": [
+          "deep-north"
+        ]
+      },
+      {
+        "text": "Greydwarf Shaman",
+        "kind": "creature",
+        "creatureId": "greydwarf-shaman-deep-north",
+        "biomes": [
+          "deep-north"
+        ]
+      },
+      {
+        "text": "Skeleton",
+        "kind": "creature",
+        "creatureId": "skeleton",
+        "biomes": [
+          "black-forest",
+          "swamp",
+          "mountain",
+          "deep-north"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Ice"
+  },
+  {
     "id": "iron",
     "name": "Iron",
     "image": "img/items/iron.png",
@@ -1063,15 +1136,24 @@
     "id": "liquid-frost",
     "name": "Liquid Frost",
     "image": "img/items/liquid-frost.png",
-    "biome": null,
-    "tier": null,
+    "biome": "deep-north",
+    "tier": 8,
     "sources": [
       {
         "text": "Frigid Kiln",
         "kind": "station"
       }
     ],
-    "recipe": null,
+    "recipe": {
+      "station": "Frigid Kiln",
+      "materials": [
+        {
+          "item": "ice",
+          "amount": 5
+        }
+      ],
+      "yields": 1
+    },
     "wiki": "https://valheim.weirdgloop.org/w/Liquid_Frost"
   },
   {
@@ -1175,7 +1257,16 @@
     "image": "img/items/moose-trophy.png",
     "biome": "deep-north",
     "tier": 8,
-    "sources": [],
+    "sources": [
+      {
+        "text": "Moose",
+        "kind": "creature",
+        "creatureId": "moose",
+        "biomes": [
+          "deep-north"
+        ]
+      }
+    ],
     "recipe": null,
     "wiki": "https://valheim.weirdgloop.org/w/Moose_Trophy"
   },
@@ -1452,16 +1543,6 @@
     "sources": [],
     "recipe": null,
     "wiki": "https://valheim.weirdgloop.org/w/Root"
-  },
-  {
-    "id": "roots",
-    "name": "Roots",
-    "image": "img/items/roots.png",
-    "biome": "swamp",
-    "tier": 3,
-    "sources": [],
-    "recipe": null,
-    "wiki": "https://valheim.weirdgloop.org/w/Roots"
   },
   {
     "id": "sap",
@@ -1749,7 +1830,16 @@
     "image": "img/items/vile-trophy.png",
     "biome": "plains",
     "tier": 5,
-    "sources": [],
+    "sources": [
+      {
+        "text": "Vile",
+        "kind": "creature",
+        "creatureId": "vile",
+        "biomes": [
+          "plains"
+        ]
+      }
+    ],
     "recipe": null,
     "wiki": "https://valheim.weirdgloop.org/w/Vile_Trophy"
   },
@@ -1813,7 +1903,16 @@
     "image": "img/items/wolf-trophy.png",
     "biome": "mountain",
     "tier": 4,
-    "sources": [],
+    "sources": [
+      {
+        "text": "Wolf",
+        "kind": "creature",
+        "creatureId": "wolf",
+        "biomes": [
+          "mountain"
+        ]
+      }
+    ],
     "recipe": null,
     "wiki": "https://valheim.weirdgloop.org/w/Wolf_Trophy"
   },

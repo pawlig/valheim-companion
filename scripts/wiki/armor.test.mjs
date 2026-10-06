@@ -10,6 +10,15 @@ import {
   parseQualityTables,
   cleanText,
 } from './wikitext.mjs';
+import {
+  resolvePieceName,
+  parseTrophySource,
+  parseConversionRecipe,
+  resolveRecipeBiomes,
+} from './fetch-armor.mjs';
+import { buildArmourerBundle } from '../build-armourer-data.mjs';
+import { statSync } from 'node:fs';
+import path from 'node:path';
 
 const SAMPLE_IRON_ARMOR = `{{InfoboxTabber
 |Head|{{infobox armor
@@ -198,3 +207,94 @@ test('parseQualityTables extracts quality, durability, armor, and stationLevel',
   assert.equal(q2Map.has('Full set'), false, 'Full set row must be skipped');
   assert.equal(q2Map.has('Full Set'), false);
 });
+
+test('resolvePieceName falls back to page title on {{PAGENAME}} or empty title', () => {
+  assert.equal(resolvePieceName('{{PAGENAME}}', 'Pointy Hat'), 'Pointy Hat');
+  assert.equal(resolvePieceName('', 'Pointy Hat'), 'Pointy Hat');
+  assert.equal(resolvePieceName(null, 'Pointy Hat'), 'Pointy Hat');
+  assert.equal(resolvePieceName('Iron Helmet', 'Iron Helmet'), 'Iron Helmet');
+  assert.equal(resolvePieceName('Deer Hide Cape', 'Leather Armor'), 'Deer Hide Cape');
+});
+
+test('parseTrophySource finds matching creature for trophy items', () => {
+  const creatures = [
+    { id: 'wolf', name: 'Wolf', biomes: ['mountain'] },
+    { id: 'bear', name: 'Bear', biomes: ['black-forest'] },
+  ];
+  const bySlug = new Map(creatures.map((c) => [c.id, c]));
+  const byName = new Map(creatures.map((c) => [c.name.toLowerCase(), c]));
+
+  const wolfSrc = parseTrophySource('Wolf Trophy', creatures, byName, bySlug);
+  assert.deepEqual(wolfSrc, {
+    text: 'Wolf',
+    kind: 'creature',
+    creatureId: 'wolf',
+    biomes: ['mountain'],
+  });
+
+  const bearSrc = parseTrophySource('Bear Trophy', creatures, byName, bySlug);
+  assert.deepEqual(bearSrc, {
+    text: 'Bear',
+    kind: 'creature',
+    creatureId: 'bear',
+    biomes: ['black-forest'],
+  });
+
+  assert.equal(parseTrophySource('Iron', creatures, byName, bySlug), null);
+  assert.equal(parseTrophySource('Unknown Trophy', creatures, byName, bySlug), null);
+});
+
+test('parseConversionRecipe extracts input item, amount and station', () => {
+  const wt = '* {{Item link|Ice|5}} can be converted to 1 Liquid Frost at a [[Frigid Kiln]] every 30 seconds.';
+  const recipe = parseConversionRecipe(wt, 'Liquid Frost', [{ text: 'Frigid Kiln', kind: 'station' }]);
+  assert.deepEqual(recipe, {
+    station: 'Frigid Kiln',
+    materials: [{ name: 'Ice', amount: 5 }],
+    yields: 1,
+  });
+});
+
+test('resolveRecipeBiomes assigns max tier and biome from recipe materials', () => {
+  const items = [
+    { id: 'ice', name: 'Ice', biome: 'deep-north', tier: 8, recipe: null },
+    {
+      id: 'liquid-frost',
+      name: 'Liquid Frost',
+      biome: null,
+      tier: null,
+      recipe: {
+        station: 'Frigid Kiln',
+        materials: [{ item: 'ice', amount: 5 }],
+        yields: 1,
+      },
+    },
+    {
+      id: 'mystery-brew',
+      name: 'Mystery Brew',
+      biome: null,
+      tier: null,
+      recipe: {
+        station: 'Cauldron',
+        materials: [{ item: 'unknown-herb', amount: 1 }],
+        yields: 1,
+      },
+    },
+  ];
+
+  resolveRecipeBiomes(items);
+
+  const lf = items.find((i) => i.id === 'liquid-frost');
+  assert.equal(lf.biome, 'deep-north');
+  assert.equal(lf.tier, 8);
+
+  const mb = items.find((i) => i.id === 'mystery-brew');
+  assert.equal(mb.biome, null);
+  assert.equal(mb.tier, null);
+});
+
+test('buildArmourerBundle uses deterministic generatedAt from data/armor.json mtime', () => {
+  const stat = statSync(path.join(process.cwd(), 'data', 'armor.json'));
+  const bundle = buildArmourerBundle();
+  assert.equal(bundle.generatedAt, stat.mtime.toISOString());
+});
+

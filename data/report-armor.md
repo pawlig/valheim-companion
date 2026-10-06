@@ -43,20 +43,12 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 - **Fishing Hat** (Fishing Hat, 4 levels)
 - **Hood of Oden** (Hood of Oden, 4 levels)
 - **Moose Hide Cape** (Moose Hide Cape, 4 levels)
-- **** (Pointy Hat, 4 levels)
+- **Pointy Hat** (Pointy Hat, 4 levels)
 - **Rag tunic** (Rag Armor, 2 levels)
 
 ## Materials without source or biome
 
-- **Bear Trophy** (sources: 0, biome: black-forest)
-- **Liquid Frost** (sources: 1, biome: null)
-- **Moose Trophy** (sources: 0, biome: deep-north)
-- **Cultist Trophy** (sources: 0, biome: mountain)
-- **Roots** (sources: 0, biome: swamp)
 - **Root** (sources: 0, biome: swamp)
-- **Vile Trophy** (sources: 0, biome: plains)
-- **Drake Trophy** (sources: 0, biome: mountain)
-- **Wolf Trophy** (sources: 0, biome: mountain)
 
 ## Skipped pages
 
