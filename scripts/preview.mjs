@@ -63,6 +63,11 @@ const server = createServer((req, res) => {
     res.end();
     return;
   }
+  if (pathname === '/privacy') {
+    res.writeHead(301, { Location: '/privacy/' });
+    res.end();
+    return;
+  }
 
   let filePath = path.join(DIST_DIR, pathname);
 
