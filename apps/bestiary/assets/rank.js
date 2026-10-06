@@ -602,7 +602,7 @@
     const mods = effectiveModifiers(creature);
     const rankBy = player?.rankBy === 'hit' ? 'hit' : 'dps';
 
-    const candidates = weapons.filter((w) => w.tier != null && w.tier <= tier);
+    const candidates = weapons.filter((w) => w.tier != null && w.tier <= tier && w.recommendable !== false);
     const hp = creatureHp(creature, player?.star ?? 0, biome?.id, player);
 
     // 1. Melee: top 3 from distinct categories

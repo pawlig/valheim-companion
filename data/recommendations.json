@@ -3943,22 +3943,7 @@
     },
     "bolts": [],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 2,
-      "dps": 2.0833333333333335,
-      "perHit": 2.5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 384,
-      "hits": 320,
-      "min": 3,
-      "max": 3,
-      "raw": 5,
-      "notes": [
-        "×0.5 Blunt"
-      ]
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "pierce",
@@ -4148,22 +4133,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 6,
-      "dps": 6.25,
-      "perHit": 7.5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 8,
-      "hits": 7,
-      "min": 8,
-      "max": 8,
-      "raw": 5,
-      "notes": [
-        "×1.5 Blunt"
-      ]
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "fire",
@@ -4274,22 +4244,7 @@
     },
     "bolts": [],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 6,
-      "dps": 6.25,
-      "perHit": 7.5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 800,
-      "hits": 667,
-      "min": 8,
-      "max": 8,
-      "raw": 5,
-      "notes": [
-        "×1.5 Blunt"
-      ]
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "fire",
@@ -4466,20 +4421,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 24,
-      "hits": 20,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "fire",
@@ -4648,20 +4590,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 48,
-      "hits": 40,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "fire",
@@ -4830,20 +4759,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": null,
-      "hits": null,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [],
     "tip": "No elemental weakness — best raw option: Iron Sword (73)."
   },
@@ -5013,20 +4929,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 168,
-      "hits": 140,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [],
     "tip": "Very weak to Fire (×2): Fire Arrow hits for 74 effective. Immune to Poison, Spirit."
   },
@@ -5190,20 +5093,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 14.399999999999999,
-      "hits": 12,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "fire",
@@ -5389,22 +5279,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 6,
-      "dps": 6.25,
-      "perHit": 7.5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 24,
-      "hits": 20,
-      "min": 8,
-      "max": 8,
-      "raw": 5,
-      "notes": [
-        "×1.5 Blunt"
-      ]
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "fire",
@@ -5594,22 +5469,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 6,
-      "dps": 6.25,
-      "perHit": 7.5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 4.8,
-      "hits": 8,
-      "min": 8,
-      "max": 8,
-      "raw": 5,
-      "notes": [
-        "×1.5 Blunt"
-      ]
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "pierce",
@@ -5778,20 +5638,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 4.8,
-      "hits": 4,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "fire",
@@ -5977,22 +5824,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 2,
-      "dps": 2.0833333333333335,
-      "perHit": 2.5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 48,
-      "hits": 40,
-      "min": 3,
-      "max": 3,
-      "raw": 5,
-      "notes": [
-        "×0.5 Blunt"
-      ]
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "blunt",
@@ -6175,22 +6007,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 2,
-      "dps": 2.0833333333333335,
-      "perHit": 2.5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 192,
-      "hits": 160,
-      "min": 3,
-      "max": 3,
-      "raw": 5,
-      "notes": [
-        "×0.5 Blunt"
-      ]
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "blunt",
@@ -6371,22 +6188,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 2,
-      "dps": 2.0833333333333335,
-      "perHit": 2.5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 4.8,
-      "hits": 4,
-      "min": 3,
-      "max": 3,
-      "raw": 5,
-      "notes": [
-        "×0.5 Blunt"
-      ]
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "frost",
@@ -6581,20 +6383,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 48,
-      "hits": 40,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "fire",
@@ -6771,20 +6560,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 24,
-      "hits": 20,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "frost",
@@ -6963,20 +6739,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 24,
-      "hits": 20,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "poison",
@@ -7159,20 +6922,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 72,
-      "hits": 60,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -7349,20 +7099,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 887.9999999999999,
-      "hits": 740,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "frost",
@@ -7539,20 +7276,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 1799.9999999999998,
-      "hits": 1500,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "frost",
@@ -7724,22 +7448,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 6,
-      "dps": 6.25,
-      "perHit": 7.5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 4.8,
-      "hits": 10,
-      "min": 8,
-      "max": 8,
-      "raw": 5,
-      "notes": [
-        "×1.5 Blunt"
-      ]
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "poison",
@@ -7882,20 +7591,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 192,
-      "hits": 160,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "fire",
@@ -8088,20 +7784,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": null,
-      "hits": null,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -8280,20 +7963,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 12,
-      "hits": 10,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -8470,20 +8140,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 19.2,
-      "hits": 16,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -8652,20 +8309,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 2.4,
-      "hits": 2,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -8834,20 +8478,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 2.4,
-      "hits": 2,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -9016,20 +8647,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 42,
-      "hits": 35,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -9198,20 +8816,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 192,
-      "hits": 160,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -9380,20 +8985,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 24,
-      "hits": 20,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -9562,20 +9154,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": null,
-      "hits": null,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -9748,22 +9327,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 6,
-      "dps": 6.25,
-      "perHit": 7.5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 16,
-      "hits": 14,
-      "min": 8,
-      "max": 8,
-      "raw": 5,
-      "notes": [
-        "×1.5 Blunt"
-      ]
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "poison",
@@ -9944,20 +9508,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 0.24,
-      "hits": 1,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -10126,20 +9677,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 2.4,
-      "hits": 2,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -10314,22 +9852,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 2,
-      "dps": 2.0833333333333335,
-      "perHit": 2.5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 479.99999999999994,
-      "hits": 400,
-      "min": 3,
-      "max": 3,
-      "raw": 5,
-      "notes": [
-        "×0.5 Blunt"
-      ]
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -10518,22 +10041,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 2,
-      "dps": 2.0833333333333335,
-      "perHit": 2.5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 576,
-      "hits": 480,
-      "min": 3,
-      "max": 3,
-      "raw": 5,
-      "notes": [
-        "×0.5 Blunt"
-      ]
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "poison",
@@ -10646,20 +10154,7 @@
     },
     "bolts": [],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 2400,
-      "hits": 2000,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "poison",
@@ -10840,20 +10335,7 @@
       }
     ],
     "magic": null,
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 1584,
-      "hits": 1320,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -11042,20 +10524,7 @@
       "raw": 258,
       "notes": []
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": null,
-      "hits": null,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -11246,20 +10715,7 @@
         "×0.5 Fire"
       ]
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 84,
-      "hits": 70,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -11456,20 +10912,7 @@
       "raw": 258,
       "notes": []
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 84,
-      "hits": 70,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -11660,20 +11103,7 @@
         "×0.5 Fire"
       ]
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 360,
-      "hits": 300,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -11866,20 +11296,7 @@
       "raw": 258,
       "notes": []
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 2.4,
-      "hits": 2,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -12068,20 +11485,7 @@
       "raw": 258,
       "notes": []
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 0.24,
-      "hits": 1,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -12270,20 +11674,7 @@
       "raw": 258,
       "notes": []
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": null,
-      "hits": null,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -12485,22 +11876,7 @@
         "×0.5 Blunt"
       ]
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 2,
-      "dps": 2.0833333333333335,
-      "perHit": 2.5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 96,
-      "hits": 80,
-      "min": 3,
-      "max": 3,
-      "raw": 5,
-      "notes": [
-        "×0.5 Blunt"
-      ]
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -12714,22 +12090,7 @@
         "×0.5 Blunt"
       ]
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 2,
-      "dps": 2.0833333333333335,
-      "perHit": 2.5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 9.6,
-      "hits": 8,
-      "min": 3,
-      "max": 3,
-      "raw": 5,
-      "notes": [
-        "×0.5 Blunt"
-      ]
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -12943,22 +12304,7 @@
         "×0.5 Blunt"
       ]
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 2,
-      "dps": 2.0833333333333335,
-      "perHit": 2.5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 720,
-      "hits": 600,
-      "min": 3,
-      "max": 3,
-      "raw": 5,
-      "notes": [
-        "×0.5 Blunt"
-      ]
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -13163,20 +12509,7 @@
       "raw": 258,
       "notes": []
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 3000,
-      "hits": 2500,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -13382,20 +12715,7 @@
       "raw": 258,
       "notes": []
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 12,
-      "hits": 10,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -13584,20 +12904,7 @@
       "raw": 300,
       "notes": []
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 0.24,
-      "hits": 1,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -13786,20 +13093,7 @@
       "raw": 300,
       "notes": []
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 239.99999999999997,
-      "hits": 200,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -13996,20 +13290,7 @@
         "×0.5 Fire"
       ]
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 192,
-      "hits": 160,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -14213,20 +13494,7 @@
         "×0.5 Poison"
       ]
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 264,
-      "hits": 220,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "fire",
@@ -14432,20 +13700,7 @@
         "×0.25 Fire"
       ]
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 48,
-      "hits": 40,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "poison",
@@ -14651,20 +13906,7 @@
         "×0.25 Fire"
       ]
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 52.8,
-      "hits": 44,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "poison",
@@ -14871,20 +14113,7 @@
         "×0.25 Fire"
       ]
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 144,
-      "hits": 120,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "poison",
@@ -15094,20 +14323,7 @@
         "×0.25 Fire"
       ]
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 144,
-      "hits": 120,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "poison",
@@ -15294,20 +14510,7 @@
       "raw": 160,
       "notes": []
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 6000,
-      "hits": 5000,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "fire",
@@ -15508,20 +14711,7 @@
         "×0.5 Fire"
       ]
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 360,
-      "hits": 300,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "poison",
@@ -15738,22 +14928,7 @@
         "×0 Fire"
       ]
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 6,
-      "dps": 6.25,
-      "perHit": 7.5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 48,
-      "hits": 40,
-      "min": 8,
-      "max": 8,
-      "raw": 5,
-      "notes": [
-        "×1.5 Blunt"
-      ]
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "fire",
@@ -15966,20 +15141,7 @@
         "×0.5 Fire"
       ]
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 1799.9999999999998,
-      "hits": 1500,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "poison",
@@ -16180,20 +15342,7 @@
       "raw": 300,
       "notes": []
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": null,
-      "hits": null,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -16405,22 +15554,7 @@
         "×0.5 Fire"
       ]
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 2,
-      "dps": 2.0833333333333335,
-      "perHit": 2.5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 768,
-      "hits": 640,
-      "min": 3,
-      "max": 3,
-      "raw": 5,
-      "notes": [
-        "×0.5 Blunt"
-      ]
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "spirit",
@@ -16610,20 +15744,7 @@
         "×0.5 Pickaxe"
       ]
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 96,
-      "hits": 80,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "poison",
@@ -16829,20 +15950,7 @@
       "raw": 300,
       "notes": []
     },
-    "bomb": {
-      "weapon": "ooze-bomb",
-      "score": 4,
-      "dps": 4.166666666666667,
-      "perHit": 5,
-      "cycleSeconds": 1.2,
-      "confidence": "estimate",
-      "timeToKill": 48,
-      "hits": 40,
-      "min": 5,
-      "max": 5,
-      "raw": 5,
-      "notes": []
-    },
+    "bomb": null,
     "avoid": [
       {
         "type": "poison",

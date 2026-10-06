@@ -521,3 +521,47 @@ test('Greydwarf against Fire Arrow: ratio of avg at Bows 0 vs 100 is 0.40 / 0.92
   const hit100 = perHit(bow, arrow, greydwarf, player100);
   assert.ok(Math.abs(hit0.avg / hit100.avg - 0.40 / 0.925) < 1e-9);
 });
+
+test('bombs: bomb with recommendable: false is not recommended', () => {
+  const draugr = { id: 'draugr', modifiers: {} };
+  const biome = { id: 'swamp', tier: 4 };
+  const weapons = [
+    {
+      id: 'ooze-bomb',
+      name: 'Ooze Bomb',
+      category: 'bomb',
+      tier: 4,
+      damage: { blunt: 5 },
+      damageMax: { blunt: 5 },
+      recommendable: false,
+      note: 'Area/DoT damage not listed on the wiki',
+    },
+  ];
+  const rec = recommendFor(draugr, biome, weapons);
+  assert.equal(rec.bomb, null);
+});
+
+test('bombs: ocean:serpent and swamp:draugr do not recommend bomb with score < 20', () => {
+  const biomes = JSON.parse(readFileSync('data/biomes.json', 'utf8'));
+  const creatures = JSON.parse(readFileSync('data/creatures.json', 'utf8'));
+  const weapons = JSON.parse(readFileSync('data/weapons.json', 'utf8'));
+  const draugr = creatures.find((c) => c.id === 'draugr');
+  const serpent = creatures.find((c) => c.id === 'serpent');
+  const swamp = biomes.find((b) => b.id === 'swamp');
+  const ocean = biomes.find((b) => b.id === 'ocean');
+
+  const recDraugr = recommendFor(draugr, swamp, weapons);
+  if (recDraugr.bomb) {
+    assert.ok(recDraugr.bomb.score >= 20, `expected draugr bomb score >= 20, got ${recDraugr.bomb.score}`);
+  } else {
+    assert.equal(recDraugr.bomb, null);
+  }
+
+  const recSerpent = recommendFor(serpent, ocean, weapons);
+  if (recSerpent.bomb) {
+    assert.ok(recSerpent.bomb.score >= 20, `expected serpent bomb score >= 20, got ${recSerpent.bomb.score}`);
+  } else {
+    assert.equal(recSerpent.bomb, null);
+  }
+});
+

@@ -233,6 +233,26 @@ export class MwApi {
     writeFileSync(destPath, buffer);
     return true;
   }
+
+  // Rendered HTML of a page by title. Returns string or null (or map if array).
+  async getRenderedText(title) {
+    if (Array.isArray(title)) {
+      const out = {};
+      for (const t of title) {
+        out[t] = await this.getRenderedText(t);
+      }
+      return out;
+    }
+    const body = await this.request({
+      action: 'parse',
+      prop: 'text',
+      page: title,
+      redirects: 1,
+      format: 'json',
+      formatversion: 2,
+    });
+    return body.parse?.text ?? null;
+  }
 }
 
 // Default client for the primary wiki (valheim.weirdgloop.org).

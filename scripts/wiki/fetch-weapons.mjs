@@ -357,7 +357,55 @@ async function main() {
     }
     const imageFile = parseImage(imageRaw);
 
-    parsedWeapons.push({
+    let recommendable = true;
+    let note = null;
+
+    if (category === 'bomb') {
+      const renderedHtml = await api.getRenderedText(title);
+      let foundExtraDamage = false;
+      if (renderedHtml) {
+        for (const dt of DAMAGE_TYPES) {
+          if (damage[dt] != null) continue;
+          const rowPattern = new RegExp(
+            `class="infobox-row-label"[^>]*>\\s*(?:<[^>]+>)?\\s*${dt}\\s*(?:<[^>]+>)?\\s*<\\/div>\\s*<div[^>]*class="infobox-row-value"[^>]*>\\s*(\\d+(?:\\.\\d+)?)`,
+            'i'
+          );
+          const rowMatch = renderedHtml.match(rowPattern);
+          if (rowMatch) {
+            const val = parseFloat(rowMatch[1]);
+            if (!Number.isNaN(val) && val > 0) {
+              damage[dt] = val;
+              foundExtraDamage = true;
+            }
+          }
+          const tablePattern = new RegExp(
+            `<t[dh][^>]*>\\s*${dt}\\s*<\\/t[dh]>\\s*<td[^>]*>\\s*(\\d+(?:\\.\\d+)?)\\s*<\\/td>`,
+            'i'
+          );
+          const tableMatch = renderedHtml.match(tablePattern);
+          if (tableMatch) {
+            const val = parseFloat(tableMatch[1]);
+            if (!Number.isNaN(val) && val > 0) {
+              damage[dt] = val;
+              foundExtraDamage = true;
+            }
+          }
+        }
+      }
+
+      if (foundExtraDamage) {
+        totalDmg = Object.values(damage).reduce((sum, v) => sum + v, 0);
+        for (const [dt, baseVal] of Object.entries(damage)) {
+          const step = perLevel[dt] ?? 0;
+          damageMax[dt] = baseVal + step * (maxQuality - 1);
+        }
+      } else if (totalDmg < 20) {
+        recommendable = false;
+        note = 'Area/DoT damage not listed on the wiki';
+      }
+    }
+
+    const weaponEntry = {
       id: weaponSlug,
       name: cleanText(title),
       wiki: wikiPageUrl(title),
@@ -382,7 +430,12 @@ async function main() {
       tier: null,
       biome: null,
       description: cleanText(ib.description || ''),
-    });
+    };
+    if (recommendable === false) {
+      weaponEntry.recommendable = false;
+      weaponEntry.note = note;
+    }
+    parsedWeapons.push(weaponEntry);
 
     const catsForTitle = [...(pageCategories.get(title) ?? [])].sort(byCodepoint);
     const isBaseline = catsForTitle.some((c) => BASELINE_CATEGORIES.includes(c));
