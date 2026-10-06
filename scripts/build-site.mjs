@@ -10,6 +10,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { buildI18n } from './build-i18n.mjs';
+import { buildSearchIndex } from './build-search-index.mjs';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIST_DIR = path.join(REPO_ROOT, 'dist');
@@ -37,6 +38,7 @@ export function buildSite() {
   }
 
   buildI18n();
+  buildSearchIndex();
 
   console.log('assembling dist/…');
   rmSync(DIST_DIR, { recursive: true, force: true });
