@@ -220,6 +220,7 @@
 
     player.sneak = raw.sneak === true;
     player.staggered = raw.staggered === true;
+    player.rankBy = raw.rankBy === 'hit' ? 'hit' : 'dps';
 
     return player;
   }
@@ -320,6 +321,7 @@
     let sneakCheckbox = null;
     let staggeredCheckbox = null;
     let summaryEl = null;
+    let updateRankButtons = null;
 
     const updateCharacterSummary = () => {
       const skills = window.VCRank.SKILLS;
@@ -327,11 +329,13 @@
       const diffLabel = DIFFICULTY_OPTIONS.find((d) => d.id === player.difficulty);
       const playersStr = player.players + (player.players === 1 ? ' player' : ' players');
       const qualityStr = player.quality === 'max' ? 'Max quality' : 'Quality ' + player.quality;
+      const rankByStr = player.rankBy === 'hit' ? 'Per hit' : 'DPS';
       summaryEl.textContent =
         'Your character · avg skill ' + avg +
         ' · ' + (diffLabel ? diffLabel.short : 'Normal') +
         ' · ' + playersStr +
-        ' · ' + qualityStr;
+        ' · ' + qualityStr +
+        ' · ' + rankByStr;
     };
 
     const updateSkillBadges = () => {
@@ -374,6 +378,7 @@
       if (qualitySelect) qualitySelect.value = String(player.quality);
       if (sneakCheckbox) sneakCheckbox.checked = player.sneak;
       if (staggeredCheckbox) staggeredCheckbox.checked = player.staggered;
+      if (updateRankButtons) updateRankButtons();
     };
 
     const details = el('details', 'character-panel');
