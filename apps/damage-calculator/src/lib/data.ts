@@ -33,7 +33,7 @@ export const targets: Creature[] = [...bosses, ...enemies].sort(
   (a, b) =>
     KIND_ORDER[a.kind] - KIND_ORDER[b.kind] ||
     BIOME_ORDER[a.biome] - BIOME_ORDER[b.biome] ||
-    a.name.localeCompare(b.name),
+    a.name.localeCompare(b.name, "en"),
 );
 
 /** Crafting recipes by item slug, used for the upgrade-level gating. */

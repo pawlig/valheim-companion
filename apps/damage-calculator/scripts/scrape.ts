@@ -1453,14 +1453,14 @@ async function main() {
   };
 
   const sortByName = <T extends { name: string }>(a: T, b: T) =>
-    a.name.localeCompare(b.name);
+    a.name.localeCompare(b.name, "en");
 
   /* Only keep recipes for items that survived every filter. */
   const included = new Set([...weapons, ...ammo].map((i) => i.slug));
   const recipeBook: RecipeBook = Object.fromEntries(
     Object.entries(recipes)
       .filter(([slug]) => included.has(slug))
-      .sort(([a], [b]) => a.localeCompare(b)),
+      .sort(([a], [b]) => a.localeCompare(b, "en")),
   );
 
   writeFileSync(join(OUT_DIR, "weapons.json"), JSON.stringify(weapons.sort(sortByName), null, 2));
@@ -1473,7 +1473,7 @@ async function main() {
         (a, b) =>
           BIOME_ORDER[a.biome] - BIOME_ORDER[b.biome] ||
           (a.kind === b.kind ? 0 : a.kind === "miniboss" ? -1 : 1) ||
-          a.name.localeCompare(b.name),
+          a.name.localeCompare(b.name, "en"),
       ),
       null,
       2,
@@ -1525,7 +1525,7 @@ async function main() {
       ? `unmapped crafting stations: ${[...missingStations].join(", ")}`
       : "",
     missingMaterials.size > 0
-      ? `unmapped materials: ${[...missingMaterials].sort().join(", ")}`
+      ? `unmapped materials: ${[...missingMaterials].sort((a, b) => a.localeCompare(b, "en")).join(", ")}`
       : "",
     unmappedItems.length > 0
       ? `items whose biome could not be derived:\n    - ${unmappedItems.join("\n    - ")}`
