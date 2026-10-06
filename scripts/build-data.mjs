@@ -118,6 +118,16 @@ export function buildDataBundle() {
     generatedAt = new Date().toISOString();
   }
 
+  // Attack profiles and weapon quality from damage calculator (VC-11)
+  const attackProfilesPath = path.join(DATA_DIR, 'attack-profiles.json');
+  const weaponQualityPath = path.join(DATA_DIR, 'weapon-quality.json');
+  const attackProfiles = existsSync(attackProfilesPath)
+    ? JSON.parse(readFileSync(attackProfilesPath, 'utf8'))
+    : null;
+  const weaponQuality = existsSync(weaponQualityPath)
+    ? JSON.parse(readFileSync(weaponQualityPath, 'utf8'))
+    : null;
+
   return {
     generatedAt,
     source: {
@@ -130,6 +140,8 @@ export function buildDataBundle() {
     biomes,
     creatures,
     weapons,
+    attackProfiles,
+    weaponQuality,
   };
 }
 
