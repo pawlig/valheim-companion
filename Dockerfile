@@ -56,6 +56,10 @@ COPY apps/items/index.html /usr/share/nginx/html/items/
 COPY apps/items/assets/ /usr/share/nginx/html/items/assets/
 COPY apps/items/locales/messages.js /usr/share/nginx/html/items/locales/messages.js
 COPY apps/items/data/data.js /usr/share/nginx/html/items/data/data.js
+COPY apps/traders/index.html /usr/share/nginx/html/traders/
+COPY apps/traders/assets/ /usr/share/nginx/html/traders/assets/
+COPY apps/traders/locales/messages.js /usr/share/nginx/html/traders/locales/messages.js
+COPY apps/traders/data/data.js /usr/share/nginx/html/traders/data/data.js
 COPY --from=signs /repo/apps/signs/dist-static/ /usr/share/nginx/html/signs/
 COPY --from=damage-calculator /repo/apps/damage-calculator/dist-static/ /usr/share/nginx/html/damage-calculator/
 EXPOSE 80
