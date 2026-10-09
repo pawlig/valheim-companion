@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta:start -->
+  <title>Items Compendium — Valheim Companion</title>
+  <meta name="description" content="Explore every material, monster drop, trophy and crafting component across Valheim — sources, usages, recipes and links to all tools.">
+  <link rel="canonical" href="https://valheim-companion.teuferon.click/items/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Valheim Companion">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Items Compendium — Valheim Companion">
+  <meta property="og:description" content="Explore every material, monster drop, trophy and crafting component across Valheim — sources, usages, recipes and links to all tools.">
+  <meta property="og:url" content="https://valheim-companion.teuferon.click/items/">
+  <meta property="og:image" content="https://valheim-companion.teuferon.click/og/items.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Items Compendium — Valheim Companion">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Items Compendium — Valheim Companion">
+  <meta name="twitter:description" content="Explore every material, monster drop, trophy and crafting component across Valheim — sources, usages, recipes and links to all tools.">
+  <meta name="twitter:image" content="https://valheim-companion.teuferon.click/og/items.png">
+  <meta name="theme-color" content="#0f1216">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="vc-ga" content="G-CXQVNCCJKE">
+  <meta name="vc-site" content="https://valheim-companion.teuferon.click">
+  <script src="/shared/analytics/consent.js" defer></script>
+  <script src="/shared/progress/ui.js" defer></script>
+  <script src="/shared/progress/drawer.js" defer></script>
+  <!-- meta:end -->
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="/shared/i18n/languages.js" defer></script>
+  <script src="/shared/i18n/core.js" defer></script>
+  <script src="locales/messages.js" defer></script>
+  <script src="data/data.js" defer></script>
+  <script src="/shared/progress/core.js" defer></script>
+  <script src="/shared/shopping/core.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="page-header">
+      <div class="top-bar">
+        <a href="/" data-i18n="← Valheim Companion">← Valheim Companion</a>
+        <div id="language-picker" class="language-picker"></div>
+      </div>
+      <h1>Items Compendium</h1>
+      <p class="subtitle" data-i18n="Search and explore every material, drop, trophy and crafting component across Valheim.">Search and explore every material, drop, trophy and crafting component across Valheim.</p>
+      <div class="header-controls">
+        <a href="/progress/" data-i18n="Track your progress →">Track your progress →</a>
+      </div>
+    </header>
+
+    <main class="compendium-main">
+      <section class="toolbar" aria-label="Filters and search">
+        <div class="search-box">
+          <input type="search" id="item-search" placeholder="Search items..." autocomplete="off" spellcheck="false" aria-label="Search items">
+        </div>
+        <div class="filter-row">
+          <div class="filter-group">
+            <label for="category-select" class="filter-label" data-i18n="Category">Category</label>
+            <select id="category-select" class="filter-select" aria-label="Filter by category">
+              <option value="all" data-i18n="All categories">All categories</option>
+              <option value="metal" data-i18n="Metals & Ores">Metals & Ores</option>
+              <option value="drop" data-i18n="Monster Drops">Monster Drops</option>
+              <option value="trophy" data-i18n="Trophies">Trophies</option>
+              <option value="food-ingredient" data-i18n="Food Ingredients">Food Ingredients</option>
+              <option value="building" data-i18n="Building & Crafting">Building & Crafting</option>
+              <option value="valuable" data-i18n="Valuables & Traders">Valuables & Traders</option>
+              <option value="summoning" data-i18n="Boss Summoning">Boss Summoning</option>
+            </select>
+          </div>
+          <div class="toolbar-status">
+            <span id="items-count" class="items-count" aria-live="polite"></span>
+          </div>
+        </div>
+        <div class="biome-chips" id="biome-chips" role="toolbar" aria-label="Filter by biome"></div>
+      </section>
+
+      <div id="items-grid" class="items-grid" role="region" aria-label="Items catalog"></div>
+      <p id="items-empty" class="items-empty" hidden data-i18n="No items found matching your filters.">No items found matching your filters.</p>
+    </main>
+
+    <div id="item-modal-backdrop" class="modal-backdrop" hidden></div>
+    <div id="item-modal" class="item-modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-item-name">
+      <div class="modal-header">
+        <h2 id="modal-item-name"></h2>
+        <button id="modal-close" class="modal-close-btn" type="button" aria-label="Close" data-i18n="Close">Close</button>
+      </div>
+      <div id="modal-body" class="modal-body"></div>
+    </div>
+
+    <footer class="page-footer">
+      <p data-i18n="Fan project, not affiliated with Iron Gate. Data: Valheim Wiki (CC BY-SA 4.0).">Fan project, not affiliated with Iron Gate. Data: Valheim Wiki (CC BY-SA 4.0).</p>
+      <p class="support">
+        <span>
+          <strong data-i18n="Free, ad-free and made in my spare time.">Free, ad-free and made in my spare time.</strong>
+          <span data-i18n="If it helped your run, you can buy me a coffee.">If it helped your run, you can buy me a coffee.</span>
+        </span>
+        <a href="https://ko-fi.com/N2A528ACE3" target="_blank" rel="noopener noreferrer">
+          <img src="/support/kofi.png" width="143" height="36" loading="lazy" alt="Buy Me a Coffee at ko-fi.com" data-i18n-attr="alt:Buy Me a Coffee at ko-fi.com">
+        </a>
+      </p>
+    </footer>
+  </div>
+  <p id="notice" class="notice" role="status" aria-live="polite"></p>
+</body>
+</html>
