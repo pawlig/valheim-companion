@@ -408,4 +408,64 @@ describe('Items Compendium Data & Inverted Index', () => {
       'queen-bee must be used in Beehive'
     );
   });
+
+  it('35. Stacks & piles have accurate biomes and building category', () => {
+    const copperStack = itemsById.get('copper-stack');
+    assert.ok(copperStack, 'copper-stack must exist');
+    assert.equal(copperStack.category, 'building');
+    assert.equal(copperStack.biome, 'black-forest');
+    assert.equal(copperStack.tier, 2);
+
+    const woodStack = itemsById.get('wood-stack');
+    assert.ok(woodStack, 'wood-stack must exist');
+    assert.equal(woodStack.category, 'building');
+    assert.equal(woodStack.biome, 'meadows');
+
+    const ironStack = itemsById.get('iron-stack');
+    assert.ok(ironStack, 'iron-stack must exist');
+    assert.equal(ironStack.category, 'building');
+    assert.equal(ironStack.biome, 'swamp');
+  });
+
+  it('36. Magic staves and payloads are categorized as weapons with valid biomes', () => {
+    const staff = itemsById.get('staff-of-protection');
+    assert.ok(staff, 'staff-of-protection must exist');
+    assert.equal(staff.category, 'weapon');
+    assert.equal(staff.biome, 'mistlands');
+
+    const deadRaiser = itemsById.get('dead-raiser');
+    assert.ok(deadRaiser, 'dead-raiser must exist');
+    assert.equal(deadRaiser.category, 'weapon');
+    assert.equal(deadRaiser.biome, 'mistlands');
+
+    const bomb = itemsById.get('basalt-bomb');
+    assert.ok(bomb, 'basalt-bomb must exist');
+    assert.equal(bomb.category, 'weapon');
+    assert.equal(bomb.biome, 'ashlands');
+  });
+
+  it('37. Metals are indexed in usedIn.crafting for craftable products', () => {
+    const copper = itemsById.get('copper');
+    assert.ok(copper, 'copper must exist');
+    assert.ok(copper.usedIn.crafting.some((c) => c.id === 'bronze'), 'copper must have bronze in usedIn.crafting');
+
+    const tin = itemsById.get('tin');
+    assert.ok(tin, 'tin must exist');
+    assert.ok(tin.usedIn.crafting.some((c) => c.id === 'bronze'), 'tin must have bronze in usedIn.crafting');
+
+    const iron = itemsById.get('iron');
+    assert.ok(iron, 'iron must exist');
+    assert.ok(iron.usedIn.crafting.some((c) => c.id === 'iron-nails'), 'iron must have iron-nails in usedIn.crafting');
+  });
+
+  it('38. Debug items and non-items are excluded from compendium', () => {
+    for (const bad of ['none', 'copper-deposit', 'ancient-metal-stack', 'cheat-sword', 'cheat-sledge', 'cape-test', 't-w-i-g']) {
+      assert.ok(!itemsById.has(bad), `Junk/debug item ${bad} must not exist in compendium`);
+    }
+  });
+
+  it('39. 100% of items have a valid non-null biome and tier', () => {
+    const nullBiomes = items.filter((i) => !i.biome || i.tier == null);
+    assert.equal(nullBiomes.length, 0, `Expected 0 items with null biome, found ${nullBiomes.length}`);
+  });
 });

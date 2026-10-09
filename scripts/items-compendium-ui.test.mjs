@@ -171,6 +171,15 @@ function createDomFixture(initialHash = '') {
     location: { hash: initialHash, pathname: '/items/', search: '' },
     history: {
       replaceState: (state, title, url) => historyState.replacedUrls.push(url),
+      pushState: (state, title, url) => {
+        historyState.pushedUrls = historyState.pushedUrls || [];
+        historyState.pushedUrls.push(url);
+        if (url && url.includes('#')) {
+          const h = url.slice(url.indexOf('#'));
+          ctx.location.hash = h;
+          ctx.window.location.hash = h;
+        }
+      },
     },
     localStorage: {
       getItem: (k) => storage.get(k) ?? null,
@@ -458,5 +467,28 @@ describe('Items Compendium UI Tests', () => {
     assert.equal(storage.get('vc.itemsShowAll'), 'true', 'Storage should persist vc.itemsShowAll');
     const ironCard = doc.getElementById('item-card-iron');
     assert.ok(!ironCard.classList.contains('is-locked'), 'Iron card should no longer be locked when showAll is active');
+  });
+
+  it('22. Localized search query matches items by localized names', () => {
+    const { doc } = createDomFixture();
+    const input = doc.getElementById('item-search');
+    // amber-pearl has localized name: { cs: "Jantarová Perla" }
+    input.value = 'jantarová';
+    input.dispatch('input');
+    const grid = doc.getElementById('items-grid');
+    const cards = grid.querySelectorAll('.item-card');
+    assert.ok(cards.length > 0, 'Localized search for "jantarová" should find amber items');
+    assert.ok(doc.getElementById('item-card-amber-pearl'), 'item-card-amber-pearl should be found');
+  });
+
+  it('23. Recipe materials display capitalized item names and clicking them opens the material modal', () => {
+    const { doc } = createDomFixture('#item=bronze');
+    const modalBody = doc.getElementById('modal-body');
+    const matLinks = modalBody.querySelectorAll('.modal-link-tag');
+    assert.ok(matLinks.length > 0, 'Bronze recipe must render material links');
+    const copperLink = Array.from(matLinks).find((l) => l.textContent.includes('Copper'));
+    assert.ok(copperLink, 'Material link should display capitalized Copper name');
+    copperLink.dispatch('click');
+    assert.equal(doc.getElementById('modal-item-name').textContent, 'Copper', 'Clicking material link should update modal to Copper');
   });
 });

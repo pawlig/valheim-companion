@@ -626,6 +626,8 @@ export function parseMaterialList(s) {
     chunk = chunk.replace(/\(\s*fuel\s*\)/gi, '').trim();
     chunk = chunk.replace(/^[\s*#:-]+/, '').trim();
     if (!chunk || chunk.toLowerCase() === 'n/a') continue;
+    // Skip section headers like "Small:", "Medium:", "Large:"
+    if (!chunk.includes('[[') && /^[a-z0-9\s_-]+:$/i.test(chunk)) continue;
 
     let amount = 1;
     let namePart = chunk;
@@ -650,6 +652,9 @@ export function parseMaterialList(s) {
       }
     }
 
+    // Strip trailing messy count lists like "x3, x4,"
+    namePart = namePart.replace(/x\d+(?:\s*,\s*x\d+)*,?\s*$/i, '').trim();
+
     const linkMatch = namePart.match(/\[\[([^|\]]+)(?:\|([^\]]+))?\]\]/);
     let name;
     if (linkMatch) {
@@ -657,7 +662,8 @@ export function parseMaterialList(s) {
     } else {
       name = cleanText(namePart).trim();
     }
-    name = name.replace(/^\[+|\]+$/g, '').trim();
+    name = name.replace(/^\[+|\]+$/g, '').replace(/:$/, '').trim();
+    if (!name || name.toLowerCase() === 'small' || name.toLowerCase() === 'medium' || name.toLowerCase() === 'large') continue;
 
     if (name) {
       results.push({ name, amount, fuel });

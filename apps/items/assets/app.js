@@ -153,13 +153,36 @@
     return parts.length > 0 ? parts.join(' + ') : null;
   }
 
+  function navigateToUrl(url) {
+    try {
+      if (typeof history !== 'undefined' && typeof history.pushState === 'function') {
+        history.pushState(null, '', url);
+      }
+    } catch (_) {}
+    const hashIdx = url.indexOf('#');
+    if (hashIdx !== -1 && typeof location !== 'undefined') {
+      location.hash = url.slice(hashIdx);
+    }
+    handleHash();
+  }
+
+  function navigateToItem(itemId) {
+    navigateToUrl(`/items/#item=${encodeURIComponent(itemId)}`);
+  }
+
   // A material chip in a recipe: links into the compendium when the item exists.
   function materialNode(m) {
-    const label = `${m.amount || 1}× ${m.name || m.item}`;
-    if (itemsById.has(m.item)) {
+    const targetItem = itemsById.get(m.item);
+    const displayName = targetItem ? targetItem.name : (m.name || m.item);
+    const label = `${m.amount || 1}× ${displayName}`;
+    if (targetItem) {
       const a = el('a', 'modal-link-tag', label);
       a.href = `/items/#item=${encodeURIComponent(m.item)}`;
-      a.title = m.name || m.item;
+      a.title = displayName;
+      a.addEventListener('click', (e) => {
+        if (e && typeof e.preventDefault === 'function') e.preventDefault();
+        navigateToItem(m.item);
+      });
       return a;
     }
     return el('span', 'modal-link-tag modal-link-plain', label);
@@ -174,6 +197,7 @@
 
     if (!modal || !backdrop || !modalName || !modalBody) return;
 
+    modalBody.scrollTop = 0;
     modalName.textContent = item.name;
     modalBody.replaceChildren();
 
@@ -368,7 +392,8 @@
       { key: 'meads', label: t('Meads') },
       { key: 'comfort', label: t('Comfort') },
       { key: 'expedition', label: t('Boss Summoning') },
-      { key: 'stations', label: t('Stations & Upgrades') },
+      { key: 'stations', label: t('Building & Stations') },
+      { key: 'crafting', label: t('Crafting & Materials') },
     ];
     const total = groups.reduce((sum, g) => sum + (u[g.key]?.length || 0), 0);
 
@@ -383,8 +408,10 @@
         for (const entry of entries) {
           const label = entry.name || entry.bossName || entry.id;
           let href = null;
+          let isItemLink = false;
           if (entry.itemId && itemsById.has(entry.itemId)) {
             href = `/items/#item=${encodeURIComponent(entry.itemId)}`;
+            isItemLink = true;
           } else if (g.key === 'weapons') {
             href = `/smithy/#item=${encodeURIComponent(entry.id)}`;
           } else if (g.key === 'armor') {
@@ -399,6 +426,12 @@
           if (href) {
             const a = el('a', 'modal-link-tag', label);
             a.href = href;
+            if (isItemLink) {
+              a.addEventListener('click', (e) => {
+                if (e && typeof e.preventDefault === 'function') e.preventDefault();
+                navigateToUrl(href);
+              });
+            }
             list.append(a);
           } else {
             list.append(el('span', 'modal-link-tag modal-link-plain', label));
@@ -550,7 +583,8 @@
       if (query) {
         const nameMatch = item.name.toLowerCase().includes(query);
         const idMatch = item.id.toLowerCase().includes(query);
-        if (!nameMatch && !idMatch) return false;
+        const locNamesMatch = item.names && Object.values(item.names).some((n) => typeof n === 'string' && n.toLowerCase().includes(query));
+        if (!nameMatch && !idMatch && !locNamesMatch) return false;
       }
       return true;
     });
