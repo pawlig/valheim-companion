@@ -3,6 +3,11 @@
 
 (function () {
   const SECTIONS = {
+    items: {
+      title: 'ITEMS COMPENDIUM', sub: 'Valheim Companion',
+      desc: 'Materials, monster drops, trophies and treasures across Valheim — where to find them and everything they craft.',
+      bg: '../../bestiary/img/biomes/black-forest.png',
+    },
     expedition: {
       title: 'EXPEDITION', sub: 'Valheim Companion',
       desc: 'Prepare for the next boss and the raids that come after it — weapons, defenses, food, meads and the full packing list.',

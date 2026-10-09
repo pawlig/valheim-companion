@@ -799,5 +799,50 @@
     "ru": "Expedition",
     "ja": "Expedition",
     "id": "Expedition"
+  },
+  "Items Compendium": {
+    "en": "Items Compendium",
+    "cs": "Items Compendium",
+    "de": "Items Compendium",
+    "es": "Items Compendium",
+    "fr": "Items Compendium",
+    "pt": "Items Compendium",
+    "zh": "Items Compendium",
+    "hi": "Items Compendium",
+    "ar": "Items Compendium",
+    "bn": "Items Compendium",
+    "ru": "Items Compendium",
+    "ja": "Items Compendium",
+    "id": "Items Compendium"
+  },
+  "Open Items Compendium →": {
+    "en": "Open Items Compendium →",
+    "cs": "Otevřít Items Compendium →",
+    "de": "Items Compendium öffnen →",
+    "es": "Abrir Items Compendium →",
+    "fr": "Ouvrir Items Compendium →",
+    "pt": "Abrir Items Compendium →",
+    "zh": "打开 Items Compendium →",
+    "hi": "Items Compendium खोलें →",
+    "ar": "افتح Items Compendium ←",
+    "bn": "Items Compendium খুলুন →",
+    "ru": "Открыть Items Compendium →",
+    "ja": "Items Compendiumを開く →",
+    "id": "Buka Items Compendium →"
+  },
+  "Materials, drops, trophies and treasures — where to find them and everything they are used to craft.": {
+    "en": "Materials, drops, trophies and treasures — where to find them and everything they are used to craft.",
+    "cs": "Materiály, dropy, trofeje a poklady – kde je najít a vše, co se z nich dá vyrobit.",
+    "de": "Materialien, Beute, Trophäen und Schätze – wo man sie findet und was daraus hergestellt wird.",
+    "es": "Materiales, botines, trofeos y tesoros: dónde encontrarlos y todo lo que se fabrica con ellos.",
+    "fr": "Matériaux, butins, trophées et trésors — où les trouver et tout ce qu'ils permettent de fabriquer.",
+    "pt": "Materiais, despojos, troféus e tesouros — onde encontrar e tudo o que pode ser criado com eles.",
+    "zh": "材料、掉落物、战利品与宝物 —— 掉落获取途径与全部制作配方。",
+    "hi": "सामग्रियां, ड्रॉप्स, ट्रॉफियां और खजाने — उन्हें कहां खोजें और उनसे बनने वाली सभी वस्तुएं।",
+    "ar": "المواد والغنائم والجوائز والكنوز — أين تجدها وكل ما يمكن صنعه منها.",
+    "bn": "উপাদান, ড্রপ, ট্রফি এবং ধনদৌলত — কোথায় পাওয়া যাবে এবং এগুলি দিয়ে তৈরি করা যায় এমন সবকিছু।",
+    "ru": "Материалы, дроп, трофеи и сокровища — где их найти и всё, что из них можно создать.",
+    "ja": "素材、ドロップ品、トロフィー、宝物 — 入手場所とそれらから作成できる全アイテム。",
+    "id": "Material, jarahan, trofi, dan harta — lokasi menemukan dan semua yang dapat dibuat darinya."
   }
 }

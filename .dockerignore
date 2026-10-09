@@ -36,6 +36,10 @@
 !apps/expedition/assets/
 !apps/expedition/locales/messages.js
 !apps/expedition/data/data.js
+!apps/items/index.html
+!apps/items/assets/
+!apps/items/locales/messages.js
+!apps/items/data/data.js
 !apps/signs/
 !apps/damage-calculator/
 apps/signs/node_modules/

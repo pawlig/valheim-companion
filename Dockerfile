@@ -52,6 +52,10 @@ COPY apps/expedition/index.html /usr/share/nginx/html/expedition/
 COPY apps/expedition/assets/ /usr/share/nginx/html/expedition/assets/
 COPY apps/expedition/locales/messages.js /usr/share/nginx/html/expedition/locales/messages.js
 COPY apps/expedition/data/data.js /usr/share/nginx/html/expedition/data/data.js
+COPY apps/items/index.html /usr/share/nginx/html/items/
+COPY apps/items/assets/ /usr/share/nginx/html/items/assets/
+COPY apps/items/locales/messages.js /usr/share/nginx/html/items/locales/messages.js
+COPY apps/items/data/data.js /usr/share/nginx/html/items/data/data.js
 COPY --from=signs /repo/apps/signs/dist-static/ /usr/share/nginx/html/signs/
 COPY --from=damage-calculator /repo/apps/damage-calculator/dist-static/ /usr/share/nginx/html/damage-calculator/
 EXPOSE 80
