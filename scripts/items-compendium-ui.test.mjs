@@ -143,6 +143,7 @@ function createDomFixture(initialHash = '') {
     'modal-close',
     'modal-body',
     'notice',
+    'toggle-locked-btn',
   ];
 
   ids.forEach((id) => {
@@ -207,11 +208,11 @@ function createDomFixture(initialHash = '') {
 }
 
 describe('Items Compendium UI Tests', () => {
-  it('1. Renders the full catalog (>= 700 items) on initial load', () => {
+  it('1. Renders the full catalog (>= 1,000 items) on initial load', () => {
     const { doc } = createDomFixture();
     const grid = doc.getElementById('items-grid');
     const cards = grid.querySelectorAll('.item-card');
-    assert.ok(cards.length >= 700, `Initial view should render >= 700 cards, got ${cards.length}`);
+    assert.ok(cards.length >= 1000, `Initial view should render >= 1000 cards, got ${cards.length}`);
   });
 
   it('2. Category filter filters items correctly (metal)', () => {
@@ -233,7 +234,7 @@ describe('Items Compendium UI Tests', () => {
     select.dispatch('change');
     const grid = doc.getElementById('items-grid');
     const cards = grid.querySelectorAll('.item-card');
-    assert.equal(cards.length, 11, 'Should render 11 trophies');
+    assert.ok(cards.length >= 60, `Should render 60+ trophies, got ${cards.length}`);
   });
 
   it('4. Biome filter filters by selected biome', () => {
@@ -436,5 +437,26 @@ describe('Items Compendium UI Tests', () => {
     cartBtn.dispatch('click');
     const parsed = JSON.parse(storage.get('va.cart'));
     assert.equal(parsed[0].quantity, 5, 'Cart should store quantity 5');
+  });
+
+  it('20. Clicking a locked card opens the modal with spoiler banner and details', () => {
+    const { doc } = createDomFixture();
+    const ironCard = doc.getElementById('item-card-iron');
+    assert.ok(ironCard, 'Iron card should exist in initial view');
+    ironCard.dispatch('click');
+    const modal = doc.getElementById('item-modal');
+    assert.equal(modal.hidden, false, 'Modal should open when locked card is clicked');
+    const spoiler = doc.getElementById('modal-body').querySelector('.modal-spoiler-banner');
+    assert.ok(spoiler, 'Spoiler banner should be displayed in modal for unvisited biome');
+  });
+
+  it('21. Toggle locked biomes button toggles showAll mode', () => {
+    const { doc, storage } = createDomFixture();
+    const toggleBtn = doc.getElementById('toggle-locked-btn');
+    assert.ok(toggleBtn, 'Toggle locked biomes button must exist');
+    toggleBtn.dispatch('click');
+    assert.equal(storage.get('vc.itemsShowAll'), 'true', 'Storage should persist vc.itemsShowAll');
+    const ironCard = doc.getElementById('item-card-iron');
+    assert.ok(!ironCard.classList.contains('is-locked'), 'Iron card should no longer be locked when showAll is active');
   });
 });

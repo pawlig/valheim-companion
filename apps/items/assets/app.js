@@ -82,6 +82,10 @@
   let searchQuery = '';
   let activeModalItem = null;
   let noticeTimer = null;
+  let showAllBiomes = false;
+  try {
+    showAllBiomes = localStorage.getItem('vc.itemsShowAll') === 'true';
+  } catch {}
 
   function showNotice(key) {
     const notice = document.getElementById('notice');
@@ -102,7 +106,7 @@
   }
 
   function isBiomeRevealed(biomeId) {
-    if (!biomeId) return true;
+    if (!biomeId || showAllBiomes) return true;
     return getRevealedBiomes().includes(biomeId);
   }
 
@@ -172,6 +176,19 @@
 
     modalName.textContent = item.name;
     modalBody.replaceChildren();
+
+    // 0. Spoiler notice if biome is unvisited
+    if (item.biome && !getRevealedBiomes().includes(item.biome)) {
+      const banner = el('div', 'modal-spoiler-banner');
+      banner.append(el('span', '', t('Locked until you reach this biome: {biome}', { biome: item.biome.replace('-', ' ') })));
+      const revBtn = button(t('Reveal biome'), () => {
+        revealBiome(item.biome);
+        render();
+        openModal(item);
+      }, 'reveal-btn');
+      banner.append(revBtn);
+      modalBody.append(banner);
+    }
 
     // 1. Overview: image + badges + weight/stack
     const overview = el('div', 'modal-overview');
@@ -507,6 +524,13 @@
     const grid = document.getElementById('items-grid');
     const countSpan = document.getElementById('items-count');
     const emptyNotice = document.getElementById('items-empty');
+    const toggleBtn = document.getElementById('toggle-locked-btn');
+
+    if (toggleBtn) {
+      toggleBtn.classList.toggle('active', showAllBiomes);
+      toggleBtn.setAttribute('aria-pressed', String(showAllBiomes));
+      toggleBtn.textContent = showAllBiomes ? t('Hide locked biomes') : t('Show locked biomes');
+    }
 
     if (!grid) return;
 
@@ -609,11 +633,11 @@
         stats.append(el('span', '', weightText));
         if (stackText) stats.append(el('span', '', stackText));
         card.append(stats);
-
-        card.addEventListener('click', () => {
-          openModal(item);
-        });
       }
+
+      card.addEventListener('click', () => {
+        openModal(item);
+      });
 
       grid.append(card);
     }
@@ -672,6 +696,17 @@
     if (catSelect) {
       catSelect.addEventListener('change', (e) => {
         selectedCategory = e.target.value;
+        render();
+      });
+    }
+
+    const toggleBtn = document.getElementById('toggle-locked-btn');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        showAllBiomes = !showAllBiomes;
+        try {
+          localStorage.setItem('vc.itemsShowAll', String(showAllBiomes));
+        } catch {}
         render();
       });
     }

@@ -31,9 +31,9 @@ describe('Items Compendium Data & Inverted Index', () => {
   const items = compendium.items;
   const itemsById = new Map(items.map((i) => [i.id, i]));
 
-  it('1. Compendium contains the full game catalog (>= 700 items)', () => {
+  it('1. Compendium contains the full game catalog (>= 1,000 items)', () => {
     assert.ok(Array.isArray(items), 'compendium.items should be an array');
-    assert.ok(items.length >= 700, `Expected >= 700 items, got ${items.length}`);
+    assert.ok(items.length >= 1000, `Expected >= 1000 items, got ${items.length}`);
   });
 
   it('2. Client bundle apps/items/data/data.js exists and exports globalThis.VC_ITEMS_DATA', () => {
@@ -222,11 +222,12 @@ describe('Items Compendium Data & Inverted Index', () => {
       );
     }
     for (const tool of tools) {
-      // Pickaxes are smithed; the Fishing Rod is only sold by Haldor.
-      assert.ok(
-        tool.crossLinks && (tool.crossLinks.smithy || tool.crossLinks.traders),
-        `Tool ${tool.id} must link to Smithy or Trader Ledger`
-      );
+      // Pickaxes are smithed; Fishing Rod is sold by Haldor; building tools & boss drops are self-contained.
+      if (['antler-pickaxe', 'bronze-pickaxe', 'iron-pickaxe', 'black-metal-pickaxe'].includes(tool.id)) {
+        assert.ok(tool.crossLinks?.smithy, `Pickaxe ${tool.id} must link to Smithy`);
+      } else if (tool.id === 'fishing-rod') {
+        assert.ok(tool.crossLinks?.traders, `Tool ${tool.id} must link to Trader Ledger`);
+      }
     }
   });
 
@@ -371,5 +372,40 @@ describe('Items Compendium Data & Inverted Index', () => {
     const egg = itemsById.get('dragon-egg');
     assert.ok(egg, 'dragon-egg must exist');
     assert.equal(egg.teleportable, false, 'dragon-egg must not be teleportable');
+  });
+
+  it('31. Key missing items exist: Queen Bee, Wishbone, Hammer, Cart, Smelter, Seeds', () => {
+    for (const key of ['queen-bee', 'wishbone', 'hammer', 'cart', 'smelter', 'carrot-seeds', 'turnip-seeds', 'swamp-key', 'lox-saddle']) {
+      assert.ok(itemsById.has(key), `Key item ${key} must exist in items compendium`);
+    }
+  });
+
+  it('32. Trophy catalog has 60+ creature trophies with Bestiary creature sources', () => {
+    const trophies = items.filter((i) => i.category === 'trophy');
+    assert.ok(trophies.length >= 60, `Expected 60+ trophies, got ${trophies.length}`);
+    const trollTrophy = itemsById.get('troll-trophy');
+    assert.ok(trollTrophy, 'troll-trophy must exist');
+    assert.ok(trollTrophy.sources.creatures.length > 0, 'troll-trophy must have creature source');
+    const abomTrophy = itemsById.get('abomination-trophy');
+    assert.ok(abomTrophy, 'abomination-trophy must exist');
+    assert.ok(abomTrophy.sources.creatures.length > 0, 'abomination-trophy must have creature source');
+  });
+
+  it('33. Crafting stations and building structures are present (Smelter, Cart, Chests)', () => {
+    const smelter = itemsById.get('smelter');
+    assert.ok(smelter, 'smelter must exist');
+    assert.equal(smelter.category, 'building');
+    const cart = itemsById.get('cart');
+    assert.ok(cart, 'cart must exist');
+    assert.equal(cart.category, 'building');
+  });
+
+  it('34. Queen Bee is indexed and used in Beehive', () => {
+    const qb = itemsById.get('queen-bee');
+    assert.ok(qb, 'queen-bee must exist');
+    assert.ok(
+      qb.usedIn.stations.some((s) => s.id === 'beehive' || s.name.toLowerCase().includes('bee')),
+      'queen-bee must be used in Beehive'
+    );
   });
 });

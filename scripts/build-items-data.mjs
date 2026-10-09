@@ -1,18 +1,22 @@
-// Build script for Items Compendium dataset and inverted index (VC-39, VC-40b).
+// Build script for Items Compendium dataset and inverted index (VC-39, VC-40b, VC-40c).
 //
-// Merges every game dataset into one unified catalog:
-//   data/items.json     base materials, drops, trophies, valuables, summoning items
-//   data/weapons.json   weapons, shields, ammo, bombs, pickaxes (171)
-//   data/armor.json     armor sets and single pieces (113 pieces)
-//   apps/provisions     cooked foods (99) and meads (21) with stats and recipes
-//   data/comfort.json   comfort furniture (76)
-//   data/traders.json   trader merchandise (38, merged or added as valuables)
+// Merges every game dataset and raw wiki extracts into one complete catalog:
+//   data/items.json      base materials, drops, valuables, summoning items
+//   data/weapons.json    weapons, shields, ammo, bombs, tools (171)
+//   data/armor.json      armor sets and pieces (113)
+//   apps/provisions      cooked foods (99) and meads (21)
+//   data/comfort.json    comfort furniture (76)
+//   data/stations.json   crafting stations & extensions (23)
+//   data/traders.json    trader merchandise (38)
+//   data/creatures.json  all 70+ trophies & 240 monster drops
+//   data/raw/*.json      all wiki infoboxes (structures, tools, seeds, accessories...)
 //
 // Output: data/items-compendium.json + apps/items/data/data.js (VC_ITEMS_DATA).
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
+import { parseAllInfoboxes, cleanText, slug as baseSlug, parseMaterialList } from './wiki/wikitext.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = path.join(ROOT, 'data');
@@ -23,39 +27,86 @@ function loadJson(relPath) {
 }
 
 function slug(s) {
-  return String(s || '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '');
+  return baseSlug(s);
 }
 
-// App folders that may hold the image for a dataset-relative path like
-// "img/weapons/iron-sword.png". The first existing file wins, so the bundle
-// never points at missing images.
-const IMAGE_APP_ROOTS = ['smithy', 'provisions', 'comfort', 'bestiary', 'traders'];
-const missingImages = [];
+const BIOME_TIERS = {
+  meadows: 1,
+  'black-forest': 2,
+  swamp: 3,
+  ocean: 3,
+  mountain: 4,
+  plains: 5,
+  mistlands: 6,
+  ashlands: 7,
+  'deep-north': 8,
+};
 
-function resolveImage(raw, preferredApp) {
-  if (!raw) return null;
-  if (raw.startsWith('../')) {
-    return existsSync(path.join(APPS_DIR, raw.replace('../', ''))) ? raw : null;
-  }
-  const roots = preferredApp
-    ? [preferredApp, ...IMAGE_APP_ROOTS.filter((r) => r !== preferredApp)]
-    : IMAGE_APP_ROOTS;
-  for (const app of roots) {
-    const rel = `../${app}/${raw}`;
-    if (existsSync(path.join(APPS_DIR, app, raw))) return rel;
-  }
-  missingImages.push(raw);
+function inferBiome(text) {
+  if (!text) return null;
+  const s = String(text).toLowerCase();
+  if (s.includes('deep north')) return 'deep-north';
+  if (s.includes('ashland')) return 'ashlands';
+  if (s.includes('mistland')) return 'mistlands';
+  if (s.includes('plain')) return 'plains';
+  if (s.includes('mountain')) return 'mountain';
+  if (s.includes('swamp')) return 'swamp';
+  if (s.includes('ocean')) return 'ocean';
+  if (s.includes('black forest')) return 'black-forest';
+  if (s.includes('meadow')) return 'meadows';
   return null;
 }
 
-// Pretty display names for station ids used by the comfort dataset.
+// Index all existing images across app folders
+const IMAGE_INDEX = new Map();
+const IMAGE_APP_ROOTS = ['smithy', 'provisions', 'comfort', 'bestiary', 'traders', 'progress'];
+
+for (const app of IMAGE_APP_ROOTS) {
+  const dir = path.join(APPS_DIR, app, 'img');
+  if (!existsSync(dir)) continue;
+  function walk(d, rel) {
+    for (const f of readdirSync(d)) {
+      const p = path.join(d, f);
+      const sub = rel ? `${rel}/${f}` : f;
+      if (statSync(p).isDirectory()) {
+        walk(p, sub);
+      } else {
+        const lower = f.toLowerCase();
+        if (!IMAGE_INDEX.has(lower)) IMAGE_INDEX.set(lower, `../${app}/img/${sub}`);
+        const base = slug(lower.replace(/\.[^.]+$/, ''));
+        if (!IMAGE_INDEX.has(base)) IMAGE_INDEX.set(base, `../${app}/img/${sub}`);
+      }
+    }
+  }
+  walk(dir, '');
+}
+
+function resolveImage(raw, itemId) {
+  if (!raw && !itemId) return null;
+  if (raw && raw.startsWith('../')) {
+    return existsSync(path.join(APPS_DIR, raw.replace('../', ''))) ? raw : null;
+  }
+  if (raw) {
+    const rawLower = path.basename(raw).toLowerCase();
+    if (IMAGE_INDEX.has(rawLower)) return IMAGE_INDEX.get(rawLower);
+    const rawSlug = slug(rawLower.replace(/\.[^.]+$/, ''));
+    if (IMAGE_INDEX.has(rawSlug)) return IMAGE_INDEX.get(rawSlug);
+  }
+  if (itemId && IMAGE_INDEX.has(itemId)) return IMAGE_INDEX.get(itemId);
+  return null;
+}
+
 const STATION_NAME_OVERRIDES = {
   workbench: 'Workbench',
   forge: 'Forge',
-  'stonecutter': 'Stonecutter',
+  stonecutter: 'Stonecutter',
+  cauldron: 'Cauldron',
+  fermenter: 'Fermenter',
+  smelter: 'Smelter',
+  'blast-furnace': 'Blast Furnace',
+  'black-forge': 'Black Forge',
+  'galdr-table': 'Galdr Table',
+  'artisan-table': 'Artisan Table',
 };
 
 function prettyStationName(raw) {
@@ -89,9 +140,30 @@ export function buildItemsData() {
   const provMeads = provData.meads || [];
   const provItemsById = new Map(Object.entries(provData.items || {}));
   const provStationNames = new Map((provData.stations || []).map((s) => [s.id, s.name]));
+  const provFoodIds = new Set(provFood.map((f) => f.id));
+  const provMeadIds = new Set(provMeads.map((m) => m.id));
 
-  const itemById = new Map(items.map((it) => [it.id, it]));
-  const itemByName = new Map(items.map((it) => [it.name.toLowerCase(), it]));
+  // Load raw wiki pages from cache
+  const rawFiles = existsSync(path.join(DATA_DIR, 'raw'))
+    ? readdirSync(path.join(DATA_DIR, 'raw')).filter((f) => f.endsWith('.json'))
+    : [];
+  const wikiPages = new Map();
+  for (const file of rawFiles) {
+    try {
+      const data = JSON.parse(readFileSync(path.join(DATA_DIR, 'raw', file), 'utf8'));
+      if (!data.query?.pages) continue;
+      for (const page of Object.values(data.query.pages)) {
+        if (page.title && page.revisions && !page.title.startsWith('File:')) {
+          const wt = page.revisions[0]?.slots?.main?.content || page.revisions[0]?.['*'];
+          if (wt && !wikiPages.has(page.title)) {
+            wikiPages.set(page.title, { title: page.title, wt });
+          }
+        }
+      }
+    } catch {
+      // Ignore malformed cache entry
+    }
+  }
 
   const summonIds = new Set([
     'ancient-seed',
@@ -103,31 +175,8 @@ export function buildItemsData() {
     'malicious-blood',
     'bell-fragment',
     'sealbreaker-fragment',
-  ]);
-
-  const nonTeleportableMetals = new Set([
-    'copper',
-    'copper-ore',
-    'copper-scrap',
-    'tin',
-    'tin-ore',
-    'bronze',
-    'bronze-nails',
-    'scrap-bronze',
-    'iron',
-    'iron-ore',
-    'scrap-iron',
-    'iron-nails',
-    'iron-pit',
-    'silver',
-    'silver-ore',
-    'black-metal',
-    'black-metal-scrap',
-    'flametal',
-    'flametal-ore',
-    'bloodgold',
-    'petrified-tissue',
-    'dragon-egg',
+    'swamp-key',
+    'crypt-key',
   ]);
 
   const metalOres = new Set([
@@ -153,75 +202,24 @@ export function buildItemsData() {
     'bloodgold',
   ]);
 
-  // Tools that live in the weapon tables (building Hammer/Hoe/Cultivator are
-  // not craftable weapons and are not part of the smithing datasets).
   const WEAPON_TOOL_IDS = new Set([
     'antler-pickaxe',
     'bronze-pickaxe',
     'iron-pickaxe',
     'black-metal-pickaxe',
     'fishing-rod',
+    'hammer',
+    'hoe',
+    'cultivator',
+    'butcher-knife',
+    'tankard',
+    'horn-of-celebration',
+    'dvergr-tankard',
+    'battering-ram',
+    'catapult',
+    'scythe',
   ]);
 
-  function determineCategory(item) {
-    const id = item.id;
-    const nameLower = (item.name || '').toLowerCase();
-
-    // 1. Trophies
-    if (id.endsWith('-trophy') || id.includes('trophy') || nameLower.includes('trophy')) {
-      return 'trophy';
-    }
-
-    // 2. Boss Summoning
-    if (summonIds.has(id) || (item.addedBy === 'expedition' && id !== 'portal')) {
-      return 'summoning';
-    }
-
-    // 3. Metals & Ores
-    if (
-      metalOres.has(id) ||
-      id.endsWith('-ore') ||
-      (id.includes('-scrap') && (id.includes('copper') || id.includes('metal'))) ||
-      id === 'scrap-bronze' ||
-      id === 'scrap-iron'
-    ) {
-      return 'metal';
-    }
-
-    // 4. Valuables & Traders
-    if (
-      ['amber', 'amber-pearl', 'ruby', 'silver-necklace', 'coins', 'ymir-flesh', 'barber-kit'].includes(id) ||
-      (item.sources || []).some((s) => s.kind === 'npc' && !item.provisions)
-    ) {
-      return 'valuable';
-    }
-
-    // 5. Food Ingredients
-    if (item.provisions || item.category === 'food' || (item.sources || []).some((s) => s.kind === 'npc' && item.provisions)) {
-      return 'food-ingredient';
-    }
-
-    // 6. Monster Drops
-    const hasCreatureSource =
-      (item.sources || []).some((s) => s.kind === 'creature') ||
-      creatures.some((c) =>
-        (c.drops || []).some((d) => {
-          const clean = d.replace(/\s*x\d+/i, '').replace(/\s*\(.*?\)/g, '').trim().toLowerCase();
-          return clean === nameLower || slug(clean) === id;
-        })
-      );
-    if (hasCreatureSource) {
-      return 'drop';
-    }
-
-    // 7. Building & Crafting
-    return 'building';
-  }
-
-  // -----------------------------------------------------------------------
-  // Unified registry: id -> compendium record. Records are created from
-  // data/items.json first, then enriched/reclassified by the other datasets.
-  // -----------------------------------------------------------------------
   const registry = new Map();
   const order = [];
 
@@ -235,26 +233,44 @@ export function buildItemsData() {
     return rec;
   }
 
+  function categorize(id, name, rawType) {
+    const nameLower = (name || '').toLowerCase();
+    const typeLower = (rawType || '').toLowerCase();
+
+    if (id.startsWith('cast-') || id.startsWith('mould-') || nameLower.startsWith('cast') || nameLower.startsWith('mould') || typeLower === 'cast' || typeLower === 'mould') {
+      return 'building';
+    }
+    if (provFoodIds.has(id)) return 'food';
+    if (provMeadIds.has(id)) return 'mead';
+    if (id.endsWith('-trophy') || id.includes('trophy') || nameLower.includes('trophy')) return 'trophy';
+    if (summonIds.has(id) || nameLower.includes('totem') || nameLower.includes('sealbreaker') || id.includes('key')) return 'summoning';
+    if (metalOres.has(id) || id.endsWith('-ore') || id.endsWith('-ingot') || id.endsWith('-scrap')) return 'metal';
+    if (WEAPON_TOOL_IDS.has(id) || typeLower === 'tool' || nameLower.includes('pickaxe') || nameLower.includes('saddle') || id.includes('saddle') || id === 'wishbone') return 'tool';
+    if (typeLower.includes('shield') || nameLower.includes('shield') || nameLower.includes('buckler')) return 'shield';
+    if (typeLower.includes('weapon') || typeLower.includes('sword') || typeLower.includes('bow') || typeLower.includes('spear') || typeLower.includes('axe') || typeLower.includes('mace') || typeLower.includes('polearm') || typeLower.includes('dagger') || typeLower.includes('club') || typeLower.includes('staff') || typeLower.includes('crossbow') || typeLower.includes('arrow') || typeLower.includes('missile') || typeLower.includes('bolt') || typeLower === 'fists') return 'weapon';
+    if (typeLower.includes('armor') || typeLower.includes('helmet') || typeLower.includes('cape') || typeLower.includes('cuirass') || typeLower.includes('greaves') || typeLower.includes('legs') || typeLower.includes('chest') || typeLower.includes('head') || typeLower === 'accessory') return 'armor';
+    if (['amber', 'amber-pearl', 'ruby', 'silver-necklace', 'coins', 'ymir-flesh', 'barber-kit'].includes(id) || typeLower === 'valuable') return 'valuable';
+    if (nameLower.includes('seed') || nameLower.includes('cone') || nameLower.includes('acorn') || nameLower.includes('mushroom') || nameLower.includes('berry') || nameLower.includes('meat') || nameLower.includes('fish') || nameLower.includes('dandelion') || nameLower.includes('thistle') || nameLower.includes('carrot') || nameLower.includes('turnip') || nameLower.includes('onion') || nameLower.includes('barley') || nameLower.includes('flax') || nameLower.includes('cloudberry') || nameLower.includes('magecap') || nameLower.includes('jotun puffs') || typeLower === 'food' || typeLower === 'seed') return 'food-ingredient';
+    if (typeLower.includes('structure') || typeLower.includes('station') || typeLower.includes('building') || typeLower.includes('furniture') || typeLower.includes('crafting') || typeLower.includes('defense') || typeLower === 'misc' || typeLower === 'transport' || typeLower === 'boat') return 'building';
+    return 'drop';
+  }
+
   // --- 1. Base materials from items.json -------------------------------
-  const provFoodIds = new Set(provFood.map((f) => f.id));
   for (const it of items) {
     const provEntry = provItemsById.get(it.id);
-    // Only eatable dishes become "food"; raw ingredients keep their own category.
-    const category = provFoodIds.has(it.id) ? 'food' : determineCategory(it);
-
+    const category = provFoodIds.has(it.id) ? 'food' : categorize(it.id, it.name, it.category);
     let teleportable = true;
-    if (it.teleportable === false || provEntry?.teleportable === false || nonTeleportableMetals.has(it.id) || category === 'metal') {
+    if (it.teleportable === false || provEntry?.teleportable === false || metalOres.has(it.id) || category === 'metal' || it.id === 'dragon-egg') {
       teleportable = false;
     }
 
     const recipeSource = it.recipe || provEntry?.recipe || null;
-
-    registry.set(it.id, {
+    const rec = {
       id: it.id,
       name: it.name,
-      image: resolveImage(it.image, 'smithy'),
+      image: resolveImage(it.image, it.id),
       biome: it.biome ?? null,
-      tier: it.tier ?? null,
+      tier: it.tier ?? (it.biome ? BIOME_TIERS[it.biome] : null),
       category,
       teleportable,
       stack: it.stack ?? provEntry?.stack ?? null,
@@ -271,44 +287,47 @@ export function buildItemsData() {
         traders: [],
         raw: it.sources || [],
       },
-      usedIn: null, // filled once all recipes are known
-      crossLinks: {},
-    });
-    order.push(it.id);
+      usedIn: null,
+      crossLinks: (category === 'weapon' || category === 'shield') ? { smithy: `/smithy/#item=${it.id}` } : {},
+    };
 
     if (recipeSource) {
-      const rec = registry.get(it.id);
       rec.recipe = {
         station: recipeSource.station || null,
         stationLevel: recipeSource.stationLevel || 1,
         yields: recipeSource.yields || 1,
         materials: (recipeSource.materials || []).map((m) => ({
           item: m.item || slug(m.name),
-          name: m.name || itemById.get(m.item)?.name || m.item,
+          name: m.name || m.item,
           amount: m.amount || 1,
         })),
       };
+      rec.station = rec.recipe.station ? { name: rec.recipe.station, level: rec.recipe.stationLevel || 1 } : null;
     }
+
+    ensure(it.id, rec);
   }
 
-  // --- 2. Weapons, shields, ammo and tools from weapons.json ------------
-  function weaponCategory(w) {
-    if ((w.type || '').includes('Shield')) return 'shield';
-    if (WEAPON_TOOL_IDS.has(w.id) || (w.type || '').toLowerCase().includes('pickaxe')) return 'tool';
-    return 'weapon';
-  }
-
+  // --- 2. Weapons, shields and tools from weapons.json ------------------
   for (const w of weapons) {
-    const category = weaponCategory(w);
+    let category = 'weapon';
+    if ((w.type || '').includes('Shield')) category = 'shield';
+    else if (WEAPON_TOOL_IDS.has(w.id) || (w.type || '').toLowerCase().includes('pickaxe')) category = 'tool';
+
     const level1 = (w.levels || [])[0] || {};
-    const base = registry.get(w.id);
+    const mats = (level1.materials || []).map((m) => ({
+      item: m.item || slug(m.name),
+      name: m.name || m.item,
+      amount: m.amount || 1,
+    }));
+    const existing = registry.get(w.id);
 
     const record = {
       id: w.id,
       name: w.name,
-      image: resolveImage(w.image, 'bestiary'),
+      image: resolveImage(w.image, w.id),
       biome: w.biome ?? null,
-      tier: w.tier ?? null,
+      tier: w.tier ?? (w.biome ? BIOME_TIERS[w.biome] : null),
       category,
       teleportable: true,
       stack: w.quantity ?? null,
@@ -326,46 +345,33 @@ export function buildItemsData() {
         maxQuality: w.maxQuality ?? 1,
       },
       recipe:
-        level1.materials && level1.materials.length
+        mats.length > 0
           ? {
               station: w.station || null,
               stationLevel: level1.stationLevel || w.stationLevel || 1,
               yields: 1,
-              materials: level1.materials.map((m) => ({
-                item: m.item || slug(m.name),
-                name: m.name || itemById.get(m.item)?.name || m.item,
-                amount: m.amount || 1,
-              })),
+              materials: mats,
             }
           : null,
       station: w.station ? { name: w.station, level: level1.stationLevel || w.stationLevel || 1 } : null,
-      sources: base
-        ? base.sources
-        : {
-            creatures: [],
-            locations: [],
-            traders: [],
-            raw: [],
-          },
+      sources: existing ? existing.sources : { creatures: [], locations: [], traders: [], raw: [] },
       usedIn: null,
       crossLinks: { smithy: `/smithy/#item=${w.id}` },
     };
 
-    if (base) {
-      // Weapons already catalogued in items.json keep their collected sources.
-      Object.assign(base, {
-        image: record.image || base.image,
+    if (existing) {
+      Object.assign(existing, {
         category,
         stats: record.stats,
-        recipe: record.recipe || base.recipe,
-        station: record.station,
-        description: record.description || base.description,
-        wiki: record.wiki || base.wiki,
-        crossLinks: { ...base.crossLinks, smithy: `/smithy/#item=${w.id}` },
+        recipe: record.recipe || existing.recipe,
+        station: record.station || existing.station,
+        description: record.description || existing.description,
+        wiki: record.wiki || existing.wiki,
+        crossLinks: { ...existing.crossLinks, smithy: `/smithy/#item=${w.id}` },
       });
+      if (!existing.image) existing.image = record.image;
     } else {
-      registry.set(w.id, record);
-      order.push(w.id);
+      ensure(w.id, record);
     }
   }
 
@@ -377,16 +383,17 @@ export function buildItemsData() {
       const lastLevel = (piece.levels || [])[(piece.levels || []).length - 1] || {};
       const mats = (level1.materials || []).map((m) => ({
         item: m.item || slug(m.name),
-        name: m.name || itemById.get(m.item)?.name || registry.get(m.item)?.name || m.item,
+        name: m.name || m.item,
         amount: m.amount || 1,
       }));
+      const existing = registry.get(piece.id);
 
-      registry.set(piece.id, {
+      const record = {
         id: piece.id,
         name: piece.name,
-        image: resolveImage(piece.image, 'smithy'),
+        image: resolveImage(piece.image, piece.id),
         biome: entry.biome ?? null,
-        tier: entry.tier ?? null,
+        tier: entry.tier ?? (entry.biome ? BIOME_TIERS[entry.biome] : null),
         category: 'armor',
         teleportable: true,
         stack: null,
@@ -421,13 +428,25 @@ export function buildItemsData() {
               setName: isSet ? entry.name : null,
             }
           : null,
-        sources: { creatures: [], locations: [], traders: [], raw: [] },
+        sources: existing ? existing.sources : { creatures: [], locations: [], traders: [], raw: [] },
         usedIn: null,
         crossLinks: {
           smithy: isSet ? `/smithy/#set=${entry.id}` : `/smithy/#item=${piece.id}`,
         },
-      });
-      order.push(piece.id);
+      };
+
+      if (existing) {
+        Object.assign(existing, {
+          category: 'armor',
+          stats: record.stats,
+          recipe: record.recipe || existing.recipe,
+          station: record.station || existing.station,
+          crossLinks: { ...existing.crossLinks, ...record.crossLinks },
+        });
+        if (!existing.image) existing.image = record.image;
+      } else {
+        ensure(piece.id, record);
+      }
     }
   }
 
@@ -443,18 +462,17 @@ export function buildItemsData() {
       isFeast: Boolean(f.isFeast),
       servings: f.servings ?? null,
     };
-    const recipe = f.materials
-      ? {
-          station: provStationNames.get(f.station) || prettyStationName(f.station),
-          stationLevel: f.stationLevel || 1,
-          yields: f.yields || 1,
-          materials: f.materials.map((m) => ({
-            item: m.item || slug(m.name),
-            name: m.name || itemById.get(m.item)?.name || registry.get(m.item)?.name || m.item,
-            amount: m.amount || 1,
-          })),
-        }
-      : null;
+    const mats = (f.materials || []).map((m) => ({
+      item: m.item || slug(m.name),
+      name: m.name || m.item,
+      amount: m.amount || 1,
+    }));
+    const recipe = mats.length > 0 ? {
+      station: provStationNames.get(f.station) || prettyStationName(f.station) || 'Cauldron',
+      stationLevel: f.stationLevel || 1,
+      yields: f.yields || 1,
+      materials: mats,
+    } : null;
 
     if (existing) {
       existing.category = 'food';
@@ -462,14 +480,14 @@ export function buildItemsData() {
       if (recipe) existing.recipe = recipe;
       existing.station = recipe ? { name: recipe.station, level: recipe.stationLevel } : existing.station;
       existing.crossLinks.provisions = `/provisions/#item=${f.id}`;
-      if (!existing.image) existing.image = resolveImage(f.image, 'provisions');
+      if (!existing.image) existing.image = resolveImage(f.image, f.id);
     } else {
-      registry.set(f.id, {
+      ensure(f.id, {
         id: f.id,
         name: f.name,
-        image: resolveImage(f.image, 'provisions'),
+        image: resolveImage(f.image, f.id),
         biome: f.biome ?? null,
-        tier: f.tier ?? null,
+        tier: f.tier ?? (f.biome ? BIOME_TIERS[f.biome] : null),
         category: 'food',
         teleportable: true,
         stack: null,
@@ -484,96 +502,148 @@ export function buildItemsData() {
         usedIn: null,
         crossLinks: { provisions: `/provisions/#item=${f.id}` },
       });
-      order.push(f.id);
     }
   }
 
   for (const md of provMeads) {
-    const baseMaterials = md.base?.materials || [];
-    const recipe = baseMaterials.length
-      ? {
-          station: provStationNames.get(md.base.station) || prettyStationName(md.base.station),
-          stationLevel: md.base.stationLevel || 1,
-          yields: md.yields || null,
-          materials: baseMaterials.map((m) => ({
-            item: m.item || slug(m.name),
-            name: m.name || itemById.get(m.item)?.name || registry.get(m.item)?.name || m.item,
-            amount: m.amount || 1,
-          })),
-        }
-      : null;
+    const baseMats = (md.base?.materials || []).map((m) => ({
+      item: m.item || slug(m.name),
+      name: m.name || m.item,
+      amount: m.amount || 1,
+    }));
+    const recipe = baseMats.length > 0 ? {
+      station: provStationNames.get(md.base.station) || prettyStationName(md.base.station) || 'Cauldron',
+      stationLevel: md.base.stationLevel || 1,
+      yields: md.yields || null,
+      materials: baseMats,
+    } : null;
+    const existing = registry.get(md.id);
 
-    registry.set(md.id, {
-      id: md.id,
-      name: md.name,
-      image: resolveImage(md.image, 'provisions'),
-      biome: md.biome ?? null,
-      tier: md.tier ?? null,
-      category: 'mead',
-      teleportable: true,
-      stack: null,
-      weight: null,
-      wiki: md.wiki || null,
-      names: md.names || {},
-      description: null,
-      stats: {
-        effect: md.effect?.text || null,
-        duration: md.duration ?? null,
-        cooldown: md.cooldown ?? null,
-        fermenterTime: md.fermenterTime ?? null,
-      },
-      recipe,
-      station: recipe ? { name: recipe.station, level: recipe.stationLevel } : null,
-      sources: { creatures: [], locations: [], traders: [], raw: [] },
-      usedIn: null,
-      crossLinks: { provisions: `/provisions/#item=${md.id}` },
-    });
-    order.push(md.id);
+    const stats = {
+      effect: md.effect?.text || null,
+      duration: md.duration ?? null,
+      cooldown: md.cooldown ?? null,
+      fermenterTime: md.fermenterTime ?? null,
+    };
+
+    if (existing) {
+      existing.category = 'mead';
+      existing.stats = stats;
+      if (recipe) existing.recipe = recipe;
+      existing.station = recipe ? { name: recipe.station, level: recipe.stationLevel } : existing.station;
+      existing.crossLinks.provisions = `/provisions/#item=${md.id}`;
+      if (!existing.image) existing.image = resolveImage(md.image, md.id);
+    } else {
+      ensure(md.id, {
+        id: md.id,
+        name: md.name,
+        image: resolveImage(md.image, md.id),
+        biome: md.biome ?? null,
+        tier: md.tier ?? (md.biome ? BIOME_TIERS[md.biome] : null),
+        category: 'mead',
+        teleportable: true,
+        stack: null,
+        weight: null,
+        wiki: md.wiki || null,
+        names: md.names || {},
+        description: null,
+        stats,
+        recipe,
+        station: recipe ? { name: recipe.station, level: recipe.stationLevel } : null,
+        sources: { creatures: [], locations: [], traders: [], raw: [] },
+        usedIn: null,
+        crossLinks: { provisions: `/provisions/#item=${md.id}` },
+      });
+    }
   }
 
   // --- 5. Comfort furniture from comfort.json ---------------------------
   for (const cp of comfort.pieces || []) {
-    const recipe = cp.materials
-      ? {
-          station: prettyStationName(cp.station),
-          stationLevel: 1,
-          yields: 1,
-          materials: cp.materials.map((m) => ({
-            item: m.item || slug(m.name),
-            name: m.name || itemById.get(m.item)?.name || registry.get(m.item)?.name || m.item,
-            amount: m.amount || 1,
-          })),
-        }
-      : null;
+    const mats = (cp.materials || []).map((m) => ({
+      item: m.item || slug(m.name),
+      name: m.name || m.item,
+      amount: m.amount || 1,
+    }));
+    const recipe = mats.length > 0 ? {
+      station: prettyStationName(cp.station) || 'Workbench',
+      stationLevel: 1,
+      yields: 1,
+      materials: mats,
+    } : null;
+    const existing = registry.get(cp.id);
 
-    registry.set(cp.id, {
-      id: cp.id,
-      name: cp.name,
-      image: resolveImage(cp.image, 'comfort'),
-      biome: cp.biome ?? null,
-      tier: cp.tier ?? null,
-      category: 'building',
-      teleportable: true,
-      stack: null,
-      weight: null,
-      wiki: cp.wiki || null,
-      names: cp.names || {},
-      description: null,
-      stats: {
-        comfort: cp.comfort ?? null,
-        furniture: cp.category || null,
-        seasonal: Boolean(cp.seasonal),
-      },
-      recipe,
-      station: recipe ? { name: recipe.station, level: 1 } : null,
-      sources: { creatures: [], locations: [], traders: [], raw: [] },
-      usedIn: null,
-      crossLinks: { comfort: `/comfort/#item=${cp.id}` },
-    });
-    order.push(cp.id);
+    if (existing) {
+      existing.stats = { comfort: cp.comfort ?? null, furniture: cp.category || null, seasonal: Boolean(cp.seasonal) };
+      if (recipe && !existing.recipe) existing.recipe = recipe;
+      existing.crossLinks.comfort = `/comfort/#item=${cp.id}`;
+      if (!existing.image) existing.image = resolveImage(cp.image, cp.id);
+    } else {
+      ensure(cp.id, {
+        id: cp.id,
+        name: cp.name,
+        image: resolveImage(cp.image, cp.id),
+        biome: cp.biome ?? null,
+        tier: cp.tier ?? (cp.biome ? BIOME_TIERS[cp.biome] : null),
+        category: 'building',
+        teleportable: true,
+        stack: null,
+        weight: null,
+        wiki: cp.wiki || null,
+        names: cp.names || {},
+        description: null,
+        stats: { comfort: cp.comfort ?? null, furniture: cp.category || null, seasonal: Boolean(cp.seasonal) },
+        recipe,
+        station: recipe ? { name: recipe.station, level: 1 } : null,
+        sources: { creatures: [], locations: [], traders: [], raw: [] },
+        usedIn: null,
+        crossLinks: { comfort: `/comfort/#item=${cp.id}` },
+      });
+    }
   }
 
-  // --- 6. Trader merchandise from traders.json ---------------------------
+  // --- 6. Crafting Stations from stations.json -------------------------
+  for (const st of stations) {
+    const mats = (st.materials || []).map((m) => ({
+      item: m.item || slug(m.name),
+      name: m.name || m.item,
+      amount: m.amount || 1,
+    }));
+    const existing = registry.get(st.id);
+
+    if (existing) {
+      if (mats.length > 0 && !existing.recipe) {
+        existing.recipe = { station: null, stationLevel: 1, yields: 1, materials: mats };
+      }
+      if (st.names) existing.names = { ...existing.names, ...st.names };
+      if (!existing.biome && st.biome) {
+        existing.biome = st.biome;
+        existing.tier = BIOME_TIERS[st.biome] ?? null;
+      }
+    } else {
+      ensure(st.id, {
+        id: st.id,
+        name: st.name,
+        image: resolveImage(st.image, st.id),
+        biome: st.biome || null,
+        tier: st.biome ? BIOME_TIERS[st.biome] : null,
+        category: 'building',
+        teleportable: true,
+        stack: null,
+        weight: null,
+        wiki: st.wiki || null,
+        names: st.names || {},
+        description: null,
+        stats: null,
+        recipe: mats.length > 0 ? { station: null, stationLevel: 1, yields: 1, materials: mats } : null,
+        station: null,
+        sources: { creatures: [], locations: [], traders: [], raw: [] },
+        usedIn: null,
+        crossLinks: {},
+      });
+    }
+  }
+
+  // --- 7. Trader merchandise from traders.json ---------------------------
   for (const trader of traders.traders || []) {
     for (const trItem of trader.items || []) {
       const traderSource = {
@@ -584,19 +654,21 @@ export function buildItemsData() {
       };
       const existing = registry.get(trItem.id);
       if (existing) {
-        existing.sources.traders.push(traderSource);
+        if (!existing.sources.traders.some((t) => t.id === trader.id)) {
+          existing.sources.traders.push(traderSource);
+        }
         existing.crossLinks.traders = `/traders/#trader=${trader.id}`;
-        if (!existing.image) existing.image = resolveImage(trItem.image, 'traders');
+        if (!existing.image) existing.image = resolveImage(trItem.image, trItem.id);
         if (trItem.description && !existing.description) existing.description = trItem.description;
       } else {
-        const category = WEAPON_TOOL_IDS.has(trItem.id) ? 'tool' : 'valuable';
-        registry.set(trItem.id, {
+        const cat = WEAPON_TOOL_IDS.has(trItem.id) ? 'tool' : 'valuable';
+        ensure(trItem.id, {
           id: trItem.id,
           name: trItem.name,
-          image: resolveImage(trItem.image, 'traders'),
+          image: resolveImage(trItem.image, trItem.id),
           biome: trItem.biome || trader.biome || null,
-          tier: trItem.tier ?? null,
-          category,
+          tier: trItem.tier ?? (trItem.biome ? BIOME_TIERS[trItem.biome] : null),
+          category: cat,
           teleportable: true,
           stack: trItem.stack ?? null,
           weight: null,
@@ -615,44 +687,172 @@ export function buildItemsData() {
           usedIn: null,
           crossLinks: { traders: `/traders/#trader=${trader.id}` },
         });
-        order.push(trItem.id);
       }
     }
   }
 
-  // -----------------------------------------------------------------------
-  // Enrichment: creature sources, recipes from base materials
-  // -----------------------------------------------------------------------
+  // --- 8. Creature drops & trophies from creatures.json -----------------
+  for (const c of creatures) {
+    const cBiome = c.biomes?.[0] || null;
+    const cTier = cBiome ? BIOME_TIERS[cBiome] : null;
+    const cSource = { id: c.id, name: c.name, biome: cBiome };
 
-  // Creature drops -> sources.creatures (only for records that exist)
-  for (const it of items) {
-    const rec = registry.get(it.id);
-    if (!rec) continue;
-    const creatureMap = new Map();
-    for (const src of it.sources || []) {
-      if (src.kind === 'creature' && src.creatureId) {
-        const c = creatures.find((cr) => cr.id === src.creatureId);
-        if (c) {
-          creatureMap.set(c.id, { id: c.id, name: c.name, biome: c.biomes?.[0] ?? null });
+    // Trophy
+    if (c.trophy?.name) {
+      const trId = slug(c.trophy.name);
+      const existing = registry.get(trId);
+
+      if (existing) {
+        existing.category = 'trophy';
+        if (!existing.sources.creatures.some((x) => x.id === c.id)) {
+          existing.sources.creatures.push(cSource);
         }
+        if (!existing.image) existing.image = resolveImage(c.trophy.image || `${trId}.png`, trId);
+        if (!existing.biome && cBiome) {
+          existing.biome = cBiome;
+          existing.tier = cTier;
+        }
+      } else {
+        ensure(trId, {
+          id: trId,
+          name: c.trophy.name,
+          image: resolveImage(c.trophy.image || `${trId}.png`, trId),
+          biome: cBiome,
+          tier: cTier,
+          category: 'trophy',
+          teleportable: true,
+          stack: 20,
+          weight: 2,
+          wiki: null,
+          names: {},
+          description: null,
+          stats: null,
+          recipe: null,
+          station: null,
+          sources: { creatures: [cSource], locations: [], traders: [], raw: [{ text: `Dropped by ${c.name}`, kind: 'creature', creatureId: c.id }] },
+          usedIn: null,
+          crossLinks: {},
+        });
       }
     }
-    for (const c of creatures) {
-      const drops = [...(c.drops || [])];
-      if (c.trophy?.name) drops.push(c.trophy.name);
-      for (const d of drops) {
-        const raw = d.trim();
-        const clean = raw.replace(/\s*x\d+/i, '').replace(/\s*\(.*?\)/g, '').trim().toLowerCase();
-        const matched = itemByName.get(clean) || itemById.get(slug(clean)) || itemByName.get(raw.toLowerCase());
-        if (matched && matched.id === it.id) {
-          creatureMap.set(c.id, { id: c.id, name: c.name, biome: c.biomes?.[0] ?? null });
+
+    // Creature drops
+    for (const d of c.drops || []) {
+      const clean = d.replace(/\s*x\d+/i, '').replace(/\s*\(.*?\)/g, '').trim();
+      if (!clean) continue;
+      const dId = slug(clean);
+      const existing = registry.get(dId);
+
+      if (existing) {
+        if (!existing.sources.creatures.some((x) => x.id === c.id)) {
+          existing.sources.creatures.push(cSource);
         }
+        if (!existing.biome && cBiome) {
+          existing.biome = cBiome;
+          existing.tier = cTier;
+        }
+      } else {
+        let dCat = 'drop';
+        if (summonIds.has(dId) || dId.includes('key')) dCat = 'summoning';
+        else if (metalOres.has(dId)) dCat = 'metal';
+        else if (WEAPON_TOOL_IDS.has(dId) || dId === 'wishbone') dCat = 'tool';
+
+        ensure(dId, {
+          id: dId,
+          name: clean,
+          image: resolveImage(null, dId),
+          biome: cBiome,
+          tier: cTier,
+          category: dCat,
+          teleportable: !metalOres.has(dId) && dCat !== 'metal' && dId !== 'dragon-egg',
+          stack: null,
+          weight: null,
+          wiki: null,
+          names: {},
+          description: null,
+          stats: null,
+          recipe: null,
+          station: null,
+          sources: { creatures: [cSource], locations: [], traders: [], raw: [{ text: `Dropped by ${c.name}`, kind: 'creature', creatureId: c.id }] },
+          usedIn: null,
+          crossLinks: {},
+        });
       }
     }
-    rec.sources.creatures = Array.from(creatureMap.values());
   }
 
-  // Derive top-level station for base-material recipes (smelting etc.)
+  // --- 9. Ingest all raw wiki infoboxes ---------------------------------
+  const TEMPLATE_PRIORITY = ['item', 'structure', 'trinket', 'weapon', 'armor'];
+  for (const [title, { wt }] of wikiPages.entries()) {
+    for (const t of TEMPLATE_PRIORITY) {
+      const boxes = parseAllInfoboxes(wt, t);
+      for (const b of boxes) {
+        const name = cleanText(b.title || title).trim();
+        if (!name || name.toLowerCase() === 'n/a') continue;
+        const id = slug(name);
+        if (!id) continue;
+
+        const existing = registry.get(id);
+        const bBiome = inferBiome(b.biome || b.source || b.location || wt);
+        const bTier = bBiome ? BIOME_TIERS[bBiome] : null;
+
+        const rawMats = parseMaterialList(b.materials || b['materials 1']);
+        const recipe = rawMats.length > 0 ? {
+          station: cleanText(b.source || b.station || '').replace(/\[\[|\]\]/g, '').split('|')[0].trim() || null,
+          stationLevel: parseInt(b['crafting level'] || b['repair level'] || '1', 10) || 1,
+          yields: parseInt(b.yields || '1', 10) || 1,
+          materials: rawMats.map((m) => ({ item: slug(m.name), name: m.name, amount: m.amount || 1 })),
+        } : null;
+
+        const cat = categorize(id, name, b.type || t);
+        const weight = b.weight ? parseFloat(cleanText(b.weight)) : null;
+        const stack = b.stack ? parseInt(cleanText(b.stack), 10) : null;
+        const teleportable = (b.teleport || '').toLowerCase() !== 'no' && !metalOres.has(id) && cat !== 'metal' && id !== 'dragon-egg';
+        const wikiUrl = `https://valheim.weirdgloop.org/w/${encodeURIComponent(title.replace(/ /g, '_'))}`;
+
+        if (existing) {
+          if (!existing.recipe && recipe) existing.recipe = recipe;
+          if (!existing.image) existing.image = resolveImage(b.image, id);
+          if (existing.weight == null && !isNaN(weight)) existing.weight = weight;
+          if (existing.stack == null && !isNaN(stack)) existing.stack = stack;
+          if (!existing.wiki) existing.wiki = wikiUrl;
+          if (!existing.description && b.description) existing.description = cleanText(b.description);
+          if (!existing.biome && bBiome) {
+            existing.biome = bBiome;
+            existing.tier = bTier;
+          }
+        } else {
+          ensure(id, {
+            id,
+            name,
+            image: resolveImage(b.image, id),
+            biome: bBiome,
+            tier: bTier,
+            category: cat,
+            teleportable,
+            stack: isNaN(stack) ? null : stack,
+            weight: isNaN(weight) ? null : weight,
+            wiki: wikiUrl,
+            names: {},
+            description: b.description ? cleanText(b.description) : null,
+            stats: null,
+            recipe,
+            station: recipe?.station ? { name: recipe.station, level: recipe.stationLevel || 1 } : null,
+            sources: {
+              creatures: [],
+              locations: b.source ? [{ text: cleanText(b.source), kind: 'location' }] : [],
+              traders: [],
+              raw: b.source ? [{ text: cleanText(b.source) }] : [],
+            },
+            usedIn: null,
+            crossLinks: cat === 'weapon' || cat === 'shield' || cat === 'armor' ? { smithy: `/smithy/#item=${id}` } : {},
+          });
+        }
+      }
+    }
+  }
+
+  // Top-level station resolution for all recipes
   for (const rec of registry.values()) {
     if (rec.station || !rec.recipe) continue;
     rec.station = rec.recipe.station
@@ -676,15 +876,15 @@ export function buildItemsData() {
   for (const id of registry.keys()) usedInMaps.set(id, emptyUsedIn());
 
   function resolveMaterial(mItem, mName) {
-    return registry.get(mItem) || itemById.get(mItem) || itemByName.get((mName || '').toLowerCase()) || null;
+    return registry.get(mItem) || registry.get(slug(mName)) || null;
   }
 
   function addUsedIn(materialId, group, entry) {
     const map = usedInMaps.get(materialId);
-    if (map) map[group].set(entry.id, entry);
+    if (map && map[group]) map[group].set(entry.id, entry);
   }
 
-  // Weapons (all quality levels, matching the smithy bill of materials)
+  // Weapons
   for (const w of weapons) {
     const wMats = [...(w.levels?.[0]?.materials || w.materials || [])];
     for (const lvl of w.levels || []) {
@@ -698,7 +898,7 @@ export function buildItemsData() {
     }
   }
 
-  // Armor pieces
+  // Armor
   for (const entry of armor) {
     const isSet = entry.kind === 'set';
     for (const piece of entry.pieces || []) {
@@ -735,7 +935,7 @@ export function buildItemsData() {
     }
   }
 
-  // Meads: base materials and the mead base item itself
+  // Meads
   for (const md of provMeads) {
     for (const m of md.base?.materials || []) {
       const mat = resolveMaterial(m.item || slug(m.name), m.name);
@@ -781,7 +981,7 @@ export function buildItemsData() {
     }
   }
 
-  // Craft stations
+  // Craft stations and general structures
   for (const st of stations) {
     for (const m of st.materials || []) {
       const mat = resolveMaterial(m.item || slug(m.name), m.name);
@@ -792,6 +992,25 @@ export function buildItemsData() {
           level: st.level ?? 1,
           biome: st.biome ?? null,
         });
+      }
+    }
+  }
+
+  // Registry item recipes (structures, building pieces, tools, etc.)
+  for (const rec of registry.values()) {
+    if (!rec.recipe || !rec.recipe.materials) continue;
+    // Don't re-index weapons/armor/food/meads/comfort which were already handled with rich metadata
+    if (rec.category === 'building' || rec.category === 'tool') {
+      for (const m of rec.recipe.materials) {
+        const mat = resolveMaterial(m.item, m.name);
+        if (mat) {
+          addUsedIn(mat.id, 'stations', {
+            id: rec.id,
+            name: rec.name,
+            level: rec.recipe.stationLevel || 1,
+            biome: rec.biome ?? null,
+          });
+        }
       }
     }
   }
@@ -840,10 +1059,6 @@ export function buildItemsData() {
 
   console.log(`Successfully built Items Compendium: ${compendiumItems.length} items.`);
   console.log(`  categories: ${JSON.stringify(categoryCounts)}`);
-  if (missingImages.length > 0) {
-    const unique = [...new Set(missingImages)];
-    console.log(`  ⚠ missing images (${unique.length}): ${unique.slice(0, 12).join(', ')}${unique.length > 12 ? ', …' : ''}`);
-  }
   return outputData;
 }
 

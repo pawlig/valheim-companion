@@ -8,14 +8,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "valuable",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Amber_Pearl",
       "names": {
         "cs": "Jantarová Perla",
         "ru": "Янтарная жемчужина"
       },
-      "description": null,
+      "description": "Valuable",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -92,10 +92,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/ancient-bark.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Ancient_Bark",
       "names": {
         "cs": "Starověká kůra",
@@ -103,7 +103,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Écorce ancienne",
         "ru": "Древняя кора"
       },
-      "description": null,
+      "description": "An ancient and sturdy material.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -215,6 +215,18 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Butcher's Table",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "bonfire",
+            "name": "Bonfire",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "longship",
+            "name": "Longship",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -228,11 +240,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "summoning",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Ancient_Seed",
       "names": {},
-      "description": null,
+      "description": "Held against your ear, you hear tiny whisperings within...",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -290,9 +302,9 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/anglerfish.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "building",
+      "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
+      "stack": 10,
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Anglerfish",
       "names": {
@@ -301,7 +313,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Poisson-pêcheur",
         "ru": "Удильщик"
       },
-      "description": null,
+      "description": "The dangling light makes it easier to see that pretty little face!",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -343,7 +355,7 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "ash-fang",
       "name": "Ash Fang",
-      "image": "../bestiary/img/weapons/ash-fang.png",
+      "image": "../smithy/img/items/ash-fang.png",
       "biome": "ashlands",
       "tier": 8,
       "category": "weapon",
@@ -448,15 +460,15 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/ashwood.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Ashwood",
       "names": {
         "ru": "Пепельная древесина"
       },
-      "description": null,
+      "description": "Wood hardened by fire and ash.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -565,6 +577,54 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Rolling Pins and Cutting Boards",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "ashwood-bed",
+            "name": "Ashwood Bed",
+            "level": 1,
+            "biome": "ashlands"
+          },
+          {
+            "id": "ashwood-bench",
+            "name": "Ashwood Bench",
+            "level": 1,
+            "biome": "ashlands"
+          },
+          {
+            "id": "gem-cutter",
+            "name": "Gem cutter",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "metal-cutter",
+            "name": "Metal cutter",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "feathery-wreath",
+            "name": "Feathery Wreath",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "ashwood-stakewall",
+            "name": "Ashwood stakewall",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "battering-ram",
+            "name": "Battering Ram",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "catapult",
+            "name": "Catapult",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -578,13 +638,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Asksvin_Bladder",
       "names": {
         "ru": "Мочевой пузырь пеплозавра"
       },
-      "description": null,
+      "description": "An acidic smell still lingers. Prominently.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -644,13 +704,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Asksvin_Hide",
       "names": {
         "ru": "Шкура пеплозавра"
       },
-      "description": null,
+      "description": "This sturdy leather is thick, and still warm to the touch.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -827,7 +887,20 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "ashwood-bed",
+            "name": "Ashwood Bed",
+            "level": 1,
+            "biome": "ashlands"
+          },
+          {
+            "id": "asksvin-rug",
+            "name": "Asksvin Rug",
+            "level": 1,
+            "biome": "ashlands"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -837,15 +910,15 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/asksvin-neck.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Asksvin_Neck",
       "names": {
         "ru": "Шея пеплозавра"
       },
-      "description": null,
+      "description": "A neck in its final stage of life.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -880,7 +953,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "asksvin-skeleton",
+            "name": "Asksvin Skeleton",
+            "level": 1,
+            "biome": "ashlands"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -890,15 +970,15 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/asksvin-pelvis.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Asksvin_Pelvis",
       "names": {
         "ru": "Таз пеплозавра"
       },
-      "description": null,
+      "description": "The pelvic bone of a four legged creature.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -933,7 +1013,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "asksvin-skeleton",
+            "name": "Asksvin Skeleton",
+            "level": 1,
+            "biome": "ashlands"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -943,15 +1030,15 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/asksvin-ribcage.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 5,
       "wiki": "https://valheim.weirdgloop.org/w/Asksvin_Ribcage",
       "names": {
         "ru": "Ребра пеплозавра"
       },
-      "description": null,
+      "description": "These ribs have already been stripped clean of any meat.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -986,7 +1073,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "asksvin-skeleton",
+            "name": "Asksvin Skeleton",
+            "level": 1,
+            "biome": "ashlands"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -996,15 +1090,15 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/asksvin-skull.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Asksvin_Skull",
       "names": {
         "ru": "Череп пеплозавра"
       },
-      "description": null,
+      "description": "A thick skull, with room for a surprisingly large brain.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -1039,7 +1133,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "asksvin-skeleton",
+            "name": "Asksvin Skeleton",
+            "level": 1,
+            "biome": "ashlands"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -1049,16 +1150,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/asksvin-tail.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Asksvin_Tail",
       "names": {
         "cs": "Asksvinův ocas",
         "ru": "Хвост пеплозавра"
       },
-      "description": null,
+      "description": "Smells a bit smokey, even when raw.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -1133,8 +1234,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "valuable",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Barber_Kit",
       "names": {
         "ru": "Набор цирюльника"
@@ -1176,7 +1277,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "barber-station",
+            "name": "Barber Station",
+            "level": 1,
+            "biome": "black-forest"
+          }
+        ]
       },
       "crossLinks": {
         "traders": "/traders/#trader=hildir"
@@ -1190,8 +1298,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 100,
+      "weight": 0.2,
       "wiki": "https://valheim.weirdgloop.org/w/Barley",
       "names": {
         "cs": "Ječmen",
@@ -1199,7 +1307,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Orge",
         "ru": "Ячмень"
       },
-      "description": null,
+      "description": "A bundle of barley.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -1257,7 +1365,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "straw",
+            "name": "Straw",
+            "level": 1,
+            "biome": "plains"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -1269,14 +1384,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.2,
       "wiki": "https://valheim.weirdgloop.org/w/Barley_Flour",
       "names": {
         "cs": "Mouka z ječmene",
         "ru": "Ячменная мука"
       },
-      "description": null,
+      "description": "Great for baking bread.",
       "stats": null,
       "recipe": {
         "station": "Windmill",
@@ -1285,7 +1400,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "barley",
-            "name": "Barley",
+            "name": "barley",
             "amount": 1
           }
         ]
@@ -1339,14 +1454,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Barley_Wine_Base%3A_Fire_Resistance",
       "names": {
         "cs": "Ječmenné pivo na odolnost vůči ohni",
         "ru": "Огненное ячменное вино"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -1355,12 +1470,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "barley",
-            "name": "Barley",
+            "name": "barley",
             "amount": 10
           },
           {
             "item": "cloudberries",
-            "name": "Cloudberries",
+            "name": "cloudberries",
             "amount": 10
           }
         ]
@@ -1406,13 +1521,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Bear_Hide",
       "names": {
         "ru": "Медвежья шкура"
       },
-      "description": null,
+      "description": "A thick and furry hide, coarse yet incredibly soft.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -1528,7 +1643,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "bearskin-rug",
+            "name": "Bearskin Rug",
+            "level": 1,
+            "biome": "black-forest"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -1540,13 +1662,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Bear_Meat",
       "names": {
         "ru": "Медвежье мясо"
       },
-      "description": null,
+      "description": "This fatty meat was once meant to sustain a body through hibernation.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -1611,13 +1733,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Bear_Paw",
       "names": {
         "ru": "Медвежья лапа"
       },
-      "description": null,
+      "description": "Sharp claws suitable for picking berries – or for dismembering.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -1672,7 +1794,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "bearskin-rug",
+            "name": "Bearskin Rug",
+            "level": 1,
+            "biome": "black-forest"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -1739,7 +1868,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "bearskin-rug",
+            "name": "Bearskin Rug",
+            "level": 1,
+            "biome": "black-forest"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -1751,11 +1887,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "summoning",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 9,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Bell",
       "names": {},
-      "description": null,
+      "description": "For whom does the bell toll?",
       "stats": null,
       "recipe": {
         "station": "Black Forge",
@@ -1764,7 +1900,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bell-fragment",
-            "name": "Bell Fragment",
+            "name": "bell-fragment",
             "amount": 3
           }
         ]
@@ -1810,11 +1946,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "summoning",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 9,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Bell_Fragment",
       "names": {},
-      "description": null,
+      "description": "This ancient fragment appears to be a piece of a broken bell...",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -1848,13 +1984,13 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "berserkir-axes",
       "name": "Berserkir Axes",
-      "image": "../bestiary/img/weapons/berserkir-axes.png",
+      "image": "../smithy/img/items/berserkir-axes.png",
       "biome": "ashlands",
       "tier": 8,
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Berserkir_Axes",
       "names": {
         "de": "Berserkir-Äxte",
@@ -1953,14 +2089,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Bilebag",
       "names": {
         "cs": "Žlučník",
         "ru": "Желчный мешок"
       },
-      "description": null,
+      "description": "Caustic bile drawn from the corpse of a gjall.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -2015,16 +2151,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/black-core.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Black_Core",
       "names": {
         "cs": "Černé Jádro",
         "ru": "Черное ядро"
       },
-      "description": null,
+      "description": "Filled to the brim with ancient power.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -2071,6 +2207,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Galdr Table",
             "level": 1,
             "biome": "mistlands"
+          },
+          {
+            "id": "eitr-refinery",
+            "name": "Eitr Refinery",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -2082,16 +2224,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/black-marble.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/black_marble",
       "names": {
         "cs": "Černý mramor",
         "ru": "Черный мрамор"
       },
-      "description": null,
+      "description": "A block of solid stone, seamed with shifting colors.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -2168,6 +2310,54 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Mortar and Pestle",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "black-marble-bench",
+            "name": "Black Marble Bench",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "black-marble-table",
+            "name": "Black Marble Table",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "black-marble-throne",
+            "name": "Black Marble Throne",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "black-forge-cooler",
+            "name": "Black forge cooler",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "metal-cutter",
+            "name": "Metal cutter",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "rune-table",
+            "name": "Rune table",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "unfading-candles",
+            "name": "Unfading Candles",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "eitr-refinery",
+            "name": "Eitr Refinery",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -2181,8 +2371,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "metal",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 12,
       "wiki": "https://valheim.weirdgloop.org/w/Black_Metal",
       "names": {
         "cs": "Černý kov",
@@ -2190,7 +2380,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Sombracier",
         "ru": "Черный металл"
       },
-      "description": null,
+      "description": "A heavy bar of dark metal.",
       "stats": null,
       "recipe": {
         "station": "Blast Furnace",
@@ -2199,7 +2389,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "black-metal-scrap",
-            "name": "Black Metal Scrap",
+            "name": "black-metal-scrap",
             "amount": 1
           }
         ]
@@ -2305,6 +2495,54 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Pots and Pans",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "black-metal-pickaxe",
+            "name": "Black Metal Pickaxe",
+            "level": 2,
+            "biome": "mistlands"
+          },
+          {
+            "id": "ballista",
+            "name": "Ballista",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "black-metal-chest",
+            "name": "Black metal chest",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "trap",
+            "name": "Trap",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "wardrobe",
+            "name": "Wardrobe",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "eitr-refinery",
+            "name": "Eitr Refinery",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "sap-extractor",
+            "name": "Sap Extractor",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "lox-saddle",
+            "name": "Lox Saddle",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -2318,8 +2556,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "metal",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Black_Metal_Scrap",
       "names": {
         "cs": "Šrot z černého kovu",
@@ -2327,7 +2565,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Morceau de sombracier",
         "ru": "Кусок черного металла"
       },
-      "description": null,
+      "description": "A twisted hunk of dark metal.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -2404,16 +2642,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/blood-clot.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Blood_Clot",
       "names": {
         "cs": "Krevní sraženina",
         "ru": "Кровавый сгусток"
       },
-      "description": null,
+      "description": "Be careful not to puncture this while you carry it...",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -2462,10 +2700,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/bloodbag.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Bloodbag",
       "names": {
         "cs": "Vak s krví",
@@ -2473,7 +2711,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Poche de sang",
         "ru": "Туша"
       },
-      "description": null,
+      "description": "The contents of a leech. Ick!",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -2548,7 +2786,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "red-banner",
+            "name": "Red banner",
+            "level": 1,
+            "biome": "swamp"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -2560,11 +2805,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "metal",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 14,
       "wiki": "https://valheim.weirdgloop.org/w/Bloodgold",
       "names": {},
-      "description": null,
+      "description": "Precious metal, infused with the essence of a living thing.",
       "stats": null,
       "recipe": {
         "station": "Blast Furnace",
@@ -2573,7 +2818,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "petrified-tissue",
-            "name": "Petrified Tissue",
+            "name": "petrified-tissue",
             "amount": 1
           }
         ]
@@ -2936,6 +3181,264 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Smoker",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "cast-breastplate-of-the-protector",
+            "name": "Cast Breastplate of the Protector",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-echo-spike",
+            "name": "Cast Echo Spike",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-helmet-of-the-protector",
+            "name": "Cast Helmet of the Protector",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-lightning-strike",
+            "name": "Cast Lightning Strike",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-atgeir",
+            "name": "Cast Nord Atgeir",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-axe",
+            "name": "Cast Nord Axe",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-bow",
+            "name": "Cast Nord Bow",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-buckler",
+            "name": "Cast Nord Buckler",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-crossbow",
+            "name": "Cast Nord Crossbow",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-dagger",
+            "name": "Cast Nord Dagger",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-greataxe",
+            "name": "Cast Nord Greataxe",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-greatshield",
+            "name": "Cast Nord Greatshield",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-greatsword",
+            "name": "Cast Nord Greatsword",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-knucklechains",
+            "name": "Cast Nord Knucklechains",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-mace",
+            "name": "Cast Nord Mace",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-shield",
+            "name": "Cast Nord Shield",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-sledge",
+            "name": "Cast Nord Sledge",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-spear",
+            "name": "Cast Nord Spear",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-sword",
+            "name": "Cast Nord Sword",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-trousers-of-the-protector",
+            "name": "Cast Trousers of the Protector",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-echo-spike",
+            "name": "Mould Echo Spike",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-helmet-of-the-protector",
+            "name": "Mould Helmet of the Protector",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-lightning-strike",
+            "name": "Mould Lightning Strike",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-atgeir",
+            "name": "Mould Nord Atgeir",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-axe",
+            "name": "Mould Nord Axe",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-bow",
+            "name": "Mould Nord Bow",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-buckler",
+            "name": "Mould Nord Buckler",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-crossbow",
+            "name": "Mould Nord Crossbow",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-dagger",
+            "name": "Mould Nord Dagger",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-greataxe",
+            "name": "Mould Nord Greataxe",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-greatshield",
+            "name": "Mould Nord Greatshield",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-greatsword",
+            "name": "Mould Nord Greatsword",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-knucklechains",
+            "name": "Mould Nord Knucklechains",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-mace",
+            "name": "Mould Nord Mace",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-shield",
+            "name": "Mould Nord Shield",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-sledge",
+            "name": "Mould Nord Sledge",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-spear",
+            "name": "Mould Nord Spear",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-sword",
+            "name": "Mould Nord Sword",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "timberwood-gate",
+            "name": "Timberwood Gate",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "smith-s-aprons",
+            "name": "Smith's Aprons",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "cast-intricate-key",
+            "name": "Cast: Intricate Key",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "moose-saddle",
+            "name": "Moose Saddle",
+            "level": 2,
+            "biome": null
+          },
+          {
+            "id": "timberwood-drawbridge",
+            "name": "Timberwood Drawbridge",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -2947,15 +3450,15 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/bloodstone.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Bloodstone",
       "names": {
         "ru": "Кровавый камень"
       },
-      "description": null,
+      "description": "You wonder how many deals have been made to appease this gem. How many palms have bled onto it in exchange for its power?",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -3043,7 +3546,14 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "gem-cutter",
+            "name": "Gem cutter",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -3053,10 +3563,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/blue-jute.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Blue_Jute",
       "names": {
         "cs": "Modrá juta",
@@ -3064,7 +3574,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Jute bleue",
         "ru": "Голубой джут"
       },
-      "description": null,
+      "description": "Made from natural fibers and dvergr hair.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -3113,7 +3623,26 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "blue-jute-carpet",
+            "name": "Blue Jute Carpet",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "blue-jute-curtain",
+            "name": "Blue Jute Curtain",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "blue-jute-drapes",
+            "name": "Blue Jute Drapes",
+            "level": 1,
+            "biome": "mistlands"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -3125,8 +3654,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Blueberries",
       "names": {
         "cs": "Borůvky",
@@ -3134,7 +3663,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Myrtilles",
         "ru": "Черника"
       },
-      "description": null,
+      "description": "Tiny but tasty.",
       "stats": {
         "health": 8,
         "stamina": 25,
@@ -3144,16 +3673,8 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -3276,7 +3797,32 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "blue-banner",
+            "name": "Blue banner",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "blue-red-and-white-banner",
+            "name": "Blue, red and white banner",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "purple-banner",
+            "name": "Purple banner",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "white-and-blue-striped-banner",
+            "name": "White and blue striped banner",
+            "level": 1,
+            "biome": "plains"
+          }
+        ]
       },
       "crossLinks": {
         "provisions": "/provisions/#item=blueberries"
@@ -3290,8 +3836,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Boar_Meat",
       "names": {
         "cs": "Kančí maso",
@@ -3380,8 +3926,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Bone_Fragments",
       "names": {
         "cs": "Fragmenty kostí",
@@ -3389,20 +3935,20 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Fragments d'os",
         "ru": "Обломки костей"
       },
-      "description": null,
+      "description": "A pile of shattered bones.",
       "stats": null,
       "recipe": null,
       "station": null,
       "sources": {
         "creatures": [
           {
-            "id": "skeleton",
-            "name": "Skeleton",
+            "id": "rancid-remains",
+            "name": "Rancid Remains",
             "biome": "black-forest"
           },
           {
-            "id": "rancid-remains",
-            "name": "Rancid Remains",
+            "id": "skeleton",
+            "name": "Skeleton",
             "biome": "black-forest"
           },
           {
@@ -3553,7 +4099,20 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "asksvin-skeleton",
+            "name": "Asksvin Skeleton",
+            "level": 1,
+            "biome": "ashlands"
+          },
+          {
+            "id": "yuleklapp",
+            "name": "Yuleklapp",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -3565,14 +4124,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Bonemaw_Meat",
       "names": {
         "cs": "Kostichřtánovo maso",
         "ru": "Мясо Костепасти"
       },
-      "description": null,
+      "description": "A tasty, white fish meat. Very good for your bones!",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -3624,13 +4183,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Bonemaw_Tooth",
       "names": {
         "ru": "Зуб Костепасти"
       },
-      "description": null,
+      "description": "This has caused the death of many a brave sailor.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -3694,14 +4253,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Bread",
       "names": {
         "cs": "Chleba",
         "ru": "Хлеб"
       },
-      "description": null,
+      "description": "A tasty loaf of bread.",
       "stats": {
         "health": 23,
         "stamina": 70,
@@ -3718,7 +4277,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bread-dough",
-            "name": "Bread Dough",
+            "name": "bread-dough",
             "amount": 1
           }
         ]
@@ -3765,16 +4324,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/bread-dough.png",
       "biome": "plains",
       "tier": 6,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Bread_Dough",
       "names": {
         "cs": "Chleba",
         "ru": "Хлеб"
       },
-      "description": null,
+      "description": "Ready for the oven.",
       "stats": null,
       "recipe": {
         "station": "Food Preparation Table",
@@ -3783,7 +4342,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "barley-flour",
-            "name": "Barley Flour",
+            "name": "barley-flour",
             "amount": 10
           }
         ]
@@ -3830,8 +4389,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "metal",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 12,
       "wiki": "https://valheim.weirdgloop.org/w/Bronze",
       "names": {
         "cs": "Bronz",
@@ -3839,7 +4398,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Bronze",
         "ru": "Бронза"
       },
-      "description": null,
+      "description": "A strong alloy of copper and tin.",
       "stats": null,
       "recipe": {
         "station": "Forge",
@@ -3848,12 +4407,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "copper",
-            "name": "Copper",
+            "name": "copper",
             "amount": 2
           },
           {
             "item": "tin",
-            "name": "Tin",
+            "name": "tin",
             "amount": 1
           }
         ]
@@ -4003,6 +4562,54 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Fermenter",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "bronze-pickaxe",
+            "name": "Bronze Pickaxe",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "blue-standing-brazier",
+            "name": "Blue Standing Brazier",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "hanging-brazier",
+            "name": "Hanging Brazier",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "standing-brazier",
+            "name": "Standing Brazier",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "adze",
+            "name": "Adze",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "anvils",
+            "name": "Anvils",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "cultivator",
+            "name": "Cultivator",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "horn-of-celebration",
+            "name": "Horn of Celebration",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -4016,15 +4623,15 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "metal",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 100,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Bronze_Nails",
       "names": {
         "cs": "Bronzové hřebíky",
         "fr": "Clous en bronze",
         "ru": "Бронзовые гвозди"
       },
-      "description": null,
+      "description": "Used in construction of ships and furniture.",
       "stats": null,
       "recipe": {
         "station": "Forge",
@@ -4033,7 +4640,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bronze",
-            "name": "Bronze",
+            "name": "bronze",
             "amount": 1
           }
         ]
@@ -4082,7 +4689,44 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "barber-station",
+            "name": "Barber Station",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "item-stand-horizontal",
+            "name": "Item Stand (horizontal)",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "item-stand-vertical",
+            "name": "Item Stand (vertical)",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "cart",
+            "name": "Cart",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "karve",
+            "name": "Karve",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "trap",
+            "name": "Trap",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -4094,8 +4738,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Carapace",
       "names": {
         "cs": "Krunýř",
@@ -4103,7 +4747,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Carapace",
         "ru": "Панцирь"
       },
-      "description": null,
+      "description": "A plate of chitinous armor.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -4213,8 +4857,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Carrot",
       "names": {
         "cs": "Mrkev",
@@ -4222,7 +4866,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Carotte",
         "ru": "Морковь"
       },
-      "description": null,
+      "description": "An orange treat.",
       "stats": {
         "health": 10,
         "stamina": 32,
@@ -4232,16 +4876,8 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -4322,6 +4958,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Spice Rack",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "orange-banner",
+            "name": "Orange banner",
+            "level": 1,
+            "biome": "plains"
           }
         ]
       },
@@ -4337,11 +4979,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Breastplate_of_the_Protector",
       "names": {},
-      "description": null,
+      "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -4350,17 +4992,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-helmet-of-the-protector",
-            "name": "Mould Helmet of the Protector",
+            "name": "mould-helmet-of-the-protector",
             "amount": 1
           },
           {
             "item": "moose-hide",
-            "name": "Moose Hide",
+            "name": "moose-hide",
             "amount": 4
           }
         ]
@@ -4407,11 +5049,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Chestpiece_of_the_Vanguard",
       "names": {},
-      "description": null,
+      "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -4420,22 +5062,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "seal-pelt",
-            "name": "Seal Pelt",
+            "name": "seal-pelt",
             "amount": 5
           },
           {
             "item": "mould-hood-of-the-vanguard",
-            "name": "Mould Hood of the Vanguard",
+            "name": "mould-hood-of-the-vanguard",
             "amount": 1
           },
           {
             "item": "moose-hide",
-            "name": "Moose Hide",
+            "name": "moose-hide",
             "amount": 5
           },
           {
             "item": "moose-sinew",
-            "name": "Moose Sinew",
+            "name": "moose-sinew",
             "amount": 1
           }
         ]
@@ -4482,11 +5124,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 2.5,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Echo_Spike",
       "names": {},
-      "description": null,
+      "description": "This magical item needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Galdr Table level 3",
@@ -4495,22 +5137,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 10
           },
           {
             "item": "nornathread",
-            "name": "Nornathread",
+            "name": "nornathread",
             "amount": 4
           },
           {
             "item": "frostfire-essence",
-            "name": "Frostfire Essence",
+            "name": "frostfire-essence",
             "amount": 1
           },
           {
             "item": "mould-echo-spike",
-            "name": "Mould Echo Spike",
+            "name": "mould-echo-spike",
             "amount": 1
           }
         ]
@@ -4556,11 +5198,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Headdress_of_the_Caller",
       "names": {},
-      "description": null,
+      "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Galdr Table level 3",
@@ -4569,22 +5211,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "moose-sinew",
-            "name": "Moose Sinew",
+            "name": "moose-sinew",
             "amount": 2
           },
           {
             "item": "mould-headdress-of-the-caller",
-            "name": "Mould Headdress of the Caller",
+            "name": "mould-headdress-of-the-caller",
             "amount": 1
           },
           {
             "item": "moose-trophy",
-            "name": "Moose Trophy",
+            "name": "moose-trophy",
             "amount": 1
           },
           {
             "item": "nornathread",
-            "name": "Nornathread",
+            "name": "nornathread",
             "amount": 3
           }
         ]
@@ -4631,11 +5273,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Helmet_of_the_Protector",
       "names": {},
-      "description": null,
+      "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -4644,17 +5286,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-helmet-of-the-protector",
-            "name": "Mould Helmet of the Protector",
+            "name": "mould-helmet-of-the-protector",
             "amount": 1
           },
           {
             "item": "moose-hide",
-            "name": "Moose Hide",
+            "name": "moose-hide",
             "amount": 4
           }
         ]
@@ -4701,11 +5343,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Hood_of_the_Vanguard",
       "names": {},
-      "description": null,
+      "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -4714,22 +5356,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "seal-pelt",
-            "name": "Seal Pelt",
+            "name": "seal-pelt",
             "amount": 5
           },
           {
             "item": "mould-hood-of-the-vanguard",
-            "name": "Mould Hood of the Vanguard",
+            "name": "mould-hood-of-the-vanguard",
             "amount": 1
           },
           {
             "item": "moose-hide",
-            "name": "Moose Hide",
+            "name": "moose-hide",
             "amount": 5
           },
           {
             "item": "moose-sinew",
-            "name": "Moose Sinew",
+            "name": "moose-sinew",
             "amount": 1
           }
         ]
@@ -4776,11 +5418,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 2.5,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Lightning_Strike",
       "names": {},
-      "description": null,
+      "description": "This magical item needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Galdr Table level 3",
@@ -4789,22 +5431,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 10
           },
           {
             "item": "nornathread",
-            "name": "Nornathread",
+            "name": "nornathread",
             "amount": 5
           },
           {
             "item": "thunderblood-essence",
-            "name": "Thunderblood Essence",
+            "name": "thunderblood-essence",
             "amount": 1
           },
           {
             "item": "mould-lightning-strike",
-            "name": "Mould Lightning Strike",
+            "name": "mould-lightning-strike",
             "amount": 1
           }
         ]
@@ -4850,11 +5492,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 2.5,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Atgeir",
       "names": {},
-      "description": null,
+      "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -4863,17 +5505,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-atgeir",
-            "name": "Mould Nord Atgeir",
+            "name": "mould-nord-atgeir",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -4919,11 +5561,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Axe",
       "names": {},
-      "description": null,
+      "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -4932,17 +5574,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-axe",
-            "name": "Mould Nord Axe",
+            "name": "mould-nord-axe",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -4988,11 +5630,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1.5,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Bow",
       "names": {},
-      "description": null,
+      "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -5001,17 +5643,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-bow",
-            "name": "Mould Nord Bow",
+            "name": "mould-nord-bow",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -5057,11 +5699,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Buckler",
       "names": {},
-      "description": null,
+      "description": "This shield needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -5070,17 +5712,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 10
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           },
           {
             "item": "mould-nord-buckler",
-            "name": "Mould Nord Buckler",
+            "name": "mould-nord-buckler",
             "amount": 1
           }
         ]
@@ -5126,11 +5768,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1.5,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Crossbow",
       "names": {},
-      "description": null,
+      "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -5139,17 +5781,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-crossbow",
-            "name": "Mould Nord Crossbow",
+            "name": "mould-nord-crossbow",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -5195,11 +5837,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Dagger",
       "names": {},
-      "description": null,
+      "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -5208,17 +5850,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-dagger",
-            "name": "Mould Nord Dagger",
+            "name": "mould-nord-dagger",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -5264,11 +5906,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 2.5,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Greataxe",
       "names": {},
-      "description": null,
+      "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -5277,17 +5919,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-greataxe",
-            "name": "Mould Nord Greataxe",
+            "name": "mould-nord-greataxe",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -5333,11 +5975,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Greatshield",
       "names": {},
-      "description": null,
+      "description": "This shield needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -5346,17 +5988,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 20
           },
           {
             "item": "mould-nord-greatshield",
-            "name": "Mould Nord Greatshield",
+            "name": "mould-nord-greatshield",
             "amount": 1
           }
         ]
@@ -5402,11 +6044,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 4,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Greatsword",
       "names": {},
-      "description": null,
+      "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -5415,17 +6057,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-greatsword",
-            "name": "Mould Nord Greatsword",
+            "name": "mould-nord-greatsword",
             "amount": 1
           },
           {
             "item": "frozen-branch",
-            "name": "Frozen Branch",
+            "name": "frozen-branch",
             "amount": 2
           }
         ]
@@ -5471,11 +6113,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Knucklechains",
       "names": {},
-      "description": null,
+      "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -5484,17 +6126,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-knucklechains",
-            "name": "Mould Nord Knucklechains",
+            "name": "mould-nord-knucklechains",
             "amount": 1
           },
           {
             "item": "long-claws",
-            "name": "Long Claws",
+            "name": "long-claws",
             "amount": 2
           }
         ]
@@ -5540,11 +6182,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Mace",
       "names": {},
-      "description": null,
+      "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -5553,17 +6195,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-mace",
-            "name": "Mould Nord Mace",
+            "name": "mould-nord-mace",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -5609,11 +6251,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Shield",
       "names": {},
-      "description": null,
+      "description": "This shield needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -5622,17 +6264,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 15
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           },
           {
             "item": "mould-nord-shield",
-            "name": "Mould Nord Shield",
+            "name": "mould-nord-shield",
             "amount": 1
           }
         ]
@@ -5678,11 +6320,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 4,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Sledge",
       "names": {},
-      "description": null,
+      "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -5691,17 +6333,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-sledge",
-            "name": "Mould Nord Sledge",
+            "name": "mould-nord-sledge",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -5747,11 +6389,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1.5,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Spear",
       "names": {},
-      "description": null,
+      "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -5760,17 +6402,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-spear",
-            "name": "Mould Nord Spear",
+            "name": "mould-nord-spear",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -5816,11 +6458,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 0.8,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Nord_Sword",
       "names": {},
-      "description": null,
+      "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -5829,17 +6471,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-sword",
-            "name": "Mould Nord Sword",
+            "name": "mould-nord-sword",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -5885,11 +6527,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 2.5,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Northern_Vengeance",
       "names": {},
-      "description": null,
+      "description": "This magical item needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Galdr Table level 3",
@@ -5898,22 +6540,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "ice",
-            "name": "Ice",
+            "name": "ice",
             "amount": 10
           },
           {
             "item": "nornathread",
-            "name": "Nornathread",
+            "name": "nornathread",
             "amount": 5
           },
           {
             "item": "hexen-trophy",
-            "name": "Hexen Trophy",
+            "name": "hexen-trophy",
             "amount": 1
           },
           {
             "item": "mould-northern-vengeance",
-            "name": "Mould Northern Vengeance",
+            "name": "mould-northern-vengeance",
             "amount": 1
           }
         ]
@@ -5959,11 +6601,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Robes_of_the_Caller",
       "names": {},
-      "description": null,
+      "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Galdr Table level 3",
@@ -5972,22 +6614,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "moose-sinew",
-            "name": "Moose Sinew",
+            "name": "moose-sinew",
             "amount": 2
           },
           {
             "item": "mould-headdress-of-the-caller",
-            "name": "Mould Headdress of the Caller",
+            "name": "mould-headdress-of-the-caller",
             "amount": 1
           },
           {
             "item": "moose-trophy",
-            "name": "Moose Trophy",
+            "name": "moose-trophy",
             "amount": 1
           },
           {
             "item": "nornathread",
-            "name": "Nornathread",
+            "name": "nornathread",
             "amount": 3
           }
         ]
@@ -6034,11 +6676,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Trousers_of_the_Caller",
       "names": {},
-      "description": null,
+      "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Galdr Table level 3",
@@ -6047,22 +6689,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "moose-sinew",
-            "name": "Moose Sinew",
+            "name": "moose-sinew",
             "amount": 2
           },
           {
             "item": "mould-headdress-of-the-caller",
-            "name": "Mould Headdress of the Caller",
+            "name": "mould-headdress-of-the-caller",
             "amount": 1
           },
           {
             "item": "moose-trophy",
-            "name": "Moose Trophy",
+            "name": "moose-trophy",
             "amount": 1
           },
           {
             "item": "nornathread",
-            "name": "Nornathread",
+            "name": "nornathread",
             "amount": 3
           }
         ]
@@ -6109,11 +6751,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Trousers_of_the_Protector",
       "names": {},
-      "description": null,
+      "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -6122,17 +6764,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-helmet-of-the-protector",
-            "name": "Mould Helmet of the Protector",
+            "name": "mould-helmet-of-the-protector",
             "amount": 1
           },
           {
             "item": "moose-hide",
-            "name": "Moose Hide",
+            "name": "moose-hide",
             "amount": 4
           }
         ]
@@ -6179,11 +6821,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cast_Trousers_of_the_Vanguard",
       "names": {},
-      "description": null,
+      "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -6192,22 +6834,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "seal-pelt",
-            "name": "Seal Pelt",
+            "name": "seal-pelt",
             "amount": 5
           },
           {
             "item": "mould-hood-of-the-vanguard",
-            "name": "Mould Hood of the Vanguard",
+            "name": "mould-hood-of-the-vanguard",
             "amount": 1
           },
           {
             "item": "moose-hide",
-            "name": "Moose Hide",
+            "name": "moose-hide",
             "amount": 5
           },
           {
             "item": "moose-sinew",
-            "name": "Moose Sinew",
+            "name": "moose-sinew",
             "amount": 1
           }
         ]
@@ -6254,13 +6896,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Celestial_Feather",
       "names": {
         "ru": "Небесное перо"
       },
-      "description": null,
+      "description": "The only remnant of the fallen valkyrie's former self.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -6305,7 +6947,14 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "feathery-wreath",
+            "name": "Feathery Wreath",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -6317,15 +6966,15 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Chain",
       "names": {
         "cs": "Řetěz",
         "fr": "Chaîne",
         "ru": "Цепь"
       },
-      "description": null,
+      "description": "A link of iron chain.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -6415,6 +7064,36 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iron Cooking Station",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "dvergr-lantern-pole",
+            "name": "Dvergr Lantern Pole",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "dvergr-wall-lantern",
+            "name": "Dvergr Wall Lantern",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "hanging-brazier",
+            "name": "Hanging Brazier",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "forge-bellows",
+            "name": "Forge bellows",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "dvergr-pole-lantern",
+            "name": "Dvergr Pole Lantern",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -6426,10 +7105,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/charcoal-resin.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Charcoal_Resin",
       "names": {
         "cs": "Uhelná pryskyřice",
@@ -6437,7 +7116,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Résine de charbon",
         "ru": "Угольная смола"
       },
-      "description": null,
+      "description": "The resin from a tree that was set ablaze a long time ago. It's still ready to burn some more.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -6486,7 +7165,32 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "large-green-pot",
+            "name": "Large green pot",
+            "level": 1,
+            "biome": "ashlands"
+          },
+          {
+            "id": "medium-green-pot",
+            "name": "Medium green pot",
+            "level": 1,
+            "biome": "ashlands"
+          },
+          {
+            "id": "small-green-pot",
+            "name": "Small green pot",
+            "level": 1,
+            "biome": "ashlands"
+          },
+          {
+            "id": "green-pots",
+            "name": "Green Pots",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -6498,26 +7202,21 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Charred_Bone",
       "names": {
         "ru": "Обугленная кость"
       },
-      "description": null,
+      "description": "Followed by the distinct smell of burnt meat",
       "stats": null,
       "recipe": null,
       "station": null,
       "sources": {
         "creatures": [
           {
-            "id": "charred-warrior",
-            "name": "Charred Warrior",
-            "biome": "ashlands"
-          },
-          {
-            "id": "charred-marksman",
-            "name": "Charred Marksman",
+            "id": "charred-twitcher",
+            "name": "Charred Twitcher",
             "biome": "ashlands"
           },
           {
@@ -6526,8 +7225,8 @@ globalThis.VC_ITEMS_DATA = {
             "biome": "ashlands"
           },
           {
-            "id": "charred-twitcher",
-            "name": "Charred Twitcher",
+            "id": "charred-warrior",
+            "name": "Charred Warrior",
             "biome": "ashlands"
           }
         ],
@@ -6654,7 +7353,20 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "bone-throne",
+            "name": "Bone Throne",
+            "level": 1,
+            "biome": "ashlands"
+          },
+          {
+            "id": "metal-cutter",
+            "name": "Metal cutter",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -6664,15 +7376,15 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/charred-skull.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Charred_Skull",
       "names": {
         "ru": "Обугленный череп"
       },
-      "description": null,
+      "description": "The blackened skull of a long-dead warrior. It's unlikely that a proper burial would grant them any peace.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -6707,7 +7419,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "bone-throne",
+            "name": "Bone Throne",
+            "level": 1,
+            "biome": "ashlands"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -6719,14 +7438,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Chicken_Meat",
       "names": {
         "cs": "Kuřecí maso",
         "ru": "Курятина"
       },
-      "description": null,
+      "description": "All chickens bear the ancestral curse of being delicious.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -6791,25 +7510,20 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 3,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Chitin",
       "names": {
         "cs": "Chitin",
         "fr": "Chitine",
         "ru": "Хитин"
       },
-      "description": null,
+      "description": "A shard of crustacean shell.",
       "stats": null,
       "recipe": null,
       "station": null,
       "sources": {
         "creatures": [
-          {
-            "id": "coral-cod",
-            "name": "Coral Cod",
-            "biome": "ocean"
-          },
           {
             "id": "leviathan",
             "name": "Leviathan",
@@ -6870,8 +7584,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Cloudberries",
       "names": {
         "cs": "Morušky",
@@ -6879,7 +7593,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Plaquebières",
         "ru": "Морошка"
       },
-      "description": null,
+      "description": "The gold of the forest.",
       "stats": {
         "health": 13,
         "stamina": 40,
@@ -6889,16 +7603,8 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -6991,7 +7697,32 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "blue-red-and-white-banner",
+            "name": "Blue, red and white banner",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "orange-banner",
+            "name": "Orange banner",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "white-and-blue-striped-banner",
+            "name": "White and blue striped banner",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "white-banner",
+            "name": "White banner",
+            "level": 1,
+            "biome": "plains"
+          }
+        ]
       },
       "crossLinks": {
         "provisions": "/provisions/#item=cloudberries"
@@ -7005,8 +7736,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Coal",
       "names": {
         "cs": "Uhlí",
@@ -7014,7 +7745,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Charbon",
         "ru": "Уголь"
       },
-      "description": null,
+      "description": "A lump of coal.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -7138,6 +7869,48 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Forge",
             "level": 1,
             "biome": "black-forest"
+          },
+          {
+            "id": "black-banner",
+            "name": "Black banner",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "hanging-brazier",
+            "name": "Hanging Brazier",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "standing-brazier",
+            "name": "Standing Brazier",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "white-banner",
+            "name": "White banner",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "yellow-banner",
+            "name": "Yellow banner",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "sign",
+            "name": "Sign",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "mysterious-rock",
+            "name": "Mysterious Rock",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -7151,13 +7924,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cooked_Bear_Meat",
       "names": {
         "ru": "Медвежье мясо"
       },
-      "description": null,
+      "description": "Tastes like victory.",
       "stats": {
         "health": 40,
         "stamina": 13,
@@ -7174,7 +7947,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bear-meat",
-            "name": "Bear Meat",
+            "name": "bear-meat",
             "amount": 1
           }
         ]
@@ -7223,8 +7996,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cooked_boar_meat",
       "names": {
         "cs": "Kančí maso",
@@ -7233,7 +8006,7 @@ globalThis.VC_ITEMS_DATA = {
         "pt": "Carne de Javali",
         "ru": "Кабанина"
       },
-      "description": null,
+      "description": "An earthly taste.",
       "stats": {
         "health": 30,
         "stamina": 10,
@@ -7250,7 +8023,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "boar-meat",
-            "name": "Boar Meat",
+            "name": "boar-meat",
             "amount": 1
           }
         ]
@@ -7299,8 +8072,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cooked_deer_meat",
       "names": {
         "cs": "Jelení maso",
@@ -7308,7 +8081,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Viande de cerf",
         "ru": "Оленина"
       },
-      "description": null,
+      "description": "All that running paid off.",
       "stats": {
         "health": 35,
         "stamina": 12,
@@ -7325,7 +8098,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "deer-meat",
-            "name": "Deer Meat",
+            "name": "deer-meat",
             "amount": 1
           }
         ]
@@ -7381,15 +8154,15 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Cooked_fish",
       "names": {
         "cs": "Syrová ryba",
         "fr": "Poisson cru",
         "ru": "Сырая рыба"
       },
-      "description": null,
+      "description": "A tasty side of smoked fish.",
       "stats": {
         "health": 45,
         "stamina": 15,
@@ -7406,7 +8179,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "raw-fish",
-            "name": "Raw Fish",
+            "name": "raw-fish",
             "amount": 1
           }
         ]
@@ -7462,11 +8235,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cooked_Moose_Meat",
       "names": {},
-      "description": null,
+      "description": "This meat is lean yet full of flavour.",
       "stats": {
         "health": 80,
         "stamina": 27,
@@ -7483,7 +8256,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "moose-meat",
-            "name": "Moose Meat",
+            "name": "moose-meat",
             "amount": 1
           }
         ]
@@ -7532,14 +8305,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 3,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Cooked_Serpent_Meat",
       "names": {
         "cs": "Maso z hada",
         "ru": "Мясо змея"
       },
-      "description": null,
+      "description": "A cooked slice of sea serpent. Smells good.",
       "stats": {
         "health": 70,
         "stamina": 23,
@@ -7556,7 +8329,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "serpent-meat",
-            "name": "Serpent Meat",
+            "name": "serpent-meat",
             "amount": 1
           }
         ]
@@ -7612,14 +8385,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cooked_Asksvin_Tail",
       "names": {
         "cs": "Asksvinův ocas",
         "ru": "Хвост пеплозавра"
       },
-      "description": null,
+      "description": "This meat has a potent and mature flavour, but is very tasty when grilled right.",
       "stats": {
         "health": 70,
         "stamina": 24,
@@ -7636,7 +8409,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "asksvin-tail",
-            "name": "Asksvin Tail",
+            "name": "asksvin-tail",
             "amount": 1
           }
         ]
@@ -7685,14 +8458,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Cooked_seeker_meat",
       "names": {
         "cs": "Maso Hledačů",
         "ru": "Мясо искателя"
       },
-      "description": null,
+      "description": "Succulent white meat. A true delicacy.",
       "stats": {
         "health": 60,
         "stamina": 20,
@@ -7709,7 +8482,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "seeker-meat",
-            "name": "Seeker Meat",
+            "name": "seeker-meat",
             "amount": 1
           }
         ]
@@ -7758,8 +8531,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "metal",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 12,
       "wiki": "https://valheim.weirdgloop.org/w/Copper",
       "names": {
         "cs": "Měď",
@@ -7767,7 +8540,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Cuivre",
         "ru": "Медь"
       },
-      "description": null,
+      "description": "A bar of pure copper ready to be worked.",
       "stats": null,
       "recipe": {
         "station": "Smelter",
@@ -7776,7 +8549,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "copper-ore",
-            "name": "Copper Ore",
+            "name": "copper-ore",
             "amount": 1
           }
         ]
@@ -7873,6 +8646,78 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Pots and Pans",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "black-marble-bench",
+            "name": "Black Marble Bench",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "black-marble-table",
+            "name": "Black Marble Table",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "black-marble-throne",
+            "name": "Black Marble Throne",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "dvergr-lantern-pole",
+            "name": "Dvergr Lantern Pole",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "dvergr-wall-lantern",
+            "name": "Dvergr Wall Lantern",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "obliterator",
+            "name": "Obliterator",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "forge-cooler",
+            "name": "Forge cooler",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "black-forge-cooler",
+            "name": "Black forge cooler",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "sconce",
+            "name": "Sconce",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "vice",
+            "name": "Vice",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "dvergr-metal-wall",
+            "name": "Dvergr Metal Wall",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "dvergr-pole-lantern",
+            "name": "Dvergr Pole Lantern",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -7886,8 +8731,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "metal",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Copper_Ore",
       "names": {
         "cs": "Měděná ruda",
@@ -7895,7 +8740,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Minerai de cuivre",
         "ru": "Медная руда"
       },
-      "description": null,
+      "description": "Unrefined copper. Needs to be refined in a smelter.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -7932,9 +8777,9 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/coral-cod.png",
       "biome": "ocean",
       "tier": 3,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
+      "stack": 10,
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Coral_Cod",
       "names": {
@@ -7943,7 +8788,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Vieille de corail",
         "ru": "Коралловая треска"
       },
-      "description": null,
+      "description": "It has seen some things... Some very haunting things...",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -7988,10 +8833,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/corewood.png",
       "biome": "black-forest",
       "tier": 2,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Corewood",
       "names": {
         "cs": "Jádrové dřevo",
@@ -7999,7 +8844,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Bois robuste",
         "ru": "Цельная древесина"
       },
-      "description": null,
+      "description": "Perfect for building log cabins.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -8078,6 +8923,48 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Mortar and Pestle",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "bronze-pickaxe",
+            "name": "Bronze Pickaxe",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "iron-pickaxe",
+            "name": "Iron Pickaxe",
+            "level": 2,
+            "biome": "swamp"
+          },
+          {
+            "id": "bonfire",
+            "name": "Bonfire",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "sitting-log",
+            "name": "Sitting Log",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "sharp-stakes",
+            "name": "Sharp stakes",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "cultivator",
+            "name": "Cultivator",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "rustic-drawbridge",
+            "name": "Rustic Drawbridge",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -8091,11 +8978,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 5,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Crown_Jewel",
       "names": {},
-      "description": null,
+      "description": "A strange power surges within this gem, unlike anything you've felt before.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -8147,14 +9034,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 5,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Crystal",
       "names": {
         "cs": "Krystal",
         "ru": "Кристалл"
       },
-      "description": null,
+      "description": "A shard of crystal from deep within the earth.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -8202,7 +9089,14 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "crystal-wall-1x1",
+            "name": "Crystal wall 1x1",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -8271,10 +9165,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/cured-squirrel-hamstring.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Cured_Squirrel_Hamstring",
       "names": {
         "ru": "Дубленые беличьи сухожилия"
@@ -8327,15 +9221,15 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/curious-axe-head.png",
       "biome": null,
       "tier": null,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Curious_Axe_Head",
       "names": {
         "ru": "Древние топоры"
       },
-      "description": null,
+      "description": "The metal glints oddly in the sunlight. Somehow, you know that it can never be complete on its own...",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -8379,10 +9273,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/dandelion.png",
       "biome": "meadows",
       "tier": 1,
-      "category": "drop",
+      "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Dandelion",
       "names": {
         "cs": "Pampeliška",
@@ -8390,7 +9284,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Pissenlit",
         "ru": "Одуванчик"
       },
-      "description": null,
+      "description": "A dandelion.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -8486,6 +9380,30 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Spice Rack",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "flower-garland",
+            "name": "Flower Garland",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "maypole",
+            "name": "Maypole",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "yellow-banner",
+            "name": "Yellow banner",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "yuleklapp",
+            "name": "Yuleklapp",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -8499,8 +9417,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Deer_Hide",
       "names": {
         "cs": "Jelení kůže",
@@ -8508,7 +9426,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Peau de cerf",
         "ru": "Шкура оленя"
       },
-      "description": null,
+      "description": "A cleaned hide from a deer.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -8707,7 +9625,62 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "black-marble-throne",
+            "name": "Black Marble Throne",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "darkwood-chair",
+            "name": "Darkwood Chair",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "deer-rug",
+            "name": "Deer Rug",
+            "level": 1,
+            "biome": "meadows"
+          },
+          {
+            "id": "dragon-bed",
+            "name": "Dragon Bed",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "stone-throne",
+            "name": "Stone Throne",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "tanning-rack",
+            "name": "Tanning Rack",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "forge-bellows",
+            "name": "Forge bellows",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "longship",
+            "name": "Longship",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "karve",
+            "name": "Karve",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -8719,8 +9692,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Deer_Meat",
       "names": {
         "cs": "Jelení maso",
@@ -8781,15 +9754,15 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Deer_Stew",
       "names": {
         "cs": "Jelení polévka",
         "fr": "Râgout de cerf",
         "ru": "Рагу из оленины"
       },
-      "description": null,
+      "description": "Fall-apart tender.",
       "stats": {
         "health": 45,
         "stamina": 15,
@@ -8806,17 +9779,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cooked-deer-meat",
-            "name": "Cooked Deer Meat",
+            "name": "cooked-deer-meat",
             "amount": 1
           },
           {
             "item": "blueberries",
-            "name": "Blueberries",
+            "name": "blueberries",
             "amount": 1
           },
           {
             "item": "carrot",
-            "name": "Carrot",
+            "name": "carrot",
             "amount": 1
           }
         ]
@@ -8919,7 +9892,14 @@ globalThis.VC_ITEMS_DATA = {
             "biome": "meadows"
           }
         ],
-        "stations": []
+        "stations": [
+          {
+            "id": "mead-horn-of-odin",
+            "name": "Mead Horn of Odin",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -8931,8 +9911,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 5,
       "category": "summoning",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 200,
       "wiki": "https://valheim.weirdgloop.org/w/Dragon_Egg",
       "names": {},
       "description": null,
@@ -8981,14 +9961,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 5,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Dragon_Tear",
       "names": {
         "cs": "Dračí slza",
         "ru": "Драконья слеза"
       },
-      "description": null,
+      "description": "The last frozen tear of a dragon, pulsating with mysterious energy.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -9154,16 +10134,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/dvergr-lantern.png",
       "biome": "mountain",
       "tier": 5,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Dvergr_Lantern",
       "names": {
         "cs": "Dvergská lucerna",
         "ru": "Светильник двергов"
       },
-      "description": null,
+      "description": "A simple torch would just be so old fashioned.",
       "stats": null,
       "recipe": {
         "station": "Black Forge, Dvergr Buildings",
@@ -9172,17 +10152,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bronze",
-            "name": "Bronze",
+            "name": "bronze",
             "amount": 2
           },
           {
             "item": "surtling-core",
-            "name": "Surtling Core",
+            "name": "surtling-core",
             "amount": 1
           },
           {
             "item": "crystal",
-            "name": "Crystal",
+            "name": "crystal",
             "amount": 1
           }
         ]
@@ -9233,7 +10213,26 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "dvergr-lantern-pole",
+            "name": "Dvergr Lantern Pole",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "dvergr-wall-lantern",
+            "name": "Dvergr Wall Lantern",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "dvergr-pole-lantern",
+            "name": "Dvergr Pole Lantern",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -9243,7 +10242,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/dyrnwyn-blade-fragment.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -9261,27 +10260,27 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "dyrnwyn-hilt-fragment",
-            "name": "Dyrnwyn hilt fragment",
+            "name": "dyrnwyn-hilt-fragment",
             "amount": 1
           },
           {
             "item": "dyrnwyn-blade-fragment",
-            "name": "Dyrnwyn blade fragment",
+            "name": "dyrnwyn-blade-fragment",
             "amount": 1
           },
           {
             "item": "dyrnwyn-tip-fragment",
-            "name": "Dyrnwyn tip fragment",
+            "name": "dyrnwyn-tip-fragment",
             "amount": 1
           },
           {
             "item": "flametal",
-            "name": "Flametal",
+            "name": "flametal",
             "amount": 20
           },
           {
             "item": "bloodstone",
-            "name": "Bloodstone",
+            "name": "bloodstone",
             "amount": 1
           }
         ]
@@ -9325,7 +10324,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/dyrnwyn-hilt-fragment.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -9343,27 +10342,27 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "dyrnwyn-hilt-fragment",
-            "name": "Dyrnwyn hilt fragment",
+            "name": "dyrnwyn-hilt-fragment",
             "amount": 1
           },
           {
             "item": "dyrnwyn-blade-fragment",
-            "name": "Dyrnwyn blade fragment",
+            "name": "dyrnwyn-blade-fragment",
             "amount": 1
           },
           {
             "item": "dyrnwyn-tip-fragment",
-            "name": "Dyrnwyn tip fragment",
+            "name": "dyrnwyn-tip-fragment",
             "amount": 1
           },
           {
             "item": "flametal",
-            "name": "Flametal",
+            "name": "flametal",
             "amount": 20
           },
           {
             "item": "bloodstone",
-            "name": "Bloodstone",
+            "name": "bloodstone",
             "amount": 1
           }
         ]
@@ -9407,7 +10406,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/dyrnwyn-tip-fragment.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -9425,27 +10424,27 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "dyrnwyn-hilt-fragment",
-            "name": "Dyrnwyn hilt fragment",
+            "name": "dyrnwyn-hilt-fragment",
             "amount": 1
           },
           {
             "item": "dyrnwyn-blade-fragment",
-            "name": "Dyrnwyn blade fragment",
+            "name": "dyrnwyn-blade-fragment",
             "amount": 1
           },
           {
             "item": "dyrnwyn-tip-fragment",
-            "name": "Dyrnwyn tip fragment",
+            "name": "dyrnwyn-tip-fragment",
             "amount": 1
           },
           {
             "item": "flametal",
-            "name": "Flametal",
+            "name": "flametal",
             "amount": 20
           },
           {
             "item": "bloodstone",
-            "name": "Bloodstone",
+            "name": "bloodstone",
             "amount": 1
           }
         ]
@@ -9489,10 +10488,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/egg.png",
       "biome": "black-forest",
       "tier": 2,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Egg",
       "names": {
         "cs": "Vejce",
@@ -9503,13 +10502,7 @@ globalThis.VC_ITEMS_DATA = {
       "recipe": null,
       "station": null,
       "sources": {
-        "creatures": [
-          {
-            "id": "hen",
-            "name": "Hen",
-            "biome": "plains"
-          }
-        ],
+        "creatures": [],
         "locations": [],
         "traders": [
           {
@@ -9582,11 +10575,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Elaking_Hair_Bundle",
       "names": {},
-      "description": null,
+      "description": "The fur is dense, coarse, and surprisingly clean.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -9643,13 +10636,13 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/embers.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Embers",
       "names": {},
-      "description": null,
+      "description": "Every flying ember is a burning wish to repent.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -9693,10 +10686,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/entrails.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Entrails",
       "names": {
         "cs": "Vnitřnosti",
@@ -9704,7 +10697,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Entrailles",
         "ru": "Потроха"
       },
-      "description": null,
+      "description": "A slimy length of something's insides.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -9779,14 +10772,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Feathers",
       "names": {
         "cs": "Peří",
         "ru": "Перья"
       },
-      "description": null,
+      "description": "A small pile of feathers.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -10000,7 +10993,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "dragon-bed",
+            "name": "Dragon Bed",
+            "level": 1,
+            "biome": "mountain"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -10010,16 +11010,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/fenris-claw.png",
       "biome": "mountain",
       "tier": 5,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Fenris_Claw",
       "names": {
         "cs": "Fenridův dráp",
         "ru": "Коготь Фенриса"
       },
-      "description": null,
+      "description": "It is hard and sharp like iron.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -10068,7 +11068,20 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "blue-standing-brazier",
+            "name": "Blue Standing Brazier",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "standing-brazier",
+            "name": "Standing Brazier",
+            "level": 1,
+            "biome": "mountain"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -10078,16 +11091,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/fenris-hair.png",
       "biome": "mountain",
       "tier": 5,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Fenris_Hair",
       "names": {
         "cs": "Fenridovy chlupy",
         "ru": "Шерсть Фенриса"
       },
-      "description": null,
+      "description": "A bundle of thick, rough hair. It has a strong smell.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -10155,14 +11168,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Fiddlehead",
       "names": {
         "cs": "Houslihlavka",
         "ru": "Рахис"
       },
-      "description": null,
+      "description": "Veggies with a twist!",
       "stats": {
         "health": 30,
         "stamina": 30,
@@ -10172,16 +11185,8 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -10260,10 +11265,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/fiery-spice-powder.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 100,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Fiery_Spice_Powder",
       "names": {
         "ru": "Порошок пламенных пряностей"
@@ -10322,10 +11327,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/finewood.png",
       "biome": "black-forest",
       "tier": 2,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Finewood",
       "names": {
         "cs": "Jemné dřevo",
@@ -10333,7 +11338,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Bois précieux",
         "ru": "Качественная древесина"
       },
-      "description": null,
+      "description": "High quality wood for fine carpentry.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -10757,6 +11762,294 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Rolling Pins and Cutting Boards",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "armor-stand",
+            "name": "Armor Stand",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "barber-station",
+            "name": "Barber Station",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "bench",
+            "name": "Bench",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "black-banner",
+            "name": "Black banner",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "blue-banner",
+            "name": "Blue banner",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "blue-jute-curtain",
+            "name": "Blue Jute Curtain",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "blue-jute-drapes",
+            "name": "Blue Jute Drapes",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "blue-red-and-white-banner",
+            "name": "Blue, red and white banner",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "bonfire",
+            "name": "Bonfire",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "chair",
+            "name": "Chair",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "darkwood-chair",
+            "name": "Darkwood Chair",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "dragon-bed",
+            "name": "Dragon Bed",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "fey-lights",
+            "name": "Fey Lights",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "flower-garland",
+            "name": "Flower Garland",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "green-banner",
+            "name": "Green banner",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "item-stand-horizontal",
+            "name": "Item Stand (horizontal)",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "item-stand-vertical",
+            "name": "Item Stand (vertical)",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "long-heavy-table",
+            "name": "Long Heavy Table",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "mistletoe",
+            "name": "Mistletoe",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "orange-banner",
+            "name": "Orange banner",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "purple-banner",
+            "name": "Purple banner",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "raven-throne",
+            "name": "Raven Throne",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "red-banner",
+            "name": "Red banner",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "red-jute-curtain",
+            "name": "Red Jute Curtain",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "round-table",
+            "name": "Round Table",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "stool",
+            "name": "Stool",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "table",
+            "name": "Table",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "white-and-blue-striped-banner",
+            "name": "White and blue striped banner",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "white-and-red-striped-banner",
+            "name": "White and red striped banner",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "white-banner",
+            "name": "White banner",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "yellow-banner",
+            "name": "Yellow banner",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "yule-garland",
+            "name": "Yule garland",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "yule-wreath",
+            "name": "Yule wreath",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "blast-furnace",
+            "name": "Blast Furnace",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "spinning-wheel",
+            "name": "Spinning Wheel",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "tool-shelf",
+            "name": "Tool shelf",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "adze",
+            "name": "Adze",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "forge-cooler",
+            "name": "Forge cooler",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "longship",
+            "name": "Longship",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "karve",
+            "name": "Karve",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "ward",
+            "name": "Ward",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "reinforced-chest",
+            "name": "Reinforced chest",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "personal-chest",
+            "name": "Personal chest",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "treasure-chest",
+            "name": "Treasure Chest",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "drakkar",
+            "name": "Drakkar",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "yuleklapp",
+            "name": "Yuleklapp",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "tankard",
+            "name": "Tankard",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "mead-horn-of-odin",
+            "name": "Mead Horn of Odin",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -10768,10 +12061,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/fir-cone.png",
       "biome": "plains",
       "tier": 6,
-      "category": "building",
+      "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 100,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Fir_Cone",
       "names": {
         "cs": "Šiška z jedle",
@@ -10779,7 +12072,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Cône de sapin",
         "ru": "Пихтовая шишка"
       },
-      "description": null,
+      "description": "Plant it to grow a fir tree.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -10814,7 +12107,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "yule-tree",
+            "name": "Yule Tree",
+            "level": 1,
+            "biome": "black-forest"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -10826,8 +12126,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "metal",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 12,
       "wiki": "https://valheim.weirdgloop.org/w/Flametal",
       "names": {
         "cs": "Plamenný kov",
@@ -10835,7 +12135,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Flametal",
         "ru": "Огнеметалл"
       },
-      "description": null,
+      "description": "According to legend, this metal was used by the gods themselves to craft powerful weapons.",
       "stats": null,
       "recipe": {
         "station": "Blast Furnace",
@@ -10844,7 +12144,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "flametal-ore",
-            "name": "Flametal Ore",
+            "name": "flametal-ore",
             "amount": 1
           }
         ]
@@ -11127,6 +12427,60 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Rolling Pins and Cutting Boards",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "bone-throne",
+            "name": "Bone Throne",
+            "level": 1,
+            "biome": "ashlands"
+          },
+          {
+            "id": "lava-lantern",
+            "name": "Lava Lantern",
+            "level": 1,
+            "biome": "ashlands"
+          },
+          {
+            "id": "gem-cutter",
+            "name": "Gem cutter",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "metal-cutter",
+            "name": "Metal cutter",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "battering-ram",
+            "name": "Battering Ram",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "catapult",
+            "name": "Catapult",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "grausten-chest",
+            "name": "Grausten Chest",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "asksvin-saddle",
+            "name": "Asksvin Saddle",
+            "level": 2,
+            "biome": null
+          },
+          {
+            "id": "timberwood-drawbridge",
+            "name": "Timberwood Drawbridge",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -11135,7 +12489,7 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "flametal-mace",
       "name": "Flametal Mace",
-      "image": "../bestiary/img/weapons/flametal-mace.png",
+      "image": "../smithy/img/items/flametal-mace.png",
       "biome": "ashlands",
       "tier": 8,
       "category": "weapon",
@@ -11243,8 +12597,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "metal",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Flametal_Ore",
       "names": {
         "cs": "Plamenná kovová ruda",
@@ -11252,7 +12606,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Minerai de flametal",
         "ru": "Огнеметаллическая руда"
       },
-      "description": null,
+      "description": "Warm to the touch with glowing veins of strange metal. Needs to be refined in a blast furnace.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -11289,10 +12643,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/flax.png",
       "biome": "plains",
       "tier": 6,
-      "category": "building",
+      "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 100,
+      "weight": 0.2,
       "wiki": "https://valheim.weirdgloop.org/w/Flax",
       "names": {
         "cs": "Len",
@@ -11300,7 +12654,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Lin",
         "ru": "Лен"
       },
-      "description": null,
+      "description": "Unspun fibers from a flax plant.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -11343,7 +12697,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "straw",
+            "name": "Straw",
+            "level": 1,
+            "biome": "plains"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -11353,17 +12714,17 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/flint.png",
       "biome": "meadows",
       "tier": 1,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Flint",
       "names": {
         "cs": "Pazourek",
         "fr": "Silex",
         "ru": "Кремень"
       },
-      "description": null,
+      "description": "Can be shaped into sharp blades.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -11415,7 +12776,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "tanning-rack",
+            "name": "Tanning Rack",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "chopping-block",
+            "name": "Chopping block",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -11425,10 +12799,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/fragrant-bundle.png",
       "biome": "plains",
       "tier": 6,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Fragrant_Bundle",
       "names": {
         "ru": "Ароматный букет"
@@ -11488,8 +12862,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 5,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Freeze_Gland",
       "names": {
         "cs": "Zmrzlá žláza",
@@ -11497,7 +12871,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Glande gelée",
         "ru": "Морозная железа"
       },
-      "description": null,
+      "description": "This mysterious organ keeps a perfect temperature.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -11566,10 +12940,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/fresh-seaweed.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Fresh_Seaweed",
       "names": {
         "ru": "Свежие водоросли"
@@ -11622,13 +12996,13 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/frostfire-essence.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Frostfire_Essence",
       "names": {},
-      "description": null,
+      "description": "Somehow both hot and cold to the touch.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -11724,7 +13098,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-echo-spike",
+            "name": "Cast Echo Spike",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-echo-spike",
+            "name": "Mould Echo Spike",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -11736,11 +13123,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Frozen_Branch",
       "names": {},
-      "description": null,
+      "description": "This piece of wood was once animated and alive. Still a strange, magical air clings to it.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -11779,7 +13166,26 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-nord-greatsword",
+            "name": "Cast Nord Greatsword",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-greatsword",
+            "name": "Mould Nord Greatsword",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-spirit-caller",
+            "name": "Cast: Spirit Caller",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -11791,11 +13197,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "summoning",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Fuling_Totem",
       "names": {},
-      "description": null,
+      "description": "Channels the ancient power of Yagluth.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -11853,9 +13259,9 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/giant-herring.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
+      "stack": 10,
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Giant_Herring",
       "names": {
@@ -11864,7 +13270,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Guinée saumon",
         "ru": "Гигантская сельдь"
       },
-      "description": null,
+      "description": "Fermented, this fish will smell worse than the swamp it came from.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -11909,10 +13315,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/grasslands-herbalist-harvest.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 100,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Grasslands_Herbalist_Harvest",
       "names": {
         "ru": "Урожай лугового травника"
@@ -11971,15 +13377,15 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/grausten.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Grausten",
       "names": {
         "ru": "Серокамень"
       },
-      "description": null,
+      "description": "Porous yet sturdy.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -12014,7 +13420,26 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "bone-throne",
+            "name": "Bone Throne",
+            "level": 1,
+            "biome": "ashlands"
+          },
+          {
+            "id": "grausten-chest",
+            "name": "Grausten Chest",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "portal-stone",
+            "name": "Portal – Stone",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -12026,8 +13451,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.2,
       "wiki": "https://valheim.weirdgloop.org/w/Greydwarf_Eye",
       "names": {
         "cs": "Oko šedého trpaslíka",
@@ -12035,7 +13460,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Œil de Naingris",
         "ru": "Глаз грейдворфа"
       },
-      "description": null,
+      "description": "The milky eyeball of a Greydwarf.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -12128,7 +13553,32 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "blue-standing-brazier",
+            "name": "Blue Standing Brazier",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "ward",
+            "name": "Ward",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "standing-blue-burning-iron-torch",
+            "name": "Standing blue-burning iron torch",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "portal-stone",
+            "name": "Portal – Stone",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -12138,9 +13588,9 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/grouper.png",
       "biome": "plains",
       "tier": 6,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
+      "stack": 10,
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Grouper",
       "names": {
@@ -12149,7 +13599,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Mérou",
         "ru": "Групер"
       },
-      "description": null,
+      "description": "Best served with lots of carbs!",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -12203,8 +13653,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Guck",
       "names": {
         "cs": "Sliz",
@@ -12212,7 +13662,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Viscosité",
         "ru": "Слизь"
       },
-      "description": null,
+      "description": "It smells like fermented fish.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -12268,7 +13718,20 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "green-banner",
+            "name": "Green banner",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "standing-green-burning-iron-torch",
+            "name": "Standing green-burning iron torch",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -12280,8 +13743,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Hard_Antler",
       "names": {
         "cs": "Tvrdý paroh",
@@ -12289,7 +13752,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Bois dur",
         "ru": "Твердый рог"
       },
-      "description": null,
+      "description": "A piece of very hard antlers.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -12328,7 +13791,14 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "antler-pickaxe",
+            "name": "Antler Pickaxe",
+            "level": 1,
+            "biome": "meadows"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -12340,14 +13810,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Hare_Meat",
       "names": {
         "cs": "Zaječí maso",
         "ru": "Зайчатина"
       },
-      "description": null,
+      "description": "The meat of a hare is scant but toothsome.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -12397,10 +13867,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/herbs-of-the-hidden-hills.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 100,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Herbs_of_the_Hidden_Hills",
       "names": {
         "ru": "Травы тайных холмов"
@@ -12500,7 +13970,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-northern-vengeance",
+            "name": "Cast Northern Vengeance",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-northern-vengeance",
+            "name": "Mould Northern Vengeance",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -12512,15 +13995,15 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.2,
       "wiki": "https://valheim.weirdgloop.org/w/Honey",
       "names": {
         "cs": "Med",
         "fr": "Miel",
         "ru": "Мед"
       },
-      "description": null,
+      "description": "Sweet and tasty.",
       "stats": {
         "health": 8,
         "stamina": 35,
@@ -12530,16 +14013,8 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -12680,30 +14155,20 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Ice",
       "names": {},
-      "description": null,
+      "description": "So cold...",
       "stats": null,
       "recipe": null,
       "station": null,
       "sources": {
         "creatures": [
           {
-            "id": "greydwarf-deep-north",
-            "name": "Greydwarf (Deep North)",
-            "biome": "deep-north"
-          },
-          {
             "id": "greydwarf-shaman-deep-north",
             "name": "Greydwarf Shaman (Deep North)",
             "biome": "deep-north"
-          },
-          {
-            "id": "skeleton",
-            "name": "Skeleton",
-            "biome": "black-forest"
           }
         ],
         "locations": [
@@ -12798,7 +14263,32 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-northern-vengeance",
+            "name": "Cast Northern Vengeance",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-northern-vengeance",
+            "name": "Mould Northern Vengeance",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "frigid-kiln",
+            "name": "Frigid Kiln",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "ice-block",
+            "name": "Ice Block",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -12808,15 +14298,15 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/iolite.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Iolite",
       "names": {
         "ru": "Иолит"
       },
-      "description": null,
+      "description": "Light is reflected sharply off of this gem, or does it come from within the stone itself?",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -12898,8 +14388,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "metal",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 12,
       "wiki": "https://valheim.weirdgloop.org/w/Iron",
       "names": {
         "cs": "Železo",
@@ -12907,7 +14397,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Fer",
         "ru": "Железо"
       },
-      "description": null,
+      "description": "A bar of pure iron ready to be worked.",
       "stats": null,
       "recipe": {
         "station": "Smelter",
@@ -12916,7 +14406,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "scrap-iron",
-            "name": "Scrap Iron",
+            "name": "scrap-iron",
             "amount": 1
           }
         ]
@@ -13196,6 +14686,120 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Pots and Pans",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "iron-pickaxe",
+            "name": "Iron Pickaxe",
+            "level": 2,
+            "biome": "swamp"
+          },
+          {
+            "id": "hot-tub",
+            "name": "Hot Tub",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "blast-furnace",
+            "name": "Blast Furnace",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "obliterator",
+            "name": "Obliterator",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "tool-shelf",
+            "name": "Tool shelf",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "standing-green-burning-iron-torch",
+            "name": "Standing green-burning iron torch",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "frost-foundry",
+            "name": "Frost Foundry",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "forge-toolrack",
+            "name": "Forge Toolrack",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "black-forge-cooler",
+            "name": "Black forge cooler",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "dvergr-stakewall",
+            "name": "Dvergr stakewall",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "dvergr-sharp-stakes",
+            "name": "Dvergr sharp stakes",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "smith-s-anvil",
+            "name": "Smith's Anvil",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "reinforced-chest",
+            "name": "Reinforced chest",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "personal-chest",
+            "name": "Personal chest",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "standing-iron-torch",
+            "name": "Standing iron torch",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "standing-blue-burning-iron-torch",
+            "name": "Standing blue-burning iron torch",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "vice",
+            "name": "Vice",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "stone-oven",
+            "name": "Stone Oven",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "horn-of-celebration",
+            "name": "Horn of Celebration",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -13209,15 +14813,15 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "metal",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 100,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Iron_Nails",
       "names": {
         "cs": "Železné hřebíky",
         "fr": "Clous en fer",
         "ru": "Железные гвозди"
       },
-      "description": null,
+      "description": "Needed for advanced construction projects.",
       "stats": null,
       "recipe": {
         "station": "Forge",
@@ -13226,7 +14830,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "iron",
-            "name": "Iron",
+            "name": "iron",
             "amount": 1
           }
         ]
@@ -13310,7 +14914,80 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "armor-stand",
+            "name": "Armor Stand",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "darkwood-chair",
+            "name": "Darkwood Chair",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "dragon-bed",
+            "name": "Dragon Bed",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "long-carved-table",
+            "name": "Long Carved Table",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "long-heavy-table",
+            "name": "Long Heavy Table",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "raven-throne",
+            "name": "Raven Throne",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "round-table",
+            "name": "Round Table",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "square-carved-table",
+            "name": "Square Carved Table",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "spinning-wheel",
+            "name": "Spinning Wheel",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "longship",
+            "name": "Longship",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "drakkar",
+            "name": "Drakkar",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "windmill",
+            "name": "Windmill",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -13322,8 +14999,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "metal",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Iron_Pit",
       "names": {
         "ru": "Железная чаша"
@@ -13365,7 +15042,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "iron-fire-pit",
+            "name": "Iron Fire Pit",
+            "level": 1,
+            "biome": "meadows"
+          }
+        ]
       },
       "crossLinks": {
         "traders": "/traders/#trader=hildir"
@@ -13377,15 +15061,15 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/jade.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Jade",
       "names": {
         "ru": "Нефрит"
       },
-      "description": null,
+      "description": "This gem pulses with energy, almost as if it were a living thing.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -13473,14 +15157,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Jotun_Puffs",
       "names": {
         "cs": "Jótunnské obláčky",
         "ru": "Гриб Йотунов"
       },
-      "description": null,
+      "description": "Swollen with magic, these golden orbs bubble from the ground where the Jotun fell.",
       "stats": {
         "health": 25,
         "stamina": 25,
@@ -13490,16 +15174,8 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -13572,11 +15248,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Kale",
       "names": {},
-      "description": null,
+      "description": "A versatile leafy green.",
       "stats": {
         "health": 35,
         "stamina": 35,
@@ -13593,7 +15269,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "kale-seeds",
-            "name": "Kale Seeds",
+            "name": "kale-seeds",
             "amount": 1
           }
         ]
@@ -13675,11 +15351,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 100,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Kale_Seeds",
       "names": {},
-      "description": null,
+      "description": "Plant to grow kale.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -13734,8 +15410,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Leather_Scraps",
       "names": {
         "cs": "Zbytky z kůže",
@@ -13743,21 +15419,21 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Bouts de cuir",
         "ru": "Кожаные обрывки"
       },
-      "description": null,
+      "description": "A small pile of leather scraps.",
       "stats": null,
       "recipe": null,
       "station": null,
       "sources": {
         "creatures": [
           {
-            "id": "boar",
-            "name": "Boar",
-            "biome": "meadows"
-          },
-          {
             "id": "bat",
             "name": "Bat",
             "biome": "mountain"
+          },
+          {
+            "id": "boar",
+            "name": "Boar",
+            "biome": "meadows"
           }
         ],
         "locations": [
@@ -14089,6 +15765,102 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Food Preparation Table",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "armor-stand",
+            "name": "Armor Stand",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "black-banner",
+            "name": "Black banner",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "blue-banner",
+            "name": "Blue banner",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "blue-red-and-white-banner",
+            "name": "Blue, red and white banner",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "green-banner",
+            "name": "Green banner",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "orange-banner",
+            "name": "Orange banner",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "purple-banner",
+            "name": "Purple banner",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "red-banner",
+            "name": "Red banner",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "white-and-blue-striped-banner",
+            "name": "White and blue striped banner",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "white-and-red-striped-banner",
+            "name": "White and red striped banner",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "white-banner",
+            "name": "White banner",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "yellow-banner",
+            "name": "Yellow banner",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "spinning-wheel",
+            "name": "Spinning Wheel",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "tanning-rack",
+            "name": "Tanning Rack",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "raft",
+            "name": "Raft",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "lox-saddle",
+            "name": "Lox Saddle",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -14102,11 +15874,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Leather_Straps",
       "names": {},
-      "description": null,
+      "description": "A sturdy yet flexible material.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -14170,17 +15942,17 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/linen-thread.png",
       "biome": "plains",
       "tier": 6,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Linen_Thread",
       "names": {
         "cs": "Lněné vlákno",
         "fr": "Toile de lin",
         "ru": "Льняная нить"
       },
-      "description": null,
+      "description": "A fine linen thread made out of a strong flax filament.",
       "stats": null,
       "recipe": {
         "station": "Spinning Wheel",
@@ -14189,7 +15961,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "flax",
-            "name": "Flax",
+            "name": "flax",
             "amount": 1
           }
         ]
@@ -14365,7 +16137,26 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "lox-saddle",
+            "name": "Lox Saddle",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "asksvin-saddle",
+            "name": "Asksvin Saddle",
+            "level": 2,
+            "biome": null
+          },
+          {
+            "id": "moose-saddle",
+            "name": "Moose Saddle",
+            "level": 2,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -14377,8 +16168,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Lingonberries",
       "names": {},
       "description": null,
@@ -14391,24 +16182,10 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
-        "creatures": [
-          {
-            "id": "captive-fuling",
-            "name": "Captive Fuling",
-            "biome": "deep-north"
-          }
-        ],
+        "creatures": [],
         "locations": [
           {
             "text": "Lingonberry Bush",
@@ -14479,13 +16256,13 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/liquid-frost.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Liquid_Frost",
       "names": {},
-      "description": null,
+      "description": "Magic has infused this ice, turning it into something else entirely.",
       "stats": null,
       "recipe": {
         "station": "Frigid Kiln",
@@ -14494,7 +16271,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "ice",
-            "name": "Ice",
+            "name": "ice",
             "amount": 5
           }
         ]
@@ -14706,11 +16483,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Long_Claws",
       "names": {},
-      "description": null,
+      "description": "A lethal weapon, if one can hold them without getting cut.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -14742,7 +16519,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-nord-knucklechains",
+            "name": "Cast Nord Knucklechains",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-knucklechains",
+            "name": "Mould Nord Knucklechains",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -14754,14 +16544,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Lox_Meat",
       "names": {
         "cs": "Maso z Loxe",
         "ru": "Мясо быкоящера"
       },
-      "description": null,
+      "description": "A raw slab of marbled meat.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -14813,14 +16603,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Lox_Meat_Pie",
       "names": {
         "cs": "Masový koláč z Loxe",
         "ru": "Пирог из мяса быкоящера"
       },
-      "description": null,
+      "description": "Break the crust to release a cloud of fragrant steam. Delicious!",
       "stats": {
         "health": 75,
         "stamina": 24,
@@ -14837,7 +16627,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "unbaked-lox-pie",
-            "name": "Unbaked Lox Pie",
+            "name": "unbaked-lox-pie",
             "amount": 1
           }
         ]
@@ -14886,8 +16676,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Lox_Pelt",
       "names": {
         "cs": "Kůže z Loxe",
@@ -14895,7 +16685,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Peau de Lox",
         "ru": "Шкура быкоящера"
       },
-      "description": null,
+      "description": "A heavy pelt of thick, musty fur.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -14992,7 +16782,20 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "ashwood-bed",
+            "name": "Ashwood Bed",
+            "level": 1,
+            "biome": "ashlands"
+          },
+          {
+            "id": "lox-rug",
+            "name": "Lox Rug",
+            "level": 1,
+            "biome": "plains"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -15004,14 +16807,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Magecap",
       "names": {
         "cs": "Mágovka",
         "ru": "Волшебный гриб"
       },
-      "description": null,
+      "description": "The delicate blue magecaps crackle like nerve-endings with sorcerous vitality.",
       "stats": {
         "health": 25,
         "stamina": 25,
@@ -15021,16 +16824,8 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -15107,9 +16902,9 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/magmafish.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "building",
+      "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
+      "stack": 10,
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Magmafish",
       "names": {
@@ -15118,7 +16913,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Poisson-magma",
         "ru": "Магмарыбка"
       },
-      "description": null,
+      "description": "Some say this fish lays its eggs directly in molten lava!",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -15165,11 +16960,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "summoning",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Malicious_Blood",
       "names": {},
-      "description": null,
+      "description": "There's something unsettling about this clotted, frozen mass.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -15215,14 +17010,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Mandible",
       "names": {
         "cs": "Kusadlo",
         "ru": "Мандибула"
       },
-      "description": null,
+      "description": "The hand of a man could hardly design a more perfect weapon.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -15275,7 +17070,14 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "grappling-hook",
+            "name": "Grappling Hook",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -15285,7 +17087,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-anti-sting.png",
       "biome": "plains",
       "tier": 6,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -15303,17 +17105,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cloudberries",
-            "name": "Cloudberries",
+            "name": "cloudberries",
             "amount": 10
           },
           {
             "item": "grouper",
-            "name": "Grouper",
+            "name": "grouper",
             "amount": 3
           },
           {
             "item": "fragrant-bundle",
-            "name": "Fragrant Bundle",
+            "name": "fragrant-bundle",
             "amount": 1
           }
         ]
@@ -15357,7 +17159,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-lightfoot.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -15375,17 +17177,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "scale-hide",
-            "name": "Scale Hide",
+            "name": "scale-hide",
             "amount": 2
           },
           {
             "item": "feathers",
-            "name": "Feathers",
+            "name": "feathers",
             "amount": 5
           },
           {
             "item": "magecap",
-            "name": "Magecap",
+            "name": "magecap",
             "amount": 5
           }
         ]
@@ -15429,16 +17231,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-ratatosk.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_Base%3A_Ratatosk",
       "names": {
         "cs": "Ratatoskův tonik",
         "ru": "Эликсир Рататоска"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -15447,17 +17249,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "blueberries",
-            "name": "Blueberries",
+            "name": "blueberries",
             "amount": 10
           },
           {
             "item": "cured-squirrel-hamstring",
-            "name": "Cured Squirrel Hamstring",
+            "name": "cured-squirrel-hamstring",
             "amount": 1
           }
         ]
@@ -15501,16 +17303,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-troll-endurance.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_Base%3A_Troll_Endurance",
       "names": {
         "cs": "Medovina trollí výdrže",
         "ru": "Медовуха силы тролля"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -15519,17 +17321,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "trollfish",
-            "name": "Trollfish",
+            "name": "trollfish",
             "amount": 2
           },
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "powdered-dragon-eggshells",
-            "name": "Powdered Dragon Eggshells",
+            "name": "powdered-dragon-eggshells",
             "amount": 1
           }
         ]
@@ -15573,16 +17375,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-animal-whispers.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_Base%3A_Animal_Whispers",
       "names": {
         "cs": "Nápoj zvířecího šepotu",
         "ru": "Отвар звериного шепота"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -15591,17 +17393,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "onion",
-            "name": "Onion",
+            "name": "onion",
             "amount": 5
           },
           {
             "item": "carrot",
-            "name": "Carrot",
+            "name": "carrot",
             "amount": 10
           },
           {
             "item": "pungent-pebbles",
-            "name": "Pungent Pebbles",
+            "name": "pungent-pebbles",
             "amount": 1
           }
         ]
@@ -15645,16 +17447,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-berserkir.png",
       "biome": "plains",
       "tier": 6,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_Base%3A_Berserkir",
       "names": {
         "cs": "Berserkská medovina",
         "ru": "Медовуха берсеркира"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -15663,17 +17465,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "mushroom",
-            "name": "Mushroom",
+            "name": "mushroom",
             "amount": 10
           },
           {
             "item": "yellow-mushroom",
-            "name": "Yellow Mushroom",
+            "name": "yellow-mushroom",
             "amount": 10
           },
           {
             "item": "toadstool",
-            "name": "Toadstool",
+            "name": "toadstool",
             "amount": 1
           }
         ]
@@ -15717,16 +17519,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-frost-resistance.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_Base%3A_Frost_Resistance",
       "names": {
         "cs": "Medovina proti mrazu",
         "ru": "Морозоустойчивая медовуха"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -15735,22 +17537,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "thistle",
-            "name": "Thistle",
+            "name": "thistle",
             "amount": 5
           },
           {
             "item": "bloodbag",
-            "name": "Bloodbag",
+            "name": "bloodbag",
             "amount": 2
           },
           {
             "item": "greydwarf-eye",
-            "name": "Greydwarf Eye",
+            "name": "greydwarf-eye",
             "amount": 1
           }
         ]
@@ -15794,16 +17596,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-lingering-eitr.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_Base%3A_Lingering_Eitr",
       "names": {
         "cs": "Trvající éitrová medovina",
         "ru": "Мощная медовуха Эйтра"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -15812,17 +17614,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "sap",
-            "name": "Sap",
+            "name": "sap",
             "amount": 10
           },
           {
             "item": "vineberry-cluster",
-            "name": "Vineberry Cluster",
+            "name": "vineberry-cluster",
             "amount": 10
           },
           {
             "item": "magecap",
-            "name": "Magecap",
+            "name": "magecap",
             "amount": 10
           }
         ]
@@ -15866,16 +17668,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-lingering-health.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_Base%3A_Lingering_Health",
       "names": {
         "cs": "Trvající léčivá medovina",
         "ru": "Мощная медовуха лечения"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -15884,17 +17686,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "sap",
-            "name": "Sap",
+            "name": "sap",
             "amount": 10
           },
           {
             "item": "vineberry-cluster",
-            "name": "Vineberry Cluster",
+            "name": "vineberry-cluster",
             "amount": 10
           },
           {
             "item": "smoke-puff",
-            "name": "Smoke Puff",
+            "name": "smoke-puff",
             "amount": 10
           }
         ]
@@ -15938,16 +17740,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-lingering-stamina.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_Base%3A_Lingering_Stamina",
       "names": {
         "cs": "Medovina trvající výdrže",
         "ru": "Большая медовуха выносливости"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -15956,17 +17758,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "sap",
-            "name": "Sap",
+            "name": "sap",
             "amount": 10
           },
           {
             "item": "cloudberries",
-            "name": "Cloudberries",
+            "name": "cloudberries",
             "amount": 10
           },
           {
             "item": "jotun-puffs",
-            "name": "Jotun Puffs",
+            "name": "jotun-puffs",
             "amount": 10
           }
         ]
@@ -16010,16 +17812,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-major-healing.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_Base%3A_Major_Healing",
       "names": {
         "cs": "Velká Léčivá Medovina",
         "ru": "Большая медовуха лечения"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -16028,17 +17830,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "blood-clot",
-            "name": "Blood Clot",
+            "name": "blood-clot",
             "amount": 4
           },
           {
             "item": "royal-jelly",
-            "name": "Royal Jelly",
+            "name": "royal-jelly",
             "amount": 5
           }
         ]
@@ -16082,16 +17884,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-medium-healing.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_Base%3A_Medium_Healing",
       "names": {
         "cs": "Střední léčivá medovina",
         "ru": "Средняя медовуха лечения"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -16100,22 +17902,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "bloodbag",
-            "name": "Bloodbag",
+            "name": "bloodbag",
             "amount": 4
           },
           {
             "item": "raspberries",
-            "name": "Raspberries",
+            "name": "raspberries",
             "amount": 10
           },
           {
             "item": "dandelion",
-            "name": "Dandelion",
+            "name": "dandelion",
             "amount": 1
           }
         ]
@@ -16159,16 +17961,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-medium-stamina.png",
       "biome": "plains",
       "tier": 6,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_Base%3A_Medium_Stamina",
       "names": {
         "cs": "Střední medovina na výdrž",
         "ru": "Средняя медовуха выносливости"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -16177,17 +17979,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "cloudberries",
-            "name": "Cloudberries",
+            "name": "cloudberries",
             "amount": 10
           },
           {
             "item": "yellow-mushroom",
-            "name": "Yellow Mushroom",
+            "name": "yellow-mushroom",
             "amount": 10
           }
         ]
@@ -16231,16 +18033,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-minor-eitr.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_Base%3A_Minor_Eitr",
       "names": {
         "cs": "Slabší Éitrová medovina",
         "ru": "Малая медовуха Эйтра"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -16249,22 +18051,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "sap",
-            "name": "Sap",
+            "name": "sap",
             "amount": 5
           },
           {
             "item": "jotun-puffs",
-            "name": "Jotun Puffs",
+            "name": "jotun-puffs",
             "amount": 2
           },
           {
             "item": "magecap",
-            "name": "Magecap",
+            "name": "magecap",
             "amount": 5
           }
         ]
@@ -16308,16 +18110,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-minor-healing.png",
       "biome": "black-forest",
       "tier": 2,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_Base%3A_Minor_Healing",
       "names": {
         "cs": "Drobná léčivá medovina",
         "ru": "Малая медовуха лечения"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -16326,22 +18128,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "blueberries",
-            "name": "Blueberries",
+            "name": "blueberries",
             "amount": 5
           },
           {
             "item": "raspberries",
-            "name": "Raspberries",
+            "name": "raspberries",
             "amount": 10
           },
           {
             "item": "dandelion",
-            "name": "Dandelion",
+            "name": "dandelion",
             "amount": 1
           }
         ]
@@ -16385,16 +18187,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-minor-stamina.png",
       "biome": "black-forest",
       "tier": 2,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_Base%3A_Minor_Stamina",
       "names": {
         "cs": "Drobná medovina na výdrž",
         "ru": "Малая медовуха выносливости"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -16403,17 +18205,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "raspberries",
-            "name": "Raspberries",
+            "name": "raspberries",
             "amount": 10
           },
           {
             "item": "yellow-mushroom",
-            "name": "Yellow Mushroom",
+            "name": "yellow-mushroom",
             "amount": 10
           }
         ]
@@ -16457,16 +18259,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-poison-resistance.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_Base%3A_Poison_Resistance",
       "names": {
         "cs": "Medovina proti jedu",
         "ru": "Медовуха-антидот"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -16475,22 +18277,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "thistle",
-            "name": "Thistle",
+            "name": "thistle",
             "amount": 5
           },
           {
             "item": "neck-tail",
-            "name": "Neck Tail",
+            "name": "neck-tail",
             "amount": 1
           },
           {
             "item": "coal",
-            "name": "Coal",
+            "name": "coal",
             "amount": 10
           }
         ]
@@ -16534,16 +18336,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-tasty.png",
       "biome": "black-forest",
       "tier": 2,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_Base%3A_Tasty",
       "names": {
         "cs": "Chutná medovina",
         "ru": "Вкусная медовуха"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -16552,17 +18354,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "raspberries",
-            "name": "Raspberries",
+            "name": "raspberries",
             "amount": 10
           },
           {
             "item": "blueberries",
-            "name": "Blueberries",
+            "name": "blueberries",
             "amount": 5
           }
         ]
@@ -16606,16 +18408,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mead-base-vananidir.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_Base%3A_Vananidir",
       "names": {
         "cs": "Nápoj Vananidir",
         "ru": "Напиток Вананидир"
       },
-      "description": null,
+      "description": "Needs to be fermented.",
       "stats": null,
       "recipe": {
         "station": "Mead Ketill",
@@ -16624,17 +18426,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "dandelion",
-            "name": "Dandelion",
+            "name": "dandelion",
             "amount": 10
           },
           {
             "item": "perch",
-            "name": "Perch",
+            "name": "perch",
             "amount": 2
           },
           {
             "item": "fresh-seaweed",
-            "name": "Fresh Seaweed",
+            "name": "fresh-seaweed",
             "amount": 1
           }
         ]
@@ -16680,14 +18482,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Misthare_Supreme",
       "names": {
         "cs": "Supreme z mlžného zajíce",
         "ru": "Гуляш из зайчатины"
       },
-      "description": null,
+      "description": "One of life's Great Pleasures.",
       "stats": {
         "health": 85,
         "stamina": 28,
@@ -16704,7 +18506,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "uncooked-misthare-supreme",
-            "name": "Uncooked Misthare Supreme",
+            "name": "uncooked-misthare-supreme",
             "amount": 1
           }
         ]
@@ -16753,11 +18555,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Moose_Hide",
       "names": {},
-      "description": null,
+      "description": "This fur is perfectly adapted to northern climates.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -16863,7 +18665,74 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-breastplate-of-the-protector",
+            "name": "Cast Breastplate of the Protector",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-chestpiece-of-the-vanguard",
+            "name": "Cast Chestpiece of the Vanguard",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-helmet-of-the-protector",
+            "name": "Cast Helmet of the Protector",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-hood-of-the-vanguard",
+            "name": "Cast Hood of the Vanguard",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-trousers-of-the-protector",
+            "name": "Cast Trousers of the Protector",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-trousers-of-the-vanguard",
+            "name": "Cast Trousers of the Vanguard",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-helmet-of-the-protector",
+            "name": "Mould Helmet of the Protector",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-hood-of-the-vanguard",
+            "name": "Mould Hood of the Vanguard",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "antler-throne",
+            "name": "Antler Throne",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "carved-bench",
+            "name": "Carved Bench",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "smith-s-aprons",
+            "name": "Smith's Aprons",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -16875,11 +18744,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Moose_Meat",
       "names": {},
-      "description": null,
+      "description": "This meat is sure to provide a hearty meal once cooked.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -16952,11 +18821,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Moose_Sinew",
       "names": {},
-      "description": null,
+      "description": "Tough and hardy, this is sure to come in handy.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -17010,7 +18879,56 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-chestpiece-of-the-vanguard",
+            "name": "Cast Chestpiece of the Vanguard",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-headdress-of-the-caller",
+            "name": "Cast Headdress of the Caller",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-hood-of-the-vanguard",
+            "name": "Cast Hood of the Vanguard",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-robes-of-the-caller",
+            "name": "Cast Robes of the Caller",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-trousers-of-the-caller",
+            "name": "Cast Trousers of the Caller",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-trousers-of-the-vanguard",
+            "name": "Cast Trousers of the Vanguard",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-headdress-of-the-caller",
+            "name": "Mould Headdress of the Caller",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-hood-of-the-vanguard",
+            "name": "Mould Hood of the Vanguard",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -17077,7 +18995,44 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-headdress-of-the-caller",
+            "name": "Cast Headdress of the Caller",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-robes-of-the-caller",
+            "name": "Cast Robes of the Caller",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-trousers-of-the-caller",
+            "name": "Cast Trousers of the Caller",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-headdress-of-the-caller",
+            "name": "Mould Headdress of the Caller",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "antler-throne",
+            "name": "Antler Throne",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-spirit-caller",
+            "name": "Cast: Spirit Caller",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -17089,13 +19044,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Morgen_Heart",
       "names": {
         "ru": "Сердце моргена"
       },
-      "description": null,
+      "description": "It's hard to believe it has ever beaten.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -17147,13 +19102,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Morgen_Sinew",
       "names": {
         "ru": "Сухожилие моргена"
       },
-      "description": null,
+      "description": "Chewy.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -17213,7 +19168,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "gem-cutter",
+            "name": "Gem cutter",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "asksvin-saddle",
+            "name": "Asksvin Saddle",
+            "level": 2,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -17225,11 +19193,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Echo_Spike",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a powerful magical item.",
       "stats": null,
       "recipe": {
         "station": "Galdr Table level 3",
@@ -17238,22 +19206,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 10
           },
           {
             "item": "nornathread",
-            "name": "Nornathread",
+            "name": "nornathread",
             "amount": 4
           },
           {
             "item": "frostfire-essence",
-            "name": "Frostfire Essence",
+            "name": "frostfire-essence",
             "amount": 1
           },
           {
             "item": "mould-echo-spike",
-            "name": "Mould Echo Spike",
+            "name": "mould-echo-spike",
             "amount": 1
           }
         ]
@@ -17280,7 +19248,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-echo-spike",
+            "name": "Cast Echo Spike",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-echo-spike",
+            "name": "Mould Echo Spike",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -17290,13 +19271,13 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-headdress-of-the-caller.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "drop",
+      "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Headdress_of_the_Caller",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a spectacular piece of armour.",
       "stats": null,
       "recipe": {
         "station": "Galdr Table level 3",
@@ -17305,22 +19286,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "moose-sinew",
-            "name": "Moose Sinew",
+            "name": "moose-sinew",
             "amount": 2
           },
           {
             "item": "mould-headdress-of-the-caller",
-            "name": "Mould Headdress of the Caller",
+            "name": "mould-headdress-of-the-caller",
             "amount": 1
           },
           {
             "item": "moose-trophy",
-            "name": "Moose Trophy",
+            "name": "moose-trophy",
             "amount": 1
           },
           {
             "item": "nornathread",
-            "name": "Nornathread",
+            "name": "nornathread",
             "amount": 3
           }
         ]
@@ -17353,7 +19334,32 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-headdress-of-the-caller",
+            "name": "Cast Headdress of the Caller",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-robes-of-the-caller",
+            "name": "Cast Robes of the Caller",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-trousers-of-the-caller",
+            "name": "Cast Trousers of the Caller",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-headdress-of-the-caller",
+            "name": "Mould Headdress of the Caller",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -17363,13 +19369,13 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-helmet-of-the-protector.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "drop",
+      "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Helmet_of_the_Protector",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a spectacular piece of armour.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -17378,17 +19384,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-helmet-of-the-protector",
-            "name": "Mould Helmet of the Protector",
+            "name": "mould-helmet-of-the-protector",
             "amount": 1
           },
           {
             "item": "moose-hide",
-            "name": "Moose Hide",
+            "name": "moose-hide",
             "amount": 4
           }
         ]
@@ -17421,7 +19427,32 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-breastplate-of-the-protector",
+            "name": "Cast Breastplate of the Protector",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-helmet-of-the-protector",
+            "name": "Cast Helmet of the Protector",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-trousers-of-the-protector",
+            "name": "Cast Trousers of the Protector",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-helmet-of-the-protector",
+            "name": "Mould Helmet of the Protector",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -17431,13 +19462,13 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-hood-of-the-vanguard.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "drop",
+      "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Hood_of_the_Vanguard",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a spectacular piece of armour.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -17446,22 +19477,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "seal-pelt",
-            "name": "Seal Pelt",
+            "name": "seal-pelt",
             "amount": 5
           },
           {
             "item": "mould-hood-of-the-vanguard",
-            "name": "Mould Hood of the Vanguard",
+            "name": "mould-hood-of-the-vanguard",
             "amount": 1
           },
           {
             "item": "moose-hide",
-            "name": "Moose Hide",
+            "name": "moose-hide",
             "amount": 5
           },
           {
             "item": "moose-sinew",
-            "name": "Moose Sinew",
+            "name": "moose-sinew",
             "amount": 1
           }
         ]
@@ -17494,7 +19525,32 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-chestpiece-of-the-vanguard",
+            "name": "Cast Chestpiece of the Vanguard",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-hood-of-the-vanguard",
+            "name": "Cast Hood of the Vanguard",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-trousers-of-the-vanguard",
+            "name": "Cast Trousers of the Vanguard",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-hood-of-the-vanguard",
+            "name": "Mould Hood of the Vanguard",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -17506,11 +19562,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Lightning_Strike",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a powerful magical item.",
       "stats": null,
       "recipe": {
         "station": "Galdr Table level 3",
@@ -17519,22 +19575,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 10
           },
           {
             "item": "nornathread",
-            "name": "Nornathread",
+            "name": "nornathread",
             "amount": 5
           },
           {
             "item": "thunderblood-essence",
-            "name": "Thunderblood Essence",
+            "name": "thunderblood-essence",
             "amount": 1
           },
           {
             "item": "mould-lightning-strike",
-            "name": "Mould Lightning Strike",
+            "name": "mould-lightning-strike",
             "amount": 1
           }
         ]
@@ -17561,7 +19617,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-lightning-strike",
+            "name": "Cast Lightning Strike",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-lightning-strike",
+            "name": "Mould Lightning Strike",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -17573,11 +19642,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Atgeir",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -17586,17 +19655,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-atgeir",
-            "name": "Mould Nord Atgeir",
+            "name": "mould-nord-atgeir",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -17623,7 +19692,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-nord-atgeir",
+            "name": "Cast Nord Atgeir",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-atgeir",
+            "name": "Mould Nord Atgeir",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -17635,11 +19717,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Axe",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -17648,17 +19730,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-axe",
-            "name": "Mould Nord Axe",
+            "name": "mould-nord-axe",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -17685,7 +19767,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-nord-axe",
+            "name": "Cast Nord Axe",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-axe",
+            "name": "Mould Nord Axe",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -17697,11 +19792,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Bow",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -17710,17 +19805,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-bow",
-            "name": "Mould Nord Bow",
+            "name": "mould-nord-bow",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -17747,7 +19842,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-nord-bow",
+            "name": "Cast Nord Bow",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-bow",
+            "name": "Mould Nord Bow",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -17759,11 +19867,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Buckler",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a hardy shield.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -17772,17 +19880,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 10
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           },
           {
             "item": "mould-nord-buckler",
-            "name": "Mould Nord Buckler",
+            "name": "mould-nord-buckler",
             "amount": 1
           }
         ]
@@ -17809,7 +19917,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-nord-buckler",
+            "name": "Cast Nord Buckler",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-buckler",
+            "name": "Mould Nord Buckler",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -17821,11 +19942,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Crossbow",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -17834,17 +19955,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-crossbow",
-            "name": "Mould Nord Crossbow",
+            "name": "mould-nord-crossbow",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -17871,7 +19992,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-nord-crossbow",
+            "name": "Cast Nord Crossbow",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-crossbow",
+            "name": "Mould Nord Crossbow",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -17883,11 +20017,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Dagger",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -17896,17 +20030,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-dagger",
-            "name": "Mould Nord Dagger",
+            "name": "mould-nord-dagger",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -17933,7 +20067,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-nord-dagger",
+            "name": "Cast Nord Dagger",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-dagger",
+            "name": "Mould Nord Dagger",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -17945,11 +20092,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Greataxe",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -17958,17 +20105,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-greataxe",
-            "name": "Mould Nord Greataxe",
+            "name": "mould-nord-greataxe",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -17995,7 +20142,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-nord-greataxe",
+            "name": "Cast Nord Greataxe",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-greataxe",
+            "name": "Mould Nord Greataxe",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -18007,11 +20167,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Greatshield",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a hardy shield.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -18020,17 +20180,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 20
           },
           {
             "item": "mould-nord-greatshield",
-            "name": "Mould Nord Greatshield",
+            "name": "mould-nord-greatshield",
             "amount": 1
           }
         ]
@@ -18057,7 +20217,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-nord-greatshield",
+            "name": "Cast Nord Greatshield",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-greatshield",
+            "name": "Mould Nord Greatshield",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -18069,11 +20242,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Greatsword",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -18082,17 +20255,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-greatsword",
-            "name": "Mould Nord Greatsword",
+            "name": "mould-nord-greatsword",
             "amount": 1
           },
           {
             "item": "frozen-branch",
-            "name": "Frozen Branch",
+            "name": "frozen-branch",
             "amount": 2
           }
         ]
@@ -18119,7 +20292,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-nord-greatsword",
+            "name": "Cast Nord Greatsword",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-greatsword",
+            "name": "Mould Nord Greatsword",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -18131,11 +20317,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Knucklechains",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -18144,17 +20330,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-knucklechains",
-            "name": "Mould Nord Knucklechains",
+            "name": "mould-nord-knucklechains",
             "amount": 1
           },
           {
             "item": "long-claws",
-            "name": "Long Claws",
+            "name": "long-claws",
             "amount": 2
           }
         ]
@@ -18181,7 +20367,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-nord-knucklechains",
+            "name": "Cast Nord Knucklechains",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-knucklechains",
+            "name": "Mould Nord Knucklechains",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -18193,11 +20392,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Mace",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -18206,17 +20405,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-mace",
-            "name": "Mould Nord Mace",
+            "name": "mould-nord-mace",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -18243,7 +20442,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-nord-mace",
+            "name": "Cast Nord Mace",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-mace",
+            "name": "Mould Nord Mace",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -18255,11 +20467,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Shield",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a hardy shield.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -18268,17 +20480,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 15
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           },
           {
             "item": "mould-nord-shield",
-            "name": "Mould Nord Shield",
+            "name": "mould-nord-shield",
             "amount": 1
           }
         ]
@@ -18305,7 +20517,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-nord-shield",
+            "name": "Cast Nord Shield",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-shield",
+            "name": "Mould Nord Shield",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -18317,11 +20542,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Sledge",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -18330,17 +20555,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-sledge",
-            "name": "Mould Nord Sledge",
+            "name": "mould-nord-sledge",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -18367,7 +20592,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-nord-sledge",
+            "name": "Cast Nord Sledge",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-sledge",
+            "name": "Mould Nord Sledge",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -18379,11 +20617,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Spear",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -18392,17 +20630,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-spear",
-            "name": "Mould Nord Spear",
+            "name": "mould-nord-spear",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -18429,7 +20667,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-nord-spear",
+            "name": "Cast Nord Spear",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-spear",
+            "name": "Mould Nord Spear",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -18441,11 +20692,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Nord_Sword",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
         "station": "Black Forge level 4",
@@ -18454,17 +20705,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 20
           },
           {
             "item": "mould-nord-sword",
-            "name": "Mould Nord Sword",
+            "name": "mould-nord-sword",
             "amount": 1
           },
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 10
           }
         ]
@@ -18491,7 +20742,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-nord-sword",
+            "name": "Cast Nord Sword",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-sword",
+            "name": "Mould Nord Sword",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -18503,11 +20767,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "building",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mould_Northern_Vengeance",
       "names": {},
-      "description": null,
+      "description": "Filled with the right material, this mould will create a powerful magical item.",
       "stats": null,
       "recipe": {
         "station": "Galdr Table level 3",
@@ -18516,22 +20780,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "ice",
-            "name": "Ice",
+            "name": "ice",
             "amount": 10
           },
           {
             "item": "nornathread",
-            "name": "Nornathread",
+            "name": "nornathread",
             "amount": 5
           },
           {
             "item": "hexen-trophy",
-            "name": "Hexen Trophy",
+            "name": "hexen-trophy",
             "amount": 1
           },
           {
             "item": "mould-northern-vengeance",
-            "name": "Mould Northern Vengeance",
+            "name": "mould-northern-vengeance",
             "amount": 1
           }
         ]
@@ -18558,7 +20822,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-northern-vengeance",
+            "name": "Cast Northern Vengeance",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-northern-vengeance",
+            "name": "Mould Northern Vengeance",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -18568,10 +20845,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/mountain-peak-pepper-powder.png",
       "biome": "plains",
       "tier": 6,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 100,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Mountain_Peak_Pepper_Powder",
       "names": {
         "ru": "Толченый перец с горных вершин"
@@ -18632,8 +20909,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Mushroom",
       "names": {
         "cs": "Houba",
@@ -18641,7 +20918,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Champignon",
         "ru": "Гриб"
       },
-      "description": null,
+      "description": "Bounty of the forest.",
       "stats": {
         "health": 15,
         "stamina": 15,
@@ -18651,16 +20928,8 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -18748,15 +21017,15 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mysterious-axe-head.png",
       "biome": null,
       "tier": null,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Mysterious_Axe_Head",
       "names": {
         "ru": "Древние топоры"
       },
-      "description": null,
+      "description": "What battles has this weapon borne witness to? You cannot see its past, only shape its future...",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -18800,10 +21069,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/neck-tail.png",
       "biome": "meadows",
       "tier": 1,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Neck_Tail",
       "names": {
         "cs": "Ocas Necka",
@@ -18811,7 +21080,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Queue de Nixe",
         "ru": "Хвост никса"
       },
-      "description": null,
+      "description": "Inedible when raw, but proves a tasty snack if cooked.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -18877,14 +21146,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Needle",
       "names": {
         "cs": "Jehla",
         "ru": "Игла"
       },
-      "description": null,
+      "description": "The pointy end of a Deathsquito.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -18936,7 +21205,7 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "nidhogg",
       "name": "Nidhögg",
-      "image": "../bestiary/img/weapons/nidhogg.png",
+      "image": "../smithy/img/items/nidhogg.png",
       "biome": "ashlands",
       "tier": 8,
       "category": "weapon",
@@ -19033,13 +21302,13 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "nord-atgeir",
       "name": "Nord Atgeir",
-      "image": "../bestiary/img/weapons/nord-atgeir.png",
+      "image": "../smithy/img/items/nord-atgeir.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2.5,
       "wiki": "https://valheim.weirdgloop.org/w/Nord_Atgeir",
       "names": {},
       "description": "The edge of this weapon is as deadly as it is shiny.",
@@ -19117,13 +21386,13 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "nord-axe",
       "name": "Nord Axe",
-      "image": "../bestiary/img/weapons/nord-axe.png",
+      "image": "../smithy/img/items/nord-axe.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Nord_Axe",
       "names": {},
       "description": "A finely detailed axe, for finely cutting down your enemies.",
@@ -19203,13 +21472,13 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "nord-bow",
       "name": "Nord Bow",
-      "image": "../bestiary/img/weapons/nord-bow.png",
+      "image": "../smithy/img/items/nord-bow.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 1.5,
       "wiki": "https://valheim.weirdgloop.org/w/Nord_Bow",
       "names": {},
       "description": "This bow shall find its target with a golden precision.",
@@ -19289,7 +21558,7 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "nord-crossbow",
       "name": "Nord Crossbow",
-      "image": "../bestiary/img/weapons/nord-crossbow.png",
+      "image": "../smithy/img/items/nord-crossbow.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "weapon",
@@ -19375,7 +21644,7 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "nord-dagger",
       "name": "Nord Dagger",
-      "image": "../bestiary/img/weapons/nord-dagger.png",
+      "image": "../smithy/img/items/nord-dagger.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "weapon",
@@ -19461,7 +21730,7 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "nord-greataxe",
       "name": "Nord Greataxe",
-      "image": "../bestiary/img/weapons/nord-greataxe.png",
+      "image": "../smithy/img/items/nord-greataxe.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "weapon",
@@ -19547,7 +21816,7 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "nord-greatsword",
       "name": "Nord Greatsword",
-      "image": "../bestiary/img/weapons/nord-greatsword.png",
+      "image": "../smithy/img/items/nord-greatsword.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "weapon",
@@ -19631,7 +21900,7 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "nord-knucklechains",
       "name": "Nord Knucklechains",
-      "image": "../bestiary/img/weapons/nord-knucklechains.png",
+      "image": "../smithy/img/items/nord-knucklechains.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "weapon",
@@ -19715,7 +21984,7 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "nord-mace",
       "name": "Nord Mace",
-      "image": "../bestiary/img/weapons/nord-mace.png",
+      "image": "../smithy/img/items/nord-mace.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "weapon",
@@ -19799,7 +22068,7 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "nord-sledge",
       "name": "Nord Sledge",
-      "image": "../bestiary/img/weapons/nord-sledge.png",
+      "image": "../smithy/img/items/nord-sledge.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "weapon",
@@ -19883,7 +22152,7 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "nord-spear",
       "name": "Nord Spear",
-      "image": "../bestiary/img/weapons/nord-spear.png",
+      "image": "../smithy/img/items/nord-spear.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "weapon",
@@ -19967,7 +22236,7 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "nord-sword",
       "name": "Nord Sword",
-      "image": "../bestiary/img/weapons/nord-sword.png",
+      "image": "../smithy/img/items/nord-sword.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "weapon",
@@ -20056,11 +22325,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Nornathread",
       "names": {},
-      "description": null,
+      "description": "Don't let the delicate strands fool you. These threads are spun from the power of the world tree itself.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -20140,7 +22409,80 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-echo-spike",
+            "name": "Cast Echo Spike",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-headdress-of-the-caller",
+            "name": "Cast Headdress of the Caller",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-lightning-strike",
+            "name": "Cast Lightning Strike",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-northern-vengeance",
+            "name": "Cast Northern Vengeance",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-robes-of-the-caller",
+            "name": "Cast Robes of the Caller",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-trousers-of-the-caller",
+            "name": "Cast Trousers of the Caller",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-echo-spike",
+            "name": "Mould Echo Spike",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-headdress-of-the-caller",
+            "name": "Mould Headdress of the Caller",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-lightning-strike",
+            "name": "Mould Lightning Strike",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-northern-vengeance",
+            "name": "Mould Northern Vengeance",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "standing-loom",
+            "name": "Standing Loom",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "cast-spirit-caller",
+            "name": "Cast: Spirit Caller",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -20150,9 +22492,9 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/northern-salmon.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
+      "stack": 10,
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Northern_Salmon",
       "names": {
@@ -20161,7 +22503,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Saumon nordique",
         "ru": "Северный лосось"
       },
-      "description": null,
+      "description": "This fish likes the water to be almost freezing cold.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -20206,13 +22548,13 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/oat-flour.png",
       "biome": "meadows",
       "tier": 1,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.2,
       "wiki": "https://valheim.weirdgloop.org/w/Oat_Flour",
       "names": {},
-      "description": null,
+      "description": "Finely ground oats, with plenty of potential.",
       "stats": null,
       "recipe": {
         "station": "Windmill",
@@ -20221,7 +22563,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "oats",
-            "name": "Oats",
+            "name": "oats",
             "amount": 1
           }
         ]
@@ -20282,11 +22624,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Oat_Milk",
       "names": {},
-      "description": null,
+      "description": "Tastes like innovation.",
       "stats": {
         "health": 37,
         "stamina": 110,
@@ -20303,12 +22645,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "oats",
-            "name": "Oats",
+            "name": "oats",
             "amount": 5
           },
           {
             "item": "ice",
-            "name": "Ice",
+            "name": "ice",
             "amount": 5
           }
         ]
@@ -20364,11 +22706,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 100,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Oat_Seeds",
       "names": {},
-      "description": null,
+      "description": "Grind them to oats in the mill, or plant to grow more seeds.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -20415,11 +22757,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Oats",
       "names": {},
-      "description": null,
+      "description": "Tasty grains, to be used as they are or to be ground into flour.",
       "stats": {
         "health": 33,
         "stamina": 33,
@@ -20436,7 +22778,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "oat-seeds",
-            "name": "Oat Seeds",
+            "name": "oat-seeds",
             "amount": 1
           }
         ]
@@ -20499,16 +22841,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/obsidian.png",
       "biome": "mountain",
       "tier": 5,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Obsidian",
       "names": {
         "cs": "Obsidián",
         "ru": "Обсидиан"
       },
-      "description": null,
+      "description": "Dark volcanic glass.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -20554,7 +22896,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "tool-shelf",
+            "name": "Tool shelf",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "obsidian-pile",
+            "name": "Obsidian Pile",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -20566,14 +22921,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Onion",
       "names": {
         "cs": "Cibule",
         "ru": "Лук"
       },
-      "description": null,
+      "description": "A crunchy and spicy taste.",
       "stats": {
         "health": 13,
         "stamina": 40,
@@ -20583,16 +22938,8 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -20666,14 +23013,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Onion_Soup",
       "names": {
         "cs": "Cibulová polévka",
         "ru": "Луковый суп"
       },
-      "description": null,
+      "description": "Deliciously rich.",
       "stats": {
         "health": 20,
         "stamina": 60,
@@ -20690,7 +23037,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "onion",
-            "name": "Onion",
+            "name": "onion",
             "amount": 3
           }
         ]
@@ -20739,8 +23086,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Ooze",
       "names": {
         "cs": "Kal",
@@ -20748,7 +23095,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Gadoue",
         "ru": "Жижа"
       },
-      "description": null,
+      "description": "Rotten and putrid-smelling. Why do you want this?",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -20824,13 +23171,13 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/oven-pancake-batter.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Oven_Pancake_Batter",
       "names": {},
-      "description": null,
+      "description": "Ready for the oven.",
       "stats": null,
       "recipe": {
         "station": "Cauldron",
@@ -20839,22 +23186,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "moose-meat",
-            "name": "Moose Meat",
+            "name": "moose-meat",
             "amount": 1
           },
           {
             "item": "poteitr",
-            "name": "Poteitr",
+            "name": "poteitr",
             "amount": 2
           },
           {
             "item": "lingonberries",
-            "name": "Lingonberries",
+            "name": "lingonberries",
             "amount": 2
           },
           {
             "item": "oat-flour",
-            "name": "Oat Flour",
+            "name": "oat-flour",
             "amount": 2
           }
         ]
@@ -20899,9 +23246,9 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/perch.png",
       "biome": "black-forest",
       "tier": 2,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
+      "stack": 10,
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Perch",
       "names": {
@@ -20910,7 +23257,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Perche",
         "ru": "Окунь"
       },
-      "description": null,
+      "description": "A tasty whitemeat fish.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -20964,11 +23311,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "drop",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 14,
       "wiki": "https://valheim.weirdgloop.org/w/Petrified_Tissue",
       "names": {},
-      "description": null,
+      "description": "A hard and sturdy material with plenty of potential. Needs to be refined in a Blast Furnace.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -21011,9 +23358,9 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/pike.png",
       "biome": "black-forest",
       "tier": 2,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
+      "stack": 10,
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Pike",
       "names": {
@@ -21022,7 +23369,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Brochet",
         "ru": "Щука"
       },
-      "description": null,
+      "description": "A freshwater fish that needs a lot of seasoning.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -21067,10 +23414,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/pine-cone.png",
       "biome": "plains",
       "tier": 6,
-      "category": "building",
+      "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 100,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Pine_Cone",
       "names": {
         "cs": "Šiška z borovice",
@@ -21078,7 +23425,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Cône de pin",
         "ru": "Сосновая шишка"
       },
-      "description": null,
+      "description": "Plant it to grow a pine tree.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -21120,7 +23467,20 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "yule-garland",
+            "name": "Yule garland",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "yule-wreath",
+            "name": "Yule wreath",
+            "level": 1,
+            "biome": "mountain"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -21130,13 +23490,13 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "black-forest",
       "tier": 2,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
       "stack": null,
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Portal",
       "names": {},
-      "description": null,
+      "description": "Connects to another portal with equal or no tag.",
       "stats": null,
       "recipe": {
         "station": "Workbench",
@@ -21145,17 +23505,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "greydwarf-eye",
-            "name": "Greydwarf Eye",
+            "name": "greydwarf-eye",
             "amount": 10
           },
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 20
           },
           {
             "item": "surtling-core",
-            "name": "Surtling Core",
+            "name": "surtling-core",
             "amount": 2
           }
         ]
@@ -21192,15 +23552,15 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/pot-shard.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Pot_Shard",
       "names": {
         "ru": "Осколок горшка"
       },
-      "description": null,
+      "description": "A fragment of something brittle.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -21249,7 +23609,26 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "large-green-pot",
+            "name": "Large green pot",
+            "level": 1,
+            "biome": "ashlands"
+          },
+          {
+            "id": "medium-green-pot",
+            "name": "Medium green pot",
+            "level": 1,
+            "biome": "ashlands"
+          },
+          {
+            "id": "small-green-pot",
+            "name": "Small green pot",
+            "level": 1,
+            "biome": "ashlands"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -21261,11 +23640,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Poteitr",
       "names": {},
-      "description": null,
+      "description": "The possibilities are practically endless. Who wouldn't want a taste?",
       "stats": {
         "health": 35,
         "stamina": 35,
@@ -21282,7 +23661,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "seed-poteitr",
-            "name": "Seed Poteitr",
+            "name": "seed-poteitr",
             "amount": 1
           }
         ]
@@ -21348,10 +23727,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/powdered-dragon-eggshells.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Powdered_Dragon_Eggshells",
       "names": {
         "ru": "Толченая драконья скорлупа"
@@ -21406,13 +23785,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Proustite_Powder",
       "names": {
         "ru": "Пруститовый порошок"
       },
-      "description": null,
+      "description": "This unstable powder packs great potential.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -21468,7 +23847,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "lava-lantern",
+            "name": "Lava Lantern",
+            "level": 1,
+            "biome": "ashlands"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -21478,9 +23864,9 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/pufferfish.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "building",
+      "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
+      "stack": 10,
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Pufferfish",
       "names": {
@@ -21489,7 +23875,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Poisson-globe",
         "ru": "Иглобрюх"
       },
-      "description": null,
+      "description": "Tasty when cooked right, but the flavour has a bit of a sting.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -21534,10 +23920,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/pungent-pebbles.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Pungent_Pebbles",
       "names": {
         "ru": "Вонючие камешки"
@@ -21592,15 +23978,15 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Queen's_Jam",
       "names": {
         "cs": "Marmeláda královny",
         "fr": "Confiture de la reine",
         "ru": "Королевский джем"
       },
-      "description": null,
+      "description": "That classic tasty blend of raspberries and blueberries.",
       "stats": {
         "health": 14,
         "stamina": 40,
@@ -21617,12 +24003,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "raspberries",
-            "name": "Raspberries",
+            "name": "raspberries",
             "amount": 8
           },
           {
             "item": "blueberries",
-            "name": "Blueberries",
+            "name": "blueberries",
             "amount": 6
           }
         ]
@@ -21671,8 +24057,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Raspberries",
       "names": {
         "cs": "Maliny",
@@ -21680,7 +24066,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Framboises",
         "ru": "Малина"
       },
-      "description": null,
+      "description": "Sweet and delicious.",
       "stats": {
         "health": 7,
         "stamina": 20,
@@ -21690,16 +24076,8 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -21785,7 +24163,32 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "blue-red-and-white-banner",
+            "name": "Blue, red and white banner",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "purple-banner",
+            "name": "Purple banner",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "white-and-red-striped-banner",
+            "name": "White and red striped banner",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "yuleklapp",
+            "name": "Yuleklapp",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {
         "provisions": "/provisions/#item=raspberries"
@@ -21799,15 +24202,15 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Raw_Fish",
       "names": {
         "cs": "Syrová ryba",
         "fr": "Poisson cru",
         "ru": "Сырая рыба"
       },
-      "description": null,
+      "description": "A good catch.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -21866,13 +24269,13 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/raw-kale-chips.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Raw_Kale_Chips",
       "names": {},
-      "description": null,
+      "description": "Ready for the oven.",
       "stats": null,
       "recipe": {
         "station": "Cauldron",
@@ -21881,7 +24284,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "kale",
-            "name": "Kale",
+            "name": "kale",
             "amount": 12
           }
         ]
@@ -21928,8 +24331,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 5,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Red_Jute",
       "names": {
         "cs": "Červená juta",
@@ -21937,7 +24340,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Jute rouge",
         "ru": "Красный джут"
       },
-      "description": null,
+      "description": "A sturdy, rough fabric.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -21998,7 +24401,32 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "mistletoe",
+            "name": "Mistletoe",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "red-jute-carpet",
+            "name": "Red Jute Carpet",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "red-jute-curtain",
+            "name": "Red Jute Curtain",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "yule-wreath",
+            "name": "Yule wreath",
+            "level": 1,
+            "biome": "mountain"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -22008,16 +24436,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/refined-eitr.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 5,
       "wiki": "https://valheim.weirdgloop.org/w/Refined_Eitr",
       "names": {
         "cs": "Zpracovaný Éitr",
         "ru": "Переработанный эйтр"
       },
-      "description": null,
+      "description": "This is the stuff of life, the poison that consumes itself. The Dvergr refine it to use in their esoteric designs.",
       "stats": null,
       "recipe": {
         "station": "Eitr Refinery",
@@ -22026,12 +24454,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "sap",
-            "name": "Sap",
+            "name": "sap",
             "amount": 1
           },
           {
             "item": "soft-tissue",
-            "name": "Soft Tissue",
+            "name": "soft-tissue",
             "amount": 1
           }
         ]
@@ -22210,6 +24638,30 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Galdr Table",
             "level": 1,
             "biome": "mistlands"
+          },
+          {
+            "id": "feathery-wreath",
+            "name": "Feathery Wreath",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "rune-table",
+            "name": "Rune table",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "unfading-candles",
+            "name": "Unfading Candles",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "grappling-hook",
+            "name": "Grappling Hook",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -22223,8 +24675,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Resin",
       "names": {
         "cs": "Pryskyřice",
@@ -22232,17 +24684,12 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Résine",
         "ru": "Смола"
       },
-      "description": null,
+      "description": "Sticky tree resin which insulates well. If put to the flame it burns slow and steady.",
       "stats": null,
       "recipe": null,
       "station": null,
       "sources": {
         "creatures": [
-          {
-            "id": "greyling",
-            "name": "Greyling",
-            "biome": "meadows"
-          },
           {
             "id": "greydwarf",
             "name": "Greydwarf",
@@ -22254,19 +24701,19 @@ globalThis.VC_ITEMS_DATA = {
             "biome": "black-forest"
           },
           {
-            "id": "greydwarf-brute",
-            "name": "Greydwarf Brute",
-            "biome": "black-forest"
+            "id": "greydwarf-shaman-deep-north",
+            "name": "Greydwarf Shaman (Deep North)",
+            "biome": "deep-north"
+          },
+          {
+            "id": "greyling",
+            "name": "Greyling",
+            "biome": "meadows"
           },
           {
             "id": "kvastur",
             "name": "Kvastur",
             "biome": "swamp"
-          },
-          {
-            "id": "greydwarf-shaman-deep-north",
-            "name": "Greydwarf Shaman (Deep North)",
-            "biome": "deep-north"
           }
         ],
         "locations": [
@@ -22425,6 +24872,66 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Fermenter",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "jack-o-turnip",
+            "name": "Jack-O-Turnip",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "raft",
+            "name": "Raft",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "sconce",
+            "name": "Sconce",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "karve",
+            "name": "Karve",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "standing-iron-torch",
+            "name": "Standing iron torch",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "standing-wood-torch",
+            "name": "Standing Wood Torch",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "unfading-candles",
+            "name": "Unfading Candles",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "resin-candle",
+            "name": "Resin candle",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "tankard",
+            "name": "Tankard",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "mead-horn-of-odin",
+            "name": "Mead Horn of Odin",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -22433,7 +24940,7 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "ripper",
       "name": "Ripper",
-      "image": "../bestiary/img/weapons/ripper.png",
+      "image": "../smithy/img/items/ripper.png",
       "biome": "ashlands",
       "tier": 8,
       "category": "weapon",
@@ -22542,8 +25049,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Root_(item)",
       "names": {
         "cs": "Kořen",
@@ -22551,7 +25058,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Racine",
         "ru": "Корень"
       },
-      "description": null,
+      "description": "An old root from an ancient tree stump. It feels both flexible and durable at the same time.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -22638,13 +25145,7 @@ globalThis.VC_ITEMS_DATA = {
       "recipe": null,
       "station": null,
       "sources": {
-        "creatures": [
-          {
-            "id": "abomination",
-            "name": "Abomination",
-            "biome": "swamp"
-          }
-        ],
+        "creatures": [],
         "locations": [],
         "traders": [],
         "raw": [
@@ -22692,14 +25193,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Royal_Jelly",
       "names": {
         "cs": "Královské želé",
         "ru": "Маточное молочко"
       },
-      "description": null,
+      "description": "Jelly fit for kings and queens.",
       "stats": {
         "health": 15,
         "stamina": 15,
@@ -22709,16 +25210,8 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [
           {
@@ -22790,16 +25283,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/sap.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.2,
       "wiki": "https://valheim.weirdgloop.org/w/Sap",
       "names": {
         "cs": "Míza",
         "ru": "Живица"
       },
-      "description": null,
+      "description": "Sacred blood from the Great Tree.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -22887,7 +25380,14 @@ globalThis.VC_ITEMS_DATA = {
         ],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "eitr-refinery",
+            "name": "Eitr Refinery",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -22899,15 +25399,15 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Sausages",
       "names": {
         "cs": "Klobásy",
         "fr": "Saucisses",
         "ru": "Колбаски"
       },
-      "description": null,
+      "description": "Links of savory, smoked meat.",
       "stats": {
         "health": 55,
         "stamina": 18,
@@ -22924,17 +25424,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "entrails",
-            "name": "Entrails",
+            "name": "entrails",
             "amount": 4
           },
           {
             "item": "boar-meat",
-            "name": "Boar Meat",
+            "name": "boar-meat",
             "amount": 1
           },
           {
             "item": "thistle",
-            "name": "Thistle",
+            "name": "thistle",
             "amount": 1
           }
         ]
@@ -22983,8 +25483,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Scale_Hide",
       "names": {
         "cs": "Šupinatá kožešina",
@@ -22992,7 +25492,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Peau écailleuse",
         "ru": "Чешуйчатая шкура"
       },
-      "description": null,
+      "description": "A pelt of glittering scales.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -23108,7 +25608,20 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "black-marble-throne",
+            "name": "Black Marble Throne",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "hare-rug",
+            "name": "Hare Rug",
+            "level": 1,
+            "biome": "mistlands"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -23120,14 +25633,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Scorching_Medley",
       "names": {
         "cs": "Pálivá směs",
         "ru": "Обжигающий салат"
       },
-      "description": null,
+      "description": "A varied diet is important, so why not try this vegetarian option?",
       "stats": {
         "health": 32,
         "stamina": 95,
@@ -23144,17 +25657,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "jotun-puffs",
-            "name": "Jotun Puffs",
+            "name": "jotun-puffs",
             "amount": 3
           },
           {
             "item": "onion",
-            "name": "Onion",
+            "name": "onion",
             "amount": 3
           },
           {
             "item": "fiddlehead",
-            "name": "Fiddlehead",
+            "name": "fiddlehead",
             "amount": 3
           }
         ]
@@ -23203,8 +25716,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "metal",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Scrap_Iron",
       "names": {
         "cs": "Železný šrot",
@@ -23212,7 +25725,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Ferraille",
         "ru": "Металлолом"
       },
-      "description": null,
+      "description": "It's old and rusty but can be smelted and used again.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -23287,10 +25800,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/seafarer-s-herbs.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 100,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Seafarer's_Herbs",
       "names": {
         "ru": "Травы мореплавателя"
@@ -23344,13 +25857,13 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/seal-blubber.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Seal_Blubber",
       "names": {},
-      "description": null,
+      "description": "The insulating fat of a creature adapted to the northern waters.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -23409,11 +25922,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Seal_Pelt",
       "names": {},
-      "description": null,
+      "description": "The thick fur helps the animal stay both warm and dry.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -23482,7 +25995,44 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-chestpiece-of-the-vanguard",
+            "name": "Cast Chestpiece of the Vanguard",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-hood-of-the-vanguard",
+            "name": "Cast Hood of the Vanguard",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-trousers-of-the-vanguard",
+            "name": "Cast Trousers of the Vanguard",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-hood-of-the-vanguard",
+            "name": "Mould Hood of the Vanguard",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "sealskin-rug",
+            "name": "Sealskin Rug",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "moose-saddle",
+            "name": "Moose Saddle",
+            "level": 2,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -23494,11 +26044,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "summoning",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 1,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Sealbreaker",
       "names": {},
-      "description": null,
+      "description": "An object used to break a Dverger seal.",
       "stats": null,
       "recipe": {
         "station": "Galdr Table",
@@ -23507,7 +26057,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "sealbreaker-fragment",
-            "name": "Sealbreaker Fragment",
+            "name": "sealbreaker-fragment",
             "amount": 9
           }
         ]
@@ -23553,11 +26103,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "summoning",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 9,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Sealbreaker_Fragment",
       "names": {},
-      "description": null,
+      "description": "A fragment of a Dvergr sealbreaker.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -23594,10 +26144,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/seasoning-of-the-gourd.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 100,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Seasoning_of_the_Gourd",
       "names": {},
       "description": "Mystical fermented squash seed spice from the frozen north, reserved for the ultimate banquets.",
@@ -23656,11 +26206,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 100,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Seed_Poteitr",
       "names": {},
-      "description": null,
+      "description": "Plant to grow poteitr.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -23707,14 +26257,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Seeker_Meat",
       "names": {
         "cs": "Maso Hledačů",
         "ru": "Мясо искателя"
       },
-      "description": null,
+      "description": "When you crack open their shells, the meat within is tender and succulent.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -23786,14 +26336,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 3,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Serpent_Meat",
       "names": {
         "cs": "Maso z hada",
         "ru": "Мясо змея"
       },
-      "description": null,
+      "description": "A slice of sea serpent. Smells fishy.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -23845,14 +26395,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 3,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Serpent_Scale",
       "names": {
         "cs": "Šupina z hada",
         "ru": "Чешуя змея"
       },
-      "description": null,
+      "description": "The shiny metal-like scale from a sea serpent.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -23903,8 +26453,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 5,
       "category": "metal",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 14,
       "wiki": "https://valheim.weirdgloop.org/w/Silver",
       "names": {
         "cs": "Stříbro",
@@ -23912,7 +26462,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Argent",
         "ru": "Серебро"
       },
-      "description": null,
+      "description": "A bar of pure silver ready to be worked.",
       "stats": null,
       "recipe": {
         "station": "Smelting",
@@ -23921,7 +26471,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "silver-ore",
-            "name": "Silver Ore",
+            "name": "silver-ore",
             "amount": 1
           }
         ]
@@ -24058,6 +26608,24 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Butcher's Table",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "treasure-chest",
+            "name": "Treasure Chest",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "scythe",
+            "name": "Scythe",
+            "level": 2,
+            "biome": null
+          },
+          {
+            "id": "rustic-drawbridge",
+            "name": "Rustic Drawbridge",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -24071,8 +26639,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 5,
       "category": "metal",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 14,
       "wiki": "https://valheim.weirdgloop.org/w/Silver_Ore",
       "names": {
         "cs": "Stříbrná ruda",
@@ -24080,7 +26648,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Minerai d'argent",
         "ru": "Серебряная руда"
       },
-      "description": null,
+      "description": "Unrefined silver. Needs to be refined in a smelter.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -24168,20 +26736,27 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "unfading-candles",
+            "name": "Unfading Candles",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
     {
       "id": "slayer",
       "name": "Slayer",
-      "image": "../bestiary/img/weapons/slayer.png",
+      "image": "../smithy/img/items/slayer.png",
       "biome": "ashlands",
       "tier": 8,
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 4,
       "wiki": "https://valheim.weirdgloop.org/w/Slayer",
       "names": {
         "ru": "Убийца"
@@ -24277,14 +26852,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Smoke_Puff",
       "names": {
         "cs": "Kouřovka",
         "ru": "Дымчатый гриб"
       },
-      "description": null,
+      "description": "Hopefully it tastes better after cooking.",
       "stats": {
         "health": 15,
         "stamina": 15,
@@ -24294,16 +26869,8 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -24375,13 +26942,13 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/snowball.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Snowball",
       "names": {},
-      "description": null,
+      "description": "Looks like a perfect thing to throw...",
       "stats": null,
       "recipe": {
         "station": "Crafted by hand, Deep North.",
@@ -24390,7 +26957,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "ice",
-            "name": "Ice",
+            "name": "ice",
             "amount": 5
           }
         ]
@@ -24438,7 +27005,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "snow-lantern",
+            "name": "Snow Lantern",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -24450,8 +27024,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 40,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Soft_Tissue",
       "names": {
         "cs": "Měkká Tkáň",
@@ -24459,7 +27033,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Tissu délicat",
         "ru": "Мягкая ткань"
       },
-      "description": null,
+      "description": "It still fizzes softly with ancient memories.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -24525,7 +27099,7 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "splitnir",
       "name": "Splitnir",
-      "image": "../bestiary/img/weapons/splitnir.png",
+      "image": "../smithy/img/items/splitnir.png",
       "biome": "ashlands",
       "tier": 8,
       "category": "weapon",
@@ -24632,8 +27206,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Stone",
       "names": {
         "cs": "Kámen",
@@ -24641,7 +27215,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Pierre",
         "ru": "Камень"
       },
-      "description": null,
+      "description": "It's a rock.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -24762,6 +27336,102 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Oven",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "campfire",
+            "name": "Campfire",
+            "level": 1,
+            "biome": "meadows"
+          },
+          {
+            "id": "hearth",
+            "name": "Hearth",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "hot-tub",
+            "name": "Hot Tub",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "stone-throne",
+            "name": "Stone Throne",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "smelter",
+            "name": "Smelter",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "blast-furnace",
+            "name": "Blast Furnace",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "charcoal-kiln",
+            "name": "Charcoal Kiln",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "eternal-pyre",
+            "name": "Eternal Pyre",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "frigid-kiln",
+            "name": "Frigid Kiln",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "frost-foundry",
+            "name": "Frost Foundry",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "hammer",
+            "name": "Hammer",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "hoe",
+            "name": "Hoe",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "paved-road",
+            "name": "Paved road",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "wisp-fountain",
+            "name": "Wisp Fountain",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "stone-oven",
+            "name": "Stone Oven",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "windmill",
+            "name": "Windmill",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -24775,13 +27445,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Sulfur",
       "names": {
         "ru": "Сера"
       },
-      "description": null,
+      "description": "Smells like rotten eggs.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -24828,7 +27498,14 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "lava-lantern",
+            "name": "Lava Lantern",
+            "level": 1,
+            "biome": "ashlands"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -24840,14 +27517,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 5,
       "wiki": "https://valheim.weirdgloop.org/w/Surtling_Core",
       "names": {
         "cs": "Jádro Surtlinga",
         "ru": "Ядро суртлинга"
       },
-      "description": null,
+      "description": "It throbs with inner heat.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -24925,6 +27602,48 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Oven",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "bonfire",
+            "name": "Bonfire",
+            "level": 1,
+            "biome": "swamp"
+          },
+          {
+            "id": "smelter",
+            "name": "Smelter",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "blast-furnace",
+            "name": "Blast Furnace",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "charcoal-kiln",
+            "name": "Charcoal Kiln",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "ward",
+            "name": "Ward",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "battering-ram",
+            "name": "Battering Ram",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "stone-oven",
+            "name": "Stone Oven",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -24938,14 +27657,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Tar",
       "names": {
         "cs": "Dehet",
         "ru": "Деготь"
       },
-      "description": null,
+      "description": "A sticky lump of tar.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -25020,7 +27739,56 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "darkwood-chair",
+            "name": "Darkwood Chair",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "hot-tub",
+            "name": "Hot Tub",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "long-carved-table",
+            "name": "Long Carved Table",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "long-heavy-table",
+            "name": "Long Heavy Table",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "round-table",
+            "name": "Round Table",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "square-carved-table",
+            "name": "Square Carved Table",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "black-metal-chest",
+            "name": "Black metal chest",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "wardrobe",
+            "name": "Wardrobe",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -25030,9 +27798,9 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/tetra.png",
       "biome": "mountain",
       "tier": 5,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
+      "stack": 10,
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Tetra",
       "names": {
@@ -25041,7 +27809,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Tétra",
         "ru": "Тетра"
       },
-      "description": null,
+      "description": "Spending its whole life in the dark, it has no need for eyes.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -25088,8 +27856,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Thistle",
       "names": {
         "cs": "Bodlák",
@@ -25097,7 +27865,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Chardon",
         "ru": "Чертополох"
       },
-      "description": null,
+      "description": "Beautiful but prickly.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -25187,6 +27955,24 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Spice Rack",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "fey-lights",
+            "name": "Fey Lights",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "maypole",
+            "name": "Maypole",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "birdnest",
+            "name": "Birdnest",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -25198,13 +27984,13 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/thunderblood-essence.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Thunderblood_Essence",
       "names": {},
-      "description": null,
+      "description": "Unstable, erratic and...alive?",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -25300,7 +28086,20 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "cast-lightning-strike",
+            "name": "Cast Lightning Strike",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-lightning-strike",
+            "name": "Mould Lightning Strike",
+            "level": 1,
+            "biome": "deep-north"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -25310,13 +28109,13 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/timberwood.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Timberwood",
       "names": {},
-      "description": null,
+      "description": "A sturdy kind of wood, excellent for mighty halls.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -25475,6 +28274,222 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Smoker",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "cast-nord-atgeir",
+            "name": "Cast Nord Atgeir",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-axe",
+            "name": "Cast Nord Axe",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-bow",
+            "name": "Cast Nord Bow",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-buckler",
+            "name": "Cast Nord Buckler",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-crossbow",
+            "name": "Cast Nord Crossbow",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-dagger",
+            "name": "Cast Nord Dagger",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-greataxe",
+            "name": "Cast Nord Greataxe",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-greatshield",
+            "name": "Cast Nord Greatshield",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-mace",
+            "name": "Cast Nord Mace",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-shield",
+            "name": "Cast Nord Shield",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-sledge",
+            "name": "Cast Nord Sledge",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-spear",
+            "name": "Cast Nord Spear",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "cast-nord-sword",
+            "name": "Cast Nord Sword",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-atgeir",
+            "name": "Mould Nord Atgeir",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-axe",
+            "name": "Mould Nord Axe",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-bow",
+            "name": "Mould Nord Bow",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-buckler",
+            "name": "Mould Nord Buckler",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-crossbow",
+            "name": "Mould Nord Crossbow",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-dagger",
+            "name": "Mould Nord Dagger",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-greataxe",
+            "name": "Mould Nord Greataxe",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-greatshield",
+            "name": "Mould Nord Greatshield",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-mace",
+            "name": "Mould Nord Mace",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-shield",
+            "name": "Mould Nord Shield",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-sledge",
+            "name": "Mould Nord Sledge",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-spear",
+            "name": "Mould Nord Spear",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "mould-nord-sword",
+            "name": "Mould Nord Sword",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "antler-throne",
+            "name": "Antler Throne",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "carved-bench",
+            "name": "Carved Bench",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "long-carved-table",
+            "name": "Long Carved Table",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "square-carved-table",
+            "name": "Square Carved Table",
+            "level": 1,
+            "biome": "deep-north"
+          },
+          {
+            "id": "timberwood-gate",
+            "name": "Timberwood Gate",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "standing-loom",
+            "name": "Standing Loom",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "smith-s-aprons",
+            "name": "Smith's Aprons",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "wardrobe",
+            "name": "Wardrobe",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "moose-saddle",
+            "name": "Moose Saddle",
+            "level": 2,
+            "biome": null
+          },
+          {
+            "id": "timberwood-drawbridge",
+            "name": "Timberwood Drawbridge",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -25488,8 +28503,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "metal",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 8,
       "wiki": "https://valheim.weirdgloop.org/w/Tin",
       "names": {
         "cs": "Cín",
@@ -25497,7 +28512,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Étain",
         "ru": "Олово"
       },
-      "description": null,
+      "description": "A bar of pure tin ready to be worked.",
       "stats": null,
       "recipe": {
         "station": "Smelter",
@@ -25506,7 +28521,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "tin-ore",
-            "name": "Tin Ore",
+            "name": "tin-ore",
             "amount": 1
           }
         ]
@@ -25545,6 +28560,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Mead Ketill",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "butcher-knife",
+            "name": "Butcher knife",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -25558,8 +28579,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "metal",
       "teleportable": false,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 8,
       "wiki": "https://valheim.weirdgloop.org/w/Tin_Ore",
       "names": {
         "cs": "Cínová ruda",
@@ -25567,7 +28588,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Minerai d'étain",
         "ru": "Оловянная руда"
       },
-      "description": null,
+      "description": "Unrefined tin. Needs to be refined in a smelter.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -25604,10 +28625,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/toadstool.png",
       "biome": "plains",
       "tier": 6,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Toadstool",
       "names": {
         "ru": "Поганка"
@@ -25667,8 +28688,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Troll_Hide",
       "names": {
         "cs": "Trollí kůže",
@@ -25676,7 +28697,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Peau de troll",
         "ru": "Шкура тролля"
       },
-      "description": null,
+      "description": "A thick and sturdy hide. This is why trolls are so hard to kill.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -25685,11 +28706,6 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "troll",
             "name": "Troll",
-            "biome": "black-forest"
-          },
-          {
-            "id": "trollfish",
-            "name": "Trollfish",
             "biome": "black-forest"
           }
         ],
@@ -25765,7 +28781,20 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "barber-station",
+            "name": "Barber Station",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "horn-of-celebration",
+            "name": "Horn of Celebration",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -25833,9 +28862,9 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/trollfish.png",
       "biome": "black-forest",
       "tier": 2,
-      "category": "building",
+      "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
+      "stack": 10,
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Trollfish",
       "names": {
@@ -25844,7 +28873,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Poisson-troll",
         "ru": "Тролль-рыба"
       },
-      "description": null,
+      "description": "This fish is a nuisance in the local streams.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -25896,9 +28925,9 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/tuna.png",
       "biome": "ocean",
       "tier": 3,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
+      "stack": 10,
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Tuna",
       "names": {
@@ -25907,7 +28936,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Thon",
         "ru": "Тунец"
       },
-      "description": null,
+      "description": "Chicken of the sea...",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -25954,14 +28983,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Turnip",
       "names": {
         "cs": "Tuřín",
         "ru": "Репа"
       },
-      "description": null,
+      "description": "A turnip.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -26017,6 +29046,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Spice Rack",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "jack-o-turnip",
+            "name": "Jack-O-Turnip",
+            "level": 1,
+            "biome": "swamp"
           }
         ]
       },
@@ -26030,15 +29065,15 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Turnip_Stew",
       "names": {
         "cs": "Polévka z tuřínu",
         "fr": "Soupe de navets",
         "ru": "Рагу из репы"
       },
-      "description": null,
+      "description": "Nutritious and restorative.",
       "stats": {
         "health": 18,
         "stamina": 55,
@@ -26055,12 +29090,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "boar-meat",
-            "name": "Boar Meat",
+            "name": "boar-meat",
             "amount": 1
           },
           {
             "item": "turnip",
-            "name": "Turnip",
+            "name": "turnip",
             "amount": 3
           }
         ]
@@ -26107,16 +29142,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/unbaked-lox-pie.png",
       "biome": "plains",
       "tier": 6,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Unbaked_Lox_Pie",
       "names": {
         "cs": "Masový koláč z Loxe",
         "ru": "Пирог из мяса быкоящера"
       },
-      "description": null,
+      "description": "Ready for the oven.",
       "stats": null,
       "recipe": {
         "station": "Food Preparation Table",
@@ -26125,17 +29160,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cloudberries",
-            "name": "Cloudberries",
+            "name": "cloudberries",
             "amount": 2
           },
           {
             "item": "lox-meat",
-            "name": "Lox Meat",
+            "name": "lox-meat",
             "amount": 2
           },
           {
             "item": "barley-flour",
-            "name": "Barley Flour",
+            "name": "barley-flour",
             "amount": 4
           }
         ]
@@ -26180,10 +29215,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/unbaked-poteitr.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Unbaked_Poteitr",
       "names": {},
       "description": null,
@@ -26195,22 +29230,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "seal-blubber",
-            "name": "Seal Blubber",
+            "name": "seal-blubber",
             "amount": 1
           },
           {
             "item": "kale",
-            "name": "Kale",
+            "name": "kale",
             "amount": 2
           },
           {
             "item": "poteitr",
-            "name": "Poteitr",
+            "name": "poteitr",
             "amount": 1
           },
           {
             "item": "oat-flour",
-            "name": "Oat Flour",
+            "name": "oat-flour",
             "amount": 2
           }
         ]
@@ -26255,15 +29290,15 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/unbaked-sweetbread.png",
       "biome": "plains",
       "tier": 6,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Unbaked_Sweetbread",
       "names": {
         "ru": "Сдобная булка с глазурью"
       },
-      "description": null,
+      "description": "Ready for the oven.",
       "stats": null,
       "recipe": {
         "station": "Food Preparation Table",
@@ -26272,22 +29307,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cloudberries",
-            "name": "Cloudberries",
+            "name": "cloudberries",
             "amount": 2
           },
           {
             "item": "egg",
-            "name": "Egg",
+            "name": "egg",
             "amount": 1
           },
           {
             "item": "barley-flour",
-            "name": "Barley Flour",
+            "name": "barley-flour",
             "amount": 1
           },
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 1
           }
         ]
@@ -26334,14 +29369,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Uncooked_Fish_'n'_Bread",
       "names": {
         "cs": "Ryba s chlebem",
         "ru": "Рыба с хлебом"
       },
-      "description": null,
+      "description": "Ready for the oven.",
       "stats": null,
       "recipe": {
         "station": "Food Preparation Table",
@@ -26350,12 +29385,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "anglerfish",
-            "name": "Anglerfish",
+            "name": "anglerfish",
             "amount": 1
           },
           {
             "item": "bread-dough",
-            "name": "Bread Dough",
+            "name": "bread-dough",
             "amount": 2
           }
         ]
@@ -26400,16 +29435,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/uncooked-honey-glazed-chicken.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Uncooked_Honey_Glazed_Chicken",
       "names": {
         "cs": "Kuře na medu",
         "ru": "Курятина в медовой глазури"
       },
-      "description": null,
+      "description": "Ready for the oven.",
       "stats": null,
       "recipe": {
         "station": "Food Preparation Table",
@@ -26418,17 +29453,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "chicken-meat",
-            "name": "Chicken Meat",
+            "name": "chicken-meat",
             "amount": 1
           },
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 3
           },
           {
             "item": "jotun-puffs",
-            "name": "Jotun Puffs",
+            "name": "jotun-puffs",
             "amount": 2
           }
         ]
@@ -26475,14 +29510,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Uncooked_Meat_Platter",
       "names": {
         "cs": "Masový talíř",
         "ru": "Мясное ассорти"
       },
-      "description": null,
+      "description": "Ready for the oven.",
       "stats": null,
       "recipe": {
         "station": "Food Preparation Table",
@@ -26491,17 +29526,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "seeker-meat",
-            "name": "Seeker Meat",
+            "name": "seeker-meat",
             "amount": 1
           },
           {
             "item": "lox-meat",
-            "name": "Lox Meat",
+            "name": "lox-meat",
             "amount": 1
           },
           {
             "item": "hare-meat",
-            "name": "Hare Meat",
+            "name": "hare-meat",
             "amount": 1
           }
         ]
@@ -26546,16 +29581,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/uncooked-misthare-supreme.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Uncooked_Misthare_Supreme",
       "names": {
         "cs": "Supreme z mlžného zajíce",
         "ru": "Гуляш из зайчатины"
       },
-      "description": null,
+      "description": "Ready for the oven.",
       "stats": null,
       "recipe": {
         "station": "Food Preparation Table",
@@ -26564,17 +29599,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "hare-meat",
-            "name": "Hare Meat",
+            "name": "hare-meat",
             "amount": 1
           },
           {
             "item": "jotun-puffs",
-            "name": "Jotun Puffs",
+            "name": "jotun-puffs",
             "amount": 3
           },
           {
             "item": "carrot",
-            "name": "Carrot",
+            "name": "carrot",
             "amount": 2
           }
         ]
@@ -26619,15 +29654,15 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/uncooked-piquant-pie.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Uncooked_Piquant_Pie",
       "names": {
         "ru": "Пряный пирог"
       },
-      "description": null,
+      "description": "Ready for the oven.",
       "stats": null,
       "recipe": {
         "station": "Food Preparation Table",
@@ -26636,17 +29671,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "vineberry-cluster",
-            "name": "Vineberry Cluster",
+            "name": "vineberry-cluster",
             "amount": 2
           },
           {
             "item": "asksvin-tail",
-            "name": "Asksvin Tail",
+            "name": "asksvin-tail",
             "amount": 2
           },
           {
             "item": "barley-flour",
-            "name": "Barley Flour",
+            "name": "barley-flour",
             "amount": 4
           }
         ]
@@ -26691,15 +29726,15 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/uncooked-roasted-crust-pie.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Uncooked_Roasted_Crust_Pie",
       "names": {
         "ru": "Пирог с поджаристой коркой"
       },
-      "description": null,
+      "description": "Ready for the oven.",
       "stats": null,
       "recipe": {
         "station": "Food Preparation Table",
@@ -26708,17 +29743,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "vineberry-cluster",
-            "name": "Vineberry Cluster",
+            "name": "vineberry-cluster",
             "amount": 2
           },
           {
             "item": "volture-egg",
-            "name": "Volture Egg",
+            "name": "volture-egg",
             "amount": 1
           },
           {
             "item": "barley-flour",
-            "name": "Barley Flour",
+            "name": "barley-flour",
             "amount": 4
           }
         ]
@@ -26765,14 +29800,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Uncooked_Stuffed_Mushroom",
       "names": {
         "cs": "Plněná houba",
         "ru": "Фаршированный гриб"
       },
-      "description": null,
+      "description": "Ready for the oven.",
       "stats": null,
       "recipe": {
         "station": "Food Preparation Table",
@@ -26781,17 +29816,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "magecap",
-            "name": "Magecap",
+            "name": "magecap",
             "amount": 3
           },
           {
             "item": "blood-clot",
-            "name": "Blood Clot",
+            "name": "blood-clot",
             "amount": 1
           },
           {
             "item": "turnip",
-            "name": "Turnip",
+            "name": "turnip",
             "amount": 2
           }
         ]
@@ -26838,13 +29873,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 5,
       "wiki": "https://valheim.weirdgloop.org/w/Vile_Ribcage",
       "names": {
         "ru": "Гнилостные ребра"
       },
-      "description": null,
+      "description": "A relic of savage strength, perfect for forging armour that bears the wild’s fury.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -26969,14 +30004,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Vineberry_Cluster",
       "names": {
         "cs": "Trs vína",
         "ru": "Гроздь лозовых ягод"
       },
-      "description": null,
+      "description": "These juicy berries are both sour and sweet.",
       "stats": {
         "health": 30,
         "stamina": 30,
@@ -26986,16 +30021,8 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -27080,15 +30107,15 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/volture-egg.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Volture_Egg",
       "names": {
         "ru": "Яйцо стервулканника"
       },
-      "description": null,
+      "description": "Warm to the touch, and full of protein.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -27132,14 +30159,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Volture_Meat",
       "names": {
         "cs": "Sopí maso",
         "ru": "Мясо стервулканника"
       },
-      "description": null,
+      "description": "Given that this bird feasts on all kinds of things, you'd better cook its meat before you even think about eating it.",
       "stats": {
         "health": 70,
         "stamina": 24,
@@ -27156,7 +30183,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "volture-meat",
-            "name": "Volture Meat",
+            "name": "volture-meat",
             "amount": 1
           }
         ]
@@ -27220,16 +30247,16 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/wisp.png",
       "biome": null,
       "tier": null,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Wisp",
       "names": {
         "cs": "Dušička",
         "ru": "Светлячок"
       },
-      "description": null,
+      "description": "It keeps whispering jibberish...",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -27263,7 +30290,14 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "wisp-torch",
+            "name": "Wisp Torch",
+            "level": 1,
+            "biome": "mistlands"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -27275,11 +30309,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "summoning",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 30,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Withered_Bone",
       "names": {},
-      "description": null,
+      "description": "A giant bone, knotted like old wood.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -27333,24 +30367,19 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 5,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Wolf_Fang",
       "names": {
         "cs": "Vlčí tesák",
         "ru": "Волчий клык"
       },
-      "description": null,
+      "description": "Still sharp.",
       "stats": null,
       "recipe": null,
       "station": null,
       "sources": {
         "creatures": [
-          {
-            "id": "wolf",
-            "name": "Wolf",
-            "biome": "mountain"
-          },
           {
             "id": "fenring",
             "name": "Fenring",
@@ -27359,6 +30388,11 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "ulv",
             "name": "Ulv",
+            "biome": "mountain"
+          },
+          {
+            "id": "wolf",
+            "name": "Wolf",
             "biome": "mountain"
           }
         ],
@@ -27425,8 +30459,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 5,
       "category": "food-ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Wolf_Meat",
       "names": {
         "cs": "Vlčí maso",
@@ -27499,8 +30533,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 5,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Wolf_Pelt",
       "names": {
         "cs": "Vlčí kůže",
@@ -27508,7 +30542,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Peau de loup",
         "ru": "Шкура волка"
       },
-      "description": null,
+      "description": "A pelt of shaggy fur.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -27612,7 +30646,26 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "dragon-bed",
+            "name": "Dragon Bed",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "stone-throne",
+            "name": "Stone Throne",
+            "level": 1,
+            "biome": "mountain"
+          },
+          {
+            "id": "wolf-rug",
+            "name": "Wolf Rug",
+            "level": 1,
+            "biome": "mountain"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -27624,13 +30677,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 5,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Wolf_Skewer",
       "names": {
         "ru": "Волк на шпажке"
       },
-      "description": null,
+      "description": "Dripping with taste.",
       "stats": {
         "health": 65,
         "stamina": 21,
@@ -27647,17 +30700,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "wolf-meat",
-            "name": "Wolf Meat",
+            "name": "wolf-meat",
             "amount": 1
           },
           {
             "item": "mushroom",
-            "name": "Mushroom",
+            "name": "mushroom",
             "amount": 2
           },
           {
             "item": "onion",
-            "name": "Onion",
+            "name": "onion",
             "amount": 1
           }
         ]
@@ -27753,7 +30806,14 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "rustic-drawbridge",
+            "name": "Rustic Drawbridge",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -27765,8 +30825,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Wood",
       "names": {
         "cs": "Dřevo",
@@ -27774,7 +30834,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Bois",
         "ru": "Древесина"
       },
-      "description": null,
+      "description": "Good strong wood to build with.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -28145,6 +31205,180 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Cooking Station",
             "level": 1,
             "biome": null
+          },
+          {
+            "id": "antler-pickaxe",
+            "name": "Antler Pickaxe",
+            "level": 1,
+            "biome": "meadows"
+          },
+          {
+            "id": "bed",
+            "name": "Bed",
+            "level": 1,
+            "biome": "meadows"
+          },
+          {
+            "id": "campfire",
+            "name": "Campfire",
+            "level": 1,
+            "biome": "meadows"
+          },
+          {
+            "id": "hot-tub",
+            "name": "Hot Tub",
+            "level": 1,
+            "biome": "plains"
+          },
+          {
+            "id": "iron-fire-pit",
+            "name": "Iron Fire Pit",
+            "level": 1,
+            "biome": "meadows"
+          },
+          {
+            "id": "maypole",
+            "name": "Maypole",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "yule-tree",
+            "name": "Yule Tree",
+            "level": 1,
+            "biome": "black-forest"
+          },
+          {
+            "id": "tanning-rack",
+            "name": "Tanning Rack",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "hammer",
+            "name": "Hammer",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "chest",
+            "name": "Chest",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "beehive",
+            "name": "Beehive",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "grinding-wheel",
+            "name": "Grinding wheel",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "forge-bellows",
+            "name": "Forge bellows",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "forge-toolrack",
+            "name": "Forge Toolrack",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "anvils",
+            "name": "Anvils",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "chopping-block",
+            "name": "Chopping block",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "stakewall",
+            "name": "Stakewall",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "sharp-stakes",
+            "name": "Sharp stakes",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "raft",
+            "name": "Raft",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "sconce",
+            "name": "Sconce",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "cart",
+            "name": "Cart",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "smith-s-anvil",
+            "name": "Smith's Anvil",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "sign",
+            "name": "Sign",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "standing-wood-torch",
+            "name": "Standing Wood Torch",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "black-metal-chest",
+            "name": "Black metal chest",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "hoe",
+            "name": "Hoe",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "barrel",
+            "name": "Barrel",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "windmill",
+            "name": "Windmill",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "butcher-knife",
+            "name": "Butcher knife",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -28156,10 +31390,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/woodland-herb-blend.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "food-ingredient",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 100,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Woodland_Herb_Blend",
       "names": {
         "ru": "Смесь лесных трав"
@@ -28234,11 +31468,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Writhan_Roots",
       "names": {},
-      "description": null,
+      "description": "The gnarled body parts of a strange, offputting creature.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -28285,7 +31519,14 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": []
+        "stations": [
+          {
+            "id": "birdnest",
+            "name": "Birdnest",
+            "level": 1,
+            "biome": null
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -28297,8 +31538,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Yellow_Mushroom",
       "names": {
         "cs": "Žlutá houba",
@@ -28306,7 +31547,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Champignon jaune",
         "ru": "Желтый гриб"
       },
-      "description": null,
+      "description": "An energetic glowing mushroom.",
       "stats": {
         "health": 10,
         "stamina": 30,
@@ -28316,16 +31557,8 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -28398,14 +31631,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Yggdrasil_Porridge",
       "names": {
         "cs": "Yggdrasilská kaše",
         "ru": "Иггдрасильская каша"
       },
-      "description": null,
+      "description": "Made with sap from the great tree. Even a mouthful imparts a warm glow to your whole body.",
       "stats": {
         "health": 27,
         "stamina": 13,
@@ -28422,17 +31655,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "sap",
-            "name": "Sap",
+            "name": "sap",
             "amount": 4
           },
           {
             "item": "barley",
-            "name": "Barley",
+            "name": "barley",
             "amount": 3
           },
           {
             "item": "royal-jelly",
-            "name": "Royal Jelly",
+            "name": "royal-jelly",
             "amount": 2
           }
         ]
@@ -28479,10 +31712,10 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/yggdrasil-wood.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Yggdrasil_Wood",
       "names": {
         "cs": "Dřevo Yggdrasilu",
@@ -28490,7 +31723,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Bois d'Yggdrasil",
         "ru": "Древесина Иггдрасиля"
       },
-      "description": null,
+      "description": "Godflesh, wood from the Great Tree.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -28578,6 +31811,66 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Galdr Table",
             "level": 1,
             "biome": "mistlands"
+          },
+          {
+            "id": "black-metal-pickaxe",
+            "name": "Black Metal Pickaxe",
+            "level": 2,
+            "biome": "mistlands"
+          },
+          {
+            "id": "ballista",
+            "name": "Ballista",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "dvergr-stakewall",
+            "name": "Dvergr stakewall",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "dvergr-sharp-stakes",
+            "name": "Dvergr sharp stakes",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "rune-table",
+            "name": "Rune table",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "wisp-torch",
+            "name": "Wisp Torch",
+            "level": 1,
+            "biome": "mistlands"
+          },
+          {
+            "id": "drakkar",
+            "name": "Drakkar",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "eitr-refinery",
+            "name": "Eitr Refinery",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "grappling-hook",
+            "name": "Grappling Hook",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "sap-extractor",
+            "name": "Sap Extractor",
+            "level": 1,
+            "biome": null
           }
         ]
       },
@@ -28591,8 +31884,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "valuable",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Ymir_Flesh",
       "names": {
         "cs": "Maso Ymira",
@@ -29221,7 +32514,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": 3,
-      "weight": null,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Bile_Bomb",
       "names": {
         "ru": "Желчная бомба"
@@ -29961,7 +33254,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Bleeding_Berserkir_Axes",
       "names": {
         "cs": "Krvavé berserkské sekery",
@@ -30187,7 +33480,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": 20,
-      "weight": null,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Bloodgold_Arrow",
       "names": {},
       "description": "An arrow forged of perhaps the hardest materials in this world...",
@@ -30258,7 +33551,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": 20,
-      "weight": null,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Bloodgold_Bolt",
       "names": {},
       "description": "A bolt forged of perhaps the hardest materials in this world...",
@@ -30398,7 +33691,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "shield",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 4,
       "wiki": "https://valheim.weirdgloop.org/w/Bone_Tower_Shield",
       "names": {
         "cs": "Kostěná pavéza",
@@ -30622,7 +33915,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "shield",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 3,
       "wiki": "https://valheim.weirdgloop.org/w/Bronze_Buckler",
       "names": {
         "cs": "Bronzový pukléř",
@@ -31060,7 +34353,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 4,
       "wiki": "https://valheim.weirdgloop.org/w/Brutal_Slayer",
       "names": {
         "ru": "Жестокий убийца"
@@ -31280,7 +34573,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "shield",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 5,
       "wiki": "https://valheim.weirdgloop.org/w/Carapace_Buckler",
       "names": {
         "ru": "Панцирный баклер"
@@ -31418,7 +34711,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 1.5,
       "wiki": "https://valheim.weirdgloop.org/w/Carapace_Spear",
       "names": {
         "cs": "Kopí z krunýře",
@@ -32156,13 +35449,13 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "dyrnwyn",
       "name": "Dyrnwyn",
-      "image": "../bestiary/img/weapons/dyrnwyn.png",
+      "image": "../smithy/img/items/dyrnwyn.png",
       "biome": "ashlands",
       "tier": 8,
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 0.8,
       "wiki": "https://valheim.weirdgloop.org/w/Dyrnwyn",
       "names": {
         "cs": "Dyrnwyn",
@@ -32242,13 +35535,13 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "early-axes",
       "name": "Early Axes",
-      "image": "../bestiary/img/weapons/early-axes.png",
+      "image": "../smithy/img/items/early-axes.png",
       "biome": "meadows",
       "tier": 1,
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Early_Axes",
       "names": {
         "ru": "Древние топоры"
@@ -32317,13 +35610,13 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "echo-spike",
       "name": "Echo Spike",
-      "image": "../bestiary/img/weapons/echo-spike.png",
+      "image": "../smithy/img/items/echo-spike.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Echo_Spike",
       "names": {},
       "description": "A chill that goes right through to the bone.",
@@ -32391,7 +35684,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": 10,
-      "weight": null,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Ember_Charge",
       "names": {},
       "description": "Trapped embers, ready to burst. Caution is advised.",
@@ -32904,7 +36197,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 1.5,
       "wiki": "https://valheim.weirdgloop.org/w/Flint_Axe",
       "names": {
         "cs": "Sekera z pazourku",
@@ -33284,7 +36577,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2.5,
       "wiki": "https://valheim.weirdgloop.org/w/Frostfire_Atgeir",
       "names": {},
       "description": "Let the flames begin to devour, while the ice claims whatever remains.",
@@ -33436,7 +36729,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 1.5,
       "wiki": "https://valheim.weirdgloop.org/w/Frostfire_Bow",
       "names": {},
       "description": "Keep your head cool as you draw, and then let your fury loose with your arrows.",
@@ -33513,7 +36806,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 1.5,
       "wiki": "https://valheim.weirdgloop.org/w/Frostfire_Crossbow",
       "names": {},
       "description": "If your enemies don't freeze as you take aim, they are sure to do so once they are hit.",
@@ -33590,7 +36883,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Frostfire_Dagger",
       "names": {},
       "description": "A cut from this blade stings like ice, then burns like the flame.",
@@ -33667,7 +36960,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2.5,
       "wiki": "https://valheim.weirdgloop.org/w/Frostfire_Greataxe",
       "names": {},
       "description": "Strike your foes with a frozen inferno!",
@@ -33744,7 +37037,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 4,
       "wiki": "https://valheim.weirdgloop.org/w/Frostfire_Greatsword",
       "names": {},
       "description": "The choice between a fiery end and a frozen one is simple: Both at the same time.",
@@ -33819,7 +37112,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Frostfire_Knucklechains",
       "names": {},
       "description": "A slight risk of frostbite is inevitable.",
@@ -33894,7 +37187,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Frostfire_Mace",
       "names": {},
       "description": "Are those sparks that fly as this weapon finds its impact, or are they shards of ice?",
@@ -33969,7 +37262,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 4,
       "wiki": "https://valheim.weirdgloop.org/w/Frostfire_Sledge",
       "names": {},
       "description": "Is it so cold that it's burning, or so hot that it's freezing?",
@@ -34044,7 +37337,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 1.5,
       "wiki": "https://valheim.weirdgloop.org/w/Frostfire_Spear",
       "names": {},
       "description": "Dipped in frozen flames, this spear spells certain doom.",
@@ -34119,7 +37412,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 0.8,
       "wiki": "https://valheim.weirdgloop.org/w/Frostfire_Sword",
       "names": {},
       "description": "Flames dance along this blade, but are they hot or cold?",
@@ -34279,7 +37572,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2.5,
       "wiki": "https://valheim.weirdgloop.org/w/Himminafl",
       "names": {
         "ru": "Химминафль"
@@ -34666,7 +37959,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "shield",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 4,
       "wiki": "https://valheim.weirdgloop.org/w/Iron_Buckler",
       "names": {
         "fr": "Bouclier en fer",
@@ -35034,7 +38327,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "shield",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 4,
       "wiki": "https://valheim.weirdgloop.org/w/Iron_Tower_Shield",
       "names": {
         "cs": "Pavéza ze železa",
@@ -35175,7 +38468,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Jotun_Bane",
       "names": {
         "cs": "Zhouba Jótunů",
@@ -35403,13 +38696,13 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "lightning-strike",
       "name": "Lightning Strike",
-      "image": "../bestiary/img/weapons/lightning-strike.png",
+      "image": "../smithy/img/items/lightning-strike.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Lightning_Strike",
       "names": {},
       "description": "Simply point, and you shall summon the wrath of the sky.",
@@ -35845,13 +39138,13 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "nord-buckler",
       "name": "Nord Buckler",
-      "image": "../bestiary/img/weapons/nord-buckler.png",
+      "image": "../smithy/img/items/nord-buckler.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "shield",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 4,
       "wiki": "https://valheim.weirdgloop.org/w/Nord_Buckler",
       "names": {},
       "description": "Stay safe, and do so in style.",
@@ -35907,13 +39200,13 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "nord-greatshield",
       "name": "Nord Greatshield",
-      "image": "../bestiary/img/weapons/nord-greatshield.png",
+      "image": "../smithy/img/items/nord-greatshield.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "shield",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 5,
       "wiki": "https://valheim.weirdgloop.org/w/Nord_Greatshield",
       "names": {},
       "description": "Stay safe, and do so in style.",
@@ -35969,13 +39262,13 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "nord-shield",
       "name": "Nord Shield",
-      "image": "../bestiary/img/weapons/nord-shield.png",
+      "image": "../smithy/img/items/nord-shield.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "shield",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 5,
       "wiki": "https://valheim.weirdgloop.org/w/Nord_Shield",
       "names": {},
       "description": "Stay safe, and do so in style.",
@@ -36031,13 +39324,13 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "northern-vengeance",
       "name": "Northern Vengeance",
-      "image": "../bestiary/img/weapons/northern-vengeance.png",
+      "image": "../smithy/img/items/northern-vengeance.png",
       "biome": "deep-north",
       "tier": 9,
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Northern_Vengeance",
       "names": {},
       "description": "A caged snowflake, endless patterns emerging from within...",
@@ -36178,7 +39471,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": 5,
-      "weight": null,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Ooze_Bomb",
       "names": {
         "cs": "Bomba ze slizu",
@@ -36491,7 +39784,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Primal_Berserkir_Axes",
       "names": {
         "cs": "Prvotní berserkské sekery",
@@ -36571,7 +39864,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 4,
       "wiki": "https://valheim.weirdgloop.org/w/Primal_Slayer",
       "names": {
         "ru": "Первобытный убийца"
@@ -36796,7 +40089,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 4,
       "wiki": "https://valheim.weirdgloop.org/w/Scourging_Slayer",
       "names": {
         "ru": "Грозный убийца"
@@ -36942,7 +40235,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "shield",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 4,
       "wiki": "https://valheim.weirdgloop.org/w/Shield_of_Roots",
       "names": {},
       "description": "Malleable roots have been twisted into a surprisingly sturdy shield.",
@@ -37230,7 +40523,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Silver_Sword",
       "names": {
         "cs": "Stříbrný meč",
@@ -37463,7 +40756,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": 10,
-      "weight": null,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Smoke_Bomb",
       "names": {
         "ru": "Дымовая шашка"
@@ -37827,7 +41120,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Staff_of_Embers",
       "names": {
         "ru": "Посох огня"
@@ -37902,7 +41195,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Staff_of_Fracturing",
       "names": {
         "ru": "Посох раскалывания"
@@ -37977,7 +41270,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Staff_of_Frost",
       "names": {
         "ru": "Посох льда"
@@ -38050,7 +41343,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Staff_of_the_Wild",
       "names": {
         "ru": "Посох дикой природы"
@@ -38207,7 +41500,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 1.5,
       "wiki": "https://valheim.weirdgloop.org/w/Stone_Axe",
       "names": {
         "cs": "Kamenná sekera",
@@ -38507,7 +41800,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2.5,
       "wiki": "https://valheim.weirdgloop.org/w/Thunderblood_Atgeir",
       "names": {},
       "description": "The heavens shall sound their praise as you make your enemies bleed.",
@@ -38580,7 +41873,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Thunderblood_Axe",
       "names": {},
       "description": "As this axe cuts through wood and blood alike, a resounding thunderous crack shall be heard throughout the land.",
@@ -38655,7 +41948,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 1.5,
       "wiki": "https://valheim.weirdgloop.org/w/Thunderblood_Bow",
       "names": {},
       "description": "Lightning dances along the string, waiting to be unleashed.",
@@ -38730,7 +42023,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 1.5,
       "wiki": "https://valheim.weirdgloop.org/w/Thunderblood_Crossbow",
       "names": {},
       "description": "The bow is pulled taut with unreleased power, like the air before a lightning strike.",
@@ -38805,7 +42098,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Thunderblood_Dagger",
       "names": {},
       "description": "The blade is already bloodied, yet it sparks in want of more.",
@@ -38880,7 +42173,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2.5,
       "wiki": "https://valheim.weirdgloop.org/w/Thunderblood_Greataxe",
       "names": {},
       "description": "As you cleave your foes in two, their blood shall sing like a thunderstorm.",
@@ -38955,7 +42248,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 4,
       "wiki": "https://valheim.weirdgloop.org/w/Thunderblood_Greatsword",
       "names": {},
       "description": "Anyone wielding this weapon is sure to be very frightening indeed.",
@@ -39028,7 +42321,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Thunderblood_Knucklechains",
       "names": {},
       "description": "A fury comes over you as you fight with these weapons, your blood roaring like thunder in your ears... It seems appropriate.",
@@ -39101,7 +42394,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Thunderblood_Mace",
       "names": {},
       "description": "A weapon to rival perhaps even that of the thunder god himself...",
@@ -39174,7 +42467,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 4,
       "wiki": "https://valheim.weirdgloop.org/w/Thunderblood_Sledge",
       "names": {},
       "description": "As this weapon strikes true, the blow shall echo throughout the world...",
@@ -39247,7 +42540,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 1.5,
       "wiki": "https://valheim.weirdgloop.org/w/Thunderblood_Spear",
       "names": {},
       "description": "May it strike like lightning, quick and fierce.",
@@ -39320,7 +42613,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 0.8,
       "wiki": "https://valheim.weirdgloop.org/w/Thunderblood_Sword",
       "names": {},
       "description": "As the blood runs along the blade, it awakens the storm within.",
@@ -39393,7 +42686,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Thundering_Berserkir_Axes",
       "names": {
         "cs": "Hromové berserkské sekery",
@@ -39473,7 +42766,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "weapon",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 0.3,
       "wiki": "https://valheim.weirdgloop.org/w/Trollstav",
       "names": {
         "ru": "Тролль-посох"
@@ -39700,7 +42993,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "shield",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 4,
       "wiki": "https://valheim.weirdgloop.org/w/Wood_Shield",
       "names": {
         "cs": "Dřevěný štít",
@@ -39771,7 +43064,7 @@ globalThis.VC_ITEMS_DATA = {
       "category": "shield",
       "teleportable": true,
       "stack": null,
-      "weight": null,
+      "weight": 4,
       "wiki": "https://valheim.weirdgloop.org/w/Wood_Tower_Shield",
       "names": {
         "cs": "Pavéza",
@@ -39933,17 +43226,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "asksvin-hide",
-            "name": "Asksvin Hide",
+            "name": "asksvin-hide",
             "amount": 6
           },
           {
             "item": "morgen-sinew",
-            "name": "Morgen Sinew",
+            "name": "morgen-sinew",
             "amount": 2
           },
           {
             "item": "flametal",
-            "name": "Flametal",
+            "name": "flametal",
             "amount": 5
           }
         ]
@@ -40014,17 +43307,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "linen-thread",
-            "name": "Linen Thread",
+            "name": "linen-thread",
             "amount": 15
           },
           {
             "item": "lox-pelt",
-            "name": "Lox Pelt",
+            "name": "lox-pelt",
             "amount": 4
           },
           {
             "item": "asksvin-hide",
-            "name": "Asksvin Hide",
+            "name": "asksvin-hide",
             "amount": 10
           }
         ]
@@ -40095,17 +43388,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "linen-thread",
-            "name": "Linen Thread",
+            "name": "linen-thread",
             "amount": 15
           },
           {
             "item": "lox-pelt",
-            "name": "Lox Pelt",
+            "name": "lox-pelt",
             "amount": 4
           },
           {
             "item": "asksvin-hide",
-            "name": "Asksvin Hide",
+            "name": "asksvin-hide",
             "amount": 10
           }
         ]
@@ -40176,17 +43469,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "linen-thread",
-            "name": "Linen Thread",
+            "name": "linen-thread",
             "amount": 15
           },
           {
             "item": "lox-pelt",
-            "name": "Lox Pelt",
+            "name": "lox-pelt",
             "amount": 4
           },
           {
             "item": "asksvin-hide",
-            "name": "Asksvin Hide",
+            "name": "asksvin-hide",
             "amount": 10
           }
         ]
@@ -40248,12 +43541,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "asksvin-hide",
-            "name": "Asksvin Hide",
+            "name": "asksvin-hide",
             "amount": 6
           },
           {
             "item": "morgen-sinew",
-            "name": "Morgen Sinew",
+            "name": "morgen-sinew",
             "amount": 2
           }
         ]
@@ -40631,12 +43924,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bear-hide",
-            "name": "Bear Hide",
+            "name": "bear-hide",
             "amount": 5
           },
           {
             "item": "bear-trophy",
-            "name": "Bear Trophy",
+            "name": "bear-trophy",
             "amount": 1
           }
         ]
@@ -40708,17 +44001,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bear-hide",
-            "name": "Bear Hide",
+            "name": "bear-hide",
             "amount": 5
           },
           {
             "item": "bear-paw",
-            "name": "Bear Paw",
+            "name": "bear-paw",
             "amount": 2
           },
           {
             "item": "blueberries",
-            "name": "Blueberries",
+            "name": "blueberries",
             "amount": 4
           }
         ]
@@ -40790,12 +44083,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bear-hide",
-            "name": "Bear Hide",
+            "name": "bear-hide",
             "amount": 5
           },
           {
             "item": "blueberries",
-            "name": "Blueberries",
+            "name": "blueberries",
             "amount": 4
           }
         ]
@@ -40858,12 +44151,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bronze",
-            "name": "Bronze",
+            "name": "bronze",
             "amount": 5
           },
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 2
           }
         ]
@@ -40926,12 +44219,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bronze",
-            "name": "Bronze",
+            "name": "bronze",
             "amount": 5
           },
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 2
           }
         ]
@@ -40994,12 +44287,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bronze",
-            "name": "Bronze",
+            "name": "bronze",
             "amount": 5
           },
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 2
           }
         ]
@@ -41059,12 +44352,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cast-headdress-of-the-caller",
-            "name": "Cast Headdress of the Caller",
+            "name": "cast-headdress-of-the-caller",
             "amount": 1
           },
           {
             "item": "liquid-frost",
-            "name": "Liquid Frost",
+            "name": "liquid-frost",
             "amount": 5
           }
         ]
@@ -41126,12 +44419,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cast-robes-of-the-caller",
-            "name": "Cast Robes of the Caller",
+            "name": "cast-robes-of-the-caller",
             "amount": 1
           },
           {
             "item": "liquid-frost",
-            "name": "Liquid Frost",
+            "name": "liquid-frost",
             "amount": 5
           }
         ]
@@ -41191,12 +44484,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cast-trousers-of-the-caller",
-            "name": "Cast Trousers of the Caller",
+            "name": "cast-trousers-of-the-caller",
             "amount": 1
           },
           {
             "item": "liquid-frost",
-            "name": "Liquid Frost",
+            "name": "liquid-frost",
             "amount": 5
           }
         ]
@@ -41259,12 +44552,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 10
           },
           {
             "item": "coal",
-            "name": "Coal",
+            "name": "coal",
             "amount": 4
           }
         ]
@@ -41324,22 +44617,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "seal-pelt",
-            "name": "Seal Pelt",
+            "name": "seal-pelt",
             "amount": 6
           },
           {
             "item": "nornathread",
-            "name": "Nornathread",
+            "name": "nornathread",
             "amount": 2
           },
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 5
           },
           {
             "item": "refined-eitr",
-            "name": "Refined Eitr",
+            "name": "refined-eitr",
             "amount": 15
           }
         ]
@@ -41554,22 +44847,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "carapace",
-            "name": "Carapace",
+            "name": "carapace",
             "amount": 16
           },
           {
             "item": "scale-hide",
-            "name": "Scale Hide",
+            "name": "scale-hide",
             "amount": 3
           },
           {
             "item": "mandible",
-            "name": "Mandible",
+            "name": "mandible",
             "amount": 2
           },
           {
             "item": "refined-eitr",
-            "name": "Refined Eitr",
+            "name": "refined-eitr",
             "amount": 4
           }
         ]
@@ -41631,22 +44924,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "carapace",
-            "name": "Carapace",
+            "name": "carapace",
             "amount": 20
           },
           {
             "item": "scale-hide",
-            "name": "Scale Hide",
+            "name": "scale-hide",
             "amount": 3
           },
           {
             "item": "iron",
-            "name": "Iron",
+            "name": "iron",
             "amount": 5
           },
           {
             "item": "refined-eitr",
-            "name": "Refined Eitr",
+            "name": "refined-eitr",
             "amount": 4
           }
         ]
@@ -41708,22 +45001,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "carapace",
-            "name": "Carapace",
+            "name": "carapace",
             "amount": 20
           },
           {
             "item": "scale-hide",
-            "name": "Scale Hide",
+            "name": "scale-hide",
             "amount": 3
           },
           {
             "item": "iron",
-            "name": "Iron",
+            "name": "iron",
             "amount": 5
           },
           {
             "item": "refined-eitr",
-            "name": "Refined Eitr",
+            "name": "refined-eitr",
             "amount": 4
           }
         ]
@@ -41785,22 +45078,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 2
           },
           {
             "item": "bronze",
-            "name": "Bronze",
+            "name": "bronze",
             "amount": 1
           },
           {
             "item": "bear-hide",
-            "name": "Bear Hide",
+            "name": "bear-hide",
             "amount": 1
           },
           {
             "item": "amber-pearl",
-            "name": "Amber Pearl",
+            "name": "amber-pearl",
             "amount": 1
           }
         ]
@@ -41909,12 +45202,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 5
           },
           {
             "item": "crown-jewel",
-            "name": "Crown Jewel",
+            "name": "crown-jewel",
             "amount": 1
           }
         ]
@@ -42037,17 +45330,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "linen-thread",
-            "name": "Linen Thread",
+            "name": "linen-thread",
             "amount": 16
           },
           {
             "item": "refined-eitr",
-            "name": "Refined Eitr",
+            "name": "refined-eitr",
             "amount": 15
           },
           {
             "item": "iron",
-            "name": "Iron",
+            "name": "iron",
             "amount": 2
           }
         ]
@@ -42109,22 +45402,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "linen-thread",
-            "name": "Linen Thread",
+            "name": "linen-thread",
             "amount": 20
           },
           {
             "item": "refined-eitr",
-            "name": "Refined Eitr",
+            "name": "refined-eitr",
             "amount": 20
           },
           {
             "item": "feathers",
-            "name": "Feathers",
+            "name": "feathers",
             "amount": 10
           },
           {
             "item": "scale-hide",
-            "name": "Scale Hide",
+            "name": "scale-hide",
             "amount": 5
           }
         ]
@@ -42186,17 +45479,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "linen-thread",
-            "name": "Linen Thread",
+            "name": "linen-thread",
             "amount": 20
           },
           {
             "item": "refined-eitr",
-            "name": "Refined Eitr",
+            "name": "refined-eitr",
             "amount": 20
           },
           {
             "item": "scale-hide",
-            "name": "Scale Hide",
+            "name": "scale-hide",
             "amount": 10
           }
         ]
@@ -42261,17 +45554,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "feathers",
-            "name": "Feathers",
+            "name": "feathers",
             "amount": 10
           },
           {
             "item": "refined-eitr",
-            "name": "Refined Eitr",
+            "name": "refined-eitr",
             "amount": 20
           },
           {
             "item": "scale-hide",
-            "name": "Scale Hide",
+            "name": "scale-hide",
             "amount": 5
           }
         ]
@@ -42333,17 +45626,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "linen-thread",
-            "name": "Linen Thread",
+            "name": "linen-thread",
             "amount": 16
           },
           {
             "item": "refined-eitr",
-            "name": "Refined Eitr",
+            "name": "refined-eitr",
             "amount": 15
           },
           {
             "item": "asksvin-hide",
-            "name": "Asksvin Hide",
+            "name": "asksvin-hide",
             "amount": 2
           }
         ]
@@ -42405,22 +45698,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "linen-thread",
-            "name": "Linen Thread",
+            "name": "linen-thread",
             "amount": 20
           },
           {
             "item": "refined-eitr",
-            "name": "Refined Eitr",
+            "name": "refined-eitr",
             "amount": 20
           },
           {
             "item": "asksvin-hide",
-            "name": "Asksvin Hide",
+            "name": "asksvin-hide",
             "amount": 10
           },
           {
             "item": "flametal",
-            "name": "Flametal",
+            "name": "flametal",
             "amount": 1
           }
         ]
@@ -42482,17 +45775,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "linen-thread",
-            "name": "Linen Thread",
+            "name": "linen-thread",
             "amount": 20
           },
           {
             "item": "refined-eitr",
-            "name": "Refined Eitr",
+            "name": "refined-eitr",
             "amount": 20
           },
           {
             "item": "asksvin-hide",
-            "name": "Asksvin Hide",
+            "name": "asksvin-hide",
             "amount": 10
           }
         ]
@@ -42664,17 +45957,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "fenris-hair",
-            "name": "Fenris Hair",
+            "name": "fenris-hair",
             "amount": 20
           },
           {
             "item": "wolf-pelt",
-            "name": "Wolf Pelt",
+            "name": "wolf-pelt",
             "amount": 2
           },
           {
             "item": "cultist-trophy",
-            "name": "Cultist Trophy",
+            "name": "cultist-trophy",
             "amount": 1
           }
         ]
@@ -42746,17 +46039,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "fenris-hair",
-            "name": "Fenris Hair",
+            "name": "fenris-hair",
             "amount": 20
           },
           {
             "item": "wolf-pelt",
-            "name": "Wolf Pelt",
+            "name": "wolf-pelt",
             "amount": 5
           },
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 10
           }
         ]
@@ -42826,17 +46119,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "fenris-hair",
-            "name": "Fenris Hair",
+            "name": "fenris-hair",
             "amount": 20
           },
           {
             "item": "wolf-pelt",
-            "name": "Wolf Pelt",
+            "name": "wolf-pelt",
             "amount": 5
           },
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 10
           }
         ]
@@ -42898,62 +46191,62 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "perch",
-            "name": "Perch",
+            "name": "perch",
             "amount": 1
           },
           {
             "item": "pike",
-            "name": "Pike",
+            "name": "pike",
             "amount": 1
           },
           {
             "item": "tuna",
-            "name": "Tuna",
+            "name": "tuna",
             "amount": 1
           },
           {
             "item": "tetra",
-            "name": "Tetra",
+            "name": "tetra",
             "amount": 1
           },
           {
             "item": "trollfish",
-            "name": "Trollfish",
+            "name": "trollfish",
             "amount": 1
           },
           {
             "item": "giant-herring",
-            "name": "Giant Herring",
+            "name": "giant-herring",
             "amount": 1
           },
           {
             "item": "grouper",
-            "name": "Grouper",
+            "name": "grouper",
             "amount": 1
           },
           {
             "item": "coral-cod",
-            "name": "Coral Cod",
+            "name": "coral-cod",
             "amount": 1
           },
           {
             "item": "anglerfish",
-            "name": "Anglerfish",
+            "name": "anglerfish",
             "amount": 1
           },
           {
             "item": "northern-salmon",
-            "name": "Northern Salmon",
+            "name": "northern-salmon",
             "amount": 1
           },
           {
             "item": "magmafish",
-            "name": "Magmafish",
+            "name": "magmafish",
             "amount": 1
           },
           {
             "item": "pufferfish",
-            "name": "Pufferfish",
+            "name": "pufferfish",
             "amount": 1
           }
         ]
@@ -43015,22 +46308,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "flametal",
-            "name": "Flametal",
+            "name": "flametal",
             "amount": 16
           },
           {
             "item": "asksvin-hide",
-            "name": "Asksvin Hide",
+            "name": "asksvin-hide",
             "amount": 3
           },
           {
             "item": "charred-bone",
-            "name": "Charred Bone",
+            "name": "charred-bone",
             "amount": 2
           },
           {
             "item": "refined-eitr",
-            "name": "Refined Eitr",
+            "name": "refined-eitr",
             "amount": 4
           }
         ]
@@ -43094,22 +46387,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "flametal",
-            "name": "Flametal",
+            "name": "flametal",
             "amount": 20
           },
           {
             "item": "asksvin-hide",
-            "name": "Asksvin Hide",
+            "name": "asksvin-hide",
             "amount": 3
           },
           {
             "item": "charred-bone",
-            "name": "Charred Bone",
+            "name": "charred-bone",
             "amount": 5
           },
           {
             "item": "morgen-heart",
-            "name": "Morgen Heart",
+            "name": "morgen-heart",
             "amount": 1
           }
         ]
@@ -43173,17 +46466,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "flametal",
-            "name": "Flametal",
+            "name": "flametal",
             "amount": 20
           },
           {
             "item": "asksvin-hide",
-            "name": "Asksvin Hide",
+            "name": "asksvin-hide",
             "amount": 3
           },
           {
             "item": "charred-bone",
-            "name": "Charred Bone",
+            "name": "charred-bone",
             "amount": 5
           }
         ]
@@ -43573,12 +46866,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 10
           },
           {
             "item": "coal",
-            "name": "Coal",
+            "name": "coal",
             "amount": 4
           }
         ]
@@ -43641,12 +46934,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "iron",
-            "name": "Iron",
+            "name": "iron",
             "amount": 20
           },
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 2
           }
         ]
@@ -43709,12 +47002,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "iron",
-            "name": "Iron",
+            "name": "iron",
             "amount": 20
           },
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 2
           }
         ]
@@ -43777,12 +47070,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "iron",
-            "name": "Iron",
+            "name": "iron",
             "amount": 20
           },
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 2
           }
         ]
@@ -43845,7 +47138,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 6
           }
         ]
@@ -43908,7 +47201,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 6
           }
         ]
@@ -43971,7 +47264,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 6
           }
         ]
@@ -44034,12 +47327,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 4
           },
           {
             "item": "bone-fragments",
-            "name": "Bone Fragments",
+            "name": "bone-fragments",
             "amount": 5
           }
         ]
@@ -44106,17 +47399,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "lox-pelt",
-            "name": "Lox Pelt",
+            "name": "lox-pelt",
             "amount": 4
           },
           {
             "item": "bone-fragments",
-            "name": "Bone Fragments",
+            "name": "bone-fragments",
             "amount": 4
           },
           {
             "item": "writhan-roots",
-            "name": "Writhan Roots",
+            "name": "writhan-roots",
             "amount": 2
           }
         ]
@@ -44183,17 +47476,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "lox-pelt",
-            "name": "Lox Pelt",
+            "name": "lox-pelt",
             "amount": 5
           },
           {
             "item": "bone-fragments",
-            "name": "Bone Fragments",
+            "name": "bone-fragments",
             "amount": 8
           },
           {
             "item": "roots",
-            "name": "Roots",
+            "name": "roots",
             "amount": 2
           }
         ]
@@ -44260,17 +47553,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "lox-pelt",
-            "name": "Lox Pelt",
+            "name": "lox-pelt",
             "amount": 5
           },
           {
             "item": "bone-fragments",
-            "name": "Bone Fragments",
+            "name": "bone-fragments",
             "amount": 8
           },
           {
             "item": "roots",
-            "name": "Roots",
+            "name": "roots",
             "amount": 2
           }
         ]
@@ -44339,12 +47632,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "lox-pelt",
-            "name": "Lox Pelt",
+            "name": "lox-pelt",
             "amount": 6
           },
           {
             "item": "silver",
-            "name": "Silver",
+            "name": "silver",
             "amount": 2
           }
         ]
@@ -44406,7 +47699,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "dandelion",
-            "name": "Dandelion",
+            "name": "dandelion",
             "amount": 10
           }
         ]
@@ -44466,17 +47759,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "moose-hide",
-            "name": "Moose Hide",
+            "name": "moose-hide",
             "amount": 6
           },
           {
             "item": "moose-sinew",
-            "name": "Moose Sinew",
+            "name": "moose-sinew",
             "amount": 2
           },
           {
             "item": "bloodgold",
-            "name": "Bloodgold",
+            "name": "bloodgold",
             "amount": 5
           }
         ]
@@ -44539,12 +47832,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "iron",
-            "name": "Iron",
+            "name": "iron",
             "amount": 10
           },
           {
             "item": "linen-thread",
-            "name": "Linen Thread",
+            "name": "linen-thread",
             "amount": 15
           }
         ]
@@ -44607,12 +47900,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "iron",
-            "name": "Iron",
+            "name": "iron",
             "amount": 10
           },
           {
             "item": "linen-thread",
-            "name": "Linen Thread",
+            "name": "linen-thread",
             "amount": 20
           }
         ]
@@ -44675,12 +47968,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "iron",
-            "name": "Iron",
+            "name": "iron",
             "amount": 10
           },
           {
             "item": "linen-thread",
-            "name": "Linen Thread",
+            "name": "linen-thread",
             "amount": 20
           }
         ]
@@ -44743,12 +48036,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "linen-thread",
-            "name": "Linen Thread",
+            "name": "linen-thread",
             "amount": 20
           },
           {
             "item": "silver",
-            "name": "Silver",
+            "name": "silver",
             "amount": 1
           }
         ]
@@ -44810,17 +48103,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "coal",
-            "name": "Coal",
+            "name": "coal",
             "amount": 5
           },
           {
             "item": "bronze",
-            "name": "Bronze",
+            "name": "bronze",
             "amount": 1
           },
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 3
           }
         ]
@@ -44880,12 +48173,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cast-helmet-of-the-protector",
-            "name": "Cast Helmet of the Protector",
+            "name": "cast-helmet-of-the-protector",
             "amount": 1
           },
           {
             "item": "liquid-frost",
-            "name": "Liquid Frost",
+            "name": "liquid-frost",
             "amount": 5
           }
         ]
@@ -44947,12 +48240,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cast-breastplate-of-the-protector",
-            "name": "Cast Breastplate of the Protector",
+            "name": "cast-breastplate-of-the-protector",
             "amount": 1
           },
           {
             "item": "liquid-frost",
-            "name": "Liquid Frost",
+            "name": "liquid-frost",
             "amount": 5
           }
         ]
@@ -45012,12 +48305,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cast-trousers-of-the-protector",
-            "name": "Cast Trousers of the Protector",
+            "name": "cast-trousers-of-the-protector",
             "amount": 1
           },
           {
             "item": "liquid-frost",
-            "name": "Liquid Frost",
+            "name": "liquid-frost",
             "amount": 5
           }
         ]
@@ -45080,7 +48373,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 5
           }
         ]
@@ -45143,7 +48436,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 5
           }
         ]
@@ -45215,17 +48508,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "root",
-            "name": "Root",
+            "name": "root",
             "amount": 10
           },
           {
             "item": "ancient-bark",
-            "name": "Ancient Bark",
+            "name": "ancient-bark",
             "amount": 10
           },
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 4
           }
         ]
@@ -45297,17 +48590,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "root",
-            "name": "Root",
+            "name": "root",
             "amount": 10
           },
           {
             "item": "ancient-bark",
-            "name": "Ancient Bark",
+            "name": "ancient-bark",
             "amount": 10
           },
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 2
           }
         ]
@@ -45378,17 +48671,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "root",
-            "name": "Root",
+            "name": "root",
             "amount": 10
           },
           {
             "item": "ancient-bark",
-            "name": "Ancient Bark",
+            "name": "ancient-bark",
             "amount": 10
           },
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 2
           }
         ]
@@ -46277,12 +49570,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "troll-hide",
-            "name": "Troll Hide",
+            "name": "troll-hide",
             "amount": 5
           },
           {
             "item": "bone-fragments",
-            "name": "Bone Fragments",
+            "name": "bone-fragments",
             "amount": 3
           }
         ]
@@ -46351,7 +49644,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "troll-hide",
-            "name": "Troll Hide",
+            "name": "troll-hide",
             "amount": 5
           }
         ]
@@ -46420,7 +49713,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "troll-hide",
-            "name": "Troll Hide",
+            "name": "troll-hide",
             "amount": 5
           }
         ]
@@ -46489,12 +49782,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "troll-hide",
-            "name": "Troll Hide",
+            "name": "troll-hide",
             "amount": 10
           },
           {
             "item": "bone-fragments",
-            "name": "Bone Fragments",
+            "name": "bone-fragments",
             "amount": 10
           }
         ]
@@ -46666,12 +49959,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cast-hood-of-the-vanguard",
-            "name": "Cast Hood of the Vanguard",
+            "name": "cast-hood-of-the-vanguard",
             "amount": 1
           },
           {
             "item": "liquid-frost",
-            "name": "Liquid Frost",
+            "name": "liquid-frost",
             "amount": 5
           }
         ]
@@ -46743,12 +50036,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cast-chestpiece-of-the-vanguard",
-            "name": "Cast Chestpiece of the Vanguard",
+            "name": "cast-chestpiece-of-the-vanguard",
             "amount": 1
           },
           {
             "item": "liquid-frost",
-            "name": "Liquid Frost",
+            "name": "liquid-frost",
             "amount": 5
           }
         ]
@@ -46818,12 +50111,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cast-trousers-of-the-vanguard",
-            "name": "Cast Trousers of the Vanguard",
+            "name": "cast-trousers-of-the-vanguard",
             "amount": 1
           },
           {
             "item": "liquid-frost",
-            "name": "Liquid Frost",
+            "name": "liquid-frost",
             "amount": 5
           }
         ]
@@ -46895,12 +50188,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bear-hide",
-            "name": "Bear Hide",
+            "name": "bear-hide",
             "amount": 5
           },
           {
             "item": "vile-trophy",
-            "name": "Vile Trophy",
+            "name": "vile-trophy",
             "amount": 1
           }
         ]
@@ -46972,17 +50265,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bear-hide",
-            "name": "Bear Hide",
+            "name": "bear-hide",
             "amount": 4
           },
           {
             "item": "vile-ribcage",
-            "name": "Vile Ribcage",
+            "name": "vile-ribcage",
             "amount": 3
           },
           {
             "item": "linen-thread",
-            "name": "Linen Thread",
+            "name": "linen-thread",
             "amount": 4
           }
         ]
@@ -47054,17 +50347,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bear-hide",
-            "name": "Bear Hide",
+            "name": "bear-hide",
             "amount": 10
           },
           {
             "item": "vile-ribcage",
-            "name": "Vile Ribcage",
+            "name": "vile-ribcage",
             "amount": 1
           },
           {
             "item": "linen-thread",
-            "name": "Linen Thread",
+            "name": "linen-thread",
             "amount": 4
           }
         ]
@@ -47127,17 +50420,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "silver",
-            "name": "Silver",
+            "name": "silver",
             "amount": 20
           },
           {
             "item": "wolf-pelt",
-            "name": "Wolf Pelt",
+            "name": "wolf-pelt",
             "amount": 2
           },
           {
             "item": "drake-trophy",
-            "name": "Drake Trophy",
+            "name": "drake-trophy",
             "amount": 2
           }
         ]
@@ -47202,17 +50495,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "silver",
-            "name": "Silver",
+            "name": "silver",
             "amount": 20
           },
           {
             "item": "wolf-pelt",
-            "name": "Wolf Pelt",
+            "name": "wolf-pelt",
             "amount": 5
           },
           {
             "item": "chain",
-            "name": "Chain",
+            "name": "chain",
             "amount": 1
           }
         ]
@@ -47275,17 +50568,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "silver",
-            "name": "Silver",
+            "name": "silver",
             "amount": 20
           },
           {
             "item": "wolf-pelt",
-            "name": "Wolf Pelt",
+            "name": "wolf-pelt",
             "amount": 5
           },
           {
             "item": "wolf-fang",
-            "name": "Wolf Fang",
+            "name": "wolf-fang",
             "amount": 4
           }
         ]
@@ -47350,17 +50643,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "silver",
-            "name": "Silver",
+            "name": "silver",
             "amount": 4
           },
           {
             "item": "wolf-pelt",
-            "name": "Wolf Pelt",
+            "name": "wolf-pelt",
             "amount": 6
           },
           {
             "item": "wolf-trophy",
-            "name": "Wolf Trophy",
+            "name": "wolf-trophy",
             "amount": 1
           }
         ]
@@ -47459,14 +50752,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 5,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Ashlands_Gourmet_Bowl",
       "names": {
         "cs": "Gurmánská mísa ze země popela",
         "ru": "Пир из Пепельных земель"
       },
-      "description": null,
+      "description": "It's hard to tell whether the steam coming off of this dish is because it's freshly cooked or because of the asksvin meat in it. Either way, the spiced meat together with the vineberries and fiddlehead sprouts is so delicious that it doesn't matter!",
       "stats": {
         "health": 75,
         "stamina": 75,
@@ -47483,22 +50776,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cooked-asksvin-tail",
-            "name": "Cooked asksvin tail",
+            "name": "cooked-asksvin-tail",
             "amount": 3
           },
           {
             "item": "vineberry-cluster",
-            "name": "Vineberry Cluster",
+            "name": "vineberry-cluster",
             "amount": 5
           },
           {
             "item": "scorching-medley",
-            "name": "Scorching Medley",
+            "name": "scorching-medley",
             "amount": 2
           },
           {
             "item": "fiery-spice-powder",
-            "name": "Fiery Spice Powder",
+            "name": "fiery-spice-powder",
             "amount": 1
           }
         ]
@@ -47534,11 +50827,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Baked_Poteitr",
       "names": {},
-      "description": null,
+      "description": "Neither boiled nor mashed nor in a stew. Still delicious though!",
       "stats": {
         "health": 34,
         "stamina": 17,
@@ -47555,7 +50848,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "unbaked-poteitr",
-            "name": "Unbaked Poteitr",
+            "name": "unbaked-poteitr",
             "amount": 1
           }
         ]
@@ -47591,14 +50884,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 5,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Black_Forest_Buffet_Platter",
       "names": {
         "cs": "Obložený talíř z černého lesa",
         "ru": "Деликатесы Черного леса"
       },
-      "description": null,
+      "description": "You won't be able to resist this platter of delights from the Black Forest! Venison sirloin steaks are served together with spiced thistles and carrots, and the whole meal is tied together with delicious jams. Just have one more bite!",
       "stats": {
         "health": 35,
         "stamina": 35,
@@ -47615,22 +50908,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "deer-stew",
-            "name": "Deer Stew",
+            "name": "deer-stew",
             "amount": 3
           },
           {
             "item": "thistle",
-            "name": "Thistle",
+            "name": "thistle",
             "amount": 5
           },
           {
             "item": "queen-s-jam",
-            "name": "Queen's Jam",
+            "name": "queen-s-jam",
             "amount": 4
           },
           {
             "item": "woodland-herb-blend",
-            "name": "Woodland Herb Blend",
+            "name": "woodland-herb-blend",
             "amount": 1
           }
         ]
@@ -47666,14 +50959,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Black_Soup",
       "names": {
         "cs": "Černá polévka",
         "ru": "Черный суп"
       },
-      "description": null,
+      "description": "A perfect balance of sweetness and acidity.",
       "stats": {
         "health": 50,
         "stamina": 17,
@@ -47690,17 +50983,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bloodbag",
-            "name": "Bloodbag",
+            "name": "bloodbag",
             "amount": 1
           },
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 1
           },
           {
             "item": "turnip",
-            "name": "Turnip",
+            "name": "turnip",
             "amount": 1
           }
         ]
@@ -47736,15 +51029,15 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Blood_Pudding",
       "names": {
         "cs": "Krvavý puding",
         "fr": "Boudin",
         "ru": "Кровяная колбаса"
       },
-      "description": null,
+      "description": "It's bloody tasty.",
       "stats": {
         "health": 25,
         "stamina": 75,
@@ -47761,17 +51054,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "thistle",
-            "name": "Thistle",
+            "name": "thistle",
             "amount": 2
           },
           {
             "item": "bloodbag",
-            "name": "Bloodbag",
+            "name": "bloodbag",
             "amount": 2
           },
           {
             "item": "barley-flour",
-            "name": "Barley Flour",
+            "name": "barley-flour",
             "amount": 4
           }
         ]
@@ -47807,13 +51100,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": null,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Blue_mushroom",
       "names": {
         "ru": "Голубой гриб"
       },
-      "description": null,
+      "description": "Glows with a soft blue hue.",
       "stats": {
         "health": 20,
         "stamina": 20,
@@ -47823,16 +51116,8 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -47860,13 +51145,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Boar_Jerky",
       "names": {
         "ru": "Вяленая кабанина"
       },
-      "description": null,
+      "description": "Lean and salty.",
       "stats": {
         "health": 23,
         "stamina": 23,
@@ -47883,12 +51168,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "boar-meat",
-            "name": "Boar Meat",
+            "name": "boar-meat",
             "amount": 1
           },
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 1
           }
         ]
@@ -47924,8 +51209,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Bukeperries",
       "names": {
         "cs": "Grcinky",
@@ -47933,7 +51218,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Dégobibaies",
         "ru": "Тошника"
       },
-      "description": null,
+      "description": "Allows the consumer to quickly evacuate any misplaced meal and start anew.",
       "stats": {
         "health": 0,
         "stamina": 0,
@@ -47943,18 +51228,26 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
-        "creatures": [],
+        "creatures": [
+          {
+            "id": "fuling-shaman",
+            "name": "Fuling Shaman",
+            "biome": "plains"
+          },
+          {
+            "id": "greydwarf-shaman",
+            "name": "Greydwarf Shaman",
+            "biome": "black-forest"
+          },
+          {
+            "id": "greydwarf-shaman-deep-north",
+            "name": "Greydwarf Shaman (Deep North)",
+            "biome": "deep-north"
+          }
+        ],
         "locations": [],
         "traders": [],
         "raw": []
@@ -47980,15 +51273,15 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Carrot_Soup",
       "names": {
         "cs": "Mrkvová polévka",
         "fr": "Soupe de carottes",
         "ru": "Морковный суп"
       },
-      "description": null,
+      "description": "A warm tasty soup made of mostly carrots.",
       "stats": {
         "health": 15,
         "stamina": 45,
@@ -48005,12 +51298,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "mushroom",
-            "name": "Mushroom",
+            "name": "mushroom",
             "amount": 1
           },
           {
             "item": "carrot",
-            "name": "Carrot",
+            "name": "carrot",
             "amount": 3
           }
         ]
@@ -48046,14 +51339,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Bonemaw_Meat",
       "names": {
         "cs": "Kostichřtánovo maso",
         "ru": "Мясо Костепасти"
       },
-      "description": null,
+      "description": "The boiling sea did nothing to this meat, but grilling it over the fire has given it a delightful crisp.",
       "stats": {
         "health": 90,
         "stamina": 30,
@@ -48070,7 +51363,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bonemaw-meat",
-            "name": "Bonemaw Meat",
+            "name": "bonemaw-meat",
             "amount": 1
           }
         ]
@@ -48106,11 +51399,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Seal_Blubber",
       "names": {},
-      "description": null,
+      "description": "A chewy meat, with an aftertaste of remorse.",
       "stats": {
         "health": 60,
         "stamina": 20,
@@ -48127,7 +51420,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "seal-blubber",
-            "name": "Seal Blubber",
+            "name": "seal-blubber",
             "amount": 1
           }
         ]
@@ -48163,15 +51456,15 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 5,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Wolf_Meat",
       "names": {
         "cs": "Vlčí maso",
         "fr": "Viande de loup",
         "ru": "Волчатина"
       },
-      "description": null,
+      "description": "A wild taste.",
       "stats": {
         "health": 45,
         "stamina": 15,
@@ -48188,7 +51481,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "wolf-meat",
-            "name": "Wolf Meat",
+            "name": "wolf-meat",
             "amount": 1
           }
         ]
@@ -48224,14 +51517,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Chicken_Meat",
       "names": {
         "cs": "Kuřecí maso",
         "ru": "Курятина"
       },
-      "description": null,
+      "description": "It tastes like chicken.",
       "stats": {
         "health": 60,
         "stamina": 20,
@@ -48248,7 +51541,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "chicken-meat",
-            "name": "Chicken Meat",
+            "name": "chicken-meat",
             "amount": 1
           }
         ]
@@ -48284,14 +51577,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Egg",
       "names": {
         "cs": "Vejce",
         "ru": "Яйцо"
       },
-      "description": null,
+      "description": "Sunny side up!",
       "stats": {
         "health": 35,
         "stamina": 12,
@@ -48308,7 +51601,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "egg",
-            "name": "Egg",
+            "name": "egg",
             "amount": 1
           }
         ]
@@ -48344,14 +51637,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Hare_Meat",
       "names": {
         "cs": "Zaječí maso",
         "ru": "Зайчатина"
       },
-      "description": null,
+      "description": "Stringy but flavorful.",
       "stats": {
         "health": 60,
         "stamina": 20,
@@ -48368,7 +51661,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "hare-meat",
-            "name": "Hare Meat",
+            "name": "hare-meat",
             "amount": 1
           }
         ]
@@ -48404,14 +51697,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Lox_Meat",
       "names": {
         "cs": "Maso z Loxe",
         "ru": "Мясо быкоящера"
       },
-      "description": null,
+      "description": "A great hunk of tender meat, food fit for Valhalla!",
       "stats": {
         "health": 50,
         "stamina": 16,
@@ -48428,7 +51721,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "lox-meat",
-            "name": "Lox Meat",
+            "name": "lox-meat",
             "amount": 1
           }
         ]
@@ -48464,14 +51757,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 5,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Eyescream",
       "names": {
         "cs": "Bulvina",
         "ru": "Глазированное мороженое"
       },
-      "description": null,
+      "description": "Crispy cool and creamy.",
       "stats": {
         "health": 21,
         "stamina": 65,
@@ -48488,12 +51781,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "greydwarf-eye",
-            "name": "Greydwarf Eye",
+            "name": "greydwarf-eye",
             "amount": 3
           },
           {
             "item": "freeze-gland",
-            "name": "Freeze Gland",
+            "name": "freeze-gland",
             "amount": 1
           }
         ]
@@ -48529,14 +51822,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Fiery_Svinstew",
       "names": {
         "cs": "Pálivá Asksvinovka",
         "ru": "Огненное тушеное рагу"
       },
-      "description": null,
+      "description": "This musty stew is a necessity on every adventurer's menu.",
       "stats": {
         "health": 95,
         "stamina": 32,
@@ -48553,17 +51846,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "asksvin-tail",
-            "name": "Asksvin Tail",
+            "name": "asksvin-tail",
             "amount": 1
           },
           {
             "item": "vineberry-cluster",
-            "name": "Vineberry Cluster",
+            "name": "vineberry-cluster",
             "amount": 2
           },
           {
             "item": "smoke-puff",
-            "name": "Smoke Puff",
+            "name": "smoke-puff",
             "amount": 1
           }
         ]
@@ -48599,14 +51892,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Fish_'n'_Bread",
       "names": {
         "cs": "Ryba s chlebem",
         "ru": "Рыба с хлебом"
       },
-      "description": null,
+      "description": "Bounty from both land and sea.",
       "stats": {
         "health": 30,
         "stamina": 90,
@@ -48623,7 +51916,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "uncooked-fish-n-bread",
-            "name": "Uncooked Fish 'n' Bread",
+            "name": "uncooked-fish-n-bread",
             "amount": 1
           }
         ]
@@ -48659,11 +51952,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Fish_Soup",
       "names": {},
-      "description": null,
+      "description": "Swimming with flavour!",
       "stats": {
         "health": 37,
         "stamina": 18,
@@ -48680,17 +51973,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "raw-fish",
-            "name": "Raw Fish",
+            "name": "raw-fish",
             "amount": 3
           },
           {
             "item": "kale",
-            "name": "Kale",
+            "name": "kale",
             "amount": 2
           },
           {
             "item": "ice",
-            "name": "Ice",
+            "name": "ice",
             "amount": 2
           }
         ]
@@ -48726,14 +52019,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Fish_Wraps",
       "names": {
         "cs": "Rybí wrap",
         "ru": "Рыбные рулетики"
       },
-      "description": null,
+      "description": "Bread and fish, what more to wish?",
       "stats": {
         "health": 70,
         "stamina": 23,
@@ -48750,12 +52043,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cooked-fish",
-            "name": "Cooked Fish",
+            "name": "cooked-fish",
             "amount": 2
           },
           {
             "item": "barley-flour",
-            "name": "Barley Flour",
+            "name": "barley-flour",
             "amount": 4
           }
         ]
@@ -48791,13 +52084,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Frosted_Sweetbread",
       "names": {
         "ru": "Сдобная булка с глазурью"
       },
-      "description": null,
+      "description": "A sweet and tasty treat, to celebrate a feat!",
       "stats": {
         "health": 43,
         "stamina": 43,
@@ -48814,7 +52107,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "unbaked-sweetbread",
-            "name": "Unbaked Sweetbread",
+            "name": "unbaked-sweetbread",
             "amount": 1
           }
         ]
@@ -48850,8 +52143,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Neck_Tail",
       "names": {
         "cs": "Ocas Necka",
@@ -48859,7 +52152,7 @@ globalThis.VC_ITEMS_DATA = {
         "fr": "Queue de Nixe",
         "ru": "Хвост никса"
       },
-      "description": null,
+      "description": "This savoury, charcoal-grilled meat has a slight aroma of seaweed and grass.",
       "stats": {
         "health": 25,
         "stamina": 8,
@@ -48876,7 +52169,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "neck-tail",
-            "name": "Neck Tail",
+            "name": "neck-tail",
             "amount": 1
           }
         ]
@@ -48912,14 +52205,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 5,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Hearty_Mountain_Logger's_Stew",
       "names": {
         "cs": "Vydatný guláš horského chataře",
         "ru": "Сытное жаркое горного лесоруба"
       },
-      "description": null,
+      "description": "Gather around this steaming pot full of deliciousness and warm yourselves up again after a day out in the cold. The usually tough and chewey wolf meat has become tender enough to practically melt in your mouth, and the onions and carrots are made even tastier with exciting spices.",
       "stats": {
         "health": 45,
         "stamina": 45,
@@ -48936,22 +52229,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "wolf-skewer",
-            "name": "Wolf Skewer",
+            "name": "wolf-skewer",
             "amount": 2
           },
           {
             "item": "onion-soup",
-            "name": "Onion Soup",
+            "name": "onion-soup",
             "amount": 3
           },
           {
             "item": "carrot",
-            "name": "Carrot",
+            "name": "carrot",
             "amount": 4
           },
           {
             "item": "mountain-peak-pepper-powder",
-            "name": "Mountain Peak Pepper Powder",
+            "name": "mountain-peak-pepper-powder",
             "amount": 1
           }
         ]
@@ -48987,14 +52280,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Honey_Glazed_Chicken",
       "names": {
         "cs": "Kuře na medu",
         "ru": "Курятина в медовой глазури"
       },
-      "description": null,
+      "description": "Grilled to perfection. Make both eyes and mouths water.",
       "stats": {
         "health": 80,
         "stamina": 26,
@@ -49011,7 +52304,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "uncooked-honey-glazed-chicken",
-            "name": "Uncooked Honey Glazed Chicken",
+            "name": "uncooked-honey-glazed-chicken",
             "amount": 1
           }
         ]
@@ -49047,11 +52340,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Kale_Chips",
       "names": {},
-      "description": null,
+      "description": "Crispy greens!",
       "stats": {
         "health": 35,
         "stamina": 105,
@@ -49068,7 +52361,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "raw-kale-chips",
-            "name": "Raw Kale Chips",
+            "name": "raw-kale-chips",
             "amount": 1
           }
         ]
@@ -49104,11 +52397,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Lingonberry_Juice",
       "names": {},
-      "description": null,
+      "description": "Pairs well with most foods.",
       "stats": {
         "health": 35,
         "stamina": 105,
@@ -49125,12 +52418,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "lingonberries",
-            "name": "Lingonberries",
+            "name": "lingonberries",
             "amount": 5
           },
           {
             "item": "ice",
-            "name": "Ice",
+            "name": "ice",
             "amount": 5
           }
         ]
@@ -49166,11 +52459,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 50,
+      "weight": 0.2,
       "wiki": "https://valheim.weirdgloop.org/w/Luminous_Larva",
       "names": {},
-      "description": null,
+      "description": "Slimy, yet satisfying.",
       "stats": {
         "health": 30,
         "stamina": 30,
@@ -49180,16 +52473,8 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -49217,14 +52502,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Marinated_Greens",
       "names": {
         "cs": "Nakládaná zelenina",
         "ru": "Маринованные овощи"
       },
-      "description": null,
+      "description": "It's spicy, it's chewy, it's sweet... This mad dish tickles your tongue as well as your mind.",
       "stats": {
         "health": 32,
         "stamina": 16,
@@ -49241,22 +52526,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "sap",
-            "name": "Sap",
+            "name": "sap",
             "amount": 3
           },
           {
             "item": "magecap",
-            "name": "Magecap",
+            "name": "magecap",
             "amount": 2
           },
           {
             "item": "fiddlehead",
-            "name": "Fiddlehead",
+            "name": "fiddlehead",
             "amount": 2
           },
           {
             "item": "smoke-puff",
-            "name": "Smoke Puff",
+            "name": "smoke-puff",
             "amount": 2
           }
         ]
@@ -49292,14 +52577,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mashed_Meat",
       "names": {
         "cs": "Šťouchané maso",
         "ru": "Отбивное мясо"
       },
-      "description": null,
+      "description": "Leftover meat can actually be pretty tasty if you just mash it right!",
       "stats": {
         "health": 100,
         "stamina": 34,
@@ -49316,17 +52601,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "asksvin-tail",
-            "name": "Asksvin Tail",
+            "name": "asksvin-tail",
             "amount": 1
           },
           {
             "item": "volture-meat",
-            "name": "Volture Meat",
+            "name": "volture-meat",
             "amount": 1
           },
           {
             "item": "fiddlehead",
-            "name": "Fiddlehead",
+            "name": "fiddlehead",
             "amount": 1
           }
         ]
@@ -49362,11 +52647,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Meat_In_Bread",
       "names": {},
-      "description": null,
+      "description": "A convenient meal, often favoured by travelling merchants.",
       "stats": {
         "health": 110,
         "stamina": 37,
@@ -49383,22 +52668,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "moose-meat",
-            "name": "Moose Meat",
+            "name": "moose-meat",
             "amount": 1
           },
           {
             "item": "kale",
-            "name": "Kale",
+            "name": "kale",
             "amount": 2
           },
           {
             "item": "oat-flour",
-            "name": "Oat Flour",
+            "name": "oat-flour",
             "amount": 1
           },
           {
             "item": "lingonberries",
-            "name": "Lingonberries",
+            "name": "lingonberries",
             "amount": 2
           }
         ]
@@ -49434,14 +52719,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Meat_Platter",
       "names": {
         "cs": "Masový talíř",
         "ru": "Мясное ассорти"
       },
-      "description": null,
+      "description": "Battle fuel.",
       "stats": {
         "health": 80,
         "stamina": 26,
@@ -49458,7 +52743,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "uncooked-meat-platter",
-            "name": "Uncooked Meat Platter",
+            "name": "uncooked-meat-platter",
             "amount": 1
           }
         ]
@@ -49494,11 +52779,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Meatballs_and_Poteitr",
       "names": {},
-      "description": null,
+      "description": "It doesn't get more iconic than this!",
       "stats": {
         "health": 35,
         "stamina": 18,
@@ -49515,17 +52800,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "moose-meat",
-            "name": "Moose Meat",
+            "name": "moose-meat",
             "amount": 1
           },
           {
             "item": "lingonberries",
-            "name": "Lingonberries",
+            "name": "lingonberries",
             "amount": 2
           },
           {
             "item": "poteitr",
-            "name": "Poteitr",
+            "name": "poteitr",
             "amount": 2
           }
         ]
@@ -49561,14 +52846,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 1,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Minced_Meat_Sauce",
       "names": {
         "fr": "Sauce à la viande hachée",
         "ru": "Соус с мясным фаршем"
       },
-      "description": null,
+      "description": "Chunks of goodness in a thick gravy.",
       "stats": {
         "health": 40,
         "stamina": 13,
@@ -49585,17 +52870,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "boar-meat",
-            "name": "Boar Meat",
+            "name": "boar-meat",
             "amount": 1
           },
           {
             "item": "neck-tail",
-            "name": "Neck Tail",
+            "name": "neck-tail",
             "amount": 1
           },
           {
             "item": "carrot",
-            "name": "Carrot",
+            "name": "carrot",
             "amount": 1
           }
         ]
@@ -49631,14 +52916,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Muckshake",
       "names": {
         "cs": "Hnusshake",
         "ru": "Немытая Мэри"
       },
-      "description": null,
+      "description": "Wakes you up!",
       "stats": {
         "health": 16,
         "stamina": 50,
@@ -49655,17 +52940,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "ooze",
-            "name": "Ooze",
+            "name": "ooze",
             "amount": 1
           },
           {
             "item": "raspberries",
-            "name": "Raspberries",
+            "name": "raspberries",
             "amount": 2
           },
           {
             "item": "blueberries",
-            "name": "Blueberries",
+            "name": "blueberries",
             "amount": 2
           }
         ]
@@ -49701,14 +52986,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mushroom_Omelette",
       "names": {
         "cs": "Houbová omeleta",
         "ru": "Омлет с грибами"
       },
-      "description": null,
+      "description": "A delicious omelette with an earthy aftertaste.",
       "stats": {
         "health": 28,
         "stamina": 85,
@@ -49725,12 +53010,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "egg",
-            "name": "Egg",
+            "name": "egg",
             "amount": 3
           },
           {
             "item": "jotun-puffs",
-            "name": "Jotun Puffs",
+            "name": "jotun-puffs",
             "amount": 3
           }
         ]
@@ -49766,14 +53051,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 5,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Mushrooms_Galore_%C3%A1_la_Mistlands",
       "names": {
         "cs": "Hojnost hub alá mlžné krajiny",
         "ru": "Грибное ассорти из Туманных земель"
       },
-      "description": null,
+      "description": "The time has come for mushroom enthusiasts to rejoice! Try different kinds of mushrooms, mushroom marinated seeker meat and mushroom-filled misthare, and don't miss out on the tasty sap dressing.",
       "stats": {
         "health": 65,
         "stamina": 65,
@@ -49790,22 +53075,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "misthare-supreme",
-            "name": "Misthare Supreme",
+            "name": "misthare-supreme",
             "amount": 1
           },
           {
             "item": "cooked-seeker-meat",
-            "name": "Cooked seeker meat",
+            "name": "cooked-seeker-meat",
             "amount": 3
           },
           {
             "item": "yggdrasil-porridge",
-            "name": "Yggdrasil Porridge",
+            "name": "yggdrasil-porridge",
             "amount": 1
           },
           {
             "item": "herbs-of-the-hidden-hills",
-            "name": "Herbs of the Hidden Hills",
+            "name": "herbs-of-the-hidden-hills",
             "amount": 1
           }
         ]
@@ -49841,11 +53126,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 5,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Northern_Morning_Fare",
       "names": {},
-      "description": null,
+      "description": "Warming and filling, this meal will sustain you even during the coldest of days. Porridge and pancakes pair well with jams and sausages, making it hard not to come back for a second helping!",
       "stats": {
         "health": 85,
         "stamina": 85,
@@ -49862,22 +53147,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cooked-moose-meat",
-            "name": "Cooked Moose Meat",
+            "name": "cooked-moose-meat",
             "amount": 3
           },
           {
             "item": "poteitr",
-            "name": "Poteitr",
+            "name": "poteitr",
             "amount": 5
           },
           {
             "item": "oat-flour",
-            "name": "Oat Flour",
+            "name": "oat-flour",
             "amount": 2
           },
           {
             "item": "seasoning-of-the-gourd",
-            "name": "Seasoning of the Gourd",
+            "name": "seasoning-of-the-gourd",
             "amount": 1
           }
         ]
@@ -49913,11 +53198,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Oatmeal",
       "names": {},
-      "description": null,
+      "description": "Served with a generous helping of lingonberry jam.",
       "stats": {
         "health": 39,
         "stamina": 115,
@@ -49934,17 +53219,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "oats",
-            "name": "Oats",
+            "name": "oats",
             "amount": 2
           },
           {
             "item": "lingonberries",
-            "name": "Lingonberries",
+            "name": "lingonberries",
             "amount": 2
           },
           {
             "item": "oat-milk",
-            "name": "Oat Milk",
+            "name": "oat-milk",
             "amount": 1
           }
         ]
@@ -49980,11 +53265,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Oven_Pancake",
       "names": {},
-      "description": null,
+      "description": "Warm and fluffy.",
       "stats": {
         "health": 37,
         "stamina": 18,
@@ -50001,7 +53286,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "oven-pancake-batter",
-            "name": "Oven Pancake Batter",
+            "name": "oven-pancake-batter",
             "amount": 1
           }
         ]
@@ -50037,11 +53322,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Pancakes",
       "names": {},
-      "description": null,
+      "description": "Was there ever a more comforting food?",
       "stats": {
         "health": 39,
         "stamina": 115,
@@ -50058,22 +53343,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "oat-milk",
-            "name": "Oat Milk",
+            "name": "oat-milk",
             "amount": 1
           },
           {
             "item": "oat-flour",
-            "name": "Oat Flour",
+            "name": "oat-flour",
             "amount": 2
           },
           {
             "item": "egg",
-            "name": "Egg",
+            "name": "egg",
             "amount": 2
           },
           {
             "item": "blueberries",
-            "name": "Blueberries",
+            "name": "blueberries",
             "amount": 2
           }
         ]
@@ -50109,13 +53394,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Piquant_Pie",
       "names": {
         "ru": "Пряный пирог"
       },
-      "description": null,
+      "description": "It takes some time and effort to make this pie, but the taste is well worth it.",
       "stats": {
         "health": 105,
         "stamina": 35,
@@ -50132,7 +53417,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "uncooked-piquant-pie",
-            "name": "Uncooked Piquant Pie",
+            "name": "uncooked-piquant-pie",
             "amount": 1
           }
         ]
@@ -50168,14 +53453,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 5,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Plains_Pie_Picnic",
       "names": {
         "cs": "Piknikové koláče z planin",
         "ru": "Равнинный пикник с пирогом"
       },
-      "description": null,
+      "description": "There's nothing plain about this feast! Enjoy pies and loaves fresh from the oven, both sweet and savoury, and experience the culinary equivalent of a hug.",
       "stats": {
         "health": 55,
         "stamina": 55,
@@ -50192,22 +53477,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bread",
-            "name": "Bread",
+            "name": "bread",
             "amount": 3
           },
           {
             "item": "lox-meat-pie",
-            "name": "Lox Meat Pie",
+            "name": "lox-meat-pie",
             "amount": 2
           },
           {
             "item": "cloudberries",
-            "name": "Cloudberries",
+            "name": "cloudberries",
             "amount": 5
           },
           {
             "item": "grasslands-herbalist-harvest",
-            "name": "Grasslands Herbalist Harvest",
+            "name": "grasslands-herbalist-harvest",
             "amount": 1
           }
         ]
@@ -50243,11 +53528,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Pulled_Bear",
       "names": {},
-      "description": null,
+      "description": "Tender meat cooked for hours upon hours, until it practically falls apart.",
       "stats": {
         "health": 37,
         "stamina": 16,
@@ -50264,17 +53549,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cooked-bear-meat",
-            "name": "Cooked Bear Meat",
+            "name": "cooked-bear-meat",
             "amount": 1
           },
           {
             "item": "carrot",
-            "name": "Carrot",
+            "name": "carrot",
             "amount": 2
           },
           {
             "item": "blueberries",
-            "name": "Blueberries",
+            "name": "blueberries",
             "amount": 1
           }
         ]
@@ -50310,13 +53595,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Roasted_Crust_Pie",
       "names": {
         "ru": "Пирог с поджаристой коркой"
       },
-      "description": null,
+      "description": "This dessert keeps you going all day long.",
       "stats": {
         "health": 34,
         "stamina": 100,
@@ -50333,7 +53618,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "uncooked-roasted-crust-pie",
-            "name": "Uncooked Roasted Crust Pie",
+            "name": "uncooked-roasted-crust-pie",
             "amount": 1
           }
         ]
@@ -50369,13 +53654,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Rotten_Meat",
       "names": {
         "ru": "Гнилое мясо"
       },
-      "description": null,
+      "description": "There are maggots crawling in the meat. It smells awful.",
       "stats": {
         "health": 0,
         "stamina": 0,
@@ -50385,18 +53670,16 @@ globalThis.VC_ITEMS_DATA = {
         "isFeast": false,
         "servings": null
       },
-      "recipe": {
-        "station": "None",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
-        "creatures": [],
+        "creatures": [
+          {
+            "id": "vile",
+            "name": "Vile",
+            "biome": "plains"
+          }
+        ],
         "locations": [],
         "traders": [],
         "raw": []
@@ -50422,14 +53705,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 5,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Sailor's_Bounty",
       "names": {
         "cs": "Námořníkova odměna",
         "ru": "Добыча моряка"
       },
-      "description": null,
+      "description": "Fish, fish, and more fish! And also serpent meat, cut to look like fish! Explore the flavours of the Ocean, along with some grilled greens for those still practicing their sea legs.",
       "stats": {
         "health": 45,
         "stamina": 45,
@@ -50446,22 +53729,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cooked-fish",
-            "name": "Cooked Fish",
+            "name": "cooked-fish",
             "amount": 5
           },
           {
             "item": "thistle",
-            "name": "Thistle",
+            "name": "thistle",
             "amount": 4
           },
           {
             "item": "cooked-serpent-meat",
-            "name": "Cooked Serpent Meat",
+            "name": "cooked-serpent-meat",
             "amount": 2
           },
           {
             "item": "seafarer-s-herbs",
-            "name": "Seafarer's Herbs",
+            "name": "seafarer-s-herbs",
             "amount": 1
           }
         ]
@@ -50497,14 +53780,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Salad",
       "names": {
         "cs": "Salát",
         "ru": "Салат"
       },
-      "description": null,
+      "description": "Fresh, crisp leaves.",
       "stats": {
         "health": 26,
         "stamina": 80,
@@ -50521,17 +53804,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "jotun-puffs",
-            "name": "Jotun Puffs",
+            "name": "jotun-puffs",
             "amount": 3
           },
           {
             "item": "onion",
-            "name": "Onion",
+            "name": "onion",
             "amount": 3
           },
           {
             "item": "cloudberries",
-            "name": "Cloudberries",
+            "name": "cloudberries",
             "amount": 3
           }
         ]
@@ -50567,11 +53850,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Seal_Meat_Soup",
       "names": {},
-      "description": null,
+      "description": "A warm and tasty meal, best enjoyed on a cold day.",
       "stats": {
         "health": 110,
         "stamina": 37,
@@ -50588,17 +53871,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "seal-blubber",
-            "name": "Seal Blubber",
+            "name": "seal-blubber",
             "amount": 2
           },
           {
             "item": "kale",
-            "name": "Kale",
+            "name": "kale",
             "amount": 2
           },
           {
             "item": "ice",
-            "name": "Ice",
+            "name": "ice",
             "amount": 2
           }
         ]
@@ -50634,14 +53917,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Seeker_Aspic",
       "names": {
         "cs": "Rosol z Hledače",
         "ru": "Холодец из искателя"
       },
-      "description": null,
+      "description": "A quivering jelly with a taste like gentle electricity.",
       "stats": {
         "health": 28,
         "stamina": 14,
@@ -50658,17 +53941,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "seeker-meat",
-            "name": "Seeker Meat",
+            "name": "seeker-meat",
             "amount": 2
           },
           {
             "item": "magecap",
-            "name": "Magecap",
+            "name": "magecap",
             "amount": 2
           },
           {
             "item": "royal-jelly",
-            "name": "Royal Jelly",
+            "name": "royal-jelly",
             "amount": 2
           }
         ]
@@ -50704,15 +53987,15 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 3,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Serpent_Stew",
       "names": {
         "cs": "Hadí polévka",
         "fr": "Soupe de serpent",
         "ru": "Рагу из змея"
       },
-      "description": null,
+      "description": "Smells of honey and serpent...",
       "stats": {
         "health": 80,
         "stamina": 26,
@@ -50729,17 +54012,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "mushroom",
-            "name": "Mushroom",
+            "name": "mushroom",
             "amount": 1
           },
           {
             "item": "cooked-serpent-meat",
-            "name": "Cooked Serpent Meat",
+            "name": "cooked-serpent-meat",
             "amount": 1
           },
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 2
           }
         ]
@@ -50775,14 +54058,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Sizzling_Berry_Broth",
       "names": {
         "cs": "Bublající bobulový vývar",
         "ru": "Шипящая похлебка из ягод"
       },
-      "description": null,
+      "description": "This soup settles in your stomach with an almost tingly sensation.",
       "stats": {
         "health": 28,
         "stamina": 14,
@@ -50799,17 +54082,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "sap",
-            "name": "Sap",
+            "name": "sap",
             "amount": 3
           },
           {
             "item": "fiddlehead",
-            "name": "Fiddlehead",
+            "name": "fiddlehead",
             "amount": 2
           },
           {
             "item": "vineberry-cluster",
-            "name": "Vineberry Cluster",
+            "name": "vineberry-cluster",
             "amount": 2
           }
         ]
@@ -50845,11 +54128,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Smoked_Fish",
       "names": {},
-      "description": null,
+      "description": "Fish prepared in the most delicious way.",
       "stats": {
         "health": 30,
         "stamina": 16,
@@ -50866,17 +54149,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "raw-fish",
-            "name": "Raw Fish",
+            "name": "raw-fish",
             "amount": 1
           },
           {
             "item": "kale",
-            "name": "Kale",
+            "name": "kale",
             "amount": 1
           },
           {
             "item": "poteitr",
-            "name": "Poteitr",
+            "name": "poteitr",
             "amount": 1
           }
         ]
@@ -50912,11 +54195,11 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 9,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Smoked_Moose_Meat",
       "names": {},
-      "description": null,
+      "description": "The smoke only adds to the wild flavour.",
       "stats": {
         "health": 105,
         "stamina": 35,
@@ -50933,12 +54216,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "moose-meat",
-            "name": "Moose Meat",
+            "name": "moose-meat",
             "amount": 1
           },
           {
             "item": "kale",
-            "name": "Kale",
+            "name": "kale",
             "amount": 2
           }
         ]
@@ -50974,14 +54257,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Sparkling_Shroomshake",
       "names": {
         "cs": "Jiskřivý Houbový koktejl",
         "ru": "Грибная шипучка"
       },
-      "description": null,
+      "description": "Perhaps it's not the best flavour to start the day with, but it will give you the boost you need.",
       "stats": {
         "health": 30,
         "stamina": 15,
@@ -50998,22 +54281,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "sap",
-            "name": "Sap",
+            "name": "sap",
             "amount": 4
           },
           {
             "item": "vineberry-cluster",
-            "name": "Vineberry Cluster",
+            "name": "vineberry-cluster",
             "amount": 2
           },
           {
             "item": "smoke-puff",
-            "name": "Smoke Puff",
+            "name": "smoke-puff",
             "amount": 2
           },
           {
             "item": "magecap",
-            "name": "Magecap",
+            "name": "magecap",
             "amount": 2
           }
         ]
@@ -51049,14 +54332,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Spicy_Marmalade",
       "names": {
         "cs": "Pikantní marmeláda",
         "ru": "Пряный мармелад"
       },
-      "description": null,
+      "description": "Sugary honey perfectly balanced with tangy fronds and tart berries",
       "stats": {
         "health": 30,
         "stamina": 90,
@@ -51073,17 +54356,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "vineberry-cluster",
-            "name": "Vineberry Cluster",
+            "name": "vineberry-cluster",
             "amount": 3
           },
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 1
           },
           {
             "item": "fiddlehead",
-            "name": "Fiddlehead",
+            "name": "fiddlehead",
             "amount": 1
           }
         ]
@@ -51119,14 +54402,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Stuffed_Mushroom",
       "names": {
         "cs": "Plněná houba",
         "ru": "Фаршированный гриб"
       },
-      "description": null,
+      "description": "Bursting with magical flavour.",
       "stats": {
         "health": 25,
         "stamina": 12,
@@ -51143,7 +54426,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "uncooked-stuffed-mushroom",
-            "name": "Uncooked Stuffed Mushroom",
+            "name": "uncooked-stuffed-mushroom",
             "amount": 1
           }
         ]
@@ -51179,14 +54462,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 5,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Swamp_Dweller's_Delight",
       "names": {
         "cs": "Potěšení obyvatele bažin",
         "ru": "Лакомство болотного жителя"
       },
-      "description": null,
+      "description": "Who knew that leeches were edible? With the correct preparation (lots of cooking and lots of seasoning) you will be able to serve them in this feast for the culinary brave. For those who have a sensitive stomach, there are also tasty skewers of sausages and turnips on the side.",
       "stats": {
         "health": 35,
         "stamina": 35,
@@ -51203,22 +54486,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "sausages",
-            "name": "Sausages",
+            "name": "sausages",
             "amount": 8
           },
           {
             "item": "bloodbag",
-            "name": "Bloodbag",
+            "name": "bloodbag",
             "amount": 4
           },
           {
             "item": "turnip-stew",
-            "name": "Turnip Stew",
+            "name": "turnip-stew",
             "amount": 2
           },
           {
             "item": "woodland-herb-blend",
-            "name": "Woodland Herb Blend",
+            "name": "woodland-herb-blend",
             "amount": 1
           }
         ]
@@ -51254,14 +54537,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 5,
+      "weight": 10,
       "wiki": "https://valheim.weirdgloop.org/w/Whole_Roasted_Meadow_Boar",
       "names": {
         "cs": "Celý pečený kanec",
         "ru": "Луговой кабан на вертеле"
       },
-      "description": null,
+      "description": "A boar that has been roasted to perfection, glazed and served atop a bed of greens, with additional cuts of meat on the side. A feast like this is sure to fill your stomach and brighten your day!",
       "stats": {
         "health": 35,
         "stamina": 35,
@@ -51278,22 +54561,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cooked-deer-meat",
-            "name": "Cooked Deer Meat",
+            "name": "cooked-deer-meat",
             "amount": 2
           },
           {
             "item": "cooked-boar-meat",
-            "name": "Cooked Boar Meat",
+            "name": "cooked-boar-meat",
             "amount": 5
           },
           {
             "item": "dandelion",
-            "name": "Dandelion",
+            "name": "dandelion",
             "amount": 4
           },
           {
             "item": "woodland-herb-blend",
-            "name": "Woodland Herb Blend",
+            "name": "woodland-herb-blend",
             "amount": 1
           }
         ]
@@ -51329,13 +54612,13 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 5,
       "category": "food",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 20,
+      "weight": 0.5,
       "wiki": "https://valheim.weirdgloop.org/w/Wolf_Jerky",
       "names": {
         "ru": "Вяленая волчатина"
       },
-      "description": null,
+      "description": "Chewy and full of flavor.",
       "stats": {
         "health": 33,
         "stamina": 33,
@@ -51352,12 +54635,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "wolf-meat",
-            "name": "Wolf Meat",
+            "name": "wolf-meat",
             "amount": 1
           },
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 1
           }
         ]
@@ -51393,8 +54676,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Anti-Sting_Concoction",
       "names": {
         "cs": "Roztok proti štípancům",
@@ -51414,17 +54697,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "cloudberries",
-            "name": "Cloudberries",
+            "name": "cloudberries",
             "amount": 10
           },
           {
             "item": "grouper",
-            "name": "Grouper",
+            "name": "grouper",
             "amount": 3
           },
           {
             "item": "fragrant-bundle",
-            "name": "Fragrant Bundle",
+            "name": "fragrant-bundle",
             "amount": 1
           }
         ]
@@ -51468,14 +54751,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Berserkir_Mead",
       "names": {
         "cs": "Berserkská medovina",
         "ru": "Медовуха берсеркира"
       },
-      "description": null,
+      "description": "Something poisonous stirs within, brewed to the point where its potential can finally be harnessed. But be careful to let the beast out...",
       "stats": {
         "effect": "Attack, Block and Dodge Stamina use -80%\nWeak (x1.5) against Slash, Blunt and Pierce damage",
         "duration": 20,
@@ -51489,17 +54772,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "mushroom",
-            "name": "Mushroom",
+            "name": "mushroom",
             "amount": 10
           },
           {
             "item": "yellow-mushroom",
-            "name": "Yellow Mushroom",
+            "name": "yellow-mushroom",
             "amount": 10
           },
           {
             "item": "toadstool",
-            "name": "Toadstool",
+            "name": "toadstool",
             "amount": 1
           }
         ]
@@ -51535,8 +54818,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Brew_of_Animal_Whispers",
       "names": {
         "cs": "Nápoj zvířecího šepotu",
@@ -51556,17 +54839,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "onion",
-            "name": "Onion",
+            "name": "onion",
             "amount": 5
           },
           {
             "item": "carrot",
-            "name": "Carrot",
+            "name": "carrot",
             "amount": 10
           },
           {
             "item": "pungent-pebbles",
-            "name": "Pungent Pebbles",
+            "name": "pungent-pebbles",
             "amount": 1
           }
         ]
@@ -51610,8 +54893,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Draught_of_Vananidir",
       "names": {
         "cs": "Nápoj Vananidir",
@@ -51631,17 +54914,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "dandelion",
-            "name": "Dandelion",
+            "name": "dandelion",
             "amount": 10
           },
           {
             "item": "perch",
-            "name": "Perch",
+            "name": "perch",
             "amount": 2
           },
           {
             "item": "fresh-seaweed",
-            "name": "Fresh Seaweed",
+            "name": "fresh-seaweed",
             "amount": 1
           }
         ]
@@ -51685,14 +54968,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Fire_Resistance_Barley_Wine",
       "names": {
         "cs": "Ječmenné pivo na odolnost vůči ohni",
         "ru": "Огненное ячменное вино"
       },
-      "description": null,
+      "description": "Fortifies you against fire. You take less damage from burning.",
       "stats": {
         "effect": "Resistance vs. Fire",
         "duration": 600,
@@ -51706,12 +54989,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "barley",
-            "name": "Barley",
+            "name": "barley",
             "amount": 10
           },
           {
             "item": "cloudberries",
-            "name": "Cloudberries",
+            "name": "cloudberries",
             "amount": 10
           }
         ]
@@ -51747,14 +55030,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Frost_Resistance_Mead",
       "names": {
         "cs": "Medovina proti mrazu",
         "ru": "Морозоустойчивая медовуха"
       },
-      "description": null,
+      "description": "Protects against the cold.",
       "stats": {
         "effect": "Resistant (0.5x) VS Frost",
         "duration": 600,
@@ -51768,22 +55051,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "thistle",
-            "name": "Thistle",
+            "name": "thistle",
             "amount": 5
           },
           {
             "item": "bloodbag",
-            "name": "Bloodbag",
+            "name": "bloodbag",
             "amount": 2
           },
           {
             "item": "greydwarf-eye",
-            "name": "Greydwarf Eye",
+            "name": "greydwarf-eye",
             "amount": 1
           }
         ]
@@ -51819,8 +55102,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Lightfoot_Mead",
       "names": {
         "cs": "Lehkonohá medovina",
@@ -51840,17 +55123,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "scale-hide",
-            "name": "Scale Hide",
+            "name": "scale-hide",
             "amount": 2
           },
           {
             "item": "feathers",
-            "name": "Feathers",
+            "name": "feathers",
             "amount": 5
           },
           {
             "item": "magecap",
-            "name": "Magecap",
+            "name": "magecap",
             "amount": 5
           }
         ]
@@ -51894,14 +55177,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Lingering_Eitr_Mead",
       "names": {
         "cs": "Trvající éitrová medovina",
         "ru": "Мощная медовуха Эйтра"
       },
-      "description": null,
+      "description": "Increases eitr regeneration.",
       "stats": {
         "effect": "Upon consumption, it provides +25% eitr regeneration for 5 minutes. While active, it prevents the consumption of all types of eitr meads.\n\nru:Мощная медовуха Эйтра\ncs:Trvající éitrová medovina",
         "duration": 300,
@@ -51915,17 +55198,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "sap",
-            "name": "Sap",
+            "name": "sap",
             "amount": 10
           },
           {
             "item": "vineberry-cluster",
-            "name": "Vineberry Cluster",
+            "name": "vineberry-cluster",
             "amount": 10
           },
           {
             "item": "magecap",
-            "name": "Magecap",
+            "name": "magecap",
             "amount": 10
           }
         ]
@@ -51961,14 +55244,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 8,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Lingering_Healing_Mead",
       "names": {
         "cs": "Trvající léčivá medovina",
         "ru": "Мощная медовуха лечения"
       },
-      "description": null,
+      "description": "Increases health regeneration.",
       "stats": {
         "effect": "Upon consumption, it provides +25% health regeneration for 5 minutes. While active, it prevents the consumption of all types of healing meads.",
         "duration": 300,
@@ -51982,17 +55265,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "sap",
-            "name": "Sap",
+            "name": "sap",
             "amount": 10
           },
           {
             "item": "vineberry-cluster",
-            "name": "Vineberry Cluster",
+            "name": "vineberry-cluster",
             "amount": 10
           },
           {
             "item": "smoke-puff",
-            "name": "Smoke Puff",
+            "name": "smoke-puff",
             "amount": 10
           }
         ]
@@ -52028,14 +55311,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Lingering_Stamina_Mead",
       "names": {
         "cs": "Medovina trvající výdrže",
         "ru": "Большая медовуха выносливости"
       },
-      "description": null,
+      "description": "Increases stamina regeneration.",
       "stats": {
         "effect": "+25% rate",
         "duration": 300,
@@ -52049,17 +55332,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "sap",
-            "name": "Sap",
+            "name": "sap",
             "amount": 10
           },
           {
             "item": "cloudberries",
-            "name": "Cloudberries",
+            "name": "cloudberries",
             "amount": 10
           },
           {
             "item": "jotun-puffs",
-            "name": "Jotun Puffs",
+            "name": "jotun-puffs",
             "amount": 10
           }
         ]
@@ -52095,8 +55378,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Love_Potion",
       "names": {
         "cs": "Nápoj lásky",
@@ -52146,14 +55429,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Major_Healing_Mead",
       "names": {
         "cs": "Velká Léčivá Medovina",
         "ru": "Большая медовуха лечения"
       },
-      "description": null,
+      "description": "Restores health.",
       "stats": {
         "effect": "+125 HP over 10s",
         "duration": 10,
@@ -52167,17 +55450,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "blood-clot",
-            "name": "Blood Clot",
+            "name": "blood-clot",
             "amount": 4
           },
           {
             "item": "royal-jelly",
-            "name": "Royal Jelly",
+            "name": "royal-jelly",
             "amount": 5
           }
         ]
@@ -52213,14 +55496,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Mead_of_Troll_Endurance",
       "names": {
         "cs": "Medovina trollí výdrže",
         "ru": "Медовуха силы тролля"
       },
-      "description": null,
+      "description": "What creature can carry more than a troll? Why, a viking with this drink of course!",
       "stats": {
         "effect": "+250.0 carry weight",
         "duration": 300,
@@ -52234,17 +55517,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "trollfish",
-            "name": "Trollfish",
+            "name": "trollfish",
             "amount": 2
           },
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "powdered-dragon-eggshells",
-            "name": "Powdered Dragon Eggshells",
+            "name": "powdered-dragon-eggshells",
             "amount": 1
           }
         ]
@@ -52280,14 +55563,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Medium_Healing_Mead",
       "names": {
         "cs": "Střední léčivá medovina",
         "ru": "Средняя медовуха лечения"
       },
-      "description": null,
+      "description": "Restores health.",
       "stats": {
         "effect": "+75 HP over 10s",
         "duration": 10,
@@ -52301,22 +55584,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "bloodbag",
-            "name": "Bloodbag",
+            "name": "bloodbag",
             "amount": 4
           },
           {
             "item": "raspberries",
-            "name": "Raspberries",
+            "name": "raspberries",
             "amount": 10
           },
           {
             "item": "dandelion",
-            "name": "Dandelion",
+            "name": "dandelion",
             "amount": 1
           }
         ]
@@ -52352,14 +55635,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 6,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Medium_Stamina_Mead",
       "names": {
         "cs": "Střední medovina na výdrž",
         "ru": "Средняя медовуха выносливости"
       },
-      "description": null,
+      "description": "Restores stamina.",
       "stats": {
         "effect": "+160 Stamina over 2s",
         "duration": 2,
@@ -52373,17 +55656,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "cloudberries",
-            "name": "Cloudberries",
+            "name": "cloudberries",
             "amount": 10
           },
           {
             "item": "yellow-mushroom",
-            "name": "Yellow Mushroom",
+            "name": "yellow-mushroom",
             "amount": 10
           }
         ]
@@ -52419,14 +55702,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 7,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Minor_Eitr_Mead",
       "names": {
         "cs": "Slabší Éitrová medovina",
         "ru": "Малая медовуха Эйтра"
       },
-      "description": null,
+      "description": "Restores eitr.",
       "stats": {
         "effect": "+125 Eitr over 10s",
         "duration": 10,
@@ -52440,22 +55723,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "sap",
-            "name": "Sap",
+            "name": "sap",
             "amount": 5
           },
           {
             "item": "jotun-puffs",
-            "name": "Jotun Puffs",
+            "name": "jotun-puffs",
             "amount": 2
           },
           {
             "item": "magecap",
-            "name": "Magecap",
+            "name": "magecap",
             "amount": 5
           }
         ]
@@ -52491,14 +55774,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Minor_Healing_Mead",
       "names": {
         "cs": "Drobná léčivá medovina",
         "ru": "Малая медовуха лечения"
       },
-      "description": null,
+      "description": "Restores health.",
       "stats": {
         "effect": "+50 HP over 10s",
         "duration": 10,
@@ -52512,22 +55795,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "blueberries",
-            "name": "Blueberries",
+            "name": "blueberries",
             "amount": 5
           },
           {
             "item": "raspberries",
-            "name": "Raspberries",
+            "name": "raspberries",
             "amount": 10
           },
           {
             "item": "dandelion",
-            "name": "Dandelion",
+            "name": "dandelion",
             "amount": 1
           }
         ]
@@ -52563,14 +55846,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Minor_Stamina_Mead",
       "names": {
         "cs": "Drobná medovina na výdrž",
         "ru": "Малая медовуха выносливости"
       },
-      "description": null,
+      "description": "Restores stamina.",
       "stats": {
         "effect": "+80 Stamina over 2s",
         "duration": 2,
@@ -52584,17 +55867,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "raspberries",
-            "name": "Raspberries",
+            "name": "raspberries",
             "amount": 10
           },
           {
             "item": "yellow-mushroom",
-            "name": "Yellow Mushroom",
+            "name": "yellow-mushroom",
             "amount": 10
           }
         ]
@@ -52630,14 +55913,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Poison_Resistance_Mead",
       "names": {
         "cs": "Medovina proti jedu",
         "ru": "Медовуха-антидот"
       },
-      "description": null,
+      "description": "Fortifies you against poison. You take less damage from poison.",
       "stats": {
         "effect": "Very resistant vs. Poison",
         "duration": 600,
@@ -52651,22 +55934,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "thistle",
-            "name": "Thistle",
+            "name": "thistle",
             "amount": 5
           },
           {
             "item": "neck-tail",
-            "name": "Neck Tail",
+            "name": "neck-tail",
             "amount": 1
           },
           {
             "item": "coal",
-            "name": "Coal",
+            "name": "coal",
             "amount": 10
           }
         ]
@@ -52702,14 +55985,14 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 2,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Tasty_Mead",
       "names": {
         "cs": "Chutná medovina",
         "ru": "Вкусная медовуха"
       },
-      "description": null,
+      "description": "The nectar of the Gods, divine mead.",
       "stats": {
         "effect": "-50% rate; +100% rate",
         "duration": 10,
@@ -52723,17 +56006,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "raspberries",
-            "name": "Raspberries",
+            "name": "raspberries",
             "amount": 10
           },
           {
             "item": "blueberries",
-            "name": "Blueberries",
+            "name": "blueberries",
             "amount": 5
           }
         ]
@@ -52769,8 +56052,8 @@ globalThis.VC_ITEMS_DATA = {
       "tier": 4,
       "category": "mead",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
+      "stack": 10,
+      "weight": 1,
       "wiki": "https://valheim.weirdgloop.org/w/Tonic_of_Ratatosk",
       "names": {
         "cs": "Ratatoskův tonik",
@@ -52790,17 +56073,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "honey",
-            "name": "Honey",
+            "name": "honey",
             "amount": 10
           },
           {
             "item": "blueberries",
-            "name": "Blueberries",
+            "name": "blueberries",
             "amount": 10
           },
           {
             "item": "cured-squirrel-hamstring",
-            "name": "Cured Squirrel Hamstring",
+            "name": "cured-squirrel-hamstring",
             "amount": 1
           }
         ]
@@ -52861,17 +56144,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 15
           },
           {
             "item": "moose-trophy",
-            "name": "Moose Trophy",
+            "name": "moose-trophy",
             "amount": 1
           },
           {
             "item": "moose-hide",
-            "name": "Moose Hide",
+            "name": "moose-hide",
             "amount": 5
           }
         ]
@@ -52914,7 +56197,7 @@ globalThis.VC_ITEMS_DATA = {
         "cs": "Stojan na brnění",
         "ru": "Стойка для брони"
       },
-      "description": null,
+      "description": "Some clothes are just too nice to fold away. Why not put them on display instead?",
       "stats": {
         "comfort": 1,
         "furniture": "stands",
@@ -52927,17 +56210,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 8
           },
           {
             "item": "iron-nails",
-            "name": "Iron Nails",
+            "name": "iron-nails",
             "amount": 4
           },
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 2
           }
         ]
@@ -52993,17 +56276,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "ashwood",
-            "name": "Ashwood",
+            "name": "ashwood",
             "amount": 8
           },
           {
             "item": "lox-pelt",
-            "name": "Lox Pelt",
+            "name": "lox-pelt",
             "amount": 2
           },
           {
             "item": "asksvin-hide",
-            "name": "Asksvin Hide",
+            "name": "asksvin-hide",
             "amount": 2
           }
         ]
@@ -53056,7 +56339,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "ashwood",
-            "name": "Ashwood",
+            "name": "ashwood",
             "amount": 6
           }
         ]
@@ -53111,7 +56394,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "asksvin-hide",
-            "name": "Asksvin Hide",
+            "name": "asksvin-hide",
             "amount": 4
           }
         ]
@@ -53153,7 +56436,7 @@ globalThis.VC_ITEMS_DATA = {
       "names": {
         "ru": "Скелет пеплозавра"
       },
-      "description": null,
+      "description": "Gruesome or decorative? That is up to you.",
       "stats": {
         "comfort": 1,
         "furniture": "ashlands",
@@ -53166,27 +56449,27 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bone-fragments",
-            "name": "Bone Fragments",
+            "name": "bone-fragments",
             "amount": 50
           },
           {
             "item": "asksvin-neck",
-            "name": "Asksvin Neck",
+            "name": "asksvin-neck",
             "amount": 1
           },
           {
             "item": "asksvin-pelvis",
-            "name": "Asksvin Pelvis",
+            "name": "asksvin-pelvis",
             "amount": 1
           },
           {
             "item": "asksvin-ribcage",
-            "name": "Asksvin Ribcage",
+            "name": "asksvin-ribcage",
             "amount": 1
           },
           {
             "item": "asksvin-skull",
-            "name": "Asksvin Skull",
+            "name": "asksvin-skull",
             "amount": 1
           }
         ]
@@ -53228,7 +56511,7 @@ globalThis.VC_ITEMS_DATA = {
       "names": {
         "ru": "Цирюльня"
       },
-      "description": null,
+      "description": "Helps you stay up to date with the latest viking fashion.",
       "stats": {
         "comfort": 1,
         "furniture": "bathroom",
@@ -53241,22 +56524,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 10
           },
           {
             "item": "barber-kit",
-            "name": "Barber Kit",
+            "name": "barber-kit",
             "amount": 1
           },
           {
             "item": "bronze-nails",
-            "name": "Bronze Nails",
+            "name": "bronze-nails",
             "amount": 5
           },
           {
             "item": "troll-hide",
-            "name": "Troll Hide",
+            "name": "troll-hide",
             "amount": 5
           }
         ]
@@ -53311,17 +56594,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bear-hide",
-            "name": "Bear Hide",
+            "name": "bear-hide",
             "amount": 1
           },
           {
             "item": "bear-paw",
-            "name": "Bear Paw",
+            "name": "bear-paw",
             "amount": 2
           },
           {
             "item": "bear-trophy",
-            "name": "Bear Trophy",
+            "name": "bear-trophy",
             "amount": 1
           }
         ]
@@ -53378,7 +56661,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "wood",
-            "name": "Wood",
+            "name": "wood",
             "amount": 8
           }
         ]
@@ -53431,7 +56714,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 6
           }
         ]
@@ -53486,17 +56769,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 2
           },
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 6
           },
           {
             "item": "coal",
-            "name": "Coal",
+            "name": "coal",
             "amount": 4
           }
         ]
@@ -53549,12 +56832,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "black-marble",
-            "name": "Black Marble",
+            "name": "black-marble",
             "amount": 6
           },
           {
             "item": "copper",
-            "name": "Copper",
+            "name": "copper",
             "amount": 3
           }
         ]
@@ -53607,12 +56890,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "black-marble",
-            "name": "Black Marble",
+            "name": "black-marble",
             "amount": 6
           },
           {
             "item": "copper",
-            "name": "Copper",
+            "name": "copper",
             "amount": 3
           }
         ]
@@ -53665,22 +56948,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "black-marble",
-            "name": "Black Marble",
+            "name": "black-marble",
             "amount": 20
           },
           {
             "item": "scale-hide",
-            "name": "Scale Hide",
+            "name": "scale-hide",
             "amount": 4
           },
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 2
           },
           {
             "item": "copper",
-            "name": "Copper",
+            "name": "copper",
             "amount": 5
           }
         ]
@@ -53735,17 +57018,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 2
           },
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 6
           },
           {
             "item": "blueberries",
-            "name": "Blueberries",
+            "name": "blueberries",
             "amount": 4
           }
         ]
@@ -53800,7 +57083,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "blue-jute",
-            "name": "Blue Jute",
+            "name": "blue-jute",
             "amount": 4
           }
         ]
@@ -53855,12 +57138,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "blue-jute",
-            "name": "Blue Jute",
+            "name": "blue-jute",
             "amount": 4
           },
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 1
           }
         ]
@@ -53915,12 +57198,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "blue-jute",
-            "name": "Blue Jute",
+            "name": "blue-jute",
             "amount": 4
           },
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 1
           }
         ]
@@ -53975,27 +57258,27 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 2
           },
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 6
           },
           {
             "item": "blueberries",
-            "name": "Blueberries",
+            "name": "blueberries",
             "amount": 2
           },
           {
             "item": "raspberries",
-            "name": "Raspberries",
+            "name": "raspberries",
             "amount": 2
           },
           {
             "item": "cloudberries",
-            "name": "Cloudberries",
+            "name": "cloudberries",
             "amount": 1
           }
         ]
@@ -54037,7 +57320,7 @@ globalThis.VC_ITEMS_DATA = {
       "names": {
         "ru": "Жаровня с синим пламенем"
       },
-      "description": null,
+      "description": "It's hard to tell whether this flame burns incredibly hot or incredibly cold.",
       "stats": {
         "comfort": 1,
         "furniture": "fire",
@@ -54050,17 +57333,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bronze",
-            "name": "Bronze",
+            "name": "bronze",
             "amount": 5
           },
           {
             "item": "greydwarf-eye",
-            "name": "Greydwarf Eye",
+            "name": "greydwarf-eye",
             "amount": 5
           },
           {
             "item": "fenris-claw",
-            "name": "Fenris Claw",
+            "name": "fenris-claw",
             "amount": 3
           }
         ]
@@ -54113,22 +57396,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "charred-bone",
-            "name": "Charred Bone",
+            "name": "charred-bone",
             "amount": 15
           },
           {
             "item": "flametal",
-            "name": "Flametal",
+            "name": "flametal",
             "amount": 4
           },
           {
             "item": "grausten",
-            "name": "Grausten",
+            "name": "grausten",
             "amount": 20
           },
           {
             "item": "charred-skull",
-            "name": "Charred Skull",
+            "name": "charred-skull",
             "amount": 3
           }
         ]
@@ -54171,41 +57454,41 @@ globalThis.VC_ITEMS_DATA = {
         "cs": "Velký táborák",
         "ru": "Большой костер"
       },
-      "description": null,
+      "description": "For when a regular campfire just isn't impressive enough!",
       "stats": {
         "comfort": 1,
         "furniture": "fire",
         "seasonal": false
       },
       "recipe": {
-        "station": null,
+        "station": "Workbench",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
           {
             "item": "surtling-core",
-            "name": "Surtling Core",
+            "name": "surtling-core",
             "amount": 1
           },
           {
             "item": "ancient-bark",
-            "name": "Ancient Bark",
+            "name": "ancient-bark",
             "amount": 5
           },
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 5
           },
           {
             "item": "corewood",
-            "name": "Corewood",
+            "name": "corewood",
             "amount": 5
           }
         ]
       },
       "station": {
-        "name": null,
+        "name": "Workbench",
         "level": 1
       },
       "sources": {
@@ -54249,24 +57532,24 @@ globalThis.VC_ITEMS_DATA = {
         "seasonal": false
       },
       "recipe": {
-        "station": null,
+        "station": "Workbench",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
           {
             "item": "stone",
-            "name": "Stone",
+            "name": "stone",
             "amount": 5
           },
           {
             "item": "wood",
-            "name": "Wood",
+            "name": "wood",
             "amount": 2
           }
         ]
       },
       "station": {
-        "name": null,
+        "name": "Workbench",
         "level": 1
       },
       "sources": {
@@ -54313,12 +57596,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 6
           },
           {
             "item": "moose-hide",
-            "name": "Moose Hide",
+            "name": "moose-hide",
             "amount": 6
           }
         ]
@@ -54364,16 +57647,8 @@ globalThis.VC_ITEMS_DATA = {
         "furniture": "chair",
         "seasonal": false
       },
-      "recipe": {
-        "station": null,
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": null,
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -54418,7 +57693,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 4
           }
         ]
@@ -54471,22 +57746,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 4
           },
           {
             "item": "tar",
-            "name": "Tar",
+            "name": "tar",
             "amount": 1
           },
           {
             "item": "iron-nails",
-            "name": "Iron Nails",
+            "name": "iron-nails",
             "amount": 5
           },
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 1
           }
         ]
@@ -54541,7 +57816,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 4
           }
         ]
@@ -54597,27 +57872,27 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 40
           },
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 7
           },
           {
             "item": "wolf-pelt",
-            "name": "Wolf Pelt",
+            "name": "wolf-pelt",
             "amount": 4
           },
           {
             "item": "feathers",
-            "name": "Feathers",
+            "name": "feathers",
             "amount": 10
           },
           {
             "item": "iron-nails",
-            "name": "Iron Nails",
+            "name": "iron-nails",
             "amount": 15
           }
         ]
@@ -54673,17 +57948,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "copper",
-            "name": "Copper",
+            "name": "copper",
             "amount": 3
           },
           {
             "item": "dvergr-lantern",
-            "name": "Dvergr Lantern",
+            "name": "dvergr-lantern",
             "amount": 1
           },
           {
             "item": "chain",
-            "name": "Chain",
+            "name": "chain",
             "amount": 1
           }
         ]
@@ -54726,7 +58001,7 @@ globalThis.VC_ITEMS_DATA = {
         "cs": "Dvergská nástěnná lucerna",
         "ru": "Настенный светильник двергов"
       },
-      "description": null,
+      "description": "A finely wrought lantern, crafted by a true artisan. The wall mount is easy enough to figure out though!",
       "stats": {
         "comfort": 1,
         "furniture": "lights",
@@ -54739,17 +58014,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "copper",
-            "name": "Copper",
+            "name": "copper",
             "amount": 2
           },
           {
             "item": "dvergr-lantern",
-            "name": "Dvergr Lantern",
+            "name": "dvergr-lantern",
             "amount": 1
           },
           {
             "item": "chain",
-            "name": "Chain",
+            "name": "chain",
             "amount": 1
           }
         ]
@@ -54791,7 +58066,7 @@ globalThis.VC_ITEMS_DATA = {
       "names": {
         "ru": "Волшебные огни"
       },
-      "description": null,
+      "description": "Lends a gentle light to your festivities.",
       "stats": {
         "comfort": 1,
         "furniture": "plants",
@@ -54804,12 +58079,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 2
           },
           {
             "item": "thistle",
-            "name": "Thistle",
+            "name": "thistle",
             "amount": 1
           }
         ]
@@ -54851,7 +58126,7 @@ globalThis.VC_ITEMS_DATA = {
       "names": {
         "ru": "Цветочная гирлянда"
       },
-      "description": null,
+      "description": "Some flowers to brighten up your day!",
       "stats": {
         "comfort": 1,
         "furniture": "plants",
@@ -54864,12 +58139,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 2
           },
           {
             "item": "dandelion",
-            "name": "Dandelion",
+            "name": "dandelion",
             "amount": 1
           }
         ]
@@ -54924,17 +58199,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 2
           },
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 6
           },
           {
             "item": "guck",
-            "name": "Guck",
+            "name": "guck",
             "amount": 1
           }
         ]
@@ -54990,17 +58265,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bronze",
-            "name": "Bronze",
+            "name": "bronze",
             "amount": 5
           },
           {
             "item": "coal",
-            "name": "Coal",
+            "name": "coal",
             "amount": 2
           },
           {
             "item": "chain",
-            "name": "Chain",
+            "name": "chain",
             "amount": 1
           }
         ]
@@ -55055,7 +58330,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "scale-hide",
-            "name": "Scale Hide",
+            "name": "scale-hide",
             "amount": 4
           }
         ]
@@ -55111,7 +58386,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "stone",
-            "name": "Stone",
+            "name": "stone",
             "amount": 15
           }
         ]
@@ -55154,7 +58429,7 @@ globalThis.VC_ITEMS_DATA = {
         "cs": "Vířivka",
         "ru": "Ванна"
       },
-      "description": null,
+      "description": "Respectable vikings bathe as often as once per week!",
       "stats": {
         "comfort": 2,
         "furniture": "bathroom",
@@ -55167,22 +58442,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "wood",
-            "name": "Wood",
+            "name": "wood",
             "amount": 20
           },
           {
             "item": "tar",
-            "name": "Tar",
+            "name": "tar",
             "amount": 6
           },
           {
             "item": "iron",
-            "name": "Iron",
+            "name": "iron",
             "amount": 10
           },
           {
             "item": "stone",
-            "name": "Stone",
+            "name": "stone",
             "amount": 8
           }
         ]
@@ -55231,24 +58506,24 @@ globalThis.VC_ITEMS_DATA = {
         "seasonal": false
       },
       "recipe": {
-        "station": null,
+        "station": "Workbench",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
           {
             "item": "iron-pit",
-            "name": "Iron Pit",
+            "name": "iron-pit",
             "amount": 1
           },
           {
             "item": "wood",
-            "name": "Wood",
+            "name": "wood",
             "amount": 1
           }
         ]
       },
       "station": {
-        "name": null,
+        "name": "Workbench",
         "level": 1
       },
       "sources": {
@@ -55298,12 +58573,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 4
           },
           {
             "item": "bronze-nails",
-            "name": "Bronze Nails",
+            "name": "bronze-nails",
             "amount": 1
           }
         ]
@@ -55359,12 +58634,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 4
           },
           {
             "item": "bronze-nails",
-            "name": "Bronze Nails",
+            "name": "bronze-nails",
             "amount": 1
           }
         ]
@@ -55420,12 +58695,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "turnip",
-            "name": "Turnip",
+            "name": "turnip",
             "amount": 4
           },
           {
             "item": "resin",
-            "name": "Resin",
+            "name": "resin",
             "amount": 2
           }
         ]
@@ -55474,24 +58749,24 @@ globalThis.VC_ITEMS_DATA = {
         "seasonal": false
       },
       "recipe": {
-        "station": null,
+        "station": "Workbench",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
           {
             "item": "pot-shard",
-            "name": "Pot Shard",
+            "name": "pot-shard",
             "amount": 5
           },
           {
             "item": "charcoal-resin",
-            "name": "Charcoal Resin",
+            "name": "charcoal-resin",
             "amount": 1
           }
         ]
       },
       "station": {
-        "name": null,
+        "name": "Workbench",
         "level": 1
       },
       "sources": {
@@ -55540,17 +58815,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "flametal",
-            "name": "Flametal",
+            "name": "flametal",
             "amount": 1
           },
           {
             "item": "proustite-powder",
-            "name": "Proustite Powder",
+            "name": "proustite-powder",
             "amount": 1
           },
           {
             "item": "sulfur",
-            "name": "Sulfur",
+            "name": "sulfur",
             "amount": 1
           }
         ]
@@ -55590,7 +58865,7 @@ globalThis.VC_ITEMS_DATA = {
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Long_Carved_Table",
       "names": {},
-      "description": null,
+      "description": "The story carved into this table is excellent to read during long feasts.",
       "stats": {
         "comfort": 2,
         "furniture": "table",
@@ -55603,17 +58878,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 20
           },
           {
             "item": "tar",
-            "name": "Tar",
+            "name": "tar",
             "amount": 2
           },
           {
             "item": "iron-nails",
-            "name": "Iron Nails",
+            "name": "iron-nails",
             "amount": 20
           }
         ]
@@ -55666,17 +58941,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 20
           },
           {
             "item": "tar",
-            "name": "Tar",
+            "name": "tar",
             "amount": 2
           },
           {
             "item": "iron-nails",
-            "name": "Iron Nails",
+            "name": "iron-nails",
             "amount": 20
           }
         ]
@@ -55731,7 +59006,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "lox-pelt",
-            "name": "Lox Pelt",
+            "name": "lox-pelt",
             "amount": 4
           }
         ]
@@ -55787,17 +59062,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "wood",
-            "name": "Wood",
+            "name": "wood",
             "amount": 10
           },
           {
             "item": "dandelion",
-            "name": "Dandelion",
+            "name": "dandelion",
             "amount": 4
           },
           {
             "item": "thistle",
-            "name": "Thistle",
+            "name": "thistle",
             "amount": 4
           }
         ]
@@ -55846,24 +59121,24 @@ globalThis.VC_ITEMS_DATA = {
         "seasonal": false
       },
       "recipe": {
-        "station": null,
+        "station": "Workbench",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
           {
             "item": "pot-shard",
-            "name": "Pot Shard",
+            "name": "pot-shard",
             "amount": 4
           },
           {
             "item": "charcoal-resin",
-            "name": "Charcoal Resin",
+            "name": "charcoal-resin",
             "amount": 1
           }
         ]
       },
       "station": {
-        "name": null,
+        "name": "Workbench",
         "level": 1
       },
       "sources": {
@@ -55913,12 +59188,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 1
           },
           {
             "item": "red-jute",
-            "name": "Red Jute",
+            "name": "red-jute",
             "amount": 1
           }
         ]
@@ -55966,16 +59241,8 @@ globalThis.VC_ITEMS_DATA = {
         "furniture": "rug",
         "seasonal": false
       },
-      "recipe": {
-        "station": null,
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": []
-      },
-      "station": {
-        "name": null,
-        "level": 1
-      },
+      "recipe": null,
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -56022,22 +59289,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 2
           },
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 6
           },
           {
             "item": "carrot",
-            "name": "Carrot",
+            "name": "carrot",
             "amount": 2
           },
           {
             "item": "cloudberries",
-            "name": "Cloudberries",
+            "name": "cloudberries",
             "amount": 3
           }
         ]
@@ -56092,22 +59359,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 2
           },
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 6
           },
           {
             "item": "blueberries",
-            "name": "Blueberries",
+            "name": "blueberries",
             "amount": 2
           },
           {
             "item": "raspberries",
-            "name": "Raspberries",
+            "name": "raspberries",
             "amount": 3
           }
         ]
@@ -56160,12 +59427,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 20
           },
           {
             "item": "iron-nails",
-            "name": "Iron Nails",
+            "name": "iron-nails",
             "amount": 10
           }
         ]
@@ -56220,17 +59487,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 2
           },
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 6
           },
           {
             "item": "bloodbag",
-            "name": "Bloodbag",
+            "name": "bloodbag",
             "amount": 1
           }
         ]
@@ -56285,7 +59552,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "red-jute",
-            "name": "Red Jute",
+            "name": "red-jute",
             "amount": 4
           }
         ]
@@ -56340,12 +59607,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "red-jute",
-            "name": "Red Jute",
+            "name": "red-jute",
             "amount": 4
           },
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 1
           }
         ]
@@ -56398,17 +59665,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 10
           },
           {
             "item": "tar",
-            "name": "Tar",
+            "name": "tar",
             "amount": 2
           },
           {
             "item": "iron-nails",
-            "name": "Iron Nails",
+            "name": "iron-nails",
             "amount": 20
           }
         ]
@@ -56448,7 +59715,7 @@ globalThis.VC_ITEMS_DATA = {
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Sealskin_Rug",
       "names": {},
-      "description": null,
+      "description": "This rug is so soft, soft like innocence.",
       "stats": {
         "comfort": 1,
         "furniture": "rug",
@@ -56461,7 +59728,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "seal-pelt",
-            "name": "Seal Pelt",
+            "name": "seal-pelt",
             "amount": 4
           }
         ]
@@ -56514,7 +59781,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "corewood",
-            "name": "Corewood",
+            "name": "corewood",
             "amount": 2
           }
         ]
@@ -56563,24 +59830,24 @@ globalThis.VC_ITEMS_DATA = {
         "seasonal": false
       },
       "recipe": {
-        "station": null,
+        "station": "Workbench",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
           {
             "item": "pot-shard",
-            "name": "Pot Shard",
+            "name": "pot-shard",
             "amount": 3
           },
           {
             "item": "charcoal-resin",
-            "name": "Charcoal Resin",
+            "name": "charcoal-resin",
             "amount": 1
           }
         ]
       },
       "station": {
-        "name": null,
+        "name": "Workbench",
         "level": 1
       },
       "sources": {
@@ -56614,7 +59881,7 @@ globalThis.VC_ITEMS_DATA = {
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Snow_Lantern",
       "names": {},
-      "description": null,
+      "description": "Adds a cosy touch to a wintry landscape.",
       "stats": {
         "comfort": 2,
         "furniture": "lights",
@@ -56627,7 +59894,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "snowball",
-            "name": "Snowball",
+            "name": "snowball",
             "amount": 8
           }
         ]
@@ -56667,7 +59934,7 @@ globalThis.VC_ITEMS_DATA = {
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Square_Carved_Table",
       "names": {},
-      "description": null,
+      "description": "A table for more intimate gatherings.",
       "stats": {
         "comfort": 1,
         "furniture": "table",
@@ -56680,17 +59947,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "timberwood",
-            "name": "Timberwood",
+            "name": "timberwood",
             "amount": 6
           },
           {
             "item": "tar",
-            "name": "Tar",
+            "name": "tar",
             "amount": 1
           },
           {
             "item": "iron-nails",
-            "name": "Iron Nails",
+            "name": "iron-nails",
             "amount": 6
           }
         ]
@@ -56746,17 +60013,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "bronze",
-            "name": "Bronze",
+            "name": "bronze",
             "amount": 5
           },
           {
             "item": "coal",
-            "name": "Coal",
+            "name": "coal",
             "amount": 2
           },
           {
             "item": "fenris-claw",
-            "name": "Fenris Claw",
+            "name": "fenris-claw",
             "amount": 3
           }
         ]
@@ -56809,17 +60076,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "stone",
-            "name": "Stone",
+            "name": "stone",
             "amount": 20
           },
           {
             "item": "deer-hide",
-            "name": "Deer Hide",
+            "name": "deer-hide",
             "amount": 2
           },
           {
             "item": "wolf-pelt",
-            "name": "Wolf Pelt",
+            "name": "wolf-pelt",
             "amount": 2
           }
         ]
@@ -56872,7 +60139,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 4
           }
         ]
@@ -56927,12 +60194,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "barley",
-            "name": "Barley",
+            "name": "barley",
             "amount": 1
           },
           {
             "item": "flax",
-            "name": "Flax",
+            "name": "flax",
             "amount": 1
           }
         ]
@@ -56985,7 +60252,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 6
           }
         ]
@@ -57040,22 +60307,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 2
           },
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 6
           },
           {
             "item": "blueberries",
-            "name": "Blueberries",
+            "name": "blueberries",
             "amount": 2
           },
           {
             "item": "cloudberries",
-            "name": "Cloudberries",
+            "name": "cloudberries",
             "amount": 3
           }
         ]
@@ -57110,17 +60377,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 2
           },
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 6
           },
           {
             "item": "raspberries",
-            "name": "Raspberries",
+            "name": "raspberries",
             "amount": 4
           }
         ]
@@ -57175,22 +60442,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 2
           },
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 6
           },
           {
             "item": "coal",
-            "name": "Coal",
+            "name": "coal",
             "amount": 2
           },
           {
             "item": "cloudberries",
-            "name": "Cloudberries",
+            "name": "cloudberries",
             "amount": 4
           }
         ]
@@ -57245,7 +60512,7 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "wolf-pelt",
-            "name": "Wolf Pelt",
+            "name": "wolf-pelt",
             "amount": 4
           }
         ]
@@ -57300,22 +60567,22 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 2
           },
           {
             "item": "leather-scraps",
-            "name": "Leather Scraps",
+            "name": "leather-scraps",
             "amount": 6
           },
           {
             "item": "coal",
-            "name": "Coal",
+            "name": "coal",
             "amount": 2
           },
           {
             "item": "dandelion",
-            "name": "Dandelion",
+            "name": "dandelion",
             "amount": 4
           }
         ]
@@ -57371,12 +60638,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 2
           },
           {
             "item": "pine-cone",
-            "name": "Pine Cone",
+            "name": "pine-cone",
             "amount": 1
           }
         ]
@@ -57432,12 +60699,12 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "wood",
-            "name": "Wood",
+            "name": "wood",
             "amount": 10
           },
           {
             "item": "fir-cone",
-            "name": "Fir Cone",
+            "name": "fir-cone",
             "amount": 1
           }
         ]
@@ -57493,17 +60760,17 @@ globalThis.VC_ITEMS_DATA = {
         "materials": [
           {
             "item": "pine-cone",
-            "name": "Pine Cone",
+            "name": "pine-cone",
             "amount": 4
           },
           {
             "item": "red-jute",
-            "name": "Red Jute",
+            "name": "red-jute",
             "amount": 1
           },
           {
             "item": "finewood",
-            "name": "Finewood",
+            "name": "finewood",
             "amount": 1
           }
         ]
@@ -57532,16 +60799,1320 @@ globalThis.VC_ITEMS_DATA = {
       }
     },
     {
+      "id": "smelter",
+      "name": "Smelter",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Smelter",
+      "names": {
+        "cs": "Huť",
+        "ru": "Плавильня"
+      },
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "stone",
+            "name": "Stone",
+            "amount": 20
+          },
+          {
+            "item": "surtling-core",
+            "name": "Surtling Core",
+            "amount": 5
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "blast-furnace",
+      "name": "Blast Furnace",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Blast_Furnace",
+      "names": {
+        "cs": "Vysoká pec",
+        "fr": "Haut fourneau",
+        "ru": "Доменная печь"
+      },
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Artisan Table",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "stone",
+            "name": "Stone",
+            "amount": 20
+          },
+          {
+            "item": "surtling-core",
+            "name": "Surtling Core",
+            "amount": 5
+          },
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 10
+          },
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 20
+          }
+        ]
+      },
+      "station": {
+        "name": "Artisan Table",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "charcoal-kiln",
+      "name": "Charcoal Kiln",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Charcoal_Kiln",
+      "names": {
+        "cs": "Milíř",
+        "ru": "Углевыжигательная печь"
+      },
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "stone",
+            "name": "Stone",
+            "amount": 20
+          },
+          {
+            "item": "surtling-core",
+            "name": "Surtling Core",
+            "amount": 5
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "spinning-wheel",
+      "name": "Spinning Wheel",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Spinning_Wheel",
+      "names": {
+        "cs": "Kolovrat",
+        "ru": "Прялка"
+      },
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Artisan Table",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 20
+          },
+          {
+            "item": "iron-nails",
+            "name": "Iron Nails",
+            "amount": 10
+          },
+          {
+            "item": "leather-scraps",
+            "name": "Leather Scraps",
+            "amount": 5
+          }
+        ]
+      },
+      "station": {
+        "name": "Artisan Table",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "artisan-table",
+      "name": "Artisan Table",
+      "image": null,
+      "biome": "mountain",
+      "tier": 4,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Artisan_Table",
+      "names": {
+        "cs": "Řemeslnický stůl",
+        "fr": "Table d'artisan",
+        "ru": "Стол ремесленника"
+      },
+      "description": "Crafting station",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "dragon-tear",
+            "name": "dragon-tear",
+            "amount": 2
+          },
+          {
+            "item": "wood",
+            "name": "wood",
+            "amount": 10
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "black-forge",
+      "name": "Black Forge",
+      "image": null,
+      "biome": "mistlands",
+      "tier": 6,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Forge",
+      "names": {
+        "cs": "Černá Kovárna",
+        "ru": "Черная кузница"
+      },
+      "description": "Crafting station",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-marble",
+            "name": "black-marble",
+            "amount": 10
+          },
+          {
+            "item": "yggdrasil-wood",
+            "name": "yggdrasil-wood",
+            "amount": 10
+          },
+          {
+            "item": "black-core",
+            "name": "black-core",
+            "amount": 5
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "forge",
+      "name": "Forge",
+      "image": null,
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Forge",
+      "names": {
+        "cs": "Kovárna",
+        "fr": "Forge",
+        "ru": "Кузница"
+      },
+      "description": "Crafting station",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "stone",
+            "name": "stone",
+            "amount": 4
+          },
+          {
+            "item": "coal",
+            "name": "coal",
+            "amount": 4
+          },
+          {
+            "item": "wood",
+            "name": "wood",
+            "amount": 10
+          },
+          {
+            "item": "copper",
+            "name": "copper",
+            "amount": 6
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "stonecutter",
+      "name": "Stonecutter",
+      "image": null,
+      "biome": "swamp",
+      "tier": 3,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Stonecutter",
+      "names": {
+        "cs": "Lamač kamene",
+        "fr": "Tailleur de pierre",
+        "ru": "Камнерез"
+      },
+      "description": "Crafting station",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "wood",
+            "amount": 10
+          },
+          {
+            "item": "iron",
+            "name": "iron",
+            "amount": 2
+          },
+          {
+            "item": "stone",
+            "name": "stone",
+            "amount": 4
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "workbench",
+      "name": "Workbench",
+      "image": null,
+      "biome": "meadows",
+      "tier": 1,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Workbench",
+      "names": {
+        "cs": "Pracovní stůl",
+        "de": "Werkbank",
+        "fr": "Table de fabrication",
+        "ru": "Верстак"
+      },
+      "description": "Crafting station",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "wood",
+            "amount": 10
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "galdr-table",
+      "name": "Galdr Table",
+      "image": null,
+      "biome": "mistlands",
+      "tier": 6,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Galdr_Table",
+      "names": {},
+      "description": "Mysterious galdr forces gather upon this altar. It's up to you to harness them...",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-metal",
+            "name": "black-metal",
+            "amount": 10
+          },
+          {
+            "item": "yggdrasil-wood",
+            "name": "yggdrasil-wood",
+            "amount": 20
+          },
+          {
+            "item": "black-core",
+            "name": "black-core",
+            "amount": 5
+          },
+          {
+            "item": "refined-eitr",
+            "name": "refined-eitr",
+            "amount": 5
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "cauldron",
+      "name": "Cauldron",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Cauldron",
+      "names": {
+        "fr": "Chaudron",
+        "ru": "Котел"
+      },
+      "description": "Crafting station",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "tin",
+            "name": "tin",
+            "amount": 10
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "fermenter",
+      "name": "Fermenter",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Fermenter",
+      "names": {
+        "cs": "Fermentor",
+        "ru": "Бродильная бочка"
+      },
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "finewood",
+            "name": "finewood",
+            "amount": 30
+          },
+          {
+            "item": "bronze",
+            "name": "bronze",
+            "amount": 5
+          },
+          {
+            "item": "resin",
+            "name": "resin",
+            "amount": 10
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "cooking-station",
+      "name": "Cooking Station",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Cooking_Station",
+      "names": {
+        "fr": "Poste de cuisson",
+        "ru": "Стойка для готовки"
+      },
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "wood",
+            "amount": 2
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "iron-cooking-station",
+      "name": "Iron Cooking Station",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Iron_Cooking_Station",
+      "names": {
+        "cs": "Železná kuchyňka",
+        "ru": "Железная стойка для готовки"
+      },
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "chain",
+            "name": "chain",
+            "amount": 3
+          },
+          {
+            "item": "iron",
+            "name": "iron",
+            "amount": 3
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "oven",
+      "name": "Oven",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Oven",
+      "names": {
+        "cs": "Kamenná pec",
+        "ru": "Каменная печь"
+      },
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "iron",
+            "amount": 15
+          },
+          {
+            "item": "stone",
+            "name": "stone",
+            "amount": 20
+          },
+          {
+            "item": "surtling-core",
+            "name": "surtling-core",
+            "amount": 4
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "mead-ketill",
+      "name": "Mead Ketill",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Mead_Ketill",
+      "names": {
+        "ru": "Котел для медовух"
+      },
+      "description": "Crafting station",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "tin",
+            "name": "tin",
+            "amount": 4
+          },
+          {
+            "item": "copper",
+            "name": "copper",
+            "amount": 6
+          },
+          {
+            "item": "leather-scraps",
+            "name": "leather-scraps",
+            "amount": 2
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "food-preparation-table",
+      "name": "Food Preparation Table",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Food_Preparation_Table",
+      "names": {
+        "cs": "Přípravný stůl",
+        "de": "Lebensmittelzubereitungstisch",
+        "ru": "Разделочный стол"
+      },
+      "description": "Crafting station",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "iron",
+            "amount": 5
+          },
+          {
+            "item": "finewood",
+            "name": "finewood",
+            "amount": 20
+          },
+          {
+            "item": "leather-scraps",
+            "name": "leather-scraps",
+            "amount": 15
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "spice-rack",
+      "name": "Spice Rack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Spice_Rack",
+      "names": {
+        "cs": "Police na koření",
+        "fr": "Seau de forge",
+        "ru": "Сушилка для трав"
+      },
+      "description": "You need many ingredients for a varied and delicious diet.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "dandelion",
+            "name": "dandelion",
+            "amount": 3
+          },
+          {
+            "item": "carrot",
+            "name": "carrot",
+            "amount": 2
+          },
+          {
+            "item": "mushroom",
+            "name": "mushroom",
+            "amount": 5
+          },
+          {
+            "item": "thistle",
+            "name": "thistle",
+            "amount": 3
+          },
+          {
+            "item": "turnip",
+            "name": "turnip",
+            "amount": 3
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "butcher-s-table",
+      "name": "Butcher's Table",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Butcher's_Table",
+      "names": {
+        "cs": "Řeznický stůl",
+        "fr": "Seau de forge",
+        "ru": "Мясницкий стол"
+      },
+      "description": "The finest dishes require the finest cuts.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "ancient-bark",
+            "name": "ancient-bark",
+            "amount": 2
+          },
+          {
+            "item": "corewood",
+            "name": "corewood",
+            "amount": 4
+          },
+          {
+            "item": "finewood",
+            "name": "finewood",
+            "amount": 4
+          },
+          {
+            "item": "silver",
+            "name": "silver",
+            "amount": 2
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "pots-and-pans",
+      "name": "Pots and Pans",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Pots_and_Pans",
+      "names": {
+        "cs": "Hrnce a pánve",
+        "fr": "Seau de forge",
+        "ru": "Кухонная утварь"
+      },
+      "description": "Sometimes just a cauldron simply isn't enough.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "iron",
+            "amount": 5
+          },
+          {
+            "item": "copper",
+            "name": "copper",
+            "amount": 5
+          },
+          {
+            "item": "black-metal",
+            "name": "black-metal",
+            "amount": 5
+          },
+          {
+            "item": "finewood",
+            "name": "finewood",
+            "amount": 10
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "mortar-and-pestle",
+      "name": "Mortar and Pestle",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Mortar_and_Pestle",
+      "names": {
+        "ru": "Ступка и пестик"
+      },
+      "description": "Some ingredients need to be ground into a fine powder before they can be used for cooking.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-marble",
+            "name": "black-marble",
+            "amount": 8
+          },
+          {
+            "item": "finewood",
+            "name": "finewood",
+            "amount": 6
+          },
+          {
+            "item": "corewood",
+            "name": "corewood",
+            "amount": 4
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "rolling-pins-and-cutting-boards",
+      "name": "Rolling Pins and Cutting Boards",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Rolling_Pins_and_Cutting_Boards",
+      "names": {
+        "ru": "Скалки и разделочные доски"
+      },
+      "description": "These always come in handy, particularly for baking.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "ashwood",
+            "name": "ashwood",
+            "amount": 8
+          },
+          {
+            "item": "finewood",
+            "name": "finewood",
+            "amount": 6
+          },
+          {
+            "item": "flametal",
+            "name": "flametal",
+            "amount": 4
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "smoker",
+      "name": "Smoker",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Smoker",
+      "names": {},
+      "description": "Smoked food will keep longer and taste better!",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "bloodgold",
+            "name": "bloodgold",
+            "amount": 5
+          },
+          {
+            "item": "timberwood",
+            "name": "timberwood",
+            "amount": 6
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
       "id": "megingjord",
       "name": "Megingjörd",
       "image": null,
       "biome": "black-forest",
-      "tier": null,
+      "tier": 2,
       "category": "valuable",
       "teleportable": true,
       "stack": null,
-      "weight": null,
-      "wiki": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Megingjord",
       "names": {},
       "description": "An enchanted dwarven belt of strength. Wearing it increases your maximum carry capacity by 150 (from 300 to 450 weight).",
       "stats": null,
@@ -57583,12 +62154,12 @@ globalThis.VC_ITEMS_DATA = {
       "name": "Fishing Rod",
       "image": null,
       "biome": "black-forest",
-      "tier": null,
+      "tier": 2,
       "category": "tool",
       "teleportable": true,
       "stack": null,
-      "weight": null,
-      "wiki": null,
+      "weight": 1.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Fishing_Rod",
       "names": {},
       "description": "A sturdy hand-carved fishing rod. Equip in hotbar and use with bait near ocean or lake waters to catch nutritious fish.",
       "stats": null,
@@ -57630,7 +62201,7 @@ globalThis.VC_ITEMS_DATA = {
       "name": "Fishing Bait (x50)",
       "image": null,
       "biome": "black-forest",
-      "tier": null,
+      "tier": 2,
       "category": "valuable",
       "teleportable": true,
       "stack": null,
@@ -57677,7 +62248,7 @@ globalThis.VC_ITEMS_DATA = {
       "name": "Thunderstone",
       "image": null,
       "biome": "black-forest",
-      "tier": null,
+      "tier": 2,
       "category": "valuable",
       "teleportable": true,
       "stack": null,
@@ -57729,7 +62300,7 @@ globalThis.VC_ITEMS_DATA = {
       "name": "Fireworks",
       "image": null,
       "biome": "meadows",
-      "tier": null,
+      "tier": 1,
       "category": "valuable",
       "teleportable": true,
       "stack": null,
@@ -57776,7 +62347,7 @@ globalThis.VC_ITEMS_DATA = {
       "name": "Cape Tunic",
       "image": "../smithy/img/armor/cape-tunic-blue.png",
       "biome": "mountain",
-      "tier": null,
+      "tier": 4,
       "category": "valuable",
       "teleportable": true,
       "stack": null,
@@ -57830,7 +62401,7 @@ globalThis.VC_ITEMS_DATA = {
       "name": "Extravagant Cap",
       "image": "../smithy/img/armor/extravagant-cap-green.png",
       "biome": "mountain",
-      "tier": null,
+      "tier": 4,
       "category": "valuable",
       "teleportable": true,
       "stack": null,
@@ -57884,7 +62455,7 @@ globalThis.VC_ITEMS_DATA = {
       "name": "Beaded Dress",
       "image": "../smithy/img/armor/beaded-dress-blue.png",
       "biome": "plains",
-      "tier": null,
+      "tier": 5,
       "category": "valuable",
       "teleportable": true,
       "stack": null,
@@ -57938,7 +62509,7 @@ globalThis.VC_ITEMS_DATA = {
       "name": "Beaded Tunic",
       "image": "../smithy/img/armor/beaded-tunic-blue.png",
       "biome": "plains",
-      "tier": null,
+      "tier": 5,
       "category": "valuable",
       "teleportable": true,
       "stack": null,
@@ -57985,6 +62556,16411 @@ globalThis.VC_ITEMS_DATA = {
       },
       "crossLinks": {
         "traders": "/traders/#trader=hildir"
+      }
+    },
+    {
+      "id": "abomination-trophy",
+      "name": "Abomination Trophy",
+      "image": "../bestiary/img/creatures/abomination-trophy.png",
+      "biome": "swamp",
+      "tier": 3,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "abomination",
+            "name": "Abomination",
+            "biome": "swamp"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Abomination",
+            "kind": "creature",
+            "creatureId": "abomination"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "3-feathers",
+      "name": "3 Feathers",
+      "image": null,
+      "biome": "ashlands",
+      "tier": 7,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "ash-crow",
+            "name": "Ash Crow",
+            "biome": "ashlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Ash Crow",
+            "kind": "creature",
+            "creatureId": "ash-crow"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "dvergr-trophy",
+      "name": "Dvergr Trophy",
+      "image": "../bestiary/img/creatures/ashlands-dvergr-trophy.png",
+      "biome": "ashlands",
+      "tier": 7,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "ashlands-dvergr",
+            "name": "Ashlands Dvergr",
+            "biome": "ashlands"
+          },
+          {
+            "id": "dvergr-mage",
+            "name": "Dvergr Mage",
+            "biome": "mistlands"
+          },
+          {
+            "id": "dvergr-rogue",
+            "name": "Dvergr Rogue",
+            "biome": "mistlands"
+          },
+          {
+            "id": "imprisoned-dvergr",
+            "name": "Imprisoned Dvergr",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Ashlands Dvergr",
+            "kind": "creature",
+            "creatureId": "ashlands-dvergr"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "coins",
+      "name": "Coins",
+      "image": null,
+      "biome": "ashlands",
+      "tier": 7,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 999,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Coins",
+      "names": {},
+      "description": "Valuable",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "ashlands-dvergr",
+            "name": "Ashlands Dvergr",
+            "biome": "ashlands"
+          },
+          {
+            "id": "dvergr-mage",
+            "name": "Dvergr Mage",
+            "biome": "mistlands"
+          },
+          {
+            "id": "dvergr-rogue",
+            "name": "Dvergr Rogue",
+            "biome": "mistlands"
+          },
+          {
+            "id": "fuling",
+            "name": "Fuling",
+            "biome": "plains"
+          },
+          {
+            "id": "fuling-berserker",
+            "name": "Fuling Berserker",
+            "biome": "plains"
+          },
+          {
+            "id": "fuling-shaman",
+            "name": "Fuling Shaman",
+            "biome": "plains"
+          },
+          {
+            "id": "imprisoned-dvergr",
+            "name": "Imprisoned Dvergr",
+            "biome": "deep-north"
+          },
+          {
+            "id": "troll",
+            "name": "Troll",
+            "biome": "black-forest"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Ashlands Dvergr",
+            "kind": "creature",
+            "creatureId": "ashlands-dvergr"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "treasure-chest",
+            "name": "Treasure Chest",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "asksvin-trophy",
+      "name": "Asksvin Trophy",
+      "image": "../bestiary/img/creatures/asksvin-trophy.png",
+      "biome": "ashlands",
+      "tier": 7,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "asksvin",
+            "name": "Asksvin",
+            "biome": "ashlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Asksvin",
+            "kind": "creature",
+            "creatureId": "asksvin"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "feathery-wreath",
+            "name": "Feathery Wreath",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "barka-trophy",
+      "name": "Barka Trophy",
+      "image": "../bestiary/img/creatures/barka-trophy.png",
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "barka",
+            "name": "Barka",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Barka",
+            "kind": "creature",
+            "creatureId": "barka"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "blob-trophy",
+      "name": "Blob Trophy",
+      "image": "../bestiary/img/creatures/blob-trophy.png",
+      "biome": "swamp",
+      "tier": 3,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "blob",
+            "name": "Blob",
+            "biome": "swamp"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Blob",
+            "kind": "creature",
+            "creatureId": "blob"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "boar-trophy",
+      "name": "Boar Trophy",
+      "image": "../bestiary/img/creatures/boar-trophy.png",
+      "biome": "meadows",
+      "tier": 1,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "boar",
+            "name": "Boar",
+            "biome": "meadows"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Boar",
+            "kind": "creature",
+            "creatureId": "boar"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "bonemass-trophy",
+      "name": "Bonemass Trophy",
+      "image": "../bestiary/img/creatures/bonemass-trophy.png",
+      "biome": "swamp",
+      "tier": 3,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "bonemass",
+            "name": "Bonemass",
+            "biome": "swamp"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Bonemass",
+            "kind": "creature",
+            "creatureId": "bonemass"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "wishbone",
+      "name": "Wishbone",
+      "image": null,
+      "biome": "swamp",
+      "tier": 3,
+      "category": "tool",
+      "teleportable": true,
+      "stack": null,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Wishbone",
+      "names": {},
+      "description": "This ancient bone remembers the location of many forgotten things.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "bonemass",
+            "name": "Bonemass",
+            "biome": "swamp"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Bonemass",
+            "kind": "creature",
+            "creatureId": "bonemass"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "bonemass-power",
+      "name": "Bonemass Power",
+      "image": null,
+      "biome": "swamp",
+      "tier": 3,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "bonemass",
+            "name": "Bonemass",
+            "biome": "swamp"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Bonemass",
+            "kind": "creature",
+            "creatureId": "bonemass"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "bonemaw-trophy",
+      "name": "Bonemaw Trophy",
+      "image": "../bestiary/img/creatures/bonemaw-trophy.png",
+      "biome": "ashlands",
+      "tier": 7,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "bonemaw",
+            "name": "Bonemaw",
+            "biome": "ashlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Bonemaw",
+            "kind": "creature",
+            "creatureId": "bonemaw"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "brenna-trophy",
+      "name": "Brenna Trophy",
+      "image": "../bestiary/img/creatures/brenna-trophy.png",
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "brenna",
+            "name": "Brenna",
+            "biome": "black-forest"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Brenna",
+            "kind": "creature",
+            "creatureId": "brenna"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "hildir-s-brass-chest",
+      "name": "Hildir's brass chest",
+      "image": null,
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "brenna",
+            "name": "Brenna",
+            "biome": "black-forest"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Brenna",
+            "kind": "creature",
+            "creatureId": "brenna"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "marksman-trophy",
+      "name": "Marksman Trophy",
+      "image": "../bestiary/img/creatures/charred-marksman-trophy.png",
+      "biome": "ashlands",
+      "tier": 7,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "charred-marksman",
+            "name": "Charred Marksman",
+            "biome": "ashlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Charred Marksman",
+            "kind": "creature",
+            "creatureId": "charred-marksman"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "warlock-trophy",
+      "name": "Warlock Trophy",
+      "image": "../bestiary/img/creatures/charred-warlock-trophy.png",
+      "biome": "ashlands",
+      "tier": 7,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "charred-warlock",
+            "name": "Charred Warlock",
+            "biome": "ashlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Charred Warlock",
+            "kind": "creature",
+            "creatureId": "charred-warlock"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "warrior-trophy",
+      "name": "Warrior Trophy",
+      "image": "../bestiary/img/creatures/charred-warrior-trophy.png",
+      "biome": "ashlands",
+      "tier": 7,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "charred-warrior",
+            "name": "Charred Warrior",
+            "biome": "ashlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Charred Warrior",
+            "kind": "creature",
+            "creatureId": "charred-warrior"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "grausten-chest",
+            "name": "Grausten Chest",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "crow-trophy-currently-no-trophy",
+      "name": "Crow trophy currently no trophy-->",
+      "image": null,
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "crow",
+            "name": "Crow",
+            "biome": "black-forest"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Crow",
+            "kind": "creature",
+            "creatureId": "crow"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "deathsquito-trophy",
+      "name": "Deathsquito Trophy",
+      "image": "../bestiary/img/creatures/deathsquito-trophy.png",
+      "biome": "plains",
+      "tier": 5,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "deathsquito",
+            "name": "Deathsquito",
+            "biome": "plains"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Deathsquito",
+            "kind": "creature",
+            "creatureId": "deathsquito"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "draugr-trophy",
+      "name": "Draugr Trophy",
+      "image": "../bestiary/img/creatures/draugr-trophy.png",
+      "biome": "swamp",
+      "tier": 3,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "draugr",
+            "name": "Draugr",
+            "biome": "swamp"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Draugr",
+            "kind": "creature",
+            "creatureId": "draugr"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "eikthyr-trophy",
+      "name": "Eikthyr Trophy",
+      "image": "../bestiary/img/creatures/eikthyr-trophy.png",
+      "biome": "meadows",
+      "tier": 1,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "eikthyr",
+            "name": "Eikthyr",
+            "biome": "meadows"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Eikthyr",
+            "kind": "creature",
+            "creatureId": "eikthyr"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "eikthyr-power",
+      "name": "Eikthyr Power",
+      "image": null,
+      "biome": "meadows",
+      "tier": 1,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "eikthyr",
+            "name": "Eikthyr",
+            "biome": "meadows"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Eikthyr",
+            "kind": "creature",
+            "creatureId": "eikthyr"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "elaking-trophy",
+      "name": "Elaking Trophy",
+      "image": "../bestiary/img/creatures/elaking-trophy.png",
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "elaking",
+            "name": "Elaking",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Elaking",
+            "kind": "creature",
+            "creatureId": "elaking"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "mould-intricate-key",
+      "name": "Mould Intricate Key",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "summoning",
+      "teleportable": true,
+      "stack": 10,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Intricate_Key",
+      "names": {},
+      "description": "Filled with the right material, this mould will create a powerful key.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "elaking",
+            "name": "Elaking",
+            "biome": "deep-north"
+          },
+          {
+            "id": "eyeless-one",
+            "name": "Eyeless One",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Elaking",
+            "kind": "creature",
+            "creatureId": "elaking"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "cast-intricate-key",
+            "name": "Cast: Intricate Key",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "eyeless-one-trophy",
+      "name": "Eyeless One Trophy",
+      "image": "../bestiary/img/creatures/eyeless-one-trophy.png",
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "eyeless-one",
+            "name": "Eyeless One",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Eyeless One",
+            "kind": "creature",
+            "creatureId": "eyeless-one"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "fader-trophy",
+      "name": "Fader Trophy",
+      "image": "../bestiary/img/creatures/fader-trophy.png",
+      "biome": "ashlands",
+      "tier": 7,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "fader",
+            "name": "Fader",
+            "biome": "ashlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Fader",
+            "kind": "creature",
+            "creatureId": "fader"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "kindled-ribs",
+      "name": "Kindled Ribs",
+      "image": null,
+      "biome": "ashlands",
+      "tier": 7,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 30,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Kindled_Ribs",
+      "names": {},
+      "description": "The smouldering remains of a patriarch.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "fader",
+            "name": "Fader",
+            "biome": "ashlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Fader",
+            "kind": "creature",
+            "creatureId": "fader"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "eternal-pyre",
+            "name": "Eternal Pyre",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "fallen-valkyrie-trophy",
+      "name": "Fallen Valkyrie Trophy",
+      "image": "../bestiary/img/creatures/fallen-valkyrie-trophy.png",
+      "biome": "ashlands",
+      "tier": 7,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "fallen-valkyrie",
+            "name": "Fallen Valkyrie",
+            "biome": "ashlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Fallen Valkyrie",
+            "kind": "creature",
+            "creatureId": "fallen-valkyrie"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "fenring-trophy",
+      "name": "Fenring Trophy",
+      "image": "../bestiary/img/creatures/fenring-trophy.png",
+      "biome": "mountain",
+      "tier": 4,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "fenring",
+            "name": "Fenring",
+            "biome": "mountain"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Fenring",
+            "kind": "creature",
+            "creatureId": "fenring"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "frostcore",
+      "name": "Frostcore",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Frostcore",
+      "names": {},
+      "description": "Terribly cold to the touch, filled with frozen energy.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "frysling",
+            "name": "Frysling",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Frysling",
+            "kind": "creature",
+            "creatureId": "frysling"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "frigid-kiln",
+            "name": "Frigid Kiln",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "frost-foundry",
+            "name": "Frost Foundry",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "fuling-trophy",
+      "name": "Fuling Trophy",
+      "image": "../bestiary/img/creatures/fuling-trophy.png",
+      "biome": "plains",
+      "tier": 5,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "fuling",
+            "name": "Fuling",
+            "biome": "plains"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Fuling",
+            "kind": "creature",
+            "creatureId": "fuling"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "fuling-berserker-trophy",
+      "name": "Fuling Berserker Trophy",
+      "image": "../bestiary/img/creatures/fuling-berserker-trophy.png",
+      "biome": "plains",
+      "tier": 5,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "fuling-berserker",
+            "name": "Fuling Berserker",
+            "biome": "plains"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Fuling Berserker",
+            "kind": "creature",
+            "creatureId": "fuling-berserker"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "fuling-shaman-trophy",
+      "name": "Fuling Shaman Trophy",
+      "image": "../bestiary/img/creatures/fuling-shaman-trophy.png",
+      "biome": "plains",
+      "tier": 5,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "fuling-shaman",
+            "name": "Fuling Shaman",
+            "biome": "plains"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Fuling Shaman",
+            "kind": "creature",
+            "creatureId": "fuling-shaman"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "geirrhafa-trophy",
+      "name": "Geirrhafa Trophy",
+      "image": "../bestiary/img/creatures/geirrhafa-trophy.png",
+      "biome": "mountain",
+      "tier": 4,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "geirrhafa",
+            "name": "Geirrhafa",
+            "biome": "mountain"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Geirrhafa",
+            "kind": "creature",
+            "creatureId": "geirrhafa"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "hildir-s-silver-chest",
+      "name": "Hildir's silver chest",
+      "image": null,
+      "biome": "mountain",
+      "tier": 4,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "geirrhafa",
+            "name": "Geirrhafa",
+            "biome": "mountain"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Geirrhafa",
+            "kind": "creature",
+            "creatureId": "geirrhafa"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "ghost-trophy",
+      "name": "Ghost Trophy",
+      "image": "../bestiary/img/creatures/ghost-trophy.png",
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "ghost",
+            "name": "Ghost",
+            "biome": "black-forest"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Ghost",
+            "kind": "creature",
+            "creatureId": "ghost"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "ectoplasm-ghost-trophy",
+      "name": "Ectoplasm, Ghost Trophy",
+      "image": null,
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "ghost",
+            "name": "Ghost",
+            "biome": "black-forest"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Ghost",
+            "kind": "creature",
+            "creatureId": "ghost"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "gjall-trophy",
+      "name": "Gjall Trophy",
+      "image": "../bestiary/img/creatures/gjall-trophy.png",
+      "biome": "mistlands",
+      "tier": 6,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "gjall",
+            "name": "Gjall",
+            "biome": "mistlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Gjall",
+            "kind": "creature",
+            "creatureId": "gjall"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "greydwarf-trophy",
+      "name": "Greydwarf Trophy",
+      "image": "../bestiary/img/creatures/greydwarf-trophy.png",
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "greydwarf",
+            "name": "Greydwarf",
+            "biome": "black-forest"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Greydwarf",
+            "kind": "creature",
+            "creatureId": "greydwarf"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "greydwarf-brute-trophy",
+      "name": "Greydwarf Brute Trophy",
+      "image": "../bestiary/img/creatures/greydwarf-brute-trophy.png",
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "greydwarf-brute",
+            "name": "Greydwarf Brute",
+            "biome": "black-forest"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Greydwarf Brute",
+            "kind": "creature",
+            "creatureId": "greydwarf-brute"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "greydwarf-shaman-trophy",
+      "name": "Greydwarf Shaman Trophy",
+      "image": "../bestiary/img/creatures/greydwarf-shaman-trophy.png",
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "greydwarf-shaman",
+            "name": "Greydwarf Shaman",
+            "biome": "black-forest"
+          },
+          {
+            "id": "greydwarf-shaman-deep-north",
+            "name": "Greydwarf Shaman (Deep North)",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Greydwarf Shaman",
+            "kind": "creature",
+            "creatureId": "greydwarf-shaman"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "growth-trophy",
+      "name": "Growth Trophy",
+      "image": "../bestiary/img/creatures/growth-trophy.png",
+      "biome": "plains",
+      "tier": 5,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "growth",
+            "name": "Growth",
+            "biome": "plains"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Growth",
+            "kind": "creature",
+            "creatureId": "growth"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "gull-trophy-currently-no-trophy",
+      "name": "Gull trophy currently no trophy-->",
+      "image": null,
+      "biome": "meadows",
+      "tier": 1,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "gull",
+            "name": "Gull",
+            "biome": "meadows"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Gull",
+            "kind": "creature",
+            "creatureId": "gull"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "hare-trophy",
+      "name": "Hare Trophy",
+      "image": "../bestiary/img/creatures/hare-trophy.png",
+      "biome": "mistlands",
+      "tier": 6,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "hare",
+            "name": "Hare",
+            "biome": "mistlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Hare",
+            "kind": "creature",
+            "creatureId": "hare"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "intricate-key",
+      "name": "Intricate Key",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "summoning",
+      "teleportable": true,
+      "stack": 1,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Intricate_Key",
+      "names": {},
+      "description": "If there's a key, then surely there must be a lock.",
+      "stats": null,
+      "recipe": {
+        "station": "Frost Foundry\nHexen",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "cast-intricate-key",
+            "name": "Cast Intricate Key",
+            "amount": 1
+          },
+          {
+            "item": "liquid-frost",
+            "name": "Liquid Frost",
+            "amount": 5
+          }
+        ]
+      },
+      "station": {
+        "name": "Frost Foundry\nHexen",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [
+          {
+            "id": "hexen",
+            "name": "Hexen",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Hexen",
+            "kind": "creature",
+            "creatureId": "hexen"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "mould-robes-of-the-caller",
+      "name": "Mould Robes of the Caller",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 10,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Caller_Set",
+      "names": {},
+      "description": "Filled with the right material, this mould will create a spectacular piece of armour.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "hexen",
+            "name": "Hexen",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Hexen",
+            "kind": "creature",
+            "creatureId": "hexen"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "mould-trousers-of-the-caller",
+      "name": "Mould Trousers of the Caller",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 10,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Caller_Set",
+      "names": {},
+      "description": "Filled with the right material, this mould will create a spectacular piece of armour.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "hexen",
+            "name": "Hexen",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Hexen",
+            "kind": "creature",
+            "creatureId": "hexen"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "grimvarn",
+      "name": "Grimvarn",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.3,
+      "wiki": "https://valheim.weirdgloop.org/w/Grimvarn",
+      "names": {},
+      "description": "A striking green gem, the colour reminiscent of deep forests.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "imprisoned-dvergr",
+            "name": "Imprisoned Dvergr",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Imprisoned Dvergr",
+            "kind": "creature",
+            "creatureId": "imprisoned-dvergr"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "solryth",
+      "name": "Solryth",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.3,
+      "wiki": "https://valheim.weirdgloop.org/w/Solryth",
+      "names": {},
+      "description": "A vibrant orange stone, like a summer sunset.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "imprisoned-dvergr",
+            "name": "Imprisoned Dvergr",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Imprisoned Dvergr",
+            "kind": "creature",
+            "creatureId": "imprisoned-dvergr"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "veydris",
+      "name": "Veydris",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.3,
+      "wiki": "https://valheim.weirdgloop.org/w/Veydris",
+      "names": {},
+      "description": "A rich purple stone, suitable for royalty.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "imprisoned-dvergr",
+            "name": "Imprisoned Dvergr",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Imprisoned Dvergr",
+            "kind": "creature",
+            "creatureId": "imprisoned-dvergr"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "draumyx",
+      "name": "Draumyx",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.3,
+      "wiki": "https://valheim.weirdgloop.org/w/Draumyx",
+      "names": {},
+      "description": "A dark, opaque gem with a smooth and polished surface.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "imprisoned-dvergr",
+            "name": "Imprisoned Dvergr",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Imprisoned Dvergr",
+            "kind": "creature",
+            "creatureId": "imprisoned-dvergr"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "sacrificial-blood",
+      "name": "Sacrificial Blood",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 30,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Sacrificial_Blood",
+      "names": {},
+      "description": "The last essence of an end once foretold.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "kall-fimbulbringer",
+            "name": "Kall Fimbulbringer",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Kall Fimbulbringer",
+            "kind": "creature",
+            "creatureId": "kall-fimbulbringer"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "krigen-trophy",
+      "name": "Krigen Trophy",
+      "image": "../bestiary/img/creatures/krigen-trophy.png",
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "krigen",
+            "name": "Krigen",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Krigen",
+            "kind": "creature",
+            "creatureId": "krigen"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "mould-breastplate-of-the-protector",
+      "name": "Mould Breastplate of the Protector",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 10,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Protector_Armor",
+      "names": {},
+      "description": "Filled with the right material, this mould will create a spectacular piece of armour.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "krigen",
+            "name": "Krigen",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Krigen",
+            "kind": "creature",
+            "creatureId": "krigen"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "mould-trousers-of-the-protector",
+      "name": "Mould Trousers of the Protector",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 10,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Protector_Armor",
+      "names": {},
+      "description": "Filled with the right material, this mould will create a spectacular piece of armour.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "krigen",
+            "name": "Krigen",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Krigen",
+            "kind": "creature",
+            "creatureId": "krigen"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "mould-chestpiece-of-the-vanguard",
+      "name": "Mould Chestpiece of the Vanguard",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 10,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Vanguard_Set",
+      "names": {},
+      "description": "Filled with the right material, this mould will create a spectacular piece of armour.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "krigen",
+            "name": "Krigen",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Krigen",
+            "kind": "creature",
+            "creatureId": "krigen"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "mould-trousers-of-the-vanguard",
+      "name": "Mould Trousers of the Vanguard",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 10,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Vanguard_Set",
+      "names": {},
+      "description": "Filled with the right material, this mould will create a spectacular piece of armour.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "krigen",
+            "name": "Krigen",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Krigen",
+            "kind": "creature",
+            "creatureId": "krigen"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "memorial-coal",
+      "name": "Memorial Coal",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 50,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Memorial_Coal",
+      "names": {},
+      "description": "Somewhere deep within the hot, hazy glow, you can almost see an old memory play out...",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "krigen",
+            "name": "Krigen",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Krigen",
+            "kind": "creature",
+            "creatureId": "krigen"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "kvastur-trophy",
+      "name": "Kvastur Trophy",
+      "image": "../bestiary/img/creatures/kvastur-trophy.png",
+      "biome": "swamp",
+      "tier": 3,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "kvastur",
+            "name": "Kvastur",
+            "biome": "swamp"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Kvastur",
+            "kind": "creature",
+            "creatureId": "kvastur"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "lava-blob-trophy",
+      "name": "Lava Blob Trophy",
+      "image": "../bestiary/img/creatures/lava-blob-trophy.png",
+      "biome": "ashlands",
+      "tier": 7,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "lava-blob",
+            "name": "Lava Blob",
+            "biome": "ashlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Lava Blob",
+            "kind": "creature",
+            "creatureId": "lava-blob"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "leech-trophy",
+      "name": "Leech Trophy",
+      "image": "../bestiary/img/creatures/leech-trophy.png",
+      "biome": "swamp",
+      "tier": 3,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "leech",
+            "name": "Leech",
+            "biome": "swamp"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Leech",
+            "kind": "creature",
+            "creatureId": "leech"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "lox-trophy",
+      "name": "Lox Trophy",
+      "image": "../bestiary/img/creatures/lox-trophy.png",
+      "biome": "plains",
+      "tier": 5,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "lox",
+            "name": "Lox",
+            "biome": "plains"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Lox",
+            "kind": "creature",
+            "creatureId": "lox"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "mistile-trophy",
+      "name": "Mistile trophy",
+      "image": null,
+      "biome": "mistlands",
+      "tier": 6,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "mistile",
+            "name": "Mistile",
+            "biome": "mistlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Mistile",
+            "kind": "creature",
+            "creatureId": "mistile"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "moder-trophy",
+      "name": "Moder Trophy",
+      "image": "../bestiary/img/creatures/moder-trophy.png",
+      "biome": "mountain",
+      "tier": 4,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "moder",
+            "name": "Moder",
+            "biome": "mountain"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Moder",
+            "kind": "creature",
+            "creatureId": "moder"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "moder-power",
+      "name": "Moder Power",
+      "image": null,
+      "biome": "mountain",
+      "tier": 4,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "moder",
+            "name": "Moder",
+            "biome": "mountain"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Moder",
+            "kind": "creature",
+            "creatureId": "moder"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "none",
+      "name": "None",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "moose-calf",
+            "name": "Moose Calf",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Moose Calf",
+            "kind": "creature",
+            "creatureId": "moose-calf"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "morgen-trophy",
+      "name": "Morgen Trophy",
+      "image": "../bestiary/img/creatures/morgen-trophy.png",
+      "biome": "ashlands",
+      "tier": 7,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "morgen",
+            "name": "Morgen",
+            "biome": "ashlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Morgen",
+            "kind": "creature",
+            "creatureId": "morgen"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "neck-trophy",
+      "name": "Neck Trophy",
+      "image": "../bestiary/img/creatures/neck-trophy.png",
+      "biome": "meadows",
+      "tier": 1,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "neck",
+            "name": "Neck",
+            "biome": "meadows"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Neck",
+            "kind": "creature",
+            "creatureId": "neck"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "rancid-remains-trophy",
+      "name": "Rancid Remains Trophy",
+      "image": "../bestiary/img/creatures/rancid-remains-trophy.png",
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "rancid-remains",
+            "name": "Rancid Remains",
+            "biome": "black-forest"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Rancid Remains",
+            "kind": "creature",
+            "creatureId": "rancid-remains"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "seal-trophy",
+      "name": "Seal Trophy",
+      "image": "../bestiary/img/creatures/seal-trophy.png",
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "seal",
+            "name": "Seal",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Seal",
+            "kind": "creature",
+            "creatureId": "seal"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "seeker-trophy",
+      "name": "Seeker Trophy",
+      "image": "../bestiary/img/creatures/seeker-trophy.png",
+      "biome": "mistlands",
+      "tier": 6,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "seeker",
+            "name": "Seeker",
+            "biome": "mistlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Seeker",
+            "kind": "creature",
+            "creatureId": "seeker"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "seeker-soldier-trophy",
+      "name": "Seeker Soldier Trophy",
+      "image": "../bestiary/img/creatures/seeker-soldier-trophy.png",
+      "biome": "mistlands",
+      "tier": 6,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "seeker-soldier",
+            "name": "Seeker Soldier",
+            "biome": "mistlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Seeker Soldier",
+            "kind": "creature",
+            "creatureId": "seeker-soldier"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "serpent-trophy",
+      "name": "Serpent Trophy",
+      "image": "../bestiary/img/creatures/serpent-trophy.png",
+      "biome": "ocean",
+      "tier": 3,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "serpent",
+            "name": "Serpent",
+            "biome": "ocean"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Serpent",
+            "kind": "creature",
+            "creatureId": "serpent"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "pulp-trophy",
+      "name": "Pulp Trophy",
+      "image": "../bestiary/img/creatures/shapeless-pulp-trophy.png",
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "shapeless-pulp",
+            "name": "Shapeless Pulp",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Shapeless Pulp",
+            "kind": "creature",
+            "creatureId": "shapeless-pulp"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "tiny-pulp",
+      "name": "Tiny Pulp",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "shapeless-pulp",
+            "name": "Shapeless Pulp",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Shapeless Pulp",
+            "kind": "creature",
+            "creatureId": "shapeless-pulp"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "dead-pulp",
+      "name": "Dead Pulp",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 8,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 50,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Dead_Pulp",
+      "names": {},
+      "description": "It's best not to think about what this consists of.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "shapeless-pulp",
+            "name": "Shapeless Pulp",
+            "biome": "deep-north"
+          },
+          {
+            "id": "tiny-pulp",
+            "name": "Tiny Pulp",
+            "biome": "deep-north"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Shapeless Pulp",
+            "kind": "creature",
+            "creatureId": "shapeless-pulp"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "charred-cogwheel",
+      "name": "Charred Cogwheel",
+      "image": null,
+      "biome": "ashlands",
+      "tier": 7,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 10,
+      "weight": 5,
+      "wiki": "https://valheim.weirdgloop.org/w/Charred_Cogwheel",
+      "names": {},
+      "description": "This could be used for some clever machinery...",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "skugg",
+            "name": "Skugg",
+            "biome": "ashlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Skugg",
+            "kind": "creature",
+            "creatureId": "skugg"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "catapult",
+            "name": "Catapult",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "stone-golem-trophy",
+      "name": "Stone Golem Trophy",
+      "image": "../bestiary/img/creatures/stone-golem-trophy.png",
+      "biome": "mountain",
+      "tier": 4,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "stone-golem",
+            "name": "Stone Golem",
+            "biome": "mountain"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Stone Golem",
+            "kind": "creature",
+            "creatureId": "stone-golem"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "surtling-trophy",
+      "name": "Surtling Trophy",
+      "image": "../bestiary/img/creatures/surtling-trophy.png",
+      "biome": "swamp",
+      "tier": 3,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "surtling",
+            "name": "Surtling",
+            "biome": "swamp"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Surtling",
+            "kind": "creature",
+            "creatureId": "surtling"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "the-elder-trophy",
+      "name": "The Elder Trophy",
+      "image": "../bestiary/img/creatures/the-elder-trophy.png",
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "the-elder",
+            "name": "The Elder",
+            "biome": "black-forest"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by The Elder",
+            "kind": "creature",
+            "creatureId": "the-elder"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "swamp-key",
+      "name": "Swamp Key",
+      "image": null,
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "summoning",
+      "teleportable": true,
+      "stack": 1,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Swamp_Key",
+      "names": {},
+      "description": "Partly covered in caked mud, it smells foetid.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "the-elder",
+            "name": "The Elder",
+            "biome": "black-forest"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by The Elder",
+            "kind": "creature",
+            "creatureId": "the-elder"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "the-elder-power",
+      "name": "The Elder Power",
+      "image": null,
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "the-elder",
+            "name": "The Elder",
+            "biome": "black-forest"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by The Elder",
+            "kind": "creature",
+            "creatureId": "the-elder"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "the-queen-trophy",
+      "name": "The Queen Trophy",
+      "image": "../bestiary/img/creatures/the-queen-trophy.png",
+      "biome": "mistlands",
+      "tier": 6,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "the-queen",
+            "name": "The Queen",
+            "biome": "mistlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by The Queen",
+            "kind": "creature",
+            "creatureId": "the-queen"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "majestic-carapace",
+      "name": "Majestic Carapace",
+      "image": null,
+      "biome": "mistlands",
+      "tier": 6,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 30,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Majestic_Carapace",
+      "names": {},
+      "description": "Her majesty's will was hard and unrelenting, but this piece of carapace is perhaps even more so.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "the-queen",
+            "name": "The Queen",
+            "biome": "mistlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by The Queen",
+            "kind": "creature",
+            "creatureId": "the-queen"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "the-queen-s-power",
+      "name": "The Queen's Power",
+      "image": null,
+      "biome": "mistlands",
+      "tier": 6,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "the-queen",
+            "name": "The Queen",
+            "biome": "mistlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by The Queen",
+            "kind": "creature",
+            "creatureId": "the-queen"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "tick-trophy",
+      "name": "Tick Trophy",
+      "image": "../bestiary/img/creatures/tick-trophy.png",
+      "biome": "mistlands",
+      "tier": 6,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "tick",
+            "name": "Tick",
+            "biome": "mistlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Tick",
+            "kind": "creature",
+            "creatureId": "tick"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "ulv-trophy",
+      "name": "Ulv Trophy",
+      "image": "../bestiary/img/creatures/ulv-trophy.png",
+      "biome": "mountain",
+      "tier": 4,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "ulv",
+            "name": "Ulv",
+            "biome": "mountain"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Ulv",
+            "kind": "creature",
+            "creatureId": "ulv"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "volture-trophy",
+      "name": "Volture Trophy",
+      "image": "../bestiary/img/creatures/volture-trophy.png",
+      "biome": "ashlands",
+      "tier": 7,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "volture",
+            "name": "Volture",
+            "biome": "ashlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Volture",
+            "kind": "creature",
+            "creatureId": "volture"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "wraith-trophy",
+      "name": "Wraith Trophy",
+      "image": "../bestiary/img/creatures/wraith-trophy.png",
+      "biome": "swamp",
+      "tier": 3,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "wraith",
+            "name": "Wraith",
+            "biome": "swamp"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Wraith",
+            "kind": "creature",
+            "creatureId": "wraith"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "writhan-trophy",
+      "name": "Writhan Trophy",
+      "image": "../bestiary/img/creatures/writhan-trophy.png",
+      "biome": "swamp",
+      "tier": 3,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "writhan",
+            "name": "Writhan",
+            "biome": "swamp"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Writhan",
+            "kind": "creature",
+            "creatureId": "writhan"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "yagluth-trophy",
+      "name": "Yagluth Trophy",
+      "image": "../bestiary/img/creatures/yagluth-trophy.png",
+      "biome": "plains",
+      "tier": 5,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "yagluth",
+            "name": "Yagluth",
+            "biome": "plains"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Yagluth",
+            "kind": "creature",
+            "creatureId": "yagluth"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "torn-spirit",
+      "name": "Torn Spirit",
+      "image": null,
+      "biome": "plains",
+      "tier": 5,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 30,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Torn_Spirit",
+      "names": {},
+      "description": "The remains of Yagluth, a twisted spirit torn between this world and the next.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "yagluth",
+            "name": "Yagluth",
+            "biome": "plains"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Yagluth",
+            "kind": "creature",
+            "creatureId": "yagluth"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "wisp-fountain",
+            "name": "Wisp Fountain",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "yagluth-power",
+      "name": "Yagluth Power",
+      "image": null,
+      "biome": "plains",
+      "tier": 5,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "yagluth",
+            "name": "Yagluth",
+            "biome": "plains"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Yagluth",
+            "kind": "creature",
+            "creatureId": "yagluth"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "zil-thungr",
+      "name": "Zil\nThungr",
+      "image": "../progress/img/bosses/zil-thungr.webp",
+      "biome": "plains",
+      "tier": 5,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "zil-thungr",
+            "name": "Zil & Thungr",
+            "biome": "plains"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Zil & Thungr",
+            "kind": "creature",
+            "creatureId": "zil-thungr"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "hildir-s-bronze-chest",
+      "name": "Hildir's bronze chest",
+      "image": null,
+      "biome": "plains",
+      "tier": 5,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "zil-thungr",
+            "name": "Zil & Thungr",
+            "biome": "plains"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Zil & Thungr",
+            "kind": "creature",
+            "creatureId": "zil-thungr"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "zil-trophy",
+      "name": "Zil Trophy",
+      "image": null,
+      "biome": "plains",
+      "tier": 5,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "zil-thungr",
+            "name": "Zil & Thungr",
+            "biome": "plains"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Zil & Thungr",
+            "kind": "creature",
+            "creatureId": "zil-thungr"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "thungr-trophy",
+      "name": "Thungr Trophy",
+      "image": null,
+      "biome": "plains",
+      "tier": 5,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": null,
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "zil-thungr",
+            "name": "Zil & Thungr",
+            "biome": "plains"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by Zil & Thungr",
+            "kind": "creature",
+            "creatureId": "zil-thungr"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "iron-shield",
+      "name": "Iron shield",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "shield",
+      "teleportable": true,
+      "stack": null,
+      "weight": 4,
+      "wiki": "https://valheim.weirdgloop.org/w/Iron_shield",
+      "names": {},
+      "description": "An iron sword-breaker, tile of the battle-wall.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "n/a",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "n/a"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {
+        "smithy": "/smithy/#item=iron-shield"
+      }
+    },
+    {
+      "id": "knight-shield",
+      "name": "Knight shield",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "shield",
+      "teleportable": true,
+      "stack": null,
+      "weight": 4,
+      "wiki": "https://valheim.weirdgloop.org/w/Knight_shield",
+      "names": {},
+      "description": "A wooden shield reinforced with iron.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Console",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Console"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {
+        "smithy": "/smithy/#item=knight-shield"
+      }
+    },
+    {
+      "id": "tanning-rack",
+      "name": "Tanning Rack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Tanning_Rack",
+      "names": {},
+      "description": "Leathers and hides need proper treatment before they can be used.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 10
+          },
+          {
+            "item": "flint",
+            "name": "Flint",
+            "amount": 15
+          },
+          {
+            "item": "leather-scraps",
+            "name": "Leather Scraps",
+            "amount": 20
+          },
+          {
+            "item": "deer-hide",
+            "name": "Deer Hide",
+            "amount": 5
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "obliterator",
+      "name": "Obliterator",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Obliterator",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 8
+          },
+          {
+            "item": "copper",
+            "name": "Copper",
+            "amount": 4
+          },
+          {
+            "item": "thunder-stone",
+            "name": "Thunder Stone",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "acorns",
+      "name": "Acorns",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "food-ingredient",
+      "teleportable": true,
+      "stack": 100,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Acorns",
+      "names": {},
+      "description": "Plant them to grow an oak tree.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Oak",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Oak"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "birdnest",
+            "name": "Birdnest",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "ballista",
+      "name": "Ballista",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Ballista",
+      "names": {},
+      "description": "Defensive structure that shoots missiles at anything that gets in its way.",
+      "stats": null,
+      "recipe": {
+        "station": "Hammer",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-metal",
+            "name": "Black Metal",
+            "amount": 10
+          },
+          {
+            "item": "yggdrasil-wood",
+            "name": "Yggdrasil Wood",
+            "amount": 10
+          },
+          {
+            "item": "mechanical-spring",
+            "name": "Mechanical Spring",
+            "amount": 3
+          }
+        ]
+      },
+      "station": {
+        "name": "Hammer",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Hammer",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Hammer"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "eternal-pyre",
+      "name": "Eternal Pyre",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Eternal_Pyre",
+      "names": {},
+      "description": "His rage and regret are at war with each other, and their struggle will fuel this fire until the very end.",
+      "stats": null,
+      "recipe": {
+        "station": "Stonecutter",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "stone",
+            "name": "Stone",
+            "amount": 10
+          },
+          {
+            "item": "kindled-ribs",
+            "name": "Kindled Ribs",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Stonecutter",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Stonecutter",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Stonecutter"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "birdnest",
+      "name": "Birdnest",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Birds'_Nest",
+      "names": {},
+      "description": "Healthy and happy birds might shed a feather or two.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "acorns",
+            "name": "Acorns",
+            "amount": 3
+          },
+          {
+            "item": "thistle",
+            "name": "Thistle",
+            "amount": 5
+          },
+          {
+            "item": "writhan-roots",
+            "name": "Writhan Roots",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "iron-battle-idol",
+      "name": "Iron Battle Idol",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Iron_Battle_Idol",
+      "names": {},
+      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Loot chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Loot chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "tool-shelf",
+      "name": "Tool shelf",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Tool_Shelf",
+      "names": {},
+      "description": "Fine detail work requires fine tools to match.",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 4
+          },
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 10
+          },
+          {
+            "item": "obsidian",
+            "name": "Obsidian",
+            "amount": 4
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "standing-green-burning-iron-torch",
+      "name": "Standing green-burning iron torch",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Standing_Green-burning_Iron_Torch",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 2
+          },
+          {
+            "item": "guck",
+            "name": "Guck",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "frigid-kiln",
+      "name": "Frigid Kiln",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Frigid_Kiln",
+      "names": {},
+      "description": "A strange and chilling process happens within this kiln, to produce a most potent fuel...",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "stone",
+            "name": "Stone",
+            "amount": 20
+          },
+          {
+            "item": "frostcore",
+            "name": "Frostcore",
+            "amount": 10
+          },
+          {
+            "item": "ice",
+            "name": "Ice",
+            "amount": 5
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "frost-foundry",
+      "name": "Frost Foundry",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Frost_Foundry",
+      "names": {},
+      "description": "This foundry can be used to harden casts into proper items.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 15
+          },
+          {
+            "item": "stone",
+            "name": "Stone",
+            "amount": 20
+          },
+          {
+            "item": "frostcore",
+            "name": "Frostcore",
+            "amount": 10
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "bronze-battle-idol",
+      "name": "Bronze Battle Idol",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Bronze_Battle_Idol",
+      "names": {},
+      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Loot chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Loot chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "bloodgold-battle-idol",
+      "name": "Bloodgold Battle Idol",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Bloodgold_Battle_Idol",
+      "names": {},
+      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Loot chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Loot chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "hammer",
+      "name": "Hammer",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "tool",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Hammer",
+      "names": {},
+      "description": "With this in your hand, you can raise high halls and mighty fortifications.",
+      "stats": null,
+      "recipe": {
+        "station": "Player crafting menu",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 3
+          },
+          {
+            "item": "stone",
+            "name": "Stone",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Player crafting menu",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Player crafting menu",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Player crafting menu"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "chest",
+      "name": "Chest",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Chest",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 10
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "iron-ore",
+      "name": "Iron Ore",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "metal",
+      "teleportable": false,
+      "stack": 30,
+      "weight": 10,
+      "wiki": "https://valheim.weirdgloop.org/w/Iron_Ore",
+      "names": {},
+      "description": "Unrefined iron. Needs to be refined in a smelter.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Fishing\n(Giant Herring bonus drop)",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Fishing\n(Giant Herring bonus drop)"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "adze",
+      "name": "Adze",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Adze",
+      "names": {},
+      "description": "Sometimes you need to work the problem from a different angle.",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 10
+          },
+          {
+            "item": "bronze",
+            "name": "Bronze",
+            "amount": 3
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "beehive",
+      "name": "Beehive",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Beehive",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 10
+          },
+          {
+            "item": "queen-bee",
+            "name": "Queen Bee",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "grinding-wheel",
+      "name": "Grinding wheel",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Grinding_Wheel",
+      "names": {},
+      "description": "A grinding wheel is necessary for sharpening any kind of sword.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 25
+          },
+          {
+            "item": "sharpening-stone",
+            "name": "Sharpening Stone",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "forge-bellows",
+      "name": "Forge bellows",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Forge_Bellows",
+      "names": {},
+      "description": "Pressing down on these bellows generates more heat, which is very helpful for smithing.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 5
+          },
+          {
+            "item": "deer-hide",
+            "name": "Deer Hide",
+            "amount": 5
+          },
+          {
+            "item": "chain",
+            "name": "Chain",
+            "amount": 4
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "forge-toolrack",
+      "name": "Forge Toolrack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Forge_Toolrack",
+      "names": {},
+      "description": "You need lots of different tools to work with. These conveniently come with a rack for storage.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 15
+          },
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 10
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "anvils",
+      "name": "Anvils",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Anvils",
+      "names": {},
+      "description": "For more detailed work, multiple kinds of anvils can come in handy.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 5
+          },
+          {
+            "item": "bronze",
+            "name": "Bronze",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "forge-cooler",
+      "name": "Forge cooler",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Forge_Cooler",
+      "names": {},
+      "description": "Once a creation is done, this barrel of water will bring the metal down to a manageable temperature.",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 25
+          },
+          {
+            "item": "copper",
+            "name": "Copper",
+            "amount": 10
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "chopping-block",
+      "name": "Chopping block",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Chopping_Block",
+      "names": {},
+      "description": "An axe is a very versatile tool for crafting.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 10
+          },
+          {
+            "item": "flint",
+            "name": "Flint",
+            "amount": 10
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "wood-stack",
+      "name": "Wood Stack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Wood_Stack",
+      "names": {},
+      "description": "Put all that hard work on display!",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 50
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "stone-pile",
+      "name": "Stone pile",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Stone_Pile",
+      "names": {},
+      "description": "It's a big pile of stone.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "stone",
+            "name": "Stone",
+            "amount": 50
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "roundpole-fence",
+      "name": "Roundpole Fence",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Roundpole_Fence",
+      "names": {},
+      "description": "A good fence, for livestock and crops alike!",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "stakewall",
+      "name": "Stakewall",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Stakewall",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 4
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "sharp-stakes",
+      "name": "Sharp stakes",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Sharp_Stakes",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 6
+          },
+          {
+            "item": "corewood",
+            "name": "Corewood",
+            "amount": 4
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "crystal-wall-1x1",
+      "name": "Crystal wall 1x1",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Crystal_Wall_1x1",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "crystal",
+            "name": "Crystal",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "yggdrasil-wood-stack",
+      "name": "Yggdrasil Wood Stack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Yggdrasil_Wood_Stack",
+      "names": {},
+      "description": "Fine branches, thrumming with mysterious energy.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "yggdrasil-wood",
+            "name": "Yggdrasil Wood",
+            "amount": 50
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "black-forge-cooler",
+      "name": "Black forge cooler",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Forge_Cooler",
+      "names": {},
+      "description": "Black forge improvement",
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 5
+          },
+          {
+            "item": "copper",
+            "name": "Copper",
+            "amount": 5
+          },
+          {
+            "item": "black-marble",
+            "name": "Black Marble",
+            "amount": 4
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "dvergr-stakewall",
+      "name": "Dvergr stakewall",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Dvergr_Stakewall",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "yggdrasil-wood",
+            "name": "Yggdrasil Wood",
+            "amount": 8
+          },
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 8
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "dvergr-sharp-stakes",
+      "name": "Dvergr sharp stakes",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Dvergr_Sharp_Stakes",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "yggdrasil-wood",
+            "name": "Yggdrasil Wood",
+            "amount": 5
+          },
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "gem-cutter",
+      "name": "Gem cutter",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Gem_Cutter",
+      "names": {},
+      "description": "Black forge improvement",
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "flametal",
+            "name": "Flametal",
+            "amount": 5
+          },
+          {
+            "item": "ashwood",
+            "name": "Ashwood",
+            "amount": 8
+          },
+          {
+            "item": "morgen-sinew",
+            "name": "Morgen Sinew",
+            "amount": 2
+          },
+          {
+            "item": "bloodstone",
+            "name": "Bloodstone",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "metal-cutter",
+      "name": "Metal cutter",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Metal_Cutter",
+      "names": {},
+      "description": "Black Forge improvement",
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-marble",
+            "name": "Black Marble",
+            "amount": 5
+          },
+          {
+            "item": "flametal",
+            "name": "Flametal",
+            "amount": 5
+          },
+          {
+            "item": "ashwood",
+            "name": "Ashwood",
+            "amount": 5
+          },
+          {
+            "item": "charred-bone",
+            "name": "Charred Bone",
+            "amount": 4
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "pile-of-skulls",
+      "name": "Pile of Skulls",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Pile_of_Skulls",
+      "names": {},
+      "description": "A certain proof of your prowess in combat.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "charred-skull",
+            "name": "Charred Skull",
+            "amount": 50
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "feathery-wreath",
+      "name": "Feathery Wreath",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Feathery_Wreath",
+      "names": {},
+      "description": "An offering to the mysterious powers scattered across the realms. Perhaps they will lend themselves to you.",
+      "stats": null,
+      "recipe": {
+        "station": "Galdr Table",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "celestial-feather",
+            "name": "Celestial Feather",
+            "amount": 8
+          },
+          {
+            "item": "asksvin-trophy",
+            "name": "Asksvin Trophy",
+            "amount": 1
+          },
+          {
+            "item": "refined-eitr",
+            "name": "Refined Eitr",
+            "amount": 10
+          },
+          {
+            "item": "ashwood",
+            "name": "Ashwood",
+            "amount": 3
+          }
+        ]
+      },
+      "station": {
+        "name": "Galdr Table",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Galdr Table",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Galdr Table"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "ashwood-stakewall",
+      "name": "Ashwood stakewall",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Ashwood_Stakewall",
+      "names": {},
+      "description": "Pointy stakes, guaranteed to hurt.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "ashwood",
+            "name": "Ashwood",
+            "amount": 6
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "ivy",
+      "name": "Ivy",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Ivy",
+      "names": {},
+      "description": "Needs something to cling to.",
+      "stats": null,
+      "recipe": {
+        "station": "Ivy Seeds",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "ivy-seeds",
+            "name": "Ivy Seeds",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Ivy Seeds",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Ivy Seeds",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Ivy Seeds"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "t-w-i-g",
+      "name": "T.W.I.G.",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/T.W.I.G.",
+      "names": {},
+      "description": "Step close at your own risk!",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "iron-stack",
+      "name": "Iron Stack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Iron_Stack",
+      "names": {},
+      "description": "If you have iron, you have everything.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 30
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "silver-stack",
+      "name": "Silver Stack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Silver_Stack",
+      "names": {},
+      "description": "A tidy way of displaying your wealth.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "silver",
+            "name": "Silver",
+            "amount": 30
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "tin-stack",
+      "name": "Tin Stack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Tin_Stack",
+      "names": {},
+      "description": "You can make a lot of bronze with this...",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "tin",
+            "name": "Tin",
+            "amount": 30
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "timberwood-stack",
+      "name": "Timberwood Stack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Timberwood_Stack",
+      "names": {},
+      "description": "It's as if fresh snow just fell upon it...",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "timberwood",
+            "name": "Timberwood",
+            "amount": 50
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "ice-block",
+      "name": "Ice Block",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Ice_Block",
+      "names": {},
+      "description": "A solid chunk of ice.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "ice",
+            "name": "Ice",
+            "amount": 2
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "timberwood-gate",
+      "name": "Timberwood Gate",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Timberwood_Gate",
+      "names": {},
+      "description": "Not quite as glorious as the gates of Valhalla, but awfully close!",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "timberwood",
+            "name": "Timberwood",
+            "amount": 24
+          },
+          {
+            "item": "bloodgold",
+            "name": "Bloodgold",
+            "amount": 4
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "stone-fence",
+      "name": "Stone Fence",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Stone_Fence",
+      "names": {},
+      "description": "Stones carefully pieced together into a sturdy fence.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "stone",
+            "name": "Stone",
+            "amount": 4
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "roundpole-gate",
+      "name": "Roundpole Gate",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Roundpole_Gate",
+      "names": {},
+      "description": "A gate is far more practical than jumping over the fence every time.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 4
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "longship",
+      "name": "Longship",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Longship",
+      "names": {},
+      "description": "A mighty viking ship for sailing to distant shores.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron-nails",
+            "name": "Iron Nails",
+            "amount": 100
+          },
+          {
+            "item": "deer-hide",
+            "name": "Deer Hide",
+            "amount": 10
+          },
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 40
+          },
+          {
+            "item": "ancient-bark",
+            "name": "Ancient Bark",
+            "amount": 40
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "raft",
+      "name": "Raft",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Raft",
+      "names": {},
+      "description": "It may not look like much, but a raft will get you farther than swimming!",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 20
+          },
+          {
+            "item": "leather-scraps",
+            "name": "Leather Scraps",
+            "amount": 6
+          },
+          {
+            "item": "resin",
+            "name": "Resin",
+            "amount": 6
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "sconce",
+      "name": "Sconce",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Sconce",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 2
+          },
+          {
+            "item": "copper",
+            "name": "Copper",
+            "amount": 2
+          },
+          {
+            "item": "resin",
+            "name": "Resin",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "cart",
+      "name": "Cart",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Cart",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 20
+          },
+          {
+            "item": "bronze-nails",
+            "name": "Bronze Nails",
+            "amount": 10
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "karve",
+      "name": "Karve",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Karve",
+      "names": {},
+      "description": "A small and sleek ship, ready to set sail.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 30
+          },
+          {
+            "item": "deer-hide",
+            "name": "Deer Hide",
+            "amount": 10
+          },
+          {
+            "item": "resin",
+            "name": "Resin",
+            "amount": 20
+          },
+          {
+            "item": "bronze-nails",
+            "name": "Bronze Nails",
+            "amount": 80
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "smith-s-anvil",
+      "name": "Smith's Anvil",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Smith's_Anvil",
+      "names": {},
+      "description": "A large anvil for working large items. Make sure it doesn't fall on your feet.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 20
+          },
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 5
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "ward",
+      "name": "Ward",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Ward",
+      "names": {},
+      "description": "Emits a magic seal on the nearby surroundings which prevents other players from constructing buildings or opening doors.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 5
+          },
+          {
+            "item": "greydwarf-eye",
+            "name": "Greydwarf Eye",
+            "amount": 5
+          },
+          {
+            "item": "surtling-core",
+            "name": "Surtling Core",
+            "amount": 1
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "reinforced-chest",
+      "name": "Reinforced chest",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Reinforced_Chest",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 10
+          },
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "personal-chest",
+      "name": "Personal chest",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Personal_Chest",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 10
+          },
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 8
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "sign",
+      "name": "Sign",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Sign",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "coal",
+            "name": "Coal",
+            "amount": 1
+          },
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 2
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "standing-iron-torch",
+      "name": "Standing iron torch",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Standing_Iron_Torch",
+      "names": {},
+      "description": "A sturdy iron torch to light up your surroundings.",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 2
+          },
+          {
+            "item": "resin",
+            "name": "Resin",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "standing-wood-torch",
+      "name": "Standing Wood Torch",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Standing_Wood_Torch",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 2
+          },
+          {
+            "item": "resin",
+            "name": "Resin",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "trailership",
+      "name": "Trailership",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Trailership",
+      "names": {},
+      "description": "A look at the Trailership.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Commands",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Commands"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "pathen",
+      "name": "Pathen",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Pathen",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Hoe",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Hoe"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "black-metal-chest",
+      "name": "Black metal chest",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Metal_Chest",
+      "names": {},
+      "description": "",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 10
+          },
+          {
+            "item": "tar",
+            "name": "Tar",
+            "amount": 2
+          },
+          {
+            "item": "black-metal",
+            "name": "Black Metal",
+            "amount": 6
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "standing-blue-burning-iron-torch",
+      "name": "Standing blue-burning iron torch",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Standing_Blue-burning_Iron_Torch",
+      "names": {},
+      "description": "A sturdy iron torch, emitting an eerie blue light.",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 2
+          },
+          {
+            "item": "greydwarf-eye",
+            "name": "Greydwarf Eye",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "treasure-chest",
+      "name": "Treasure Chest",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Treasure_Chest",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "coins",
+            "name": "Coins",
+            "amount": 99
+          },
+          {
+            "item": "ruby",
+            "name": "Ruby",
+            "amount": 5
+          },
+          {
+            "item": "silver-necklace",
+            "name": "Silver Necklace",
+            "amount": 2
+          },
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 8
+          },
+          {
+            "item": "silver",
+            "name": "Silver",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "trap",
+      "name": "Trap",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Trap",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-metal",
+            "name": "Black Metal",
+            "amount": 5
+          },
+          {
+            "item": "bronze-nails",
+            "name": "Bronze Nails",
+            "amount": 10
+          },
+          {
+            "item": "mechanical-spring",
+            "name": "Mechanical Spring",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "rune-table",
+      "name": "Rune table",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Rune_Table",
+      "names": {},
+      "description": "Runes are a well-known tool for channeling magic, if one knows how to read them.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-marble",
+            "name": "Black Marble",
+            "amount": 10
+          },
+          {
+            "item": "yggdrasil-wood",
+            "name": "Yggdrasil Wood",
+            "amount": 5
+          },
+          {
+            "item": "refined-eitr",
+            "name": "Refined Eitr",
+            "amount": 10
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "wisp-torch",
+      "name": "Wisp Torch",
+      "image": null,
+      "biome": "mistlands",
+      "tier": 6,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Wisp_Torch",
+      "names": {},
+      "description": "Bind the wisp to a fixed spot, to ensure the place is always free of mist.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "yggdrasil-wood",
+            "name": "Yggdrasil Wood",
+            "amount": 1
+          },
+          {
+            "item": "wisp",
+            "name": "Wisp",
+            "amount": 1
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "copper-deposit",
+      "name": "Copper deposit",
+      "image": null,
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Template%3AInfobox_structure%2Ftestcases",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forest",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forest"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "vice",
+      "name": "Vice",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Template%3AInfobox_structure%2Ftestcases",
+      "names": {},
+      "description": "Black forge improvement",
+      "stats": null,
+      "recipe": {
+        "station": "Black forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 5
+          },
+          {
+            "item": "copper",
+            "name": "Copper",
+            "amount": 8
+          },
+          {
+            "item": "mechanical-spring",
+            "name": "Mechanical spring",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Black forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "unfading-candles",
+      "name": "Unfading Candles",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Unfading_Candles",
+      "names": {},
+      "description": "These candles emit a strange light, urging more potent magic to coalesce around them.",
+      "stats": null,
+      "recipe": {
+        "station": "Galdr Table",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-marble",
+            "name": "Black Marble",
+            "amount": 10
+          },
+          {
+            "item": "skeleton-trophy",
+            "name": "Skeleton Trophy",
+            "amount": 3
+          },
+          {
+            "item": "refined-eitr",
+            "name": "Refined Eitr",
+            "amount": 10
+          },
+          {
+            "item": "resin",
+            "name": "Resin",
+            "amount": 15
+          }
+        ]
+      },
+      "station": {
+        "name": "Galdr Table",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Galdr Table",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Galdr Table"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "drakkar",
+      "name": "Drakkar",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Drakkar",
+      "names": {},
+      "description": "A massive ship, sturdy enough to sail on even the most dangerous seas.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron-nails",
+            "name": "Iron Nails",
+            "amount": 100
+          },
+          {
+            "item": "ceramic-plate",
+            "name": "Ceramic Plate",
+            "amount": 30
+          },
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 50
+          },
+          {
+            "item": "yggdrasil-wood",
+            "name": "Yggdrasil Wood",
+            "amount": 25
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "battering-ram",
+      "name": "Battering Ram",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "tool",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Battering_Ram",
+      "names": {},
+      "description": "This is a force to be reckoned with. Fuel it up and bring it to your enemies' stronghold for a greater chance of success.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "flametal",
+            "name": "Flametal",
+            "amount": 10
+          },
+          {
+            "item": "surtling-core",
+            "name": "Surtling Core",
+            "amount": 2
+          },
+          {
+            "item": "ashwood",
+            "name": "Ashwood",
+            "amount": 20
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "catapult",
+      "name": "Catapult",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "tool",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Catapult",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "flametal",
+            "name": "Flametal",
+            "amount": 10
+          },
+          {
+            "item": "charred-cogwheel",
+            "name": "Charred Cogwheel",
+            "amount": 1
+          },
+          {
+            "item": "ashwood",
+            "name": "Ashwood",
+            "amount": 20
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "resin-candle",
+      "name": "Resin candle",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Resin_Candle",
+      "names": {},
+      "description": "A small but incredibly cosy lightsource.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "resin",
+            "name": "Resin",
+            "amount": 1
+          },
+          {
+            "item": "candle-wick",
+            "name": "Candle Wick",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "mysterious-rock",
+      "name": "Mysterious Rock",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Mysterious_Rock",
+      "names": {},
+      "description": "It's just a rock...",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "mysterious-rock",
+            "name": "Mysterious Rock",
+            "amount": 1
+          },
+          {
+            "item": "coal",
+            "name": "Coal",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "mysterious-rock",
+            "name": "Mysterious Rock",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "yuleklapp",
+      "name": "Yuleklapp",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Yuleklapp",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "small",
+            "name": "Small:",
+            "amount": 1
+          },
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 2
+          },
+          {
+            "item": "bone-fragments",
+            "name": "Bone Fragments",
+            "amount": 1
+          },
+          {
+            "item": "medium",
+            "name": "Medium:",
+            "amount": 1
+          },
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 3
+          },
+          {
+            "item": "dandelion",
+            "name": "Dandelion",
+            "amount": 1
+          },
+          {
+            "item": "large",
+            "name": "Large:",
+            "amount": 1
+          },
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 4
+          },
+          {
+            "item": "raspberries",
+            "name": "Raspberries",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "standing-loom",
+      "name": "Standing Loom",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Standing_Loom",
+      "names": {},
+      "description": "The Norns weave the threads of fate together in a magical tapestry. What shall you weave?",
+      "stats": null,
+      "recipe": {
+        "station": "Galdr Table",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "timberwood",
+            "name": "Timberwood",
+            "amount": 5
+          },
+          {
+            "item": "nornathread",
+            "name": "Nornathread",
+            "amount": 10
+          }
+        ]
+      },
+      "station": {
+        "name": "Galdr Table",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Galdr Table",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Galdr Table"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "smith-s-aprons",
+      "name": "Smith's Aprons",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Smith's_Aprons",
+      "names": {},
+      "description": "When dealing with extreme temperatures, workplace safety is of the highest import.",
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "bloodgold",
+            "name": "Bloodgold",
+            "amount": 5
+          },
+          {
+            "item": "timberwood",
+            "name": "Timberwood",
+            "amount": 8
+          },
+          {
+            "item": "moose-hide",
+            "name": "Moose Hide",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "wardrobe",
+      "name": "Wardrobe",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Wardrobe",
+      "names": {},
+      "description": "An elegant place for storage.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "timberwood",
+            "name": "Timberwood",
+            "amount": 10
+          },
+          {
+            "item": "tar",
+            "name": "Tar",
+            "amount": 2
+          },
+          {
+            "item": "black-metal",
+            "name": "Black Metal",
+            "amount": 6
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "grausten-chest",
+      "name": "Grausten Chest",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Grausten_Chest",
+      "names": {},
+      "description": "Stone and metal are sure to keep your belongings safe. The charred skulls help too.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "grausten",
+            "name": "Grausten",
+            "amount": 10
+          },
+          {
+            "item": "warrior-trophy",
+            "name": "Warrior Trophy",
+            "amount": 5
+          },
+          {
+            "item": "flametal",
+            "name": "Flametal",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "ancient-metal-stack",
+      "name": "Ancient Metal Stack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Ancient_Metal_Stack",
+      "names": {},
+      "description": "This metal does have a more sinister air than others, doesn't it?",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "ancient-metal",
+            "name": "Ancient metal",
+            "amount": 30
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "obsidian-pile",
+      "name": "Obsidian Pile",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Obsidian_Pile",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "obsidian",
+            "name": "Obsidian",
+            "amount": 50
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "hoe",
+      "name": "Hoe",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "tool",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Hoe",
+      "names": {},
+      "description": "A farmer's tool for working the earth.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 5
+          },
+          {
+            "item": "stone",
+            "name": "Stone",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "cultivator",
+      "name": "Cultivator",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "tool",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Cultivator",
+      "names": {},
+      "description": "A farming tool for tilling soil.",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "corewood",
+            "name": "Corewood",
+            "amount": 5
+          },
+          {
+            "item": "bronze",
+            "name": "Bronze",
+            "amount": 5
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "paved-road",
+      "name": "Paved road",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Paved_road",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Stonecutter\nHoe",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "stone",
+            "name": "Stone",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Stonecutter\nHoe",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Stonecutter\nHoe",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Stonecutter\nHoe"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "wisp-fountain",
+      "name": "Wisp Fountain",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Wisp_Fountain",
+      "names": {},
+      "description": "Attracts wisps. They mostly come at night... mostly.",
+      "stats": null,
+      "recipe": {
+        "station": "Stonecutter",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "stone",
+            "name": "Stone",
+            "amount": 10
+          },
+          {
+            "item": "torn-spirit",
+            "name": "Torn Spirit",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Stonecutter",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Stonecutter",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Stonecutter"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "wisplight",
+      "name": "Wisplight",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "armor",
+      "teleportable": true,
+      "stack": null,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Wisplight",
+      "names": {},
+      "description": "A bound wisp to guide you through the thickest of mists.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "silver",
+            "name": "Silver",
+            "amount": 1
+          },
+          {
+            "item": "wisp",
+            "name": "Wisp",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {
+        "smithy": "/smithy/#item=wisplight"
+      }
+    },
+    {
+      "id": "barrel",
+      "name": "Barrel",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Barrel",
+      "names": {},
+      "description": "",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 10
+          },
+          {
+            "item": "barrel-hoops",
+            "name": "Barrel Hoops",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "iron-protection-idol",
+      "name": "Iron Protection Idol",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Iron_Protection_Idol",
+      "names": {},
+      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Loot chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Loot chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "black-metal-battle-idol",
+      "name": "Black Metal Battle Idol",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Metal_Battle_Idol",
+      "names": {},
+      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Loot chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Loot chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "scrap-bronze",
+      "name": "Scrap Bronze",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "metal",
+      "teleportable": false,
+      "stack": 30,
+      "weight": 10,
+      "wiki": "https://valheim.weirdgloop.org/w/Scrap_Bronze",
+      "names": {},
+      "description": "It's old and oxidized but can be smelted and used again.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Charred Fortress",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Charred Fortress"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "shield-generator",
+      "name": "Shield generator",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "shield",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Shield_Generator",
+      "names": {},
+      "description": "Creates a shield to protect against weather and incoming projectiles. Fuelled by bones of any kind.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 5
+          },
+          {
+            "item": "copper",
+            "name": "Copper",
+            "amount": 5
+          },
+          {
+            "item": "shield-core",
+            "name": "Shield Core",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {
+        "smithy": "/smithy/#item=shield-generator"
+      }
+    },
+    {
+      "id": "bloodgold-protection-idol",
+      "name": "Bloodgold Protection Idol",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Bloodgold_Protection_Idol",
+      "names": {},
+      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Loot chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Loot chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "eitr-refinery",
+      "name": "Eitr Refinery",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Eitr_Refinery",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-marble",
+            "name": "Black Marble",
+            "amount": 20
+          },
+          {
+            "item": "black-metal",
+            "name": "Black Metal",
+            "amount": 5
+          },
+          {
+            "item": "yggdrasil-wood",
+            "name": "Yggdrasil Wood",
+            "amount": 10
+          },
+          {
+            "item": "black-core",
+            "name": "Black Core",
+            "amount": 5
+          },
+          {
+            "item": "sap",
+            "name": "Sap",
+            "amount": 3
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "copper-scrap",
+      "name": "Copper Scrap",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "metal",
+      "teleportable": false,
+      "stack": 30,
+      "weight": 10,
+      "wiki": "https://valheim.weirdgloop.org/w/Copper_Scrap",
+      "names": {},
+      "description": "One person's scrap is another person's treasure.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Dropped by breaking some Dvergr structures\nAncient Swords/Armor",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dropped by breaking some Dvergr structures\nAncient Swords/Armor"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "dvergr-metal-wall",
+      "name": "Dvergr Metal Wall",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Dvergr_Metal_Wall",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "copper",
+            "name": "Copper",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "grappling-hook",
+      "name": "Grappling Hook",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "tool",
+      "teleportable": true,
+      "stack": null,
+      "weight": 1.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Grappling_Hook",
+      "names": {},
+      "description": "For a dramatic entrance, or a swift retreat.",
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "yggdrasil-wood",
+            "name": "Yggdrasil Wood",
+            "amount": 10
+          },
+          {
+            "item": "refined-eitr",
+            "name": "Refined Eitr",
+            "amount": 10
+          },
+          {
+            "item": "mandible",
+            "name": "Mandible",
+            "amount": 4
+          },
+          {
+            "item": "hook",
+            "name": "Hook",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "dead-raiser",
+      "name": "Dead Raiser",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 0.3,
+      "wiki": "https://valheim.weirdgloop.org/w/Dead_Raiser",
+      "names": {},
+      "description": "Sacrifice a bit of blood to raise the dead. Upgrade the skull to spawn multiple skeletons, and increase your blood magic to make them stronger.",
+      "stats": null,
+      "recipe": {
+        "station": "Galdr Table",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "bone-fragments",
+            "name": "Bone Fragments",
+            "amount": 10
+          },
+          {
+            "item": "refined-eitr",
+            "name": "Refined Eitr",
+            "amount": 16
+          },
+          {
+            "item": "skeleton-trophy",
+            "name": "Skeleton Trophy",
+            "amount": 4
+          }
+        ]
+      },
+      "station": {
+        "name": "Galdr Table",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Galdr Table",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Galdr Table"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "cheat-sword",
+      "name": "Cheat Sword",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "weapon",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Cheat_Sword",
+      "names": {},
+      "description": "Cheater!",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Console Commands",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Console Commands"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {
+        "smithy": "/smithy/#item=cheat-sword"
+      }
+    },
+    {
+      "id": "cheat-sledge",
+      "name": "Cheat Sledge",
+      "image": "../bestiary/img/weapons/iron-sledge.png",
+      "biome": null,
+      "tier": null,
+      "category": "weapon",
+      "teleportable": true,
+      "stack": null,
+      "weight": 4,
+      "wiki": "https://valheim.weirdgloop.org/w/Cheat_Sledge",
+      "names": {},
+      "description": "Cheater!",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Console Commands",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Console Commands"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {
+        "smithy": "/smithy/#item=cheat-sledge"
+      }
+    },
+    {
+      "id": "flametal-missile",
+      "name": "Flametal missile",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "weapon",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Flametal_Missile",
+      "names": {},
+      "description": "Forged from one of the hardest metals in all of Valheim, this missile is sure to hold off your enemies.",
+      "stats": null,
+      "recipe": {
+        "station": "Artisan table",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "ashwood",
+            "name": "Ashwood",
+            "amount": 10
+          },
+          {
+            "item": "flametal",
+            "name": "Flametal",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Artisan table",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Artisan table",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Artisan table"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {
+        "smithy": "/smithy/#item=flametal-missile"
+      }
+    },
+    {
+      "id": "explosive-payload",
+      "name": "Explosive Payload",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 50,
+      "weight": 0.3,
+      "wiki": "https://valheim.weirdgloop.org/w/Explosive_Payload",
+      "names": {},
+      "description": "Best used with a catapult. Handle with care.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "sulfur",
+            "name": "Sulfur",
+            "amount": 2
+          },
+          {
+            "item": "proustite-powder",
+            "name": "Proustite Powder",
+            "amount": 3
+          },
+          {
+            "item": "asksvin-hide",
+            "name": "Asksvin Hide",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "grausten-payload",
+      "name": "Grausten Payload",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 50,
+      "weight": 0.3,
+      "wiki": "https://valheim.weirdgloop.org/w/Grausten_Payload",
+      "names": {},
+      "description": "Best used with a catapult. Make sure nothing fragile is in the way.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "grausten",
+            "name": "Grausten",
+            "amount": 10
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "stone-oven",
+      "name": "Stone Oven",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Stone_Oven",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Artisan Table",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 15
+          },
+          {
+            "item": "stone",
+            "name": "Stone",
+            "amount": 20
+          },
+          {
+            "item": "surtling-core",
+            "name": "Surtling Core",
+            "amount": 4
+          }
+        ]
+      },
+      "station": {
+        "name": "Artisan Table",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Artisan Table",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Artisan Table"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "sap-extractor",
+      "name": "Sap Extractor",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Sap_Extractor",
+      "names": {},
+      "description": "Extract sap from mysterious branches.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "yggdrasil-wood",
+            "name": "Yggdrasil Wood",
+            "amount": 10
+          },
+          {
+            "item": "black-metal",
+            "name": "Black Metal",
+            "amount": 5
+          },
+          {
+            "item": "dvergr-extractor",
+            "name": "Dvergr Extractor",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "carrot-seeds",
+      "name": "Carrot seeds",
+      "image": null,
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "food-ingredient",
+      "teleportable": true,
+      "stack": 100,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Carrot_Seeds",
+      "names": {},
+      "description": "Plant these if you like carrots...",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Carrot plants in the Black Forest",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Carrot plants in the Black Forest"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "queen-bee",
+      "name": "Queen bee",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.2,
+      "wiki": "https://valheim.weirdgloop.org/w/Queen_Bee",
+      "names": {},
+      "description": "The queen of the bees!",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Bee Nests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Bee Nests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "beehive",
+            "name": "Beehive",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "turnip-seeds",
+      "name": "Turnip seeds",
+      "image": null,
+      "biome": "swamp",
+      "tier": 3,
+      "category": "food-ingredient",
+      "teleportable": true,
+      "stack": 100,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Turnip_Seeds",
+      "names": {},
+      "description": "Plant to grow a healthy turnip.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Turnip plants in the Swamp",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Turnip plants in the Swamp"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "amber",
+      "name": "Amber",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "valuable",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Amber",
+      "names": {},
+      "description": "Valuable",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Burial Chambers, chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Burial Chambers, chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "beech-seeds",
+      "name": "Beech seeds",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "food-ingredient",
+      "teleportable": true,
+      "stack": 100,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Beech_Seeds",
+      "names": {},
+      "description": "Plant them to grow a beech tree.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Beech",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Beech"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "sharpening-stone",
+      "name": "Sharpening Stone",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 6,
+      "wiki": "https://valheim.weirdgloop.org/w/Sharpening_Stone",
+      "names": {},
+      "description": "A whetstone wheel ready to spin.",
+      "stats": null,
+      "recipe": {
+        "station": "Stonecutter",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "stone",
+            "name": "Stone",
+            "amount": 5
+          }
+        ]
+      },
+      "station": {
+        "name": "Stonecutter",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Stonecutter",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Stonecutter"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "grinding-wheel",
+            "name": "Grinding wheel",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "cape-test",
+      "name": "CAPE TEST",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "armor",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/CAPE_TEST",
+      "names": {},
+      "description": "Da cape",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "n/a",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "n/a"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {
+        "smithy": "/smithy/#item=cape-test"
+      }
+    },
+    {
+      "id": "onion-seeds",
+      "name": "Onion seeds",
+      "image": null,
+      "biome": "mountain",
+      "tier": 4,
+      "category": "food-ingredient",
+      "teleportable": true,
+      "stack": 100,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Onion_Seeds",
+      "names": {},
+      "description": "Plant to grow a healthy onion.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Found in huts or ruins in the Mountain",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Found in huts or ruins in the Mountain"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "lox-saddle",
+      "name": "Lox Saddle",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "tool",
+      "teleportable": true,
+      "stack": 1,
+      "weight": 10,
+      "wiki": "https://valheim.weirdgloop.org/w/Lox_Saddle",
+      "names": {},
+      "description": "Use on a lox to be able to ride it.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "leather-scraps",
+            "name": "Leather Scraps",
+            "amount": 10
+          },
+          {
+            "item": "linen-thread",
+            "name": "Linen Thread",
+            "amount": 20
+          },
+          {
+            "item": "black-metal",
+            "name": "Black Metal",
+            "amount": 15
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "birch-seeds",
+      "name": "Birch seeds",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "food-ingredient",
+      "teleportable": true,
+      "stack": 100,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Birch_Seeds",
+      "names": {},
+      "description": "Plant them to grow a birch tree.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Birch",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Birch"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "thunder-stone",
+      "name": "Thunder stone",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 10,
+      "wiki": "https://valheim.weirdgloop.org/w/Thunder_Stone",
+      "names": {},
+      "description": "It is crackling with energy.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Haldor",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Haldor"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "obliterator",
+            "name": "Obliterator",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "mechanical-spring",
+      "name": "Mechanical Spring",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": false,
+      "stack": 10,
+      "weight": 5,
+      "wiki": "https://valheim.weirdgloop.org/w/Mechanical_Spring",
+      "names": {},
+      "description": "A mysterious contraption built by the Dvergr. Used to build traps.",
+      "stats": null,
+      "recipe": {
+        "station": "Artisan Table",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "refined-eitr",
+            "name": "Refined Eitr",
+            "amount": 1
+          },
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 3
+          }
+        ]
+      },
+      "station": {
+        "name": "Artisan Table",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Artisan Table",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Artisan Table"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "ballista",
+            "name": "Ballista",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "trap",
+            "name": "Trap",
+            "level": 1,
+            "biome": null
+          },
+          {
+            "id": "vice",
+            "name": "Vice",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "dvergr-extractor",
+      "name": "Dvergr extractor",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": false,
+      "stack": 10,
+      "weight": 5,
+      "wiki": "https://valheim.weirdgloop.org/w/Dvergr_Extractor",
+      "names": {},
+      "description": "Looks like a perfect piece for piercing something...",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Dvergr Component Crate",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dvergr Component Crate"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "sap-extractor",
+            "name": "Sap Extractor",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "basic-fireworks",
+      "name": "Basic fireworks",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 10,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Basic_fireworks",
+      "names": {},
+      "description": "This rocket's blasting off again!",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Hildir",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Hildir"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "ceramic-plate",
+      "name": "Ceramic Plate",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 30,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Ceramic_Plate",
+      "names": {},
+      "description": "No matter how hot this gets, the other side of it remains strangely cool.",
+      "stats": null,
+      "recipe": {
+        "station": "Artisan Table level 2",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-marble",
+            "name": "Black Marble",
+            "amount": 5
+          }
+        ]
+      },
+      "station": {
+        "name": "Artisan Table level 2",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Artisan Table level 2",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Artisan Table level 2"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "drakkar",
+            "name": "Drakkar",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "shield-core",
+      "name": "Shield Core",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "shield",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Shield_Core",
+      "names": {},
+      "description": "A protective force within is ready to be unleashed.",
+      "stats": null,
+      "recipe": {
+        "station": "Artisan Table",
+        "stationLevel": 2,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-core",
+            "name": "Black Core",
+            "amount": 1
+          },
+          {
+            "item": "surtling-core",
+            "name": "Surtling Core",
+            "amount": 1
+          },
+          {
+            "item": "ceramic-plate",
+            "name": "Ceramic Plate",
+            "amount": 5
+          }
+        ]
+      },
+      "station": {
+        "name": "Artisan Table",
+        "level": 2
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Artisan Table",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Artisan Table"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {
+        "smithy": "/smithy/#item=shield-core"
+      }
+    },
+    {
+      "id": "asksvin-saddle",
+      "name": "Asksvin Saddle",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "tool",
+      "teleportable": true,
+      "stack": 1,
+      "weight": 10,
+      "wiki": "https://valheim.weirdgloop.org/w/Asksvin_Saddle",
+      "names": {},
+      "description": "The back of an asksvin is rather lumpy, so you'll need a saddle if you want to ride one.",
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 2,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "flametal",
+            "name": "Flametal",
+            "amount": 6
+          },
+          {
+            "item": "linen-thread",
+            "name": "Linen Thread",
+            "amount": 20
+          },
+          {
+            "item": "morgen-sinew",
+            "name": "Morgen Sinew",
+            "amount": 4
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 2
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "molten-core",
+      "name": "Molten Core",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Molten_Core",
+      "names": {},
+      "description": "Potent energy swirls within, ready to be unleashed.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Charred Fortress\nPutrid Hole",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Charred Fortress\nPutrid Hole"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "portal-stone",
+            "name": "Portal – Stone",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "vineberry-seeds",
+      "name": "Vineberry Seeds",
+      "image": null,
+      "biome": "ashlands",
+      "tier": 7,
+      "category": "food-ingredient",
+      "teleportable": true,
+      "stack": 100,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Vineberry_Seeds",
+      "names": {},
+      "description": "Looks like they could crumble at any moment.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Vineberry Clusters in the Ashlands",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Vineberry Clusters in the Ashlands"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "asksvin-egg",
+      "name": "Asksvin egg",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Asksvin_egg",
+      "names": {},
+      "description": "Hard as rock, yet you can sense the presence of something inside. This should be kept warm.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Asksvin",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Asksvin"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "candle-wick",
+      "name": "Candle Wick",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 50,
+      "weight": 0.3,
+      "wiki": "https://valheim.weirdgloop.org/w/Candle_Wick",
+      "names": {},
+      "description": "Steep these in something flammable for a long lasting and cosy light source.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "The Bog Witch",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "The Bog Witch"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "resin-candle",
+            "name": "Resin candle",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "scythe-handle",
+      "name": "Scythe handle",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Scythe_Handle",
+      "names": {},
+      "description": "A sturdy base for a tool.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "The Bog Witch",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "The Bog Witch"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "scythe",
+            "name": "Scythe",
+            "level": 2,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "ivy-seeds",
+      "name": "Ivy Seeds",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "food-ingredient",
+      "teleportable": true,
+      "stack": 100,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Ivy_Seeds",
+      "names": {},
+      "description": "These unassuming seeds can grow into vines that might overtake entire buildings.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "The Bog Witch",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "The Bog Witch"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "barrel-hoops",
+      "name": "Barrel Hoops",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Barrel_Hoops",
+      "names": {},
+      "description": "These metal rings are perfectly round, suitable for holding a barrel together. Just add wood!",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Haldor",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Haldor"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "barrel",
+            "name": "Barrel",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "ectoplasm",
+      "name": "Ectoplasm",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 50,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Ectoplasm",
+      "names": {},
+      "description": "A restless essence of a once living thing...",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Ghost",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Ghost"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "corked-vial",
+      "name": "Corked Vial",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 10,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Corked_Vial",
+      "names": {},
+      "description": "Thick enough to contain something volatile, yet fragile enough to be shattered.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "The Bog Witch",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "The Bog Witch"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "ancient-coin",
+      "name": "Ancient Coin",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "valuable",
+      "teleportable": true,
+      "stack": 999,
+      "weight": 0.2,
+      "wiki": "https://valheim.weirdgloop.org/w/Ancient_Coin",
+      "names": {},
+      "description": "A relic of a lost age. Its surface still bears the trace of mysterious symbols.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Mörkhalla",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Mörkhalla"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "hooded-lantern",
+      "name": "Hooded Lantern",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 1,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Hooded_Lantern",
+      "names": {},
+      "description": "A simple torch would just be so old fashioned.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "timberwood",
+            "name": "Timberwood",
+            "amount": 3
+          },
+          {
+            "item": "luminous-larva",
+            "name": "Luminous Larva",
+            "amount": 1
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "hook",
+      "name": "Hook",
+      "image": null,
+      "biome": "mistlands",
+      "tier": 6,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 50,
+      "weight": 5,
+      "wiki": "https://valheim.weirdgloop.org/w/Hook",
+      "names": {},
+      "description": "A finely wrought item, with a gripping potential.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "grappling-hook",
+            "name": "Grappling Hook",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "cast-intricate-key",
+      "name": "Cast: Intricate Key",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": 10,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Intricate_Key",
+      "names": {},
+      "description": "The keys need to be hardened with frost.",
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge level 4",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "bloodgold",
+            "name": "Bloodgold",
+            "amount": 5
+          },
+          {
+            "item": "mould-intricate-key",
+            "name": "Mould Intricate Key",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge level 4",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge level 4",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge level 4"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "moose-saddle",
+      "name": "Moose Saddle",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "tool",
+      "teleportable": true,
+      "stack": 1,
+      "weight": 10,
+      "wiki": "https://valheim.weirdgloop.org/w/Moose_Saddle",
+      "names": {},
+      "description": "A moose is a noble creature, but with a saddle this fine it might just allow a rider.",
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 2,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "bloodgold",
+            "name": "Bloodgold",
+            "amount": 1
+          },
+          {
+            "item": "seal-pelt",
+            "name": "Seal Pelt",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "name": "Timberwood",
+            "amount": 1
+          },
+          {
+            "item": "linen-thread",
+            "name": "Linen Thread",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 2
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "wooden-protection-idol",
+      "name": "Wooden Protection Idol",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Wooden_Protection_Idol",
+      "names": {},
+      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Loot chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Loot chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "wooden-battle-idol",
+      "name": "Wooden Battle Idol",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Wooden_Battle_Idol",
+      "names": {},
+      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Loot chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Loot chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "bronze-protection-idol",
+      "name": "Bronze Protection Idol",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Bronze_Protection_Idol",
+      "names": {},
+      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Loot chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Loot chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "silver-protection-idol",
+      "name": "Silver Protection Idol",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Silver_Protection_Idol",
+      "names": {},
+      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Loot chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Loot chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "silver-battle-idol",
+      "name": "Silver Battle Idol",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Silver_Battle_Idol",
+      "names": {},
+      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Loot chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Loot chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "black-metal-protection-idol",
+      "name": "Black Metal Protection Idol",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Metal_Protection_Idol",
+      "names": {},
+      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Loot chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Loot chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "black-marble-protection-idol",
+      "name": "Black Marble Protection Idol",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Marble_Protection_Idol",
+      "names": {},
+      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Loot chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Loot chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "flametal-protection-idol",
+      "name": "Flametal Protection Idol",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Flametal_Protection_Idol",
+      "names": {},
+      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Loot chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Loot chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "timberwood-cone",
+      "name": "Timberwood Cone",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "food-ingredient",
+      "teleportable": true,
+      "stack": 100,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Timberwood_Cone",
+      "names": {},
+      "description": "Plant it to grow a timberwood tree.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Timber Tree",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Timber Tree"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "windmill",
+      "name": "Windmill",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Windmill",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Artisan Table",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "stone",
+            "name": "Stone",
+            "amount": 20
+          },
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 30
+          },
+          {
+            "item": "iron-nails",
+            "name": "Iron Nails",
+            "amount": 30
+          }
+        ]
+      },
+      "station": {
+        "name": "Artisan Table",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Artisan Table",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Artisan Table"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "black-marble-battle-idol",
+      "name": "Black Marble Battle Idol",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Marble_Battle_Idol",
+      "names": {},
+      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Loot chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Loot chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "cast-spirit-caller",
+      "name": "Cast: Spirit Caller",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": 1,
+      "weight": 2.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Spirit_Caller",
+      "names": {},
+      "description": "This magical item needs to be hardened with frost.",
+      "stats": null,
+      "recipe": {
+        "station": "Galdr Table level 3",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "frozen-branch",
+            "name": "Frozen Branch",
+            "amount": 8
+          },
+          {
+            "item": "nornathread",
+            "name": "Nornathread",
+            "amount": 5
+          },
+          {
+            "item": "moose-trophy",
+            "name": "Moose Trophy",
+            "amount": 1
+          },
+          {
+            "item": "mould-spirit-caller",
+            "name": "Mould Spirit Caller",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Galdr Table level 3",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Galdr Table level 3",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Galdr Table level 3"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "mould-spirit-caller",
+      "name": "Mould: Spirit Caller",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": 10,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Spirit_Caller",
+      "names": {},
+      "description": "Filled with the right material, this mould will create a powerful magical item.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Winding Tunnels\nMemorial Site\nMörkhalla",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Winding Tunnels\nMemorial Site\nMörkhalla"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "cast-spirit-caller",
+            "name": "Cast: Spirit Caller",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "spirit-caller",
+      "name": "Spirit Caller",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 0.3,
+      "wiki": "https://valheim.weirdgloop.org/w/Spirit_Caller",
+      "names": {},
+      "description": "Summon otherworldly aid. It only costs a drop of your blood...",
+      "stats": null,
+      "recipe": {
+        "station": "Frost Foundry",
+        "stationLevel": 3,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "cast-spirit-caller",
+            "name": "Cast Spirit Caller",
+            "amount": 1
+          },
+          {
+            "item": "liquid-frost",
+            "name": "Liquid Frost",
+            "amount": 5
+          }
+        ]
+      },
+      "station": {
+        "name": "Frost Foundry",
+        "level": 3
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Frost Foundry",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Frost Foundry"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "staff-of-protection",
+      "name": "Staff of Protection",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 0.3,
+      "wiki": "https://valheim.weirdgloop.org/w/Staff_of_Protection",
+      "names": {},
+      "description": "For a slight blood offering it will protect the caster in a magical shell.",
+      "stats": null,
+      "recipe": {
+        "station": "Galdr table",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "yggdrasil-wood",
+            "name": "Yggdrasil Wood",
+            "amount": 20
+          },
+          {
+            "item": "blood-clot",
+            "name": "Blood Clot",
+            "amount": 4
+          },
+          {
+            "item": "refined-eitr",
+            "name": "Refined Eitr",
+            "amount": 16
+          }
+        ]
+      },
+      "station": {
+        "name": "Galdr table",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Galdr table",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Galdr table"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "wooden-missile",
+      "name": "Wooden missile",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "weapon",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Wooden_Missile",
+      "names": {},
+      "description": "Sturdy wooden missiles that can provide a tough defense against foes.",
+      "stats": null,
+      "recipe": {
+        "station": "Artisan table",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "corewood",
+            "name": "Corewood",
+            "amount": 5
+          },
+          {
+            "item": "feathers",
+            "name": "Feathers",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Artisan table",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Artisan table",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Artisan table"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {
+        "smithy": "/smithy/#item=wooden-missile"
+      }
+    },
+    {
+      "id": "voidcaller",
+      "name": "Voidcaller",
+      "image": "../bestiary/img/weapons/voidcaller.png",
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 0.3,
+      "wiki": "https://valheim.weirdgloop.org/w/Voidcaller",
+      "names": {},
+      "description": "Who shall answer the call of the Void?",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "The Void",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "The Void"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "green-pots",
+      "name": "Green Pots",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Pots",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "pot-shard-x3-x4",
+            "name": "Pot Shard x3, x4,",
+            "amount": 5
+          },
+          {
+            "item": "charcoal-resin",
+            "name": "Charcoal Resin",
+            "amount": 1
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "torch",
+      "name": "Torch",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "weapon",
+      "teleportable": true,
+      "stack": null,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Torch",
+      "names": {},
+      "description": "It brings light and warmth, drives back the darkness.",
+      "stats": null,
+      "recipe": {
+        "station": "Player crafting menu",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 1
+          },
+          {
+            "item": "resin",
+            "name": "Resin",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Player crafting menu",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Player crafting menu",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Player crafting menu"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {
+        "smithy": "/smithy/#item=torch"
+      }
+    },
+    {
+      "id": "sparkler",
+      "name": "Sparkler",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "weapon",
+      "teleportable": true,
+      "stack": null,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Sparkler",
+      "names": {},
+      "description": "It's a stick that sparkles. Pretty!",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Hildir",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Hildir"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {
+        "smithy": "/smithy/#item=sparkler"
+      }
+    },
+    {
+      "id": "salvaged-lantern",
+      "name": "Salvaged Lantern",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "weapon",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Salvaged_Lantern",
+      "names": {},
+      "description": "An ancient relic, dropped and forgotten by someone long gone.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Standing Lantern",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Standing Lantern"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {
+        "smithy": "/smithy/#item=salvaged-lantern"
+      }
+    },
+    {
+      "id": "snow-shovel",
+      "name": "Snow Shovel",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Snow_Shovel",
+      "names": {},
+      "description": "Useful for clearing away the deepest of snow.",
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 3,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 5
+          },
+          {
+            "item": "flametal",
+            "name": "Flametal",
+            "amount": 4
+          },
+          {
+            "item": "embers",
+            "name": "Embers",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 3
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "dvergr-pole-lantern",
+      "name": "Dvergr Pole Lantern",
+      "image": "../comfort/img/pieces/dvergr-lantern-pole.png",
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Dvergr_Pole_Lantern",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "copper",
+            "name": "Copper",
+            "amount": 3
+          },
+          {
+            "item": "dvergr-lantern",
+            "name": "Dvergr Lantern",
+            "amount": 1
+          },
+          {
+            "item": "chain",
+            "name": "Chain",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "tankard",
+      "name": "Tankard",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "tool",
+      "teleportable": true,
+      "stack": null,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Tankard",
+      "names": {},
+      "description": "Skål!",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 5
+          },
+          {
+            "item": "resin",
+            "name": "Resin",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "valuable",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Ruby",
+      "names": {},
+      "description": "Valuable",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "* Burial Chambers\n* Sunken Crypts\n* Chest",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "* Burial Chambers\n* Sunken Crypts\n* Chest"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "treasure-chest",
+            "name": "Treasure Chest",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "silver-necklace",
+      "name": "Silver necklace",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "valuable",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Silver_Necklace",
+      "names": {},
+      "description": "Valuable",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Stone Grave, Viking Graveyard, Chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Stone Grave, Viking Graveyard, Chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "treasure-chest",
+            "name": "Treasure Chest",
+            "level": 1,
+            "biome": null
+          }
+        ]
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "mead-horn-of-odin",
+      "name": "Mead Horn of Odin",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "tool",
+      "teleportable": true,
+      "stack": null,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Mead_Horn_of_Odin",
+      "names": {},
+      "description": "Odin's finest warriors deserve the finest drinks. (DLC Item)",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 4
+          },
+          {
+            "item": "deer-trophy",
+            "name": "Deer Trophy",
+            "amount": 1
+          },
+          {
+            "item": "resin",
+            "name": "Resin",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "cartography-table",
+      "name": "Cartography Table",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Cartography_Table",
+      "names": {},
+      "description": "Mark your discoveries on this map and share them with your friends.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 10
+          },
+          {
+            "item": "bone-fragments",
+            "name": "Bone Fragments",
+            "amount": 10
+          },
+          {
+            "item": "bronze",
+            "name": "Bronze",
+            "amount": 2
+          },
+          {
+            "item": "leather-scraps",
+            "name": "Leather Scraps",
+            "amount": 5
+          },
+          {
+            "item": "raspberries",
+            "name": "Raspberries",
+            "amount": 4
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "coal-pile",
+      "name": "Coal pile",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Coal_Pile",
+      "names": {},
+      "description": "It never hurts to have a lot of fuel on hand.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "coal",
+            "name": "Coal",
+            "amount": 50
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "finewood-stack",
+      "name": "Finewood Stack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Finewood_Stack",
+      "names": {},
+      "description": "This pile of wood is waiting to be turned into furniture.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 50
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "coin-pile",
+      "name": "Coin Pile",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Coin_Pile",
+      "names": {},
+      "description": "A small fortune, gleaming and glittering.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "coins",
+            "name": "Coins",
+            "amount": 999
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "coin-stack",
+      "name": "Coin Stack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Coin_Stack",
+      "names": {},
+      "description": "It's important to keep count of your coins.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "coins",
+            "name": "Coins",
+            "amount": 99
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "corewood-stack",
+      "name": "Corewood Stack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Corewood_Stack",
+      "names": {},
+      "description": "A big pile of logs, fresh from the forest.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "corewood",
+            "name": "Corewood",
+            "amount": 50
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "horn-of-celebration",
+      "name": "Horn of Celebration",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "tool",
+      "teleportable": true,
+      "stack": null,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Horn_of_Celebration",
+      "names": {},
+      "description": "One year since we arrived... Skål!",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "bronze",
+            "name": "Bronze",
+            "amount": 2
+          },
+          {
+            "item": "troll-hide",
+            "name": "Troll Hide",
+            "amount": 2
+          },
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "black-marble-pile",
+      "name": "Black Marble Pile",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Marble_Pile",
+      "names": {},
+      "description": "Perfect for Dvergr inspired construction.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-marble",
+            "name": "Black Marble",
+            "amount": 50
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "dvergr-tankard",
+      "name": "Dvergr Tankard",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "tool",
+      "teleportable": true,
+      "stack": null,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Dvergr_Tankard",
+      "names": {},
+      "description": "It can hold a lot of mead!",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Dvergr structures",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Dvergr structures"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "hildir-s-chests",
+      "name": "Hildir's Chests",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": false,
+      "stack": 1,
+      "weight": 200,
+      "wiki": "https://valheim.weirdgloop.org/w/Hildir's_Chests",
+      "names": {},
+      "description": "Property of Hildir, please return if found.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Brenna (Brass)\nGeirrhafa (Silver)\nZil (Bronze)",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Brenna (Brass)\nGeirrhafa (Silver)\nZil (Bronze)"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "ashwood-stack",
+      "name": "Ashwood Stack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Ashwood_Stack",
+      "names": {},
+      "description": "No matter what, this stack of wood always feels warm.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "ashwood",
+            "name": "Ashwood",
+            "amount": 50
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "grausten-pile",
+      "name": "Grausten Pile",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Grausten_Pile",
+      "names": {},
+      "description": "Grausten, carefully placed into a pile.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "grausten",
+            "name": "Grausten",
+            "amount": 50
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "bone-stack",
+      "name": "Bone Stack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Bone_Stack",
+      "names": {},
+      "description": "You never know when these might come in handy!",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "bone-fragments",
+            "name": "Bone Fragments",
+            "amount": 50
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "serving-tray",
+      "name": "Serving Tray",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "tool",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Serving_Tray",
+      "names": {},
+      "description": "Set the table with whatever food and drink you fancy, and impress your guests with a delicious feast.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "The Bog Witch",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "The Bog Witch"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "scythe",
+      "name": "Scythe",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "tool",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Scythe",
+      "names": {},
+      "description": "The right tool makes the task at hand so much easier.",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 2,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "scythe-handle",
+            "name": "Scythe Handle",
+            "amount": 1
+          },
+          {
+            "item": "silver",
+            "name": "Silver",
+            "amount": 6
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 2
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "heart-of-the-forest",
+      "name": "Heart of the Forest",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Heart_of_the_Forest",
+      "names": {},
+      "description": "It pulsates with fragments of ancient life.",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "bronze",
+            "name": "Bronze",
+            "amount": 5
+          },
+          {
+            "item": "ancient-seed",
+            "name": "Ancient Seed",
+            "amount": 5
+          },
+          {
+            "item": "greydwarf-shaman-trophy",
+            "name": "Greydwarf Shaman Trophy",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "bronze-pendant",
+      "name": "Bronze Pendant",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Bronze_Pendant",
+      "names": {},
+      "description": "A beautiful pendant, harbouring the endurance of a bear.",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "bronze",
+            "name": "Bronze",
+            "amount": 5
+          },
+          {
+            "item": "bear-trophy",
+            "name": "Bear Trophy",
+            "amount": 1
+          },
+          {
+            "item": "ruby",
+            "name": "Ruby",
+            "amount": 3
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "iron-brooch",
+      "name": "Iron Brooch",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Iron_Brooch",
+      "names": {},
+      "description": "A delicate yet defensive accessory.",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 5
+          },
+          {
+            "item": "ancient-bark",
+            "name": "Ancient Bark",
+            "amount": 5
+          },
+          {
+            "item": "leech-trophy",
+            "name": "Leech Trophy",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "nimble-anklet",
+      "name": "Nimble Anklet",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Nimble_Anklet",
+      "names": {},
+      "description": "Puts a spring in your step!",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "Iron",
+            "amount": 5
+          },
+          {
+            "item": "withered-bone",
+            "name": "Withered Bone",
+            "amount": 5
+          },
+          {
+            "item": "surtling-trophy",
+            "name": "Surtling Trophy",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "wolf-sight",
+      "name": "Wolf Sight",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Wolf_Sight",
+      "names": {},
+      "description": "Assume the sharp and furious mind of a wolf.",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "silver",
+            "name": "Silver",
+            "amount": 5
+          },
+          {
+            "item": "wolf-fang",
+            "name": "Wolf Fang",
+            "amount": 5
+          },
+          {
+            "item": "fenring-trophy",
+            "name": "Fenring Trophy",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "crystal-heart",
+      "name": "Crystal Heart",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Crystal_Heart",
+      "names": {},
+      "description": "A shard of frozen sorrow. Touching it makes you feel almost numb.",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "silver",
+            "name": "Silver",
+            "amount": 5
+          },
+          {
+            "item": "crystal",
+            "name": "Crystal",
+            "amount": 5
+          },
+          {
+            "item": "stone-golem-trophy",
+            "name": "Stone Golem Trophy",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "fins-of-destiny",
+      "name": "Fins of Destiny",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Fins_of_Destiny",
+      "names": {},
+      "description": "Empty your mind as you become shapeless and one with the water.",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "chitin",
+            "name": "Chitin",
+            "amount": 5
+          },
+          {
+            "item": "serpent-scale",
+            "name": "Serpent Scale",
+            "amount": 5
+          },
+          {
+            "item": "serpent-trophy",
+            "name": "Serpent Trophy",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "bracelets-of-the-brave",
+      "name": "Bracelets of the Brave",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Bracelets_of_the_Brave",
+      "names": {},
+      "description": "Your mind hardens, as do your blows.",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-metal",
+            "name": "Black Metal",
+            "amount": 5
+          },
+          {
+            "item": "lox-pelt",
+            "name": "Lox Pelt",
+            "amount": 5
+          },
+          {
+            "item": "lox-trophy",
+            "name": "Lox Trophy",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "evasion-mantle",
+      "name": "Evasion Mantle",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Evasion_Mantle",
+      "names": {},
+      "description": "Dance with death as you dodge your enemies' strikes.",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-metal",
+            "name": "Black Metal",
+            "amount": 5
+          },
+          {
+            "item": "fuling-berserker-trophy",
+            "name": "Fuling Berserker Trophy",
+            "amount": 1
+          },
+          {
+            "item": "linen-thread",
+            "name": "Linen Thread",
+            "amount": 10
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "resounding-shackle",
+      "name": "Resounding Shackle",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Resounding_Shackle",
+      "names": {},
+      "description": "A razor-sharp ankle chain. Can it truly be comfortable?",
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "refined-eitr",
+            "name": "Refined Eitr",
+            "amount": 5
+          },
+          {
+            "item": "scale-hide",
+            "name": "Scale Hide",
+            "amount": 5
+          },
+          {
+            "item": "mandible",
+            "name": "Mandible",
+            "amount": 1
+          },
+          {
+            "item": "seeker-trophy",
+            "name": "Seeker Trophy",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "pulsating-earrings",
+      "name": "Pulsating Earrings",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Pulsating_Earrings",
+      "names": {},
+      "description": "If you listen carefully, you can hear the faint echoes of lost souls...",
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "carapace",
+            "name": "Carapace",
+            "amount": 5
+          },
+          {
+            "item": "refined-eitr",
+            "name": "Refined Eitr",
+            "amount": 5
+          },
+          {
+            "item": "gjall-trophy",
+            "name": "Gjall Trophy",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "brimstone",
+      "name": "Brimstone",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Brimstone",
+      "names": {},
+      "description": "It's warm, as if filled with a lifesblood of its own.",
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "flametal",
+            "name": "Flametal",
+            "amount": 5
+          },
+          {
+            "item": "sulfur",
+            "name": "Sulfur",
+            "amount": 5
+          },
+          {
+            "item": "molten-core",
+            "name": "Molten Core",
+            "amount": 1
+          },
+          {
+            "item": "morgen-trophy",
+            "name": "Morgen Trophy",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "jormundling",
+      "name": "Jörmundling",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/J%C3%B6rmundling",
+      "names": {},
+      "description": "Tormented screams resonate from within.",
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "flametal",
+            "name": "Flametal",
+            "amount": 5
+          },
+          {
+            "item": "refined-eitr",
+            "name": "Refined Eitr",
+            "amount": 5
+          },
+          {
+            "item": "bloodstone",
+            "name": "Bloodstone",
+            "amount": 1
+          },
+          {
+            "item": "fallen-valkyrie-trophy",
+            "name": "Fallen Valkyrie Trophy",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "archery-target",
+      "name": "Archery Target",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Archery_Target",
+      "names": {},
+      "description": "Aim for the center.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "finewood",
+            "name": "Finewood",
+            "amount": 4
+          },
+          {
+            "item": "leather-scraps",
+            "name": "Leather Scraps",
+            "amount": 10
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "rustic-drawbridge",
+      "name": "Rustic Drawbridge",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Drawbridges",
+      "names": {},
+      "description": "Convenient for crossing chasms, or for keeping enemies out.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "silver",
+            "name": "Silver",
+            "amount": 2
+          },
+          {
+            "item": "wolf-trophy",
+            "name": "Wolf Trophy",
+            "amount": 2
+          },
+          {
+            "item": "corewood",
+            "name": "Corewood",
+            "amount": 10
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "timberwood-drawbridge",
+      "name": "Timberwood Drawbridge",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Drawbridges",
+      "names": {},
+      "description": "Both a bridge and a gate, how clever!",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "flametal",
+            "name": "Flametal",
+            "amount": 2
+          },
+          {
+            "item": "bloodgold",
+            "name": "Bloodgold",
+            "amount": 2
+          },
+          {
+            "item": "timberwood",
+            "name": "Timberwood",
+            "amount": 24
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "black-metal-stack",
+      "name": "Black Metal Stack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Metal_Stack",
+      "names": {},
+      "description": "Sure to be the envy of all fulings!",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-metal",
+            "name": "Black Metal",
+            "amount": 30
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "bronze-stack",
+      "name": "Bronze Stack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Bronze_Stack",
+      "names": {},
+      "description": "Beautiful, versatile... Now also stackable!",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "bronze",
+            "name": "Bronze",
+            "amount": 30
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "copper-stack",
+      "name": "Copper Stack",
+      "image": null,
+      "biome": "plains",
+      "tier": 5,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Copper_Stack",
+      "names": {},
+      "description": "Premium quality copper. Nothing to complain about!",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "copper",
+            "name": "Copper",
+            "amount": 30
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "flametal-stack",
+      "name": "Flametal Stack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Flametal_Stack",
+      "names": {},
+      "description": "The heat is practically radiating from this stack...",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "flametal",
+            "name": "Flametal",
+            "amount": 30
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "bloodgold-stack",
+      "name": "Bloodgold Stack",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Bloodgold_Stack",
+      "names": {},
+      "description": "This metal does have a more sinister air than others, doesn't it?",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "bloodgold",
+            "name": "Bloodgold",
+            "amount": 30
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "neckstabber",
+      "name": "Neckstabber",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Neckstabber",
+      "names": {},
+      "description": "Claw and bone and gold – grant them blood and they shall grant you a boon.",
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "bloodgold",
+            "name": "Bloodgold",
+            "amount": 5
+          },
+          {
+            "item": "long-claws",
+            "name": "Long Claws",
+            "amount": 5
+          },
+          {
+            "item": "moose-trophy",
+            "name": "Moose Trophy",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "witch-crown",
+      "name": "Witch Crown",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Witch_Crown",
+      "names": {},
+      "description": "They say that the soul of a witch can grant strange powers to mortals...",
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "bloodgold",
+            "name": "Bloodgold",
+            "amount": 5
+          },
+          {
+            "item": "nornathread",
+            "name": "Nornathread",
+            "amount": 5
+          },
+          {
+            "item": "hexen-trophy",
+            "name": "Hexen Trophy",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "flint-pile",
+      "name": "Flint Pile",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Flint_Pile",
+      "names": {},
+      "description": "Watch your step!",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "flint",
+            "name": "Flint",
+            "amount": 50
+          }
+        ]
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "portal-stone",
+      "name": "Portal – Stone",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Portal_Stone",
+      "names": {},
+      "description": "The powerful energy source lets you pass through even with the most valuable of items.",
+      "stats": null,
+      "recipe": {
+        "station": "Stonecutter",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "greydwarf-eye",
+            "name": "Greydwarf Eye",
+            "amount": 10
+          },
+          {
+            "item": "grausten",
+            "name": "Grausten",
+            "amount": 30
+          },
+          {
+            "item": "molten-core",
+            "name": "Molten Core",
+            "amount": 2
+          }
+        ]
+      },
+      "station": {
+        "name": "Stonecutter",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Stonecutter",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Stonecutter"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "flametal-battle-idol",
+      "name": "Flametal Battle Idol",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Flametal_Battle_Idol",
+      "names": {},
+      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Loot chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Loot chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "butcher-knife",
+      "name": "Butcher knife",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "tool",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Butcher_Knife",
+      "names": {},
+      "description": "A butcher's knife designed specifically for slaughtering tamed animals.",
+      "stats": null,
+      "recipe": {
+        "station": "Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 2
+          },
+          {
+            "item": "tin",
+            "name": "Tin",
+            "amount": 4
+          }
+        ]
+      },
+      "station": {
+        "name": "Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "black-metal-missile",
+      "name": "Black metal missile",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "weapon",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Metal_Missile",
+      "names": {},
+      "description": "These thick missiles can punch through the hide of even the toughest of foes.",
+      "stats": null,
+      "recipe": {
+        "station": "Artisan table",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "Wood",
+            "amount": 10
+          },
+          {
+            "item": "black-metal",
+            "name": "Black Metal",
+            "amount": 1
+          }
+        ]
+      },
+      "station": {
+        "name": "Artisan table",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Artisan table",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Artisan table"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {
+        "smithy": "/smithy/#item=black-metal-missile"
+      }
+    },
+    {
+      "id": "basalt-bomb",
+      "name": "Basalt Bomb",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": 0.3,
+      "wiki": "https://valheim.weirdgloop.org/w/Basalt_Bomb",
+      "names": {},
+      "description": "With enough heat, it solidifies upon explosion.",
+      "stats": null,
+      "recipe": {
+        "station": "Workbench",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "asksvin-hide",
+            "name": "Asksvin Hide",
+            "amount": 1
+          },
+          {
+            "item": "asksvin-bladder",
+            "name": "Asksvin Bladder",
+            "amount": 1
+          },
+          {
+            "item": "proustite-powder",
+            "name": "Proustite Powder",
+            "amount": 3
+          }
+        ]
+      },
+      "station": {
+        "name": "Workbench",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Workbench",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Workbench"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "bloodgold-payload",
+      "name": "Bloodgold Payload",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 50,
+      "weight": 0.3,
+      "wiki": "https://valheim.weirdgloop.org/w/Bloodgold_Payload",
+      "names": {},
+      "description": "Hit 'em hard and hit 'em bloody.",
+      "stats": null,
+      "recipe": {
+        "station": "Black Forge",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "ice",
+            "name": "Ice",
+            "amount": 2
+          },
+          {
+            "item": "bloodgold",
+            "name": "Bloodgold",
+            "amount": 2
+          },
+          {
+            "item": "proustite-powder",
+            "name": "Proustite Powder",
+            "amount": 3
+          }
+        ]
+      },
+      "station": {
+        "name": "Black Forge",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Black Forge",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Black Forge"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "bloodgold-missile",
+      "name": "Bloodgold Missile",
+      "image": null,
+      "biome": null,
+      "tier": null,
+      "category": "weapon",
+      "teleportable": true,
+      "stack": 100,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Bloodgold_Missile",
+      "names": {},
+      "description": "Your attacker shall stand no chance as this missile finds its target.",
+      "stats": null,
+      "recipe": {
+        "station": "Artisan table",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "bloodgold",
+            "name": "Bloodgold",
+            "amount": 1
+          },
+          {
+            "item": "timberwood",
+            "name": "Timberwood",
+            "amount": 10
+          }
+        ]
+      },
+      "station": {
+        "name": "Artisan table",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Artisan table",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Artisan table"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": []
+      },
+      "crossLinks": {
+        "smithy": "/smithy/#item=bloodgold-missile"
       }
     }
   ]

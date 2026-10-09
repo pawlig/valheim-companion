@@ -180,8 +180,48 @@ h1 {
 }
 
 .toolbar-status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   font-size: 14px;
   color: var(--text-muted);
+}
+
+.toolbar-toggle-btn {
+  background: var(--bg-page);
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.toolbar-toggle-btn:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+}
+
+.toolbar-toggle-btn.active {
+  background: var(--accent-gold-dim);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.modal-spoiler-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: rgba(217, 164, 65, 0.1);
+  border: 1px solid rgba(217, 164, 65, 0.3);
+  border-radius: var(--radius-sm);
+  color: var(--accent-gold);
+  font-size: 13px;
+  margin-bottom: 16px;
 }
 
 .biome-chips {
