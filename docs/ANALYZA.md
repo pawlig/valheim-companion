@@ -571,3 +571,38 @@ Nová sekce `/items/` (`apps/items/`, statická vanilla JS aplikace jako Smithy 
   - **Expedition (`/expedition/`):** v balicím seznamu u vyvolávacích předmětů (summon items) je klik odkazem na `/items/#item=<id>`.
 - **Smlouva URL:** `/items/#item=<id>` odroluje na položku, otevře její detail a v případě uzamčeného biomu nabídne „Reveal“.
 - **Název nástroje:** **Items Compendium** (vlastní název, nepřekládá se dle § 20).
+
+## 28. Trader Ledger: Haldor, Hildir & Bog Witch (VC-40, Pavel 9. 10. 2026)
+
+> **Pavel 9. 10. 2026:** *„určitě ten trader ledger a asi i armor calculator i ten globální shopping vault“*
+
+Nová sekce `/traders/` (`apps/traders/`, statická vanilla JS aplikace). Kompletní přehled všech tří obchodníků ve hře, jejich nabídky, cen v mincích, podmínek odemknutí zboží a kalkulačka pokladů (appraisal cenností).
+
+- **Tři obchodníci:**
+  1. **Haldor** (Black Forest):
+     - Zboží: Ymir Flesh (120), Megingjörd (950), Dvergr Circlet (620), Fishing Rod (350), Fishing Bait (x50, 10), Yule Hat (100).
+     - Odemyká se postupem: Thunderstone (50, po The Elder), Egg (1500, po Yagluth).
+  2. **Hildir** (Meadows):
+     - Zboží: Barber Kit (250), Iron Pit (250), Fireworks (100).
+     - Odemyká se po vrácení truhel (Hildir's request):
+       - Brass chest (Brenna, Black Forest) → Fur caps, Harvest dress/tunic.
+       - Silver chest (Geirrhafa, Mountain) → Cape tunics, Extravagant caps.
+       - Bronze chest (Zil & Thungr, Plains) → Beaded dresses & tunics.
+  3. **The Bog Witch** (Swamp):
+     - Zboží: Love Potion (x5, 150), Anti-Sting Concoction (100), Lightfoot Mead (100), Tonic of Ratatosk (100), Draught of Vananidir (100), Brew of Animal Whispers (100), suroviny pro feasty a scythe.
+- **Funkce sekce `/traders/`:**
+  - Tři záložky / sekce pro jednotlivé obchodníky s jejich portréty/ikonami, biomem výskytu a tipem, jak je najít (Vegvisir, ikona na mapě při přiblížení).
+  - Přehled sortimentu: ikona předmětu, název (anglicky dle VC-29), cena v mincích, popis, podmínka odemknutí (`unlockedBy`), přímý klikací odkaz na kartu v Items Compendium (`/items/#item=<id>`).
+  - Spoiler ochrana přes `VCProgress`: zamčené zboží je označeno 🔒 s uvedením podmínky („Requires defeating The Elder“ / „Requires returning Hildir's brass chest“) s možností „Reveal“.
+  - **Coin & Valuables Appraisal (Kalkulačka pokladů):**
+    - Vstup pro zásoby hráče: Amber (5 coins), Amber Pearl (10 coins), Ruby (20 coins), Silver Necklace (30 coins) + přímo Coins.
+    - Okamžitý součet celkového jmění v mincích.
+    - Porovnání s cenami: indikace u každého zboží, zda na něj hráč má dost mincí.
+  - Akce „Add to shopping cart“ přes `VCShopping` / `va.cart`.
+- **Prolinkování z celého Companionu:**
+  - **Hub (`/`):** karta Trader Ledger v rozcestníku + vyhledávání obchodníků.
+  - **Items Compendium (`/items/`):** u předmětů, které se kupují u obchodníka (Ymir Flesh, Megingjörd, Egg, Love Potion...), odkaz přímo do `/traders/#trader=<id>`.
+  - **Smithy (`/smithy/`):** u surovin koupených od obchodníka odkaz do `/traders/`.
+  - **Provisions (`/provisions/`):** u Bog Witch surovin a lektvarů odkaz do `/traders/`.
+- **Smlouva URL:** `/traders/#trader=<id>` a `#item=<id>`.
+- **Název nástroje:** **Trader Ledger** (vlastní název, nepřekládá se dle § 20).
