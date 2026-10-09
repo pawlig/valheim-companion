@@ -22,6 +22,36 @@
       ? globalThis.VCI18n.tn(globalThis.VC_MESSAGES || {}, key, count, { count: number(count), ...values })
       : `${count} ${key}`;
 
+  // Filter values map a single <option> to one or more data categories.
+  const CATEGORY_FILTERS = {
+    all: null,
+    'weapon,tool': ['weapon', 'tool'],
+    'armor,shield': ['armor', 'shield'],
+    'food,mead,food-ingredient': ['food', 'mead', 'food-ingredient'],
+    metal: ['metal'],
+    drop: ['drop'],
+    trophy: ['trophy'],
+    building: ['building'],
+    valuable: ['valuable'],
+    summoning: ['summoning'],
+  };
+
+  const CATEGORY_LABELS = {
+    weapon: 'Weapon',
+    shield: 'Shield',
+    armor: 'Armor',
+    tool: 'Tool',
+    food: 'Food',
+    mead: 'Mead',
+    metal: 'Metal',
+    drop: 'Monster Drop',
+    trophy: 'Trophy',
+    'food-ingredient': 'Ingredient',
+    building: 'Building',
+    valuable: 'Valuable',
+    summoning: 'Summoning',
+  };
+
   const el = (tag, className, text) => {
     const node = document.createElement(tag);
     if (className) node.className = className;
@@ -106,6 +136,31 @@
     }
   }
 
+  function formatDuration(seconds) {
+    if (seconds == null) return null;
+    return seconds >= 120 ? `${Math.round(seconds / 60)} min` : `${seconds} s`;
+  }
+
+  function damageText(damage) {
+    if (!damage) return null;
+    const parts = Object.entries(damage)
+      .filter(([, v]) => v != null && v > 0)
+      .map(([type, v]) => `${v} ${type.charAt(0).toUpperCase() + type.slice(1)}`);
+    return parts.length > 0 ? parts.join(' + ') : null;
+  }
+
+  // A material chip in a recipe: links into the compendium when the item exists.
+  function materialNode(m) {
+    const label = `${m.amount || 1}× ${m.name || m.item}`;
+    if (itemsById.has(m.item)) {
+      const a = el('a', 'modal-link-tag', label);
+      a.href = `/items/#item=${encodeURIComponent(m.item)}`;
+      a.title = m.name || m.item;
+      return a;
+    }
+    return el('span', 'modal-link-tag modal-link-plain', label);
+  }
+
   function openModal(item) {
     activeModalItem = item;
     const modal = document.getElementById('item-modal');
@@ -118,7 +173,7 @@
     modalName.textContent = item.name;
     modalBody.replaceChildren();
 
-    // 1. Overview
+    // 1. Overview: image + badges + weight/stack
     const overview = el('div', 'modal-overview');
     const resolvedImg = resolveImage(item.image);
     if (resolvedImg) {
@@ -134,6 +189,10 @@
     const details = el('div', 'modal-details');
     const badges = el('div', 'modal-badges');
 
+    const catLabel = CATEGORY_LABELS[item.category];
+    if (catLabel) {
+      badges.append(el('span', 'badge badge-category', t(catLabel)));
+    }
     if (item.biome) {
       const bBadge = el('span', 'badge badge-biome', item.biome.replace('-', ' '));
       badges.append(bBadge);
@@ -148,27 +207,101 @@
     }
     details.append(badges);
 
-    const stats = el('div', 'modal-stats');
+    const basicStats = el('div', 'modal-stats');
     if (item.weight != null) {
-      stats.append(el('span', '', t('Weight: {weight}', { weight: item.weight })));
+      basicStats.append(el('span', '', t('Weight: {weight}', { weight: item.weight })));
     }
     if (item.stack != null) {
-      stats.append(el('span', '', t('Stack: {stack}', { stack: item.stack })));
+      basicStats.append(el('span', '', t('Stack: {stack}', { stack: item.stack })));
     }
-    details.append(stats);
+    details.append(basicStats);
     overview.append(details);
     modalBody.append(overview);
 
-    // 2. Sources Section
+    // 2. Stats (damage, armor, food values, effects…)
+    const s = item.stats;
+    const statRows = [];
+    if (s) {
+      const dmg = damageText(s.damage) || damageText(s.damageMax);
+      if (dmg) statRows.push(t('Damage: {damage}', { damage: dmg }));
+      if (s.blockArmor != null) statRows.push(t('Block: {block}', { block: s.blockArmor }));
+      if (s.skill) statRows.push(t('Skill: {skill}', { skill: s.skill }));
+      if (s.hands) statRows.push(s.hands.toUpperCase());
+      if (s.maxQuality != null && s.maxQuality > 1) {
+        statRows.push(t('Max quality: {count}', { count: s.maxQuality }));
+      }
+      if (s.armor != null) {
+        statRows.push(
+          s.armorMax != null && s.armorMax !== s.armor
+            ? t('Armor: {armor} (max {max})', { armor: s.armor, max: s.armorMax })
+            : t('Armor: {armor}', { armor: s.armor })
+        );
+      }
+      if (s.durability != null) statRows.push(t('Durability: {durability}', { durability: s.durability }));
+      if (s.movementSpeed) statRows.push(t('Movement speed: {speed}', { speed: s.movementSpeed }));
+      if (s.setBonus) statRows.push(t('Set bonus: {bonus}', { bonus: s.setBonus }));
+      if (s.health != null) statRows.push(t('Health: {health}', { health: s.health }));
+      if (s.stamina != null) statRows.push(t('Stamina: {stamina}', { stamina: s.stamina }));
+      if (s.eitr != null) statRows.push(t('Eitr: {eitr}', { eitr: s.eitr }));
+      if (s.healing != null) statRows.push(t('Healing: {healing}', { healing: s.healing }));
+      if (s.duration != null) statRows.push(t('Duration: {duration}', { duration: formatDuration(s.duration) }));
+      if (s.servings != null) statRows.push(t('Servings: {count}', { count: s.servings }));
+      if (s.effect) statRows.push(t('Effect: {effect}', { effect: s.effect }));
+      if (s.cooldown != null) statRows.push(t('Cooldown: {cooldown}', { cooldown: formatDuration(s.cooldown) }));
+      if (s.comfort != null) statRows.push(t('Comfort: {comfort}', { comfort: s.comfort }));
+      if (s.furniture) statRows.push(s.furniture);
+    }
+    if (statRows.length > 0) {
+      const statsSection = el('section', 'modal-section');
+      statsSection.append(el('h3', '', t('Stats')));
+      const grid = el('div', 'stat-grid');
+      for (const row of statRows) {
+        grid.append(el('span', 'stat-cell', row));
+      }
+      statsSection.append(grid);
+      modalBody.append(statsSection);
+    }
+
+    // 3. Crafting Recipe (station + level, materials link back into the compendium)
+    if (item.recipe && (item.recipe.materials || []).length > 0) {
+      const recipeSection = el('section', 'modal-section');
+      recipeSection.append(el('h3', '', t('Crafting Recipe')));
+
+      const stationLine = el('p', 'modal-text-item');
+      if (item.recipe.station) {
+        stationLine.append(
+          el('strong', '', item.recipe.station),
+          el('span', '', ` — ${t('Level {level}', { level: item.recipe.stationLevel || 1 })}`)
+        );
+      } else {
+        stationLine.textContent = '—';
+      }
+      recipeSection.append(stationLine);
+
+      const mats = el('div', 'modal-links-list');
+      for (const m of item.recipe.materials) {
+        mats.append(materialNode(m));
+      }
+      recipeSection.append(mats);
+
+      if (item.recipe.yields && item.recipe.yields > 1) {
+        recipeSection.append(el('p', 'modal-text-item', t('Yields: {count}', { count: item.recipe.yields })));
+      }
+      if (item.category === 'mead') {
+        recipeSection.append(el('p', 'modal-text-item', t('Ferment the mead base in a Fermenter.')));
+      }
+      modalBody.append(recipeSection);
+    }
+
+    // 4. Sources (where to find it)
     const sourcesSection = el('section', 'modal-section');
     sourcesSection.append(el('h3', '', t('Sources')));
 
     const hasCreatures = item.sources?.creatures?.length > 0;
     const hasLocations = item.sources?.locations?.length > 0;
-    const hasRecipe = item.sources?.recipe != null;
     const hasTraders = item.sources?.traders?.length > 0;
 
-    if (!hasCreatures && !hasLocations && !hasRecipe && !hasTraders) {
+    if (!hasCreatures && !hasLocations && !hasTraders && !item.recipe) {
       sourcesSection.append(el('p', 'modal-text-item', '—'));
     } else {
       if (hasCreatures) {
@@ -189,134 +322,119 @@
         }
       }
 
-      if (hasRecipe) {
-        sourcesSection.append(el('p', 'modal-text-item', t('Crafting recipe:')));
-        const r = item.sources.recipe;
-        const stationText = r.station ? `${r.station} (lvl ${r.stationLevel || 1})` : '';
-        const matTexts = (r.materials || []).map((m) => `${m.amount || 1}× ${m.name || m.item}`).join(', ');
-        sourcesSection.append(el('p', 'modal-text-item', `${stationText}: ${matTexts}`));
-      }
-
       if (hasTraders) {
         sourcesSection.append(el('p', 'modal-text-item', t('Sold by:')));
+        const tradersList = el('div', 'modal-links-list');
         for (const tr of item.sources.traders) {
-          const traderName = tr.text || String(tr);
-          let traderSlug = 'haldor';
-          if (/hildir/i.test(traderName)) traderSlug = 'hildir';
-          else if (/witch/i.test(traderName)) traderSlug = 'bog-witch';
-          const p = el('p', 'modal-text-item');
-          const a = el('a', 'item-link', traderName);
-          a.href = `/traders/#trader=${traderSlug}&item=${encodeURIComponent(item.id)}`;
-          p.append(a);
-          sourcesSection.append(p);
+          const a = el('a', 'modal-link-tag', tr.name);
+          a.href = `/traders/#trader=${encodeURIComponent(tr.id)}&item=${encodeURIComponent(item.id)}`;
+          tradersList.append(a);
         }
+        sourcesSection.append(tradersList);
+      }
+
+      if (!hasCreatures && !hasLocations && !hasTraders && item.recipe) {
+        sourcesSection.append(el('p', 'modal-text-item', t('Crafted from the recipe above.')));
       }
     }
     modalBody.append(sourcesSection);
 
-    // 3. Used In Section
+    // 5. Used In (recipes that need this item)
     const usedInSection = el('section', 'modal-section');
     usedInSection.append(el('h3', '', t('Used in')));
 
     const u = item.usedIn || {};
-    const hasWeapons = u.weapons?.length > 0;
-    const hasArmor = u.armor?.length > 0;
-    const hasFood = u.food?.length > 0;
-    const hasMeads = u.meads?.length > 0;
-    const hasComfort = u.comfort?.length > 0;
-    const hasExpedition = u.expedition?.length > 0;
-    const hasStations = u.stations?.length > 0;
+    const groups = [
+      { key: 'weapons', label: t('Weapons') },
+      { key: 'armor', label: t('Armor') },
+      { key: 'food', label: t('Food') },
+      { key: 'meads', label: t('Meads') },
+      { key: 'comfort', label: t('Comfort') },
+      { key: 'expedition', label: t('Boss Summoning') },
+      { key: 'stations', label: t('Stations & Upgrades') },
+    ];
+    const total = groups.reduce((sum, g) => sum + (u[g.key]?.length || 0), 0);
 
-    if (!hasWeapons && !hasArmor && !hasFood && !hasMeads && !hasComfort && !hasExpedition && !hasStations) {
+    if (total === 0) {
       usedInSection.append(el('p', 'modal-text-item', '—'));
     } else {
-      if (hasWeapons) {
-        usedInSection.append(el('p', 'modal-text-item', `${t('Weapons')} (${u.weapons.length}):`));
+      for (const g of groups) {
+        const entries = u[g.key] || [];
+        if (entries.length === 0) continue;
+        usedInSection.append(el('p', 'modal-text-item', `${g.label} (${entries.length}):`));
         const list = el('div', 'modal-links-list');
-        for (const w of u.weapons) {
-          const a = el('a', 'modal-link-tag', w.name);
-          a.href = `/smithy/#item=${encodeURIComponent(w.id)}`;
-          list.append(a);
-        }
-        usedInSection.append(list);
-      }
-
-      if (hasArmor) {
-        usedInSection.append(el('p', 'modal-text-item', `${t('Armor')} (${u.armor.length}):`));
-        const list = el('div', 'modal-links-list');
-        for (const arm of u.armor) {
-          const a = el('a', 'modal-link-tag', arm.name);
-          a.href = arm.set ? `/smithy/#set=${encodeURIComponent(arm.set)}` : `/smithy/#item=${encodeURIComponent(arm.id)}`;
-          list.append(a);
-        }
-        usedInSection.append(list);
-      }
-
-      if (hasFood) {
-        usedInSection.append(el('p', 'modal-text-item', `${t('Food')} (${u.food.length}):`));
-        const list = el('div', 'modal-links-list');
-        for (const fd of u.food) {
-          const a = el('a', 'modal-link-tag', fd.name);
-          a.href = `/provisions/#item=${encodeURIComponent(fd.id)}`;
-          list.append(a);
-        }
-        usedInSection.append(list);
-      }
-
-      if (hasMeads) {
-        usedInSection.append(el('p', 'modal-text-item', `${t('Meads')} (${u.meads.length}):`));
-        const list = el('div', 'modal-links-list');
-        for (const md of u.meads) {
-          const a = el('a', 'modal-link-tag', md.name);
-          a.href = `/provisions/#item=${encodeURIComponent(md.id)}`;
-          list.append(a);
-        }
-        usedInSection.append(list);
-      }
-
-      if (hasComfort) {
-        usedInSection.append(el('p', 'modal-text-item', `${t('Comfort')} (${u.comfort.length}):`));
-        const list = el('div', 'modal-links-list');
-        for (const cp of u.comfort) {
-          const a = el('a', 'modal-link-tag', cp.name);
-          a.href = `/comfort/#item=${encodeURIComponent(cp.id)}`;
-          list.append(a);
-        }
-        usedInSection.append(list);
-      }
-
-      if (hasExpedition) {
-        usedInSection.append(el('p', 'modal-text-item', `${t('Boss Summoning')} (${u.expedition.length}):`));
-        const list = el('div', 'modal-links-list');
-        for (const ex of u.expedition) {
-          const a = el('a', 'modal-link-tag', ex.bossName || ex.name);
-          a.href = `/expedition/#boss=${encodeURIComponent(ex.bossId || ex.id)}`;
-          list.append(a);
-        }
-        usedInSection.append(list);
-      }
-
-      if (hasStations) {
-        usedInSection.append(el('p', 'modal-text-item', `${t('Stations & Upgrades')} (${u.stations.length}):`));
-        const list = el('div', 'modal-links-list');
-        for (const st of u.stations) {
-          list.append(el('span', 'modal-link-tag', st.name));
+        for (const entry of entries) {
+          const label = entry.name || entry.bossName || entry.id;
+          let href = null;
+          if (entry.itemId && itemsById.has(entry.itemId)) {
+            href = `/items/#item=${encodeURIComponent(entry.itemId)}`;
+          } else if (g.key === 'weapons') {
+            href = `/smithy/#item=${encodeURIComponent(entry.id)}`;
+          } else if (g.key === 'armor') {
+            href = entry.set ? `/smithy/#set=${encodeURIComponent(entry.set)}` : `/smithy/#item=${encodeURIComponent(entry.id)}`;
+          } else if (g.key === 'food' || g.key === 'meads') {
+            href = `/provisions/#item=${encodeURIComponent(entry.id)}`;
+          } else if (g.key === 'comfort') {
+            href = `/comfort/#item=${encodeURIComponent(entry.id)}`;
+          } else if (g.key === 'expedition') {
+            href = `/expedition/#boss=${encodeURIComponent(entry.bossId || entry.id)}`;
+          }
+          if (href) {
+            const a = el('a', 'modal-link-tag', label);
+            a.href = href;
+            list.append(a);
+          } else {
+            list.append(el('span', 'modal-link-tag modal-link-plain', label));
+          }
         }
         usedInSection.append(list);
       }
     }
     modalBody.append(usedInSection);
 
-    // 4. Actions
+    // 6. Actions: cross-tool buttons, quantity + cart, wiki
+    const crossLinks = item.crossLinks || {};
+    const crossDefs = [
+      { href: crossLinks.smithy, label: 'Open in Smithy →' },
+      { href: crossLinks.provisions, label: 'Open in Provisions →' },
+      { href: crossLinks.comfort, label: 'Open in Comfort Planner →' },
+      { href: crossLinks.traders, label: 'Open in Trader Ledger →' },
+    ];
+    if (hasCreatures) {
+      crossDefs.push({
+        href: `/bestiary/#c=${encodeURIComponent(item.sources.creatures[0].id)}`,
+        label: 'Open in Bestiary →',
+      });
+    }
+    const present = crossDefs.filter((d) => d.href);
+    if (present.length > 0) {
+      const crossRow = el('div', 'modal-crosslinks');
+      for (const d of present) {
+        const a = el('a', 'cross-link-btn', t(d.label));
+        a.href = d.href;
+        crossRow.append(a);
+      }
+      modalBody.append(crossRow);
+    }
+
     const actions = el('div', 'modal-actions');
+    const cartGroup = el('div', 'cart-group');
+    const qty = el('input', 'cart-qty');
+    qty.type = 'number';
+    qty.min = '1';
+    qty.max = '9999';
+    qty.value = '1';
+    qty.setAttribute('aria-label', t('Qty'));
     const cartBtn = button(
       t('Add to shopping cart'),
       () => {
-        addToCart(item);
+        const count = Math.max(1, Math.min(9999, Math.round(Number(qty.value) || 1)));
+        addToCart(item, count);
       },
       'add-cart-btn'
     );
-    actions.append(cartBtn);
+    cartGroup.append(qty, cartBtn);
+    actions.append(cartGroup);
 
     if (item.wiki) {
       const wikiA = el('a', 'wiki-link', `${t('Wiki')} ↗`);
@@ -337,6 +455,10 @@
     const backdrop = document.getElementById('item-modal-backdrop');
     if (modal) modal.hidden = true;
     if (backdrop) backdrop.hidden = true;
+    // Drop the deep-link hash without scrolling or adding a history entry.
+    if (location.hash && location.hash.includes('item=') && typeof history !== 'undefined' && history.replaceState) {
+      history.replaceState(null, '', location.pathname + location.search);
+    }
   }
 
   function renderBiomeChips() {
@@ -391,8 +513,9 @@
     const query = searchQuery.trim().toLowerCase();
 
     const filtered = itemsData.filter((item) => {
-      // Category filter
-      if (selectedCategory !== 'all' && item.category !== selectedCategory) {
+      // Category filter (an option may cover several categories)
+      const allowed = CATEGORY_FILTERS[selectedCategory];
+      if (allowed && !allowed.includes(item.category)) {
         return false;
       }
       // Biome filter
@@ -445,6 +568,10 @@
       info.append(name);
 
       const meta = el('div', 'item-card-meta');
+      const catLabel = CATEGORY_LABELS[item.category];
+      if (catLabel) {
+        meta.append(el('span', 'badge badge-category', t(catLabel)));
+      }
       if (item.biome) {
         const bBadge = el('span', 'badge badge-biome', item.biome.replace('-', ' '));
         meta.append(bBadge);
@@ -509,7 +636,8 @@
     if (selectedBiome !== 'all' && item.biome && selectedBiome !== item.biome) {
       selectedBiome = 'all';
     }
-    if (selectedCategory !== 'all' && item.category !== selectedCategory) {
+    const allowed = CATEGORY_FILTERS[selectedCategory];
+    if (allowed && !allowed.includes(item.category)) {
       selectedCategory = 'all';
       const catSelect = document.getElementById('category-select');
       if (catSelect) catSelect.value = 'all';

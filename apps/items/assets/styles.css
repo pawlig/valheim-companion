@@ -341,6 +341,15 @@ h1 {
   border: 1px solid var(--border-color);
 }
 
+.badge-category {
+  background: var(--bg-card-sub);
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-size: 10px;
+}
+
 .item-card-stats {
   font-size: 12px;
   color: var(--text-muted);
@@ -416,6 +425,13 @@ h1 {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+/* The display:flex above would override the HTML hidden attribute and leave an
+   empty modal box floating over the page. Keep [hidden] authoritative. */
+.item-modal[hidden],
+.modal-backdrop[hidden] {
+  display: none !important;
 }
 
 .modal-header {
@@ -538,6 +554,73 @@ h1 {
   color: var(--accent-gold);
 }
 
+.modal-link-plain {
+  cursor: default;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 8px;
+}
+
+.stat-cell {
+  background: var(--bg-page);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  font-size: 13px;
+  color: var(--text-main);
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.modal-crosslinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cross-link-btn {
+  flex: 1 1 auto;
+  text-align: center;
+  background: var(--accent-gold-dim);
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  font-size: 13px;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.cross-link-btn:hover {
+  background: var(--accent-gold);
+  color: var(--bg-page);
+}
+
+.cart-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cart-qty {
+  width: 72px;
+  padding: 7px 8px;
+  background: var(--bg-page);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-main);
+  font-size: 14px;
+}
+
+.cart-qty:focus {
+  outline: none;
+  border-color: var(--border-focus);
+}
+
 .modal-text-item {
   color: var(--text-muted);
   font-size: 13px;
@@ -647,6 +730,27 @@ h1 {
   .item-modal {
     width: 95%;
     max-height: 90vh;
+  }
+
+  .stat-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .cross-link-btn {
+    flex: 1 1 100%;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cart-group {
+    justify-content: space-between;
+  }
+
+  .cart-group .add-cart-btn {
+    flex: 1;
   }
 
   .notice {

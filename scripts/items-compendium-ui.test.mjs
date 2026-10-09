@@ -158,15 +158,19 @@ function createDomFixture(initialHash = '') {
 
   const storage = new Map();
   const windowListeners = new Map();
+  const historyState = { replacedUrls: [] };
 
   const ctx = {
     document: doc,
     window: {
       addEventListener: (k, cb) => (windowListeners.get(k) || windowListeners.set(k, []).get(k)).push(cb),
-      location: { hash: initialHash },
+      location: { hash: initialHash, pathname: '/items/', search: '' },
       document: doc,
     },
-    location: { hash: initialHash },
+    location: { hash: initialHash, pathname: '/items/', search: '' },
+    history: {
+      replaceState: (state, title, url) => historyState.replacedUrls.push(url),
+    },
     localStorage: {
       getItem: (k) => storage.get(k) ?? null,
       setItem: (k, v) => storage.set(k, String(v)),
@@ -195,6 +199,7 @@ function createDomFixture(initialHash = '') {
     ctx,
     doc,
     storage,
+    historyState,
     fireWindow(k, ev = {}) {
       for (const cb of windowListeners.get(k) || []) cb(ev);
     },
@@ -202,11 +207,11 @@ function createDomFixture(initialHash = '') {
 }
 
 describe('Items Compendium UI Tests', () => {
-  it('1. Renders all 333 items on initial load', () => {
+  it('1. Renders the full catalog (>= 700 items) on initial load', () => {
     const { doc } = createDomFixture();
     const grid = doc.getElementById('items-grid');
     const cards = grid.querySelectorAll('.item-card');
-    assert.equal(cards.length, 333, 'Initial view should render 333 cards');
+    assert.ok(cards.length >= 700, `Initial view should render >= 700 cards, got ${cards.length}`);
   });
 
   it('2. Category filter filters items correctly (metal)', () => {
@@ -320,5 +325,116 @@ describe('Items Compendium UI Tests', () => {
     const emptyNotice = doc.getElementById('items-empty');
     assert.equal(grid.children.length, 0, 'Grid should have no children on non-existent search');
     assert.equal(emptyNotice.hidden, false, 'Empty notice should be shown');
+  });
+
+  it('12. Weapons & Tools filter covers weapon and tool categories', () => {
+    const { doc } = createDomFixture();
+    const select = doc.getElementById('category-select');
+    select.value = 'weapon,tool';
+    select.dispatch('change');
+    const grid = doc.getElementById('items-grid');
+    const cards = grid.querySelectorAll('.item-card');
+    assert.ok(cards.length >= 100, `Expected 100+ weapon/tool cards, got ${cards.length}`);
+    assert.ok(doc.getElementById('item-card-iron-sword'), 'iron-sword should be in Weapons & Tools');
+    assert.ok(doc.getElementById('item-item-copper-knife') || doc.getElementById('item-card-copper-knife'), 'copper-knife should be in Weapons & Tools');
+    assert.ok(doc.getElementById('item-card-fishing-rod'), 'fishing-rod (tool) should be in Weapons & Tools');
+    assert.ok(!doc.getElementById('item-card-sausages'), 'sausages should not be in Weapons & Tools');
+  });
+
+  it('13. Armor & Shields filter covers armor and shield categories', () => {
+    const { doc } = createDomFixture();
+    const select = doc.getElementById('category-select');
+    select.value = 'armor,shield';
+    select.dispatch('change');
+    assert.ok(doc.getElementById('item-card-root-harnesk'), 'root-harnesk should be in Armor & Shields');
+    assert.ok(!doc.getElementById('item-card-iron-sword'), 'iron-sword should not be in Armor & Shields');
+  });
+
+  it('14. Food & Mead filter covers food, mead and ingredients', () => {
+    const { doc } = createDomFixture();
+    const select = doc.getElementById('category-select');
+    select.value = 'food,mead,food-ingredient';
+    select.dispatch('change');
+    assert.ok(doc.getElementById('item-card-sausages'), 'sausages should be in Food & Mead');
+    assert.ok(doc.getElementById('item-card-thistle'), 'thistle (ingredient) should be in Food & Mead');
+    assert.ok(!doc.getElementById('item-card-iron-sword'), 'iron-sword should not be in Food & Mead');
+  });
+
+  it('15. Weapon modal shows crafting recipe with linked materials and station', () => {
+    const { doc } = createDomFixture('#item=iron-sword');
+    const modalBody = doc.getElementById('modal-body');
+    const recipeSection = modalBody.querySelectorAll('.modal-section').find((sec) =>
+      sec.children[0] && sec.children[0].textContent === 'Crafting Recipe'
+    );
+    assert.ok(recipeSection, 'Crafting Recipe section must exist for iron-sword');
+    const stationLine = recipeSection.querySelector('.modal-text-item');
+    const stationStrong = stationLine.children.find((c) => c.tagName === 'strong');
+    const levelSpan = stationLine.children.find((c) => c.tagName === 'span');
+    assert.equal(stationStrong.textContent, 'Forge');
+    assert.match(levelSpan.textContent, /Level 2/);
+    const links = recipeSection
+      .querySelectorAll('.modal-link-tag')
+      .filter((n) => (n.tagName || '').toLowerCase() === 'a');
+    const hrefs = links.map((a) => a.href);
+    assert.ok(hrefs.some((h) => h.includes('/items/#item=iron')), 'Iron material must link into the compendium');
+    assert.ok(hrefs.some((h) => h.includes('/items/#item=wood')), 'Wood material must link into the compendium');
+    const statSection = modalBody.querySelectorAll('.modal-section').find((sec) =>
+      sec.children[0] && sec.children[0].textContent === 'Stats'
+    );
+    assert.ok(statSection, 'Stats section must exist for a weapon');
+    const statTexts = statSection.querySelectorAll('.stat-cell').map((c) => c.textContent).join(' | ');
+    assert.match(statTexts, /Damage/);
+  });
+
+  it('16. Cross-link buttons open the right tools', () => {
+    const { doc } = createDomFixture('#item=iron-sword');
+    const crossLinks = doc.getElementById('modal-body').querySelectorAll('.cross-link-btn');
+    const hrefs = crossLinks.map((a) => a.href);
+    assert.ok(hrefs.some((h) => h.includes('/smithy/#item=iron-sword')), 'Weapon must offer Open in Smithy');
+
+    const tr2 = createDomFixture('#item=megingjord');
+    const traderBtns = tr2.doc.getElementById('modal-body').querySelectorAll('.cross-link-btn');
+    const traderHrefs = traderBtns.map((a) => a.href);
+    assert.ok(traderHrefs.some((h) => h.includes('/traders/#trader=haldor')), 'megingjord must offer Open in Trader Ledger');
+
+    const tr3 = createDomFixture('#item=sausages');
+    const foodBtns = tr3.doc.getElementById('modal-body').querySelectorAll('.cross-link-btn');
+    assert.ok(
+      foodBtns.map((a) => a.href).some((h) => h.includes('/provisions/#item=sausages')),
+      'sausages must offer Open in Provisions'
+    );
+  });
+
+  it('17. Drop modal offers Open in Bestiary for creature sources', () => {
+    const { doc } = createDomFixture('#item=deer-hide');
+    const crossLinks = doc.getElementById('modal-body').querySelectorAll('.cross-link-btn');
+    assert.ok(
+      crossLinks.map((a) => a.href).some((h) => h.includes('/bestiary/#c=deer')),
+      'deer-hide must offer Open in Bestiary'
+    );
+  });
+
+  it('18. Closing the modal hides it and clears the deep-link hash', () => {
+    const { doc, historyState } = createDomFixture('#item=bronze');
+    const modal = doc.getElementById('item-modal');
+    assert.equal(modal.hidden, false, 'Modal should be open via deep link');
+    doc.getElementById('modal-close').dispatch('click');
+    assert.equal(modal.hidden, true, 'Modal should be hidden after Close');
+    assert.equal(doc.getElementById('item-modal-backdrop').hidden, true, 'Backdrop should be hidden after Close');
+    assert.ok(
+      historyState.replacedUrls.some((u) => u === '/items/'),
+      'Deep-link hash should be cleared without reloading'
+    );
+  });
+
+  it('19. Quantity input multiplies the amount added to the cart', () => {
+    const { doc, storage } = createDomFixture('#item=bronze');
+    const qty = doc.getElementById('modal-body').querySelector('.cart-qty');
+    assert.ok(qty, 'Quantity input must be present');
+    qty.value = '5';
+    const cartBtn = doc.getElementById('modal-body').querySelector('.add-cart-btn');
+    cartBtn.dispatch('click');
+    const parsed = JSON.parse(storage.get('va.cart'));
+    assert.equal(parsed[0].quantity, 5, 'Cart should store quantity 5');
   });
 });
