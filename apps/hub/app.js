@@ -43,6 +43,7 @@
     { type: 'food', label: 'Food & Mead' },
     { type: 'comfort', label: 'Furniture' },
     { type: 'expedition', label: 'Expedition' },
+    { type: 'trader', label: 'Traders' },
   ];
 
   function initSearch() {

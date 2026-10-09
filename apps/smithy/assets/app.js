@@ -1127,6 +1127,12 @@
           label.appendChild(matLink);
           matPill.appendChild(label);
 
+          if (mat.item === 'ymir-flesh' || mat.item === 'thunderstone') {
+            const traderLink = el('a', 'badge badge-source', 'Haldor');
+            traderLink.href = `/traders/#trader=haldor&item=${encodeURIComponent(mat.item)}`;
+            matPill.appendChild(traderLink);
+          }
+
           if (itemData && itemData.teleportable === false) {
             const tpBadge = el('span', 'badge badge-teleport-warning', t("Can't be teleported"));
             matPill.appendChild(tpBadge);
@@ -1497,6 +1503,12 @@
             matLink.href = `/items/#item=${encodeURIComponent(mat.item)}`;
             label.appendChild(matLink);
             matPill.appendChild(label);
+
+            if (mat.item === 'ymir-flesh' || mat.item === 'thunderstone') {
+              const traderLink = el('a', 'badge badge-source', 'Haldor');
+              traderLink.href = `/traders/#trader=haldor&item=${encodeURIComponent(mat.item)}`;
+              matPill.appendChild(traderLink);
+            }
 
             if (itemData && itemData.teleportable === false) {
               const tpBadge = el('span', 'badge badge-teleport-warning', t("Can't be teleported"));
@@ -2121,6 +2133,15 @@
 
     function renderMaterialSources(parent, sources) {
       sources.forEach(src => {
+          if (src.kind === 'npc' || /haldor|hildir|witch/i.test(src.text)) {
+            let traderSlug = 'haldor';
+            if (/hildir/i.test(src.text)) traderSlug = 'hildir';
+            else if (/witch/i.test(src.text)) traderSlug = 'bog-witch';
+            const traderLink = el('a', 'badge badge-source', src.text);
+            traderLink.href = `/traders/#trader=${traderSlug}`;
+            parent.appendChild(traderLink);
+            return;
+          }
           const srcClass = src.locked ? 'badge badge-source badge-source-locked' : 'badge badge-source';
           const srcBadge = el(src.locked && src.biomeId ? 'button' : 'span', srcClass, src.text);
           if (src.locked && src.biomeId) {

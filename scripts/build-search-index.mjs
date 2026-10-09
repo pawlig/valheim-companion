@@ -198,6 +198,21 @@ export function buildSearchIndex() {
     }
   }
 
+  const tradersPath = path.join(DATA_DIR, 'traders.json');
+  if (existsSync(tradersPath)) {
+    for (const trader of JSON.parse(readFileSync(tradersPath, 'utf8')).traders || []) {
+      index.push({
+        type: 'trader',
+        name: trader.name,
+        names: {},
+        biome: trader.biome,
+        order: biomeOrder[trader.biome] ?? 99,
+        url: `/traders/#trader=${encodeURIComponent(trader.id)}`,
+        image: null,
+      });
+    }
+  }
+
   const expeditionIndex = [];
   const expeditionPath = path.join(DATA_DIR, 'expedition.json');
   if (existsSync(expeditionPath)) {
