@@ -418,6 +418,13 @@ h1 {
   overflow: hidden;
 }
 
+/* The display:flex above would override the HTML hidden attribute and leave an
+   empty modal box floating over the page. Keep [hidden] authoritative. */
+.item-modal[hidden],
+.modal-backdrop[hidden] {
+  display: none !important;
+}
+
 .modal-header {
   display: flex;
   justify-content: space-between;

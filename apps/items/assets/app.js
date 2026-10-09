@@ -337,6 +337,10 @@
     const backdrop = document.getElementById('item-modal-backdrop');
     if (modal) modal.hidden = true;
     if (backdrop) backdrop.hidden = true;
+    // Drop the deep-link hash without scrolling or adding a history entry.
+    if (location.hash && location.hash.includes('item=') && typeof history !== 'undefined' && history.replaceState) {
+      history.replaceState(null, '', location.pathname + location.search);
+    }
   }
 
   function renderBiomeChips() {
