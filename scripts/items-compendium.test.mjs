@@ -10,16 +10,18 @@ const DATA_PATH = path.join(ROOT, 'data', 'items-compendium.json');
 const CLIENT_BUNDLE_PATH = path.join(ROOT, 'apps', 'items', 'data', 'data.js');
 
 const VALID_CATEGORIES = new Set([
+  'material',
+  'metal',
   'weapon',
   'shield',
   'armor',
+  'ammo',
   'tool',
   'food',
+  'ingredient',
   'mead',
-  'metal',
   'drop',
   'trophy',
-  'food-ingredient',
   'building',
   'valuable',
   'summoning',
@@ -208,11 +210,11 @@ describe('Items Compendium Data & Inverted Index', () => {
 
   // --- VC-40b: full catalog coverage --------------------------------
 
-  it('17. Weapon catalog: 100+ weapons, shields and tools with Smithy cross-links', () => {
+  it('17. Weapon catalog: 80+ weapons, shields and tools with Smithy cross-links', () => {
     const weapons = items.filter((i) => i.category === 'weapon');
     const shields = items.filter((i) => i.category === 'shield');
     const tools = items.filter((i) => i.category === 'tool');
-    assert.ok(weapons.length >= 100, `Expected 100+ weapons, got ${weapons.length}`);
+    assert.ok(weapons.length >= 80, `Expected 80+ weapons, got ${weapons.length}`);
     assert.ok(shields.length >= 15, `Expected 15+ shields, got ${shields.length}`);
     assert.ok(tools.length >= 4, `Expected 4+ tools (pickaxes), got ${tools.length}`);
     for (const w of [...weapons, ...shields]) {
@@ -225,7 +227,7 @@ describe('Items Compendium Data & Inverted Index', () => {
       // Pickaxes are smithed; Fishing Rod is sold by Haldor; building tools & boss drops are self-contained.
       if (['antler-pickaxe', 'bronze-pickaxe', 'iron-pickaxe', 'black-metal-pickaxe'].includes(tool.id)) {
         assert.ok(tool.crossLinks?.smithy, `Pickaxe ${tool.id} must link to Smithy`);
-      } else if (tool.id === 'fishing-rod') {
+      } else if (tool.id === 'fishing-rod' || tool.id === 'fishing-bait') {
         assert.ok(tool.crossLinks?.traders, `Tool ${tool.id} must link to Trader Ledger`);
       }
     }
@@ -250,6 +252,7 @@ describe('Items Compendium Data & Inverted Index', () => {
     const withRecipe = armor.filter((a) => a.recipe && a.recipe.materials.length > 0);
     assert.ok(withRecipe.length >= 60, `Expected 60+ armor recipes, got ${withRecipe.length}`);
     for (const a of armor) {
+      if (a.id === 'wishbone' || a.sources?.traders?.length > 0 || a.crossLinks?.traders) continue;
       assert.ok(
         a.crossLinks && typeof a.crossLinks.smithy === 'string',
         `Armor ${a.id} must link to Smithy`
@@ -346,7 +349,7 @@ describe('Items Compendium Data & Inverted Index', () => {
   it('27. frost-arrow exists as craftable ammunition', () => {
     const fa = itemsById.get('frost-arrow');
     assert.ok(fa, 'frost-arrow must exist');
-    assert.ok(['weapon', 'tool'].includes(fa.category), 'frost-arrow is ammunition (weapon category)');
+    assert.equal(fa.category, 'ammo', 'frost-arrow is ammunition category');
     assert.ok(fa.recipe && fa.recipe.materials.length > 0, 'frost-arrow must have a recipe');
     assert.ok(fa.crossLinks.smithy.includes('/smithy/'), 'frost-arrow must link to Smithy');
   });
@@ -467,5 +470,67 @@ describe('Items Compendium Data & Inverted Index', () => {
   it('39. 100% of items have a valid non-null biome and tier', () => {
     const nullBiomes = items.filter((i) => !i.biome || i.tier == null);
     assert.equal(nullBiomes.length, 0, `Expected 0 items with null biome, found ${nullBiomes.length}`);
+  });
+
+  it('40. All 15 clean categories are populated with realistic item counts', () => {
+    const counts = {};
+    for (const item of items) {
+      counts[item.category] = (counts[item.category] || 0) + 1;
+    }
+    assert.ok(counts.material >= 80, `Expected >= 80 materials, got ${counts.material}`);
+    assert.ok(counts.metal >= 15, `Expected >= 15 metals, got ${counts.metal}`);
+    assert.ok(counts.weapon >= 80, `Expected >= 80 weapons, got ${counts.weapon}`);
+    assert.ok(counts.shield >= 25, `Expected >= 25 shields, got ${counts.shield}`);
+    assert.ok(counts.armor >= 130, `Expected >= 130 armors, got ${counts.armor}`);
+    assert.ok(counts.ammo >= 20, `Expected >= 20 ammo items, got ${counts.ammo}`);
+    assert.ok(counts.tool >= 20, `Expected >= 20 tools, got ${counts.tool}`);
+    assert.ok(counts.food >= 90, `Expected >= 90 foods, got ${counts.food}`);
+    assert.ok(counts.ingredient >= 50, `Expected >= 50 ingredients, got ${counts.ingredient}`);
+    assert.ok(counts.mead >= 20, `Expected >= 20 meads, got ${counts.mead}`);
+    assert.ok(counts.drop >= 90, `Expected >= 90 monster drops, got ${counts.drop}`);
+    assert.ok(counts.trophy >= 60, `Expected >= 60 trophies, got ${counts.trophy}`);
+    assert.ok(counts.building >= 180, `Expected >= 180 building pieces, got ${counts.building}`);
+    assert.ok(counts.valuable >= 25, `Expected >= 25 valuables, got ${counts.valuable}`);
+    assert.ok(counts.summoning >= 10, `Expected >= 10 summoning items, got ${counts.summoning}`);
+  });
+
+  it('41. All 9 Fishing Baits are present in the compendium with recipes and biomes', () => {
+    const baits = [
+      'fishing-bait', 'mossy-fishing-bait', 'sticky-fishing-bait', 'cold-fishing-bait',
+      'heavy-fishing-bait', 'misty-fishing-bait', 'hot-fishing-bait', 'frosty-fishing-bait',
+      'stingy-fishing-bait',
+    ];
+    for (const b of baits) {
+      const it = itemsById.get(b);
+      assert.ok(it, `Fishing bait ${b} must exist in compendium`);
+      assert.equal(it.category, 'tool', `${b} should be categorized as tool`);
+      assert.ok(it.biome, `${b} must have a biome`);
+      assert.ok(it.recipe || it.sources?.traders?.length > 0, `${b} must have a recipe or trader source`);
+    }
+  });
+
+  it('42. Basic building materials are categorized as material (not monster drop)', () => {
+    const matIds = ['wood', 'stone', 'flint', 'finewood', 'corewood', 'ancient-bark', 'black-marble', 'tar', 'coal', 'iron-nails'];
+    for (const id of matIds) {
+      const it = itemsById.get(id);
+      assert.ok(it, `Material ${id} must exist`);
+      assert.equal(it.category, 'material', `${id} must be material, not drop`);
+    }
+  });
+
+  it('43. Crops and cooking ingredients are categorized as ingredient (not drop or mead)', () => {
+    const ingIds = ['barley', 'turnip', 'bread-dough', 'boar-meat', 'dandelion', 'thistle', 'neck-tail', 'barley-flour', 'flax'];
+    for (const id of ingIds) {
+      const it = itemsById.get(id);
+      assert.ok(it, `Ingredient ${id} must exist`);
+      assert.equal(it.category, 'ingredient', `${id} must be ingredient`);
+    }
+  });
+
+  it('44. Iron Nails is teleportable material and not non-teleportable metal', () => {
+    const nails = itemsById.get('iron-nails');
+    assert.ok(nails, 'iron-nails must exist');
+    assert.equal(nails.category, 'material');
+    assert.equal(nails.teleportable, true, 'iron-nails must be teleportable');
   });
 });

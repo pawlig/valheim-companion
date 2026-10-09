@@ -22,9 +22,9 @@
 | `/comfort/` | Comfort Planner | `apps/comfort/` | ✅ comfort a Rested, Best I can build, Next upgrades, nákupní seznam, maxima po biomech sedí s wiki |
 | `/expedition/` | Expedition | `apps/expedition/` | ✅ Boss prep (zbraně z Bestiary, obrana, jídlo z Provisions, balicí a nákupní seznam) a Raids (teď / skončené / po dalším bossovi) |
 | `/signs/` | Sign Editor (Runopis) | `apps/signs/` (React + Vite, převzato subtree z `valheim-signs`) | ✅ 13 jazyků |
-| `/items/` | Items Compendium | `apps/items/` (vanilla JS) | ✅ kompletní katalog 1 097 předmětů (všechny zbraně, zbroje, jídla, lektvary, suroviny, trofeje, stanice, stavby, nástroje, truhly, semena), recepty, stanice, statistiky, zdroje, usedIn, odemykání a přepínač zamčených biomů, 13 jazyků |
+| `/items/` | Items Compendium | `apps/items/` (vanilla JS) | ✅ kompletní katalog 1 087 předmětů v 15 čistých kategoriích (včetně všech 9 rybářských návnad, munice, štítů, surovin, přísad), horizontální štítky kategorií s počty položek, synchronizovaný select, výchozí odemčené zobrazení encyklopedie s volitelným spoiler filtrem, recepty, stanice, statistiky, zdroje, usedIn, 13 jazyků |
 | `/traders/` | Trader Ledger | `apps/traders/` (vanilla JS) | ✅ Haldor, Hildir & Bog Witch, nabídka zboží, kalkulačka pokladů a mincí, odemykání dle postupu, 13 jazyků |
-| VC-40c | **Items Compendium kompletní katalog (1 097 položek)** a UI přepínač spoilerů | agy | ✅ nasazeno 9. 10. (1 097 položek, Queen Bee, Wishbone, Hammer, Cart, Smelter, semena, všech 70 trofejí, přepínač zamčených biomů v liště, kliknutí na zamčenou kartu otevírá modal s odhalením biomu, 325 mobilních stavů na 360 px bez vad, prohlizec bez chyb) |
+| VC-40e | **Items Compendium taxonomie 15 kategorií, rybářské návnady a štítky** | agy | ✅ nasazeno 9. 10. (1 087 předmětů, 0 nezařazených, 15 kategorií, 9 návnad, horizontální category-chips s počty, výchozí přímé zobrazení všech položek s volitelným spoiler filtrem, 13 jazyků, prohlizec kontrola bez vad 0 px přesah) |
 | VC-41 | **Armor Calculator / Damage Taken** (v Damage Calculatoru: redukce poškození zbrojí a odolnostmi hráče proti potvorám a bossům) | GM | 🔄 v přípravě |
 
 Pořadí biomů ve všech nástrojích je jedno (ANALYZA § 14): Meadows, Black Forest, **Ocean**, Swamp, Mountain, Plains, Mistlands, Ashlands, Deep North. Platí `tier = order`.

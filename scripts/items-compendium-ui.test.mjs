@@ -106,7 +106,7 @@ class Node {
   scrollIntoView() {}
 }
 
-function createDomFixture(initialHash = '') {
+function createDomFixture(initialHash = '', initialStorage = {}) {
   const allNodes = [];
   const body = new Node('body');
   const doc = {
@@ -133,6 +133,7 @@ function createDomFixture(initialHash = '') {
     'language-picker',
     'item-search',
     'category-select',
+    'category-chips',
     'biome-chips',
     'items-count',
     'items-grid',
@@ -157,7 +158,7 @@ function createDomFixture(initialHash = '') {
     allNodes.push(n);
   });
 
-  const storage = new Map();
+  const storage = new Map(Object.entries(initialStorage));
   const windowListeners = new Map();
   const historyState = { replacedUrls: [] };
 
@@ -269,17 +270,17 @@ describe('Items Compendium UI Tests', () => {
     assert.ok(doc.getElementById('item-card-deer-hide'), 'Deer Hide card should be rendered');
   });
 
-  it('6. Items in unvisited biomes show locked state with Reveal button', () => {
-    const { doc } = createDomFixture();
+  it('6. Items in unvisited biomes show locked state when spoiler filter is active', () => {
+    const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
     const ironCard = doc.getElementById('item-card-iron');
     assert.ok(ironCard, 'Iron card should exist');
-    assert.ok(ironCard.classList.contains('is-locked'), 'Iron (Swamp) should be locked when progress is default Meadows');
+    assert.ok(ironCard.classList.contains('is-locked'), 'Iron (Swamp) should be locked when progress is default Meadows and spoiler filter is ON');
     const revBtn = ironCard.querySelector('.reveal-btn');
     assert.ok(revBtn, 'Locked card must display a Reveal button');
   });
 
   it('7. Clicking Reveal unlocks the biome and renders item as unlocked', () => {
-    const { doc } = createDomFixture();
+    const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
     const ironCard = doc.getElementById('item-card-iron');
     assert.ok(ironCard.classList.contains('is-locked'));
     const revBtn = ironCard.querySelector('.reveal-btn');
@@ -463,10 +464,15 @@ describe('Items Compendium UI Tests', () => {
     const { doc, storage } = createDomFixture();
     const toggleBtn = doc.getElementById('toggle-locked-btn');
     assert.ok(toggleBtn, 'Toggle locked biomes button must exist');
+    // Initially showAllBiomes is true (all items visible)
     toggleBtn.dispatch('click');
-    assert.equal(storage.get('vc.itemsShowAll'), 'true', 'Storage should persist vc.itemsShowAll');
+    assert.equal(storage.get('vc.itemsShowAll'), 'false', 'Clicking toggles spoiler filter ON (persists false)');
     const ironCard = doc.getElementById('item-card-iron');
-    assert.ok(!ironCard.classList.contains('is-locked'), 'Iron card should no longer be locked when showAll is active');
+    assert.ok(ironCard.classList.contains('is-locked'), 'Iron card should now be locked when spoiler filter is active');
+    toggleBtn.dispatch('click');
+    assert.equal(storage.get('vc.itemsShowAll'), 'true', 'Clicking again toggles spoiler filter OFF (persists true)');
+    const ironCardUnlocked = doc.getElementById('item-card-iron');
+    assert.ok(!ironCardUnlocked.classList.contains('is-locked'), 'Iron card should no longer be locked');
   });
 
   it('22. Localized search query matches items by localized names', () => {
@@ -490,5 +496,37 @@ describe('Items Compendium UI Tests', () => {
     assert.ok(copperLink, 'Material link should display capitalized Copper name');
     copperLink.dispatch('click');
     assert.equal(doc.getElementById('modal-item-name').textContent, 'Copper', 'Clicking material link should update modal to Copper');
+  });
+
+  it('24. Renders Category Chips for quick horizontal navigation', () => {
+    const { doc } = createDomFixture();
+    const chipsBar = doc.getElementById('category-chips');
+    assert.ok(chipsBar, 'Category chips toolbar should exist');
+    const chips = chipsBar.querySelectorAll('.category-chip');
+    assert.equal(chips.length, 16, 'Should render 16 category chips (All + 15 categories)');
+    const allChip = chips.find((c) => c.dataset.category === 'all');
+    assert.ok(allChip.classList.contains('active'), 'All categories chip should be active by default');
+  });
+
+  it('25. Clicking a category chip filters grid and synchronizes category select', () => {
+    const { doc } = createDomFixture();
+    const chipsBar = doc.getElementById('category-chips');
+    const weaponChip = chipsBar.querySelectorAll('.category-chip').find((c) => c.dataset.category === 'weapon');
+    assert.ok(weaponChip, 'Weapon chip should exist');
+    weaponChip.dispatch('click');
+    const activeChip = chipsBar.querySelectorAll('.category-chip').find((c) => c.dataset.category === 'weapon');
+    assert.ok(activeChip && activeChip.classList.contains('active'), 'Weapon chip in DOM should now be active');
+    const select = doc.getElementById('category-select');
+    assert.equal(select.value, 'weapon', 'category-select value should synchronize to weapon');
+    const grid = doc.getElementById('items-grid');
+    const cards = grid.querySelectorAll('.item-card');
+    assert.ok(cards.length >= 80, `Expected 80+ weapon cards, got ${cards.length}`);
+  });
+
+  it('26. Default view displays all items unlocked without spoiler obstruction', () => {
+    const { doc } = createDomFixture();
+    const ironCard = doc.getElementById('item-card-iron');
+    assert.ok(ironCard, 'Iron card should exist in initial view');
+    assert.ok(!ironCard.classList.contains('is-locked'), 'Items should not be locked by default in encyclopedia compendium');
   });
 });

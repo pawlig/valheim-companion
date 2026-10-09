@@ -22,35 +22,68 @@
       ? globalThis.VCI18n.tn(globalThis.VC_MESSAGES || {}, key, count, { count: number(count), ...values })
       : `${count} ${key}`;
 
-  // Filter values map a single <option> to one or more data categories.
+  // 15 distinct categories + backward compatibility aliases
   const CATEGORY_FILTERS = {
     all: null,
-    'weapon,tool': ['weapon', 'tool'],
-    'armor,shield': ['armor', 'shield'],
-    'food,mead,food-ingredient': ['food', 'mead', 'food-ingredient'],
+    material: ['material'],
     metal: ['metal'],
+    weapon: ['weapon'],
+    shield: ['shield'],
+    armor: ['armor'],
+    ammo: ['ammo'],
+    tool: ['tool'],
+    food: ['food'],
+    ingredient: ['ingredient'],
+    mead: ['mead'],
     drop: ['drop'],
     trophy: ['trophy'],
     building: ['building'],
     valuable: ['valuable'],
     summoning: ['summoning'],
+    // Backward-compatibility aliases
+    'weapon,tool': ['weapon', 'tool'],
+    'armor,shield': ['armor', 'shield'],
+    'food,mead,food-ingredient': ['food', 'mead', 'ingredient'],
+    'food-ingredient': ['ingredient'],
   };
 
   const CATEGORY_LABELS = {
+    material: 'Material',
+    metal: 'Metal',
     weapon: 'Weapon',
     shield: 'Shield',
     armor: 'Armor',
+    ammo: 'Ammo',
     tool: 'Tool',
     food: 'Food',
+    ingredient: 'Ingredient',
     mead: 'Mead',
-    metal: 'Metal',
     drop: 'Monster Drop',
     trophy: 'Trophy',
-    'food-ingredient': 'Ingredient',
     building: 'Building',
     valuable: 'Valuable',
     summoning: 'Summoning',
+    'food-ingredient': 'Ingredient',
   };
+
+  const CATEGORY_DEFS = [
+    { id: 'all', label: 'All categories' },
+    { id: 'material', label: 'Materials & Resources' },
+    { id: 'metal', label: 'Metals & Ores' },
+    { id: 'weapon', label: 'Weapons' },
+    { id: 'shield', label: 'Shields' },
+    { id: 'armor', label: 'Armor & Clothing' },
+    { id: 'ammo', label: 'Ammunition' },
+    { id: 'tool', label: 'Tools & Equipment' },
+    { id: 'food', label: 'Food & Meals' },
+    { id: 'ingredient', label: 'Ingredients & Crops' },
+    { id: 'mead', label: 'Meads & Potions' },
+    { id: 'drop', label: 'Monster Drops' },
+    { id: 'trophy', label: 'Trophies' },
+    { id: 'building', label: 'Building & Furniture' },
+    { id: 'valuable', label: 'Valuables & Treasures' },
+    { id: 'summoning', label: 'Boss Summoning & Keys' },
+  ];
 
   const el = (tag, className, text) => {
     const node = document.createElement(tag);
@@ -82,9 +115,12 @@
   let searchQuery = '';
   let activeModalItem = null;
   let noticeTimer = null;
-  let showAllBiomes = false;
+  let showAllBiomes = true;
   try {
-    showAllBiomes = localStorage.getItem('vc.itemsShowAll') === 'true';
+    const stored = localStorage.getItem('vc.itemsShowAll');
+    if (stored !== null) {
+      showAllBiomes = stored === 'true';
+    }
   } catch {}
 
   function showNotice(key) {
@@ -511,6 +547,59 @@
     }
   }
 
+  function renderCategoryChips() {
+    const container = document.getElementById('category-chips');
+    if (!container) return;
+    container.replaceChildren();
+
+    const query = searchQuery.trim().toLowerCase();
+    const matchesQueryAndBiome = (item) => {
+      if (selectedBiome !== 'all' && item.biome !== selectedBiome) return false;
+      if (query) {
+        const nameMatch = item.name.toLowerCase().includes(query);
+        const idMatch = item.id.toLowerCase().includes(query);
+        const locNamesMatch = item.names && Object.values(item.names).some((n) => typeof n === 'string' && n.toLowerCase().includes(query));
+        if (!nameMatch && !idMatch && !locNamesMatch) return false;
+      }
+      return true;
+    };
+
+    const categoryCounts = new Map();
+    let totalCount = 0;
+    for (const it of itemsData) {
+      if (matchesQueryAndBiome(it)) {
+        totalCount++;
+        categoryCounts.set(it.category, (categoryCounts.get(it.category) || 0) + 1);
+      }
+    }
+
+    for (const cat of CATEGORY_DEFS) {
+      const isSelected = selectedCategory === cat.id;
+      const chipClasses = ['category-chip'];
+      if (isSelected) chipClasses.push('active');
+
+      const count = cat.id === 'all' ? totalCount : (categoryCounts.get(cat.id) || 0);
+
+      const chip = el('button', chipClasses.join(' '));
+      chip.type = 'button';
+      chip.dataset.category = cat.id;
+      chip.append(
+        el('span', 'chip-label', t(cat.label)),
+        el('span', 'chip-count', number(count))
+      );
+
+      chip.addEventListener('click', () => {
+        selectedCategory = cat.id;
+        const catSelect = document.getElementById('category-select');
+        if (catSelect) {
+          catSelect.value = cat.id;
+        }
+        render();
+      });
+      container.append(chip);
+    }
+  }
+
   function renderBiomeChips() {
     const container = document.getElementById('biome-chips');
     if (!container) return;
@@ -552,6 +641,7 @@
       globalThis.VCI18n.apply();
     }
 
+    renderCategoryChips();
     renderBiomeChips();
 
     const grid = document.getElementById('items-grid');
@@ -560,9 +650,10 @@
     const toggleBtn = document.getElementById('toggle-locked-btn');
 
     if (toggleBtn) {
-      toggleBtn.classList.toggle('active', showAllBiomes);
-      toggleBtn.setAttribute('aria-pressed', String(showAllBiomes));
-      toggleBtn.textContent = showAllBiomes ? t('Hide locked biomes') : t('Show locked biomes');
+      const isSpoilerOff = showAllBiomes;
+      toggleBtn.classList.toggle('active', isSpoilerOff);
+      toggleBtn.setAttribute('aria-pressed', String(isSpoilerOff));
+      toggleBtn.textContent = isSpoilerOff ? t('Spoiler filter: Off') : t('Spoiler filter: On');
     }
 
     if (!grid) return;

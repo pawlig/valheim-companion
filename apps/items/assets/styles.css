@@ -222,6 +222,50 @@ h1 {
   color: var(--accent-gold);
   font-size: 13px;
   margin-bottom: 16px;
+.category-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.category-chip {
+  background: var(--bg-page);
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 5px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  user-select: none;
+}
+
+.category-chip:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-main);
+}
+
+.category-chip.active {
+  background: var(--accent-gold-dim);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  font-weight: 500;
+}
+
+.category-chip .chip-count {
+  font-size: 11px;
+  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1px 6px;
+  border-radius: 10px;
+}
+
+.category-chip.active .chip-count {
+  background: rgba(217, 164, 65, 0.25);
+  color: var(--accent-gold);
 }
 
 .biome-chips {

@@ -199,19 +199,18 @@ export function buildItemsData() {
     'tin',
     'tin-ore',
     'bronze',
-    'bronze-nails',
     'scrap-bronze',
     'iron',
     'iron-ore',
     'scrap-iron',
-    'iron-nails',
-    'iron-pit',
     'silver',
     'silver-ore',
     'black-metal',
     'black-metal-scrap',
     'flametal',
     'flametal-ore',
+    'flametal-scrap',
+    'flametalnew',
     'bloodgold',
   ]);
 
@@ -233,27 +232,36 @@ export function buildItemsData() {
     't-w-i-g',
     'trailership',
     'pathen',
+    'zil-thungr',
   ]);
 
-  const WEAPON_MISC_IDS = new Set([
-    'staff-of-protection',
-    'dead-raiser',
-    'spirit-caller',
-    'voidcaller',
-    'basalt-bomb',
-    'explosive-payload',
-    'grausten-payload',
-    'bloodgold-payload',
-    'bloodgold-missile',
-    'black-metal-missile',
+  const AMMO_IDS = new Set([
+    'wood-arrow',
+    'flinthead-arrow',
+    'fire-arrow',
+    'poison-arrow',
+    'silver-arrow',
+    'obsidian-arrow',
+    'frost-arrow',
+    'needle-arrow',
+    'bronzehead-arrow',
+    'ironhead-arrow',
+    'carapace-arrow',
+    'charred-arrow',
+    'bloodgold-arrow',
+    'bone-bolt',
+    'iron-bolt',
+    'black-metal-bolt',
+    'carapace-bolt',
+    'charred-bolt',
+    'bloodgold-bolt',
     'wooden-missile',
-    'neckstabber',
-    'torch',
-    'sparkler',
-    'salvaged-lantern',
+    'black-metal-missile',
+    'bloodgold-missile',
+    'flametal-missile',
   ]);
 
-  const WEAPON_TOOL_IDS = new Set([
+  const TOOL_IDS = new Set([
     'antler-pickaxe',
     'bronze-pickaxe',
     'iron-pickaxe',
@@ -266,13 +274,30 @@ export function buildItemsData() {
     'tankard',
     'horn-of-celebration',
     'dvergr-tankard',
-    'battering-ram',
-    'catapult',
     'scythe',
     'snow-shovel',
     'mead-horn-of-odin',
     'serving-tray',
     'grappling-hook',
+    'hook',
+    'torch',
+    'sparkler',
+    'salvaged-lantern',
+    'dvergr-lantern',
+    'hooded-lantern',
+    'lox-saddle',
+    'asksvin-saddle',
+    'moose-saddle',
+    'barber-kit',
+    'fishing-bait',
+    'mossy-fishing-bait',
+    'cold-fishing-bait',
+    'heavy-fishing-bait',
+    'misty-fishing-bait',
+    'hot-fishing-bait',
+    'frosty-fishing-bait',
+    'stingy-fishing-bait',
+    'bready-fishing-bait',
   ]);
 
   const ACCESSORY_IDS = new Set([
@@ -288,28 +313,124 @@ export function buildItemsData() {
     'resounding-shackle',
     'pulsating-earrings',
     'witch-crown',
+    'crown-of-roots',
+    'yule-hat',
+    'megingjord',
+    'wishbone',
+    'dverger-circlet',
   ]);
 
-  const INGREDIENT_MISC_IDS = new Set([
-    'bread-dough',
+  const VALUABLE_IDS = new Set([
+    'coins',
+    'amber',
+    'amber-pearl',
+    'ruby',
+    'silver-necklace',
+    'ancient-coin',
+    'jade',
+    'iolite',
+    'bloodstone',
+    'crown-jewel',
+    'ymir-flesh',
+    'thunderstone',
+    'thunder-stone',
+    'hildir-s-brass-chest',
+    'hildir-s-silver-chest',
+    'hildir-s-bronze-chest',
+    'hildir-s-chests',
+    'grimvarn',
+    'solryth',
+    'veydris',
+    'draumyx',
+  ]);
+
+  const FISH_IDS = new Set([
+    'perch',
+    'pike',
+    'trollfish',
+    'giant-herring',
+    'grouper',
     'coral-cod',
-    'ivy-seeds',
-    'timberwood-cone',
+    'tuna',
+    'pufferfish',
+    'anglerfish',
+    'magmafish',
+    'northern-salmon',
+    'tetra',
   ]);
 
-  const BUILDING_MISC_IDS = new Set([
-    'cartography-table',
-    'archery-target',
-    'rustic-drawbridge',
-    'timberwood-drawbridge',
-    'portal-stone',
-    'windmill',
-    'green-pots',
-    'roundpole-fence',
-    'roundpole-gate',
-    'stone-fence',
-    'ivy',
+  const MATERIAL_EXPLICIT_IDS = new Set([
+    'wood',
+    'finewood',
+    'fine-wood',
+    'corewood',
+    'core-wood',
+    'ancient-bark',
+    'yggdrasil-wood',
+    'ashwood',
+    'timberwood',
+    'frozen-branch',
+    'stone',
+    'flint',
+    'obsidian',
+    'black-marble',
+    'grausten',
+    'crystal',
+    'tar',
+    'resin',
+    'charcoal-resin',
+    'sulfur',
+    'coal',
+    'soft-tissue',
+    'petrified-tissue',
+    'sap',
+    'refined-eitr',
+    'liquid-frost',
+    'ice',
+    'bronze-nails',
+    'iron-nails',
+    'chain',
+    'surtling-core',
+    'black-core',
+    'ceramic-plate',
+    'molten-core',
+    'mechanical-spring',
+    'dvergr-extractor',
+    'linen-thread',
+    'blue-jute',
+    'red-jute',
+    'nornathread',
+    'leather-straps',
+    'sharpening-stone',
+    'candle-wick',
+    'scythe-handle',
+    'barrel-hoops',
+    'corked-vial',
+    'pot-shard',
+    'pungent-pebbles',
+    'proustite-powder',
+    'charred-cogwheel',
+    'majestic-carapace',
+    'ectoplasm',
+    'queen-bee',
+    'tiny-pulp',
+    'dead-pulp',
+    'shapeless-pulp',
+    'dyrnwyn-blade-fragment',
+    'dyrnwyn-hilt-fragment',
+    'dyrnwyn-tip-fragment',
+    'sacrificial-blood',
+    'kindled-ribs',
+    'vile-ribcage',
+    'frostcore',
   ]);
+
+  const MATERIAL_KEYWORDS = [
+    'wood', 'stone', 'flint', 'resin', 'tar', 'eitr', 'marble', 'grausten', 'bark', 'coal',
+    'core', 'spring', 'plate', 'chain', 'nail', 'nails', 'jute', 'thread', 'mould', 'cast',
+    'crystal', 'obsidian', 'sulfur', 'sap', 'tissue', 'powder', 'shard', 'vial', 'wick',
+    'hoop', 'fiber', 'cloth', 'pelvis', 'pulp',
+  ];
 
   const registry = new Map();
   const order = [];
@@ -330,38 +451,102 @@ export function buildItemsData() {
     const nameLower = (name || '').toLowerCase();
     const typeLower = (rawType || '').toLowerCase();
 
-    if (id.startsWith('cast-') || id.startsWith('mould-') || nameLower.startsWith('cast') || nameLower.startsWith('mould') || typeLower === 'cast' || typeLower === 'mould') {
+    // 1. Ammunition
+    if (AMMO_IDS.has(id) || id.endsWith('-arrow') || id.endsWith('-bolt') || id.endsWith('-missile')) {
+      return 'ammo';
+    }
+
+    // 2. Boss Summoning & Keys
+    if (summonIds.has(id) || id.includes('totem') || id.includes('sealbreaker') || id.includes('key')) {
+      return 'summoning';
+    }
+
+    // 3. Valuables & Treasures
+    if (VALUABLE_IDS.has(id) || id.includes('idol') || nameLower.includes('idol') || (id.includes('chest') && id.includes('hildir')) || typeLower === 'valuable') {
+      return 'valuable';
+    }
+
+    // 4. Metals & Ores
+    if (metalOres.has(id) || id.endsWith('-ore') || id.endsWith('-scrap') || id.endsWith('-ingot')) {
+      return 'metal';
+    }
+
+    // 5. Tools & Utility
+    if (TOOL_IDS.has(id) || typeLower === 'tool' || nameLower.includes('pickaxe') || nameLower.includes('saddle') || id.includes('saddle')) {
+      return 'tool';
+    }
+
+    // 6. Trophies
+    if (id.endsWith('-trophy') || id.includes('trophy') || nameLower.includes('trophy')) {
+      return 'trophy';
+    }
+
+    // 7. Shields
+    if (id.startsWith('shield-') || id.endsWith('-shield') || id.includes('buckler') || nameLower.includes('shield') || nameLower.includes('buckler') || typeLower.includes('shield')) {
+      return 'shield';
+    }
+
+    // 8. Casting Moulds & Casts (Deep North crafting materials)
+    if (id.startsWith('cast-') || id.startsWith('mould-') || nameLower.startsWith('cast ') || nameLower.startsWith('mould ') || typeLower === 'cast' || typeLower === 'mould') {
+      return 'material';
+    }
+
+    // 9. Weapons
+    if (id.startsWith('staff-') || id.includes('staff') || id === 'dead-raiser' || typeLower.includes('weapon') || nameLower.includes('sword') || nameLower.includes('bow') || nameLower.includes('spear') || nameLower.includes('axe') || nameLower.includes('mace') || nameLower.includes('dagger') || nameLower.includes('knife') || nameLower.includes('club') || nameLower.includes('sledge') || nameLower.includes('atgeir') || nameLower.includes('crossbow') || nameLower.includes('bomb') || nameLower.includes('payload') || id === 'fists' || ['catapult', 'battering-ram'].includes(id)) {
+      return 'weapon';
+    }
+
+    // 10. Armor & Clothing
+    if (ACCESSORY_IDS.has(id) || typeLower.includes('armor') || typeLower.includes('helmet') || typeLower.includes('cape') || typeLower.includes('cuirass') || typeLower.includes('greaves') || typeLower.includes('tunic') || typeLower.includes('dress') || typeLower.includes('legs') || typeLower.includes('chest') || typeLower === 'accessory' || typeLower === 'trinket' || nameLower.includes('helmet') || nameLower.includes('cape') || nameLower.includes('tunic') || nameLower.includes('dress') || nameLower.includes('hat') || nameLower.includes('cap') || nameLower.includes('hood') || nameLower.includes('headscarf')) {
+      return 'armor';
+    }
+
+    // 11. Meads & Potions
+    if ((provMeadIds.has(id) || id.includes('mead') || nameLower.includes('mead') || id.includes('potion') || nameLower.includes('potion') || id.includes('tonic') || nameLower.includes('tonic')) && !id.startsWith('mead-base-') && !nameLower.startsWith('mead base')) {
+      return 'mead';
+    }
+
+    // 12. Food & Meals
+    if (!nameLower.includes('uncooked') && !nameLower.includes('unbaked') && (provFoodIds.has(id) || nameLower.includes('cooked') || nameLower.includes('smoked') || nameLower.includes('stew') || nameLower.includes('soup') || (/\bpie\b/.test(nameLower) && !nameLower.includes('piece')) || (/\bbread\b/.test(nameLower) && !nameLower.includes('dough')) || nameLower.includes('feast') || nameLower.includes('skewer') || nameLower.includes('platter'))) {
+      return 'food';
+    }
+
+    // 13. Ingredients, Crops & Raw Foods
+    if (FISH_IDS.has(id) || id.startsWith('mead-base-') || nameLower.startsWith('mead base') || nameLower.includes('seed') || nameLower.includes('cone') || nameLower.includes('acorn') || nameLower.includes('raw ') || nameLower.includes('uncooked') || nameLower.includes('unbaked') || nameLower.includes('batter') || nameLower.includes('dough') || nameLower.includes('mushroom') || nameLower.includes('berry') || nameLower.includes('berries') || nameLower.includes('thistle') || nameLower.includes('dandelion') || nameLower.includes('carrot') || nameLower.includes('turnip') || nameLower.includes('onion') || nameLower.includes('barley') || nameLower.includes('flax') || (nameLower.includes('meat') && !nameLower.includes('cooked')) || nameLower.includes('spice') || nameLower.includes('herb') || (nameLower.includes('powder') && (nameLower.includes('pepper') || nameLower.includes('dragon eggshell') || nameLower.includes('fiery'))) || ['honey', 'egg', 'volture-egg', 'asksvin-egg', 'royal-jelly', 'neck-tail', 'serpent-meat', 'oat-flour', 'fresh-seaweed', 'fragrant-bundle', 'seasoning-of-the-gourd', 'bread-dough', 'ivy-seeds', 'timberwood-cone', 'seed-poteitr'].includes(id)) {
+      return 'ingredient';
+    }
+
+    // 14. Building, Furniture & Stations
+    if (id.endsWith('-stack') || id.endsWith('-pile') || nameLower.endsWith(' stack') || nameLower.endsWith(' pile') || id === 'pile-of-skulls' || id.includes('portal') || id.includes('cart') || id.includes('raft') || id.includes('karve') || id.includes('longship') || id.includes('drakkar') || id.includes('drawbridge') || id.includes('ballista') || id.includes('trap') || id.includes('bench') || id.includes('table') || id.includes('bed') || id.includes('chair') || id.includes('chest') || id.includes('brazier') || id.includes('banner') || id.includes('rug') || id.includes('carpet') || id.includes('tub') || id.includes('hearth') || id.includes('fire') || id.includes('lamp') || id.includes('sign') || id.includes('iron-pit') || id.includes('fence') || id.includes('gate') || id.includes('green-pots') || typeLower.includes('structure') || typeLower.includes('station') || typeLower.includes('building') || typeLower.includes('furniture') || typeLower.includes('crafting') || typeLower.includes('defense') || typeLower === 'transport' || typeLower === 'boat' || typeLower === 'misc') {
       return 'building';
     }
-    if (id.endsWith('-stack') || id.endsWith('-pile') || nameLower.endsWith(' stack') || nameLower.endsWith(' pile') || id === 'pile-of-skulls') {
-      return 'building';
+
+    // 15. Materials & Resources
+    if (MATERIAL_EXPLICIT_IDS.has(id) || MATERIAL_KEYWORDS.some((k) => id.includes(k) || nameLower.includes(k)) || id.startsWith('cast-') || id.startsWith('mould-') || nameLower.startsWith('cast') || nameLower.startsWith('mould') || typeLower === 'cast' || typeLower === 'mould') {
+      return 'material';
     }
-    if (BUILDING_MISC_IDS.has(id)) return 'building';
-    if (provFoodIds.has(id)) return 'food';
-    if (provMeadIds.has(id)) return 'mead';
-    if (id.endsWith('-trophy') || id.includes('trophy') || nameLower.includes('trophy')) return 'trophy';
-    if (summonIds.has(id) || nameLower.includes('totem') || nameLower.includes('sealbreaker') || id.includes('key')) return 'summoning';
-    if (metalOres.has(id) || id.endsWith('-ore') || id.endsWith('-ingot') || id.endsWith('-scrap')) return 'metal';
-    if (WEAPON_TOOL_IDS.has(id) || typeLower === 'tool' || nameLower.includes('pickaxe') || nameLower.includes('saddle') || id.includes('saddle') || id === 'wishbone') return 'tool';
-    if (typeLower.includes('shield') || nameLower.includes('shield') || nameLower.includes('buckler')) return 'shield';
-    if (WEAPON_MISC_IDS.has(id) || typeLower.includes('weapon') || typeLower.includes('sword') || typeLower.includes('bow') || typeLower.includes('spear') || typeLower.includes('axe') || typeLower.includes('mace') || typeLower.includes('polearm') || typeLower.includes('dagger') || typeLower.includes('club') || typeLower.includes('staff') || typeLower.includes('crossbow') || typeLower.includes('arrow') || typeLower.includes('missile') || typeLower.includes('bolt') || typeLower === 'fists') return 'weapon';
-    if (ACCESSORY_IDS.has(id) || typeLower.includes('armor') || typeLower.includes('helmet') || typeLower.includes('cape') || typeLower.includes('cuirass') || typeLower.includes('greaves') || typeLower.includes('legs') || typeLower.includes('chest') || typeLower.includes('head') || typeLower === 'accessory' || typeLower === 'trinket') return 'armor';
-    if (id.includes('idol') || nameLower.includes('idol') || ['amber', 'amber-pearl', 'ruby', 'silver-necklace', 'coins', 'ymir-flesh', 'barber-kit'].includes(id) || typeLower === 'valuable') return 'valuable';
-    if (INGREDIENT_MISC_IDS.has(id) || nameLower.includes('seed') || nameLower.includes('cone') || nameLower.includes('acorn') || nameLower.includes('mushroom') || nameLower.includes('berry') || nameLower.includes('meat') || nameLower.includes('fish') || nameLower.includes('dandelion') || nameLower.includes('thistle') || nameLower.includes('carrot') || nameLower.includes('turnip') || nameLower.includes('onion') || nameLower.includes('barley') || nameLower.includes('flax') || nameLower.includes('cloudberry') || nameLower.includes('magecap') || nameLower.includes('jotun puffs') || typeLower === 'food' || typeLower === 'seed') return 'food-ingredient';
-    if (typeLower.includes('structure') || typeLower.includes('station') || typeLower.includes('building') || typeLower.includes('furniture') || typeLower.includes('crafting') || typeLower.includes('defense') || typeLower === 'misc' || typeLower === 'transport' || typeLower === 'boat') return 'building';
+
+    // 16. Real monster drops (fallback)
     return 'drop';
   }
 
   // --- 1. Base materials from items.json -------------------------------
   for (const it of items) {
     const provEntry = provItemsById.get(it.id);
-    const category = provFoodIds.has(it.id) ? 'food' : categorize(it.id, it.name, it.category);
+    const category = categorize(it.id, it.name, it.category) || (provFoodIds.has(it.id) ? 'food' : 'material');
     let teleportable = true;
     if (it.teleportable === false || provEntry?.teleportable === false || metalOres.has(it.id) || category === 'metal' || it.id === 'dragon-egg') {
       teleportable = false;
     }
 
     const recipeSource = it.recipe || provEntry?.recipe || null;
+    const crossLinks = {};
+    if (category === 'weapon' || category === 'shield' || category === 'armor' || it.id === 'dead-raiser') {
+      crossLinks.smithy = `/smithy/#item=${it.id}`;
+    } else if (category === 'food' || category === 'mead') {
+      crossLinks.provisions = `/provisions/#item=${it.id}`;
+    }
+
     const rec = {
       id: it.id,
       name: it.name,
@@ -385,7 +570,7 @@ export function buildItemsData() {
         raw: it.sources || [],
       },
       usedIn: null,
-      crossLinks: (category === 'weapon' || category === 'shield') ? { smithy: `/smithy/#item=${it.id}` } : {},
+      crossLinks,
     };
 
     if (recipeSource) {
@@ -407,9 +592,7 @@ export function buildItemsData() {
 
   // --- 2. Weapons, shields and tools from weapons.json ------------------
   for (const w of weapons) {
-    let category = 'weapon';
-    if ((w.type || '').includes('Shield')) category = 'shield';
-    else if (WEAPON_TOOL_IDS.has(w.id) || (w.type || '').toLowerCase().includes('pickaxe')) category = 'tool';
+    const category = categorize(w.id, w.name, w.type) || 'weapon';
 
     const level1 = (w.levels || [])[0] || {};
     const mats = (level1.materials || []).map((m) => ({
@@ -758,7 +941,7 @@ export function buildItemsData() {
         if (!existing.image) existing.image = resolveImage(trItem.image, trItem.id);
         if (trItem.description && !existing.description) existing.description = trItem.description;
       } else {
-        const cat = WEAPON_TOOL_IDS.has(trItem.id) ? 'tool' : 'valuable';
+        const cat = categorize(trItem.id, trItem.name, null) || 'valuable';
         ensure(trItem.id, {
           id: trItem.id,
           name: trItem.name,
@@ -797,39 +980,41 @@ export function buildItemsData() {
     // Trophy
     if (c.trophy?.name) {
       const trId = slug(c.trophy.name);
-      const existing = registry.get(trId);
+      if (trId !== 'zil-thungr' && !EXCLUDED_IDS.has(trId)) {
+        const existing = registry.get(trId);
 
-      if (existing) {
-        existing.category = 'trophy';
-        if (!existing.sources.creatures.some((x) => x.id === c.id)) {
-          existing.sources.creatures.push(cSource);
+        if (existing) {
+          existing.category = 'trophy';
+          if (!existing.sources.creatures.some((x) => x.id === c.id)) {
+            existing.sources.creatures.push(cSource);
+          }
+          if (!existing.image) existing.image = resolveImage(c.trophy.image || `${trId}.png`, trId);
+          if (!existing.biome && cBiome) {
+            existing.biome = cBiome;
+            existing.tier = cTier;
+          }
+        } else {
+          ensure(trId, {
+            id: trId,
+            name: c.trophy.name,
+            image: resolveImage(c.trophy.image || `${trId}.png`, trId),
+            biome: cBiome,
+            tier: cTier,
+            category: 'trophy',
+            teleportable: true,
+            stack: 20,
+            weight: 2,
+            wiki: null,
+            names: {},
+            description: null,
+            stats: null,
+            recipe: null,
+            station: null,
+            sources: { creatures: [cSource], locations: [], traders: [], raw: [{ text: `Dropped by ${c.name}`, kind: 'creature', creatureId: c.id }] },
+            usedIn: null,
+            crossLinks: {},
+          });
         }
-        if (!existing.image) existing.image = resolveImage(c.trophy.image || `${trId}.png`, trId);
-        if (!existing.biome && cBiome) {
-          existing.biome = cBiome;
-          existing.tier = cTier;
-        }
-      } else {
-        ensure(trId, {
-          id: trId,
-          name: c.trophy.name,
-          image: resolveImage(c.trophy.image || `${trId}.png`, trId),
-          biome: cBiome,
-          tier: cTier,
-          category: 'trophy',
-          teleportable: true,
-          stack: 20,
-          weight: 2,
-          wiki: null,
-          names: {},
-          description: null,
-          stats: null,
-          recipe: null,
-          station: null,
-          sources: { creatures: [cSource], locations: [], traders: [], raw: [{ text: `Dropped by ${c.name}`, kind: 'creature', creatureId: c.id }] },
-          usedIn: null,
-          crossLinks: {},
-        });
       }
     }
 
@@ -849,10 +1034,7 @@ export function buildItemsData() {
           existing.tier = cTier;
         }
       } else {
-        let dCat = 'drop';
-        if (summonIds.has(dId) || dId.includes('key')) dCat = 'summoning';
-        else if (metalOres.has(dId)) dCat = 'metal';
-        else if (WEAPON_TOOL_IDS.has(dId) || dId === 'wishbone') dCat = 'tool';
+        const dCat = categorize(dId, clean, null) || 'drop';
 
         ensure(dId, {
           id: dId,
@@ -875,6 +1057,160 @@ export function buildItemsData() {
           crossLinks: {},
         });
       }
+    }
+  }
+
+  // --- 8b. Ingest Fishing Baits ----------------------------------------
+  const FISHING_BAITS = [
+    {
+      id: 'fishing-bait',
+      name: 'Fishing Bait',
+      biome: 'black-forest',
+      tier: 2,
+      category: 'tool',
+      weight: 0.1,
+      stack: 100,
+      description: 'Used for fishing. Sold by Haldor (50 for 10 coins). Attracts Perch and Pike.',
+      recipe: null,
+      sources: { creatures: [], locations: [], traders: [{ name: 'Haldor', price: 10, amount: 50 }], raw: [{ text: 'Sold by Haldor (10 coins for 50)' }] },
+      crossLinks: { traders: '/traders/#haldor' },
+    },
+    {
+      id: 'mossy-fishing-bait',
+      name: 'Mossy Fishing Bait',
+      biome: 'black-forest',
+      tier: 2,
+      category: 'tool',
+      weight: 0.1,
+      stack: 100,
+      description: 'Crafted with a Troll Trophy. Attracts Trollfish in the Black Forest.',
+      recipe: { station: 'Cauldron', stationLevel: 1, yields: 20, materials: [{ item: 'fishing-bait', name: 'Fishing Bait', amount: 20 }, { item: 'troll-trophy', name: 'Troll Trophy', amount: 1 }] },
+      sources: { creatures: [], locations: [], traders: [], raw: [{ text: 'Crafted from 20 Fishing Bait and 1 Troll Trophy' }] },
+      crossLinks: {},
+    },
+    {
+      id: 'sticky-fishing-bait',
+      name: 'Sticky Fishing Bait',
+      biome: 'swamp',
+      tier: 3,
+      category: 'tool',
+      weight: 0.1,
+      stack: 100,
+      description: 'Crafted with an Abomination Trophy. Attracts Giant Herring in the Swamp.',
+      recipe: { station: 'Cauldron', stationLevel: 1, yields: 20, materials: [{ item: 'fishing-bait', name: 'Fishing Bait', amount: 20 }, { item: 'abomination-trophy', name: 'Abomination Trophy', amount: 1 }] },
+      sources: { creatures: [], locations: [], traders: [], raw: [{ text: 'Crafted from 20 Fishing Bait and 1 Abomination Trophy' }] },
+      crossLinks: {},
+    },
+    {
+      id: 'cold-fishing-bait',
+      name: 'Cold Fishing Bait',
+      biome: 'mountain',
+      tier: 4,
+      category: 'tool',
+      weight: 0.1,
+      stack: 100,
+      description: 'Crafted with a Fenring Trophy. Attracts Tetra in Frost Caves.',
+      recipe: { station: 'Cauldron', stationLevel: 1, yields: 20, materials: [{ item: 'fishing-bait', name: 'Fishing Bait', amount: 20 }, { item: 'fenring-trophy', name: 'Fenring Trophy', amount: 1 }] },
+      sources: { creatures: [], locations: [], traders: [], raw: [{ text: 'Crafted from 20 Fishing Bait and 1 Fenring Trophy' }] },
+      crossLinks: {},
+    },
+    {
+      id: 'stingy-fishing-bait',
+      name: 'Stingy Fishing Bait',
+      biome: 'plains',
+      tier: 5,
+      category: 'tool',
+      weight: 0.1,
+      stack: 100,
+      description: 'Crafted with a Fuling Trophy. Attracts Grouper in the Plains.',
+      recipe: { station: 'Cauldron', stationLevel: 1, yields: 20, materials: [{ item: 'fishing-bait', name: 'Fishing Bait', amount: 20 }, { item: 'fuling-trophy', name: 'Fuling Trophy', amount: 1 }] },
+      sources: { creatures: [], locations: [], traders: [], raw: [{ text: 'Crafted from 20 Fishing Bait and 1 Fuling Trophy' }] },
+      crossLinks: {},
+    },
+    {
+      id: 'heavy-fishing-bait',
+      name: 'Heavy Fishing Bait',
+      biome: 'ocean',
+      tier: 3,
+      category: 'tool',
+      weight: 0.1,
+      stack: 100,
+      description: 'Crafted with a Serpent Trophy. Attracts Tuna and Coral Cod in the Ocean.',
+      recipe: { station: 'Cauldron', stationLevel: 1, yields: 20, materials: [{ item: 'fishing-bait', name: 'Fishing Bait', amount: 20 }, { item: 'serpent-trophy', name: 'Serpent Trophy', amount: 1 }] },
+      sources: { creatures: [], locations: [], traders: [], raw: [{ text: 'Crafted from 20 Fishing Bait and 1 Serpent Trophy' }] },
+      crossLinks: {},
+    },
+    {
+      id: 'misty-fishing-bait',
+      name: 'Misty Fishing Bait',
+      biome: 'mistlands',
+      tier: 6,
+      category: 'tool',
+      weight: 0.1,
+      stack: 100,
+      description: 'Crafted with a Lox Trophy. Attracts Pufferfish and Anglerfish in the Mistlands.',
+      recipe: { station: 'Cauldron', stationLevel: 1, yields: 20, materials: [{ item: 'fishing-bait', name: 'Fishing Bait', amount: 20 }, { item: 'lox-trophy', name: 'Lox Trophy', amount: 1 }] },
+      sources: { creatures: [], locations: [], traders: [], raw: [{ text: 'Crafted from 20 Fishing Bait and 1 Lox Trophy' }] },
+      crossLinks: {},
+    },
+    {
+      id: 'hot-fishing-bait',
+      name: 'Hot Fishing Bait',
+      biome: 'ashlands',
+      tier: 7,
+      category: 'tool',
+      weight: 0.1,
+      stack: 100,
+      description: 'Crafted with a Charred Warrior Trophy. Attracts Magmafish in the Ashlands.',
+      recipe: { station: 'Cauldron', stationLevel: 1, yields: 20, materials: [{ item: 'fishing-bait', name: 'Fishing Bait', amount: 20 }, { item: 'charred-warrior-trophy', name: 'Charred Warrior Trophy', amount: 1 }] },
+      sources: { creatures: [], locations: [], traders: [], raw: [{ text: 'Crafted from 20 Fishing Bait and 1 Charred Warrior Trophy' }] },
+      crossLinks: {},
+    },
+    {
+      id: 'frosty-fishing-bait',
+      name: 'Frosty Fishing Bait',
+      biome: 'deep-north',
+      tier: 8,
+      category: 'tool',
+      weight: 0.1,
+      stack: 100,
+      description: 'Crafted with a Drake Trophy. Attracts Northern Salmon in the Deep North.',
+      recipe: { station: 'Cauldron', stationLevel: 1, yields: 20, materials: [{ item: 'fishing-bait', name: 'Fishing Bait', amount: 20 }, { item: 'drake-trophy', name: 'Drake Trophy', amount: 1 }] },
+      sources: { creatures: [], locations: [], traders: [], raw: [{ text: 'Crafted from 20 Fishing Bait and 1 Drake Trophy' }] },
+      crossLinks: {},
+    },
+  ];
+
+  for (const b of FISHING_BAITS) {
+    const existing = registry.get(b.id);
+    if (!existing) {
+      ensure(b.id, {
+        id: b.id,
+        name: b.name,
+        image: resolveImage(null, b.id),
+        biome: b.biome,
+        tier: b.tier,
+        category: 'tool',
+        teleportable: true,
+        stack: b.stack,
+        weight: b.weight,
+        wiki: 'https://valheim.weirdgloop.org/w/Bait',
+        names: {},
+        description: b.description,
+        stats: null,
+        recipe: b.recipe,
+        station: b.recipe ? { name: b.recipe.station, level: b.recipe.stationLevel || 1 } : null,
+        sources: b.sources,
+        usedIn: null,
+        crossLinks: b.crossLinks || {},
+      });
+    } else {
+      if (!existing.recipe && b.recipe) existing.recipe = b.recipe;
+      if (!existing.description) existing.description = b.description;
+      if (!existing.stack) existing.stack = b.stack;
+      if (!existing.weight) existing.weight = b.weight;
+      if (!existing.biome) existing.biome = b.biome;
+      if (!existing.tier) existing.tier = b.tier;
     }
   }
 

@@ -62,25 +62,32 @@
         <div class="filter-row">
           <div class="filter-group">
             <label for="category-select" class="filter-label" data-i18n="Category">Category</label>
-            <select id="category-select" class="filter-select" aria-label="Filter by category">
+            <select id="category-select" class="filter-select" aria-label="Filter by category" data-i18n-attr="aria-label:Filter by category">
               <option value="all" data-i18n="All categories">All categories</option>
-              <option value="weapon,tool" data-i18n="Weapons & Tools">Weapons & Tools</option>
-              <option value="armor,shield" data-i18n="Armor & Shields">Armor & Shields</option>
-              <option value="food,mead,food-ingredient" data-i18n="Food & Mead">Food & Mead</option>
+              <option value="material" data-i18n="Materials & Resources">Materials & Resources</option>
               <option value="metal" data-i18n="Metals & Ores">Metals & Ores</option>
+              <option value="weapon" data-i18n="Weapons">Weapons</option>
+              <option value="shield" data-i18n="Shields">Shields</option>
+              <option value="armor" data-i18n="Armor & Clothing">Armor & Clothing</option>
+              <option value="ammo" data-i18n="Ammunition">Ammunition</option>
+              <option value="tool" data-i18n="Tools & Equipment">Tools & Equipment</option>
+              <option value="food" data-i18n="Food & Meals">Food & Meals</option>
+              <option value="ingredient" data-i18n="Ingredients & Crops">Ingredients & Crops</option>
+              <option value="mead" data-i18n="Meads & Potions">Meads & Potions</option>
               <option value="drop" data-i18n="Monster Drops">Monster Drops</option>
               <option value="trophy" data-i18n="Trophies">Trophies</option>
-              <option value="building" data-i18n="Building & Comfort">Building & Comfort</option>
-              <option value="valuable" data-i18n="Valuables & Traders">Valuables & Traders</option>
-              <option value="summoning" data-i18n="Boss Summoning">Boss Summoning</option>
+              <option value="building" data-i18n="Building & Furniture">Building & Furniture</option>
+              <option value="valuable" data-i18n="Valuables & Treasures">Valuables & Treasures</option>
+              <option value="summoning" data-i18n="Boss Summoning & Keys">Boss Summoning & Keys</option>
             </select>
           </div>
           <div class="toolbar-status">
-            <button id="toggle-locked-btn" class="toolbar-toggle-btn" type="button" aria-pressed="false" data-i18n="Show locked biomes">Show locked biomes</button>
+            <button id="toggle-locked-btn" class="toolbar-toggle-btn" type="button" aria-pressed="false" data-i18n="Spoiler filter: Off">Spoiler filter: Off</button>
             <span id="items-count" class="items-count" aria-live="polite"></span>
           </div>
         </div>
-        <div class="biome-chips" id="biome-chips" role="toolbar" aria-label="Filter by biome"></div>
+        <div class="category-chips" id="category-chips" role="toolbar" aria-label="Filter by category" data-i18n-attr="aria-label:Filter by category"></div>
+        <div class="biome-chips" id="biome-chips" role="toolbar" aria-label="Filter by biome" data-i18n-attr="aria-label:Filter by biome"></div>
       </section>
 
       <div id="items-grid" class="items-grid" role="region" aria-label="Items catalog"></div>
