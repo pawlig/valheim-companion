@@ -50,7 +50,11 @@ const check = (text, checked, action, id) => {
     input.id = id;
   }
   input.addEventListener('change', () => action(input.checked));
-  n.append(input, el('span', '', text));
+  if (typeof text === 'string') {
+    n.append(input, el('span', '', text));
+  } else {
+    n.append(input, text);
+  }
   return n;
 };
 const read = () => {
@@ -287,9 +291,13 @@ function renderBoss(prep) {
     el('p', 'hint', prep.altar?.howToFind || t('Not documented on the wiki.'))
   );
   for (const item of prep.summonItems) {
-    altar.append(el('p', '', tn('{count}× {name}', item.count, {
-      name: (supplementalItems[item.id] || VPR_DATA.items[item.id])?.name || item.id
-    })));
+    const p = el('p');
+    p.append(el('span', '', `${item.count}× `));
+    const itemName = (supplementalItems[item.id] || VPR_DATA.items[item.id])?.name || item.id;
+    const a = el('a', 'item-link', itemName);
+    a.href = `/items/#item=${encodeURIComponent(item.id)}`;
+    p.append(a);
+    altar.append(p);
   }
   altar.append(link(t('Source'), prep.source));
   card.append(altar);
@@ -509,12 +517,32 @@ function renderPacking(prep, ctx) {
     weapon: ctx.recommendations[0]
   });
   for (const line of lines) {
-    n.append(check(tn('{count}× {name}', line.quantity, {
-      name: ctx.items[line.id]?.name || line.id
-    }), state.checked.includes(line.id), value => {
-      state.checked = value ? [...state.checked, line.id] : state.checked.filter(id => id !== line.id);
-      render();
-    }, 'pack-' + line.id));
+    const isSummon = prep.summonItems?.some((s) => s.id === line.id);
+    let labelContent;
+    if (isSummon) {
+      const wrap = el('span');
+      wrap.append(el('span', '', `${line.quantity}× `));
+      const a = el('a', 'item-link', ctx.items[line.id]?.name || line.id);
+      a.href = `/items/#item=${encodeURIComponent(line.id)}`;
+      a.addEventListener('click', (e) => e.stopPropagation());
+      wrap.append(a);
+      labelContent = wrap;
+    } else {
+      labelContent = tn('{count}× {name}', line.quantity, {
+        name: ctx.items[line.id]?.name || line.id,
+      });
+    }
+    n.append(
+      check(
+        labelContent,
+        state.checked.includes(line.id),
+        (value) => {
+          state.checked = value ? [...state.checked, line.id] : state.checked.filter((id) => id !== line.id);
+          render();
+        },
+        'pack-' + line.id
+      )
+    );
   }
   return {
     node: n,

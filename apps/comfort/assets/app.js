@@ -74,6 +74,17 @@
     controls.append(toggles, actions);
   }
   function materialList(materials) { return materials.map(m => tn('{count}× {name}', m.amount, { name: data.items[m.item]?.name ?? m.item })).join('\n'); }
+  function materialNodes(materials) {
+    const wrap = el('span', 'mat-nodes');
+    materials.forEach((m, idx) => {
+      if (idx > 0) wrap.append(document.createTextNode(', '));
+      wrap.append(document.createTextNode(`${m.amount}× `));
+      const a = el('a', 'item-link', data.items[m.item]?.name ?? m.item);
+      a.href = `/items/#item=${encodeURIComponent(m.item)}`;
+      wrap.append(a);
+    });
+    return wrap;
+  }
   function renderUpgrades() {
     const container = document.getElementById('upgrades');
     const heading = el('h2', '', t('Next upgrades')); heading.id = 'upgrades-title'; container.replaceChildren(heading);
@@ -85,7 +96,7 @@
       const row = el('div', 'upgrade'), text = el('div');
       text.append(el('strong', '', tn('+{count} · {name}', upgrade.gain, { name: upgrade.piece.name })));
       if (upgrade.replaces.length) text.append(el('p', 'hint', t('Instead of {name}', { name: upgrade.replaces.map(id => byId(id).name).join(', ') })));
-      text.append(el('p', 'hint', materialList(upgrade.piece.materials)));
+      const upMats = el('p', 'hint'); upMats.append(materialNodes(upgrade.piece.materials)); text.append(upMats);
       row.append(text, button(t('Use this'), () => { state.pieces = upgrade.selection; delete state.conditions[upgrade.id]; update(); }, '', 'upgrade-' + upgrade.id)); list.append(row);
     }
     container.append(list);
@@ -96,7 +107,8 @@
     const heading = el('div', 'heading');
     if (piece.image) { const image = el('img'); image.src = piece.image; image.alt = ''; image.loading = 'lazy'; heading.append(image); }
     heading.append(el('h3', '', piece.name)); card.append(heading, el('span', 'badge', tn('+{count} comfort', piece.comfort)));
-    const recipe = el('details'); recipe.append(el('summary', '', t('Recipe')), el('p', 'hint recipe', materialList(piece.materials)));
+    const recipe = el('details'); recipe.append(el('summary', '', t('Recipe')));
+    const recP = el('p', 'hint recipe'); recP.append(materialNodes(piece.materials)); recipe.append(recP);
     recipe.append(el('p', 'hint', piece.station ? data.stations.find(s => s.id === piece.station)?.name ?? piece.station : t('No station')));
     const link = el('a', 'hint', 'Valheim Wiki'); link.href = piece.wiki; link.target = '_blank'; link.rel = 'noopener noreferrer'; recipe.append(link); card.append(recipe);
     if (!piece.category) card.append(checkbox(piece.name, selected, () => choose(piece), 'select-' + piece.id));
@@ -161,7 +173,7 @@
     content.append(checkbox('Show raw materials', state.breakdown, value => { state.breakdown = value; update(); }, 'breakdown'));
     if (!plan.materials.length) content.append(el('p', 'hint', t('Choose furniture you still need to build a shopping list.')));
     for (const material of plan.materials) {
-      const row = el('div', 'material'); row.append(el('strong', '', materialList([material])));
+      const row = el('div', 'material'); const strong = el('strong'); strong.append(materialNodes([material])); row.append(strong);
       const details = el('details'); details.append(el('summary', '', t('Sources')), sources(data.items[material.item])); row.append(details); content.append(row);
     }
     if (plan.nonTeleportable.length) content.append(el('p', 'warning', t("Can't be teleported") + ': ' + plan.nonTeleportable.map(m => data.items[m.item].name).join(', ')));
@@ -173,7 +185,7 @@
       const required = el('section'); required.append(el('h3', '', t('Required stations')));
       for (const station of plan.stations) {
         const row = el('details'); row.append(el('summary', '', station.name));
-        if (station.materials?.length) row.append(el('p', 'hint recipe', materialList(station.materials)));
+        if (station.materials?.length) { const p = el('p', 'hint recipe'); p.append(materialNodes(station.materials)); row.append(p); }
         if (station.wiki) { const link = el('a', 'hint', 'Valheim Wiki'); link.href = station.wiki; row.append(link); }
         required.append(row);
       }

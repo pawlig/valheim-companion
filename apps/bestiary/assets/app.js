@@ -1333,7 +1333,15 @@ import { PLAYER_STORAGE_KEY, defaultPlayer, sanitizePlayer, readPlayerState } fr
     if (creature.drops && creature.drops.length > 0) {
       const row = el('div', 'details-row');
       row.appendChild(el('span', 'details-key', 'Drops'));
-      row.appendChild(el('span', 'details-val', creature.drops.map(gameName).join(', ')));
+      const dropsVal = el('span', 'details-val');
+      creature.drops.forEach((d, idx) => {
+        if (idx > 0) dropsVal.appendChild(document.createTextNode(', '));
+        const cleanSlug = d.replace(/\s*x\d+/i, '').replace(/\s*\(.*?\)/g, '').trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+        const a = el('a', 'item-link', gameName(d));
+        a.href = `/items/#item=${encodeURIComponent(cleanSlug)}`;
+        dropsVal.appendChild(a);
+      });
+      row.appendChild(dropsVal);
       detailsContent.appendChild(row);
     }
 
@@ -1346,7 +1354,10 @@ import { PLAYER_STORAGE_KEY, defaultPlayer, sanitizePlayer, readPlayerState } fr
         trophyVal.appendChild(createImage(creature.trophy.image, creature.trophy.name, 'trophy-img', 'T'));
       }
       const trophyText = el('div', 'details-val');
-      trophyText.appendChild(document.createTextNode(creature.trophy.name));
+      const trophySlug = creature.trophy.name.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      const trophyLink = el('a', 'item-link', creature.trophy.name);
+      trophyLink.href = `/items/#item=${encodeURIComponent(trophySlug)}`;
+      trophyText.appendChild(trophyLink);
       if (creature.trophy.dropChance !== null && creature.trophy.dropChance !== undefined) {
         trophyText.appendChild(el('div', 'extra-note', t('Drop chance: {chance}%', {
           chance: creature.trophy.dropChance.toLocaleString(VCI18n.locale()),

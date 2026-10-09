@@ -139,6 +139,17 @@
     node.append(el('p', 'details', t('Healing: {amount} HP/tick', { amount: number(food.healing?.amount || 0) })),
       el('p', 'details', t('Duration: {time}', { time: time(food.duration) })),
       el('p', 'details', stationText(food.station, food.stationLevel)));
+    if (food.materials?.length) {
+      const rec = el('p', 'details recipe-ingredients');
+      food.materials.forEach((m, idx) => {
+        const sep = idx > 0 ? ', ' : '';
+        const countSpan = el('span', '', `${sep}${m.amount}× `);
+        const a = el('a', 'item-link', data.items?.[m.item]?.name || m.item);
+        a.href = `/items/#item=${encodeURIComponent(m.item)}`;
+        rec.append(countSpan, a);
+      });
+      node.append(rec);
+    }
     const selected = state.foods.includes(food.id);
     const add = button(t(selected ? 'Selected' : 'Add food'), () => addFood(food), 'add-item');
     add.disabled = selected || state.foods.length >= 3;
@@ -174,10 +185,22 @@
     node.append(heading(mead), el('p', 'effect', meadEffect(mead)),
       el('p', 'details', t('Duration: {time}', { time: time(mead.duration) })),
       el('p', 'details', t('Cooldown: {time}', { time: time(mead.cooldown) })));
-    if (mead.base) node.append(
-      el('p', 'details', name(byId(data.stations, 'fermenter')) + ' · ' + time(mead.fermenterTime)),
-      el('p', 'details', name(mead.base) + ' · ' + stationText(mead.base.station, mead.base.stationLevel)));
-    else node.append(el('p', 'hint', t('No crafting recipe in the data.')));
+    if (mead.base) {
+      node.append(
+        el('p', 'details', name(byId(data.stations, 'fermenter')) + ' · ' + time(mead.fermenterTime)),
+        el('p', 'details', name(mead.base) + ' · ' + stationText(mead.base.station, mead.base.stationLevel)));
+      if (mead.base.materials?.length) {
+        const rec = el('p', 'details recipe-ingredients');
+        mead.base.materials.forEach((m, idx) => {
+          const sep = idx > 0 ? ', ' : '';
+          const countSpan = el('span', '', `${sep}${m.amount}× `);
+          const a = el('a', 'item-link', data.items?.[m.item]?.name || m.item);
+          a.href = `/items/#item=${encodeURIComponent(m.item)}`;
+          rec.append(countSpan, a);
+        });
+        node.append(rec);
+      }
+    } else node.append(el('p', 'hint', t('No crafting recipe in the data.')));
     const selected = state.meads.some(line => line.id === mead.id);
     const add = button(t(selected ? 'Selected' : 'Add mead'), () => addMead(mead), 'add-item');
     add.disabled = selected || state.meads.length >= 4;
@@ -314,7 +337,12 @@
     for (const material of plan.materials) {
       const row = el('div', 'material');
       const item = plan.items[material.item];
-      row.append(el('strong', '', number(material.amount) + '× ' + materialName(plan, material.item)));
+      const strong = el('strong');
+      const countSpan = el('span', '', number(material.amount) + '× ');
+      const matLink = el('a', 'item-link', materialName(plan, material.item));
+      matLink.href = `/items/#item=${encodeURIComponent(material.item)}`;
+      strong.append(countSpan, matLink);
+      row.append(strong);
       const sourceDetails = el('details');
       sourceDetails.append(el('summary', '', t('Sources')), sources(item));
       row.append(sourceDetails); shopping.append(row);

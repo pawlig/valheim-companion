@@ -1452,3 +1452,12 @@ button.badge-source-locked { cursor: pointer; font: inherit; text-align: start; 
 .material-uses a { color: var(--accent-gold); }
 .material-uses a:hover, .material-uses a:focus-visible { color: var(--accent-gold-hover); }
 .material-card-meta, .material-card p { color: var(--text-muted); }
+
+.cost-mat-pill a, a.material-name {
+  color: var(--text-main);
+  text-decoration: none;
+}
+.cost-mat-pill a:hover, a.material-name:hover {
+  color: var(--accent-gold);
+  text-decoration: underline;
+}
