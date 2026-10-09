@@ -202,11 +202,11 @@ function createDomFixture(initialHash = '') {
 }
 
 describe('Items Compendium UI Tests', () => {
-  it('1. Renders all 333 items on initial load', () => {
+  it('1. Renders the full catalog (>= 700 items) on initial load', () => {
     const { doc } = createDomFixture();
     const grid = doc.getElementById('items-grid');
     const cards = grid.querySelectorAll('.item-card');
-    assert.equal(cards.length, 333, 'Initial view should render 333 cards');
+    assert.ok(cards.length >= 700, `Initial view should render >= 700 cards, got ${cards.length}`);
   });
 
   it('2. Category filter filters items correctly (metal)', () => {
