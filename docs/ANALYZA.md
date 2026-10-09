@@ -606,3 +606,51 @@ Nová sekce `/traders/` (`apps/traders/`, statická vanilla JS aplikace). Komple
   - **Provisions (`/provisions/`):** u Bog Witch surovin a lektvarů odkaz do `/traders/`.
 - **Smlouva URL:** `/traders/#trader=<id>` a `#item=<id>`.
 - **Název nástroje:** **Trader Ledger** (vlastní název, nepřekládá se dle § 20).
+
+## 29. Items Compendium: Oprava modalu a kompletní katalog všech předmětů (VC-40b, Pavel 9. 10. 2026)
+
+> **Pavel 9. 10. 2026:** *„item compendium je spatne, vysi tam nějaký popup a je tam hrozněš málo itemu, chci aby jsi si to po sobě pořádně kontroloval a opravil to, až doběhne VC-40 tak se pust do opravy, a než něco nasadíš tak si to pořádně kontroluj, a klidně využij i ZAi glm na práci aktuálně má ještě 8 procent tak ho klidně vyčerpej“*
+
+### Nález a příčiny chyb z první verze (VC-39)
+1. **Visící prázdný popup při načtení:**
+   - V `apps/items/assets/styles.css` bylo pravidlo `.item-modal { display: flex; }`. Specifičnost CSS třídy přebila vestavěný atribut HTML `hidden` (`[hidden] { display: none; }`), takže i když element `<div id="item-modal" hidden>` obsahoval `hidden`, prohlížeč mu nastavil vypočtený styl `display: flex`. Na stránce tak visel prázdný bílý/šedý obdélník s tlačítkem „Close“.
+   - Náprava: `.item-modal[hidden], .modal-backdrop[hidden] { display: none !important; }`. Při startu a zavření musí být modal i backdrop spolehlivě skrytý.
+2. **Málo předmětů v katalogu (333 vs. 750+):**
+   - V první verzi načítal `scripts/build-items-data.mjs` pouze `data/items.json`, což byly čistě základní suroviny a materiály (rudy, dřevo, kůže, trofeje, cennosti). Chyběly:
+     - **Zbraně, štíty a munice (171 položek z `data/weapons.json`):** meče, luky, kuše, sekery, palcáty, hole, dýky, oštěpy, kopí, pěsti, kulaté a věžové štíty, pukléře, šípy, šipky, bomby, vrhací předměty, nástroje (kladivo, motyka, kultivátor, krumpáče, rybářský prut).
+     - **Zbroje a pláště (68 položek z `data/armor.json`):** přilby, kyrysy, haleny, drátěné košile, nohavice, pláště.
+     - **Jídla a pokrmy (99 položek z `data/food.json` a `apps/provisions`):** vařená jídla, polévky, koláče, guláše, saláty, pečená masa, sušené maso, med, bobule, houby.
+     - **Medoviny a lektvary (21 položek z `data/meads.json` a `apps/provisions`):** léčivé, výdržové, odolnosti (oheň, mráz, jed), ječné víno, elixíry Bog Witch.
+     - **Komfort a nábytek (76 položek z `data/comfort.json`):** postele, stoly, židle, koberce, trůny, krby, ohniště, lucerny, kádě.
+     - **Zboží a cennosti z `data/traders.json`:** mince, drahokamy, opasky, vejce, návnady, lektvary.
+
+### Cílový stav VC-40b
+- **Kompletní sjednocený dataset (`scripts/build-items-data.mjs` → `data/items-compendium.json` a `apps/items/data/data.js`):**
+  - Obsahuje všech 750+ předmětů Valheimu.
+  - Každý předmět má:
+    - `id`: unikátní identifikátor (slug)
+    - `name`: oficiální anglický název hry
+    - `category`: `weapon`, `shield`, `armor`, `tool`, `food`, `mead`, `metal`, `drop`, `trophy`, `building`, `valuable`, `summoning`
+    - `biome`: biom výskytu / dosažení (pro `VCProgress`)
+    - `tier`: 1–9 odpovídající biomu
+    - `image`: vyřešená cesta k existujícímu obrázku (ve Smithy, Bestiary nebo items)
+    - `weight`, `stack`, `teleportable` (false pro kovy a dračí vejce)
+    - `recipe`: suroviny potřebné k výrobě (s klikacími odkazy na ingredience v kompendiu)
+    - `station`: craftovací stanice a její minimální úroveň (Workbench lv. 1, Forge lv. 2, Cauldron lv. 3, Black Forge...)
+    - `sources`: kde získat (příšery z Bestiary, těžba, sběr, obchodníci)
+    - `usedIn`: v čem se předmět používá jako surovina (zbraně, zbroje, jídla, lektvary, stavby, oltáře)
+    - `crossLinks`: přímé prokliky do příslušných specializovaných nástrojů Companionu:
+      - Zbraně a zbroje → `/smithy/#...`
+      - Jídlo a medoviny → `/provisions/#...`
+      - Komfort → `/comfort/`
+      - Potvory / trofeje → `/bestiary/#...`
+      - Obchodníci → `/traders/#...`
+- **UI v `apps/items/`:**
+  - Výběr kategorie rozšířen o Zbraně, Zbroje, Jídlo & lektvary, Nástroje atd.
+  - Okamžité vyhledávání (např. „iron sword“, „root harnesk“, „sausages“, „frost arrow“, „hammer“ ihned najde daný předmět).
+  - V modalu kompletní rozpis: Recept (potřebné suroviny), Kde vyrobit (stanice), Vlastnosti (Armor, Damage, HP/Stam/Eitr u jídla, Durability), Kde získat, V čem se používá, a tlačítko „Open in Smithy / Provisions / Bestiary / Trader Ledger“.
+  - Přidání do nákupního košíku (`VCShopping`).
+- **Lokalizace a CSP:**
+  - 13 jazyků v `apps/items/locales/messages.json` i `messages.js` (0 chybějících klíčů, pluralizace `tn`).
+  - Striktní CSP bez inline skriptů a stylů.
+  - Mobilní layout 360 px bez vodorovného přesahu ve všech 13 jazycích.
