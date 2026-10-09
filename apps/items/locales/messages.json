@@ -1,0 +1,788 @@
+{
+  "← Valheim Companion": {
+    "en": "← Valheim Companion",
+    "cs": "← Valheim Companion",
+    "de": "← Valheim Companion",
+    "es": "← Valheim Companion",
+    "fr": "← Valheim Companion",
+    "pt": "← Valheim Companion",
+    "zh": "← Valheim Companion",
+    "hi": "← Valheim Companion",
+    "ar": "← Valheim Companion",
+    "bn": "← Valheim Companion",
+    "ru": "← Valheim Companion",
+    "ja": "← Valheim Companion",
+    "id": "← Valheim Companion"
+  },
+  "Close": {
+    "en": "Close",
+    "cs": "Zavřít",
+    "de": "Schließen",
+    "es": "Cerrar",
+    "fr": "Fermer",
+    "pt": "Fechar",
+    "zh": "关闭",
+    "hi": "बंद करें",
+    "ar": "إغلاق",
+    "bn": "বন্ধ করুন",
+    "ru": "Закрыть",
+    "ja": "閉じる",
+    "id": "Tutup"
+  },
+  "Reveal": {
+    "en": "Reveal",
+    "cs": "Odhalit",
+    "de": "Enthüllen",
+    "es": "Revelar",
+    "fr": "Révéler",
+    "pt": "Revelar",
+    "zh": "揭示",
+    "hi": "दिखाएँ",
+    "ar": "كشف",
+    "bn": "প্রকাশ করুন",
+    "ru": "Показать",
+    "ja": "表示",
+    "id": "Ungkap"
+  },
+  "Track your progress →": {
+    "en": "Track your progress →",
+    "cs": "Sledujte svůj postup →",
+    "de": "Fortschritt verfolgen →",
+    "es": "Registra tu progreso →",
+    "fr": "Suivez votre progression →",
+    "pt": "Acompanhe seu progresso →",
+    "zh": "记录你的进度 →",
+    "hi": "अपनी प्रगति दर्ज करें →",
+    "ar": "تتبّع تقدمك →",
+    "bn": "আপনার অগ্রগতি নথিভুক্ত করুন →",
+    "ru": "Отслеживайте прогресс →",
+    "ja": "進行状況を記録 →",
+    "id": "Catat progresmu →"
+  },
+  "Fan project, not affiliated with Iron Gate. Data: Valheim Wiki (CC BY-SA 4.0).": {
+    "en": "Fan project, not affiliated with Iron Gate. Data: Valheim Wiki (CC BY-SA 4.0).",
+    "cs": "Fanouškovský projekt, není spojen s Iron Gate. Data: Valheim Wiki (CC BY-SA 4.0).",
+    "de": "Fanprojekt, nicht mit Iron Gate verbunden. Daten: Valheim Wiki (CC BY-SA 4.0).",
+    "es": "Proyecto de fans, no afiliado a Iron Gate. Datos: Valheim Wiki (CC BY-SA 4.0).",
+    "fr": "Projet de fans, non affilié à Iron Gate. Données : Valheim Wiki (CC BY-SA 4.0).",
+    "pt": "Projeto de fãs, não afiliado à Iron Gate. Dados: Valheim Wiki (CC BY-SA 4.0).",
+    "zh": "粉丝自制项目，与 Iron Gate 无关。数据来源：Valheim Wiki (CC BY-SA 4.0)。",
+    "hi": "प्रशंसक परियोजना, Iron Gate से संबद्ध नहीं। डेटा: Valheim Wiki (CC BY-SA 4.0)।",
+    "ar": "مشروع من المعجبين، غير تابع لـ Iron Gate. البيانات: Valheim Wiki (CC BY-SA 4.0).",
+    "bn": "ভক্তদের তৈরি প্রকল্প, Iron Gate এর সাথে অনুমোদিত নয়। তথ্য: Valheim Wiki (CC BY-SA 4.0)।",
+    "ru": "Фанатский проект, не связанный с Iron Gate. Данные: Valheim Wiki (CC BY-SA 4.0).",
+    "ja": "ファンプロジェクトであり、Iron Gate社とは提携していません。データ提供: Valheim Wiki (CC BY-SA 4.0)。",
+    "id": "Proyek penggemar, tidak berafiliasi dengan Iron Gate. Data: Valheim Wiki (CC BY-SA 4.0)."
+  },
+  "Free, ad-free and made in my spare time.": {
+    "en": "Free, ad-free and made in my spare time.",
+    "cs": "Zdarma, bez reklam a vytvořeno ve volném čase.",
+    "de": "Kostenlos, werbefrei und in meiner Freizeit erstellt.",
+    "es": "Gratis, sin publicidad y hecho en mi tiempo libre.",
+    "fr": "Gratuit, sans publicité et créé sur mon temps libre.",
+    "pt": "Gratuito, sem anúncios e feito no meu tempo livre.",
+    "zh": "免费无广告，利用业余时间开发。",
+    "hi": "निःशुल्क, विज्ञापन-मुक्त और मेरे खाली समय में निर्मित।",
+    "ar": "مجاني وبدون إعلانات ومصنوع في وقت فراغي.",
+    "bn": "সম্পূর্ণ বিনামূল্যে, বিজ্ঞাপনহীন এবং অবসরে তৈরি।",
+    "ru": "Бесплатно, без рекламы и создано в свободное время.",
+    "ja": "完全無料・広告なし・個人の趣味で制作。",
+    "id": "Gratis, bebas iklan, dan dibuat di waktu luang saya."
+  },
+  "If it helped your run, you can buy me a coffee.": {
+    "en": "If it helped your run, you can buy me a coffee.",
+    "cs": "Pokud ti web pomohl při hraní, můžeš mi koupit kávu.",
+    "de": "Wenn es dir bei deinem Durchlauf geholfen hat, kannst du mir einen Kaffee ausgeben.",
+    "es": "Si te ha servido en tu partida, puedes invitarme a un café.",
+    "fr": "Si cela vous a été utile dans votre partie, vous pouvez m'offrir un café.",
+    "pt": "Se ajudou na sua jornada, você pode me pagar um café.",
+    "zh": "如果对你的游戏旅程有所帮助，不妨请我喝杯咖啡。",
+    "hi": "यदि इससे आपके खेल में मदद मिली, तो आप मुझे एक कॉफ़ी पिला सकते हैं।",
+    "ar": "إذا ساعدك في رحلتك، يمكنك دعوتي لتناول القهوة.",
+    "bn": "যদি এটি আপনার খেলায় সাহায্য করে থাকে, তবে আমাকে একটি কফি কিনে দিতে পারেন।",
+    "ru": "Если проект помог в прохождении, можете угостить меня кофе.",
+    "ja": "冒険の役に立ったら、コーヒーを奢っていただけると嬉しいです。",
+    "id": "Jika ini membantu permainan Anda, Anda bisa mentraktir saya kopi."
+  },
+  "Buy Me a Coffee at ko-fi.com": {
+    "en": "Buy Me a Coffee at ko-fi.com",
+    "cs": "Koupit mi kávu na ko-fi.com",
+    "de": "Kauf mir einen Kaffee auf ko-fi.com",
+    "es": "Invítame a un café en ko-fi.com",
+    "fr": "Offrez-moi un café sur ko-fi.com",
+    "pt": "Pague-me um café no ko-fi.com",
+    "zh": "在 ko-fi.com 上请我喝杯咖啡",
+    "hi": "ko-fi.com पर मुझे कॉफ़ी पिलाएँ",
+    "ar": "اشترِ لي قهوة عبر ko-fi.com",
+    "bn": "ko-fi.com-এ আমাকে একটি কফি দিন",
+    "ru": "Купить мне кофе на ko-fi.com",
+    "ja": "ko-fi.com でコーヒーを支援する",
+    "id": "Beli saya kopi di ko-fi.com"
+  },
+  "Locked until you reach this biome.": {
+    "en": "Locked until you reach this biome.",
+    "cs": "Zamčeno, dokud se nedostanete do tohoto biomu.",
+    "de": "Gesperrt, bis du dieses Biom erreichst.",
+    "es": "Bloqueado hasta llegar a este bioma.",
+    "fr": "Verrouillé jusqu'à votre arrivée dans ce biome.",
+    "pt": "Bloqueado até alcançar este bioma.",
+    "zh": "到达此生物群系后解锁。",
+    "hi": "इस बायोम तक पहुँचने पर खुलेगा।",
+    "ar": "مقفل حتى تصل إلى هذه المنطقة.",
+    "bn": "এই বায়োমে পৌঁছালে খুলবে।",
+    "ru": "Закрыто, пока вы не достигнете этого биома.",
+    "ja": "このバイオームに到達すると解除されます。",
+    "id": "Terkunci sampai Anda mencapai bioma ini."
+  },
+  "Can't be teleported": {
+    "en": "Can't be teleported",
+    "cs": "Nelze teleportovat",
+    "de": "Kann nicht teleportiert werden",
+    "es": "No se puede teletransportar",
+    "fr": "Ne peut pas être téléporté",
+    "pt": "Não pode ser teleportado",
+    "zh": "无法传送",
+    "hi": "टेलीपोर्ट नहीं किया जा सकता",
+    "ar": "لا يمكن الانتقال به آنياً",
+    "bn": "টেলিপোর্ট করা যাবে না",
+    "ru": "Нельзя телепортировать",
+    "ja": "テレポート不可",
+    "id": "Tidak dapat diteleportasikan"
+  },
+  "Sources": {
+    "en": "Sources",
+    "cs": "Zdroje",
+    "de": "Quellen",
+    "es": "Fuentes",
+    "fr": "Sources",
+    "pt": "Fontes",
+    "zh": "来源",
+    "hi": "स्रोत",
+    "ar": "المصادر",
+    "bn": "উৎস",
+    "ru": "Источники",
+    "ja": "入手先",
+    "id": "Sumber"
+  },
+  "Used in": {
+    "en": "Used in",
+    "cs": "Použití",
+    "de": "Verwendet in",
+    "es": "Se usa en",
+    "fr": "Utilisé dans",
+    "pt": "Usado em",
+    "zh": "用于",
+    "hi": "इनमें उपयोग",
+    "ar": "يُستخدم في",
+    "bn": "এতে ব্যবহৃত",
+    "ru": "Используется в",
+    "ja": "使用先",
+    "id": "Digunakan dalam"
+  },
+  "{count} items": {
+    "en": {
+      "one": "{count} item",
+      "other": "{count} items"
+    },
+    "cs": {
+      "one": "{count} položka",
+      "few": "{count} položky",
+      "many": "{count} položky",
+      "other": "{count} položek"
+    },
+    "de": {
+      "one": "{count} Gegenstand",
+      "other": "{count} Gegenstände"
+    },
+    "es": {
+      "one": "{count} objeto",
+      "many": "{count} objetos",
+      "other": "{count} objetos"
+    },
+    "fr": {
+      "one": "{count} objet",
+      "many": "{count} objets",
+      "other": "{count} objets"
+    },
+    "pt": {
+      "one": "{count} item",
+      "many": "{count} itens",
+      "other": "{count} itens"
+    },
+    "zh": {
+      "other": "{count} 件物品"
+    },
+    "hi": {
+      "one": "{count} वस्तु",
+      "other": "{count} वस्तुएँ"
+    },
+    "ar": {
+      "zero": "{count} عناصر",
+      "one": "{count} عنصر",
+      "two": "{count} عنصران",
+      "few": "{count} عناصر",
+      "many": "{count} عنصرًا",
+      "other": "{count} عنصر"
+    },
+    "bn": {
+      "one": "{count}টি বস্তু",
+      "other": "{count}টি বস্তু"
+    },
+    "ru": {
+      "one": "{count} предмет",
+      "few": "{count} предмета",
+      "many": "{count} предметов",
+      "other": "{count} предмета"
+    },
+    "ja": {
+      "other": "{count} 個のアイテム"
+    },
+    "id": {
+      "other": "{count} item"
+    }
+  },
+  "{count} weapons": {
+    "en": {
+      "one": "{count} weapon",
+      "other": "{count} weapons"
+    },
+    "cs": {
+      "one": "{count} zbraň",
+      "few": "{count} zbraně",
+      "many": "{count} zbraně",
+      "other": "{count} zbraní"
+    },
+    "de": {
+      "one": "{count} Waffe",
+      "other": "{count} Waffen"
+    },
+    "es": {
+      "one": "{count} arma",
+      "many": "{count} armas",
+      "other": "{count} armas"
+    },
+    "fr": {
+      "one": "{count} arme",
+      "many": "{count} armes",
+      "other": "{count} armes"
+    },
+    "pt": {
+      "one": "{count} arma",
+      "many": "{count} armas",
+      "other": "{count} armas"
+    },
+    "zh": {
+      "other": "{count} 件武器"
+    },
+    "hi": {
+      "one": "{count} हथियार",
+      "other": "{count} हथियार"
+    },
+    "ar": {
+      "zero": "{count} أسلحة",
+      "one": "{count} سلاح",
+      "two": "{count} سلاحان",
+      "few": "{count} أسلحة",
+      "many": "{count} سلاحًا",
+      "other": "{count} سلاح"
+    },
+    "bn": {
+      "one": "{count}টি অস্ত্র",
+      "other": "{count}টি অস্ত্র"
+    },
+    "ru": {
+      "one": "{count} единица оружия",
+      "few": "{count} единицы оружия",
+      "many": "{count} единиц оружия",
+      "other": "{count} единицы оружия"
+    },
+    "ja": {
+      "other": "{count} 個の武器"
+    },
+    "id": {
+      "other": "{count} senjata"
+    }
+  },
+  "{count} more in locked biomes": {
+    "en": {
+      "one": "{count} more in locked biomes",
+      "other": "{count} more in locked biomes"
+    },
+    "cs": {
+      "one": "Dalších {count} v zamčených biomech",
+      "few": "Dalších {count} v zamčených biomech",
+      "many": "Dalších {count} v zamčených biomech",
+      "other": "Dalších {count} v zamčených biomech"
+    },
+    "de": {
+      "one": "{count} weitere in gesperrten Biomen",
+      "other": "{count} weitere in gesperrten Biomen"
+    },
+    "es": {
+      "one": "{count} más en biomas bloqueados",
+      "many": "{count} más en biomas bloqueados",
+      "other": "{count} más en biomas bloqueados"
+    },
+    "fr": {
+      "one": "{count} de plus dans les biomes verrouillés",
+      "many": "{count} de plus dans les biomes verrouillés",
+      "other": "{count} de plus dans les biomes verrouillés"
+    },
+    "pt": {
+      "one": "Mais {count} em biomas bloqueados",
+      "many": "Mais {count} em biomas bloqueados",
+      "other": "Mais {count} em biomas bloqueados"
+    },
+    "zh": {
+      "other": "锁定生物群系中还有 {count} 项"
+    },
+    "hi": {
+      "one": "बंद बायोम में {count} और",
+      "other": "बंद बायोम में {count} और"
+    },
+    "ar": {
+      "zero": "{count} إضافية في المناطق المقفلة",
+      "one": "{count} إضافية في المناطق المقفلة",
+      "two": "{count} إضافية في المناطق المقفلة",
+      "few": "{count} إضافية في المناطق المقفلة",
+      "many": "{count} إضافية في المناطق المقفلة",
+      "other": "{count} إضافية في المناطق المقفلة"
+    },
+    "bn": {
+      "one": "লক করা বায়োমে আরও {count}টি",
+      "other": "লক করা বায়োমে আরও {count}টি"
+    },
+    "ru": {
+      "one": "Ещё {count} в закрытых биомах",
+      "few": "Ещё {count} в закрытых биомах",
+      "many": "Ещё {count} в закрытых биомах",
+      "other": "Ещё {count} в закрытых биомах"
+    },
+    "ja": {
+      "other": "未解放のバイオームにあと {count} 件"
+    },
+    "id": {
+      "other": "{count} lagi di bioma terkunci"
+    }
+  },
+  "Weapons": {
+    "en": "Weapons",
+    "cs": "Zbraně",
+    "de": "Waffen",
+    "es": "Armas",
+    "fr": "Armes",
+    "pt": "Armas",
+    "zh": "武器",
+    "hi": "हथियार",
+    "ar": "الأسلحة",
+    "bn": "অস্ত্র",
+    "ru": "Оружие",
+    "ja": "武器",
+    "id": "Senjata"
+  },
+  "Armor": {
+    "en": "Armor",
+    "cs": "Brnění",
+    "de": "Rüstung",
+    "es": "Armadura",
+    "fr": "Armure",
+    "pt": "Armadura",
+    "zh": "护甲",
+    "hi": "कवच",
+    "ar": "دروع",
+    "bn": "বর্ম",
+    "ru": "Броня",
+    "ja": "防具",
+    "id": "Zirah"
+  },
+  "Food": {
+    "en": "Food",
+    "cs": "Jídlo",
+    "de": "Essen",
+    "es": "Comida",
+    "fr": "Nourriture",
+    "pt": "Comida",
+    "zh": "食物",
+    "hi": "भोजन",
+    "ar": "الطعام",
+    "bn": "খাবার",
+    "ru": "Еда",
+    "ja": "食事",
+    "id": "Makanan"
+  },
+  "Meads": {
+    "en": "Meads",
+    "cs": "Medoviny",
+    "de": "Met",
+    "es": "Hidromieles",
+    "fr": "Hydromels",
+    "pt": "Hidroméis",
+    "zh": "蜜酒",
+    "hi": "मीड",
+    "ar": "شراب العسل",
+    "bn": "মীড",
+    "ru": "Медовухи",
+    "ja": "蜂蜜酒",
+    "id": "Mead"
+  },
+  "Category": {
+    "en": "Category",
+    "cs": "Kategorie",
+    "de": "Kategorie",
+    "es": "Categoría",
+    "fr": "Catégorie",
+    "pt": "Categoria",
+    "zh": "类别",
+    "hi": "श्रेणी",
+    "ar": "الفئة",
+    "bn": "বিভাগ",
+    "ru": "Категория",
+    "ja": "カテゴリー",
+    "id": "Kategori"
+  },
+  "Items Compendium": {
+    "en": "Items Compendium",
+    "cs": "Items Compendium",
+    "de": "Items Compendium",
+    "es": "Items Compendium",
+    "fr": "Items Compendium",
+    "pt": "Items Compendium",
+    "zh": "Items Compendium",
+    "hi": "Items Compendium",
+    "ar": "Items Compendium",
+    "bn": "Items Compendium",
+    "ru": "Items Compendium",
+    "ja": "Items Compendium",
+    "id": "Items Compendium"
+  },
+  "Search and explore every material, drop, trophy and crafting component across Valheim.": {
+    "en": "Search and explore every material, drop, trophy and crafting component across Valheim.",
+    "cs": "Hledejte a zkoumejte každý materiál, drop, trofej a řemeslnou surovinu ve Valheimu.",
+    "de": "Suchen und erkunden Sie alle Materialien, Beute, Trophäen und Handwerkskomponenten in Valheim.",
+    "es": "Busca y explora cada material, botín, trofeo y componente de artesanía en Valheim.",
+    "fr": "Recherchez et explorez chaque matériau, butin, trophée et composant d’artisanat dans Valheim.",
+    "pt": "Pesquise e explore todos os materiais, espólios, troféus e componentes de criação em Valheim.",
+    "zh": "搜索并探索英灵神殿中的所有材料、掉落物、战利品和制造组件。",
+    "hi": "वाल्हाइम में हर सामग्री, ड्रॉप, ट्रॉफी और क्राफ्टिंग घटक को खोजें और एक्सप्लोर करें।",
+    "ar": "ابحث واستكشف كل المواد والغنائم والجوائز ومكونات الصياغة في فالهيم.",
+    "bn": "ভালহাইমের প্রতিটি উপাদান, ড্রপ, ট্রফি এবং ক্রাফটিং উপাদান খুঁজুন এবং অন্বেষণ করুন।",
+    "ru": "Ищите и исследуйте каждый материал, добычу, трофей и компонент для крафта в Valheim.",
+    "ja": "ヴァルハイムのあらゆる素材、ドロップ品、トロフィー、クラフト素材を検索して探索。",
+    "id": "Cari dan jelajahi setiap material, jarahan, trofi, dan komponen pembuatan di Valheim."
+  },
+  "Search items...": {
+    "en": "Search items...",
+    "cs": "Hledat položky...",
+    "de": "Gegenstände suchen...",
+    "es": "Buscar objetos...",
+    "fr": "Rechercher des objets...",
+    "pt": "Buscar itens...",
+    "zh": "搜索物品...",
+    "hi": "वस्तुएँ खोजें...",
+    "ar": "بحث عن العناصر...",
+    "bn": "আইটেম অনুসন্ধান করুন...",
+    "ru": "Поиск предметов...",
+    "ja": "アイテムを検索...",
+    "id": "Cari item..."
+  },
+  "All categories": {
+    "en": "All categories",
+    "cs": "Všechny kategorie",
+    "de": "Alle Kategorien",
+    "es": "Todas las categorías",
+    "fr": "Toutes les catégories",
+    "pt": "Todas as categorias",
+    "zh": "所有类别",
+    "hi": "सभी श्रेणियाँ",
+    "ar": "كل الفئات",
+    "bn": "সমস্ত বিভাগ",
+    "ru": "Все категории",
+    "ja": "すべてのカテゴリ",
+    "id": "Semua kategori"
+  },
+  "Metals & Ores": {
+    "en": "Metals & Ores",
+    "cs": "Kovy a rudy",
+    "de": "Metalle & Erze",
+    "es": "Metales y minerales",
+    "fr": "Métaux et minerais",
+    "pt": "Metais e minérios",
+    "zh": "金属与矿石",
+    "hi": "धातु और अयस्क",
+    "ar": "المعادن والخامات",
+    "bn": "ধাতু এবং আকরিক",
+    "ru": "Металлы и руды",
+    "ja": "金属と鉱石",
+    "id": "Logam & Bijih"
+  },
+  "Monster Drops": {
+    "en": "Monster Drops",
+    "cs": "Dropy z monster",
+    "de": "Monster-Beute",
+    "es": "Botín de monstruos",
+    "fr": "Butins de monstres",
+    "pt": "Espólios de monstros",
+    "zh": "怪物掉落物",
+    "hi": "दानवों से मिलने वाली वस्तुएं",
+    "ar": "غنائم الوحوش",
+    "bn": "দানবদের ড্রপ",
+    "ru": "Добыча с монстров",
+    "ja": "モンスターのドロップ",
+    "id": "Jatuhan Monster"
+  },
+  "Trophies": {
+    "en": "Trophies",
+    "cs": "Trofeje",
+    "de": "Trophäen",
+    "es": "Trofeos",
+    "fr": "Trophées",
+    "pt": "Troféus",
+    "zh": "战利品",
+    "hi": "ट्रॉफियां",
+    "ar": "الجوائز",
+    "bn": "ট্রফি",
+    "ru": "Трофеи",
+    "ja": "トロフィー",
+    "id": "Trofi"
+  },
+  "Food Ingredients": {
+    "en": "Food Ingredients",
+    "cs": "Suroviny na jídlo",
+    "de": "Nahrungszutaten",
+    "es": "Ingredientes de comida",
+    "fr": "Ingrédients alimentaires",
+    "pt": "Ingredientes de comida",
+    "zh": "食物配料",
+    "hi": "भोजन की सामग्री",
+    "ar": "مكونات الطعام",
+    "bn": "খাবারের উপকরণ",
+    "ru": "Ингредиенты для еды",
+    "ja": "食材",
+    "id": "Bahan Makanan"
+  },
+  "Building & Crafting": {
+    "en": "Building & Crafting",
+    "cs": "Stavba a výroba",
+    "de": "Bauen & Handwerk",
+    "es": "Construcción y artesanía",
+    "fr": "Construction et artisanat",
+    "pt": "Construção e criação",
+    "zh": "建造与制造",
+    "hi": "निर्माण और क्राफ्टिंग",
+    "ar": "البناء والصياغة",
+    "bn": "নির্মাণ এবং ক্রাফটিং",
+    "ru": "Строительство и крафт",
+    "ja": "建築とクラフト",
+    "id": "Bangunan & Kerajinan"
+  },
+  "Valuables & Traders": {
+    "en": "Valuables & Traders",
+    "cs": "Cennosti a obchodníci",
+    "de": "Wertsachen & Händler",
+    "es": "Objetos de valor y comerciantes",
+    "fr": "Objets de valeur et marchands",
+    "pt": "Itens valiosos e mercadores",
+    "zh": "贵重物品与商人",
+    "hi": "कीमती वस्तुएं और व्यापारी",
+    "ar": "النفائس والتجار",
+    "bn": "মূল্যবান জিনিস এবং ব্যবসায়ী",
+    "ru": "Ценности и торговцы",
+    "ja": "貴重品と商人",
+    "id": "Barang Berharga & Pedagang"
+  },
+  "Boss Summoning": {
+    "en": "Boss Summoning",
+    "cs": "Vyvolání bossů",
+    "de": "Boss-Beschwörung",
+    "es": "Invocación de jefes",
+    "fr": "Invocation de boss",
+    "pt": "Invocação de chefes",
+    "zh": "Boss 召唤物",
+    "hi": "बॉस आह्वान",
+    "ar": "استدعاء الزعماء",
+    "bn": "বস আহ্বান",
+    "ru": "Призыв боссов",
+    "ja": "ボスの召喚",
+    "id": "Pemanggilan Bos"
+  },
+  "Biome": {
+    "en": "Biome",
+    "cs": "Biom",
+    "de": "Biom",
+    "es": "Bioma",
+    "fr": "Biome",
+    "pt": "Bioma",
+    "zh": "生物群系",
+    "hi": "बायोम",
+    "ar": "المحيط الحيوي",
+    "bn": "বায়োম",
+    "ru": "Биом",
+    "ja": "バイオーム",
+    "id": "Bioma"
+  },
+  "All biomes": {
+    "en": "All biomes",
+    "cs": "Všechny biomy",
+    "de": "Alle Biome",
+    "es": "Todos los biomas",
+    "fr": "Tous les biomes",
+    "pt": "Todos os biomas",
+    "zh": "所有生物群系",
+    "hi": "सभी बायोम",
+    "ar": "كل البيئات",
+    "bn": "সমস্ত বায়োম",
+    "ru": "Все биомы",
+    "ja": "すべてのバイオーム",
+    "id": "Semua bioma"
+  },
+  "Comfort": {
+    "en": "Comfort",
+    "cs": "Komfort",
+    "de": "Komfort",
+    "es": "Comodidad",
+    "fr": "Confort",
+    "pt": "Conforto",
+    "zh": "舒适度",
+    "hi": "आराम",
+    "ar": "الراحة",
+    "bn": "আরাম",
+    "ru": "Комфорт",
+    "ja": "快適さ",
+    "id": "Kenyamanan"
+  },
+  "Dropped by:": {
+    "en": "Dropped by:",
+    "cs": "Získává se z:",
+    "de": "Beute von:",
+    "es": "Soltado por:",
+    "fr": "Obtenu sur :",
+    "pt": "Obtido de:",
+    "zh": "掉落自：",
+    "hi": "प्राप्त होता है:",
+    "ar": "يسقط من:",
+    "bn": "থেকে পাওয়া যায়:",
+    "ru": "Выпадает с:",
+    "ja": "ドロップ元：",
+    "id": "Dijatuhkan oleh:"
+  },
+  "Found in:": {
+    "en": "Found in:",
+    "cs": "Nalézá se v:",
+    "de": "Gefunden in:",
+    "es": "Encontrado en:",
+    "fr": "Trouvé dans :",
+    "pt": "Encontrado em:",
+    "zh": "发现于：",
+    "hi": "यहाँ पाया जाता है:",
+    "ar": "يوجد في:",
+    "bn": "পাওয়া যায়:",
+    "ru": "Находится в:",
+    "ja": "発見場所：",
+    "id": "Ditemukan di:"
+  },
+  "Crafting recipe:": {
+    "en": "Crafting recipe:",
+    "cs": "Recept na výrobu:",
+    "de": "Handwerksrezept:",
+    "es": "Receta de fabricación:",
+    "fr": "Recette d’artisanat :",
+    "pt": "Receita de criação:",
+    "zh": "制造配方：",
+    "hi": "क्राफ्टिंग रेसिपी:",
+    "ar": "وصفة الصياغة:",
+    "bn": "ক্রাফটিং রেসিপি:",
+    "ru": "Рецепт изготовления:",
+    "ja": "クラフトレシピ：",
+    "id": "Resep pembuatan:"
+  },
+  "Sold by:": {
+    "en": "Sold by:",
+    "cs": "Prodává:",
+    "de": "Verkauft von:",
+    "es": "Vendido por:",
+    "fr": "Vendu par :",
+    "pt": "Vendido por:",
+    "zh": "出售者：",
+    "hi": "द्वारा बेचा गया:",
+    "ar": "يُباع لدى:",
+    "bn": "বিক্রেতা:",
+    "ru": "Продаётся у:",
+    "ja": "販売者：",
+    "id": "Dijual oleh:"
+  },
+  "Stations & Upgrades": {
+    "en": "Stations & Upgrades",
+    "cs": "Stanice a vylepšení",
+    "de": "Stationen & Verbesserungen",
+    "es": "Estaciones y mejoras",
+    "fr": "Stations et améliorations",
+    "pt": "Bancadas e melhorias",
+    "zh": "工作台与升级",
+    "hi": "स्टेशन और अपग्रेड",
+    "ar": "المحطات والترقيات",
+    "bn": "স্টেশন এবং আপগ্রেড",
+    "ru": "Станки и улучшения",
+    "ja": "設備とアップグレード",
+    "id": "Stasiun & Peningkatan"
+  },
+  "No items found matching your filters.": {
+    "en": "No items found matching your filters.",
+    "cs": "Nebyly nalezeny žádné položky odpovídající vašim filtrům.",
+    "de": "Keine Gegenstände gefunden, die Ihren Filtern entsprechen.",
+    "es": "No se encontraron objetos que coincidan con tus filtros.",
+    "fr": "Aucun objet trouvé correspondant à vos filtres.",
+    "pt": "Nenhum item encontrado correspondente aos seus filtros.",
+    "zh": "未找到符合筛选条件的物品。",
+    "hi": "आपके फ़िल्टर से मेल खाने वाली कोई वस्तु नहीं मिली।",
+    "ar": "لم يتم العثور على عناصر تطابق معايير التصفية الخاصة بك.",
+    "bn": "আপনার ফিল্টারের সাথে মিলে এমন কোনো আইটেম পাওয়া যায়নি।",
+    "ru": "По вашим фильтрам ничего не найдено.",
+    "ja": "フィルターに一致するアイテムが見つかりませんでした。",
+    "id": "Tidak ada item yang cocok dengan filter Anda."
+  },
+  "Wiki": {
+    "en": "Wiki",
+    "cs": "Wiki",
+    "de": "Wiki",
+    "es": "Wiki",
+    "fr": "Wiki",
+    "pt": "Wiki",
+    "zh": "维基",
+    "hi": "विकी",
+    "ar": "ويكي",
+    "bn": "উইকি",
+    "ru": "Вики",
+    "ja": "ウィキ",
+    "id": "Wiki"
+  },
+  "Weight: {weight}": {
+    "en": "Weight: {weight}",
+    "cs": "Hmotnost: {weight}",
+    "de": "Gewicht: {weight}",
+    "es": "Peso: {weight}",
+    "fr": "Poids : {weight}",
+    "pt": "Peso: {weight}",
+    "zh": "重量：{weight}",
+    "hi": "वजन: {weight}",
+    "ar": "الوزن: {weight}",
+    "bn": "ওজন: {weight}",
+    "ru": "Вес: {weight}",
+    "ja": "重量：{weight}",
+    "id": "Berat: {weight}"
+  },
+  "Stack: {stack}": {
+    "en": "Stack: {stack}",
+    "cs": "Stoh: {stack}",
+    "de": "Stapel: {stack}",
+    "es": "Pila: {stack}",
+    "fr": "Pile : {stack}",
+    "pt": "Pilha: {stack}",
+    "zh": "堆叠：{stack}",
+    "hi": "ढेर: {stack}",
+    "ar": "الحزمة: {stack}",
+    "bn": "স্ট্যাক: {stack}",
+    "ru": "Стопка: {stack}",
+    "ja": "スタック：{stack}",
+    "id": "Tumpukan: {stack}"
+  }
+}
