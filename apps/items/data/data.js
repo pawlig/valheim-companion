@@ -19462,7 +19462,7 @@ globalThis.VC_ITEMS_DATA = {
     {
       "id": "roots",
       "name": "Roots",
-      "image": "img/items/roots.png",
+      "image": "img/items/root.png",
       "biome": "swamp",
       "tier": 4,
       "category": "drop",

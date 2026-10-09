@@ -81,6 +81,11 @@ const server = createServer((req, res) => {
     res.end();
     return;
   }
+  if (pathname === '/items') {
+    res.writeHead(301, { Location: `/items/${url.search}` });
+    res.end();
+    return;
+  }
 
   let filePath = path.join(DIST_DIR, pathname);
 

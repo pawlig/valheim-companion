@@ -12196,7 +12196,7 @@ window.VPR_DATA = {
     "roots": {
       "id": "roots",
       "name": "Roots",
-      "image": null,
+      "image": "../smithy/img/items/root.png",
       "biome": "swamp",
       "tier": 4,
       "sources": [

@@ -368,6 +368,10 @@
   }
 
   function render() {
+    if (globalThis.VCI18n && typeof globalThis.VCI18n.apply === 'function') {
+      globalThis.VCI18n.apply();
+    }
+
     renderBiomeChips();
 
     const grid = document.getElementById('items-grid');
