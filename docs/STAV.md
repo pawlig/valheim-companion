@@ -1,7 +1,7 @@
 # Stav projektu Valheim Companion
 
 > **Živý dokument.** Orchestrátor ho aktualizuje po každé přejímce, merge nebo změně fronty. Nová session začíná tady.
-> Poslední aktualizace: **8. 10. 2026**
+> Poslední aktualizace: **9. 10. 2026**
 
 - Web: https://valheim-companion.teuferon.click (EasyPanel, deploy webhookem při každém pushi do repa)
 - Repo: https://github.com/pawlig/valheim-companion (public), lokálně `~/gameroot/valheim-units`
@@ -22,7 +22,7 @@
 | `/comfort/` | Comfort Planner | `apps/comfort/` | ✅ comfort a Rested, Best I can build, Next upgrades, nákupní seznam, maxima po biomech sedí s wiki |
 | `/expedition/` | Expedition | `apps/expedition/` | ✅ Boss prep (zbraně z Bestiary, obrana, jídlo z Provisions, balicí a nákupní seznam) a Raids (teď / skončené / po dalším bossovi) |
 | `/signs/` | Sign Editor (Runopis) | `apps/signs/` (React + Vite, převzato subtree z `valheim-signs`) | ✅ 13 jazyků |
-| `/items/` | Items Compendium | `apps/items/` (vanilla JS) | 🔄 v přípravě (VC-39) |
+| `/items/` | Items Compendium | `apps/items/` (vanilla JS) | ✅ 333 položek, zdroje, usedIn, 13 jazyků, spoiler ochrana |
 
 Pořadí biomů ve všech nástrojích je jedno (ANALYZA § 14): Meadows, Black Forest, **Ocean**, Swamp, Mountain, Plains, Mistlands, Ashlands, Deep North. Platí `tier = order`.
 
@@ -70,7 +70,7 @@ Zadání jsou v [`docs/zadani/`](zadani/). Hotové úlohy jsou mergnuté do `mai
 | VC-36 | **Expedition** `/expedition/` (ANALYZA § 25): příprava na bosse (zbraně, obrana, jídlo, balicí a nákupní seznam) a nájezdy podle postupu | Sol | ✅ (po vrácení: auto výběr bosse, počet medovin podle cooldownu, bundly, formát) |
 | VC-37 | oprava 5 chyb z reportu Teuferona 8. 10.: biomy jídel v hledání (31 → 0), duplicitní brnění (48 → 0), karta suroviny ve Smithy (`#item=`, zdroje a použití), `#item=` v Provisions (fokus jen jednou), 15min boj z Expedition → Provisions (čtvrthodiny), Bare Fists pryč z hledání | Sol | ✅ (po vrácení; přejímka Fable; deep link Smithy do zamčeného biomu už biom neodemyká, jen odroluje na hlavičku — anti-spoiler, přijato) |
 | VC-38 | **Progress Tracker „Saga“** (ANALYZA § 26): dlaždice biomů s artworkem, slider „kam jsem došel“, odškrtávají se jen bossové a minibossové (stránka i panel) | Astra | ✅ nasazeno 8. 10. na Pavlův pokyn (vzhled schválen v náhledu); Astra spadla na limit Codexu v kroku 4 (session `01a11d12-7f51-7ff1-b023-c78653e20952`), WIP commitnut; přejímka Fable: převzato (5/4), drobnosti z přejímky opravil orchestrátor (čipy v panelu, jezdec ve Firefoxu, skript obrázků) |
-| VC-39 | **Items Compendium** `/items/` (ANALYZA § 27): celkový přehled předmětů a surovin, kde je získat (Bestiary), kde je použít (Smithy, Provisions, Comfort, Expedition), prolinkování napříč Companionem a z vyhledávání | GM | 🔄 spouští se (worktree `valheim-units-GM`, větev `prace/VC-39`) |
+| VC-39 | **Items Compendium** `/items/` (ANALYZA § 27): celkový přehled předmětů a surovin, kde je získat (Bestiary), kde je použít (Smithy, Provisions, Comfort, Expedition), prolinkování napříč Companionem a z vyhledávání | GM | ✅ nasazeno 9. 10. (333 položek, zdroje, usedIn, 11 routes × 13 jazyků na mobilu 360 px bez vad) |
 
 ### Po frontě
 Pracovníci od 6. 10.: agy je vyčerpaný (týden 4 %, obnova 8. 10.), práci dělá **Codex Sol**. Pavel 6. 10. schválil pořadí: překlady (VC-16 až VC-18), **vylepšení stávajících nástrojů** (VC-23 až VC-27), potom **Progress Tracker** a **Provisions** (VC-19 až VC-22). Další kandidáti z [`NAVRHY-NASTROJU.md`](NAVRHY-NASTROJU.md): **Comfort Planner schválen 6. 10. (VC-35)**, **Expedition schválen 7. 10. (VC-36)**. Trader Ledger, Fishing a Taming zatím schválené nejsou.
