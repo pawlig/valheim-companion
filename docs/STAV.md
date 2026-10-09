@@ -76,6 +76,8 @@ Zadání jsou v [`docs/zadani/`](zadani/). Hotové úlohy jsou mergnuté do `mai
 | VC-39 | **Items Compendium** `/items/` (ANALYZA § 27): celkový přehled předmětů a surovin, kde je získat (Bestiary), kde je použít (Smithy, Provisions, Comfort, Expedition), prolinkování napříč Companionem a z vyhledávání | GM | ✅ nasazeno 9. 10. (333 položek, zdroje, usedIn, 11 routes × 13 jazyků na mobilu 360 px bez vad) |
 | VC-40 | **Trader Ledger** `/traders/` (ANALYZA § 28): Haldor, Hildir & Bog Witch, nabídka, ceny, podmínky odemknutí, kalkulačka pokladů | GM | ✅ nasazeno 9. 10. (3 obchodníci, kalkulačka mincí a pokladů, prolinkování do Smithy, Items a Provisions, 12 routes × 13 jazyků na mobilu 360 px bez vad) |
 | VC-40b | **Items Compendium oprava a rozšíření** (kompletní katalog 764 itemů, odstranění visícího modalu, recepty a prolinkování) | GL | ✅ nasazeno 9. 10. (764 položek, oprava CSS display:none u [hidden], ověřeno přes prohlizec i 325 stránek na 360 px mobilu) |
+| VC-40c | **Items Compendium kompletní katalog (1 080 itemů)** (všechny předměty ze hry, infoboxy, trofeje, zbraně, zbroje, nářadí, stavby, překlady) | agy | ✅ nasazeno 9. 10. (1 080 položek, 13 jazyků, invertovaný index usedIn napříč všemi nástroji) |
+| VC-40d | **Items Compendium oprava chyb, audit a testování** (oprava pushState navigace v modalu, biomy 0 nullů, oprava plain substringů v inferBiome, přejímka prohlizec bez vad) | agy | ✅ hotovo a otestováno 9. 10. (364 testů v npm test, prohlizec kontrola bez vad, 0 konzolových chyb) |
 | VC-41 | **Armor Calculator / Damage Taken** (v Damage Calculatoru: redukce poškození zbrojí a odolnostmi hráče proti potvorám a bossům) | GM | 🔄 v přípravě |
 
 ### Po frontě
