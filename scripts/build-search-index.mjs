@@ -156,7 +156,7 @@ export function buildSearchIndex() {
         names: cleanNames(it.names, it.name),
         biome: b,
         order: o,
-        url: `/smithy/#item=${encodeURIComponent(it.id)}`,
+        url: `/items/#item=${encodeURIComponent(it.id)}`,
         image: itImg,
       });
     }

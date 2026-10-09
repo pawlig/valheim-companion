@@ -89,7 +89,7 @@ test('search index builds valid bundle under 150 kB with required fields', () =>
     assert.ok(typeof item.names === 'object' && item.names !== null);
     assert.ok(item.biome === null || typeof item.biome === 'string');
     assert.ok(typeof item.order === 'number');
-    assert.ok(typeof item.url === 'string' && (item.url.startsWith('/bestiary/') || item.url.startsWith('/smithy/') || item.url.startsWith('/provisions/') || item.url.startsWith('/comfort/')));
+    assert.ok(typeof item.url === 'string' && (item.url.startsWith('/bestiary/') || item.url.startsWith('/smithy/') || item.url.startsWith('/provisions/') || item.url.startsWith('/comfort/') || item.url.startsWith('/items/')));
     assert.ok(item.image === null || typeof item.image === 'string');
   }
 });

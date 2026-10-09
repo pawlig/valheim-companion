@@ -50,7 +50,11 @@ const check = (text, checked, action, id) => {
     input.id = id;
   }
   input.addEventListener('change', () => action(input.checked));
-  n.append(input, el('span', '', text));
+  if (typeof text === 'string') {
+    n.append(input, el('span', '', text));
+  } else {
+    n.append(input, text);
+  }
   return n;
 };
 const read = () => {
@@ -287,9 +291,20 @@ function renderBoss(prep) {
     el('p', 'hint', prep.altar?.howToFind || t('Not documented on the wiki.'))
   );
   for (const item of prep.summonItems) {
-    altar.append(el('p', '', tn('{count}× {name}', item.count, {
-      name: (supplementalItems[item.id] || VPR_DATA.items[item.id])?.name || item.id
-    })));
+    const itemName = (supplementalItems[item.id] || VPR_DATA.items[item.id])?.name || item.id;
+    const fullText = tn('{count}× {name}', item.count, { name: itemName });
+    const idx = fullText.indexOf(itemName);
+    const p = el('p');
+    if (idx !== -1) {
+      const prefix = fullText.slice(0, idx);
+      const suffix = fullText.slice(idx + itemName.length);
+      const a = el('a', 'item-link', itemName);
+      a.href = `/items/#item=${encodeURIComponent(item.id)}`;
+      p.append(el('span', '', prefix), a, el('span', '', suffix));
+    } else {
+      p.append(el('span', '', fullText));
+    }
+    altar.append(p);
   }
   altar.append(link(t('Source'), prep.source));
   card.append(altar);
@@ -509,12 +524,40 @@ function renderPacking(prep, ctx) {
     weapon: ctx.recommendations[0]
   });
   for (const line of lines) {
-    n.append(check(tn('{count}× {name}', line.quantity, {
-      name: ctx.items[line.id]?.name || line.id
-    }), state.checked.includes(line.id), value => {
-      state.checked = value ? [...state.checked, line.id] : state.checked.filter(id => id !== line.id);
-      render();
-    }, 'pack-' + line.id));
+    const isSummon = prep.summonItems?.some((s) => s.id === line.id);
+    let labelContent;
+    if (isSummon) {
+      const wrap = el('span');
+      const itemName = ctx.items[line.id]?.name || line.id;
+      const fullText = tn('{count}× {name}', line.quantity, { name: itemName });
+      const idx = fullText.indexOf(itemName);
+      if (idx !== -1) {
+        const prefix = fullText.slice(0, idx);
+        const suffix = fullText.slice(idx + itemName.length);
+        const a = el('a', 'item-link', itemName);
+        a.href = `/items/#item=${encodeURIComponent(line.id)}`;
+        a.addEventListener('click', (e) => e.stopPropagation());
+        wrap.append(el('span', '', prefix), a, el('span', '', suffix));
+      } else {
+        wrap.append(el('span', '', fullText));
+      }
+      labelContent = wrap;
+    } else {
+      labelContent = tn('{count}× {name}', line.quantity, {
+        name: ctx.items[line.id]?.name || line.id,
+      });
+    }
+    n.append(
+      check(
+        labelContent,
+        state.checked.includes(line.id),
+        (value) => {
+          state.checked = value ? [...state.checked, line.id] : state.checked.filter((id) => id !== line.id);
+          render();
+        },
+        'pack-' + line.id
+      )
+    );
   }
   return {
     node: n,

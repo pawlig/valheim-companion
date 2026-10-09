@@ -62,5 +62,6 @@ h2 { font:bold 1.4rem Georgia,serif; color:var(--gold); } h3 { font-size:1rem; }
   .mobile-bar { display:block; position:fixed; bottom:0; inset-inline:0; background:var(--card); padding:10px 12px max(10px,env(safe-area-inset-bottom)); border-top:1px solid var(--line); z-index:30; }
   .mobile-bar button { display:flex; justify-content:space-between; align-items:center; gap:12px; width:100%; color:var(--gold); }
 }
-@media (max-width:480px) { h1 { font-size:2rem; } .summary { grid-template-columns:minmax(0,1fr); padding:16px; } .summary-value { font-size:1.65rem; } .upgrade { grid-template-columns:minmax(0,1fr); } .piece-grid { grid-template-columns:minmax(0,1fr); } .actions { width:100%; } }
 @media (prefers-reduced-motion:no-preference) { button,a { transition:border-color .15s,color .15s; } }
+a.item-link { color:var(--gold); text-decoration:none; }
+a.item-link:hover { text-decoration:underline; }
