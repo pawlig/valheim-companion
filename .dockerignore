@@ -40,6 +40,10 @@
 !apps/items/assets/
 !apps/items/locales/messages.js
 !apps/items/data/data.js
+!apps/traders/index.html
+!apps/traders/assets/
+!apps/traders/locales/messages.js
+!apps/traders/data/data.js
 !apps/signs/
 !apps/damage-calculator/
 apps/signs/node_modules/

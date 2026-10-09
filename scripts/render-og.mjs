@@ -55,6 +55,7 @@ export function renderOgImages() {
     'comfort',
     'expedition',
     'items',
+    'traders',
   ];
 
   const renderedFiles = [];

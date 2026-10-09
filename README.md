@@ -11,6 +11,7 @@ Tools for your Valheim journey:
 - **Expedition**: Boss preparation, weapons, defenses, food, meads and a packing/shopping list; world-based raids react to your shared progress.
 - **Comfort Planner**: Plan furniture for your current progress, compare comfort and Rested duration, pick the best affordable pieces and see upgrades and a shopping list. Seasonal bonuses are optional; all 13 languages are supported.
 - **Items Compendium**: Comprehensive catalogue of materials, monster drops, trophies, crafting components and treasures across Valheim. Explore item stats, where to farm or buy them, and everything they are used to craft with direct links to Smithy, Provisions, Comfort Planner and Expedition. Follows your progress and supports 13 languages.
+- **Trader Ledger**: Merchandise catalog, unlock requirements (bosses and Hildir's chests), and coin/valuables appraisal calculator for Haldor, Hildir & The Bog Witch. Shows affordability based on your treasury, links directly to Items Compendium, follows your progress and supports 13 languages.
 - **Sign Editor (Runopis)**: Rich-text editor for Valheim signs with colors, formatting, live preview and copy to game in 13 languages.
 
 ## Project Structure
@@ -24,6 +25,7 @@ Tools for your Valheim journey:
 - `apps/expedition/`: Boss and raid preparation (`/expedition/`)
 - `apps/comfort/`: Comfort and Rested planner (`/comfort/`)
 - `apps/items/`: Items Compendium static application (`/items/`)
+- `apps/traders/`: Trader Ledger static application (`/traders/`)
 - `shared/shopping/`: Pure shopping-list calculations shared by Smithy, Provisions and Comfort Planner (`VCShopping`)
 - `shared/progress/`: Classic-script progress API (`VCProgress`), versioned state in `vc.progress`
 - `apps/signs/`: Runopis sign editor SPA (`/signs/`)
@@ -71,7 +73,7 @@ Locally:
 docker compose up --build -d   # http://localhost:8080
 ```
 
-`deploy/nginx.conf` sets strict security headers and location routing for `/`, `/bestiary/`, `/damage-calculator/`, `/smithy/`, `/progress/`, `/provisions/`, `/comfort/`, `/expedition/`, `/items/` and `/signs/`.
+`deploy/nginx.conf` sets strict security headers and location routing for `/`, `/bestiary/`, `/damage-calculator/`, `/smithy/`, `/progress/`, `/provisions/`, `/comfort/`, `/expedition/`, `/items/`, `/traders/` and `/signs/`.
 
 ## Data
 
