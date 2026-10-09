@@ -527,3 +527,47 @@ Nová sekce `/expedition/` (`apps/expedition/`, statická, vanilla JS jako Comfo
 - **Ovládání:** jen tři věci. ① **slider** pod řadou biomů (nativní `input type=range`, klávesnice funguje), ② **klik na dlaždici** biomu = „došel jsem sem“ (totéž co slider), ③ **klik na portrét** bosse nebo minibosse = poražen / neporažen (`button aria-pressed`). Pryč jsou checkboxy „Visited“, „Key drops“ (stav `milestones` zůstává kvůli kompatibilitě, jen se neukazuje) a tlačítka „Reveal“ (nahrazuje je slider).
 - **Vzhled:** dlaždice s artworkem biomu (zmenšeniny z `apps/bestiary/img/biomes/`), číslo biomu, název, portréty bossů (velké) a minibossů (menší). Neporažený = odbarvený, poražený = barevný se zlatým okrajem a pečetí ✓. Biom za dosahem = tmavý, rozmazaný artwork, 🔒 „Biome N“, bez názvu a portrétů (spoiler). Pod řadou karta **Next up** (první neporažený boss v dosahu: vyvolání, odkazy Bestiary / Expedition / Damage Calculator), souhrn „Biome 4 of 9 · 3 of 8 bosses · 1 of 4 minibosses“, sdílení a reset.
 - **Panel (overlay)** používá stejný `VCProgressUI.render(…, { compact: true })`: souhrn, malá řada 9 čipů biomů se sliderem a pod ní dosažené biomy (aktuální nahoře) s portréty k odškrtnutí, odkaz na plný tracker.
+
+## 27. Items Compendium: celkový přehled předmětů a surovin (VC-39, Pavel 9. 10. 2026)
+
+> **Pavel 9. 10. 2026:** *„chtěl bych nějaký celkový přehled itemu ve hře, a z hledání a z jakéhokoliv prokliku by to vedlo na ně, a u každého itemu by jsi měl prolinkování do příslušných míst která se dají použít, smithy, provisions atd...“*
+
+Nová sekce `/items/` (`apps/items/`, statická vanilla JS aplikace jako Smithy a Provisions). Kompletní katalog všech materiálů, surovin, ingrediencí, dropů a trofejí ve Valheimu (Meadows až Deep North). Slouží jako centrální uzel („Knowledge Base / Compendium“) pro suroviny s obousměrným propojením do všech specializovaných nástrojů Companionu.
+
+- **Data (`scripts/build-items-data.mjs` → `apps/items/data/data.js` a `data/items-compendium.json`):**
+  - Vstup: `data/items.json`, `data/weapons.json`, `data/armor.json`, `data/comfort.json`, `apps/provisions/data/data.js`, `data/expedition.json`, `data/creatures.json`, `data/stations.json`.
+  - Každý záznam itemu:
+    - `id`, `name`, `image`, `biome`, `tier`, `category` (`metal`, `drop`, `trophy`, `food-ingredient`, `crafting`, `valuable`, `summoning`), `teleportable` (true/false), `stack`, `weight`, `wiki`
+    - **`sources`:**
+      - Drop z bytosti: `creatures: [{ id, name, biome }]` → odkaz `/bestiary/#c=<id>`
+      - Sběr v přírodě / těžba: `location` / `other`
+      - Výroba na stanici: `recipe: { station, stationLevel, materials: [{ item, amount }] }`
+      - Nákup u obchodníka: `trader: "Haldor" | "Hildir" | "Bog Witch"` s cenou
+    - **`usedIn` (obrácený index receptů napříč všemi nástroji):**
+      - `weapons`: `[{ id, name, biome }]` → odkaz `/smithy/#item=<id>`
+      - `armor`: `[{ id, name, set, biome }]` → odkaz `/smithy/#set=<set>` nebo `/smithy/#item=<id>`
+      - `food`: `[{ id, name, isFeast, biome }]` → odkaz `/provisions/#item=<id>`
+      - `meads`: `[{ id, name, biome }]` → odkaz `/provisions/#item=<id>`
+      - `comfort`: `[{ id, name, comfort, biome }]` → odkaz `/comfort/#item=<id>`
+      - `expedition`: `[{ bossId, bossName, biome }]` → odkaz `/expedition/#boss=<bossId>`
+      - `stations`: `[{ id, name, level, biome }]`
+- **Uživatelské rozhraní `/items/`:**
+  - Záhlaví „Items Compendium“, podtitul ve 13 jazycích, návrat na rozcestník, přepínač jazyka, vysouvací panel `VCProgress`.
+  - Vyhledávání (okamžitá filtrace podle anglického názvu).
+  - Filtry biomů (Meadows až Deep North, zamykání neprobádaných biomů podle `VCProgress`, synchronizace se sliderem).
+  - Filtry kategorií: All, Metals & Ores, Monster Drops, Trophies, Food Ingredients, Building & Crafting, Valuables & Traders, Boss Summoning.
+  - Karta / detail položky:
+    - Ikona, anglický název hry, biome badge, tier.
+    - Vlastnosti: štítek „Can't be teleported“ (pokud nelze portovat), váha, stack size.
+    - Blok **Sources (Kde získat):** s klikacími odkazy do Bestiary (`/bestiary/#c=<creatureId>`).
+    - Blok **Used in (Kde se používá):** rozdělený do přehledných sekcí (Weapons & Armor, Food & Mead, Comfort & Base, Boss Altar) s přímými klikacími odkazy do `/smithy/`, `/provisions/`, `/comfort/`, `/expedition/`.
+    - Akce „Add to shopping cart“: přidá surovinu do nákupního košíku `VCShopping` / `va.cart`.
+- **Prolinkování z celého Companionu:**
+  - **Hub (`/`):** v `scripts/build-search-index.mjs` jsou materiály a suroviny přesměrovány na `/items/#item=<id>`. Nová karta na rozcestníku.
+  - **Bestiary (`/bestiary/`):** v detailu každé jednotky u `drops` a `trophy` je každý předmět klikací odkaz na `/items/#item=<id>`.
+  - **Smithy (`/smithy/`):** v receptech a v nákupním košíku Have/Want je klik na surovinu odkazem na `/items/#item=<id>`.
+  - **Provisions (`/provisions/`):** v receptech a nákupním seznamu je klik na ingredienci odkazem na `/items/#item=<id>`.
+  - **Comfort Planner (`/comfort/`):** v rozpisu nábytku a nákupním seznamu je klik na surovinu odkazem na `/items/#item=<id>`.
+  - **Expedition (`/expedition/`):** v balicím seznamu u vyvolávacích předmětů (summon items) je klik odkazem na `/items/#item=<id>`.
+- **Smlouva URL:** `/items/#item=<id>` odroluje na položku, otevře její detail a v případě uzamčeného biomu nabídne „Reveal“.
+- **Název nástroje:** **Items Compendium** (vlastní název, nepřekládá se dle § 20).
