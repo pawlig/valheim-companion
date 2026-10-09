@@ -9,7 +9,7 @@ if (!Number.isInteger(port) || port < 1 || port > 65535) {
   throw new Error('Expected a preview server port between 1 and 65535');
 }
 const origin = `http://localhost:${port}`;
-const pages = ['/', '/bestiary/', '/smithy/', '/signs/', '/damage-calculator/', '/privacy/', '/progress/', '/provisions/', '/comfort/', '/expedition/'];
+const pages = ['/', '/bestiary/', '/smithy/', '/signs/', '/damage-calculator/', '/privacy/', '/progress/', '/provisions/', '/comfort/', '/expedition/', '/items/'];
 const languages = JSON.parse(readFileSync(new URL('../shared/i18n/languages.json', import.meta.url), 'utf8'));
 const biomes = ['meadows', 'black-forest', 'ocean', 'swamp'];
 const progressBiomes = JSON.parse(readFileSync(new URL('../data/biomes.json', import.meta.url), 'utf8')).map(biome => biome.id);

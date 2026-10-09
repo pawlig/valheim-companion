@@ -84,6 +84,13 @@ export const PAGES = [
     title: 'Provisions — Valheim Companion',
     description: 'Plan your Valheim food and meads for the next trip — stats, servings and the full shopping list, with crafting stations and ingredient sources.',
   },
+  {
+    filePath: path.join(REPO_ROOT, 'apps', 'items', 'index.html'),
+    section: 'items',
+    path: '/items/',
+    title: 'Items Compendium — Valheim Companion',
+    description: 'Materials, monster drops, trophies and treasures across Valheim — where to find them and everything they are used to craft.',
+  },
 ];
 
 function escapeHtml(str) {
