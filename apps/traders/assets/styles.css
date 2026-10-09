@@ -1,0 +1,738 @@
+/* Trader Ledger — Valheim Companion Stylesheet */
+:root {
+  --bg-page: #0f1216;
+  --bg-card: #181d23;
+  --bg-card-sub: #21272f;
+  --bg-card-hover: #262e37;
+  --border-color: #2e3742;
+  --border-focus: #d9a441;
+
+  --accent-gold: #d9a441;
+  --accent-gold-hover: #ecc068;
+  --accent-gold-dim: rgba(217, 164, 65, 0.15);
+  --accent-gold-glow: rgba(217, 164, 65, 0.35);
+
+  --text-main: #e8e4da;
+  --text-muted: #9ba3af;
+  --text-dim: #717b88;
+  --text-danger: #e57373;
+  --text-success: #81c784;
+
+  --badge-meadows: #4caf50;
+  --badge-forest: #2e7d32;
+  --badge-swamp: #8d6e63;
+  --badge-mountain: #90caf9;
+  --badge-plains: #fbc02d;
+
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.page-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 16px 80px;
+  overflow-x: hidden;
+}
+
+/* Header */
+.page-header {
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 20px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.top-bar a {
+  color: var(--accent-gold);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.15s ease;
+}
+
+.top-bar a:hover {
+  color: var(--accent-gold-hover);
+  text-decoration: underline;
+}
+
+.language-picker {
+  display: inline-flex;
+}
+
+.language-picker select,
+.vc-language-picker {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  font-size: 13px;
+  outline: none;
+  cursor: pointer;
+}
+
+.language-picker select:focus,
+.vc-language-picker:focus {
+  border-color: var(--border-focus);
+}
+
+h1 {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 15px;
+  max-width: 800px;
+  margin-bottom: 14px;
+}
+
+.header-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.header-controls a {
+  display: inline-block;
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.header-controls a:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+/* Section Common */
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  color: var(--accent-gold);
+  margin-bottom: 4px;
+}
+
+.section-desc {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* Appraisal Section */
+.appraisal-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin-bottom: 32px;
+}
+
+.appraisal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.btn-clear {
+  background: transparent;
+  color: var(--text-dim);
+  border: 1px solid var(--border-color);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-clear:hover {
+  color: var(--text-danger);
+  border-color: var(--text-danger);
+}
+
+.appraisal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.valuable-card {
+  background: var(--bg-card-sub);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.valuable-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.valuable-name {
+  color: var(--text-main);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.valuable-rate {
+  color: var(--accent-gold);
+  font-weight: 600;
+  font-size: 12px;
+  background: var(--accent-gold-dim);
+  padding: 2px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.valuable-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-step {
+  background: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.15s ease;
+}
+
+.btn-step:hover {
+  background: var(--accent-gold-dim);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.valuable-input-wrap input {
+  flex: 1;
+  min-width: 0;
+  height: 32px;
+  background: var(--bg-page);
+  color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 4px 8px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  outline: none;
+  -moz-appearance: textfield;
+}
+
+.valuable-input-wrap input::-webkit-outer-spin-button,
+.valuable-input-wrap input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.valuable-input-wrap input:focus {
+  border-color: var(--accent-gold);
+}
+
+/* Appraisal Summary */
+.appraisal-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: var(--bg-page);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+}
+
+.summary-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 120px;
+}
+
+.stat-primary .stat-value {
+  color: var(--accent-gold);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-shadow: 0 0 12px var(--accent-gold-glow);
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+/* Trader Selection Tabs */
+.trader-tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.trader-tab {
+  background: transparent;
+  color: var(--text-muted);
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  margin-bottom: -2px;
+}
+
+.trader-tab:hover {
+  color: var(--text-main);
+  background: var(--bg-card);
+}
+
+.trader-tab.is-active {
+  color: var(--accent-gold);
+  border-bottom-color: var(--accent-gold);
+  background: var(--accent-gold-dim);
+}
+
+.tab-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.badge-forest {
+  background: rgba(46, 125, 50, 0.3);
+  color: #81c784;
+}
+
+.badge-meadows {
+  background: rgba(76, 175, 80, 0.3);
+  color: #a5d6a7;
+}
+
+.badge-swamp {
+  background: rgba(141, 110, 99, 0.3);
+  color: #d7ccc8;
+}
+
+/* Trader Banner */
+.trader-banner {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.banner-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.trader-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.trader-role {
+  color: var(--accent-gold);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.trader-biome-tag {
+  background: var(--bg-card-sub);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.trader-description {
+  color: var(--text-main);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.trader-tip {
+  background: var(--bg-card-sub);
+  border-left: 3px solid var(--accent-gold);
+  padding: 10px 14px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.trader-tip strong {
+  color: var(--accent-gold);
+  margin-right: 6px;
+}
+
+/* Goods Grid */
+.goods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.good-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+}
+
+.good-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(217, 164, 65, 0.4);
+}
+
+.good-card.is-affordable {
+  border-color: rgba(129, 199, 132, 0.4);
+}
+
+.good-card.is-locked {
+  opacity: 0.78;
+  border-style: dashed;
+}
+
+.good-card.is-locked.is-revealed {
+  opacity: 1;
+  border-style: solid;
+}
+
+.good-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.good-thumb-wrap {
+  width: 54px;
+  height: 54px;
+  background: var(--bg-card-sub);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.good-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.good-thumb-placeholder {
+  font-size: 22px;
+  color: var(--accent-gold);
+}
+
+.good-meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.good-name {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.good-price-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.good-price-badge {
+  color: var(--accent-gold);
+  font-weight: 700;
+  font-size: 14px;
+  background: var(--accent-gold-dim);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge-affordable {
+  background: rgba(76, 175, 80, 0.2);
+  color: #81c784;
+  border: 1px solid rgba(76, 175, 80, 0.4);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.good-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 14px;
+  flex: 1;
+}
+
+/* Unlock spoiler banner */
+.good-unlock-banner {
+  background: rgba(229, 115, 115, 0.1);
+  border: 1px solid rgba(229, 115, 115, 0.3);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.unlock-text {
+  color: #ef9a9a;
+  line-height: 1.4;
+}
+
+.btn-reveal {
+  background: transparent;
+  color: var(--accent-gold);
+  border: 1px solid var(--accent-gold);
+  border-radius: var(--radius-sm);
+  padding: 3px 8px;
+  font-size: 11px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.btn-reveal:hover {
+  background: var(--accent-gold);
+  color: #000;
+}
+
+/* Card Actions */
+.good-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+  margin-top: auto;
+}
+
+.link-compendium {
+  color: var(--accent-gold);
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.link-compendium:hover {
+  color: var(--accent-gold-hover);
+  text-decoration: underline;
+}
+
+.btn-cart {
+  background: var(--bg-card-sub);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 5px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-cart:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.btn-cart.is-added {
+  background: var(--accent-gold-dim);
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+/* Footer */
+.page-footer {
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-dim);
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.support {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.support strong {
+  display: block;
+  color: var(--text-main);
+  font-size: 14px;
+}
+
+.notice {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: var(--bg-card);
+  color: var(--accent-gold);
+  border: 1px solid var(--accent-gold);
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  opacity: 0;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  z-index: 1000;
+}
+
+.notice.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 640px) {
+  .page-wrapper {
+    padding: 16px 12px 80px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .appraisal-section {
+    padding: 14px;
+  }
+
+  .appraisal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .goods-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .appraisal-summary {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .good-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

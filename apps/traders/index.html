@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta:start -->
+  <title>Trader Ledger — Valheim Companion</title>
+  <meta name="description" content="Merchandise catalog, unlock requirements, and treasure appraisal for Haldor, Hildir &amp; The Bog Witch.">
+  <link rel="canonical" href="https://valheim-companion.teuferon.click/traders/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Valheim Companion">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Trader Ledger — Valheim Companion">
+  <meta property="og:description" content="Merchandise catalog, unlock requirements, and treasure appraisal for Haldor, Hildir &amp; The Bog Witch.">
+  <meta property="og:url" content="https://valheim-companion.teuferon.click/traders/">
+  <meta property="og:image" content="https://valheim-companion.teuferon.click/og/traders.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Trader Ledger — Valheim Companion">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Trader Ledger — Valheim Companion">
+  <meta name="twitter:description" content="Merchandise catalog, unlock requirements, and treasure appraisal for Haldor, Hildir &amp; The Bog Witch.">
+  <meta name="twitter:image" content="https://valheim-companion.teuferon.click/og/traders.png">
+  <meta name="theme-color" content="#0f1216">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="vc-ga" content="G-CXQVNCCJKE">
+  <meta name="vc-site" content="https://valheim-companion.teuferon.click">
+  <script src="/shared/analytics/consent.js" defer></script>
+  <script src="/shared/progress/ui.js" defer></script>
+  <script src="/shared/progress/drawer.js" defer></script>
+  <!-- meta:end -->
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="/shared/i18n/languages.js" defer></script>
+  <script src="/shared/i18n/core.js" defer></script>
+  <script src="locales/messages.js" defer></script>
+  <script src="data/data.js" defer></script>
+  <script src="/shared/progress/core.js" defer></script>
+  <script src="/shared/shopping/core.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="page-header">
+      <div class="top-bar">
+        <a href="/" data-i18n="← Valheim Companion">← Valheim Companion</a>
+        <div id="language-picker" class="language-picker"></div>
+      </div>
+      <h1>Trader Ledger</h1>
+      <p class="subtitle" data-i18n="Merchandise catalog, unlock requirements, and treasure appraisal for Haldor, Hildir & The Bog Witch.">Merchandise catalog, unlock requirements, and treasure appraisal for Haldor, Hildir &amp; The Bog Witch.</p>
+      <div class="header-controls">
+        <a href="/progress/" data-i18n="Track your progress →">Track your progress →</a>
+      </div>
+    </header>
+
+    <main class="traders-main">
+      <section class="appraisal-section" aria-labelledby="appraisal-heading">
+        <div class="appraisal-header">
+          <div>
+            <h2 id="appraisal-heading" class="section-title" data-i18n="Treasure Appraisal">Treasure Appraisal</h2>
+            <p class="section-desc" data-i18n="Calculate your coins and valuables appraisal to see what you can afford.">Calculate your coins and valuables appraisal to see what you can afford.</p>
+          </div>
+          <button type="button" id="appraisal-clear" class="btn-clear" data-i18n="Clear appraisal">Clear appraisal</button>
+        </div>
+
+        <div class="appraisal-grid">
+          <div class="valuable-card">
+            <div class="valuable-label-row">
+              <span class="valuable-name" data-i18n="Coins">Coins</span>
+              <span class="valuable-rate">1 🪙</span>
+            </div>
+            <div class="valuable-input-wrap">
+              <button type="button" class="btn-step" data-step-target="coins" data-step="-1" aria-label="Decrease Coins">−</button>
+              <input type="number" id="input-coins" min="0" step="1" value="0" aria-label="Coins count">
+              <button type="button" class="btn-step" data-step-target="coins" data-step="1" aria-label="Increase Coins">+</button>
+            </div>
+          </div>
+
+          <div class="valuable-card">
+            <div class="valuable-label-row">
+              <span class="valuable-name" data-i18n="Amber (5 coins)">Amber (5 coins)</span>
+              <span class="valuable-rate">5 🪙</span>
+            </div>
+            <div class="valuable-input-wrap">
+              <button type="button" class="btn-step" data-step-target="amber" data-step="-1" aria-label="Decrease Amber">−</button>
+              <input type="number" id="input-amber" min="0" step="1" value="0" aria-label="Amber count">
+              <button type="button" class="btn-step" data-step-target="amber" data-step="1" aria-label="Increase Amber">+</button>
+            </div>
+          </div>
+
+          <div class="valuable-card">
+            <div class="valuable-label-row">
+              <span class="valuable-name" data-i18n="Amber Pearl (10 coins)">Amber Pearl (10 coins)</span>
+              <span class="valuable-rate">10 🪙</span>
+            </div>
+            <div class="valuable-input-wrap">
+              <button type="button" class="btn-step" data-step-target="amber-pearl" data-step="-1" aria-label="Decrease Amber Pearl">−</button>
+              <input type="number" id="input-amber-pearl" min="0" step="1" value="0" aria-label="Amber Pearl count">
+              <button type="button" class="btn-step" data-step-target="amber-pearl" data-step="1" aria-label="Increase Amber Pearl">+</button>
+            </div>
+          </div>
+
+          <div class="valuable-card">
+            <div class="valuable-label-row">
+              <span class="valuable-name" data-i18n="Ruby (20 coins)">Ruby (20 coins)</span>
+              <span class="valuable-rate">20 🪙</span>
+            </div>
+            <div class="valuable-input-wrap">
+              <button type="button" class="btn-step" data-step-target="ruby" data-step="-1" aria-label="Decrease Ruby">−</button>
+              <input type="number" id="input-ruby" min="0" step="1" value="0" aria-label="Ruby count">
+              <button type="button" class="btn-step" data-step-target="ruby" data-step="1" aria-label="Increase Ruby">+</button>
+            </div>
+          </div>
+
+          <div class="valuable-card">
+            <div class="valuable-label-row">
+              <span class="valuable-name" data-i18n="Silver Necklace (30 coins)">Silver Necklace (30 coins)</span>
+              <span class="valuable-rate">30 🪙</span>
+            </div>
+            <div class="valuable-input-wrap">
+              <button type="button" class="btn-step" data-step-target="silver-necklace" data-step="-1" aria-label="Decrease Silver Necklace">−</button>
+              <input type="number" id="input-silver-necklace" min="0" step="1" value="0" aria-label="Silver Necklace count">
+              <button type="button" class="btn-step" data-step-target="silver-necklace" data-step="1" aria-label="Increase Silver Necklace">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="appraisal-summary" role="region" aria-label="Appraisal totals">
+          <div class="summary-stat stat-primary">
+            <span class="stat-label" data-i18n="Total appraisal">Total appraisal</span>
+            <span class="stat-value" id="summary-total-coins">0 🪙</span>
+          </div>
+          <div class="summary-stat">
+            <span class="stat-label" data-i18n="From valuables">From valuables</span>
+            <span class="stat-value" id="summary-valuables-coins">0 🪙</span>
+          </div>
+          <div class="summary-stat">
+            <span class="stat-label" data-i18n="Affordable">Affordable</span>
+            <span class="stat-value" id="summary-affordable-count">0 items</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="traders-section" aria-label="Merchant inventories">
+        <nav class="trader-tabs" role="tablist" aria-label="Select merchant">
+          <button type="button" role="tab" id="tab-haldor" class="trader-tab is-active" aria-selected="true" aria-controls="panel-trader" data-trader="haldor">
+            <span class="tab-title">Haldor</span>
+            <span class="tab-badge badge-forest">Black Forest</span>
+          </button>
+          <button type="button" role="tab" id="tab-hildir" class="trader-tab" aria-selected="false" aria-controls="panel-trader" data-trader="hildir">
+            <span class="tab-title">Hildir</span>
+            <span class="tab-badge badge-meadows">Meadows</span>
+          </button>
+          <button type="button" role="tab" id="tab-bog-witch" class="trader-tab" aria-selected="false" aria-controls="panel-trader" data-trader="bog-witch">
+            <span class="tab-title">The Bog Witch</span>
+            <span class="tab-badge badge-swamp">Swamp</span>
+          </button>
+        </nav>
+
+        <div id="panel-trader" class="trader-panel" role="tabpanel" aria-labelledby="tab-haldor">
+          <header class="trader-banner">
+            <div class="banner-top">
+              <div>
+                <h2 id="trader-name" class="trader-title">Haldor</h2>
+                <p id="trader-subtitle" class="trader-role">The Traveling Merchant</p>
+              </div>
+              <span id="trader-biome-tag" class="trader-biome-tag">Black Forest</span>
+            </div>
+            <p id="trader-desc" class="trader-description"></p>
+            <div class="trader-tip">
+              <strong data-i18n="How to find:">How to find:</strong>
+              <span id="trader-map-tip"></span>
+            </div>
+          </header>
+
+          <div id="goods-grid" class="goods-grid" role="region" aria-label="Merchandise items"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p data-i18n="Fan project, not affiliated with Iron Gate. Data: Valheim Wiki (CC BY-SA 4.0).">Fan project, not affiliated with Iron Gate. Data: Valheim Wiki (CC BY-SA 4.0).</p>
+      <p class="support">
+        <span>
+          <strong data-i18n="Free, ad-free and made in my spare time.">Free, ad-free and made in my spare time.</strong>
+          <span data-i18n="If it helped your run, you can buy me a coffee.">If it helped your run, you can buy me a coffee.</span>
+        </span>
+        <a href="https://ko-fi.com/N2A528ACE3" target="_blank" rel="noopener noreferrer">
+          <img src="/support/kofi.png" width="143" height="36" loading="lazy" alt="Buy Me a Coffee at ko-fi.com" data-i18n-attr="alt:Buy Me a Coffee at ko-fi.com">
+        </a>
+      </p>
+    </footer>
+  </div>
+  <p id="notice" class="notice" role="status" aria-live="polite"></p>
+</body>
+</html>
