@@ -91,6 +91,13 @@ export const PAGES = [
     title: 'Items Compendium — Valheim Companion',
     description: 'Materials, monster drops, trophies and treasures across Valheim — where to find them and everything they are used to craft.',
   },
+  {
+    filePath: path.join(REPO_ROOT, 'apps', 'traders', 'index.html'),
+    section: 'traders',
+    path: '/traders/',
+    title: 'Trader Ledger — Valheim Companion',
+    description: 'Merchandise catalog, unlock requirements, and treasure appraisal for Haldor, Hildir & The Bog Witch.',
+  },
 ];
 
 function escapeHtml(str) {

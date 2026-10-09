@@ -8,6 +8,11 @@
       desc: 'Materials, monster drops, trophies and treasures across Valheim — where to find them and everything they craft.',
       bg: '../../bestiary/img/biomes/black-forest.png',
     },
+    traders: {
+      title: 'TRADER LEDGER', sub: 'Valheim Companion',
+      desc: 'Merchandise catalog, unlock requirements, and treasure appraisal for Haldor, Hildir & The Bog Witch.',
+      bg: '../../bestiary/img/biomes/black-forest.png',
+    },
     expedition: {
       title: 'EXPEDITION', sub: 'Valheim Companion',
       desc: 'Prepare for the next boss and the raids that come after it — weapons, defenses, food, meads and the full packing list.',

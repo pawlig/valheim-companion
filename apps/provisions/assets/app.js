@@ -200,6 +200,12 @@
         });
         node.append(rec);
       }
+    } else if (['love-potion', 'anti-sting-concoction', 'lightfoot-mead', 'tonic-of-ratatosk', 'draught-of-vananidir', 'brew-of-animal-whispers'].includes(mead.id)) {
+      const traderP = el('p', 'details');
+      const traderLink = el('a', 'item-link', 'The Bog Witch');
+      traderLink.href = `/traders/#trader=bog-witch&item=${encodeURIComponent(mead.id)}`;
+      traderP.append(t('Sold by: ') || 'Sold by: ', traderLink);
+      node.append(traderP);
     } else node.append(el('p', 'hint', t('No crafting recipe in the data.')));
     const selected = state.meads.some(line => line.id === mead.id);
     const add = button(t(selected ? 'Selected' : 'Add mead'), () => addMead(mead), 'add-item');
@@ -296,6 +302,13 @@
         }
         const link = el('a', '', name({ name: source.text }) + (source.biomes?.length ? ' · ' + source.biomes.map(id => name(byId(data.biomes, id))).join(', ') : ''));
         link.href = '/bestiary/#c=' + encodeURIComponent(source.creatureId);
+        container.append(link);
+      } else if (source.kind === 'npc' || /witch|haldor|hildir/i.test(source.text)) {
+        let traderSlug = 'bog-witch';
+        if (/haldor/i.test(source.text)) traderSlug = 'haldor';
+        else if (/hildir/i.test(source.text)) traderSlug = 'hildir';
+        const link = el('a', '', name({ name: source.text }));
+        link.href = `/traders/#trader=${traderSlug}&item=${encodeURIComponent(item?.id || '')}`;
         container.append(link);
       } else container.append(el('span', 'hint', source.text.replace(/^\*\s*/, '')));
     }

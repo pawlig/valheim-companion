@@ -193,6 +193,18 @@ body {
   background-image: linear-gradient(180deg, rgba(15,18,22,.25), rgba(15,18,22,.95)), url('/bestiary/img/biomes/mountain.png');
 }
 
+.card-items {
+  background-image:
+    linear-gradient(rgba(24, 29, 35, 0.82), rgba(24, 29, 35, 0.94)),
+    url('bestiary/img/biomes/mistlands.png');
+}
+
+.card-traders {
+  background-image:
+    linear-gradient(rgba(24, 29, 35, 0.82), rgba(24, 29, 35, 0.94)),
+    url('bestiary/img/biomes/black-forest.png');
+}
+
 .card-featured {
   grid-column: 1 / -1;
   min-height: 0;

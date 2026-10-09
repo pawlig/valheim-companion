@@ -84,12 +84,12 @@ test('search index builds valid bundle under 150 kB with required fields', () =>
   assert.equal(sandbox.VC_SEARCH_INDEX.length, items.length);
 
   for (const item of items) {
-    assert.ok(['creature', 'weapon', 'armor', 'material', 'food', 'comfort'].includes(item.type));
+    assert.ok(['creature', 'weapon', 'armor', 'material', 'food', 'comfort', 'trader'].includes(item.type));
     assert.ok(typeof item.name === 'string' && item.name.length > 0);
     assert.ok(typeof item.names === 'object' && item.names !== null);
     assert.ok(item.biome === null || typeof item.biome === 'string');
     assert.ok(typeof item.order === 'number');
-    assert.ok(typeof item.url === 'string' && (item.url.startsWith('/bestiary/') || item.url.startsWith('/smithy/') || item.url.startsWith('/provisions/') || item.url.startsWith('/comfort/') || item.url.startsWith('/items/')));
+    assert.ok(typeof item.url === 'string' && (item.url.startsWith('/bestiary/') || item.url.startsWith('/smithy/') || item.url.startsWith('/provisions/') || item.url.startsWith('/comfort/') || item.url.startsWith('/items/') || item.url.startsWith('/traders/')));
     assert.ok(item.image === null || typeof item.image === 'string');
   }
 });
@@ -245,3 +245,22 @@ test('every Smithy item search link targets visible gear or an item', () => {
     assert.ok(visibleWeapons.has(decodeURIComponent(item.url.split('=')[1])), item.url);
   }
 });
+
+test('cross-section search index includes Haldor, Hildir and The Bog Witch', () => {
+  const index = buildSearchIndex();
+  const haldor = index.find(item => item.name === 'Haldor');
+  assert.ok(haldor, 'Haldor in search index');
+  assert.equal(haldor.url, '/traders/#trader=haldor');
+  assert.equal(haldor.type, 'trader');
+
+  const hildir = index.find(item => item.name === 'Hildir');
+  assert.ok(hildir, 'Hildir in search index');
+  assert.equal(hildir.url, '/traders/#trader=hildir');
+  assert.equal(hildir.type, 'trader');
+
+  const bogWitch = index.find(item => item.name === 'The Bog Witch');
+  assert.ok(bogWitch, 'The Bog Witch in search index');
+  assert.equal(bogWitch.url, '/traders/#trader=bog-witch');
+  assert.equal(bogWitch.type, 'trader');
+});
+

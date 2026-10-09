@@ -200,7 +200,15 @@
       if (hasTraders) {
         sourcesSection.append(el('p', 'modal-text-item', t('Sold by:')));
         for (const tr of item.sources.traders) {
-          sourcesSection.append(el('p', 'modal-text-item', tr.text || String(tr)));
+          const traderName = tr.text || String(tr);
+          let traderSlug = 'haldor';
+          if (/hildir/i.test(traderName)) traderSlug = 'hildir';
+          else if (/witch/i.test(traderName)) traderSlug = 'bog-witch';
+          const p = el('p', 'modal-text-item');
+          const a = el('a', 'item-link', traderName);
+          a.href = `/traders/#trader=${traderSlug}&item=${encodeURIComponent(item.id)}`;
+          p.append(a);
+          sourcesSection.append(p);
         }
       }
     }
