@@ -226,6 +226,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 16px;
+  min-width: 0;
 }
 
 .item-card {
@@ -238,6 +239,8 @@ h1 {
   transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
   cursor: pointer;
   position: relative;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .item-card:hover {
@@ -638,7 +641,7 @@ h1 {
   }
 
   .items-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .item-modal {

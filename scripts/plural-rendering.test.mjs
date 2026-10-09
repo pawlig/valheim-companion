@@ -16,6 +16,7 @@ const paths = [
   'apps/progress/locales/messages.json', 'apps/provisions/locales/messages.json',
   'apps/comfort/locales/messages.json',
   'apps/expedition/locales/messages.json',
+  'apps/items/locales/messages.json',
   'apps/damage-calculator/src/locales/messages.json', 'apps/signs/lib/locales/messages.json',
   'shared/progress/messages.json', 'shared/analytics/messages.json',
 ];
