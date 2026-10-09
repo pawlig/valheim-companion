@@ -129,3 +129,11 @@ summary { cursor: pointer; color: var(--gold); padding: 6px 0; }
 @media (prefers-reduced-motion: reduce) {
   .deep-link-highlight { animation: none; }
 }
+
+a.item-link {
+  color: var(--gold, #d9a441);
+  text-decoration: none;
+}
+a.item-link:hover {
+  text-decoration: underline;
+}

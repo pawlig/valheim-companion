@@ -1144,6 +1144,15 @@ body {
   line-height: 1.35;
 }
 
+.details-val a {
+  color: var(--accent-gold, #c8a86b);
+  text-decoration: none;
+}
+
+.details-val a:hover {
+  text-decoration: underline;
+}
+
 .trophy-val {
   display: flex;
   align-items: center;

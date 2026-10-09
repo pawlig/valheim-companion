@@ -1121,7 +1121,10 @@
             matPill.appendChild(icon);
           }
 
-          const label = el('span', null, mat.amount + '× ' + matName);
+          const label = el('span', null, mat.amount + '× ');
+          const matLink = el('a', 'item-link', matName);
+          matLink.href = `/items/#item=${encodeURIComponent(mat.item)}`;
+          label.appendChild(matLink);
           matPill.appendChild(label);
 
           if (itemData && itemData.teleportable === false) {
@@ -1489,7 +1492,10 @@
               matPill.appendChild(icon);
             }
 
-            const label = el('span', null, mat.amount + '× ' + (itemData ? entityName(itemData) : mat.item));
+            const label = el('span', null, mat.amount + '× ');
+            const matLink = el('a', 'item-link', itemData ? entityName(itemData) : mat.item);
+            matLink.href = `/items/#item=${encodeURIComponent(mat.item)}`;
+            label.appendChild(matLink);
             matPill.appendChild(label);
 
             if (itemData && itemData.teleportable === false) {
@@ -1828,9 +1834,10 @@
 
         const nameQty = el('div', 'material-name-qty');
         const qtySpan = el('span', 'material-qty', mat.amount + '×');
-        const nameSpan = el('span', 'material-name', mat.name);
+        const nameLink = el('a', 'material-name item-link', mat.name);
+        nameLink.href = `/items/#item=${encodeURIComponent(mat.item)}`;
         nameQty.appendChild(qtySpan);
-        nameQty.appendChild(nameSpan);
+        nameQty.appendChild(nameLink);
         left.appendChild(nameQty);
         row.appendChild(left);
 
