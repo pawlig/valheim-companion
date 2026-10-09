@@ -1,0 +1,551 @@
+// Build script for Trader Ledger dataset (VC-40).
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const DATA_DIR = path.join(ROOT, 'data');
+const APPS_TRADERS_DATA_DIR = path.join(ROOT, 'apps', 'traders', 'data');
+
+export const VALUABLES = [
+  {
+    id: 'amber',
+    name: 'Amber',
+    value: 5,
+    description: 'Petrified golden tree resin found in crypts, troll caves, and sunken chests. Redeemable for 5 coins.',
+    image: null,
+  },
+  {
+    id: 'amber-pearl',
+    name: 'Amber Pearl',
+    value: 10,
+    description: 'A polished, lustrous amber gemstone discovered in ancient burial sites. Redeemable for 10 coins.',
+    image: '../smithy/img/items/amber-pearl.png',
+  },
+  {
+    id: 'ruby',
+    name: 'Ruby',
+    value: 20,
+    description: 'A precious brilliant crimson stone found in crypt chests and sunken ruins. Redeemable for 20 coins.',
+    image: null,
+  },
+  {
+    id: 'silver-necklace',
+    name: 'Silver Necklace',
+    value: 30,
+    description: 'An ancient silver trinket buried with long-forgotten Viking nobility. Redeemable for 30 coins.',
+    image: null,
+  },
+];
+
+export const TRADERS = [
+  {
+    id: 'haldor',
+    name: 'Haldor',
+    biome: 'black-forest',
+    title: 'The Traveling Merchant',
+    description:
+      'A cheerful dwarven merchant camping in the Black Forest with his faithful lox, Halstein. Sheltered within a magical rune-inscribed ward where weapons cannot be drawn.',
+    mapIconTip:
+      'His location is revealed with a money bag icon on the map when you wander within 1500 meters of any of his possible spawning clearings.',
+    items: [
+      {
+        id: 'ymir-flesh',
+        name: 'Ymir Flesh',
+        price: 120,
+        description: 'Earthy primordial remains of the giant Ymir. Vital component for crafting the mighty hammer Iron Sledge and frost mace Frostner.',
+        unlockedBy: null,
+        image: '../smithy/img/items/ymir-flesh.png',
+        biome: 'black-forest',
+      },
+      {
+        id: 'megingjord',
+        name: 'Megingjörd',
+        price: 950,
+        description: 'An enchanted dwarven belt of strength. Wearing it increases your maximum carry capacity by 150 (from 300 to 450 weight).',
+        unlockedBy: null,
+        image: null,
+        biome: 'black-forest',
+      },
+      {
+        id: 'dverger-circlet',
+        name: 'Dvergr Circlet',
+        price: 620,
+        description: 'A glowing headband that projects a steady, focused beam of light in front of you, illuminating dark caverns, crypts, and night exploration.',
+        unlockedBy: null,
+        image: '../smithy/img/armor/dverger-circlet.png',
+        biome: 'black-forest',
+      },
+      {
+        id: 'fishing-rod',
+        name: 'Fishing Rod',
+        price: 350,
+        description: 'A sturdy hand-carved fishing rod. Equip in hotbar and use with bait near ocean or lake waters to catch nutritious fish.',
+        unlockedBy: null,
+        image: null,
+        biome: 'black-forest',
+      },
+      {
+        id: 'fishing-bait',
+        name: 'Fishing Bait (x50)',
+        price: 10,
+        description: 'A tin canister of 50 basic bait grubs for catching common fish in Meadows and Black Forest waters.',
+        unlockedBy: null,
+        image: null,
+        biome: 'black-forest',
+      },
+      {
+        id: 'yule-hat',
+        name: 'Yule Hat',
+        price: 100,
+        description: 'A traditional festive pointed cap trimmed with warm white fur, worn in honor of the midwinter Yule solstice.',
+        unlockedBy: null,
+        image: '../smithy/img/armor/yule-hat.png',
+        biome: 'black-forest',
+      },
+      {
+        id: 'thunderstone',
+        name: 'Thunderstone',
+        price: 50,
+        description: 'A crackling stone charged with Thor’s lightning. Essential component used to build the Obliterator for incinerating unwanted items.',
+        unlockedBy: {
+          type: 'boss',
+          id: 'the-elder',
+          name: 'The Elder',
+          text: 'Requires defeating The Elder',
+        },
+        image: null,
+        biome: 'black-forest',
+      },
+      {
+        id: 'egg',
+        name: 'Egg',
+        price: 1500,
+        description: 'A fertile chicken egg. Place near an indoor heat source sheltered from cold to hatch chicks and start domestic egg and feather production.',
+        unlockedBy: {
+          type: 'boss',
+          id: 'yagluth',
+          name: 'Yagluth',
+          text: 'Requires defeating Yagluth',
+        },
+        image: '../provisions/img/items/egg.png',
+        biome: 'plains',
+      },
+    ],
+  },
+  {
+    id: 'hildir',
+    name: 'Hildir',
+    biome: 'meadows',
+    title: 'The Wandering Sister',
+    description:
+      'Haldor’s adventurous sister who set up a camp in the peaceful Meadows with her two woolly lox. Her wagon was ambushed and pillaged by three dangerous minibosses; recover her stolen chests to unlock her full wardrobe.',
+    mapIconTip:
+      'Her camp appears on the map as a two-tusked shirt/hanger icon when you approach within 3000 to 5000 meters of her location in the Meadows.',
+    items: [
+      {
+        id: 'barber-kit',
+        name: 'Barber Kit',
+        price: 250,
+        description: 'Fine copper scissors and combs used to construct the Barber Station in your home, allowing you to freely change hair and beard styles.',
+        unlockedBy: null,
+        image: '../comfort/img/items/barber-kit.png',
+        biome: 'meadows',
+      },
+      {
+        id: 'iron-pit',
+        name: 'Iron Pit',
+        price: 250,
+        description: 'A heavy wrought-iron hanging hearth pit providing high warmth and comfort bonus without requiring stone foundations.',
+        unlockedBy: null,
+        image: '../comfort/img/items/iron-pit.png',
+        biome: 'meadows',
+      },
+      {
+        id: 'fireworks',
+        name: 'Fireworks',
+        price: 100,
+        description: 'Pyrotechnic sky rockets packed with sulfur and saltpeter. Launch them into the twilight sky for festive celebrations.',
+        unlockedBy: null,
+        image: null,
+        biome: 'meadows',
+      },
+      {
+        id: 'fur-cap-grey',
+        name: 'Fur Cap (Grey)',
+        price: 100,
+        description: 'A soft, thick winter cap made from tailored northern wolf pelt.',
+        unlockedBy: {
+          type: 'chest',
+          chest: 'brass',
+          boss: 'brenna',
+          bossName: 'Brenna',
+          location: 'Smouldering Tomb',
+          text: "Requires returning Hildir's brass chest (Brenna)",
+        },
+        image: '../smithy/img/armor/fur-cap-grey.png',
+        biome: 'black-forest',
+      },
+      {
+        id: 'fur-cap-brown',
+        name: 'Fur Cap (Brown)',
+        price: 100,
+        description: 'A warm brown-trimmed fur cap designed to withstand cold wilderness wind.',
+        unlockedBy: {
+          type: 'chest',
+          chest: 'brass',
+          boss: 'brenna',
+          bossName: 'Brenna',
+          location: 'Smouldering Tomb',
+          text: "Requires returning Hildir's brass chest (Brenna)",
+        },
+        image: '../smithy/img/armor/fur-cap-brown.png',
+        biome: 'black-forest',
+      },
+      {
+        id: 'harvest-dress',
+        name: 'Harvest Dress',
+        price: 100,
+        description: 'A beautifully dyed linen dress tailored for ceremonial harvest feasts and midsummer dancing.',
+        unlockedBy: {
+          type: 'chest',
+          chest: 'brass',
+          boss: 'brenna',
+          bossName: 'Brenna',
+          location: 'Smouldering Tomb',
+          text: "Requires returning Hildir's brass chest (Brenna)",
+        },
+        image: '../smithy/img/armor/harvest-dress.png',
+        biome: 'black-forest',
+      },
+      {
+        id: 'harvest-tunic',
+        name: 'Harvest Tunic',
+        price: 100,
+        description: 'A clean embroidered tunic woven from spun flax, celebrated during grain harvest festivals.',
+        unlockedBy: {
+          type: 'chest',
+          chest: 'brass',
+          boss: 'brenna',
+          bossName: 'Brenna',
+          location: 'Smouldering Tomb',
+          text: "Requires returning Hildir's brass chest (Brenna)",
+        },
+        image: '../smithy/img/armor/harvest-tunic.png',
+        biome: 'black-forest',
+      },
+      {
+        id: 'cape-tunic',
+        name: 'Cape Tunic',
+        price: 100,
+        description: 'A dignified traveling tunic tailored with an attached silk-lined shoulder drape.',
+        unlockedBy: {
+          type: 'chest',
+          chest: 'silver',
+          boss: 'geirrhafa',
+          bossName: 'Geirrhafa',
+          location: 'Howling Cavern',
+          text: "Requires returning Hildir's silver chest (Geirrhafa)",
+        },
+        image: '../smithy/img/armor/cape-tunic-blue.png',
+        biome: 'mountain',
+      },
+      {
+        id: 'extravagant-cap',
+        name: 'Extravagant Cap',
+        price: 100,
+        description: 'A showy, broad-brimmed cap adorned with pheasant plumage, fit for high chieftains.',
+        unlockedBy: {
+          type: 'chest',
+          chest: 'silver',
+          boss: 'geirrhafa',
+          bossName: 'Geirrhafa',
+          location: 'Howling Cavern',
+          text: "Requires returning Hildir's silver chest (Geirrhafa)",
+        },
+        image: '../smithy/img/armor/extravagant-cap-green.png',
+        biome: 'mountain',
+      },
+      {
+        id: 'beaded-dress',
+        name: 'Beaded Dress',
+        price: 100,
+        description: 'A lavish gala gown decorated with hundreds of polished glass and amber beads along the hem.',
+        unlockedBy: {
+          type: 'chest',
+          chest: 'bronze',
+          boss: 'zil-thungr',
+          bossName: 'Zil & Thungr',
+          location: 'Sealed Tower',
+          text: "Requires returning Hildir's bronze chest (Zil & Thungr)",
+        },
+        image: '../smithy/img/armor/beaded-dress-blue.png',
+        biome: 'plains',
+      },
+      {
+        id: 'beaded-tunic',
+        name: 'Beaded Tunic',
+        price: 100,
+        description: 'A royal ceremonial tunic lined with intricate metallic beadwork and braided silk.',
+        unlockedBy: {
+          type: 'chest',
+          chest: 'bronze',
+          boss: 'zil-thungr',
+          bossName: 'Zil & Thungr',
+          location: 'Sealed Tower',
+          text: "Requires returning Hildir's bronze chest (Zil & Thungr)",
+        },
+        image: '../smithy/img/armor/beaded-tunic-blue.png',
+        biome: 'plains',
+      },
+    ],
+  },
+  {
+    id: 'bog-witch',
+    name: 'The Bog Witch',
+    biome: 'swamp',
+    title: 'The Swampland Alchemist',
+    description:
+      'A mysterious, cackling crone residing inside an enchanted wooden hut deep in the misty Swamps. She concocts esoteric elixirs, potions, and sells rare culinary seasonings for the grandest feasts.',
+    mapIconTip:
+      'Her location is marked on the map with a glowing bubbling cauldron icon when you travel within 1500 meters of her swamp clearing.',
+    items: [
+      {
+        id: 'love-potion',
+        name: 'Love Potion (x5)',
+        price: 150,
+        description: 'A sweet, heady potion that sparks intense romantic devotion when thrown at tameable boars, wolves, or lox, accelerating breeding.',
+        unlockedBy: null,
+        image: '../provisions/img/meads/love-potion.png',
+        biome: 'swamp',
+      },
+      {
+        id: 'anti-sting-concoction',
+        name: 'Anti-Sting Concoction',
+        price: 100,
+        description: 'A pungent repellent that wraps the drinker in an acrid musk, preventing Deathsquito stings and reducing insect aggression.',
+        unlockedBy: null,
+        image: '../provisions/img/meads/anti-sting-concoction.png',
+        biome: 'swamp',
+      },
+      {
+        id: 'lightfoot-mead',
+        name: 'Lightfoot Mead',
+        price: 100,
+        description: 'A fizzy, featherlight draught that reduces jump and sprint stamina drain by 25% for 5 minutes.',
+        unlockedBy: null,
+        image: '../provisions/img/meads/lightfoot-mead.png',
+        biome: 'swamp',
+      },
+      {
+        id: 'tonic-of-ratatosk',
+        name: 'Tonic of Ratatosk',
+        price: 100,
+        description: 'Named after the legendary squirrel of Yggdrasil; gives increased tree-cutting efficiency, jumping power, and fall protection.',
+        unlockedBy: null,
+        image: '../provisions/img/meads/tonic-of-ratatosk.png',
+        biome: 'swamp',
+      },
+      {
+        id: 'draught-of-vananidir',
+        name: 'Draught of Vananidir',
+        price: 100,
+        description: 'An aquatic tincture granting buoyant swimming velocity and drastically decreasing swimming stamina consumption.',
+        unlockedBy: null,
+        image: '../provisions/img/meads/draught-of-vananidir.png',
+        biome: 'swamp',
+      },
+      {
+        id: 'brew-of-animal-whispers',
+        name: 'Brew of Animal Whispers',
+        price: 100,
+        description: 'Imbues the consumer with a soothing animal aura that prevents wild beasts from alerting or fleeing from your presence.',
+        unlockedBy: null,
+        image: '../provisions/img/meads/brew-of-animal-whispers.png',
+        biome: 'swamp',
+      },
+      {
+        id: 'fresh-seaweed',
+        name: 'Fresh Seaweed',
+        price: 30,
+        description: 'Crisp saltwater kelp fronds packed with iodine and ocean salt, essential for rolling sushi and seasoning fish platters.',
+        unlockedBy: null,
+        image: '../provisions/img/items/fresh-seaweed.png',
+        biome: 'swamp',
+      },
+      {
+        id: 'cured-squirrel-hamstring',
+        name: 'Cured Squirrel Hamstring',
+        price: 45,
+        description: 'Tough smoked sinew dried over bog smoke. An alchemical thickening agent used in specialized restorative concoctions.',
+        unlockedBy: null,
+        image: '../provisions/img/items/cured-squirrel-hamstring.png',
+        biome: 'swamp',
+      },
+      {
+        id: 'powdered-dragon-eggshells',
+        name: 'Powdered Dragon Eggshells',
+        price: 60,
+        description: 'Glittering crushed calcium remnants of ancient wyrm eggs, radiating sub-zero frost energy.',
+        unlockedBy: null,
+        image: '../provisions/img/items/powdered-dragon-eggshells.png',
+        biome: 'swamp',
+      },
+      {
+        id: 'pungent-pebbles',
+        name: 'Pungent Pebbles',
+        price: 40,
+        description: 'Small volcanic sulfur pebbles exuding sharp mineral vapors, pulverized for caustic alchemy.',
+        unlockedBy: null,
+        image: '../provisions/img/items/pungent-pebbles.png',
+        biome: 'swamp',
+      },
+      {
+        id: 'seafarer-s-herbs',
+        name: "Seafarer's Herbs",
+        price: 40,
+        description: 'Fragrant wild coastal thyme and rosemary gathered from windswept sea cliffs.',
+        unlockedBy: null,
+        image: '../provisions/img/items/seafarer-s-herbs.png',
+        biome: 'swamp',
+      },
+      {
+        id: 'woodland-herb-blend',
+        name: 'Woodland Herb Blend',
+        price: 40,
+        description: 'Earthy pine needles, forest mint, and crushed juniper berries that add deep flavor to roasted wild venison.',
+        unlockedBy: {
+          type: 'boss',
+          id: 'the-elder',
+          name: 'The Elder',
+          text: 'Requires defeating The Elder',
+        },
+        image: '../provisions/img/items/woodland-herb-blend.png',
+        biome: 'swamp',
+      },
+      {
+        id: 'fragrant-bundle',
+        name: 'Fragrant Bundle',
+        price: 60,
+        description: 'A dried bouquet of aromatic high-altitude blossoms that sweeten fermented mead bases.',
+        unlockedBy: {
+          type: 'boss',
+          id: 'moder',
+          name: 'Moder',
+          text: 'Requires defeating Moder',
+        },
+        image: '../provisions/img/items/fragrant-bundle.png',
+        biome: 'plains',
+      },
+      {
+        id: 'mountain-peak-pepper-powder',
+        name: 'Mountain Peak Pepper Powder',
+        price: 70,
+        description: 'Pungent black peppercorns gathered from frozen summits, providing piquant warmth against winter cold.',
+        unlockedBy: {
+          type: 'boss',
+          id: 'moder',
+          name: 'Moder',
+          text: 'Requires defeating Moder',
+        },
+        image: '../provisions/img/items/mountain-peak-pepper-powder.png',
+        biome: 'plains',
+      },
+      {
+        id: 'toadstool',
+        name: 'Toadstool',
+        price: 50,
+        description: 'Potent speckled forest fungus harvested under full moons for exotic feast stews.',
+        unlockedBy: {
+          type: 'boss',
+          id: 'moder',
+          name: 'Moder',
+          text: 'Requires defeating Moder',
+        },
+        image: '../provisions/img/items/toadstool.png',
+        biome: 'plains',
+      },
+      {
+        id: 'grasslands-herbalist-harvest',
+        name: 'Grasslands Herbalist Harvest',
+        price: 80,
+        description: 'Golden steppe marigolds and barley blossoms harvested by roaming Plains nomads.',
+        unlockedBy: {
+          type: 'boss',
+          id: 'yagluth',
+          name: 'Yagluth',
+          text: 'Requires defeating Yagluth',
+        },
+        image: '../provisions/img/items/grasslands-herbalist-harvest.png',
+        biome: 'mistlands',
+      },
+      {
+        id: 'herbs-of-the-hidden-hills',
+        name: 'Herbs of the Hidden Hills',
+        price: 90,
+        description: 'Luminescent spores and cave lichens culled from dark Mistlands valleys.',
+        unlockedBy: {
+          type: 'boss',
+          id: 'the-queen',
+          name: 'The Queen',
+          text: 'Requires defeating The Queen',
+        },
+        image: '../provisions/img/items/herbs-of-the-hidden-hills.png',
+        biome: 'ashlands',
+      },
+      {
+        id: 'fiery-spice-powder',
+        name: 'Fiery Spice Powder',
+        price: 100,
+        description: 'Scorching red pepper powder ground with cinder flakes, adding fiery heat to Ashlands pies.',
+        unlockedBy: {
+          type: 'boss',
+          id: 'fader',
+          name: 'Fader',
+          text: 'Requires defeating Fader',
+        },
+        image: '../provisions/img/items/fiery-spice-powder.png',
+        biome: 'deep-north',
+      },
+      {
+        id: 'seasoning-of-the-gourd',
+        name: 'Seasoning of the Gourd',
+        price: 120,
+        description: 'Mystical fermented squash seed spice from the frozen north, reserved for the ultimate banquets.',
+        unlockedBy: {
+          type: 'boss',
+          id: 'kall-fimbulbringer',
+          name: 'Kall Fimbulbringer',
+          text: 'Requires defeating Kall Fimbulbringer',
+        },
+        image: '../provisions/img/items/seasoning-of-the-gourd.png',
+        biome: 'deep-north',
+      },
+    ],
+  },
+];
+
+export function buildTradersData() {
+  const outputData = {
+    traders: TRADERS,
+    valuables: VALUABLES,
+  };
+
+  // 1. data/traders.json
+  mkdirSync(DATA_DIR, { recursive: true });
+  const tradersJsonPath = path.join(DATA_DIR, 'traders.json');
+  writeFileSync(tradersJsonPath, JSON.stringify(outputData, null, 2) + '\n', 'utf8');
+
+  // 2. apps/traders/data/data.js
+  mkdirSync(APPS_TRADERS_DATA_DIR, { recursive: true });
+  const clientBundlePath = path.join(APPS_TRADERS_DATA_DIR, 'data.js');
+  const clientBundleContent = `globalThis.VC_TRADERS_DATA = ${JSON.stringify(outputData, null, 2)};\n`;
+  writeFileSync(clientBundlePath, clientBundleContent, 'utf8');
+
+  console.log(`Successfully built Trader Ledger: ${TRADERS.length} traders, ${VALUABLES.length} valuables.`);
+  return outputData;
+}
+
+if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {
+  buildTradersData();
+}
