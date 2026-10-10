@@ -1,0 +1,6181 @@
+{
+ "totals": {
+  "items": 244,
+  "quals": 872,
+  "itemsEarly": 97,
+  "qualitiesEarly": 103,
+  "itemsUnreachable": 71,
+  "qualitiesUnreachable": 76,
+  "q1Late": 3
+ },
+ "byKind": {
+  "weapon": {
+   "items": 122,
+   "quals": 485,
+   "early": 59,
+   "earlyQ": 65,
+   "unreach": 58,
+   "unreachQ": 58
+  },
+  "tool": {
+   "items": 4,
+   "quals": 13,
+   "early": 1,
+   "earlyQ": 1,
+   "unreach": 0,
+   "unreachQ": 0
+  },
+  "shield": {
+   "items": 19,
+   "quals": 57,
+   "early": 1,
+   "earlyQ": 1,
+   "unreach": 0,
+   "unreachQ": 0
+  },
+  "ammo": {
+   "items": 23,
+   "quals": 23,
+   "early": 3,
+   "earlyQ": 3,
+   "unreach": 0,
+   "unreachQ": 0
+  },
+  "armor": {
+   "items": 76,
+   "quals": 294,
+   "early": 33,
+   "earlyQ": 33,
+   "unreach": 13,
+   "unreachQ": 18
+  }
+ },
+ "earlyByStation": {
+  "Workbench": 24,
+  "Black Forge": 55,
+  "Forge": 10,
+  "Galdr Table": 14
+ },
+ "shownToActual": {
+  "ocean→mountain": 1,
+  "swamp→mistlands": 4,
+  "swamp→ashlands": 1,
+  "ashlands→deep-north": 41,
+  "plains→mistlands": 4,
+  "black-forest→mistlands": 1,
+  "black-forest→mountain": 15,
+  "black-forest→swamp": 10,
+  "mistlands→ashlands": 17,
+  "meadows→black-forest": 5,
+  "plains→ashlands": 1,
+  "swamp→mountain": 3
+ },
+ "items": [
+  {
+   "kind": "weapon",
+   "item": "Abyssal Razor",
+   "id": "abyssal-razor",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "ocean",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "ocean",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "ocean",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "ocean",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Arbalest",
+   "id": "arbalest",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "swamp",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Ash Fang",
+   "id": "ash-fang",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Berserkir Axes",
+   "id": "berserkir-axes",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "ammo",
+   "item": "Black Metal Bolt",
+   "id": "black-metal-bolt",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "plains",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Bleeding Berserkir Axes",
+   "id": "bleeding-berserkir-axes",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Blood Fang",
+   "id": "blood-fang",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Bloodgeon",
+   "id": "bloodgeon",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "ammo",
+   "item": "Bone Bolt",
+   "id": "bone-bolt",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "shield",
+   "item": "Bone Tower Shield",
+   "id": "bone-tower-shield",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Bronze Atgeir",
+   "id": "bronze-atgeir",
+   "station": "Forge",
+   "effectiveStation": "Forge",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Bronze Axe",
+   "id": "bronze-axe",
+   "station": "Forge",
+   "effectiveStation": "Forge",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Bronze Mace",
+   "id": "bronze-mace",
+   "station": "Forge",
+   "effectiveStation": "Forge",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "tool",
+   "item": "Bronze Pickaxe",
+   "id": "bronze-pickaxe",
+   "station": "Forge",
+   "effectiveStation": "Forge",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Bronze Spear",
+   "id": "bronze-spear",
+   "station": "Forge",
+   "effectiveStation": "Forge",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Bronze Sword",
+   "id": "bronze-sword",
+   "station": "Forge",
+   "effectiveStation": "Forge",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Brutal Slayer",
+   "id": "brutal-slayer",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Carapace Spear",
+   "id": "carapace-spear",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "mistlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Copper Knife",
+   "id": "copper-knife",
+   "station": "Forge",
+   "effectiveStation": "Forge",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Crude Bow",
+   "id": "crude-bow",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "meadows",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Demolisher",
+   "id": "demolisher",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "mistlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Dundr",
+   "id": "dundr",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Dyrnwyn",
+   "id": "dyrnwyn",
+   "station": "Black forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Early Axes",
+   "id": "early-axes",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "meadows",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Flametal Mace",
+   "id": "flametal-mace",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Flint Axe",
+   "id": "flint-axe",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "meadows",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Flint Knife",
+   "id": "flint-knife",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "meadows",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Flint Spear",
+   "id": "flint-spear",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "meadows",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Frostfire Atgeir",
+   "id": "frostfire-atgeir",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Frostfire Axe",
+   "id": "frostfire-axe",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Frostfire Bow",
+   "id": "frostfire-bow",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Frostfire Crossbow",
+   "id": "frostfire-crossbow",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Frostfire Dagger",
+   "id": "frostfire-dagger",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Frostfire Greataxe",
+   "id": "frostfire-greataxe",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Frostfire Greatsword",
+   "id": "frostfire-greatsword",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Frostfire Knucklechains",
+   "id": "frostfire-knucklechains",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Frostfire Mace",
+   "id": "frostfire-mace",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Frostfire Sledge",
+   "id": "frostfire-sledge",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Frostfire Spear",
+   "id": "frostfire-spear",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Frostfire Sword",
+   "id": "frostfire-sword",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Himminafl",
+   "id": "himminafl",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "mistlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "ammo",
+   "item": "Iron Bolt",
+   "id": "iron-bolt",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "swamp",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Jotun Bane",
+   "id": "jotun-bane",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "mistlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Klossen",
+   "id": "klossen",
+   "station": "Black forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Krom",
+   "id": "krom",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "mistlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Mistwalker",
+   "id": "mistwalker",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "mistlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Nidhögg",
+   "id": "nidhogg",
+   "station": "Black forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Nidhögg the Bleeding",
+   "id": "nidhogg-the-bleeding",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Nidhögg the Primal",
+   "id": "nidhogg-the-primal",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Nidhögg the Thundering",
+   "id": "nidhogg-the-thundering",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Nord Atgeir",
+   "id": "nord-atgeir",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Nord Axe",
+   "id": "nord-axe",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Nord Bow",
+   "id": "nord-bow",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Nord Crossbow",
+   "id": "nord-crossbow",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Nord Dagger",
+   "id": "nord-dagger",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Nord Greataxe",
+   "id": "nord-greataxe",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Nord Greatsword",
+   "id": "nord-greatsword",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Nord Knucklechains",
+   "id": "nord-knucklechains",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Nord Mace",
+   "id": "nord-mace",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Nord Sledge",
+   "id": "nord-sledge",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Nord Spear",
+   "id": "nord-spear",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Nord Sword",
+   "id": "nord-sword",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Paws of the Bear",
+   "id": "paws-of-the-bear",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Primal Berserkir Axes",
+   "id": "primal-berserkir-axes",
+   "station": "Black forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Primal Slayer",
+   "id": "primal-slayer",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Ripper",
+   "id": "ripper",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Root Fang",
+   "id": "root-fang",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Root Ripper",
+   "id": "root-ripper",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Scourging Slayer",
+   "id": "scourging-slayer",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Skoll and Hati",
+   "id": "skoll-and-hati",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "plains",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Skull Splittur",
+   "id": "skull-splittur",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "mistlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Slayer",
+   "id": "slayer",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Spinesnap",
+   "id": "spinesnap",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "mistlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Splitnir",
+   "id": "splitnir",
+   "station": "Black forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Splitnir the Bleeding",
+   "id": "splitnir-the-bleeding",
+   "station": "Black forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Splitnir the Primal",
+   "id": "splitnir-the-primal",
+   "station": "Black forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Splitnir the Storming",
+   "id": "splitnir-the-storming",
+   "station": "Black forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Staff of Embers",
+   "id": "staff-of-embers",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "mistlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Staff of Fracturing",
+   "id": "staff-of-fracturing",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Staff of Frost",
+   "id": "staff-of-frost",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "mistlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Staff of the Wild",
+   "id": "staff-of-the-wild",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Stagbreaker",
+   "id": "stagbreaker",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Storm Fang",
+   "id": "storm-fang",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Storm Ripper",
+   "id": "storm-ripper",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Storm Star",
+   "id": "storm-star",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Thunderblood Atgeir",
+   "id": "thunderblood-atgeir",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Thunderblood Axe",
+   "id": "thunderblood-axe",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Thunderblood Bow",
+   "id": "thunderblood-bow",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Thunderblood Crossbow",
+   "id": "thunderblood-crossbow",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Thunderblood Dagger",
+   "id": "thunderblood-dagger",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Thunderblood Greataxe",
+   "id": "thunderblood-greataxe",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Thunderblood Greatsword",
+   "id": "thunderblood-greatsword",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Thunderblood Knucklechains",
+   "id": "thunderblood-knucklechains",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Thunderblood Mace",
+   "id": "thunderblood-mace",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Thunderblood Sledge",
+   "id": "thunderblood-sledge",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Thunderblood Spear",
+   "id": "thunderblood-spear",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Thunderblood Sword",
+   "id": "thunderblood-sword",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Thundering Berserkir Axes",
+   "id": "thundering-berserkir-axes",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Trollstav",
+   "id": "trollstav",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Wound Ripper",
+   "id": "wound-ripper",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Ashen Cape / Ashen cape",
+   "id": "ashen-cape",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Ask Set / Hood of Ask",
+   "id": "hood-of-ask",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Ask Set / Breastplate of Ask",
+   "id": "breastplate-of-ask",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Ask Set / Trousers of Ask",
+   "id": "trousers-of-ask",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Asksvin Cloak / Asksvin cloak",
+   "id": "asksvin-cloak",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Bear Set / Headdress of the Bear",
+   "id": "headdress-of-the-bear",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Bear Set / Patterns of the Bear",
+   "id": "patterns-of-the-bear",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Bear Set / Loincloth of the Bear",
+   "id": "loincloth-of-the-bear",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Bronze Armor / Bronze Helmet",
+   "id": "bronze-helmet",
+   "station": "Forge",
+   "effectiveStation": "Forge",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Bronze Armor / Bronze Plate Tunic",
+   "id": "bronze-plate-tunic",
+   "station": "Forge",
+   "effectiveStation": "Forge",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Bronze Armor / Bronze Plate Leggings",
+   "id": "bronze-plate-leggings",
+   "station": "Forge",
+   "effectiveStation": "Forge",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Caller Set / Headdress of the Caller",
+   "id": "headdress-of-the-caller",
+   "station": "Frost Foundry",
+   "effectiveStation": "Galdr Table",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Caller Set / Robes of the Caller",
+   "id": "robes-of-the-caller",
+   "station": "Frost Foundry",
+   "effectiveStation": "Galdr Table",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Caller Set / Trousers of the Caller",
+   "id": "trousers-of-the-caller",
+   "station": "Frost Foundry",
+   "effectiveStation": "Galdr Table",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Cape of the Caller / Cape of the Caller",
+   "id": "cape-of-the-caller",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Carapace Armor / Carapace helmet",
+   "id": "carapace-helmet",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "mistlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Carapace Armor / Carapace breastplate",
+   "id": "carapace-breastplate",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "mistlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Carapace Armor / Carapace greaves",
+   "id": "carapace-greaves",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "mistlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Celebratory Cap / Celebratory Cap",
+   "id": "celebratory-cap",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Eitr-weave Set / Eitr-weave hood",
+   "id": "eitr-weave-hood",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "mistlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Eitr-weave Set / Eitr-weave robe",
+   "id": "eitr-weave-robe",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "mistlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Eitr-weave Set / Eitr-weave trousers",
+   "id": "eitr-weave-trousers",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "mistlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Eitr-weave Set / Feather cape",
+   "id": "feather-cape",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "mistlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "mistlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Embla Set / Hood of Embla",
+   "id": "hood-of-embla",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Embla Set / Robes of Embla",
+   "id": "robes-of-embla",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Embla Set / Trousers of Embla",
+   "id": "trousers-of-embla",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Flametal Armor / Flametal Breastplate",
+   "id": "flametal-breastplate",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 10,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 10,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 10,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Flametal Armor / Flametal Greaves",
+   "id": "flametal-greaves",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 10,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 10,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 10,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Leather Armor / Leather Helmet",
+   "id": "leather-helmet",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": true
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Leather Armor / Leather Tunic",
+   "id": "leather-tunic",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": true
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Leather Armor / Leather Trousers",
+   "id": "leather-trousers",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": true
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Leather Armor / Deer Hide Cape",
+   "id": "deer-hide-cape",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Moose Hide Cape / Moose Hide Cape",
+   "id": "moose-hide-cape",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Protector Armor / Helmet of the Protector",
+   "id": "helmet-of-the-protector",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Protector Armor / Breastplate of the Protector",
+   "id": "breastplate-of-the-protector",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Protector Armor / Trousers of the Protector",
+   "id": "trousers-of-the-protector",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Root Set / Root Mask",
+   "id": "root-mask",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "swamp",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Root Set / Root Harnesk",
+   "id": "root-harnesk",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "swamp",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Root Set / Root Leggings",
+   "id": "root-leggings",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "swamp",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "swamp",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Troll Set / Troll Leather Hood",
+   "id": "troll-leather-hood",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Troll Set / Troll Leather Tunic",
+   "id": "troll-leather-tunic",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Troll Set / Troll Leather Trousers",
+   "id": "troll-leather-trousers",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Troll Set / Troll Hide Cape",
+   "id": "troll-hide-cape",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "black-forest",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 5,
+     "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Vanguard Set / Hood of the Vanguard",
+   "id": "hood-of-the-vanguard",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Vanguard Set / Chestpiece of the Vanguard",
+   "id": "chestpiece-of-the-vanguard",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Vanguard Set / Trousers of the Vanguard",
+   "id": "trousers-of-the-vanguard",
+   "station": "Frost Foundry",
+   "effectiveStation": "Black Forge",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  }
+ ],
+ "anomalies": [
+  "armor Caller Set / Headdress of the Caller: stationLevel 1/4/5/6",
+  "armor Caller Set / Robes of the Caller: stationLevel 1/4/5/6",
+  "armor Caller Set / Trousers of the Caller: stationLevel 1/4/5/6",
+  "armor Flametal Armor / Flametal Helmet: stationLevel 3/3/3/3",
+  "armor Flametal Armor / Flametal Breastplate: stationLevel 3/10/10/10",
+  "armor Flametal Armor / Flametal Greaves: stationLevel 3/10/10/10",
+  "armor Padded Armor / Padded Cuirass: stationLevel 2/2/3/4",
+  "armor Padded Armor / Padded Greaves: stationLevel 2/2/3/4",
+  "armor Padded Armor / Linen Cape: stationLevel 2/2/3/4",
+  "armor Wolf Armor / Drake Helmet: stationLevel 1/3/4/5"
+ ],
+ "skipped": [
+  "weapon Bare Fists: station \"Always available\"",
+  "weapon Club: station \"Player crafting menu\"",
+  "weapon Stone Axe: station \"Player crafting menu\"",
+  "armor set Beaded dress blue: kind cosmetic (1 pieces)",
+  "armor set Beaded dress brown: kind cosmetic (1 pieces)",
+  "armor set Beaded dress yellow: kind cosmetic (1 pieces)",
+  "armor set Beaded tunic blue: kind cosmetic (1 pieces)",
+  "armor set Beaded tunic red: kind cosmetic (1 pieces)",
+  "armor set Beaded tunic yellow: kind cosmetic (1 pieces)",
+  "armor set Cape tunic blue: kind cosmetic (1 pieces)",
+  "armor set Cape tunic red: kind cosmetic (1 pieces)",
+  "armor set Cape tunic yellow: kind cosmetic (1 pieces)",
+  "armor Crown of Roots / Crown of Roots: no materials (The Bog Witch)",
+  "armor Dverger Circlet / Dverger Circlet: no materials (Haldor)",
+  "armor set Extravagant cap green: kind cosmetic (1 pieces)",
+  "armor set Extravagant cap orange: kind cosmetic (1 pieces)",
+  "armor set Fur cap brown: kind cosmetic (1 pieces)",
+  "armor set Fur cap grey: kind cosmetic (1 pieces)",
+  "armor Harvest dress / Harvest dress: no materials (Sold by Hildir after returning her Brass chest)",
+  "armor Harvest tunic / Harvest tunic: no materials (Sold by Hildir after returning her Brass chest)",
+  "armor set Headband: kind cosmetic (1 pieces)",
+  "armor set Shawl dress blue: kind cosmetic (1 pieces)",
+  "armor set Shawl dress brown: kind cosmetic (1 pieces)",
+  "armor set Shawl dress yellow: kind cosmetic (1 pieces)",
+  "armor set Simple cap purple: kind cosmetic (1 pieces)",
+  "armor set Simple cap red: kind cosmetic (1 pieces)",
+  "armor set Simple dress blue: kind cosmetic (1 pieces)",
+  "armor set Simple dress brown: kind cosmetic (1 pieces)",
+  "armor set Simple dress natural: kind cosmetic (1 pieces)",
+  "armor set Simple dress yellow: kind cosmetic (1 pieces)",
+  "armor set Simple tunic blue: kind cosmetic (1 pieces)",
+  "armor set Simple tunic natural: kind cosmetic (1 pieces)",
+  "armor set Simple tunic red: kind cosmetic (1 pieces)",
+  "armor set Simple tunic yellow: kind cosmetic (1 pieces)",
+  "armor Straw hat / Straw hat: no materials (Sold by Hildir after returning her Brass chest)",
+  "armor set Tied headscarf blue: kind cosmetic (1 pieces)",
+  "armor set Tied headscarf yellow: kind cosmetic (1 pieces)",
+  "armor set Twisted headscarf green: kind cosmetic (1 pieces)",
+  "armor set Twisted headscarf red: kind cosmetic (1 pieces)",
+  "armor Yule Hat / Yule Hat: no materials (Haldor)"
+ ]
+}

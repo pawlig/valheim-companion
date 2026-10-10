@@ -1,15 +1,15 @@
 # Rozbor VC-44: dostupnost úrovní stanic a kvalit předmětů po biomech
 
 Autor: Fable · 10. 10. 2026 · strom `valheim-units-CC`, větev `vc-44-rozbor`, HEAD po commitu `cf4dbb3` (3 nové stránky ve wiki cache).
-Zdroj pravdy: wiki cache `data/raw/` (4 409 stránek v 501 souborech, indexováno přes `scripts/wiki/api.mjs` → `query.pages[].revisions[0].slots.main.content`). Odkazy ve tvaru *(wiki: Název stránky)* jsou názvy stránek v cache. Nic nebylo převzato z `docs/STAV.md` ani z commitů VC-40c–f; čísla z `data/*.json` jsou naměřená skripty, které jsou popsané u každé tabulky.
+Zdroj pravdy: wiki cache `data/raw/` (1 158 unikátních stránek / 4 409 záznamů v 504 souborech, indexováno přes `scripts/wiki/api.mjs` → `query.pages[].revisions[0].slots.main.content`). Odkazy ve tvaru *(wiki: Název stránky)* jsou názvy stránek v cache. Nic nebylo převzato z `docs/STAV.md` ani z commitů VC-40c–f; čísla z `data/*.json` jsou naměřená skripty, které jsou popsané u každé tabulky.
 
 ## 0. Shrnutí
 
 - Companion dnes **nikde nebere v úvahu, že stanici lze v daném biomu rozšířit jen na určitou úroveň**. Biom předmětu (`weapons[].biome`, `armor[].biome`) je jen „nejvyšší biom surovin Q1“ (`scripts/wiki/fetch-weapons.mjs:542-570`, `scripts/wiki/fetch-armor.mjs:757-782`); úroveň stanice (`levels[q].stationLevel`) se zobrazuje, ale s biomem se nepropojuje.
-- Z **240 vyrobitelných kusů** (122 zbraní, 19 štítů, 4 krumpáče, 23 munice, 72 kusů zbroje; 859 kvalit) se **97 kusů / 103 kvalit** ukazuje v dřívějším biomu, než jsou ve hře vyrobitelné. 5 kusů už v Q1 (Arbalest, Skoll and Hati, Bone Bolt, Iron Bolt, Black Metal Bolt — vše Black Forge, tj. Mistlands, companion je řadí do Swamp/Plains/Black Forest). Dalších **68 kusů / 73 kvalit** má požadovanou úroveň stanice **vyšší než maximum stanice ve hře** (wiki je značí „not yet available“), companion je nabízí jako běžně vyrobitelné.
-- **Carapace Armor** (Pavlův podnět): Q1 a Q2 Mistlands, **Q3 podle wiki také Mistlands** (Black Forge 3 přes rozšíření Vice, materiál Mechanical Spring se vyrábí na Artisan Table z Refined Eitr + Iron), **Q4 až Ashlands** (Black Forge 4 vyžaduje Metal Cutter nebo Gem Cutter s Flametal). Companion ukazuje Q1–Q4 v Mistlands. Pavlovo „jen do Q2“ se s wiki neshoduje — otázka O-3 v § 7.
+- Z **244 vyrobitelných kusů** (122 zbraní, 19 štítů, 4 krumpáče, 23 munice, 76 kusů zbroje; 872 kvalit) se **97 kusů / 103 kvalit** ukazuje v dřívějším biomu, než jsou ve hře vyrobitelné. 5 kusů už v Q1 (Arbalest, Skoll and Hati, Bone Bolt, Iron Bolt, Black Metal Bolt — vše Black Forge, tj. Mistlands, companion je řadí do Swamp/Plains/Black Forest). Dalších **71 kusů / 76 kvalit** má požadovanou úroveň stanice **vyšší než maximum stanice ve hře** (wiki je značí „not yet available“), companion je nabízí jako běžně vyrobitelné.
+- **Carapace Armor** (Pavlův podnět): Q1 a Q2 Mistlands, **Q3 podle wiki také Mistlands** (Black Forge 3 přes rozšíření Vice, materiál Mechanical Spring se vyrábí na Artisan Table z Refined Eitr + Iron), **Q4 až Ashlands** (Black Forge 4 vyžaduje Metal Cutter nebo Gem Cutter s Flametal). Companion ukazuje Q1–Q4 v Mistlands. Pavlovo „jen do Q2“ se s wiki neshoduje — otázka Q-3 v § 7.
 - Vedlejší nálezy v datech: 27 kusů z Deep North má stanici „Frost Foundry“ s úrovněmi 4–7, ale Frost Foundry úrovně nemá (odlitky se dělají na Black Forge 4, vylepšení na Black Forge 5–7); 7 kusů zbroje má špatně naparsované úrovně (Flametal Breastplate `3/10/10/10`, Drake Helmet `1/3/4/5`, Caller Set `1/4/5/6`); suroviny rozšíření Mechanical Spring, Sharpening Stone a Asksvin Trophy v `data/items.json` chybí; Coal a Ymir Flesh mají v `items.json` jiný biom než v kompendiu.
-- Návrh: úrovně stanic držet v `data/stations.json` (`maxLevel`, `levels[{level, upgrade, biome}]` — Cauldron už tak zapsaný je), ke každé kvalitě přidat `availableFrom`, počítat ve fetcherech sdíleným modulem; 8 balíků oprav O-1 … O-8; 9 otázek pro Pavla.
+- Návrh: úrovně stanic držet v `data/stations.json` (`maxLevel`, `levels[{level, upgrade, biome}]` — Cauldron už tak zapsaný je), ke každé kvalitě přidat `availableFrom`, počítat ve fetcherech sdíleným modulem; 8 balíků oprav O-1 … O-8; 9 otázek Q-1 … Q-9 pro Pavla. Mimo rozsah: Forge of Potential (§ 3.5).
 
 ## 1. Stanice a jejich rozšíření
 
@@ -27,7 +27,7 @@ Maximální úrovně podle wiki modulu (wiki: Module:Crafting station/data, sta�
 | Artisan Table | artisan press | 2 |
 | Stonecutter, Mead Ketill, Food Preparation Table, player crafting menu | — | 1 |
 
-Biom suroviny = `data/items.json` (`biome`), kde chybí, `data/items-compendium.json` — tedy to, co používá web. Nejranější biom rozšíření = nejvyšší biom jeho surovin, **plus** biom stanice, na které se rozšíření staví / ze které se bere surovina (poznámka u řádku). Tabulka vznikla skriptem nad cache (`scratchpad/vc44/upgrades.mjs`), materiály na stránce stanice i na stránce rozšíření se shodují u všech 26 rozšíření.
+Biom suroviny = `data/items.json` (`biome`), kde chybí, `data/items-compendium.json` — tedy to, co používá web. Nejranější biom rozšíření = nejvyšší biom jeho surovin, **plus** biom stanice, na které se rozšíření staví / ze které se bere surovina (poznámka u řádku). Tabulka vznikla skriptem `docs/audit/station-levels/upgrades.mjs` (výstup `upgrades.json` tamtéž; spouštět z kořene repa), materiály na stránce stanice i na stránce rozšíření se shodují u všech 26 rozšíření.
 
 ### 1.1 Workbench *(wiki: Workbench)* — základ 10 Wood → Meadows
 
@@ -67,7 +67,7 @@ Nálezy k surovinám: **Coal** má v `items.json` `biome: swamp`, v kompendiu `m
 |---|---|---|---|---|
 | Rune Table *(wiki: Rune Table)* | piece_magetable_ext | 10 Black Marble, 5 Yggdrasil Wood, 10 Refined Eitr | mistlands | **Mistlands** |
 | Unfading Candles *(wiki: Unfading Candles)* | piece_magetable_ext2 | 10 Black Marble, 3 Skeleton Trophy, 10 Refined Eitr, 15 Resin | mistlands, black-forest, mistlands, meadows | **Mistlands** |
-| Feathery Wreath *(wiki: Feathery Wreath)* | — (stránka bez `id`) | 8 Celestial Feather, 1 Asksvin Trophy, 10 Refined Eitr, 3 Ashwood | ashlands (Asksvin Trophy v `items.json` chybí, kompendium ashlands) | **Ashlands** |
+| Feathery Wreath *(wiki: Feathery Wreath)* | piece_magetable_ext3 (stránka má prázdný `title`) | 8 Celestial Feather, 1 Asksvin Trophy, 10 Refined Eitr, 3 Ashwood | ashlands (Asksvin Trophy v `items.json` chybí, kompendium ashlands) | **Ashlands** |
 | Standing Loom *(wiki: Standing Loom)* | piece_magetable_ext4 | 5 Timberwood, 10 Nornathread | deep-north | **Deep North** |
 
 ### 1.5 Cauldron *(wiki: Cauldron)* — základ 10 Tin, staví se u Forge → Black Forest
@@ -144,20 +144,24 @@ Důsledky, které companion dnes ignoruje: Workbench 4 (Q4 kusů z Meadows) až 
 
 ### 3.2 Měření: co companion ukazuje dřív, než je vyrobitelné
 
-Skript `scratchpad/vc44/avail2.mjs`: pro každý kus a kvalitu q → `availableFrom(q) = max(biom surovin všech úrovní ≤ q, biom, kde stanice dosáhne levels[q].stationLevel podle § 2)`; porovnáno s biomem, ve kterém ho companion zobrazuje (`weapons[].biome`, `armor[].biome`). Kusy se stanicí „Frost Foundry“ přepočteny na Black Forge (wiki šablona `{{Upgrade station row|Black forge|4|start=4}}` na stránkách Nord Sword, Moose Hide Cape; Caller Set → Galdr Table). Vyřazeno: Bare Fists, Club, Stone Axe (bez stanice), kusy bez receptu (Hildir, Haldor, kosmetika).
+Skript `docs/audit/station-levels/avail.mjs` (výstupy `early-and-unreachable.md` a `.json` tamtéž): pro každý kus a kvalitu q → `availableFrom(q) = max(biom surovin všech úrovní ≤ q, biom, kde stanice dosáhne levels[q].stationLevel podle § 2)`; porovnáno s biomem, ve kterém ho companion zobrazuje (`weapons[].biome`, `armor[].biome`). Kusy se stanicí „Frost Foundry“ přepočteny podle wiki šablony `Upgrade station row`: Caller Set → Galdr Table (max 5), ostatní → Black Forge (max 6) (`{{Upgrade station row|Black forge|4|start=4}}` na stránkách Nord Sword, Moose Hide Cape).
 
-| | Kusů | Kvalit | Kusů ukázaných dřív | Kvalit ukázaných dřív | Kvalit nad max. úrovní stanice („not yet available“) |
+Co skript **vyřazuje** (přesně, aby šla čísla reprodukovat): (a) 3 zbraně bez úrovňové stanice — `station` „Always available“ / „Player crafting menu“ (Bare Fists, Club, Stone Axe); (b) sety `kind: cosmetic` — 31 kusů Hildir bez receptu; (c) 6 kusů zbroje bez surovin na kterékoli úrovni (Crown of Roots, Dverger Circlet, Yule Hat, Harvest dress, Harvest tunic, Straw hat — obchodníci). Zahrnuto je vše ostatní: 168 položek `weapons.json` a 76 kusů zbroje včetně `kind: single` a `kind: special` s receptem (Cape of Oden, Hood of Oden, Midsummer Crown, Pointy Hat — Workbench). Seznam vyřazených je v oddílu „Skipped“ výstupu.
+
+| | Kusů | Kvalit | Kusů ukázaných dřív | Kvalit ukázaných dřív | Kvalit (kusů) nad max. úrovní stanice („not yet available“) |
 |---|---|---|---|---|---|
-| Zbraně | 122 | 485 | 59 | 65 | 58 |
+| Zbraně | 122 | 485 | 59 | 65 | 58 (58) |
 | Štíty | 19 | 57 | 1 | 1 | 0 |
 | Krumpáče | 4 | 13 | 1 | 1 | 0 |
 | Munice | 23 | 23 | 3 | 3 | 0 |
-| Zbroj (kusy) | 72 | 281 | 33 | 33 | 15 |
-| **Celkem** | **240** | **859** | **97** | **103** | **73 (68 kusů)** |
+| Zbroj (kusy) | 76 | 294 | 33 | 33 | 18 (13) |
+| **Celkem** | **244** | **872** | **97** | **103** | **76 (71 kusů)** |
+
+(Kvality nad maximem u zbroje: Caller Set ×3 Q4 a Cape of the Caller Q3–Q4 — Galdr Table 6–7; Protector ×3, Vanguard ×3, Moose Hide Cape Q4 — Black Forge 7; Flametal Breastplate a Greaves Q2–Q4 — chybná data `stationLevel 10`, po opravě v O-2 z této skupiny vypadnou a Q4 přejde do „Deep North“.)
 
 Všech 103 posunů způsobuje **úroveň stanice**, ani jeden suroviny (suroviny vyšších kvalit jsou vždy ze stejného nebo dřívějšího biomu). Podle stanice: Black Forge 55, Workbench 24, Galdr Table 14, Forge 10. Posuny „zobrazeno → skutečně“: ashlands→deep-north 41, mistlands→ashlands 17, black-forest→mountain 15, black-forest→swamp 10, meadows→black-forest 5, swamp→mistlands 4, plains→mistlands 4, swamp→mountain 3, ocean→mountain 1, swamp→ashlands 1, black-forest→mistlands 1, plains→ashlands 1.
 
-Skupiny (kompletní seznam je v `scratchpad/vc44/avail2.json`):
+Skupiny (kompletní seznam po kvalitách: `docs/audit/station-levels/early-and-unreachable.md`):
 
 | Skupina | Kusy | Posun |
 |---|---|---|
@@ -170,7 +174,7 @@ Skupiny (kompletní seznam je v `scratchpad/vc44/avail2.json`):
 | Galdr Table Q4 (úroveň 5) z Ashlands | Dundr, Staff of Fracturing, Staff of the Wild, Trollstav; Embla Set (3), Asksvin Cloak | Q4 → Deep North (Standing Loom) |
 | Black Forge Q3 (úroveň 6) + Q4 (úroveň 7) „evolved“ Ashlands | 22 zbraní (Bleeding/Primal/Thundering Berserkir Axes, Blood/Root/Storm Fang, Bloodgeon, Brutal/Primal/Scourging Slayer, Dyrnwyn, Klossen, Nidhögg the Bleeding/Primal/Thundering, Root/Storm/Wound Ripper, Splitnir the Bleeding/Primal/Storming, Storm Star) | Q3 → Deep North, **Q4 nedosažitelné** (Black Forge 7 neexistuje) |
 | Black Forge úroveň 1 s dřívějšími surovinami | Arbalest (zobrazeno Swamp), Skoll and Hati (Plains), Bone Bolt (Black Forest), Iron Bolt (Swamp), Black Metal Bolt (Plains, úroveň 2) | **už Q1 → Mistlands** *(wiki: Arbalest, Skoll and Hati, Bone Bolt, Iron Bolt, Black Metal Bolt — source Black Forge)* |
-| Deep North („Frost Foundry“ = Black Forge 4–7 / Galdr Table 3–6) | 12 Nord zbraní, 12 Frostfire, 12 Thunderblood (Black Forge start 4), Protector Armor (3), Vanguard Set (3), Moose Hide Cape, Caller Set / Cape of the Caller | **Q4 nedosažitelné** (Black Forge 7, Galdr Table 6); Flametal Breastplate/Greaves mají chybná data (`stationLevel 10`) |
+| Deep North („Frost Foundry“ = Black Forge 4–7 / Galdr Table 3–6) | 12 Nord zbraní, 12 Frostfire, 12 Thunderblood (Black Forge start 4), Protector Armor (3), Vanguard Set (3), Moose Hide Cape, Caller Set / Cape of the Caller | **Q4 nedosažitelné** (Black Forge 7, Galdr Table 6; Cape of the Caller už Q3 = Galdr Table 6); Flametal Breastplate/Greaves mají chybná data (`stationLevel 10`) |
 
 Opačný směr (zobrazeno později, než lze vyrobit): Leather Helmet, Leather Tunic, Leather Trousers — Q1 je Workbench 2 + Deer Hide (Meadows), ale set je zařazený do Black Forest, protože biom setu = max surovin Q1 **všech kusů** a Deer Hide Cape má Bone Fragments (`fetch-armor.mjs:757-782`; Bone Fragments = black-forest z tabulky `scripts/wiki/materials.mjs`).
 
@@ -206,12 +210,16 @@ Totéž platí pro všech 8 Mistlands zbraní z Black Forge (Carapace Spear, Dem
 
 Anomálie v `levels[].stationLevel` (posloupnost není +1): 10 kusů zbroje — Caller Set ×3 (`1/4/5/6`), Flametal Armor ×3 (`3/3/3/3`, `3/10/10/10` ×2), Drake Helmet (`1/3/4/5`), Padded Cuirass/Greaves/Linen Cape (`2/2/3/4` — u hrudi a nohou wiki‑věrné, u Linen Cape wiki říká Workbench 1/2/3/4). U zbraní 0 (vznikají vzorcem).
 
+### 3.5 Mimo rozsah: Forge of Potential
+
+*(wiki: Forge of Potential)* — unikátní point of interest v Mountain (`id = UpgradeStation`), kde lze zbraň, zbroj nebo nástroj vylepšit o jednu kvalitu za jeden idol odpovídajícího tieru bez dalších surovin (65 % úspěch, 35 % zničení předmětu), **bez horní hranice kvality** („notably it can increase above level 4“). Wiki na ni odkazuje na většině stránek zbraní a zbrojí, např. *(wiki: Nord Sword)*: „Beyond quality 4, the Nord Sword can be upgraded further at the Forge of Potential with a Bloodgold Battle Idol“. Tento rozbor i balíky O-1 … O-8 s ní **nepočítají**: nemá úrovně stanice, nespotřebovává recept a kvality > 4 companion nikde nemodeluje (`levels[]` končí Q4). Případné zobrazení Forge of Potential je samostatná úloha.
+
 ## 4. Kde companion předpokládá dostupnost (inventura)
 
 | Místo | Soubor:řádky | Co dělá dnes | Co je špatně | Jak má být |
 |---|---|---|---|---|
-| **Smithy – seskupení** | `apps/smithy/assets/app.js:600-626` (sety podle `armor.biome`, zbraně podle `w.biome`), `:644-690` (karta biomu zamčená/odemčená podle `VCProgress.revealedBiomes`, `:105`) | Kus patří do biomu surovin Q1 | 5 kusů (Arbalest, Skoll and Hati, 3 šipky) je v biomu dřív, než existuje Black Forge; Leather Armor naopak později | Seskupovat podle `availableFrom` Q1 (otázka O-5) |
-| **Smithy – nabídka kvalit** | `:1003` (`maxQ = weapon.maxQuality` → selecty Mám/Chci Q1..maxQ), `:1655, :1677` (zbroj), `:1354-1427` (sloupce Q1–Q4 v tabulce setu), `:1484-1493` (zvýraznění kvality) | Q1–Q4 vždy, bez ohledu na biom | 103 kvalit nabízeno dřív; 73 kvalit nad maximem stanice | Kvalita s `availableFrom` v neodhaleném biomu zamčená s důvodem; nedosažitelná označena „not yet available“ a vyřazená z výchozího výběru |
+| **Smithy – seskupení** | `apps/smithy/assets/app.js:600-626` (sety podle `armor.biome`, zbraně podle `w.biome`), `:644-690` (karta biomu zamčená/odemčená podle `VCProgress.revealedBiomes`, `:105`) | Kus patří do biomu surovin Q1 | 5 kusů (Arbalest, Skoll and Hati, 3 šipky) je v biomu dřív, než existuje Black Forge; Leather Armor naopak později | Seskupovat podle `availableFrom` Q1 (otázka Q-5) |
+| **Smithy – nabídka kvalit** | `:1003` (`maxQ = weapon.maxQuality` → selecty Mám/Chci Q1..maxQ), `:1655, :1677` (zbroj), `:1354-1427` (sloupce Q1–Q4 v tabulce setu), `:1484-1493` (zvýraznění kvality) | Q1–Q4 vždy, bez ohledu na biom | 103 kvalit nabízeno dřív; 76 kvalit nad maximem stanice | Kvalita s `availableFrom` v neodhaleném biomu zamčená s důvodem; nedosažitelná označena „not yet available“ a vyřazená z výchozího výběru |
 | **Smithy – rozpis ceny** | `:1151-1153`, `:1527-1529` (`stName + ' ' + t('Level {level}')`) | Ukáže „Black Forge Level 4“ | Bez informace, že úroveň 4 je až v Ashlands | Doplnit biom úrovně (`t('{station} level {level} — {biome}')`), zamčeno podle progressu |
 | **Smithy – košík** | `:394` (`want` default = `maxQuality`), `:2093-2094` | Chci = Q4 | Nakupní seznam počítá suroviny na Q4, které v biomu nejde vyrobit | Default `want` = nejvyšší kvalita dostupná v odhalených biomech |
 | **Smithy – data** | `scripts/build-armourer-data.mjs` (`stations … .filter(station => station.type !== 'comfort')`) | Workbench/Forge/Black Forge/Artisan Table/Stonecutter (type `comfort`) do Smithy **nejdou** | Smithy nemá stanici ani její biom k dispozici | Po O-1 posílat záznamy stanic s `levels[]` |
@@ -256,7 +264,7 @@ Zamítnuté varianty: (a) parsovat rozšíření ve třech fetcherech zvlášť 
 
 ### 5.2 `availableFrom` u kvalit
 
-Do `data/weapons.json` a `data/armor.json` přidat na každé úrovni `levels[q].availableFrom: <biomeId>` a `levels[q].availableTier: <order>`; k tomu `levels[q].unreachable: true`, když `stationLevel > stations[station].maxLevel`. Na úrovni kusu `availableFrom = levels[0].availableFrom`. Pole `biome` zatím **nepřepisovat** (čte ho 9 míst; viz otázka O-5) — až po rozhodnutí.
+Do `data/weapons.json` a `data/armor.json` přidat na každé úrovni `levels[q].availableFrom: <biomeId>` a `levels[q].availableTier: <order>`; k tomu `levels[q].unreachable: true`, když `stationLevel > stations[station].maxLevel`. Na úrovni kusu `availableFrom = levels[0].availableFrom`. Pole `biome` zatím **nepřepisovat** (čte ho 9 míst; viz otázka Q-5) — až po rozhodnutí.
 
 ```
 availableFrom(q) = biomeMax(
@@ -287,15 +295,15 @@ Soubory: `scripts/wiki/fetch-armor.mjs:366-402` (tabber „Quality N“: brát �
 Hotovo, když: `node -e` kontrola „levels[].stationLevel je +1 posloupnost“ dává 0 výjimek kromě Padded Cuirass/Greaves (`2/2/3/4`, wiki‑věrné — zapsat do reportu); žádný kus nemá `station: "Frost Foundry"`, 27 kusů má `finishedAt: "Frost Foundry"`; `station` nabývá jen hodnot z `stations.json` + `null`; `npm test` zelený; `git diff --stat` ukazuje změny jen u vyjmenovaných kusů (přiložit seznam do zprávy).
 
 ### O-3 Data: `availableFrom` a suroviny — **normální**, Sonnet
-Závisí na O-1, O-2. Soubory: nový `scripts/wiki/station-levels.mjs` + `scripts/wiki/station-levels.test.mjs` (fixtury: Carapace Armor Q1–Q4 → mistlands ×3, ashlands; Bronze Sword Q4 → swamp; Nord Sword Q4 → `unreachable`), `fetch-weapons.mjs`, `fetch-armor.mjs`, `fetch-provisions.mjs` (jídla), `scripts/wiki/materials.mjs` (Coal → meadows nebo black-forest podle wiki Charcoal Kiln; Ymir Flesh → podle `overrides` Haldor po The Elder, sjednotit s kompendiem; doplnit Sharpening Stone (swamp, Stonecutter), Mechanical Spring (mistlands, Artisan Table), Asksvin Trophy (ashlands) do `data/items.json`), `docs/DATA-SCHEMA.md` § weapons/armor/items/food.
-Hotovo, když: každý kus s `levels` má na každé úrovni `availableFrom` a `availableTier`; `node -e` přepočet podle § 3.2 dává **103** kvalit s `availableTier > tier` a **73** s `unreachable: true` (nebo odůvodněný rozdíl po O-2); `data/items.json` obsahuje `sharpening-stone`, `mechanical-spring`, `asksvin-trophy`; `items.json.biome === items-compendium.biome` pro všechny suroviny použité v receptech (dnes 2 rozdíly: coal, ymir-flesh); testy zelené.
+Závisí na O-1, O-2. Soubory: nový `scripts/wiki/station-levels.mjs` + `scripts/wiki/station-levels.test.mjs` (fixtury: Carapace Armor Q1–Q4 → mistlands ×3, ashlands; Bronze Sword Q4 → swamp; Nord Sword Q4 → `unreachable`), `fetch-weapons.mjs`, `fetch-armor.mjs`, `fetch-provisions.mjs` (jídla), `scripts/wiki/materials.mjs` a `data/overrides.json` (rozhodnuto podle wiki cache: **Coal → `meadows`** — *(wiki: Coal)* „Can be crafted … in Cooking Stations by overcooking any type of meat“, Cooking Station je 2 Wood; stejnou cestu už používá override jen pro Comfort v `data/overrides.json:46-50`, který se tím stane zbytečným a odstraní se, biom Forge zůstává Black Forest díky Copper; **Ymir Flesh → `black-forest`** — *(wiki: Ymir Flesh)* „purchased from the trader Haldor after The Elder … has been defeated“, The Elder je boss Black Forest; upravit speciální případ `materials.mjs:188-193` ze `swamp` na `black-forest`, kompendium už `black-forest` má; **doplnit do `data/items.json`** Sharpening Stone (`swamp` — *(wiki: Sharpening Stone)* Stonecutter, Stonecutter potřebuje Iron), Mechanical Spring (`mistlands` — *(wiki: Mechanical Spring)* Artisan Table, Refined Eitr), Asksvin Trophy (`ashlands`)), `docs/DATA-SCHEMA.md` § weapons/armor/items/food. Skript `docs/audit/station-levels/avail.mjs` rozšířit o porovnání vypočtené dostupnosti s polem `levels[q].availableFrom` v datech (vypíše počet rozdílů).
+Hotovo, když: každý kus s `levels` má na každé úrovni `availableFrom` a `availableTier`; `node docs/audit/station-levels/avail.mjs` nad opravenými daty z O-2 hlásí **0 rozdílů** mezi vypočtenou dostupností a `availableFrom` v datech; ke zprávě je přiložen `git diff docs/audit/station-levels/early-and-unreachable.md` (seznam rozdílů proti dnešku) a každý rozdíl má jednořádkové odůvodnění (očekávané po O-2: Caller Set Q1 z `Galdr 1` na `Galdr 3`, Flametal Breastplate/Greaves Q2–Q3 z `unreachable` na Ashlands, Drake Helmet, Linen Cape); `data/items.json` obsahuje `sharpening-stone`, `mechanical-spring`, `asksvin-trophy`; `items.json.biome === items-compendium.biome` pro všechny suroviny použité v receptech (dnes 2 rozdíly: coal, ymir-flesh); testy zelené.
 
 ### O-4 Generátory a doporučení — **normální**, Sonnet
 Závisí na O-3. Soubory: `scripts/build-armourer-data.mjs` (stanice typu `crafting` + `levels` do `VA_DATA.stations`), `scripts/build-data.mjs` (VC_DATA.weapons s `availableFrom`), `scripts/build-items-data.mjs` (`recipe.availableFrom` přes `station-levels.mjs`; odstranit vlastní parsování „level N“ tam, kde už je `stationLevel` v datech), `scripts/build-expedition-data.mjs`, `scripts/build-provisions-data.mjs`, `apps/bestiary/assets/rank.js:533-538` (`recommend(creature, biome, weapons, player)`: při `player.quality === 'max'` použít pro každou zbraň `maxReachableQuality(weapon, biome.tier)` = nejvyšší q s `availableTier ≤ biome.tier` a `!unreachable`), `scripts/recommend.mjs`, `data/recommendations.json`, `scripts/parity.test.mjs`/`recommend.test.mjs` (fixtury).
 Hotovo, když: `data/recommendations.json` pro `black-forest:*` neobsahuje bronzové zbraně s `quality 4` (přidat pole `quality` do záznamu doporučení); `mistlands:the-queen` doporučuje Carapace Spear nanejvýš Q3; `npm run build` exit 0; `apps/smithy/data/data.js` obsahuje `stations[].levels`; testy zelené.
 
 ### O-5 UI Smithy — **velký**, Sonnet
-Závisí na O-4. Soubory: `apps/smithy/assets/app.js` (`:600-626` seskupení podle `availableFrom` po rozhodnutí O-5 v § 7; `:1003, :1655, :1677, :2093` selecty jen do max dostupné kvality v odhalených biomech, vyšší volby `disabled` s titulkem; `:1354-1427` buňky Q s `availableTier` nad odhalením zamčené „🔒“ (stejná konvence jako zamčené suroviny `:334-337`); `:1151-1153, :1527-1529` text „{station} level {level} — {biome}“ / „not yet available“; `:394` default `want`), `apps/smithy/assets/styles.css`, `apps/smithy/locales/messages.json` (nové klíče ve 13 jazycích: „Available from {biome}“, „Requires {station} level {level} ({biome})“, „Not yet available in the game“, „Max quality here: Q{level}“), `scripts/smithy-data.test.mjs`, `scripts/armourer-i18n.test.mjs`, `scripts/check-mobile.mjs` (0 přesahů na 360 px).
+Závisí na O-4. Soubory: `apps/smithy/assets/app.js` (`:600-626` seskupení podle `availableFrom` po rozhodnutí Q-5 v § 7; `:1003, :1655, :1677, :2093` selecty jen do max dostupné kvality v odhalených biomech, vyšší volby `disabled` s titulkem; `:1354-1427` buňky Q s `availableTier` nad odhalením zamčené „🔒“ (stejná konvence jako zamčené suroviny `:334-337`); `:1151-1153, :1527-1529` text „{station} level {level} — {biome}“ / „not yet available“; `:394` default `want`), `apps/smithy/assets/styles.css`, `apps/smithy/locales/messages.json` (nové klíče ve 13 jazycích: „Available from {biome}“, „Requires {station} level {level} ({biome})“, „Not yet available in the game“, „Max quality here: Q{level}“), `scripts/smithy-data.test.mjs`, `scripts/armourer-i18n.test.mjs`, `scripts/check-mobile.mjs` (0 přesahů na 360 px).
 Hotovo, když: s čistým profilem (jen Meadows) ukáže Crude Bow volbu Chci Q1–Q3 a Q4 zamčenou s důvodem; s odhalenými Mistlands ukáže Carapace Armor Q1–Q3, Q4 zamčeno „Black Forge level 4 — Ashlands“; se „Show all (spoilers)“ vše odemčené; Nord Sword Q4 označena „Not yet available in the game“ a není v default košíku; `prohlizec kontrola` bez vad na `/smithy/`, 0 chyb v konzoli; i18n test 13 jazyků zelený; `check-mobile` 0.
 
 ### O-6 UI Bestiary, Expedition, Damage Calculator — **velký**, Sonnet
@@ -304,7 +312,7 @@ Hotovo, když: Bestiary pro Greydwarf (Black Forest) s profilem „Max“ počí
 
 ### O-7 UI Items Compendium a Provisions — **normální**, Sonnet nebo Sol
 Závisí na O-4. Soubory: `apps/items/assets/app.js:375-378` (přidat biom úrovně a zámek), filtr/řazení podle `recipe.availableFrom`; `apps/provisions/assets/advisor.js:44-72` a `planner.js:94-107` (odemknutí jídla podle `availableFrom`, chybějící rozšíření podle biomu — `stations[].levels[].biome`), `apps/provisions/assets/app.js:119-122` (text úrovně s biomem), lokalizace, `scripts/items-compendium.test.mjs`, `scripts/provisions-advisor.test.mjs`.
-Hotovo, když: 5 jídel s Cauldronem (Boar Jerky, Carrot Soup, Minced Meat Sauce, Onion Soup, Turnip Stew) se s odhaleným jen Meadows nenabízí (nebo je zamčeno podle rozhodnutí O-9); Arbalest, Skoll and Hati a 3 šipky jsou v kompendiu s `availableFrom: mistlands`; testy zelené; `check-mobile` 0.
+Hotovo, když: 5 jídel s Cauldronem (Boar Jerky, Carrot Soup, Minced Meat Sauce, Onion Soup, Turnip Stew) se s odhaleným jen Meadows nenabízí (nebo je zamčeno podle rozhodnutí Q-9); Arbalest, Skoll and Hati a 3 šipky jsou v kompendiu s `availableFrom: mistlands`; testy zelené; `check-mobile` 0.
 
 ### O-8 Testy a dokumentace — **malý**, Haiku
 Závisí na O-5–O-7. Soubory: `scripts/stations.test.mjs` (tabulka § 2 jako fixture proti `data/stations.json`), `scripts/smithy-data.test.mjs` (Carapace Armor Q1–Q4 fixture), `docs/DATA-SCHEMA.md` (nová pole), `docs/ANALYZA.md` (nový § „Úrovně stanic a dostupnost kvalit“ s pravidlem a tabulkou § 2), `data/report-stations.md`.
@@ -314,38 +322,40 @@ Celkem 8 balíků; odhad: 1 malý, 5 normálních, 2 velké. Prováděči: Sonne
 
 ## 7. Otázky pro Pavla
 
-**O-1 Zobrazení nedostupné kvality v odhaleném biomu (Smithy, kompendium).**
+(Q-1 … Q-9 jsou otázky; O-1 … O-8 v § 6 jsou balíky oprav.)
+
+**Q-1 Zobrazení nedostupné kvality v odhaleném biomu (Smithy, kompendium).**
 (a) Skrýt sloupce/volby Q nad dostupností — čisté, ale hráč neví, že vylepšení existuje. (b) Ukázat zamčené „🔒 vyžaduje vyšší úroveň stanice“ bez jména biomu — bez spoileru, ale méně užitečné. (c) Ukázat zamčené s důvodem „Black Forge level 4 — available in Ashlands“ — stejná konvence, jakou Smithy už má u zamčených surovin (`app.js:334-337` jmenuje nejranější biom). (d) Jen při zapnutém „Show all (spoilers)“.
 **Doporučení: (c)** — konzistentní s dnešní konvencí zamčených surovin; při „Show all“ odemknout.
 
-**O-2 Kvality nad maximem stanice („not yet available“, 68 kusů / 73 kvalit).**
+**Q-2 Kvality nad maximem stanice („not yet available“, 71 kusů / 76 kvalit).**
 (a) Nezobrazovat vůbec. (b) Zobrazit s odznakem „Not yet available in the game“ (dikce wiki modulu), vyřadit z doporučení a z default košíku. (c) Nechat jak je.
 **Doporučení: (b)** — data z wiki jsou, hra je může odemknout s dalším rozšířením; odznak drží companion pravdivý.
 
-**O-3 Carapace Armor Q3 / Vice.** Wiki: Vice (Iron, Copper, 2 Mechanical Spring; Mechanical Spring = Artisan Table, 1 Refined Eitr + 3 Iron) → Black Forge 3 v Mistlands → Carapace Q3 v Mistlands. Pavel: „v rámci Mistlands jen do lvl 2“.
+**Q-3 Carapace Armor Q3 / Vice.** Wiki: Vice (Iron, Copper, 2 Mechanical Spring; Mechanical Spring = Artisan Table, 1 Refined Eitr + 3 Iron) → Black Forge 3 v Mistlands → Carapace Q3 v Mistlands. Pavel: „v rámci Mistlands jen do lvl 2“.
 (a) Věřit wiki (Q3 Mistlands, Q4 Ashlands). (b) Věřit pozorování a zapsat override „Vice = Ashlands“ do `data/overrides.json` (s odůvodněním). (c) Ověřit ve hře (postavit Vice v Mistlands) a pak rozhodnout.
 **Doporučení: (c), do té doby (a)** — wiki je konzistentní na 3 stránkách (Black Forge, Vice, Mechanical Spring).
 
-**O-4 Výchozí kvalita v doporučeních (Bestiary, `recommendations.json`, Expedition).**
+**Q-4 Výchozí kvalita v doporučeních (Bestiary, `recommendations.json`, Expedition).**
 (a) Nechat „Max“ = Q4. (b) „Max“ = nejvyšší kvalita dosažitelná v biomu bytosti/bosse. (c) Obojí: „Max“ + přepínač „Only what I can craft here“.
 **Doporučení: (b)** — jinak pořadí zbraní v Black Forest počítá s kovárnou ze Swampu; explicitní volba Q1–Q4 zůstane.
 
-**O-5 Co je `biome` předmětu.** Dnes = max biom surovin Q1 (5 kusů tím padá do dřívějšího biomu, Leather Armor do pozdějšího).
+**Q-5 Co je `biome` předmětu.** Dnes = max biom surovin Q1 (5 kusů tím padá do dřívějšího biomu, Leather Armor do pozdějšího).
 (a) `biome` := `availableFrom` Q1 (Arbalest, Skoll and Hati, 3 šipky → Mistlands; Leather Armor → Meadows) — mění seskupení a `tier` (doporučení, kompendium). (b) `biome` nechat, `availableFrom` jen pro zámky. 
 **Doporučení: (a)** — Smithy i kompendium odpovídají na „kde to vyrobím“; změna se týká 8 kusů.
 
-**O-6 Deep North kusy a „Frost Foundry“.** (a) Stanice = Black Forge (úrovně 4–7), `finishedAt: Frost Foundry` jako doplňující text „hardened in Frost Foundry“. (b) Nechat „Frost Foundry“ a úrovně mapovat tiše.
+**Q-6 Deep North kusy a „Frost Foundry“.** (a) Stanice = Black Forge (úrovně 4–7), `finishedAt: Frost Foundry` jako doplňující text „hardened in Frost Foundry“. (b) Nechat „Frost Foundry“ a úrovně mapovat tiše.
 **Doporučení: (a)** — odpovídá wiki (Nord Sword: `Upgrade station row|Black forge|4|start=4`, Frost Foundry: „Casts are made at the Black Forge or the Galdr Table“).
 
-**O-7 Zdroj pravdy biomu suroviny při neshodě `items.json` × kompendium** (Coal swamp/meadows, Ymir Flesh swamp/black-forest, Sharpening Stone –/black-forest).
-(a) Opravit `scripts/wiki/materials.mjs` + `overrides.json`, kompendium jen dědí. (b) Kompendium má přednost.
-**Doporučení: (a)** — `items.json` je zdroj pro Smithy i fetchery.
+**Q-7 Pravidlo do budoucna: zdroj pravdy biomu suroviny při neshodě `items.json` × kompendium.** Konkrétní dnešní neshody (Coal, Ymir Flesh, Sharpening Stone) jsou v balíku O-3 rozhodnuté podle wiki cache; tady jde o to, podle čeho se budou řešit příští.
+(a) Vždy opravit `scripts/wiki/materials.mjs` + `data/overrides.json` (zdroj pro `items.json`), kompendium jen dědí; neshoda = test selže. (b) Kompendium má přednost, `items.json` se dorovná při buildu. (c) Nechat oba, každá aplikace svůj.
+**Doporučení: (a)** — `items.json` je zdroj pro Smithy i fetchery; test na shodu patří do O-8.
 
-**O-8 Obchodníci (Haldor, Hildir, Bog Witch).** Zboží bez kvalit (kosmetika, Megingjord…) se úrovně stanic netýká; suroviny od obchodníků (Ymir Flesh po The Elder) už mají `overrides`. (a) Nechat mimo rozsah. (b) Přidat `availableFrom` i zboží podle odemknutí obchodníka (`traders.json.unlockedBy`).
+**Q-8 Obchodníci (Haldor, Hildir, Bog Witch).** Zboží bez kvalit (kosmetika, Megingjord…) se úrovně stanic netýká; suroviny od obchodníků (Ymir Flesh po The Elder) už mají `overrides`. (a) Nechat mimo rozsah. (b) Přidat `availableFrom` i zboží podle odemknutí obchodníka (`traders.json.unlockedBy`).
 **Doporučení: (a)** teď; (b) jako samostatná úloha po VC-42.
 
-**O-9 Provisions – 5 jídel s Cauldronem zařazených do Meadows.** (a) Přesunout do Black Forest (`availableFrom`). (b) Nechat v Meadows se zámkem „needs Cauldron (Black Forest)“.
+**Q-9 Provisions – 5 jídel s Cauldronem zařazených do Meadows.** (a) Přesunout do Black Forest (`availableFrom`). (b) Nechat v Meadows se zámkem „needs Cauldron (Black Forest)“.
 **Doporučení: (a)** — Provisions seskupuje podle biomu; Cauldron bez Tinu nepostavíš.
 
 ---
-Reprodukce čísel: `scratchpad/vc44/index-cache.mjs` (index cache), `upgrades.mjs` (§ 1), `avail2.mjs` (§ 3.2, výstup `avail2.json`); všechny čtou jen `data/raw/`, `data/*.json` a `data/biomes.json` ze stromu `valheim-units-CC`.
+Reprodukce čísel (skripty v repu, spouštět z kořene): `node docs/audit/station-levels/cache.mjs` (index cache, `--titles` vypíše názvy), `node docs/audit/station-levels/upgrades.mjs` (§ 1, výstup `upgrades.json`), `node docs/audit/station-levels/avail.mjs` (§ 3.2, výstupy `early-and-unreachable.md` a `early-and-unreachable.json`); všechny čtou jen `data/raw/` a `data/*.json`, nic nezapisují mimo `docs/audit/station-levels/`.
