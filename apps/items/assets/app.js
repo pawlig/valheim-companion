@@ -119,6 +119,10 @@
     if (storedTeleport) selectedTeleport = storedTeleport;
   } catch {}
 
+  const GROUP_PAGE_SIZE = 60;
+  const groupLimits = new Map();
+  const groupOpenOverride = new Map();
+  let groupFilterSig = '';
   let modalHistory = [];
   let searchQuery = '';
   let activeModalItem = null;
@@ -764,7 +768,7 @@
     if (emptyNotice) emptyNotice.hidden = true;
     grid.replaceChildren();
 
-    for (const item of filtered) {
+    const buildCard = (item) => {
       const revealed = isItemRevealed(item);
       const card = el('div', 'item-card' + (!revealed ? ' is-locked' : ''));
       card.id = `item-card-${item.id}`;
@@ -847,8 +851,69 @@
         openModal(item);
       });
 
-      grid.append(card);
+      return card;
+    };
+
+    // Group by biome (VC_ITEMS_DATA.biomes order, "Other" last); sorting applies inside groups.
+    const filterSig = [query, selectedCategory, selectedBiome, selectedTeleport, selectedSort].join('|');
+    if (filterSig !== groupFilterSig) {
+      groupFilterSig = filterSig;
+      groupOpenOverride.clear();
+      groupLimits.clear();
     }
+    const filtersActive = Boolean(query) || selectedCategory !== 'all' || selectedBiome !== 'all';
+
+    const OTHER = '__other';
+    const byBiome = new Map();
+    for (const item of filtered) {
+      const key = item.biome && biomes.some((b) => b.id === item.biome) ? item.biome : OTHER;
+      if (!byBiome.has(key)) byBiome.set(key, []);
+      byBiome.get(key).push(item);
+    }
+    let reachId = null;
+    for (const b of biomes) {
+      if (isBiomeRevealed(b.id)) reachId = b.id;
+    }
+    const groupDefs = biomes.map((b) => ({ id: b.id, name: b.name }));
+    groupDefs.push({ id: OTHER, name: t('Other') });
+
+    const container = el('div', 'items-grid-groups');
+    for (const def of groupDefs) {
+      const list = byBiome.get(def.id);
+      if (!list || list.length === 0) continue;
+
+      const details = el('details', 'biome-group');
+      details.dataset.biome = def.id;
+      const defaultOpen = filtersActive || def.id === reachId;
+      const isOpen = groupOpenOverride.has(def.id) ? groupOpenOverride.get(def.id) : defaultOpen;
+      if (isOpen) details.setAttribute('open', '');
+      const summary = el('summary', 'biome-group-summary');
+      summary.append(el('span', 'biome-group-name', def.name), el('span', 'biome-group-count', ` (${number(list.length)})`));
+      summary.addEventListener('click', () => {
+        groupOpenOverride.set(def.id, details.getAttribute('open') === null);
+      });
+      details.append(summary);
+
+      const limit = groupLimits.get(def.id) || GROUP_PAGE_SIZE;
+      const gridEl = el('div', 'items-grid');
+      for (const item of list.slice(0, limit)) gridEl.append(buildCard(item));
+      details.append(gridEl);
+
+      const remaining = list.length - limit;
+      if (remaining > 0) {
+        const more = button(
+          tn('Show {count} more', Math.min(GROUP_PAGE_SIZE, remaining), { count: number(Math.min(GROUP_PAGE_SIZE, remaining)) }),
+          () => {
+            groupLimits.set(def.id, limit + GROUP_PAGE_SIZE);
+            render();
+          },
+          'biome-group-more toolbar-toggle-btn'
+        );
+        details.append(more);
+      }
+      container.append(details);
+    }
+    grid.replaceChildren(container);
   }
 
   function handleHash() {
