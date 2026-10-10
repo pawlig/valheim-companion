@@ -402,6 +402,7 @@
     sourcesSection.append(el('h3', '', t('Sources')));
 
     const hasCreatures = item.sources?.creatures?.length > 0;
+    const visibleCreatures = (item.sources?.creatures || []).filter((c) => isBiomeRevealed(c.biome));
     const hasLocations = item.sources?.locations?.length > 0;
     const hasTraders = item.sources?.traders?.length > 0;
 
@@ -411,12 +412,14 @@
       if (hasCreatures) {
         sourcesSection.append(el('p', 'modal-text-item', t('Dropped by:')));
         const creaturesList = el('div', 'modal-links-list');
-        for (const c of item.sources.creatures) {
+        for (const c of visibleCreatures) {
           const a = el('a', 'modal-link-tag', c.name);
           a.href = `/bestiary/#c=${encodeURIComponent(c.id)}`;
           creaturesList.append(a);
         }
-        sourcesSection.append(creaturesList);
+        if (visibleCreatures.length) sourcesSection.append(creaturesList);
+        const hiddenCount = item.sources.creatures.length - visibleCreatures.length;
+        if (hiddenCount) sourcesSection.append(el('p', 'modal-text-item', tn('{count} more in locked biomes', hiddenCount, { count: hiddenCount })));
       }
 
       if (hasLocations) {
@@ -520,9 +523,9 @@
       { href: crossLinks.comfort, label: 'Open in Comfort Planner →' },
       { href: crossLinks.traders, label: 'Open in Trader Ledger →' },
     ];
-    if (hasCreatures) {
+    if (visibleCreatures.length) {
       crossDefs.push({
-        href: `/bestiary/#c=${encodeURIComponent(item.sources.creatures[0].id)}`,
+        href: `/bestiary/#c=${encodeURIComponent(visibleCreatures[0].id)}`,
         label: 'Open in Bestiary →',
       });
     }
