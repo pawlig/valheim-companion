@@ -1330,16 +1330,21 @@ import { PLAYER_STORAGE_KEY, defaultPlayer, sanitizePlayer, readPlayerState } fr
     }
 
     // Drops
-    if (creature.drops && creature.drops.length > 0) {
+    const dropItems = creature.dropLinks ?? (creature.drops ? creature.drops.map(d => ({ name: d, itemId: null })) : null);
+    if (dropItems && dropItems.length > 0) {
       const row = el('div', 'details-row');
       row.appendChild(el('span', 'details-key', 'Drops'));
       const dropsVal = el('span', 'details-val');
-      creature.drops.forEach((d, idx) => {
+      dropItems.forEach((drop, idx) => {
         if (idx > 0) dropsVal.appendChild(document.createTextNode(', '));
-        const cleanSlug = d.replace(/\s*x\d+/i, '').replace(/\s*\(.*?\)/g, '').trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-        const a = el('a', 'item-link', gameName(d));
-        a.href = `/items/#item=${encodeURIComponent(cleanSlug)}`;
-        dropsVal.appendChild(a);
+        const name = drop.name ?? drop;
+        if (drop.itemId) {
+          const a = el('a', 'item-link', gameName(name));
+          a.href = `/items/#item=${encodeURIComponent(drop.itemId)}`;
+          dropsVal.appendChild(a);
+        } else {
+          dropsVal.appendChild(document.createTextNode(gameName(name)));
+        }
       });
       row.appendChild(dropsVal);
       detailsContent.appendChild(row);
@@ -1354,10 +1359,13 @@ import { PLAYER_STORAGE_KEY, defaultPlayer, sanitizePlayer, readPlayerState } fr
         trophyVal.appendChild(createImage(creature.trophy.image, creature.trophy.name, 'trophy-img', 'T'));
       }
       const trophyText = el('div', 'details-val');
-      const trophySlug = creature.trophy.name.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-      const trophyLink = el('a', 'item-link', creature.trophy.name);
-      trophyLink.href = `/items/#item=${encodeURIComponent(trophySlug)}`;
-      trophyText.appendChild(trophyLink);
+      if (creature.trophy.itemId) {
+        const trophyLink = el('a', 'item-link', gameName(creature.trophy.name));
+        trophyLink.href = `/items/#item=${encodeURIComponent(creature.trophy.itemId)}`;
+        trophyText.appendChild(trophyLink);
+      } else {
+        trophyText.appendChild(document.createTextNode(gameName(creature.trophy.name)));
+      }
       if (creature.trophy.dropChance !== null && creature.trophy.dropChance !== undefined) {
         trophyText.appendChild(el('div', 'extra-note', t('Drop chance: {chance}%', {
           chance: creature.trophy.dropChance.toLocaleString(VCI18n.locale()),
