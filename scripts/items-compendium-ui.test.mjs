@@ -636,6 +636,18 @@ describe('Items Compendium UI Tests', () => {
     assert.ok(!storage.has('vc.progress'), 'Reveal must not write vc.progress');
   });
 
+  it('26d. Used in hides entries from locked biomes and counts them instead', () => {
+    const { doc, ctx } = createDomFixture('#item=boar-meat');
+    const allText = (n) => (n.textContent || '') + n.children.map(allText).join('\n');
+    const text = allText(doc.getElementById('modal-body'));
+    assert.ok(!/Sausages/.test(text), 'Sausages (Swamp) must not be listed while Swamp is locked');
+    assert.match(text, /more in locked biomes/);
+    const foodLabel = /Food \((\d+)\):/.exec(text);
+    assert.ok(foodLabel, 'group label counts only visible entries');
+    const item = ctx.VC_ITEMS_DATA.items.find((i) => i.id === 'boar-meat');
+    assert.ok(Number(foodLabel[1]) < item.usedIn.food.length, 'label count excludes hidden entries');
+  });
+
   it('27. Sort select orders items by name (A → Z) and (Z → A) and persists to localStorage', () => {
     const { doc, storage } = createDomFixture();
     const sortSelect = doc.getElementById('sort-select');

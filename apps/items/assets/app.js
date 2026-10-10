@@ -466,9 +466,15 @@
       for (const g of groups) {
         const entries = u[g.key] || [];
         if (entries.length === 0) continue;
-        usedInSection.append(el('p', 'modal-text-item', `${g.label} (${entries.length}):`));
+        // Entries pointing at items from locked biomes stay hidden (spoilers); only a count is shown.
+        const visibleEntries = entries.filter((entry) => {
+          const linked = itemsById.get(entry.itemId || entry.id);
+          return !linked || isItemRevealed(linked);
+        });
+        const hiddenCount = entries.length - visibleEntries.length;
+        usedInSection.append(el('p', 'modal-text-item', `${g.label} (${visibleEntries.length}):`));
         const list = el('div', 'modal-links-list');
-        for (const entry of entries) {
+        for (const entry of visibleEntries) {
           const label = entry.name || entry.bossName || entry.id;
           let href = null;
           let isItemLink = false;
@@ -501,6 +507,7 @@
           }
         }
         usedInSection.append(list);
+        if (hiddenCount) usedInSection.append(el('p', 'modal-text-item', tn('{count} more in locked biomes', hiddenCount, { count: hiddenCount })));
       }
     }
     modalBody.append(usedInSection);
