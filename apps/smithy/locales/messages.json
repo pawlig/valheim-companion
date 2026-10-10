@@ -2397,5 +2397,20 @@
     "ru": "Не используется ни в одном рецепте Smithy.",
     "ja": "Smithy のどのレシピにも使われません。",
     "id": "Tidak digunakan dalam resep Smithy mana pun."
+  },
+  "Materials & goods": {
+    "en": "Materials & goods",
+    "cs": "Suroviny a zboží",
+    "de": "Materialien & Waren",
+    "es": "Materiales y mercancías",
+    "fr": "Matériaux et marchandises",
+    "pt": "Materiais e mercadorias",
+    "zh": "材料与商品",
+    "hi": "सामग्री और सामान",
+    "ar": "المواد والبضائع",
+    "bn": "উপকরণ ও পণ্য",
+    "ru": "Материалы и товары",
+    "ja": "素材と商品",
+    "id": "Bahan & barang"
   }
 }
