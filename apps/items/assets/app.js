@@ -167,6 +167,11 @@
     return isBiomeRevealed(item.biome) || tempRevealed.has(item.id);
   }
 
+  function biomeLabel(biomeId) {
+    const biome = biomes.find((b) => b.id === biomeId);
+    return biome ? t(biome.name) : String(biomeId).replace(/-/g, ' ');
+  }
+
   function revealBiome(biomeId) {
     if (globalThis.VCProgress && typeof globalThis.VCProgress.openBiome === 'function') {
       globalThis.VCProgress.openBiome(biomeId);
@@ -259,9 +264,7 @@
     // 0. Spoiler notice if biome is unvisited
     if (lockedItem) {
       const banner = el('div', 'modal-spoiler-banner');
-      const biomeObj = biomes.find((b) => b.id === item.biome);
-      const biomeName = biomeObj ? biomeObj.name : item.biome.replace('-', ' ');
-      banner.append(el('span', '', t('Locked until you reach this biome: {biome}', { biome: t(biomeName) })));
+      banner.append(el('span', '', t('Locked until you reach this biome: {biome}', { biome: biomeLabel(item.biome) })));
       const revBtn = button(t('Reveal'), () => {
         tempRevealed.add(item.id);
         render();
@@ -295,7 +298,7 @@
       badges.append(el('span', 'badge badge-category', t(catLabel)));
     }
     if (item.biome) {
-      const bBadge = el('span', 'badge badge-biome', item.biome.replace('-', ' '));
+      const bBadge = el('span', 'badge badge-biome', biomeLabel(item.biome));
       badges.append(bBadge);
     }
     if (item.tier != null) {
@@ -657,7 +660,7 @@
       if (isSelected) chipClasses.push('active');
       if (!revealed) chipClasses.push('is-locked');
 
-      const chipText = revealed ? b.name : `🔒 ${b.name}`;
+      const chipText = revealed ? t(b.name) : `🔒 ${t(b.name)}`;
       const chip = el('button', chipClasses.join(' '), chipText);
       chip.type = 'button';
       chip.dataset.biome = b.id;
@@ -782,7 +785,7 @@
         lockedInfo.append(el('div', 'item-card-name', t('Locked item')));
         const lockedMeta = el('div', 'item-card-meta');
         if (item.biome) {
-          lockedMeta.append(el('span', 'badge badge-biome', item.biome.replace('-', ' ')));
+          lockedMeta.append(el('span', 'badge badge-biome', biomeLabel(item.biome)));
         }
         lockedInfo.append(lockedMeta);
         lockedTop.append(lockedInfo);
@@ -825,7 +828,7 @@
         meta.append(el('span', 'badge badge-category', t(catLabel)));
       }
       if (item.biome) {
-        const bBadge = el('span', 'badge badge-biome', item.biome.replace('-', ' '));
+        const bBadge = el('span', 'badge badge-biome', biomeLabel(item.biome));
         meta.append(bBadge);
       }
       if (item.tier != null) {
@@ -897,7 +900,7 @@
       const isOpen = groupOpenOverride.has(def.id) ? groupOpenOverride.get(def.id) : defaultOpen;
       if (isOpen) details.setAttribute('open', '');
       const summary = el('summary', 'biome-group-summary');
-      summary.append(el('span', 'biome-group-name', def.name), el('span', 'biome-group-count', ` (${number(list.length)})`));
+      summary.append(el('span', 'biome-group-name', t(def.name)), el('span', 'biome-group-count', ` (${number(list.length)})`));
       summary.addEventListener('click', () => {
         const opening = details.getAttribute('open') === null;
         groupOpenOverride.set(def.id, opening);

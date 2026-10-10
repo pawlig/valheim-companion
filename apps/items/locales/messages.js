@@ -257,68 +257,6 @@ globalThis.VC_MESSAGES = {
       "other": "{count} item"
     }
   },
-  "{count} weapons": {
-    "en": {
-      "one": "{count} weapon",
-      "other": "{count} weapons"
-    },
-    "cs": {
-      "one": "{count} zbraň",
-      "few": "{count} zbraně",
-      "many": "{count} zbraně",
-      "other": "{count} zbraní"
-    },
-    "de": {
-      "one": "{count} Waffe",
-      "other": "{count} Waffen"
-    },
-    "es": {
-      "one": "{count} arma",
-      "many": "{count} armas",
-      "other": "{count} armas"
-    },
-    "fr": {
-      "one": "{count} arme",
-      "many": "{count} armes",
-      "other": "{count} armes"
-    },
-    "pt": {
-      "one": "{count} arma",
-      "many": "{count} armas",
-      "other": "{count} armas"
-    },
-    "zh": {
-      "other": "{count} 件武器"
-    },
-    "hi": {
-      "one": "{count} हथियार",
-      "other": "{count} हथियार"
-    },
-    "ar": {
-      "zero": "{count} أسلحة",
-      "one": "{count} سلاح",
-      "two": "{count} سلاحان",
-      "few": "{count} أسلحة",
-      "many": "{count} سلاحًا",
-      "other": "{count} سلاح"
-    },
-    "bn": {
-      "one": "{count}টি অস্ত্র",
-      "other": "{count}টি অস্ত্র"
-    },
-    "ru": {
-      "one": "{count} единица оружия",
-      "few": "{count} единицы оружия",
-      "many": "{count} единиц оружия",
-      "other": "{count} единицы оружия"
-    },
-    "ja": {
-      "other": "{count} 個の武器"
-    },
-    "id": {
-      "other": "{count} senjata"
-    }
-  },
   "{count} more in locked biomes": {
     "en": {
       "one": "{count} more in locked biomes",
@@ -440,21 +378,6 @@ globalThis.VC_MESSAGES = {
     "ru": "Броня",
     "ja": "防具",
     "id": "Zirah"
-  },
-  "Food & Mead": {
-    "en": "Food & Mead",
-    "cs": "Jídlo a medovina",
-    "de": "Nahrung & Met",
-    "es": "Comida e hidromiel",
-    "fr": "Nourriture et hydromel",
-    "pt": "Comida e hidromel",
-    "zh": "食物与蜂蜜酒",
-    "hi": "भोजन और मदिरा",
-    "ar": "الطعام والميد",
-    "bn": "খাবার ও মিড",
-    "ru": "Еда и медовуха",
-    "ja": "料理と蜂蜜酒",
-    "id": "Makanan & Mead"
   },
   "Food": {
     "en": "Food",
@@ -590,21 +513,6 @@ globalThis.VC_MESSAGES = {
     "ru": "Уют",
     "ja": "快適度",
     "id": "Kenyamanan"
-  },
-  "Stations & Upgrades": {
-    "en": "Stations & Upgrades",
-    "cs": "Stanice a vylepšení",
-    "de": "Stationen & Upgrades",
-    "es": "Estaciones y mejoras",
-    "fr": "Ateliers et améliorations",
-    "pt": "Bancadas e melhorias",
-    "zh": "工作台与升级",
-    "hi": "स्टेशन और अपग्रेड",
-    "ar": "محطات العمل والترقيات",
-    "bn": "স্টেশন ও আপগ্রেড",
-    "ru": "Верстаки и улучшения",
-    "ja": "作業台とアップグレード",
-    "id": "Stasiun & Peningkatan"
   },
   "Wiki": {
     "en": "Wiki",
@@ -1026,51 +934,6 @@ globalThis.VC_MESSAGES = {
     "ja": "カテゴリで絞り込み",
     "id": "Filter berdasarkan kategori"
   },
-  "Weapons & Tools": {
-    "en": "Weapons & Tools",
-    "cs": "Zbraně a nástroje",
-    "de": "Waffen & Werkzeuge",
-    "es": "Armas y herramientas",
-    "fr": "Armes et outils",
-    "pt": "Armas e ferramentas",
-    "zh": "武器与工具",
-    "hi": "हथियार और औजार",
-    "ar": "الأسلحة والأدوات",
-    "bn": "অস্ত্র ও সরঞ্জাম",
-    "ru": "Оружие и инструменты",
-    "ja": "武器と道具",
-    "id": "Senjata & Alat"
-  },
-  "Armor & Shields": {
-    "en": "Armor & Shields",
-    "cs": "Zbroje a štíty",
-    "de": "Rüstung & Schilde",
-    "es": "Armaduras y escudos",
-    "fr": "Armures et boucliers",
-    "pt": "Armaduras e escudos",
-    "zh": "护甲与盾牌",
-    "hi": "कवच और ढाल",
-    "ar": "الدروع والتروس",
-    "bn": "বর্ম এবং ঢাল",
-    "ru": "Броня и щиты",
-    "ja": "防具と盾",
-    "id": "Zirah & Perisai"
-  },
-  "Building & Comfort": {
-    "en": "Building & Comfort",
-    "cs": "Stavba a pohodlí",
-    "de": "Bauen & Komfort",
-    "es": "Construcción y comodidad",
-    "fr": "Construction et confort",
-    "pt": "Construção e conforto",
-    "zh": "建筑与舒适度",
-    "hi": "निर्माण और आराम",
-    "ar": "البناء والراحة",
-    "bn": "নির্মাণ এবং আরাম",
-    "ru": "Строительство и уют",
-    "ja": "建築と快適度",
-    "id": "Bangunan & Kenyamanan"
-  },
   "Crafting & Materials": {
     "en": "Crafting & Materials",
     "cs": "Výroba a materiály",
@@ -1145,21 +1008,6 @@ globalThis.VC_MESSAGES = {
     "ru": "Трофеи",
     "ja": "トロフィー",
     "id": "Trofi"
-  },
-  "Valuables & Traders": {
-    "en": "Valuables & Traders",
-    "cs": "Cennosti a obchodníci",
-    "de": "Wertsachen & Händler",
-    "es": "Objetos de valor y comerciantes",
-    "fr": "Objets de valeur et marchands",
-    "pt": "Itens valiosos e comerciantes",
-    "zh": "贵重品与商人",
-    "hi": "कीमती वस्तुएँ और व्यापारी",
-    "ar": "الأشياء الثمينة والتجار",
-    "bn": "মূল্যবান জিনিস এবং ব্যবসায়ী",
-    "ru": "Ценности и торговцы",
-    "ja": "貴重品と商人",
-    "id": "Barang berharga & Pedagang"
   },
   "Boss Summoning": {
     "en": "Boss Summoning",
@@ -1328,7 +1176,7 @@ globalThis.VC_MESSAGES = {
   },
   "Set bonus: {bonus}": {
     "en": "Set bonus: {bonus}",
-    "cs": "Set bonus: {bonus}",
+    "cs": "Bonus sady: {bonus}",
     "de": "Setbonus: {bonus}",
     "es": "Bonificación de conjunto: {bonus}",
     "fr": "Bonus d’ensemble : {bonus}",
@@ -1358,7 +1206,7 @@ globalThis.VC_MESSAGES = {
   },
   "Stamina: {stamina}": {
     "en": "Stamina: {stamina}",
-    "cs": "Stamina: {stamina}",
+    "cs": "Výdrž: {stamina}",
     "de": "Ausdauer: {stamina}",
     "es": "Aguante: {stamina}",
     "fr": "Endurance : {stamina}",
@@ -1448,7 +1296,7 @@ globalThis.VC_MESSAGES = {
   },
   "Cooldown: {cooldown}": {
     "en": "Cooldown: {cooldown}",
-    "cs": "Cooldown: {cooldown}",
+    "cs": "Doba obnovy: {cooldown}",
     "de": "Abklingzeit: {cooldown}",
     "es": "Enfriamiento: {cooldown}",
     "fr": "Temps de recharge : {cooldown}",
@@ -1520,21 +1368,6 @@ globalThis.VC_MESSAGES = {
     "ru": "Создается по рецепту выше.",
     "ja": "上記のレシピで作成されます。",
     "id": "Dibuat dari resep di atas."
-  },
-  "Wiki ↗": {
-    "en": "Wiki ↗",
-    "cs": "Wiki ↗",
-    "de": "Wiki ↗",
-    "es": "Wiki ↗",
-    "fr": "Wiki ↗",
-    "pt": "Wiki ↗",
-    "zh": "百科 ↗",
-    "hi": "विकी ↗",
-    "ar": "ويكي ↗",
-    "bn": "উইকি ↗",
-    "ru": "Вики ↗",
-    "ja": "Wiki ↗",
-    "id": "Wiki ↗"
   },
   "Dropped by:": {
     "en": "Dropped by:",
@@ -1701,36 +1534,6 @@ globalThis.VC_MESSAGES = {
     "ja": "スタック：{stack}",
     "id": "Tumpukan: {stack}"
   },
-  "Show locked biomes": {
-    "en": "Show locked biomes",
-    "cs": "Zobrazit zamčené biomy",
-    "de": "Gesperrte Biome anzeigen",
-    "es": "Mostrar biomas bloqueados",
-    "fr": "Afficher les biomes verrouillés",
-    "pt": "Mostrar biomas bloqueados",
-    "zh": "显示已锁定生物群系",
-    "hi": "लॉक किए गए बायोम दिखाएँ",
-    "ar": "إظهار المناطق الأحيائية المقفلة",
-    "bn": "লক করা বায়োমগুলি প্রদর্শন করুন",
-    "ru": "Показать заблокированные биомы",
-    "ja": "ロックされたバイオームを表示",
-    "id": "Tampilkan bioma terkunci"
-  },
-  "Hide locked biomes": {
-    "en": "Hide locked biomes",
-    "cs": "Skrýt zamčené biomy",
-    "de": "Gesperrte Biome ausblenden",
-    "es": "Ocultar biomas bloqueados",
-    "fr": "Masquer les biomes verrouillés",
-    "pt": "Ocultar biomas bloqueados",
-    "zh": "隐藏已锁定生物群系",
-    "hi": "लॉक किए गए बायोम छिपाएँ",
-    "ar": "إخفاء المناطق الأحيائية المقفلة",
-    "bn": "লক করা বায়োমগুলি লুকান",
-    "ru": "Скрыть заблокированные биомы",
-    "ja": "ロックされたバイオームを非表示",
-    "id": "Sembunyikan bioma terkunci"
-  },
   "Locked until you reach this biome: {biome}": {
     "en": "Locked until you reach this biome: {biome}",
     "cs": "Uzamčeno, dokud nedosáhnete tohoto biomu: {biome}",
@@ -1745,21 +1548,6 @@ globalThis.VC_MESSAGES = {
     "ru": "Заблокировано, пока вы не достигнете этого биома: {biome}",
     "ja": "このバイオームに到達するまでロック：{biome}",
     "id": "Terkunci hingga mencapai bioma ini: {biome}"
-  },
-  "Reveal biome": {
-    "en": "Reveal biome",
-    "cs": "Odhalit biom",
-    "de": "Biom enthüllen",
-    "es": "Revelar bioma",
-    "fr": "Révéler le biome",
-    "pt": "Revelar bioma",
-    "zh": "揭示生物群系",
-    "hi": "बायोम दिखाएँ",
-    "ar": "كشف المنطقة الأحيائية",
-    "bn": "বায়োম প্রকাশ করুন",
-    "ru": "Открыть биом",
-    "ja": "バイオームを表示",
-    "id": "Ungkap bioma"
   },
   "Sort by": {
     "en": "Sort by",
@@ -2227,5 +2015,35 @@ globalThis.VC_MESSAGES = {
     "id": {
       "other": "Tampilkan {count} lagi"
     }
+  },
+  "Filter by biome": {
+    "en": "Filter by biome",
+    "cs": "Filtrovat podle biomu",
+    "de": "Nach Biom filtern",
+    "es": "Filtrar por bioma",
+    "fr": "Filtrer par biome",
+    "pt": "Filtrar por bioma",
+    "zh": "按生物群系筛选",
+    "hi": "बायोम के अनुसार फ़िल्टर करें",
+    "ar": "تصفية حسب المنطقة الحيوية",
+    "bn": "বায়োম অনুসারে ফিল্টার করুন",
+    "ru": "Фильтр по биому",
+    "ja": "バイオームで絞り込み",
+    "id": "Filter berdasarkan biom"
+  },
+  "Search items": {
+    "en": "Search items",
+    "cs": "Hledat položky",
+    "de": "Gegenstände suchen",
+    "es": "Buscar objetos",
+    "fr": "Rechercher des objets",
+    "pt": "Buscar itens",
+    "zh": "搜索物品",
+    "hi": "वस्तुएँ खोजें",
+    "ar": "بحث عن العناصر",
+    "bn": "আইটেম অনুসন্ধান করুন",
+    "ru": "Поиск предметов",
+    "ja": "アイテムを検索",
+    "id": "Cari item"
   }
 };
