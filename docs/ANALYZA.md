@@ -550,8 +550,8 @@ Nová sekce `/items/` (`apps/items/`, statická vanilla JS aplikace jako Smithy 
       - `meads`: `[{ id, name, biome }]` → odkaz `/provisions/#item=<id>`
       - `comfort`: `[{ id, name, comfort, biome }]` → odkaz `/comfort/#item=<id>`
       - `expedition`: `[{ bossId, bossName, biome }]` → odkaz `/expedition/#boss=<bossId>`
-      - `stations`: `[{ id, name, level, biome, itemId }]` — stavby, jejichž recept obsahuje surovinu (u `wood`: Artisan Table, Forge, Stonecutter).
-      - `crafting`: `[{ id, name, level, biome, itemId }]` — výrobky (nástroje, munice, …), jejichž recept obsahuje surovinu (u `wood`: Antler Pickaxe, Bronzehead Arrow; u `bronze`: Bronze Nails, Bronze Pickaxe).
+      - `stations`: `[{ id, name, level, biome, itemId }]` — stavby, jejichž recept obsahuje surovinu (u `wood` 33 položek, např. Artisan Table, Forge, Stonecutter).
+      - `crafting`: `[{ id, name, level, biome, itemId }]` — výrobky (nástroje, munice, …), jejichž recept obsahuje surovinu (u `wood` 19 položek, např. Antler Pickaxe, Bronzehead Arrow; u `bronze` např. Bronze Nails, Bronze Pickaxe).
 - **Uživatelské rozhraní `/items/`:**
   - Záhlaví „Items Compendium“, podtitul ve 13 jazycích, návrat na rozcestník, přepínač jazyka, vysouvací panel `VCProgress`.
   - Vyhledávání (okamžitá filtrace podle anglického názvu).
@@ -576,7 +576,7 @@ Nová sekce `/items/` (`apps/items/`, statická vanilla JS aplikace jako Smithy 
 - **Rozhodnutí Pavla 10. 10. 2026 (audit `docs/audit/AUDIT-VC-39-40.md`, globální arch AUD/1–8):**
   - AUD/1 — spoilery: **zamčeno podle postupu** (`VCProgress`), přepínač zůstává.
   - AUD/2 — odlitky, formy a Idoly Deep North mají vlastní kategorii **Casting** (`category: "casting"`).
-  - AUD/3 — Hildiřino zboží: **každý kus má kartu v Items** (kategorie armor, odkaz na Hildira); doplní se z `data/traders.json`.
+  - AUD/3 — Hildiřino zboží: **všech 38 Hildiřiných kusů má kartu v Items** (armor 34, tool 2, material 2; odkaz na Hildir).
   - AUD/4 — trinkety mají kategorii **Accessories** (`category: "accessory"`).
   - AUD/5 — hledání: suroviny vedou **do Items Compendia** (beze změny).
   - AUD/8 — tlačítko „Reveal“ na zamčené kartě jen odkryje obsah přes `vc.openBiomes`; postup hráče (`vc.progress`) mění jen Progress Tracker.

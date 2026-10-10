@@ -272,7 +272,7 @@ Ruční opravy, které parser aplikuje **jako poslední krok**:
 
 ### `data/items-compendium.json` (VC-39, VC-40b; Items Compendium)
 
-Vyrábí `node scripts/build-items-data.mjs` (zapisuje `data/items-compendium.json` a `apps/items/data/data.js`). Spouští se v páru s `node scripts/build-traders-data.mjs`: nejdřív items, pak traders. Odsazení 2 mezery, konec souboru nový řádek; pořadí `items` je dané generátorem (není abecední podle `name` ani `id`).
+Vyrábí `node scripts/build-items-data.mjs` (zapisuje `data/items-compendium.json` a `apps/items/data/data.js`). Pořadí: nejdřív `node scripts/build-traders-data.mjs`, pak `node scripts/build-items-data.mjs`, protože items generátor čte `data/traders.json` (`build-items-data.mjs` ř. 190 a 880); v opačném pořadí by zboží obchodníků chybělo. Odsazení 2 mezery, konec souboru nový řádek; pořadí `items` je dané generátorem (není abecední podle `name` ani `id`).
 
 Kořen: `{ biomes, items }`.
 
@@ -286,7 +286,7 @@ Kořen: `{ biomes, items }`.
   - `wiki` (string | null): URL stránky na wiki (`https://valheim.weirdgloop.org/w/...`).
   - `names` (objekt): překlady názvu `{ cs, de, fr, pt, ru }` — vyplněné jen jazyky, kde je překlad; chybí-li klíč, použije se `name`.
   - `description` (string | null): popis ze hry (anglicky).
-  - `stats` (objekt | null): u zbraní a zbroje hodnoty z `data/weapons.json` / `data/armor.json` (např. `damage`, `damageMax`, `stamina`, `blockArmor`, `skill`, `hands`, `maxQuality`), u ostatních `null`.
+  - `stats` (objekt | null): objekt u kategorií `weapon`, `shield`, `armor`, `ammo`, `tool`, `food`, `mead` a `building`, jinak `null`. Příklady klíčů: zbraně `damage`, `damageMax`, `stamina`, `blockArmor`, `skill`, `hands`, `maxQuality`; stavby `comfort`, `furniture`, `seasonal`. Některé kusy kategorií weapon, shield, ammo a tool mají `null` (45 položek).
   - `recipe` (objekt | null): `null`, pokud se nevyrábí. Jinak `{ station, stationId, stationLevel, yields, materials }`:
     - `station` (string | null): název stanice (např. `Black Forge`), `stationId` (slug stanice), `stationLevel` (number, minimální úroveň stanice). `station` a `stationId` jsou `null` u 61 receptů bez stanice.
     - `yields` (number): počet kusů z jednoho receptu.
@@ -324,8 +324,8 @@ Kořen: `{ biomes, items }`.
 | `trophy` | Trofeje | id končí `-trophy` | 70 |
 | `drop` | Drop z bytostí | `material` s `creatures[]` a bez receptu, lokace a obchodníka | 50 |
 | `material` | Materiály | wiki `material`/`wood`, fallback pro nerozpoznané | 74 |
-| `ingredient` | Ingredience | kuchyňské suroviny, ryby, semena, mead base | 100 |
-| `food` | Jídlo | `provisions` (`provisions: true`), wiki `food`/`feast` | 99 |
+| `ingredient` | Ingredience | kuchyňské suroviny (`provisions: true`), ryby, semena, mead base | 100 |
+| `food` | Jídlo | jídla z `apps/provisions/data/data.js` (`provFoodIds`), wiki `food`/`feast` | 99 |
 | `mead` | Medovina | wiki `mead` | 21 |
 | `building` | Stavění a stavby | wiki `structure` (kromě `plant`) a `comfort.json` | 203 |
 | `valuable` | Cennosti | wiki `valuable` (Amber, Ruby, …) | 10 |
@@ -350,7 +350,7 @@ Kořen: `{ traders, valuables, biomes }`.
 **`unlockedBy.type`** (u 69 položek: `null` 22, `boss` 15, `chest` 30, `creature` 2):
 - `null` — vždy k dispozici (`{ unlockedBy: null }`), např. Yule Hat u Haldora.
 - `boss` — `{ type: "boss", id, name, biome, text }`, např. Ymir Flesh u Haldora: `{ "type": "boss", "id": "the-elder", "name": "The Elder", "biome": "black-forest", "text": "Requires defeating The Elder" }`.
-- `chest` — jen Hildir: `{ type: "chest", chest, boss, bossName, location, biome, text }` (truhla `silver`, boss `geirrhafa`, `location` „Howling Cavern“, biom `mountain`); `text` např. „Requires returning Hildir's silver chest“.
+- `chest` — jen Hildir: `{ type: "chest", chest, boss, bossName, location, biome, text }` Hildir má tři truhly, každá s vlastním `chest`, `boss`, `bossName`, `location` a `biome`: `silver` / Geirrhafa / Howling Cavern / `mountain` (9 položek), `bronze` / Zil & Thungr / Sealed Tower / `plains` (10), `brass` / Brenna / Smouldering Tomb / `black-forest` (11). `text` přesně: „Requires returning Hildir's silver chest (Geirrhafa)“, „… bronze chest (Zil & Thungr)“, „… brass chest (Brenna)“.
 - `creature` — bytost, která není boss (jen Bog Witch, např. Seafarer's Herbs po Serpent): `{ type: "creature", id, name, biome, text }`.
 
 Zamykání podle `VCProgress` (odhalený biom) se řídí `biome` podmínky, ne typem; viz `docs/ANALYZA.md` § 28.
