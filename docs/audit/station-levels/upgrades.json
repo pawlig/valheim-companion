@@ -1,0 +1,1582 @@
+{
+ "Workbench": {
+  "baseMats": [
+   {
+    "name": "Wood",
+    "amount": 10
+   }
+  ],
+  "base": {
+   "biome": "meadows",
+   "det": [
+    "Wood:meadows"
+   ]
+  },
+  "levelTxt": "five",
+  "upgrades": [
+   {
+    "name": "Chopping Block",
+    "mats": [
+     {
+      "name": "Wood",
+      "amount": 10
+     },
+     {
+      "name": "Flint",
+      "amount": 10
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Wood",
+      "amount": 10
+     },
+     {
+      "name": "Flint",
+      "amount": 10
+     }
+    ],
+    "pageId": "piece_workbench_ext1",
+    "hasPage": true,
+    "res": {
+     "biome": "meadows",
+     "det": [
+      "Wood:meadows",
+      "Flint:meadows"
+     ]
+    }
+   },
+   {
+    "name": "Tanning Rack",
+    "mats": [
+     {
+      "name": "Wood",
+      "amount": 10
+     },
+     {
+      "name": "Flint",
+      "amount": 15
+     },
+     {
+      "name": "Leather Scraps",
+      "amount": 20
+     },
+     {
+      "name": "Deer Hide",
+      "amount": 5
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Wood",
+      "amount": 10
+     },
+     {
+      "name": "Flint",
+      "amount": 15
+     },
+     {
+      "name": "Leather Scraps",
+      "amount": 20
+     },
+     {
+      "name": "Deer Hide",
+      "amount": 5
+     }
+    ],
+    "pageId": "piece_workbench_ext2",
+    "hasPage": true,
+    "res": {
+     "biome": "meadows",
+     "det": [
+      "Wood:meadows",
+      "Flint:meadows",
+      "Leather Scraps:meadows",
+      "Deer Hide:meadows"
+     ]
+    }
+   },
+   {
+    "name": "Adze",
+    "mats": [
+     {
+      "name": "Finewood",
+      "amount": 10
+     },
+     {
+      "name": "Bronze",
+      "amount": 3
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Finewood",
+      "amount": 10
+     },
+     {
+      "name": "Bronze",
+      "amount": 3
+     }
+    ],
+    "pageId": "piece_workbench_ext3",
+    "hasPage": true,
+    "res": {
+     "biome": "black-forest",
+     "det": [
+      "Finewood:black-forest",
+      "Bronze:black-forest"
+     ]
+    }
+   },
+   {
+    "name": "Tool Shelf",
+    "mats": [
+     {
+      "name": "Finewood",
+      "amount": 10
+     },
+     {
+      "name": "Iron",
+      "amount": 4
+     },
+     {
+      "name": "Obsidian",
+      "amount": 4
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Iron",
+      "amount": 4
+     },
+     {
+      "name": "Finewood",
+      "amount": 10
+     },
+     {
+      "name": "Obsidian",
+      "amount": 4
+     }
+    ],
+    "pageId": "piece_workbench_ext4",
+    "hasPage": true,
+    "res": {
+     "biome": "mountain",
+     "det": [
+      "Finewood:black-forest",
+      "Iron:swamp",
+      "Obsidian:mountain"
+     ]
+    }
+   }
+  ]
+ },
+ "Forge": {
+  "baseMats": [
+   {
+    "name": "Stone",
+    "amount": 4
+   },
+   {
+    "name": "Coal",
+    "amount": 4
+   },
+   {
+    "name": "Wood",
+    "amount": 10
+   },
+   {
+    "name": "Copper",
+    "amount": 6
+   }
+  ],
+  "base": {
+   "biome": "swamp",
+   "det": [
+    "Stone:meadows",
+    "Coal:swamp(items=swamp,comp=meadows)",
+    "Wood:meadows",
+    "Copper:black-forest"
+   ]
+  },
+  "levelTxt": "seven",
+  "upgrades": [
+   {
+    "name": "Forge Cooler",
+    "mats": [
+     {
+      "name": "Finewood",
+      "amount": 25
+     },
+     {
+      "name": "Copper",
+      "amount": 10
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Finewood",
+      "amount": 25
+     },
+     {
+      "name": "Copper",
+      "amount": 10
+     }
+    ],
+    "pageId": "forge_ext5",
+    "hasPage": true,
+    "res": {
+     "biome": "black-forest",
+     "det": [
+      "Finewood:black-forest",
+      "Copper:black-forest"
+     ]
+    }
+   },
+   {
+    "name": "Anvils",
+    "mats": [
+     {
+      "name": "Wood",
+      "amount": 5
+     },
+     {
+      "name": "Bronze",
+      "amount": 2
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Wood",
+      "amount": 5
+     },
+     {
+      "name": "Bronze",
+      "amount": 2
+     }
+    ],
+    "pageId": "forge_ext2",
+    "hasPage": true,
+    "res": {
+     "biome": "black-forest",
+     "det": [
+      "Wood:meadows",
+      "Bronze:black-forest"
+     ]
+    }
+   },
+   {
+    "name": "Smith's Anvil",
+    "mats": [
+     {
+      "name": "Wood",
+      "amount": 5
+     },
+     {
+      "name": "Iron",
+      "amount": 20
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Iron",
+      "amount": 20
+     },
+     {
+      "name": "Wood",
+      "amount": 5
+     }
+    ],
+    "pageId": "forge_ext4",
+    "hasPage": true,
+    "res": {
+     "biome": "swamp",
+     "det": [
+      "Wood:meadows",
+      "Iron:swamp"
+     ]
+    }
+   },
+   {
+    "name": "Forge Toolrack",
+    "mats": [
+     {
+      "name": "Wood",
+      "amount": 10
+     },
+     {
+      "name": "Iron",
+      "amount": 15
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Iron",
+      "amount": 15
+     },
+     {
+      "name": "Wood",
+      "amount": 10
+     }
+    ],
+    "pageId": "forge_ext6",
+    "hasPage": true,
+    "res": {
+     "biome": "swamp",
+     "det": [
+      "Wood:meadows",
+      "Iron:swamp"
+     ]
+    }
+   },
+   {
+    "name": "Forge Bellows",
+    "mats": [
+     {
+      "name": "Wood",
+      "amount": 5
+     },
+     {
+      "name": "Deer Hide",
+      "amount": 5
+     },
+     {
+      "name": "Chain",
+      "amount": 4
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Wood",
+      "amount": 5
+     },
+     {
+      "name": "Deer Hide",
+      "amount": 5
+     },
+     {
+      "name": "Chain",
+      "amount": 4
+     }
+    ],
+    "pageId": "forge_ext1",
+    "hasPage": true,
+    "res": {
+     "biome": "swamp",
+     "det": [
+      "Wood:meadows",
+      "Deer Hide:meadows",
+      "Chain:swamp"
+     ]
+    }
+   },
+   {
+    "name": "Grinding Wheel",
+    "mats": [
+     {
+      "name": "Wood",
+      "amount": 25
+     },
+     {
+      "name": "Sharpening Stone",
+      "amount": 1
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Wood",
+      "amount": 25
+     },
+     {
+      "name": "Sharpening Stone",
+      "amount": 1
+     }
+    ],
+    "pageId": "forge_ext3",
+    "hasPage": true,
+    "res": {
+     "biome": "black-forest",
+     "det": [
+      "Wood:meadows",
+      "Sharpening Stone:black-forest"
+     ]
+    }
+   }
+  ]
+ },
+ "Black Forge": {
+  "baseMats": [
+   {
+    "name": "Black Marble",
+    "amount": 10
+   },
+   {
+    "name": "Yggdrasil Wood",
+    "amount": 10
+   },
+   {
+    "name": "Black Core",
+    "amount": 5
+   }
+  ],
+  "base": {
+   "biome": "mistlands",
+   "det": [
+    "Black Marble:mistlands",
+    "Yggdrasil Wood:mistlands",
+    "Black Core:mistlands"
+   ]
+  },
+  "levelTxt": "{{Max crafting level|Black forge}}",
+  "upgrades": [
+   {
+    "name": "Black Forge Cooler",
+    "mats": [
+     {
+      "name": "Iron",
+      "amount": 5
+     },
+     {
+      "name": "Copper",
+      "amount": 5
+     },
+     {
+      "name": "Black Marble",
+      "amount": 4
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Iron",
+      "amount": 5
+     },
+     {
+      "name": "Copper",
+      "amount": 5
+     },
+     {
+      "name": "Black Marble",
+      "amount": 4
+     }
+    ],
+    "pageId": "blackforge_ext1",
+    "hasPage": true,
+    "res": {
+     "biome": "mistlands",
+     "det": [
+      "Iron:swamp",
+      "Copper:black-forest",
+      "Black Marble:mistlands"
+     ]
+    }
+   },
+   {
+    "name": "Vice",
+    "mats": [
+     {
+      "name": "Iron",
+      "amount": 5
+     },
+     {
+      "name": "Copper",
+      "amount": 8
+     },
+     {
+      "name": "Mechanical Spring",
+      "amount": 2
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Iron",
+      "amount": 5
+     },
+     {
+      "name": "Copper",
+      "amount": 8
+     },
+     {
+      "name": "Mechanical Spring",
+      "amount": 2
+     }
+    ],
+    "pageId": "blackforge_ext2_vise",
+    "hasPage": true,
+    "res": {
+     "biome": "mistlands",
+     "det": [
+      "Iron:swamp",
+      "Copper:black-forest",
+      "Mechanical Spring:mistlands"
+     ]
+    }
+   },
+   {
+    "name": "Metal Cutter",
+    "mats": [
+     {
+      "name": "Black Marble",
+      "amount": 5
+     },
+     {
+      "name": "Flametal",
+      "amount": 5
+     },
+     {
+      "name": "Ashwood",
+      "amount": 5
+     },
+     {
+      "name": "Charred Bone",
+      "amount": 4
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Black Marble",
+      "amount": 5
+     },
+     {
+      "name": "Flametal",
+      "amount": 5
+     },
+     {
+      "name": "Ashwood",
+      "amount": 5
+     },
+     {
+      "name": "Charred Bone",
+      "amount": 4
+     }
+    ],
+    "pageId": "blackforge_ext3_metalcutter",
+    "hasPage": true,
+    "res": {
+     "biome": "ashlands",
+     "det": [
+      "Black Marble:mistlands",
+      "Flametal:ashlands",
+      "Ashwood:ashlands",
+      "Charred Bone:ashlands"
+     ]
+    }
+   },
+   {
+    "name": "Gem Cutter",
+    "mats": [
+     {
+      "name": "Flametal",
+      "amount": 5
+     },
+     {
+      "name": "Ashwood",
+      "amount": 8
+     },
+     {
+      "name": "Morgen Sinew",
+      "amount": 2
+     },
+     {
+      "name": "Bloodstone",
+      "amount": 1
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Flametal",
+      "amount": 5
+     },
+     {
+      "name": "Ashwood",
+      "amount": 8
+     },
+     {
+      "name": "Morgen Sinew",
+      "amount": 2
+     },
+     {
+      "name": "Bloodstone",
+      "amount": 1
+     }
+    ],
+    "pageId": "blackforge_ext4_gemcutter",
+    "hasPage": true,
+    "res": {
+     "biome": "ashlands",
+     "det": [
+      "Flametal:ashlands",
+      "Ashwood:ashlands",
+      "Morgen Sinew:ashlands",
+      "Bloodstone:ashlands"
+     ]
+    }
+   },
+   {
+    "name": "Smith's Aprons",
+    "mats": [
+     {
+      "name": "Bloodgold",
+      "amount": 5
+     },
+     {
+      "name": "Timberwood",
+      "amount": 8
+     },
+     {
+      "name": "Moose Hide",
+      "amount": 2
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Bloodgold",
+      "amount": 5
+     },
+     {
+      "name": "Timberwood",
+      "amount": 8
+     },
+     {
+      "name": "Moose Hide",
+      "amount": 2
+     }
+    ],
+    "pageId": "blackforge_ext5_apron",
+    "hasPage": true,
+    "res": {
+     "biome": "deep-north",
+     "det": [
+      "Bloodgold:deep-north",
+      "Timberwood:deep-north",
+      "Moose Hide:deep-north"
+     ]
+    }
+   }
+  ]
+ },
+ "Galdr Table": {
+  "baseMats": [
+   {
+    "name": "Black Metal",
+    "amount": 10
+   },
+   {
+    "name": "Yggdrasil Wood",
+    "amount": 20
+   },
+   {
+    "name": "Black Core",
+    "amount": 5
+   },
+   {
+    "name": "Refined Eitr",
+    "amount": 5
+   }
+  ],
+  "base": {
+   "biome": "mistlands",
+   "det": [
+    "Black Metal:plains",
+    "Yggdrasil Wood:mistlands",
+    "Black Core:mistlands",
+    "Refined Eitr:mistlands"
+   ]
+  },
+  "levelTxt": "{{Max crafting level|Galdr table}}",
+  "upgrades": [
+   {
+    "name": "Rune Table",
+    "mats": [
+     {
+      "name": "Black Marble",
+      "amount": 10
+     },
+     {
+      "name": "Yggdrasil Wood",
+      "amount": 5
+     },
+     {
+      "name": "Refined Eitr",
+      "amount": 10
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Black Marble",
+      "amount": 10
+     },
+     {
+      "name": "Yggdrasil Wood",
+      "amount": 5
+     },
+     {
+      "name": "Refined Eitr",
+      "amount": 10
+     }
+    ],
+    "pageId": "piece_magetable_ext",
+    "hasPage": true,
+    "res": {
+     "biome": "mistlands",
+     "det": [
+      "Black Marble:mistlands",
+      "Yggdrasil Wood:mistlands",
+      "Refined Eitr:mistlands"
+     ]
+    }
+   },
+   {
+    "name": "Unfading Candles",
+    "mats": [
+     {
+      "name": "Black Marble",
+      "amount": 10
+     },
+     {
+      "name": "Skeleton Trophy",
+      "amount": 3
+     },
+     {
+      "name": "Refined Eitr",
+      "amount": 10
+     },
+     {
+      "name": "Resin",
+      "amount": 15
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Black Marble",
+      "amount": 10
+     },
+     {
+      "name": "Skeleton Trophy",
+      "amount": 3
+     },
+     {
+      "name": "Refined Eitr",
+      "amount": 10
+     },
+     {
+      "name": "Resin",
+      "amount": 15
+     }
+    ],
+    "pageId": "piece_magetable_ext2",
+    "hasPage": true,
+    "res": {
+     "biome": "mistlands",
+     "det": [
+      "Black Marble:mistlands",
+      "Skeleton Trophy:black-forest",
+      "Refined Eitr:mistlands",
+      "Resin:meadows"
+     ]
+    }
+   },
+   {
+    "name": "Feathery wreath",
+    "mats": [
+     {
+      "name": "Celestial Feather",
+      "amount": 8
+     },
+     {
+      "name": "Asksvin Trophy",
+      "amount": 1
+     },
+     {
+      "name": "Refined Eitr",
+      "amount": 10
+     },
+     {
+      "name": "Ashwood",
+      "amount": 3
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Celestial Feather",
+      "amount": 8
+     },
+     {
+      "name": "Asksvin Trophy",
+      "amount": 1
+     },
+     {
+      "name": "Refined Eitr",
+      "amount": 10
+     },
+     {
+      "name": "Ashwood",
+      "amount": 3
+     }
+    ],
+    "pageId": "piece_magetable_ext3",
+    "hasPage": false,
+    "res": {
+     "biome": "ashlands",
+     "det": [
+      "Celestial Feather:ashlands",
+      "Asksvin Trophy:ashlands",
+      "Refined Eitr:mistlands",
+      "Ashwood:ashlands"
+     ]
+    }
+   },
+   {
+    "name": "Standing Loom",
+    "mats": [
+     {
+      "name": "Timberwood",
+      "amount": 5
+     },
+     {
+      "name": "Nornathread",
+      "amount": 10
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Timberwood",
+      "amount": 5
+     },
+     {
+      "name": "Nornathread",
+      "amount": 10
+     }
+    ],
+    "pageId": "piece_magetable_ext4",
+    "hasPage": true,
+    "res": {
+     "biome": "deep-north",
+     "det": [
+      "Timberwood:deep-north",
+      "Nornathread:deep-north"
+     ]
+    }
+   }
+  ]
+ },
+ "Cauldron": {
+  "baseMats": [
+   {
+    "name": "Tin",
+    "amount": 10
+   }
+  ],
+  "base": {
+   "biome": "black-forest",
+   "det": [
+    "Tin:black-forest"
+   ]
+  },
+  "levelTxt": "7",
+  "upgrades": [
+   {
+    "name": "Spice Rack",
+    "mats": [
+     {
+      "name": "Dandelion",
+      "amount": 3
+     },
+     {
+      "name": "Carrot",
+      "amount": 2
+     },
+     {
+      "name": "Mushroom",
+      "amount": 5
+     },
+     {
+      "name": "Thistle",
+      "amount": 3
+     },
+     {
+      "name": "Turnip",
+      "amount": 3
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Dandelion",
+      "amount": 3
+     },
+     {
+      "name": "Carrot",
+      "amount": 2
+     },
+     {
+      "name": "Mushroom",
+      "amount": 5
+     },
+     {
+      "name": "Thistle",
+      "amount": 3
+     },
+     {
+      "name": "Turnip",
+      "amount": 3
+     }
+    ],
+    "pageId": "cauldron_ext1_spice",
+    "hasPage": true,
+    "res": {
+     "biome": "black-forest",
+     "det": [
+      "Dandelion:meadows",
+      "Carrot:meadows",
+      "Mushroom:meadows",
+      "Thistle:black-forest",
+      "Turnip:meadows"
+     ]
+    }
+   },
+   {
+    "name": "Butcher's Table",
+    "mats": [
+     {
+      "name": "Ancient Bark",
+      "amount": 2
+     },
+     {
+      "name": "Corewood",
+      "amount": 4
+     },
+     {
+      "name": "Finewood",
+      "amount": 4
+     },
+     {
+      "name": "Silver",
+      "amount": 2
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Ancient Bark",
+      "amount": 2
+     },
+     {
+      "name": "Corewood",
+      "amount": 4
+     },
+     {
+      "name": "Finewood",
+      "amount": 4
+     },
+     {
+      "name": "Silver",
+      "amount": 2
+     }
+    ],
+    "pageId": "cauldron_ext3_butchertable",
+    "hasPage": true,
+    "res": {
+     "biome": "mountain",
+     "det": [
+      "Ancient Bark:swamp",
+      "Corewood:black-forest",
+      "Finewood:black-forest",
+      "Silver:mountain"
+     ]
+    }
+   },
+   {
+    "name": "Pots and Pans",
+    "mats": [
+     {
+      "name": "Iron",
+      "amount": 5
+     },
+     {
+      "name": "Copper",
+      "amount": 5
+     },
+     {
+      "name": "Black Metal",
+      "amount": 5
+     },
+     {
+      "name": "Finewood",
+      "amount": 10
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Iron",
+      "amount": 5
+     },
+     {
+      "name": "Copper",
+      "amount": 5
+     },
+     {
+      "name": "Black Metal",
+      "amount": 5
+     },
+     {
+      "name": "Finewood",
+      "amount": 10
+     }
+    ],
+    "pageId": "cauldron_ext4_pots",
+    "hasPage": true,
+    "res": {
+     "biome": "plains",
+     "det": [
+      "Iron:swamp",
+      "Copper:black-forest",
+      "Black Metal:plains",
+      "Finewood:black-forest"
+     ]
+    }
+   },
+   {
+    "name": "Mortar and Pestle",
+    "mats": [
+     {
+      "name": "Black Marble",
+      "amount": 8
+     },
+     {
+      "name": "Finewood",
+      "amount": 6
+     },
+     {
+      "name": "Corewood",
+      "amount": 4
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Black Marble",
+      "amount": 8
+     },
+     {
+      "name": "Finewood",
+      "amount": 6
+     },
+     {
+      "name": "Corewood",
+      "amount": 4
+     }
+    ],
+    "pageId": "<small>cauldron_ext5_mortarandpestle</small>",
+    "hasPage": true,
+    "res": {
+     "biome": "mistlands",
+     "det": [
+      "Black Marble:mistlands",
+      "Finewood:black-forest",
+      "Corewood:black-forest"
+     ]
+    }
+   },
+   {
+    "name": "Rolling Pins and Cutting Boards",
+    "mats": [
+     {
+      "name": "Ashwood",
+      "amount": 8
+     },
+     {
+      "name": "Finewood",
+      "amount": 6
+     },
+     {
+      "name": "Flametal",
+      "amount": 4
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Ashwood",
+      "amount": 8
+     },
+     {
+      "name": "Finewood",
+      "amount": 6
+     },
+     {
+      "name": "Flametal",
+      "amount": 4
+     }
+    ],
+    "pageId": "cauldron_ext6_rollingpins",
+    "hasPage": true,
+    "res": {
+     "biome": "ashlands",
+     "det": [
+      "Ashwood:ashlands",
+      "Finewood:black-forest",
+      "Flametal:ashlands"
+     ]
+    }
+   },
+   {
+    "name": "Smoker",
+    "mats": [
+     {
+      "name": "Bloodgold",
+      "amount": 5
+     },
+     {
+      "name": "Timberwood",
+      "amount": 6
+     }
+    ],
+    "pageMats": [
+     {
+      "name": "Bloodgold",
+      "amount": 5
+     },
+     {
+      "name": "Timberwood",
+      "amount": 6
+     }
+    ],
+    "pageId": "cauldron_ext7_smoker",
+    "hasPage": true,
+    "res": {
+     "biome": "deep-north",
+     "det": [
+      "Bloodgold:deep-north",
+      "Timberwood:deep-north"
+     ]
+    }
+   }
+  ]
+ },
+ "Artisan Table": {
+  "baseMats": [
+   {
+    "name": "Dragon Tear",
+    "amount": 2
+   },
+   {
+    "name": "Wood",
+    "amount": 10
+   }
+  ],
+  "base": {
+   "biome": "mountain",
+   "det": [
+    "Dragon Tear:mountain",
+    "Wood:meadows"
+   ]
+  },
+  "levelTxt": null,
+  "upgrades": [
+   {
+    "name": "Artisan Press",
+    "mats": [
+     {
+      "name": "Black Marble",
+      "amount": 5
+     },
+     {
+      "name": "Bronze",
+      "amount": 5
+     },
+     {
+      "name": "Majestic Carapace",
+      "amount": 1
+     }
+    ],
+    "pageMats": null,
+    "pageId": null,
+    "hasPage": false,
+    "res": {
+     "biome": "mistlands",
+     "det": [
+      "Black Marble:mistlands",
+      "Bronze:black-forest",
+      "Majestic Carapace:mistlands"
+     ]
+    }
+   }
+  ]
+ },
+ "Stonecutter": {
+  "baseMats": [
+   {
+    "name": "Wood",
+    "amount": 10
+   },
+   {
+    "name": "Iron",
+    "amount": 2
+   },
+   {
+    "name": "Stone",
+    "amount": 4
+   }
+  ],
+  "base": {
+   "biome": "swamp",
+   "det": [
+    "Wood:meadows",
+    "Iron:swamp",
+    "Stone:meadows"
+   ]
+  },
+  "levelTxt": null,
+  "upgrades": []
+ },
+ "Fermenter": {
+  "baseMats": [
+   {
+    "name": "Finewood",
+    "amount": 30
+   },
+   {
+    "name": "Bronze",
+    "amount": 5
+   },
+   {
+    "name": "Resin",
+    "amount": 10
+   }
+  ],
+  "base": {
+   "biome": "black-forest",
+   "det": [
+    "Finewood:black-forest",
+    "Bronze:black-forest",
+    "Resin:meadows"
+   ]
+  },
+  "levelTxt": null,
+  "upgrades": []
+ },
+ "Spinning Wheel": {
+  "baseMats": [
+   {
+    "name": "Finewood",
+    "amount": 20
+   },
+   {
+    "name": "Iron Nails",
+    "amount": 10
+   },
+   {
+    "name": "Leather Scraps",
+    "amount": 5
+   }
+  ],
+  "base": {
+   "biome": "swamp",
+   "det": [
+    "Finewood:black-forest",
+    "Iron Nails:swamp",
+    "Leather Scraps:meadows"
+   ]
+  },
+  "levelTxt": null,
+  "upgrades": []
+ },
+ "Food Preparation Table": {
+  "baseMats": [
+   {
+    "name": "Iron",
+    "amount": 5
+   },
+   {
+    "name": "Finewood",
+    "amount": 20
+   },
+   {
+    "name": "Leather Scraps",
+    "amount": 15
+   }
+  ],
+  "base": {
+   "biome": "swamp",
+   "det": [
+    "Iron:swamp",
+    "Finewood:black-forest",
+    "Leather Scraps:meadows"
+   ]
+  },
+  "levelTxt": null,
+  "upgrades": []
+ },
+ "Stone Oven": {
+  "baseMats": [
+   {
+    "name": "Iron",
+    "amount": 15
+   },
+   {
+    "name": "Stone",
+    "amount": 20
+   },
+   {
+    "name": "Surtling Core",
+    "amount": 4
+   }
+  ],
+  "base": {
+   "biome": "swamp",
+   "det": [
+    "Iron:swamp",
+    "Stone:meadows",
+    "Surtling Core:black-forest"
+   ]
+  },
+  "levelTxt": null,
+  "upgrades": []
+ },
+ "Smelter": {
+  "baseMats": [
+   {
+    "name": "Stone",
+    "amount": 20
+   },
+   {
+    "name": "Surtling Core",
+    "amount": 5
+   }
+  ],
+  "base": {
+   "biome": "black-forest",
+   "det": [
+    "Stone:meadows",
+    "Surtling Core:black-forest"
+   ]
+  },
+  "levelTxt": null,
+  "upgrades": []
+ },
+ "Blast Furnace": {
+  "baseMats": [
+   {
+    "name": "Stone",
+    "amount": 20
+   },
+   {
+    "name": "Surtling Core",
+    "amount": 5
+   },
+   {
+    "name": "Iron",
+    "amount": 10
+   },
+   {
+    "name": "Finewood",
+    "amount": 20
+   }
+  ],
+  "base": {
+   "biome": "swamp",
+   "det": [
+    "Stone:meadows",
+    "Surtling Core:black-forest",
+    "Iron:swamp",
+    "Finewood:black-forest"
+   ]
+  },
+  "levelTxt": null,
+  "upgrades": []
+ },
+ "Charcoal Kiln": {
+  "baseMats": [
+   {
+    "name": "Stone",
+    "amount": 20
+   },
+   {
+    "name": "Surtling Core",
+    "amount": 5
+   }
+  ],
+  "base": {
+   "biome": "black-forest",
+   "det": [
+    "Stone:meadows",
+    "Surtling Core:black-forest"
+   ]
+  },
+  "levelTxt": null,
+  "upgrades": []
+ },
+ "Windmill": {
+  "baseMats": [
+   {
+    "name": "Stone",
+    "amount": 20
+   },
+   {
+    "name": "Wood",
+    "amount": 30
+   },
+   {
+    "name": "Iron Nails",
+    "amount": 30
+   }
+  ],
+  "base": {
+   "biome": "swamp",
+   "det": [
+    "Stone:meadows",
+    "Wood:meadows",
+    "Iron Nails:swamp"
+   ]
+  },
+  "levelTxt": null,
+  "upgrades": []
+ },
+ "Cooking Station": {
+  "baseMats": [
+   {
+    "name": "Wood",
+    "amount": 2
+   }
+  ],
+  "base": {
+   "biome": "meadows",
+   "det": [
+    "Wood:meadows"
+   ]
+  },
+  "levelTxt": null,
+  "upgrades": []
+ },
+ "Iron Cooking Station": {
+  "baseMats": [
+   {
+    "name": "Chain",
+    "amount": 3
+   },
+   {
+    "name": "Iron",
+    "amount": 3
+   }
+  ],
+  "base": {
+   "biome": "swamp",
+   "det": [
+    "Chain:swamp",
+    "Iron:swamp"
+   ]
+  },
+  "levelTxt": null,
+  "upgrades": []
+ },
+ "Mead Ketill": {
+  "baseMats": [
+   {
+    "name": "Tin",
+    "amount": 4
+   },
+   {
+    "name": "Copper",
+    "amount": 6
+   },
+   {
+    "name": "Leather Scraps",
+    "amount": 2
+   }
+  ],
+  "base": {
+   "biome": "black-forest",
+   "det": [
+    "Tin:black-forest",
+    "Copper:black-forest",
+    "Leather Scraps:meadows"
+   ]
+  },
+  "levelTxt": null,
+  "upgrades": []
+ },
+ "Eitr Refinery": {
+  "baseMats": [
+   {
+    "name": "Black Marble",
+    "amount": 20
+   },
+   {
+    "name": "Black Metal",
+    "amount": 5
+   },
+   {
+    "name": "Yggdrasil Wood",
+    "amount": 10
+   },
+   {
+    "name": "Black Core",
+    "amount": 5
+   },
+   {
+    "name": "Sap",
+    "amount": 3
+   }
+  ],
+  "base": {
+   "biome": "mistlands",
+   "det": [
+    "Black Marble:mistlands",
+    "Black Metal:plains",
+    "Yggdrasil Wood:mistlands",
+    "Black Core:mistlands",
+    "Sap:mistlands"
+   ]
+  },
+  "levelTxt": null,
+  "upgrades": []
+ },
+ "Frost Foundry": {
+  "baseMats": [
+   {
+    "name": "Iron",
+    "amount": 15
+   },
+   {
+    "name": "Stone",
+    "amount": 20
+   },
+   {
+    "name": "Frostcore",
+    "amount": 10
+   }
+  ],
+  "base": {
+   "biome": "deep-north",
+   "det": [
+    "Iron:swamp",
+    "Stone:meadows",
+    "Frostcore:deep-north"
+   ]
+  },
+  "levelTxt": null,
+  "upgrades": []
+ },
+ "Frigid Kiln": {
+  "baseMats": [
+   {
+    "name": "Stone",
+    "amount": 20
+   },
+   {
+    "name": "Frostcore",
+    "amount": 10
+   },
+   {
+    "name": "Ice",
+    "amount": 5
+   }
+  ],
+  "base": {
+   "biome": "deep-north",
+   "det": [
+    "Stone:meadows",
+    "Frostcore:deep-north",
+    "Ice:deep-north"
+   ]
+  },
+  "levelTxt": null,
+  "upgrades": []
+ }
+}

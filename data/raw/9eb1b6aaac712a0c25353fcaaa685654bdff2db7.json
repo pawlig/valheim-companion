@@ -1,0 +1,1 @@
+{"batchcomplete":true,"query":{"pages":[{"pageid":4766,"ns":10,"title":"Template:Max crafting level","revisions":[{"slots":{"main":{"contentmodel":"wikitext","contentformat":"text/x-wiki","content":"<includeonly>{{#invoke:Crafting station|maxLevel}}</includeonly><noinclude>\n{{Documentation}}\n[[Category:Templates]]\n</noinclude>"}}}]}]}}
