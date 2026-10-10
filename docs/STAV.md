@@ -94,13 +94,13 @@ Zadání jsou v [`docs/zadani/`](zadani/). Hotové úlohy jsou mergnuté do `mai
 | VC-42j | oprava O-9 (UI): odznak obchodníka z pole `traders` ve Smithy/Provisions, Expedition `summonLabel`, „Materials & goods“ na konci košíku, migrace starých řádků `va.cart` | Flash | ✅ nasazeno 10. 10. (0 regexů na jména obchodníků, migrace ověřena v prohlížeči, 432 testů; přejímka napoprvé) |
 | VC-42l | AUD/6: `fetch-stations.mjs` nahrazuje jen své 4 stanice (`mergeStations`), pořadí fetcherů stanic v ORCHESTRACE a DATA-SCHEMA | Haiku | ✅ nasazeno 10. 10. (samotný `fetch-stations` i řetězec od `[]` dávají soubor bajtově jako main, 436 testů; přejímka napoprvé; orchestrator fix: typy v tabulce DATA-SCHEMA) |
 | VC-43a | drobnosti: `generatedAt` z gitu (ne mtime) v build-data/build-armourer-data, whitelist i18n testu po párech (app, jazyk, klíč) | Luna | ✅ nasazeno 10. 10. (build-data/build-armourer-data po touch čisté, whitelist 14 globálních + 22 párů; přejímka napoprvé) |
-| VC-43b | drobnosti/spoilery: Traders banner zámku bez jména bosse v neodhaleném biomu, Items „Dropped by“ bez tvorů ze zamčených biomů | Sol | 🔄 běží (GL strom, větev `vc-43b`, #179) |
+| VC-43b | drobnosti/spoilery: Traders banner zámku bez jména bosse v neodhaleném biomu, Items „Dropped by“ bez tvorů ze zamčených biomů | Sol | ✅ nasazeno 10. 10. (čistý profil: Traders bez jmen pozdních bossů a odkazů, „Requires progress in a later biome“ ve 13 jazycích; Items wood „5 more in locked biomes“; přejímka napoprvé) |
 | VC-43c | drobnosti: Smithy hromadné Have/Want podle max. kvality kusů (Rag Q2), háčky pro testy pryč ze Smithy `el()` a Expedition `summonLabel` | Flash | 🔄 běží (GM strom, větev `vc-43c`, #180) |
 | VC-44 | rozbor (podnět Pavla 10. 10.): dostupnost úrovní stanic a kvalit předmětů po biomech (Carapace v Mistlands jen Q2, Black Forge lvl 3 nedostupná) → `docs/audit/ROZBOR-STATION-LEVELS.md` + balíky oprav | Fable | 🔄 běží (CC, větev `vc-44-rozbor`, #181) |
 
 ### 🔄 Předávka orchestrátora (10. 10. 2026, ~17:30)
 
-- **Běží:** VC-43b (Sol, GL strom, #179), VC-43c (Flash, GM strom, #180) — drobnosti ze STAV; VC-44 rozbor úrovní stanic (Fable, CC, #181). VC-42l (AUD/6) nasazeno. Opravy auditu VC-42a … VC-42k všechny nasazené (main 432 testů, strom po `build-traders-data` + `build-items-data` čistý). Oba worktree volné (`--detach main`).
+- **Běží:** VC-43c (Flash, GM strom, #180) — drobnosti ze STAV; VC-44 rozbor úrovní stanic (Fable, CC, #181). VC-42l (AUD/6) nasazeno. Opravy auditu VC-42a … VC-42k všechny nasazené (main 432 testů, strom po `build-traders-data` + `build-items-data` čistý). Oba worktree volné (`--detach main`).
 - **Další kandidáti** (nic z toho Pavel zatím nezadal jako prioritu): drobnosti v „Známé drobnosti“ (generatedAt z mtime, Greydwarf Shaman Deep North u wood, spoilerové bannery v Traders, háčky pro testy v produkčním kódu Smithy/Expedition, hromadné „Chci“ Q3 ve skupině setu vs. select kusu); návrh: odznak obchodníka u kosmetických kusů zbroje v katalogu Smithy (data už mají `traders`).
 - **Pracovníci 10. 10. večer:** Claude týden ~93 %, Flash týden ~58 %, Codex a GLM vyčerpané do 13./12. 10. Sonnet spolehlivý (VC-42f vráceno 3×, ostatní 1 kolo nebo napoprvé), Flash VC-42j napoprvé, Haiku dokumentace s 1 kolem.
 - Worktree: `valheim-units-CC` a `valheim-units-GM` volné. node_modules pro damage-calculator a signs jsou v obou nalinkované.
@@ -111,8 +111,6 @@ Pracovníci od 6. 10.: agy je vyčerpaný (týden 4 %, obnova 8. 10.), práci d�
 **Zásada:** každý nový nástroj a funkce je od začátku ve 13 jazycích (ANALYZA § 15 a zásada před § 16).
 
 ## Známé drobnosti (neřešené)
-- Items: u `wood` zdroj „Greydwarf Shaman (Deep North)“ — podezřelá data biomů tvora (z přejímky VC-42k).
-- Traders: bannery zámků jmenují pozdní bossy (The Queen, Fader) i na čistém profilu — posoudit spoiler.
 - Smithy `apps/smithy/assets/app.js:48-59` mock DOM v `el()` a Expedition `globalThis.summonLabel` (`app.js:72`) jsou jen kvůli testům (`scripts/ui-hacks.test.mjs` vkládá kód přes `replace()`) — uklidit spolu s testy.
 - Smithy košík: hromadné „Chci“ ve skupině setu nabízí Q1–Q4, po Q3 u Rag Armor má kus want 3, ale jeho select nabízí jen do Q2 (prázdný) — ověřit na main.
 
