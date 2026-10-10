@@ -2120,5 +2120,20 @@ globalThis.VC_MESSAGES = {
     "ru": "Литьё",
     "ja": "鋳造",
     "id": "Pengecoran"
+  },
+  "Locked item": {
+    "en": "Locked item",
+    "cs": "Zamčená položka",
+    "de": "Gesperrter Gegenstand",
+    "es": "Objeto bloqueado",
+    "fr": "Objet verrouillé",
+    "pt": "Item bloqueado",
+    "zh": "未解锁物品",
+    "hi": "लॉक की गई वस्तु",
+    "ar": "عنصر مقفل",
+    "bn": "লক করা আইটেম",
+    "ru": "Заблокированный предмет",
+    "ja": "ロックされたアイテム",
+    "id": "Item terkunci"
   }
 };

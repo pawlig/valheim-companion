@@ -318,18 +318,18 @@ describe('Items Compendium UI Tests', () => {
     assert.equal(title.textContent, 'Wood');
   });
 
-  it('9. Deep link #item=<id> opens the item modal and unlocks biome if needed', () => {
-    const { doc } = createDomFixture('#item=silver');
+  it('9. Deep link #item=<id> opens the item modal', () => {
+    const { doc } = createDomFixture('#item=silver', { 'vc.itemsShowAll': 'true' });
     const modal = doc.getElementById('item-modal');
     assert.equal(modal.hidden, false, 'Modal should open automatically via deep link');
     const title = doc.getElementById('modal-item-name');
     assert.equal(title.textContent, 'Silver');
     const silverCard = doc.getElementById('item-card-silver');
-    assert.ok(!silverCard.classList.contains('is-locked'), 'Silver card should be unlocked by deep link');
+    assert.ok(!silverCard.classList.contains('is-locked'), 'Silver card is unlocked with the spoiler filter off');
   });
 
   it('10. Add to shopping cart adds item to va.cart in localStorage', () => {
-    const { doc, storage } = createDomFixture('#item=bronze');
+    const { doc, storage } = createDomFixture('#item=bronze', { 'vc.itemsShowAll': 'true' });
     const modalBody = doc.getElementById('modal-body');
     const cartBtn = modalBody.querySelector('.add-cart-btn');
     assert.ok(cartBtn, 'Add to shopping cart button must be present in modal');
@@ -389,7 +389,7 @@ describe('Items Compendium UI Tests', () => {
   });
 
   it('15. Weapon modal shows crafting recipe with linked materials and station', () => {
-    const { doc } = createDomFixture('#item=iron-sword');
+    const { doc } = createDomFixture('#item=iron-sword', { 'vc.itemsShowAll': 'true' });
     const modalBody = doc.getElementById('modal-body');
     const recipeSection = modalBody.querySelectorAll('.modal-section').find((sec) =>
       sec.children[0] && sec.children[0].textContent === 'Crafting Recipe'
@@ -415,17 +415,17 @@ describe('Items Compendium UI Tests', () => {
   });
 
   it('16. Cross-link buttons open the right tools', () => {
-    const { doc } = createDomFixture('#item=iron-sword');
+    const { doc } = createDomFixture('#item=iron-sword', { 'vc.itemsShowAll': 'true' });
     const crossLinks = doc.getElementById('modal-body').querySelectorAll('.cross-link-btn');
     const hrefs = crossLinks.map((a) => a.href);
     assert.ok(hrefs.some((h) => h.includes('/smithy/#item=iron-sword')), 'Weapon must offer Open in Smithy');
 
-    const tr2 = createDomFixture('#item=megingjord');
+    const tr2 = createDomFixture('#item=megingjord', { 'vc.itemsShowAll': 'true' });
     const traderBtns = tr2.doc.getElementById('modal-body').querySelectorAll('.cross-link-btn');
     const traderHrefs = traderBtns.map((a) => a.href);
     assert.ok(traderHrefs.some((h) => h.includes('/traders/#trader=haldor')), 'megingjord must offer Open in Trader Ledger');
 
-    const tr3 = createDomFixture('#item=sausages');
+    const tr3 = createDomFixture('#item=sausages', { 'vc.itemsShowAll': 'true' });
     const foodBtns = tr3.doc.getElementById('modal-body').querySelectorAll('.cross-link-btn');
     assert.ok(
       foodBtns.map((a) => a.href).some((h) => h.includes('/provisions/#item=sausages')),
@@ -456,7 +456,7 @@ describe('Items Compendium UI Tests', () => {
   });
 
   it('19. Quantity input multiplies the amount added to the cart', () => {
-    const { doc, storage } = createDomFixture('#item=bronze');
+    const { doc, storage } = createDomFixture('#item=bronze', { 'vc.itemsShowAll': 'true' });
     const qty = doc.getElementById('modal-body').querySelector('.cart-qty');
     assert.ok(qty, 'Quantity input must be present');
     qty.value = '5';
@@ -513,7 +513,7 @@ describe('Items Compendium UI Tests', () => {
   });
 
   it('23. Recipe materials display capitalized item names and clicking them opens the material modal', () => {
-    const { doc } = createDomFixture('#item=bronze');
+    const { doc } = createDomFixture('#item=bronze', { 'vc.itemsShowAll': 'true' });
     const modalBody = doc.getElementById('modal-body');
     const matLinks = modalBody.querySelectorAll('.modal-link-tag');
     assert.ok(matLinks.length > 0, 'Bronze recipe must render material links');
@@ -571,6 +571,34 @@ describe('Items Compendium UI Tests', () => {
     const banner = doc.getElementById('modal-body').querySelector('.modal-spoiler-banner');
     assert.ok(banner, 'Modal should display spoiler banner for unvisited Ashlands item');
     assert.equal(banner.querySelector('span').textContent, 'Locked until you reach this biome: Ashlands');
+  });
+
+  it('26b. Locked cards leak neither name nor image; search and deep link do not reveal or write progress', () => {
+    const { doc, storage } = createDomFixture();
+    const locked = doc.getElementById('items-grid').querySelectorAll('.item-card').filter((c) => c.classList.contains('is-locked'));
+    assert.ok(locked.length > 0);
+    for (const c of locked) {
+      assert.equal(c.querySelectorAll('img').length, 0, 'locked card must have no img');
+      assert.ok(!/Flametal/.test(c.textContent), 'locked card must not contain the item name');
+    }
+    const search = doc.getElementById('item-search');
+    search.value = 'flametal';
+    search.dispatch('input');
+    assert.equal(doc.getElementById('items-grid').querySelectorAll('.item-card').length, 0, 'search must not find locked items');
+    assert.ok(!storage.has('vc.progress'), 'progress untouched by search');
+  });
+
+  it('26c. Deep link to a locked item opens locked modal without touching progress; Reveal is per item', () => {
+    const { doc, storage } = createDomFixture('#item=flametal');
+    assert.ok(!storage.has('vc.progress'), 'deep link must not write vc.progress');
+    const body = doc.getElementById('modal-body');
+    assert.equal(doc.getElementById('item-modal').hidden, false);
+    assert.ok(body.querySelector('.modal-spoiler-banner'));
+    assert.ok(!/Flametal/.test(doc.getElementById('modal-item-name').textContent));
+    assert.equal(body.querySelectorAll('img').length, 0);
+    body.querySelector('.reveal-btn').dispatch('click');
+    assert.ok(/Flametal/.test(doc.getElementById('modal-item-name').textContent), 'Reveal shows the item');
+    assert.ok(!storage.has('vc.progress'), 'Reveal must not write vc.progress');
   });
 
   it('27. Sort select orders items by name (A → Z) and (Z → A) and persists to localStorage', () => {
@@ -641,7 +669,7 @@ describe('Items Compendium UI Tests', () => {
   });
 
   it('30. Modal navigation history maintains stack and Back button returns to previous item', () => {
-    const { doc } = createDomFixture();
+    const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'true' });
     const swordCard = doc.getElementById('item-card-iron-sword');
     assert.ok(swordCard, 'Iron sword card exists');
     swordCard.dispatch('click');
@@ -670,7 +698,7 @@ describe('Items Compendium UI Tests', () => {
   });
 
   it('31. Modal navigation history avoids circular loops and browser back closes modal', () => {
-    const { doc, ctx, fireWindow } = createDomFixture('#item=iron-sword');
+    const { doc, ctx, fireWindow } = createDomFixture('#item=iron-sword', { 'vc.itemsShowAll': 'true' });
     const modal = doc.getElementById('item-modal');
     assert.equal(modal.hidden, false, 'Modal should be open initially for Iron Sword');
     const modalName = doc.getElementById('modal-item-name');
