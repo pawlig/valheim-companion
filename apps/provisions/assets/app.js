@@ -200,11 +200,11 @@
         });
         node.append(rec);
       }
-    } else if (['love-potion', 'anti-sting-concoction', 'lightfoot-mead', 'tonic-of-ratatosk', 'draught-of-vananidir', 'brew-of-animal-whispers'].includes(mead.id)) {
+    } else if (mead.id === 'love-potion') {
       const traderP = el('p', 'details');
       const traderLink = el('a', 'item-link', 'The Bog Witch');
       traderLink.href = `/traders/#trader=bog-witch&item=${encodeURIComponent(mead.id)}`;
-      traderP.append(t('Sold by: ') || 'Sold by: ', traderLink);
+      traderP.append(t('Sources') + ': ', traderLink);
       node.append(traderP);
     } else node.append(el('p', 'hint', t('No crafting recipe in the data.')));
     const selected = state.meads.some(line => line.id === mead.id);
