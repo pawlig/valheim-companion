@@ -2,12 +2,14 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { aliasImage } from './image-index.mjs';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const load = name => JSON.parse(readFileSync(path.join(ROOT, 'data', `${name}.json`), 'utf8'));
 export function buildProvisionsData() {
   const biomes = load('biomes').map(b => ({ ...b, image: b.image ? `../bestiary/${b.image}` : null }));
   const items = Object.fromEntries(load('items').filter(item => !item.comfort).map(item => {
-    const image = item.image ? (item.image.startsWith('../provisions/') ? item.image.slice('../provisions/'.length) : `../smithy/${item.image}`) : null;
+    const itemImage = aliasImage(item.image);
+    const image = itemImage ? (itemImage.startsWith('../provisions/') ? itemImage.slice('../provisions/'.length) : `../smithy/${itemImage}`) : null;
     return [item.id, { ...item, image: image && existsSync(path.resolve(ROOT, 'apps/provisions', image)) ? image : null }];
   }));
   const bundle = { biomes, food: load('food'), meads: load('meads'), stations: load('stations').filter(station => station.type !== 'comfort'), items, tips: load('provisions-tips') };

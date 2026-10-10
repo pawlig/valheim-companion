@@ -4,6 +4,7 @@
 import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { aliasImage } from './image-index.mjs';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = path.join(REPO_ROOT, 'data');
@@ -40,7 +41,7 @@ export function buildArmourerBundle() {
 
   const items = {};
   for (const item of itemsList) {
-    items[item.id] = item;
+    items[item.id] = item.image ? { ...item, image: aliasImage(item.image) } : item;
   }
 
   const stationsPath = path.join(DATA_DIR, 'stations.json');

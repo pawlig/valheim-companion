@@ -9,6 +9,17 @@ import { slug } from './wiki/wikitext.mjs';
 
 const IMAGE_FILE = /\.(png|webp|jpg)$/i;
 
+// Wiki file names whose image is stored under another name (A-13: `roots` reuses root.png).
+export const IMAGE_ALIASES = { 'roots.png': 'root.png' };
+
+// Applies IMAGE_ALIASES to a file name or an image URL/path ("img/items/roots.png" -> "img/items/root.png").
+export function aliasImage(file) {
+  if (typeof file !== 'string') return file;
+  const base = path.posix.basename(file).toLowerCase();
+  const to = IMAGE_ALIASES[base];
+  return to ? `${file.slice(0, file.length - base.length)}${to}` : file;
+}
+
 function addFile(index, file, url) {
   const lower = file.toLowerCase();
   if (!index.has(lower)) index.set(lower, url);
@@ -32,6 +43,12 @@ export function buildImageIndex(appsDir, apps, extraDirs = []) {
   for (const app of apps) {
     const dir = path.join(appsDir, app, 'img');
     if (existsSync(dir)) walk(index, dir, `../${app}/img`, '');
+  }
+  for (const [from, to] of Object.entries(IMAGE_ALIASES)) {
+    const url = index.get(to);
+    if (!url) continue;
+    index.set(from, url);
+    index.set(slug(from.replace(/\.[^.]+$/, '')), url);
   }
   for (const { dir, urlPrefix } of extraDirs) {
     if (!existsSync(dir)) continue;

@@ -7576,7 +7576,7 @@
   {
     "id": "roots",
     "name": "Roots",
-    "image": "img/items/root.png",
+    "image": "img/items/roots.png",
     "biome": "swamp",
     "tier": 4,
     "sources": [

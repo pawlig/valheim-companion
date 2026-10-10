@@ -1,5 +1,5 @@
 window.VA_DATA = {
-  "generatedAt": "2026-10-06T12:01:59.472Z",
+  "generatedAt": "2026-10-10T10:42:17.370Z",
   "source": {
     "name": "Valheim Wiki",
     "url": "https://valheim.weirdgloop.org",
@@ -36204,7 +36204,7 @@ window.VA_DATA = {
     "roots": {
       "id": "roots",
       "name": "Roots",
-      "image": "img/items/roots.png",
+      "image": "img/items/root.png",
       "biome": "swamp",
       "tier": 4,
       "sources": [
@@ -40311,12 +40311,7 @@ window.VA_DATA = {
       "drops": [
         "Feathers"
       ],
-      "trophy": {
-        "name": "Crow trophy currently no trophy-->",
-        "image": null,
-        "dropChance": null,
-        "usage": []
-      },
+      "trophy": null,
       "summon": null,
       "location": "Black Forest",
       "spawns": [],
@@ -44018,12 +44013,7 @@ window.VA_DATA = {
       "drops": [
         "Feathers"
       ],
-      "trophy": {
-        "name": "Gull trophy currently no trophy-->",
-        "image": null,
-        "dropChance": null,
-        "usage": []
-      },
+      "trophy": null,
       "summon": null,
       "location": "* Meadows\n* Black Forest\n* Plains\n* Ocean",
       "spawns": [],
@@ -49617,12 +49607,7 @@ window.VA_DATA = {
         "Zil Trophy",
         "Thungr Trophy"
       ],
-      "trophy": {
-        "name": "Zil\nThungr",
-        "image": null,
-        "dropChance": null,
-        "usage": []
-      },
+      "trophy": null,
       "summon": null,
       "location": "Sealed tower",
       "spawns": [],
