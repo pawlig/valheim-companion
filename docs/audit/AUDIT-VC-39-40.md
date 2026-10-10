@@ -128,3 +128,13 @@ Hotovo, když: `grep -n "^| VC-4" docs/STAV.md` jsou všechny až za řádkem `#
 5. **Hub hledání:** suroviny teď vedou do `/items/#item=` a obcházejí karty surovin ve Smithy z VC-37 (`/smithy/#item=`). Ponechat (zadání VC-39 to tak chtělo), nebo vrátit do Smithy a z karty Smithy odkazovat do kompendia?
 6. **Mimo rozsah auditu, ale zjištěno:** `node scripts/wiki/fetch-stations.mjs && node scripts/build-site.mjs` mění `data/stations.json` (−194 řádků), comfort/expedition/provisions bundly a maže `apps/comfort/img/items/black-core.png`, `dragon-tear.png` – `stations.json` v repu není reprodukovatelný z pipeline (stav před VC-39, agy to nezpůsobil). Zadat samostatně?
 7. Přejímku VC-39/VC-40/VC-40b dělal orchestrátor podle ANALYZA § 28, kde jsou chybné ceny – chceš doplnit do ORCHESTRACE § 3 bod „data z wiki se při přejímce vzorkují proti `data/raw/`, ne proti zadání"?
+
+### Rozhodnutí Pavla (10. 10. 2026, globální arch AUD/1–7)
+
+1. Spoilery v Items: **zamčeno podle postupu**, přepínač zůstává (O-5 platí, jak je).
+2. Odlitky, formy a Idoly Deep North: **vlastní kategorie „Casting"** (O-3 bod 2 platí).
+3. Hildiřino zboží: **každý kus má kartu v Items** (kategorie armor, odkaz na Hildir) — O-3 je doplní z `data/traders.json` po O-1.
+4. Trinkety: **nová kategorie „Accessories"** (O-3 bod 1 platí).
+5. Hub hledání: suroviny vedou **do Items Compendia** (beze změny).
+6. Nereprodukovatelné `data/stations.json`: **samostatný úkol až po O-1 … O-10**.
+7. ORCHESTRACE § 3 bod 4 doplněn o povinné vzorkování proti `data/raw/`.

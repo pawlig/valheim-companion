@@ -63,6 +63,7 @@ Body 1–6 dělá **v čerstvém kontextu** `Agent` se `subagent_type: "prejimka
    ```
    Pusť 2× a potom `git status --short` musí být prázdné.
 4. Kontroly dat přes `node -e` (konkrétní jednotky a zbraně).
+   🚨 **Data z wiki se vzorkují proti wiki cache `data/raw/`, ne proti zadání ani analýze** (Pavel 10. 10. 2026, arch AUD/7 — chybné ceny Trader Ledgeru prošly, protože byly už v ANALYZA § 28). Aspoň 10 náhodných záznamů + všechny, které zadání jmenuje, porovnat s wikitextem stránky v cache; nesoulad = vráceno.
    ⚠️ `rank.js` čte `globalThis.VC_DATA`, takže v Node nastav `globalThis.window = globalThis` a teprve pak `eval` souboru `data.js`.
 5. Build a náhled:
    ```sh
