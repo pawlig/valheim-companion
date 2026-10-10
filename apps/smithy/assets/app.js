@@ -1811,21 +1811,21 @@
         itemsContainer.appendChild(groupEl);
       });
 
-      // Raw materials and goods added from Items/Traders: "N× name", no Have/Want.
-      if (materialLines.length > 0) {
-        const goodsEl = el('div', 'cart-group cart-goods-group');
-        const goodsHeader = el('div', 'cart-group-header');
-        goodsHeader.appendChild(el('span', 'cart-group-title', 'Materials & goods'));
-        goodsEl.appendChild(goodsHeader);
-        materialLines.forEach(line => goodsEl.appendChild(renderCartMaterialRow(line)));
-        itemsContainer.appendChild(goodsEl);
-      }
-
       // Render standalone pieces
       standaloneItems.forEach(item => {
         const pieceRow = renderCartPieceRow(item, true);
         itemsContainer.appendChild(pieceRow);
       });
+
+      // Raw materials and goods added from Items/Traders: "N× name", no Have/Want.
+      if (materialLines.length > 0) {
+        const goodsEl = el('div', 'cart-group cart-goods-group');
+        const goodsHeader = el('div', 'cart-group-header');
+        goodsHeader.appendChild(el('span', 'cart-group-title', t('Materials & goods')));
+        goodsEl.appendChild(goodsHeader);
+        materialLines.forEach(line => goodsEl.appendChild(renderCartMaterialRow(line)));
+        itemsContainer.appendChild(goodsEl);
+      }
 
       cartContent.appendChild(itemsContainer);
 
