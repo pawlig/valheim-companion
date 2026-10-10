@@ -123,7 +123,7 @@
   let searchQuery = '';
   let activeModalItem = null;
   let noticeTimer = null;
-  let showAllBiomes = true;
+  let showAllBiomes = false;
   try {
     const stored = localStorage.getItem('vc.itemsShowAll');
     if (stored !== null) {
@@ -152,6 +152,13 @@
   function isBiomeRevealed(biomeId) {
     if (!biomeId || showAllBiomes) return true;
     return getRevealedBiomes().includes(biomeId);
+  }
+
+  // Items revealed one by one (session only, never written to vc.progress).
+  const tempRevealed = new Set();
+
+  function isItemRevealed(item) {
+    return isBiomeRevealed(item.biome) || tempRevealed.has(item.id);
   }
 
   function revealBiome(biomeId) {
@@ -253,7 +260,7 @@
     if (backBtn) {
       if (modalHistory.length > 0) {
         const prev = modalHistory[modalHistory.length - 1];
-        backBtn.textContent = `← ${t('Back to {item}', { item: prev.name })}`;
+        backBtn.textContent = `← ${t('Back to {item}', { item: isItemRevealed(prev) ? prev.name : t('Locked item') })}`;
         backBtn.hidden = false;
       } else {
         backBtn.hidden = true;
@@ -261,20 +268,26 @@
     }
 
     modalBody.scrollTop = 0;
-    modalName.textContent = item.name;
+    const lockedItem = !isItemRevealed(item);
+    modalName.textContent = lockedItem ? t('Locked item') : item.name;
     modalBody.replaceChildren();
 
     // 0. Spoiler notice if biome is unvisited
-    if (item.biome && !getRevealedBiomes().includes(item.biome)) {
+    if (lockedItem) {
       const banner = el('div', 'modal-spoiler-banner');
-      banner.append(el('span', '', t('Locked until you reach this biome: {biome}', { biome: item.biome.replace('-', ' ') })));
-      const revBtn = button(t('Reveal biome'), () => {
-        revealBiome(item.biome);
+      const biomeObj = biomes.find((b) => b.id === item.biome);
+      const biomeName = biomeObj ? biomeObj.name : item.biome.replace('-', ' ');
+      banner.append(el('span', '', t('Locked until you reach this biome: {biome}', { biome: t(biomeName) })));
+      const revBtn = button(t('Reveal'), () => {
+        tempRevealed.add(item.id);
         render();
         openModal(item, true);
       }, 'reveal-btn');
       banner.append(revBtn);
       modalBody.append(banner);
+      modal.hidden = false;
+      backdrop.hidden = false;
+      return;
     }
 
     // 1. Overview: image + badges + weight/stack
@@ -711,6 +724,8 @@
       }
       // Search query
       if (query) {
+        // A locked item must not be findable by name (search would leak its existence).
+        if (!isItemRevealed(item)) return false;
         const nameMatch = item.name.toLowerCase().includes(query);
         const idMatch = item.id.toLowerCase().includes(query);
         const locNamesMatch = item.names && Object.values(item.names).some((n) => typeof n === 'string' && n.toLowerCase().includes(query));
@@ -765,11 +780,38 @@
     grid.replaceChildren();
 
     for (const item of filtered) {
-      const revealed = isBiomeRevealed(item.biome);
+      const revealed = isItemRevealed(item);
       const card = el('div', 'item-card' + (!revealed ? ' is-locked' : ''));
       card.id = `item-card-${item.id}`;
       card.dataset.id = item.id;
 
+      if (!revealed) {
+        const lockedTop = el('div', 'item-card-top');
+        lockedTop.append(el('div', 'item-card-placeholder', '🔒'));
+        const lockedInfo = el('div', 'item-card-info');
+        lockedInfo.append(el('div', 'item-card-name', t('Locked item')));
+        const lockedMeta = el('div', 'item-card-meta');
+        if (item.biome) {
+          lockedMeta.append(el('span', 'badge badge-biome', item.biome.replace('-', ' ')));
+        }
+        lockedInfo.append(lockedMeta);
+        lockedTop.append(lockedInfo);
+        card.append(lockedTop);
+
+        const lockedCover = el('div', 'item-card-locked-cover');
+        lockedCover.append(el('p', 'item-card-locked-text', t('Locked until you reach this biome.')));
+        const revBtn = button(
+          t('Reveal'),
+          (e) => {
+            e.stopPropagation();
+            revealBiome(item.biome);
+            render();
+          },
+          'reveal-btn'
+        );
+        lockedCover.append(revBtn);
+        card.append(lockedCover);
+      } else {
       const top = el('div', 'item-card-top');
       const resolvedImg = resolveImage(item.image);
       if (resolvedImg) {
@@ -808,21 +850,6 @@
       top.append(info);
       card.append(top);
 
-      if (!revealed) {
-        const lockedCover = el('div', 'item-card-locked-cover');
-        lockedCover.append(el('p', 'item-card-locked-text', t('Locked until you reach this biome.')));
-        const revBtn = button(
-          t('Reveal'),
-          (e) => {
-            e.stopPropagation();
-            revealBiome(item.biome);
-            render();
-          },
-          'reveal-btn'
-        );
-        lockedCover.append(revBtn);
-        card.append(lockedCover);
-      } else {
         const stats = el('div', 'item-card-stats');
         const weightText = item.weight != null ? `${item.weight} kg` : '—';
         const stackText = item.stack != null ? `×${item.stack}` : '';
@@ -853,9 +880,7 @@
     const item = itemsById.get(itemId);
     if (!item) return;
 
-    if (item.biome && !isBiomeRevealed(item.biome)) {
-      revealBiome(item.biome);
-    }
+    // Deep link never reveals anything: a locked item opens in its locked state.
 
     // Reset filters if item is outside current view
     if (selectedBiome !== 'all' && item.biome && selectedBiome !== item.biome) {
