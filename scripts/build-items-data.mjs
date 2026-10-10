@@ -12,10 +12,12 @@
 //   data/raw/*.json      all wiki infoboxes (structures, tools, seeds, accessories...)
 //
 // Output: data/items-compendium.json + apps/items/data/data.js (VC_ITEMS_DATA).
-import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
+import { buildImageIndex } from './image-index.mjs';
+import { readCachedPages } from './wiki/api.mjs';
 import { parseAllInfoboxes, cleanText, slug as baseSlug, parseMaterialList } from './wiki/wikitext.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -58,42 +60,10 @@ function inferBiome(text) {
   return null;
 }
 
-// Index all existing images across app folders
-const IMAGE_INDEX = new Map();
-const IMAGE_APP_ROOTS = ['smithy', 'provisions', 'comfort', 'bestiary', 'traders', 'progress'];
-
-for (const app of IMAGE_APP_ROOTS) {
-  const dir = path.join(APPS_DIR, app, 'img');
-  if (!existsSync(dir)) continue;
-  function walk(d, rel) {
-    for (const f of readdirSync(d)) {
-      const p = path.join(d, f);
-      const sub = rel ? `${rel}/${f}` : f;
-      if (statSync(p).isDirectory()) {
-        walk(p, sub);
-      } else {
-        const lower = f.toLowerCase();
-        if (!IMAGE_INDEX.has(lower)) IMAGE_INDEX.set(lower, `../${app}/img/${sub}`);
-        const base = slug(lower.replace(/\.[^.]+$/, ''));
-        if (!IMAGE_INDEX.has(base)) IMAGE_INDEX.set(base, `../${app}/img/${sub}`);
-      }
-    }
-  }
-  walk(dir, '');
-}
-
-// Also index items from damage-calculator public assets
-const damageCalcDir = path.join(APPS_DIR, 'damage-calculator', 'public', 'items');
-if (existsSync(damageCalcDir)) {
-  for (const f of readdirSync(damageCalcDir)) {
-    if (/\.(png|webp|jpg)$/i.test(f)) {
-      const lower = f.toLowerCase();
-      const base = slug(lower.replace(/\.[^.]+$/, ''));
-      if (!IMAGE_INDEX.has(lower)) IMAGE_INDEX.set(lower, `../damage-calculator/items/${f}`);
-      if (!IMAGE_INDEX.has(base)) IMAGE_INDEX.set(base, `../damage-calculator/items/${f}`);
-    }
-  }
-}
+// Index all existing images across app folders (plus damage-calculator public assets)
+const IMAGE_INDEX = buildImageIndex(APPS_DIR, ['smithy', 'provisions', 'comfort', 'bestiary', 'traders', 'progress'], [
+  { dir: path.join(APPS_DIR, 'damage-calculator', 'public', 'items'), urlPrefix: '../damage-calculator/items' },
+]);
 
 function resolveImage(raw, itemId) {
   if (!raw && !itemId) return null;
@@ -203,26 +173,13 @@ export function buildItemsData() {
   const provFoodIds = new Set(provFood.map((f) => f.id));
   const provMeadIds = new Set(provMeads.map((m) => m.id));
 
-  // Load raw wiki pages from cache
-  const rawFiles = existsSync(path.join(DATA_DIR, 'raw'))
-    ? readdirSync(path.join(DATA_DIR, 'raw')).filter((f) => f.endsWith('.json'))
-    : [];
+  // Wiki pages used by the compendium: a fixed list of titles (scripts/wiki/items-pages.json)
+  // read from the wiki cache; the build never scans data/raw/ and never touches the network.
+  // To add a page: append its title to items-pages.json and cache it once with
+  // `await api.getWikitext(['<title>'])` (scripts/wiki/api.mjs), then rebuild.
   const wikiPages = new Map();
-  for (const file of rawFiles) {
-    try {
-      const data = JSON.parse(readFileSync(path.join(DATA_DIR, 'raw', file), 'utf8'));
-      if (!data.query?.pages) continue;
-      for (const page of Object.values(data.query.pages)) {
-        if (page.title && page.revisions && !page.title.startsWith('File:')) {
-          const wt = page.revisions[0]?.slots?.main?.content || page.revisions[0]?.['*'];
-          if (wt && !wikiPages.has(page.title)) {
-            wikiPages.set(page.title, { title: page.title, wt });
-          }
-        }
-      }
-    } catch {
-      // Ignore malformed cache entry
-    }
+  for (const [title, wt] of readCachedPages(JSON.parse(readFileSync(path.join(ROOT, 'scripts', 'wiki', 'items-pages.json'), 'utf8')))) {
+    wikiPages.set(title, { title, wt });
   }
 
   const summonIds = new Set([
@@ -1313,9 +1270,7 @@ export function buildItemsData() {
     'wood-stack': 'meadows',
     'stone-pile': 'meadows',
     'flint-pile': 'meadows',
-    'bone-stack': 'meadows',
     'coal-pile': 'meadows',
-    'finewood-stack': 'meadows',
     'corewood-stack': 'black-forest',
     'copper-stack': 'black-forest',
     'tin-stack': 'black-forest',
@@ -1331,14 +1286,9 @@ export function buildItemsData() {
     'ashwood-stack': 'ashlands',
     'grausten-pile': 'ashlands',
     'flametal-stack': 'ashlands',
-    'bloodgold-stack': 'ashlands',
-    'pile-of-skulls': 'swamp',
-    'timberwood-stack': 'ashlands',
-    'heart-of-the-forest': 'meadows',
     'wooden-protection-idol': 'meadows',
     'wooden-battle-idol': 'meadows',
     'queen-bee': 'meadows',
-    'neckstabber': 'meadows',
     'roundpole-fence': 'meadows',
     'roundpole-gate': 'meadows',
     'bronze-pendant': 'black-forest',
@@ -1356,7 +1306,6 @@ export function buildItemsData() {
     'crystal-heart': 'mountain',
     'silver-protection-idol': 'mountain',
     'silver-battle-idol': 'mountain',
-    'snow-shovel': 'mountain',
     'nimble-anklet': 'plains',
     'evasion-mantle': 'plains',
     'black-metal-protection-idol': 'plains',
@@ -1369,42 +1318,31 @@ export function buildItemsData() {
     'dead-raiser': 'mistlands',
     'dvergr-extractor': 'mistlands',
     'mechanical-spring': 'mistlands',
-    'ectoplasm': 'mistlands',
-    'hooded-lantern': 'mistlands',
+    // Wiki (Ghost): found in Black Forest, drops Ectoplasm.
+    'ectoplasm': 'black-forest',
     'hook': 'mistlands',
     'grappling-hook': 'mistlands',
     'resounding-shackle': 'ashlands',
     'pulsating-earrings': 'ashlands',
-    'witch-crown': 'ashlands',
     'flametal-protection-idol': 'ashlands',
     'flametal-battle-idol': 'ashlands',
     'bloodgold-protection-idol': 'ashlands',
     'bloodgold-battle-idol': 'ashlands',
     'jormundling': 'ashlands',
     'voidcaller': 'ashlands',
-    'spirit-caller': 'ashlands',
     'basalt-bomb': 'ashlands',
-    'ceramic-plate': 'ashlands',
+    // Wiki (Ceramic Plate): "can only be crafted after building the Artisan Press upgrade after defeating The Queen"; made from Black Marble.
+    'ceramic-plate': 'mistlands',
     'molten-core': 'ashlands',
     'asksvin-egg': 'ashlands',
-    'candle-wick': 'ashlands',
-    'scythe-handle': 'ashlands',
-    'barrel-hoops': 'ashlands',
-    'corked-vial': 'ashlands',
     'grausten-payload': 'ashlands',
     'explosive-payload': 'ashlands',
-    'bloodgold-payload': 'ashlands',
-    'bloodgold-missile': 'ashlands',
     'black-metal-missile': 'plains',
-    'wooden-missile': 'meadows',
     'torch': 'meadows',
     'sparkler': 'meadows',
     'salvaged-lantern': 'mistlands',
-    'rustic-drawbridge': 'meadows',
-    'timberwood-drawbridge': 'ashlands',
     'portal-stone': 'ashlands',
     'green-pots': 'ashlands',
-    'ivy-seeds': 'ashlands',
     'timberwood-cone': 'ashlands',
     'bread-dough': 'plains',
     'coral-cod': 'ocean',
@@ -1415,14 +1353,15 @@ export function buildItemsData() {
     'zil-trophy': 'plains',
     'thungr-trophy': 'plains',
     'dvergr-tankard': 'mistlands',
-    'tankard': 'meadows',
-    'horn-of-celebration': 'meadows',
-    'mead-horn-of-odin': 'meadows',
-    'butcher-knife': 'meadows',
-    'serving-tray': 'meadows',
     'scythe': 'plains',
-    'curious-axe-head': 'ashlands',
-    'mysterious-axe-head': 'ashlands',
+    // Wiki (Loot chest): "Meadows Mysterious Chest are found in version 6 of Abandoned House" (Meadows).
+    'curious-axe-head': 'meadows',
+    'mysterious-axe-head': 'meadows',
+    // Wiki (Coal): "In Cooking Stations by overcooking any type of meat" (Meadows); Surtling drop is later.
+    'coal': 'meadows',
+    // Wiki (Pine / Fir): cones drop from felled trees; biome = where the tree grows (Black Forest), like acorns/birch/beech.
+    'pine-cone': 'black-forest',
+    'fir-cone': 'black-forest',
     'wisp': 'mistlands',
     'crown-of-roots': 'swamp',
     'dverger-circlet': 'black-forest',
@@ -1434,7 +1373,6 @@ export function buildItemsData() {
     'beech-seeds': 'meadows',
     'birch-seeds': 'meadows',
     'iron-ore': 'swamp',
-    'ivy': 'meadows',
     'scrap-bronze': 'black-forest',
     'copper-scrap': 'black-forest',
     'amber': 'black-forest',
@@ -1498,7 +1436,7 @@ export function buildItemsData() {
       let maxTier = 0;
       let maxBiome = null;
       for (const m of rec.recipe.materials) {
-        const mat = registry.get(m.item);
+        const mat = m.item === rec.id ? null : registry.get(m.item);
         if (mat?.biome && (BIOME_ORDER[mat.biome] || 0) > maxTier) {
           maxTier = BIOME_ORDER[mat.biome];
           maxBiome = mat.biome;
@@ -1515,6 +1453,27 @@ export function buildItemsData() {
   for (const [id, biome] of traderUnlockBiome) {
     const rec = registry.get(id);
     if (rec) rec.biome = biome;
+  }
+
+  // A crafted item is at least as late as its ingredients: it takes the biome of its highest
+  // ingredient when that is higher than its own (station biome, "<station> level N" ...). Items with an
+  // explicit biome or a trader-condition biome keep it. Repeated until stable, because raising an
+  // ingredient can raise the items crafted from it.
+  const biomeRank = (b) => BIOME_ORDER[b] ?? 0;
+  for (let changed = true; changed;) {
+    changed = false;
+    for (const rec of registry.values()) {
+      if (!rec.recipe?.materials?.length || ITEM_EXPLICIT_BIOMES[rec.id] || traderUnlockBiome.has(rec.id)) continue;
+      let top = null;
+      for (const m of rec.recipe.materials) {
+        const mat = m.item === rec.id ? null : registry.get(m.item); // an item that needs itself (mysterious-rock) ignores that ingredient
+        if (mat?.biome && biomeRank(mat.biome) > biomeRank(top)) top = mat.biome;
+      }
+      if (top && biomeRank(top) > biomeRank(rec.biome)) {
+        rec.biome = top;
+        changed = true;
+      }
+    }
   }
 
   for (const rec of registry.values()) {

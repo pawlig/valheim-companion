@@ -2,15 +2,19 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { aliasImage } from './image-index.mjs';
+import { buildTraderIndex, withTraders } from './trader-index.mjs';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const load = name => JSON.parse(readFileSync(path.join(ROOT, 'data', `${name}.json`), 'utf8'));
 export function buildProvisionsData() {
   const biomes = load('biomes').map(b => ({ ...b, image: b.image ? `../bestiary/${b.image}` : null }));
+  const traderIndex = buildTraderIndex(path.join(ROOT, 'data', 'traders.json'));
   const items = Object.fromEntries(load('items').filter(item => !item.comfort).map(item => {
-    const image = item.image ? (item.image.startsWith('../provisions/') ? item.image.slice('../provisions/'.length) : `../smithy/${item.image}`) : null;
-    return [item.id, { ...item, image: image && existsSync(path.resolve(ROOT, 'apps/provisions', image)) ? image : null }];
+    const itemImage = aliasImage(item.image);
+    const image = itemImage ? (itemImage.startsWith('../provisions/') ? itemImage.slice('../provisions/'.length) : `../smithy/${itemImage}`) : null;
+    return [item.id, withTraders({ ...item, image: image && existsSync(path.resolve(ROOT, 'apps/provisions', image)) ? image : null }, traderIndex)];
   }));
-  const bundle = { biomes, food: load('food'), meads: load('meads'), stations: load('stations').filter(station => station.type !== 'comfort'), items, tips: load('provisions-tips') };
+  const bundle = { biomes, food: load('food').map(e => withTraders(e, traderIndex)), meads: load('meads').map(e => withTraders(e, traderIndex)), stations: load('stations').filter(station => station.type !== 'comfort'), items, tips: load('provisions-tips') };
   const tipsDestination = path.join(ROOT, 'apps/provisions/data/tips.json');
   writeFileSync(tipsDestination, JSON.stringify(bundle.tips, null, 2) + '\n');
   const imageReferences = new Set([...bundle.food, ...bundle.meads, ...Object.values(items)].map(e => e.image).filter(Boolean));

@@ -2,10 +2,11 @@
 // Merchandise is parsed from the "Sells"/"Trading" wikitable on the wiki page of
 // each trader (Haldor, Hildir, The Bog Witch), read from the wiki cache in
 // data/raw/. Only trader descriptions and the valuables list are literals.
-import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { api } from './wiki/api.mjs';
+import { readCachedPages } from './wiki/api.mjs';
+import { buildImageIndex } from './image-index.mjs';
 import { cleanText, parseWikiTables, slug } from './wiki/wikitext.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -86,60 +87,12 @@ const CHESTS = {
   bronze: { boss: 'zil-thungr', bossName: 'Zil & Thungr', location: 'Sealed Tower' },
 };
 
+// Images are looked up in the app image folders by the file name used on the wiki
+// or by item id (same rule as the Items Compendium, see image-index.mjs).
+const IMAGE_APPS = ['smithy', 'provisions', 'comfort', 'bestiary', 'traders', 'progress'];
+
 function loadJson(name) {
   return JSON.parse(readFileSync(path.join(DATA_DIR, name), 'utf8'));
-}
-
-// Wikitext of the given pages from the wiki cache (data/raw). The cache is keyed
-// by the exact query, and the trader pages were fetched in different batches, so
-// pages are looked up by title; the build never touches the network.
-function readCachedPages(titles) {
-  const wanted = new Set(titles);
-  const found = new Map();
-  for (const file of readdirSync(api.cacheDir).filter((f) => f.endsWith('.json')).sort()) {
-    let body;
-    try {
-      body = JSON.parse(readFileSync(path.join(api.cacheDir, file), 'utf8'));
-    } catch {
-      continue;
-    }
-    for (const page of body?.query?.pages ?? []) {
-      const wikitext = page.revisions?.[0]?.slots?.main?.content;
-      if (wanted.has(page.title) && typeof wikitext === 'string' && !found.has(page.title)) {
-        found.set(page.title, wikitext);
-      }
-    }
-    if (found.size === wanted.size) break;
-  }
-  const missing = titles.filter((t) => !found.has(t));
-  if (missing.length) throw new Error(`wiki cache lacks page(s): ${missing.join(', ')}`);
-  return found;
-}
-
-// Images are looked up in the app image folders by the file name used on the wiki
-// or by item id (same rule as the Items Compendium).
-function buildImageIndex() {
-  const index = new Map();
-  const walk = (dir, app, rel) => {
-    for (const f of readdirSync(dir).sort()) {
-      const full = path.join(dir, f);
-      const sub = rel ? `${rel}/${f}` : f;
-      if (statSync(full).isDirectory()) {
-        walk(full, app, sub);
-        continue;
-      }
-      const url = `../${app}/img/${sub}`;
-      const lower = f.toLowerCase();
-      if (!index.has(lower)) index.set(lower, url);
-      const base = slug(lower.replace(/\.[^.]+$/, ''));
-      if (!index.has(base)) index.set(base, url);
-    }
-  };
-  for (const app of ['smithy', 'provisions', 'comfort', 'bestiary', 'traders', 'progress']) {
-    const dir = path.join(APPS_DIR, app, 'img');
-    if (existsSync(dir)) walk(dir, app, '');
-  }
-  return index;
 }
 
 function sellsTable(wikitext, page) {
@@ -204,7 +157,7 @@ function buildTraders() {
   const creatureList = Array.isArray(creatures) ? creatures : creatures.creatures;
   const creaturesById = new Map(creatureList.map((c) => [c.id, c]));
   const pages = readCachedPages(TRADER_META.map((t) => t.page));
-  const images = buildImageIndex();
+  const images = buildImageIndex(APPS_DIR, IMAGE_APPS);
 
   return TRADER_META.map(({ page, ...meta }) => {
     const table = sellsTable(pages.get(page), page);

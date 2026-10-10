@@ -1,5 +1,5 @@
 window.VC_DATA = {
-  "generatedAt": "2026-10-10T11:42:23.635Z",
+  "generatedAt": "2026-10-10T12:30:56.462Z",
   "source": {
     "name": "Valheim Wiki",
     "url": "https://valheim.weirdgloop.org",
@@ -5659,7 +5659,8 @@ window.VC_DATA = {
       },
       "otherImmunities": [],
       "drops": [
-        "Ectoplasm, Ghost Trophy"
+        "Ectoplasm",
+        "Ghost Trophy"
       ],
       "trophy": {
         "name": "Ghost Trophy",
@@ -5703,8 +5704,12 @@ window.VC_DATA = {
       "calculatorSlug": "ghost",
       "dropLinks": [
         {
-          "name": "Ectoplasm, Ghost Trophy",
-          "itemId": "ectoplasm-ghost-trophy"
+          "name": "Ectoplasm",
+          "itemId": "ectoplasm"
+        },
+        {
+          "name": "Ghost Trophy",
+          "itemId": "ghost-trophy"
         }
       ]
     },
@@ -9032,9 +9037,7 @@ window.VC_DATA = {
         "spirit": "immune"
       },
       "otherImmunities": [],
-      "drops": [
-        "None"
-      ],
+      "drops": [],
       "trophy": null,
       "summon": null,
       "location": "Deep North",
@@ -9043,12 +9046,7 @@ window.VC_DATA = {
       "taming": null,
       "raids": [],
       "names": {},
-      "dropLinks": [
-        {
-          "name": "None",
-          "itemId": null
-        }
-      ]
+      "dropLinks": []
     },
     "morgen": {
       "id": "morgen",

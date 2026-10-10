@@ -1,5 +1,5 @@
 window.VA_DATA = {
-  "generatedAt": "2026-10-06T12:01:59.472Z",
+  "generatedAt": "2026-10-10T10:42:17.370Z",
   "source": {
     "name": "Valheim Wiki",
     "url": "https://valheim.weirdgloop.org",
@@ -870,7 +870,13 @@ window.VA_DATA = {
           "description": "Beaded dress blue is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's bronze chest.",
           "names": {
             "ru": "Синее платье в бусинах"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -909,7 +915,13 @@ window.VA_DATA = {
           "description": "Beaded dress brown is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's bronze chest.",
           "names": {
             "ru": "Коричневое платье в бусинах"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -948,7 +960,13 @@ window.VA_DATA = {
           "description": "Beaded dress yellow is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's bronze chest.",
           "names": {
             "ru": "Желтое платье в бусинах"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -987,7 +1005,13 @@ window.VA_DATA = {
           "description": "Beaded tunic blue is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's bronze chest.",
           "names": {
             "ru": "Синяя туника в бусинах"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -1026,7 +1050,13 @@ window.VA_DATA = {
           "description": "Beaded tunic red is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's bronze chest.",
           "names": {
             "ru": "Красная туника в бусинах"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -1065,7 +1095,13 @@ window.VA_DATA = {
           "description": "Beaded tunic yellow is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's bronze chest.",
           "names": {
             "ru": "Желтая туника в бусинах"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -2112,7 +2148,13 @@ window.VA_DATA = {
           "description": "Cape tunic blue is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's silver chest.",
           "names": {
             "ru": "Синяя туника с капюшоном"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -2151,7 +2193,13 @@ window.VA_DATA = {
           "description": "Cape tunic red is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's silver chest.",
           "names": {
             "ru": "Красная туника с капюшоном"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -2190,7 +2238,13 @@ window.VA_DATA = {
           "description": "Cape tunic yellow is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's silver chest.",
           "names": {
             "ru": "Желтая туника с капюшоном"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -2654,7 +2708,13 @@ window.VA_DATA = {
           "description": "Crown of Roots is an armor piece.",
           "kind": "special",
           "tag": "Not craftable",
-          "names": {}
+          "names": {},
+          "traders": [
+            {
+              "id": "bog-witch",
+              "name": "The Bog Witch"
+            }
+          ]
         }
       ],
       "names": {}
@@ -2737,7 +2797,13 @@ window.VA_DATA = {
             "cs": "Trpasličí kroužek",
             "fr": "Diadème de Dverger",
             "ru": "Венец Двергов"
-          }
+          },
+          "traders": [
+            {
+              "id": "haldor",
+              "name": "Haldor"
+            }
+          ]
         }
       ],
       "names": {
@@ -3443,7 +3509,13 @@ window.VA_DATA = {
           "description": "Extravagant cap green is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's silver chest.",
           "names": {
             "ru": "Причудливая зеленая шапка"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -3482,7 +3554,13 @@ window.VA_DATA = {
           "description": "Extravagant cap orange is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's bronze chest.",
           "names": {
             "ru": "Причудливая оранжевая шапка"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -4382,7 +4460,13 @@ window.VA_DATA = {
           "description": "Fur cap brown is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's brass chest.",
           "names": {
             "ru": "Коричневая меховая шапка"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -4421,7 +4505,13 @@ window.VA_DATA = {
           "description": "Fur cap grey is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's bronze chest.",
           "names": {
             "ru": "Серая меховая шапка"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -4466,7 +4556,13 @@ window.VA_DATA = {
             "cs": "Sklizňové šaty",
             "de": "Erntekleid",
             "ru": "Одежда урожая"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -4513,7 +4609,13 @@ window.VA_DATA = {
             "cs": "Sklizňová tunika",
             "de": "Erntetunika",
             "ru": "Туника урожая"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -4554,7 +4656,13 @@ window.VA_DATA = {
           "description": "Headband is an armor piece which can be purchased from Hildir for .",
           "names": {
             "ru": "Повязка на голову"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -6889,7 +6997,13 @@ window.VA_DATA = {
           "description": "Shawl dress blue is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's silver chest.",
           "names": {
             "ru": "Синее платье с шалью"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -6928,7 +7042,13 @@ window.VA_DATA = {
           "description": "Shawl dress brown is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's silver chest.",
           "names": {
             "ru": "Коричневое платье с шалью"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -6967,7 +7087,13 @@ window.VA_DATA = {
           "description": "Shawl dress yellow is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's silver chest.",
           "names": {
             "ru": "Желтое платье с шалью"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -7006,7 +7132,13 @@ window.VA_DATA = {
           "description": "is an armor piece which can be purchased from Hildir for .",
           "names": {
             "ru": "Простая фиолетовая шапка"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -7045,7 +7177,13 @@ window.VA_DATA = {
           "description": "Simple cap red is an armor piece which can be purchased from Hildir for .",
           "names": {
             "ru": "Простая красная шапка"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -7084,7 +7222,13 @@ window.VA_DATA = {
           "description": "Simple dress blue is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's brass chest.",
           "names": {
             "ru": "Простое синее платье"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -7123,7 +7267,13 @@ window.VA_DATA = {
           "description": "Simple dress brown is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's brass chest.",
           "names": {
             "ru": "Простое коричневое платье"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -7162,7 +7312,13 @@ window.VA_DATA = {
           "description": "Shawl dress brown is an armor piece which can be purchased from Hildir for .",
           "names": {
             "ru": "Простое платье"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -7201,7 +7357,13 @@ window.VA_DATA = {
           "description": "Simple dress yellow is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's brass chest.",
           "names": {
             "ru": "Простое желтое платье"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -7240,7 +7402,13 @@ window.VA_DATA = {
           "description": "Simple tunic blue is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's brass chest.",
           "names": {
             "ru": "Простая синяя туника"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -7279,7 +7447,13 @@ window.VA_DATA = {
           "description": "Shawl dress brown is an armor piece which can be purchased from Hildir for .",
           "names": {
             "ru": "Простая туника"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -7318,7 +7492,13 @@ window.VA_DATA = {
           "description": "Simple tunic red is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's brass chest.",
           "names": {
             "ru": "Простая красная туника"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -7357,7 +7537,13 @@ window.VA_DATA = {
           "description": "Simple tunic yellow is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's brass chest.",
           "names": {
             "ru": "Простая желтая туника"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -7400,7 +7586,13 @@ window.VA_DATA = {
           "description": "Straw hat is a part of a set together with either the Harvest tunic or Harvest dress that increases the player's Farming skill by +25 so long as both pieces are worn. Both the dress and tunic can be used interchangeably for the same effect. It is sold by Hildir after retrieving and bringing her the Brass chest.",
           "names": {
             "ru": "Соломенная шляпа"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -7439,7 +7631,13 @@ window.VA_DATA = {
           "description": "Tied headscarf blue is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's brass chest.",
           "names": {
             "ru": "Синий платок"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -7478,7 +7676,13 @@ window.VA_DATA = {
           "description": "Tied headscarf yellow is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's silver chest.",
           "names": {
             "ru": "Желтый платок"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -7838,7 +8042,13 @@ window.VA_DATA = {
           "description": "Twisted headscarf green is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's silver chest.",
           "names": {
             "ru": "Зеленый скрученный платок"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -7877,7 +8087,13 @@ window.VA_DATA = {
           "description": "Twisted headscarf red is an armor piece which can be purchased from Hildir for . This item will be in the merchant's assortment only after returning Hildir's bronze chest.",
           "names": {
             "ru": "Красный скрученный платок"
-          }
+          },
+          "traders": [
+            {
+              "id": "hildir",
+              "name": "Hildir"
+            }
+          ]
         }
       ],
       "names": {
@@ -8878,7 +9094,13 @@ window.VA_DATA = {
             "cs": "Vánoční čepice",
             "fr": "Chapeau de Noël",
             "ru": "Праздничный колпак"
-          }
+          },
+          "traders": [
+            {
+              "id": "haldor",
+              "name": "Haldor"
+            }
+          ]
         }
       ],
       "names": {
@@ -31662,7 +31884,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Дубленые беличьи сухожилия"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "curious-axe-head": {
       "id": "curious-axe-head",
@@ -32040,7 +32268,13 @@ window.VA_DATA = {
       "names": {
         "cs": "Vejce",
         "ru": "Яйцо"
-      }
+      },
+      "traders": [
+        {
+          "id": "haldor",
+          "name": "Haldor"
+        }
+      ]
     },
     "elaking-hair-bundle": {
       "id": "elaking-hair-bundle",
@@ -32223,7 +32457,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Порошок пламенных пряностей"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "finewood": {
       "id": "finewood",
@@ -32410,7 +32650,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Ароматный букет"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "freeze-gland": {
       "id": "freeze-gland",
@@ -32458,7 +32704,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Свежие водоросли"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "frostfire-essence": {
       "id": "frostfire-essence",
@@ -32560,7 +32812,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Урожай лугового травника"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "greydwarf-eye": {
       "id": "greydwarf-eye",
@@ -32724,7 +32982,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Травы тайных холмов"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "hexen-trophy": {
       "id": "hexen-trophy",
@@ -34886,7 +35150,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Толченый перец с горных вершин"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "mushroom": {
       "id": "mushroom",
@@ -35841,7 +36111,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Толченая драконья скорлупа"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "proustite-powder": {
       "id": "proustite-powder",
@@ -35911,7 +36187,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Вонючие камешки"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "queen-s-jam": {
       "id": "queen-s-jam",
@@ -36204,7 +36486,7 @@ window.VA_DATA = {
     "roots": {
       "id": "roots",
       "name": "Roots",
-      "image": "img/items/roots.png",
+      "image": "img/items/root.png",
       "biome": "swamp",
       "tier": 4,
       "sources": [
@@ -36436,7 +36718,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Травы мореплавателя"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "seal-blubber": {
       "id": "seal-blubber",
@@ -36545,7 +36833,13 @@ window.VA_DATA = {
         "tier": 9,
         "boss": "kall-fimbulbringer"
       },
-      "names": {}
+      "names": {},
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "seed-poteitr": {
       "id": "seed-poteitr",
@@ -37091,7 +37385,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Поганка"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "troll-hide": {
       "id": "troll-hide",
@@ -37969,7 +38269,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Смесь лесных трав"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "writhan-roots": {
       "id": "writhan-roots",
@@ -38097,7 +38403,13 @@ window.VA_DATA = {
         "cs": "Maso Ymira",
         "fr": "Chair d'Ymir",
         "ru": "Плоть Имира"
-      }
+      },
+      "traders": [
+        {
+          "id": "haldor",
+          "name": "Haldor"
+        }
+      ]
     }
   },
   "creatures": {
@@ -40311,12 +40623,7 @@ window.VA_DATA = {
       "drops": [
         "Feathers"
       ],
-      "trophy": {
-        "name": "Crow trophy currently no trophy-->",
-        "image": null,
-        "dropChance": null,
-        "usage": []
-      },
+      "trophy": null,
       "summon": null,
       "location": "Black Forest",
       "spawns": [],
@@ -42887,7 +43194,8 @@ window.VA_DATA = {
       },
       "otherImmunities": [],
       "drops": [
-        "Ectoplasm, Ghost Trophy"
+        "Ectoplasm",
+        "Ghost Trophy"
       ],
       "trophy": {
         "name": "Ghost Trophy",
@@ -44018,12 +44326,7 @@ window.VA_DATA = {
       "drops": [
         "Feathers"
       ],
-      "trophy": {
-        "name": "Gull trophy currently no trophy-->",
-        "image": null,
-        "dropChance": null,
-        "usage": []
-      },
+      "trophy": null,
       "summon": null,
       "location": "* Meadows\n* Black Forest\n* Plains\n* Ocean",
       "spawns": [],
@@ -45878,9 +46181,7 @@ window.VA_DATA = {
         "spirit": "immune"
       },
       "otherImmunities": [],
-      "drops": [
-        "None"
-      ],
+      "drops": [],
       "trophy": null,
       "summon": null,
       "location": "Deep North",
@@ -49617,12 +49918,7 @@ window.VA_DATA = {
         "Zil Trophy",
         "Thungr Trophy"
       ],
-      "trophy": {
-        "name": "Zil\nThungr",
-        "image": null,
-        "dropChance": null,
-        "usage": []
-      },
+      "trophy": null,
       "summon": null,
       "location": "Sealed tower",
       "spawns": [],

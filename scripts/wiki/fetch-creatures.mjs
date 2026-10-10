@@ -95,6 +95,22 @@ function main() {
   });
 }
 
+// Drops field -> one clean name per drop. A line holding several links separated by
+// commas ("[[Ectoplasm]], [[Ghost Trophy]]") is split into separate drops; "None" is no drop.
+export function parseDrops(raw) {
+  if (!raw) return [];
+  const lines = String(raw).replace(/<br\s*\/?>/gi, '\n').split('\n');
+  const drops = [];
+  for (const line of lines) {
+    for (const part of line.split(/,\s*(?=\[\[)/)) {
+      for (const name of parseList(part)) {
+        if (!/^none$/i.test(name)) drops.push(name);
+      }
+    }
+  }
+  return drops;
+}
+
 async function mainInner() {
   const report = {
     noInfobox: [],
@@ -295,7 +311,7 @@ async function mainInner() {
       abilities: parseList(info.abilities),
       modifiers,
       otherImmunities,
-      drops: parseList(info.drops),
+      drops: parseDrops(info.drops),
       trophy: trophyTarget ? { name: cleanText(trophyTarget), image: null } : null,
       summon: cleanText(info.summon) || null,
       location: cleanText(info.location) || null,
@@ -571,4 +587,4 @@ function renderReport(report, biomeRecords, creatures) {
   return lines.join('\n');
 }
 
-main();
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main();

@@ -309,7 +309,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "longship",
             "name": "Longship",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "longship"
           }
         ],
@@ -391,7 +391,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "heart-of-the-forest",
             "name": "Heart of the Forest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "heart-of-the-forest"
           }
         ]
@@ -722,42 +722,42 @@ globalThis.VC_ITEMS_DATA = {
             "id": "gem-cutter",
             "name": "Gem cutter",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "gem-cutter"
           },
           {
             "id": "metal-cutter",
             "name": "Metal cutter",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "metal-cutter"
           },
           {
             "id": "feathery-wreath",
             "name": "Feathery Wreath",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "feathery-wreath"
           },
           {
             "id": "ashwood-stakewall",
             "name": "Ashwood stakewall",
             "level": 1,
-            "biome": "meadows",
+            "biome": "ashlands",
             "itemId": "ashwood-stakewall"
           },
           {
             "id": "battering-ram",
             "name": "Battering Ram",
             "level": 1,
-            "biome": "meadows",
+            "biome": "ashlands",
             "itemId": "battering-ram"
           },
           {
             "id": "catapult",
             "name": "Catapult",
             "level": 1,
-            "biome": "meadows",
+            "biome": "ashlands",
             "itemId": "catapult"
           },
           {
@@ -787,7 +787,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "flametal-missile",
             "name": "Flametal missile",
             "level": 1,
-            "biome": "plains",
+            "biome": "ashlands",
             "itemId": "flametal-missile"
           }
         ]
@@ -2529,7 +2529,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "eitr-refinery",
             "name": "Eitr Refinery",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "eitr-refinery"
           }
         ],
@@ -2538,7 +2538,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "shield-core",
             "name": "Shield Core",
             "level": 2,
-            "biome": "plains",
+            "biome": "mistlands",
             "itemId": "shield-core"
           }
         ]
@@ -2672,7 +2672,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "metal-cutter",
             "name": "Metal cutter",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "metal-cutter"
           },
           {
@@ -2693,7 +2693,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "eitr-refinery",
             "name": "Eitr Refinery",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "eitr-refinery"
           },
           {
@@ -2709,7 +2709,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "ceramic-plate",
             "name": "Ceramic Plate",
             "level": 2,
-            "biome": "ashlands",
+            "biome": "mistlands",
             "itemId": "ceramic-plate"
           }
         ]
@@ -2873,35 +2873,35 @@ globalThis.VC_ITEMS_DATA = {
             "id": "black-metal-chest",
             "name": "Black metal chest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "plains",
             "itemId": "black-metal-chest"
           },
           {
             "id": "trap",
             "name": "Trap",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "trap"
           },
           {
             "id": "wardrobe",
             "name": "Wardrobe",
             "level": 1,
-            "biome": "meadows",
+            "biome": "deep-north",
             "itemId": "wardrobe"
           },
           {
             "id": "eitr-refinery",
             "name": "Eitr Refinery",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "eitr-refinery"
           },
           {
             "id": "sap-extractor",
             "name": "Sap Extractor",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "sap-extractor"
           },
           {
@@ -2931,7 +2931,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "lox-saddle",
             "name": "Lox Saddle",
             "level": 1,
-            "biome": "meadows",
+            "biome": "plains",
             "itemId": "lox-saddle"
           },
           {
@@ -3674,28 +3674,28 @@ globalThis.VC_ITEMS_DATA = {
             "id": "timberwood-gate",
             "name": "Timberwood Gate",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "deep-north",
             "itemId": "timberwood-gate"
           },
           {
             "id": "smith-s-aprons",
             "name": "Smith's Aprons",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "deep-north",
             "itemId": "smith-s-aprons"
           },
           {
             "id": "timberwood-drawbridge",
             "name": "Timberwood Drawbridge",
             "level": 1,
-            "biome": "ashlands",
+            "biome": "deep-north",
             "itemId": "timberwood-drawbridge"
           },
           {
             "id": "bloodgold-stack",
             "name": "Bloodgold Stack",
             "level": 1,
-            "biome": "ashlands",
+            "biome": "deep-north",
             "itemId": "bloodgold-stack"
           }
         ],
@@ -3991,35 +3991,35 @@ globalThis.VC_ITEMS_DATA = {
             "id": "moose-saddle",
             "name": "Moose Saddle",
             "level": 2,
-            "biome": "mistlands",
+            "biome": "deep-north",
             "itemId": "moose-saddle"
           },
           {
             "id": "neckstabber",
             "name": "Neckstabber",
             "level": 1,
-            "biome": "meadows",
+            "biome": "deep-north",
             "itemId": "neckstabber"
           },
           {
             "id": "witch-crown",
             "name": "Witch Crown",
             "level": 1,
-            "biome": "ashlands",
+            "biome": "deep-north",
             "itemId": "witch-crown"
           },
           {
             "id": "bloodgold-payload",
             "name": "Bloodgold Payload",
             "level": 1,
-            "biome": "ashlands",
+            "biome": "deep-north",
             "itemId": "bloodgold-payload"
           },
           {
             "id": "bloodgold-missile",
             "name": "Bloodgold Missile",
             "level": 1,
-            "biome": "ashlands",
+            "biome": "deep-north",
             "itemId": "bloodgold-missile"
           }
         ]
@@ -4143,7 +4143,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "gem-cutter",
             "name": "Gem cutter",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "gem-cutter"
           }
         ],
@@ -4775,7 +4775,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "yuleklapp",
             "name": "Yuleklapp",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "yuleklapp"
           },
           {
@@ -4789,7 +4789,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "bone-stack",
             "name": "Bone Stack",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "bone-stack"
           }
         ],
@@ -5243,7 +5243,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "pointy-hat",
             "name": "Pointy Hat",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "pointy-hat"
           }
         ],
@@ -5313,7 +5313,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "anvils",
             "name": "Anvils",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "anvils"
           },
           {
@@ -5371,14 +5371,14 @@ globalThis.VC_ITEMS_DATA = {
             "id": "horn-of-celebration",
             "name": "Horn of Celebration",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "horn-of-celebration"
           },
           {
             "id": "heart-of-the-forest",
             "name": "Heart of the Forest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "heart-of-the-forest"
           },
           {
@@ -5494,21 +5494,21 @@ globalThis.VC_ITEMS_DATA = {
             "id": "cart",
             "name": "Cart",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "cart"
           },
           {
             "id": "karve",
             "name": "Karve",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "karve"
           },
           {
             "id": "trap",
             "name": "Trap",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "trap"
           }
         ],
@@ -7883,7 +7883,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "feathery-wreath",
             "name": "Feathery Wreath",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "feathery-wreath"
           }
         ],
@@ -8026,7 +8026,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "forge-bellows",
             "name": "Forge bellows",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "forge-bellows"
           },
           {
@@ -8318,7 +8318,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "metal-cutter",
             "name": "Metal cutter",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "metal-cutter"
           }
         ],
@@ -8402,7 +8402,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "pile-of-skulls",
             "name": "Pile of Skulls",
             "level": 1,
-            "biome": "swamp",
+            "biome": "ashlands",
             "itemId": "pile-of-skulls"
           }
         ],
@@ -8780,8 +8780,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "coal",
       "name": "Coal",
       "image": "../smithy/img/items/coal.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "meadows",
+      "tier": 1,
       "category": "material",
       "teleportable": true,
       "stack": 50,
@@ -8860,7 +8860,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "pointy-hat",
             "name": "Pointy Hat",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "pointy-hat"
           }
         ],
@@ -8958,7 +8958,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "sign",
             "name": "Sign",
             "level": 1,
-            "biome": "swamp",
+            "biome": "meadows",
             "itemId": "sign"
           },
           {
@@ -9788,7 +9788,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "obliterator",
             "name": "Obliterator",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "swamp",
             "itemId": "obliterator"
           },
           {
@@ -9823,7 +9823,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "shield-generator",
             "name": "Shield generator",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "shield-generator"
           },
           {
@@ -10093,7 +10093,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "sharp-stakes",
             "name": "Sharp stakes",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "sharp-stakes"
           },
           {
@@ -10107,7 +10107,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "rustic-drawbridge",
             "name": "Rustic Drawbridge",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mountain",
             "itemId": "rustic-drawbridge"
           }
         ],
@@ -10137,7 +10137,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "wooden-missile",
             "name": "Wooden missile",
             "level": 1,
-            "biome": "meadows",
+            "biome": "plains",
             "itemId": "wooden-missile"
           }
         ]
@@ -10270,7 +10270,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "crystal-wall-1x1",
             "name": "Crystal wall 1x1",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mountain",
             "itemId": "crystal-wall-1x1"
           }
         ],
@@ -10422,8 +10422,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "curious-axe-head",
       "name": "Curious Axe Head",
       "image": "../smithy/img/items/curious-axe-head.png",
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "meadows",
+      "tier": 1,
       "category": "material",
       "teleportable": true,
       "stack": 10,
@@ -10612,7 +10612,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "yuleklapp",
             "name": "Yuleklapp",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "yuleklapp"
           }
         ],
@@ -10804,7 +10804,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "pointy-hat",
             "name": "Pointy Hat",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "pointy-hat"
           },
           {
@@ -10909,21 +10909,21 @@ globalThis.VC_ITEMS_DATA = {
             "id": "forge-bellows",
             "name": "Forge bellows",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "forge-bellows"
           },
           {
             "id": "longship",
             "name": "Longship",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "longship"
           },
           {
             "id": "karve",
             "name": "Karve",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "karve"
           }
         ],
@@ -11150,7 +11150,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "mead-horn-of-odin",
             "name": "Mead Horn of Odin",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "mead-horn-of-odin"
           }
         ]
@@ -12046,7 +12046,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "snow-shovel",
             "name": "Snow Shovel",
             "level": 3,
-            "biome": "mountain",
+            "biome": "ashlands",
             "itemId": "snow-shovel"
           }
         ]
@@ -12515,7 +12515,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "wooden-missile",
             "name": "Wooden missile",
             "level": 1,
-            "biome": "meadows",
+            "biome": "plains",
             "itemId": "wooden-missile"
           }
         ]
@@ -13573,7 +13573,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "tool-shelf",
             "name": "Tool shelf",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "mountain",
             "itemId": "tool-shelf"
           },
           {
@@ -13594,14 +13594,14 @@ globalThis.VC_ITEMS_DATA = {
             "id": "longship",
             "name": "Longship",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "longship"
           },
           {
             "id": "karve",
             "name": "Karve",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "karve"
           },
           {
@@ -13615,35 +13615,35 @@ globalThis.VC_ITEMS_DATA = {
             "id": "reinforced-chest",
             "name": "Reinforced chest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "reinforced-chest"
           },
           {
             "id": "personal-chest",
             "name": "Personal chest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "personal-chest"
           },
           {
             "id": "treasure-chest",
             "name": "Treasure Chest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mountain",
             "itemId": "treasure-chest"
           },
           {
             "id": "drakkar",
             "name": "Drakkar",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "drakkar"
           },
           {
             "id": "yuleklapp",
             "name": "Yuleklapp",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "yuleklapp"
           },
           {
@@ -13657,14 +13657,14 @@ globalThis.VC_ITEMS_DATA = {
             "id": "finewood-stack",
             "name": "Finewood Stack",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "finewood-stack"
           },
           {
             "id": "archery-target",
             "name": "Archery Target",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "archery-target"
           }
         ],
@@ -13673,21 +13673,21 @@ globalThis.VC_ITEMS_DATA = {
             "id": "snow-shovel",
             "name": "Snow Shovel",
             "level": 3,
-            "biome": "mountain",
+            "biome": "ashlands",
             "itemId": "snow-shovel"
           },
           {
             "id": "tankard",
             "name": "Tankard",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "tankard"
           },
           {
             "id": "mead-horn-of-odin",
             "name": "Mead Horn of Odin",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "mead-horn-of-odin"
           }
         ]
@@ -13698,8 +13698,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "fir-cone",
       "name": "Fir Cone",
       "image": "../comfort/img/items/fir-cone.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "ingredient",
       "teleportable": true,
       "stack": 100,
@@ -14123,42 +14123,42 @@ globalThis.VC_ITEMS_DATA = {
             "id": "gem-cutter",
             "name": "Gem cutter",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "gem-cutter"
           },
           {
             "id": "metal-cutter",
             "name": "Metal cutter",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "metal-cutter"
           },
           {
             "id": "battering-ram",
             "name": "Battering Ram",
             "level": 1,
-            "biome": "meadows",
+            "biome": "ashlands",
             "itemId": "battering-ram"
           },
           {
             "id": "catapult",
             "name": "Catapult",
             "level": 1,
-            "biome": "meadows",
+            "biome": "ashlands",
             "itemId": "catapult"
           },
           {
             "id": "grausten-chest",
             "name": "Grausten Chest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "ashlands",
             "itemId": "grausten-chest"
           },
           {
             "id": "timberwood-drawbridge",
             "name": "Timberwood Drawbridge",
             "level": 1,
-            "biome": "ashlands",
+            "biome": "deep-north",
             "itemId": "timberwood-drawbridge"
           },
           {
@@ -14195,28 +14195,28 @@ globalThis.VC_ITEMS_DATA = {
             "id": "flametal-missile",
             "name": "Flametal missile",
             "level": 1,
-            "biome": "plains",
+            "biome": "ashlands",
             "itemId": "flametal-missile"
           },
           {
             "id": "asksvin-saddle",
             "name": "Asksvin Saddle",
             "level": 2,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "asksvin-saddle"
           },
           {
             "id": "snow-shovel",
             "name": "Snow Shovel",
             "level": 3,
-            "biome": "mountain",
+            "biome": "ashlands",
             "itemId": "snow-shovel"
           },
           {
             "id": "brimstone",
             "name": "Brimstone",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "brimstone"
           },
           {
@@ -15275,7 +15275,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "grausten-chest",
             "name": "Grausten Chest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "ashlands",
             "itemId": "grausten-chest"
           },
           {
@@ -15441,7 +15441,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "standing-blue-burning-iron-torch",
             "name": "Standing blue-burning iron torch",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "swamp",
             "itemId": "standing-blue-burning-iron-torch"
           },
           {
@@ -15622,7 +15622,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "standing-green-burning-iron-torch",
             "name": "Standing green-burning iron torch",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "swamp",
             "itemId": "standing-green-burning-iron-torch"
           }
         ],
@@ -15905,7 +15905,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "witch-crown",
             "name": "Witch Crown",
             "level": 1,
-            "biome": "ashlands",
+            "biome": "deep-north",
             "itemId": "witch-crown"
           }
         ]
@@ -16293,7 +16293,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "frigid-kiln",
             "name": "Frigid Kiln",
             "level": 1,
-            "biome": "meadows",
+            "biome": "deep-north",
             "itemId": "frigid-kiln"
           },
           {
@@ -16330,7 +16330,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "bloodgold-payload",
             "name": "Bloodgold Payload",
             "level": 1,
-            "biome": "ashlands",
+            "biome": "deep-north",
             "itemId": "bloodgold-payload"
           }
         ]
@@ -16787,35 +16787,35 @@ globalThis.VC_ITEMS_DATA = {
             "id": "obliterator",
             "name": "Obliterator",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "swamp",
             "itemId": "obliterator"
           },
           {
             "id": "tool-shelf",
             "name": "Tool shelf",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "mountain",
             "itemId": "tool-shelf"
           },
           {
             "id": "standing-green-burning-iron-torch",
             "name": "Standing green-burning iron torch",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "swamp",
             "itemId": "standing-green-burning-iron-torch"
           },
           {
             "id": "frost-foundry",
             "name": "Frost Foundry",
             "level": 1,
-            "biome": "meadows",
+            "biome": "deep-north",
             "itemId": "frost-foundry"
           },
           {
             "id": "forge-toolrack",
             "name": "Forge Toolrack",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "forge-toolrack"
           },
           {
@@ -16850,35 +16850,35 @@ globalThis.VC_ITEMS_DATA = {
             "id": "smith-s-anvil",
             "name": "Smith's Anvil",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "smith-s-anvil"
           },
           {
             "id": "reinforced-chest",
             "name": "Reinforced chest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "reinforced-chest"
           },
           {
             "id": "personal-chest",
             "name": "Personal chest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "personal-chest"
           },
           {
             "id": "standing-iron-torch",
             "name": "Standing iron torch",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "swamp",
             "itemId": "standing-iron-torch"
           },
           {
             "id": "standing-blue-burning-iron-torch",
             "name": "Standing blue-burning iron torch",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "swamp",
             "itemId": "standing-blue-burning-iron-torch"
           },
           {
@@ -16892,7 +16892,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "shield-generator",
             "name": "Shield generator",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "shield-generator"
           },
           {
@@ -16943,7 +16943,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "horn-of-celebration",
             "name": "Horn of Celebration",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "horn-of-celebration"
           },
           {
@@ -17143,14 +17143,14 @@ globalThis.VC_ITEMS_DATA = {
             "id": "longship",
             "name": "Longship",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "longship"
           },
           {
             "id": "drakkar",
             "name": "Drakkar",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "drakkar"
           },
           {
@@ -18136,7 +18136,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "archery-target",
             "name": "Archery Target",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "archery-target"
           }
         ],
@@ -18145,7 +18145,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "lox-saddle",
             "name": "Lox Saddle",
             "level": 1,
-            "biome": "meadows",
+            "biome": "plains",
             "itemId": "lox-saddle"
           }
         ]
@@ -18439,21 +18439,21 @@ globalThis.VC_ITEMS_DATA = {
             "id": "lox-saddle",
             "name": "Lox Saddle",
             "level": 1,
-            "biome": "meadows",
+            "biome": "plains",
             "itemId": "lox-saddle"
           },
           {
             "id": "asksvin-saddle",
             "name": "Asksvin Saddle",
             "level": 2,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "asksvin-saddle"
           },
           {
             "id": "moose-saddle",
             "name": "Moose Saddle",
             "level": 2,
-            "biome": "mistlands",
+            "biome": "deep-north",
             "itemId": "moose-saddle"
           },
           {
@@ -18741,7 +18741,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "spirit-caller",
             "name": "Spirit Caller",
             "level": 3,
-            "biome": "ashlands",
+            "biome": "deep-north",
             "itemId": "spirit-caller"
           }
         ],
@@ -18891,7 +18891,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "neckstabber",
             "name": "Neckstabber",
             "level": 1,
-            "biome": "meadows",
+            "biome": "deep-north",
             "itemId": "neckstabber"
           }
         ]
@@ -21179,7 +21179,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "smith-s-aprons",
             "name": "Smith's Aprons",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "deep-north",
             "itemId": "smith-s-aprons"
           }
         ],
@@ -21570,7 +21570,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "neckstabber",
             "name": "Neckstabber",
             "level": 1,
-            "biome": "meadows",
+            "biome": "deep-north",
             "itemId": "neckstabber"
           }
         ]
@@ -21717,7 +21717,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "gem-cutter",
             "name": "Gem cutter",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "gem-cutter"
           }
         ],
@@ -21726,7 +21726,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "asksvin-saddle",
             "name": "Asksvin Saddle",
             "level": 2,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "asksvin-saddle"
           }
         ]
@@ -23686,8 +23686,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "mysterious-axe-head",
       "name": "Mysterious Axe Head",
       "image": "../smithy/img/items/mysterious-axe-head.png",
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "meadows",
+      "tier": 1,
       "category": "material",
       "teleportable": true,
       "stack": 10,
@@ -25172,7 +25172,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "standing-loom",
             "name": "Standing Loom",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "deep-north",
             "itemId": "standing-loom"
           }
         ],
@@ -25258,7 +25258,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "witch-crown",
             "name": "Witch Crown",
             "level": 1,
-            "biome": "ashlands",
+            "biome": "deep-north",
             "itemId": "witch-crown"
           }
         ]
@@ -25710,7 +25710,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "tool-shelf",
             "name": "Tool shelf",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "mountain",
             "itemId": "tool-shelf"
           },
           {
@@ -26290,8 +26290,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "pine-cone",
       "name": "Pine Cone",
       "image": "../comfort/img/items/pine-cone.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "ingredient",
       "teleportable": true,
       "stack": 100,
@@ -26794,7 +26794,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "bloodgold-payload",
             "name": "Bloodgold Payload",
             "level": 1,
-            "biome": "ashlands",
+            "biome": "deep-north",
             "itemId": "bloodgold-payload"
           }
         ]
@@ -27145,7 +27145,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "yuleklapp",
             "name": "Yuleklapp",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "yuleklapp"
           },
           {
@@ -27676,7 +27676,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "feathery-wreath",
             "name": "Feathery Wreath",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "feathery-wreath"
           },
           {
@@ -27969,14 +27969,14 @@ globalThis.VC_ITEMS_DATA = {
             "id": "karve",
             "name": "Karve",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "karve"
           },
           {
             "id": "standing-iron-torch",
             "name": "Standing iron torch",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "swamp",
             "itemId": "standing-iron-torch"
           },
           {
@@ -27997,7 +27997,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "resin-candle",
             "name": "Resin candle",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "resin-candle"
           }
         ],
@@ -28020,14 +28020,14 @@ globalThis.VC_ITEMS_DATA = {
             "id": "tankard",
             "name": "Tankard",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "tankard"
           },
           {
             "id": "mead-horn-of-odin",
             "name": "Mead Horn of Odin",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "mead-horn-of-odin"
           }
         ]
@@ -28501,7 +28501,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "eitr-refinery",
             "name": "Eitr Refinery",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "eitr-refinery"
           }
         ],
@@ -29244,7 +29244,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "moose-saddle",
             "name": "Moose Saddle",
             "level": 2,
-            "biome": "mistlands",
+            "biome": "deep-north",
             "itemId": "moose-saddle"
           }
         ]
@@ -29878,14 +29878,14 @@ globalThis.VC_ITEMS_DATA = {
             "id": "treasure-chest",
             "name": "Treasure Chest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mountain",
             "itemId": "treasure-chest"
           },
           {
             "id": "rustic-drawbridge",
             "name": "Rustic Drawbridge",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mountain",
             "itemId": "rustic-drawbridge"
           }
         ],
@@ -29901,7 +29901,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "wisplight",
             "name": "Wisplight",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "wisplight"
           },
           {
@@ -30723,7 +30723,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "smelter",
             "name": "Smelter",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "smelter"
           },
           {
@@ -30737,28 +30737,28 @@ globalThis.VC_ITEMS_DATA = {
             "id": "charcoal-kiln",
             "name": "Charcoal Kiln",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "charcoal-kiln"
           },
           {
             "id": "eternal-pyre",
             "name": "Eternal Pyre",
             "level": 1,
-            "biome": "swamp",
+            "biome": "ashlands",
             "itemId": "eternal-pyre"
           },
           {
             "id": "frigid-kiln",
             "name": "Frigid Kiln",
             "level": 1,
-            "biome": "meadows",
+            "biome": "deep-north",
             "itemId": "frigid-kiln"
           },
           {
             "id": "frost-foundry",
             "name": "Frost Foundry",
             "level": 1,
-            "biome": "meadows",
+            "biome": "deep-north",
             "itemId": "frost-foundry"
           },
           {
@@ -30786,7 +30786,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "wisp-fountain",
             "name": "Wisp Fountain",
             "level": 1,
-            "biome": "swamp",
+            "biome": "plains",
             "itemId": "wisp-fountain"
           },
           {
@@ -30913,7 +30913,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "brimstone",
             "name": "Brimstone",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "brimstone"
           }
         ]
@@ -31034,7 +31034,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "smelter",
             "name": "Smelter",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "smelter"
           },
           {
@@ -31048,7 +31048,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "charcoal-kiln",
             "name": "Charcoal Kiln",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "charcoal-kiln"
           },
           {
@@ -31062,7 +31062,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "battering-ram",
             "name": "Battering Ram",
             "level": 1,
-            "biome": "meadows",
+            "biome": "ashlands",
             "itemId": "battering-ram"
           },
           {
@@ -31085,7 +31085,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "shield-core",
             "name": "Shield Core",
             "level": 2,
-            "biome": "plains",
+            "biome": "mistlands",
             "itemId": "shield-core"
           }
         ]
@@ -31229,14 +31229,14 @@ globalThis.VC_ITEMS_DATA = {
             "id": "black-metal-chest",
             "name": "Black metal chest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "plains",
             "itemId": "black-metal-chest"
           },
           {
             "id": "wardrobe",
             "name": "Wardrobe",
             "level": 1,
-            "biome": "meadows",
+            "biome": "deep-north",
             "itemId": "wardrobe"
           }
         ],
@@ -31428,7 +31428,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "birdnest",
             "name": "Birdnest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "birdnest"
           }
         ],
@@ -31796,42 +31796,42 @@ globalThis.VC_ITEMS_DATA = {
             "id": "timberwood-stack",
             "name": "Timberwood Stack",
             "level": 1,
-            "biome": "ashlands",
+            "biome": "deep-north",
             "itemId": "timberwood-stack"
           },
           {
             "id": "timberwood-gate",
             "name": "Timberwood Gate",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "deep-north",
             "itemId": "timberwood-gate"
           },
           {
             "id": "standing-loom",
             "name": "Standing Loom",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "deep-north",
             "itemId": "standing-loom"
           },
           {
             "id": "smith-s-aprons",
             "name": "Smith's Aprons",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "deep-north",
             "itemId": "smith-s-aprons"
           },
           {
             "id": "wardrobe",
             "name": "Wardrobe",
             "level": 1,
-            "biome": "meadows",
+            "biome": "deep-north",
             "itemId": "wardrobe"
           },
           {
             "id": "timberwood-drawbridge",
             "name": "Timberwood Drawbridge",
             "level": 1,
-            "biome": "ashlands",
+            "biome": "deep-north",
             "itemId": "timberwood-drawbridge"
           }
         ],
@@ -32036,21 +32036,21 @@ globalThis.VC_ITEMS_DATA = {
             "id": "hooded-lantern",
             "name": "Hooded Lantern",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "deep-north",
             "itemId": "hooded-lantern"
           },
           {
             "id": "moose-saddle",
             "name": "Moose Saddle",
             "level": 2,
-            "biome": "mistlands",
+            "biome": "deep-north",
             "itemId": "moose-saddle"
           },
           {
             "id": "bloodgold-missile",
             "name": "Bloodgold Missile",
             "level": 1,
-            "biome": "ashlands",
+            "biome": "deep-north",
             "itemId": "bloodgold-missile"
           }
         ]
@@ -32147,7 +32147,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "butcher-knife",
             "name": "Butcher knife",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "butcher-knife"
           }
         ]
@@ -32398,7 +32398,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "horn-of-celebration",
             "name": "Horn of Celebration",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "horn-of-celebration"
           }
         ]
@@ -34021,7 +34021,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "wisplight",
             "name": "Wisplight",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "wisplight"
           }
         ]
@@ -34565,7 +34565,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "rustic-drawbridge",
             "name": "Rustic Drawbridge",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mountain",
             "itemId": "rustic-drawbridge"
           }
         ],
@@ -35058,28 +35058,28 @@ globalThis.VC_ITEMS_DATA = {
             "id": "grinding-wheel",
             "name": "Grinding wheel",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "grinding-wheel"
           },
           {
             "id": "forge-bellows",
             "name": "Forge bellows",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "forge-bellows"
           },
           {
             "id": "forge-toolrack",
             "name": "Forge Toolrack",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "forge-toolrack"
           },
           {
             "id": "anvils",
             "name": "Anvils",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "anvils"
           },
           {
@@ -35114,7 +35114,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "sharp-stakes",
             "name": "Sharp stakes",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "sharp-stakes"
           },
           {
@@ -35142,21 +35142,21 @@ globalThis.VC_ITEMS_DATA = {
             "id": "cart",
             "name": "Cart",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "cart"
           },
           {
             "id": "smith-s-anvil",
             "name": "Smith's Anvil",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "smith-s-anvil"
           },
           {
             "id": "sign",
             "name": "Sign",
             "level": 1,
-            "biome": "swamp",
+            "biome": "meadows",
             "itemId": "sign"
           },
           {
@@ -35170,14 +35170,14 @@ globalThis.VC_ITEMS_DATA = {
             "id": "black-metal-chest",
             "name": "Black metal chest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "plains",
             "itemId": "black-metal-chest"
           },
           {
             "id": "barrel",
             "name": "Barrel",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "barrel"
           },
           {
@@ -35312,7 +35312,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "butcher-knife",
             "name": "Butcher knife",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "butcher-knife"
           },
           {
@@ -35469,7 +35469,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "birdnest",
             "name": "Birdnest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "birdnest"
           }
         ],
@@ -35847,21 +35847,21 @@ globalThis.VC_ITEMS_DATA = {
             "id": "drakkar",
             "name": "Drakkar",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "drakkar"
           },
           {
             "id": "eitr-refinery",
             "name": "Eitr Refinery",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "eitr-refinery"
           },
           {
             "id": "sap-extractor",
             "name": "Sap Extractor",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "sap-extractor"
           }
         ],
@@ -52756,8 +52756,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "pointy-hat",
       "name": "Pointy Hat",
       "image": "../smithy/img/armor/pointy-hat.png",
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -56536,8 +56536,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "cooked-egg",
       "name": "Cooked egg",
       "image": "../provisions/img/food/cooked-egg.png",
-      "biome": "black-forest",
-      "tier": 2,
+      "biome": "plains",
+      "tier": 6,
       "category": "food",
       "teleportable": true,
       "stack": 20,
@@ -57499,7 +57499,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "hooded-lantern",
             "name": "Hooded Lantern",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "deep-north",
             "itemId": "hooded-lantern"
           }
         ]
@@ -66155,8 +66155,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "smelter",
       "name": "Smelter",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -66282,8 +66282,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "charcoal-kiln",
       "name": "Charcoal Kiln",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -67758,7 +67758,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "obliterator",
             "name": "Obliterator",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "swamp",
             "itemId": "obliterator"
           }
         ],
@@ -67772,8 +67772,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "barrel-hoops",
       "name": "Barrel Hoops",
       "image": null,
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "material",
       "teleportable": true,
       "stack": 20,
@@ -67814,7 +67814,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "barrel",
             "name": "Barrel",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "barrel"
           }
         ],
@@ -67932,8 +67932,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "candle-wick",
       "name": "Candle Wick",
       "image": null,
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "swamp",
+      "tier": 4,
       "category": "material",
       "teleportable": true,
       "stack": 50,
@@ -67974,7 +67974,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "resin-candle",
             "name": "Resin candle",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "resin-candle"
           }
         ],
@@ -68050,8 +68050,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "ivy-seeds",
       "name": "Ivy Seeds",
       "image": null,
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "swamp",
+      "tier": 4,
       "category": "ingredient",
       "teleportable": true,
       "stack": 100,
@@ -68093,7 +68093,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "ivy",
             "name": "Ivy",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "ivy"
           }
         ]
@@ -68106,8 +68106,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "serving-tray",
       "name": "Serving Tray",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "swamp",
+      "tier": 4,
       "category": "tool",
       "teleportable": true,
       "stack": null,
@@ -68400,7 +68400,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "treasure-chest",
             "name": "Treasure Chest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mountain",
             "itemId": "treasure-chest"
           },
           {
@@ -68468,7 +68468,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "feathery-wreath",
             "name": "Feathery Wreath",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "feathery-wreath"
           }
         ],
@@ -68982,7 +68982,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "grausten-chest",
             "name": "Grausten Chest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "ashlands",
             "itemId": "grausten-chest"
           }
         ],
@@ -69371,7 +69371,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "eternal-pyre",
             "name": "Eternal Pyre",
             "level": 1,
-            "biome": "swamp",
+            "biome": "ashlands",
             "itemId": "eternal-pyre"
           }
         ],
@@ -69540,14 +69540,14 @@ globalThis.VC_ITEMS_DATA = {
             "id": "frigid-kiln",
             "name": "Frigid Kiln",
             "level": 1,
-            "biome": "meadows",
+            "biome": "deep-north",
             "itemId": "frigid-kiln"
           },
           {
             "id": "frost-foundry",
             "name": "Frost Foundry",
             "level": 1,
-            "biome": "meadows",
+            "biome": "deep-north",
             "itemId": "frost-foundry"
           }
         ],
@@ -69848,18 +69848,18 @@ globalThis.VC_ITEMS_DATA = {
       "crossLinks": {}
     },
     {
-      "id": "ectoplasm-ghost-trophy",
-      "name": "Ectoplasm, Ghost Trophy",
+      "id": "ectoplasm",
+      "name": "Ectoplasm",
       "image": null,
       "biome": "black-forest",
       "tier": 2,
-      "category": "trophy",
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": null,
+      "stack": 50,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Ectoplasm",
       "names": {},
-      "description": null,
+      "description": "A restless essence of a once living thing...",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -70091,7 +70091,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "heart-of-the-forest",
             "name": "Heart of the Forest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "heart-of-the-forest"
           }
         ]
@@ -71201,7 +71201,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "brimstone",
             "name": "Brimstone",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "brimstone"
           }
         ]
@@ -71696,7 +71696,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "catapult",
             "name": "Catapult",
             "level": 1,
-            "biome": "meadows",
+            "biome": "ashlands",
             "itemId": "catapult"
           }
         ],
@@ -72318,7 +72318,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "wisp-fountain",
             "name": "Wisp Fountain",
             "level": 1,
-            "biome": "swamp",
+            "biome": "plains",
             "itemId": "wisp-fountain"
           }
         ],
@@ -73014,8 +73014,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "obliterator",
       "name": "Obliterator",
       "image": null,
-      "biome": "black-forest",
-      "tier": 2,
+      "biome": "swamp",
+      "tier": 4,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -73122,7 +73122,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "birdnest",
             "name": "Birdnest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "birdnest"
           }
         ],
@@ -73199,8 +73199,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "eternal-pyre",
       "name": "Eternal Pyre",
       "image": null,
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "ashlands",
+      "tier": 8,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -73263,8 +73263,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "birdnest",
       "name": "Birdnest",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "swamp",
+      "tier": 4,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -73375,8 +73375,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "tool-shelf",
       "name": "Tool shelf",
       "image": null,
-      "biome": "black-forest",
-      "tier": 2,
+      "biome": "mountain",
+      "tier": 5,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -73444,8 +73444,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "standing-green-burning-iron-torch",
       "name": "Standing green-burning iron torch",
       "image": null,
-      "biome": "black-forest",
-      "tier": 2,
+      "biome": "swamp",
+      "tier": 4,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -73508,8 +73508,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "frigid-kiln",
       "name": "Frigid Kiln",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "deep-north",
+      "tier": 9,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -73577,8 +73577,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "frost-foundry",
       "name": "Frost Foundry",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "deep-north",
+      "tier": 9,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -74029,8 +74029,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "grinding-wheel",
       "name": "Grinding wheel",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -74093,8 +74093,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "forge-bellows",
       "name": "Forge bellows",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "swamp",
+      "tier": 4,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -74162,8 +74162,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "forge-toolrack",
       "name": "Forge Toolrack",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "swamp",
+      "tier": 4,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -74226,8 +74226,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "anvils",
       "name": "Anvils",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -74628,8 +74628,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "sharp-stakes",
       "name": "Sharp stakes",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -74692,8 +74692,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "crystal-wall-1x1",
       "name": "Crystal wall 1x1",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "mountain",
+      "tier": 5,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -74994,8 +74994,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "gem-cutter",
       "name": "Gem cutter",
       "image": null,
-      "biome": "mistlands",
-      "tier": 7,
+      "biome": "ashlands",
+      "tier": 8,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -75068,8 +75068,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "metal-cutter",
       "name": "Metal cutter",
       "image": null,
-      "biome": "mistlands",
-      "tier": 7,
+      "biome": "ashlands",
+      "tier": 8,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -75142,8 +75142,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "pile-of-skulls",
       "name": "Pile of Skulls",
       "image": null,
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "ashlands",
+      "tier": 8,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -75188,8 +75188,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "feathery-wreath",
       "name": "Feathery Wreath",
       "image": null,
-      "biome": "mistlands",
-      "tier": 7,
+      "biome": "ashlands",
+      "tier": 8,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -75262,8 +75262,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "ashwood-stakewall",
       "name": "Ashwood stakewall",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "ashlands",
+      "tier": 8,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -75321,8 +75321,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "ivy",
       "name": "Ivy",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "swamp",
+      "tier": 4,
       "category": "ingredient",
       "teleportable": true,
       "stack": null,
@@ -75514,8 +75514,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "timberwood-stack",
       "name": "Timberwood Stack",
       "image": null,
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "deep-north",
+      "tier": 9,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -75606,8 +75606,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "timberwood-gate",
       "name": "Timberwood Gate",
       "image": null,
-      "biome": "black-forest",
-      "tier": 2,
+      "biome": "deep-north",
+      "tier": 9,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -75788,8 +75788,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "longship",
       "name": "Longship",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "swamp",
+      "tier": 4,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -76000,8 +76000,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "cart",
       "name": "Cart",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -76064,8 +76064,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "karve",
       "name": "Karve",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -76138,8 +76138,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "smith-s-anvil",
       "name": "Smith's Anvil",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "swamp",
+      "tier": 4,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -76258,8 +76258,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "reinforced-chest",
       "name": "Reinforced chest",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "swamp",
+      "tier": 4,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -76322,8 +76322,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "personal-chest",
       "name": "Personal chest",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "swamp",
+      "tier": 4,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -76386,8 +76386,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "sign",
       "name": "Sign",
       "image": null,
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "meadows",
+      "tier": 1,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -76437,8 +76437,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "standing-iron-torch",
       "name": "Standing iron torch",
       "image": null,
-      "biome": "black-forest",
-      "tier": 2,
+      "biome": "swamp",
+      "tier": 4,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -76565,8 +76565,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "black-metal-chest",
       "name": "Black metal chest",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "plains",
+      "tier": 6,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -76634,8 +76634,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "standing-blue-burning-iron-torch",
       "name": "Standing blue-burning iron torch",
       "image": null,
-      "biome": "black-forest",
-      "tier": 2,
+      "biome": "swamp",
+      "tier": 4,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -76698,8 +76698,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "treasure-chest",
       "name": "Treasure Chest",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "mountain",
+      "tier": 5,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -76777,8 +76777,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "trap",
       "name": "Trap",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "mistlands",
+      "tier": 7,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -77096,8 +77096,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "drakkar",
       "name": "Drakkar",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "mistlands",
+      "tier": 7,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -77170,8 +77170,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "battering-ram",
       "name": "Battering Ram",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "ashlands",
+      "tier": 8,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -77239,8 +77239,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "catapult",
       "name": "Catapult",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "ashlands",
+      "tier": 8,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -77308,8 +77308,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "resin-candle",
       "name": "Resin candle",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "swamp",
+      "tier": 4,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -77444,8 +77444,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "yuleklapp",
       "name": "Yuleklapp",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -77528,8 +77528,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "standing-loom",
       "name": "Standing Loom",
       "image": null,
-      "biome": "mistlands",
-      "tier": 7,
+      "biome": "deep-north",
+      "tier": 9,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -77592,8 +77592,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "smith-s-aprons",
       "name": "Smith's Aprons",
       "image": null,
-      "biome": "mistlands",
-      "tier": 7,
+      "biome": "deep-north",
+      "tier": 9,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -77661,8 +77661,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "wardrobe",
       "name": "Wardrobe",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "deep-north",
+      "tier": 9,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -77730,8 +77730,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "grausten-chest",
       "name": "Grausten Chest",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "ashlands",
+      "tier": 8,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -78039,8 +78039,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "wisp-fountain",
       "name": "Wisp Fountain",
       "image": null,
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "plains",
+      "tier": 6,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -78103,8 +78103,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "wisplight",
       "name": "Wisplight",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "mistlands",
+      "tier": 7,
       "category": "accessory",
       "teleportable": true,
       "stack": null,
@@ -78167,8 +78167,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "barrel",
       "name": "Barrel",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -78360,8 +78360,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "shield-generator",
       "name": "Shield generator",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "mistlands",
+      "tier": 7,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -78472,8 +78472,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "eitr-refinery",
       "name": "Eitr Refinery",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "mistlands",
+      "tier": 7,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -78805,8 +78805,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "flametal-missile",
       "name": "Flametal missile",
       "image": "../damage-calculator/items/flametal-missile.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "ashlands",
+      "tier": 8,
       "category": "ammo",
       "teleportable": true,
       "stack": null,
@@ -79066,8 +79066,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "sap-extractor",
       "name": "Sap Extractor",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "mistlands",
+      "tier": 7,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -79413,7 +79413,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "grinding-wheel",
             "name": "Grinding wheel",
             "level": 1,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "grinding-wheel"
           }
         ],
@@ -79468,8 +79468,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "lox-saddle",
       "name": "Lox Saddle",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "plains",
+      "tier": 6,
       "category": "tool",
       "teleportable": true,
       "stack": 1,
@@ -79647,7 +79647,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "trap",
             "name": "Trap",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "trap"
           },
           {
@@ -79705,7 +79705,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "sap-extractor",
             "name": "Sap Extractor",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "sap-extractor"
           }
         ],
@@ -79717,8 +79717,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "ceramic-plate",
       "name": "Ceramic Plate",
       "image": null,
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "mistlands",
+      "tier": 7,
       "category": "material",
       "teleportable": true,
       "stack": 30,
@@ -79772,7 +79772,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "drakkar",
             "name": "Drakkar",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "drakkar"
           }
         ],
@@ -79781,7 +79781,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "shield-core",
             "name": "Shield Core",
             "level": 2,
-            "biome": "plains",
+            "biome": "mistlands",
             "itemId": "shield-core"
           }
         ]
@@ -79792,8 +79792,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "shield-core",
       "name": "Shield Core",
       "image": null,
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mistlands",
+      "tier": 7,
       "category": "material",
       "teleportable": true,
       "stack": 20,
@@ -79857,7 +79857,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "shield-generator",
             "name": "Shield generator",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mistlands",
             "itemId": "shield-generator"
           }
         ],
@@ -79869,8 +79869,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "asksvin-saddle",
       "name": "Asksvin Saddle",
       "image": null,
-      "biome": "mistlands",
-      "tier": 7,
+      "biome": "ashlands",
+      "tier": 8,
       "category": "tool",
       "teleportable": true,
       "stack": 1,
@@ -79993,7 +79993,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "brimstone",
             "name": "Brimstone",
             "level": 1,
-            "biome": "mistlands",
+            "biome": "ashlands",
             "itemId": "brimstone"
           }
         ]
@@ -80087,49 +80087,6 @@ globalThis.VC_ITEMS_DATA = {
       "crossLinks": {}
     },
     {
-      "id": "ectoplasm",
-      "name": "Ectoplasm",
-      "image": null,
-      "biome": "mistlands",
-      "tier": 7,
-      "category": "material",
-      "teleportable": true,
-      "stack": 50,
-      "weight": 2,
-      "wiki": "https://valheim.weirdgloop.org/w/Ectoplasm",
-      "names": {},
-      "description": "A restless essence of a once living thing...",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Ghost",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Ghost"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
       "id": "ancient-coin",
       "name": "Ancient Coin",
       "image": null,
@@ -80176,8 +80133,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "hooded-lantern",
       "name": "Hooded Lantern",
       "image": null,
-      "biome": "mistlands",
-      "tier": 7,
+      "biome": "deep-north",
+      "tier": 9,
       "category": "tool",
       "teleportable": true,
       "stack": 1,
@@ -80341,8 +80298,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "moose-saddle",
       "name": "Moose Saddle",
       "image": null,
-      "biome": "mistlands",
-      "tier": 7,
+      "biome": "deep-north",
+      "tier": 9,
       "category": "tool",
       "teleportable": true,
       "stack": 1,
@@ -80978,7 +80935,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "spirit-caller",
             "name": "Spirit Caller",
             "level": 3,
-            "biome": "ashlands",
+            "biome": "deep-north",
             "itemId": "spirit-caller"
           }
         ],
@@ -81061,8 +81018,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "spirit-caller",
       "name": "Spirit Caller",
       "image": null,
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "deep-north",
+      "tier": 9,
       "category": "weapon",
       "teleportable": true,
       "stack": null,
@@ -81198,8 +81155,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "wooden-missile",
       "name": "Wooden missile",
       "image": "../damage-calculator/items/wooden-missile.png",
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "plains",
+      "tier": 6,
       "category": "ammo",
       "teleportable": true,
       "stack": null,
@@ -81461,8 +81418,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "snow-shovel",
       "name": "Snow Shovel",
       "image": null,
-      "biome": "mountain",
-      "tier": 5,
+      "biome": "ashlands",
+      "tier": 8,
       "category": "tool",
       "teleportable": true,
       "stack": null,
@@ -81599,8 +81556,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "tankard",
       "name": "Tankard",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "tool",
       "teleportable": true,
       "stack": null,
@@ -81716,7 +81673,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "treasure-chest",
             "name": "Treasure Chest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mountain",
             "itemId": "treasure-chest"
           }
         ],
@@ -81775,7 +81732,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "treasure-chest",
             "name": "Treasure Chest",
             "level": 1,
-            "biome": "meadows",
+            "biome": "mountain",
             "itemId": "treasure-chest"
           }
         ],
@@ -81787,8 +81744,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "mead-horn-of-odin",
       "name": "Mead Horn of Odin",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "tool",
       "teleportable": true,
       "stack": null,
@@ -81981,8 +81938,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "finewood-stack",
       "name": "Finewood Stack",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -82165,8 +82122,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "horn-of-celebration",
       "name": "Horn of Celebration",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "swamp",
+      "tier": 4,
       "category": "tool",
       "teleportable": true,
       "stack": null,
@@ -82415,8 +82372,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "bone-stack",
       "name": "Bone Stack",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -82525,8 +82482,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "heart-of-the-forest",
       "name": "Heart of the Forest",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "accessory",
       "teleportable": true,
       "stack": null,
@@ -83289,8 +83246,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "brimstone",
       "name": "Brimstone",
       "image": null,
-      "biome": "mistlands",
-      "tier": 7,
+      "biome": "ashlands",
+      "tier": 8,
       "category": "accessory",
       "teleportable": true,
       "stack": null,
@@ -83437,8 +83394,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "archery-target",
       "name": "Archery Target",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -83501,8 +83458,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "rustic-drawbridge",
       "name": "Rustic Drawbridge",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "mountain",
+      "tier": 5,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -83570,8 +83527,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "timberwood-drawbridge",
       "name": "Timberwood Drawbridge",
       "image": null,
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "deep-north",
+      "tier": 9,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -83823,8 +83780,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "bloodgold-stack",
       "name": "Bloodgold Stack",
       "image": null,
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "deep-north",
+      "tier": 9,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -83869,8 +83826,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "neckstabber",
       "name": "Neckstabber",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "deep-north",
+      "tier": 9,
       "category": "accessory",
       "teleportable": true,
       "stack": null,
@@ -83938,8 +83895,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "witch-crown",
       "name": "Witch Crown",
       "image": null,
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "deep-north",
+      "tier": 9,
       "category": "accessory",
       "teleportable": true,
       "stack": null,
@@ -84165,8 +84122,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "butcher-knife",
       "name": "Butcher knife",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "tool",
       "teleportable": true,
       "stack": null,
@@ -84364,8 +84321,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "bloodgold-payload",
       "name": "Bloodgold Payload",
       "image": "../damage-calculator/items/bloodgold-payload.png",
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "deep-north",
+      "tier": 9,
       "category": "ammo",
       "teleportable": true,
       "stack": 50,
@@ -84433,8 +84390,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "bloodgold-missile",
       "name": "Bloodgold Missile",
       "image": "../damage-calculator/items/bloodgold-missile.png",
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "deep-north",
+      "tier": 9,
       "category": "ammo",
       "teleportable": true,
       "stack": 100,
