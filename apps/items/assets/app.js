@@ -117,7 +117,7 @@
   let searchQuery = '';
   let activeModalItem = null;
   let noticeTimer = null;
-  let showAllBiomes = true;
+  let showAllBiomes = false;
   try {
     const stored = localStorage.getItem('vc.itemsShowAll');
     if (stored !== null) {
@@ -259,9 +259,11 @@
     modalBody.replaceChildren();
 
     // 0. Spoiler notice if biome is unvisited
-    if (item.biome && !getRevealedBiomes().includes(item.biome)) {
+    if (item.biome && !isBiomeRevealed(item.biome)) {
       const banner = el('div', 'modal-spoiler-banner');
-      banner.append(el('span', '', t('Locked until you reach this biome: {biome}', { biome: item.biome.replace('-', ' ') })));
+      const biomeObj = biomes.find((b) => b.id === item.biome);
+      const biomeName = biomeObj ? biomeObj.name : item.biome.replace('-', ' ');
+      banner.append(el('span', '', t('Locked until you reach this biome: {biome}', { biome: t(biomeName) })));
       const revBtn = button(t('Reveal biome'), () => {
         revealBiome(item.biome);
         render();
