@@ -69848,18 +69848,18 @@ globalThis.VC_ITEMS_DATA = {
       "crossLinks": {}
     },
     {
-      "id": "ectoplasm-ghost-trophy",
-      "name": "Ectoplasm, Ghost Trophy",
+      "id": "ectoplasm",
+      "name": "Ectoplasm",
       "image": null,
-      "biome": "black-forest",
-      "tier": 2,
-      "category": "trophy",
+      "biome": "mistlands",
+      "tier": 7,
+      "category": "drop",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": null,
+      "stack": 50,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Ectoplasm",
       "names": {},
-      "description": null,
+      "description": "A restless essence of a once living thing...",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -80071,49 +80071,6 @@ globalThis.VC_ITEMS_DATA = {
         "raw": [
           {
             "text": "Asksvin"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "ectoplasm",
-      "name": "Ectoplasm",
-      "image": null,
-      "biome": "mistlands",
-      "tier": 7,
-      "category": "material",
-      "teleportable": true,
-      "stack": 50,
-      "weight": 2,
-      "wiki": "https://valheim.weirdgloop.org/w/Ectoplasm",
-      "names": {},
-      "description": "A restless essence of a once living thing...",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Ghost",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Ghost"
           }
         ]
       },
