@@ -123,6 +123,7 @@
   const groupLimits = new Map();
   const groupOpenOverride = new Map();
   let groupFilterSig = '';
+  let pendingFocus = null; // { summary: biomeId } | { card: itemId } restored after render()
   let focusItemId = null; // deep link target: its group must be open and the card rendered
   let modalHistory = [];
   let searchQuery = '';
@@ -901,7 +902,10 @@
         const opening = details.getAttribute('open') === null;
         groupOpenOverride.set(def.id, opening);
         // Closed groups render no cards (lazy); opening one renders it.
-        if (opening) render();
+        if (opening) {
+          pendingFocus = { summary: def.id };
+          render();
+        }
       });
       details.append(summary);
 
@@ -917,6 +921,7 @@
             tn('Show {count} more', Math.min(GROUP_PAGE_SIZE, remaining), { count: number(Math.min(GROUP_PAGE_SIZE, remaining)) }),
             () => {
               groupLimits.set(def.id, limit + GROUP_PAGE_SIZE);
+              pendingFocus = { card: list[limit].id };
               render();
             },
             'biome-group-more toolbar-toggle-btn'
@@ -927,6 +932,19 @@
       container.append(details);
     }
     grid.replaceChildren(container);
+
+    if (pendingFocus) {
+      let target = null;
+      if (pendingFocus.summary) {
+        const d = container.querySelector(`[data-biome=${pendingFocus.summary}]`);
+        target = d && d.querySelector('summary');
+      } else if (pendingFocus.card) {
+        target = document.getElementById(`item-card-${pendingFocus.card}`);
+        if (target) target.setAttribute('tabindex', '-1');
+      }
+      pendingFocus = null;
+      if (target && typeof target.focus === 'function') target.focus();
+    }
   }
 
   function handleHash() {

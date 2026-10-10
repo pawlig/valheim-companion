@@ -104,6 +104,10 @@ class Node {
   }
 
   scrollIntoView() {}
+
+  focus() {
+    Node.active = this;
+  }
 }
 
 // Expands every biome group (clicks all "Show more" buttons) and returns all rendered cards.
@@ -862,5 +866,35 @@ describe('Items Compendium UI Tests', () => {
     const now = doc.getElementById('items-grid').querySelectorAll('.biome-group').find((g) => g.dataset.biome === id);
     assert.ok(now.querySelectorAll('.item-card').length > 0);
     assert.notEqual(now.getAttribute('open'), null);
+  });
+  it('39. Opening a group by its summary keeps focus on that summary', () => {
+    const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
+    const closed = doc.getElementById('items-grid').querySelectorAll('.biome-group').find((g) => g.dataset.biome === 'swamp');
+    Node.active = null;
+    closed.querySelector('.biome-group-summary').dispatch('click');
+    assert.ok(Node.active, 'something is focused');
+    assert.equal(Node.active.tagName, 'summary');
+    assert.equal(Node.active.parentElement.dataset.biome, 'swamp');
+  });
+
+  it('40. Show more keeps focus on the first newly added card', () => {
+    const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
+    const g = doc.getElementById('items-grid').querySelectorAll('.biome-group').find((x) => x.querySelector('.biome-group-more'));
+    Node.active = null;
+    g.querySelector('.biome-group-more').dispatch('click');
+    assert.ok(Node.active && Node.active.classList.contains('item-card'));
+    const cards = doc.getElementById('items-grid').querySelectorAll('.biome-group').find((x) => x.dataset.biome === g.dataset.biome).querySelectorAll('.item-card');
+    assert.equal(cards.indexOf(Node.active), 60);
+  });
+
+  it('41. Deep link to a card past position 60 in a closed group (black-forest) opens it and renders the card', () => {
+    const probe = createDomFixture('', { 'vc.itemsShowAll': 'true' });
+    const ids = expandAll(probe.doc).filter((c) => c.parentElement.parentElement.dataset.biome === 'black-forest').map((c) => c.dataset.id);
+    assert.ok(ids.length > 60, 'black-forest has more than 60 items');
+    const target = ids[ids.length - 1];
+    const { doc } = createDomFixture(`#item=${target}`, { 'vc.itemsShowAll': 'true' });
+    const g = doc.getElementById('items-grid').querySelectorAll('.biome-group').find((x) => x.dataset.biome === 'black-forest');
+    assert.notEqual(g.getAttribute('open'), null, 'group open');
+    assert.ok(doc.getElementById(`item-card-${target}`), 'card rendered');
   });
 });
