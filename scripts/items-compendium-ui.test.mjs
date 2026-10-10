@@ -531,6 +531,7 @@ describe('Items Compendium UI Tests', () => {
     assert.equal(toggleBtn.textContent, 'Spoiler filter: On');
     const ironCardRelocked = doc.getElementById('item-card-iron');
     assert.ok(ironCardRelocked.classList.contains('is-locked'), 'Iron card should be locked again');
+    assert.ok(!storage.has('vc.progress'), 'Toggling spoilers never writes vc.progress');
   });
 
   it('22. Localized search query matches items by localized names', () => {
