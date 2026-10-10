@@ -726,6 +726,21 @@ globalThis.VC_MESSAGES = {
     "ja": "{boss}を倒す必要があります",
     "id": "Perlu mengalahkan {boss}"
   },
+  "Requires progress in a later biome": {
+    "en": "Requires progress in a later biome",
+    "cs": "Vyžaduje postup v pozdějším biomu",
+    "de": "Erfordert Fortschritt in einem späteren Biom",
+    "es": "Requiere avanzar en un bioma posterior",
+    "fr": "Nécessite de progresser dans un biome ultérieur",
+    "pt": "Requer progresso em um bioma posterior",
+    "zh": "需要在后续生物群系中取得进展",
+    "hi": "आगे के बायोम में प्रगति आवश्यक है",
+    "ar": "يتطلب التقدم في منطقة حيوية لاحقة",
+    "bn": "পরবর্তী বায়োমে অগ্রগতি প্রয়োজন",
+    "ru": "Требуется прогресс в более позднем биоме",
+    "ja": "後のバイオームで進行する必要があります",
+    "id": "Memerlukan kemajuan di bioma berikutnya"
+  },
   "Requires returning Hildir's {chest} chest ({boss})": {
     "en": "Requires returning Hildir's {chest} chest ({boss})",
     "cs": "Vyžaduje vrátit Hildiřinu {chest} truhlu ({boss})",

@@ -300,7 +300,7 @@ function createDomFixture(initialHash = '') {
 
   let applyCalled = 0;
   const i18nMock = {
-    t: (k) => k,
+    t: (k, values = {}) => k.replace(/\{(\w+)\}/g, (match, key) => values[key] ?? match),
     tn: (catalog, k, count) => `${count} ${k.replace(/\{count\}\s*/, '')}`,
     locale: () => 'en',
     mountPicker: () => {},
@@ -610,8 +610,9 @@ describe('Trader Ledger UI Test Suite (VC-40)', () => {
     assert.equal(localStorage.getItem('vc.appraisalCollapsed'), 'false');
   });
 
-  it('15. Locked goods show boss prerequisite link to expedition or bestiary', () => {
-    const { doc } = createDomFixture();
+  it('15. Locked goods in revealed biomes show boss prerequisite links', () => {
+    const { doc, progress } = createDomFixture();
+    progress.reveal(['meadows', 'black-forest', 'plains']);
     const thunderCard = doc.getElementById('item-card-thunder-stone');
     const bossLink = thunderCard.querySelector('.link-boss-expedition');
     assert.ok(bossLink, 'Expedition boss link exists on Thunder Stone');
@@ -625,6 +626,51 @@ describe('Trader Ledger UI Test Suite (VC-40)', () => {
     const minibossLink = furCapCard.querySelector('.link-boss-expedition');
     assert.ok(minibossLink, 'Bestiary miniboss link exists for Zil & Thungr (bronze chest)');
     assert.equal(minibossLink.getAttribute('href'), '/bestiary/#c=zil-thungr');
+  });
+
+  it('18. A clean profile hides later boss, chest and creature prerequisites in every trader tab', () => {
+    const { doc } = createDomFixture();
+    for (const trader of ['haldor', 'hildir', 'bog-witch']) {
+      doc.getElementById(`tab-${trader}`).dispatch('click');
+      const banners = doc.querySelectorAll('.good-unlock-banner');
+      assert.ok(banners.length > 0);
+      for (const banner of banners) {
+        assert.equal(banner.querySelector('.unlock-text').textContent, '🔒 Requires progress in a later biome');
+        assert.equal(banner.querySelector('.link-boss-expedition'), null);
+      }
+      assert.equal(doc.querySelectorAll('a').some((a) => a.href.startsWith('/expedition/')), false);
+      const text = (node) => node.textContent + node.children.map(text).join('\n');
+      assert.doesNotMatch(text(doc.body), /The Queen|Fader|Kall|Yagluth|Zil & Thungr|Serpent|Writhan/);
+    }
+  });
+
+  it('19. Revealing Mistlands shows The Queen prerequisite and Expedition link without defeating her', () => {
+    const { doc, progress } = createDomFixture('#trader=bog-witch');
+    progress.reveal(['meadows', 'mistlands']);
+    const queenLink = doc.querySelectorAll('.link-boss-expedition').find((a) => a.href === '/expedition/#boss=the-queen');
+    assert.ok(queenLink);
+    assert.equal(queenLink.textContent, 'Boss preparation: The Queen →');
+    assert.equal(queenLink.parentElement.querySelector('.unlock-text').textContent, '🔒 Requires defeating The Queen');
+  });
+
+  it('20. Storage changes to progress and open biomes redraw the prerequisite banner', () => {
+    for (const key of ['vc.progress', 'vc.openBiomes']) {
+      const { doc, context, progress } = createDomFixture('#trader=bog-witch');
+      progress.revealedBiomes = () => ['meadows', 'mistlands'];
+      assert.equal(doc.querySelectorAll('.link-boss-expedition').length, 0);
+      for (const cb of doc.events.storage || []) cb({ key });
+      assert.ok(doc.querySelectorAll('.link-boss-expedition').some((a) => a.href === '/expedition/#boss=the-queen'));
+      context.globalThis.VCProgress.revealedBiomes = () => ['meadows'];
+      for (const cb of doc.events.storage || []) cb({ key });
+      assert.equal(doc.querySelectorAll('.link-boss-expedition').length, 0);
+    }
+  });
+
+  it('21. Without VCProgress, prerequisites remain visible', () => {
+    const { doc, context } = createDomFixture();
+    delete context.globalThis.VCProgress;
+    doc.getElementById('tab-bog-witch').dispatch('click');
+    assert.ok(doc.querySelectorAll('.link-boss-expedition').some((a) => a.textContent.includes('The Queen')));
   });
 
   it('17. creature unlocks (Serpent, Writhan) follow the revealed biomes and show the buy quantity', () => {
