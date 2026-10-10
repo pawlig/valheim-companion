@@ -537,12 +537,12 @@ Nová sekce `/items/` (`apps/items/`, statická vanilla JS aplikace jako Smithy 
 - **Data (`scripts/build-items-data.mjs` → `apps/items/data/data.js` a `data/items-compendium.json`):**
   - Vstup: `data/items.json`, `data/weapons.json`, `data/armor.json`, `data/comfort.json`, `apps/provisions/data/data.js`, `data/expedition.json`, `data/creatures.json`, `data/stations.json`.
   - Každý záznam itemu:
-    - `id`, `name`, `image`, `biome`, `tier`, `category` (`metal`, `drop`, `trophy`, `food-ingredient`, `crafting`, `valuable`, `summoning`), `teleportable` (true/false), `stack`, `weight`, `wiki`
+    - `id`, `name`, `image`, `biome`, `tier`, `category` (17 hodnot: `weapon`, `shield`, `ammo`, `tool`, `armor`, `accessory`, `casting`, `summoning`, `metal`, `trophy`, `drop`, `material`, `ingredient`, `food`, `mead`, `building`, `valuable`; výčet a zdroje v `docs/DATA-SCHEMA.md`), `teleportable` (true/false), `stack`, `weight`, `wiki`
     - **`sources`:**
       - Drop z bytosti: `creatures: [{ id, name, biome }]` → odkaz `/bestiary/#c=<id>`
       - Sběr v přírodě / těžba: `location` / `other`
       - Výroba na stanici: `recipe: { station, stationLevel, materials: [{ item, amount }] }`
-      - Nákup u obchodníka: `trader: "Haldor" | "Hildir" | "Bog Witch"` s cenou
+      - Nákup u obchodníka: `traders[]: { id, name, price, unlockedBy }`, `id` ∈ `haldor` | `hildir` | `bog-witch`, `price` v mincích, `unlockedBy` viz `docs/DATA-SCHEMA.md` (`data/traders.json`)
     - **`usedIn` (obrácený index receptů napříč všemi nástroji):**
       - `weapons`: `[{ id, name, biome }]` → odkaz `/smithy/#item=<id>`
       - `armor`: `[{ id, name, set, biome }]` → odkaz `/smithy/#set=<set>` nebo `/smithy/#item=<id>`
@@ -550,7 +550,8 @@ Nová sekce `/items/` (`apps/items/`, statická vanilla JS aplikace jako Smithy 
       - `meads`: `[{ id, name, biome }]` → odkaz `/provisions/#item=<id>`
       - `comfort`: `[{ id, name, comfort, biome }]` → odkaz `/comfort/#item=<id>`
       - `expedition`: `[{ bossId, bossName, biome }]` → odkaz `/expedition/#boss=<bossId>`
-      - `stations`: `[{ id, name, level, biome }]`
+      - `stations`: `[{ id, name, level, biome, itemId }]` — stavby, jejichž recept obsahuje surovinu (u `wood` 33 položek, např. Artisan Table, Forge, Stonecutter).
+      - `crafting`: `[{ id, name, level, biome, itemId }]` — výrobky (nástroje, munice, …), jejichž recept obsahuje surovinu (u `wood` 19 položek, např. Antler Pickaxe, Bronzehead Arrow; u `bronze` např. Bronze Nails, Bronze Pickaxe).
 - **Uživatelské rozhraní `/items/`:**
   - Záhlaví „Items Compendium“, podtitul ve 13 jazycích, návrat na rozcestník, přepínač jazyka, vysouvací panel `VCProgress`.
   - Vyhledávání (okamžitá filtrace podle anglického názvu).
@@ -571,6 +572,15 @@ Nová sekce `/items/` (`apps/items/`, statická vanilla JS aplikace jako Smithy 
   - **Expedition (`/expedition/`):** v balicím seznamu u vyvolávacích předmětů (summon items) je klik odkazem na `/items/#item=<id>`.
 - **Smlouva URL:** `/items/#item=<id>` odroluje na položku, otevře její detail a v případě uzamčeného biomu nabídne „Reveal“.
 - **Název nástroje:** **Items Compendium** (vlastní název, nepřekládá se dle § 20).
+
+- **Rozhodnutí Pavla 10. 10. 2026 (audit `docs/audit/AUDIT-VC-39-40.md`, globální arch AUD/1–8):**
+  - AUD/1 — spoilery: **zamčeno podle postupu** (`VCProgress`), přepínač zůstává.
+  - AUD/2 — odlitky, formy a Idoly Deep North mají vlastní kategorii **Casting** (`category: "casting"`).
+  - AUD/3 — Hildiřino zboží: **všech 38 Hildiřiných kusů má kartu v Items** (armor 34, tool 2, material 2; odkaz na Hildir).
+  - AUD/4 — trinkety mají kategorii **Accessories** (`category: "accessory"`).
+  - AUD/5 — hledání: suroviny vedou **do Items Compendia** (beze změny).
+  - AUD/8 — tlačítko „Reveal“ na zamčené kartě jen odkryje obsah přes `vc.openBiomes`; postup hráče (`vc.progress`) mění jen Progress Tracker.
+  - Schéma polí a kategorií: `docs/DATA-SCHEMA.md`, oddíl `data/items-compendium.json`.
 
 ## 28. Trader Ledger: Haldor, Hildir & Bog Witch (VC-40, Pavel 9. 10. 2026)
 

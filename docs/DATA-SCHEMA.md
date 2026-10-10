@@ -269,3 +269,88 @@ Ruční opravy, které parser aplikuje **jako poslední krok**:
 ### `apps/armourer/data/data.js`
 
 `window.VA_DATA = { generatedAt, source, biomes, armor, items }`. `items` je objekt podle `id`.
+
+### `data/items-compendium.json` (VC-39, VC-40b; Items Compendium)
+
+Vyrábí `node scripts/build-items-data.mjs` (zapisuje `data/items-compendium.json` a `apps/items/data/data.js`). Pořadí: nejdřív `node scripts/build-traders-data.mjs`, pak `node scripts/build-items-data.mjs`, protože items generátor čte `data/traders.json` (`build-items-data.mjs` ř. 190 a 880); v opačném pořadí by zboží obchodníků chybělo. Odsazení 2 mezery, konec souboru nový řádek; pořadí `items` je dané generátorem (není abecední podle `name` ani `id`).
+
+Kořen: `{ biomes, items }`.
+
+- `biomes[]` (9 položek, pořadí podle `order`): `id`, `name`, `order` (číslo, shodné s `data/biomes.json`), `bosses` (pole `id` bossů z `data/creatures.json`).
+- `items[]` (1076 položek), pole každé položky:
+  - `id` (string, slug jako u ostatních souborů), `name` (anglický název ze hry; zůstává anglicky).
+  - `image` (string | null): relativní cesta k obrázku z `apps/items/` (např. `../smithy/img/items/ash-fang.png`); `null`, když obrázek není.
+  - `biome` (string): id biomu, odkud položka pochází. `tier` (number): **pořadí biomu** `order` z `data/biomes.json` (`tier = BIOME_ORDER[biome]`); u všech položek je vyplněný, tier se nepočítá z jiného zdroje.
+  - `category` (string): jedna z 17 hodnot (tabulka níže).
+  - `teleportable` (boolean), `stack` (number | null; velikost balíku ve hře), `weight` (number | null; váha).
+  - `wiki` (string | null): URL stránky na wiki (`https://valheim.weirdgloop.org/w/...`).
+  - `names` (objekt): překlady názvu `{ cs, de, fr, pt, ru }` — vyplněné jen jazyky, kde je překlad; chybí-li klíč, použije se `name`.
+  - `description` (string | null): popis ze hry (anglicky).
+  - `stats` (objekt | null): objekt u kategorií `weapon`, `shield`, `armor`, `ammo`, `tool`, `food`, `mead` a `building`, jinak `null`. Příklady klíčů: zbraně `damage`, `damageMax`, `stamina`, `blockArmor`, `skill`, `hands`, `maxQuality`; stavby `comfort`, `furniture`, `seasonal`. Některé kusy kategorií weapon, shield, ammo a tool mají `null` (45 položek).
+  - `recipe` (objekt | null): `null`, pokud se nevyrábí. Jinak `{ station, stationId, stationLevel, yields, materials }`:
+    - `station` (string | null): název stanice (např. `Black Forge`), `stationId` (slug stanice), `stationLevel` (number, minimální úroveň stanice). `station` a `stationId` jsou `null` u 61 receptů bez stanice.
+    - `yields` (number): počet kusů z jednoho receptu.
+    - `materials[]`: `{ item, name, amount }` — `item` je `id` suroviny, `name` anglický název, `amount` počet kusů.
+  - `station` (objekt | null): stanice, na které se položka vyrábí, `{ id, name, level }`; u kusů z armor setu navíc `set` (slug) a `setName` (název setu, např. `Ask Set`). `null` u 429 položek (žádná stanice).
+  - `sources` (objekt) — odkud se položka získává, vždy všechny čtyři klíče (prázdné pole = nic):
+    - `creatures[]`: `{ id, name, biome }` — drop z bytosti (`id` z `data/creatures.json`; odkaz `/bestiary/#c=<id>`).
+    - `locations[]`: `{ text, kind }` — místo ve světě (např. `Burial Chambers`).
+    - `traders[]`: `{ id, name, price, unlockedBy }` — obchodník (`id` = `haldor`, `hildir`, `bog-witch`); `unlockedBy` viz oddíl `data/traders.json`.
+    - `raw[]`: obecné zdroje, `{ text, kind?, creatureId?, biomes? }`. `kind` ∈ `station` | `creature` | `npc` | `location` | `other`; **`kind` chybí u 177 zdrojů** (text typu „Crafted from …“, nemá jednoznačný typ). `creatureId` a `biomes` jsou u zdrojů typu `creature`.
+  - `usedIn` (objekt) — obrácený index: kde se položka používá jako surovina. Vždy všech 8 klíčů (prázdné pole = nikde):
+    - `weapons[]` `{ id, name, level?, biome, itemId }` → `/smithy/#item=<id>`
+    - `armor[]` `{ id, name, level?, biome, itemId, set? }` → `/smithy/#set=<set>` nebo `/smithy/#item=<id>`
+    - `food[]` `{ id, name, isFeast, biome, itemId }` → `/provisions/#item=<id>`
+    - `meads[]` `{ id, name, biome, itemId }` → `/provisions/#item=<id>`
+    - `comfort[]` `{ id, name, comfort, biome, itemId }` → `/comfort/#item=<id>`
+    - `expedition[]` `{ id, bossId, bossName, biome }` → `/expedition/#boss=<bossId>`
+    - `stations[]` `{ id, name, level, biome, itemId }`
+    - `crafting[]` `{ id, name, level, biome, itemId }`
+  - `crossLinks` (objekt): hotové odkazy do ostatních nástrojů, klíče jen tam, kde existuje: `smithy` (289×, např. `/smithy/#item=ash-fang`), `provisions` (120×), `comfort` (76×), `traders` (67×, `/traders/#trader=<id>`).
+
+**Kategorie `category` (17 hodnot)** — z generátoru `categorize()` a `categoryFromWiki()` v `scripts/build-items-data.mjs`; počty jsou z aktuálního souboru:
+
+| id | Popisek | Odkud se bere | počet |
+|---|---|---|---|
+| `weapon` | Zbraně | `data/weapons.json` (kategorie mimo štít, munici a nástroje) | 134 |
+| `shield` | Štíty | `data/weapons.json` (`category`/`type` obsahuje shield) | 19 |
+| `ammo` | Munice | `data/weapons.json` (arrow, bolt) | 26 |
+| `tool` | Nástroje | `data/weapons.json` (pickaxe, TOOL_IDS), wiki šablona `tool`/`torch` | 36 |
+| `armor` | Zbroj | `data/armor.json` (sloty, vyjma accessory) | 113 |
+| `accessory` | Doplňky (trinkety) | `data/armor.json` (`type` accessory), wiki šablona `trinket` | 18 |
+| `casting` | Odlitky a formy | id/název `cast-`, `mould-`, `mold-`, idoly (`-battle-idol`, `-protection-idol`) | 74 |
+| `summoning` | Vyvolávání bossů | `summonIds`, klíče (`*-key`), wiki `misc` | 11 |
+| `metal` | Kovy a rudy | rudy, `-scrap`, `-ingot`, wiki `ore`/`metal` | 18 |
+| `trophy` | Trofeje | id končí `-trophy` | 70 |
+| `drop` | Drop z bytostí | `material` s `creatures[]` a bez receptu, lokace a obchodníka | 50 |
+| `material` | Materiály | wiki `material`/`wood`, fallback pro nerozpoznané | 74 |
+| `ingredient` | Ingredience | kuchyňské suroviny (`provisions: true`), ryby, semena, mead base | 100 |
+| `food` | Jídlo | jídla z `apps/provisions/data/data.js` (`provFoodIds`), wiki `food`/`feast` | 99 |
+| `mead` | Medovina | wiki `mead` | 21 |
+| `building` | Stavění a stavby | wiki `structure` (kromě `plant`) a `comfort.json` | 203 |
+| `valuable` | Cennosti | wiki `valuable` (Amber, Ruby, …) | 10 |
+
+Pozn.: `material` je ve výsledku jen tam, kde žádné pravidlo nerozhodlo; `drop` je přiřazen až generátorem u materiálu z bytostí. Počty v tabulce platí pro aktuální soubor a mohou se po přegenerování změnit.
+
+### `data/traders.json` (VC-40, VC-42a; Trader Ledger)
+
+Vyrábí `node scripts/build-traders-data.mjs` (zapisuje `data/traders.json` a `apps/traders/data/data.js`). **Zdroj dat je tabulka „Sells/Trading“ na wiki stránce obchodníka** (`Haldor`, `Hildir`, `The Bog Witch`), parsovaná z wiki cache v `data/raw/`; ceny ani zboží se nedoplňují ručně.
+
+Kořen: `{ traders, valuables, biomes }`.
+
+- `traders[]` (3 obchodníci): `id` (`haldor`, `hildir`, `bog-witch`), `name`, `biome` (string, biom, kde obchodník stojí), `title`, `description`, `mapIconTip` (string, jak ho najít na mapě), `items[]`.
+- `items[]` (Haldor 11, Hildir 38, Bog Witch 20 — celkem 69), každá položka:
+  - `id`, `name` (anglicky), `description` (string), `image` (string | null), `biome` (string) — **biom podmínky**: u zboží s podmínkou je to biom z `unlockedBy.biome`, jinak `biome` obchodníka.
+  - `quantity` (number): balení — kolik kusů dostaneš za jednu `price` (např. Fishing Bait `quantity` 20).
+  - `price` (number): cena v mincích za jedno `quantity`.
+  - `unlockedBy` (`null` | objekt) — podmínka odemknutí, viz níže.
+- `valuables[]` (4 položky): `id`, `name`, `value` (number, hodnota v mincích: Amber 5, Amber Pearl 10, Ruby 20, Silver Necklace 30), `description`, `image` (string | null).
+- `biomes[]` (9 položek): `id`, `order`, `creatures.boss` (pole id bossů). Pořadí odpovídá `data/biomes.json` (`order` = `tier` v items-compendium).
+
+**`unlockedBy.type`** (u 69 položek: `null` 22, `boss` 15, `chest` 30, `creature` 2):
+- `null` — vždy k dispozici (`{ unlockedBy: null }`), např. Yule Hat u Haldora.
+- `boss` — `{ type: "boss", id, name, biome, text }`, např. Ymir Flesh u Haldora: `{ "type": "boss", "id": "the-elder", "name": "The Elder", "biome": "black-forest", "text": "Requires defeating The Elder" }`.
+- `chest` — jen Hildir: `{ type: "chest", chest, boss, bossName, location, biome, text }` Hildir má tři truhly, každá s vlastním `chest`, `boss`, `bossName`, `location` a `biome`: `silver` / Geirrhafa / Howling Cavern / `mountain` (9 položek), `bronze` / Zil & Thungr / Sealed Tower / `plains` (10), `brass` / Brenna / Smouldering Tomb / `black-forest` (11). `text` přesně: „Requires returning Hildir's silver chest (Geirrhafa)“, „… bronze chest (Zil & Thungr)“, „… brass chest (Brenna)“.
+- `creature` — bytost, která není boss (jen Bog Witch, např. Seafarer's Herbs po Serpent): `{ type: "creature", id, name, biome, text }`.
+
+Zamykání podle `VCProgress` (odhalený biom) se řídí `biome` podmínky, ne typem; viz `docs/ANALYZA.md` § 28.
