@@ -740,5 +740,67 @@ globalThis.VC_MESSAGES = {
     "ru": "Нет доступных товаров на текущее количество монет.",
     "ja": "現在のコインで購入できる商品はありません。",
     "id": "Tidak ada barang yang terjangkau dengan koin saat ini."
+  },
+  "x{count}": {
+    "en": {
+      "one": "×{count}",
+      "other": "×{count}"
+    },
+    "cs": {
+      "one": "×{count}",
+      "few": "×{count}",
+      "many": "×{count}",
+      "other": "×{count}"
+    },
+    "de": {
+      "one": "×{count}",
+      "other": "×{count}"
+    },
+    "es": {
+      "one": "×{count}",
+      "many": "×{count}",
+      "other": "×{count}"
+    },
+    "fr": {
+      "one": "×{count}",
+      "many": "×{count}",
+      "other": "×{count}"
+    },
+    "pt": {
+      "one": "×{count}",
+      "many": "×{count}",
+      "other": "×{count}"
+    },
+    "zh": {
+      "other": "×{count}"
+    },
+    "hi": {
+      "one": "×{count}",
+      "other": "×{count}"
+    },
+    "ar": {
+      "zero": "×{count}",
+      "one": "×{count}",
+      "two": "×{count}",
+      "few": "×{count}",
+      "many": "×{count}",
+      "other": "×{count}"
+    },
+    "bn": {
+      "one": "×{count}",
+      "other": "×{count}"
+    },
+    "ru": {
+      "one": "×{count}",
+      "few": "×{count}",
+      "many": "×{count}",
+      "other": "×{count}"
+    },
+    "ja": {
+      "other": "×{count}"
+    },
+    "id": {
+      "other": "×{count}"
+    }
   }
 };

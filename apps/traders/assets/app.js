@@ -141,6 +141,15 @@
         if (defeated[item.unlockedBy.id] === true) return true;
       } else if (item.unlockedBy.type === 'chest' && item.unlockedBy.boss) {
         if (defeated[item.unlockedBy.boss] === true) return true;
+      } else if (item.unlockedBy.type === 'creature') {
+        // Non-boss creature (Serpent, Writhan): unlocked once its biome is revealed.
+        // An unknown creature or biome cannot be checked, so the condition stays a plain text.
+        if (defeated[item.unlockedBy.id] === true) return true;
+        if (!item.unlockedBy.biome) return true;
+        if (typeof globalThis.VCProgress.revealedBiomes === 'function') {
+          const biomes = (globalThis.VC_TRADERS_DATA && globalThis.VC_TRADERS_DATA.biomes) || [];
+          if (globalThis.VCProgress.revealedBiomes(biomes).includes(item.unlockedBy.biome)) return true;
+        }
       }
     }
     return false;
@@ -285,6 +294,9 @@
       const priceRow = el('div', 'good-price-row');
       const priceBadge = el('span', 'good-price-badge', `🪙 ${number(item.price)}`);
       priceRow.append(priceBadge);
+      if (item.quantity > 1) {
+        priceRow.append(el('span', 'good-price-badge good-quantity', tn('x{count}', item.quantity)));
+      }
 
       if (isAffordable) {
         const affBadge = el('span', 'badge-affordable', `✓ ${t('Affordable')}`);
