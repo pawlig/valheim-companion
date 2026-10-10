@@ -69,7 +69,6 @@ const summonLabel = (id, count, name, options = {}) => {
   wrap.append(text, a);
   return wrap;
 };
-globalThis.summonLabel = summonLabel;
 const read = () => {
   try {
     return JSON.parse(localStorage.getItem('vx.prep'));
