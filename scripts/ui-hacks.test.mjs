@@ -5,6 +5,20 @@ import vm from 'node:vm';
 import { Element } from './lib/render-apps.mjs';
 
 class MockElement extends Element {
+  constructor(tag) {
+    super(tag);
+    this._listeners = {};
+  }
+  addEventListener(event, handler) {
+    this._listeners = this._listeners || {};
+    this._listeners[event] = this._listeners[event] || [];
+    this._listeners[event].push(handler);
+  }
+  dispatchEvent(event) {
+    const type = typeof event === 'string' ? event : event.type;
+    const list = (this._listeners && this._listeners[type]) || [];
+    for (const fn of list) fn.call(this, event);
+  }
   replaceChildren(...children) {
     this.textContent = '';
     this.append(...children);
@@ -103,6 +117,19 @@ function createDOMContext(initialStorage = {}) {
 
 test('Smithy trader badge from item and armor traders data (ymir-flesh -> Haldor, cosmetic piece Hildir)', () => {
   const { context } = createDOMContext();
+  context.document = {
+    ...context.document,
+    createElement: tag => ({
+      tagName: tag.toUpperCase(),
+      className: '',
+      textContent: '',
+      href: '',
+      setAttribute(name, val) { this[name] = val; },
+      appendChild(child) { this.children = this.children || []; this.children.push(child); },
+      append(...items) { items.forEach(i => this.appendChild(i)); },
+      addEventListener() {},
+    }),
+  };
   vm.runInContext(readFileSync('shared/i18n/core.js', 'utf8'), context);
   vm.runInContext(readFileSync('shared/progress/core.js', 'utf8'), context);
   vm.runInContext(readFileSync('shared/shopping/core.js', 'utf8'), context);
@@ -116,21 +143,21 @@ test('Smithy trader badge from item and armor traders data (ymir-flesh -> Haldor
   vm.runInContext(appSource, context);
 
   // 1. ymir-flesh raw material -> Haldor
-  const ymirBadges = context.VACart.traderBadges('ymir-flesh', context.VA_DATA);
+  const ymirBadges = context.VACart.traderBadges('ymir-flesh');
   assert.equal(ymirBadges.length, 1);
   assert.equal(ymirBadges[0].textContent, 'Haldor');
   assert.equal(ymirBadges[0].href, '/traders/#trader=haldor&item=ymir-flesh');
   assert.ok(ymirBadges[0].className.includes('badge-source'));
 
   // 2. beaded-dress-blue cosmetic armor piece -> Hildir
-  const hildirBadges = context.VACart.traderBadges('beaded-dress-blue', context.VA_DATA);
+  const hildirBadges = context.VACart.traderBadges('beaded-dress-blue');
   assert.equal(hildirBadges.length, 1);
   assert.equal(hildirBadges[0].textContent, 'Hildir');
   assert.equal(hildirBadges[0].href, '/traders/#trader=hildir&item=beaded-dress-blue');
   assert.ok(hildirBadges[0].className.includes('badge-source'));
 
   // 3. thunderstone (not in Smithy data / no traders) -> empty
-  const thunderBadges = context.VACart.traderBadges('thunderstone', context.VA_DATA);
+  const thunderBadges = context.VACart.traderBadges('thunderstone');
   assert.equal(thunderBadges.length, 0);
 });
 
@@ -184,7 +211,8 @@ test('Expedition summon without string slicing (summonLabel for pattern with nam
 
   const expSource = readFileSync('apps/expedition/assets/app.js', 'utf8')
     .replace(/^import[^\n]+\n/, '')
-    .split(/^for\s*\(const id of \['boss',\s*'raids'\]\)/m)[0];
+    .split(/^for\s*\(const id of \['boss',\s*'raids'\]\)/m)[0]
+    + '\n;globalThis.summonLabel = summonLabel;';
   vm.runInContext(expSource, context);
 
   // Verify summonLabel exists
@@ -329,3 +357,118 @@ test('VCShopping.cart.read migrates legacy cart rows to { materialId, amount, na
   assert.equal(linesAgain.length, 5);
   assert.equal(writeCount, 1, 'no extra write on subsequent read');
 });
+
+test('Smithy bulk Have and Want respect piece quality maximums', () => {
+  const { context, elements } = createDOMContext();
+  vm.runInContext(readFileSync('shared/shopping/core.js', 'utf8'), context);
+  vm.runInContext(readFileSync('shared/progress/core.js', 'utf8'), context);
+  vm.runInContext(readFileSync('shared/i18n/core.js', 'utf8'), context);
+  vm.runInContext(readFileSync('apps/smithy/data/data.js', 'utf8'), context);
+  context.VC_MESSAGES = JSON.parse(readFileSync('apps/smithy/locales/messages.json', 'utf8'));
+
+  const cartContent = new MockElement('div');
+  cartContent.id = 'cart-content';
+  elements.set('cart-content', cartContent);
+
+  let appSource = readFileSync('apps/smithy/assets/app.js', 'utf8');
+  appSource = appSource.replace(
+    "    const picker = VCI18n.mountPicker('#language-picker');",
+    '    globalThis.testRenderers = { renderCart, getItemsContainer: () => cartContent.querySelector(".cart-items-container"), getCart: () => cart }; return;\n    const picker = VCI18n.mountPicker(\'#language-picker\');'
+  );
+  appSource = appSource.replace(
+    '    calculateCartMaterials,\n    calculateSmelting,',
+    '    initArmourer,\n    calculateCartMaterials,\n    calculateSmelting,'
+  );
+  vm.runInContext(appSource, context);
+
+  // 1. Synthetic armor set with Q2 and Q4 pieces
+  context.VA_DATA.armor.push({
+    id: 'test-synth-armor',
+    name: 'Synthetic Armor',
+    pieces: [
+      { id: 'synth-q2', name: 'Synth Piece Q2', levels: [{ quality: 1 }, { quality: 2 }] },
+      { id: 'synth-q4', name: 'Synth Piece Q4', levels: [{ quality: 1 }, { quality: 2 }, { quality: 3 }, { quality: 4 }] },
+    ],
+  });
+
+  const synthGroupId = 'group_synth_1';
+  context.localStorage.setItem('va.cart', JSON.stringify([
+    { id: 'item_q2', setId: 'test-synth-armor', pieceId: 'synth-q2', have: 0, want: 2, groupId: synthGroupId },
+    { id: 'item_q4', setId: 'test-synth-armor', pieceId: 'synth-q4', have: 0, want: 4, groupId: synthGroupId },
+  ]));
+
+  context.VACart.initArmourer();
+  context.testRenderers.renderCart();
+
+  const container = context.testRenderers.getItemsContainer();
+  const synthGroup = container.querySelector('.cart-group');
+  assert.ok(synthGroup, 'group rendered');
+
+  const selects = synthGroup.querySelectorAll('select.level-select');
+  const bulkHaveSelect = selects[0];
+  const bulkWantSelect = selects[1];
+  assert.ok(bulkHaveSelect, 'bulk have select found');
+  assert.ok(bulkWantSelect, 'bulk want select found');
+
+  // Verify bulk select options match groupMax = 4:
+  // bulk Have offers None + Q1..Q3
+  // bulk Want offers Q1..Q4
+  const haveOpts = bulkHaveSelect.children.map(o => o.textContent);
+  assert.deepEqual(haveOpts, ['None', 'Q1', 'Q2', 'Q3']);
+  const wantOpts = bulkWantSelect.children.map(o => o.textContent);
+  assert.deepEqual(wantOpts, ['Q1', 'Q2', 'Q3', 'Q4']);
+
+  // Bulk Want Q3 -> piece Q2 want 2, piece Q4 want 3
+  bulkWantSelect.value = '3';
+  bulkWantSelect.dispatchEvent({ type: 'change' });
+
+  let cart = context.testRenderers.getCart();
+  const q2Item = cart.find(i => i.pieceId === 'synth-q2');
+  const q4Item = cart.find(i => i.pieceId === 'synth-q4');
+  assert.equal(q2Item.want, 2, 'piece Q2 clamped to max want 2');
+  assert.equal(q4Item.want, 3, 'piece Q4 set to want 3');
+
+  // Bulk Have Q3 -> piece Q2 have 1, want 2
+  bulkHaveSelect.value = '3';
+  bulkHaveSelect.dispatchEvent({ type: 'change' });
+
+  cart = context.testRenderers.getCart();
+  const q2ItemAfterHave = cart.find(i => i.pieceId === 'synth-q2');
+  assert.equal(q2ItemAfterHave.have, 1, 'piece Q2 have clamped to pieceMaxQ - 1 = 1');
+  assert.equal(q2ItemAfterHave.want, 2, 'piece Q2 want remains 2');
+
+  // 2. Real Rag Armor set -> bulk Want offers only Q1-Q2
+  const ragGroupId = 'group_rag_1';
+  context.localStorage.setItem('va.cart', JSON.stringify([
+    { id: 'rag_1', setId: 'rag-armor', pieceId: 'rag-tunic', have: 0, want: 2, groupId: ragGroupId },
+    { id: 'rag_2', setId: 'rag-armor', pieceId: 'rag-trousers', have: 0, want: 2, groupId: ragGroupId },
+  ]));
+
+  context.VACart.initArmourer();
+  context.testRenderers.renderCart();
+  const ragContainer = context.testRenderers.getItemsContainer();
+  const ragGroup = ragContainer.querySelector('.cart-group');
+  const ragSelects = ragGroup.querySelectorAll('select.level-select');
+  const ragBulkHaveSelect = ragSelects[0];
+  const ragBulkWantSelect = ragSelects[1];
+
+  const ragWantOpts = ragBulkWantSelect.children.map(o => o.textContent);
+  assert.deepEqual(ragWantOpts, ['Q1', 'Q2'], 'bulk Want offers only Q1-Q2 for Rag Armor');
+  const ragHaveOpts = ragBulkHaveSelect.children.map(o => o.textContent);
+  assert.deepEqual(ragHaveOpts, ['None', 'Q1'], 'bulk Have offers only None and Q1 for Rag Armor');
+
+  // 3. Stored row with want exceeding piece max quality gets clamped upon render
+  context.localStorage.setItem('va.cart', JSON.stringify([
+    { id: 'rag_legacy', setId: 'rag-armor', pieceId: 'rag-tunic', have: 2, want: 4, groupId: ragGroupId },
+  ]));
+  context.VACart.initArmourer();
+  context.testRenderers.renderCart();
+  const clampedCart = context.testRenderers.getCart();
+  const legacyItem = clampedCart.find(i => i.id === 'rag_legacy');
+  assert.equal(legacyItem.want, 2, 'legacy want 4 clamped to 2');
+  assert.ok(legacyItem.have <= 1, 'legacy have clamped below want');
+  const storedJson = JSON.parse(context.localStorage.getItem('va.cart'));
+  const storedLegacy = storedJson.find(i => i.id === 'rag_legacy');
+  assert.equal(storedLegacy.want, 2, 'clamped value saved to localStorage');
+});
+

@@ -45,26 +45,18 @@
    * Helper to create DOM element safely without innerHTML
    */
   function el(tag, className, text) {
-    if (typeof document === 'undefined') {
-      return {
-        tagName: tag.toUpperCase(),
-        className: className || '',
-        textContent: text != null ? t(String(text)) : '',
-        href: '',
-        setAttribute(name, val) { this[name] = val; },
-        appendChild(child) { this.children = this.children || []; this.children.push(child); },
-        append(...items) { items.forEach(i => this.appendChild(i)); },
-        addEventListener() {},
-      };
-    }
     const element = document.createElement(tag);
     if (className) element.className = className;
     if (text !== undefined && text !== null) element.textContent = t(String(text));
     return element;
   }
 
-  function traderBadges(itemId, customData) {
-    const dataSource = customData || (typeof data !== 'undefined' ? data : null) || globalThis.VA_DATA || (typeof window !== 'undefined' ? window.VA_DATA : null);
+  function pieceMaxQ(piece) {
+    return piece?.levels && piece.levels.length > 0 ? piece.levels[piece.levels.length - 1].quality : 1;
+  }
+
+  function traderBadges(itemId) {
+    const dataSource = (typeof window !== 'undefined' ? window.VA_DATA : null) || (typeof globalThis !== 'undefined' ? globalThis.VA_DATA : null);
     let traders = dataSource?.items?.[itemId]?.traders;
     if (!traders && dataSource?.armor) {
       for (const armor of dataSource.armor) {
@@ -511,8 +503,6 @@
    * Application Controller & DOM Rendering
    */
   function initArmourer() {
-    if (typeof document === 'undefined') return;
-
     const data = window.VA_DATA;
     if (!data) {
       console.error('VA_DATA not found');
@@ -1652,7 +1642,7 @@
 
       const groupId = 'group_' + armor.id + '_' + Date.now();
       armor.pieces.forEach(p => {
-        const maxQ = p.levels && p.levels.length > 0 ? p.levels[p.levels.length - 1].quality : 1;
+        const maxQ = pieceMaxQ(p);
         cart.push({
           id: armor.id + '_' + p.id + '_' + Math.random().toString(36).slice(2, 7),
           setId: armor.id,
@@ -1674,7 +1664,7 @@
       const armor = e.detail && e.detail.armor;
       if (!piece || !armor) return;
 
-      const maxQ = piece.levels && piece.levels.length > 0 ? piece.levels[piece.levels.length - 1].quality : 1;
+      const maxQ = pieceMaxQ(piece);
       cart.push({
         id: armor.id + '_' + piece.id + '_' + Math.random().toString(36).slice(2, 7),
         setId: armor.id,
@@ -1727,6 +1717,27 @@
         }
       });
 
+      // Clamp any cart rows where want exceeds pieceMaxQ (stored legacy rows)
+      let cartModified = false;
+      cart.forEach(item => {
+        if (item.materialId) return;
+        const armor = item.setId ? data.armor.find(a => a.id === item.setId) : null;
+        const piece = armor?.pieces.find(p => p.id === item.pieceId);
+        const weapon = !piece ? (data.weapons || []).find(w => w.id === item.pieceId) : null;
+        const pMax = piece ? pieceMaxQ(piece) : (weapon ? (weapon.maxQuality || weapon.levels?.length || 1) : 4);
+        if (item.want > pMax) {
+          item.want = pMax;
+          cartModified = true;
+        }
+        if (item.have >= item.want) {
+          item.have = Math.max(0, item.want - 1);
+          cartModified = true;
+        }
+      });
+      if (cartModified) {
+        setStoredCart(cart);
+      }
+
       // Render groups
       groupMap.forEach((groupItems, groupId) => {
         const firstItem = groupItems[0];
@@ -1736,6 +1747,11 @@
         const groupHeader = el('div', 'cart-group-header');
         const groupTitle = el('span', 'cart-group-title', (armor ? entityName(armor) : firstItem.setId) + ' (' + t('Set') + ')');
         groupHeader.appendChild(groupTitle);
+
+        const groupMax = Math.max(1, ...groupItems.map(item => {
+          const piece = armor?.pieces.find(p => p.id === item.pieceId);
+          return pieceMaxQ(piece);
+        }));
 
         // Bulk controls
         const bulkControls = el('div', 'cart-group-bulk-controls');
@@ -1748,23 +1764,23 @@
         const optHaveNone = el('option', null, 'None');
         optHaveNone.value = '0';
         bulkHaveSelect.appendChild(optHaveNone);
-        for (let q = 1; q <= 3; q++) {
+        for (let q = 1; q <= groupMax - 1; q++) {
           const opt = el('option', null, 'Q' + q);
           opt.value = String(q);
           bulkHaveSelect.appendChild(opt);
         }
         // Detect common have
         const allSameHave = groupItems.every(i => i.have === groupItems[0].have);
-        bulkHaveSelect.value = allSameHave ? String(groupItems[0].have) : '0';
+        bulkHaveSelect.value = allSameHave && groupItems[0].have < groupMax ? String(groupItems[0].have) : '0';
 
         bulkHaveSelect.addEventListener('change', function () {
           const newHave = parseInt(bulkHaveSelect.value, 10);
           groupItems.forEach(item => {
             const piece = armor?.pieces.find(p => p.id === item.pieceId);
-            const maxQ = piece?.levels.length || 4;
-            item.have = newHave;
-            if (item.want <= newHave) {
-              item.want = Math.min(maxQ, newHave + 1);
+            const pMax = pieceMaxQ(piece);
+            item.have = Math.min(newHave, pMax - 1);
+            if (item.want <= item.have) {
+              item.want = Math.min(pMax, item.have + 1);
             }
           });
           saveAndRenderCart();
@@ -1773,22 +1789,22 @@
         // Bulk Want
         const bulkWantLabel = el('span', null, 'Want');
         const bulkWantSelect = el('select', 'level-select');
-        for (let q = 1; q <= 4; q++) {
+        for (let q = 1; q <= groupMax; q++) {
           const opt = el('option', null, 'Q' + q);
           opt.value = String(q);
           bulkWantSelect.appendChild(opt);
         }
         // Detect common want
         const allSameWant = groupItems.every(i => i.want === groupItems[0].want);
-        bulkWantSelect.value = allSameWant ? String(groupItems[0].want) : '4';
+        bulkWantSelect.value = allSameWant ? String(groupItems[0].want) : String(groupMax);
 
         bulkWantSelect.addEventListener('change', function () {
           const newWant = parseInt(bulkWantSelect.value, 10);
           groupItems.forEach(item => {
-            item.want = newWant;
-            if (item.have >= newWant) {
-              item.have = Math.max(0, newWant - 1);
-            }
+            const piece = armor?.pieces.find(p => p.id === item.pieceId);
+            const pMax = pieceMaxQ(piece);
+            item.want = Math.min(newWant, pMax);
+            item.have = Math.max(0, Math.min(item.have, item.want - 1));
           });
           saveAndRenderCart();
         });
@@ -2090,7 +2106,7 @@
       const armor = item.setId ? data.armor.find(a => a.id === item.setId) : null;
       const piece = armor?.pieces.find(p => p.id === item.pieceId);
       const weapon = !piece ? (data.weapons || []).find(w => w.id === item.pieceId) : null;
-      const maxQ = piece ? (piece.levels && piece.levels.length > 0 ? piece.levels[piece.levels.length - 1].quality : 4)
+      const maxQ = piece ? pieceMaxQ(piece)
                          : (weapon ? (weapon.maxQuality || weapon.levels?.length || 1) : 4);
 
       const row = el('div', 'cart-piece-row');
@@ -2515,6 +2531,7 @@
     setStoredCatalogTab,
     getStoredFurnaces,
     setStoredFurnaces,
-    traderBadges
+    traderBadges,
+    pieceMaxQ
   };
 });
