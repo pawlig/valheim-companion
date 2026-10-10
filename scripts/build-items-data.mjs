@@ -1318,7 +1318,8 @@ export function buildItemsData() {
     'dead-raiser': 'mistlands',
     'dvergr-extractor': 'mistlands',
     'mechanical-spring': 'mistlands',
-    'ectoplasm': 'mistlands',
+    // Wiki (Ghost): found in Black Forest, drops Ectoplasm.
+    'ectoplasm': 'black-forest',
     'hook': 'mistlands',
     'grappling-hook': 'mistlands',
     'resounding-shackle': 'ashlands',
@@ -1334,12 +1335,6 @@ export function buildItemsData() {
     'ceramic-plate': 'mistlands',
     'molten-core': 'ashlands',
     'asksvin-egg': 'ashlands',
-    // Wiki (Candle wick): "can be purchased from The Bog Witch" (swamp), no condition.
-    'candle-wick': 'swamp',
-    'scythe-handle': 'ashlands',
-    // Wiki (Barrel hoops): "can be brought from Haldor" (black-forest), no condition.
-    'barrel-hoops': 'black-forest',
-    'corked-vial': 'ashlands',
     'grausten-payload': 'ashlands',
     'explosive-payload': 'ashlands',
     'black-metal-missile': 'plains',
@@ -1348,8 +1343,6 @@ export function buildItemsData() {
     'salvaged-lantern': 'mistlands',
     'portal-stone': 'ashlands',
     'green-pots': 'ashlands',
-    // Wiki (Ivy / trader table): Ivy Seeds are sold by The Bog Witch (swamp) without a condition.
-    'ivy-seeds': 'swamp',
     'timberwood-cone': 'ashlands',
     'bread-dough': 'plains',
     'coral-cod': 'ocean',
@@ -1360,16 +1353,15 @@ export function buildItemsData() {
     'zil-trophy': 'plains',
     'thungr-trophy': 'plains',
     'dvergr-tankard': 'mistlands',
-    'serving-tray': 'meadows',
     'scythe': 'plains',
     // Wiki (Loot chest): "Meadows Mysterious Chest are found in version 6 of Abandoned House" (Meadows).
     'curious-axe-head': 'meadows',
     'mysterious-axe-head': 'meadows',
     // Wiki (Coal): "In Cooking Stations by overcooking any type of meat" (Meadows); Surtling drop is later.
     'coal': 'meadows',
-    // Wiki (Pine cone / Fir cone): planted in Meadows, dropped by felling Pine / Fir trees.
-    'pine-cone': 'meadows',
-    'fir-cone': 'meadows',
+    // Wiki (Pine / Fir): cones drop from felled trees; biome = where the tree grows (Black Forest), like acorns/birch/beech.
+    'pine-cone': 'black-forest',
+    'fir-cone': 'black-forest',
     'wisp': 'mistlands',
     'crown-of-roots': 'swamp',
     'dverger-circlet': 'black-forest',

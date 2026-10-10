@@ -75,12 +75,7 @@ test('no crafted item has a lower biome than its ingredients (except explicit ex
   const order = Object.fromEntries(readJson('data/biomes.json').map((b, i) => [b.id, b.tier ?? i + 1]));
   const byId = new Map(compendium.items.map((i) => [i.id, i]));
   const rank = (b) => order[b] ?? 0;
-  // Items with an explicit biome (ITEM_EXPLICIT_BIOMES in build-items-data.mjs) and trader merchandise
-  // may be lower than their materials.
-  const source = readFileSync(path.join(ROOT, 'scripts/build-items-data.mjs'), 'utf8');
-  const block = source.slice(source.indexOf('const ITEM_EXPLICIT_BIOMES = {'));
-  const exceptions = new Set([...block.slice(0, block.indexOf('\n  };')).matchAll(/^\s*'?([a-z0-9-]+)'?:\s*'[a-z-]+'/gm)].map((m) => m[1]));
-  assert.ok(exceptions.size > 50);
+  const exceptions = new Set(); // none needed: crafted items are never below their ingredients, except trader goods
   const offenders = [];
   for (const item of compendium.items) {
     if (exceptions.has(item.id) || !item.recipe?.materials?.length) continue;
@@ -91,11 +86,11 @@ test('no crafted item has a lower biome than its ingredients (except explicit ex
       }
     }
   }
-  assert.deepEqual(offenders.slice(0, 20), []);
+  assert.equal(offenders.length, 0, offenders.slice(0, 20).join('; '));
 });
 
 test('ingredient biomes follow the wiki (coal, cones, axe heads, trader goods)', () => {
   const byId = new Map(readJson('data/items-compendium.json').items.map((i) => [i.id, i]));
-  const expected = { coal: 'meadows', 'pine-cone': 'meadows', 'fir-cone': 'meadows', 'curious-axe-head': 'meadows', 'candle-wick': 'swamp', 'barrel-hoops': 'black-forest', 'ceramic-plate': 'mistlands', 'mysterious-rock': 'meadows', 'finewood-stack': 'black-forest' };
+  const expected = { coal: 'meadows', 'pine-cone': 'black-forest', 'fir-cone': 'black-forest', 'curious-axe-head': 'meadows', 'candle-wick': 'swamp', 'barrel-hoops': 'black-forest', 'ceramic-plate': 'mistlands', 'mysterious-rock': 'meadows', 'finewood-stack': 'black-forest' };
   for (const [id, biome] of Object.entries(expected)) assert.equal(byId.get(id).biome, biome, id);
 });

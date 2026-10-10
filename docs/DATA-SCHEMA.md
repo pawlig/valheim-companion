@@ -270,7 +270,7 @@ Ruční opravy, které parser aplikuje **jako poslední krok**:
 
 `window.VA_DATA = { generatedAt, source, biomes, armor, items }`. `items` je objekt podle `id`.
 
-- `items[id].traders` (volitelné, VC-42h): `[{ id, name }]` z `data/traders.json`, pořadí jako v `traders.json`; jen položky, které některý obchodník prodává (párování podle id položky). Příklad: `items['ymir-flesh'].traders[0].id === 'haldor'`. Stejné pole mají i kusy zbroje v `armor[].pieces`, které obchodník prodává (kosmetika Hildir, 37 kusů). Smithy z něj odvodí odznak obchodníka u suroviny, bez seznamu id v kódu. (Položka `thunder-stone` v datech Smithy není, žádný recept ji nepoužívá.)
+- `items[id].traders` (volitelné, VC-42h): `[{ id, name }]` z `data/traders.json`, pořadí jako v `traders.json`; jen položky, které některý obchodník prodává (párování podle id položky). Příklad: `items['ymir-flesh'].traders[0].id === 'haldor'`. Stejné pole mají i kusy zbroje v `armor[].pieces`, které obchodník prodává (kosmetika: 34 kusů od Hildir, `crown-of-roots` od Bog Witch, `dverger-circlet` a `yule-hat` od Haldora). Smithy z něj odvodí odznak obchodníka u suroviny, bez seznamu id v kódu. (Položka `thunder-stone` v datech Smithy není, žádný recept ji nepoužívá.)
 - Obrázek `roots` ukazuje na `img/items/root.png` (alias `roots.png → root.png` v `scripts/image-index.mjs`; soubor `roots.png` neexistuje).
 
 ### `apps/provisions/data/data.js` (pole `traders`)
@@ -340,7 +340,7 @@ Kořen: `{ biomes, items }`.
 Pozn.: `material` je ve výsledku jen tam, kde žádné pravidlo nerozhodlo; `drop` je přiřazen až generátorem u materiálu z bytostí. Počty v tabulce platí pro aktuální soubor a mohou se po přegenerování změnit.
 
 - Zdroj stránek (VC-42h): `scripts/build-items-data.mjs` čte pevný seznam titulů `scripts/wiki/items-pages.json` přes `readCachedPages` (`scripts/wiki/api.mjs`, jen cache, bez sítě); sken `data/raw/` zmizel. Novou stránku přidáš tak, že titul doplníš do seznamu a jednou ji stáhneš přes `api.getWikitext`.
-- `biome` vyráběné položky (`recipe.materials`) není nižší než biom nejvyšší suroviny; výjimky jsou položky s explicitním biomem (`ITEM_EXPLICIT_BIOMES`) a zboží obchodníků.
+- `biome` vyráběné položky (`recipe.materials`) není nižší než biom nejvyšší suroviny; výjimkou je jen zboží odemykané podmínkou obchodníka (`traderUnlockBiome`).
 - `drops` tvorů (`data/creatures.json`): odkazy oddělené čárkou jsou samostatné položky (Ghost: `["Ectoplasm", "Ghost Trophy"]`), drop `None` se vynechává (`moose-calf` → `[]`).
 
 ### `data/traders.json` (VC-40, VC-42a; Trader Ledger)
