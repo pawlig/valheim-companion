@@ -33,6 +33,16 @@ function slug(s) {
 const BIOMES_DATA = loadJson('biomes.json');
 const BIOME_ORDER = Object.fromEntries(BIOMES_DATA.map((b) => [b.id, b.order]));
 
+// Lowest-order biome of a list of biome ids (progression order from data/biomes.json).
+function lowestBiome(list) {
+  let best = null;
+  for (const b of list || []) {
+    if (BIOME_ORDER[b] == null) continue;
+    if (best === null || BIOME_ORDER[b] < BIOME_ORDER[best]) best = b;
+  }
+  return best;
+}
+
 function inferBiome(text) {
   if (!text) return null;
   const s = String(text).toLowerCase();
@@ -123,6 +133,52 @@ function prettyStationName(raw) {
     .join(' ');
 }
 
+// Canonical crafting-station names by id. Ids come from data/stations.json (Smithy / Provisions /
+// Comfort stations); Frost Foundry is the Deep North forge that stations.json does not list.
+const EXTRA_STATIONS = {
+  'frost-foundry': 'Frost Foundry',
+  windmill: 'Windmill',
+  'frigid-kiln': 'Frigid Kiln',
+  'eitr-refinery': 'Eitr Refinery',
+};
+
+// Normalizes a raw `station` string to { id, name, level } or null (audit A-9).
+// Handles "Black Forge level 4", "Frost Foundry\nHexen" (first line wins), "Black Forge, Dvergr Buildings"
+// (first part wins) and non-stations ("None", "Hammer", "Smelting", "Ivy Seeds", "Crafted by hand, ...").
+function normalizeStation(raw, knownStations) {
+  if (!raw) return null;
+  const first = String(raw).split(/\n/)[0].split(',')[0].trim();
+  const levelMatch = /level\s*(\d+)/i.exec(first);
+  const base = first.replace(/\s*level\s*\d+/i, '').trim();
+  const id = slug(base);
+  const name = knownStations.get(id);
+  if (!name) return null;
+  return { id, name, level: levelMatch ? parseInt(levelMatch[1], 10) : null };
+}
+
+// Splits multi-line source texts, strips leading "* " bullets and drops empties (audit A-8).
+function cleanSourceTexts(list) {
+  const out = [];
+  for (const entry of list || []) {
+    if (typeof entry === 'string') {
+      for (const part of entry.split(/\n/)) {
+        const text = part.replace(/^\s*\*\s*/, '').trim();
+        if (text) out.push(text);
+      }
+      continue;
+    }
+    if (!entry || typeof entry.text !== 'string') {
+      out.push(entry);
+      continue;
+    }
+    for (const part of entry.text.split(/\n/)) {
+      const text = part.replace(/^\s*\*\s*/, '').trim();
+      if (text) out.push({ ...entry, text });
+    }
+  }
+  return out;
+}
+
 export function buildItemsData() {
   const items = loadJson('items.json');
   const weapons = loadJson('weapons.json');
@@ -207,6 +263,19 @@ export function buildItemsData() {
 
   const EXCLUDED_IDS = new Set([
     'none',
+    // VC-42c (audit O-3 bod 3, AUD/3 bod 8): duplicates, console-only items, inventory upgrades.
+    'bare-fists',
+    'iron-shield',
+    'knight-shield',
+    '3-feathers',
+    'hildir-s-chests',
+    'thunderstone',
+    'cape-tunic',
+    'extravagant-cap',
+    'beaded-dress',
+    'beaded-tunic',
+    'wider-pockets',
+    'deeper-pockets',
     'copper-deposit',
     'ancient-metal-stack',
     'crow-trophy-currently-no-trophy',
@@ -224,32 +293,6 @@ export function buildItemsData() {
     'trailership',
     'pathen',
     'zil-thungr',
-  ]);
-
-  const AMMO_IDS = new Set([
-    'wood-arrow',
-    'flinthead-arrow',
-    'fire-arrow',
-    'poison-arrow',
-    'silver-arrow',
-    'obsidian-arrow',
-    'frost-arrow',
-    'needle-arrow',
-    'bronzehead-arrow',
-    'ironhead-arrow',
-    'carapace-arrow',
-    'charred-arrow',
-    'bloodgold-arrow',
-    'bone-bolt',
-    'iron-bolt',
-    'black-metal-bolt',
-    'carapace-bolt',
-    'charred-bolt',
-    'bloodgold-bolt',
-    'wooden-missile',
-    'black-metal-missile',
-    'bloodgold-missile',
-    'flametal-missile',
   ]);
 
   const TOOL_IDS = new Set([
@@ -304,36 +347,13 @@ export function buildItemsData() {
     'resounding-shackle',
     'pulsating-earrings',
     'witch-crown',
-    'crown-of-roots',
-    'yule-hat',
     'megingjord',
     'wishbone',
-    'dverger-circlet',
+    'wisplight',
   ]);
 
-  const VALUABLE_IDS = new Set([
-    'coins',
-    'amber',
-    'amber-pearl',
-    'ruby',
-    'silver-necklace',
-    'ancient-coin',
-    'jade',
-    'iolite',
-    'bloodstone',
-    'crown-jewel',
-    'ymir-flesh',
-    'thunderstone',
-    'thunder-stone',
-    'hildir-s-brass-chest',
-    'hildir-s-silver-chest',
-    'hildir-s-bronze-chest',
-    'hildir-s-chests',
-    'grimvarn',
-    'solryth',
-    'veydris',
-    'draumyx',
-  ]);
+  // Gathered crops / eggs the wiki types as Material but the game treats as cooking or farming ingredients.
+  const INGREDIENT_IDS = new Set(['dandelion', 'flax', 'thistle', 'turnip', 'ivy-seeds', 'asksvin-egg']);
 
   const FISH_IDS = new Set([
     'perch',
@@ -350,79 +370,6 @@ export function buildItemsData() {
     'tetra',
   ]);
 
-  const MATERIAL_EXPLICIT_IDS = new Set([
-    'wood',
-    'finewood',
-    'fine-wood',
-    'corewood',
-    'core-wood',
-    'ancient-bark',
-    'yggdrasil-wood',
-    'ashwood',
-    'timberwood',
-    'frozen-branch',
-    'stone',
-    'flint',
-    'obsidian',
-    'black-marble',
-    'grausten',
-    'crystal',
-    'tar',
-    'resin',
-    'charcoal-resin',
-    'sulfur',
-    'coal',
-    'soft-tissue',
-    'petrified-tissue',
-    'sap',
-    'refined-eitr',
-    'liquid-frost',
-    'ice',
-    'bronze-nails',
-    'iron-nails',
-    'chain',
-    'surtling-core',
-    'black-core',
-    'ceramic-plate',
-    'molten-core',
-    'mechanical-spring',
-    'dvergr-extractor',
-    'linen-thread',
-    'blue-jute',
-    'red-jute',
-    'nornathread',
-    'leather-straps',
-    'sharpening-stone',
-    'candle-wick',
-    'scythe-handle',
-    'barrel-hoops',
-    'corked-vial',
-    'pot-shard',
-    'pungent-pebbles',
-    'proustite-powder',
-    'charred-cogwheel',
-    'majestic-carapace',
-    'ectoplasm',
-    'queen-bee',
-    'tiny-pulp',
-    'dead-pulp',
-    'shapeless-pulp',
-    'dyrnwyn-blade-fragment',
-    'dyrnwyn-hilt-fragment',
-    'dyrnwyn-tip-fragment',
-    'sacrificial-blood',
-    'kindled-ribs',
-    'vile-ribcage',
-    'frostcore',
-  ]);
-
-  const MATERIAL_KEYWORDS = [
-    'wood', 'stone', 'flint', 'resin', 'tar', 'eitr', 'marble', 'grausten', 'bark', 'coal',
-    'core', 'spring', 'plate', 'chain', 'nail', 'nails', 'jute', 'thread', 'mould', 'cast',
-    'crystal', 'obsidian', 'sulfur', 'sap', 'tissue', 'powder', 'shard', 'vial', 'wick',
-    'hoop', 'fiber', 'cloth', 'pelvis', 'pulp',
-  ];
-
   const registry = new Map();
   const order = [];
 
@@ -437,94 +384,109 @@ export function buildItemsData() {
     return rec;
   }
 
-  function categorize(id, name, rawType) {
+  // Wiki infobox class per item id (template + type), used to classify items that have no
+  // authoritative Smithy / Provisions / Comfort / Stations record (VC-42c, audit O-3 bod 1).
+  const wikiClass = new Map();
+  for (const [title, { wt }] of wikiPages.entries()) {
+    if (/\{\{removed\}\}/i.test(wt)) continue;
+    for (const t of ['item', 'structure', 'trinket', 'weapon', 'armor']) {
+      for (const b of parseAllInfoboxes(wt, t)) {
+        const nm = cleanText(b.title || title).trim();
+        if (!nm) continue;
+        const wid = slug(nm);
+        if (wid && !wikiClass.has(wid)) {
+          wikiClass.set(wid, { template: t, type: cleanText(b.type || '').replace(/\[\[|\]\]/g, '').trim().toLowerCase(), usage: cleanText(b.usage || '').toLowerCase() });
+        }
+      }
+    }
+  }
+
+  function isCasting(id, name) {
+    return (
+      /^(cast|mould|mold)-/.test(id) ||
+      /^(cast|mould|mold)\b/i.test(name || '') ||
+      /-(battle|protection)-idol$/.test(id)
+    );
+  }
+
+  // Category from the wiki infobox template and its `type` field (no name keywords).
+  function categoryFromWiki(info, id) {
+    if (!info) return null;
+    const { template, type } = info;
+    switch (template) {
+      case 'weapon':
+        if (type.includes('shield')) return 'shield';
+        if (/arrow|bolt|missile|catapult ammo/.test(type)) return 'ammo';
+        if (/pickaxe|tool|shovel/.test(type)) return 'tool';
+        return 'weapon';
+      case 'armor':
+        return type === 'accessory' ? 'accessory' : 'armor';
+      case 'trinket':
+        return 'accessory';
+      case 'structure':
+        return type === 'plant' ? 'ingredient' : 'building';
+      case 'item':
+        if (/^(cast|mould|mold)$/.test(type)) return 'casting';
+        if (type === 'material' && /cooking/.test(info.usage || '')) return 'ingredient';
+        if (type === 'material' || type === 'wood') return 'material';
+        if (type === 'ore' || type === 'metal') return 'metal';
+        if (type === 'valuable') return 'valuable';
+        if (type === 'seed' || type === 'fish' || type === 'mead base') return 'ingredient';
+        if (type === 'food' || type === 'feast') return provFoodIds.has(id) || type === 'feast' ? 'food' : 'ingredient';
+        if (type === 'mead') return 'mead';
+        if (type === 'tool' || type === 'torch') return 'tool';
+        if (type === 'misc') return 'summoning';
+        return null;
+      default:
+        return null;
+    }
+  }
+
+  // Category of a weapons.json entry, straight from its own `category`/`type` fields.
+  function weaponCategory(w) {
+    const cat = String(w.category || '').toLowerCase();
+    const type = String(w.type || '').toLowerCase();
+    if (cat === 'shield' || type.includes('shield')) return 'shield';
+    if (cat === 'arrow' || cat === 'bolt') return 'ammo';
+    if (cat === 'pickaxe' || TOOL_IDS.has(w.id)) return 'tool';
+    return 'weapon';
+  }
+
+  // Categorize items that have no authoritative record. `opts.fallback` is returned when neither
+  // the explicit id sets nor the wiki infobox decide.
+  function categorize(id, name, opts = {}) {
     if (EXCLUDED_IDS.has(id)) return null;
-    const nameLower = (name || '').toLowerCase();
-    const typeLower = (rawType || '').toLowerCase();
-
-    // 1. Ammunition
-    if (AMMO_IDS.has(id) || id.endsWith('-arrow') || id.endsWith('-bolt') || id.endsWith('-missile')) {
-      return 'ammo';
-    }
-
-    // 2. Boss Summoning & Keys
-    if (summonIds.has(id) || id.includes('totem') || id.includes('sealbreaker') || id.includes('key')) {
-      return 'summoning';
-    }
-
-    // 3. Valuables & Treasures
-    if (VALUABLE_IDS.has(id) || id.includes('idol') || nameLower.includes('idol') || (id.includes('chest') && id.includes('hildir')) || typeLower === 'valuable') {
-      return 'valuable';
-    }
-
-    // 4. Metals & Ores
-    if (metalOres.has(id) || id.endsWith('-ore') || id.endsWith('-scrap') || id.endsWith('-ingot')) {
-      return 'metal';
-    }
-
-    // 5. Tools & Utility
-    if (TOOL_IDS.has(id) || typeLower === 'tool' || nameLower.includes('pickaxe') || nameLower.includes('saddle') || id.includes('saddle')) {
-      return 'tool';
-    }
-
-    // 6. Trophies
-    if (id.endsWith('-trophy') || id.includes('trophy') || nameLower.includes('trophy')) {
-      return 'trophy';
-    }
-
-    // 7. Shields
-    if (id.startsWith('shield-') || id.endsWith('-shield') || id.includes('buckler') || nameLower.includes('shield') || nameLower.includes('buckler') || typeLower.includes('shield')) {
-      return 'shield';
-    }
-
-    // 8. Casting Moulds & Casts (Deep North crafting materials)
-    if (id.startsWith('cast-') || id.startsWith('mould-') || nameLower.startsWith('cast ') || nameLower.startsWith('mould ') || typeLower === 'cast' || typeLower === 'mould') {
-      return 'material';
-    }
-
-    // 9. Weapons
-    if (id.startsWith('staff-') || id.includes('staff') || id === 'dead-raiser' || typeLower.includes('weapon') || nameLower.includes('sword') || nameLower.includes('bow') || nameLower.includes('spear') || nameLower.includes('axe') || nameLower.includes('mace') || nameLower.includes('dagger') || nameLower.includes('knife') || nameLower.includes('club') || nameLower.includes('sledge') || nameLower.includes('atgeir') || nameLower.includes('crossbow') || nameLower.includes('bomb') || nameLower.includes('payload') || id === 'fists' || ['catapult', 'battering-ram'].includes(id)) {
-      return 'weapon';
-    }
-
-    // 10. Armor & Clothing
-    if (ACCESSORY_IDS.has(id) || typeLower.includes('armor') || typeLower.includes('helmet') || typeLower.includes('cape') || typeLower.includes('cuirass') || typeLower.includes('greaves') || typeLower.includes('tunic') || typeLower.includes('dress') || typeLower.includes('legs') || typeLower.includes('chest') || typeLower === 'accessory' || typeLower === 'trinket' || nameLower.includes('helmet') || nameLower.includes('cape') || nameLower.includes('tunic') || nameLower.includes('dress') || nameLower.includes('hat') || nameLower.includes('cap') || nameLower.includes('hood') || nameLower.includes('headscarf')) {
-      return 'armor';
-    }
-
-    // 11. Meads & Potions
-    if ((provMeadIds.has(id) || id.includes('mead') || nameLower.includes('mead') || id.includes('potion') || nameLower.includes('potion') || id.includes('tonic') || nameLower.includes('tonic')) && !id.startsWith('mead-base-') && !nameLower.startsWith('mead base')) {
-      return 'mead';
-    }
-
-    // 12. Food & Meals
-    if (!nameLower.includes('uncooked') && !nameLower.includes('unbaked') && (provFoodIds.has(id) || nameLower.includes('cooked') || nameLower.includes('smoked') || nameLower.includes('stew') || nameLower.includes('soup') || (/\bpie\b/.test(nameLower) && !nameLower.includes('piece')) || (/\bbread\b/.test(nameLower) && !nameLower.includes('dough')) || nameLower.includes('feast') || nameLower.includes('skewer') || nameLower.includes('platter'))) {
-      return 'food';
-    }
-
-    // 13. Ingredients, Crops & Raw Foods
-    if (FISH_IDS.has(id) || id.startsWith('mead-base-') || nameLower.startsWith('mead base') || nameLower.includes('seed') || nameLower.includes('cone') || nameLower.includes('acorn') || nameLower.includes('raw ') || nameLower.includes('uncooked') || nameLower.includes('unbaked') || nameLower.includes('batter') || nameLower.includes('dough') || nameLower.includes('mushroom') || nameLower.includes('berry') || nameLower.includes('berries') || nameLower.includes('thistle') || nameLower.includes('dandelion') || nameLower.includes('carrot') || nameLower.includes('turnip') || nameLower.includes('onion') || nameLower.includes('barley') || nameLower.includes('flax') || (nameLower.includes('meat') && !nameLower.includes('cooked')) || nameLower.includes('spice') || nameLower.includes('herb') || (nameLower.includes('powder') && (nameLower.includes('pepper') || nameLower.includes('dragon eggshell') || nameLower.includes('fiery'))) || ['honey', 'egg', 'volture-egg', 'asksvin-egg', 'royal-jelly', 'neck-tail', 'serpent-meat', 'oat-flour', 'fresh-seaweed', 'fragrant-bundle', 'seasoning-of-the-gourd', 'bread-dough', 'ivy-seeds', 'timberwood-cone', 'seed-poteitr'].includes(id)) {
+    if (isCasting(id, name)) return 'casting';
+    if (ACCESSORY_IDS.has(id)) return 'accessory';
+    if (summonIds.has(id) || /(^|-)key$/.test(id)) return 'summoning';
+    if (metalOres.has(id) || id.endsWith('-ore') || id.endsWith('-scrap') || id.endsWith('-ingot')) return 'metal';
+    if (TOOL_IDS.has(id)) return 'tool';
+    if (id.endsWith('-trophy')) return 'trophy';
+    if (FISH_IDS.has(id) || INGREDIENT_IDS.has(id)) return 'ingredient';
+    const fromWiki = categoryFromWiki(opts.wiki || wikiClass.get(id), id);
+    if (fromWiki && fromWiki !== 'material') return fromWiki;
+    // Raw cooking ingredients carry the Provisions `provisions: true` flag (wiki types them Material).
+    if (
+      provItemsById.get(id)?.provisions === true &&
+      !provFoodIds.has(id) &&
+      !provMeadIds.has(id) &&
+      !/building/.test((opts.wiki || wikiClass.get(id))?.usage || '')
+    ) {
       return 'ingredient';
     }
-
-    // 14. Building, Furniture & Stations
-    if (id.endsWith('-stack') || id.endsWith('-pile') || nameLower.endsWith(' stack') || nameLower.endsWith(' pile') || id === 'pile-of-skulls' || id.includes('portal') || id.includes('cart') || id.includes('raft') || id.includes('karve') || id.includes('longship') || id.includes('drakkar') || id.includes('drawbridge') || id.includes('ballista') || id.includes('trap') || id.includes('bench') || id.includes('table') || id.includes('bed') || id.includes('chair') || id.includes('chest') || id.includes('brazier') || id.includes('banner') || id.includes('rug') || id.includes('carpet') || id.includes('tub') || id.includes('hearth') || id.includes('fire') || id.includes('lamp') || id.includes('sign') || id.includes('iron-pit') || id.includes('fence') || id.includes('gate') || id.includes('green-pots') || typeLower.includes('structure') || typeLower.includes('station') || typeLower.includes('building') || typeLower.includes('furniture') || typeLower.includes('crafting') || typeLower.includes('defense') || typeLower === 'transport' || typeLower === 'boat' || typeLower === 'misc') {
-      return 'building';
+    if (fromWiki) return fromWiki;
+    if (opts.description) {
+      const slot = /\(Uses the (Shirt|Helmet|Chest|Legs|Cape|Shoulder) slot\)/i.exec(opts.description);
+      if (slot) return 'armor';
+      if (/\(Uses the Accessory slot\)/i.test(opts.description)) return 'accessory';
     }
-
-    // 15. Materials & Resources
-    if (MATERIAL_EXPLICIT_IDS.has(id) || MATERIAL_KEYWORDS.some((k) => id.includes(k) || nameLower.includes(k)) || id.startsWith('cast-') || id.startsWith('mould-') || nameLower.startsWith('cast') || nameLower.startsWith('mould') || typeLower === 'cast' || typeLower === 'mould') {
-      return 'material';
-    }
-
-    // 16. Real monster drops (fallback)
-    return 'drop';
+    return opts.fallback ?? null;
   }
 
   // --- 1. Base materials from items.json -------------------------------
   for (const it of items) {
     const provEntry = provItemsById.get(it.id);
-    const category = categorize(it.id, it.name, it.category) || (provFoodIds.has(it.id) ? 'food' : 'material');
+    const category = categorize(it.id, it.name, { fallback: provFoodIds.has(it.id) ? 'food' : 'material' });
     let teleportable = true;
     if (it.teleportable === false || provEntry?.teleportable === false || metalOres.has(it.id) || category === 'metal' || it.id === 'dragon-egg') {
       teleportable = false;
@@ -583,7 +545,7 @@ export function buildItemsData() {
 
   // --- 2. Weapons, shields and tools from weapons.json ------------------
   for (const w of weapons) {
-    const category = categorize(w.id, w.name, w.type) || 'weapon';
+    const category = weaponCategory(w);
 
     const level1 = (w.levels || [])[0] || {};
     const mats = (level1.materials || []).map((m) => ({
@@ -914,6 +876,7 @@ export function buildItemsData() {
     }
   }
 
+  const traderUnlockBiome = new Map();
   // --- 7. Trader merchandise from traders.json ---------------------------
   for (const trader of traders.traders || []) {
     for (const trItem of trader.items || []) {
@@ -923,6 +886,10 @@ export function buildItemsData() {
         price: trItem.price ?? null,
         unlockedBy: trItem.unlockedBy || null,
       };
+      if (trItem.unlockedBy?.biome && BIOME_ORDER[trItem.unlockedBy.biome] != null) {
+        const prev = traderUnlockBiome.get(trItem.id);
+        traderUnlockBiome.set(trItem.id, lowestBiome([prev, trItem.unlockedBy.biome]));
+      }
       const existing = registry.get(trItem.id);
       if (existing) {
         if (!existing.sources.traders.some((t) => t.id === trader.id)) {
@@ -932,7 +899,7 @@ export function buildItemsData() {
         if (!existing.image) existing.image = resolveImage(trItem.image, trItem.id);
         if (trItem.description && !existing.description) existing.description = trItem.description;
       } else {
-        const cat = categorize(trItem.id, trItem.name, null) || 'valuable';
+        const cat = categorize(trItem.id, trItem.name, { description: trItem.description, fallback: 'material' });
         const trBiome = trItem.biome || trader.biome || null;
         ensure(trItem.id, {
           id: trItem.id,
@@ -965,7 +932,7 @@ export function buildItemsData() {
 
   // --- 8. Creature drops & trophies from creatures.json -----------------
   for (const c of creatures) {
-    const cBiome = c.biomes?.[0] || null;
+    const cBiome = lowestBiome(c.biomes);
     const cTier = cBiome ? (BIOME_ORDER[cBiome] ?? null) : null;
     const cSource = { id: c.id, name: c.name, biome: cBiome };
 
@@ -984,6 +951,7 @@ export function buildItemsData() {
           if (!existing.biome && cBiome) {
             existing.biome = cBiome;
             existing.tier = cTier;
+            existing.biomeFromCreature = true;
           }
         } else {
           ensure(trId, {
@@ -991,6 +959,7 @@ export function buildItemsData() {
             name: c.trophy.name,
             image: resolveImage(c.trophy.image || `${trId}.png`, trId),
             biome: cBiome,
+            biomeFromCreature: Boolean(cBiome),
             tier: cTier,
             category: 'trophy',
             teleportable: true,
@@ -1024,15 +993,17 @@ export function buildItemsData() {
         if (!existing.biome && cBiome) {
           existing.biome = cBiome;
           existing.tier = cTier;
+          existing.biomeFromCreature = true;
         }
       } else {
-        const dCat = categorize(dId, clean, null) || 'drop';
+        const dCat = categorize(dId, clean, { fallback: 'drop' });
 
         ensure(dId, {
           id: dId,
           name: clean,
           image: resolveImage(null, dId),
           biome: cBiome,
+          biomeFromCreature: Boolean(cBiome),
           tier: cTier,
           category: dCat,
           teleportable: !metalOres.has(dId) && dCat !== 'metal' && dId !== 'dragon-egg',
@@ -1231,7 +1202,7 @@ export function buildItemsData() {
           materials: rawMats.map((m) => ({ item: slug(m.name), name: m.name, amount: m.amount || 1 })),
         } : null;
 
-        const cat = categorize(id, name, b.type || t);
+        const cat = categorize(id, name, { wiki: { template: t, type: cleanText(b.type || '').replace(/\[\[|\]\]/g, '').trim().toLowerCase(), usage: cleanText(b.usage || '').toLowerCase() }, fallback: 'material' });
         if (!cat) continue;
         const weight = b.weight ? parseFloat(cleanText(b.weight)) : null;
         const stack = b.stack ? parseInt(cleanText(b.stack), 10) : null;
@@ -1280,12 +1251,61 @@ export function buildItemsData() {
     }
   }
 
+  // Purge console-only / unobtainable items (audit A-8: iron-shield, knight-shield, ...).
+  for (const rec of [...registry.values()]) {
+    const locs = rec.sources?.locations || [];
+    if (locs.some((l) => /(^|[^a-z])(console|n\/a)([^a-z]|$)/i.test(typeof l === 'string' ? l : l.text || ''))) {
+      registry.delete(rec.id);
+      order.splice(order.indexOf(rec.id), 1);
+    }
+  }
+
+  // Plain materials that only monsters drop (no recipe, no location, no trader) are Monster Drops.
+  for (const rec of registry.values()) {
+    if (rec.category === 'material' && rec.sources.creatures.length > 0 && !rec.recipe && !rec.sources.locations.length && !rec.sources.traders.length) {
+      rec.category = 'drop';
+    }
+  }
+
   // Top-level station resolution for all recipes
   for (const rec of registry.values()) {
     if (rec.station || !rec.recipe) continue;
     rec.station = rec.recipe.station
       ? { name: rec.recipe.station, level: rec.recipe.stationLevel || 1 }
       : null;
+  }
+
+  // Normalize recipe stations to the ids of data/stations.json (audit A-9).
+  const knownStations = new Map([...Object.entries(EXTRA_STATIONS), ...stations.map((st) => [st.id, st.name])]);
+  for (const rec of registry.values()) {
+    const norm = normalizeStation(rec.recipe?.station ?? rec.station?.name, knownStations);
+    if (rec.recipe) {
+      if (norm) {
+        rec.recipe.station = norm.name;
+        rec.recipe.stationId = norm.id;
+        if (norm.level != null) {
+          rec.recipe.stationLevel = norm.level;
+          rec.levelInStationName = true;
+        }
+      } else {
+        rec.recipe.station = null;
+        rec.recipe.stationId = null;
+      }
+    }
+    if (norm) {
+      const level = rec.recipe?.stationLevel ?? rec.station?.level ?? norm.level ?? 1;
+      rec.station = { ...(rec.station && rec.station.set ? { set: rec.station.set, setName: rec.station.setName } : {}), id: norm.id, name: norm.name, level };
+    } else {
+      rec.station = null;
+    }
+  }
+
+  // Mead bases take their name from the wiki page title ("Mead Base: Anti-Sting").
+  for (const rec of registry.values()) {
+    if (rec.id.startsWith('mead-base-') && rec.wiki && rec.wiki.includes('/w/')) {
+      const title = decodeURIComponent(rec.wiki.split('/w/')[1]).replace(/_/g, ' ').trim();
+      if (title) rec.name = title;
+    }
   }
 
   // Explicit and inferred biomes for stacks, idols, tools, and components
@@ -1325,7 +1345,7 @@ export function buildItemsData() {
     'bronze-protection-idol': 'black-forest',
     'bronze-battle-idol': 'black-forest',
     'thunder-stone': 'black-forest',
-    'thunderstone': 'black-forest',
+    'coins': 'meadows',
     'sharpening-stone': 'black-forest',
     'cartography-table': 'black-forest',
     'stone-fence': 'meadows',
@@ -1410,8 +1430,6 @@ export function buildItemsData() {
     'blue-mushroom': 'mistlands',
     'carved-chair': 'meadows',
     'moose-hide-carpet': 'deep-north',
-    'iron-shield': 'swamp',
-    'knight-shield': 'swamp',
     'acorns': 'meadows',
     'beech-seeds': 'meadows',
     'birch-seeds': 'meadows',
@@ -1423,9 +1441,7 @@ export function buildItemsData() {
     'ruby': 'black-forest',
     'silver-necklace': 'black-forest',
     'ancient-coin': 'black-forest',
-    'basic-fireworks': 'black-forest',
     'mould-spirit-caller': 'ashlands',
-    'hildir-s-chests': 'plains',
   };
 
   const STATION_BIOMES = {
@@ -1446,18 +1462,34 @@ export function buildItemsData() {
     'eitr-refinery': 'mistlands',
   };
 
+  // An item known only from monsters appears first where the earliest of those monsters lives.
+  for (const rec of registry.values()) {
+    if (!rec.biomeFromCreature || !rec.sources.creatures.length) continue;
+    const lowest = lowestBiome(rec.sources.creatures.map((c) => c.biome));
+    if (lowest) {
+      rec.biome = lowest;
+      rec.tier = BIOME_ORDER[lowest] ?? null;
+    }
+  }
+
+  const TRADER_BIOMES = Object.fromEntries((traders.traders || []).map((t) => [t.id, t.biome]));
+
   for (const rec of registry.values()) {
     if (ITEM_EXPLICIT_BIOMES[rec.id]) {
+      rec.biomeFromCreature = false;
       rec.biome = ITEM_EXPLICIT_BIOMES[rec.id];
       rec.tier = BIOME_ORDER[rec.biome] ?? null;
     }
-    if (!rec.biome && (rec.id.startsWith('beaded-') || rec.id.startsWith('cape-tunic-') || rec.id.startsWith('extravagant-cap-') || rec.id.startsWith('fur-cap-') || rec.id.startsWith('harvest-') || rec.id.startsWith('shawl-dress-') || rec.id.startsWith('simple-') || rec.id.startsWith('tied-headscarf-') || rec.id.startsWith('twisted-headscarf-') || rec.id === 'straw-hat' || rec.id === 'headband')) {
-      rec.biome = 'plains';
-      rec.tier = BIOME_ORDER['plains'] ?? null;
+    if (!rec.biome && rec.sources.traders.length > 0) {
+      // Merchandise lives where the trader stands (Hildir: meadows, Haldor: black-forest, Bog Witch: swamp).
+      rec.biome = lowestBiome(rec.sources.traders.map((t) => TRADER_BIOMES[t.id]));
+      rec.tier = rec.biome ? (BIOME_ORDER[rec.biome] ?? null) : null;
     }
     if (!rec.biome && rec.recipe?.station) {
       const sKey = slug(rec.recipe.station);
-      if (STATION_BIOMES[sKey]) {
+      // Stations written as "<Station> level N" never mapped to a station biome; they take the biome of
+      // their materials instead (so a Deep North cast stays in the Deep North).
+      if (STATION_BIOMES[sKey] && !rec.levelInStationName) {
         rec.biome = STATION_BIOMES[sKey];
         rec.tier = BIOME_ORDER[rec.biome] ?? null;
       }
@@ -1477,6 +1509,12 @@ export function buildItemsData() {
         rec.tier = BIOME_ORDER[rec.biome] ?? null;
       }
     }
+  }
+
+  // Merchandise unlocked by a boss, creature or chest appears in the biome of that condition.
+  for (const [id, biome] of traderUnlockBiome) {
+    const rec = registry.get(id);
+    if (rec) rec.biome = biome;
   }
 
   for (const rec of registry.values()) {
@@ -1651,13 +1689,15 @@ export function buildItemsData() {
   // Final records in stable insertion order
   // -----------------------------------------------------------------------
   const compendiumItems = order.map((id) => {
-    const rec = registry.get(id);
+    const { biomeFromCreature, levelInStationName, ...rec } = registry.get(id);
     const maps = usedInMaps.get(id);
     return {
       ...rec,
       sources: {
         ...rec.sources,
         creatures: rec.sources.creatures || [],
+        locations: cleanSourceTexts(rec.sources.locations),
+        raw: cleanSourceTexts(rec.sources.raw),
       },
       usedIn: {
         weapons: Array.from(maps.weapons.values()),

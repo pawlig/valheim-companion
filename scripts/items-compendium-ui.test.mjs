@@ -528,7 +528,7 @@ describe('Items Compendium UI Tests', () => {
     const chipsBar = doc.getElementById('category-chips');
     assert.ok(chipsBar, 'Category chips toolbar should exist');
     const chips = chipsBar.querySelectorAll('.category-chip');
-    assert.equal(chips.length, 16, 'Should render 16 category chips (All + 15 categories)');
+    assert.equal(chips.length, 18, 'Should render 18 category chips (All + 17 categories)');
     const allChip = chips.find((c) => c.dataset.category === 'all');
     assert.ok(allChip.classList.contains('active'), 'All categories chip should be active by default');
   });

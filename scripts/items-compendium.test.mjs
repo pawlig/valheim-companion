@@ -25,6 +25,8 @@ const VALID_CATEGORIES = new Set([
   'building',
   'valuable',
   'summoning',
+  'accessory',
+  'casting',
 ]);
 
 describe('Items Compendium Data & Inverted Index', () => {
@@ -472,26 +474,28 @@ describe('Items Compendium Data & Inverted Index', () => {
     assert.equal(nullBiomes.length, 0, `Expected 0 items with null biome, found ${nullBiomes.length}`);
   });
 
-  it('40. All 15 clean categories are populated with realistic item counts', () => {
+  it('40. All 17 categories are populated with realistic item counts', () => {
     const counts = {};
     for (const item of items) {
       counts[item.category] = (counts[item.category] || 0) + 1;
     }
-    assert.ok(counts.material >= 80, `Expected >= 80 materials, got ${counts.material}`);
+    assert.ok(counts.material >= 70, `Expected >= 70 materials, got ${counts.material}`);
     assert.ok(counts.metal >= 15, `Expected >= 15 metals, got ${counts.metal}`);
     assert.ok(counts.weapon >= 80, `Expected >= 80 weapons, got ${counts.weapon}`);
-    assert.ok(counts.shield >= 25, `Expected >= 25 shields, got ${counts.shield}`);
-    assert.ok(counts.armor >= 130, `Expected >= 130 armors, got ${counts.armor}`);
+    assert.ok(counts.shield >= 19, `Expected >= 19 shields, got ${counts.shield}`);
+    assert.ok(counts.armor >= 113, `Expected >= 113 armors, got ${counts.armor}`);
     assert.ok(counts.ammo >= 20, `Expected >= 20 ammo items, got ${counts.ammo}`);
     assert.ok(counts.tool >= 20, `Expected >= 20 tools, got ${counts.tool}`);
     assert.ok(counts.food >= 90, `Expected >= 90 foods, got ${counts.food}`);
     assert.ok(counts.ingredient >= 50, `Expected >= 50 ingredients, got ${counts.ingredient}`);
     assert.ok(counts.mead >= 20, `Expected >= 20 meads, got ${counts.mead}`);
-    assert.ok(counts.drop >= 90, `Expected >= 90 monster drops, got ${counts.drop}`);
+    assert.ok(counts.drop >= 40, `Expected >= 40 monster drops, got ${counts.drop}`);
     assert.ok(counts.trophy >= 60, `Expected >= 60 trophies, got ${counts.trophy}`);
     assert.ok(counts.building >= 180, `Expected >= 180 building pieces, got ${counts.building}`);
-    assert.ok(counts.valuable >= 25, `Expected >= 25 valuables, got ${counts.valuable}`);
+    assert.ok(counts.valuable >= 10, `Expected >= 10 valuables, got ${counts.valuable}`);
     assert.ok(counts.summoning >= 10, `Expected >= 10 summoning items, got ${counts.summoning}`);
+    assert.ok(counts.accessory >= 15, `Expected >= 15 accessories, got ${counts.accessory}`);
+    assert.ok(counts.casting >= 70, `Expected >= 70 casting items, got ${counts.casting}`);
   });
 
   it('41. All 9 Fishing Baits are present in the compendium with recipes and biomes', () => {
@@ -510,7 +514,7 @@ describe('Items Compendium Data & Inverted Index', () => {
   });
 
   it('42. Basic building materials are categorized as material (not monster drop)', () => {
-    const matIds = ['wood', 'stone', 'flint', 'finewood', 'corewood', 'ancient-bark', 'black-marble', 'tar', 'coal', 'iron-nails'];
+    const matIds = ['wood', 'stone', 'flint', 'finewood', 'corewood', 'ancient-bark', 'black-marble', 'coal', 'iron-nails'];
     for (const id of matIds) {
       const it = itemsById.get(id);
       assert.ok(it, `Material ${id} must exist`);
@@ -580,5 +584,119 @@ describe('Items Compendium Data & Inverted Index', () => {
       Array.from(ctx.globalThis.VC_ITEMS_DATA.biomes).map((b) => b.id).join(','),
       expectedOrder.join(',')
     );
+  });
+  // --- VC-42c: categories, duplicates, stations, locations ---------------------------------
+  const loadData = (name) => JSON.parse(readFileSync(path.join(ROOT, 'data', name), 'utf8'));
+
+  it('47. Every weapons.json entry (except bare-fists) is weapon, shield, ammo or tool; none is a monster drop', () => {
+    const weapons = loadData('weapons.json').filter((w) => w.id !== 'bare-fists');
+    assert.equal(weapons.length, 170);
+    for (const w of weapons) {
+      const item = itemsById.get(w.id);
+      assert.ok(item, `${w.id} must exist`);
+      assert.ok(['weapon', 'shield', 'ammo', 'tool'].includes(item.category), `${w.id} has category ${item.category}`);
+    }
+    assert.ok(!items.some((i) => i.category === 'drop' && weapons.some((w) => w.id === i.id)), 'no Smithy weapon may be category drop');
+  });
+
+  it('48. Armor equals the armor.json pieces, accessories hold no armor.json piece', () => {
+    const armorIds = new Set(loadData('armor.json').flatMap((e) => (e.pieces || []).map((p) => p.id)));
+    const armorItems = items.filter((i) => i.category === 'armor');
+    assert.equal(armorItems.length, armorIds.size);
+    for (const i of armorItems) assert.ok(armorIds.has(i.id), `${i.id} is armor but not in armor.json`);
+    for (const i of items.filter((x) => x.category === 'accessory')) assert.ok(!armorIds.has(i.id), `${i.id} is an armor.json piece`);
+    for (const id of ['wishbone', 'wisplight', 'megingjord', 'bronze-pendant']) assert.equal(itemsById.get(id)?.category, 'accessory');
+  });
+
+  it('49. Casts, moulds and idols are category casting', () => {
+    const casting = items.filter((i) => i.category === 'casting');
+    assert.ok(casting.length >= 70);
+    for (const i of items) {
+      if (/^(cast|mould)-/.test(i.id) || /-(battle|protection)-idol$/.test(i.id)) assert.equal(i.category, 'casting', i.id);
+    }
+  });
+
+  it('50. Junk, duplicates and unobtainable items are excluded', () => {
+    for (const id of ['bare-fists', 'iron-shield', 'knight-shield', '3-feathers', 'hildir-s-chests', 'thunderstone', 'cape-tunic', 'extravagant-cap', 'beaded-dress', 'beaded-tunic', 'wider-pockets', 'deeper-pockets']) {
+      assert.ok(!itemsById.has(id), `${id} must not be in the compendium`);
+    }
+    assert.ok(itemsById.has('thunder-stone'));
+    const names = items.map((i) => i.name.toLowerCase());
+    assert.equal(new Set(names).size, names.length, 'item names must be unique case-insensitively');
+    for (const i of items) {
+      const locs = (i.sources.locations || []).map((l) => l.text || l).join(' ');
+      assert.ok(!/console|n\/a/i.test(locs), `${i.id} has a Console/n-a source`);
+    }
+  });
+
+  it('51. Fishing Bait is named without quantity and stacks to 100; coins start in the Meadows', () => {
+    assert.equal(itemsById.get('fishing-bait').name, 'Fishing Bait');
+    assert.equal(itemsById.get('fishing-bait').stack, 100);
+    assert.equal(itemsById.get('coins').biome, 'meadows');
+  });
+
+  it('52. recipe.station is normalized to a station of data/stations.json (no levels in names)', () => {
+    const known = new Map(loadData('stations.json').map((s) => [s.id, s.name]));
+    for (const [id, name] of [['frost-foundry', 'Frost Foundry'], ['windmill', 'Windmill'], ['frigid-kiln', 'Frigid Kiln'], ['eitr-refinery', 'Eitr Refinery']]) known.set(id, name);
+    const names = new Set();
+    for (const i of items) {
+      if (!i.recipe || !i.recipe.station) continue;
+      names.add(i.recipe.station);
+      assert.ok(!/level|\d|\n/i.test(i.recipe.station), `${i.id} station "${i.recipe.station}"`);
+      assert.equal(known.get(i.recipe.stationId), i.recipe.station, `${i.id} stationId`);
+      assert.equal(i.station?.id, i.recipe.stationId);
+    }
+    assert.ok(names.size <= 19, `distinct stations ${names.size}`);
+    for (const [id, st] of [['barley-flour', 'Windmill'], ['oat-flour', 'Windmill'], ['liquid-frost', 'Frigid Kiln'], ['refined-eitr', 'Eitr Refinery']]) {
+      assert.equal(itemsById.get(id).recipe.station, st, id);
+    }
+    assert.equal(itemsById.get('cast-nord-sword').recipe.stationLevel, 4);
+    assert.equal(itemsById.get('cast-nord-sword').recipe.station, 'Black Forge');
+  });
+
+  it('53. Locations are clean: no newlines, no leading bullets', () => {
+    for (const i of items) {
+      for (const l of [...(i.sources.locations || []), ...(i.sources.raw || [])]) {
+        const text = l.text ?? l;
+        assert.ok(!/\n/.test(text) && !/^\s*\*/.test(text), `${i.id}: "${text}"`);
+      }
+    }
+  });
+
+  it('54. Mead bases use the wiki title casing', () => {
+    for (const i of items.filter((x) => x.id.startsWith('mead-base-'))) {
+      assert.match(i.name, /^Mead Base: /, i.id);
+    }
+  });
+
+  it('55. All traders\' merchandise has a card linking to its trader; Hildir 38 wares', () => {
+    const BIOME_ORDER_BY_ID = Object.fromEntries(loadData('biomes.json').map((b) => [b.id, b.order]));
+    const traders = loadData('traders.json').traders;
+    let hildir = 0;
+    for (const t of traders) {
+      for (const tr of t.items) {
+        if (['wider-pockets', 'deeper-pockets'].includes(tr.id)) continue; // inventory upgrades, not items
+        const item = itemsById.get(tr.id);
+        assert.ok(item, `${t.id}/${tr.id} must have a card`);
+        assert.ok(String(item.crossLinks.traders).includes(t.id) || item.sources.traders.some((s) => s.id === t.id), `${tr.id} must link ${t.id}`);
+        assert.ok(item.sources.traders.some((s) => s.id === t.id && s.price != null), `${tr.id} must carry the ${t.id} price`);
+        if (tr.unlockedBy?.biome) {
+          assert.equal(item.biome, tr.unlockedBy.biome, `${tr.id} biome follows its unlock condition`);
+          assert.equal(item.tier, BIOME_ORDER_BY_ID[item.biome], `${tr.id} tier`);
+        }
+        if (t.id === 'hildir') hildir++;
+      }
+    }
+    assert.equal(hildir, 38);
+  });
+
+  it('57. Casts keep the biome of their moulds (Deep North), not the biome of their station', () => {
+    assert.equal(itemsById.get('cast-intricate-key').biome, 'deep-north');
+    assert.equal(itemsById.get('cast-spirit-caller').biome, 'deep-north');
+  });
+
+  it('56. Every category is one of the 17 known categories', () => {
+    assert.equal(VALID_CATEGORIES.size, 17);
+    for (const i of items) assert.ok(VALID_CATEGORIES.has(i.category), `${i.id}: ${i.category}`);
   });
 });
