@@ -12,6 +12,7 @@ ROZSAH: `scripts/build-items-data.mjs`, `scripts/items-compendium.test.mjs`, `da
 
 POSTUP: body 1–6 oddílu O-3 přesně, jak jsou napsané (Pavel 10. 10. potvrdil: kategorie `accessory` „Accessories" a `casting` „Casting"). Navíc podle rozhodnutí AUD/3:
 7. **Hildiřino zboží** (`data/traders.json`, obchodník `hildir`, 38 položek podle wiki (audit chybně uváděl 37)): každá položka, která v kompendiu ještě není, dostane kartu — oblečení a pokrývky hlavy `category: 'armor'`, ostatní (např. `basic-fireworks`) podle šablony infoboxu z bodu 1, `biome: 'meadows'`, `tier` = order Meadows, `crossLinks.traders: ['hildir']`, `sources.traders` se záznamem obchodníka a ceny. Položky, které už v kompendiu jsou, dostanou jen `crossLinks.traders`. Totéž (jen crossLinks/sources) pro zboží Haldora a Bog Witch.
+8. Vyloučit také `wider-pockets` a `deeper-pockets` (rozšíření inventáře, ne předměty — objevily se po VC-42a). Po VC-42a už neexistují trader id `thunderstone`, `fireworks` (Hildir má `basic-fireworks`), `cape-tunic`, `extravagant-cap`, `beaded-dress`, `beaded-tunic` — crossLinks ber z nového `data/traders.json`.
 ⛔ Nesahej na spoilery, košík, CSS, mobil, Bestiary, nic mimo ROZSAH (souběžně běží VC-42e v `apps/items/assets/app.js` — měň v něm jen seznam kategorií, nic jiného).
 
 KROKY (commit po každém, značka `[CC/sonnet]`): (1) kategorie ze zdrojových sad + accessory/casting, (2) vyloučení odpadu a duplicit + Hildiřino zboží, (3) stanice a lokace, (4) testy + i18n klíče.
