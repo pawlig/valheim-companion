@@ -1915,7 +1915,7 @@
           right.appendChild(tpBadge);
         }
 
-        renderMaterialSources(right, mat.sources);
+        renderMaterialSources(right, mat.sources, mat.item);
 
         row.appendChild(right);
         matsList.appendChild(row);
@@ -2209,31 +2209,30 @@
     renderCatalog();
     renderCart();
 
-    function renderMaterialSources(parent, sources) {
-      sources.forEach(src => {
-          if (src.kind === 'npc' || /haldor|hildir|witch/i.test(src.text)) {
-            let traderSlug = 'haldor';
-            if (/hildir/i.test(src.text)) traderSlug = 'hildir';
-            else if (/witch/i.test(src.text)) traderSlug = 'bog-witch';
-            const traderLink = el('a', 'badge badge-source', src.text);
-            traderLink.href = `/traders/#trader=${traderSlug}`;
-            parent.appendChild(traderLink);
-            return;
-          }
-          const srcClass = src.locked ? 'badge badge-source badge-source-locked' : 'badge badge-source';
-          const srcBadge = el(src.locked && src.biomeId ? 'button' : 'span', srcClass, src.text);
-          if (src.locked && src.biomeId) {
-            srcBadge.type = 'button';
-            srcBadge.addEventListener('click', () => {
-              const open = new Set(getManualOpenBiomes());
-              open.add(src.biomeId);
-              setStoredOpenBiomes([...open]);
-              renderCatalog();
-              renderCart();
-            });
-          }
-          parent.appendChild(srcBadge);
-        });
+    function renderMaterialSources(parent, sources, itemId) {
+      const badges = itemId ? traderBadges(itemId) : [];
+      const hasTraders = badges.length > 0;
+      if (hasTraders) {
+        badges.forEach(b => parent.appendChild(b));
+      }
+      (sources || []).forEach(src => {
+        if (src.kind === 'npc' && hasTraders) {
+          return;
+        }
+        const srcClass = src.locked ? 'badge badge-source badge-source-locked' : 'badge badge-source';
+        const srcBadge = el(src.locked && src.biomeId ? 'button' : 'span', srcClass, src.text);
+        if (src.locked && src.biomeId) {
+          srcBadge.type = 'button';
+          srcBadge.addEventListener('click', () => {
+            const open = new Set(getManualOpenBiomes());
+            open.add(src.biomeId);
+            setStoredOpenBiomes([...open]);
+            renderCatalog();
+            renderCart();
+          });
+        }
+        parent.appendChild(srcBadge);
+      });
     }
 
     function showMaterialCard(item) {
@@ -2253,7 +2252,7 @@
         card.appendChild(el('p', null, biomeName(biome)));
         card.appendChild(el('h3', null, t('Sources')));
         const sources = el('div', 'material-sources');
-        renderMaterialSources(sources, formatMaterialSources(item, data, { openBiomes, showAll }));
+        renderMaterialSources(sources, formatMaterialSources(item, data, { openBiomes, showAll }), item.id);
         card.appendChild(sources);
         card.appendChild(el('h3', null, t('Used in')));
         const contains = entity => (entity.levels || []).some(level =>
