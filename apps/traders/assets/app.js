@@ -51,44 +51,6 @@
     }, 2500);
   }
 
-  function getCart() {
-    try {
-      const raw = localStorage.getItem('va.cart');
-      const cart = raw ? JSON.parse(raw) : [];
-      return Array.isArray(cart) ? cart : [];
-    } catch {
-      return [];
-    }
-  }
-
-  function isInCart(itemId) {
-    const cart = getCart();
-    return cart.some((c) => (c.item === itemId || c.pieceId === itemId) && !c.setId);
-  }
-
-  function addToCart(item, count = 1) {
-    try {
-      const cart = getCart();
-      const existing = cart.find((c) => (c.item === item.id || c.pieceId === item.id) && !c.setId);
-      if (existing) {
-        existing.quantity = (existing.quantity || existing.amount || 1) + count;
-        existing.amount = existing.quantity;
-      } else {
-        cart.push({
-          id: 'item_' + item.id + '_' + Math.random().toString(36).slice(2, 7),
-          item: item.id,
-          pieceId: item.id,
-          quantity: count,
-          amount: count,
-        });
-      }
-      localStorage.setItem('va.cart', JSON.stringify(cart));
-      showNotice('Added to shopping cart.');
-    } catch {
-      showNotice('Added to shopping cart.');
-    }
-  }
-
   function loadValuables() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
@@ -342,11 +304,12 @@
       compendiumLink.href = `/items/#item=${encodeURIComponent(item.id)}`;
       actions.append(compendiumLink);
 
-      const inCart = isInCart(item.id);
+      const inCart = !!globalThis.VCShopping?.cart?.hasMaterial(item.id);
       const cartBtn = button(
         inCart ? `✓ ${t('In cart')}` : `+ ${t('Add to shopping cart')}`,
         () => {
-          addToCart(item, 1);
+          globalThis.VCShopping?.cart?.addMaterial(item.id, item.quantity || 1, item.name);
+          showNotice('Added to shopping cart.');
           renderTrader();
         },
         'btn-cart' + (inCart ? ' is-added' : '')

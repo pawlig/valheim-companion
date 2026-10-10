@@ -2135,5 +2135,20 @@ globalThis.VC_MESSAGES = {
     "ru": "Заблокированный предмет",
     "ja": "ロックされたアイテム",
     "id": "Item terkunci"
+  },
+  "Plan in Smithy": {
+    "en": "Plan in Smithy",
+    "cs": "Naplánovat v Kovárně",
+    "de": "In der Schmiede planen",
+    "es": "Planificar en la Herrería",
+    "fr": "Planifier à la Forge",
+    "pt": "Planejar na Forja",
+    "zh": "在铁匠铺中规划",
+    "hi": "स्मिथी में योजना बनाएं",
+    "ar": "خطط في الحدّادة",
+    "bn": "স্মিথিতে পরিকল্পনা করুন",
+    "ru": "Спланировать в Кузнице",
+    "ja": "鍛冶場で計画する",
+    "id": "Rencanakan di Smithy"
   }
 };

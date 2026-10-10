@@ -102,12 +102,18 @@
       try { root.localStorage.setItem(CART_KEY, JSON.stringify(Array.isArray(lines) ? lines : [])); return true; }
       catch { return false; }
     },
-    addMaterial(id, amount = 1) {
+    addMaterial(id, amount = 1, name) {
       const count = Number.isFinite(amount) && amount > 0 ? amount : 1;
       const lines = cart.read();
       const existing = lines.find(line => line && line.materialId === id);
-      if (existing) existing.amount = positive(existing.amount, 0) + count;
-      else lines.push({ id: 'mat_' + id + '_' + Math.random().toString(36).slice(2, 7), materialId: id, amount: count, setId: null, pieceId: null });
+      if (existing) {
+        existing.amount = positive(existing.amount, 0) + count;
+        if (name && !existing.name) existing.name = name;
+      } else {
+        const line = { id: 'mat_' + id + '_' + Math.random().toString(36).slice(2, 7), materialId: id, amount: count, setId: null, pieceId: null };
+        if (name) line.name = String(name);
+        lines.push(line);
+      }
       return cart.write(lines);
     },
     hasMaterial(id) { return cart.read().some(line => line && line.materialId === id); },
