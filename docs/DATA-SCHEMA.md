@@ -188,6 +188,19 @@ Generuje ho `node scripts/build-data.mjs` z JSONů. ⛔ Ručně se needituje.
 
 Od VC-5 se doporučení počítají **v prohlížeči** podle nastavení hráče (`apps/bestiary/assets/rank.js`). Klíč `recommendations` v `data.js` proto zmizí. `data/recommendations.json` dál vzniká pro testy a report s výchozím hráčem (`VCRank.DEFAULT_PLAYER`).
 
+## `data/stations.json`
+
+Pole stanic. Každý záznam zapisuje jeden fetcher, který nahrazuje jen své záznamy:
+
+| Fetcher | Záznamy (`id`) | `type` |
+|---|---|---|
+| `fetch-stations.mjs` | smelter, blast-furnace, charcoal-kiln, spinning-wheel | smelting / kiln / processing |
+| `fetch-comfort.mjs` | artisan-table, black-forge, forge, stonecutter, workbench | dle wiki |
+| `fetch-expedition.mjs` | galdr-table (`addedBy: "expedition"`) | dle wiki |
+| `fetch-provisions.mjs` | cauldron … smoker | `provisions` |
+
+Společná pole: `id`, `name`, `names`, `wiki`, `type`. Pořadí v souboru je dané pořadím fetcherů (stations → comfort → expedition → provisions); `mergeStations` ve `fetch-stations.mjs` nové záznamy vkládá na začátek a existující nahrazuje na místě.
+
 ## `data/overrides.json` (orchestrátor)
 
 Ruční opravy, které parser aplikuje **jako poslední krok**:

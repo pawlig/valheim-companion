@@ -61,6 +61,10 @@ Body 1–6 dělá **v čerstvém kontextu** `Agent` se `subagent_type: "prejimka
    ```sh
    node scripts/wiki/fetch-creatures.mjs && node scripts/wiki/fetch-weapons.mjs && node scripts/recommend.mjs && node scripts/build-data.mjs && node scripts/wiki/fetch-armor.mjs && node scripts/build-armourer-data.mjs
    ```
+   ```sh
+   node scripts/wiki/fetch-stations.mjs && node scripts/wiki/fetch-comfort.mjs && node scripts/wiki/fetch-expedition.mjs && node scripts/wiki/fetch-provisions.mjs
+   ```
+   Stanice (`data/stations.json`) skládají tyto čtyři fetchery v tomhle pořadí; každý nahrazuje jen své záznamy.
    Pusť 2× a potom `git status --short` musí být prázdné.
 4. Kontroly dat přes `node -e` (konkrétní jednotky a zbraně).
    🚨 **Data z wiki se vzorkují proti wiki cache `data/raw/`, ne proti zadání ani analýze** (Pavel 10. 10. 2026, arch AUD/7 — chybné ceny Trader Ledgeru prošly, protože byly už v ANALYZA § 28). Aspoň 10 náhodných záznamů + všechny, které zadání jmenuje, porovnat s wikitextem stránky v cache; nesoulad = vráceno.
