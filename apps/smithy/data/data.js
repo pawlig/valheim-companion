@@ -31662,7 +31662,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Дубленые беличьи сухожилия"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "curious-axe-head": {
       "id": "curious-axe-head",
@@ -32040,7 +32046,13 @@ window.VA_DATA = {
       "names": {
         "cs": "Vejce",
         "ru": "Яйцо"
-      }
+      },
+      "traders": [
+        {
+          "id": "haldor",
+          "name": "Haldor"
+        }
+      ]
     },
     "elaking-hair-bundle": {
       "id": "elaking-hair-bundle",
@@ -32223,7 +32235,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Порошок пламенных пряностей"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "finewood": {
       "id": "finewood",
@@ -32410,7 +32428,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Ароматный букет"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "freeze-gland": {
       "id": "freeze-gland",
@@ -32458,7 +32482,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Свежие водоросли"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "frostfire-essence": {
       "id": "frostfire-essence",
@@ -32560,7 +32590,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Урожай лугового травника"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "greydwarf-eye": {
       "id": "greydwarf-eye",
@@ -32724,7 +32760,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Травы тайных холмов"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "hexen-trophy": {
       "id": "hexen-trophy",
@@ -34886,7 +34928,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Толченый перец с горных вершин"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "mushroom": {
       "id": "mushroom",
@@ -35841,7 +35889,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Толченая драконья скорлупа"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "proustite-powder": {
       "id": "proustite-powder",
@@ -35911,7 +35965,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Вонючие камешки"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "queen-s-jam": {
       "id": "queen-s-jam",
@@ -36436,7 +36496,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Травы мореплавателя"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "seal-blubber": {
       "id": "seal-blubber",
@@ -36545,7 +36611,13 @@ window.VA_DATA = {
         "tier": 9,
         "boss": "kall-fimbulbringer"
       },
-      "names": {}
+      "names": {},
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "seed-poteitr": {
       "id": "seed-poteitr",
@@ -37091,7 +37163,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Поганка"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "troll-hide": {
       "id": "troll-hide",
@@ -37969,7 +38047,13 @@ window.VA_DATA = {
       },
       "names": {
         "ru": "Смесь лесных трав"
-      }
+      },
+      "traders": [
+        {
+          "id": "bog-witch",
+          "name": "The Bog Witch"
+        }
+      ]
     },
     "writhan-roots": {
       "id": "writhan-roots",
@@ -38097,7 +38181,13 @@ window.VA_DATA = {
         "cs": "Maso Ymira",
         "fr": "Chair d'Ymir",
         "ru": "Плоть Имира"
-      }
+      },
+      "traders": [
+        {
+          "id": "haldor",
+          "name": "Haldor"
+        }
+      ]
     }
   },
   "creatures": {

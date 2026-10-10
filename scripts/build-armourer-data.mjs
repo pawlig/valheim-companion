@@ -5,6 +5,7 @@ import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'no
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { aliasImage } from './image-index.mjs';
+import { buildTraderIndex, withTraders } from './trader-index.mjs';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = path.join(REPO_ROOT, 'data');
@@ -39,9 +40,10 @@ export function buildArmourerBundle() {
   const armor = filterSmithyArmor(JSON.parse(readFileSync(armorPath, 'utf8')));
   const itemsList = JSON.parse(readFileSync(itemsPath, 'utf8')).filter(item => !item.comfort);
 
+  const traderIndex = buildTraderIndex(path.join(DATA_DIR, 'traders.json'));
   const items = {};
   for (const item of itemsList) {
-    items[item.id] = item.image ? { ...item, image: aliasImage(item.image) } : item;
+    items[item.id] = withTraders(item.image ? { ...item, image: aliasImage(item.image) } : item, traderIndex);
   }
 
   const stationsPath = path.join(DATA_DIR, 'stations.json');
