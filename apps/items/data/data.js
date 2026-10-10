@@ -95,46 +95,46 @@ globalThis.VC_ITEMS_DATA = {
         "creatures": [],
         "locations": [
           {
-            "text": "* Burial Chambers",
+            "text": "Burial Chambers",
             "kind": "location"
           },
           {
-            "text": "* Troll Cave",
+            "text": "Troll Cave",
             "kind": "location"
           },
           {
-            "text": "* Sunken Crypts",
+            "text": "Sunken Crypts",
             "kind": "location"
           },
           {
-            "text": "* Stone Grave",
+            "text": "Stone Grave",
             "kind": "other"
           },
           {
-            "text": "* Viking Graveyard",
+            "text": "Viking Graveyard",
             "kind": "other"
           }
         ],
         "traders": [],
         "raw": [
           {
-            "text": "* Burial Chambers",
+            "text": "Burial Chambers",
             "kind": "location"
           },
           {
-            "text": "* Troll Cave",
+            "text": "Troll Cave",
             "kind": "location"
           },
           {
-            "text": "* Sunken Crypts",
+            "text": "Sunken Crypts",
             "kind": "location"
           },
           {
-            "text": "* Stone Grave",
+            "text": "Stone Grave",
             "kind": "other"
           },
           {
-            "text": "* Viking Graveyard",
+            "text": "Viking Graveyard",
             "kind": "other"
           }
         ]
@@ -222,6 +222,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "draugr-fang",
             "name": "Draugr Fang",
+            "level": 2,
             "biome": "mountain",
             "itemId": "draugr-fang"
           },
@@ -235,6 +236,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "frostner",
             "name": "Frostner",
+            "level": 3,
             "biome": "mountain",
             "itemId": "frostner"
           },
@@ -274,13 +276,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 2,
             "biome": "swamp",
             "itemId": "root-leggings"
-          },
-          {
-            "id": "iron-brooch",
-            "name": "Iron Brooch",
-            "level": 1,
-            "biome": "swamp",
-            "itemId": "iron-brooch"
           }
         ],
         "food": [],
@@ -320,18 +315,11 @@ globalThis.VC_ITEMS_DATA = {
         ],
         "crafting": [
           {
-            "id": "draugr-fang",
-            "name": "Draugr Fang",
-            "level": 2,
-            "biome": "mountain",
-            "itemId": "draugr-fang"
-          },
-          {
-            "id": "frostner",
-            "name": "Frostner",
-            "level": 3,
-            "biome": "mountain",
-            "itemId": "frostner"
+            "id": "iron-brooch",
+            "name": "Iron Brooch",
+            "level": 1,
+            "biome": "swamp",
+            "itemId": "iron-brooch"
           }
         ]
       },
@@ -385,15 +373,7 @@ globalThis.VC_ITEMS_DATA = {
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
-          {
-            "id": "heart-of-the-forest",
-            "name": "Heart of the Forest",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "heart-of-the-forest"
-          }
-        ],
+        "armor": [],
         "food": [],
         "meads": [],
         "comfort": [],
@@ -406,7 +386,15 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "stations": [],
-        "crafting": []
+        "crafting": [
+          {
+            "id": "heart-of-the-forest",
+            "name": "Heart of the Forest",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "heart-of-the-forest"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -481,7 +469,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/ash-fang.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -528,9 +516,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bonemaw Tooth",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 3
       },
@@ -550,18 +540,21 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "blood-fang",
             "name": "Blood Fang",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "blood-fang"
           },
           {
             "id": "root-fang",
             "name": "Root Fang",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "root-fang"
           },
           {
             "id": "storm-fang",
             "name": "Storm Fang",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "storm-fang"
           }
@@ -572,29 +565,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "blood-fang",
-            "name": "Blood Fang",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "blood-fang"
-          },
-          {
-            "id": "root-fang",
-            "name": "Root Fang",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "root-fang"
-          },
-          {
-            "id": "storm-fang",
-            "name": "Storm Fang",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "storm-fang"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {
         "smithy": "/smithy/#item=ash-fang"
@@ -639,6 +610,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "ash-fang",
             "name": "Ash Fang",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "ash-fang"
           },
@@ -657,6 +629,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "dundr",
             "name": "Dundr",
+            "level": 2,
             "biome": "ashlands",
             "itemId": "dundr"
           },
@@ -677,12 +650,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "ripper",
             "name": "Ripper",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "ripper"
           },
           {
             "id": "splitnir",
             "name": "Splitnir",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "splitnir"
           },
@@ -699,20 +674,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 2,
             "biome": "ashlands",
             "itemId": "staff-of-the-wild"
-          },
-          {
-            "id": "battering-ram",
-            "name": "Battering Ram",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "battering-ram"
-          },
-          {
-            "id": "catapult",
-            "name": "Catapult",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "catapult"
           }
         ],
         "armor": [],
@@ -786,6 +747,20 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "ashwood-stakewall"
           },
           {
+            "id": "battering-ram",
+            "name": "Battering Ram",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "battering-ram"
+          },
+          {
+            "id": "catapult",
+            "name": "Catapult",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "catapult"
+          },
+          {
             "id": "ashwood-stack",
             "name": "Ashwood Stack",
             "level": 1,
@@ -794,27 +769,6 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "crafting": [
-          {
-            "id": "ash-fang",
-            "name": "Ash Fang",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "ash-fang"
-          },
-          {
-            "id": "ripper",
-            "name": "Ripper",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "ripper"
-          },
-          {
-            "id": "splitnir",
-            "name": "Splitnir",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "splitnir"
-          },
           {
             "id": "charred-arrow",
             "name": "Charred Arrow",
@@ -828,13 +782,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "ashlands",
             "itemId": "charred-bolt"
-          },
-          {
-            "id": "dundr",
-            "name": "Dundr",
-            "level": 2,
-            "biome": "ashlands",
-            "itemId": "dundr"
           },
           {
             "id": "flametal-missile",
@@ -853,7 +800,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/asksvin-bladder.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 0.5,
@@ -928,7 +875,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/asksvin-hide.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 1,
@@ -1003,27 +950,23 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "nidhogg",
             "name": "Nidhögg",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "nidhogg"
           },
           {
             "id": "slayer",
             "name": "Slayer",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "slayer"
           },
           {
             "id": "splitnir",
             "name": "Splitnir",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "splitnir"
-          },
-          {
-            "id": "explosive-payload",
-            "name": "Explosive Payload",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "explosive-payload"
           },
           {
             "id": "basalt-bomb",
@@ -1149,25 +1092,11 @@ globalThis.VC_ITEMS_DATA = {
         ],
         "crafting": [
           {
-            "id": "nidhogg",
-            "name": "Nidhögg",
-            "level": 3,
+            "id": "explosive-payload",
+            "name": "Explosive Payload",
+            "level": 1,
             "biome": "ashlands",
-            "itemId": "nidhogg"
-          },
-          {
-            "id": "slayer",
-            "name": "Slayer",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "slayer"
-          },
-          {
-            "id": "splitnir",
-            "name": "Splitnir",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "splitnir"
+            "itemId": "explosive-payload"
           }
         ]
       },
@@ -1179,7 +1108,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/asksvin-neck.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 2,
@@ -1303,7 +1232,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/asksvin-ribcage.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 5,
@@ -1365,7 +1294,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/asksvin-skull.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 2,
@@ -1427,7 +1356,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/asksvin-tail.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "drop",
+      "category": "ingredient",
       "teleportable": true,
       "stack": 20,
       "weight": 1,
@@ -1708,9 +1637,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "barley",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "windmill"
       },
       "station": {
+        "id": "windmill",
         "name": "Windmill",
         "level": 1
       },
@@ -1820,9 +1751,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "cloudberries",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -1913,12 +1846,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "paws-of-the-bear",
             "name": "Paws of the Bear",
+            "level": 2,
             "biome": "black-forest",
             "itemId": "paws-of-the-bear"
           },
           {
             "id": "vilebone-maulclaws",
             "name": "Vilebone Maulclaws",
+            "level": 3,
             "biome": "plains",
             "itemId": "vilebone-maulclaws"
           }
@@ -1995,22 +1930,7 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "bearskin-rug"
           }
         ],
-        "crafting": [
-          {
-            "id": "paws-of-the-bear",
-            "name": "Paws of the Bear",
-            "level": 2,
-            "biome": "black-forest",
-            "itemId": "paws-of-the-bear"
-          },
-          {
-            "id": "vilebone-maulclaws",
-            "name": "Vilebone Maulclaws",
-            "level": 3,
-            "biome": "plains",
-            "itemId": "vilebone-maulclaws"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -2130,6 +2050,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "paws-of-the-bear",
             "name": "Paws of the Bear",
+            "level": 2,
             "biome": "black-forest",
             "itemId": "paws-of-the-bear"
           }
@@ -2164,15 +2085,7 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "bearskin-rug"
           }
         ],
-        "crafting": [
-          {
-            "id": "paws-of-the-bear",
-            "name": "Paws of the Bear",
-            "level": 2,
-            "biome": "black-forest",
-            "itemId": "paws-of-the-bear"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -2225,13 +2138,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 2,
             "biome": "black-forest",
             "itemId": "headdress-of-the-bear"
-          },
-          {
-            "id": "bronze-pendant",
-            "name": "Bronze Pendant",
-            "level": 1,
-            "biome": "black-forest",
-            "itemId": "bronze-pendant"
           }
         ],
         "food": [],
@@ -2255,7 +2161,15 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "bearskin-rug"
           }
         ],
-        "crafting": []
+        "crafting": [
+          {
+            "id": "bronze-pendant",
+            "name": "Bronze Pendant",
+            "level": 1,
+            "biome": "black-forest",
+            "itemId": "bronze-pendant"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -2283,9 +2197,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bell-fragment",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -2422,9 +2338,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Asksvin Hide",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 3
       },
@@ -2527,6 +2445,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "jotun-bane",
             "name": "Jotun Bane",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "jotun-bane"
           }
@@ -2537,15 +2456,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "jotun-bane",
-            "name": "Jotun Bane",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "jotun-bane"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -2593,15 +2504,7 @@ globalThis.VC_ITEMS_DATA = {
         ]
       },
       "usedIn": {
-        "weapons": [
-          {
-            "id": "shield-core",
-            "name": "Shield Core",
-            "level": 2,
-            "biome": "plains",
-            "itemId": "shield-core"
-          }
-        ],
+        "weapons": [],
         "armor": [],
         "food": [],
         "meads": [],
@@ -2630,7 +2533,15 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "eitr-refinery"
           }
         ],
-        "crafting": []
+        "crafting": [
+          {
+            "id": "shield-core",
+            "name": "Shield Core",
+            "level": 2,
+            "biome": "plains",
+            "itemId": "shield-core"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -2797,7 +2708,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "ceramic-plate",
             "name": "Ceramic Plate",
-            "level": 1,
+            "level": 2,
             "biome": "ashlands",
             "itemId": "ceramic-plate"
           }
@@ -2834,9 +2745,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "black-metal-scrap",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "blast-furnace"
       },
       "station": {
+        "id": "blast-furnace",
         "name": "Blast Furnace",
         "level": 1
       },
@@ -2917,39 +2830,19 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "skoll-and-hati",
             "name": "Skoll and Hati",
+            "level": 1,
             "biome": "plains",
             "itemId": "skoll-and-hati"
           },
           {
             "id": "vilebone-maulclaws",
             "name": "Vilebone Maulclaws",
+            "level": 3,
             "biome": "plains",
             "itemId": "vilebone-maulclaws"
           }
         ],
-        "armor": [
-          {
-            "id": "skoll-and-hati",
-            "name": "Skoll and Hati",
-            "level": 1,
-            "biome": "plains",
-            "itemId": "skoll-and-hati"
-          },
-          {
-            "id": "bracelets-of-the-brave",
-            "name": "Bracelets of the Brave",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "bracelets-of-the-brave"
-          },
-          {
-            "id": "evasion-mantle",
-            "name": "Evasion Mantle",
-            "level": 1,
-            "biome": "plains",
-            "itemId": "evasion-mantle"
-          }
-        ],
+        "armor": [],
         "food": [],
         "meads": [],
         "comfort": [],
@@ -3035,18 +2928,25 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "black-metal-pickaxe"
           },
           {
-            "id": "vilebone-maulclaws",
-            "name": "Vilebone Maulclaws",
-            "level": 3,
-            "biome": "plains",
-            "itemId": "vilebone-maulclaws"
-          },
-          {
             "id": "lox-saddle",
             "name": "Lox Saddle",
             "level": 1,
             "biome": "meadows",
             "itemId": "lox-saddle"
+          },
+          {
+            "id": "bracelets-of-the-brave",
+            "name": "Bracelets of the Brave",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "bracelets-of-the-brave"
+          },
+          {
+            "id": "evasion-mantle",
+            "name": "Evasion Mantle",
+            "level": 1,
+            "biome": "plains",
+            "itemId": "evasion-mantle"
           },
           {
             "id": "black-metal-missile",
@@ -3162,7 +3062,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/blood-clot.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "drop",
+      "category": "ingredient",
       "teleportable": true,
       "stack": 50,
       "weight": 0.5,
@@ -3222,7 +3122,7 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-major-healing",
-            "name": "Mead base: Major healing",
+            "name": "Mead Base: Major Healing",
             "level": 1,
             "biome": "mistlands",
             "itemId": "mead-base-major-healing"
@@ -3342,14 +3242,14 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-frost-resistance",
-            "name": "Mead base: Frost resistance",
+            "name": "Mead Base: Frost Resistance",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-frost-resistance"
           },
           {
             "id": "mead-base-medium-healing",
-            "name": "Mead base: Medium healing",
+            "name": "Mead Base: Medium Healing",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-medium-healing"
@@ -3382,9 +3282,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "petrified-tissue",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "blast-furnace"
       },
       "station": {
+        "id": "blast-furnace",
         "name": "Blast Furnace",
         "level": 1
       },
@@ -3471,6 +3373,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "frostfire-knucklechains",
             "name": "Frostfire Knucklechains",
+            "level": 4,
             "biome": "deep-north",
             "itemId": "frostfire-knucklechains"
           },
@@ -3650,6 +3553,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "thunderblood-knucklechains",
             "name": "Thunderblood Knucklechains",
+            "level": 4,
             "biome": "deep-north",
             "itemId": "thunderblood-knucklechains"
           },
@@ -3680,55 +3584,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 4,
             "biome": "deep-north",
             "itemId": "thunderblood-sword"
-          },
-          {
-            "id": "cast-nord-buckler",
-            "name": "Cast Nord Buckler",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "cast-nord-buckler"
-          },
-          {
-            "id": "cast-nord-greatshield",
-            "name": "Cast Nord Greatshield",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "cast-nord-greatshield"
-          },
-          {
-            "id": "cast-nord-shield",
-            "name": "Cast Nord Shield",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "cast-nord-shield"
-          },
-          {
-            "id": "mould-nord-buckler",
-            "name": "Mould Nord Buckler",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "mould-nord-buckler"
-          },
-          {
-            "id": "mould-nord-greatshield",
-            "name": "Mould Nord Greatshield",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "mould-nord-greatshield"
-          },
-          {
-            "id": "mould-nord-shield",
-            "name": "Mould Nord Shield",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "mould-nord-shield"
-          },
-          {
-            "id": "bloodgold-payload",
-            "name": "Bloodgold Payload",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "bloodgold-payload"
           }
         ],
         "armor": [
@@ -3801,20 +3656,6 @@ globalThis.VC_ITEMS_DATA = {
             "set": "vanguard-set",
             "biome": "deep-north",
             "itemId": "trousers-of-the-vanguard"
-          },
-          {
-            "id": "neckstabber",
-            "name": "Neckstabber",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "neckstabber"
-          },
-          {
-            "id": "witch-crown",
-            "name": "Witch Crown",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "witch-crown"
           }
         ],
         "food": [],
@@ -3828,13 +3669,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "deep-north",
             "itemId": "smoker"
-          },
-          {
-            "id": "frostfire-knucklechains",
-            "name": "Frostfire Knucklechains",
-            "level": 4,
-            "biome": "deep-north",
-            "itemId": "frostfire-knucklechains"
           },
           {
             "id": "timberwood-gate",
@@ -3869,224 +3703,266 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-breastplate-of-the-protector",
             "name": "Cast Breastplate of the Protector",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-breastplate-of-the-protector"
           },
           {
             "id": "cast-echo-spike",
             "name": "Cast Echo Spike",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-echo-spike"
           },
           {
             "id": "cast-helmet-of-the-protector",
             "name": "Cast Helmet of the Protector",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-helmet-of-the-protector"
           },
           {
             "id": "cast-lightning-strike",
             "name": "Cast Lightning Strike",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-lightning-strike"
           },
           {
             "id": "cast-nord-atgeir",
             "name": "Cast Nord Atgeir",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-atgeir"
           },
           {
             "id": "cast-nord-axe",
             "name": "Cast Nord Axe",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-axe"
           },
           {
             "id": "cast-nord-bow",
             "name": "Cast Nord Bow",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-bow"
           },
           {
+            "id": "cast-nord-buckler",
+            "name": "Cast Nord Buckler",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "cast-nord-buckler"
+          },
+          {
             "id": "cast-nord-crossbow",
             "name": "Cast Nord Crossbow",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-crossbow"
           },
           {
             "id": "cast-nord-dagger",
             "name": "Cast Nord Dagger",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-dagger"
           },
           {
             "id": "cast-nord-greataxe",
             "name": "Cast Nord Greataxe",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-greataxe"
           },
           {
+            "id": "cast-nord-greatshield",
+            "name": "Cast Nord Greatshield",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "cast-nord-greatshield"
+          },
+          {
             "id": "cast-nord-greatsword",
             "name": "Cast Nord Greatsword",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-greatsword"
           },
           {
             "id": "cast-nord-knucklechains",
             "name": "Cast Nord Knucklechains",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-knucklechains"
           },
           {
             "id": "cast-nord-mace",
             "name": "Cast Nord Mace",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-mace"
           },
           {
+            "id": "cast-nord-shield",
+            "name": "Cast Nord Shield",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "cast-nord-shield"
+          },
+          {
             "id": "cast-nord-sledge",
             "name": "Cast Nord Sledge",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-sledge"
           },
           {
             "id": "cast-nord-spear",
             "name": "Cast Nord Spear",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-spear"
           },
           {
             "id": "cast-nord-sword",
             "name": "Cast Nord Sword",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-sword"
           },
           {
             "id": "cast-trousers-of-the-protector",
             "name": "Cast Trousers of the Protector",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-trousers-of-the-protector"
           },
           {
             "id": "mould-echo-spike",
             "name": "Mould Echo Spike",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "mould-echo-spike"
           },
           {
             "id": "mould-helmet-of-the-protector",
             "name": "Mould Helmet of the Protector",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-helmet-of-the-protector"
           },
           {
             "id": "mould-lightning-strike",
             "name": "Mould Lightning Strike",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "mould-lightning-strike"
           },
           {
             "id": "mould-nord-atgeir",
             "name": "Mould Nord Atgeir",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-atgeir"
           },
           {
             "id": "mould-nord-axe",
             "name": "Mould Nord Axe",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-axe"
           },
           {
             "id": "mould-nord-bow",
             "name": "Mould Nord Bow",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-bow"
           },
           {
+            "id": "mould-nord-buckler",
+            "name": "Mould Nord Buckler",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "mould-nord-buckler"
+          },
+          {
             "id": "mould-nord-crossbow",
             "name": "Mould Nord Crossbow",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-crossbow"
           },
           {
             "id": "mould-nord-dagger",
             "name": "Mould Nord Dagger",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-dagger"
           },
           {
             "id": "mould-nord-greataxe",
             "name": "Mould Nord Greataxe",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-greataxe"
           },
           {
+            "id": "mould-nord-greatshield",
+            "name": "Mould Nord Greatshield",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "mould-nord-greatshield"
+          },
+          {
             "id": "mould-nord-greatsword",
             "name": "Mould Nord Greatsword",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-greatsword"
           },
           {
             "id": "mould-nord-knucklechains",
             "name": "Mould Nord Knucklechains",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-knucklechains"
           },
           {
             "id": "mould-nord-mace",
             "name": "Mould Nord Mace",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-mace"
           },
           {
+            "id": "mould-nord-shield",
+            "name": "Mould Nord Shield",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "mould-nord-shield"
+          },
+          {
             "id": "mould-nord-sledge",
             "name": "Mould Nord Sledge",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-sledge"
           },
           {
             "id": "mould-nord-spear",
             "name": "Mould Nord Spear",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-spear"
           },
           {
             "id": "mould-nord-sword",
             "name": "Mould Nord Sword",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-sword"
           },
@@ -4105,16 +3981,9 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "bloodgold-bolt"
           },
           {
-            "id": "thunderblood-knucklechains",
-            "name": "Thunderblood Knucklechains",
-            "level": 4,
-            "biome": "deep-north",
-            "itemId": "thunderblood-knucklechains"
-          },
-          {
             "id": "cast-intricate-key",
             "name": "Cast: Intricate Key",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-intricate-key"
           },
@@ -4124,6 +3993,27 @@ globalThis.VC_ITEMS_DATA = {
             "level": 2,
             "biome": "mistlands",
             "itemId": "moose-saddle"
+          },
+          {
+            "id": "neckstabber",
+            "name": "Neckstabber",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "neckstabber"
+          },
+          {
+            "id": "witch-crown",
+            "name": "Witch Crown",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "witch-crown"
+          },
+          {
+            "id": "bloodgold-payload",
+            "name": "Bloodgold Payload",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "bloodgold-payload"
           },
           {
             "id": "bloodgold-missile",
@@ -4142,7 +4032,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/bloodstone.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "valuable",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 2,
@@ -4182,67 +4072,68 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "blood-fang",
             "name": "Blood Fang",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "blood-fang"
           },
           {
             "id": "bloodgeon",
             "name": "Bloodgeon",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "bloodgeon"
           },
           {
             "id": "brutal-slayer",
             "name": "Brutal Slayer",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "brutal-slayer"
           },
           {
             "id": "dundr",
             "name": "Dundr",
+            "level": 2,
             "biome": "ashlands",
             "itemId": "dundr"
           },
           {
             "id": "dyrnwyn",
             "name": "Dyrnwyn",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "dyrnwyn"
           },
           {
             "id": "nidhogg-the-bleeding",
             "name": "Nidhögg the Bleeding",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "nidhogg-the-bleeding"
           },
           {
             "id": "splitnir-the-bleeding",
             "name": "Splitnir the Bleeding",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "splitnir-the-bleeding"
           },
           {
             "id": "trollstav",
             "name": "Trollstav",
+            "level": 2,
             "biome": "ashlands",
             "itemId": "trollstav"
           },
           {
             "id": "wound-ripper",
             "name": "Wound Ripper",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "wound-ripper"
           }
         ],
-        "armor": [
-          {
-            "id": "jormundling",
-            "name": "Jörmundling",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "jormundling"
-          }
-        ],
+        "armor": [],
         "food": [],
         "meads": [],
         "comfort": [],
@@ -4279,67 +4170,11 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "dyrnwyn-tip-fragment"
           },
           {
-            "id": "blood-fang",
-            "name": "Blood Fang",
-            "level": 4,
+            "id": "jormundling",
+            "name": "Jörmundling",
+            "level": 1,
             "biome": "ashlands",
-            "itemId": "blood-fang"
-          },
-          {
-            "id": "bloodgeon",
-            "name": "Bloodgeon",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "bloodgeon"
-          },
-          {
-            "id": "brutal-slayer",
-            "name": "Brutal Slayer",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "brutal-slayer"
-          },
-          {
-            "id": "dundr",
-            "name": "Dundr",
-            "level": 2,
-            "biome": "ashlands",
-            "itemId": "dundr"
-          },
-          {
-            "id": "dyrnwyn",
-            "name": "Dyrnwyn",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "dyrnwyn"
-          },
-          {
-            "id": "nidhogg-the-bleeding",
-            "name": "Nidhögg the Bleeding",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "nidhogg-the-bleeding"
-          },
-          {
-            "id": "splitnir-the-bleeding",
-            "name": "Splitnir the Bleeding",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "splitnir-the-bleeding"
-          },
-          {
-            "id": "trollstav",
-            "name": "Trollstav",
-            "level": 2,
-            "biome": "ashlands",
-            "itemId": "trollstav"
-          },
-          {
-            "id": "wound-ripper",
-            "name": "Wound Ripper",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "wound-ripper"
+            "itemId": "jormundling"
           }
         ]
       },
@@ -4629,14 +4464,14 @@ globalThis.VC_ITEMS_DATA = {
           },
           {
             "id": "mead-base-minor-healing",
-            "name": "Mead base: Minor healing",
+            "name": "Mead Base: Minor Healing",
             "level": 1,
             "biome": "black-forest",
             "itemId": "mead-base-minor-healing"
           },
           {
             "id": "mead-base-tasty",
-            "name": "Mead base: Tasty",
+            "name": "Mead Base: Tasty",
             "level": 1,
             "biome": "black-forest",
             "itemId": "mead-base-tasty"
@@ -4833,6 +4668,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "spinesnap",
             "name": "Spinesnap",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "spinesnap"
           },
@@ -4964,13 +4800,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "black-forest",
             "itemId": "bone-bolt"
-          },
-          {
-            "id": "spinesnap",
-            "name": "Spinesnap",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "spinesnap"
           }
         ]
       },
@@ -5042,7 +4871,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/bonemaw-tooth.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 2,
@@ -5081,18 +4910,21 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "ash-fang",
             "name": "Ash Fang",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "ash-fang"
           },
           {
             "id": "ripper",
             "name": "Ripper",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "ripper"
           },
           {
             "id": "splitnir",
             "name": "Splitnir",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "splitnir"
           }
@@ -5103,29 +4935,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "ash-fang",
-            "name": "Ash Fang",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "ash-fang"
-          },
-          {
-            "id": "ripper",
-            "name": "Ripper",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "ripper"
-          },
-          {
-            "id": "splitnir",
-            "name": "Splitnir",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "splitnir"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -5164,9 +4974,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bread-dough",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "oven"
       },
       "station": {
+        "id": "oven",
         "name": "Oven",
         "level": 1
       },
@@ -5230,9 +5042,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "barley-flour",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -5309,9 +5123,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "tin",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -5389,6 +5205,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "krom",
             "name": "Krom",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "krom"
           }
@@ -5428,20 +5245,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "meadows",
             "itemId": "pointy-hat"
-          },
-          {
-            "id": "heart-of-the-forest",
-            "name": "Heart of the Forest",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "heart-of-the-forest"
-          },
-          {
-            "id": "bronze-pendant",
-            "name": "Bronze Pendant",
-            "level": 1,
-            "biome": "black-forest",
-            "itemId": "bronze-pendant"
           }
         ],
         "food": [],
@@ -5558,13 +5361,6 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "bronzehead-arrow"
           },
           {
-            "id": "krom",
-            "name": "Krom",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "krom"
-          },
-          {
             "id": "cultivator",
             "name": "Cultivator",
             "level": 1,
@@ -5577,6 +5373,20 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "meadows",
             "itemId": "horn-of-celebration"
+          },
+          {
+            "id": "heart-of-the-forest",
+            "name": "Heart of the Forest",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "heart-of-the-forest"
+          },
+          {
+            "id": "bronze-pendant",
+            "name": "Bronze Pendant",
+            "level": 1,
+            "biome": "black-forest",
+            "itemId": "bronze-pendant"
           }
         ]
       },
@@ -5610,9 +5420,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bronze",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -5816,13 +5628,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "mistlands",
             "itemId": "carapace-greaves"
-          },
-          {
-            "id": "pulsating-earrings",
-            "name": "Pulsating Earrings",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "pulsating-earrings"
           }
         ],
         "food": [],
@@ -5844,6 +5649,13 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "mistlands",
             "itemId": "carapace-bolt"
+          },
+          {
+            "id": "pulsating-earrings",
+            "name": "Pulsating Earrings",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "pulsating-earrings"
           }
         ]
       },
@@ -5971,7 +5783,7 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-animal-whispers",
-            "name": "Mead base: Animal whispers",
+            "name": "Mead Base: Animal Whispers",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-animal-whispers"
@@ -5995,7 +5807,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-breastplate-of-the-protector.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -6004,8 +5816,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -6023,11 +5835,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "moose-hide",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -6066,7 +5880,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-chestpiece-of-the-vanguard.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -6075,8 +5889,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -6099,11 +5913,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "moose-sinew",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -6142,7 +5958,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-echo-spike.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 1,
       "weight": 2.5,
@@ -6151,8 +5967,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This magical item needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Galdr Table level 3",
-        "stationLevel": 1,
+        "station": "Galdr Table",
+        "stationLevel": 3,
         "yields": 1,
         "materials": [
           {
@@ -6175,11 +5991,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "mould-echo-spike",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table level 3",
-        "level": 1
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -6197,6 +6015,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "echo-spike",
             "name": "Echo Spike",
+            "level": 3,
             "biome": "deep-north",
             "itemId": "echo-spike"
           }
@@ -6207,15 +6026,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "echo-spike",
-            "name": "Echo Spike",
-            "level": 3,
-            "biome": "deep-north",
-            "itemId": "echo-spike"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -6225,7 +6036,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-headdress-of-the-caller.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -6234,8 +6045,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Galdr Table level 3",
-        "stationLevel": 1,
+        "station": "Galdr Table",
+        "stationLevel": 3,
         "yields": 1,
         "materials": [
           {
@@ -6258,11 +6069,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "nornathread",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table level 3",
-        "level": 1
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -6301,7 +6114,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-helmet-of-the-protector.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -6310,8 +6123,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -6329,11 +6142,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "moose-hide",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -6372,7 +6187,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-hood-of-the-vanguard.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -6381,8 +6196,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -6405,11 +6220,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "moose-sinew",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -6448,7 +6265,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-lightning-strike.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 1,
       "weight": 2.5,
@@ -6457,8 +6274,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This magical item needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Galdr Table level 3",
-        "stationLevel": 1,
+        "station": "Galdr Table",
+        "stationLevel": 3,
         "yields": 1,
         "materials": [
           {
@@ -6481,11 +6298,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "mould-lightning-strike",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table level 3",
-        "level": 1
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -6503,6 +6322,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "lightning-strike",
             "name": "Lightning Strike",
+            "level": 3,
             "biome": "deep-north",
             "itemId": "lightning-strike"
           }
@@ -6513,15 +6333,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "lightning-strike",
-            "name": "Lightning Strike",
-            "level": 3,
-            "biome": "deep-north",
-            "itemId": "lightning-strike"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -6531,7 +6343,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-nord-atgeir.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 1,
       "weight": 2.5,
@@ -6540,8 +6352,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -6559,11 +6371,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -6602,7 +6416,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-nord-axe.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 1,
       "weight": 2,
@@ -6611,8 +6425,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -6630,11 +6444,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -6673,7 +6489,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-nord-bow.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 1,
       "weight": 1.5,
@@ -6682,8 +6498,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -6701,11 +6517,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -6744,7 +6562,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-nord-buckler.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "shield",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -6753,8 +6571,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This shield needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -6772,11 +6590,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "mould-nord-buckler",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -6807,9 +6627,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=cast-nord-buckler"
-      }
+      "crossLinks": {}
     },
     {
       "id": "cast-nord-crossbow",
@@ -6817,7 +6635,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-nord-crossbow.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 1,
       "weight": 1.5,
@@ -6826,8 +6644,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -6845,11 +6663,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -6888,7 +6708,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-nord-dagger.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 1,
       "weight": 0.3,
@@ -6897,8 +6717,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -6916,11 +6736,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -6959,7 +6781,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-nord-greataxe.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 1,
       "weight": 2.5,
@@ -6968,8 +6790,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -6987,11 +6809,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -7030,7 +6854,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-nord-greatshield.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "shield",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -7039,8 +6863,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This shield needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -7058,11 +6882,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "mould-nord-greatshield",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -7093,9 +6919,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=cast-nord-greatshield"
-      }
+      "crossLinks": {}
     },
     {
       "id": "cast-nord-greatsword",
@@ -7103,7 +6927,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-nord-greatsword.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 1,
       "weight": 4,
@@ -7112,8 +6936,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -7131,11 +6955,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "frozen-branch",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -7174,7 +7000,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-nord-knucklechains.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 1,
       "weight": 2,
@@ -7183,8 +7009,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -7202,11 +7028,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "long-claws",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -7224,6 +7052,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "nord-knucklechains",
             "name": "Nord Knucklechains",
+            "level": 4,
             "biome": "deep-north",
             "itemId": "nord-knucklechains"
           }
@@ -7234,15 +7063,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "nord-knucklechains",
-            "name": "Nord Knucklechains",
-            "level": 4,
-            "biome": "deep-north",
-            "itemId": "nord-knucklechains"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -7252,7 +7073,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-nord-mace.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 1,
       "weight": 2,
@@ -7261,8 +7082,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -7280,11 +7101,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -7323,7 +7146,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-nord-shield.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "shield",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -7332,8 +7155,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This shield needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -7351,11 +7174,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "mould-nord-shield",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -7386,9 +7211,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=cast-nord-shield"
-      }
+      "crossLinks": {}
     },
     {
       "id": "cast-nord-sledge",
@@ -7396,7 +7219,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-nord-sledge.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 1,
       "weight": 4,
@@ -7405,8 +7228,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -7424,11 +7247,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -7467,7 +7292,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-nord-spear.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 1,
       "weight": 1.5,
@@ -7476,8 +7301,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -7495,11 +7320,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -7538,7 +7365,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-nord-sword.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 1,
       "weight": 0.8,
@@ -7547,8 +7374,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This weapon needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -7566,11 +7393,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -7609,7 +7438,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-northern-vengeance.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 1,
       "weight": 2.5,
@@ -7618,8 +7447,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This magical item needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Galdr Table level 3",
-        "stationLevel": 1,
+        "station": "Galdr Table",
+        "stationLevel": 3,
         "yields": 1,
         "materials": [
           {
@@ -7642,11 +7471,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "mould-northern-vengeance",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table level 3",
-        "level": 1
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -7664,6 +7495,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "northern-vengeance",
             "name": "Northern Vengeance",
+            "level": 3,
             "biome": "deep-north",
             "itemId": "northern-vengeance"
           }
@@ -7674,15 +7506,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "northern-vengeance",
-            "name": "Northern Vengeance",
-            "level": 3,
-            "biome": "deep-north",
-            "itemId": "northern-vengeance"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -7692,7 +7516,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-robes-of-the-caller.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -7701,8 +7525,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Galdr Table level 3",
-        "stationLevel": 1,
+        "station": "Galdr Table",
+        "stationLevel": 3,
         "yields": 1,
         "materials": [
           {
@@ -7725,11 +7549,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "nornathread",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table level 3",
-        "level": 1
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -7768,7 +7594,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-trousers-of-the-caller.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -7777,8 +7603,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Galdr Table level 3",
-        "stationLevel": 1,
+        "station": "Galdr Table",
+        "stationLevel": 3,
         "yields": 1,
         "materials": [
           {
@@ -7801,11 +7627,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "nornathread",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table level 3",
-        "level": 1
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -7844,7 +7672,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-trousers-of-the-protector.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -7853,8 +7681,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -7872,11 +7700,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "moose-hide",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -7915,7 +7745,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/cast-trousers-of-the-vanguard.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -7924,8 +7754,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This armour needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -7948,11 +7778,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "moose-sinew",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -8029,6 +7861,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "dundr",
             "name": "Dundr",
+            "level": 2,
             "biome": "ashlands",
             "itemId": "dundr"
           },
@@ -8054,15 +7887,7 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "feathery-wreath"
           }
         ],
-        "crafting": [
-          {
-            "id": "dundr",
-            "name": "Dundr",
-            "level": 2,
-            "biome": "ashlands",
-            "itemId": "dundr"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -8394,6 +8219,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "ash-fang",
             "name": "Ash Fang",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "ash-fang"
           },
@@ -8426,6 +8252,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "nidhogg",
             "name": "Nidhögg",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "nidhogg"
           },
@@ -8439,6 +8266,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "trollstav",
             "name": "Trollstav",
+            "level": 2,
             "biome": "ashlands",
             "itemId": "trollstav"
           }
@@ -8496,20 +8324,6 @@ globalThis.VC_ITEMS_DATA = {
         ],
         "crafting": [
           {
-            "id": "ash-fang",
-            "name": "Ash Fang",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "ash-fang"
-          },
-          {
-            "id": "nidhogg",
-            "name": "Nidhögg",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "nidhogg"
-          },
-          {
             "id": "charred-arrow",
             "name": "Charred Arrow",
             "level": 1,
@@ -8522,13 +8336,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "ashlands",
             "itemId": "charred-bolt"
-          },
-          {
-            "id": "trollstav",
-            "name": "Trollstav",
-            "level": 2,
-            "biome": "ashlands",
-            "itemId": "trollstav"
           }
         ]
       },
@@ -8540,7 +8347,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/charred-skull.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 2,
@@ -8690,7 +8497,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/chitin.png",
       "biome": "ocean",
       "tier": 3,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 2,
@@ -8739,25 +8546,19 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "abyssal-harpoon",
             "name": "Abyssal Harpoon",
+            "level": 2,
             "biome": "ocean",
             "itemId": "abyssal-harpoon"
           },
           {
             "id": "abyssal-razor",
             "name": "Abyssal Razor",
+            "level": 2,
             "biome": "ocean",
             "itemId": "abyssal-razor"
           }
         ],
-        "armor": [
-          {
-            "id": "fins-of-destiny",
-            "name": "Fins of Destiny",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "fins-of-destiny"
-          }
-        ],
+        "armor": [],
         "food": [],
         "meads": [],
         "comfort": [],
@@ -8765,18 +8566,11 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": [
           {
-            "id": "abyssal-harpoon",
-            "name": "Abyssal Harpoon",
-            "level": 2,
-            "biome": "ocean",
-            "itemId": "abyssal-harpoon"
-          },
-          {
-            "id": "abyssal-razor",
-            "name": "Abyssal Razor",
-            "level": 2,
-            "biome": "ocean",
-            "itemId": "abyssal-razor"
+            "id": "fins-of-destiny",
+            "name": "Fins of Destiny",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "fins-of-destiny"
           }
         ]
       },
@@ -8950,14 +8744,14 @@ globalThis.VC_ITEMS_DATA = {
           },
           {
             "id": "mead-base-lingering-stamina",
-            "name": "Mead base: Lingering stamina",
+            "name": "Mead Base: Lingering Stamina",
             "level": 1,
             "biome": "mistlands",
             "itemId": "mead-base-lingering-stamina"
           },
           {
             "id": "mead-base-medium-stamina",
-            "name": "Mead base: Medium stamina",
+            "name": "Mead Base: Medium Stamina",
             "level": 1,
             "biome": "plains",
             "itemId": "mead-base-medium-stamina"
@@ -9185,7 +8979,7 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-poison-resistance",
-            "name": "Mead base: Poison resistance",
+            "name": "Mead Base: Poison Resistance",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-poison-resistance"
@@ -9228,9 +9022,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bear-meat",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cooking-station"
       },
       "station": {
+        "id": "cooking-station",
         "name": "Cooking Station",
         "level": 1
       },
@@ -9305,9 +9101,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "boar-meat",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cooking-station"
       },
       "station": {
+        "id": "cooking-station",
         "name": "Cooking Station",
         "level": 1
       },
@@ -9381,9 +9179,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "deer-meat",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cooking-station"
       },
       "station": {
+        "id": "cooking-station",
         "name": "Cooking Station",
         "level": 1
       },
@@ -9463,9 +9263,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "raw-fish",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cooking-station"
       },
       "station": {
+        "id": "cooking-station",
         "name": "Cooking Station",
         "level": 1
       },
@@ -9541,9 +9343,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "moose-meat",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "iron-cooking-station"
       },
       "station": {
+        "id": "iron-cooking-station",
         "name": "Iron Cooking Station",
         "level": 1
       },
@@ -9615,9 +9419,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "serpent-meat",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "iron-cooking-station"
       },
       "station": {
+        "id": "iron-cooking-station",
         "name": "Iron Cooking Station",
         "level": 1
       },
@@ -9696,9 +9502,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "asksvin-tail",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "iron-cooking-station"
       },
       "station": {
+        "id": "iron-cooking-station",
         "name": "Iron Cooking Station",
         "level": 1
       },
@@ -9770,9 +9578,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "seeker-meat",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "iron-cooking-station"
       },
       "station": {
+        "id": "iron-cooking-station",
         "name": "Iron Cooking Station",
         "level": 1
       },
@@ -9838,9 +9648,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "copper-ore",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "smelter"
       },
       "station": {
+        "id": "smelter",
         "name": "Smelter",
         "level": 1
       },
@@ -9872,13 +9684,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "black-forest",
             "itemId": "copper-knife"
-          },
-          {
-            "id": "shield-generator",
-            "name": "Shield generator",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "shield-generator"
           }
         ],
         "armor": [],
@@ -10013,6 +9818,13 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "mistlands",
             "itemId": "vice"
+          },
+          {
+            "id": "shield-generator",
+            "name": "Shield generator",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "shield-generator"
           },
           {
             "id": "dvergr-metal-wall",
@@ -10223,6 +10035,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "stagbreaker",
             "name": "Stagbreaker",
+            "level": 2,
             "biome": "black-forest",
             "itemId": "stagbreaker"
           }
@@ -10314,13 +10127,6 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "iron-pickaxe"
           },
           {
-            "id": "stagbreaker",
-            "name": "Stagbreaker",
-            "level": 2,
-            "biome": "black-forest",
-            "itemId": "stagbreaker"
-          },
-          {
             "id": "cultivator",
             "name": "Cultivator",
             "level": 1,
@@ -10344,7 +10150,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/crown-jewel.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "valuable",
+      "category": "drop",
       "teleportable": true,
       "stack": 5,
       "weight": 2,
@@ -10454,15 +10260,7 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "crystal-battleaxe"
           }
         ],
-        "armor": [
-          {
-            "id": "crystal-heart",
-            "name": "Crystal Heart",
-            "level": 1,
-            "biome": "mountain",
-            "itemId": "crystal-heart"
-          }
-        ],
+        "armor": [],
         "food": [],
         "meads": [],
         "comfort": [],
@@ -10483,6 +10281,13 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "mountain",
             "itemId": "dvergr-lantern"
+          },
+          {
+            "id": "crystal-heart",
+            "name": "Crystal Heart",
+            "level": 1,
+            "biome": "mountain",
+            "itemId": "crystal-heart"
           }
         ]
       },
@@ -10554,7 +10359,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/cured-squirrel-hamstring.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "drop",
+      "category": "ingredient",
       "teleportable": true,
       "stack": 50,
       "weight": 0.5,
@@ -10619,7 +10424,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/curious-axe-head.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "weapon",
+      "category": "material",
       "teleportable": true,
       "stack": 10,
       "weight": 2,
@@ -10665,9 +10470,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=curious-axe-head"
-      }
+      "crossLinks": {}
     },
     {
       "id": "dandelion",
@@ -10816,21 +10619,21 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-medium-healing",
-            "name": "Mead base: Medium healing",
+            "name": "Mead Base: Medium Healing",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-medium-healing"
           },
           {
             "id": "mead-base-minor-healing",
-            "name": "Mead base: Minor healing",
+            "name": "Mead Base: Minor Healing",
             "level": 1,
             "biome": "black-forest",
             "itemId": "mead-base-minor-healing"
           },
           {
             "id": "mead-base-vananidir",
-            "name": "Mead base: Vananidir",
+            "name": "Mead Base: Vananidir",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-vananidir"
@@ -10900,6 +10703,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "draugr-fang",
             "name": "Draugr Fang",
+            "level": 2,
             "biome": "mountain",
             "itemId": "draugr-fang"
           },
@@ -11123,15 +10927,7 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "karve"
           }
         ],
-        "crafting": [
-          {
-            "id": "draugr-fang",
-            "name": "Draugr Fang",
-            "level": 2,
-            "biome": "mountain",
-            "itemId": "draugr-fang"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -11244,9 +11040,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "carrot",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -11329,6 +11127,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "stagbreaker",
             "name": "Stagbreaker",
+            "level": 2,
             "biome": "black-forest",
             "itemId": "stagbreaker"
           }
@@ -11347,13 +11146,6 @@ globalThis.VC_ITEMS_DATA = {
         ],
         "stations": [],
         "crafting": [
-          {
-            "id": "stagbreaker",
-            "name": "Stagbreaker",
-            "level": 2,
-            "biome": "black-forest",
-            "itemId": "stagbreaker"
-          },
           {
             "id": "mead-horn-of-odin",
             "name": "Mead Horn of Odin",
@@ -11622,7 +11414,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": "A simple torch would just be so old fashioned.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge, Dvergr Buildings",
+        "station": "Black Forge",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -11641,10 +11433,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "crystal",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge, Dvergr Buildings",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 1
       },
       "sources": {
@@ -11734,7 +11528,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": null,
       "stats": null,
       "recipe": {
-        "station": "Black forge",
+        "station": "Black Forge",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -11763,10 +11557,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black forge",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 1
       },
       "sources": {
@@ -11785,6 +11581,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "dyrnwyn",
             "name": "Dyrnwyn",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "dyrnwyn"
           }
@@ -11816,13 +11613,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "ashlands",
             "itemId": "dyrnwyn-tip-fragment"
-          },
-          {
-            "id": "dyrnwyn",
-            "name": "Dyrnwyn",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "dyrnwyn"
           }
         ]
       },
@@ -11846,7 +11636,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": null,
       "stats": null,
       "recipe": {
-        "station": "Black forge",
+        "station": "Black Forge",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -11875,10 +11665,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black forge",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 1
       },
       "sources": {
@@ -11897,6 +11689,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "dyrnwyn",
             "name": "Dyrnwyn",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "dyrnwyn"
           }
@@ -11928,13 +11721,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "ashlands",
             "itemId": "dyrnwyn-tip-fragment"
-          },
-          {
-            "id": "dyrnwyn",
-            "name": "Dyrnwyn",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "dyrnwyn"
           }
         ]
       },
@@ -11958,7 +11744,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": null,
       "stats": null,
       "recipe": {
-        "station": "Black forge",
+        "station": "Black Forge",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -11987,10 +11773,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black forge",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 1
       },
       "sources": {
@@ -12009,6 +11797,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "dyrnwyn",
             "name": "Dyrnwyn",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "dyrnwyn"
           }
@@ -12040,13 +11829,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "ashlands",
             "itemId": "dyrnwyn-tip-fragment"
-          },
-          {
-            "id": "dyrnwyn",
-            "name": "Dyrnwyn",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "dyrnwyn"
           }
         ]
       },
@@ -12056,8 +11838,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "egg",
       "name": "Egg",
       "image": "../provisions/img/items/egg.png",
-      "biome": "black-forest",
-      "tier": 2,
+      "biome": "plains",
+      "tier": 6,
       "category": "ingredient",
       "teleportable": true,
       "stack": 20,
@@ -12217,7 +11999,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/embers.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 0.5,
@@ -12248,6 +12030,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "ember-charge",
             "name": "Ember Charge",
+            "level": 1,
             "biome": "deep-north",
             "itemId": "ember-charge"
           }
@@ -12259,13 +12042,6 @@ globalThis.VC_ITEMS_DATA = {
         "expedition": [],
         "stations": [],
         "crafting": [
-          {
-            "id": "ember-charge",
-            "name": "Ember Charge",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "ember-charge"
-          },
           {
             "id": "snow-shovel",
             "name": "Snow Shovel",
@@ -12283,7 +12059,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/entrails.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "drop",
+      "category": "ingredient",
       "teleportable": true,
       "stack": 50,
       "weight": 0.5,
@@ -12368,7 +12144,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/feathers.png",
       "biome": "meadows",
       "tier": 1,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 0.1,
@@ -12752,7 +12528,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/fenris-claw.png",
       "biome": "mountain",
       "tier": 5,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": 20,
       "weight": 0.5,
@@ -12786,6 +12562,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "flesh-rippers",
             "name": "Flesh Rippers",
+            "level": 3,
             "biome": "mountain",
             "itemId": "flesh-rippers"
           }
@@ -12826,15 +12603,7 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "standing-brazier"
           }
         ],
-        "crafting": [
-          {
-            "id": "flesh-rippers",
-            "name": "Flesh Rippers",
-            "level": 3,
-            "biome": "mountain",
-            "itemId": "flesh-rippers"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -12844,7 +12613,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/fenris-hair.png",
       "biome": "mountain",
       "tier": 5,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 1,
@@ -12878,6 +12647,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "flesh-rippers",
             "name": "Flesh Rippers",
+            "level": 3,
             "biome": "mountain",
             "itemId": "flesh-rippers"
           }
@@ -12910,15 +12680,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "flesh-rippers",
-            "name": "Flesh Rippers",
-            "level": 3,
-            "biome": "mountain",
-            "itemId": "flesh-rippers"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -13027,8 +12789,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "fiery-spice-powder",
       "name": "Fiery Spice Powder",
       "image": "../provisions/img/items/fiery-spice-powder.png",
-      "biome": "deep-north",
-      "tier": 9,
+      "biome": "ashlands",
+      "tier": 8,
       "category": "ingredient",
       "teleportable": true,
       "stack": 100,
@@ -13137,12 +12899,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "abyssal-harpoon",
             "name": "Abyssal Harpoon",
+            "level": 2,
             "biome": "ocean",
             "itemId": "abyssal-harpoon"
           },
           {
             "id": "abyssal-razor",
             "name": "Abyssal Razor",
+            "level": 2,
             "biome": "ocean",
             "itemId": "abyssal-razor"
           },
@@ -13226,12 +12990,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "mistwalker",
             "name": "Mistwalker",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "mistwalker"
           },
           {
             "id": "porcupine",
             "name": "Porcupine",
+            "level": 4,
             "biome": "plains",
             "itemId": "porcupine"
           },
@@ -13259,25 +13025,19 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "skoll-and-hati",
             "name": "Skoll and Hati",
+            "level": 1,
             "biome": "plains",
             "itemId": "skoll-and-hati"
           },
           {
             "id": "spinesnap",
             "name": "Spinesnap",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "spinesnap"
           }
         ],
-        "armor": [
-          {
-            "id": "skoll-and-hati",
-            "name": "Skoll and Hati",
-            "level": 1,
-            "biome": "plains",
-            "itemId": "skoll-and-hati"
-          }
-        ],
+        "armor": [],
         "food": [],
         "meads": [],
         "comfort": [
@@ -13899,44 +13659,16 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "meadows",
             "itemId": "finewood-stack"
+          },
+          {
+            "id": "archery-target",
+            "name": "Archery Target",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "archery-target"
           }
         ],
         "crafting": [
-          {
-            "id": "abyssal-harpoon",
-            "name": "Abyssal Harpoon",
-            "level": 2,
-            "biome": "ocean",
-            "itemId": "abyssal-harpoon"
-          },
-          {
-            "id": "abyssal-razor",
-            "name": "Abyssal Razor",
-            "level": 2,
-            "biome": "ocean",
-            "itemId": "abyssal-razor"
-          },
-          {
-            "id": "mistwalker",
-            "name": "Mistwalker",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "mistwalker"
-          },
-          {
-            "id": "porcupine",
-            "name": "Porcupine",
-            "level": 4,
-            "biome": "plains",
-            "itemId": "porcupine"
-          },
-          {
-            "id": "spinesnap",
-            "name": "Spinesnap",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "spinesnap"
-          },
           {
             "id": "snow-shovel",
             "name": "Snow Shovel",
@@ -13957,13 +13689,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "meadows",
             "itemId": "mead-horn-of-odin"
-          },
-          {
-            "id": "archery-target",
-            "name": "Archery Target",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "archery-target"
           }
         ]
       },
@@ -14063,9 +13788,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "flametal-ore",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "blast-furnace"
       },
       "station": {
+        "id": "blast-furnace",
         "name": "Blast Furnace",
         "level": 1
       },
@@ -14085,6 +13812,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "ash-fang",
             "name": "Ash Fang",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "ash-fang"
           },
@@ -14105,30 +13833,35 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "blood-fang",
             "name": "Blood Fang",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "blood-fang"
           },
           {
             "id": "bloodgeon",
             "name": "Bloodgeon",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "bloodgeon"
           },
           {
             "id": "brutal-slayer",
             "name": "Brutal Slayer",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "brutal-slayer"
           },
           {
             "id": "dundr",
             "name": "Dundr",
+            "level": 2,
             "biome": "ashlands",
             "itemId": "dundr"
           },
           {
             "id": "dyrnwyn",
             "name": "Dyrnwyn",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "dyrnwyn"
           },
@@ -14156,30 +13889,35 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "klossen",
             "name": "Klossen",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "klossen"
           },
           {
             "id": "nidhogg",
             "name": "Nidhögg",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "nidhogg"
           },
           {
             "id": "nidhogg-the-bleeding",
             "name": "Nidhögg the Bleeding",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "nidhogg-the-bleeding"
           },
           {
             "id": "nidhogg-the-primal",
             "name": "Nidhögg the Primal",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "nidhogg-the-primal"
           },
           {
             "id": "nidhogg-the-thundering",
             "name": "Nidhögg the Thundering",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "nidhogg-the-thundering"
           },
@@ -14193,78 +13931,91 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "primal-slayer",
             "name": "Primal Slayer",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "primal-slayer"
           },
           {
             "id": "ripper",
             "name": "Ripper",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "ripper"
           },
           {
             "id": "root-fang",
             "name": "Root Fang",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "root-fang"
           },
           {
             "id": "root-ripper",
             "name": "Root Ripper",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "root-ripper"
           },
           {
             "id": "scourging-slayer",
             "name": "Scourging Slayer",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "scourging-slayer"
           },
           {
             "id": "slayer",
             "name": "Slayer",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "slayer"
           },
           {
             "id": "splitnir",
             "name": "Splitnir",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "splitnir"
           },
           {
             "id": "splitnir-the-bleeding",
             "name": "Splitnir the Bleeding",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "splitnir-the-bleeding"
           },
           {
             "id": "splitnir-the-primal",
             "name": "Splitnir the Primal",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "splitnir-the-primal"
           },
           {
             "id": "splitnir-the-storming",
             "name": "Splitnir the Storming",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "splitnir-the-storming"
           },
           {
             "id": "storm-fang",
             "name": "Storm Fang",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "storm-fang"
           },
           {
             "id": "storm-ripper",
             "name": "Storm Ripper",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "storm-ripper"
           },
           {
             "id": "storm-star",
             "name": "Storm Star",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "storm-star"
           },
@@ -14278,28 +14029,16 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "trollstav",
             "name": "Trollstav",
+            "level": 2,
             "biome": "ashlands",
             "itemId": "trollstav"
           },
           {
             "id": "wound-ripper",
             "name": "Wound Ripper",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "wound-ripper"
-          },
-          {
-            "id": "battering-ram",
-            "name": "Battering Ram",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "battering-ram"
-          },
-          {
-            "id": "catapult",
-            "name": "Catapult",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "catapult"
           }
         ],
         "armor": [
@@ -14337,20 +14076,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 3,
             "biome": "ashlands",
             "itemId": "flametal-greaves"
-          },
-          {
-            "id": "brimstone",
-            "name": "Brimstone",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "brimstone"
-          },
-          {
-            "id": "jormundling",
-            "name": "Jörmundling",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "jormundling"
           }
         ],
         "food": [],
@@ -14409,6 +14134,20 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "metal-cutter"
           },
           {
+            "id": "battering-ram",
+            "name": "Battering Ram",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "battering-ram"
+          },
+          {
+            "id": "catapult",
+            "name": "Catapult",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "catapult"
+          },
+          {
             "id": "grausten-chest",
             "name": "Grausten Chest",
             "level": 1,
@@ -14432,13 +14171,6 @@ globalThis.VC_ITEMS_DATA = {
         ],
         "crafting": [
           {
-            "id": "ash-fang",
-            "name": "Ash Fang",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "ash-fang"
-          },
-          {
             "id": "dyrnwyn-blade-fragment",
             "name": "Dyrnwyn blade fragment",
             "level": 1,
@@ -14460,181 +14192,6 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "dyrnwyn-tip-fragment"
           },
           {
-            "id": "nidhogg",
-            "name": "Nidhögg",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "nidhogg"
-          },
-          {
-            "id": "ripper",
-            "name": "Ripper",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "ripper"
-          },
-          {
-            "id": "slayer",
-            "name": "Slayer",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "slayer"
-          },
-          {
-            "id": "splitnir",
-            "name": "Splitnir",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "splitnir"
-          },
-          {
-            "id": "blood-fang",
-            "name": "Blood Fang",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "blood-fang"
-          },
-          {
-            "id": "bloodgeon",
-            "name": "Bloodgeon",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "bloodgeon"
-          },
-          {
-            "id": "brutal-slayer",
-            "name": "Brutal Slayer",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "brutal-slayer"
-          },
-          {
-            "id": "dundr",
-            "name": "Dundr",
-            "level": 2,
-            "biome": "ashlands",
-            "itemId": "dundr"
-          },
-          {
-            "id": "dyrnwyn",
-            "name": "Dyrnwyn",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "dyrnwyn"
-          },
-          {
-            "id": "klossen",
-            "name": "Klossen",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "klossen"
-          },
-          {
-            "id": "nidhogg-the-bleeding",
-            "name": "Nidhögg the Bleeding",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "nidhogg-the-bleeding"
-          },
-          {
-            "id": "nidhogg-the-primal",
-            "name": "Nidhögg the Primal",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "nidhogg-the-primal"
-          },
-          {
-            "id": "nidhogg-the-thundering",
-            "name": "Nidhögg the Thundering",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "nidhogg-the-thundering"
-          },
-          {
-            "id": "primal-slayer",
-            "name": "Primal Slayer",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "primal-slayer"
-          },
-          {
-            "id": "root-fang",
-            "name": "Root Fang",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "root-fang"
-          },
-          {
-            "id": "root-ripper",
-            "name": "Root Ripper",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "root-ripper"
-          },
-          {
-            "id": "scourging-slayer",
-            "name": "Scourging Slayer",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "scourging-slayer"
-          },
-          {
-            "id": "splitnir-the-bleeding",
-            "name": "Splitnir the Bleeding",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "splitnir-the-bleeding"
-          },
-          {
-            "id": "splitnir-the-primal",
-            "name": "Splitnir the Primal",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "splitnir-the-primal"
-          },
-          {
-            "id": "splitnir-the-storming",
-            "name": "Splitnir the Storming",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "splitnir-the-storming"
-          },
-          {
-            "id": "storm-fang",
-            "name": "Storm Fang",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "storm-fang"
-          },
-          {
-            "id": "storm-ripper",
-            "name": "Storm Ripper",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "storm-ripper"
-          },
-          {
-            "id": "storm-star",
-            "name": "Storm Star",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "storm-star"
-          },
-          {
-            "id": "trollstav",
-            "name": "Trollstav",
-            "level": 2,
-            "biome": "ashlands",
-            "itemId": "trollstav"
-          },
-          {
-            "id": "wound-ripper",
-            "name": "Wound Ripper",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "wound-ripper"
-          },
-          {
             "id": "flametal-missile",
             "name": "Flametal missile",
             "level": 1,
@@ -14654,6 +14211,20 @@ globalThis.VC_ITEMS_DATA = {
             "level": 3,
             "biome": "mountain",
             "itemId": "snow-shovel"
+          },
+          {
+            "id": "brimstone",
+            "name": "Brimstone",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "brimstone"
+          },
+          {
+            "id": "jormundling",
+            "name": "Jörmundling",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "jormundling"
           }
         ]
       },
@@ -14713,9 +14284,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Asksvin Hide",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 3
       },
@@ -14735,18 +14308,21 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "bloodgeon",
             "name": "Bloodgeon",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "bloodgeon"
           },
           {
             "id": "klossen",
             "name": "Klossen",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "klossen"
           },
           {
             "id": "storm-star",
             "name": "Storm Star",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "storm-star"
           }
@@ -14757,29 +14333,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "bloodgeon",
-            "name": "Bloodgeon",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "bloodgeon"
-          },
-          {
-            "id": "klossen",
-            "name": "Klossen",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "klossen"
-          },
-          {
-            "id": "storm-star",
-            "name": "Storm Star",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "storm-star"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {
         "smithy": "/smithy/#item=flametal-mace"
@@ -15033,8 +14587,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "fragrant-bundle",
       "name": "Fragrant Bundle",
       "image": "../provisions/img/items/fragrant-bundle.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "category": "ingredient",
       "teleportable": true,
       "stack": 50,
@@ -15153,6 +14707,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "frostner",
             "name": "Frostner",
+            "level": 3,
             "biome": "mountain",
             "itemId": "frostner"
           },
@@ -15185,13 +14740,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 4,
             "biome": "mountain",
             "itemId": "frost-arrow"
-          },
-          {
-            "id": "frostner",
-            "name": "Frostner",
-            "level": 3,
-            "biome": "mountain",
-            "itemId": "frostner"
           }
         ]
       },
@@ -15251,7 +14799,7 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-vananidir",
-            "name": "Mead base: Vananidir",
+            "name": "Mead Base: Vananidir",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-vananidir"
@@ -15268,7 +14816,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/frostfire-essence.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "building",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 0.5,
@@ -15344,6 +14892,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "frostfire-knucklechains",
             "name": "Frostfire Knucklechains",
+            "level": 4,
             "biome": "deep-north",
             "itemId": "frostfire-knucklechains"
           },
@@ -15381,27 +14930,19 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": [
-          {
-            "id": "frostfire-knucklechains",
-            "name": "Frostfire Knucklechains",
-            "level": 4,
-            "biome": "deep-north",
-            "itemId": "frostfire-knucklechains"
-          }
-        ],
+        "stations": [],
         "crafting": [
           {
             "id": "cast-echo-spike",
             "name": "Cast Echo Spike",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-echo-spike"
           },
           {
             "id": "mould-echo-spike",
             "name": "Mould Echo Spike",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "mould-echo-spike"
           }
@@ -15415,7 +14956,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/frozen-branch.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "drop",
       "teleportable": true,
       "stack": 50,
       "weight": 0.5,
@@ -15465,21 +15006,21 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-nord-greatsword",
             "name": "Cast Nord Greatsword",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-greatsword"
           },
           {
             "id": "mould-nord-greatsword",
             "name": "Mould Nord Greatsword",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-greatsword"
           },
           {
             "id": "cast-spirit-caller",
             "name": "Cast: Spirit Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-spirit-caller"
           }
@@ -15613,8 +15154,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "grasslands-herbalist-harvest",
       "name": "Grasslands Herbalist Harvest",
       "image": "../provisions/img/items/grasslands-herbalist-harvest.png",
-      "biome": "mistlands",
-      "tier": 7,
+      "biome": "plains",
+      "tier": 6,
       "category": "ingredient",
       "teleportable": true,
       "stack": 100,
@@ -15708,15 +15249,7 @@ globalThis.VC_ITEMS_DATA = {
         ]
       },
       "usedIn": {
-        "weapons": [
-          {
-            "id": "grausten-payload",
-            "name": "Grausten Payload",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "grausten-payload"
-          }
-        ],
+        "weapons": [],
         "armor": [],
         "food": [],
         "meads": [],
@@ -15760,7 +15293,15 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "portal-stone"
           }
         ],
-        "crafting": []
+        "crafting": [
+          {
+            "id": "grausten-payload",
+            "name": "Grausten Payload",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "grausten-payload"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -15914,7 +15455,7 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-frost-resistance",
-            "name": "Mead base: Frost resistance",
+            "name": "Mead Base: Frost Resistance",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-frost-resistance"
@@ -16001,7 +15542,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/guck.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 0.5,
@@ -16051,6 +15592,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "draugr-fang",
             "name": "Draugr Fang",
+            "level": 2,
             "biome": "mountain",
             "itemId": "draugr-fang"
           }
@@ -16084,15 +15626,7 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "standing-green-burning-iron-torch"
           }
         ],
-        "crafting": [
-          {
-            "id": "draugr-fang",
-            "name": "Draugr Fang",
-            "level": 2,
-            "biome": "mountain",
-            "itemId": "draugr-fang"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -16244,8 +15778,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "herbs-of-the-hidden-hills",
       "name": "Herbs of the Hidden Hills",
       "image": "../provisions/img/items/herbs-of-the-hidden-hills.png",
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "mistlands",
+      "tier": 7,
       "category": "ingredient",
       "teleportable": true,
       "stack": 100,
@@ -16346,15 +15880,7 @@ globalThis.VC_ITEMS_DATA = {
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
-          {
-            "id": "witch-crown",
-            "name": "Witch Crown",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "witch-crown"
-          }
-        ],
+        "armor": [],
         "food": [],
         "meads": [],
         "comfort": [],
@@ -16364,16 +15890,23 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-northern-vengeance",
             "name": "Cast Northern Vengeance",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-northern-vengeance"
           },
           {
             "id": "mould-northern-vengeance",
             "name": "Mould Northern Vengeance",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "mould-northern-vengeance"
+          },
+          {
+            "id": "witch-crown",
+            "name": "Witch Crown",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "witch-crown"
           }
         ]
       },
@@ -16551,63 +16084,63 @@ globalThis.VC_ITEMS_DATA = {
           },
           {
             "id": "mead-base-frost-resistance",
-            "name": "Mead base: Frost resistance",
+            "name": "Mead Base: Frost Resistance",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-frost-resistance"
           },
           {
             "id": "mead-base-major-healing",
-            "name": "Mead base: Major healing",
+            "name": "Mead Base: Major Healing",
             "level": 1,
             "biome": "mistlands",
             "itemId": "mead-base-major-healing"
           },
           {
             "id": "mead-base-medium-healing",
-            "name": "Mead base: Medium healing",
+            "name": "Mead Base: Medium Healing",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-medium-healing"
           },
           {
             "id": "mead-base-medium-stamina",
-            "name": "Mead base: Medium stamina",
+            "name": "Mead Base: Medium Stamina",
             "level": 1,
             "biome": "plains",
             "itemId": "mead-base-medium-stamina"
           },
           {
             "id": "mead-base-minor-eitr",
-            "name": "Mead base: Minor eitr",
+            "name": "Mead Base: Minor Eitr",
             "level": 1,
             "biome": "mistlands",
             "itemId": "mead-base-minor-eitr"
           },
           {
             "id": "mead-base-minor-healing",
-            "name": "Mead base: Minor healing",
+            "name": "Mead Base: Minor Healing",
             "level": 1,
             "biome": "black-forest",
             "itemId": "mead-base-minor-healing"
           },
           {
             "id": "mead-base-minor-stamina",
-            "name": "Mead base: Minor stamina",
+            "name": "Mead Base: Minor Stamina",
             "level": 1,
             "biome": "black-forest",
             "itemId": "mead-base-minor-stamina"
           },
           {
             "id": "mead-base-poison-resistance",
-            "name": "Mead base: Poison resistance",
+            "name": "Mead Base: Poison Resistance",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-poison-resistance"
           },
           {
             "id": "mead-base-tasty",
-            "name": "Mead base: Tasty",
+            "name": "Mead Base: Tasty",
             "level": 1,
             "biome": "black-forest",
             "itemId": "mead-base-tasty"
@@ -16714,11 +16247,11 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "northern-vengeance"
           },
           {
-            "id": "bloodgold-payload",
-            "name": "Bloodgold Payload",
+            "id": "snowball",
+            "name": "Snowball",
             "level": 1,
-            "biome": "ashlands",
-            "itemId": "bloodgold-payload"
+            "biome": "deep-north",
+            "itemId": "snowball"
           }
         ],
         "armor": [],
@@ -16775,7 +16308,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-northern-vengeance",
             "name": "Cast Northern Vengeance",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-northern-vengeance"
           },
@@ -16789,16 +16322,16 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "mould-northern-vengeance",
             "name": "Mould Northern Vengeance",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "mould-northern-vengeance"
           },
           {
-            "id": "snowball",
-            "name": "Snowball",
+            "id": "bloodgold-payload",
+            "name": "Bloodgold Payload",
             "level": 1,
-            "biome": "deep-north",
-            "itemId": "snowball"
+            "biome": "ashlands",
+            "itemId": "bloodgold-payload"
           }
         ]
       },
@@ -16810,7 +16343,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/iolite.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "valuable",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 2,
@@ -16843,36 +16376,42 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "nidhogg-the-thundering",
             "name": "Nidhögg the Thundering",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "nidhogg-the-thundering"
           },
           {
             "id": "scourging-slayer",
             "name": "Scourging Slayer",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "scourging-slayer"
           },
           {
             "id": "splitnir-the-storming",
             "name": "Splitnir the Storming",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "splitnir-the-storming"
           },
           {
             "id": "storm-fang",
             "name": "Storm Fang",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "storm-fang"
           },
           {
             "id": "storm-ripper",
             "name": "Storm Ripper",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "storm-ripper"
           },
           {
             "id": "storm-star",
             "name": "Storm Star",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "storm-star"
           },
@@ -16890,50 +16429,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "nidhogg-the-thundering",
-            "name": "Nidhögg the Thundering",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "nidhogg-the-thundering"
-          },
-          {
-            "id": "scourging-slayer",
-            "name": "Scourging Slayer",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "scourging-slayer"
-          },
-          {
-            "id": "splitnir-the-storming",
-            "name": "Splitnir the Storming",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "splitnir-the-storming"
-          },
-          {
-            "id": "storm-fang",
-            "name": "Storm Fang",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "storm-fang"
-          },
-          {
-            "id": "storm-ripper",
-            "name": "Storm Ripper",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "storm-ripper"
-          },
-          {
-            "id": "storm-star",
-            "name": "Storm Star",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "storm-star"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -16966,9 +16462,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "scrap-iron",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "smelter"
       },
       "station": {
+        "id": "smelter",
         "name": "Smelter",
         "level": 1
       },
@@ -16995,6 +16493,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "arbalest",
             "name": "Arbalest",
+            "level": 1,
             "biome": "swamp",
             "itemId": "arbalest"
           },
@@ -17015,6 +16514,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "demolisher",
             "name": "Demolisher",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "demolisher"
           },
@@ -17095,24 +16595,28 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "jotun-bane",
             "name": "Jotun Bane",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "jotun-bane"
           },
           {
             "id": "krom",
             "name": "Krom",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "krom"
           },
           {
             "id": "mistwalker",
             "name": "Mistwalker",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "mistwalker"
           },
           {
             "id": "porcupine",
             "name": "Porcupine",
+            "level": 4,
             "biome": "plains",
             "itemId": "porcupine"
           },
@@ -17140,21 +16644,16 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "skoll-and-hati",
             "name": "Skoll and Hati",
+            "level": 1,
             "biome": "plains",
             "itemId": "skoll-and-hati"
           },
           {
             "id": "skull-splittur",
             "name": "Skull Splittur",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "skull-splittur"
-          },
-          {
-            "id": "shield-generator",
-            "name": "Shield generator",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "shield-generator"
           }
         ],
         "armor": [
@@ -17220,27 +16719,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 2,
             "biome": "plains",
             "itemId": "padded-greaves"
-          },
-          {
-            "id": "skoll-and-hati",
-            "name": "Skoll and Hati",
-            "level": 1,
-            "biome": "plains",
-            "itemId": "skoll-and-hati"
-          },
-          {
-            "id": "iron-brooch",
-            "name": "Iron Brooch",
-            "level": 1,
-            "biome": "swamp",
-            "itemId": "iron-brooch"
-          },
-          {
-            "id": "nimble-anklet",
-            "name": "Nimble Anklet",
-            "level": 1,
-            "biome": "plains",
-            "itemId": "nimble-anklet"
           }
         ],
         "food": [],
@@ -17411,6 +16889,13 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "vice"
           },
           {
+            "id": "shield-generator",
+            "name": "Shield generator",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "shield-generator"
+          },
+          {
             "id": "stone-oven",
             "name": "Stone Oven",
             "level": 1,
@@ -17425,20 +16910,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "swamp",
             "itemId": "iron-nails"
-          },
-          {
-            "id": "arbalest",
-            "name": "Arbalest",
-            "level": 1,
-            "biome": "swamp",
-            "itemId": "arbalest"
-          },
-          {
-            "id": "demolisher",
-            "name": "Demolisher",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "demolisher"
           },
           {
             "id": "iron-bolt",
@@ -17462,41 +16933,6 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "ironhead-arrow"
           },
           {
-            "id": "jotun-bane",
-            "name": "Jotun Bane",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "jotun-bane"
-          },
-          {
-            "id": "krom",
-            "name": "Krom",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "krom"
-          },
-          {
-            "id": "mistwalker",
-            "name": "Mistwalker",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "mistwalker"
-          },
-          {
-            "id": "porcupine",
-            "name": "Porcupine",
-            "level": 4,
-            "biome": "plains",
-            "itemId": "porcupine"
-          },
-          {
-            "id": "skull-splittur",
-            "name": "Skull Splittur",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "skull-splittur"
-          },
-          {
             "id": "mechanical-spring",
             "name": "Mechanical Spring",
             "level": 1,
@@ -17509,6 +16945,20 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "meadows",
             "itemId": "horn-of-celebration"
+          },
+          {
+            "id": "iron-brooch",
+            "name": "Iron Brooch",
+            "level": 1,
+            "biome": "swamp",
+            "itemId": "iron-brooch"
+          },
+          {
+            "id": "nimble-anklet",
+            "name": "Nimble Anklet",
+            "level": 1,
+            "biome": "plains",
+            "itemId": "nimble-anklet"
           }
         ]
       },
@@ -17542,9 +16992,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "iron",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -17719,7 +17171,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/iron-pit.png",
       "biome": "meadows",
       "tier": 1,
-      "category": "building",
+      "category": "material",
       "teleportable": false,
       "stack": 10,
       "weight": 10,
@@ -17785,7 +17237,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/jade.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "valuable",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 2,
@@ -17818,12 +17270,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "klossen",
             "name": "Klossen",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "klossen"
           },
           {
             "id": "nidhogg-the-primal",
             "name": "Nidhögg the Primal",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "nidhogg-the-primal"
           },
@@ -17837,24 +17291,28 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "primal-slayer",
             "name": "Primal Slayer",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "primal-slayer"
           },
           {
             "id": "root-fang",
             "name": "Root Fang",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "root-fang"
           },
           {
             "id": "root-ripper",
             "name": "Root Ripper",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "root-ripper"
           },
           {
             "id": "splitnir-the-primal",
             "name": "Splitnir the Primal",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "splitnir-the-primal"
           },
@@ -17872,50 +17330,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "klossen",
-            "name": "Klossen",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "klossen"
-          },
-          {
-            "id": "nidhogg-the-primal",
-            "name": "Nidhögg the Primal",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "nidhogg-the-primal"
-          },
-          {
-            "id": "primal-slayer",
-            "name": "Primal Slayer",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "primal-slayer"
-          },
-          {
-            "id": "root-fang",
-            "name": "Root Fang",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "root-fang"
-          },
-          {
-            "id": "root-ripper",
-            "name": "Root Ripper",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "root-ripper"
-          },
-          {
-            "id": "splitnir-the-primal",
-            "name": "Splitnir the Primal",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "splitnir-the-primal"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -18008,14 +17423,14 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-lingering-stamina",
-            "name": "Mead base: Lingering stamina",
+            "name": "Mead Base: Lingering Stamina",
             "level": 1,
             "biome": "mistlands",
             "itemId": "mead-base-lingering-stamina"
           },
           {
             "id": "mead-base-minor-eitr",
-            "name": "Mead base: Minor eitr",
+            "name": "Mead Base: Minor Eitr",
             "level": 1,
             "biome": "mistlands",
             "itemId": "mead-base-minor-eitr"
@@ -18063,7 +17478,7 @@ globalThis.VC_ITEMS_DATA = {
         "servings": null
       },
       "recipe": {
-        "station": "None",
+        "station": null,
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -18072,12 +17487,10 @@ globalThis.VC_ITEMS_DATA = {
             "name": "kale-seeds",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": null
       },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -18225,7 +17638,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/leather-scraps.png",
       "biome": "meadows",
       "tier": 1,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 0.5,
@@ -18288,12 +17701,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "abyssal-harpoon",
             "name": "Abyssal Harpoon",
+            "level": 2,
             "biome": "ocean",
             "itemId": "abyssal-harpoon"
           },
           {
             "id": "abyssal-razor",
             "name": "Abyssal Razor",
+            "level": 2,
             "biome": "ocean",
             "itemId": "abyssal-razor"
           },
@@ -18410,6 +17825,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "paws-of-the-bear",
             "name": "Paws of the Bear",
+            "level": 2,
             "biome": "black-forest",
             "itemId": "paws-of-the-bear"
           },
@@ -18430,6 +17846,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "stagbreaker",
             "name": "Stagbreaker",
+            "level": 2,
             "biome": "black-forest",
             "itemId": "stagbreaker"
           },
@@ -18714,43 +18131,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "black-forest",
             "itemId": "cartography-table"
-          }
-        ],
-        "crafting": [
-          {
-            "id": "abyssal-harpoon",
-            "name": "Abyssal Harpoon",
-            "level": 2,
-            "biome": "ocean",
-            "itemId": "abyssal-harpoon"
-          },
-          {
-            "id": "abyssal-razor",
-            "name": "Abyssal Razor",
-            "level": 2,
-            "biome": "ocean",
-            "itemId": "abyssal-razor"
-          },
-          {
-            "id": "paws-of-the-bear",
-            "name": "Paws of the Bear",
-            "level": 2,
-            "biome": "black-forest",
-            "itemId": "paws-of-the-bear"
-          },
-          {
-            "id": "stagbreaker",
-            "name": "Stagbreaker",
-            "level": 2,
-            "biome": "black-forest",
-            "itemId": "stagbreaker"
-          },
-          {
-            "id": "lox-saddle",
-            "name": "Lox Saddle",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "lox-saddle"
           },
           {
             "id": "archery-target",
@@ -18758,6 +18138,15 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "meadows",
             "itemId": "archery-target"
+          }
+        ],
+        "crafting": [
+          {
+            "id": "lox-saddle",
+            "name": "Lox Saddle",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "lox-saddle"
           }
         ]
       },
@@ -18769,7 +18158,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/leather-straps.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "building",
+      "category": "drop",
       "teleportable": true,
       "stack": 50,
       "weight": 0.5,
@@ -18862,9 +18251,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "flax",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "spinning-wheel"
       },
       "station": {
+        "id": "spinning-wheel",
         "name": "Spinning Wheel",
         "level": 1
       },
@@ -18919,12 +18310,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "porcupine",
             "name": "Porcupine",
+            "level": 4,
             "biome": "plains",
             "itemId": "porcupine"
           },
           {
             "id": "vilebone-maulclaws",
             "name": "Vilebone Maulclaws",
+            "level": 3,
             "biome": "plains",
             "itemId": "vilebone-maulclaws"
           }
@@ -19034,13 +18427,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 2,
             "biome": "plains",
             "itemId": "vilebone-drapes"
-          },
-          {
-            "id": "evasion-mantle",
-            "name": "Evasion Mantle",
-            "level": 1,
-            "biome": "plains",
-            "itemId": "evasion-mantle"
           }
         ],
         "food": [],
@@ -19049,20 +18435,6 @@ globalThis.VC_ITEMS_DATA = {
         "expedition": [],
         "stations": [],
         "crafting": [
-          {
-            "id": "porcupine",
-            "name": "Porcupine",
-            "level": 4,
-            "biome": "plains",
-            "itemId": "porcupine"
-          },
-          {
-            "id": "vilebone-maulclaws",
-            "name": "Vilebone Maulclaws",
-            "level": 3,
-            "biome": "plains",
-            "itemId": "vilebone-maulclaws"
-          },
           {
             "id": "lox-saddle",
             "name": "Lox Saddle",
@@ -19083,6 +18455,13 @@ globalThis.VC_ITEMS_DATA = {
             "level": 2,
             "biome": "mistlands",
             "itemId": "moose-saddle"
+          },
+          {
+            "id": "evasion-mantle",
+            "name": "Evasion Mantle",
+            "level": 1,
+            "biome": "plains",
+            "itemId": "evasion-mantle"
           }
         ]
       },
@@ -19211,9 +18590,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "ice",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frigid-kiln"
       },
       "station": {
+        "id": "frigid-kiln",
         "name": "Frigid Kiln",
         "level": 1
       },
@@ -19233,12 +18614,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "echo-spike",
             "name": "Echo Spike",
+            "level": 3,
             "biome": "deep-north",
             "itemId": "echo-spike"
           },
           {
             "id": "lightning-strike",
             "name": "Lightning Strike",
+            "level": 3,
             "biome": "deep-north",
             "itemId": "lightning-strike"
           },
@@ -19308,6 +18691,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "nord-knucklechains",
             "name": "Nord Knucklechains",
+            "level": 4,
             "biome": "deep-north",
             "itemId": "nord-knucklechains"
           },
@@ -19349,8 +18733,16 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "northern-vengeance",
             "name": "Northern Vengeance",
+            "level": 3,
             "biome": "deep-north",
             "itemId": "northern-vengeance"
+          },
+          {
+            "id": "spirit-caller",
+            "name": "Spirit Caller",
+            "level": 3,
+            "biome": "ashlands",
+            "itemId": "spirit-caller"
           }
         ],
         "armor": [
@@ -19425,46 +18817,11 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": [
           {
-            "id": "nord-knucklechains",
-            "name": "Nord Knucklechains",
-            "level": 4,
-            "biome": "deep-north",
-            "itemId": "nord-knucklechains"
-          },
-          {
-            "id": "echo-spike",
-            "name": "Echo Spike",
-            "level": 3,
-            "biome": "deep-north",
-            "itemId": "echo-spike"
-          },
-          {
-            "id": "lightning-strike",
-            "name": "Lightning Strike",
-            "level": 3,
-            "biome": "deep-north",
-            "itemId": "lightning-strike"
-          },
-          {
-            "id": "northern-vengeance",
-            "name": "Northern Vengeance",
-            "level": 3,
-            "biome": "deep-north",
-            "itemId": "northern-vengeance"
-          },
-          {
             "id": "intricate-key",
             "name": "Intricate Key",
             "level": 1,
             "biome": "deep-north",
             "itemId": "intricate-key"
-          },
-          {
-            "id": "spirit-caller",
-            "name": "Spirit Caller",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "spirit-caller"
           }
         ]
       },
@@ -19509,15 +18866,7 @@ globalThis.VC_ITEMS_DATA = {
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
-          {
-            "id": "neckstabber",
-            "name": "Neckstabber",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "neckstabber"
-          }
-        ],
+        "armor": [],
         "food": [],
         "meads": [],
         "comfort": [],
@@ -19527,16 +18876,23 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-nord-knucklechains",
             "name": "Cast Nord Knucklechains",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-knucklechains"
           },
           {
             "id": "mould-nord-knucklechains",
             "name": "Mould Nord Knucklechains",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-knucklechains"
+          },
+          {
+            "id": "neckstabber",
+            "name": "Neckstabber",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "neckstabber"
           }
         ]
       },
@@ -19652,9 +19008,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "unbaked-lox-pie",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "oven"
       },
       "station": {
+        "id": "oven",
         "name": "Oven",
         "level": 1
       },
@@ -19784,13 +19142,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 2,
             "biome": "plains",
             "itemId": "lox-cape"
-          },
-          {
-            "id": "bracelets-of-the-brave",
-            "name": "Bracelets of the Brave",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "bracelets-of-the-brave"
           }
         ],
         "food": [],
@@ -19828,7 +19179,15 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "lox-rug"
           }
         ],
-        "crafting": []
+        "crafting": [
+          {
+            "id": "bracelets-of-the-brave",
+            "name": "Bracelets of the Brave",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "bracelets-of-the-brave"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -19934,14 +19293,14 @@ globalThis.VC_ITEMS_DATA = {
           },
           {
             "id": "mead-base-lingering-eitr",
-            "name": "Mead base: Lingering eitr",
+            "name": "Mead Base: Lingering Eitr",
             "level": 1,
             "biome": "ashlands",
             "itemId": "mead-base-lingering-eitr"
           },
           {
             "id": "mead-base-minor-eitr",
-            "name": "Mead base: Minor eitr",
+            "name": "Mead Base: Minor Eitr",
             "level": 1,
             "biome": "mistlands",
             "itemId": "mead-base-minor-eitr"
@@ -19956,7 +19315,6 @@ globalThis.VC_ITEMS_DATA = {
         ]
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=magecap",
         "provisions": "/provisions/#item=magecap"
       }
     },
@@ -20120,6 +19478,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "himminafl",
             "name": "Himminafl",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "himminafl"
           }
@@ -20131,13 +19490,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "mistlands",
             "itemId": "carapace-helmet"
-          },
-          {
-            "id": "resounding-shackle",
-            "name": "Resounding Shackle",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "resounding-shackle"
           }
         ],
         "food": [],
@@ -20147,18 +19499,18 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": [
           {
-            "id": "himminafl",
-            "name": "Himminafl",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "himminafl"
-          },
-          {
             "id": "grappling-hook",
             "name": "Grappling Hook",
             "level": 1,
             "biome": "mistlands",
             "itemId": "grappling-hook"
+          },
+          {
+            "id": "resounding-shackle",
+            "name": "Resounding Shackle",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "resounding-shackle"
           }
         ]
       },
@@ -20201,9 +19553,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "fragrant-bundle",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -20274,9 +19628,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "magecap",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -20347,9 +19703,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "cured-squirrel-hamstring",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -20420,9 +19778,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "powdered-dragon-eggshells",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -20458,7 +19818,7 @@ globalThis.VC_ITEMS_DATA = {
     },
     {
       "id": "mead-base-animal-whispers",
-      "name": "Mead base: Animal whispers",
+      "name": "Mead Base: Animal Whispers",
       "image": "../provisions/img/items/mead-base-animal-whispers.png",
       "biome": "swamp",
       "tier": 4,
@@ -20493,9 +19853,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "pungent-pebbles",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -20531,7 +19893,7 @@ globalThis.VC_ITEMS_DATA = {
     },
     {
       "id": "mead-base-berserkir",
-      "name": "Mead base: Berserkir",
+      "name": "Mead Base: Berserkir",
       "image": "../provisions/img/items/mead-base-berserkir.png",
       "biome": "plains",
       "tier": 6,
@@ -20566,9 +19928,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "toadstool",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -20604,7 +19968,7 @@ globalThis.VC_ITEMS_DATA = {
     },
     {
       "id": "mead-base-frost-resistance",
-      "name": "Mead base: Frost resistance",
+      "name": "Mead Base: Frost Resistance",
       "image": "../provisions/img/items/mead-base-frost-resistance.png",
       "biome": "swamp",
       "tier": 4,
@@ -20644,9 +20008,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "greydwarf-eye",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -20682,7 +20048,7 @@ globalThis.VC_ITEMS_DATA = {
     },
     {
       "id": "mead-base-lingering-eitr",
-      "name": "Mead base: Lingering eitr",
+      "name": "Mead Base: Lingering Eitr",
       "image": "../provisions/img/items/mead-base-lingering-eitr.png",
       "biome": "ashlands",
       "tier": 8,
@@ -20717,9 +20083,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "magecap",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -20755,7 +20123,7 @@ globalThis.VC_ITEMS_DATA = {
     },
     {
       "id": "mead-base-lingering-health",
-      "name": "Mead base: Lingering health",
+      "name": "Mead Base: Lingering Health",
       "image": "../provisions/img/items/mead-base-lingering-health.png",
       "biome": "ashlands",
       "tier": 8,
@@ -20790,9 +20158,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "smoke-puff",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -20828,7 +20198,7 @@ globalThis.VC_ITEMS_DATA = {
     },
     {
       "id": "mead-base-lingering-stamina",
-      "name": "Mead base: Lingering stamina",
+      "name": "Mead Base: Lingering Stamina",
       "image": "../provisions/img/items/mead-base-lingering-stamina.png",
       "biome": "mistlands",
       "tier": 7,
@@ -20863,9 +20233,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "jotun-puffs",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -20901,7 +20273,7 @@ globalThis.VC_ITEMS_DATA = {
     },
     {
       "id": "mead-base-major-healing",
-      "name": "Mead base: Major healing",
+      "name": "Mead Base: Major Healing",
       "image": "../provisions/img/items/mead-base-major-healing.png",
       "biome": "mistlands",
       "tier": 7,
@@ -20936,9 +20308,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "royal-jelly",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -20974,7 +20348,7 @@ globalThis.VC_ITEMS_DATA = {
     },
     {
       "id": "mead-base-medium-healing",
-      "name": "Mead base: Medium healing",
+      "name": "Mead Base: Medium Healing",
       "image": "../provisions/img/items/mead-base-medium-healing.png",
       "biome": "swamp",
       "tier": 4,
@@ -21014,9 +20388,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "dandelion",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -21052,7 +20428,7 @@ globalThis.VC_ITEMS_DATA = {
     },
     {
       "id": "mead-base-medium-stamina",
-      "name": "Mead base: Medium stamina",
+      "name": "Mead Base: Medium Stamina",
       "image": "../provisions/img/items/mead-base-medium-stamina.png",
       "biome": "plains",
       "tier": 6,
@@ -21087,9 +20463,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "yellow-mushroom",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -21125,7 +20503,7 @@ globalThis.VC_ITEMS_DATA = {
     },
     {
       "id": "mead-base-minor-eitr",
-      "name": "Mead base: Minor eitr",
+      "name": "Mead Base: Minor Eitr",
       "image": "../provisions/img/items/mead-base-minor-eitr.png",
       "biome": "mistlands",
       "tier": 7,
@@ -21165,9 +20543,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "magecap",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -21203,7 +20583,7 @@ globalThis.VC_ITEMS_DATA = {
     },
     {
       "id": "mead-base-minor-healing",
-      "name": "Mead base: Minor healing",
+      "name": "Mead Base: Minor Healing",
       "image": "../provisions/img/items/mead-base-minor-healing.png",
       "biome": "black-forest",
       "tier": 2,
@@ -21243,9 +20623,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "dandelion",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -21281,7 +20663,7 @@ globalThis.VC_ITEMS_DATA = {
     },
     {
       "id": "mead-base-minor-stamina",
-      "name": "Mead base: Minor stamina",
+      "name": "Mead Base: Minor Stamina",
       "image": "../provisions/img/items/mead-base-minor-stamina.png",
       "biome": "black-forest",
       "tier": 2,
@@ -21316,9 +20698,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "yellow-mushroom",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -21354,7 +20738,7 @@ globalThis.VC_ITEMS_DATA = {
     },
     {
       "id": "mead-base-poison-resistance",
-      "name": "Mead base: Poison resistance",
+      "name": "Mead Base: Poison Resistance",
       "image": "../provisions/img/items/mead-base-poison-resistance.png",
       "biome": "swamp",
       "tier": 4,
@@ -21394,9 +20778,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "coal",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -21432,7 +20818,7 @@ globalThis.VC_ITEMS_DATA = {
     },
     {
       "id": "mead-base-tasty",
-      "name": "Mead base: Tasty",
+      "name": "Mead Base: Tasty",
       "image": "../provisions/img/items/mead-base-tasty.png",
       "biome": "black-forest",
       "tier": 2,
@@ -21467,9 +20853,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "blueberries",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -21505,7 +20893,7 @@ globalThis.VC_ITEMS_DATA = {
     },
     {
       "id": "mead-base-vananidir",
-      "name": "Mead base: Vananidir",
+      "name": "Mead Base: Vananidir",
       "image": "../provisions/img/items/mead-base-vananidir.png",
       "biome": "swamp",
       "tier": 4,
@@ -21540,9 +20928,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "fresh-seaweed",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -21611,9 +21001,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "uncooked-misthare-supreme",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "oven"
       },
       "station": {
+        "id": "oven",
         "name": "Oven",
         "level": 1
       },
@@ -21656,7 +21048,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/moose-hide.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 1,
@@ -21795,56 +21187,56 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-breastplate-of-the-protector",
             "name": "Cast Breastplate of the Protector",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-breastplate-of-the-protector"
           },
           {
             "id": "cast-chestpiece-of-the-vanguard",
             "name": "Cast Chestpiece of the Vanguard",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-chestpiece-of-the-vanguard"
           },
           {
             "id": "cast-helmet-of-the-protector",
             "name": "Cast Helmet of the Protector",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-helmet-of-the-protector"
           },
           {
             "id": "cast-hood-of-the-vanguard",
             "name": "Cast Hood of the Vanguard",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-hood-of-the-vanguard"
           },
           {
             "id": "cast-trousers-of-the-protector",
             "name": "Cast Trousers of the Protector",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-trousers-of-the-protector"
           },
           {
             "id": "cast-trousers-of-the-vanguard",
             "name": "Cast Trousers of the Vanguard",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-trousers-of-the-vanguard"
           },
           {
             "id": "mould-helmet-of-the-protector",
             "name": "Mould Helmet of the Protector",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-helmet-of-the-protector"
           },
           {
             "id": "mould-hood-of-the-vanguard",
             "name": "Mould Hood of the Vanguard",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-hood-of-the-vanguard"
           }
@@ -22009,56 +21401,56 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-chestpiece-of-the-vanguard",
             "name": "Cast Chestpiece of the Vanguard",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-chestpiece-of-the-vanguard"
           },
           {
             "id": "cast-headdress-of-the-caller",
             "name": "Cast Headdress of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-headdress-of-the-caller"
           },
           {
             "id": "cast-hood-of-the-vanguard",
             "name": "Cast Hood of the Vanguard",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-hood-of-the-vanguard"
           },
           {
             "id": "cast-robes-of-the-caller",
             "name": "Cast Robes of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-robes-of-the-caller"
           },
           {
             "id": "cast-trousers-of-the-caller",
             "name": "Cast Trousers of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-trousers-of-the-caller"
           },
           {
             "id": "cast-trousers-of-the-vanguard",
             "name": "Cast Trousers of the Vanguard",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-trousers-of-the-vanguard"
           },
           {
             "id": "mould-headdress-of-the-caller",
             "name": "Mould Headdress of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "mould-headdress-of-the-caller"
           },
           {
             "id": "mould-hood-of-the-vanguard",
             "name": "Mould Hood of the Vanguard",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-hood-of-the-vanguard"
           }
@@ -22115,13 +21507,6 @@ globalThis.VC_ITEMS_DATA = {
             "set": "caller-set",
             "biome": "deep-north",
             "itemId": "headdress-of-the-caller"
-          },
-          {
-            "id": "neckstabber",
-            "name": "Neckstabber",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "neckstabber"
           }
         ],
         "food": [],
@@ -22149,37 +21534,44 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-headdress-of-the-caller",
             "name": "Cast Headdress of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-headdress-of-the-caller"
           },
           {
             "id": "cast-robes-of-the-caller",
             "name": "Cast Robes of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-robes-of-the-caller"
           },
           {
             "id": "cast-trousers-of-the-caller",
             "name": "Cast Trousers of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-trousers-of-the-caller"
           },
           {
             "id": "mould-headdress-of-the-caller",
             "name": "Mould Headdress of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "mould-headdress-of-the-caller"
           },
           {
             "id": "cast-spirit-caller",
             "name": "Cast: Spirit Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-spirit-caller"
+          },
+          {
+            "id": "neckstabber",
+            "name": "Neckstabber",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "neckstabber"
           }
         ]
       },
@@ -22288,12 +21680,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "ripper",
             "name": "Ripper",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "ripper"
           },
           {
             "id": "slayer",
             "name": "Slayer",
+            "level": 3,
             "biome": "ashlands",
             "itemId": "slayer"
           }
@@ -22329,20 +21723,6 @@ globalThis.VC_ITEMS_DATA = {
         ],
         "crafting": [
           {
-            "id": "ripper",
-            "name": "Ripper",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "ripper"
-          },
-          {
-            "id": "slayer",
-            "name": "Slayer",
-            "level": 3,
-            "biome": "ashlands",
-            "itemId": "slayer"
-          },
-          {
             "id": "asksvin-saddle",
             "name": "Asksvin Saddle",
             "level": 2,
@@ -22359,7 +21739,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-echo-spike.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -22368,8 +21748,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a powerful magical item.",
       "stats": null,
       "recipe": {
-        "station": "Galdr Table level 3",
-        "stationLevel": 1,
+        "station": "Galdr Table",
+        "stationLevel": 3,
         "yields": 1,
         "materials": [
           {
@@ -22392,11 +21772,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "mould-echo-spike",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table level 3",
-        "level": 1
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -22421,14 +21803,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-echo-spike",
             "name": "Cast Echo Spike",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-echo-spike"
           },
           {
             "id": "mould-echo-spike",
             "name": "Mould Echo Spike",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "mould-echo-spike"
           }
@@ -22442,7 +21824,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-headdress-of-the-caller.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -22451,8 +21833,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a spectacular piece of armour.",
       "stats": null,
       "recipe": {
-        "station": "Galdr Table level 3",
-        "stationLevel": 1,
+        "station": "Galdr Table",
+        "stationLevel": 3,
         "yields": 1,
         "materials": [
           {
@@ -22475,11 +21857,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "nornathread",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table level 3",
-        "level": 1
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 3
       },
       "sources": {
         "creatures": [
@@ -22510,28 +21894,28 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-headdress-of-the-caller",
             "name": "Cast Headdress of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-headdress-of-the-caller"
           },
           {
             "id": "cast-robes-of-the-caller",
             "name": "Cast Robes of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-robes-of-the-caller"
           },
           {
             "id": "cast-trousers-of-the-caller",
             "name": "Cast Trousers of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-trousers-of-the-caller"
           },
           {
             "id": "mould-headdress-of-the-caller",
             "name": "Mould Headdress of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "mould-headdress-of-the-caller"
           }
@@ -22545,7 +21929,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-helmet-of-the-protector.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -22554,8 +21938,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a spectacular piece of armour.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -22573,11 +21957,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "moose-hide",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [
@@ -22608,28 +21994,28 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-breastplate-of-the-protector",
             "name": "Cast Breastplate of the Protector",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-breastplate-of-the-protector"
           },
           {
             "id": "cast-helmet-of-the-protector",
             "name": "Cast Helmet of the Protector",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-helmet-of-the-protector"
           },
           {
             "id": "cast-trousers-of-the-protector",
             "name": "Cast Trousers of the Protector",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-trousers-of-the-protector"
           },
           {
             "id": "mould-helmet-of-the-protector",
             "name": "Mould Helmet of the Protector",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-helmet-of-the-protector"
           }
@@ -22643,7 +22029,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-hood-of-the-vanguard.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -22652,8 +22038,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a spectacular piece of armour.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -22676,11 +22062,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "moose-sinew",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [
@@ -22711,28 +22099,28 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-chestpiece-of-the-vanguard",
             "name": "Cast Chestpiece of the Vanguard",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-chestpiece-of-the-vanguard"
           },
           {
             "id": "cast-hood-of-the-vanguard",
             "name": "Cast Hood of the Vanguard",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-hood-of-the-vanguard"
           },
           {
             "id": "cast-trousers-of-the-vanguard",
             "name": "Cast Trousers of the Vanguard",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-trousers-of-the-vanguard"
           },
           {
             "id": "mould-hood-of-the-vanguard",
             "name": "Mould Hood of the Vanguard",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-hood-of-the-vanguard"
           }
@@ -22746,7 +22134,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-lightning-strike.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -22755,8 +22143,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a powerful magical item.",
       "stats": null,
       "recipe": {
-        "station": "Galdr Table level 3",
-        "stationLevel": 1,
+        "station": "Galdr Table",
+        "stationLevel": 3,
         "yields": 1,
         "materials": [
           {
@@ -22779,11 +22167,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "mould-lightning-strike",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table level 3",
-        "level": 1
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -22808,14 +22198,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-lightning-strike",
             "name": "Cast Lightning Strike",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-lightning-strike"
           },
           {
             "id": "mould-lightning-strike",
             "name": "Mould Lightning Strike",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "mould-lightning-strike"
           }
@@ -22829,7 +22219,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-nord-atgeir.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -22838,8 +22228,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -22857,11 +22247,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -22886,14 +22278,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-nord-atgeir",
             "name": "Cast Nord Atgeir",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-atgeir"
           },
           {
             "id": "mould-nord-atgeir",
             "name": "Mould Nord Atgeir",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-atgeir"
           }
@@ -22907,7 +22299,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-nord-axe.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -22916,8 +22308,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -22935,11 +22327,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -22964,14 +22358,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-nord-axe",
             "name": "Cast Nord Axe",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-axe"
           },
           {
             "id": "mould-nord-axe",
             "name": "Mould Nord Axe",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-axe"
           }
@@ -22985,7 +22379,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-nord-bow.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -22994,8 +22388,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -23013,11 +22407,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -23042,14 +22438,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-nord-bow",
             "name": "Cast Nord Bow",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-bow"
           },
           {
             "id": "mould-nord-bow",
             "name": "Mould Nord Bow",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-bow"
           }
@@ -23063,7 +22459,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-nord-buckler.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "shield",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -23072,8 +22468,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a hardy shield.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -23091,11 +22487,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "mould-nord-buckler",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -23109,33 +22507,31 @@ globalThis.VC_ITEMS_DATA = {
         ]
       },
       "usedIn": {
-        "weapons": [
-          {
-            "id": "cast-nord-buckler",
-            "name": "Cast Nord Buckler",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "cast-nord-buckler"
-          },
-          {
-            "id": "mould-nord-buckler",
-            "name": "Mould Nord Buckler",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "mould-nord-buckler"
-          }
-        ],
+        "weapons": [],
         "armor": [],
         "food": [],
         "meads": [],
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": []
+        "crafting": [
+          {
+            "id": "cast-nord-buckler",
+            "name": "Cast Nord Buckler",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "cast-nord-buckler"
+          },
+          {
+            "id": "mould-nord-buckler",
+            "name": "Mould Nord Buckler",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "mould-nord-buckler"
+          }
+        ]
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=mould-nord-buckler"
-      }
+      "crossLinks": {}
     },
     {
       "id": "mould-nord-crossbow",
@@ -23143,7 +22539,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-nord-crossbow.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -23152,8 +22548,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -23171,11 +22567,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -23200,14 +22598,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-nord-crossbow",
             "name": "Cast Nord Crossbow",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-crossbow"
           },
           {
             "id": "mould-nord-crossbow",
             "name": "Mould Nord Crossbow",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-crossbow"
           }
@@ -23221,7 +22619,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-nord-dagger.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -23230,8 +22628,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -23249,11 +22647,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -23278,14 +22678,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-nord-dagger",
             "name": "Cast Nord Dagger",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-dagger"
           },
           {
             "id": "mould-nord-dagger",
             "name": "Mould Nord Dagger",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-dagger"
           }
@@ -23299,7 +22699,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-nord-greataxe.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -23308,8 +22708,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -23327,11 +22727,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -23356,14 +22758,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-nord-greataxe",
             "name": "Cast Nord Greataxe",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-greataxe"
           },
           {
             "id": "mould-nord-greataxe",
             "name": "Mould Nord Greataxe",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-greataxe"
           }
@@ -23377,7 +22779,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-nord-greatshield.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "shield",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -23386,8 +22788,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a hardy shield.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -23405,11 +22807,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "mould-nord-greatshield",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -23423,33 +22827,31 @@ globalThis.VC_ITEMS_DATA = {
         ]
       },
       "usedIn": {
-        "weapons": [
-          {
-            "id": "cast-nord-greatshield",
-            "name": "Cast Nord Greatshield",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "cast-nord-greatshield"
-          },
-          {
-            "id": "mould-nord-greatshield",
-            "name": "Mould Nord Greatshield",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "mould-nord-greatshield"
-          }
-        ],
+        "weapons": [],
         "armor": [],
         "food": [],
         "meads": [],
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": []
+        "crafting": [
+          {
+            "id": "cast-nord-greatshield",
+            "name": "Cast Nord Greatshield",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "cast-nord-greatshield"
+          },
+          {
+            "id": "mould-nord-greatshield",
+            "name": "Mould Nord Greatshield",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "mould-nord-greatshield"
+          }
+        ]
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=mould-nord-greatshield"
-      }
+      "crossLinks": {}
     },
     {
       "id": "mould-nord-greatsword",
@@ -23457,7 +22859,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-nord-greatsword.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -23466,8 +22868,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -23485,11 +22887,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "frozen-branch",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -23514,14 +22918,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-nord-greatsword",
             "name": "Cast Nord Greatsword",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-greatsword"
           },
           {
             "id": "mould-nord-greatsword",
             "name": "Mould Nord Greatsword",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-greatsword"
           }
@@ -23535,7 +22939,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-nord-knucklechains.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -23544,8 +22948,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -23563,11 +22967,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "long-claws",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -23592,14 +22998,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-nord-knucklechains",
             "name": "Cast Nord Knucklechains",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-knucklechains"
           },
           {
             "id": "mould-nord-knucklechains",
             "name": "Mould Nord Knucklechains",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-knucklechains"
           }
@@ -23613,7 +23019,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-nord-mace.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -23622,8 +23028,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -23641,11 +23047,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -23670,14 +23078,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-nord-mace",
             "name": "Cast Nord Mace",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-mace"
           },
           {
             "id": "mould-nord-mace",
             "name": "Mould Nord Mace",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-mace"
           }
@@ -23691,7 +23099,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-nord-shield.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "shield",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -23700,8 +23108,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a hardy shield.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -23719,11 +23127,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "mould-nord-shield",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -23737,33 +23147,31 @@ globalThis.VC_ITEMS_DATA = {
         ]
       },
       "usedIn": {
-        "weapons": [
-          {
-            "id": "cast-nord-shield",
-            "name": "Cast Nord Shield",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "cast-nord-shield"
-          },
-          {
-            "id": "mould-nord-shield",
-            "name": "Mould Nord Shield",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "mould-nord-shield"
-          }
-        ],
+        "weapons": [],
         "armor": [],
         "food": [],
         "meads": [],
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": []
+        "crafting": [
+          {
+            "id": "cast-nord-shield",
+            "name": "Cast Nord Shield",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "cast-nord-shield"
+          },
+          {
+            "id": "mould-nord-shield",
+            "name": "Mould Nord Shield",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "mould-nord-shield"
+          }
+        ]
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=mould-nord-shield"
-      }
+      "crossLinks": {}
     },
     {
       "id": "mould-nord-sledge",
@@ -23771,7 +23179,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-nord-sledge.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -23780,8 +23188,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -23799,11 +23207,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -23828,14 +23238,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-nord-sledge",
             "name": "Cast Nord Sledge",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-sledge"
           },
           {
             "id": "mould-nord-sledge",
             "name": "Mould Nord Sledge",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-sledge"
           }
@@ -23849,7 +23259,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-nord-spear.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -23858,8 +23268,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -23877,11 +23287,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -23906,14 +23318,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-nord-spear",
             "name": "Cast Nord Spear",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-spear"
           },
           {
             "id": "mould-nord-spear",
             "name": "Mould Nord Spear",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-spear"
           }
@@ -23927,7 +23339,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-nord-sword.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -23936,8 +23348,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a most formidable weapon.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -23955,11 +23367,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -23984,14 +23398,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-nord-sword",
             "name": "Cast Nord Sword",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-sword"
           },
           {
             "id": "mould-nord-sword",
             "name": "Mould Nord Sword",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-sword"
           }
@@ -24005,7 +23419,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mould-northern-vengeance.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -24014,8 +23428,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Filled with the right material, this mould will create a powerful magical item.",
       "stats": null,
       "recipe": {
-        "station": "Galdr Table level 3",
-        "stationLevel": 1,
+        "station": "Galdr Table",
+        "stationLevel": 3,
         "yields": 1,
         "materials": [
           {
@@ -24038,11 +23452,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "mould-northern-vengeance",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table level 3",
-        "level": 1
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -24067,14 +23483,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-northern-vengeance",
             "name": "Cast Northern Vengeance",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-northern-vengeance"
           },
           {
             "id": "mould-northern-vengeance",
             "name": "Mould Northern Vengeance",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "mould-northern-vengeance"
           }
@@ -24086,8 +23502,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "mountain-peak-pepper-powder",
       "name": "Mountain Peak Pepper Powder",
       "image": "../provisions/img/items/mountain-peak-pepper-powder.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "category": "ingredient",
       "teleportable": true,
       "stack": 100,
@@ -24255,7 +23671,7 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-berserkir",
-            "name": "Mead base: Berserkir",
+            "name": "Mead Base: Berserkir",
             "level": 1,
             "biome": "plains",
             "itemId": "mead-base-berserkir"
@@ -24272,7 +23688,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/mysterious-axe-head.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "weapon",
+      "category": "material",
       "teleportable": true,
       "stack": 10,
       "weight": 2,
@@ -24318,9 +23734,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=mysterious-axe-head"
-      }
+      "crossLinks": {}
     },
     {
       "id": "neck-tail",
@@ -24397,7 +23811,7 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-poison-resistance",
-            "name": "Mead base: Poison resistance",
+            "name": "Mead Base: Poison Resistance",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-poison-resistance"
@@ -24457,6 +23871,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "porcupine",
             "name": "Porcupine",
+            "level": 4,
             "biome": "plains",
             "itemId": "porcupine"
           }
@@ -24474,13 +23889,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 4,
             "biome": "plains",
             "itemId": "needle-arrow"
-          },
-          {
-            "id": "porcupine",
-            "name": "Porcupine",
-            "level": 4,
-            "biome": "plains",
-            "itemId": "porcupine"
           }
         ]
       },
@@ -24492,7 +23900,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/nidhogg.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -24515,7 +23923,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Black forge",
+        "station": "Black Forge",
         "stationLevel": 3,
         "yields": 1,
         "materials": [
@@ -24534,10 +23942,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Asksvin Hide",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black forge",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 3
       },
       "sources": {
@@ -24556,18 +23966,21 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "nidhogg-the-bleeding",
             "name": "Nidhögg the Bleeding",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "nidhogg-the-bleeding"
           },
           {
             "id": "nidhogg-the-primal",
             "name": "Nidhögg the Primal",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "nidhogg-the-primal"
           },
           {
             "id": "nidhogg-the-thundering",
             "name": "Nidhögg the Thundering",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "nidhogg-the-thundering"
           }
@@ -24578,29 +23991,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "nidhogg-the-bleeding",
-            "name": "Nidhögg the Bleeding",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "nidhogg-the-bleeding"
-          },
-          {
-            "id": "nidhogg-the-primal",
-            "name": "Nidhögg the Primal",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "nidhogg-the-primal"
-          },
-          {
-            "id": "nidhogg-the-thundering",
-            "name": "Nidhögg the Thundering",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "nidhogg-the-thundering"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {
         "smithy": "/smithy/#item=nidhogg"
@@ -24647,9 +24038,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 4
       },
@@ -24736,9 +24129,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 4
       },
@@ -24825,9 +24220,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 4
       },
@@ -24914,9 +24311,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 4
       },
@@ -25003,9 +24402,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 4
       },
@@ -25092,9 +24493,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 4
       },
@@ -25179,9 +24582,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 4
       },
@@ -25231,7 +24636,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/nord-knucklechains.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -25266,9 +24671,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 4
       },
@@ -25288,12 +24695,14 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "frostfire-knucklechains",
             "name": "Frostfire Knucklechains",
+            "level": 4,
             "biome": "deep-north",
             "itemId": "frostfire-knucklechains"
           },
           {
             "id": "thunderblood-knucklechains",
             "name": "Thunderblood Knucklechains",
+            "level": 4,
             "biome": "deep-north",
             "itemId": "thunderblood-knucklechains"
           }
@@ -25303,24 +24712,8 @@ globalThis.VC_ITEMS_DATA = {
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": [
-          {
-            "id": "frostfire-knucklechains",
-            "name": "Frostfire Knucklechains",
-            "level": 4,
-            "biome": "deep-north",
-            "itemId": "frostfire-knucklechains"
-          }
-        ],
-        "crafting": [
-          {
-            "id": "thunderblood-knucklechains",
-            "name": "Thunderblood Knucklechains",
-            "level": 4,
-            "biome": "deep-north",
-            "itemId": "thunderblood-knucklechains"
-          }
-        ]
+        "stations": [],
+        "crafting": []
       },
       "crossLinks": {
         "smithy": "/smithy/#item=nord-knucklechains"
@@ -25367,9 +24760,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 4
       },
@@ -25454,9 +24849,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 4
       },
@@ -25541,9 +24938,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 4
       },
@@ -25628,9 +25027,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 4
       },
@@ -25680,7 +25081,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/nornathread.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "drop",
       "teleportable": true,
       "stack": 50,
       "weight": 0.5,
@@ -25760,13 +25161,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 4,
             "biome": "deep-north",
             "itemId": "cape-of-the-caller"
-          },
-          {
-            "id": "witch-crown",
-            "name": "Witch Crown",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "witch-crown"
           }
         ],
         "food": [],
@@ -25786,79 +25180,86 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-echo-spike",
             "name": "Cast Echo Spike",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-echo-spike"
           },
           {
             "id": "cast-headdress-of-the-caller",
             "name": "Cast Headdress of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-headdress-of-the-caller"
           },
           {
             "id": "cast-lightning-strike",
             "name": "Cast Lightning Strike",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-lightning-strike"
           },
           {
             "id": "cast-northern-vengeance",
             "name": "Cast Northern Vengeance",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-northern-vengeance"
           },
           {
             "id": "cast-robes-of-the-caller",
             "name": "Cast Robes of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-robes-of-the-caller"
           },
           {
             "id": "cast-trousers-of-the-caller",
             "name": "Cast Trousers of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-trousers-of-the-caller"
           },
           {
             "id": "mould-echo-spike",
             "name": "Mould Echo Spike",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "mould-echo-spike"
           },
           {
             "id": "mould-headdress-of-the-caller",
             "name": "Mould Headdress of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "mould-headdress-of-the-caller"
           },
           {
             "id": "mould-lightning-strike",
             "name": "Mould Lightning Strike",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "mould-lightning-strike"
           },
           {
             "id": "mould-northern-vengeance",
             "name": "Mould Northern Vengeance",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "mould-northern-vengeance"
           },
           {
             "id": "cast-spirit-caller",
             "name": "Cast: Spirit Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-spirit-caller"
+          },
+          {
+            "id": "witch-crown",
+            "name": "Witch Crown",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "witch-crown"
           }
         ]
       },
@@ -25945,9 +25346,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "oats",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "windmill"
       },
       "station": {
+        "id": "windmill",
         "name": "Windmill",
         "level": 1
       },
@@ -26048,9 +25451,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "ice",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -26169,7 +25574,7 @@ globalThis.VC_ITEMS_DATA = {
         "servings": null
       },
       "recipe": {
-        "station": "None",
+        "station": null,
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -26178,12 +25583,10 @@ globalThis.VC_ITEMS_DATA = {
             "name": "oat-seeds",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": null
       },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -26434,7 +25837,7 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-animal-whispers",
-            "name": "Mead base: Animal whispers",
+            "name": "Mead Base: Animal Whispers",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-animal-whispers"
@@ -26480,9 +25883,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "onion",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 2
       },
@@ -26655,9 +26060,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "oat-flour",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -26755,7 +26162,7 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-vananidir",
-            "name": "Mead base: Vananidir",
+            "name": "Mead Base: Vananidir",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-vananidir"
@@ -26770,7 +26177,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/petrified-tissue.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "metal",
       "teleportable": false,
       "stack": 30,
       "weight": 14,
@@ -26992,9 +26399,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "surtling-core",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -27141,7 +26550,7 @@ globalThis.VC_ITEMS_DATA = {
         "servings": null
       },
       "recipe": {
-        "station": "None",
+        "station": null,
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -27150,12 +26559,10 @@ globalThis.VC_ITEMS_DATA = {
             "name": "seed-poteitr",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": null
       },
-      "station": {
-        "name": "None",
-        "level": 1
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -27346,25 +26753,11 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "staff-of-fracturing"
           },
           {
-            "id": "explosive-payload",
-            "name": "Explosive Payload",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "explosive-payload"
-          },
-          {
             "id": "basalt-bomb",
             "name": "Basalt Bomb",
             "level": 1,
             "biome": "ashlands",
             "itemId": "basalt-bomb"
-          },
-          {
-            "id": "bloodgold-payload",
-            "name": "Bloodgold Payload",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "bloodgold-payload"
           }
         ],
         "armor": [],
@@ -27389,7 +26782,22 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "lava-lantern"
           }
         ],
-        "crafting": []
+        "crafting": [
+          {
+            "id": "explosive-payload",
+            "name": "Explosive Payload",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "explosive-payload"
+          },
+          {
+            "id": "bloodgold-payload",
+            "name": "Bloodgold Payload",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "bloodgold-payload"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -27456,7 +26864,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/pungent-pebbles.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "material",
+      "category": "ingredient",
       "teleportable": true,
       "stack": 50,
       "weight": 0.5,
@@ -27504,7 +26912,7 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-animal-whispers",
-            "name": "Mead base: Animal whispers",
+            "name": "Mead Base: Animal Whispers",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-animal-whispers"
@@ -27556,9 +26964,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "blueberries",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -27749,28 +27159,28 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-medium-healing",
-            "name": "Mead base: Medium healing",
+            "name": "Mead Base: Medium Healing",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-medium-healing"
           },
           {
             "id": "mead-base-minor-healing",
-            "name": "Mead base: Minor healing",
+            "name": "Mead Base: Minor Healing",
             "level": 1,
             "biome": "black-forest",
             "itemId": "mead-base-minor-healing"
           },
           {
             "id": "mead-base-minor-stamina",
-            "name": "Mead base: Minor stamina",
+            "name": "Mead Base: Minor Stamina",
             "level": 1,
             "biome": "black-forest",
             "itemId": "mead-base-minor-stamina"
           },
           {
             "id": "mead-base-tasty",
-            "name": "Mead base: Tasty",
+            "name": "Mead Base: Tasty",
             "level": 1,
             "biome": "black-forest",
             "itemId": "mead-base-tasty"
@@ -27875,9 +27285,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "kale",
             "amount": 12
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -27918,7 +27330,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/red-jute.png",
       "biome": "mountain",
       "tier": 5,
-      "category": "material",
+      "category": "drop",
       "teleportable": true,
       "stack": 50,
       "weight": 2,
@@ -28056,9 +27468,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "soft-tissue",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "eitr-refinery"
       },
       "station": {
+        "id": "eitr-refinery",
         "name": "Eitr Refinery",
         "level": 1
       },
@@ -28092,36 +27506,42 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "demolisher",
             "name": "Demolisher",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "demolisher"
           },
           {
             "id": "himminafl",
             "name": "Himminafl",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "himminafl"
           },
           {
             "id": "jotun-bane",
             "name": "Jotun Bane",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "jotun-bane"
           },
           {
             "id": "mistwalker",
             "name": "Mistwalker",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "mistwalker"
           },
           {
             "id": "skull-splittur",
             "name": "Skull Splittur",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "skull-splittur"
           },
           {
             "id": "spinesnap",
             "name": "Spinesnap",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "spinesnap"
           },
@@ -28238,27 +27658,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 3,
             "biome": "ashlands",
             "itemId": "flametal-helmet"
-          },
-          {
-            "id": "resounding-shackle",
-            "name": "Resounding Shackle",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "resounding-shackle"
-          },
-          {
-            "id": "pulsating-earrings",
-            "name": "Pulsating Earrings",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "pulsating-earrings"
-          },
-          {
-            "id": "jormundling",
-            "name": "Jörmundling",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "jormundling"
           }
         ],
         "food": [],
@@ -28297,48 +27696,6 @@ globalThis.VC_ITEMS_DATA = {
         ],
         "crafting": [
           {
-            "id": "demolisher",
-            "name": "Demolisher",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "demolisher"
-          },
-          {
-            "id": "himminafl",
-            "name": "Himminafl",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "himminafl"
-          },
-          {
-            "id": "jotun-bane",
-            "name": "Jotun Bane",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "jotun-bane"
-          },
-          {
-            "id": "mistwalker",
-            "name": "Mistwalker",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "mistwalker"
-          },
-          {
-            "id": "skull-splittur",
-            "name": "Skull Splittur",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "skull-splittur"
-          },
-          {
-            "id": "spinesnap",
-            "name": "Spinesnap",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "spinesnap"
-          },
-          {
             "id": "grappling-hook",
             "name": "Grappling Hook",
             "level": 1,
@@ -28351,6 +27708,27 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "mistlands",
             "itemId": "mechanical-spring"
+          },
+          {
+            "id": "resounding-shackle",
+            "name": "Resounding Shackle",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "resounding-shackle"
+          },
+          {
+            "id": "pulsating-earrings",
+            "name": "Pulsating Earrings",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "pulsating-earrings"
+          },
+          {
+            "id": "jormundling",
+            "name": "Jörmundling",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "jormundling"
           }
         ]
       },
@@ -28407,66 +27785,66 @@ globalThis.VC_ITEMS_DATA = {
         ],
         "locations": [
           {
-            "text": "*Birch Trees",
+            "text": "Birch Trees",
             "kind": "other"
           },
           {
-            "text": "*Beech Trees",
+            "text": "Beech Trees",
             "kind": "other"
           },
           {
-            "text": "*Fir Trees",
+            "text": "Fir Trees",
             "kind": "other"
           },
           {
-            "text": "*Pine Trees",
+            "text": "Pine Trees",
             "kind": "other"
           },
           {
-            "text": "*Oak Trees",
+            "text": "Oak Trees",
             "kind": "other"
           },
           {
-            "text": "*Yggdrasil Shoots",
+            "text": "Yggdrasil Shoots",
             "kind": "other"
           },
           {
-            "text": "*Chest in Meadows",
+            "text": "Chest in Meadows",
             "kind": "location"
           },
           {
-            "text": "*Barrel next to Greydwarf building spawns in Black Forest",
+            "text": "Barrel next to Greydwarf building spawns in Black Forest",
             "kind": "other"
           }
         ],
         "traders": [],
         "raw": [
           {
-            "text": "*Birch Trees",
+            "text": "Birch Trees",
             "kind": "other"
           },
           {
-            "text": "*Beech Trees",
+            "text": "Beech Trees",
             "kind": "other"
           },
           {
-            "text": "*Fir Trees",
+            "text": "Fir Trees",
             "kind": "other"
           },
           {
-            "text": "*Pine Trees",
+            "text": "Pine Trees",
             "kind": "other"
           },
           {
-            "text": "*Oak Trees",
+            "text": "Oak Trees",
             "kind": "other"
           },
           {
-            "text": "*Yggdrasil Shoots",
+            "text": "Yggdrasil Shoots",
             "kind": "other"
           },
           {
-            "text": "*Greyling",
+            "text": "Greyling",
             "kind": "creature",
             "creatureId": "greyling",
             "biomes": [
@@ -28474,7 +27852,7 @@ globalThis.VC_ITEMS_DATA = {
             ]
           },
           {
-            "text": "*Greydwarf",
+            "text": "Greydwarf",
             "kind": "creature",
             "creatureId": "greydwarf",
             "biomes": [
@@ -28482,7 +27860,7 @@ globalThis.VC_ITEMS_DATA = {
             ]
           },
           {
-            "text": "*Greydwarf Shaman",
+            "text": "Greydwarf Shaman",
             "kind": "creature",
             "creatureId": "greydwarf-shaman",
             "biomes": [
@@ -28490,7 +27868,7 @@ globalThis.VC_ITEMS_DATA = {
             ]
           },
           {
-            "text": "*Greydwarf Brute",
+            "text": "Greydwarf Brute",
             "kind": "creature",
             "creatureId": "greydwarf-brute",
             "biomes": [
@@ -28498,7 +27876,7 @@ globalThis.VC_ITEMS_DATA = {
             ]
           },
           {
-            "text": "*Kvastur",
+            "text": "Kvastur",
             "kind": "creature",
             "creatureId": "kvastur",
             "biomes": [
@@ -28506,11 +27884,11 @@ globalThis.VC_ITEMS_DATA = {
             ]
           },
           {
-            "text": "*Chest in Meadows",
+            "text": "Chest in Meadows",
             "kind": "location"
           },
           {
-            "text": "*Barrel next to Greydwarf building spawns in Black Forest",
+            "text": "Barrel next to Greydwarf building spawns in Black Forest",
             "kind": "other"
           }
         ]
@@ -28662,7 +28040,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/ripper.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -28711,9 +28089,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bonemaw Tooth",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 3
       },
@@ -28733,18 +28113,21 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "root-ripper",
             "name": "Root Ripper",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "root-ripper"
           },
           {
             "id": "storm-ripper",
             "name": "Storm Ripper",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "storm-ripper"
           },
           {
             "id": "wound-ripper",
             "name": "Wound Ripper",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "wound-ripper"
           }
@@ -28755,29 +28138,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "root-ripper",
-            "name": "Root Ripper",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "root-ripper"
-          },
-          {
-            "id": "storm-ripper",
-            "name": "Storm Ripper",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "storm-ripper"
-          },
-          {
-            "id": "wound-ripper",
-            "name": "Wound Ripper",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "wound-ripper"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {
         "smithy": "/smithy/#item=ripper"
@@ -28830,6 +28191,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "arbalest",
             "name": "Arbalest",
+            "level": 1,
             "biome": "swamp",
             "itemId": "arbalest"
           }
@@ -28862,15 +28224,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "arbalest",
-            "name": "Arbalest",
-            "level": 1,
-            "biome": "swamp",
-            "itemId": "arbalest"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -28880,7 +28234,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/root.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -29027,7 +28381,7 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-major-healing",
-            "name": "Mead base: Major healing",
+            "name": "Mead Base: Major Healing",
             "level": 1,
             "biome": "mistlands",
             "itemId": "mead-base-major-healing"
@@ -29154,28 +28508,28 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-lingering-eitr",
-            "name": "Mead base: Lingering eitr",
+            "name": "Mead Base: Lingering Eitr",
             "level": 1,
             "biome": "ashlands",
             "itemId": "mead-base-lingering-eitr"
           },
           {
             "id": "mead-base-lingering-health",
-            "name": "Mead base: Lingering health",
+            "name": "Mead Base: Lingering Health",
             "level": 1,
             "biome": "ashlands",
             "itemId": "mead-base-lingering-health"
           },
           {
             "id": "mead-base-lingering-stamina",
-            "name": "Mead base: Lingering stamina",
+            "name": "Mead Base: Lingering Stamina",
             "level": 1,
             "biome": "mistlands",
             "itemId": "mead-base-lingering-stamina"
           },
           {
             "id": "mead-base-minor-eitr",
-            "name": "Mead base: Minor eitr",
+            "name": "Mead Base: Minor Eitr",
             "level": 1,
             "biome": "mistlands",
             "itemId": "mead-base-minor-eitr"
@@ -29237,9 +28591,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "thistle",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 2
       },
@@ -29337,6 +28693,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "krom",
             "name": "Krom",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "krom"
           }
@@ -29383,13 +28740,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "mistlands",
             "itemId": "feather-cape"
-          },
-          {
-            "id": "resounding-shackle",
-            "name": "Resounding Shackle",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "resounding-shackle"
           }
         ],
         "food": [],
@@ -29443,11 +28793,11 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "mead-base-lightfoot"
           },
           {
-            "id": "krom",
-            "name": "Krom",
+            "id": "resounding-shackle",
+            "name": "Resounding Shackle",
             "level": 1,
-            "biome": "mistlands",
-            "itemId": "krom"
+            "biome": "ashlands",
+            "itemId": "resounding-shackle"
           }
         ]
       },
@@ -29498,9 +28848,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "fiddlehead",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 6
       },
@@ -29636,8 +28988,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "seafarer-s-herbs",
       "name": "Seafarer's Herbs",
       "image": "../provisions/img/items/seafarer-s-herbs.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "ocean",
+      "tier": 3,
       "category": "ingredient",
       "teleportable": true,
       "stack": 100,
@@ -29702,7 +29054,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../provisions/img/items/seal-blubber.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "drop",
+      "category": "ingredient",
       "teleportable": true,
       "stack": 20,
       "weight": 1,
@@ -29810,6 +29162,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "ember-charge",
             "name": "Ember Charge",
+            "level": 1,
             "biome": "deep-north",
             "itemId": "ember-charge"
           }
@@ -29862,37 +29215,30 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-chestpiece-of-the-vanguard",
             "name": "Cast Chestpiece of the Vanguard",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-chestpiece-of-the-vanguard"
           },
           {
             "id": "cast-hood-of-the-vanguard",
             "name": "Cast Hood of the Vanguard",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-hood-of-the-vanguard"
           },
           {
             "id": "cast-trousers-of-the-vanguard",
             "name": "Cast Trousers of the Vanguard",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-trousers-of-the-vanguard"
           },
           {
             "id": "mould-hood-of-the-vanguard",
             "name": "Mould Hood of the Vanguard",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-hood-of-the-vanguard"
-          },
-          {
-            "id": "ember-charge",
-            "name": "Ember Charge",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "ember-charge"
           },
           {
             "id": "moose-saddle",
@@ -29929,9 +29275,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "sealbreaker-fragment",
             "amount": 9
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
+        "id": "galdr-table",
         "name": "Galdr Table",
         "level": 1
       },
@@ -30329,7 +29677,13 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "serpent-scale-shield"
           }
         ],
-        "armor": [
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": [
           {
             "id": "fins-of-destiny",
             "name": "Fins of Destiny",
@@ -30337,13 +29691,7 @@ globalThis.VC_ITEMS_DATA = {
             "biome": "mistlands",
             "itemId": "fins-of-destiny"
           }
-        ],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
+        ]
       },
       "crossLinks": {}
     },
@@ -30367,7 +29715,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": "A bar of pure silver ready to be worked.",
       "stats": null,
       "recipe": {
-        "station": "Smelting",
+        "station": null,
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -30376,12 +29724,10 @@ globalThis.VC_ITEMS_DATA = {
             "name": "silver-ore",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": null
       },
-      "station": {
-        "name": "Smelting",
-        "level": 1
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -30405,6 +29751,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "draugr-fang",
             "name": "Draugr Fang",
+            "level": 2,
             "biome": "mountain",
             "itemId": "draugr-fang"
           },
@@ -30418,18 +29765,21 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "flesh-rippers",
             "name": "Flesh Rippers",
+            "level": 3,
             "biome": "mountain",
             "itemId": "flesh-rippers"
           },
           {
             "id": "frostner",
             "name": "Frostner",
+            "level": 3,
             "biome": "mountain",
             "itemId": "frostner"
           },
           {
             "id": "himminafl",
             "name": "Himminafl",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "himminafl"
           },
@@ -30503,27 +29853,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 2,
             "biome": "mountain",
             "itemId": "wolf-fur-cape"
-          },
-          {
-            "id": "wisplight",
-            "name": "Wisplight",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "wisplight"
-          },
-          {
-            "id": "wolf-sight",
-            "name": "Wolf Sight",
-            "level": 1,
-            "biome": "mountain",
-            "itemId": "wolf-sight"
-          },
-          {
-            "id": "crystal-heart",
-            "name": "Crystal Heart",
-            "level": 1,
-            "biome": "mountain",
-            "itemId": "crystal-heart"
           }
         ],
         "food": [],
@@ -30562,34 +29891,6 @@ globalThis.VC_ITEMS_DATA = {
         ],
         "crafting": [
           {
-            "id": "draugr-fang",
-            "name": "Draugr Fang",
-            "level": 2,
-            "biome": "mountain",
-            "itemId": "draugr-fang"
-          },
-          {
-            "id": "flesh-rippers",
-            "name": "Flesh Rippers",
-            "level": 3,
-            "biome": "mountain",
-            "itemId": "flesh-rippers"
-          },
-          {
-            "id": "frostner",
-            "name": "Frostner",
-            "level": 3,
-            "biome": "mountain",
-            "itemId": "frostner"
-          },
-          {
-            "id": "himminafl",
-            "name": "Himminafl",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "himminafl"
-          },
-          {
             "id": "silver-arrow",
             "name": "Silver Arrow",
             "level": 3,
@@ -30597,11 +29898,32 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "silver-arrow"
           },
           {
+            "id": "wisplight",
+            "name": "Wisplight",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "wisplight"
+          },
+          {
             "id": "scythe",
             "name": "Scythe",
             "level": 2,
             "biome": "plains",
             "itemId": "scythe"
+          },
+          {
+            "id": "wolf-sight",
+            "name": "Wolf Sight",
+            "level": 1,
+            "biome": "mountain",
+            "itemId": "wolf-sight"
+          },
+          {
+            "id": "crystal-heart",
+            "name": "Crystal Heart",
+            "level": 1,
+            "biome": "mountain",
+            "itemId": "crystal-heart"
           }
         ]
       },
@@ -30748,7 +30070,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/slayer.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": 4,
@@ -30790,9 +30112,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Morgen Sinew",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 3
       },
@@ -30812,18 +30136,21 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "brutal-slayer",
             "name": "Brutal Slayer",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "brutal-slayer"
           },
           {
             "id": "primal-slayer",
             "name": "Primal Slayer",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "primal-slayer"
           },
           {
             "id": "scourging-slayer",
             "name": "Scourging Slayer",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "scourging-slayer"
           }
@@ -30834,29 +30161,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "brutal-slayer",
-            "name": "Brutal Slayer",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "brutal-slayer"
-          },
-          {
-            "id": "primal-slayer",
-            "name": "Primal Slayer",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "primal-slayer"
-          },
-          {
-            "id": "scourging-slayer",
-            "name": "Scourging Slayer",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "scourging-slayer"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {
         "smithy": "/smithy/#item=slayer"
@@ -30953,7 +30258,7 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-lingering-health",
-            "name": "Mead base: Lingering health",
+            "name": "Mead Base: Lingering Health",
             "level": 1,
             "biome": "ashlands",
             "itemId": "mead-base-lingering-health"
@@ -30970,7 +30275,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/snowball.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": 50,
       "weight": 0.3,
@@ -30979,7 +30284,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Looks like a perfect thing to throw...",
       "stats": null,
       "recipe": {
-        "station": "Crafted by hand, Deep North.",
+        "station": null,
         "stationLevel": 1,
         "yields": 10,
         "materials": [
@@ -30988,12 +30293,10 @@ globalThis.VC_ITEMS_DATA = {
             "name": "ice",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": null
       },
-      "station": {
-        "name": "Crafted by hand, Deep North.",
-        "level": 1
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -31044,7 +30347,9 @@ globalThis.VC_ITEMS_DATA = {
         ],
         "crafting": []
       },
-      "crossLinks": {}
+      "crossLinks": {
+        "smithy": "/smithy/#item=snowball"
+      }
     },
     {
       "id": "soft-tissue",
@@ -31087,30 +30392,30 @@ globalThis.VC_ITEMS_DATA = {
         ],
         "locations": [
           {
-            "text": "* Mined from Ancient skulls",
+            "text": "Mined from Ancient skulls",
             "kind": "location"
           },
           {
-            "text": "* Dropped from Dvergr Crates",
+            "text": "Dropped from Dvergr Crates",
             "kind": "other"
           },
           {
-            "text": "* Dropped from Dvergr",
+            "text": "Dropped from Dvergr",
             "kind": "other"
           }
         ],
         "traders": [],
         "raw": [
           {
-            "text": "* Mined from Ancient skulls",
+            "text": "Mined from Ancient skulls",
             "kind": "location"
           },
           {
-            "text": "* Dropped from Dvergr Crates",
+            "text": "Dropped from Dvergr Crates",
             "kind": "other"
           },
           {
-            "text": "* Dropped from Dvergr",
+            "text": "Dropped from Dvergr",
             "kind": "other"
           }
         ]
@@ -31141,7 +30446,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/splitnir.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -31164,7 +30469,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Black forge",
+        "station": "Black Forge",
         "stationLevel": 3,
         "yields": 1,
         "materials": [
@@ -31188,10 +30493,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bonemaw Tooth",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black forge",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 3
       },
       "sources": {
@@ -31210,18 +30517,21 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "splitnir-the-bleeding",
             "name": "Splitnir the Bleeding",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "splitnir-the-bleeding"
           },
           {
             "id": "splitnir-the-primal",
             "name": "Splitnir the Primal",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "splitnir-the-primal"
           },
           {
             "id": "splitnir-the-storming",
             "name": "Splitnir the Storming",
+            "level": 4,
             "biome": "ashlands",
             "itemId": "splitnir-the-storming"
           }
@@ -31232,29 +30542,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "splitnir-the-bleeding",
-            "name": "Splitnir the Bleeding",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "splitnir-the-bleeding"
-          },
-          {
-            "id": "splitnir-the-primal",
-            "name": "Splitnir the Primal",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "splitnir-the-primal"
-          },
-          {
-            "id": "splitnir-the-storming",
-            "name": "Splitnir the Storming",
-            "level": 4,
-            "biome": "ashlands",
-            "itemId": "splitnir-the-storming"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {
         "smithy": "/smithy/#item=splitnir"
@@ -31491,7 +30779,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "paved-road",
             "name": "Paved road",
             "level": 1,
-            "biome": "meadows",
+            "biome": "swamp",
             "itemId": "paved-road"
           },
           {
@@ -31548,7 +30836,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/sulfur.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "material",
+      "category": "drop",
       "teleportable": true,
       "stack": 50,
       "weight": 2,
@@ -31589,24 +30877,9 @@ globalThis.VC_ITEMS_DATA = {
             "level": 3,
             "biome": "ashlands",
             "itemId": "flametal-mace"
-          },
-          {
-            "id": "explosive-payload",
-            "name": "Explosive Payload",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "explosive-payload"
           }
         ],
-        "armor": [
-          {
-            "id": "brimstone",
-            "name": "Brimstone",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "brimstone"
-          }
-        ],
+        "armor": [],
         "food": [],
         "meads": [],
         "comfort": [
@@ -31628,7 +30901,22 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "lava-lantern"
           }
         ],
-        "crafting": []
+        "crafting": [
+          {
+            "id": "explosive-payload",
+            "name": "Explosive Payload",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "explosive-payload"
+          },
+          {
+            "id": "brimstone",
+            "name": "Brimstone",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "brimstone"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -31705,20 +30993,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "mistlands",
             "itemId": "staff-of-embers"
-          },
-          {
-            "id": "battering-ram",
-            "name": "Battering Ram",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "battering-ram"
-          },
-          {
-            "id": "shield-core",
-            "name": "Shield Core",
-            "level": 2,
-            "biome": "plains",
-            "itemId": "shield-core"
           }
         ],
         "armor": [],
@@ -31785,6 +31059,13 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "ward"
           },
           {
+            "id": "battering-ram",
+            "name": "Battering Ram",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "battering-ram"
+          },
+          {
             "id": "stone-oven",
             "name": "Stone Oven",
             "level": 1,
@@ -31799,6 +31080,13 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "mountain",
             "itemId": "dvergr-lantern"
+          },
+          {
+            "id": "shield-core",
+            "name": "Shield Core",
+            "level": 2,
+            "biome": "plains",
+            "itemId": "shield-core"
           }
         ]
       },
@@ -31810,7 +31098,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../comfort/img/items/tar.png",
       "biome": "plains",
       "tier": 6,
-      "category": "material",
+      "category": "drop",
       "teleportable": true,
       "stack": 50,
       "weight": 2,
@@ -32147,14 +31435,14 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-frost-resistance",
-            "name": "Mead base: Frost resistance",
+            "name": "Mead Base: Frost Resistance",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-frost-resistance"
           },
           {
             "id": "mead-base-poison-resistance",
-            "name": "Mead base: Poison resistance",
+            "name": "Mead Base: Poison Resistance",
             "level": 1,
             "biome": "swamp",
             "itemId": "mead-base-poison-resistance"
@@ -32169,7 +31457,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/thunderblood-essence.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 0.5,
@@ -32245,6 +31533,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "thunderblood-knucklechains",
             "name": "Thunderblood Knucklechains",
+            "level": 4,
             "biome": "deep-north",
             "itemId": "thunderblood-knucklechains"
           },
@@ -32287,23 +31576,16 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-lightning-strike",
             "name": "Cast Lightning Strike",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-lightning-strike"
           },
           {
             "id": "mould-lightning-strike",
             "name": "Mould Lightning Strike",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "mould-lightning-strike"
-          },
-          {
-            "id": "thunderblood-knucklechains",
-            "name": "Thunderblood Knucklechains",
-            "level": 4,
-            "biome": "deep-north",
-            "itemId": "thunderblood-knucklechains"
           }
         ]
       },
@@ -32438,48 +31720,6 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Nord Sword",
             "biome": "deep-north",
             "itemId": "nord-sword"
-          },
-          {
-            "id": "cast-nord-buckler",
-            "name": "Cast Nord Buckler",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "cast-nord-buckler"
-          },
-          {
-            "id": "cast-nord-greatshield",
-            "name": "Cast Nord Greatshield",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "cast-nord-greatshield"
-          },
-          {
-            "id": "cast-nord-shield",
-            "name": "Cast Nord Shield",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "cast-nord-shield"
-          },
-          {
-            "id": "mould-nord-buckler",
-            "name": "Mould Nord Buckler",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "mould-nord-buckler"
-          },
-          {
-            "id": "mould-nord-greatshield",
-            "name": "Mould Nord Greatshield",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "mould-nord-greatshield"
-          },
-          {
-            "id": "mould-nord-shield",
-            "name": "Mould Nord Shield",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "mould-nord-shield"
           }
         ],
         "armor": [],
@@ -32599,140 +31839,182 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-nord-atgeir",
             "name": "Cast Nord Atgeir",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-atgeir"
           },
           {
             "id": "cast-nord-axe",
             "name": "Cast Nord Axe",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-axe"
           },
           {
             "id": "cast-nord-bow",
             "name": "Cast Nord Bow",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-bow"
           },
           {
+            "id": "cast-nord-buckler",
+            "name": "Cast Nord Buckler",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "cast-nord-buckler"
+          },
+          {
             "id": "cast-nord-crossbow",
             "name": "Cast Nord Crossbow",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-crossbow"
           },
           {
             "id": "cast-nord-dagger",
             "name": "Cast Nord Dagger",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-dagger"
           },
           {
             "id": "cast-nord-greataxe",
             "name": "Cast Nord Greataxe",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-greataxe"
           },
           {
+            "id": "cast-nord-greatshield",
+            "name": "Cast Nord Greatshield",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "cast-nord-greatshield"
+          },
+          {
             "id": "cast-nord-mace",
             "name": "Cast Nord Mace",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-mace"
           },
           {
+            "id": "cast-nord-shield",
+            "name": "Cast Nord Shield",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "cast-nord-shield"
+          },
+          {
             "id": "cast-nord-sledge",
             "name": "Cast Nord Sledge",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-sledge"
           },
           {
             "id": "cast-nord-spear",
             "name": "Cast Nord Spear",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-spear"
           },
           {
             "id": "cast-nord-sword",
             "name": "Cast Nord Sword",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-nord-sword"
           },
           {
             "id": "mould-nord-atgeir",
             "name": "Mould Nord Atgeir",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-atgeir"
           },
           {
             "id": "mould-nord-axe",
             "name": "Mould Nord Axe",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-axe"
           },
           {
             "id": "mould-nord-bow",
             "name": "Mould Nord Bow",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-bow"
           },
           {
+            "id": "mould-nord-buckler",
+            "name": "Mould Nord Buckler",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "mould-nord-buckler"
+          },
+          {
             "id": "mould-nord-crossbow",
             "name": "Mould Nord Crossbow",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-crossbow"
           },
           {
             "id": "mould-nord-dagger",
             "name": "Mould Nord Dagger",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-dagger"
           },
           {
             "id": "mould-nord-greataxe",
             "name": "Mould Nord Greataxe",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-greataxe"
           },
           {
+            "id": "mould-nord-greatshield",
+            "name": "Mould Nord Greatshield",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "mould-nord-greatshield"
+          },
+          {
             "id": "mould-nord-mace",
             "name": "Mould Nord Mace",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-mace"
           },
           {
+            "id": "mould-nord-shield",
+            "name": "Mould Nord Shield",
+            "level": 4,
+            "biome": "deep-north",
+            "itemId": "mould-nord-shield"
+          },
+          {
             "id": "mould-nord-sledge",
             "name": "Mould Nord Sledge",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-sledge"
           },
           {
             "id": "mould-nord-spear",
             "name": "Mould Nord Spear",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-spear"
           },
           {
             "id": "mould-nord-sword",
             "name": "Mould Nord Sword",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "mould-nord-sword"
           },
@@ -32804,9 +32086,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "tin-ore",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "smelter"
       },
       "station": {
+        "id": "smelter",
         "name": "Smelter",
         "level": 1
       },
@@ -32931,9 +32215,9 @@ globalThis.VC_ITEMS_DATA = {
       "id": "toadstool",
       "name": "Toadstool",
       "image": "../provisions/img/items/toadstool.png",
-      "biome": "plains",
-      "tier": 6,
-      "category": "drop",
+      "biome": "mountain",
+      "tier": 5,
+      "category": "ingredient",
       "teleportable": true,
       "stack": 50,
       "weight": 0.1,
@@ -32987,7 +32271,7 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-berserkir",
-            "name": "Mead base: Berserkir",
+            "name": "Mead Base: Berserkir",
             "level": 1,
             "biome": "plains",
             "itemId": "mead-base-berserkir"
@@ -33166,6 +32450,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "trollstav",
             "name": "Trollstav",
+            "level": 2,
             "biome": "ashlands",
             "itemId": "trollstav"
           }
@@ -33177,13 +32462,6 @@ globalThis.VC_ITEMS_DATA = {
         "expedition": [],
         "stations": [],
         "crafting": [
-          {
-            "id": "trollstav",
-            "name": "Trollstav",
-            "level": 2,
-            "biome": "ashlands",
-            "itemId": "trollstav"
-          },
           {
             "id": "mossy-fishing-bait",
             "name": "Mossy Fishing Bait",
@@ -33458,9 +32736,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "turnip",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 2
       },
@@ -33534,9 +32814,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "barley-flour",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -33610,9 +32892,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "oat-flour",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -33688,9 +32972,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "honey",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -33757,9 +33043,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bread-dough",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -33831,9 +33119,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "jotun-puffs",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -33905,9 +33195,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "hare-meat",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -33979,9 +33271,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "carrot",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -34052,9 +33346,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "barley-flour",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -34125,9 +33421,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "barley-flour",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -34199,9 +33497,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "turnip",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -34242,7 +33542,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/vile-ribcage.png",
       "biome": "plains",
       "tier": 6,
-      "category": "material",
+      "category": "drop",
       "teleportable": true,
       "stack": 50,
       "weight": 5,
@@ -34280,6 +33580,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "vilebone-maulclaws",
             "name": "Vilebone Maulclaws",
+            "level": 3,
             "biome": "plains",
             "itemId": "vilebone-maulclaws"
           }
@@ -34305,15 +33606,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "vilebone-maulclaws",
-            "name": "Vilebone Maulclaws",
-            "level": 3,
-            "biome": "plains",
-            "itemId": "vilebone-maulclaws"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -34480,14 +33773,14 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-lingering-eitr",
-            "name": "Mead base: Lingering eitr",
+            "name": "Mead Base: Lingering Eitr",
             "level": 1,
             "biome": "ashlands",
             "itemId": "mead-base-lingering-eitr"
           },
           {
             "id": "mead-base-lingering-health",
-            "name": "Mead base: Lingering health",
+            "name": "Mead Base: Lingering Health",
             "level": 1,
             "biome": "ashlands",
             "itemId": "mead-base-lingering-health"
@@ -34606,9 +33899,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "volture-meat",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "iron-cooking-station"
       },
       "station": {
+        "id": "iron-cooking-station",
         "name": "Iron Cooking Station",
         "level": 1
       },
@@ -34668,7 +33963,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/wisp.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "drop",
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 0.5,
@@ -34702,19 +33997,12 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "mistwalker",
             "name": "Mistwalker",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "mistwalker"
           }
         ],
-        "armor": [
-          {
-            "id": "wisplight",
-            "name": "Wisplight",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "wisplight"
-          }
-        ],
+        "armor": [],
         "food": [],
         "meads": [],
         "comfort": [],
@@ -34730,11 +34018,11 @@ globalThis.VC_ITEMS_DATA = {
         ],
         "crafting": [
           {
-            "id": "mistwalker",
-            "name": "Mistwalker",
+            "id": "wisplight",
+            "name": "Wisplight",
             "level": 1,
-            "biome": "mistlands",
-            "itemId": "mistwalker"
+            "biome": "meadows",
+            "itemId": "wisplight"
           }
         ]
       },
@@ -34782,15 +34070,7 @@ globalThis.VC_ITEMS_DATA = {
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
-          {
-            "id": "nimble-anklet",
-            "name": "Nimble Anklet",
-            "level": 1,
-            "biome": "plains",
-            "itemId": "nimble-anklet"
-          }
-        ],
+        "armor": [],
         "food": [],
         "meads": [],
         "comfort": [],
@@ -34803,7 +34083,15 @@ globalThis.VC_ITEMS_DATA = {
           }
         ],
         "stations": [],
-        "crafting": []
+        "crafting": [
+          {
+            "id": "nimble-anklet",
+            "name": "Nimble Anklet",
+            "level": 1,
+            "biome": "plains",
+            "itemId": "nimble-anklet"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -34890,13 +34178,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 2,
             "biome": "mountain",
             "itemId": "wolf-hide-trousers"
-          },
-          {
-            "id": "wolf-sight",
-            "name": "Wolf Sight",
-            "level": 1,
-            "biome": "mountain",
-            "itemId": "wolf-sight"
           }
         ],
         "food": [],
@@ -34904,7 +34185,15 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": []
+        "crafting": [
+          {
+            "id": "wolf-sight",
+            "name": "Wolf Sight",
+            "level": 1,
+            "biome": "mountain",
+            "itemId": "wolf-sight"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -35175,9 +34464,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "onion",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 3
       },
@@ -35372,6 +34663,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "arbalest",
             "name": "Arbalest",
+            "level": 1,
             "biome": "swamp",
             "itemId": "arbalest"
           },
@@ -35905,13 +35197,6 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "antler-pickaxe"
           },
           {
-            "id": "arbalest",
-            "name": "Arbalest",
-            "level": 1,
-            "biome": "swamp",
-            "itemId": "arbalest"
-          },
-          {
             "id": "black-metal-bolt",
             "name": "Black Metal Bolt",
             "level": 2,
@@ -36045,8 +35330,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "woodland-herb-blend",
       "name": "Woodland Herb Blend",
       "image": "../provisions/img/items/woodland-herb-blend.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "ingredient",
       "teleportable": true,
       "stack": 100,
@@ -36283,21 +35568,21 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": [
           {
             "id": "mead-base-berserkir",
-            "name": "Mead base: Berserkir",
+            "name": "Mead Base: Berserkir",
             "level": 1,
             "biome": "plains",
             "itemId": "mead-base-berserkir"
           },
           {
             "id": "mead-base-medium-stamina",
-            "name": "Mead base: Medium stamina",
+            "name": "Mead Base: Medium Stamina",
             "level": 1,
             "biome": "plains",
             "itemId": "mead-base-medium-stamina"
           },
           {
             "id": "mead-base-minor-stamina",
-            "name": "Mead base: Minor stamina",
+            "name": "Mead Base: Minor Stamina",
             "level": 1,
             "biome": "black-forest",
             "itemId": "mead-base-minor-stamina"
@@ -36353,9 +35638,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "royal-jelly",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 5
       },
@@ -36447,24 +35734,28 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "demolisher",
             "name": "Demolisher",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "demolisher"
           },
           {
             "id": "himminafl",
             "name": "Himminafl",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "himminafl"
           },
           {
             "id": "jotun-bane",
             "name": "Jotun Bane",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "jotun-bane"
           },
           {
             "id": "skull-splittur",
             "name": "Skull Splittur",
+            "level": 1,
             "biome": "mistlands",
             "itemId": "skull-splittur"
           },
@@ -36583,34 +35874,6 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "black-metal-pickaxe"
           },
           {
-            "id": "demolisher",
-            "name": "Demolisher",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "demolisher"
-          },
-          {
-            "id": "himminafl",
-            "name": "Himminafl",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "himminafl"
-          },
-          {
-            "id": "jotun-bane",
-            "name": "Jotun Bane",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "jotun-bane"
-          },
-          {
-            "id": "skull-splittur",
-            "name": "Skull Splittur",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "skull-splittur"
-          },
-          {
             "id": "grappling-hook",
             "name": "Grappling Hook",
             "level": 1,
@@ -36625,9 +35888,9 @@ globalThis.VC_ITEMS_DATA = {
       "id": "ymir-flesh",
       "name": "Ymir Flesh",
       "image": "../smithy/img/items/ymir-flesh.png",
-      "biome": "swamp",
-      "tier": 4,
-      "category": "valuable",
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "material",
       "teleportable": true,
       "stack": 50,
       "weight": 0.3,
@@ -36670,6 +35933,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "frostner",
             "name": "Frostner",
+            "level": 3,
             "biome": "mountain",
             "itemId": "frostner"
           },
@@ -36687,15 +35951,7 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": [
-          {
-            "id": "frostner",
-            "name": "Frostner",
-            "level": 3,
-            "biome": "mountain",
-            "itemId": "frostner"
-          }
-        ]
+        "crafting": []
       },
       "crossLinks": {
         "traders": "/traders/#trader=haldor"
@@ -36707,7 +35963,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/abyssal-harpoon.png",
       "biome": "ocean",
       "tier": 3,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -36751,9 +36007,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 2
       },
@@ -36783,7 +36041,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/abyssal-razor.png",
       "biome": "ocean",
       "tier": 3,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -36829,9 +36087,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 2
       },
@@ -36905,9 +36165,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Ancient Bark",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 3
       },
@@ -36977,9 +36239,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Hard Antler",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -37009,7 +36273,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/arbalest.png",
       "biome": "swamp",
       "tier": 4,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -37051,9 +36315,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Root",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -37118,9 +36384,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iron",
             "amount": 8
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 2
       },
@@ -37142,57 +36410,6 @@ globalThis.VC_ITEMS_DATA = {
       },
       "crossLinks": {
         "smithy": "/smithy/#item=banded-shield"
-      }
-    },
-    {
-      "id": "bare-fists",
-      "name": "Bare Fists",
-      "image": "../bestiary/img/weapons/bare-fists.png",
-      "biome": "meadows",
-      "tier": 1,
-      "category": "drop",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Bare_Fists",
-      "names": {},
-      "description": null,
-      "stats": {
-        "damage": {
-          "blunt": 5
-        },
-        "damageMax": {
-          "blunt": 5
-        },
-        "stamina": 4,
-        "blockArmor": 2,
-        "skill": "fists",
-        "hands": "1h",
-        "maxQuality": 1
-      },
-      "recipe": null,
-      "station": {
-        "name": "Always available",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [],
-        "traders": [],
-        "raw": []
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {
-        "smithy": "/smithy/#item=bare-fists"
       }
     },
     {
@@ -37248,9 +36465,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 2
       },
@@ -37322,9 +36541,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Resin",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -37398,9 +36619,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Linen Thread",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 4
       },
@@ -37477,9 +36700,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Linen Thread",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 4
       },
@@ -37553,9 +36778,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Finewood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 3
       },
@@ -37628,9 +36855,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 2
       },
@@ -37706,9 +36935,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Linen Thread",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 4
       },
@@ -37777,9 +37008,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Black Metal",
             "amount": 25
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 2
       },
@@ -37849,9 +37082,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Chain",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 3
       },
@@ -37926,9 +37161,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Linen Thread",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 4
       },
@@ -37998,9 +37235,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Chain",
             "amount": 7
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 3
       },
@@ -38077,9 +37316,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -38109,7 +37350,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/blood-fang.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -38151,9 +37392,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -38183,7 +37426,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/bloodgeon.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -38227,9 +37470,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -38299,9 +37544,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Timberwood",
             "amount": 8
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -38371,9 +37618,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Timberwood",
             "amount": 8
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -38441,9 +37690,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -38513,9 +37764,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Skeleton Trophy",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 3
       },
@@ -38589,9 +37842,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -38668,9 +37923,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -38735,9 +37992,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Wood",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -38812,9 +38071,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -38884,9 +38145,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bronze",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -38960,9 +38223,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Deer Hide",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -39036,9 +38301,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -39112,9 +38379,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -39144,7 +38413,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/brutal-slayer.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": 4,
@@ -39186,9 +38455,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -39260,9 +38531,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Wood",
             "amount": 8
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -39335,9 +38608,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -39405,9 +38680,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Refined Eitr",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -39475,9 +38752,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Refined Eitr",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -39552,9 +38831,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Mandible",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -39626,9 +38907,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Ashwood",
             "amount": 8
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -39701,9 +38984,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -39759,7 +39044,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Player crafting menu",
+        "station": null,
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -39768,12 +39053,10 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Wood",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": null
       },
-      "station": {
-        "name": "Player crafting menu",
-        "level": 1
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -39841,9 +39124,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Copper",
             "amount": 8
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -39912,9 +39197,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 8
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -39993,9 +39280,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Crystal",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 3
       },
@@ -40025,7 +39314,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/demolisher.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -40067,9 +39356,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Refined Eitr",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -40099,7 +39390,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/draugr-fang.png",
       "biome": "mountain",
       "tier": 5,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -40150,9 +39441,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Guck",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 2
       },
@@ -40182,7 +39475,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/dundr.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -40229,9 +39522,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
+        "id": "galdr-table",
         "name": "Galdr Table",
         "level": 2
       },
@@ -40261,7 +39556,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/dyrnwyn.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": 0.8,
@@ -40287,7 +39582,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Black forge",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -40316,10 +39611,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black forge",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -40392,9 +39689,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Wood",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -40424,7 +39723,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/echo-spike.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": 0.3,
@@ -40461,9 +39760,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 3
       },
@@ -40493,7 +39794,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/ember-charge.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": 10,
       "weight": 0.3,
@@ -40532,9 +39833,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Embers",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -40613,9 +39916,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Silver",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 3
       },
@@ -40689,9 +39994,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Deer Hide",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -40767,9 +40074,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 2
       },
@@ -40837,9 +40146,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Asksvin Hide",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 3
       },
@@ -40888,7 +40199,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 3
       },
       "recipe": {
-        "station": "Black forge",
+        "station": "Black Forge",
         "stationLevel": 3,
         "yields": 1,
         "materials": [
@@ -40907,10 +40218,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Asksvin Hide",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black forge",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 3
       },
       "sources": {
@@ -40939,7 +40252,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/flesh-rippers.png",
       "biome": "mountain",
       "tier": 5,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -40981,9 +40294,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Silver",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 3
       },
@@ -41054,9 +40369,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Flint",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -41131,9 +40448,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -41207,9 +40526,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -41283,9 +40604,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 2
       },
@@ -41366,9 +40689,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Freeze Gland",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 4
       },
@@ -41442,9 +40767,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -41520,9 +40847,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -41598,9 +40927,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -41676,9 +41007,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -41754,9 +41087,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -41832,9 +41167,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -41908,9 +41245,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -41940,7 +41279,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/frostfire-knucklechains.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "building",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -41984,9 +41323,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -42060,9 +41401,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -42136,9 +41479,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -42212,9 +41557,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -42288,9 +41635,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -42320,7 +41669,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/frostner.png",
       "biome": "mountain",
       "tier": 5,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -42374,9 +41723,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Freeze Gland",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 3
       },
@@ -42406,7 +41757,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/himminafl.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": 2.5,
@@ -42455,9 +41806,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Mandible",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -42536,9 +41889,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Deer Hide",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -42612,9 +41967,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 2
       },
@@ -42691,9 +42048,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 2
       },
@@ -42766,9 +42125,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -42832,9 +42193,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Ancient Bark",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 2
       },
@@ -42909,9 +42272,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 2
       },
@@ -42981,9 +42346,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iron",
             "amount": 20
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 2
       },
@@ -43062,9 +42429,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Draugr Elite Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 2
       },
@@ -43139,9 +42508,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 2
       },
@@ -43206,9 +42577,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iron",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 2
       },
@@ -43282,9 +42655,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 2
       },
@@ -43314,7 +42689,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/jotun-bane.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -43368,9 +42743,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Refined Eitr",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -43400,7 +42777,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/klossen.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -43425,7 +42802,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Black forge",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -43444,10 +42821,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black forge",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -43476,7 +42855,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/krom.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -43519,9 +42898,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Scale Hide",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -43551,7 +42932,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/lightning-strike.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": 0.3,
@@ -43586,9 +42967,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 3
       },
@@ -43618,7 +43001,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/mistwalker.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -43670,9 +43053,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Wisp",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -43741,9 +43126,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 4
       },
@@ -43773,7 +43160,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/nidhogg-the-bleeding.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -43815,9 +43202,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -43847,7 +43236,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/nidhogg-the-primal.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -43891,9 +43280,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -43923,7 +43314,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/nidhogg-the-thundering.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -43967,9 +43358,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -44030,9 +43423,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 4
       },
@@ -44093,9 +43488,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 4
       },
@@ -44156,9 +43553,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 4
       },
@@ -44188,7 +43587,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../smithy/img/items/northern-vengeance.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": 0.3,
@@ -44223,9 +43622,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 3
       },
@@ -44299,9 +43700,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 3
       },
@@ -44375,9 +43778,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Resin",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -44407,7 +43812,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/paws-of-the-bear.png",
       "biome": "black-forest",
       "tier": 2,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -44449,9 +43854,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 2
       },
@@ -44532,9 +43939,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Ooze",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 3
       },
@@ -44564,7 +43973,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/porcupine.png",
       "biome": "plains",
       "tier": 6,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -44616,9 +44025,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Linen Thread",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 4
       },
@@ -44678,7 +44089,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Black forge",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -44697,10 +44108,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black forge",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -44729,7 +44142,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/primal-slayer.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": 4,
@@ -44773,9 +44186,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -44805,7 +44220,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/root-fang.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -44849,9 +44264,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -44881,7 +44298,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/root-ripper.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -44925,9 +44342,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -44957,7 +44376,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/scourging-slayer.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": 4,
@@ -45001,9 +44420,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -45073,9 +44494,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Serpent Scale",
             "amount": 8
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 3
       },
@@ -45136,9 +44559,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Writhan Roots",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 2
       },
@@ -45214,9 +44639,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 3
       },
@@ -45298,9 +44725,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iron",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 3
       },
@@ -45365,9 +44794,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Silver",
             "amount": 8
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 3
       },
@@ -45449,9 +44880,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iron",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 3
       },
@@ -45481,7 +44914,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/skoll-and-hati.png",
       "biome": "plains",
       "tier": 6,
-      "category": "armor",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -45525,9 +44958,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Black Metal",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -45557,7 +44992,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/skull-splittur.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -45601,9 +45036,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Refined Eitr",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -45670,9 +45107,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Asksvin Bladder",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -45702,7 +45141,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/spinesnap.png",
       "biome": "mistlands",
       "tier": 7,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -45746,9 +45185,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Refined Eitr",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -45778,7 +45219,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/splitnir-the-bleeding.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -45801,7 +45242,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Black forge",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -45820,10 +45261,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black forge",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -45852,7 +45295,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/splitnir-the-primal.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -45877,7 +45320,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Black forge",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -45896,10 +45339,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black forge",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -45928,7 +45373,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/splitnir-the-storming.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -45951,7 +45396,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Black forge",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -45970,10 +45415,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black forge",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -46046,9 +45493,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Refined Eitr",
             "amount": 16
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
+        "id": "galdr-table",
         "name": "Galdr Table",
         "level": 1
       },
@@ -46122,9 +45571,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Proustite Powder",
             "amount": 8
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
+        "id": "galdr-table",
         "name": "Galdr Table",
         "level": 2
       },
@@ -46196,9 +45647,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Refined Eitr",
             "amount": 16
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
+        "id": "galdr-table",
         "name": "Galdr Table",
         "level": 1
       },
@@ -46277,9 +45730,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
+        "id": "galdr-table",
         "name": "Galdr Table",
         "level": 2
       },
@@ -46309,7 +45764,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/stagbreaker.png",
       "biome": "black-forest",
       "tier": 2,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -46355,9 +45810,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 2
       },
@@ -46414,7 +45871,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Player crafting menu",
+        "station": null,
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -46428,12 +45885,10 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Stone",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": null
       },
-      "station": {
-        "name": "Player crafting menu",
-        "level": 1
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -46460,7 +45915,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/storm-fang.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -46504,9 +45959,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -46536,7 +45993,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/storm-ripper.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -46580,9 +46037,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -46612,7 +46071,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/storm-star.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "material",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -46659,9 +46118,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -46733,9 +46194,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -46809,9 +46272,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -46885,9 +46350,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -46961,9 +46428,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -47037,9 +46506,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -47113,9 +46584,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -47187,9 +46660,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -47219,7 +46694,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/thunderblood-knucklechains.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -47261,9 +46736,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -47335,9 +46812,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -47409,9 +46888,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -47483,9 +46964,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -47557,9 +47040,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -47638,9 +47123,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -47670,7 +47157,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/trollstav.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": 0.3,
@@ -47721,9 +47208,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
+        "id": "galdr-table",
         "name": "Galdr Table",
         "level": 2
       },
@@ -47753,7 +47242,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/vilebone-maulclaws.png",
       "biome": "plains",
       "tier": 6,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -47802,9 +47291,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Linen Thread",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 3
       },
@@ -47868,9 +47359,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Wood",
             "amount": 8
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -47940,9 +47433,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -48007,9 +47502,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -48039,7 +47536,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/wound-ripper.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -48081,9 +47578,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 4
       },
@@ -48152,13 +47651,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "flametal",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
-        "level": 3,
-        "set": null,
-        "setName": null
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -48234,13 +47733,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "asksvin-hide",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge",
-        "level": 3,
         "set": "ask-set",
-        "setName": "Ask Set"
+        "setName": "Ask Set",
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -48316,13 +47817,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "asksvin-hide",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge",
-        "level": 3,
         "set": "ask-set",
-        "setName": "Ask Set"
+        "setName": "Ask Set",
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -48398,13 +47901,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "asksvin-hide",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge",
-        "level": 3,
         "set": "ask-set",
-        "setName": "Ask Set"
+        "setName": "Ask Set",
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -48466,13 +47971,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "morgen-sinew",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
+        "id": "galdr-table",
         "name": "Galdr Table",
-        "level": 2,
-        "set": null,
-        "setName": null
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -48520,12 +48025,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -48588,12 +48088,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -48656,12 +48151,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -48724,12 +48214,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -48792,12 +48277,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -48860,12 +48340,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -48952,13 +48427,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bear-trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "bear-set",
-        "setName": "Bear Set"
+        "setName": "Bear Set",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -49035,13 +48512,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "blueberries",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "bear-set",
-        "setName": "Bear Set"
+        "setName": "Bear Set",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -49113,13 +48592,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "blueberries",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "bear-set",
-        "setName": "Bear Set"
+        "setName": "Bear Set",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -49182,13 +48663,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "deer-hide",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
-        "name": "Forge",
-        "level": 1,
         "set": "bronze-armor",
-        "setName": "Bronze Armor"
+        "setName": "Bronze Armor",
+        "id": "forge",
+        "name": "Forge",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -49251,13 +48734,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "deer-hide",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
-        "name": "Forge",
-        "level": 1,
         "set": "bronze-armor",
-        "setName": "Bronze Armor"
+        "setName": "Bronze Armor",
+        "id": "forge",
+        "name": "Forge",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -49320,13 +48805,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "deer-hide",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
-        "name": "Forge",
-        "level": 1,
         "set": "bronze-armor",
-        "setName": "Bronze Armor"
+        "setName": "Bronze Armor",
+        "id": "forge",
+        "name": "Forge",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -49386,13 +48873,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "liquid-frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
-        "name": "Frost Foundry",
-        "level": 1,
         "set": "caller-set",
-        "setName": "Caller Set"
+        "setName": "Caller Set",
+        "id": "frost-foundry",
+        "name": "Frost Foundry",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -49454,13 +48943,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "liquid-frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
-        "name": "Frost Foundry",
-        "level": 1,
         "set": "caller-set",
-        "setName": "Caller Set"
+        "setName": "Caller Set",
+        "id": "frost-foundry",
+        "name": "Frost Foundry",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -49520,13 +49011,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "liquid-frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
-        "name": "Frost Foundry",
-        "level": 1,
         "set": "caller-set",
-        "setName": "Caller Set"
+        "setName": "Caller Set",
+        "id": "frost-foundry",
+        "name": "Frost Foundry",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -49589,13 +49082,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "coal",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
-        "level": 1,
-        "set": null,
-        "setName": null
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -49665,13 +49158,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "refined-eitr",
             "amount": 15
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
+        "id": "galdr-table",
         "name": "Galdr Table",
-        "level": 4,
-        "set": null,
-        "setName": null
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -49697,8 +49190,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "cape-tunic-blue",
       "name": "Cape tunic blue",
       "image": "../smithy/img/armor/cape-tunic-blue.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -49719,12 +49212,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -49765,8 +49253,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "cape-tunic-red",
       "name": "Cape tunic red",
       "image": "../smithy/img/armor/cape-tunic-red.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -49787,12 +49275,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -49833,8 +49316,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "cape-tunic-yellow",
       "name": "Cape tunic yellow",
       "image": "../smithy/img/armor/cape-tunic-yellow.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -49855,12 +49338,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -49947,13 +49425,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "refined-eitr",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge",
-        "level": 1,
         "set": "carapace-armor",
-        "setName": "Carapace Armor"
+        "setName": "Carapace Armor",
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -50025,13 +49505,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "refined-eitr",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge",
-        "level": 1,
         "set": "carapace-armor",
-        "setName": "Carapace Armor"
+        "setName": "Carapace Armor",
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -50103,13 +49585,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "refined-eitr",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge",
-        "level": 1,
         "set": "carapace-armor",
-        "setName": "Carapace Armor"
+        "setName": "Carapace Armor",
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -50181,13 +49665,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "amber-pearl",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
-        "level": 2,
-        "set": null,
-        "setName": null
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -50233,12 +49717,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "The Bog Witch",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -50311,13 +49790,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "crown-jewel",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
-        "level": 4,
-        "set": null,
-        "setName": null
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -50367,12 +49846,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Haldor",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -50446,13 +49920,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "iron",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table",
-        "level": 1,
         "set": "eitr-weave-set",
-        "setName": "Eitr-weave Set"
+        "setName": "Eitr-weave Set",
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -50524,13 +50000,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "scale-hide",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table",
-        "level": 1,
         "set": "eitr-weave-set",
-        "setName": "Eitr-weave Set"
+        "setName": "Eitr-weave Set",
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -50597,13 +50075,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "scale-hide",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table",
-        "level": 1,
         "set": "eitr-weave-set",
-        "setName": "Eitr-weave Set"
+        "setName": "Eitr-weave Set",
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -50673,13 +50153,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "scale-hide",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table",
-        "level": 1,
         "set": "eitr-weave-set",
-        "setName": "Eitr-weave Set"
+        "setName": "Eitr-weave Set",
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -50746,13 +50228,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "asksvin-hide",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table",
-        "level": 2,
         "set": "embla-set",
-        "setName": "Embla Set"
+        "setName": "Embla Set",
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -50824,13 +50308,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "flametal",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table",
-        "level": 2,
         "set": "embla-set",
-        "setName": "Embla Set"
+        "setName": "Embla Set",
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -50897,13 +50383,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "asksvin-hide",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table",
-        "level": 2,
         "set": "embla-set",
-        "setName": "Embla Set"
+        "setName": "Embla Set",
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -50929,8 +50417,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "extravagant-cap-green",
       "name": "Extravagant cap green",
       "image": "../smithy/img/armor/extravagant-cap-green.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -50951,12 +50439,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -51019,12 +50502,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -51114,13 +50592,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "cultist-trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "fenris-set",
-        "setName": "Fenris Set"
+        "setName": "Fenris Set",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -51197,13 +50677,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "leather-scraps",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "fenris-set",
-        "setName": "Fenris Set"
+        "setName": "Fenris Set",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -51278,13 +50760,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "leather-scraps",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "fenris-set",
-        "setName": "Fenris Set"
+        "setName": "Fenris Set",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -51396,13 +50880,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "pufferfish",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
-        "level": 1,
-        "set": null,
-        "setName": null
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -51474,13 +50958,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "refined-eitr",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge",
-        "level": 3,
         "set": "flametal-armor",
-        "setName": "Flametal Armor"
+        "setName": "Flametal Armor",
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -51554,13 +51040,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "morgen-heart",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge",
-        "level": 3,
         "set": "flametal-armor",
-        "setName": "Flametal Armor"
+        "setName": "Flametal Armor",
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -51629,13 +51117,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "charred-bone",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge",
-        "level": 3,
         "set": "flametal-armor",
-        "setName": "Flametal Armor"
+        "setName": "Flametal Armor",
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -51661,8 +51151,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "fur-cap-brown",
       "name": "Fur cap brown",
       "image": "../smithy/img/armor/fur-cap-brown.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -51683,12 +51173,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -51751,12 +51236,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -51797,8 +51277,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "harvest-dress",
       "name": "Harvest dress",
       "image": "../smithy/img/armor/harvest-dress.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -51825,12 +51305,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Sold by Hildir after returning her Brass chest",
-        "level": 1,
-        "set": "harvest-dress",
-        "setName": "Harvest dress"
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -51871,8 +51346,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "harvest-tunic",
       "name": "Harvest tunic",
       "image": "../smithy/img/armor/harvest-tunic.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -51899,12 +51374,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Sold by Hildir after returning her Brass chest",
-        "level": 1,
-        "set": "harvest-tunic",
-        "setName": "Harvest tunic"
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -51945,8 +51415,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "headband",
       "name": "Headband",
       "image": "../smithy/img/armor/headband.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "meadows",
+      "tier": 1,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -51967,12 +51437,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -52042,13 +51507,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "coal",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
-        "level": 1,
-        "set": null,
-        "setName": null
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -52111,13 +51576,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "deer-hide",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
-        "name": "Forge",
-        "level": 1,
         "set": "iron-armor",
-        "setName": "Iron Armor"
+        "setName": "Iron Armor",
+        "id": "forge",
+        "name": "Forge",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -52180,13 +51647,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "deer-hide",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
-        "name": "Forge",
-        "level": 2,
         "set": "iron-armor",
-        "setName": "Iron Armor"
+        "setName": "Iron Armor",
+        "id": "forge",
+        "name": "Forge",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -52249,13 +51718,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "deer-hide",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
-        "name": "Forge",
-        "level": 2,
         "set": "iron-armor",
-        "setName": "Iron Armor"
+        "setName": "Iron Armor",
+        "id": "forge",
+        "name": "Forge",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -52313,13 +51784,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "deer-hide",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "leather-armor",
-        "setName": "Leather Armor"
+        "setName": "Leather Armor",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -52377,13 +51850,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "deer-hide",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "leather-armor",
-        "setName": "Leather Armor"
+        "setName": "Leather Armor",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -52441,13 +51916,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "deer-hide",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "leather-armor",
-        "setName": "Leather Armor"
+        "setName": "Leather Armor",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -52510,13 +51987,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bone-fragments",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "leather-armor",
-        "setName": "Leather Armor"
+        "setName": "Leather Armor",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -52588,13 +52067,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "writhan-roots",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "lox-fur-set",
-        "setName": "Lox Fur Set"
+        "setName": "Lox Fur Set",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -52666,13 +52147,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "roots",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "lox-fur-set",
-        "setName": "Lox Fur Set"
+        "setName": "Lox Fur Set",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -52744,13 +52227,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "roots",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "lox-fur-set",
-        "setName": "Lox Fur Set"
+        "setName": "Lox Fur Set",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -52819,13 +52304,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "silver",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "lox-fur-set",
-        "setName": "Lox Fur Set"
+        "setName": "Lox Fur Set",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -52882,13 +52369,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "dandelion",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
-        "level": 1,
-        "set": null,
-        "setName": null
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -52953,13 +52440,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bloodgold",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
-        "level": 4,
-        "set": null,
-        "setName": null
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -53022,13 +52509,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "linen-thread",
             "amount": 15
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
-        "name": "Forge",
-        "level": 1,
         "set": "padded-armor",
-        "setName": "Padded Armor"
+        "setName": "Padded Armor",
+        "id": "forge",
+        "name": "Forge",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -53091,13 +52580,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "linen-thread",
             "amount": 20
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
-        "name": "Forge",
-        "level": 2,
         "set": "padded-armor",
-        "setName": "Padded Armor"
+        "setName": "Padded Armor",
+        "id": "forge",
+        "name": "Forge",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -53160,13 +52651,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "linen-thread",
             "amount": 20
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
-        "name": "Forge",
-        "level": 2,
         "set": "padded-armor",
-        "setName": "Padded Armor"
+        "setName": "Padded Armor",
+        "id": "forge",
+        "name": "Forge",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -53229,13 +52722,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "silver",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "padded-armor",
-        "setName": "Padded Armor"
+        "setName": "Padded Armor",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -53302,13 +52797,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "deer-hide",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
-        "level": 1,
-        "set": null,
-        "setName": null
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -53368,13 +52863,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "liquid-frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
-        "name": "Frost Foundry",
-        "level": 4,
         "set": "protector-armor",
-        "setName": "Protector Armor"
+        "setName": "Protector Armor",
+        "id": "frost-foundry",
+        "name": "Frost Foundry",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -53436,13 +52933,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "liquid-frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
-        "name": "Frost Foundry",
-        "level": 4,
         "set": "protector-armor",
-        "setName": "Protector Armor"
+        "setName": "Protector Armor",
+        "id": "frost-foundry",
+        "name": "Frost Foundry",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -53502,13 +53001,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "liquid-frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
-        "name": "Frost Foundry",
-        "level": 4,
         "set": "protector-armor",
-        "setName": "Protector Armor"
+        "setName": "Protector Armor",
+        "id": "frost-foundry",
+        "name": "Frost Foundry",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -53566,13 +53067,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "leather-scraps",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 1,
         "set": "rag-armor",
-        "setName": "Rag Armor"
+        "setName": "Rag Armor",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -53630,13 +53133,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "leather-scraps",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 1,
         "set": "rag-armor",
-        "setName": "Rag Armor"
+        "setName": "Rag Armor",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -53713,13 +53218,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "leather-scraps",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "root-set",
-        "setName": "Root Set"
+        "setName": "Root Set",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -53796,13 +53303,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "deer-hide",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "root-set",
-        "setName": "Root Set"
+        "setName": "Root Set",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -53878,13 +53387,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "deer-hide",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "root-set",
-        "setName": "Root Set"
+        "setName": "Root Set",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -53910,8 +53421,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "shawl-dress-blue",
       "name": "Shawl dress blue",
       "image": "../smithy/img/armor/shawl-dress-blue.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -53932,12 +53443,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -53978,8 +53484,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "shawl-dress-brown",
       "name": "Shawl dress brown",
       "image": "../smithy/img/armor/shawl-dress-brown.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -54000,12 +53506,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -54046,8 +53547,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "shawl-dress-yellow",
       "name": "Shawl dress yellow",
       "image": "../smithy/img/armor/shawl-dress-yellow.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -54068,12 +53569,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -54114,8 +53610,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "simple-cap-purple",
       "name": "Simple cap purple",
       "image": "../smithy/img/armor/simple-cap-purple.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "meadows",
+      "tier": 1,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -54136,12 +53632,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -54174,8 +53665,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "simple-cap-red",
       "name": "Simple cap red",
       "image": "../smithy/img/armor/simple-cap-red.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "meadows",
+      "tier": 1,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -54196,12 +53687,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -54234,8 +53720,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "simple-dress-blue",
       "name": "Simple dress blue",
       "image": "../smithy/img/armor/simple-dress-blue.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -54256,12 +53742,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -54302,8 +53783,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "simple-dress-brown",
       "name": "Simple dress brown",
       "image": "../smithy/img/armor/simple-dress-brown.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -54324,12 +53805,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -54370,8 +53846,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "simple-dress-natural",
       "name": "Simple dress natural",
       "image": "../smithy/img/armor/simple-dress-natural.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "meadows",
+      "tier": 1,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -54392,12 +53868,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -54430,8 +53901,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "simple-dress-yellow",
       "name": "Simple dress yellow",
       "image": "../smithy/img/armor/simple-dress-yellow.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -54452,12 +53923,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -54498,8 +53964,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "simple-tunic-blue",
       "name": "Simple tunic blue",
       "image": "../smithy/img/armor/simple-tunic-blue.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -54520,12 +53986,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -54566,8 +54027,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "simple-tunic-natural",
       "name": "Simple tunic natural",
       "image": "../smithy/img/armor/simple-tunic-natural.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "meadows",
+      "tier": 1,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -54588,12 +54049,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -54626,8 +54082,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "simple-tunic-red",
       "name": "Simple tunic red",
       "image": "../smithy/img/armor/simple-tunic-red.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -54648,12 +54104,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -54694,8 +54145,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "simple-tunic-yellow",
       "name": "Simple tunic yellow",
       "image": "../smithy/img/armor/simple-tunic-yellow.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -54716,12 +54167,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -54762,8 +54208,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "straw-hat",
       "name": "Straw hat",
       "image": "../smithy/img/armor/straw-hat.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -54788,12 +54234,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Sold by Hildir after returning her Brass chest",
-        "level": 1,
-        "set": "straw-hat",
-        "setName": "Straw hat"
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -54834,8 +54275,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "tied-headscarf-blue",
       "name": "Tied headscarf blue",
       "image": "../smithy/img/armor/tied-headscarf-blue.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -54856,12 +54297,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -54902,8 +54338,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "tied-headscarf-yellow",
       "name": "Tied headscarf yellow",
       "image": "../smithy/img/armor/tied-headscarf-yellow.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -54924,12 +54360,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -55013,13 +54444,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bone-fragments",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "troll-set",
-        "setName": "Troll Set"
+        "setName": "Troll Set",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -55083,13 +54516,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "troll-hide",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "troll-set",
-        "setName": "Troll Set"
+        "setName": "Troll Set",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -55153,13 +54588,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "troll-hide",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "troll-set",
-        "setName": "Troll Set"
+        "setName": "Troll Set",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -55228,13 +54665,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bone-fragments",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "troll-set",
-        "setName": "Troll Set"
+        "setName": "Troll Set",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -55260,8 +54699,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "twisted-headscarf-green",
       "name": "Twisted headscarf green",
       "image": "../smithy/img/armor/twisted-headscarf-green.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "category": "armor",
       "teleportable": true,
       "stack": null,
@@ -55282,12 +54721,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -55350,12 +54784,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Hildir",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -55440,13 +54869,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "liquid-frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
-        "name": "Frost Foundry",
-        "level": 4,
         "set": "vanguard-set",
-        "setName": "Vanguard Set"
+        "setName": "Vanguard Set",
+        "id": "frost-foundry",
+        "name": "Frost Foundry",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -55518,13 +54949,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "liquid-frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
-        "name": "Frost Foundry",
-        "level": 4,
         "set": "vanguard-set",
-        "setName": "Vanguard Set"
+        "setName": "Vanguard Set",
+        "id": "frost-foundry",
+        "name": "Frost Foundry",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -55594,13 +55027,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "liquid-frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
-        "name": "Frost Foundry",
-        "level": 4,
         "set": "vanguard-set",
-        "setName": "Vanguard Set"
+        "setName": "Vanguard Set",
+        "id": "frost-foundry",
+        "name": "Frost Foundry",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -55672,13 +55107,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "vile-trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
-        "name": "Forge",
-        "level": 2,
         "set": "vilebone-set",
-        "setName": "Vilebone Set"
+        "setName": "Vilebone Set",
+        "id": "forge",
+        "name": "Forge",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -55755,13 +55192,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "linen-thread",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
-        "name": "Forge",
-        "level": 2,
         "set": "vilebone-set",
-        "setName": "Vilebone Set"
+        "setName": "Vilebone Set",
+        "id": "forge",
+        "name": "Forge",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -55838,13 +55277,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "linen-thread",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
-        "name": "Forge",
-        "level": 2,
         "set": "vilebone-set",
-        "setName": "Vilebone Set"
+        "setName": "Vilebone Set",
+        "id": "forge",
+        "name": "Forge",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -55912,13 +55353,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "drake-trophy",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
-        "name": "Forge",
-        "level": 1,
         "set": "wolf-armor",
-        "setName": "Wolf Armor"
+        "setName": "Wolf Armor",
+        "id": "forge",
+        "name": "Forge",
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -55988,13 +55431,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "chain",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
-        "name": "Forge",
-        "level": 2,
         "set": "wolf-armor",
-        "setName": "Wolf Armor"
+        "setName": "Wolf Armor",
+        "id": "forge",
+        "name": "Forge",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -56062,13 +55507,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "wolf-fang",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
-        "name": "Forge",
-        "level": 2,
         "set": "wolf-armor",
-        "setName": "Wolf Armor"
+        "setName": "Wolf Armor",
+        "id": "forge",
+        "name": "Forge",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -56138,13 +55585,15 @@ globalThis.VC_ITEMS_DATA = {
             "name": "wolf-trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
-        "name": "Workbench",
-        "level": 2,
         "set": "wolf-armor",
-        "setName": "Wolf Armor"
+        "setName": "Wolf Armor",
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -56194,12 +55643,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 1
       },
       "recipe": null,
-      "station": {
-        "name": "Haldor",
-        "level": 1,
-        "set": null,
-        "setName": null
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [],
@@ -56278,9 +55722,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "fiery-spice-powder",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -56336,9 +55782,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "unbaked-poteitr",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "oven"
       },
       "station": {
+        "id": "oven",
         "name": "Oven",
         "level": 1
       },
@@ -56412,9 +55860,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "woodland-herb-blend",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -56483,9 +55933,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "turnip",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 2
       },
@@ -56555,9 +56007,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "barley-flour",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 4
       },
@@ -56666,9 +56120,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "honey",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -56798,9 +56254,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "carrot",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -56859,9 +56317,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bonemaw-meat",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "iron-cooking-station"
       },
       "station": {
+        "id": "iron-cooking-station",
         "name": "Iron Cooking Station",
         "level": 1
       },
@@ -56917,9 +56377,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "seal-blubber",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "oven"
       },
       "station": {
+        "id": "oven",
         "name": "Oven",
         "level": 1
       },
@@ -56979,9 +56441,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "wolf-meat",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cooking-station"
       },
       "station": {
+        "id": "cooking-station",
         "name": "Cooking Station",
         "level": 1
       },
@@ -57040,9 +56504,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "chicken-meat",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cooking-station"
       },
       "station": {
+        "id": "cooking-station",
         "name": "Cooking Station",
         "level": 1
       },
@@ -57101,9 +56567,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "egg",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -57162,9 +56630,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "hare-meat",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cooking-station"
       },
       "station": {
+        "id": "cooking-station",
         "name": "Cooking Station",
         "level": 1
       },
@@ -57223,9 +56693,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "lox-meat",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "iron-cooking-station"
       },
       "station": {
+        "id": "iron-cooking-station",
         "name": "Iron Cooking Station",
         "level": 1
       },
@@ -57289,9 +56761,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "freeze-gland",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 3
       },
@@ -57360,9 +56834,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "smoke-puff",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 5
       },
@@ -57421,9 +56897,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "uncooked-fish-n-bread",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "oven"
       },
       "station": {
+        "id": "oven",
         "name": "Oven",
         "level": 1
       },
@@ -57489,9 +56967,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "ice",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 7
       },
@@ -57555,9 +57035,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "barley-flour",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 4
       },
@@ -57615,9 +57097,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "unbaked-sweetbread",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "oven"
       },
       "station": {
+        "id": "oven",
         "name": "Oven",
         "level": 1
       },
@@ -57678,9 +57162,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "neck-tail",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cooking-station"
       },
       "station": {
+        "id": "cooking-station",
         "name": "Cooking Station",
         "level": 1
       },
@@ -57754,9 +57240,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "mountain-peak-pepper-powder",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -57815,9 +57303,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "uncooked-honey-glazed-chicken",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "oven"
       },
       "station": {
+        "id": "oven",
         "name": "Oven",
         "level": 1
       },
@@ -57873,9 +57363,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "raw-kale-chips",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "oven"
       },
       "station": {
+        "id": "oven",
         "name": "Oven",
         "level": 1
       },
@@ -57936,9 +57428,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "ice",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 6
       },
@@ -58064,9 +57558,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "smoke-puff",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 6
       },
@@ -58135,9 +57631,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "fiddlehead",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 6
       },
@@ -58208,9 +57706,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "lingonberries",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 7
       },
@@ -58269,9 +57769,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "uncooked-meat-platter",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "oven"
       },
       "station": {
+        "id": "oven",
         "name": "Oven",
         "level": 1
       },
@@ -58337,9 +57839,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "poteitr",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 7
       },
@@ -58408,9 +57912,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "carrot",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -58479,9 +57985,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "blueberries",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 2
       },
@@ -58545,9 +58053,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "jotun-puffs",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 5
       },
@@ -58621,9 +58131,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "herbs-of-the-hidden-hills",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -58694,9 +58206,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "seasoning-of-the-gourd",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -58762,9 +58276,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "oat-milk",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 6
       },
@@ -58820,9 +58336,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "oven-pancake-batter",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "oven"
       },
       "station": {
+        "id": "oven",
         "name": "Oven",
         "level": 1
       },
@@ -58893,9 +58411,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "blueberries",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 6
       },
@@ -58953,9 +58473,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "uncooked-piquant-pie",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "oven"
       },
       "station": {
+        "id": "oven",
         "name": "Oven",
         "level": 1
       },
@@ -59029,9 +58551,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "grasslands-herbalist-harvest",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -59097,9 +58621,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "blueberries",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -59157,9 +58683,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "uncooked-roasted-crust-pie",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "oven"
       },
       "station": {
+        "id": "oven",
         "name": "Oven",
         "level": 1
       },
@@ -59285,9 +58813,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "seafarer-s-herbs",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -59356,9 +58886,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "cloudberries",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 5
       },
@@ -59424,9 +58956,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "ice",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 7
       },
@@ -59495,9 +59029,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "royal-jelly",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 5
       },
@@ -59567,9 +59103,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "honey",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 2
       },
@@ -59638,9 +59176,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "vineberry-cluster",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 5
       },
@@ -59706,9 +59246,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "poteitr",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 7
       },
@@ -59769,9 +59311,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "kale",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 7
       },
@@ -59845,9 +59389,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "magecap",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 6
       },
@@ -59916,9 +59462,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "fiddlehead",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 5
       },
@@ -59977,9 +59525,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "uncooked-stuffed-mushroom",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "oven"
       },
       "station": {
+        "id": "oven",
         "name": "Oven",
         "level": 1
       },
@@ -60053,9 +59603,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "woodland-herb-blend",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -60129,9 +59681,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "woodland-herb-blend",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "food-preparation-table"
       },
       "station": {
+        "id": "food-preparation-table",
         "name": "Food Preparation Table",
         "level": 1
       },
@@ -60194,9 +59748,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "honey",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 3
       },
@@ -60262,9 +59818,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "fragrant-bundle",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -60330,9 +59888,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "toadstool",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -60398,9 +59958,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "pungent-pebbles",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -60466,9 +60028,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "fresh-seaweed",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -60529,9 +60093,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "cloudberries",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -60602,9 +60168,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "greydwarf-eye",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -60670,9 +60238,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "magecap",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -60738,9 +60308,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "magecap",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -60806,9 +60378,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "smoke-puff",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -60874,9 +60448,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "jotun-puffs",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -60994,9 +60570,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "royal-jelly",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -61062,9 +60640,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "powdered-dragon-eggshells",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -61135,9 +60715,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "dandelion",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -61203,9 +60785,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "yellow-mushroom",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -61276,9 +60860,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "magecap",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -61349,9 +60935,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "dandelion",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -61417,9 +61005,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "yellow-mushroom",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -61490,9 +61080,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "coal",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -61558,9 +61150,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "blueberries",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -61626,9 +61220,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "cured-squirrel-hamstring",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "mead-ketill"
       },
       "station": {
+        "id": "mead-ketill",
         "name": "Mead Ketill",
         "level": 1
       },
@@ -61690,9 +61286,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "moose-hide",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -61757,9 +61355,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "leather-scraps",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -61824,9 +61424,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "asksvin-hide",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -61878,9 +61480,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "ashwood",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -61934,9 +61538,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "asksvin-hide",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -62010,9 +61616,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "asksvin-skull",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -62081,9 +61689,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "troll-hide",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -62147,9 +61757,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bear-trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -62205,9 +61817,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "wood",
             "amount": 8
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -62259,9 +61873,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "finewood",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -62325,9 +61941,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "coal",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -62384,9 +62002,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "copper",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "stonecutter"
       },
       "station": {
+        "id": "stonecutter",
         "name": "Stonecutter",
         "level": 1
       },
@@ -62443,9 +62063,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "copper",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "stonecutter"
       },
       "station": {
+        "id": "stonecutter",
         "name": "Stonecutter",
         "level": 1
       },
@@ -62512,9 +62134,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "copper",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "stonecutter"
       },
       "station": {
+        "id": "stonecutter",
         "name": "Stonecutter",
         "level": 1
       },
@@ -62578,9 +62202,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "blueberries",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -62634,9 +62260,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "blue-jute",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -62695,9 +62323,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "finewood",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -62756,9 +62386,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "finewood",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -62832,9 +62464,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "cloudberries",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -62898,9 +62532,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "fenris-claw",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -62967,9 +62603,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "charred-skull",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "stonecutter"
       },
       "station": {
+        "id": "stonecutter",
         "name": "Stonecutter",
         "level": 1
       },
@@ -63039,9 +62677,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "corewood",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -63101,9 +62741,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "wood",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -63160,9 +62802,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "moose-hide",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -63254,9 +62898,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "finewood",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -63323,9 +62969,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "deer-hide",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -63379,9 +63027,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "deer-hide",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -63456,9 +63106,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "iron-nails",
             "amount": 15
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -63523,9 +63175,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "chain",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -63590,9 +63244,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "chain",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -63651,9 +63307,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "thistle",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -63712,9 +63370,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "dandelion",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -63778,9 +63438,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "guck",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -63845,9 +63507,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "chain",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -63901,9 +63565,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "scale-hide",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -63958,9 +63624,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "stone",
             "amount": 15
           }
-        ]
+        ],
+        "stationId": "stonecutter"
       },
       "station": {
+        "id": "stonecutter",
         "name": "Stonecutter",
         "level": 1
       },
@@ -64030,9 +63698,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "stone",
             "amount": 8
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -64091,9 +63761,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "wood",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -64153,9 +63825,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bronze-nails",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -64215,9 +63889,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bronze-nails",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -64277,9 +63953,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "resin",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -64338,9 +64016,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "charcoal-resin",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -64404,9 +64084,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "sulfur",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -64468,9 +64150,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "iron-nails",
             "amount": 20
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -64532,9 +64216,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "iron-nails",
             "amount": 20
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -64588,9 +64274,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "lox-pelt",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -64655,9 +64343,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "thistle",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -64716,9 +64406,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "charcoal-resin",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -64778,9 +64470,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "red-jute",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -64891,9 +64585,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "cloudberries",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -64962,9 +64658,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "raspberries",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -65021,9 +64719,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "iron-nails",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -65087,9 +64787,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "bloodbag",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -65143,9 +64845,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "red-jute",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -65204,9 +64908,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "finewood",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -65268,9 +64974,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "iron-nails",
             "amount": 20
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -65322,9 +65030,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "seal-pelt",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -65376,9 +65086,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "corewood",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -65437,9 +65149,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "charcoal-resin",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -65491,9 +65205,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "snowball",
             "amount": 8
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -65555,9 +65271,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "iron-nails",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -65622,9 +65340,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "fenris-claw",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -65686,9 +65406,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "wolf-pelt",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "stonecutter"
       },
       "station": {
+        "id": "stonecutter",
         "name": "Stonecutter",
         "level": 1
       },
@@ -65740,9 +65462,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "finewood",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -65801,9 +65525,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "flax",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -65855,9 +65581,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "finewood",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -65926,9 +65654,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "cloudberries",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -65992,9 +65722,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "raspberries",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -66063,9 +65795,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "cloudberries",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -66119,9 +65853,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "wolf-pelt",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -66190,9 +65926,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "dandelion",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -66252,9 +65990,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "pine-cone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -66314,9 +66054,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "fir-cone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -66381,9 +66123,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "finewood",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -66439,9 +66183,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Surtling Core",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -66506,9 +66252,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Finewood",
             "amount": 20
           }
-        ]
+        ],
+        "stationId": "artisan-table"
       },
       "station": {
+        "id": "artisan-table",
         "name": "Artisan Table",
         "level": 1
       },
@@ -66562,9 +66310,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Surtling Core",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -66623,9 +66373,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "artisan-table"
       },
       "station": {
+        "id": "artisan-table",
         "name": "Artisan Table",
         "level": 1
       },
@@ -66680,7 +66432,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "wood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -66738,7 +66491,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "black-core",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -66802,7 +66556,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "copper",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -66861,7 +66616,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "stone",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -66911,7 +66667,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "wood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -66971,7 +66728,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "refined-eitr",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -67019,7 +66777,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "tin",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -67077,7 +66836,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "resin",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -67125,7 +66885,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "wood",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -67178,7 +66939,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "iron",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -67236,7 +66998,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "surtling-core",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -67293,7 +67056,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "leather-scraps",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -67352,7 +67116,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "leather-scraps",
             "amount": 15
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -67421,7 +67186,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "turnip",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -67485,7 +67251,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "silver",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -67549,7 +67316,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "finewood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -67606,7 +67374,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "corewood",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -67663,7 +67432,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "flametal",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -67713,7 +67483,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "timberwood",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -67740,7 +67511,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "black-forest",
       "tier": 2,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -67941,7 +67712,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "black-forest",
       "tier": 2,
-      "category": "valuable",
+      "category": "material",
       "teleportable": true,
       "stack": 20,
       "weight": 10,
@@ -68054,120 +67825,12 @@ globalThis.VC_ITEMS_DATA = {
       }
     },
     {
-      "id": "wider-pockets",
-      "name": "Wider Pockets",
-      "image": null,
-      "biome": "mountain",
-      "tier": 5,
-      "category": "drop",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": null,
-      "names": {},
-      "description": "Permanently adds a row to the inventory (+8 slots). (Can only be bought once per player)",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [],
-        "traders": [
-          {
-            "id": "haldor",
-            "name": "Haldor",
-            "price": 1000,
-            "unlockedBy": {
-              "type": "boss",
-              "id": "moder",
-              "name": "Moder",
-              "biome": "mountain",
-              "text": "Requires defeating Moder"
-            }
-          }
-        ],
-        "raw": [
-          {
-            "text": "Sold by Haldor",
-            "kind": "npc"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {
-        "traders": "/traders/#trader=haldor"
-      }
-    },
-    {
-      "id": "deeper-pockets",
-      "name": "Deeper Pockets",
-      "image": null,
-      "biome": "mistlands",
-      "tier": 7,
-      "category": "drop",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": null,
-      "names": {},
-      "description": "Permanently adds another row to the inventory (+8 slots). (Can only be bought once per player)",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [],
-        "traders": [
-          {
-            "id": "haldor",
-            "name": "Haldor",
-            "price": 2000,
-            "unlockedBy": {
-              "type": "boss",
-              "id": "the-queen",
-              "name": "The Queen",
-              "biome": "mistlands",
-              "text": "Requires defeating The Queen"
-            }
-          }
-        ],
-        "raw": [
-          {
-            "text": "Sold by Haldor",
-            "kind": "npc"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {
-        "traders": "/traders/#trader=haldor"
-      }
-    },
-    {
       "id": "basic-fireworks",
       "name": "Basic fireworks",
       "image": null,
-      "biome": "black-forest",
-      "tier": 2,
-      "category": "building",
+      "biome": "plains",
+      "tier": 6,
+      "category": "material",
       "teleportable": true,
       "stack": 10,
       "weight": 0.5,
@@ -68325,8 +67988,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "scythe-handle",
       "name": "Scythe Handle",
       "image": null,
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "mountain",
+      "tier": 5,
       "category": "material",
       "teleportable": true,
       "stack": 20,
@@ -68491,8 +68154,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "corked-vial",
       "name": "Corked Vial",
       "image": null,
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "material",
       "teleportable": true,
       "stack": 10,
@@ -68596,57 +68259,11 @@ globalThis.VC_ITEMS_DATA = {
       "crossLinks": {}
     },
     {
-      "id": "3-feathers",
-      "name": "3 Feathers",
-      "image": null,
-      "biome": "ashlands",
-      "tier": 8,
-      "category": "drop",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": null,
-      "names": {},
-      "description": null,
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [
-          {
-            "id": "ash-crow",
-            "name": "Ash Crow",
-            "biome": "ashlands"
-          }
-        ],
-        "locations": [],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Dropped by Ash Crow",
-            "kind": "creature",
-            "creatureId": "ash-crow"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
       "id": "dvergr-trophy",
       "name": "Dvergr Trophy",
       "image": "../bestiary/img/creatures/ashlands-dvergr-trophy.png",
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "mistlands",
+      "tier": 7,
       "category": "trophy",
       "teleportable": true,
       "stack": 20,
@@ -68706,8 +68323,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "coins",
       "name": "Coins",
       "image": null,
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "meadows",
+      "tier": 1,
       "category": "valuable",
       "teleportable": true,
       "stack": 999,
@@ -69049,7 +68666,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "swamp",
       "tier": 4,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 0.1,
@@ -69187,7 +68804,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "black-forest",
       "tier": 2,
-      "category": "valuable",
+      "category": "drop",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -69563,7 +69180,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "deep-north",
       "tier": 9,
-      "category": "summoning",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -69608,7 +69225,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-intricate-key",
             "name": "Cast: Intricate Key",
-            "level": 1,
+            "level": 4,
             "biome": "deep-north",
             "itemId": "cast-intricate-key"
           }
@@ -69714,7 +69331,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "ashlands",
       "tier": 8,
-      "category": "material",
+      "category": "drop",
       "teleportable": true,
       "stack": 30,
       "weight": 1,
@@ -69798,7 +69415,13 @@ globalThis.VC_ITEMS_DATA = {
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": [
           {
             "id": "jormundling",
             "name": "Jörmundling",
@@ -69806,13 +69429,7 @@ globalThis.VC_ITEMS_DATA = {
             "biome": "ashlands",
             "itemId": "jormundling"
           }
-        ],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
+        ]
       },
       "crossLinks": {}
     },
@@ -69852,15 +69469,7 @@ globalThis.VC_ITEMS_DATA = {
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
-          {
-            "id": "wolf-sight",
-            "name": "Wolf Sight",
-            "level": 1,
-            "biome": "mountain",
-            "itemId": "wolf-sight"
-          }
-        ],
+        "armor": [],
         "food": [],
         "meads": [],
         "comfort": [],
@@ -69873,6 +69482,13 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "mountain",
             "itemId": "cold-fishing-bait"
+          },
+          {
+            "id": "wolf-sight",
+            "name": "Wolf Sight",
+            "level": 1,
+            "biome": "mountain",
+            "itemId": "wolf-sight"
           }
         ]
       },
@@ -69884,7 +69500,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "drop",
       "teleportable": true,
       "stack": 20,
       "weight": 1,
@@ -70029,7 +69645,13 @@ globalThis.VC_ITEMS_DATA = {
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": [
           {
             "id": "evasion-mantle",
             "name": "Evasion Mantle",
@@ -70037,13 +69659,7 @@ globalThis.VC_ITEMS_DATA = {
             "biome": "plains",
             "itemId": "evasion-mantle"
           }
-        ],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
+        ]
       },
       "crossLinks": {}
     },
@@ -70145,7 +69761,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "mountain",
       "tier": 5,
-      "category": "valuable",
+      "category": "drop",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -70313,7 +69929,13 @@ globalThis.VC_ITEMS_DATA = {
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": [
           {
             "id": "pulsating-earrings",
             "name": "Pulsating Earrings",
@@ -70321,13 +69943,7 @@ globalThis.VC_ITEMS_DATA = {
             "biome": "ashlands",
             "itemId": "pulsating-earrings"
           }
-        ],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
+        ]
       },
       "crossLinks": {}
     },
@@ -70464,7 +70080,13 @@ globalThis.VC_ITEMS_DATA = {
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": [
           {
             "id": "heart-of-the-forest",
             "name": "Heart of the Forest",
@@ -70472,13 +70094,7 @@ globalThis.VC_ITEMS_DATA = {
             "biome": "meadows",
             "itemId": "heart-of-the-forest"
           }
-        ],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
+        ]
       },
       "crossLinks": {}
     },
@@ -70589,7 +70205,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": "If there's a key, then surely there must be a lock.",
       "stats": null,
       "recipe": {
-        "station": "Frost Foundry\nHexen",
+        "station": "Frost Foundry",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -70603,10 +70219,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
-        "name": "Frost Foundry\nHexen",
+        "id": "frost-foundry",
+        "name": "Frost Foundry",
         "level": 1
       },
       "sources": {
@@ -70645,7 +70263,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -70691,7 +70309,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -70921,7 +70539,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "drop",
       "teleportable": true,
       "stack": 30,
       "weight": 1,
@@ -71013,7 +70631,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -71059,7 +70677,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -71105,7 +70723,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -71151,7 +70769,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -71197,7 +70815,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "drop",
       "teleportable": true,
       "stack": 50,
       "weight": 2,
@@ -71365,7 +70983,13 @@ globalThis.VC_ITEMS_DATA = {
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": [
           {
             "id": "iron-brooch",
             "name": "Iron Brooch",
@@ -71373,13 +70997,7 @@ globalThis.VC_ITEMS_DATA = {
             "biome": "swamp",
             "itemId": "iron-brooch"
           }
-        ],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
+        ]
       },
       "crossLinks": {}
     },
@@ -71419,15 +71037,7 @@ globalThis.VC_ITEMS_DATA = {
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
-          {
-            "id": "bracelets-of-the-brave",
-            "name": "Bracelets of the Brave",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "bracelets-of-the-brave"
-          }
-        ],
+        "armor": [],
         "food": [],
         "meads": [],
         "comfort": [],
@@ -71440,6 +71050,13 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "mistlands",
             "itemId": "misty-fishing-bait"
+          },
+          {
+            "id": "bracelets-of-the-brave",
+            "name": "Bracelets of the Brave",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "bracelets-of-the-brave"
           }
         ]
       },
@@ -71573,7 +71190,13 @@ globalThis.VC_ITEMS_DATA = {
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": [
           {
             "id": "brimstone",
             "name": "Brimstone",
@@ -71581,13 +71204,7 @@ globalThis.VC_ITEMS_DATA = {
             "biome": "mistlands",
             "itemId": "brimstone"
           }
-        ],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
+        ]
       },
       "crossLinks": {}
     },
@@ -71765,7 +71382,13 @@ globalThis.VC_ITEMS_DATA = {
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": [
           {
             "id": "resounding-shackle",
             "name": "Resounding Shackle",
@@ -71773,13 +71396,7 @@ globalThis.VC_ITEMS_DATA = {
             "biome": "ashlands",
             "itemId": "resounding-shackle"
           }
-        ],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
+        ]
       },
       "crossLinks": {}
     },
@@ -71865,15 +71482,7 @@ globalThis.VC_ITEMS_DATA = {
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
-          {
-            "id": "fins-of-destiny",
-            "name": "Fins of Destiny",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "fins-of-destiny"
-          }
-        ],
+        "armor": [],
         "food": [],
         "meads": [],
         "comfort": [],
@@ -71886,6 +71495,13 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "ocean",
             "itemId": "heavy-fishing-bait"
+          },
+          {
+            "id": "fins-of-destiny",
+            "name": "Fins of Destiny",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "fins-of-destiny"
           }
         ]
       },
@@ -71943,7 +71559,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../damage-calculator/items/tiny-pulp.png",
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "drop",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -71989,7 +71605,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "drop",
       "teleportable": true,
       "stack": 50,
       "weight": 0.5,
@@ -72040,7 +71656,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "ashlands",
       "tier": 8,
-      "category": "material",
+      "category": "drop",
       "teleportable": true,
       "stack": 10,
       "weight": 5,
@@ -72069,7 +71685,13 @@ globalThis.VC_ITEMS_DATA = {
         ]
       },
       "usedIn": {
-        "weapons": [
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
           {
             "id": "catapult",
             "name": "Catapult",
@@ -72078,12 +71700,6 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "catapult"
           }
         ],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
         "crafting": []
       },
       "crossLinks": {}
@@ -72124,7 +71740,13 @@ globalThis.VC_ITEMS_DATA = {
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": [
           {
             "id": "crystal-heart",
             "name": "Crystal Heart",
@@ -72132,13 +71754,7 @@ globalThis.VC_ITEMS_DATA = {
             "biome": "mountain",
             "itemId": "crystal-heart"
           }
-        ],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
+        ]
       },
       "crossLinks": {}
     },
@@ -72178,7 +71794,13 @@ globalThis.VC_ITEMS_DATA = {
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": [
           {
             "id": "nimble-anklet",
             "name": "Nimble Anklet",
@@ -72186,13 +71808,7 @@ globalThis.VC_ITEMS_DATA = {
             "biome": "plains",
             "itemId": "nimble-anklet"
           }
-        ],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
+        ]
       },
       "crossLinks": {}
     },
@@ -72340,7 +71956,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "mistlands",
       "tier": 7,
-      "category": "material",
+      "category": "drop",
       "teleportable": true,
       "stack": 30,
       "weight": 1,
@@ -72716,7 +72332,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "plains",
       "tier": 6,
-      "category": "valuable",
+      "category": "drop",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -72877,9 +72493,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Troll Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -72934,9 +72552,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Abomination Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -72991,9 +72611,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Fenring Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -73048,9 +72670,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Fuling Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -73105,9 +72729,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Serpent Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -73162,9 +72788,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Lox Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -73219,9 +72847,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Charred Warrior Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -73276,9 +72906,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Drake Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "cauldron"
       },
       "station": {
+        "id": "cauldron",
         "name": "Cauldron",
         "level": 1
       },
@@ -73303,96 +72935,6 @@ globalThis.VC_ITEMS_DATA = {
         "crafting": []
       },
       "crossLinks": {}
-    },
-    {
-      "id": "iron-shield",
-      "name": "Iron shield",
-      "image": null,
-      "biome": "swamp",
-      "tier": 4,
-      "category": "shield",
-      "teleportable": true,
-      "stack": null,
-      "weight": 4,
-      "wiki": "https://valheim.weirdgloop.org/w/Iron_shield",
-      "names": {},
-      "description": "An iron sword-breaker, tile of the battle-wall.",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "n/a",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "n/a"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {
-        "smithy": "/smithy/#item=iron-shield"
-      }
-    },
-    {
-      "id": "knight-shield",
-      "name": "Knight shield",
-      "image": null,
-      "biome": "swamp",
-      "tier": 4,
-      "category": "shield",
-      "teleportable": true,
-      "stack": null,
-      "weight": 4,
-      "wiki": "https://valheim.weirdgloop.org/w/Knight_shield",
-      "names": {},
-      "description": "A wooden shield reinforced with iron.",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Console",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Console"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {
-        "smithy": "/smithy/#item=knight-shield"
-      }
     },
     {
       "id": "tanning-rack",
@@ -73433,9 +72975,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Deer Hide",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -73500,9 +73044,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Thunder Stone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -73599,7 +73145,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Defensive structure that shoots missiles at anything that gets in its way.",
       "stats": null,
       "recipe": {
-        "station": "Hammer",
+        "station": null,
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -73618,12 +73164,10 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Mechanical Spring",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": null
       },
-      "station": {
-        "name": "Hammer",
-        "level": 1
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -73680,9 +73224,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Kindled Ribs",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "stonecutter"
       },
       "station": {
+        "id": "stonecutter",
         "name": "Stonecutter",
         "level": 1
       },
@@ -73747,9 +73293,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Writhan Roots",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -73786,7 +73334,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "swamp",
       "tier": 4,
-      "category": "valuable",
+      "category": "casting",
       "teleportable": true,
       "stack": 20,
       "weight": 0.5,
@@ -73857,9 +73405,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Obsidian",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -73919,9 +73469,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Guck",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -73986,9 +73538,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Ice",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -74053,9 +73607,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Frostcore",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -74092,7 +73648,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "black-forest",
       "tier": 2,
-      "category": "valuable",
+      "category": "casting",
       "teleportable": true,
       "stack": 20,
       "weight": 0.5,
@@ -74135,7 +73691,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "ashlands",
       "tier": 8,
-      "category": "valuable",
+      "category": "casting",
       "teleportable": true,
       "stack": 20,
       "weight": 0.5,
@@ -74187,7 +73743,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": "With this in your hand, you can raise high halls and mighty fortifications.",
       "stats": null,
       "recipe": {
-        "station": "Player crafting menu",
+        "station": null,
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -74201,12 +73757,10 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Stone",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": null
       },
-      "station": {
-        "name": "Player crafting menu",
-        "level": 1
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -74258,9 +73812,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Wood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -74311,14 +73867,21 @@ globalThis.VC_ITEMS_DATA = {
         "creatures": [],
         "locations": [
           {
-            "text": "Fishing\n(Giant Herring bonus drop)",
+            "text": "Fishing",
+            "kind": "location"
+          },
+          {
+            "text": "(Giant Herring bonus drop)",
             "kind": "location"
           }
         ],
         "traders": [],
         "raw": [
           {
-            "text": "Fishing\n(Giant Herring bonus drop)"
+            "text": "Fishing"
+          },
+          {
+            "text": "(Giant Herring bonus drop)"
           }
         ]
       },
@@ -74363,9 +73926,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bronze",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -74425,9 +73990,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Queen Bee",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -74487,9 +74054,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Sharpening Stone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -74554,9 +74123,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Chain",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -74616,9 +74187,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Wood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -74678,9 +74251,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bronze",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -74740,9 +74315,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Copper",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -74802,9 +74379,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Flint",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -74859,7 +74438,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Wood",
             "amount": 50
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -74904,7 +74484,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Stone",
             "amount": 50
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -74949,9 +74530,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Wood",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -75006,9 +74589,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Wood",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -75068,9 +74653,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Corewood",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -75125,9 +74712,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Crystal",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -75182,7 +74771,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Yggdrasil Wood",
             "amount": 50
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -75237,9 +74827,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Black Marble",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -75299,9 +74891,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iron",
             "amount": 8
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -75361,9 +74955,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iron",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -75433,9 +75029,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -75505,9 +75103,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Charred Bone",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -75562,7 +75162,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Charred Skull",
             "amount": 50
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -75622,9 +75223,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Ashwood",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
+        "id": "galdr-table",
         "name": "Galdr Table",
         "level": 1
       },
@@ -75679,9 +75282,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Ashwood",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -75718,7 +75323,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "meadows",
       "tier": 1,
-      "category": "drop",
+      "category": "ingredient",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -75727,7 +75332,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Needs something to cling to.",
       "stats": null,
       "recipe": {
-        "station": "Ivy Seeds",
+        "station": null,
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -75736,12 +75341,10 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Ivy Seeds",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": null
       },
-      "station": {
-        "name": "Ivy Seeds",
-        "level": 1
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -75793,7 +75396,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iron",
             "amount": 30
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -75838,7 +75442,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Silver",
             "amount": 30
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -75883,7 +75488,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Tin",
             "amount": 30
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -75928,7 +75534,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Timberwood",
             "amount": 50
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -75973,7 +75580,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Ice",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -76023,9 +75631,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bloodgold",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -76080,9 +75690,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Stone",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -76137,9 +75749,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Wood",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -76209,9 +75823,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Ancient Bark",
             "amount": 40
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -76276,9 +75892,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Resin",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -76343,9 +75961,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Resin",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -76405,9 +76025,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bronze Nails",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -76477,9 +76099,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bronze Nails",
             "amount": 80
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -76539,9 +76163,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Wood",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -76606,7 +76232,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Surtling Core",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -76656,9 +76283,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iron",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -76718,9 +76347,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iron",
             "amount": 8
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -76780,7 +76411,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Wood",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -76830,9 +76462,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Resin",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -76892,9 +76526,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Resin",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -76959,9 +76595,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Black Metal",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -77021,9 +76659,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Greydwarf Eye",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -77098,9 +76738,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Silver",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -77165,9 +76807,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Mechanical Spring",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -77232,7 +76876,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Refined Eitr",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -77282,7 +76927,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Wisp",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -77318,7 +76964,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Black forge improvement",
       "stats": null,
       "recipe": {
-        "station": "Black forge",
+        "station": "Black Forge",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -77337,10 +76983,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Mechanical spring",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black forge",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 1
       },
       "sources": {
@@ -77409,9 +77057,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Resin",
             "amount": 15
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
+        "id": "galdr-table",
         "name": "Galdr Table",
         "level": 1
       },
@@ -77481,9 +77131,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Yggdrasil Wood",
             "amount": 25
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -77520,7 +77172,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "meadows",
       "tier": 1,
-      "category": "weapon",
+      "category": "building",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -77548,9 +77200,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Ashwood",
             "amount": 20
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -77579,9 +77233,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=battering-ram"
-      }
+      "crossLinks": {}
     },
     {
       "id": "catapult",
@@ -77589,7 +77241,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "meadows",
       "tier": 1,
-      "category": "weapon",
+      "category": "building",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -77617,9 +77269,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Ashwood",
             "amount": 20
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -77648,9 +77302,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=catapult"
-      }
+      "crossLinks": {}
     },
     {
       "id": "resin-candle",
@@ -77681,9 +77333,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Candle Wick",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -77743,9 +77397,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Coal",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -77833,9 +77489,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Raspberries",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -77895,9 +77553,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Nornathread",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
+        "id": "galdr-table",
         "name": "Galdr Table",
         "level": 1
       },
@@ -77962,9 +77622,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Moose Hide",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -78029,9 +77691,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Black Metal",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -78096,9 +77760,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Flametal",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -78153,7 +77819,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Obsidian",
             "amount": 50
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -78203,9 +77870,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Stone",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -78265,9 +77934,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bronze",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -78302,8 +77973,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "paved-road",
       "name": "Paved road",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "swamp",
+      "tier": 4,
       "category": "building",
       "teleportable": true,
       "stack": null,
@@ -78313,7 +77984,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": null,
       "stats": null,
       "recipe": {
-        "station": "Stonecutter\nHoe",
+        "station": "Stonecutter",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -78322,24 +77993,33 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Stone",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "stonecutter"
       },
       "station": {
-        "name": "Stonecutter\nHoe",
+        "id": "stonecutter",
+        "name": "Stonecutter",
         "level": 1
       },
       "sources": {
         "creatures": [],
         "locations": [
           {
-            "text": "Stonecutter\nHoe",
+            "text": "Stonecutter",
+            "kind": "location"
+          },
+          {
+            "text": "Hoe",
             "kind": "location"
           }
         ],
         "traders": [],
         "raw": [
           {
-            "text": "Stonecutter\nHoe"
+            "text": "Stonecutter"
+          },
+          {
+            "text": "Hoe"
           }
         ]
       },
@@ -78384,9 +78064,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Torn Spirit",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "stonecutter"
       },
       "station": {
+        "id": "stonecutter",
         "name": "Stonecutter",
         "level": 1
       },
@@ -78423,7 +78105,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "meadows",
       "tier": 1,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 0.1,
@@ -78446,9 +78128,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Wisp",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -78477,9 +78161,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=wisplight"
-      }
+      "crossLinks": {}
     },
     {
       "id": "barrel",
@@ -78510,9 +78192,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Barrel Hoops",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -78549,7 +78233,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "swamp",
       "tier": 4,
-      "category": "valuable",
+      "category": "casting",
       "teleportable": true,
       "stack": 20,
       "weight": 0.5,
@@ -78592,7 +78276,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "plains",
       "tier": 6,
-      "category": "valuable",
+      "category": "casting",
       "teleportable": true,
       "stack": 20,
       "weight": 0.5,
@@ -78678,7 +78362,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "meadows",
       "tier": 1,
-      "category": "shield",
+      "category": "building",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -78706,9 +78390,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Shield Core",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -78737,9 +78423,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=shield-generator"
-      }
+      "crossLinks": {}
     },
     {
       "id": "bloodgold-protection-idol",
@@ -78747,7 +78431,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "ashlands",
       "tier": 8,
-      "category": "valuable",
+      "category": "casting",
       "teleportable": true,
       "stack": 20,
       "weight": 0.5,
@@ -78828,9 +78512,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Sap",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -78881,14 +78567,21 @@ globalThis.VC_ITEMS_DATA = {
         "creatures": [],
         "locations": [
           {
-            "text": "Dropped by breaking some Dvergr structures\nAncient Swords/Armor",
+            "text": "Dropped by breaking some Dvergr structures",
+            "kind": "location"
+          },
+          {
+            "text": "Ancient Swords/Armor",
             "kind": "location"
           }
         ],
         "traders": [],
         "raw": [
           {
-            "text": "Dropped by breaking some Dvergr structures\nAncient Swords/Armor"
+            "text": "Dropped by breaking some Dvergr structures"
+          },
+          {
+            "text": "Ancient Swords/Armor"
           }
         ]
       },
@@ -78928,9 +78621,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Copper",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -79000,9 +78695,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Hook",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -79067,9 +78764,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Skeleton Trophy",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
+        "id": "galdr-table",
         "name": "Galdr Table",
         "level": 1
       },
@@ -79117,7 +78816,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Forged from one of the hardest metals in all of Valheim, this missile is sure to hold off your enemies.",
       "stats": null,
       "recipe": {
-        "station": "Artisan table",
+        "station": "Artisan Table",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -79131,10 +78830,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Flametal",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "artisan-table"
       },
       "station": {
-        "name": "Artisan table",
+        "id": "artisan-table",
+        "name": "Artisan Table",
         "level": 1
       },
       "sources": {
@@ -79170,7 +78871,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../damage-calculator/items/explosive-payload.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "weapon",
+      "category": "ammo",
       "teleportable": true,
       "stack": 50,
       "weight": 0.3,
@@ -79198,9 +78899,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Asksvin Hide",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -79229,9 +78932,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=explosive-payload"
-      }
+      "crossLinks": {}
     },
     {
       "id": "grausten-payload",
@@ -79239,7 +78940,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../damage-calculator/items/grausten-payload.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "weapon",
+      "category": "ammo",
       "teleportable": true,
       "stack": 50,
       "weight": 0.3,
@@ -79257,9 +78958,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Grausten",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -79288,9 +78991,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=grausten-payload"
-      }
+      "crossLinks": {}
     },
     {
       "id": "stone-oven",
@@ -79326,9 +79027,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Surtling Core",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "artisan-table"
       },
       "station": {
+        "id": "artisan-table",
         "name": "Artisan Table",
         "level": 1
       },
@@ -79393,9 +79096,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Dvergr Extractor",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -79673,9 +79378,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Stone",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "stonecutter"
       },
       "station": {
+        "id": "stonecutter",
         "name": "Stonecutter",
         "level": 1
       },
@@ -79791,9 +79498,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Black Metal",
             "amount": 15
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -79896,9 +79605,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iron",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "artisan-table"
       },
       "station": {
+        "id": "artisan-table",
         "name": "Artisan Table",
         "level": 1
       },
@@ -80017,8 +79728,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "No matter how hot this gets, the other side of it remains strangely cool.",
       "stats": null,
       "recipe": {
-        "station": "Artisan Table level 2",
-        "stationLevel": 1,
+        "station": "Artisan Table",
+        "stationLevel": 2,
         "yields": 1,
         "materials": [
           {
@@ -80026,11 +79737,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Black Marble",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "artisan-table"
       },
       "station": {
-        "name": "Artisan Table level 2",
-        "level": 1
+        "id": "artisan-table",
+        "name": "Artisan Table",
+        "level": 2
       },
       "sources": {
         "creatures": [],
@@ -80048,15 +79761,7 @@ globalThis.VC_ITEMS_DATA = {
         ]
       },
       "usedIn": {
-        "weapons": [
-          {
-            "id": "shield-core",
-            "name": "Shield Core",
-            "level": 2,
-            "biome": "plains",
-            "itemId": "shield-core"
-          }
-        ],
+        "weapons": [],
         "armor": [],
         "food": [],
         "meads": [],
@@ -80071,7 +79776,15 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "drakkar"
           }
         ],
-        "crafting": []
+        "crafting": [
+          {
+            "id": "shield-core",
+            "name": "Shield Core",
+            "level": 2,
+            "biome": "plains",
+            "itemId": "shield-core"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -80081,7 +79794,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "plains",
       "tier": 6,
-      "category": "shield",
+      "category": "material",
       "teleportable": true,
       "stack": 20,
       "weight": 1,
@@ -80109,9 +79822,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Ceramic Plate",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "artisan-table"
       },
       "station": {
+        "id": "artisan-table",
         "name": "Artisan Table",
         "level": 2
       },
@@ -80131,7 +79846,13 @@ globalThis.VC_ITEMS_DATA = {
         ]
       },
       "usedIn": {
-        "weapons": [
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
           {
             "id": "shield-generator",
             "name": "Shield generator",
@@ -80140,17 +79861,9 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "shield-generator"
           }
         ],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=shield-core"
-      }
+      "crossLinks": {}
     },
     {
       "id": "asksvin-saddle",
@@ -80186,9 +79899,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Morgen Sinew",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 2
       },
@@ -80239,28 +79954,27 @@ globalThis.VC_ITEMS_DATA = {
         "creatures": [],
         "locations": [
           {
-            "text": "Charred Fortress\nPutrid Hole",
+            "text": "Charred Fortress",
+            "kind": "location"
+          },
+          {
+            "text": "Putrid Hole",
             "kind": "location"
           }
         ],
         "traders": [],
         "raw": [
           {
-            "text": "Charred Fortress\nPutrid Hole"
+            "text": "Charred Fortress"
+          },
+          {
+            "text": "Putrid Hole"
           }
         ]
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
-          {
-            "id": "brimstone",
-            "name": "Brimstone",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "brimstone"
-          }
-        ],
+        "armor": [],
         "food": [],
         "meads": [],
         "comfort": [],
@@ -80274,7 +79988,15 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "portal-stone"
           }
         ],
-        "crafting": []
+        "crafting": [
+          {
+            "id": "brimstone",
+            "name": "Brimstone",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "brimstone"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -80479,7 +80201,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Luminous Larva",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -80548,7 +80271,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "deep-north",
       "tier": 9,
-      "category": "summoning",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -80557,8 +80280,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "The keys need to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Black Forge level 4",
-        "stationLevel": 1,
+        "station": "Black Forge",
+        "stationLevel": 4,
         "yields": 1,
         "materials": [
           {
@@ -80571,11 +80294,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Mould Intricate Key",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
-        "name": "Black Forge level 4",
-        "level": 1
+        "id": "black-forge",
+        "name": "Black Forge",
+        "level": 4
       },
       "sources": {
         "creatures": [],
@@ -80651,9 +80376,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Linen Thread",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 2
       },
@@ -80690,7 +80417,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "meadows",
       "tier": 1,
-      "category": "valuable",
+      "category": "casting",
       "teleportable": true,
       "stack": 20,
       "weight": 0.5,
@@ -80733,7 +80460,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "meadows",
       "tier": 1,
-      "category": "valuable",
+      "category": "casting",
       "teleportable": true,
       "stack": 20,
       "weight": 0.5,
@@ -80776,7 +80503,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "black-forest",
       "tier": 2,
-      "category": "valuable",
+      "category": "casting",
       "teleportable": true,
       "stack": 20,
       "weight": 0.5,
@@ -80819,7 +80546,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "mountain",
       "tier": 5,
-      "category": "valuable",
+      "category": "casting",
       "teleportable": true,
       "stack": 20,
       "weight": 0.5,
@@ -80862,7 +80589,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "mountain",
       "tier": 5,
-      "category": "valuable",
+      "category": "casting",
       "teleportable": true,
       "stack": 20,
       "weight": 0.5,
@@ -80905,7 +80632,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "plains",
       "tier": 6,
-      "category": "valuable",
+      "category": "casting",
       "teleportable": true,
       "stack": 20,
       "weight": 0.5,
@@ -80948,7 +80675,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "mistlands",
       "tier": 7,
-      "category": "valuable",
+      "category": "casting",
       "teleportable": true,
       "stack": 20,
       "weight": 0.5,
@@ -80991,7 +80718,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "ashlands",
       "tier": 8,
-      "category": "valuable",
+      "category": "casting",
       "teleportable": true,
       "stack": 20,
       "weight": 0.5,
@@ -81105,9 +80832,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iron Nails",
             "amount": 30
           }
-        ]
+        ],
+        "stationId": "artisan-table"
       },
       "station": {
+        "id": "artisan-table",
         "name": "Artisan Table",
         "level": 1
       },
@@ -81144,7 +80873,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "mistlands",
       "tier": 7,
-      "category": "valuable",
+      "category": "casting",
       "teleportable": true,
       "stack": 20,
       "weight": 0.5,
@@ -81187,7 +80916,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "deep-north",
       "tier": 9,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 1,
       "weight": 2.5,
@@ -81196,8 +80925,8 @@ globalThis.VC_ITEMS_DATA = {
       "description": "This magical item needs to be hardened with frost.",
       "stats": null,
       "recipe": {
-        "station": "Galdr Table level 3",
-        "stationLevel": 1,
+        "station": "Galdr Table",
+        "stationLevel": 3,
         "yields": 1,
         "materials": [
           {
@@ -81220,11 +80949,13 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Mould Spirit Caller",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr Table level 3",
-        "level": 1
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -81242,14 +80973,7 @@ globalThis.VC_ITEMS_DATA = {
         ]
       },
       "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": [
+        "weapons": [
           {
             "id": "spirit-caller",
             "name": "Spirit Caller",
@@ -81257,7 +80981,14 @@ globalThis.VC_ITEMS_DATA = {
             "biome": "ashlands",
             "itemId": "spirit-caller"
           }
-        ]
+        ],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
       },
       "crossLinks": {}
     },
@@ -81267,7 +80998,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "ashlands",
       "tier": 8,
-      "category": "material",
+      "category": "casting",
       "teleportable": true,
       "stack": 10,
       "weight": 1,
@@ -81281,14 +81012,28 @@ globalThis.VC_ITEMS_DATA = {
         "creatures": [],
         "locations": [
           {
-            "text": "Winding Tunnels\nMemorial Site\nMörkhalla",
+            "text": "Winding Tunnels",
+            "kind": "location"
+          },
+          {
+            "text": "Memorial Site",
+            "kind": "location"
+          },
+          {
+            "text": "Mörkhalla",
             "kind": "location"
           }
         ],
         "traders": [],
         "raw": [
           {
-            "text": "Winding Tunnels\nMemorial Site\nMörkhalla"
+            "text": "Winding Tunnels"
+          },
+          {
+            "text": "Memorial Site"
+          },
+          {
+            "text": "Mörkhalla"
           }
         ]
       },
@@ -81304,7 +81049,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "cast-spirit-caller",
             "name": "Cast: Spirit Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "cast-spirit-caller"
           }
@@ -81318,7 +81063,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": 0.3,
@@ -81341,9 +81086,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "stationId": "frost-foundry"
       },
       "station": {
+        "id": "frost-foundry",
         "name": "Frost Foundry",
         "level": 3
       },
@@ -81372,7 +81119,9 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {}
+      "crossLinks": {
+        "smithy": "/smithy/#item=spirit-caller"
+      }
     },
     {
       "id": "staff-of-protection",
@@ -81389,7 +81138,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": "For a slight blood offering it will protect the caster in a magical shell.",
       "stats": null,
       "recipe": {
-        "station": "Galdr table",
+        "station": "Galdr Table",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -81408,10 +81157,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Refined Eitr",
             "amount": 16
           }
-        ]
+        ],
+        "stationId": "galdr-table"
       },
       "station": {
-        "name": "Galdr table",
+        "id": "galdr-table",
+        "name": "Galdr Table",
         "level": 1
       },
       "sources": {
@@ -81458,7 +81209,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Sturdy wooden missiles that can provide a tough defense against foes.",
       "stats": null,
       "recipe": {
-        "station": "Artisan table",
+        "station": "Artisan Table",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -81472,10 +81223,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "artisan-table"
       },
       "station": {
-        "name": "Artisan table",
+        "id": "artisan-table",
+        "name": "Artisan Table",
         "level": 1
       },
       "sources": {
@@ -81511,7 +81264,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../bestiary/img/weapons/voidcaller.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "drop",
+      "category": "weapon",
       "teleportable": true,
       "stack": null,
       "weight": 0.3,
@@ -81546,7 +81299,9 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {}
+      "crossLinks": {
+        "smithy": "/smithy/#item=voidcaller"
+      }
     },
     {
       "id": "green-pots",
@@ -81577,7 +81332,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Charcoal Resin",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -81613,7 +81369,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": "It brings light and warmth, drives back the darkness.",
       "stats": null,
       "recipe": {
-        "station": "Player crafting menu",
+        "station": null,
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -81627,12 +81383,10 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Resin",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": null
       },
-      "station": {
-        "name": "Player crafting menu",
-        "level": 1
-      },
+      "station": null,
       "sources": {
         "creatures": [],
         "locations": [
@@ -81737,9 +81491,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Embers",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 3
       },
@@ -81804,9 +81560,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Chain",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -81866,9 +81624,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Resin",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -81919,28 +81679,34 @@ globalThis.VC_ITEMS_DATA = {
         "creatures": [],
         "locations": [
           {
-            "text": "* Burial Chambers\n* Sunken Crypts\n* Chest",
+            "text": "Burial Chambers",
+            "kind": "location"
+          },
+          {
+            "text": "Sunken Crypts",
+            "kind": "location"
+          },
+          {
+            "text": "Chest",
             "kind": "location"
           }
         ],
         "traders": [],
         "raw": [
           {
-            "text": "* Burial Chambers\n* Sunken Crypts\n* Chest"
+            "text": "Burial Chambers"
+          },
+          {
+            "text": "Sunken Crypts"
+          },
+          {
+            "text": "Chest"
           }
         ]
       },
       "usedIn": {
         "weapons": [],
-        "armor": [
-          {
-            "id": "bronze-pendant",
-            "name": "Bronze Pendant",
-            "level": 1,
-            "biome": "black-forest",
-            "itemId": "bronze-pendant"
-          }
-        ],
+        "armor": [],
         "food": [],
         "meads": [],
         "comfort": [],
@@ -81954,7 +81720,15 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "treasure-chest"
           }
         ],
-        "crafting": []
+        "crafting": [
+          {
+            "id": "bronze-pendant",
+            "name": "Bronze Pendant",
+            "level": 1,
+            "biome": "black-forest",
+            "itemId": "bronze-pendant"
+          }
+        ]
       },
       "crossLinks": {}
     },
@@ -82043,9 +81817,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Resin",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -82120,9 +81896,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Raspberries",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -82177,7 +81955,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Coal",
             "amount": 50
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -82222,7 +82001,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Finewood",
             "amount": 50
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -82267,7 +82047,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Coins",
             "amount": 999
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -82312,7 +82093,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Coins",
             "amount": 99
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -82357,7 +82139,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Corewood",
             "amount": 50
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -82412,9 +82195,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Iron",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -82469,7 +82254,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Black Marble",
             "amount": 50
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -82534,49 +82320,6 @@ globalThis.VC_ITEMS_DATA = {
       "crossLinks": {}
     },
     {
-      "id": "hildir-s-chests",
-      "name": "Hildir's Chests",
-      "image": null,
-      "biome": "plains",
-      "tier": 6,
-      "category": "valuable",
-      "teleportable": false,
-      "stack": 1,
-      "weight": 200,
-      "wiki": "https://valheim.weirdgloop.org/w/Hildir's_Chests",
-      "names": {},
-      "description": "Property of Hildir, please return if found.",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Brenna (Brass)\nGeirrhafa (Silver)\nZil (Bronze)",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Brenna (Brass)\nGeirrhafa (Silver)\nZil (Bronze)"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
       "id": "ashwood-stack",
       "name": "Ashwood Stack",
       "image": null,
@@ -82600,7 +82343,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Ashwood",
             "amount": 50
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -82645,7 +82389,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Grausten",
             "amount": 50
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -82690,7 +82435,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bone Fragments",
             "amount": 50
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -82740,9 +82486,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Silver",
             "amount": 6
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 2
       },
@@ -82779,7 +82527,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "meadows",
       "tier": 1,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -82807,9 +82555,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Greydwarf Shaman Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -82838,9 +82588,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=heart-of-the-forest"
-      }
+      "crossLinks": {}
     },
     {
       "id": "bronze-pendant",
@@ -82848,7 +82596,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "black-forest",
       "tier": 2,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -82876,9 +82624,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Ruby",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -82907,9 +82657,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=bronze-pendant"
-      }
+      "crossLinks": {}
     },
     {
       "id": "iron-brooch",
@@ -82917,7 +82665,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "swamp",
       "tier": 4,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -82945,9 +82693,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leech Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -82976,9 +82726,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=iron-brooch"
-      }
+      "crossLinks": {}
     },
     {
       "id": "nimble-anklet",
@@ -82986,7 +82734,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "plains",
       "tier": 6,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -83014,9 +82762,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Surtling Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -83045,9 +82795,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=nimble-anklet"
-      }
+      "crossLinks": {}
     },
     {
       "id": "wolf-sight",
@@ -83055,7 +82803,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "mountain",
       "tier": 5,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -83083,9 +82831,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Fenring Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -83114,9 +82864,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=wolf-sight"
-      }
+      "crossLinks": {}
     },
     {
       "id": "crystal-heart",
@@ -83124,7 +82872,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "mountain",
       "tier": 5,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -83152,9 +82900,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Stone Golem Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -83183,9 +82933,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=crystal-heart"
-      }
+      "crossLinks": {}
     },
     {
       "id": "fins-of-destiny",
@@ -83193,7 +82941,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "mistlands",
       "tier": 7,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -83221,9 +82969,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Serpent Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -83252,9 +83002,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=fins-of-destiny"
-      }
+      "crossLinks": {}
     },
     {
       "id": "bracelets-of-the-brave",
@@ -83262,7 +83010,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "mistlands",
       "tier": 7,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -83290,9 +83038,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Lox Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -83321,9 +83071,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=bracelets-of-the-brave"
-      }
+      "crossLinks": {}
     },
     {
       "id": "evasion-mantle",
@@ -83331,7 +83079,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "plains",
       "tier": 6,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -83359,9 +83107,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Linen Thread",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -83390,9 +83140,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=evasion-mantle"
-      }
+      "crossLinks": {}
     },
     {
       "id": "resounding-shackle",
@@ -83400,7 +83148,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "ashlands",
       "tier": 8,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -83433,9 +83181,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Seeker Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -83464,9 +83214,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=resounding-shackle"
-      }
+      "crossLinks": {}
     },
     {
       "id": "pulsating-earrings",
@@ -83474,7 +83222,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "ashlands",
       "tier": 8,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -83502,9 +83250,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Gjall Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -83533,9 +83283,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=pulsating-earrings"
-      }
+      "crossLinks": {}
     },
     {
       "id": "brimstone",
@@ -83543,7 +83291,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "mistlands",
       "tier": 7,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -83576,9 +83324,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Morgen Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -83607,9 +83357,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=brimstone"
-      }
+      "crossLinks": {}
     },
     {
       "id": "jormundling",
@@ -83617,7 +83365,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "ashlands",
       "tier": 8,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -83650,9 +83398,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Fallen Valkyrie Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -83681,9 +83431,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=jormundling"
-      }
+      "crossLinks": {}
     },
     {
       "id": "archery-target",
@@ -83691,7 +83439,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "meadows",
       "tier": 1,
-      "category": "material",
+      "category": "building",
       "teleportable": true,
       "stack": null,
       "weight": null,
@@ -83714,9 +83462,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Leather Scraps",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -83781,9 +83531,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Corewood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -83848,9 +83600,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Timberwood",
             "amount": 24
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -83905,7 +83659,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Black Metal",
             "amount": 30
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -83950,7 +83705,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bronze",
             "amount": 30
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -83995,7 +83751,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Copper",
             "amount": 30
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -84040,7 +83797,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Flametal",
             "amount": 30
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -84085,7 +83843,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Bloodgold",
             "amount": 30
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -84112,7 +83871,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "meadows",
       "tier": 1,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -84140,9 +83899,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Moose Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -84171,9 +83932,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=neckstabber"
-      }
+      "crossLinks": {}
     },
     {
       "id": "witch-crown",
@@ -84181,7 +83940,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "ashlands",
       "tier": 8,
-      "category": "armor",
+      "category": "accessory",
       "teleportable": true,
       "stack": null,
       "weight": 2,
@@ -84209,9 +83968,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Hexen Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -84240,9 +84001,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=witch-crown"
-      }
+      "crossLinks": {}
     },
     {
       "id": "flint-pile",
@@ -84268,7 +84027,8 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Flint",
             "amount": 50
           }
-        ]
+        ],
+        "stationId": null
       },
       "station": null,
       "sources": {
@@ -84323,9 +84083,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Molten Core",
             "amount": 2
           }
-        ]
+        ],
+        "stationId": "stonecutter"
       },
       "station": {
+        "id": "stonecutter",
         "name": "Stonecutter",
         "level": 1
       },
@@ -84362,7 +84124,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": null,
       "biome": "ashlands",
       "tier": 8,
-      "category": "valuable",
+      "category": "casting",
       "teleportable": true,
       "stack": 20,
       "weight": 0.5,
@@ -84428,9 +84190,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Tin",
             "amount": 4
           }
-        ]
+        ],
+        "stationId": "forge"
       },
       "station": {
+        "id": "forge",
         "name": "Forge",
         "level": 1
       },
@@ -84476,7 +84240,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": "These thick missiles can punch through the hide of even the toughest of foes.",
       "stats": null,
       "recipe": {
-        "station": "Artisan table",
+        "station": "Artisan Table",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -84490,10 +84254,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Black Metal",
             "amount": 1
           }
-        ]
+        ],
+        "stationId": "artisan-table"
       },
       "station": {
-        "name": "Artisan table",
+        "id": "artisan-table",
+        "name": "Artisan Table",
         "level": 1
       },
       "sources": {
@@ -84557,9 +84323,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Proustite Powder",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "workbench"
       },
       "station": {
+        "id": "workbench",
         "name": "Workbench",
         "level": 1
       },
@@ -84598,7 +84366,7 @@ globalThis.VC_ITEMS_DATA = {
       "image": "../damage-calculator/items/bloodgold-payload.png",
       "biome": "ashlands",
       "tier": 8,
-      "category": "weapon",
+      "category": "ammo",
       "teleportable": true,
       "stack": 50,
       "weight": 0.3,
@@ -84626,9 +84394,11 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Proustite Powder",
             "amount": 3
           }
-        ]
+        ],
+        "stationId": "black-forge"
       },
       "station": {
+        "id": "black-forge",
         "name": "Black Forge",
         "level": 1
       },
@@ -84657,9 +84427,7 @@ globalThis.VC_ITEMS_DATA = {
         "stations": [],
         "crafting": []
       },
-      "crossLinks": {
-        "smithy": "/smithy/#item=bloodgold-payload"
-      }
+      "crossLinks": {}
     },
     {
       "id": "bloodgold-missile",
@@ -84676,7 +84444,7 @@ globalThis.VC_ITEMS_DATA = {
       "description": "Your attacker shall stand no chance as this missile finds its target.",
       "stats": null,
       "recipe": {
-        "station": "Artisan table",
+        "station": "Artisan Table",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -84690,10 +84458,12 @@ globalThis.VC_ITEMS_DATA = {
             "name": "Timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "stationId": "artisan-table"
       },
       "station": {
-        "name": "Artisan table",
+        "id": "artisan-table",
+        "name": "Artisan Table",
         "level": 1
       },
       "sources": {
