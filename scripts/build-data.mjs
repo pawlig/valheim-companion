@@ -4,10 +4,11 @@
 // Validates that every weapon id referenced in recommendations exists in weapons.json,
 // and every creature id in biomes.json exists in creatures.json. Exits with code 1 on mismatch.
 
-import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { aliasImage } from './image-index.mjs';
+import { generatedAt } from './lib/generated-at.mjs';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = path.join(REPO_ROOT, 'data');
@@ -174,14 +175,7 @@ export function buildDataBundle() {
     throw new Error(`Validation failed: ${missingWeapons.length} missing weapons`);
   }
 
-  // Timestamp of last fetch: use mtime of data/creatures.json or data/report.md
-  let generatedAt;
-  try {
-    const stat = statSync(creaturesPath);
-    generatedAt = stat.mtime.toISOString();
-  } catch {
-    generatedAt = new Date().toISOString();
-  }
+  const generatedAtValue = generatedAt(creaturesPath, path.join(BESTIARY_DATA_DIR, 'data.js'));
 
   // Attack profiles and weapon quality from damage calculator (VC-11)
   const attackProfilesPath = path.join(DATA_DIR, 'attack-profiles.json');
@@ -194,7 +188,7 @@ export function buildDataBundle() {
     : null;
 
   return {
-    generatedAt,
+    generatedAt: generatedAtValue,
     source: {
       name: 'Valheim Wiki',
       url: 'https://valheim.weirdgloop.org',
