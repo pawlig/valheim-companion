@@ -2149,5 +2149,82 @@
     "ru": "Спланировать в Кузнице",
     "ja": "鍛冶場で計画する",
     "id": "Rencanakan di Smithy"
+  },
+  "Other": {
+    "en": "Other",
+    "cs": "Ostatní",
+    "de": "Sonstige",
+    "es": "Otros",
+    "fr": "Autres",
+    "pt": "Outros",
+    "zh": "其他",
+    "hi": "अन्य",
+    "ar": "أخرى",
+    "bn": "অন্যান্য",
+    "ru": "Прочее",
+    "ja": "その他",
+    "id": "Lainnya"
+  },
+  "Show {count} more": {
+    "en": {
+      "one": "Show {count} more",
+      "other": "Show {count} more"
+    },
+    "cs": {
+      "one": "Zobrazit další {count}",
+      "few": "Zobrazit další {count}",
+      "many": "Zobrazit dalších {count}",
+      "other": "Zobrazit dalších {count}"
+    },
+    "de": {
+      "one": "{count} weitere anzeigen",
+      "other": "{count} weitere anzeigen"
+    },
+    "es": {
+      "one": "Mostrar {count} más",
+      "many": "Mostrar {count} más",
+      "other": "Mostrar {count} más"
+    },
+    "fr": {
+      "one": "Afficher {count} de plus",
+      "many": "Afficher {count} de plus",
+      "other": "Afficher {count} de plus"
+    },
+    "pt": {
+      "one": "Mostrar mais {count}",
+      "many": "Mostrar mais {count}",
+      "other": "Mostrar mais {count}"
+    },
+    "zh": {
+      "other": "再显示 {count} 个"
+    },
+    "hi": {
+      "one": "{count} और दिखाएँ",
+      "other": "{count} और दिखाएँ"
+    },
+    "ar": {
+      "zero": "عرض {count} إضافية",
+      "one": "عرض {count} إضافية",
+      "two": "عرض {count} إضافية",
+      "few": "عرض {count} إضافية",
+      "many": "عرض {count} إضافية",
+      "other": "عرض {count} إضافية"
+    },
+    "bn": {
+      "one": "আরও {count}টি দেখান",
+      "other": "আরও {count}টি দেখান"
+    },
+    "ru": {
+      "one": "Показать ещё {count}",
+      "few": "Показать ещё {count}",
+      "many": "Показать ещё {count}",
+      "other": "Показать ещё {count}"
+    },
+    "ja": {
+      "other": "さらに {count} 件を表示"
+    },
+    "id": {
+      "other": "Tampilkan {count} lagi"
+    }
   }
 }

@@ -119,6 +119,12 @@
     if (storedTeleport) selectedTeleport = storedTeleport;
   } catch {}
 
+  const GROUP_PAGE_SIZE = 60;
+  const groupLimits = new Map();
+  const groupOpenOverride = new Map();
+  let groupFilterSig = '';
+  let pendingFocus = null; // { summary: biomeId } | { card: itemId } restored after render()
+  let focusItemId = null; // deep link target: its group must be open and the card rendered
   let modalHistory = [];
   let searchQuery = '';
   let activeModalItem = null;
@@ -762,9 +768,8 @@
     }
 
     if (emptyNotice) emptyNotice.hidden = true;
-    grid.replaceChildren();
 
-    for (const item of filtered) {
+    const buildCard = (item) => {
       const revealed = isItemRevealed(item);
       const card = el('div', 'item-card' + (!revealed ? ' is-locked' : ''));
       card.id = `item-card-${item.id}`;
@@ -847,7 +852,98 @@
         openModal(item);
       });
 
-      grid.append(card);
+      return card;
+    };
+
+    // Group by biome (VC_ITEMS_DATA.biomes order, "Other" last); sorting applies inside groups.
+    const filterSig = [query, selectedCategory, selectedBiome, selectedTeleport, selectedSort].join('|');
+    if (filterSig !== groupFilterSig) {
+      groupFilterSig = filterSig;
+      groupOpenOverride.clear();
+      groupLimits.clear();
+    }
+    const filtersActive = Boolean(query) || selectedCategory !== 'all' || selectedBiome !== 'all';
+
+    const OTHER = '__other';
+    const byBiome = new Map();
+    for (const item of filtered) {
+      const key = item.biome && biomes.some((b) => b.id === item.biome) ? item.biome : OTHER;
+      if (!byBiome.has(key)) byBiome.set(key, []);
+      byBiome.get(key).push(item);
+    }
+    let reachId = null;
+    for (const b of biomes) {
+      if (isBiomeRevealed(b.id)) reachId = b.id;
+    }
+    const groupDefs = biomes.map((b) => ({ id: b.id, name: b.name }));
+    groupDefs.push({ id: OTHER, name: t('Other') });
+
+    const container = el('div', 'items-grid-groups');
+    for (const def of groupDefs) {
+      const list = byBiome.get(def.id);
+      if (!list || list.length === 0) continue;
+
+      if (focusItemId) {
+        const idx = list.findIndex((it) => it.id === focusItemId);
+        if (idx >= 0) {
+          groupOpenOverride.set(def.id, true);
+          groupLimits.set(def.id, Math.max(groupLimits.get(def.id) || GROUP_PAGE_SIZE, Math.ceil((idx + 1) / GROUP_PAGE_SIZE) * GROUP_PAGE_SIZE));
+        }
+      }
+
+      const details = el('details', 'biome-group');
+      details.dataset.biome = def.id;
+      const defaultOpen = filtersActive || def.id === reachId;
+      const isOpen = groupOpenOverride.has(def.id) ? groupOpenOverride.get(def.id) : defaultOpen;
+      if (isOpen) details.setAttribute('open', '');
+      const summary = el('summary', 'biome-group-summary');
+      summary.append(el('span', 'biome-group-name', def.name), el('span', 'biome-group-count', ` (${number(list.length)})`));
+      summary.addEventListener('click', () => {
+        const opening = details.getAttribute('open') === null;
+        groupOpenOverride.set(def.id, opening);
+        // Closed groups render no cards (lazy); opening one renders it.
+        if (opening) {
+          pendingFocus = { summary: def.id };
+          render();
+        }
+      });
+      details.append(summary);
+
+      if (isOpen) {
+        const limit = groupLimits.get(def.id) || GROUP_PAGE_SIZE;
+        const gridEl = el('div', 'items-grid');
+        for (const item of list.slice(0, limit)) gridEl.append(buildCard(item));
+        details.append(gridEl);
+
+        const remaining = list.length - limit;
+        if (remaining > 0) {
+          const more = button(
+            tn('Show {count} more', Math.min(GROUP_PAGE_SIZE, remaining), { count: number(Math.min(GROUP_PAGE_SIZE, remaining)) }),
+            () => {
+              groupLimits.set(def.id, limit + GROUP_PAGE_SIZE);
+              pendingFocus = { card: list[limit].id };
+              render();
+            },
+            'biome-group-more toolbar-toggle-btn'
+          );
+          details.append(more);
+        }
+      }
+      container.append(details);
+    }
+    grid.replaceChildren(container);
+
+    if (pendingFocus) {
+      let target = null;
+      if (pendingFocus.summary) {
+        const d = container.querySelector(`[data-biome=${pendingFocus.summary}]`);
+        target = d && d.querySelector('summary');
+      } else if (pendingFocus.card) {
+        target = document.getElementById(`item-card-${pendingFocus.card}`);
+        if (target) target.setAttribute('tabindex', '-1');
+      }
+      pendingFocus = null;
+      if (target && typeof target.focus === 'function') target.focus();
     }
   }
 
@@ -890,7 +986,9 @@
     const searchInput = document.getElementById('item-search');
     if (searchInput) searchInput.value = '';
 
+    focusItemId = item.id;
     render();
+    focusItemId = null;
 
     const card = document.getElementById(`item-card-${item.id}`);
     if (card) {

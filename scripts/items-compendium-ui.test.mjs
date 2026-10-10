@@ -104,6 +104,24 @@ class Node {
   }
 
   scrollIntoView() {}
+
+  focus() {
+    Node.active = this;
+  }
+}
+
+// Expands every biome group (clicks all "Show more" buttons) and returns all rendered cards.
+function expandAll(doc) {
+  const grid = doc.getElementById('items-grid');
+  for (const g of grid.querySelectorAll('.biome-group')) {
+    if (g.getAttribute('open') === null) g.querySelector('.biome-group-summary').dispatch('click');
+  }
+  let more = grid.querySelectorAll('.biome-group-more');
+  while (more.length) {
+    for (const btn of more) btn.dispatch('click');
+    more = grid.querySelectorAll('.biome-group-more');
+  }
+  return grid.querySelectorAll('.item-card');
 }
 
 function createDomFixture(initialHash = '', initialStorage = {}) {
@@ -237,9 +255,8 @@ function createDomFixture(initialHash = '', initialStorage = {}) {
 describe('Items Compendium UI Tests', () => {
   it('1. Renders the full catalog (>= 1,000 items) on initial load', () => {
     const { doc } = createDomFixture();
-    const grid = doc.getElementById('items-grid');
-    const cards = grid.querySelectorAll('.item-card');
-    assert.ok(cards.length >= 1000, `Initial view should render >= 1000 cards, got ${cards.length}`);
+    const cards = expandAll(doc);
+    assert.ok(cards.length >= 1000, `Full catalog should render >= 1000 cards, got ${cards.length}`);
   });
 
   it('2. Category filter filters items correctly (metal)', () => {
@@ -270,8 +287,7 @@ describe('Items Compendium UI Tests', () => {
     const meadowsChip = chips.querySelectorAll('.biome-chip').find((c) => c.dataset.biome === 'meadows');
     assert.ok(meadowsChip, 'Meadows biome chip should exist');
     meadowsChip.dispatch('click');
-    const grid = doc.getElementById('items-grid');
-    const cards = grid.querySelectorAll('.item-card');
+    const cards = expandAll(doc);
     assert.ok(cards.length > 0 && cards.length < 333, 'Filtered cards count should be restricted to Meadows');
     assert.ok(doc.getElementById('item-card-wood'), 'Wood should be present in Meadows');
   });
@@ -289,6 +305,7 @@ describe('Items Compendium UI Tests', () => {
 
   it('6. Items in unvisited biomes show locked state when spoiler filter is active', () => {
     const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
+    expandAll(doc);
     const ironCard = doc.getElementById('item-card-iron');
     assert.ok(ironCard, 'Iron card should exist');
     assert.ok(ironCard.classList.contains('is-locked'), 'Iron (Swamp) should be locked when progress is default Meadows and spoiler filter is ON');
@@ -298,6 +315,7 @@ describe('Items Compendium UI Tests', () => {
 
   it('7. Clicking Reveal unlocks the biome and renders item as unlocked', () => {
     const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
+    expandAll(doc);
     const ironCard = doc.getElementById('item-card-iron');
     assert.ok(ironCard.classList.contains('is-locked'));
     const revBtn = ironCard.querySelector('.reveal-btn');
@@ -308,6 +326,7 @@ describe('Items Compendium UI Tests', () => {
 
   it('8. Clicking an unlocked item card opens the detail modal', () => {
     const { doc } = createDomFixture();
+    expandAll(doc);
     const woodCard = doc.getElementById('item-card-wood');
     assert.ok(woodCard, 'Wood card should exist');
     assert.ok(!woodCard.classList.contains('is-locked'), 'Wood (Meadows) is unlocked');
@@ -477,6 +496,7 @@ describe('Items Compendium UI Tests', () => {
 
   it('20. Clicking a locked card opens the modal with spoiler banner and details', () => {
     const { doc } = createDomFixture();
+    expandAll(doc);
     const ironCard = doc.getElementById('item-card-iron');
     assert.ok(ironCard, 'Iron card should exist in initial view');
     ironCard.dispatch('click');
@@ -488,6 +508,7 @@ describe('Items Compendium UI Tests', () => {
 
   it('21. Toggle locked biomes button toggles showAll mode', () => {
     const { doc, storage } = createDomFixture();
+    expandAll(doc);
     const toggleBtn = doc.getElementById('toggle-locked-btn');
     assert.ok(toggleBtn, 'Toggle locked biomes button must exist');
     assert.equal(toggleBtn.textContent, 'Spoiler filter: On');
@@ -559,6 +580,7 @@ describe('Items Compendium UI Tests', () => {
 
   it('26. Default view locks unvisited biomes by progress (Ashlands cards are is-locked and toggle shows Spoiler filter: On)', () => {
     const { doc } = createDomFixture();
+    expandAll(doc);
     const toggleBtn = doc.getElementById('toggle-locked-btn');
     assert.equal(toggleBtn.textContent, 'Spoiler filter: On', 'Toggle button text must be "Spoiler filter: On"');
 
@@ -584,6 +606,7 @@ describe('Items Compendium UI Tests', () => {
 
   it('26b. Locked cards leak neither name nor image; search and deep link do not reveal or write progress', () => {
     const { doc, storage } = createDomFixture();
+    expandAll(doc);
     const locked = doc.getElementById('items-grid').querySelectorAll('.item-card').filter((c) => c.classList.contains('is-locked'));
     assert.ok(locked.length > 0);
     for (const c of locked) {
@@ -620,19 +643,22 @@ describe('Items Compendium UI Tests', () => {
     sortSelect.dispatch('change');
     assert.equal(storage.get('vc.itemsSort'), 'name-asc', 'Sort preference persisted in localStorage');
 
+    // Sorting applies inside each biome group.
     const grid = doc.getElementById('items-grid');
-    const cardsAsc = grid.querySelectorAll('.item-card');
-    const firstAscName = cardsAsc[0].querySelector('.item-card-name').textContent;
-    const lastAscName = cardsAsc[cardsAsc.length - 1].querySelector('.item-card-name').textContent;
-    assert.ok(firstAscName.toLowerCase() <= lastAscName.toLowerCase(), 'Items should be sorted alphabetically');
+    const groupNames = () => grid.querySelectorAll('.biome-group').map((g) => g.querySelectorAll('.item-card-name').map((n) => n.textContent));
+    const asc = groupNames();
+    assert.ok(asc.length > 1 && asc[0].length > 1);
+    for (const names of asc) {
+      assert.deepEqual(names, [...names].sort((a, b) => a.localeCompare(b)), 'Group must be sorted A-Z');
+    }
 
     // Change to name-desc
     sortSelect.value = 'name-desc';
     sortSelect.dispatch('change');
     assert.equal(storage.get('vc.itemsSort'), 'name-desc');
-    const cardsDesc = grid.querySelectorAll('.item-card');
-    const firstDescName = cardsDesc[0].querySelector('.item-card-name').textContent;
-    assert.equal(firstDescName, lastAscName, 'First item in Z-A should match last item in A-Z');
+    for (const names of groupNames()) {
+      assert.deepEqual(names, [...names].sort((a, b) => b.localeCompare(a)), 'Group must be sorted Z-A');
+    }
   });
 
   it('28. Sort select orders items by weight (Lightest first and Heaviest first)', () => {
@@ -641,13 +667,12 @@ describe('Items Compendium UI Tests', () => {
 
     sortSelect.value = 'weight-desc';
     sortSelect.dispatch('change');
-    const grid = doc.getElementById('items-grid');
-    const cardsDesc = grid.querySelectorAll('.item-card');
+    const cardsDesc = expandAll(doc);
     assert.ok(cardsDesc.length >= 1000, 'Should render cards when sorted by weight-desc');
 
     sortSelect.value = 'weight-asc';
     sortSelect.dispatch('change');
-    const cardsAsc = grid.querySelectorAll('.item-card');
+    const cardsAsc = expandAll(doc);
     assert.ok(cardsAsc.length >= 1000, 'Should render cards when sorted by weight-asc');
   });
 
@@ -659,6 +684,7 @@ describe('Items Compendium UI Tests', () => {
     // Filter teleportable only
     telSelect.value = 'yes';
     telSelect.dispatch('change');
+    expandAll(doc);
     assert.ok(!doc.getElementById('item-card-iron'), 'Iron (metal) should be excluded when teleportable only');
     assert.ok(!doc.getElementById('item-card-copper-ore'), 'Copper Ore should be excluded when teleportable only');
     assert.ok(doc.getElementById('item-card-wood'), 'Wood should be present when teleportable only');
@@ -666,6 +692,7 @@ describe('Items Compendium UI Tests', () => {
     // Filter non-teleportable only
     telSelect.value = 'no';
     telSelect.dispatch('change');
+    expandAll(doc);
     assert.ok(doc.getElementById('item-card-iron'), 'Iron should be present when non-teleportable only');
     assert.ok(doc.getElementById('item-card-dragon-egg'), 'Dragon Egg should be present when non-teleportable only');
     assert.ok(!doc.getElementById('item-card-wood'), 'Wood should be excluded when non-teleportable only');
@@ -673,12 +700,14 @@ describe('Items Compendium UI Tests', () => {
     // Reset to all
     telSelect.value = 'all';
     telSelect.dispatch('change');
+    expandAll(doc);
     assert.ok(doc.getElementById('item-card-iron'), 'Iron present in all');
     assert.ok(doc.getElementById('item-card-wood'), 'Wood present in all');
   });
 
   it('30. Modal navigation history maintains stack and Back button returns to previous item', () => {
     const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'true' });
+    expandAll(doc);
     const swordCard = doc.getElementById('item-card-iron-sword');
     assert.ok(swordCard, 'Iron sword card exists');
     swordCard.dispatch('click');
@@ -757,5 +786,115 @@ describe('Items Compendium UI Tests', () => {
       'ashlands',
       'deep-north',
     ]);
+  });
+  it('33. Cards are grouped into biome <details> in VC_ITEMS_DATA.biomes order, no empty groups', () => {
+    const { doc, ctx } = createDomFixture();
+    expandAll(doc);
+    const groups = doc.getElementById('items-grid').querySelectorAll('.biome-group');
+    const order = Array.from(ctx.VC_ITEMS_DATA.biomes, (b) => b.id);
+    const ids = groups.map((g) => g.dataset.biome).filter((id) => id !== '__other');
+    assert.deepEqual(ids, order.filter((id) => ids.includes(id)), 'Groups follow biome order');
+    assert.ok(ids.length >= 2);
+    for (const g of groups) {
+      assert.equal(g.tagName, 'details');
+      assert.ok(g.querySelectorAll('.item-card').length > 0, 'No empty groups');
+    }
+    const last = groups[groups.length - 1];
+    if (last.dataset.biome === '__other') assert.equal(groups.indexOf(last), groups.length - 1);
+  });
+
+  it('34. Only the current reach biome is open without filters; a group renders at most 60 cards plus a Show more button', () => {
+    const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
+    const groups = doc.getElementById('items-grid').querySelectorAll('.biome-group');
+    const open = groups.filter((g) => g.getAttribute('open') !== null);
+    assert.equal(open.length, 1, 'exactly one open group');
+    assert.equal(open[0].dataset.biome, 'meadows');
+    for (const g of groups) assert.ok(g.querySelectorAll('.item-card').length <= 60, 'max 60 cards per group');
+    const big = groups.find((g) => g.querySelector('.biome-group-more'));
+    assert.ok(big, 'a group with > 60 items shows the button');
+    assert.equal(big.querySelectorAll('.item-card').length, 60);
+    big.querySelector('.biome-group-more').dispatch('click');
+    const again = doc.getElementById('items-grid').querySelectorAll('.biome-group').find((g) => g.dataset.biome === big.dataset.biome);
+    assert.ok(again.querySelectorAll('.item-card').length > 60, 'button adds the next page');
+  });
+
+  it('35. Active search or category opens every non-empty group', () => {
+    const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'true' });
+    const input = doc.getElementById('item-search');
+    input.value = 'sword';
+    input.dispatch('input');
+    const groups = doc.getElementById('items-grid').querySelectorAll('.biome-group');
+    assert.ok(groups.length >= 2, 'sword matches several biomes');
+    for (const g of groups) assert.notEqual(g.getAttribute('open'), null, 'group open while searching');
+    input.value = '';
+    input.dispatch('input');
+    const select = doc.getElementById('category-select');
+    select.value = 'trophy';
+    select.dispatch('change');
+    for (const g of doc.getElementById('items-grid').querySelectorAll('.biome-group')) {
+      assert.notEqual(g.getAttribute('open'), null, 'group open with category selected');
+    }
+  });
+  it('36. Deep link to a card beyond the 60-card page opens its group and renders the card', () => {
+    const probe = createDomFixture('', { 'vc.itemsShowAll': 'true' });
+    const group = probe.doc.getElementById('items-grid').querySelectorAll('.biome-group').find((g) => g.querySelector('.biome-group-more'));
+    const biome = group.dataset.biome;
+    const all = Array.from(probe.ctx.VC_ITEMS_DATA.items).filter((i) => (i.biome || '__other') === biome);
+    const names = expandAll(probe.doc).filter((c) => c.parentElement.parentElement.dataset.biome === biome).map((c) => c.dataset.id);
+    const target = names[names.length - 1];
+    assert.ok(all.some((i) => i.id === target) && names.indexOf(target) >= 60);
+    const { doc } = createDomFixture(`#item=${target}`, { 'vc.itemsShowAll': 'true' });
+    assert.ok(doc.getElementById(`item-card-${target}`), 'target card rendered');
+    const g = doc.getElementById('items-grid').querySelectorAll('.biome-group').find((x) => x.dataset.biome === biome);
+    assert.notEqual(g.getAttribute('open'), null, 'group is open');
+  });
+  it('37. Group wrapper spans the whole #items-grid (grid-column 1 / -1)', () => {
+    const css = readFileSync(path.join(ROOT, 'apps/items/assets/styles.css'), 'utf8');
+    const rule = css.match(/\.items-grid-groups\s*\{([^}]*)\}/);
+    assert.ok(rule, '.items-grid-groups rule exists');
+    assert.match(rule[1], /grid-column:\s*1\s*\/\s*-1/);
+  });
+
+  it('38. Closed groups render no cards until opened', () => {
+    const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
+    const groups = doc.getElementById('items-grid').querySelectorAll('.biome-group');
+    const closed = groups.find((g) => g.getAttribute('open') === null);
+    assert.ok(closed);
+    assert.equal(closed.querySelectorAll('.item-card').length, 0);
+    const id = closed.dataset.biome;
+    closed.querySelector('.biome-group-summary').dispatch('click');
+    const now = doc.getElementById('items-grid').querySelectorAll('.biome-group').find((g) => g.dataset.biome === id);
+    assert.ok(now.querySelectorAll('.item-card').length > 0);
+    assert.notEqual(now.getAttribute('open'), null);
+  });
+  it('39. Opening a group by its summary keeps focus on that summary', () => {
+    const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
+    const closed = doc.getElementById('items-grid').querySelectorAll('.biome-group').find((g) => g.dataset.biome === 'swamp');
+    Node.active = null;
+    closed.querySelector('.biome-group-summary').dispatch('click');
+    assert.ok(Node.active, 'something is focused');
+    assert.equal(Node.active.tagName, 'summary');
+    assert.equal(Node.active.parentElement.dataset.biome, 'swamp');
+  });
+
+  it('40. Show more keeps focus on the first newly added card', () => {
+    const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
+    const g = doc.getElementById('items-grid').querySelectorAll('.biome-group').find((x) => x.querySelector('.biome-group-more'));
+    Node.active = null;
+    g.querySelector('.biome-group-more').dispatch('click');
+    assert.ok(Node.active && Node.active.classList.contains('item-card'));
+    const cards = doc.getElementById('items-grid').querySelectorAll('.biome-group').find((x) => x.dataset.biome === g.dataset.biome).querySelectorAll('.item-card');
+    assert.equal(cards.indexOf(Node.active), 60);
+  });
+
+  it('41. Deep link to a card past position 60 in a closed group (black-forest) opens it and renders the card', () => {
+    const probe = createDomFixture('', { 'vc.itemsShowAll': 'true' });
+    const ids = expandAll(probe.doc).filter((c) => c.parentElement.parentElement.dataset.biome === 'black-forest').map((c) => c.dataset.id);
+    assert.ok(ids.length > 60, 'black-forest has more than 60 items');
+    const target = ids[ids.length - 1];
+    const { doc } = createDomFixture(`#item=${target}`, { 'vc.itemsShowAll': 'true' });
+    const g = doc.getElementById('items-grid').querySelectorAll('.biome-group').find((x) => x.dataset.biome === 'black-forest');
+    assert.notEqual(g.getAttribute('open'), null, 'group open');
+    assert.ok(doc.getElementById(`item-card-${target}`), 'card rendered');
   });
 });
