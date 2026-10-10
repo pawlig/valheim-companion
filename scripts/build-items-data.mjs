@@ -1474,6 +1474,27 @@ export function buildItemsData() {
     if (rec) rec.biome = biome;
   }
 
+  // A crafted item is at least as late as its ingredients: it takes the biome of its highest
+  // ingredient when that is higher than its own (station biome, "<station> level N" ...). Items with an
+  // explicit biome or a trader-condition biome keep it. Repeated until stable, because raising an
+  // ingredient can raise the items crafted from it.
+  const biomeRank = (b) => BIOME_ORDER[b] ?? 0;
+  for (let changed = true; changed;) {
+    changed = false;
+    for (const rec of registry.values()) {
+      if (!rec.recipe?.materials?.length || ITEM_EXPLICIT_BIOMES[rec.id] || traderUnlockBiome.has(rec.id)) continue;
+      let top = null;
+      for (const m of rec.recipe.materials) {
+        const mat = registry.get(m.item);
+        if (mat?.biome && biomeRank(mat.biome) > biomeRank(top)) top = mat.biome;
+      }
+      if (top && biomeRank(top) > biomeRank(rec.biome)) {
+        rec.biome = top;
+        changed = true;
+      }
+    }
+  }
+
   for (const rec of registry.values()) {
     if (rec.biome && BIOME_ORDER[rec.biome] != null) {
       rec.tier = BIOME_ORDER[rec.biome];
