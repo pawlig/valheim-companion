@@ -908,3 +908,61 @@ h1 {
     text-align: center;
   }
 }
+
+/* Mobile header: no fixed widths, filters wrap to full width */
+@media (max-width: 480px) {
+  .filter-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-group {
+    flex-wrap: wrap;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .filter-group .filter-select,
+  .filter-group select,
+  .filter-group input {
+    min-width: 0;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* Biome groups */
+.items-grid-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.biome-group {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  min-width: 0;
+}
+
+.biome-group > summary {
+  cursor: pointer;
+  padding: 12px 16px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.biome-group-count {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.biome-group > .items-grid {
+  padding: 0 16px 16px;
+}
+
+.biome-group-more {
+  display: block;
+  margin: 0 16px 16px;
+  max-width: calc(100% - 32px);
+}
