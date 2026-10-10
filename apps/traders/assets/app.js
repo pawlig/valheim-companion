@@ -30,6 +30,14 @@
   const tradersData = (globalThis.VC_TRADERS_DATA && globalThis.VC_TRADERS_DATA.traders) || [];
   const revealedItems = new Set();
   let currentTraderId = tradersData[0]?.id || 'haldor';
+  let filterAffordableOnly = false;
+  let appraisalCollapsed = false;
+  try {
+    const storedCollapsed = localStorage.getItem('vc.appraisalCollapsed');
+    if (storedCollapsed !== null) {
+      appraisalCollapsed = storedCollapsed === 'true';
+    }
+  } catch {}
   let noticeTimer = null;
 
   function showNotice(key) {
@@ -41,6 +49,44 @@
     noticeTimer = setTimeout(() => {
       notice.classList.remove('show');
     }, 2500);
+  }
+
+  function getCart() {
+    try {
+      const raw = localStorage.getItem('va.cart');
+      const cart = raw ? JSON.parse(raw) : [];
+      return Array.isArray(cart) ? cart : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function isInCart(itemId) {
+    const cart = getCart();
+    return cart.some((c) => (c.item === itemId || c.pieceId === itemId) && !c.setId);
+  }
+
+  function addToCart(item, count = 1) {
+    try {
+      const cart = getCart();
+      const existing = cart.find((c) => (c.item === item.id || c.pieceId === item.id) && !c.setId);
+      if (existing) {
+        existing.quantity = (existing.quantity || existing.amount || 1) + count;
+        existing.amount = existing.quantity;
+      } else {
+        cart.push({
+          id: 'item_' + item.id + '_' + Math.random().toString(36).slice(2, 7),
+          item: item.id,
+          pieceId: item.id,
+          quantity: count,
+          amount: count,
+        });
+      }
+      localStorage.setItem('va.cart', JSON.stringify(cart));
+      showNotice('Added to shopping cart.');
+    } catch {
+      showNotice('Added to shopping cart.');
+    }
   }
 
   function loadValuables() {
@@ -137,6 +183,7 @@
     const totalEl = document.getElementById('summary-total-coins');
     const valEl = document.getElementById('summary-valuables-coins');
     const affEl = document.getElementById('summary-affordable-count');
+    const filterBtn = document.getElementById('filter-affordable-btn');
 
     if (totalEl) totalEl.textContent = tn('{count} coins', appraisal.total);
     if (valEl) valEl.textContent = tn('{count} coins', appraisal.valuablesTotal);
@@ -152,6 +199,14 @@
       }
     }
     if (affEl) affEl.textContent = tn('{count} affordable', affordableCount);
+
+    if (filterBtn) {
+      filterBtn.classList.toggle('active', filterAffordableOnly);
+      filterBtn.setAttribute('aria-pressed', String(filterAffordableOnly));
+      filterBtn.textContent = filterAffordableOnly
+        ? `✓ ${t('Showing only affordable')}`
+        : t('Show only affordable');
+    }
   }
 
   function renderTrader() {
@@ -191,7 +246,18 @@
 
     const { item: hashItem } = parseHash();
 
-    for (const item of trader.items) {
+    let itemsToRender = trader.items;
+    if (filterAffordableOnly) {
+      itemsToRender = itemsToRender.filter((item) => appraisal.total >= item.price);
+    }
+
+    if (itemsToRender.length === 0) {
+      const emptyNotice = el('p', 'goods-empty', t('No affordable items with current coins.'));
+      grid.append(emptyNotice);
+      return;
+    }
+
+    for (const item of itemsToRender) {
       const unlocked = isUnlocked(item);
       const isAffordable = appraisal.total >= item.price;
       const isHighlighted = hashItem === item.id;
@@ -237,11 +303,24 @@
       if (!unlocked && item.unlockedBy) {
         const unlockBanner = el('div', 'good-unlock-banner');
         const lockText = el('span', 'unlock-text', `🔒 ${item.unlockedBy.text || t('Locked')}`);
+        unlockBanner.append(lockText);
+
+        // Direct boss / expedition link
+        if (item.unlockedBy.type === 'boss' && item.unlockedBy.id) {
+          const bossLink = el('a', 'link-boss-expedition', t('Boss preparation: {boss} →', { boss: item.unlockedBy.name || item.unlockedBy.id }));
+          bossLink.href = `/expedition/#boss=${encodeURIComponent(item.unlockedBy.id)}`;
+          unlockBanner.append(bossLink);
+        } else if (item.unlockedBy.type === 'chest' && item.unlockedBy.boss) {
+          const bossLink = el('a', 'link-boss-expedition', t('Boss preparation: {boss} →', { boss: item.unlockedBy.bossName || item.unlockedBy.boss }));
+          bossLink.href = `/bestiary/#c=${encodeURIComponent(item.unlockedBy.boss)}`;
+          unlockBanner.append(bossLink);
+        }
+
         const revealBtn = button(t('Reveal'), () => {
           revealedItems.add(item.id);
           renderTrader();
         }, 'btn-reveal');
-        unlockBanner.append(lockText, revealBtn);
+        unlockBanner.append(revealBtn);
         card.append(unlockBanner);
       }
 
@@ -251,24 +330,17 @@
       compendiumLink.href = `/items/#item=${encodeURIComponent(item.id)}`;
       actions.append(compendiumLink);
 
-      if (globalThis.VCShopping && typeof globalThis.VCShopping.add === 'function') {
-        const inCart = globalThis.VCShopping.has ? globalThis.VCShopping.has(item.id) : false;
-        const cartBtn = button(
-          inCart ? `✓ ${t('Added to cart')}` : `+ ${t('Add to shopping cart')}`,
-          () => {
-            globalThis.VCShopping.add({
-              id: item.id,
-              name: item.name,
-              price: item.price,
-              source: trader.name,
-            });
-            showNotice('Added to cart');
-            renderTrader();
-          },
-          'btn-cart' + (inCart ? ' is-added' : '')
-        );
-        actions.append(cartBtn);
-      }
+      const inCart = isInCart(item.id);
+      const cartBtn = button(
+        inCart ? `✓ ${t('In cart')}` : `+ ${t('Add to shopping cart')}`,
+        () => {
+          addToCart(item, 1);
+          renderTrader();
+        },
+        'btn-cart' + (inCart ? ' is-added' : '')
+      );
+      cartBtn.id = `btn-cart-${item.id}`;
+      actions.append(cartBtn);
 
       card.append(actions);
       grid.append(card);
@@ -303,6 +375,13 @@
     if (globalThis.VCI18n && typeof globalThis.VCI18n.apply === 'function') {
       globalThis.VCI18n.apply();
     }
+    const toggleAppraisalBtn = document.getElementById('appraisal-toggle');
+    if (toggleAppraisalBtn) {
+      toggleAppraisalBtn.textContent = appraisalCollapsed
+        ? `${t('Expand calculator')} ▼`
+        : `${t('Collapse calculator')} ▲`;
+      toggleAppraisalBtn.setAttribute('aria-expanded', String(!appraisalCollapsed));
+    }
     renderTrader();
   }
 
@@ -317,6 +396,37 @@
     if (globalThis.VCProgress && typeof globalThis.VCProgress.onChange === 'function') {
       globalThis.VCProgress.onChange(() => {
         render();
+      });
+    }
+
+    // Bind Collapse Calculator Toggle
+    const appraisalSection = document.querySelector('.appraisal-section');
+    const toggleAppraisalBtn = document.getElementById('appraisal-toggle');
+    if (appraisalSection && appraisalCollapsed) {
+      appraisalSection.classList.add('is-collapsed');
+    }
+    if (toggleAppraisalBtn) {
+      toggleAppraisalBtn.addEventListener('click', () => {
+        appraisalCollapsed = !appraisalCollapsed;
+        if (appraisalSection) {
+          appraisalSection.classList.toggle('is-collapsed', appraisalCollapsed);
+        }
+        try {
+          localStorage.setItem('vc.appraisalCollapsed', String(appraisalCollapsed));
+        } catch {}
+        toggleAppraisalBtn.setAttribute('aria-expanded', String(!appraisalCollapsed));
+        toggleAppraisalBtn.textContent = appraisalCollapsed
+          ? `${t('Expand calculator')} ▼`
+          : `${t('Collapse calculator')} ▲`;
+      });
+    }
+
+    // Bind Affordable Filter Toggle
+    const filterAffBtn = document.getElementById('filter-affordable-btn');
+    if (filterAffBtn) {
+      filterAffBtn.addEventListener('click', () => {
+        filterAffordableOnly = !filterAffordableOnly;
+        renderTrader();
       });
     }
 
@@ -385,6 +495,8 @@
         valuablesState = loadValuables();
         updateAppraisalInputs();
         render();
+      } else if (event.key === 'va.cart') {
+        renderTrader();
       }
     });
 

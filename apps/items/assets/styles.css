@@ -222,13 +222,26 @@ h1 {
   color: var(--accent-gold);
   font-size: 13px;
   margin-bottom: 16px;
+}
+
 .category-chips {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 4px;
   gap: 8px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.category-chips::-webkit-scrollbar {
+  display: none;
 }
 
 .category-chip {
+  flex-shrink: 0;
   background: var(--bg-page);
   color: var(--text-muted);
   border: 1px solid var(--border-color);
@@ -270,11 +283,22 @@ h1 {
 
 .biome-chips {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 4px;
   gap: 8px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.biome-chips::-webkit-scrollbar {
+  display: none;
 }
 
 .biome-chip {
+  flex-shrink: 0;
   background: var(--bg-page);
   color: var(--text-muted);
   border: 1px solid var(--border-color);
@@ -520,18 +544,52 @@ h1 {
 
 .modal-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 12px;
   padding: 16px 20px;
   border-bottom: 1px solid var(--border-color);
   background: var(--bg-card-sub);
 }
 
 .modal-header h2 {
+  flex: 1;
+  margin: 0;
   font-family: var(--font-serif);
   font-size: 22px;
   font-weight: normal;
   color: var(--text-main);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.modal-back-btn {
+  background: var(--bg-page);
+  color: var(--accent-gold);
+  border: 1px solid var(--accent-gold);
+  border-radius: var(--radius-sm);
+  padding: 4px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modal-back-btn:hover {
+  background: var(--accent-gold);
+  color: #0f1216;
+}
+
+.modal-back-btn[hidden] {
+  display: none !important;
 }
 
 .modal-close-btn {
@@ -814,6 +872,12 @@ h1 {
   .item-modal {
     width: 95%;
     max-height: 90vh;
+  }
+
+  .modal-back-btn {
+    max-width: 140px;
+    font-size: 12px;
+    padding: 3px 8px;
   }
 
   .stat-grid {

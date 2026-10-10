@@ -61,7 +61,10 @@
             <h2 id="appraisal-heading" class="section-title" data-i18n="Treasure Appraisal">Treasure Appraisal</h2>
             <p class="section-desc" data-i18n="Calculate your coins and valuables appraisal to see what you can afford.">Calculate your coins and valuables appraisal to see what you can afford.</p>
           </div>
-          <button type="button" id="appraisal-clear" class="btn-clear" data-i18n="Clear appraisal">Clear appraisal</button>
+          <div class="appraisal-header-actions">
+            <button type="button" id="appraisal-toggle" class="btn-appraisal-toggle" aria-expanded="true">Collapse calculator ▲</button>
+            <button type="button" id="appraisal-clear" class="btn-clear" data-i18n="Clear appraisal">Clear appraisal</button>
+          </div>
         </div>
 
         <div class="appraisal-grid">
@@ -139,6 +142,7 @@
             <span class="stat-label" data-i18n="Affordable">Affordable</span>
             <span class="stat-value" id="summary-affordable-count">0 items</span>
           </div>
+          <button type="button" id="filter-affordable-btn" class="btn-filter-affordable" aria-pressed="false">Show only affordable</button>
         </div>
       </section>
 

@@ -81,6 +81,24 @@
               <option value="summoning" data-i18n="Boss Summoning & Keys">Boss Summoning & Keys</option>
             </select>
           </div>
+          <div class="filter-group">
+            <label for="sort-select" class="filter-label" data-i18n="Sort by">Sort by</label>
+            <select id="sort-select" class="filter-select" aria-label="Sort by" data-i18n-attr="aria-label:Sort by">
+              <option value="tier-asc" data-i18n="Progression / Tier (Meadows → Ashlands)">Progression / Tier (Meadows → Ashlands)</option>
+              <option value="name-asc" data-i18n="Name (A → Z)">Name (A → Z)</option>
+              <option value="name-desc" data-i18n="Name (Z → A)">Name (Z → A)</option>
+              <option value="weight-asc" data-i18n="Weight (Lightest first)">Weight (Lightest first)</option>
+              <option value="weight-desc" data-i18n="Weight (Heaviest first)">Weight (Heaviest first)</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="teleport-select" class="filter-label" data-i18n="Portal">Portal</label>
+            <select id="teleport-select" class="filter-select" aria-label="Portal filter" data-i18n-attr="aria-label:Portal filter">
+              <option value="all" data-i18n="All portal types">All portal types</option>
+              <option value="yes" data-i18n="Teleportable only">Teleportable only</option>
+              <option value="no" data-i18n="Non-teleportable only">Non-teleportable only</option>
+            </select>
+          </div>
           <div class="toolbar-status">
             <button id="toggle-locked-btn" class="toolbar-toggle-btn" type="button" aria-pressed="false" data-i18n="Spoiler filter: Off">Spoiler filter: Off</button>
             <span id="items-count" class="items-count" aria-live="polite"></span>
@@ -97,6 +115,7 @@
     <div id="item-modal-backdrop" class="modal-backdrop" hidden></div>
     <div id="item-modal" class="item-modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-item-name">
       <div class="modal-header">
+        <button id="modal-back" class="modal-back-btn" type="button" hidden></button>
         <h2 id="modal-item-name"></h2>
         <button id="modal-close" class="modal-close-btn" type="button" data-i18n="Close" data-i18n-attr="aria-label:Close">Close</button>
       </div>

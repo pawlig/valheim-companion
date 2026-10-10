@@ -3,7 +3,7 @@
   "scripts": {
     "build": "npm --prefix apps/signs run build && npm --prefix apps/damage-calculator run build && node scripts/build-site.mjs",
     "preview": "node scripts/preview.mjs",
-    "test": "node --test 'scripts/**/*.test.mjs' && npm --prefix apps/signs test && npm --prefix apps/damage-calculator test",
+    "test": "node --test 'scripts/*.test.mjs' 'scripts/**/*.test.mjs' && npm --prefix apps/signs test && npm --prefix apps/damage-calculator test",
     "fetch:creatures": "node scripts/wiki/fetch-creatures.mjs",
     "fetch:weapons": "node scripts/wiki/fetch-weapons.mjs",
     "recommend": "node scripts/recommend.mjs",

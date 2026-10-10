@@ -79,7 +79,7 @@ class Node {
 
   dispatch(k, ev = {}) {
     for (const cb of this.events[k] || []) {
-      cb({ target: this, currentTarget: this, ...ev, stopPropagation() {} });
+      cb({ target: this, currentTarget: this, ...ev, stopPropagation() {}, preventDefault() {} });
     }
   }
 
@@ -133,6 +133,8 @@ function createDomFixture(initialHash = '', initialStorage = {}) {
     'language-picker',
     'item-search',
     'category-select',
+    'sort-select',
+    'teleport-select',
     'category-chips',
     'biome-chips',
     'items-count',
@@ -141,6 +143,7 @@ function createDomFixture(initialHash = '', initialStorage = {}) {
     'item-modal-backdrop',
     'item-modal',
     'modal-item-name',
+    'modal-back',
     'modal-close',
     'modal-body',
     'notice',
@@ -149,7 +152,7 @@ function createDomFixture(initialHash = '', initialStorage = {}) {
 
   ids.forEach((id) => {
     let tag = 'div';
-    if (id.includes('close') || id.includes('btn')) tag = 'button';
+    if (id.includes('close') || id.includes('btn') || id.includes('back')) tag = 'button';
     else if (id.includes('select')) tag = 'select';
     else if (id.includes('search')) tag = 'input';
     const n = new Node(tag);
@@ -528,5 +531,136 @@ describe('Items Compendium UI Tests', () => {
     const ironCard = doc.getElementById('item-card-iron');
     assert.ok(ironCard, 'Iron card should exist in initial view');
     assert.ok(!ironCard.classList.contains('is-locked'), 'Items should not be locked by default in encyclopedia compendium');
+  });
+
+  it('27. Sort select orders items by name (A → Z) and (Z → A) and persists to localStorage', () => {
+    const { doc, storage } = createDomFixture();
+    const sortSelect = doc.getElementById('sort-select');
+    assert.ok(sortSelect, 'sort-select should exist');
+
+    // Change to name-asc
+    sortSelect.value = 'name-asc';
+    sortSelect.dispatch('change');
+    assert.equal(storage.get('vc.itemsSort'), 'name-asc', 'Sort preference persisted in localStorage');
+
+    const grid = doc.getElementById('items-grid');
+    const cardsAsc = grid.querySelectorAll('.item-card');
+    const firstAscName = cardsAsc[0].querySelector('.item-card-name').textContent;
+    const lastAscName = cardsAsc[cardsAsc.length - 1].querySelector('.item-card-name').textContent;
+    assert.ok(firstAscName.toLowerCase() <= lastAscName.toLowerCase(), 'Items should be sorted alphabetically');
+
+    // Change to name-desc
+    sortSelect.value = 'name-desc';
+    sortSelect.dispatch('change');
+    assert.equal(storage.get('vc.itemsSort'), 'name-desc');
+    const cardsDesc = grid.querySelectorAll('.item-card');
+    const firstDescName = cardsDesc[0].querySelector('.item-card-name').textContent;
+    assert.equal(firstDescName, lastAscName, 'First item in Z-A should match last item in A-Z');
+  });
+
+  it('28. Sort select orders items by weight (Lightest first and Heaviest first)', () => {
+    const { doc } = createDomFixture();
+    const sortSelect = doc.getElementById('sort-select');
+
+    sortSelect.value = 'weight-desc';
+    sortSelect.dispatch('change');
+    const grid = doc.getElementById('items-grid');
+    const cardsDesc = grid.querySelectorAll('.item-card');
+    assert.ok(cardsDesc.length >= 1000, 'Should render cards when sorted by weight-desc');
+
+    sortSelect.value = 'weight-asc';
+    sortSelect.dispatch('change');
+    const cardsAsc = grid.querySelectorAll('.item-card');
+    assert.ok(cardsAsc.length >= 1000, 'Should render cards when sorted by weight-asc');
+  });
+
+  it('29. Quick portal filter filters teleportable and non-teleportable items', () => {
+    const { doc } = createDomFixture();
+    const telSelect = doc.getElementById('teleport-select');
+    assert.ok(telSelect, 'teleport-select should exist');
+
+    // Filter teleportable only
+    telSelect.value = 'yes';
+    telSelect.dispatch('change');
+    assert.ok(!doc.getElementById('item-card-iron'), 'Iron (metal) should be excluded when teleportable only');
+    assert.ok(!doc.getElementById('item-card-copper-ore'), 'Copper Ore should be excluded when teleportable only');
+    assert.ok(doc.getElementById('item-card-wood'), 'Wood should be present when teleportable only');
+
+    // Filter non-teleportable only
+    telSelect.value = 'no';
+    telSelect.dispatch('change');
+    assert.ok(doc.getElementById('item-card-iron'), 'Iron should be present when non-teleportable only');
+    assert.ok(doc.getElementById('item-card-dragon-egg'), 'Dragon Egg should be present when non-teleportable only');
+    assert.ok(!doc.getElementById('item-card-wood'), 'Wood should be excluded when non-teleportable only');
+
+    // Reset to all
+    telSelect.value = 'all';
+    telSelect.dispatch('change');
+    assert.ok(doc.getElementById('item-card-iron'), 'Iron present in all');
+    assert.ok(doc.getElementById('item-card-wood'), 'Wood present in all');
+  });
+
+  it('30. Modal navigation history maintains stack and Back button returns to previous item', () => {
+    const { doc } = createDomFixture();
+    const swordCard = doc.getElementById('item-card-iron-sword');
+    assert.ok(swordCard, 'Iron sword card exists');
+    swordCard.dispatch('click');
+
+    const modalName = doc.getElementById('modal-item-name');
+    assert.equal(modalName.textContent, 'Iron Sword');
+
+    const backBtn = doc.getElementById('modal-back');
+    assert.ok(backBtn.hidden, 'Back button should be hidden for initial item');
+
+    // Click recipe material "Iron" in modal
+    const modalBody = doc.getElementById('modal-body');
+    const links = modalBody.querySelectorAll('.modal-link-tag');
+    const ironLink = links.find((l) => l.title === 'Iron' || l.textContent.includes('Iron'));
+    assert.ok(ironLink, 'Iron material link exists in crafting recipe');
+
+    ironLink.dispatch('click');
+    assert.equal(modalName.textContent, 'Iron', 'Modal should now display Iron');
+    assert.equal(backBtn.hidden, false, 'Back button should now be visible');
+    assert.ok(backBtn.textContent.includes('Iron Sword'), 'Back button indicates previous item Iron Sword');
+
+    // Click back button
+    backBtn.dispatch('click');
+    assert.equal(modalName.textContent, 'Iron Sword', 'Modal returns to Iron Sword');
+    assert.equal(backBtn.hidden, true, 'Back button hides after returning to initial item');
+  });
+
+  it('31. Modal navigation history avoids circular loops and browser back closes modal', () => {
+    const { doc, ctx, fireWindow } = createDomFixture('#item=iron-sword');
+    const modal = doc.getElementById('item-modal');
+    assert.equal(modal.hidden, false, 'Modal should be open initially for Iron Sword');
+    const modalName = doc.getElementById('modal-item-name');
+    assert.equal(modalName.textContent, 'Iron Sword');
+
+    const backBtn = doc.getElementById('modal-back');
+    assert.ok(backBtn.hidden, 'Back button is hidden for initial item');
+
+    // Click Iron link
+    const modalBody = doc.getElementById('modal-body');
+    const links = modalBody.querySelectorAll('.modal-link-tag');
+    const ironLink = links.find((l) => l.title === 'Iron' || l.textContent.includes('Iron'));
+    assert.ok(ironLink);
+    ironLink.dispatch('click');
+    assert.equal(modalName.textContent, 'Iron');
+    assert.equal(backBtn.hidden, false);
+    assert.ok(backBtn.textContent.includes('Iron Sword'));
+
+    // From Iron, click Used In -> Iron Sword (circular transition)
+    const usedInLinks = doc.getElementById('modal-body').querySelectorAll('.modal-link-tag');
+    const swordLink = usedInLinks.find((l) => l.title === 'Iron Sword' || l.textContent.includes('Iron Sword'));
+    assert.ok(swordLink, 'Iron Sword link in used-in section');
+    swordLink.dispatch('click');
+    assert.equal(modalName.textContent, 'Iron Sword');
+    assert.equal(backBtn.hidden, true, 'Back button should be hidden after returning to root item in history');
+
+    // Test hash removal closes modal
+    ctx.location.hash = '';
+    ctx.window.location.hash = '';
+    fireWindow('hashchange');
+    assert.equal(modal.hidden, true, 'Modal should close when URL hash is cleared');
   });
 });

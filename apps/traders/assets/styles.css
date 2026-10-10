@@ -175,6 +175,34 @@ h1 {
   margin-bottom: 18px;
 }
 
+.appraisal-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn-appraisal-toggle {
+  background: var(--bg-card-sub);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-appraisal-toggle:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+.appraisal-section.is-collapsed .appraisal-grid {
+  display: none !important;
+}
+
 .btn-clear {
   background: transparent;
   color: var(--text-dim);
@@ -324,6 +352,32 @@ h1 {
   font-size: 1.15rem;
   font-weight: 600;
   color: var(--text-main);
+}
+
+.btn-filter-affordable {
+  margin-left: auto;
+  align-self: center;
+  background: var(--bg-card-sub);
+  color: var(--accent-gold);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-filter-affordable:hover {
+  border-color: var(--accent-gold);
+  background: var(--bg-card-hover);
+}
+
+.btn-filter-affordable.active {
+  background: var(--accent-gold);
+  color: #0f1216;
+  font-weight: 600;
+  border-color: var(--accent-gold);
 }
 
 /* Trader Selection Tabs */
@@ -583,12 +637,38 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
 .unlock-text {
   color: #ef9a9a;
   line-height: 1.4;
+}
+
+.link-boss-expedition {
+  color: var(--accent-gold);
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  display: inline-block;
+  word-break: break-word;
+  transition: opacity 0.15s ease;
+}
+
+.link-boss-expedition:hover {
+  opacity: 0.8;
+}
+
+.goods-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-muted);
+  font-size: 15px;
+  background: var(--bg-card);
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius-md);
 }
 
 .btn-reveal {
@@ -729,6 +809,12 @@ h1 {
   .appraisal-summary {
     flex-direction: column;
     gap: 8px;
+  }
+
+  .btn-filter-affordable {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
   }
 
   .good-actions {

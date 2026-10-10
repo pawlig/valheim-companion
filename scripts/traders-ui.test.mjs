@@ -21,6 +21,15 @@ class Node {
     this.type = 'text';
   }
 
+  get href() {
+    return this.attrs.href || this._href || '';
+  }
+
+  set href(v) {
+    this._href = v;
+    this.attrs.href = String(v);
+  }
+
   get classList() {
     return {
       add: (...names) => {
@@ -134,9 +143,21 @@ function createDomFixture(initialHash = '') {
   langPicker.id = 'language-picker';
   body.append(langPicker);
 
+  const appraisalSection = new Node('section');
+  appraisalSection.className = 'appraisal-section';
+  body.append(appraisalSection);
+
+  const toggleAppraisalBtn = new Node('button');
+  toggleAppraisalBtn.id = 'appraisal-toggle';
+  appraisalSection.append(toggleAppraisalBtn);
+
   const clearBtn = new Node('button');
   clearBtn.id = 'appraisal-clear';
-  body.append(clearBtn);
+  appraisalSection.append(clearBtn);
+
+  const appraisalGrid = new Node('div');
+  appraisalGrid.className = 'appraisal-grid';
+  appraisalSection.append(appraisalGrid);
 
   const keys = ['coins', 'amber', 'amber-pearl', 'ruby', 'silver-necklace'];
   for (const k of keys) {
@@ -156,20 +177,25 @@ function createDomFixture(initialHash = '') {
     btnInc.setAttribute('data-step', '1');
 
     card.append(btnDec, input, btnInc);
-    body.append(card);
+    appraisalGrid.append(card);
   }
 
   const totalEl = new Node('span');
   totalEl.id = 'summary-total-coins';
-  body.append(totalEl);
 
   const valEl = new Node('span');
   valEl.id = 'summary-valuables-coins';
-  body.append(valEl);
 
   const affEl = new Node('span');
   affEl.id = 'summary-affordable-count';
-  body.append(affEl);
+
+  const filterAffBtn = new Node('button');
+  filterAffBtn.id = 'filter-affordable-btn';
+
+  const summaryWrap = new Node('div');
+  summaryWrap.className = 'appraisal-summary';
+  summaryWrap.append(totalEl, valEl, affEl, filterAffBtn);
+  appraisalSection.append(summaryWrap);
 
   const tabHaldor = new Node('button');
   tabHaldor.id = 'tab-haldor';
@@ -313,6 +339,7 @@ function createDomFixture(initialHash = '') {
     context,
     progress: progressMock,
     getApplyCalled: () => applyCalled,
+    localStorage: localStorageMock,
   };
 }
 
@@ -483,5 +510,120 @@ describe('Trader Ledger UI Test Suite (VC-40)', () => {
   it('11. calls VCI18n.apply() during initialization and render', () => {
     const { getApplyCalled } = createDomFixture();
     assert.ok(getApplyCalled() >= 1, 'VCI18n.apply() was called');
+  });
+
+  it('12. Add to shopping cart stores item in va.cart and updates button to In cart', () => {
+    const { doc, localStorage } = createDomFixture();
+    const ymirCard = doc.getElementById('item-card-ymir-flesh');
+    assert.ok(ymirCard, 'Ymir Flesh card exists');
+
+    const cartBtn = ymirCard.querySelector('.btn-cart');
+    assert.ok(cartBtn, 'Add to shopping cart button exists on item card');
+    assert.ok(!cartBtn.classList.contains('is-added'), 'Cart button initially not marked as added');
+
+    // Click add to cart
+    cartBtn.dispatch('click');
+    const rawCart = localStorage.getItem('va.cart');
+    assert.ok(rawCart, 'va.cart should be present in localStorage');
+    const cart = JSON.parse(rawCart);
+    assert.equal(cart.length, 1);
+    assert.equal(cart[0].item, 'ymir-flesh');
+    assert.equal(cart[0].quantity, 1);
+
+    // Button should now be marked as in cart
+    const updatedBtn = doc.getElementById('btn-cart-ymir-flesh');
+    assert.ok(updatedBtn.classList.contains('is-added'), 'Cart button now has is-added class');
+    assert.ok(updatedBtn.textContent.includes('In cart') || updatedBtn.textContent.includes('✓'), 'Cart button displays In cart');
+
+    // Click again -> increments quantity
+    updatedBtn.dispatch('click');
+    const cartAfter = JSON.parse(localStorage.getItem('va.cart'));
+    assert.equal(cartAfter[0].quantity, 2, 'Quantity increments on multiple clicks');
+  });
+
+  it('13. Filter affordable items displays only merchandise within current budget and empty message when none affordable', () => {
+    const { doc } = createDomFixture();
+    const filterBtn = doc.getElementById('filter-affordable-btn');
+    assert.ok(filterBtn, 'filter-affordable-btn exists');
+
+    // Budget is 0: toggle filter
+    filterBtn.dispatch('click');
+    assert.equal(filterBtn.getAttribute('aria-pressed'), 'true');
+    const grid = doc.getElementById('goods-grid');
+    const emptyNotice = grid.querySelector('.goods-empty');
+    assert.ok(emptyNotice, 'Empty notice shown when 0 items are affordable');
+
+    // Give 200 coins: Ymir Flesh (120), Fishing Bait (10), Yule Hat (100) are affordable
+    const inputCoins = doc.getElementById('input-coins');
+    inputCoins.value = '200';
+    inputCoins.dispatch('input');
+
+    const cards = grid.querySelectorAll('.good-card');
+    assert.ok(cards.length >= 3, 'Affordable cards rendered');
+    assert.ok(doc.getElementById('item-card-ymir-flesh'), 'Ymir Flesh (120) is affordable');
+    assert.ok(doc.getElementById('item-card-fishing-bait'), 'Fishing Bait (10) is affordable');
+    assert.ok(!doc.getElementById('item-card-megingjord'), 'Megingjörd (950) is excluded');
+
+    // Toggle off
+    filterBtn.dispatch('click');
+    assert.equal(filterBtn.getAttribute('aria-pressed'), 'false');
+    const allCards = grid.querySelectorAll('.good-card');
+    assert.equal(allCards.length, 8, 'Full list restored');
+    assert.ok(doc.getElementById('item-card-megingjord'), 'Megingjörd is back');
+  });
+
+  it('14. Collapse calculator toggles collapsed state and aria-expanded', () => {
+    const { doc, localStorage } = createDomFixture();
+    const toggleBtn = doc.getElementById('appraisal-toggle');
+    const section = doc.querySelector('.appraisal-section');
+    assert.ok(toggleBtn, 'appraisal-toggle button exists');
+    assert.ok(section, 'appraisal-section exists');
+
+    toggleBtn.dispatch('click');
+    assert.ok(section.classList.contains('is-collapsed'), 'Section has is-collapsed class');
+    assert.equal(toggleBtn.getAttribute('aria-expanded'), 'false');
+    assert.equal(localStorage.getItem('vc.appraisalCollapsed'), 'true');
+
+    toggleBtn.dispatch('click');
+    assert.ok(!section.classList.contains('is-collapsed'), 'Section is expanded again');
+    assert.equal(toggleBtn.getAttribute('aria-expanded'), 'true');
+    assert.equal(localStorage.getItem('vc.appraisalCollapsed'), 'false');
+  });
+
+  it('15. Locked goods show boss prerequisite link to expedition or bestiary', () => {
+    const { doc } = createDomFixture();
+    const thunderCard = doc.getElementById('item-card-thunderstone');
+    const bossLink = thunderCard.querySelector('.link-boss-expedition');
+    assert.ok(bossLink, 'Expedition boss link exists on Thunderstone');
+    assert.equal(bossLink.getAttribute('href'), '/expedition/#boss=the-elder');
+
+    // Hildir tab
+    const tabHildir = doc.getElementById('tab-hildir');
+    tabHildir.dispatch('click');
+    const furCapCard = doc.getElementById('item-card-fur-cap-grey');
+    assert.ok(furCapCard, 'Fur Cap card exists');
+    const minibossLink = furCapCard.querySelector('.link-boss-expedition');
+    assert.ok(minibossLink, 'Bestiary miniboss link exists for Brenna');
+    assert.equal(minibossLink.getAttribute('href'), '/bestiary/#c=brenna');
+  });
+
+  it('16. Dynamic appraisal toggle and affordable filter buttons retain state across VCI18n.apply()', () => {
+    const { doc, context } = createDomFixture();
+    const toggleBtn = doc.getElementById('appraisal-toggle');
+    const filterBtn = doc.getElementById('filter-affordable-btn');
+
+    // Toggle calculator to collapsed and affordable filter to active
+    toggleBtn.dispatch('click');
+    filterBtn.dispatch('click');
+
+    assert.ok(toggleBtn.textContent.includes('Expand calculator') || toggleBtn.textContent.includes('▼'));
+    assert.ok(filterBtn.textContent.includes('Showing only affordable') || filterBtn.textContent.includes('✓'));
+
+    // Apply i18n
+    context.globalThis.VCI18n.apply();
+
+    // Verify dynamic text is NOT clobbered back to static text
+    assert.ok(toggleBtn.textContent.includes('Expand calculator') || toggleBtn.textContent.includes('▼'), 'Calculator toggle button keeps Expand state');
+    assert.ok(filterBtn.textContent.includes('Showing only affordable') || filterBtn.textContent.includes('✓'), 'Affordable filter keeps active state');
   });
 });

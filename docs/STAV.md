@@ -22,9 +22,10 @@
 | `/comfort/` | Comfort Planner | `apps/comfort/` | ✅ comfort a Rested, Best I can build, Next upgrades, nákupní seznam, maxima po biomech sedí s wiki |
 | `/expedition/` | Expedition | `apps/expedition/` | ✅ Boss prep (zbraně z Bestiary, obrana, jídlo z Provisions, balicí a nákupní seznam) a Raids (teď / skončené / po dalším bossovi) |
 | `/signs/` | Sign Editor (Runopis) | `apps/signs/` (React + Vite, převzato subtree z `valheim-signs`) | ✅ 13 jazyků |
-| `/items/` | Items Compendium | `apps/items/` (vanilla JS) | ✅ kompletní katalog 1 087 předmětů v 15 čistých kategoriích (včetně všech 9 rybářských návnad, munice, štítů, surovin, přísad), horizontální štítky kategorií s počty položek, synchronizovaný select, výchozí odemčené zobrazení encyklopedie s volitelným spoiler filtrem, recepty, stanice, statistiky, zdroje, usedIn, 13 jazyků |
-| `/traders/` | Trader Ledger | `apps/traders/` (vanilla JS) | ✅ Haldor, Hildir & Bog Witch, nabídka zboží, kalkulačka pokladů a mincí, odemykání dle postupu, 13 jazyků |
+| `/items/` | Items Compendium | `apps/items/` (vanilla JS) | ✅ kompletní katalog 1 087 předmětů v 15 čistých kategoriích, horizontální swipe lišta čipů na mobilu, řazení dle postupu/A–Z/hmotnosti, rychlý filtr portálu, historie modalu (Zpět), recepty, stanice, statistiky, zdroje, usedIn, 13 jazyků |
+| `/traders/` | Trader Ledger | `apps/traders/` (vanilla JS) | ✅ Haldor, Hildir & Bog Witch, nabídka zboží, přímé přidávání do nákupního košíku va.cart, sbalitelná kalkulačka pokladů, filtr pouze dostupného zboží, odkazy na bossy v Expedici, 13 jazyků |
 | VC-40e | **Items Compendium taxonomie 15 kategorií, rybářské návnady a štítky** | agy | ✅ nasazeno 9. 10. (1 087 předmětů, 0 nezařazených, 15 kategorií, 9 návnad, horizontální category-chips s počty, výchozí přímé zobrazení všech položek s volitelným spoiler filtrem, 13 jazyků, prohlizec kontrola bez vad 0 px přesah) |
+| VC-40f | **Items Compendium & Trader Ledger UX overhaul** | agy | ✅ nasazeno 10. 10. (horizontální swipe čipy na mobilu 38px, řazení tier/A-Z/hmotnost, historie modalu Zpět, portálový filtr, oprava va.cart v Trader Ledgeru, sbalitelná kalkulačka a filtr dostupného zboží, 13 jazyků, 101 testů pass, prohlizec bez vad) |
 | VC-41 | **Armor Calculator / Damage Taken** (v Damage Calculatoru: redukce poškození zbrojí a odolnostmi hráče proti potvorám a bossům) | GM | 🔄 v přípravě |
 
 Pořadí biomů ve všech nástrojích je jedno (ANALYZA § 14): Meadows, Black Forest, **Ocean**, Swamp, Mountain, Plains, Mistlands, Ashlands, Deep North. Platí `tier = order`.

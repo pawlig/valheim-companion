@@ -112,6 +112,19 @@
 
   let selectedCategory = 'all';
   let selectedBiome = 'all';
+  let selectedSort = 'tier-asc';
+  try {
+    const storedSort = localStorage.getItem('vc.itemsSort');
+    if (storedSort) selectedSort = storedSort;
+  } catch {}
+
+  let selectedTeleport = 'all';
+  try {
+    const storedTeleport = localStorage.getItem('vc.itemsTeleport');
+    if (storedTeleport) selectedTeleport = storedTeleport;
+  } catch {}
+
+  let modalHistory = [];
   let searchQuery = '';
   let activeModalItem = null;
   let noticeTimer = null;
@@ -224,14 +237,33 @@
     return el('span', 'modal-link-tag modal-link-plain', label);
   }
 
-  function openModal(item) {
+  function openModal(item, isBack = false) {
+    if (!isBack && activeModalItem && activeModalItem.id !== item.id) {
+      const existingIdx = modalHistory.findLastIndex ? modalHistory.findLastIndex((it) => it.id === item.id) : -1;
+      if (existingIdx !== -1) {
+        modalHistory = modalHistory.slice(0, existingIdx);
+      } else {
+        modalHistory.push(activeModalItem);
+      }
+    }
     activeModalItem = item;
     const modal = document.getElementById('item-modal');
     const backdrop = document.getElementById('item-modal-backdrop');
     const modalName = document.getElementById('modal-item-name');
     const modalBody = document.getElementById('modal-body');
+    const backBtn = document.getElementById('modal-back');
 
     if (!modal || !backdrop || !modalName || !modalBody) return;
+
+    if (backBtn) {
+      if (modalHistory.length > 0) {
+        const prev = modalHistory[modalHistory.length - 1];
+        backBtn.textContent = `← ${t('Back to {item}', { item: prev.name })}`;
+        backBtn.hidden = false;
+      } else {
+        backBtn.hidden = true;
+      }
+    }
 
     modalBody.scrollTop = 0;
     modalName.textContent = item.name;
@@ -244,7 +276,7 @@
       const revBtn = button(t('Reveal biome'), () => {
         revealBiome(item.biome);
         render();
-        openModal(item);
+        openModal(item, true);
       }, 'reveal-btn');
       banner.append(revBtn);
       modalBody.append(banner);
@@ -537,10 +569,13 @@
 
   function closeModal() {
     activeModalItem = null;
+    modalHistory = [];
     const modal = document.getElementById('item-modal');
     const backdrop = document.getElementById('item-modal-backdrop');
+    const backBtn = document.getElementById('modal-back');
     if (modal) modal.hidden = true;
     if (backdrop) backdrop.hidden = true;
+    if (backBtn) backBtn.hidden = true;
     // Drop the deep-link hash without scrolling or adding a history entry.
     if (location.hash && location.hash.includes('item=') && typeof history !== 'undefined' && history.replaceState) {
       history.replaceState(null, '', location.pathname + location.search);
@@ -555,6 +590,8 @@
     const query = searchQuery.trim().toLowerCase();
     const matchesQueryAndBiome = (item) => {
       if (selectedBiome !== 'all' && item.biome !== selectedBiome) return false;
+      if (selectedTeleport === 'yes' && item.teleportable === false) return false;
+      if (selectedTeleport === 'no' && item.teleportable !== false) return false;
       if (query) {
         const nameMatch = item.name.toLowerCase().includes(query);
         const idMatch = item.id.toLowerCase().includes(query);
@@ -670,6 +707,13 @@
       if (selectedBiome !== 'all' && item.biome !== selectedBiome) {
         return false;
       }
+      // Teleportable filter
+      if (selectedTeleport === 'yes' && item.teleportable === false) {
+        return false;
+      }
+      if (selectedTeleport === 'no' && item.teleportable !== false) {
+        return false;
+      }
       // Search query
       if (query) {
         const nameMatch = item.name.toLowerCase().includes(query);
@@ -678,6 +722,50 @@
         if (!nameMatch && !idMatch && !locNamesMatch) return false;
       }
       return true;
+    });
+
+    // Sorting
+    const BIOME_TIER = {
+      meadows: 1,
+      'black-forest': 2,
+      swamp: 3,
+      ocean: 3.5,
+      mountain: 4,
+      plains: 5,
+      mistlands: 6,
+      ashlands: 7,
+      'deep-north': 8,
+    };
+    const getProgression = (it) => {
+      if (it.tier != null) return it.tier;
+      if (it.biome && BIOME_TIER[it.biome]) return BIOME_TIER[it.biome];
+      return 99;
+    };
+
+    filtered.sort((a, b) => {
+      if (selectedSort === 'name-asc') {
+        return (a.name || '').localeCompare(b.name || '');
+      }
+      if (selectedSort === 'name-desc') {
+        return (b.name || '').localeCompare(a.name || '');
+      }
+      if (selectedSort === 'weight-asc') {
+        const wa = a.weight != null ? a.weight : Infinity;
+        const wb = b.weight != null ? b.weight : Infinity;
+        if (wa !== wb) return wa - wb;
+        return (a.name || '').localeCompare(b.name || '');
+      }
+      if (selectedSort === 'weight-desc') {
+        const wa = a.weight != null ? a.weight : -Infinity;
+        const wb = b.weight != null ? b.weight : -Infinity;
+        if (wa !== wb) return wb - wa;
+        return (a.name || '').localeCompare(b.name || '');
+      }
+      // Default: 'tier-asc' (Progression / Tier: Meadows → Ashlands)
+      const pa = getProgression(a);
+      const pb = getProgression(b);
+      if (pa !== pb) return pa - pb;
+      return (a.name || '').localeCompare(b.name || '');
     });
 
     if (countSpan) {
@@ -770,7 +858,12 @@
 
   function handleHash() {
     const hash = location.hash;
-    if (!hash || !hash.includes('item=')) return;
+    if (!hash || !hash.includes('item=')) {
+      if (activeModalItem) {
+        closeModal();
+      }
+      return;
+    }
     const match = hash.match(/item=([^&]+)/);
     if (!match) return;
     const itemId = decodeURIComponent(match[1]);
@@ -790,6 +883,15 @@
       selectedCategory = 'all';
       const catSelect = document.getElementById('category-select');
       if (catSelect) catSelect.value = 'all';
+    }
+    if (selectedTeleport === 'yes' && item.teleportable === false) {
+      selectedTeleport = 'all';
+      const telSelect = document.getElementById('teleport-select');
+      if (telSelect) telSelect.value = 'all';
+    } else if (selectedTeleport === 'no' && item.teleportable !== false) {
+      selectedTeleport = 'all';
+      const telSelect = document.getElementById('teleport-select');
+      if (telSelect) telSelect.value = 'all';
     }
     searchQuery = '';
     const searchInput = document.getElementById('item-search');
@@ -819,8 +921,33 @@
 
     const catSelect = document.getElementById('category-select');
     if (catSelect) {
+      catSelect.value = selectedCategory;
       catSelect.addEventListener('change', (e) => {
         selectedCategory = e.target.value;
+        render();
+      });
+    }
+
+    const sortSelect = document.getElementById('sort-select');
+    if (sortSelect) {
+      sortSelect.value = selectedSort;
+      sortSelect.addEventListener('change', (e) => {
+        selectedSort = e.target.value;
+        try {
+          localStorage.setItem('vc.itemsSort', selectedSort);
+        } catch {}
+        render();
+      });
+    }
+
+    const teleportSelect = document.getElementById('teleport-select');
+    if (teleportSelect) {
+      teleportSelect.value = selectedTeleport;
+      teleportSelect.addEventListener('change', (e) => {
+        selectedTeleport = e.target.value;
+        try {
+          localStorage.setItem('vc.itemsTeleport', selectedTeleport);
+        } catch {}
         render();
       });
     }
@@ -833,6 +960,19 @@
           localStorage.setItem('vc.itemsShowAll', String(showAllBiomes));
         } catch {}
         render();
+      });
+    }
+
+    const modalBack = document.getElementById('modal-back');
+    if (modalBack) {
+      modalBack.addEventListener('click', () => {
+        if (modalHistory.length > 0) {
+          const prev = modalHistory.pop();
+          if (typeof history !== 'undefined' && history.replaceState) {
+            history.replaceState(null, '', `/items/#item=${encodeURIComponent(prev.id)}`);
+          }
+          openModal(prev, true);
+        }
       });
     }
 
