@@ -60,9 +60,9 @@ test('copy format handles fractions and locale numbers without translating game 
 });
 test('cart.addMaterial sums repeated adds and read survives corrupted JSON', () => {
   const store = new Map();
-  globalThis.localStorage = { getItem: k => store.has(k) ? store.get(k) : null, setItem: (k, v) => store.set(k, String(v)) };
+  context.localStorage = { getItem: k => store.has(k) ? store.get(k) : null, setItem: (k, v) => store.set(k, String(v)) };
   store.set('va.cart', '{broken');
-  assert.deepEqual(core.cart.read(), []);
+  assert.deepEqual(plain(core.cart.read()), []);
   core.cart.write([]);
   core.cart.addMaterial('iron', 1);
   core.cart.addMaterial('iron', 4);
@@ -73,7 +73,7 @@ test('cart.addMaterial sums repeated adds and read survives corrupted JSON', () 
   assert.equal(lines[0].amount, 5);
   assert.equal(lines[0].setId, null);
   assert.ok(core.cart.hasMaterial('iron') && !core.cart.hasMaterial('wood'));
-  delete globalThis.localStorage;
+  delete context.localStorage;
 });
 test('sumMaterials counts a materialId line as that many units', () => {
   const result = core.sumMaterials([{ id: 'mat_iron_x', materialId: 'iron', amount: 3, setId: null, pieceId: null }], {});
