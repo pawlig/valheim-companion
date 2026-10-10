@@ -24,7 +24,7 @@ Drobnosti ze `docs/STAV.md` § Známé drobnosti (body 5 a 6). Jen Smithy, Exped
 - `traderBadges` (Smithy ř. ~61): řetěz `customData || data || globalThis.VA_DATA || window.VA_DATA` nech, jen pokud ho používá produkční kód; jinak zjednoduš na to, co produkce potřebuje, a test předá data přes vm kontext.
 
 ## Testy
-Do `scripts/ui-hacks.test.mjs` (nebo `scripts/smithy-*.test.mjs`, kde už se testuje košík — `grep -ln "bulk\|groupItems" scripts/*.test.mjs`) přidej: skupina Rag Armor + set s Q4 kusy → bulk Want Q3 → rag kusy `want 2`, ostatní 3; bulk Have Q3 → rag `have 1, want 2`; nabídka bulk selectů odpovídá `groupMax`.
+Do `scripts/ui-hacks.test.mjs` (nebo `scripts/smithy-*.test.mjs`, kde už se testuje košík — `grep -ln "bulk\|groupItems" scripts/*.test.mjs`) přidej: skupina se syntetickými kusy s maximem Q2 a Q4 → bulk Want Q3 → kus Q2 `want 2`, kus Q4 `want 3`; bulk Have Q3 → kus Q2 `have 1, want 2`; nabídka bulk selectů odpovídá `groupMax`; skutečný set Rag Armor → bulk Want nabízí jen Q1–Q2.
 
 ## ⛔ Nesahat
 Data, generátory, `shared/`, Items, Traders, Provisions, styly.
