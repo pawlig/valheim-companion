@@ -281,8 +281,14 @@ function createDomFixture(initialHash = '') {
 
   let defeatedState = {};
   let progressListener = null;
+  let revealedState = ['meadows'];
   const progressMock = {
     get: () => ({ defeated: defeatedState }),
+    revealedBiomes: () => revealedState,
+    reveal: (ids) => {
+      revealedState = ids;
+      if (progressListener) progressListener();
+    },
     onChange: (cb) => {
       progressListener = cb;
     },
@@ -344,7 +350,7 @@ function createDomFixture(initialHash = '') {
 }
 
 describe('Trader Ledger UI Test Suite (VC-40)', () => {
-  it('1. renders Haldor tab by default as active tab with 8 merchandise items', () => {
+  it('1. renders Haldor tab by default as active tab with 11 merchandise items', () => {
     const { doc } = createDomFixture();
     const tabHaldor = doc.getElementById('tab-haldor');
     assert.equal(tabHaldor.getAttribute('aria-selected'), 'true');
@@ -354,7 +360,7 @@ describe('Trader Ledger UI Test Suite (VC-40)', () => {
     assert.equal(nameEl.textContent, 'Haldor');
 
     const grid = doc.getElementById('goods-grid');
-    assert.equal(grid.children.length, 8);
+    assert.equal(grid.children.length, 11);
   });
 
   it('2. switches tabs to Hildir and renders Hildir goods without page reload', () => {
@@ -475,16 +481,16 @@ describe('Trader Ledger UI Test Suite (VC-40)', () => {
   it('8. spoiler protection locks progress-gated goods and provides Reveal button', () => {
     const { doc, progress } = createDomFixture();
 
-    const thunderCard = doc.getElementById('item-card-thunderstone');
-    assert.ok(thunderCard.classList.contains('is-locked'), 'Thunderstone is initially locked without The Elder defeated');
+    const thunderCard = doc.getElementById('item-card-thunder-stone');
+    assert.ok(thunderCard.classList.contains('is-locked'), 'Thunder Stone is initially locked without The Elder defeated');
 
     const revealBtn = thunderCard.querySelector('.btn-reveal');
-    assert.ok(revealBtn, 'Reveal button exists on locked Thunderstone');
+    assert.ok(revealBtn, 'Reveal button exists on locked Thunder Stone');
 
     // Click Reveal
     revealBtn.dispatch('click');
-    const updatedThunderCard = doc.getElementById('item-card-thunderstone');
-    assert.equal(updatedThunderCard.classList.contains('is-locked'), false, 'Thunderstone unlocked after manual reveal');
+    const updatedThunderCard = doc.getElementById('item-card-thunder-stone');
+    assert.equal(updatedThunderCard.classList.contains('is-locked'), false, 'Thunder Stone unlocked after manual reveal');
   });
 
   it('9. unlocks progress-gated goods automatically when boss is marked defeated in VCProgress', () => {
@@ -568,7 +574,7 @@ describe('Trader Ledger UI Test Suite (VC-40)', () => {
     filterBtn.dispatch('click');
     assert.equal(filterBtn.getAttribute('aria-pressed'), 'false');
     const allCards = grid.querySelectorAll('.good-card');
-    assert.equal(allCards.length, 8, 'Full list restored');
+    assert.equal(allCards.length, 11, 'Full list restored');
     assert.ok(doc.getElementById('item-card-megingjord'), 'Megingjörd is back');
   });
 
@@ -592,9 +598,9 @@ describe('Trader Ledger UI Test Suite (VC-40)', () => {
 
   it('15. Locked goods show boss prerequisite link to expedition or bestiary', () => {
     const { doc } = createDomFixture();
-    const thunderCard = doc.getElementById('item-card-thunderstone');
+    const thunderCard = doc.getElementById('item-card-thunder-stone');
     const bossLink = thunderCard.querySelector('.link-boss-expedition');
-    assert.ok(bossLink, 'Expedition boss link exists on Thunderstone');
+    assert.ok(bossLink, 'Expedition boss link exists on Thunder Stone');
     assert.equal(bossLink.getAttribute('href'), '/expedition/#boss=the-elder');
 
     // Hildir tab
@@ -603,8 +609,30 @@ describe('Trader Ledger UI Test Suite (VC-40)', () => {
     const furCapCard = doc.getElementById('item-card-fur-cap-grey');
     assert.ok(furCapCard, 'Fur Cap card exists');
     const minibossLink = furCapCard.querySelector('.link-boss-expedition');
-    assert.ok(minibossLink, 'Bestiary miniboss link exists for Brenna');
-    assert.equal(minibossLink.getAttribute('href'), '/bestiary/#c=brenna');
+    assert.ok(minibossLink, 'Bestiary miniboss link exists for Zil & Thungr (bronze chest)');
+    assert.equal(minibossLink.getAttribute('href'), '/bestiary/#c=zil-thungr');
+  });
+
+  it('17. creature unlocks (Serpent, Writhan) follow the revealed biomes and show the buy quantity', () => {
+    const { doc, progress } = createDomFixture();
+    doc.getElementById('tab-bog-witch').dispatch('click');
+
+    const crown = doc.getElementById('item-card-crown-of-roots');
+    assert.ok(crown.classList.contains('is-locked'), 'Crown of Roots is locked before the swamp is revealed');
+    const herbs = doc.getElementById('item-card-seafarer-s-herbs');
+    assert.ok(herbs.classList.contains('is-locked'), "Seafarer's Herbs is locked before the ocean is revealed");
+
+    progress.reveal(['meadows', 'black-forest', 'swamp']);
+    assert.equal(doc.getElementById('item-card-crown-of-roots').classList.contains('is-locked'), false);
+    assert.ok(doc.getElementById('item-card-seafarer-s-herbs').classList.contains('is-locked'));
+
+    progress.reveal(['meadows', 'black-forest', 'swamp', 'ocean']);
+    assert.equal(doc.getElementById('item-card-seafarer-s-herbs').classList.contains('is-locked'), false);
+
+    const lovePotion = doc.getElementById('item-card-love-potion');
+    assert.ok(lovePotion.querySelector('.good-quantity'), 'Love Potion shows its x5 quantity');
+    assert.equal(lovePotion.querySelector('.good-quantity').textContent.includes('5'), true);
+    assert.equal(doc.getElementById('item-card-crown-of-roots').querySelector('.good-quantity'), null);
   });
 
   it('16. Dynamic appraisal toggle and affordable filter buttons retain state across VCI18n.apply()', () => {
