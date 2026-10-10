@@ -537,12 +537,12 @@ Nová sekce `/items/` (`apps/items/`, statická vanilla JS aplikace jako Smithy 
 - **Data (`scripts/build-items-data.mjs` → `apps/items/data/data.js` a `data/items-compendium.json`):**
   - Vstup: `data/items.json`, `data/weapons.json`, `data/armor.json`, `data/comfort.json`, `apps/provisions/data/data.js`, `data/expedition.json`, `data/creatures.json`, `data/stations.json`.
   - Každý záznam itemu:
-    - `id`, `name`, `image`, `biome`, `tier`, `category` (`metal`, `drop`, `trophy`, `food-ingredient`, `crafting`, `valuable`, `summoning`), `teleportable` (true/false), `stack`, `weight`, `wiki`
+    - `id`, `name`, `image`, `biome`, `tier`, `category` (17 hodnot: `weapon`, `shield`, `ammo`, `tool`, `armor`, `accessory`, `casting`, `summoning`, `metal`, `trophy`, `drop`, `material`, `ingredient`, `food`, `mead`, `building`, `valuable`; výčet a zdroje v `docs/DATA-SCHEMA.md`), `teleportable` (true/false), `stack`, `weight`, `wiki`
     - **`sources`:**
       - Drop z bytosti: `creatures: [{ id, name, biome }]` → odkaz `/bestiary/#c=<id>`
       - Sběr v přírodě / těžba: `location` / `other`
       - Výroba na stanici: `recipe: { station, stationLevel, materials: [{ item, amount }] }`
-      - Nákup u obchodníka: `trader: "Haldor" | "Hildir" | "Bog Witch"` s cenou
+      - Nákup u obchodníka: `traders[]: { id, name, price, unlockedBy }`, `id` ∈ `haldor` | `hildir` | `bog-witch`, `price` v mincích, `unlockedBy` viz `docs/DATA-SCHEMA.md` (`data/traders.json`)
     - **`usedIn` (obrácený index receptů napříč všemi nástroji):**
       - `weapons`: `[{ id, name, biome }]` → odkaz `/smithy/#item=<id>`
       - `armor`: `[{ id, name, set, biome }]` → odkaz `/smithy/#set=<set>` nebo `/smithy/#item=<id>`
@@ -550,7 +550,8 @@ Nová sekce `/items/` (`apps/items/`, statická vanilla JS aplikace jako Smithy 
       - `meads`: `[{ id, name, biome }]` → odkaz `/provisions/#item=<id>`
       - `comfort`: `[{ id, name, comfort, biome }]` → odkaz `/comfort/#item=<id>`
       - `expedition`: `[{ bossId, bossName, biome }]` → odkaz `/expedition/#boss=<bossId>`
-      - `stations`: `[{ id, name, level, biome }]`
+      - `stations`: `[{ id, name, level, biome, itemId }]` — stavby, jejichž recept obsahuje surovinu (u `wood`: Artisan Table, Forge, Stonecutter).
+      - `crafting`: `[{ id, name, level, biome, itemId }]` — výrobky (nástroje, munice, …), jejichž recept obsahuje surovinu (u `wood`: Antler Pickaxe, Bronzehead Arrow; u `bronze`: Bronze Nails, Bronze Pickaxe).
 - **Uživatelské rozhraní `/items/`:**
   - Záhlaví „Items Compendium“, podtitul ve 13 jazycích, návrat na rozcestník, přepínač jazyka, vysouvací panel `VCProgress`.
   - Vyhledávání (okamžitá filtrace podle anglického názvu).
