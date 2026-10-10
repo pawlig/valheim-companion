@@ -57,7 +57,7 @@ test('bestiary item links point only to existing compendium items and power drop
   const compendiumIds = new Set(compendium.items.map(i => i.id));
   const creaturesData = JSON.parse(readFileSync(path.join(REPO_ROOT, 'data', 'creatures.json'), 'utf8'));
 
-  // Žádný drop ani trofej nemá v názvu -->
+  // No drop or trophy name contains -->
   for (const c of creaturesData) {
     for (const d of (c.drops ?? [])) {
       assert.equal(d.includes('-->'), false, `creature ${c.id} drop contains -->: ${d}`);
@@ -87,19 +87,27 @@ test('bestiary item links point only to existing compendium items and power drop
   assert.ok(verifiedDrops > 0, 'at least one drop itemId verified');
   assert.ok(verifiedTrophies > 0, 'at least one trophy itemId verified');
 
-  // „Eikthyr Power" (pokud je v drops) má itemId: null
+  // "Eikthyr Power" (when listed in drops) has itemId: null
   const eikthyr = bundleCreatures.find(c => c.id === 'eikthyr');
   assert.ok(eikthyr, 'eikthyr exists');
   const eikthyrPower = eikthyr.dropLinks?.find(d => d.name === 'Eikthyr Power');
   assert.ok(eikthyrPower, 'eikthyr has Eikthyr Power drop');
   assert.equal(eikthyrPower.itemId, null, 'Eikthyr Power must have itemId: null');
 
-  // Žádný drop s Power nemá itemId
+  // No "Power" drop has an itemId
   for (const c of bundleCreatures) {
     for (const d of (c.dropLinks ?? [])) {
       if (d.name.endsWith(' Power')) {
         assert.equal(d.itemId, null, `${c.id} drop ${d.name} must have itemId: null`);
       }
     }
+  }
+});
+
+test('creatures without a wiki trophy have trophy null (no invented Crow/Gull trophies)', () => {
+  const creatures = JSON.parse(readFileSync(new URL('../data/creatures.json', import.meta.url), 'utf8'));
+  for (const id of ['crow', 'gull', 'zil-thungr']) {
+    const creature = creatures.find(c => c.id === id);
+    if (creature) assert.equal(creature.trophy ?? null, null, `${id} must not have a trophy`);
   }
 });

@@ -12,11 +12,11 @@ const headers = table => table.headers.map(header => cleanText(header).toLowerCa
 
 function cleanTrophyName(rawName) {
   if (!rawName) return null;
-  const cleaned = String(rawName)
-    .replace(/<!--.*?-->/g, '')
-    .replace(/currently no trophy-->?/gi, '')
-    .replace(/-->/g, '')
-    .trim();
+  // A commented-out infobox row means the creature has no trophy; a multi-line value
+  // (Zil/Thungr) lists separate trophies that are already linked from drops.
+  const raw = String(rawName);
+  if (/<!--|-->|currently no trophy|\n/i.test(raw)) return null;
+  const cleaned = raw.trim();
   if (!cleaned || /^none$/i.test(cleaned)) return null;
   return cleaned;
 }

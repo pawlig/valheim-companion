@@ -1,5 +1,5 @@
 window.VC_DATA = {
-  "generatedAt": "2026-10-10T11:27:51.245Z",
+  "generatedAt": "2026-10-10T11:42:23.635Z",
   "source": {
     "name": "Valheim Wiki",
     "url": "https://valheim.weirdgloop.org",
@@ -2800,13 +2800,7 @@ window.VC_DATA = {
       "drops": [
         "Feathers"
       ],
-      "trophy": {
-        "name": "Crow trophy",
-        "image": null,
-        "dropChance": null,
-        "usage": [],
-        "itemId": null
-      },
+      "trophy": null,
       "summon": null,
       "location": "Black Forest",
       "spawns": [],
@@ -6943,13 +6937,7 @@ window.VC_DATA = {
       "drops": [
         "Feathers"
       ],
-      "trophy": {
-        "name": "Gull trophy",
-        "image": null,
-        "dropChance": null,
-        "usage": [],
-        "itemId": null
-      },
+      "trophy": null,
       "summon": null,
       "location": "* Meadows\n* Black Forest\n* Plains\n* Ocean",
       "spawns": [],
@@ -13176,13 +13164,7 @@ window.VC_DATA = {
         "Zil Trophy",
         "Thungr Trophy"
       ],
-      "trophy": {
-        "name": "Zil\nThungr",
-        "image": null,
-        "dropChance": null,
-        "usage": [],
-        "itemId": null
-      },
+      "trophy": null,
       "summon": null,
       "location": "Sealed tower",
       "spawns": [],
