@@ -92,10 +92,11 @@ Zadání jsou v [`docs/zadani/`](zadani/). Hotové úlohy jsou mergnuté do `mai
 | VC-42k | oprava O-8 + AUD/8: i18n dočištění, Reveal jen přes `vc.openBiomes` (`VCProgress.openBiome`), „Used in“ bez zamčených položek, jeden predikát filtru | Sonnet | ✅ nasazeno 10. 10. (Reveal v Items/Comfort/Provisions/Expedition nemění `vc.progress`, Traders podmínky ve 13 jazycích, test identical-to-en; přejímka napoprvé; orchestrator fix: Love Potion odkaz z pole `traders`) |
 | VC-42i | oprava O-10: DATA-SCHEMA (items-compendium, traders) a rozhodnutí Pavla AUD/1–8 v ANALYZA § 27 | Haiku | ✅ nasazeno 10. 10. (přejímka: 1 kolo vrácení, 6 věcných nepřesností opraveno) |
 | VC-42j | oprava O-9 (UI): odznak obchodníka z pole `traders` ve Smithy/Provisions, Expedition `summonLabel`, „Materials & goods“ na konci košíku, migrace starých řádků `va.cart` | Flash | ✅ nasazeno 10. 10. (0 regexů na jména obchodníků, migrace ověřena v prohlížeči, 432 testů; přejímka napoprvé) |
+| VC-42l | AUD/6: `fetch-stations.mjs` nahrazuje jen své 4 stanice (`mergeStations`), pořadí fetcherů stanic v ORCHESTRACE a DATA-SCHEMA | Haiku | 🔄 běží (CC, větev `vc-42l`, dashboard #172) |
 
 ### 🔄 Předávka orchestrátora (10. 10. 2026, ~17:30)
 
-- **Běží:** nic. Opravy auditu VC-42a … VC-42k všechny nasazené (main 432 testů, strom po `build-traders-data` + `build-items-data` čistý). Oba worktree volné (`--detach main`).
+- **Běží:** VC-42l (Haiku, CC, #172) — AUD/6. Opravy auditu VC-42a … VC-42k všechny nasazené (main 432 testů, strom po `build-traders-data` + `build-items-data` čistý). Oba worktree volné (`--detach main`).
 - **Další kandidáti** (nic z toho Pavel zatím nezadal jako prioritu): AUD/6 reprodukovatelný `data/stations.json` (audit § 4 konec); drobnosti v „Známé drobnosti“ (generatedAt z mtime, Greydwarf Shaman Deep North u wood, spoilerové bannery v Traders, háčky pro testy v produkčním kódu Smithy/Expedition, hromadné „Chci“ Q3 ve skupině setu vs. select kusu); návrh: odznak obchodníka u kosmetických kusů zbroje v katalogu Smithy (data už mají `traders`).
 - **Pracovníci 10. 10. večer:** Claude týden ~93 %, Flash týden ~58 %, Codex a GLM vyčerpané do 13./12. 10. Sonnet spolehlivý (VC-42f vráceno 3×, ostatní 1 kolo nebo napoprvé), Flash VC-42j napoprvé, Haiku dokumentace s 1 kolem.
 - Worktree: `valheim-units-CC` a `valheim-units-GM` volné. node_modules pro damage-calculator a signs jsou v obou nalinkované.
