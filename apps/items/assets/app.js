@@ -591,40 +591,44 @@
     }
   }
 
+  function categoryAllows(categoryId, item) {
+    // An option may cover several categories.
+    const allowed = CATEGORY_FILTERS[categoryId];
+    return !allowed || allowed.includes(item.category);
+  }
+
+  // Single predicate for the card list and the category chip counts.
+  function matchesFilters(item, { ignoreCategory = false } = {}) {
+    if (!ignoreCategory && !categoryAllows(selectedCategory, item)) return false;
+    if (selectedBiome !== 'all' && item.biome !== selectedBiome) return false;
+    if (selectedTeleport === 'yes' && item.teleportable === false) return false;
+    if (selectedTeleport === 'no' && item.teleportable !== false) return false;
+    const query = searchQuery.trim().toLowerCase();
+    if (query) {
+      // A locked item must not be findable by name (search would leak its existence).
+      if (!isItemRevealed(item)) return false;
+      const nameMatch = item.name.toLowerCase().includes(query);
+      const idMatch = item.id.toLowerCase().includes(query);
+      const locNamesMatch = item.names && Object.values(item.names).some((n) => typeof n === 'string' && n.toLowerCase().includes(query));
+      if (!nameMatch && !idMatch && !locNamesMatch) return false;
+    }
+    return true;
+  }
+
   function renderCategoryChips() {
     const container = document.getElementById('category-chips');
     if (!container) return;
     container.replaceChildren();
 
-    const query = searchQuery.trim().toLowerCase();
-    const matchesQueryAndBiome = (item) => {
-      if (selectedBiome !== 'all' && item.biome !== selectedBiome) return false;
-      if (selectedTeleport === 'yes' && item.teleportable === false) return false;
-      if (selectedTeleport === 'no' && item.teleportable !== false) return false;
-      if (query) {
-        const nameMatch = item.name.toLowerCase().includes(query);
-        const idMatch = item.id.toLowerCase().includes(query);
-        const locNamesMatch = item.names && Object.values(item.names).some((n) => typeof n === 'string' && n.toLowerCase().includes(query));
-        if (!nameMatch && !idMatch && !locNamesMatch) return false;
-      }
-      return true;
-    };
-
-    const categoryCounts = new Map();
-    let totalCount = 0;
-    for (const it of itemsData) {
-      if (matchesQueryAndBiome(it)) {
-        totalCount++;
-        categoryCounts.set(it.category, (categoryCounts.get(it.category) || 0) + 1);
-      }
-    }
+    const baseMatches = itemsData.filter((item) => matchesFilters(item, { ignoreCategory: true }));
+    const countFor = (catId) => baseMatches.filter((item) => categoryAllows(catId, item)).length;
 
     for (const cat of CATEGORY_DEFS) {
       const isSelected = selectedCategory === cat.id;
       const chipClasses = ['category-chip'];
       if (isSelected) chipClasses.push('active');
 
-      const count = cat.id === 'all' ? totalCount : (categoryCounts.get(cat.id) || 0);
+      const count = countFor(cat.id);
 
       const chip = el('button', chipClasses.join(' '));
       chip.type = 'button';
@@ -705,35 +709,7 @@
     if (!grid) return;
 
     const query = searchQuery.trim().toLowerCase();
-
-    const filtered = itemsData.filter((item) => {
-      // Category filter (an option may cover several categories)
-      const allowed = CATEGORY_FILTERS[selectedCategory];
-      if (allowed && !allowed.includes(item.category)) {
-        return false;
-      }
-      // Biome filter
-      if (selectedBiome !== 'all' && item.biome !== selectedBiome) {
-        return false;
-      }
-      // Teleportable filter
-      if (selectedTeleport === 'yes' && item.teleportable === false) {
-        return false;
-      }
-      if (selectedTeleport === 'no' && item.teleportable !== false) {
-        return false;
-      }
-      // Search query
-      if (query) {
-        // A locked item must not be findable by name (search would leak its existence).
-        if (!isItemRevealed(item)) return false;
-        const nameMatch = item.name.toLowerCase().includes(query);
-        const idMatch = item.id.toLowerCase().includes(query);
-        const locNamesMatch = item.names && Object.values(item.names).some((n) => typeof n === 'string' && n.toLowerCase().includes(query));
-        if (!nameMatch && !idMatch && !locNamesMatch) return false;
-      }
-      return true;
-    });
+    const filtered = itemsData.filter((item) => matchesFilters(item));
 
     // Sorting
     const getProgression = (it) => {

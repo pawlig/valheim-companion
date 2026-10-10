@@ -648,6 +648,26 @@ describe('Items Compendium UI Tests', () => {
     assert.ok(Number(foodLabel[1]) < item.usedIn.food.length, 'label count excludes hidden entries');
   });
 
+  it('26e. Category chip counts equal the number of cards after selecting the chip (search, spoilers, teleport)', () => {
+    for (const [search, teleport] of [['', 'all'], ['iron', 'all'], ['', 'yes'], ['a', 'no']]) {
+      const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
+      const searchEl = doc.getElementById('item-search');
+      searchEl.value = search;
+      searchEl.dispatch('input');
+      const tel = doc.getElementById('teleport-select');
+      tel.value = teleport;
+      tel.dispatch('change');
+      const chips = doc.getElementById('category-chips').querySelectorAll('.category-chip');
+      assert.ok(chips.length > 5);
+      const expected = chips.map((c) => [c.dataset.category, Number(c.querySelector('.chip-count').textContent.replace(/\D/g, ''))]);
+      for (const [cat, count] of expected) {
+        const chip = doc.getElementById('category-chips').querySelectorAll('.category-chip').find((c) => c.dataset.category === cat);
+        chip.dispatch('click');
+        assert.equal(expandAll(doc).length, count, `chip ${cat} (search "${search}", teleport ${teleport})`);
+      }
+    }
+  });
+
   it('27. Sort select orders items by name (A → Z) and (Z → A) and persists to localStorage', () => {
     const { doc, storage } = createDomFixture();
     const sortSelect = doc.getElementById('sort-select');
