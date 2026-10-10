@@ -3,47 +3,72 @@
     {
       "id": "meadows",
       "name": "Meadows",
-      "order": 1
+      "order": 1,
+      "bosses": [
+        "eikthyr"
+      ]
     },
     {
       "id": "black-forest",
       "name": "Black Forest",
-      "order": 2
+      "order": 2,
+      "bosses": [
+        "the-elder"
+      ]
     },
     {
       "id": "ocean",
       "name": "Ocean",
-      "order": 3
+      "order": 3,
+      "bosses": []
     },
     {
       "id": "swamp",
       "name": "Swamp",
-      "order": 4
+      "order": 4,
+      "bosses": [
+        "bonemass"
+      ]
     },
     {
       "id": "mountain",
       "name": "Mountain",
-      "order": 5
+      "order": 5,
+      "bosses": [
+        "moder"
+      ]
     },
     {
       "id": "plains",
       "name": "Plains",
-      "order": 6
+      "order": 6,
+      "bosses": [
+        "yagluth"
+      ]
     },
     {
       "id": "mistlands",
       "name": "Mistlands",
-      "order": 7
+      "order": 7,
+      "bosses": [
+        "the-queen"
+      ]
     },
     {
       "id": "ashlands",
       "name": "Ashlands",
-      "order": 8
+      "order": 8,
+      "bosses": [
+        "fader"
+      ]
     },
     {
       "id": "deep-north",
       "name": "Deep North",
-      "order": 9
+      "order": 9,
+      "bosses": [
+        "kall-fimbulbringer"
+      ]
     }
   ],
   "items": [
@@ -1501,7 +1526,7 @@
       "names": {
         "ru": "Набор цирюльника"
       },
-      "description": "Fine copper scissors and combs used to construct the Barber Station in your home, allowing you to freely change hair and beard styles.",
+      "description": "A kit fit for the finest of barbers.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -1512,7 +1537,7 @@
           {
             "id": "hildir",
             "name": "Hildir",
-            "price": 250,
+            "price": 600,
             "unlockedBy": null
           }
         ],
@@ -10537,7 +10562,7 @@
       "names": {
         "ru": "Дубленые беличьи сухожилия"
       },
-      "description": "Tough smoked sinew dried over bog smoke. An alchemical thickening agent used in specialized restorative concoctions.",
+      "description": "Required for Tonic of Ratatosk.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -10548,7 +10573,7 @@
           {
             "id": "bog-witch",
             "name": "The Bog Witch",
-            "price": 45,
+            "price": 80,
             "unlockedBy": null
           }
         ],
@@ -12042,7 +12067,7 @@
         "cs": "Vejce",
         "ru": "Яйцо"
       },
-      "description": "A fertile chicken egg. Place near an indoor heat source sheltered from cold to hatch chicks and start domestic egg and feather production.",
+      "description": "Required to obtain Chickens and Hens.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -12058,6 +12083,7 @@
               "type": "boss",
               "id": "yagluth",
               "name": "Yagluth",
+              "biome": "plains",
               "text": "Requires defeating Yagluth"
             }
           }
@@ -13011,7 +13037,7 @@
       "names": {
         "ru": "Порошок пламенных пряностей"
       },
-      "description": "Scorching red pepper powder ground with cinder flakes, adding fiery heat to Ashlands pies.",
+      "description": "Required for Ashlands Gourmet Bowl feast.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -13022,11 +13048,12 @@
           {
             "id": "bog-witch",
             "name": "The Bog Witch",
-            "price": 100,
+            "price": 200,
             "unlockedBy": {
               "type": "boss",
               "id": "fader",
               "name": "Fader",
+              "biome": "ashlands",
               "text": "Requires defeating Fader"
             }
           }
@@ -15016,7 +15043,7 @@
       "names": {
         "ru": "Ароматный букет"
       },
-      "description": "A dried bouquet of aromatic high-altitude blossoms that sweeten fermented mead bases.",
+      "description": "Required for Anti-Sting Concoction.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -15027,11 +15054,12 @@
           {
             "id": "bog-witch",
             "name": "The Bog Witch",
-            "price": 60,
+            "price": 140,
             "unlockedBy": {
               "type": "boss",
               "id": "moder",
               "name": "Moder",
+              "biome": "mountain",
               "text": "Requires defeating Moder"
             }
           }
@@ -15183,7 +15211,7 @@
       "names": {
         "ru": "Свежие водоросли"
       },
-      "description": "Crisp saltwater kelp fronds packed with iodine and ocean salt, essential for rolling sushi and seasoning fish platters.",
+      "description": "Required for Draught of Vananidir.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -15194,7 +15222,7 @@
           {
             "id": "bog-witch",
             "name": "The Bog Witch",
-            "price": 30,
+            "price": 75,
             "unlockedBy": null
           }
         ],
@@ -15595,7 +15623,7 @@
       "names": {
         "ru": "Урожай лугового травника"
       },
-      "description": "Golden steppe marigolds and barley blossoms harvested by roaming Plains nomads.",
+      "description": "Required for Plains Pie Picnic feast.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -15606,11 +15634,12 @@
           {
             "id": "bog-witch",
             "name": "The Bog Witch",
-            "price": 80,
+            "price": 160,
             "unlockedBy": {
               "type": "boss",
               "id": "yagluth",
               "name": "Yagluth",
+              "biome": "plains",
               "text": "Requires defeating Yagluth"
             }
           }
@@ -16225,7 +16254,7 @@
       "names": {
         "ru": "Травы тайных холмов"
       },
-      "description": "Luminescent spores and cave lichens culled from dark Mistlands valleys.",
+      "description": "Required for Mushrooms Galore á la Mistlands feast.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -16236,11 +16265,12 @@
           {
             "id": "bog-witch",
             "name": "The Bog Witch",
-            "price": 90,
+            "price": 180,
             "unlockedBy": {
               "type": "boss",
               "id": "the-queen",
               "name": "The Queen",
+              "biome": "mistlands",
               "text": "Requires defeating The Queen"
             }
           }
@@ -17697,7 +17727,7 @@
       "names": {
         "ru": "Железная чаша"
       },
-      "description": "A heavy wrought-iron hanging hearth pit providing high warmth and comfort bonus without requiring stone foundations.",
+      "description": "An empty vessel waiting to be filled with firewood and kindling",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -17708,7 +17738,7 @@
           {
             "id": "hildir",
             "name": "Hildir",
-            "price": 250,
+            "price": 75,
             "unlockedBy": null
           }
         ],
@@ -24066,7 +24096,7 @@
       "names": {
         "ru": "Толченый перец с горных вершин"
       },
-      "description": "Pungent black peppercorns gathered from frozen summits, providing piquant warmth against winter cold.",
+      "description": "Required for Hearty Mountain Logger's Stew feast.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -24077,11 +24107,12 @@
           {
             "id": "bog-witch",
             "name": "The Bog Witch",
-            "price": 70,
+            "price": 140,
             "unlockedBy": {
               "type": "boss",
               "id": "moder",
               "name": "Moder",
+              "biome": "mountain",
               "text": "Requires defeating Moder"
             }
           }
@@ -27206,7 +27237,7 @@
       "names": {
         "ru": "Толченая драконья скорлупа"
       },
-      "description": "Glittering crushed calcium remnants of ancient wyrm eggs, radiating sub-zero frost energy.",
+      "description": "Required for Mead of Troll Endurance.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -27217,7 +27248,7 @@
           {
             "id": "bog-witch",
             "name": "The Bog Witch",
-            "price": 60,
+            "price": 120,
             "unlockedBy": null
           }
         ],
@@ -27433,7 +27464,7 @@
       "names": {
         "ru": "Вонючие камешки"
       },
-      "description": "Small volcanic sulfur pebbles exuding sharp mineral vapors, pulverized for caustic alchemy.",
+      "description": "Required for Brew of Animal Whispers.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -27444,7 +27475,7 @@
           {
             "id": "bog-witch",
             "name": "The Bog Witch",
-            "price": 40,
+            "price": 125,
             "unlockedBy": null
           }
         ],
@@ -29615,7 +29646,7 @@
       "names": {
         "ru": "Травы мореплавателя"
       },
-      "description": "Fragrant wild coastal thyme and rosemary gathered from windswept sea cliffs.",
+      "description": "Required for Sailor's Bounty feast.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -29626,8 +29657,14 @@
           {
             "id": "bog-witch",
             "name": "The Bog Witch",
-            "price": 40,
-            "unlockedBy": null
+            "price": 130,
+            "unlockedBy": {
+              "type": "creature",
+              "id": "serpent",
+              "name": "Serpent",
+              "biome": "ocean",
+              "text": "Requires killing a Serpent"
+            }
           }
         ],
         "raw": [
@@ -29992,7 +30029,7 @@
       "weight": 0.1,
       "wiki": "https://valheim.weirdgloop.org/w/Seasoning_of_the_Gourd",
       "names": {},
-      "description": "Mystical fermented squash seed spice from the frozen north, reserved for the ultimate banquets.",
+      "description": "Required for Northern Morning Fare feast.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -30003,11 +30040,12 @@
           {
             "id": "bog-witch",
             "name": "The Bog Witch",
-            "price": 120,
+            "price": 220,
             "unlockedBy": {
               "type": "boss",
               "id": "kall-fimbulbringer",
               "name": "Kall Fimbulbringer",
+              "biome": "deep-north",
               "text": "Requires defeating Kall Fimbulbringer"
             }
           }
@@ -32903,7 +32941,7 @@
       "names": {
         "ru": "Поганка"
       },
-      "description": "Potent speckled forest fungus harvested under full moons for exotic feast stews.",
+      "description": "Required for Berserkir Mead.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -32914,11 +32952,12 @@
           {
             "id": "bog-witch",
             "name": "The Bog Witch",
-            "price": 50,
+            "price": 85,
             "unlockedBy": {
               "type": "boss",
               "id": "moder",
               "name": "Moder",
+              "biome": "mountain",
               "text": "Requires defeating Moder"
             }
           }
@@ -36016,7 +36055,7 @@
       "names": {
         "ru": "Смесь лесных трав"
       },
-      "description": "Earthy pine needles, forest mint, and crushed juniper berries that add deep flavor to roasted wild venison.",
+      "description": "Required for Whole Roasted Meadow Boar, Black Forest Buffet Platter and Swamp Dweller's Delight feasts.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -36027,11 +36066,12 @@
           {
             "id": "bog-witch",
             "name": "The Bog Witch",
-            "price": 40,
+            "price": 120,
             "unlockedBy": {
               "type": "boss",
               "id": "the-elder",
               "name": "The Elder",
+              "biome": "black-forest",
               "text": "Requires defeating The Elder"
             }
           }
@@ -36597,7 +36637,7 @@
         "fr": "Chair d'Ymir",
         "ru": "Плоть Имира"
       },
-      "description": "Earthy primordial remains of the giant Ymir. Vital component for crafting the mighty hammer Iron Sledge and frost mace Frostner.",
+      "description": "Crafting material needed for high tier equipment.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -36609,7 +36649,13 @@
             "id": "haldor",
             "name": "Haldor",
             "price": 120,
-            "unlockedBy": null
+            "unlockedBy": {
+              "type": "boss",
+              "id": "the-elder",
+              "name": "The Elder",
+              "biome": "black-forest",
+              "text": "Requires defeating The Elder"
+            }
           }
         ],
         "raw": [
@@ -48483,7 +48529,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 550,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "bronze",
+              "boss": "zil-thungr",
+              "bossName": "Zil & Thungr",
+              "location": "Sealed Tower",
+              "biome": "plains",
+              "text": "Requires returning Hildir's bronze chest (Zil & Thungr)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -48497,7 +48558,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=beaded-dress-blue"
+        "smithy": "/smithy/#item=beaded-dress-blue",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -48535,7 +48597,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 550,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "bronze",
+              "boss": "zil-thungr",
+              "bossName": "Zil & Thungr",
+              "location": "Sealed Tower",
+              "biome": "plains",
+              "text": "Requires returning Hildir's bronze chest (Zil & Thungr)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -48549,7 +48626,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=beaded-dress-brown"
+        "smithy": "/smithy/#item=beaded-dress-brown",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -48587,7 +48665,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 550,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "bronze",
+              "boss": "zil-thungr",
+              "bossName": "Zil & Thungr",
+              "location": "Sealed Tower",
+              "biome": "plains",
+              "text": "Requires returning Hildir's bronze chest (Zil & Thungr)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -48601,7 +48694,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=beaded-dress-yellow"
+        "smithy": "/smithy/#item=beaded-dress-yellow",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -48639,7 +48733,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 550,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "bronze",
+              "boss": "zil-thungr",
+              "bossName": "Zil & Thungr",
+              "location": "Sealed Tower",
+              "biome": "plains",
+              "text": "Requires returning Hildir's bronze chest (Zil & Thungr)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -48653,7 +48762,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=beaded-tunic-blue"
+        "smithy": "/smithy/#item=beaded-tunic-blue",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -48691,7 +48801,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 550,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "bronze",
+              "boss": "zil-thungr",
+              "bossName": "Zil & Thungr",
+              "location": "Sealed Tower",
+              "biome": "plains",
+              "text": "Requires returning Hildir's bronze chest (Zil & Thungr)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -48705,7 +48830,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=beaded-tunic-red"
+        "smithy": "/smithy/#item=beaded-tunic-red",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -48743,7 +48869,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 550,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "bronze",
+              "boss": "zil-thungr",
+              "bossName": "Zil & Thungr",
+              "location": "Sealed Tower",
+              "biome": "plains",
+              "text": "Requires returning Hildir's bronze chest (Zil & Thungr)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -48757,7 +48898,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=beaded-tunic-yellow"
+        "smithy": "/smithy/#item=beaded-tunic-yellow",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -49586,7 +49728,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 450,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "silver",
+              "boss": "geirrhafa",
+              "bossName": "Geirrhafa",
+              "location": "Howling Cavern",
+              "biome": "mountain",
+              "text": "Requires returning Hildir's silver chest (Geirrhafa)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -49600,7 +49757,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=cape-tunic-blue"
+        "smithy": "/smithy/#item=cape-tunic-blue",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -49638,7 +49796,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 450,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "silver",
+              "boss": "geirrhafa",
+              "bossName": "Geirrhafa",
+              "location": "Howling Cavern",
+              "biome": "mountain",
+              "text": "Requires returning Hildir's silver chest (Geirrhafa)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -49652,7 +49825,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=cape-tunic-red"
+        "smithy": "/smithy/#item=cape-tunic-red",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -49690,7 +49864,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 450,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "silver",
+              "boss": "geirrhafa",
+              "bossName": "Geirrhafa",
+              "location": "Howling Cavern",
+              "biome": "mountain",
+              "text": "Requires returning Hildir's silver chest (Geirrhafa)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -49704,7 +49893,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=cape-tunic-yellow"
+        "smithy": "/smithy/#item=cape-tunic-yellow",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -50052,7 +50242,20 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "bog-witch",
+            "name": "The Bog Witch",
+            "price": 3000,
+            "unlockedBy": {
+              "type": "creature",
+              "id": "writhan",
+              "name": "Writhan",
+              "biome": "swamp",
+              "text": "Requires defeating a Writhan"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -50066,7 +50269,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=crown-of-roots"
+        "smithy": "/smithy/#item=crown-of-roots",
+        "traders": "/traders/#trader=bog-witch"
       }
     },
     {
@@ -50756,7 +50960,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 250,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "silver",
+              "boss": "geirrhafa",
+              "bossName": "Geirrhafa",
+              "location": "Howling Cavern",
+              "biome": "mountain",
+              "text": "Requires returning Hildir's silver chest (Geirrhafa)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -50770,7 +50989,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=extravagant-cap-green"
+        "smithy": "/smithy/#item=extravagant-cap-green",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -50808,7 +51028,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 300,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "bronze",
+              "boss": "zil-thungr",
+              "bossName": "Zil & Thungr",
+              "location": "Sealed Tower",
+              "biome": "plains",
+              "text": "Requires returning Hildir's bronze chest (Zil & Thungr)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -50822,7 +51057,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=extravagant-cap-orange"
+        "smithy": "/smithy/#item=extravagant-cap-orange",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -51460,13 +51696,14 @@
           {
             "id": "hildir",
             "name": "Hildir",
-            "price": 100,
+            "price": 200,
             "unlockedBy": {
               "type": "chest",
               "chest": "brass",
               "boss": "brenna",
               "bossName": "Brenna",
               "location": "Smouldering Tomb",
+              "biome": "black-forest",
               "text": "Requires returning Hildir's brass chest (Brenna)"
             }
           }
@@ -51527,14 +51764,15 @@
           {
             "id": "hildir",
             "name": "Hildir",
-            "price": 100,
+            "price": 300,
             "unlockedBy": {
               "type": "chest",
-              "chest": "brass",
-              "boss": "brenna",
-              "bossName": "Brenna",
-              "location": "Smouldering Tomb",
-              "text": "Requires returning Hildir's brass chest (Brenna)"
+              "chest": "bronze",
+              "boss": "zil-thungr",
+              "bossName": "Zil & Thungr",
+              "location": "Sealed Tower",
+              "biome": "plains",
+              "text": "Requires returning Hildir's bronze chest (Zil & Thungr)"
             }
           }
         ],
@@ -51600,13 +51838,14 @@
           {
             "id": "hildir",
             "name": "Hildir",
-            "price": 100,
+            "price": 550,
             "unlockedBy": {
               "type": "chest",
               "chest": "brass",
               "boss": "brenna",
               "bossName": "Brenna",
               "location": "Smouldering Tomb",
+              "biome": "black-forest",
               "text": "Requires returning Hildir's brass chest (Brenna)"
             }
           }
@@ -51673,13 +51912,14 @@
           {
             "id": "hildir",
             "name": "Hildir",
-            "price": 100,
+            "price": 550,
             "unlockedBy": {
               "type": "chest",
               "chest": "brass",
               "boss": "brenna",
               "bossName": "Brenna",
               "location": "Smouldering Tomb",
+              "biome": "black-forest",
               "text": "Requires returning Hildir's brass chest (Brenna)"
             }
           }
@@ -51736,7 +51976,14 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 175,
+            "unlockedBy": null
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -51750,7 +51997,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=headband"
+        "smithy": "/smithy/#item=headband",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -53693,7 +53941,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 450,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "silver",
+              "boss": "geirrhafa",
+              "bossName": "Geirrhafa",
+              "location": "Howling Cavern",
+              "biome": "mountain",
+              "text": "Requires returning Hildir's silver chest (Geirrhafa)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -53707,7 +53970,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=shawl-dress-blue"
+        "smithy": "/smithy/#item=shawl-dress-blue",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -53745,7 +54009,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 450,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "silver",
+              "boss": "geirrhafa",
+              "bossName": "Geirrhafa",
+              "location": "Howling Cavern",
+              "biome": "mountain",
+              "text": "Requires returning Hildir's silver chest (Geirrhafa)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -53759,7 +54038,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=shawl-dress-brown"
+        "smithy": "/smithy/#item=shawl-dress-brown",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -53797,7 +54077,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 450,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "silver",
+              "boss": "geirrhafa",
+              "bossName": "Geirrhafa",
+              "location": "Howling Cavern",
+              "biome": "mountain",
+              "text": "Requires returning Hildir's silver chest (Geirrhafa)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -53811,7 +54106,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=shawl-dress-yellow"
+        "smithy": "/smithy/#item=shawl-dress-yellow",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -53849,7 +54145,14 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 150,
+            "unlockedBy": null
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -53863,7 +54166,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=simple-cap-purple"
+        "smithy": "/smithy/#item=simple-cap-purple",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -53901,7 +54205,14 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 150,
+            "unlockedBy": null
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -53915,7 +54226,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=simple-cap-red"
+        "smithy": "/smithy/#item=simple-cap-red",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -53953,7 +54265,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 350,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "brass",
+              "boss": "brenna",
+              "bossName": "Brenna",
+              "location": "Smouldering Tomb",
+              "biome": "black-forest",
+              "text": "Requires returning Hildir's brass chest (Brenna)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -53967,7 +54294,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=simple-dress-blue"
+        "smithy": "/smithy/#item=simple-dress-blue",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -54005,7 +54333,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 350,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "brass",
+              "boss": "brenna",
+              "bossName": "Brenna",
+              "location": "Smouldering Tomb",
+              "biome": "black-forest",
+              "text": "Requires returning Hildir's brass chest (Brenna)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -54019,7 +54362,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=simple-dress-brown"
+        "smithy": "/smithy/#item=simple-dress-brown",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -54057,7 +54401,14 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 250,
+            "unlockedBy": null
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -54071,7 +54422,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=simple-dress-natural"
+        "smithy": "/smithy/#item=simple-dress-natural",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -54109,7 +54461,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 350,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "brass",
+              "boss": "brenna",
+              "bossName": "Brenna",
+              "location": "Smouldering Tomb",
+              "biome": "black-forest",
+              "text": "Requires returning Hildir's brass chest (Brenna)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -54123,7 +54490,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=simple-dress-yellow"
+        "smithy": "/smithy/#item=simple-dress-yellow",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -54161,7 +54529,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 350,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "brass",
+              "boss": "brenna",
+              "bossName": "Brenna",
+              "location": "Smouldering Tomb",
+              "biome": "black-forest",
+              "text": "Requires returning Hildir's brass chest (Brenna)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -54175,7 +54558,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=simple-tunic-blue"
+        "smithy": "/smithy/#item=simple-tunic-blue",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -54213,7 +54597,14 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 250,
+            "unlockedBy": null
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -54227,7 +54618,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=simple-tunic-natural"
+        "smithy": "/smithy/#item=simple-tunic-natural",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -54265,7 +54657,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 350,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "brass",
+              "boss": "brenna",
+              "bossName": "Brenna",
+              "location": "Smouldering Tomb",
+              "biome": "black-forest",
+              "text": "Requires returning Hildir's brass chest (Brenna)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -54279,7 +54686,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=simple-tunic-red"
+        "smithy": "/smithy/#item=simple-tunic-red",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -54317,7 +54725,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 350,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "brass",
+              "boss": "brenna",
+              "bossName": "Brenna",
+              "location": "Smouldering Tomb",
+              "biome": "black-forest",
+              "text": "Requires returning Hildir's brass chest (Brenna)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -54331,7 +54754,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=simple-tunic-yellow"
+        "smithy": "/smithy/#item=simple-tunic-yellow",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -54373,7 +54797,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 300,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "brass",
+              "boss": "brenna",
+              "bossName": "Brenna",
+              "location": "Smouldering Tomb",
+              "biome": "black-forest",
+              "text": "Requires returning Hildir's brass chest (Brenna)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -54387,7 +54826,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#set=straw-hat"
+        "smithy": "/smithy/#set=straw-hat",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -54425,7 +54865,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 200,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "brass",
+              "boss": "brenna",
+              "bossName": "Brenna",
+              "location": "Smouldering Tomb",
+              "biome": "black-forest",
+              "text": "Requires returning Hildir's brass chest (Brenna)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -54439,7 +54894,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=tied-headscarf-blue"
+        "smithy": "/smithy/#item=tied-headscarf-blue",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -54477,7 +54933,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 250,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "silver",
+              "boss": "geirrhafa",
+              "bossName": "Geirrhafa",
+              "location": "Howling Cavern",
+              "biome": "mountain",
+              "text": "Requires returning Hildir's silver chest (Geirrhafa)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -54491,7 +54962,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=tied-headscarf-yellow"
+        "smithy": "/smithy/#item=tied-headscarf-yellow",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -54819,7 +55291,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 250,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "silver",
+              "boss": "geirrhafa",
+              "bossName": "Geirrhafa",
+              "location": "Howling Cavern",
+              "biome": "mountain",
+              "text": "Requires returning Hildir's silver chest (Geirrhafa)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -54833,7 +55320,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=twisted-headscarf-green"
+        "smithy": "/smithy/#item=twisted-headscarf-green",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -54871,7 +55359,22 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 300,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "bronze",
+              "boss": "zil-thungr",
+              "bossName": "Zil & Thungr",
+              "location": "Sealed Tower",
+              "biome": "plains",
+              "text": "Requires returning Hildir's bronze chest (Zil & Thungr)"
+            }
+          }
+        ],
         "raw": []
       },
       "usedIn": {
@@ -54885,7 +55388,8 @@
         "crafting": []
       },
       "crossLinks": {
-        "smithy": "/smithy/#item=twisted-headscarf-red"
+        "smithy": "/smithy/#item=twisted-headscarf-red",
+        "traders": "/traders/#trader=hildir"
       }
     },
     {
@@ -59731,7 +60235,7 @@
         "cs": "Roztok proti štípancům",
         "ru": "Средство от смертожалов"
       },
-      "description": "A pungent repellent that wraps the drinker in an acrid musk, preventing Deathsquito stings and reducing insect aggression.",
+      "description": "The perfect drink for a day in the Plains.",
       "stats": {
         "effect": "Prevent Deathsquito attacks",
         "duration": 600,
@@ -59767,14 +60271,7 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [
-          {
-            "id": "bog-witch",
-            "name": "The Bog Witch",
-            "price": 100,
-            "unlockedBy": null
-          }
-        ],
+        "traders": [],
         "raw": []
       },
       "usedIn": {
@@ -59788,8 +60285,7 @@
         "crafting": []
       },
       "crossLinks": {
-        "provisions": "/provisions/#item=anti-sting-concoction",
-        "traders": "/traders/#trader=bog-witch"
+        "provisions": "/provisions/#item=anti-sting-concoction"
       }
     },
     {
@@ -59875,7 +60371,7 @@
         "cs": "Nápoj zvířecího šepotu",
         "ru": "Отвар звериного шепота"
       },
-      "description": "Imbues the consumer with a soothing animal aura that prevents wild beasts from alerting or fleeing from your presence.",
+      "description": "It smells like a pigsty. Likely the taste won't be much better.",
       "stats": {
         "effect": "x2 taming speed",
         "duration": 600,
@@ -59911,14 +60407,7 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [
-          {
-            "id": "bog-witch",
-            "name": "The Bog Witch",
-            "price": 100,
-            "unlockedBy": null
-          }
-        ],
+        "traders": [],
         "raw": []
       },
       "usedIn": {
@@ -59932,8 +60421,7 @@
         "crafting": []
       },
       "crossLinks": {
-        "provisions": "/provisions/#item=brew-of-animal-whispers",
-        "traders": "/traders/#trader=bog-witch"
+        "provisions": "/provisions/#item=brew-of-animal-whispers"
       }
     },
     {
@@ -59951,7 +60439,7 @@
         "cs": "Nápoj Vananidir",
         "ru": "Напиток Вананидир"
       },
-      "description": "An aquatic tincture granting buoyant swimming velocity and drastically decreasing swimming stamina consumption.",
+      "description": "You feel invigorated just by holding this, as the ocean beckons you to come for a swim.",
       "stats": {
         "effect": "-50% swimming stamina consumption",
         "duration": 300,
@@ -59987,14 +60475,7 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [
-          {
-            "id": "bog-witch",
-            "name": "The Bog Witch",
-            "price": 100,
-            "unlockedBy": null
-          }
-        ],
+        "traders": [],
         "raw": []
       },
       "usedIn": {
@@ -60008,8 +60489,7 @@
         "crafting": []
       },
       "crossLinks": {
-        "provisions": "/provisions/#item=draught-of-vananidir",
-        "traders": "/traders/#trader=bog-witch"
+        "provisions": "/provisions/#item=draught-of-vananidir"
       }
     },
     {
@@ -60163,7 +60643,7 @@
         "cs": "Lehkonohá medovina",
         "ru": "Медовуха Легкоступа"
       },
-      "description": "A fizzy, featherlight draught that reduces jump and sprint stamina drain by 25% for 5 minutes.",
+      "description": "This bottle is full, yet it feels like it weighs almost nothing at all.",
       "stats": {
         "effect": "-30% jump stamina cost\n+20% jump height",
         "duration": 600,
@@ -60199,14 +60679,7 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [
-          {
-            "id": "bog-witch",
-            "name": "The Bog Witch",
-            "price": 100,
-            "unlockedBy": null
-          }
-        ],
+        "traders": [],
         "raw": []
       },
       "usedIn": {
@@ -60220,8 +60693,7 @@
         "crafting": []
       },
       "crossLinks": {
-        "provisions": "/provisions/#item=lightfoot-mead",
-        "traders": "/traders/#trader=bog-witch"
+        "provisions": "/provisions/#item=lightfoot-mead"
       }
     },
     {
@@ -60443,7 +60915,7 @@
         "cs": "Nápoj lásky",
         "ru": "Любовное зелье"
       },
-      "description": "A sweet, heady potion that sparks intense romantic devotion when thrown at tameable boars, wolves, or lox, accelerating breeding.",
+      "description": "Increases Troll spawning.",
       "stats": {
         "effect": "Its consumption increases the spawn rate of Trolls (from 5% to 25%), increases the chance of starred Trolls and increases the maximum number of spawned Trolls (from 1 to 2). All Trolls are also automatically on alert.",
         "duration": 300,
@@ -60459,7 +60931,7 @@
           {
             "id": "bog-witch",
             "name": "The Bog Witch",
-            "price": 150,
+            "price": 110,
             "unlockedBy": null
           }
         ],
@@ -61127,7 +61599,7 @@
         "cs": "Ratatoskův tonik",
         "ru": "Эликсир Рататоска"
       },
-      "description": "Named after the legendary squirrel of Yggdrasil; gives increased tree-cutting efficiency, jumping power, and fall protection.",
+      "description": "Magic fills you, letting you move quicker than ever before.",
       "stats": {
         "effect": "+15% walking and running speed\n+7.5% swimming speed\nRun +10",
         "duration": 600,
@@ -61163,14 +61635,7 @@
       "sources": {
         "creatures": [],
         "locations": [],
-        "traders": [
-          {
-            "id": "bog-witch",
-            "name": "The Bog Witch",
-            "price": 100,
-            "unlockedBy": null
-          }
-        ],
+        "traders": [],
         "raw": []
       },
       "usedIn": {
@@ -61184,8 +61649,7 @@
         "crafting": []
       },
       "crossLinks": {
-        "provisions": "/provisions/#item=tonic-of-ratatosk",
-        "traders": "/traders/#trader=bog-witch"
+        "provisions": "/provisions/#item=tonic-of-ratatosk"
       }
     },
     {
@@ -67272,7 +67736,7 @@
     },
     {
       "id": "megingjord",
-      "name": "Megingjörd",
+      "name": "Megingjord",
       "image": null,
       "biome": "black-forest",
       "tier": 2,
@@ -67282,7 +67746,7 @@
       "weight": 2,
       "wiki": "https://valheim.weirdgloop.org/w/Megingjord",
       "names": {},
-      "description": "An enchanted dwarven belt of strength. Wearing it increases your maximum carry capacity by 150 (from 300 to 450 weight).",
+      "description": "Increases inventory carry weight limit by 150. (Uses the Accessory slot)",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -67330,7 +67794,7 @@
       "weight": 1.5,
       "wiki": "https://valheim.weirdgloop.org/w/Fishing_Rod",
       "names": {},
-      "description": "A sturdy hand-carved fishing rod. Equip in hotbar and use with bait near ocean or lake waters to catch nutritious fish.",
+      "description": "Allows you to obtain Fish as a food. (Uses both hands when equipped)",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -67368,7 +67832,7 @@
     },
     {
       "id": "fishing-bait",
-      "name": "Fishing Bait (x50)",
+      "name": "Fishing Bait",
       "image": null,
       "biome": "black-forest",
       "tier": 2,
@@ -67378,7 +67842,7 @@
       "weight": 0.1,
       "wiki": null,
       "names": {},
-      "description": "A tin canister of 50 basic bait grubs for catching common fish in Meadows and Black Forest waters.",
+      "description": "Required for use with the Fishing Rod. (Currently not craftable)",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -67472,18 +67936,18 @@
       }
     },
     {
-      "id": "thunderstone",
-      "name": "Thunderstone",
+      "id": "thunder-stone",
+      "name": "Thunder Stone",
       "image": null,
       "biome": "black-forest",
       "tier": 2,
       "category": "valuable",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": null,
+      "stack": 20,
+      "weight": 10,
+      "wiki": "https://valheim.weirdgloop.org/w/Thunder_Stone",
       "names": {},
-      "description": "A crackling stone charged with Thor’s lightning. Essential component used to build the Obliterator for incinerating unwanted items.",
+      "description": "Required to build Obliterator.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -67499,7 +67963,126 @@
               "type": "boss",
               "id": "the-elder",
               "name": "The Elder",
+              "biome": "black-forest",
               "text": "Requires defeating The Elder"
+            }
+          }
+        ],
+        "raw": [
+          {
+            "text": "Sold by Haldor",
+            "kind": "npc"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "obliterator",
+            "name": "Obliterator",
+            "level": 1,
+            "biome": "black-forest",
+            "itemId": "obliterator"
+          }
+        ],
+        "crafting": []
+      },
+      "crossLinks": {
+        "traders": "/traders/#trader=haldor"
+      }
+    },
+    {
+      "id": "barrel-hoops",
+      "name": "Barrel Hoops",
+      "image": null,
+      "biome": "ashlands",
+      "tier": 8,
+      "category": "material",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Barrel_Hoops",
+      "names": {},
+      "description": "Required to build Barrels.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [
+          {
+            "id": "haldor",
+            "name": "Haldor",
+            "price": 100,
+            "unlockedBy": null
+          }
+        ],
+        "raw": [
+          {
+            "text": "Sold by Haldor",
+            "kind": "npc"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "barrel",
+            "name": "Barrel",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "barrel"
+          }
+        ],
+        "crafting": []
+      },
+      "crossLinks": {
+        "traders": "/traders/#trader=haldor"
+      }
+    },
+    {
+      "id": "wider-pockets",
+      "name": "Wider Pockets",
+      "image": null,
+      "biome": "mountain",
+      "tier": 5,
+      "category": "drop",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": null,
+      "names": {},
+      "description": "Permanently adds a row to the inventory (+8 slots). (Can only be bought once per player)",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [
+          {
+            "id": "haldor",
+            "name": "Haldor",
+            "price": 1000,
+            "unlockedBy": {
+              "type": "boss",
+              "id": "moder",
+              "name": "Moder",
+              "biome": "mountain",
+              "text": "Requires defeating Moder"
             }
           }
         ],
@@ -67525,18 +68108,72 @@
       }
     },
     {
-      "id": "fireworks",
-      "name": "Fireworks",
+      "id": "deeper-pockets",
+      "name": "Deeper Pockets",
       "image": null,
-      "biome": "meadows",
-      "tier": 1,
-      "category": "building",
+      "biome": "mistlands",
+      "tier": 7,
+      "category": "drop",
       "teleportable": true,
       "stack": null,
       "weight": null,
       "wiki": null,
       "names": {},
-      "description": "Pyrotechnic sky rockets packed with sulfur and saltpeter. Launch them into the twilight sky for festive celebrations.",
+      "description": "Permanently adds another row to the inventory (+8 slots). (Can only be bought once per player)",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [
+          {
+            "id": "haldor",
+            "name": "Haldor",
+            "price": 2000,
+            "unlockedBy": {
+              "type": "boss",
+              "id": "the-queen",
+              "name": "The Queen",
+              "biome": "mistlands",
+              "text": "Requires defeating The Queen"
+            }
+          }
+        ],
+        "raw": [
+          {
+            "text": "Sold by Haldor",
+            "kind": "npc"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {
+        "traders": "/traders/#trader=haldor"
+      }
+    },
+    {
+      "id": "basic-fireworks",
+      "name": "Basic fireworks",
+      "image": null,
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "building",
+      "teleportable": true,
+      "stack": 10,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Basic_fireworks",
+      "names": {},
+      "description": "This rocket's blasting off again!",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -67547,7 +68184,63 @@
           {
             "id": "hildir",
             "name": "Hildir",
-            "price": 100,
+            "price": 50,
+            "unlockedBy": {
+              "type": "chest",
+              "chest": "bronze",
+              "boss": "zil-thungr",
+              "bossName": "Zil & Thungr",
+              "location": "Sealed Tower",
+              "biome": "plains",
+              "text": "Requires returning Hildir's bronze chest (Zil & Thungr)"
+            }
+          }
+        ],
+        "raw": [
+          {
+            "text": "Sold by Hildir",
+            "kind": "npc"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {
+        "traders": "/traders/#trader=hildir"
+      }
+    },
+    {
+      "id": "sparkler",
+      "name": "Sparkler",
+      "image": null,
+      "biome": "meadows",
+      "tier": 1,
+      "category": "tool",
+      "teleportable": true,
+      "stack": null,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Sparkler",
+      "names": {},
+      "description": "It's a stick that sparkles. Pretty! (Uses one hand when equipped)",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [
+          {
+            "id": "hildir",
+            "name": "Hildir",
+            "price": 150,
             "unlockedBy": null
           }
         ],
@@ -67573,18 +68266,18 @@
       }
     },
     {
-      "id": "cape-tunic",
-      "name": "Cape Tunic",
-      "image": "../smithy/img/armor/cape-tunic-blue.png",
-      "biome": "mountain",
-      "tier": 5,
-      "category": "armor",
+      "id": "candle-wick",
+      "name": "Candle Wick",
+      "image": null,
+      "biome": "ashlands",
+      "tier": 8,
+      "category": "material",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": null,
+      "stack": 50,
+      "weight": 0.3,
+      "wiki": "https://valheim.weirdgloop.org/w/Candle_Wick",
       "names": {},
-      "description": "A dignified traveling tunic tailored with an attached silk-lined shoulder drape.",
+      "description": "Required for Resin candle.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -67593,22 +68286,15 @@
         "locations": [],
         "traders": [
           {
-            "id": "hildir",
-            "name": "Hildir",
+            "id": "bog-witch",
+            "name": "The Bog Witch",
             "price": 100,
-            "unlockedBy": {
-              "type": "chest",
-              "chest": "silver",
-              "boss": "geirrhafa",
-              "bossName": "Geirrhafa",
-              "location": "Howling Cavern",
-              "text": "Requires returning Hildir's silver chest (Geirrhafa)"
-            }
+            "unlockedBy": null
           }
         ],
         "raw": [
           {
-            "text": "Sold by Hildir",
+            "text": "Sold by The Bog Witch",
             "kind": "npc"
           }
         ]
@@ -67620,26 +68306,34 @@
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": [],
+        "stations": [
+          {
+            "id": "resin-candle",
+            "name": "Resin candle",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "resin-candle"
+          }
+        ],
         "crafting": []
       },
       "crossLinks": {
-        "traders": "/traders/#trader=hildir"
+        "traders": "/traders/#trader=bog-witch"
       }
     },
     {
-      "id": "extravagant-cap",
-      "name": "Extravagant Cap",
-      "image": "../smithy/img/armor/extravagant-cap-green.png",
-      "biome": "mountain",
-      "tier": 5,
-      "category": "armor",
+      "id": "scythe-handle",
+      "name": "Scythe Handle",
+      "image": null,
+      "biome": "ashlands",
+      "tier": 8,
+      "category": "material",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": null,
+      "stack": 20,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Scythe_Handle",
       "names": {},
-      "description": "A showy, broad-brimmed cap adorned with pheasant plumage, fit for high chieftains.",
+      "description": "Required for Scythe.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -67648,22 +68342,21 @@
         "locations": [],
         "traders": [
           {
-            "id": "hildir",
-            "name": "Hildir",
-            "price": 100,
+            "id": "bog-witch",
+            "name": "The Bog Witch",
+            "price": 200,
             "unlockedBy": {
-              "type": "chest",
-              "chest": "silver",
-              "boss": "geirrhafa",
-              "bossName": "Geirrhafa",
-              "location": "Howling Cavern",
-              "text": "Requires returning Hildir's silver chest (Geirrhafa)"
+              "type": "boss",
+              "id": "moder",
+              "name": "Moder",
+              "biome": "mountain",
+              "text": "Requires defeating Moder"
             }
           }
         ],
         "raw": [
           {
-            "text": "Sold by Hildir",
+            "text": "Sold by The Bog Witch",
             "kind": "npc"
           }
         ]
@@ -67676,25 +68369,33 @@
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": []
+        "crafting": [
+          {
+            "id": "scythe",
+            "name": "Scythe",
+            "level": 2,
+            "biome": "plains",
+            "itemId": "scythe"
+          }
+        ]
       },
       "crossLinks": {
-        "traders": "/traders/#trader=hildir"
+        "traders": "/traders/#trader=bog-witch"
       }
     },
     {
-      "id": "beaded-dress",
-      "name": "Beaded Dress",
-      "image": "../smithy/img/armor/beaded-dress-blue.png",
-      "biome": "plains",
-      "tier": 6,
-      "category": "armor",
+      "id": "ivy-seeds",
+      "name": "Ivy Seeds",
+      "image": null,
+      "biome": "ashlands",
+      "tier": 8,
+      "category": "ingredient",
       "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": null,
+      "stack": 100,
+      "weight": 0.1,
+      "wiki": "https://valheim.weirdgloop.org/w/Ivy_Seeds",
       "names": {},
-      "description": "A lavish gala gown decorated with hundreds of polished glass and amber beads along the hem.",
+      "description": "Required to plant Ivy.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -67703,22 +68404,15 @@
         "locations": [],
         "traders": [
           {
-            "id": "hildir",
-            "name": "Hildir",
-            "price": 100,
-            "unlockedBy": {
-              "type": "chest",
-              "chest": "bronze",
-              "boss": "zil-thungr",
-              "bossName": "Zil & Thungr",
-              "location": "Sealed Tower",
-              "text": "Requires returning Hildir's bronze chest (Zil & Thungr)"
-            }
+            "id": "bog-witch",
+            "name": "The Bog Witch",
+            "price": 65,
+            "unlockedBy": null
           }
         ],
         "raw": [
           {
-            "text": "Sold by Hildir",
+            "text": "Sold by The Bog Witch",
             "kind": "npc"
           }
         ]
@@ -67731,25 +68425,33 @@
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": []
+        "crafting": [
+          {
+            "id": "ivy",
+            "name": "Ivy",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "ivy"
+          }
+        ]
       },
       "crossLinks": {
-        "traders": "/traders/#trader=hildir"
+        "traders": "/traders/#trader=bog-witch"
       }
     },
     {
-      "id": "beaded-tunic",
-      "name": "Beaded Tunic",
-      "image": "../smithy/img/armor/beaded-tunic-blue.png",
-      "biome": "plains",
-      "tier": 6,
-      "category": "armor",
+      "id": "serving-tray",
+      "name": "Serving Tray",
+      "image": null,
+      "biome": "meadows",
+      "tier": 1,
+      "category": "tool",
       "teleportable": true,
       "stack": null,
-      "weight": null,
-      "wiki": null,
+      "weight": 2,
+      "wiki": "https://valheim.weirdgloop.org/w/Serving_Tray",
       "names": {},
-      "description": "A royal ceremonial tunic lined with intricate metallic beadwork and braided silk.",
+      "description": "Required to eat Feast.",
       "stats": null,
       "recipe": null,
       "station": null,
@@ -67758,22 +68460,15 @@
         "locations": [],
         "traders": [
           {
-            "id": "hildir",
-            "name": "Hildir",
-            "price": 100,
-            "unlockedBy": {
-              "type": "chest",
-              "chest": "bronze",
-              "boss": "zil-thungr",
-              "bossName": "Zil & Thungr",
-              "location": "Sealed Tower",
-              "text": "Requires returning Hildir's bronze chest (Zil & Thungr)"
-            }
+            "id": "bog-witch",
+            "name": "The Bog Witch",
+            "price": 140,
+            "unlockedBy": null
           }
         ],
         "raw": [
           {
-            "text": "Sold by Hildir",
+            "text": "Sold by The Bog Witch",
             "kind": "npc"
           }
         ]
@@ -67789,7 +68484,61 @@
         "crafting": []
       },
       "crossLinks": {
-        "traders": "/traders/#trader=hildir"
+        "traders": "/traders/#trader=bog-witch"
+      }
+    },
+    {
+      "id": "corked-vial",
+      "name": "Corked Vial",
+      "image": null,
+      "biome": "ashlands",
+      "tier": 8,
+      "category": "material",
+      "teleportable": true,
+      "stack": 10,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Corked_Vial",
+      "names": {},
+      "description": "Required for Blob Bombs.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [
+          {
+            "id": "bog-witch",
+            "name": "The Bog Witch",
+            "price": 150,
+            "unlockedBy": {
+              "type": "boss",
+              "id": "the-elder",
+              "name": "The Elder",
+              "biome": "black-forest",
+              "text": "Requires defeating The Elder"
+            }
+          }
+        ],
+        "raw": [
+          {
+            "text": "Sold by The Bog Witch",
+            "kind": "npc"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {
+        "traders": "/traders/#trader=bog-witch"
       }
     },
     {
@@ -79119,57 +79868,6 @@
       "crossLinks": {}
     },
     {
-      "id": "thunder-stone",
-      "name": "Thunder stone",
-      "image": null,
-      "biome": "black-forest",
-      "tier": 2,
-      "category": "valuable",
-      "teleportable": true,
-      "stack": 20,
-      "weight": 10,
-      "wiki": "https://valheim.weirdgloop.org/w/Thunder_Stone",
-      "names": {},
-      "description": "It is crackling with energy.",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Haldor",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Haldor"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [
-          {
-            "id": "obliterator",
-            "name": "Obliterator",
-            "level": 1,
-            "biome": "black-forest",
-            "itemId": "obliterator"
-          }
-        ],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
       "id": "mechanical-spring",
       "name": "Mechanical Spring",
       "image": null,
@@ -79300,49 +79998,6 @@
             "itemId": "sap-extractor"
           }
         ],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "basic-fireworks",
-      "name": "Basic fireworks",
-      "image": null,
-      "biome": "black-forest",
-      "tier": 2,
-      "category": "building",
-      "teleportable": true,
-      "stack": 10,
-      "weight": 0.5,
-      "wiki": "https://valheim.weirdgloop.org/w/Basic_fireworks",
-      "names": {},
-      "description": "This rocket's blasting off again!",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Hildir",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Hildir"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
         "crafting": []
       },
       "crossLinks": {}
@@ -79710,210 +80365,6 @@
       "crossLinks": {}
     },
     {
-      "id": "candle-wick",
-      "name": "Candle Wick",
-      "image": null,
-      "biome": "ashlands",
-      "tier": 8,
-      "category": "material",
-      "teleportable": true,
-      "stack": 50,
-      "weight": 0.3,
-      "wiki": "https://valheim.weirdgloop.org/w/Candle_Wick",
-      "names": {},
-      "description": "Steep these in something flammable for a long lasting and cosy light source.",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "The Bog Witch",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "The Bog Witch"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [
-          {
-            "id": "resin-candle",
-            "name": "Resin candle",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "resin-candle"
-          }
-        ],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "scythe-handle",
-      "name": "Scythe handle",
-      "image": null,
-      "biome": "ashlands",
-      "tier": 8,
-      "category": "material",
-      "teleportable": true,
-      "stack": 20,
-      "weight": 2,
-      "wiki": "https://valheim.weirdgloop.org/w/Scythe_Handle",
-      "names": {},
-      "description": "A sturdy base for a tool.",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "The Bog Witch",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "The Bog Witch"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": [
-          {
-            "id": "scythe",
-            "name": "Scythe",
-            "level": 2,
-            "biome": "plains",
-            "itemId": "scythe"
-          }
-        ]
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "ivy-seeds",
-      "name": "Ivy Seeds",
-      "image": null,
-      "biome": "ashlands",
-      "tier": 8,
-      "category": "ingredient",
-      "teleportable": true,
-      "stack": 100,
-      "weight": 0.1,
-      "wiki": "https://valheim.weirdgloop.org/w/Ivy_Seeds",
-      "names": {},
-      "description": "These unassuming seeds can grow into vines that might overtake entire buildings.",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "The Bog Witch",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "The Bog Witch"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": [
-          {
-            "id": "ivy",
-            "name": "Ivy",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "ivy"
-          }
-        ]
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "barrel-hoops",
-      "name": "Barrel Hoops",
-      "image": null,
-      "biome": "ashlands",
-      "tier": 8,
-      "category": "material",
-      "teleportable": true,
-      "stack": 20,
-      "weight": 2,
-      "wiki": "https://valheim.weirdgloop.org/w/Barrel_Hoops",
-      "names": {},
-      "description": "These metal rings are perfectly round, suitable for holding a barrel together. Just add wood!",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Haldor",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Haldor"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [
-          {
-            "id": "barrel",
-            "name": "Barrel",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "barrel"
-          }
-        ],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
       "id": "ectoplasm",
       "name": "Ectoplasm",
       "image": null,
@@ -79941,49 +80392,6 @@
         "raw": [
           {
             "text": "Ghost"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "corked-vial",
-      "name": "Corked Vial",
-      "image": null,
-      "biome": "ashlands",
-      "tier": 8,
-      "category": "material",
-      "teleportable": true,
-      "stack": 10,
-      "weight": 1,
-      "wiki": "https://valheim.weirdgloop.org/w/Corked_Vial",
-      "names": {},
-      "description": "Thick enough to contain something volatile, yet fragile enough to be shattered.",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "The Bog Witch",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "The Bog Witch"
           }
         ]
       },
@@ -81253,49 +81661,6 @@
       "crossLinks": {}
     },
     {
-      "id": "sparkler",
-      "name": "Sparkler",
-      "image": null,
-      "biome": "meadows",
-      "tier": 1,
-      "category": "tool",
-      "teleportable": true,
-      "stack": null,
-      "weight": 1,
-      "wiki": "https://valheim.weirdgloop.org/w/Sparkler",
-      "names": {},
-      "description": "It's a stick that sparkles. Pretty!",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Hildir",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Hildir"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
       "id": "salvaged-lantern",
       "name": "Salvaged Lantern",
       "image": null,
@@ -82333,49 +82698,6 @@
         "locations": [],
         "traders": [],
         "raw": []
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "serving-tray",
-      "name": "Serving Tray",
-      "image": null,
-      "biome": "meadows",
-      "tier": 1,
-      "category": "tool",
-      "teleportable": true,
-      "stack": null,
-      "weight": 2,
-      "wiki": "https://valheim.weirdgloop.org/w/Serving_Tray",
-      "names": {},
-      "description": "Set the table with whatever food and drink you fancy, and impress your guests with a delicious feast.",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "The Bog Witch",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "The Bog Witch"
-          }
-        ]
       },
       "usedIn": {
         "weapons": [],

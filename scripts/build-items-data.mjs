@@ -1676,6 +1676,7 @@ export function buildItemsData() {
     id: b.id,
     name: b.name,
     order: b.order,
+    bosses: b.creatures?.boss ?? [],
   }));
 
   const outputData = {
