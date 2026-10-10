@@ -2,18 +2,6 @@
 (function () {
   'use strict';
 
-  const BIOMES = [
-    { id: 'meadows', name: 'Meadows', order: 1 },
-    { id: 'black-forest', name: 'Black Forest', order: 2 },
-    { id: 'swamp', name: 'Swamp', order: 3 },
-    { id: 'ocean', name: 'Ocean', order: 3 },
-    { id: 'mountain', name: 'Mountain', order: 4 },
-    { id: 'plains', name: 'Plains', order: 5 },
-    { id: 'mistlands', name: 'Mistlands', order: 6 },
-    { id: 'ashlands', name: 'Ashlands', order: 7 },
-    { id: 'deep-north', name: 'Deep North', order: 8 },
-  ];
-
   const t = (key, values) => (globalThis.VCI18n ? globalThis.VCI18n.t(key, values) : key);
   const number = (value) =>
     new Intl.NumberFormat(globalThis.VCI18n?.locale?.() || 'en', { maximumFractionDigits: 2 }).format(value);
@@ -108,6 +96,7 @@
   }
 
   const itemsData = (globalThis.VC_ITEMS_DATA && globalThis.VC_ITEMS_DATA.items) || [];
+  const biomes = (globalThis.VC_ITEMS_DATA && globalThis.VC_ITEMS_DATA.biomes) || [];
   const itemsById = new Map(itemsData.map((it) => [it.id, it]));
 
   let selectedCategory = 'all';
@@ -149,9 +138,9 @@
 
   function getRevealedBiomes() {
     if (globalThis.VCProgress && typeof globalThis.VCProgress.revealedBiomes === 'function') {
-      return globalThis.VCProgress.revealedBiomes(BIOMES);
+      return globalThis.VCProgress.revealedBiomes(biomes);
     }
-    return BIOMES.map((b) => b.id);
+    return biomes.map((b) => b.id);
   }
 
   function isBiomeRevealed(biomeId) {
@@ -651,7 +640,7 @@
     });
     container.append(allChip);
 
-    for (const b of BIOMES) {
+    for (const b of biomes) {
       const revealed = isBiomeRevealed(b.id);
       const isSelected = selectedBiome === b.id;
       const chipClasses = ['biome-chip'];
@@ -725,20 +714,8 @@
     });
 
     // Sorting
-    const BIOME_TIER = {
-      meadows: 1,
-      'black-forest': 2,
-      swamp: 3,
-      ocean: 3.5,
-      mountain: 4,
-      plains: 5,
-      mistlands: 6,
-      ashlands: 7,
-      'deep-north': 8,
-    };
     const getProgression = (it) => {
       if (it.tier != null) return it.tier;
-      if (it.biome && BIOME_TIER[it.biome]) return BIOME_TIER[it.biome];
       return 99;
     };
 
