@@ -58,3 +58,28 @@ test('copy format handles fractions and locale numbers without translating game 
   assert.equal(core.formatList(list, 'cs'), '165× Iron\n1,5× Honey');
   assert.equal(core.formatList([], 'invalid_locale'), '');
 });
+test('cart.addMaterial sums repeated adds and read survives corrupted JSON', () => {
+  const store = new Map();
+  globalThis.localStorage = { getItem: k => store.has(k) ? store.get(k) : null, setItem: (k, v) => store.set(k, String(v)) };
+  store.set('va.cart', '{broken');
+  assert.deepEqual(core.cart.read(), []);
+  core.cart.write([]);
+  core.cart.addMaterial('iron', 1);
+  core.cart.addMaterial('iron', 4);
+  core.cart.addMaterial('love-potion', 5);
+  const lines = plain(core.cart.read());
+  assert.equal(lines.length, 2);
+  assert.equal(lines[0].materialId, 'iron');
+  assert.equal(lines[0].amount, 5);
+  assert.equal(lines[0].setId, null);
+  assert.ok(core.cart.hasMaterial('iron') && !core.cart.hasMaterial('wood'));
+  delete globalThis.localStorage;
+});
+test('sumMaterials counts a materialId line as that many units', () => {
+  const result = core.sumMaterials([{ id: 'mat_iron_x', materialId: 'iron', amount: 3, setId: null, pieceId: null }], {});
+  assert.deepEqual(plain(result), [{ item: 'iron', amount: 3, fuel: false }]);
+});
+test('a line without pieceId does not break sumMaterials', () => {
+  const result = core.sumMaterials([{ id: 'x', pieceId: null, materialId: 'wood', amount: 2 }, { id: 'y', setId: null }], { wood: { name: 'Wood' } });
+  assert.deepEqual(plain(result), [{ item: 'wood', amount: 2, fuel: false }, { item: 'y', amount: 1, fuel: false }]);
+});
