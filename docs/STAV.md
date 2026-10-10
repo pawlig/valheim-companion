@@ -1,7 +1,9 @@
 # Stav projektu Valheim Companion
 
 > **Živý dokument.** Orchestrátor ho aktualizuje po každé přejímce, merge nebo změně fronty. Nová session začíná tady.
-> Poslední aktualizace: **9. 10. 2026**
+> Poslední aktualizace: **10. 10. 2026**
+
+> ⚠️ **Audit 10. 10. (Fable):** Items Compendium a Trader Ledger (VC-39 … VC-40f) **nejsou v pořádku** — agy je dělal bez zadání a sám si je přebral. 16 nálezů (3 kritické), opravy po balících O-1 … O-10 jako VC-42a … viz [`docs/audit/AUDIT-VC-39-40.md`](audit/AUDIT-VC-39-40.md). Údaje „✅" u VC-40c … VC-40f níž neplatí. Otázky AUD/1–7 v globálním rozhodovacím archu.
 
 - Web: https://valheim-companion.teuferon.click (EasyPanel, deploy webhookem při každém pushi do repa)
 - Repo: https://github.com/pawlig/valheim-companion (public), lokálně `~/gameroot/valheim-units`
@@ -79,7 +81,9 @@ Zadání jsou v [`docs/zadani/`](zadani/). Hotové úlohy jsou mergnuté do `mai
 | VC-40b | **Items Compendium oprava a rozšíření** (kompletní katalog 764 itemů, odstranění visícího modalu, recepty a prolinkování) | GL | ✅ nasazeno 9. 10. (764 položek, oprava CSS display:none u [hidden], ověřeno přes prohlizec i 325 stránek na 360 px mobilu) |
 | VC-40c | **Items Compendium kompletní katalog (1 080 itemů)** (všechny předměty ze hry, infoboxy, trofeje, zbraně, zbroje, nářadí, stavby, překlady) | agy | ✅ nasazeno 9. 10. (1 080 položek, 13 jazyků, invertovaný index usedIn napříč všemi nástroji) |
 | VC-40d | **Items Compendium oprava chyb, audit a testování** (oprava pushState navigace v modalu, biomy 0 nullů, oprava plain substringů v inferBiome, přejímka prohlizec bez vad) | agy | ✅ hotovo a otestováno 9. 10. (364 testů v npm test, prohlizec kontrola bez vad, 0 konzolových chyb) |
-| VC-41 | **Armor Calculator / Damage Taken** (v Damage Calculatoru: redukce poškození zbrojí a odolnostmi hráče proti potvorám a bossům) | GM | 🔄 v přípravě |
+| VC-42a | oprava O-1: Trader Ledger z wiki tabulek (ceny, sortiment, podmínky) | Sonnet | 🔄 běží |
+| VC-42b | oprava O-2: Items tier = order biomu z `data/biomes.json` | Flash | 🔄 běží |
+| VC-42c… | opravy O-3 … O-10 (kategorie, košík, spoilery, mobil, Bestiary odkazy, i18n, úklid, docs) | — | ⏳ po O-1/O-2, O-3 a O-5 čekají na AUD/1–4 |
 
 ### Po frontě
 Pracovníci od 6. 10.: agy je vyčerpaný (týden 4 %, obnova 8. 10.), práci dělá **Codex Sol**. Pavel 6. 10. schválil pořadí: překlady (VC-16 až VC-18), **vylepšení stávajících nástrojů** (VC-23 až VC-27), potom **Progress Tracker** a **Provisions** (VC-19 až VC-22). Další kandidáti z [`NAVRHY-NASTROJU.md`](NAVRHY-NASTROJU.md): **Comfort Planner schválen 6. 10. (VC-35)**, **Expedition schválen 7. 10. (VC-36)**. Trader Ledger, Fishing a Taming zatím schválené nejsou.
