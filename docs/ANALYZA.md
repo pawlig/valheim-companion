@@ -578,18 +578,16 @@ Nová sekce `/items/` (`apps/items/`, statická vanilla JS aplikace jako Smithy 
 
 Nová sekce `/traders/` (`apps/traders/`, statická vanilla JS aplikace). Kompletní přehled všech tří obchodníků ve hře, jejich nabídky, cen v mincích, podmínek odemknutí zboží a kalkulačka pokladů (appraisal cenností).
 
-- **Tři obchodníci:**
-  1. **Haldor** (Black Forest):
-     - Zboží: Ymir Flesh (120), Megingjörd (950), Dvergr Circlet (620), Fishing Rod (350), Fishing Bait (x50, 10), Yule Hat (100).
-     - Odemyká se postupem: Thunderstone (50, po The Elder), Egg (1500, po Yagluth).
-  2. **Hildir** (Meadows):
-     - Zboží: Barber Kit (250), Iron Pit (250), Fireworks (100).
-     - Odemyká se po vrácení truhel (Hildir's request):
-       - Brass chest (Brenna, Black Forest) → Fur caps, Harvest dress/tunic.
-       - Silver chest (Geirrhafa, Mountain) → Cape tunics, Extravagant caps.
-       - Bronze chest (Zil & Thungr, Plains) → Beaded dresses & tunics.
-  3. **The Bog Witch** (Swamp):
-     - Zboží: Love Potion (x5, 150), Anti-Sting Concoction (100), Lightfoot Mead (100), Tonic of Ratatosk (100), Draught of Vananidir (100), Brew of Animal Whispers (100), suroviny pro feasty a scythe.
+- **Zdroj dat (VC-42a):** zboží, ceny, množství za nákup a podmínky odemknutí se **parsují z tabulky „Sells/Trading" na wiki stránce obchodníka** (`Haldor`, `Hildir`, `The Bog Witch`, wiki cache `data/raw/`) skriptem `scripts/build-traders-data.mjs`; ručně psané zůstávají jen popisy obchodníků a seznam cenností. Čísla níže byla přeměřena z této tabulky (původní čísla ve VC-40 byla vymyšlená).
+- **Tři obchodníci (11 + 38 + 20 položek):**
+  1. **Haldor** (Black Forest), 11 položek:
+     - Vždy: Yule Hat (100), Dverger Circlet (620), Megingjord (950), Fishing Rod (350), Fishing Bait (x20, 10), Barrel Hoops (x3, 100).
+     - Po porážce bosse: Ymir Flesh (120) a Thunder Stone (50) po The Elder, Wider Pockets (1000) po Moder, Egg (1500) po Yagluth, Deeper Pockets (2000) po The Queen.
+  2. **Hildir** (Meadows), 38 položek (kosmetika, Iron Pit, Barber Kit, ohňostroje):
+     - Vždy (8): Simple dress/tunic natural (250), Simple cap red/purple (150), Headband (175), Sparkler (150), Iron Pit (75), Barber Kit (600).
+     - Odemyká se po vrácení truhel (Hildir's request): brass chest (Brenna, Smouldering Tomb), 11 položek za 200–550 (Simple dress/tunic barevné 350, Harvest dress/tunic 550, Fur cap brown 200, Straw hat 300, Tied headscarf blue 200); silver chest (Geirrhafa, Howling Cavern), 9 položek za 250–450 (Shawl dress, Cape tunic, Twisted headscarf green, Extravagant cap green, Tied headscarf yellow); bronze chest (Zil & Thungr, Sealed Tower), 10 položek za 50–550 (Beaded dress/tunic 550, Twisted headscarf red 300, Fur cap grey 300, Extravagant cap orange 300, Basic fireworks 50).
+  3. **The Bog Witch** (Swamp), 20 položek: prodává **suroviny a ingredience** (medoviny se vaří, neprodávají se). Vždy: Candle Wick (x50, 100), Love Potion (x5, 110), Fresh Seaweed (x5, 75), Cured Squirrel Hamstring (x5, 80), Powdered Dragon Eggshells (x5, 120), Pungent Pebbles (x5, 125), Ivy Seeds (x3, 65), Serving Tray (140). Po bossech: Scythe Handle (200), Toadstool (85), Fragrant Bundle (x5, 140) a Mountain Peak Pepper Powder (x5, 140) po Moder; Woodland Herb Blend (x5, 120) a Corked Vial (x5, 150) po The Elder; Grasslands Herbalist Harvest (x5, 160) po Yagluth; Herbs of the Hidden Hills (x5, 180) po The Queen; Fiery Spice Powder (x5, 200) po Fader; Seasoning of the Gourd (x5, 220) po Kall Fimbulbringer. Podmínka „creature": Seafarer's Herbs (x5, 130) po zabití Serpenta (Ocean), Crown of Roots (3000) po porážce Writhana (Swamp).
+  - Podmínka `unlockedBy.type` je `boss`, `chest` (Hildir) nebo `creature` (ne-boss bytost; zamyká se podle toho, zda je odhalený její biom ve `VCProgress`).
 - **Funkce sekce `/traders/`:**
   - Tři záložky / sekce pro jednotlivé obchodníky s jejich portréty/ikonami, biomem výskytu a tipem, jak je najít (Vegvisir, ikona na mapě při přiblížení).
   - Přehled sortimentu: ikona předmětu, název (anglicky dle VC-29), cena v mincích, popis, podmínka odemknutí (`unlockedBy`), přímý klikací odkaz na kartu v Items Compendium (`/items/#item=<id>`).
