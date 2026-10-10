@@ -302,6 +302,16 @@
     return formattedSources;
   }
 
+  /** Name for a shared-cart material: Smithy catalog, then the Items dataset if loaded, then the stored name, then the id. */
+  function materialDisplayName(id, storedName, data) {
+    const own = (data || globalThis.VA_DATA)?.items?.[id];
+    if (own) return entityName(own);
+    const list = globalThis.VC_ITEMS_DATA?.items || globalThis.VC_ITEMS_DATA;
+    const external = Array.isArray(list) ? list.find(entry => entry.id === id) : list?.[id];
+    if (external?.name) return entityName(external);
+    return storedName || id;
+  }
+
   function calculateCartMaterials(cart, data, options) {
     const opts = options || {};
     if (!cart || !Array.isArray(cart) || !data) {
@@ -405,6 +415,8 @@
       ? VCShopping.breakdown([...rawMats.values()], data.items)
       : { materials: [...rawMats.values()], steps: [] };
     const finalMats = new Map(expanded.materials.map(material => [material.item, material]));
+    // Names for goods added from Items/Traders that Smithy's own catalog does not know.
+    const cartNames = new Map(cart.filter(line => line?.materialId && line.name).map(line => [line.materialId, line.name]));
     const craftingSteps = expanded.steps.map(step => ({
       station: step.station,
       product: step.product,
@@ -421,7 +433,7 @@
     const materials = [];
     finalMats.forEach((val, itemId) => {
       const itemData = (data.items && data.items[itemId]) || null;
-      const name = itemData ? entityName(itemData) : itemId;
+      const name = itemData ? entityName(itemData) : materialDisplayName(itemId, cartNames.get(itemId), data);
       const image = itemData ? itemData.image : null;
 
       const formattedSources = formatMaterialSources(itemData, data, { openBiomes, showAll, breakdown });
@@ -1668,7 +1680,9 @@
       const groupMap = new Map();
       const standaloneItems = [];
 
+      const materialLines = cart.filter(item => item.materialId);
       cart.forEach(item => {
+        if (item.materialId) return;
         if (item.groupId) {
           if (!groupMap.has(item.groupId)) {
             groupMap.set(item.groupId, []);
@@ -1769,6 +1783,16 @@
 
         itemsContainer.appendChild(groupEl);
       });
+
+      // Raw materials and goods added from Items/Traders: "N× name", no Have/Want.
+      if (materialLines.length > 0) {
+        const goodsEl = el('div', 'cart-group cart-goods-group');
+        const goodsHeader = el('div', 'cart-group-header');
+        goodsHeader.appendChild(el('span', 'cart-group-title', 'Materials & goods'));
+        goodsEl.appendChild(goodsHeader);
+        materialLines.forEach(line => goodsEl.appendChild(renderCartMaterialRow(line)));
+        itemsContainer.appendChild(goodsEl);
+      }
 
       // Render standalone pieces
       standaloneItems.forEach(item => {
@@ -1999,6 +2023,33 @@
       actionsBox.appendChild(copyBtn);
       actionsBox.appendChild(clearBtn);
       cartContent.appendChild(actionsBox);
+    }
+
+    function renderCartMaterialRow(line) {
+      const row = el('div', 'cart-piece-row cart-material-row');
+      const info = el('div', 'cart-piece-info');
+      const name = materialDisplayName(line.materialId, line.name, data);
+      const itemData = data.items?.[line.materialId];
+      if (itemData?.image) {
+        const icon = el('img', 'cart-piece-icon');
+        icon.src = itemData.image;
+        icon.alt = name;
+        icon.loading = 'lazy';
+        info.appendChild(icon);
+      }
+      const label = el('span', 'cart-piece-name');
+      label.textContent = `${line.amount}× ${name}`;
+      info.appendChild(label);
+      row.appendChild(info);
+      const removeBtn = el('button', 'cart-remove-btn', '✕');
+      removeBtn.type = 'button';
+      removeBtn.title = t('Remove piece');
+      removeBtn.addEventListener('click', function () {
+        cart = cart.filter(i => i.id !== line.id);
+        saveAndRenderCart();
+      });
+      row.appendChild(removeBtn);
+      return row;
     }
 
     function renderCartPieceRow(item, showSetName) {

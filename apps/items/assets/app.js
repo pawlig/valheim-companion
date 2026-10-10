@@ -167,29 +167,7 @@
     }
   }
 
-  function addToCart(item, count = 1) {
-    try {
-      const raw = localStorage.getItem('va.cart');
-      const cart = raw ? JSON.parse(raw) : [];
-      const existing = cart.find((c) => (c.item === item.id || c.pieceId === item.id) && !c.setId);
-      if (existing) {
-        existing.quantity = (existing.quantity || existing.amount || 1) + count;
-        existing.amount = existing.quantity;
-      } else {
-        cart.push({
-          id: 'item_' + item.id + '_' + Math.random().toString(36).slice(2, 7),
-          item: item.id,
-          pieceId: item.id,
-          quantity: count,
-          amount: count,
-        });
-      }
-      localStorage.setItem('va.cart', JSON.stringify(cart));
-      showNotice('Added to shopping cart.');
-    } catch {
-      showNotice('Added to shopping cart.');
-    }
-  }
+  const SMITHY_CATEGORIES = new Set(['weapon', 'shield', 'ammo', 'tool', 'armor', 'accessory']);
 
   function formatDuration(seconds) {
     if (seconds == null) return null;
@@ -544,23 +522,30 @@
     }
 
     const actions = el('div', 'modal-actions');
-    const cartGroup = el('div', 'cart-group');
-    const qty = el('input', 'cart-qty');
-    qty.type = 'number';
-    qty.min = '1';
-    qty.max = '9999';
-    qty.value = '1';
-    qty.setAttribute('aria-label', t('Qty'));
-    const cartBtn = button(
-      t('Add to shopping cart'),
-      () => {
-        const count = Math.max(1, Math.min(9999, Math.round(Number(qty.value) || 1)));
-        addToCart(item, count);
-      },
-      'add-cart-btn'
-    );
-    cartGroup.append(qty, cartBtn);
-    actions.append(cartGroup);
+    if (crossLinks.smithy && SMITHY_CATEGORIES.has(item.category)) {
+      const planLink = el('a', 'cross-link-btn plan-smithy-link', t('Plan in Smithy'));
+      planLink.href = crossLinks.smithy;
+      actions.append(planLink);
+    } else {
+      const cartGroup = el('div', 'cart-group');
+      const qty = el('input', 'cart-qty');
+      qty.type = 'number';
+      qty.min = '1';
+      qty.max = '9999';
+      qty.value = '1';
+      qty.setAttribute('aria-label', t('Qty'));
+      const cartBtn = button(
+        t('Add to shopping cart'),
+        () => {
+          const count = Math.max(1, Math.min(9999, Math.round(Number(qty.value) || 1)));
+          globalThis.VCShopping?.cart?.addMaterial(item.id, count, item.name);
+          showNotice('Added to shopping cart.');
+        },
+        'add-cart-btn'
+      );
+      cartGroup.append(qty, cartBtn);
+      actions.append(cartGroup);
+    }
 
     if (item.wiki) {
       const wikiA = el('a', 'wiki-link', `${t('Wiki')} ↗`);

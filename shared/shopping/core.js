@@ -19,6 +19,10 @@
   function sumMaterials(lines, items) {
     const result = new Map();
     for (const line of lines || []) {
+      if (line && line.materialId) {
+        add(result, line.materialId, positive(line.amount ?? line.quantity, 1), line.fuel);
+        continue;
+      }
       const id = line.pieceId || line.item || line.id;
       const definition = lookup(items, id);
       const quantity = positive(line.quantity ?? line.amount, 1);
@@ -85,5 +89,34 @@
     catch { numbers = new Intl.NumberFormat('en', { useGrouping: false, maximumFractionDigits: 10 }); }
     return (lines || []).map(line => `${numbers.format(line.amount)}× ${line.name || line.item || line.id}`).join('\n');
   }
-  root.VCShopping = Object.freeze({ sumMaterials, breakdown, formatList });
+  /** Shared cart (localStorage 'va.cart'): raw materials and goods added from Items/Traders. */
+  const CART_KEY = 'va.cart';
+  const cart = Object.freeze({
+    read() {
+      try {
+        const parsed = JSON.parse(root.localStorage.getItem(CART_KEY) || '[]');
+        return Array.isArray(parsed) ? parsed : [];
+      } catch { return []; }
+    },
+    write(lines) {
+      try { root.localStorage.setItem(CART_KEY, JSON.stringify(Array.isArray(lines) ? lines : [])); return true; }
+      catch { return false; }
+    },
+    addMaterial(id, amount = 1, name) {
+      const count = Number.isFinite(amount) && amount > 0 ? amount : 1;
+      const lines = cart.read();
+      const existing = lines.find(line => line && line.materialId === id);
+      if (existing) {
+        existing.amount = positive(existing.amount, 0) + count;
+        if (name && !existing.name) existing.name = name;
+      } else {
+        const line = { id: 'mat_' + id + '_' + Math.random().toString(36).slice(2, 7), materialId: id, amount: count, setId: null, pieceId: null };
+        if (name) line.name = String(name);
+        lines.push(line);
+      }
+      return cart.write(lines);
+    },
+    hasMaterial(id) { return cart.read().some(line => line && line.materialId === id); },
+  });
+  root.VCShopping = Object.freeze({ sumMaterials, breakdown, formatList, cart });
 })(globalThis);
