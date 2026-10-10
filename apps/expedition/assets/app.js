@@ -57,6 +57,19 @@ const check = (text, checked, action, id) => {
   }
   return n;
 };
+const summonLabel = (id, count, name, options = {}) => {
+  const wrap = el('span');
+  const text = el('span', '', tn('{count}× {name}', count, { name }) + ' ');
+  const a = el('a', 'item-link', '↗');
+  a.href = `/items/#item=${encodeURIComponent(id)}`;
+  a.setAttribute('aria-label', name);
+  if (options.stopPropagation) {
+    a.addEventListener('click', (e) => e.stopPropagation());
+  }
+  wrap.append(text, a);
+  return wrap;
+};
+globalThis.summonLabel = summonLabel;
 const read = () => {
   try {
     return JSON.parse(localStorage.getItem('vx.prep'));
@@ -292,18 +305,8 @@ function renderBoss(prep) {
   );
   for (const item of prep.summonItems) {
     const itemName = (supplementalItems[item.id] || VPR_DATA.items[item.id])?.name || item.id;
-    const fullText = tn('{count}× {name}', item.count, { name: itemName });
-    const idx = fullText.indexOf(itemName);
     const p = el('p');
-    if (idx !== -1) {
-      const prefix = fullText.slice(0, idx);
-      const suffix = fullText.slice(idx + itemName.length);
-      const a = el('a', 'item-link', itemName);
-      a.href = `/items/#item=${encodeURIComponent(item.id)}`;
-      p.append(el('span', '', prefix), a, el('span', '', suffix));
-    } else {
-      p.append(el('span', '', fullText));
-    }
+    p.append(summonLabel(item.id, item.count, itemName));
     altar.append(p);
   }
   altar.append(link(t('Source'), prep.source));
@@ -527,21 +530,8 @@ function renderPacking(prep, ctx) {
     const isSummon = prep.summonItems?.some((s) => s.id === line.id);
     let labelContent;
     if (isSummon) {
-      const wrap = el('span');
       const itemName = ctx.items[line.id]?.name || line.id;
-      const fullText = tn('{count}× {name}', line.quantity, { name: itemName });
-      const idx = fullText.indexOf(itemName);
-      if (idx !== -1) {
-        const prefix = fullText.slice(0, idx);
-        const suffix = fullText.slice(idx + itemName.length);
-        const a = el('a', 'item-link', itemName);
-        a.href = `/items/#item=${encodeURIComponent(line.id)}`;
-        a.addEventListener('click', (e) => e.stopPropagation());
-        wrap.append(el('span', '', prefix), a, el('span', '', suffix));
-      } else {
-        wrap.append(el('span', '', fullText));
-      }
-      labelContent = wrap;
+      labelContent = summonLabel(line.id, line.quantity, itemName, { stopPropagation: true });
     } else {
       labelContent = tn('{count}× {name}', line.quantity, {
         name: ctx.items[line.id]?.name || line.id,
