@@ -53,6 +53,16 @@
     if (!validId(id)) return get();
     return set({ visited: done === true ? [...state.visited, id] : state.visited.filter(value => value !== id) });
   }
+  function openBiome(id) {
+    if (!validId(id)) return get();
+    open = read(OPEN_KEY, []);
+    const list = Array.isArray(open) ? open.filter(validId) : [];
+    if (!list.includes(id)) list.push(id);
+    open = list;
+    try { localStorage.setItem(OPEN_KEY, JSON.stringify(open)); } catch { /* Keep the in-memory state. */ }
+    notify();
+    return get();
+  }
   function bossIds(biome) {
     return (biome.creatures?.boss ?? biome.bosses ?? []).map(boss => typeof boss === 'string' ? boss : boss.id);
   }
@@ -124,7 +134,7 @@
     if (event.key === OPEN_KEY || event.key === null) open = read(OPEN_KEY, []);
     if ([KEY, OPEN_KEY, null].includes(event.key)) notify();
   });
-  globalThis.VCProgress = { get, set, defeat: (id, done) => toggle('defeated', id, done), visit,
+  globalThis.VCProgress = { get, set, defeat: (id, done) => toggle('defeated', id, done), visit, openBiome,
     milestone: (id, done) => toggle('milestones', id, done), revealedBiomes, reach, minReach, setReach,
     onChange(cb) { if (typeof cb !== 'function') return () => {}; listeners.add(cb); return () => listeners.delete(cb); },
     exportToUrl, importFromUrl, reset };

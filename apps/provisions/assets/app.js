@@ -295,7 +295,7 @@
         if (!visible) {
           const row = el('div', 'source-locked');
           row.append(el('span', 'hint', t('Locked until you reach this biome.')), button(t('Reveal'), () => {
-            for (const id of source.biomes) VCProgress.visit(id, true);
+            for (const id of source.biomes) VCProgress.openBiome(id);
           }));
           container.append(row);
           continue;
@@ -419,7 +419,7 @@
       header.append(el('h2', '', name(biome)));
       section.append(header);
       if (!revealed.has(biome.id)) {
-        header.append(button(t('Reveal'), () => VCProgress.visit(biome.id, true)));
+        header.append(button(t('Reveal'), () => VCProgress.openBiome(biome.id)));
         section.append(el('p', 'locked', t('Locked until you reach this biome.')));
       } else {
         const body = el('div', 'biome-body');

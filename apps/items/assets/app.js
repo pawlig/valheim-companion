@@ -168,8 +168,8 @@
   }
 
   function revealBiome(biomeId) {
-    if (globalThis.VCProgress && typeof globalThis.VCProgress.visit === 'function') {
-      globalThis.VCProgress.visit(biomeId, true);
+    if (globalThis.VCProgress && typeof globalThis.VCProgress.openBiome === 'function') {
+      globalThis.VCProgress.openBiome(biomeId);
     }
   }
 

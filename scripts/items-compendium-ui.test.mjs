@@ -314,12 +314,15 @@ describe('Items Compendium UI Tests', () => {
   });
 
   it('7. Clicking Reveal unlocks the biome and renders item as unlocked', () => {
-    const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
+    const { doc, storage } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
     expandAll(doc);
     const ironCard = doc.getElementById('item-card-iron');
     assert.ok(ironCard.classList.contains('is-locked'));
+    const before = storage.get('vc.progress');
     const revBtn = ironCard.querySelector('.reveal-btn');
     revBtn.dispatch('click');
+    assert.equal(storage.get('vc.progress'), before, 'Reveal must not change vc.progress');
+    assert.ok(JSON.parse(storage.get('vc.openBiomes')).includes('swamp'), 'Reveal opens the biome in vc.openBiomes');
     const updatedIronCard = doc.getElementById('item-card-iron');
     assert.ok(!updatedIronCard.classList.contains('is-locked'), 'Iron card should now be unlocked');
   });
