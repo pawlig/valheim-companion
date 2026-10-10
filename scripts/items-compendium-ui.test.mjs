@@ -481,15 +481,23 @@ describe('Items Compendium UI Tests', () => {
     const { doc, storage } = createDomFixture();
     const toggleBtn = doc.getElementById('toggle-locked-btn');
     assert.ok(toggleBtn, 'Toggle locked biomes button must exist');
-    // Initially showAllBiomes is true (all items visible)
-    toggleBtn.dispatch('click');
-    assert.equal(storage.get('vc.itemsShowAll'), 'false', 'Clicking toggles spoiler filter ON (persists false)');
+    assert.equal(toggleBtn.textContent, 'Spoiler filter: On');
     const ironCard = doc.getElementById('item-card-iron');
-    assert.ok(ironCard.classList.contains('is-locked'), 'Iron card should now be locked when spoiler filter is active');
+    assert.ok(ironCard.classList.contains('is-locked'), 'Iron card should initially be locked when spoiler filter is active');
+
+    // Click to turn spoilers OFF (show all items)
     toggleBtn.dispatch('click');
-    assert.equal(storage.get('vc.itemsShowAll'), 'true', 'Clicking again toggles spoiler filter OFF (persists true)');
+    assert.equal(storage.get('vc.itemsShowAll'), 'true', 'Clicking toggles spoiler filter OFF (persists true)');
+    assert.equal(toggleBtn.textContent, 'Spoiler filter: Off');
     const ironCardUnlocked = doc.getElementById('item-card-iron');
-    assert.ok(!ironCardUnlocked.classList.contains('is-locked'), 'Iron card should no longer be locked');
+    assert.ok(!ironCardUnlocked.classList.contains('is-locked'), 'Iron card should now be unlocked');
+
+    // Click again to turn spoilers ON
+    toggleBtn.dispatch('click');
+    assert.equal(storage.get('vc.itemsShowAll'), 'false', 'Clicking again toggles spoiler filter ON (persists false)');
+    assert.equal(toggleBtn.textContent, 'Spoiler filter: On');
+    const ironCardRelocked = doc.getElementById('item-card-iron');
+    assert.ok(ironCardRelocked.classList.contains('is-locked'), 'Iron card should be locked again');
   });
 
   it('22. Localized search query matches items by localized names', () => {
@@ -540,11 +548,29 @@ describe('Items Compendium UI Tests', () => {
     assert.ok(cards.length >= 80, `Expected 80+ weapon cards, got ${cards.length}`);
   });
 
-  it('26. Default view displays all items unlocked without spoiler obstruction', () => {
+  it('26. Default view locks unvisited biomes by progress (Ashlands cards are is-locked and toggle shows Spoiler filter: On)', () => {
     const { doc } = createDomFixture();
-    const ironCard = doc.getElementById('item-card-iron');
-    assert.ok(ironCard, 'Iron card should exist in initial view');
-    assert.ok(!ironCard.classList.contains('is-locked'), 'Items should not be locked by default in encyclopedia compendium');
+    const toggleBtn = doc.getElementById('toggle-locked-btn');
+    assert.equal(toggleBtn.textContent, 'Spoiler filter: On', 'Toggle button text must be "Spoiler filter: On"');
+
+    const ashCards = [
+      doc.getElementById('item-card-ashwood'),
+      doc.getElementById('item-card-flametal-ore'),
+      doc.getElementById('item-card-flametal'),
+    ].filter(Boolean);
+    assert.ok(ashCards.length > 0, 'Ashlands cards should be present');
+    for (const card of ashCards) {
+      assert.ok(card.classList.contains('is-locked'), `${card.id} must be locked by default`);
+    }
+
+    // Modal on locked Ashlands card shows spoiler banner with localized biome
+    const ashCard = doc.getElementById('item-card-ashwood');
+    ashCard.dispatch('click');
+    const modal = doc.getElementById('item-modal');
+    assert.equal(modal.hidden, false);
+    const banner = doc.getElementById('modal-body').querySelector('.modal-spoiler-banner');
+    assert.ok(banner, 'Modal should display spoiler banner for unvisited Ashlands item');
+    assert.equal(banner.querySelector('span').textContent, 'Locked until you reach this biome: Ashlands');
   });
 
   it('27. Sort select orders items by name (A → Z) and (Z → A) and persists to localStorage', () => {
