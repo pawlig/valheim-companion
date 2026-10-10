@@ -2209,12 +2209,7 @@
     "drops": [
       "Feathers"
     ],
-    "trophy": {
-      "name": "Crow trophy currently no trophy-->",
-      "image": null,
-      "dropChance": null,
-      "usage": []
-    },
+    "trophy": null,
     "summon": null,
     "location": "Black Forest",
     "spawns": [],
@@ -5916,12 +5911,7 @@
     "drops": [
       "Feathers"
     ],
-    "trophy": {
-      "name": "Gull trophy currently no trophy-->",
-      "image": null,
-      "dropChance": null,
-      "usage": []
-    },
+    "trophy": null,
     "summon": null,
     "location": "* Meadows\n* Black Forest\n* Plains\n* Ocean",
     "spawns": [],
@@ -11515,12 +11505,7 @@
       "Zil Trophy",
       "Thungr Trophy"
     ],
-    "trophy": {
-      "name": "Zil\nThungr",
-      "image": null,
-      "dropChance": null,
-      "usage": []
-    },
+    "trophy": null,
     "summon": null,
     "location": "Sealed tower",
     "spawns": [],
