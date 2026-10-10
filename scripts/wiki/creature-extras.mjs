@@ -10,6 +10,17 @@ const number = value => {
 };
 const headers = table => table.headers.map(header => cleanText(header).toLowerCase());
 
+function cleanTrophyName(rawName) {
+  if (!rawName) return null;
+  const cleaned = String(rawName)
+    .replace(/<!--.*?-->/g, '')
+    .replace(/currently no trophy-->?/gi, '')
+    .replace(/-->/g, '')
+    .trim();
+  if (!cleaned || /^none$/i.test(cleaned)) return null;
+  return cleaned;
+}
+
 export function enrichCreatures(creatures, pages) {
   const byId = new Map(creatures.map(creature => [creature.id, creature]));
   const unmatched = [];
@@ -20,7 +31,12 @@ export function enrichCreatures(creatures, pages) {
   };
   for (const creature of creatures) {
     // An infobox trophy without a matching table row keeps unknown metadata.
-    if (creature.trophy) creature.trophy = { ...creature.trophy, dropChance: null, usage: [] };
+    if (creature.trophy) {
+      const name = cleanTrophyName(creature.trophy.name);
+      creature.trophy = name
+        ? { ...creature.trophy, name, dropChance: null, usage: [] }
+        : null;
+    }
     creature.taming = null;
     creature.raids = [];
   }
@@ -39,12 +55,28 @@ export function enrichCreatures(creatures, pages) {
       }
       for (const target of [...new Set(targets)]) {
         const creature = match(target, 'Trophies');
-        creature.trophy = {
-          name: file ? file.replace(/\.[^.]+$/, '') : creature.trophy?.name ?? `${creature.name} Trophy`,
-          image: creature.trophy?.image ?? null,
-          dropChance: number(row[columns.indexOf('drop chance')]),
-          usage: parseList(withoutRefs(row[columns.indexOf('usage')])),
-        };
+        if (!creature) continue;
+        const rawName = file ? file.replace(/\.[^.]+$/, '') : creature.trophy?.name ?? `${creature.name} Trophy`;
+        const name = cleanTrophyName(rawName);
+        creature.trophy = name
+          ? {
+              name,
+              image: creature.trophy?.image ?? null,
+              dropChance: number(row[columns.indexOf('drop chance')]),
+              usage: parseList(withoutRefs(row[columns.indexOf('usage')])),
+            }
+          : null;
+      }
+    }
+  }
+
+  for (const creature of creatures) {
+    if (creature.trophy) {
+      const name = cleanTrophyName(creature.trophy.name);
+      if (!name) {
+        creature.trophy = null;
+      } else {
+        creature.trophy.name = name;
       }
     }
   }

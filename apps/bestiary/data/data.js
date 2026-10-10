@@ -1,5 +1,5 @@
 window.VC_DATA = {
-  "generatedAt": "2026-10-06T13:35:03.901Z",
+  "generatedAt": "2026-10-10T11:27:51.245Z",
   "source": {
     "name": "Valheim Wiki",
     "url": "https://valheim.weirdgloop.org",
@@ -452,7 +452,8 @@ window.VC_DATA = {
         "dropChance": 50,
         "usage": [
           "Sticky Fishing Bait"
-        ]
+        ],
+        "itemId": "abomination-trophy"
       },
       "summon": null,
       "location": "Swamp",
@@ -470,7 +471,21 @@ window.VC_DATA = {
         "fr": "Abomination",
         "ru": "Мерзость"
       },
-      "calculatorSlug": "abomination"
+      "calculatorSlug": "abomination",
+      "dropLinks": [
+        {
+          "name": "Abomination Trophy",
+          "itemId": "abomination-trophy"
+        },
+        {
+          "name": "Guck",
+          "itemId": "guck"
+        },
+        {
+          "name": "Root",
+          "itemId": "root"
+        }
+      ]
     },
     "anglerfish": {
       "id": "anglerfish",
@@ -514,7 +529,8 @@ window.VC_DATA = {
         "de": "Seeteufel",
         "fr": "Poisson-pêcheur",
         "ru": "Удильщик"
-      }
+      },
+      "dropLinks": []
     },
     "ash-crow": {
       "id": "ash-crow",
@@ -559,7 +575,13 @@ window.VC_DATA = {
       "raids": [],
       "names": {
         "ru": "Пепельный ворон"
-      }
+      },
+      "dropLinks": [
+        {
+          "name": "3 Feathers",
+          "itemId": "feathers"
+        }
+      ]
     },
     "ashlands-dvergr": {
       "id": "ashlands-dvergr",
@@ -666,7 +688,8 @@ window.VC_DATA = {
         "name": "Dvergr Trophy",
         "image": "img/creatures/ashlands-dvergr-trophy.png",
         "dropChance": 5,
-        "usage": []
+        "usage": [],
+        "itemId": "dvergr-trophy"
       },
       "summon": null,
       "location": "Ashlands",
@@ -676,7 +699,25 @@ window.VC_DATA = {
       "raids": [],
       "names": {
         "ru": "Дверг пепельных земель"
-      }
+      },
+      "dropLinks": [
+        {
+          "name": "Black Marble",
+          "itemId": "black-marble"
+        },
+        {
+          "name": "Coins",
+          "itemId": "coins"
+        },
+        {
+          "name": "Dvergr Trophy",
+          "itemId": "dvergr-trophy"
+        },
+        {
+          "name": "Soft Tissue",
+          "itemId": "soft-tissue"
+        }
+      ]
     },
     "asksvin": {
       "id": "asksvin",
@@ -828,7 +869,8 @@ window.VC_DATA = {
         "dropChance": 10,
         "usage": [
           "Feathery wreath"
-        ]
+        ],
+        "itemId": "asksvin-trophy"
       },
       "summon": null,
       "location": "Ashlands",
@@ -850,7 +892,25 @@ window.VC_DATA = {
       "names": {
         "ru": "Пеплозавр"
       },
-      "calculatorSlug": "asksvin"
+      "calculatorSlug": "asksvin",
+      "dropLinks": [
+        {
+          "name": "Asksvin Tail",
+          "itemId": "asksvin-tail"
+        },
+        {
+          "name": "Asksvin Hide",
+          "itemId": "asksvin-hide"
+        },
+        {
+          "name": "Asksvin Bladder",
+          "itemId": "asksvin-bladder"
+        },
+        {
+          "name": "Asksvin Trophy",
+          "itemId": "asksvin-trophy"
+        }
+      ]
     },
     "barka": {
       "id": "barka",
@@ -956,7 +1016,8 @@ window.VC_DATA = {
         "name": "Barka Trophy",
         "image": "img/creatures/barka-trophy.png",
         "dropChance": 10,
-        "usage": []
+        "usage": [],
+        "itemId": "barka-trophy"
       },
       "summon": null,
       "location": "Deep North",
@@ -967,7 +1028,17 @@ window.VC_DATA = {
       "taming": null,
       "raids": [],
       "names": {},
-      "calculatorSlug": "barka"
+      "calculatorSlug": "barka",
+      "dropLinks": [
+        {
+          "name": "Frozen Branch",
+          "itemId": "frozen-branch"
+        },
+        {
+          "name": "Barka Trophy",
+          "itemId": "barka-trophy"
+        }
+      ]
     },
     "bat": {
       "id": "bat",
@@ -1062,7 +1133,13 @@ window.VC_DATA = {
         "cs": "Netopýr",
         "ru": "Летучая мышь"
       },
-      "calculatorSlug": "bat"
+      "calculatorSlug": "bat",
+      "dropLinks": [
+        {
+          "name": "Leather Scraps",
+          "itemId": "leather-scraps"
+        }
+      ]
     },
     "bear": {
       "id": "bear",
@@ -1231,7 +1308,8 @@ window.VC_DATA = {
           "Bearskin Rug",
           "Headdress of the Bear",
           "Bronze Pendant"
-        ]
+        ],
+        "itemId": "bear-trophy"
       },
       "summon": null,
       "location": "Black Forest",
@@ -1246,7 +1324,25 @@ window.VC_DATA = {
         "cs": "Medvěd",
         "ru": "Медведь"
       },
-      "calculatorSlug": "bear"
+      "calculatorSlug": "bear",
+      "dropLinks": [
+        {
+          "name": "Bear Hide",
+          "itemId": "bear-hide"
+        },
+        {
+          "name": "Bear Meat",
+          "itemId": "bear-meat"
+        },
+        {
+          "name": "Bear Paw",
+          "itemId": "bear-paw"
+        },
+        {
+          "name": "Bear Trophy",
+          "itemId": "bear-trophy"
+        }
+      ]
     },
     "blob": {
       "id": "blob",
@@ -1308,7 +1404,8 @@ window.VC_DATA = {
         "usage": [
           "Blob bomb Poison",
           "Blob bomb Elite poison"
-        ]
+        ],
+        "itemId": "blob-trophy"
       },
       "summon": null,
       "location": "Swamp",
@@ -1344,7 +1441,17 @@ window.VC_DATA = {
         "fr": "Blob",
         "ru": "Сгустень"
       },
-      "calculatorSlug": "blob"
+      "calculatorSlug": "blob",
+      "dropLinks": [
+        {
+          "name": "Ooze",
+          "itemId": "ooze"
+        },
+        {
+          "name": "Blob Trophy",
+          "itemId": "blob-trophy"
+        }
+      ]
     },
     "boar": {
       "id": "boar",
@@ -1426,7 +1533,8 @@ window.VC_DATA = {
         "name": "Boar Trophy",
         "image": "img/creatures/boar-trophy.png",
         "dropChance": 15,
-        "usage": []
+        "usage": [],
+        "itemId": "boar-trophy"
       },
       "summon": null,
       "location": "Meadows",
@@ -1472,7 +1580,21 @@ window.VC_DATA = {
         "pt": "Javali",
         "ru": "Кабан"
       },
-      "calculatorSlug": "boar"
+      "calculatorSlug": "boar",
+      "dropLinks": [
+        {
+          "name": "Boar Meat",
+          "itemId": "boar-meat"
+        },
+        {
+          "name": "Leather Scraps",
+          "itemId": "leather-scraps"
+        },
+        {
+          "name": "Boar Trophy",
+          "itemId": "boar-trophy"
+        }
+      ]
     },
     "bonemass": {
       "id": "bonemass",
@@ -1545,7 +1667,8 @@ window.VC_DATA = {
         "dropChance": 100,
         "usage": [
           "Bonemass Power"
-        ]
+        ],
+        "itemId": "bonemass-trophy"
       },
       "summon": "Withered Bone x10",
       "location": "* Swamp",
@@ -1559,7 +1682,21 @@ window.VC_DATA = {
         "fr": "Masse d'Os",
         "ru": "Масса костей"
       },
-      "calculatorSlug": "bonemass"
+      "calculatorSlug": "bonemass",
+      "dropLinks": [
+        {
+          "name": "Bonemass Trophy",
+          "itemId": "bonemass-trophy"
+        },
+        {
+          "name": "Wishbone",
+          "itemId": "wishbone"
+        },
+        {
+          "name": "Bonemass Power",
+          "itemId": null
+        }
+      ]
     },
     "bonemaw": {
       "id": "bonemaw",
@@ -1626,7 +1763,8 @@ window.VC_DATA = {
         "name": "Bonemaw Trophy",
         "image": "img/creatures/bonemaw-trophy.png",
         "dropChance": 33,
-        "usage": []
+        "usage": [],
+        "itemId": "bonemaw-trophy"
       },
       "summon": null,
       "location": "Ashlands",
@@ -1639,7 +1777,21 @@ window.VC_DATA = {
       "names": {
         "ru": "Костепасть"
       },
-      "calculatorSlug": "bonemaw"
+      "calculatorSlug": "bonemaw",
+      "dropLinks": [
+        {
+          "name": "Bonemaw Trophy",
+          "itemId": "bonemaw-trophy"
+        },
+        {
+          "name": "Bonemaw Meat",
+          "itemId": "bonemaw-meat"
+        },
+        {
+          "name": "Bonemaw Tooth",
+          "itemId": "bonemaw-tooth"
+        }
+      ]
     },
     "brenna": {
       "id": "brenna",
@@ -1703,7 +1855,8 @@ window.VC_DATA = {
         "name": "Brenna Trophy",
         "image": "img/creatures/brenna-trophy.png",
         "dropChance": 100,
-        "usage": []
+        "usage": [],
+        "itemId": "brenna-trophy"
       },
       "summon": null,
       "location": "Smouldering Tomb",
@@ -1728,7 +1881,17 @@ window.VC_DATA = {
         "fr": "Brenna",
         "ru": "Бренна"
       },
-      "calculatorSlug": "brenna"
+      "calculatorSlug": "brenna",
+      "dropLinks": [
+        {
+          "name": "Hildir's brass chest",
+          "itemId": "hildir-s-brass-chest"
+        },
+        {
+          "name": "Brenna Trophy",
+          "itemId": "brenna-trophy"
+        }
+      ]
     },
     "captive-fuling": {
       "id": "captive-fuling",
@@ -1880,7 +2043,8 @@ window.VC_DATA = {
       "description": "Captive Fuling are creatures found in Mörkhalla.",
       "taming": null,
       "raids": [],
-      "names": {}
+      "names": {},
+      "dropLinks": []
     },
     "charred-marksman": {
       "id": "charred-marksman",
@@ -1983,7 +2147,8 @@ window.VC_DATA = {
         "name": "Marksman Trophy",
         "image": "img/creatures/charred-marksman-trophy.png",
         "dropChance": 5,
-        "usage": []
+        "usage": [],
+        "itemId": "marksman-trophy"
       },
       "summon": null,
       "location": "Ashlands",
@@ -2022,7 +2187,8 @@ window.VC_DATA = {
         "fr": "Archer calciné",
         "ru": "Обугленный лучник"
       },
-      "calculatorSlug": "charred-marksman"
+      "calculatorSlug": "charred-marksman",
+      "dropLinks": []
     },
     "charred-twitcher": {
       "id": "charred-twitcher",
@@ -2161,7 +2327,13 @@ window.VC_DATA = {
         "fr": "Forcené calciné",
         "ru": "Обугленный дергун"
       },
-      "calculatorSlug": "charred-twitcher"
+      "calculatorSlug": "charred-twitcher",
+      "dropLinks": [
+        {
+          "name": "Charred Bone",
+          "itemId": "charred-bone"
+        }
+      ]
     },
     "charred-warlock": {
       "id": "charred-warlock",
@@ -2253,7 +2425,8 @@ window.VC_DATA = {
         "name": "Warlock Trophy",
         "image": "img/creatures/charred-warlock-trophy.png",
         "dropChance": 5,
-        "usage": []
+        "usage": [],
+        "itemId": "warlock-trophy"
       },
       "summon": null,
       "location": "Ashlands",
@@ -2271,7 +2444,17 @@ window.VC_DATA = {
         "fr": "Sorcier calciné",
         "ru": "Обугленный чернокнижник"
       },
-      "calculatorSlug": "charred-warlock"
+      "calculatorSlug": "charred-warlock",
+      "dropLinks": [
+        {
+          "name": "Charred Bone",
+          "itemId": "charred-bone"
+        },
+        {
+          "name": "Warlock Trophy",
+          "itemId": "warlock-trophy"
+        }
+      ]
     },
     "charred-warrior": {
       "id": "charred-warrior",
@@ -2424,7 +2607,8 @@ window.VC_DATA = {
         "usage": [
           "Hot Fishing Bait",
           "Grausten Chest"
-        ]
+        ],
+        "itemId": "warrior-trophy"
       },
       "summon": null,
       "location": "Ashlands",
@@ -2465,7 +2649,17 @@ window.VC_DATA = {
         "fr": "Guerrier calciné",
         "ru": "Обугленный воин"
       },
-      "calculatorSlug": "charred-warrior"
+      "calculatorSlug": "charred-warrior",
+      "dropLinks": [
+        {
+          "name": "Charred Bone",
+          "itemId": "charred-bone"
+        },
+        {
+          "name": "Warrior Trophy",
+          "itemId": "warrior-trophy"
+        }
+      ]
     },
     "chicken": {
       "id": "chicken",
@@ -2515,7 +2709,17 @@ window.VC_DATA = {
         "cs": "Kuře",
         "de": "Huhn",
         "ru": "Цыпленок"
-      }
+      },
+      "dropLinks": [
+        {
+          "name": "Feathers",
+          "itemId": "feathers"
+        },
+        {
+          "name": "Chicken Meat",
+          "itemId": "chicken-meat"
+        }
+      ]
     },
     "coral-cod": {
       "id": "coral-cod",
@@ -2559,7 +2763,8 @@ window.VC_DATA = {
         "de": "Korallenbarsch",
         "fr": "Vieille de corail",
         "ru": "Коралловая треска"
-      }
+      },
+      "dropLinks": []
     },
     "crow": {
       "id": "crow",
@@ -2596,10 +2801,11 @@ window.VC_DATA = {
         "Feathers"
       ],
       "trophy": {
-        "name": "Crow trophy currently no trophy-->",
+        "name": "Crow trophy",
         "image": null,
         "dropChance": null,
-        "usage": []
+        "usage": [],
+        "itemId": null
       },
       "summon": null,
       "location": "Black Forest",
@@ -2611,7 +2817,13 @@ window.VC_DATA = {
         "cs": "Vrána",
         "de": "Krähe",
         "ru": "Ворон"
-      }
+      },
+      "dropLinks": [
+        {
+          "name": "Feathers",
+          "itemId": "feathers"
+        }
+      ]
     },
     "cultist": {
       "id": "cultist",
@@ -2683,7 +2895,8 @@ window.VC_DATA = {
         "dropChance": 10,
         "usage": [
           "Fenris Hood"
-        ]
+        ],
+        "itemId": "cultist-trophy"
       },
       "summon": null,
       "location": "Mountain",
@@ -2709,7 +2922,17 @@ window.VC_DATA = {
         "de": "Kultist",
         "ru": "Культист"
       },
-      "calculatorSlug": "cultist"
+      "calculatorSlug": "cultist",
+      "dropLinks": [
+        {
+          "name": "Red Jute",
+          "itemId": "red-jute"
+        },
+        {
+          "name": "Cultist Trophy",
+          "itemId": "cultist-trophy"
+        }
+      ]
     },
     "deathsquito": {
       "id": "deathsquito",
@@ -2760,7 +2983,8 @@ window.VC_DATA = {
         "name": "Deathsquito Trophy",
         "image": "img/creatures/deathsquito-trophy.png",
         "dropChance": 5,
-        "usage": []
+        "usage": [],
+        "itemId": "deathsquito-trophy"
       },
       "summon": null,
       "location": "Plains",
@@ -2775,7 +2999,17 @@ window.VC_DATA = {
         "de": "Todeskito",
         "ru": "Смертожал"
       },
-      "calculatorSlug": "deathsquito"
+      "calculatorSlug": "deathsquito",
+      "dropLinks": [
+        {
+          "name": "Deathsquito Trophy",
+          "itemId": "deathsquito-trophy"
+        },
+        {
+          "name": "Needle",
+          "itemId": "needle"
+        }
+      ]
     },
     "deer": {
       "id": "deer",
@@ -2838,7 +3072,8 @@ window.VC_DATA = {
           "Mead Horn of Odin",
           "Stagbreaker",
           "Summoning Eikthyr"
-        ]
+        ],
+        "itemId": "deer-trophy"
       },
       "summon": null,
       "location": "* Meadows\n* Black Forest",
@@ -2857,7 +3092,21 @@ window.VC_DATA = {
         "fr": "Cerf",
         "pt": "Cervo",
         "ru": "Олень"
-      }
+      },
+      "dropLinks": [
+        {
+          "name": "Deer Hide",
+          "itemId": "deer-hide"
+        },
+        {
+          "name": "Deer Trophy",
+          "itemId": "deer-trophy"
+        },
+        {
+          "name": "Deer Meat",
+          "itemId": "deer-meat"
+        }
+      ]
     },
     "drake": {
       "id": "drake",
@@ -2916,7 +3165,8 @@ window.VC_DATA = {
           "Drake Helmet",
           "Frosty Fishing Bait",
           "Blob Bombs"
-        ]
+        ],
+        "itemId": "drake-trophy"
       },
       "summon": null,
       "location": "Mountain",
@@ -2952,7 +3202,17 @@ window.VC_DATA = {
         "fr": "Drac",
         "ru": "Дракон"
       },
-      "calculatorSlug": "drake"
+      "calculatorSlug": "drake",
+      "dropLinks": [
+        {
+          "name": "Drake Trophy",
+          "itemId": "drake-trophy"
+        },
+        {
+          "name": "Freeze Gland",
+          "itemId": "freeze-gland"
+        }
+      ]
     },
     "draugr": {
       "id": "draugr",
@@ -3060,7 +3320,8 @@ window.VC_DATA = {
         "name": "Draugr Trophy",
         "image": "img/creatures/draugr-trophy.png",
         "dropChance": 10,
-        "usage": []
+        "usage": [],
+        "itemId": "draugr-trophy"
       },
       "summon": null,
       "location": "Swamp",
@@ -3101,7 +3362,17 @@ window.VC_DATA = {
         "fr": "Draugr",
         "ru": "Драугр"
       },
-      "calculatorSlug": "draugr"
+      "calculatorSlug": "draugr",
+      "dropLinks": [
+        {
+          "name": "Draugr Trophy",
+          "itemId": "draugr-trophy"
+        },
+        {
+          "name": "Entrails",
+          "itemId": "entrails"
+        }
+      ]
     },
     "draugr-elite": {
       "id": "draugr-elite",
@@ -3185,7 +3456,8 @@ window.VC_DATA = {
         "dropChance": 10,
         "usage": [
           "Iron Sledge"
-        ]
+        ],
+        "itemId": "draugr-elite-trophy"
       },
       "summon": null,
       "location": "Swamp",
@@ -3203,7 +3475,17 @@ window.VC_DATA = {
         "fr": "Élite Draugr",
         "ru": "Элитный драугр"
       },
-      "calculatorSlug": "draugr-elite"
+      "calculatorSlug": "draugr-elite",
+      "dropLinks": [
+        {
+          "name": "Draugr Elite Trophy",
+          "itemId": "draugr-elite-trophy"
+        },
+        {
+          "name": "Entrails",
+          "itemId": "entrails"
+        }
+      ]
     },
     "dvergr-mage": {
       "id": "dvergr-mage",
@@ -3407,7 +3689,8 @@ window.VC_DATA = {
         "name": "Dvergr Trophy",
         "image": "img/creatures/dvergr-mage-trophy.png",
         "dropChance": 5,
-        "usage": []
+        "usage": [],
+        "itemId": "dvergr-trophy"
       },
       "summon": null,
       "location": "Mistlands",
@@ -3421,7 +3704,25 @@ window.VC_DATA = {
         "cs": "Dvergský Mág",
         "ru": "Дверг-маг"
       },
-      "calculatorSlug": "dvergr-mage"
+      "calculatorSlug": "dvergr-mage",
+      "dropLinks": [
+        {
+          "name": "Coins",
+          "itemId": "coins"
+        },
+        {
+          "name": "Black Marble",
+          "itemId": "black-marble"
+        },
+        {
+          "name": "Soft Tissue",
+          "itemId": "soft-tissue"
+        },
+        {
+          "name": "Dvergr Trophy",
+          "itemId": "dvergr-trophy"
+        }
+      ]
     },
     "dvergr-rogue": {
       "id": "dvergr-rogue",
@@ -3526,7 +3827,8 @@ window.VC_DATA = {
         "name": "Dvergr Trophy",
         "image": "img/creatures/dvergr-rogue-trophy.png",
         "dropChance": 5,
-        "usage": []
+        "usage": [],
+        "itemId": "dvergr-trophy"
       },
       "summon": null,
       "location": "Mistlands",
@@ -3541,7 +3843,25 @@ window.VC_DATA = {
         "cs": "Dvergský Tulák",
         "ru": "Дверг-разбойник"
       },
-      "calculatorSlug": "dvergr-rogue"
+      "calculatorSlug": "dvergr-rogue",
+      "dropLinks": [
+        {
+          "name": "Coins",
+          "itemId": "coins"
+        },
+        {
+          "name": "Black Marble",
+          "itemId": "black-marble"
+        },
+        {
+          "name": "Soft Tissue",
+          "itemId": "soft-tissue"
+        },
+        {
+          "name": "Dvergr Trophy",
+          "itemId": "dvergr-trophy"
+        }
+      ]
     },
     "eikthyr": {
       "id": "eikthyr",
@@ -3615,7 +3935,8 @@ window.VC_DATA = {
         "dropChance": 100,
         "usage": [
           "Eikthyr Power"
-        ]
+        ],
+        "itemId": "eikthyr-trophy"
       },
       "summon": "Deer Trophy x2",
       "location": "* Meadows",
@@ -3629,7 +3950,21 @@ window.VC_DATA = {
         "fr": "Eikthyr",
         "ru": "Эйктюр"
       },
-      "calculatorSlug": "eikthyr"
+      "calculatorSlug": "eikthyr",
+      "dropLinks": [
+        {
+          "name": "Eikthyr Trophy",
+          "itemId": "eikthyr-trophy"
+        },
+        {
+          "name": "Hard Antler x3",
+          "itemId": "hard-antler"
+        },
+        {
+          "name": "Eikthyr Power",
+          "itemId": null
+        }
+      ]
     },
     "elaking": {
       "id": "elaking",
@@ -3776,7 +4111,8 @@ window.VC_DATA = {
         "name": "Elaking Trophy",
         "image": "img/creatures/elaking-trophy.png",
         "dropChance": 10,
-        "usage": []
+        "usage": [],
+        "itemId": "elaking-trophy"
       },
       "summon": null,
       "location": null,
@@ -3840,7 +4176,21 @@ window.VC_DATA = {
         }
       ],
       "names": {},
-      "calculatorSlug": "elaking"
+      "calculatorSlug": "elaking",
+      "dropLinks": [
+        {
+          "name": "Elaking Hair Bundle",
+          "itemId": "elaking-hair-bundle"
+        },
+        {
+          "name": "Mould Intricate Key",
+          "itemId": "mould-intricate-key"
+        },
+        {
+          "name": "Elaking Trophy",
+          "itemId": "elaking-trophy"
+        }
+      ]
     },
     "eyeless-one": {
       "id": "eyeless-one",
@@ -3951,7 +4301,8 @@ window.VC_DATA = {
         "name": "Eyeless One Trophy",
         "image": "img/creatures/eyeless-one-trophy.png",
         "dropChance": 10,
-        "usage": []
+        "usage": [],
+        "itemId": "eyeless-one-trophy"
       },
       "summon": null,
       "location": "Winding Tunnels",
@@ -3976,7 +4327,21 @@ window.VC_DATA = {
         }
       ],
       "names": {},
-      "calculatorSlug": "eyeless-one"
+      "calculatorSlug": "eyeless-one",
+      "dropLinks": [
+        {
+          "name": "Long Claws",
+          "itemId": "long-claws"
+        },
+        {
+          "name": "Mould Intricate Key",
+          "itemId": "mould-intricate-key"
+        },
+        {
+          "name": "Eyeless One Trophy",
+          "itemId": "eyeless-one-trophy"
+        }
+      ]
     },
     "fader": {
       "id": "fader",
@@ -4098,7 +4463,8 @@ window.VC_DATA = {
         "dropChance": 100,
         "usage": [
           "Fader Power"
-        ]
+        ],
+        "itemId": "fader-trophy"
       },
       "summon": "Bell x3",
       "location": "Ashlands",
@@ -4109,7 +4475,17 @@ window.VC_DATA = {
       "names": {
         "ru": "Прародитель"
       },
-      "calculatorSlug": "fader"
+      "calculatorSlug": "fader",
+      "dropLinks": [
+        {
+          "name": "Kindled Ribs",
+          "itemId": "kindled-ribs"
+        },
+        {
+          "name": "Fader Trophy",
+          "itemId": "fader-trophy"
+        }
+      ]
     },
     "fallen-valkyrie": {
       "id": "fallen-valkyrie",
@@ -4185,7 +4561,8 @@ window.VC_DATA = {
         "dropChance": 5,
         "usage": [
           "Jörmundling"
-        ]
+        ],
+        "itemId": "fallen-valkyrie-trophy"
       },
       "summon": null,
       "location": "Ashlands",
@@ -4201,7 +4578,17 @@ window.VC_DATA = {
         "fr": "Valkyrie déchue",
         "ru": "Падшая валькирия"
       },
-      "calculatorSlug": "fallen-valkyrie"
+      "calculatorSlug": "fallen-valkyrie",
+      "dropLinks": [
+        {
+          "name": "Celestial Feather",
+          "itemId": "celestial-feather"
+        },
+        {
+          "name": "Fallen Valkyrie Trophy",
+          "itemId": "fallen-valkyrie-trophy"
+        }
+      ]
     },
     "fallen-warrior": {
       "id": "fallen-warrior",
@@ -4331,7 +4718,8 @@ window.VC_DATA = {
       "taming": null,
       "raids": [],
       "names": {},
-      "calculatorSlug": "fallen-warrior"
+      "calculatorSlug": "fallen-warrior",
+      "dropLinks": []
     },
     "fenring": {
       "id": "fenring",
@@ -4394,7 +4782,8 @@ window.VC_DATA = {
         "usage": [
           "Cold Fishing Bait",
           "Wolf Sight"
-        ]
+        ],
+        "itemId": "fenring-trophy"
       },
       "summon": null,
       "location": "Mountain",
@@ -4419,7 +4808,17 @@ window.VC_DATA = {
         "fr": "Fenring",
         "ru": "Фенринг"
       },
-      "calculatorSlug": "fenring"
+      "calculatorSlug": "fenring",
+      "dropLinks": [
+        {
+          "name": "Wolf Fang",
+          "itemId": "wolf-fang"
+        },
+        {
+          "name": "Fenring Trophy",
+          "itemId": "fenring-trophy"
+        }
+      ]
     },
     "frysling": {
       "id": "frysling",
@@ -4478,7 +4877,13 @@ window.VC_DATA = {
       "description": "Fryslings are hostile Deep North creatures that attack from range by throwing snowballs. They drop Frostcores, but in the current game version no location or dungeon places Frysling spawners, so they do not appear in normal play; Frostcores are instead found hanging in the Winding",
       "taming": null,
       "raids": [],
-      "names": {}
+      "names": {},
+      "dropLinks": [
+        {
+          "name": "Frostcore",
+          "itemId": "frostcore"
+        }
+      ]
     },
     "fuling": {
       "id": "fuling",
@@ -4631,7 +5036,8 @@ window.VC_DATA = {
         "dropChance": 10,
         "usage": [
           "Stingy Fishing Bait"
-        ]
+        ],
+        "itemId": "fuling-trophy"
       },
       "summon": null,
       "location": "Plains",
@@ -4678,7 +5084,21 @@ window.VC_DATA = {
         "fr": "Gobelin",
         "ru": "Фулинг"
       },
-      "calculatorSlug": "fuling"
+      "calculatorSlug": "fuling",
+      "dropLinks": [
+        {
+          "name": "Black Metal Scrap",
+          "itemId": "black-metal-scrap"
+        },
+        {
+          "name": "Coins",
+          "itemId": "coins"
+        },
+        {
+          "name": "Fuling Trophy",
+          "itemId": "fuling-trophy"
+        }
+      ]
     },
     "fuling-berserker": {
       "id": "fuling-berserker",
@@ -4797,7 +5217,8 @@ window.VC_DATA = {
         "dropChance": 5,
         "usage": [
           "Evasion Mantle"
-        ]
+        ],
+        "itemId": "fuling-berserker-trophy"
       },
       "summon": null,
       "location": "Plains",
@@ -4840,7 +5261,25 @@ window.VC_DATA = {
         "fr": "Berserker Gobelin",
         "ru": "Фулинг-берсерк"
       },
-      "calculatorSlug": "fuling-berserker"
+      "calculatorSlug": "fuling-berserker",
+      "dropLinks": [
+        {
+          "name": "Black Metal Scrap",
+          "itemId": "black-metal-scrap"
+        },
+        {
+          "name": "Coins",
+          "itemId": "coins"
+        },
+        {
+          "name": "Fuling Totem",
+          "itemId": "fuling-totem"
+        },
+        {
+          "name": "Fuling Berserker Trophy",
+          "itemId": "fuling-berserker-trophy"
+        }
+      ]
     },
     "fuling-shaman": {
       "id": "fuling-shaman",
@@ -4908,7 +5347,8 @@ window.VC_DATA = {
         "name": "Fuling Shaman Trophy",
         "image": "img/creatures/fuling-shaman-trophy.png",
         "dropChance": 10,
-        "usage": []
+        "usage": [],
+        "itemId": "fuling-shaman-trophy"
       },
       "summon": null,
       "location": "Plains",
@@ -4940,7 +5380,25 @@ window.VC_DATA = {
         "fr": "Chaman Gobelin",
         "ru": "Фулинг-шаман"
       },
-      "calculatorSlug": "fuling-shaman"
+      "calculatorSlug": "fuling-shaman",
+      "dropLinks": [
+        {
+          "name": "Coins",
+          "itemId": "coins"
+        },
+        {
+          "name": "Black Metal Scrap",
+          "itemId": "black-metal-scrap"
+        },
+        {
+          "name": "Bukeperries",
+          "itemId": "bukeperries"
+        },
+        {
+          "name": "Fuling Shaman Trophy",
+          "itemId": "fuling-shaman-trophy"
+        }
+      ]
     },
     "gammeltroll": {
       "id": "gammeltroll",
@@ -5041,7 +5499,13 @@ window.VC_DATA = {
       "taming": null,
       "raids": [],
       "names": {},
-      "calculatorSlug": "gammeltroll"
+      "calculatorSlug": "gammeltroll",
+      "dropLinks": [
+        {
+          "name": "Petrified Tissue (from the Petrified Gammeltroll)",
+          "itemId": "petrified-tissue"
+        }
+      ]
     },
     "geirrhafa": {
       "id": "geirrhafa",
@@ -5119,7 +5583,8 @@ window.VC_DATA = {
         "name": "Geirrhafa Trophy",
         "image": "img/creatures/geirrhafa-trophy.png",
         "dropChance": 100,
-        "usage": []
+        "usage": [],
+        "itemId": "geirrhafa-trophy"
       },
       "summon": null,
       "location": "Howling Cavern",
@@ -5142,7 +5607,17 @@ window.VC_DATA = {
         "de": "Geirrhafa",
         "ru": "Гейрафа"
       },
-      "calculatorSlug": "geirrhafa"
+      "calculatorSlug": "geirrhafa",
+      "dropLinks": [
+        {
+          "name": "Hildir's silver chest",
+          "itemId": "hildir-s-silver-chest"
+        },
+        {
+          "name": "Geirrhafa Trophy",
+          "itemId": "geirrhafa-trophy"
+        }
+      ]
     },
     "ghost": {
       "id": "ghost",
@@ -5196,7 +5671,8 @@ window.VC_DATA = {
         "name": "Ghost Trophy",
         "image": "img/creatures/ghost-trophy.png",
         "dropChance": 10,
-        "usage": []
+        "usage": [],
+        "itemId": "ghost-trophy"
       },
       "summon": null,
       "location": "Black Forest",
@@ -5230,7 +5706,13 @@ window.VC_DATA = {
         "fr": "Fantôme",
         "ru": "Дух"
       },
-      "calculatorSlug": "ghost"
+      "calculatorSlug": "ghost",
+      "dropLinks": [
+        {
+          "name": "Ectoplasm, Ghost Trophy",
+          "itemId": "ectoplasm-ghost-trophy"
+        }
+      ]
     },
     "giant-herring": {
       "id": "giant-herring",
@@ -5274,7 +5756,8 @@ window.VC_DATA = {
         "de": "Riesenhering",
         "fr": "Guinée saumon",
         "ru": "Гигантская сельдь"
-      }
+      },
+      "dropLinks": []
     },
     "gjall": {
       "id": "gjall",
@@ -5396,7 +5879,8 @@ window.VC_DATA = {
         "dropChance": 30,
         "usage": [
           "Pulsating Earrings"
-        ]
+        ],
+        "itemId": "gjall-trophy"
       },
       "summon": null,
       "location": "Mistlands",
@@ -5427,7 +5911,17 @@ window.VC_DATA = {
         "de": "Gjall",
         "ru": "Гьялль"
       },
-      "calculatorSlug": "gjall"
+      "calculatorSlug": "gjall",
+      "dropLinks": [
+        {
+          "name": "Bilebag",
+          "itemId": "bilebag"
+        },
+        {
+          "name": "Gjall Trophy",
+          "itemId": "gjall-trophy"
+        }
+      ]
     },
     "greydwarf": {
       "id": "greydwarf",
@@ -5535,7 +6029,8 @@ window.VC_DATA = {
         "name": "Greydwarf Trophy",
         "image": "img/creatures/greydwarf-trophy.png",
         "dropChance": 5,
-        "usage": []
+        "usage": [],
+        "itemId": "greydwarf-trophy"
       },
       "summon": null,
       "location": "Black Forest",
@@ -5574,7 +6069,29 @@ window.VC_DATA = {
         "fr": "Naingris",
         "ru": "Грейдворф"
       },
-      "calculatorSlug": "greydwarf"
+      "calculatorSlug": "greydwarf",
+      "dropLinks": [
+        {
+          "name": "Greydwarf Eye",
+          "itemId": "greydwarf-eye"
+        },
+        {
+          "name": "Greydwarf Trophy",
+          "itemId": "greydwarf-trophy"
+        },
+        {
+          "name": "Resin",
+          "itemId": "resin"
+        },
+        {
+          "name": "Stone",
+          "itemId": "stone"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood"
+        }
+      ]
     },
     "greydwarf-deep-north": {
       "id": "greydwarf-deep-north",
@@ -5690,7 +6207,8 @@ window.VC_DATA = {
       "taming": null,
       "raids": [],
       "names": {},
-      "calculatorSlug": "greydwarf-deep-north"
+      "calculatorSlug": "greydwarf-deep-north",
+      "dropLinks": []
     },
     "greydwarf-brute": {
       "id": "greydwarf-brute",
@@ -5777,7 +6295,8 @@ window.VC_DATA = {
         "name": "Greydwarf Brute Trophy",
         "image": "img/creatures/greydwarf-brute-trophy.png",
         "dropChance": 10,
-        "usage": []
+        "usage": [],
+        "itemId": "greydwarf-brute-trophy"
       },
       "summon": null,
       "location": "Black Forest",
@@ -5815,7 +6334,33 @@ window.VC_DATA = {
         "fr": "Brute Naingris",
         "ru": "Грейдворф-дикарь"
       },
-      "calculatorSlug": "greydwarf-brute"
+      "calculatorSlug": "greydwarf-brute",
+      "dropLinks": [
+        {
+          "name": "Ancient Seed",
+          "itemId": "ancient-seed"
+        },
+        {
+          "name": "Dandelion",
+          "itemId": "dandelion"
+        },
+        {
+          "name": "Greydwarf Brute Trophy",
+          "itemId": "greydwarf-brute-trophy"
+        },
+        {
+          "name": "Greydwarf Eye",
+          "itemId": "greydwarf-eye"
+        },
+        {
+          "name": "Stone",
+          "itemId": "stone"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood"
+        }
+      ]
     },
     "greydwarf-shaman": {
       "id": "greydwarf-shaman",
@@ -5941,7 +6486,8 @@ window.VC_DATA = {
         "dropChance": 10,
         "usage": [
           "Heart of the Forest"
-        ]
+        ],
+        "itemId": "greydwarf-shaman-trophy"
       },
       "summon": null,
       "location": "Black Forest",
@@ -5978,7 +6524,29 @@ window.VC_DATA = {
         "fr": "Chaman Naingris",
         "ru": "Грейдворф-шаман"
       },
-      "calculatorSlug": "greydwarf-shaman"
+      "calculatorSlug": "greydwarf-shaman",
+      "dropLinks": [
+        {
+          "name": "Greydwarf Eye",
+          "itemId": "greydwarf-eye"
+        },
+        {
+          "name": "Greydwarf Shaman Trophy",
+          "itemId": "greydwarf-shaman-trophy"
+        },
+        {
+          "name": "Resin",
+          "itemId": "resin"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood"
+        },
+        {
+          "name": "Bukeperries",
+          "itemId": "bukeperries"
+        }
+      ]
     },
     "greydwarf-shaman-deep-north": {
       "id": "greydwarf-shaman-deep-north",
@@ -6094,7 +6662,8 @@ window.VC_DATA = {
         "name": "Greydwarf Shaman Trophy",
         "image": "img/creatures/greydwarf-shaman-deep-north-trophy.png",
         "dropChance": null,
-        "usage": []
+        "usage": [],
+        "itemId": "greydwarf-shaman-trophy"
       },
       "summon": null,
       "location": "Deep North",
@@ -6105,7 +6674,33 @@ window.VC_DATA = {
       "taming": null,
       "raids": [],
       "names": {},
-      "calculatorSlug": "greydwarf-shaman-deep-north"
+      "calculatorSlug": "greydwarf-shaman-deep-north",
+      "dropLinks": [
+        {
+          "name": "Greydwarf Eye",
+          "itemId": "greydwarf-eye"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood"
+        },
+        {
+          "name": "Resin",
+          "itemId": "resin"
+        },
+        {
+          "name": "Bukeperries",
+          "itemId": "bukeperries"
+        },
+        {
+          "name": "Ice",
+          "itemId": "ice"
+        },
+        {
+          "name": "Greydwarf Shaman Trophy",
+          "itemId": "greydwarf-shaman-trophy"
+        }
+      ]
     },
     "greyling": {
       "id": "greyling",
@@ -6169,7 +6764,13 @@ window.VC_DATA = {
         "fr": "Bourgeon Naingris",
         "ru": "Грейлинг"
       },
-      "calculatorSlug": "greyling"
+      "calculatorSlug": "greyling",
+      "dropLinks": [
+        {
+          "name": "Resin",
+          "itemId": "resin"
+        }
+      ]
     },
     "grouper": {
       "id": "grouper",
@@ -6213,7 +6814,8 @@ window.VC_DATA = {
         "de": "Zackenbarsch",
         "fr": "Mérou",
         "ru": "Групер"
-      }
+      },
+      "dropLinks": []
     },
     "growth": {
       "id": "growth",
@@ -6274,7 +6876,8 @@ window.VC_DATA = {
         "dropChance": 10,
         "usage": [
           "Blob Bombs"
-        ]
+        ],
+        "itemId": "growth-trophy"
       },
       "summon": null,
       "location": "Plains",
@@ -6291,7 +6894,17 @@ window.VC_DATA = {
         "fr": "Growth",
         "ru": "Поросль"
       },
-      "calculatorSlug": "growth"
+      "calculatorSlug": "growth",
+      "dropLinks": [
+        {
+          "name": "Tar",
+          "itemId": "tar"
+        },
+        {
+          "name": "Growth Trophy",
+          "itemId": "growth-trophy"
+        }
+      ]
     },
     "gull": {
       "id": "gull",
@@ -6331,10 +6944,11 @@ window.VC_DATA = {
         "Feathers"
       ],
       "trophy": {
-        "name": "Gull trophy currently no trophy-->",
+        "name": "Gull trophy",
         "image": null,
         "dropChance": null,
-        "usage": []
+        "usage": [],
+        "itemId": null
       },
       "summon": null,
       "location": "* Meadows\n* Black Forest\n* Plains\n* Ocean",
@@ -6347,7 +6961,13 @@ window.VC_DATA = {
         "de": "Möwe",
         "fr": "Mouette",
         "ru": "Чайка"
-      }
+      },
+      "dropLinks": [
+        {
+          "name": "Feathers",
+          "itemId": "feathers"
+        }
+      ]
     },
     "hare": {
       "id": "hare",
@@ -6405,7 +7025,8 @@ window.VC_DATA = {
         "name": "Hare Trophy",
         "image": "img/creatures/hare-trophy.png",
         "dropChance": 5,
-        "usage": []
+        "usage": [],
+        "itemId": "hare-trophy"
       },
       "summon": null,
       "location": "Mistlands",
@@ -6421,7 +7042,21 @@ window.VC_DATA = {
         "de": "Hase",
         "fr": "Lièvre",
         "ru": "Заяц"
-      }
+      },
+      "dropLinks": [
+        {
+          "name": "Hare Meat",
+          "itemId": "hare-meat"
+        },
+        {
+          "name": "Scale Hide",
+          "itemId": "scale-hide"
+        },
+        {
+          "name": "Hare Trophy",
+          "itemId": "hare-trophy"
+        }
+      ]
     },
     "hen": {
       "id": "hen",
@@ -6491,7 +7126,17 @@ window.VC_DATA = {
         "cs": "Slepice",
         "de": "Henne",
         "ru": "Курица"
-      }
+      },
+      "dropLinks": [
+        {
+          "name": "Feathers",
+          "itemId": "feathers"
+        },
+        {
+          "name": "Chicken Meat",
+          "itemId": "chicken-meat"
+        }
+      ]
     },
     "hexen": {
       "id": "hexen",
@@ -6609,7 +7254,8 @@ window.VC_DATA = {
         "usage": [
           "Northern Vengeance",
           "Witch Crown"
-        ]
+        ],
+        "itemId": "hexen-trophy"
       },
       "summon": null,
       "location": "Mörkhalla, Jotun Invasions",
@@ -6641,7 +7287,33 @@ window.VC_DATA = {
         }
       ],
       "names": {},
-      "calculatorSlug": "hexen"
+      "calculatorSlug": "hexen",
+      "dropLinks": [
+        {
+          "name": "Nornathread",
+          "itemId": "nornathread"
+        },
+        {
+          "name": "Hexen Trophy",
+          "itemId": "hexen-trophy"
+        },
+        {
+          "name": "Intricate Key",
+          "itemId": "intricate-key"
+        },
+        {
+          "name": "Mould Robes of the Caller",
+          "itemId": "mould-robes-of-the-caller"
+        },
+        {
+          "name": "Mould Headdress of the Caller",
+          "itemId": "mould-headdress-of-the-caller"
+        },
+        {
+          "name": "Mould Trousers of the Caller",
+          "itemId": "mould-trousers-of-the-caller"
+        }
+      ]
     },
     "imprisoned-dvergr": {
       "id": "imprisoned-dvergr",
@@ -6748,7 +7420,8 @@ window.VC_DATA = {
         "name": "Dvergr Trophy",
         "image": "img/creatures/imprisoned-dvergr-trophy.png",
         "dropChance": null,
-        "usage": []
+        "usage": [],
+        "itemId": "dvergr-trophy"
       },
       "summon": null,
       "location": "Mörkhalla",
@@ -6758,7 +7431,33 @@ window.VC_DATA = {
       "description": "Imprisoned Dvergr are neutral Deep North creatures found in",
       "taming": null,
       "raids": [],
-      "names": {}
+      "names": {},
+      "dropLinks": [
+        {
+          "name": "Coins",
+          "itemId": "coins"
+        },
+        {
+          "name": "Grimvarn",
+          "itemId": "grimvarn"
+        },
+        {
+          "name": "Solryth",
+          "itemId": "solryth"
+        },
+        {
+          "name": "Veydris",
+          "itemId": "veydris"
+        },
+        {
+          "name": "Draumyx",
+          "itemId": "draumyx"
+        },
+        {
+          "name": "Dvergr Trophy",
+          "itemId": "dvergr-trophy"
+        }
+      ]
     },
     "kall-fimbulbringer": {
       "id": "kall-fimbulbringer",
@@ -6930,7 +7629,17 @@ window.VC_DATA = {
       "taming": null,
       "raids": [],
       "names": {},
-      "calculatorSlug": "kall-fimbulbringer"
+      "calculatorSlug": "kall-fimbulbringer",
+      "dropLinks": [
+        {
+          "name": "Sacrificial Blood",
+          "itemId": "sacrificial-blood"
+        },
+        {
+          "name": "Crown Jewel",
+          "itemId": "crown-jewel"
+        }
+      ]
     },
     "krigen": {
       "id": "krigen",
@@ -7326,7 +8035,8 @@ window.VC_DATA = {
         "name": "Krigen Trophy",
         "image": "img/creatures/krigen-trophy.png",
         "dropChance": 10,
-        "usage": []
+        "usage": [],
+        "itemId": "krigen-trophy"
       },
       "summon": null,
       "location": "Mörkhalla, Jotun Invasions",
@@ -7378,7 +8088,45 @@ window.VC_DATA = {
         }
       ],
       "names": {},
-      "calculatorSlug": "krigen"
+      "calculatorSlug": "krigen",
+      "dropLinks": [
+        {
+          "name": "Mould Breastplate of the Protector",
+          "itemId": "mould-breastplate-of-the-protector"
+        },
+        {
+          "name": "Mould Helmet of the Protector",
+          "itemId": "mould-helmet-of-the-protector"
+        },
+        {
+          "name": "Mould Trousers of the Protector",
+          "itemId": "mould-trousers-of-the-protector"
+        },
+        {
+          "name": "Mould Chestpiece of the Vanguard",
+          "itemId": "mould-chestpiece-of-the-vanguard"
+        },
+        {
+          "name": "Mould Hood of the Vanguard",
+          "itemId": "mould-hood-of-the-vanguard"
+        },
+        {
+          "name": "Mould Trousers of the Vanguard",
+          "itemId": "mould-trousers-of-the-vanguard"
+        },
+        {
+          "name": "Memorial Coal",
+          "itemId": "memorial-coal"
+        },
+        {
+          "name": "Krigen Trophy",
+          "itemId": "krigen-trophy"
+        },
+        {
+          "name": "Leather Straps",
+          "itemId": "leather-straps"
+        }
+      ]
     },
     "kvastur": {
       "id": "kvastur",
@@ -7434,7 +8182,8 @@ window.VC_DATA = {
         "name": "Kvastur Trophy",
         "image": "img/creatures/kvastur-trophy.png",
         "dropChance": 100,
-        "usage": []
+        "usage": [],
+        "itemId": "kvastur-trophy"
       },
       "summon": null,
       "location": "Swamp",
@@ -7445,7 +8194,21 @@ window.VC_DATA = {
       "names": {
         "ru": "Квастур"
       },
-      "calculatorSlug": "kvastur"
+      "calculatorSlug": "kvastur",
+      "dropLinks": [
+        {
+          "name": "Resin",
+          "itemId": "resin"
+        },
+        {
+          "name": "Wood",
+          "itemId": "wood"
+        },
+        {
+          "name": "Kvastur Trophy",
+          "itemId": "kvastur-trophy"
+        }
+      ]
     },
     "lava-blob": {
       "id": "lava-blob",
@@ -7502,7 +8265,8 @@ window.VC_DATA = {
         "name": "Lava Blob Trophy",
         "image": "img/creatures/lava-blob-trophy.png",
         "dropChance": 10,
-        "usage": []
+        "usage": [],
+        "itemId": "lava-blob-trophy"
       },
       "summon": null,
       "location": "Ashlands",
@@ -7516,7 +8280,17 @@ window.VC_DATA = {
       "names": {
         "ru": "Лавовый сгустень"
       },
-      "calculatorSlug": "lava-blob"
+      "calculatorSlug": "lava-blob",
+      "dropLinks": [
+        {
+          "name": "Proustite Powder",
+          "itemId": "proustite-powder"
+        },
+        {
+          "name": "Sulfur",
+          "itemId": "sulfur"
+        }
+      ]
     },
     "leech": {
       "id": "leech",
@@ -7606,7 +8380,8 @@ window.VC_DATA = {
         "dropChance": 10,
         "usage": [
           "Iron Brooch"
-        ]
+        ],
+        "itemId": "leech-trophy"
       },
       "summon": null,
       "location": "Swamp",
@@ -7622,7 +8397,17 @@ window.VC_DATA = {
         "fr": "Sangsue",
         "ru": "Пиявка"
       },
-      "calculatorSlug": "leech"
+      "calculatorSlug": "leech",
+      "dropLinks": [
+        {
+          "name": "Bloodbag",
+          "itemId": "bloodbag"
+        },
+        {
+          "name": "Leech Trophy",
+          "itemId": "leech-trophy"
+        }
+      ]
     },
     "leviathan": {
       "id": "leviathan",
@@ -7667,7 +8452,13 @@ window.VC_DATA = {
         "cs": "Leviatan",
         "de": "Leviathan",
         "ru": "Левиафан"
-      }
+      },
+      "dropLinks": [
+        {
+          "name": "Chitin (from barnacles)",
+          "itemId": "chitin"
+        }
+      ]
     },
     "lord-reto": {
       "id": "lord-reto",
@@ -7749,7 +8540,8 @@ window.VC_DATA = {
       "names": {
         "ru": "Владыка Рето"
       },
-      "calculatorSlug": "lord-reto"
+      "calculatorSlug": "lord-reto",
+      "dropLinks": []
     },
     "lox": {
       "id": "lox",
@@ -7818,7 +8610,8 @@ window.VC_DATA = {
         "usage": [
           "Misty Fishing Bait",
           "Bracelets of the Brave"
-        ]
+        ],
+        "itemId": "lox-trophy"
       },
       "summon": null,
       "location": "Plains",
@@ -7844,7 +8637,21 @@ window.VC_DATA = {
         "fr": "Lox",
         "ru": "Быкоящер"
       },
-      "calculatorSlug": "lox"
+      "calculatorSlug": "lox",
+      "dropLinks": [
+        {
+          "name": "Lox Meat",
+          "itemId": "lox-meat"
+        },
+        {
+          "name": "Lox Pelt",
+          "itemId": "lox-pelt"
+        },
+        {
+          "name": "Lox Trophy",
+          "itemId": "lox-trophy"
+        }
+      ]
     },
     "magmafish": {
       "id": "magmafish",
@@ -7888,7 +8695,8 @@ window.VC_DATA = {
         "de": "Magmafisch",
         "fr": "Poisson-magma",
         "ru": "Магмарыбка"
-      }
+      },
+      "dropLinks": []
     },
     "mistile": {
       "id": "mistile",
@@ -7934,7 +8742,8 @@ window.VC_DATA = {
         "name": "Mistile trophy",
         "image": null,
         "dropChance": null,
-        "usage": []
+        "usage": [],
+        "itemId": "mistile-trophy"
       },
       "summon": null,
       "location": "Mistlands",
@@ -7942,7 +8751,8 @@ window.VC_DATA = {
       "description": "Mistiles are homing balls of light spawned exclusively by Dvergr Mages. They deal blunt damage upon contact with the enemy. They can be targeted by the player's ranged and melee weapons, and disperse harmlessly if",
       "taming": null,
       "raids": [],
-      "names": {}
+      "names": {},
+      "dropLinks": []
     },
     "moder": {
       "id": "moder",
@@ -8037,7 +8847,8 @@ window.VC_DATA = {
         "dropChance": 100,
         "usage": [
           "Moder Power"
-        ]
+        ],
+        "itemId": "moder-trophy"
       },
       "summon": "Dragon Egg x3",
       "location": "* Mountain",
@@ -8050,7 +8861,21 @@ window.VC_DATA = {
         "de": "Drachenmutter",
         "ru": "Матерь"
       },
-      "calculatorSlug": "moder"
+      "calculatorSlug": "moder",
+      "dropLinks": [
+        {
+          "name": "Dragon Tear",
+          "itemId": "dragon-tear"
+        },
+        {
+          "name": "Moder Trophy",
+          "itemId": "moder-trophy"
+        },
+        {
+          "name": "Moder Power",
+          "itemId": null
+        }
+      ]
     },
     "moose": {
       "id": "moose",
@@ -8128,7 +8953,8 @@ window.VC_DATA = {
           "Neckstabber",
           "Spirit Caller",
           "Antler Throne"
-        ]
+        ],
+        "itemId": "moose-trophy"
       },
       "summon": null,
       "location": "Deep North",
@@ -8145,7 +8971,25 @@ window.VC_DATA = {
       },
       "raids": [],
       "names": {},
-      "calculatorSlug": "moose"
+      "calculatorSlug": "moose",
+      "dropLinks": [
+        {
+          "name": "Moose Meat",
+          "itemId": "moose-meat"
+        },
+        {
+          "name": "Moose Hide",
+          "itemId": "moose-hide"
+        },
+        {
+          "name": "Moose Sinew",
+          "itemId": "moose-sinew"
+        },
+        {
+          "name": "Moose Trophy",
+          "itemId": "moose-trophy"
+        }
+      ]
     },
     "moose-calf": {
       "id": "moose-calf",
@@ -8210,7 +9054,13 @@ window.VC_DATA = {
       "description": "The Moose Calf is the young form of the Moose, found in the Deep North. It grows into an adult Moose after 3,000 seconds (50 minutes). A calf born to a tamed Moose stays tamed when it grows",
       "taming": null,
       "raids": [],
-      "names": {}
+      "names": {},
+      "dropLinks": [
+        {
+          "name": "None",
+          "itemId": null
+        }
+      ]
     },
     "morgen": {
       "id": "morgen",
@@ -8410,7 +9260,8 @@ window.VC_DATA = {
         "dropChance": 5,
         "usage": [
           "Brimstone"
-        ]
+        ],
+        "itemId": "morgen-trophy"
       },
       "summon": null,
       "location": "Ashlands",
@@ -8425,7 +9276,21 @@ window.VC_DATA = {
       "names": {
         "ru": "Морген"
       },
-      "calculatorSlug": "morgen"
+      "calculatorSlug": "morgen",
+      "dropLinks": [
+        {
+          "name": "Morgen Sinew",
+          "itemId": "morgen-sinew"
+        },
+        {
+          "name": "Morgen Heart",
+          "itemId": "morgen-heart"
+        },
+        {
+          "name": "Morgen Trophy",
+          "itemId": "morgen-trophy"
+        }
+      ]
     },
     "neck": {
       "id": "neck",
@@ -8508,7 +9373,8 @@ window.VC_DATA = {
         "name": "Neck Trophy",
         "image": "img/creatures/neck-trophy.png",
         "dropChance": 5,
-        "usage": []
+        "usage": [],
+        "itemId": "neck-trophy"
       },
       "summon": null,
       "location": "Meadows",
@@ -8542,7 +9408,17 @@ window.VC_DATA = {
         "pt": "Lagarto",
         "ru": "Никс"
       },
-      "calculatorSlug": "neck"
+      "calculatorSlug": "neck",
+      "dropLinks": [
+        {
+          "name": "Neck Tail",
+          "itemId": "neck-tail"
+        },
+        {
+          "name": "Neck Trophy",
+          "itemId": "neck-trophy"
+        }
+      ]
     },
     "northern-salmon": {
       "id": "northern-salmon",
@@ -8586,7 +9462,8 @@ window.VC_DATA = {
         "de": "Nordlachs",
         "fr": "Saumon nordique",
         "ru": "Северный лосось"
-      }
+      },
+      "dropLinks": []
     },
     "oozer": {
       "id": "oozer",
@@ -8674,7 +9551,17 @@ window.VC_DATA = {
         "fr": "Oozer",
         "ru": "Слизняк"
       },
-      "calculatorSlug": "oozer"
+      "calculatorSlug": "oozer",
+      "dropLinks": [
+        {
+          "name": "Ooze",
+          "itemId": "ooze"
+        },
+        {
+          "name": "Scrap Iron",
+          "itemId": "scrap-iron"
+        }
+      ]
     },
     "perch": {
       "id": "perch",
@@ -8719,7 +9606,8 @@ window.VC_DATA = {
         "de": "Barsch",
         "fr": "Perche",
         "ru": "Окунь"
-      }
+      },
+      "dropLinks": []
     },
     "pike": {
       "id": "pike",
@@ -8764,7 +9652,8 @@ window.VC_DATA = {
         "de": "Hecht",
         "fr": "Brochet",
         "ru": "Щука"
-      }
+      },
+      "dropLinks": []
     },
     "pufferfish": {
       "id": "pufferfish",
@@ -8809,7 +9698,8 @@ window.VC_DATA = {
         "de": "Kugelfisch",
         "fr": "Poisson-globe",
         "ru": "Иглобрюх"
-      }
+      },
+      "dropLinks": []
     },
     "rancid-remains": {
       "id": "rancid-remains",
@@ -8897,7 +9787,8 @@ window.VC_DATA = {
         "name": "Rancid Remains Trophy",
         "image": "img/creatures/rancid-remains-trophy.png",
         "dropChance": 10,
-        "usage": []
+        "usage": [],
+        "itemId": "rancid-remains-trophy"
       },
       "summon": null,
       "location": "Black Forest",
@@ -8945,7 +9836,17 @@ window.VC_DATA = {
         "fr": "Cadavre rance",
         "ru": "Сгнившие останки"
       },
-      "calculatorSlug": "rancid-remains"
+      "calculatorSlug": "rancid-remains",
+      "dropLinks": [
+        {
+          "name": "Bone Fragments",
+          "itemId": "bone-fragments"
+        },
+        {
+          "name": "Rancid Remains Trophy",
+          "itemId": "rancid-remains-trophy"
+        }
+      ]
     },
     "seal": {
       "id": "seal",
@@ -9004,7 +9905,8 @@ window.VC_DATA = {
         "name": "Seal Trophy",
         "image": "img/creatures/seal-trophy.png",
         "dropChance": 10,
-        "usage": []
+        "usage": [],
+        "itemId": "seal-trophy"
       },
       "summon": null,
       "location": "Deep North",
@@ -9015,7 +9917,21 @@ window.VC_DATA = {
       "description": "}} }} Seals are passive creatures found on the shores and Abandoned Villages of the Deep North. They come in 0, 1 and 2-star",
       "taming": null,
       "raids": [],
-      "names": {}
+      "names": {},
+      "dropLinks": [
+        {
+          "name": "Seal Pelt",
+          "itemId": "seal-pelt"
+        },
+        {
+          "name": "Seal Blubber",
+          "itemId": "seal-blubber"
+        },
+        {
+          "name": "Seal Trophy",
+          "itemId": "seal-trophy"
+        }
+      ]
     },
     "seeker": {
       "id": "seeker",
@@ -9170,7 +10086,8 @@ window.VC_DATA = {
         "dropChance": 5,
         "usage": [
           "Resounding Shackle"
-        ]
+        ],
+        "itemId": "seeker-trophy"
       },
       "summon": null,
       "location": "Mistlands",
@@ -9209,7 +10126,21 @@ window.VC_DATA = {
         "fr": "Fouineur",
         "ru": "Искатель"
       },
-      "calculatorSlug": "seeker"
+      "calculatorSlug": "seeker",
+      "dropLinks": [
+        {
+          "name": "Seeker Meat",
+          "itemId": "seeker-meat"
+        },
+        {
+          "name": "Carapace",
+          "itemId": "carapace"
+        },
+        {
+          "name": "Seeker Trophy",
+          "itemId": "seeker-trophy"
+        }
+      ]
     },
     "seeker-brood": {
       "id": "seeker-brood",
@@ -9293,7 +10224,13 @@ window.VC_DATA = {
         "fr": "Fouineur",
         "ru": "Выводок искателя"
       },
-      "calculatorSlug": "seeker-brood"
+      "calculatorSlug": "seeker-brood",
+      "dropLinks": [
+        {
+          "name": "Royal Jelly",
+          "itemId": "royal-jelly"
+        }
+      ]
     },
     "seeker-soldier": {
       "id": "seeker-soldier",
@@ -9450,7 +10387,8 @@ window.VC_DATA = {
         "dropChance": 5,
         "usage": [
           "Re-summoning The Queen"
-        ]
+        ],
+        "itemId": "seeker-soldier-trophy"
       },
       "summon": null,
       "location": "Mistlands",
@@ -9484,7 +10422,25 @@ window.VC_DATA = {
         "cs": "Voják Hledačů",
         "ru": "Искатель-солдат"
       },
-      "calculatorSlug": "seeker-soldier"
+      "calculatorSlug": "seeker-soldier",
+      "dropLinks": [
+        {
+          "name": "Carapace",
+          "itemId": "carapace"
+        },
+        {
+          "name": "Mandible",
+          "itemId": "mandible"
+        },
+        {
+          "name": "Seeker Meat",
+          "itemId": "seeker-meat"
+        },
+        {
+          "name": "Seeker Soldier Trophy",
+          "itemId": "seeker-soldier-trophy"
+        }
+      ]
     },
     "serpent": {
       "id": "serpent",
@@ -9544,7 +10500,8 @@ window.VC_DATA = {
         "usage": [
           "Fins of Destiny",
           "Heavy Fishing Bait"
-        ]
+        ],
+        "itemId": "serpent-trophy"
       },
       "summon": null,
       "location": "Ocean",
@@ -9559,7 +10516,21 @@ window.VC_DATA = {
         "fr": "Serpent",
         "ru": "Змей"
       },
-      "calculatorSlug": "serpent"
+      "calculatorSlug": "serpent",
+      "dropLinks": [
+        {
+          "name": "Serpent Meat",
+          "itemId": "serpent-meat"
+        },
+        {
+          "name": "Serpent Scale",
+          "itemId": "serpent-scale"
+        },
+        {
+          "name": "Serpent Trophy",
+          "itemId": "serpent-trophy"
+        }
+      ]
     },
     "shadow": {
       "id": "shadow",
@@ -9609,7 +10580,8 @@ window.VC_DATA = {
       "description": "Shadow are the souls of fallen warriors, They are found in Abandoned Villages and sometime roaming in Deep North during the",
       "taming": null,
       "raids": [],
-      "names": {}
+      "names": {},
+      "dropLinks": []
     },
     "shapeless-pulp": {
       "id": "shapeless-pulp",
@@ -9704,7 +10676,8 @@ window.VC_DATA = {
         "dropChance": 10,
         "usage": [
           "Blob Bomb: Pulp"
-        ]
+        ],
+        "itemId": "pulp-trophy"
       },
       "summon": null,
       "location": "Mörkhalla",
@@ -9716,7 +10689,21 @@ window.VC_DATA = {
       "taming": null,
       "raids": [],
       "names": {},
-      "calculatorSlug": "shapeless-pulp"
+      "calculatorSlug": "shapeless-pulp",
+      "dropLinks": [
+        {
+          "name": "Tiny Pulp",
+          "itemId": "tiny-pulp"
+        },
+        {
+          "name": "Dead Pulp",
+          "itemId": "dead-pulp"
+        },
+        {
+          "name": "Pulp Trophy",
+          "itemId": "pulp-trophy"
+        }
+      ]
     },
     "skeleton": {
       "id": "skeleton",
@@ -10011,7 +10998,8 @@ window.VC_DATA = {
           "Unfading Candles",
           "Bone Tower Shield",
           "Dead Raiser"
-        ]
+        ],
+        "itemId": "skeleton-trophy"
       },
       "summon": null,
       "location": "Meadows, Black Forest, Swamp, Mountain, Deep North",
@@ -10088,7 +11076,17 @@ window.VC_DATA = {
         "fr": "Squelette",
         "ru": "Скелет"
       },
-      "calculatorSlug": "skeleton"
+      "calculatorSlug": "skeleton",
+      "dropLinks": [
+        {
+          "name": "Bone Fragments",
+          "itemId": "bone-fragments"
+        },
+        {
+          "name": "Skeleton Trophy",
+          "itemId": "skeleton-trophy"
+        }
+      ]
     },
     "skugg": {
       "id": "skugg",
@@ -10151,7 +11149,17 @@ window.VC_DATA = {
       "names": {
         "ru": "Скугг"
       },
-      "calculatorSlug": "skugg"
+      "calculatorSlug": "skugg",
+      "dropLinks": [
+        {
+          "name": "Bone Fragments",
+          "itemId": "bone-fragments"
+        },
+        {
+          "name": "Charred Cogwheel",
+          "itemId": "charred-cogwheel"
+        }
+      ]
     },
     "stone-golem": {
       "id": "stone-golem",
@@ -10245,7 +11253,8 @@ window.VC_DATA = {
         "dropChance": 5,
         "usage": [
           "Crystal Heart"
-        ]
+        ],
+        "itemId": "stone-golem-trophy"
       },
       "summon": null,
       "location": "Mountain",
@@ -10261,7 +11270,21 @@ window.VC_DATA = {
         "fr": "Golem de pierre",
         "ru": "Каменный голем"
       },
-      "calculatorSlug": "stone-golem"
+      "calculatorSlug": "stone-golem",
+      "dropLinks": [
+        {
+          "name": "Crystal",
+          "itemId": "crystal"
+        },
+        {
+          "name": "Stone",
+          "itemId": "stone"
+        },
+        {
+          "name": "Stone Golem Trophy",
+          "itemId": "stone-golem-trophy"
+        }
+      ]
     },
     "surtling": {
       "id": "surtling",
@@ -10353,7 +11376,8 @@ window.VC_DATA = {
         "dropChance": 5,
         "usage": [
           "Nimble Anklet"
-        ]
+        ],
+        "itemId": "surtling-trophy"
       },
       "summon": null,
       "location": "Swamp",
@@ -10386,7 +11410,21 @@ window.VC_DATA = {
         "fr": "Surtling",
         "ru": "Суртлинг"
       },
-      "calculatorSlug": "surtling"
+      "calculatorSlug": "surtling",
+      "dropLinks": [
+        {
+          "name": "Surtling Core",
+          "itemId": "surtling-core"
+        },
+        {
+          "name": "Coal",
+          "itemId": "coal"
+        },
+        {
+          "name": "Surtling Trophy",
+          "itemId": "surtling-trophy"
+        }
+      ]
     },
     "tetra": {
       "id": "tetra",
@@ -10430,7 +11468,8 @@ window.VC_DATA = {
         "de": "Salmler",
         "fr": "Tétra",
         "ru": "Тетра"
-      }
+      },
+      "dropLinks": []
     },
     "the-elder": {
       "id": "the-elder",
@@ -10501,7 +11540,8 @@ window.VC_DATA = {
         "dropChance": 100,
         "usage": [
           "The Elder Power"
-        ]
+        ],
+        "itemId": "the-elder-trophy"
       },
       "summon": "Ancient Seed x3",
       "location": "* Black Forest",
@@ -10515,7 +11555,21 @@ window.VC_DATA = {
         "fr": "L'Aîné",
         "ru": "Древний"
       },
-      "calculatorSlug": "the-elder"
+      "calculatorSlug": "the-elder",
+      "dropLinks": [
+        {
+          "name": "The Elder Trophy",
+          "itemId": "the-elder-trophy"
+        },
+        {
+          "name": "Swamp Key",
+          "itemId": "swamp-key"
+        },
+        {
+          "name": "The Elder Power",
+          "itemId": null
+        }
+      ]
     },
     "the-queen": {
       "id": "the-queen",
@@ -10616,7 +11670,8 @@ window.VC_DATA = {
         "dropChance": 100,
         "usage": [
           "The Queen's Power"
-        ]
+        ],
+        "itemId": "the-queen-trophy"
       },
       "summon": null,
       "location": "Mistlands",
@@ -10628,7 +11683,21 @@ window.VC_DATA = {
         "cs": "Královna",
         "ru": "Королева"
       },
-      "calculatorSlug": "the-queen"
+      "calculatorSlug": "the-queen",
+      "dropLinks": [
+        {
+          "name": "Majestic Carapace",
+          "itemId": "majestic-carapace"
+        },
+        {
+          "name": "The Queen Trophy",
+          "itemId": "the-queen-trophy"
+        },
+        {
+          "name": "The Queen's Power",
+          "itemId": null
+        }
+      ]
     },
     "tick": {
       "id": "tick",
@@ -10710,7 +11779,8 @@ window.VC_DATA = {
         "name": "Tick Trophy",
         "image": "img/creatures/tick-trophy.png",
         "dropChance": 5,
-        "usage": []
+        "usage": [],
+        "itemId": "tick-trophy"
       },
       "summon": null,
       "location": "Mistlands",
@@ -10743,7 +11813,17 @@ window.VC_DATA = {
         "cs": "Klíště",
         "ru": "Клещ"
       },
-      "calculatorSlug": "tick"
+      "calculatorSlug": "tick",
+      "dropLinks": [
+        {
+          "name": "Blood Clot",
+          "itemId": "blood-clot"
+        },
+        {
+          "name": "Tick Trophy",
+          "itemId": "tick-trophy"
+        }
+      ]
     },
     "tiny-pulp": {
       "id": "tiny-pulp",
@@ -10797,7 +11877,13 @@ window.VC_DATA = {
       "taming": null,
       "raids": [],
       "names": {},
-      "calculatorSlug": "tiny-pulp"
+      "calculatorSlug": "tiny-pulp",
+      "dropLinks": [
+        {
+          "name": "Dead Pulp",
+          "itemId": "dead-pulp"
+        }
+      ]
     },
     "troll": {
       "id": "troll",
@@ -11039,7 +12125,8 @@ window.VC_DATA = {
         "usage": [
           "Mossy Fishing Bait",
           "Trollstav"
-        ]
+        ],
+        "itemId": "troll-trophy"
       },
       "summon": null,
       "location": "Black Forest",
@@ -11075,7 +12162,21 @@ window.VC_DATA = {
         "fr": "Troll",
         "ru": "Тролль"
       },
-      "calculatorSlug": "troll"
+      "calculatorSlug": "troll",
+      "dropLinks": [
+        {
+          "name": "Coins",
+          "itemId": "coins"
+        },
+        {
+          "name": "Troll Hide",
+          "itemId": "troll-hide"
+        },
+        {
+          "name": "Troll Trophy",
+          "itemId": "troll-trophy"
+        }
+      ]
     },
     "trollfish": {
       "id": "trollfish",
@@ -11119,7 +12220,8 @@ window.VC_DATA = {
         "de": "Trollfisch",
         "fr": "Poisson-troll",
         "ru": "Тролль-рыба"
-      }
+      },
+      "dropLinks": []
     },
     "tuna": {
       "id": "tuna",
@@ -11163,7 +12265,8 @@ window.VC_DATA = {
         "de": "Thunfisch",
         "fr": "Thon",
         "ru": "Тунец"
-      }
+      },
+      "dropLinks": []
     },
     "ulv": {
       "id": "ulv",
@@ -11245,7 +12348,8 @@ window.VC_DATA = {
         "name": "Ulv Trophy",
         "image": "img/creatures/ulv-trophy.png",
         "dropChance": 10,
-        "usage": []
+        "usage": [],
+        "itemId": "ulv-trophy"
       },
       "summon": null,
       "location": "Mountain",
@@ -11261,7 +12365,17 @@ window.VC_DATA = {
         "de": "Ulv",
         "ru": "Ульв"
       },
-      "calculatorSlug": "ulv"
+      "calculatorSlug": "ulv",
+      "dropLinks": [
+        {
+          "name": "Ulv Trophy",
+          "itemId": "ulv-trophy"
+        },
+        {
+          "name": "Wolf Fang",
+          "itemId": "wolf-fang"
+        }
+      ]
     },
     "vile": {
       "id": "vile",
@@ -11361,7 +12475,8 @@ window.VC_DATA = {
         "dropChance": 10,
         "usage": [
           "Vilebone Visage"
-        ]
+        ],
+        "itemId": "vile-trophy"
       },
       "summon": null,
       "location": "Plains",
@@ -11375,7 +12490,29 @@ window.VC_DATA = {
         "cs": "Děs",
         "ru": "Гнилолап"
       },
-      "calculatorSlug": "vile"
+      "calculatorSlug": "vile",
+      "dropLinks": [
+        {
+          "name": "Bear Hide",
+          "itemId": "bear-hide"
+        },
+        {
+          "name": "Bear Meat",
+          "itemId": "bear-meat"
+        },
+        {
+          "name": "Rotten Meat",
+          "itemId": "rotten-meat"
+        },
+        {
+          "name": "Vile Ribcage",
+          "itemId": "vile-ribcage"
+        },
+        {
+          "name": "Vile Trophy",
+          "itemId": "vile-trophy"
+        }
+      ]
     },
     "volture": {
       "id": "volture",
@@ -11429,7 +12566,8 @@ window.VC_DATA = {
         "name": "Volture Trophy",
         "image": "img/creatures/volture-trophy.png",
         "dropChance": 10,
-        "usage": []
+        "usage": [],
+        "itemId": "volture-trophy"
       },
       "summon": null,
       "location": "Ashlands",
@@ -11443,7 +12581,25 @@ window.VC_DATA = {
       "names": {
         "ru": "Стервулканник"
       },
-      "calculatorSlug": "volture"
+      "calculatorSlug": "volture",
+      "dropLinks": [
+        {
+          "name": "Volture Meat",
+          "itemId": "volture-meat"
+        },
+        {
+          "name": "Volture egg",
+          "itemId": "volture-egg"
+        },
+        {
+          "name": "Feathers",
+          "itemId": "feathers"
+        },
+        {
+          "name": "Volture Trophy",
+          "itemId": "volture-trophy"
+        }
+      ]
     },
     "wolf": {
       "id": "wolf",
@@ -11528,7 +12684,8 @@ window.VC_DATA = {
         "dropChance": 10,
         "usage": [
           "Wolf Fur Cape"
-        ]
+        ],
+        "itemId": "wolf-trophy"
       },
       "summon": null,
       "location": "Mountain",
@@ -11573,7 +12730,25 @@ window.VC_DATA = {
         "fr": "Loup",
         "ru": "Волк"
       },
-      "calculatorSlug": "wolf"
+      "calculatorSlug": "wolf",
+      "dropLinks": [
+        {
+          "name": "Wolf Meat",
+          "itemId": "wolf-meat"
+        },
+        {
+          "name": "Wolf Fang",
+          "itemId": "wolf-fang"
+        },
+        {
+          "name": "Wolf Pelt",
+          "itemId": "wolf-pelt"
+        },
+        {
+          "name": "Wolf Trophy",
+          "itemId": "wolf-trophy"
+        }
+      ]
     },
     "wraith": {
       "id": "wraith",
@@ -11630,7 +12805,8 @@ window.VC_DATA = {
         "name": "Wraith Trophy",
         "image": "img/creatures/wraith-trophy.png",
         "dropChance": 5,
-        "usage": []
+        "usage": [],
+        "itemId": "wraith-trophy"
       },
       "summon": null,
       "location": "Swamp",
@@ -11665,7 +12841,17 @@ window.VC_DATA = {
         "fr": "Spectre",
         "ru": "Призрак"
       },
-      "calculatorSlug": "wraith"
+      "calculatorSlug": "wraith",
+      "dropLinks": [
+        {
+          "name": "Chain",
+          "itemId": "chain"
+        },
+        {
+          "name": "Wraith Trophy",
+          "itemId": "wraith-trophy"
+        }
+      ]
     },
     "writhan": {
       "id": "writhan",
@@ -11783,7 +12969,8 @@ window.VC_DATA = {
         "name": "Writhan Trophy",
         "image": "img/creatures/writhan-trophy.png",
         "dropChance": 10,
-        "usage": []
+        "usage": [],
+        "itemId": "writhan-trophy"
       },
       "summon": null,
       "location": "Swamp",
@@ -11794,7 +12981,17 @@ window.VC_DATA = {
       "taming": null,
       "raids": [],
       "names": {},
-      "calculatorSlug": "writhan"
+      "calculatorSlug": "writhan",
+      "dropLinks": [
+        {
+          "name": "Writhan Roots",
+          "itemId": "writhan-roots"
+        },
+        {
+          "name": "Writhan Trophy",
+          "itemId": "writhan-trophy"
+        }
+      ]
     },
     "yagluth": {
       "id": "yagluth",
@@ -11876,7 +13073,8 @@ window.VC_DATA = {
         "dropChance": 100,
         "usage": [
           "Yagluth Power"
-        ]
+        ],
+        "itemId": "yagluth-trophy"
       },
       "summon": "Fuling Totem x5",
       "location": "Plains",
@@ -11889,7 +13087,21 @@ window.VC_DATA = {
         "de": "Yagluth",
         "ru": "Яглут"
       },
-      "calculatorSlug": "yagluth"
+      "calculatorSlug": "yagluth",
+      "dropLinks": [
+        {
+          "name": "Yagluth Trophy",
+          "itemId": "yagluth-trophy"
+        },
+        {
+          "name": "Torn Spirit",
+          "itemId": "torn-spirit"
+        },
+        {
+          "name": "Yagluth Power",
+          "itemId": null
+        }
+      ]
     },
     "zil-thungr": {
       "id": "zil-thungr",
@@ -11968,7 +13180,8 @@ window.VC_DATA = {
         "name": "Zil\nThungr",
         "image": null,
         "dropChance": null,
-        "usage": []
+        "usage": [],
+        "itemId": null
       },
       "summon": null,
       "location": "Sealed tower",
@@ -11991,7 +13204,21 @@ window.VC_DATA = {
         "de": "Zil & Thungr",
         "ru": "Зил и Тангр"
       },
-      "calculatorSlug": "zil-thungr"
+      "calculatorSlug": "zil-thungr",
+      "dropLinks": [
+        {
+          "name": "Hildir's bronze chest",
+          "itemId": "hildir-s-bronze-chest"
+        },
+        {
+          "name": "Zil Trophy",
+          "itemId": "zil-trophy"
+        },
+        {
+          "name": "Thungr Trophy",
+          "itemId": "thungr-trophy"
+        }
+      ]
     }
   },
   "weapons": {
@@ -39160,7 +40387,7 @@ window.VC_DATA = {
     "roots": {
       "id": "roots",
       "name": "Roots",
-      "image": "img/items/roots.png",
+      "image": "img/items/root.png",
       "biome": "swamp",
       "tier": 4,
       "sources": [

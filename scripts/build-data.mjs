@@ -51,9 +51,67 @@ export function buildDataBundle() {
     JSON.parse(readFileSync(path.join(calculatorDataDir, file), 'utf8')).map(target => target.slug)
   ));
 
+  const compendiumPath = path.join(DATA_DIR, 'items-compendium.json');
+  const compendium = existsSync(compendiumPath)
+    ? JSON.parse(readFileSync(compendiumPath, 'utf8'))
+    : { items: [] };
+  const compendiumItems = compendium.items ?? [];
+  const compendiumIds = new Set(compendiumItems.map(item => item.id));
+  const compendiumNameToId = new Map(compendiumItems.map(item => [item.name.toLowerCase(), item.id]));
+
+  const toSlug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
+  const matchItem = s => {
+    if (!s) return null;
+    const lower = s.toLowerCase();
+    if (compendiumNameToId.has(lower)) return compendiumNameToId.get(lower);
+    const slug = toSlug(s);
+    if (compendiumIds.has(slug)) return slug;
+    return null;
+  };
+
+  const resolveItemId = rawName => {
+    if (!rawName || typeof rawName !== 'string') return null;
+    const trimmed = rawName.trim();
+    if (!trimmed) return null;
+    if (trimmed.toLowerCase().endsWith(' power') || trimmed.toLowerCase() === 'none') return null;
+
+    let matched = matchItem(trimmed);
+    if (matched) return matched;
+
+    const strippedNum = trimmed.replace(/^\d+\s+/, '').trim();
+    if (strippedNum !== trimmed) {
+      matched = matchItem(strippedNum);
+      if (matched) return matched;
+    }
+
+    const strippedExtras = strippedNum.replace(/\s*x\d+$/i, '').replace(/\s*\(.*?\)/g, '').trim();
+    if (strippedExtras !== trimmed && strippedExtras !== strippedNum) {
+      matched = matchItem(strippedExtras);
+      if (matched) return matched;
+    }
+
+    return null;
+  };
+
   const creatures = {};
   for (const c of creaturesList) {
-    creatures[c.id] = calculatorSlugs.has(c.id) ? { ...c, calculatorSlug: c.id } : c;
+    const creature = calculatorSlugs.has(c.id) ? { ...c, calculatorSlug: c.id } : { ...c };
+    if (Array.isArray(creature.drops)) {
+      creature.dropLinks = creature.drops.map(d => ({
+        name: d,
+        itemId: resolveItemId(d),
+      }));
+    } else {
+      creature.dropLinks = [];
+    }
+    if (creature.trophy && creature.trophy.name) {
+      creature.trophy = {
+        ...creature.trophy,
+        itemId: resolveItemId(creature.trophy.name),
+      };
+    }
+    creatures[c.id] = creature;
   }
 
   const weapons = {};
