@@ -138,3 +138,4 @@ Hotovo, když: `grep -n "^| VC-4" docs/STAV.md` jsou všechny až za řádkem `#
 5. Hub hledání: suroviny vedou **do Items Compendia** (beze změny).
 6. Nereprodukovatelné `data/stations.json`: **samostatný úkol až po O-1 … O-10**.
 7. ORCHESTRACE § 3 bod 4 doplněn o povinné vzorkování proti `data/raw/`.
+8. Tlačítko „Reveal" na zamčené kartě (AUD/8, 10. 10.): **všude jen odkrýt k nahlédnutí přes `vc.openBiomes`** jako Smithy a Bestiary — postup hráče (`vc.progress`) mění jen Progress Tracker. Týká se Items, Comfort, Provisions a Expedition (dnes volají `VCProgress.visit(biome, true)`).
