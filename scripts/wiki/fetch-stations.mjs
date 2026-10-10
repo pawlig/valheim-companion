@@ -156,6 +156,29 @@ export function renderStationsReport(stations) {
   return lines.join('\n') + '\n';
 }
 
+// Merges freshly fetched stations into the existing stations.json.
+// Records whose id is in `fresh` are replaced in place; new ones go to the front
+// (in `fresh` order); all other records stay untouched and in their order.
+export function mergeStations(existing, fresh) {
+  const base = Array.isArray(existing) ? existing : [];
+  const freshById = new Map(fresh.map((s) => [s.id, s]));
+  const existingIds = new Set(base.map((s) => s.id));
+
+  const replaced = base.map((s) => (freshById.has(s.id) ? freshById.get(s.id) : s));
+  const added = fresh.filter((s) => !existingIds.has(s.id));
+  return [...added, ...replaced];
+}
+
+function readExistingStations(outputPath) {
+  if (!existsSync(outputPath)) return [];
+  try {
+    const parsed = JSON.parse(readFileSync(outputPath, 'utf8'));
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
 export async function fetchStations() {
   console.log(`fetching wikitext for ${STATION_PAGES.length} stations…`);
   const pages = await api.getWikitext(STATION_PAGES);
@@ -174,8 +197,9 @@ export async function fetchStations() {
   await addLocalizedNames(stations);
 
   mkdirSync(DATA_DIR, { recursive: true });
-  const stationsJson = JSON.stringify(stations, null, 2) + '\n';
   const outputPath = path.join(DATA_DIR, 'stations.json');
+  const merged = mergeStations(readExistingStations(outputPath), stations);
+  const stationsJson = JSON.stringify(merged, null, 2) + '\n';
   if (!existsSync(outputPath) || readFileSync(outputPath, 'utf8') !== stationsJson) {
     writeFileSync(outputPath, stationsJson, 'utf8');
   }
