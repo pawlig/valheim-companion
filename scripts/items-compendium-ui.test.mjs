@@ -820,4 +820,17 @@ describe('Items Compendium UI Tests', () => {
       assert.notEqual(g.getAttribute('open'), null, 'group open with category selected');
     }
   });
+  it('36. Deep link to a card beyond the 60-card page opens its group and renders the card', () => {
+    const probe = createDomFixture('', { 'vc.itemsShowAll': 'true' });
+    const group = probe.doc.getElementById('items-grid').querySelectorAll('.biome-group').find((g) => g.querySelector('.biome-group-more'));
+    const biome = group.dataset.biome;
+    const all = Array.from(probe.ctx.VC_ITEMS_DATA.items).filter((i) => (i.biome || '__other') === biome);
+    const names = expandAll(probe.doc).filter((c) => c.parentElement.parentElement.dataset.biome === biome).map((c) => c.dataset.id);
+    const target = names[names.length - 1];
+    assert.ok(all.some((i) => i.id === target) && names.indexOf(target) >= 60);
+    const { doc } = createDomFixture(`#item=${target}`, { 'vc.itemsShowAll': 'true' });
+    assert.ok(doc.getElementById(`item-card-${target}`), 'target card rendered');
+    const g = doc.getElementById('items-grid').querySelectorAll('.biome-group').find((x) => x.dataset.biome === biome);
+    assert.notEqual(g.getAttribute('open'), null, 'group is open');
+  });
 });

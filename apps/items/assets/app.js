@@ -123,6 +123,7 @@
   const groupLimits = new Map();
   const groupOpenOverride = new Map();
   let groupFilterSig = '';
+  let focusItemId = null; // deep link target: its group must be open and the card rendered
   let modalHistory = [];
   let searchQuery = '';
   let activeModalItem = null;
@@ -882,6 +883,14 @@
       const list = byBiome.get(def.id);
       if (!list || list.length === 0) continue;
 
+      if (focusItemId) {
+        const idx = list.findIndex((it) => it.id === focusItemId);
+        if (idx >= 0) {
+          groupOpenOverride.set(def.id, true);
+          groupLimits.set(def.id, Math.max(groupLimits.get(def.id) || GROUP_PAGE_SIZE, Math.ceil((idx + 1) / GROUP_PAGE_SIZE) * GROUP_PAGE_SIZE));
+        }
+      }
+
       const details = el('details', 'biome-group');
       details.dataset.biome = def.id;
       const defaultOpen = filtersActive || def.id === reachId;
@@ -955,7 +964,9 @@
     const searchInput = document.getElementById('item-search');
     if (searchInput) searchInput.value = '';
 
+    focusItemId = item.id;
     render();
+    focusItemId = null;
 
     const card = document.getElementById(`item-card-${item.id}`);
     if (card) {
