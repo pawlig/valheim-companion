@@ -225,21 +225,6 @@ globalThis.VC_MESSAGES = {
     "ja": "未解放",
     "id": "Terkunci"
   },
-  "Available": {
-    "en": "Available",
-    "cs": "K dispozici",
-    "de": "Verfügbar",
-    "es": "Disponible",
-    "fr": "Disponible",
-    "pt": "Disponível",
-    "zh": "有货",
-    "hi": "उपलब्ध",
-    "ar": "متاح",
-    "bn": "উপলব্ধ",
-    "ru": "В наличии",
-    "ja": "購入可",
-    "id": "Tersedia"
-  },
   "Reveal": {
     "en": "Reveal",
     "cs": "Odhalit",
@@ -284,21 +269,6 @@ globalThis.VC_MESSAGES = {
     "ru": "В корзину",
     "ja": "カートに追加",
     "id": "Tambah ke keranjang"
-  },
-  "Added to cart": {
-    "en": "Added to cart",
-    "cs": "Přidáno do košíku",
-    "de": "Im Einkaufswagen",
-    "es": "Añadido a la cesta",
-    "fr": "Ajouté au panier",
-    "pt": "Adicionado ao carrinho",
-    "zh": "已加入购物车",
-    "hi": "कार्ट में जोड़ा गया",
-    "ar": "تمت الإضافة للسلة",
-    "bn": "কার্টে যোগ করা হয়েছে",
-    "ru": "Добавлено в корзину",
-    "ja": "カートに追加済み",
-    "id": "Ditambahkan ke keranjang"
   },
   "View in Items Compendium →": {
     "en": "View in Items Compendium →",
@@ -495,68 +465,6 @@ globalThis.VC_MESSAGES = {
     },
     "id": {
       "other": "{count} koin"
-    }
-  },
-  "{count} items": {
-    "en": {
-      "one": "{count} item",
-      "other": "{count} items"
-    },
-    "cs": {
-      "one": "{count} položka",
-      "few": "{count} položky",
-      "many": "{count} položky",
-      "other": "{count} položek"
-    },
-    "de": {
-      "one": "{count} Gegenstand",
-      "other": "{count} Gegenstände"
-    },
-    "es": {
-      "one": "{count} objeto",
-      "many": "{count} objetos",
-      "other": "{count} objetos"
-    },
-    "fr": {
-      "one": "{count} objet",
-      "many": "{count} objets",
-      "other": "{count} objets"
-    },
-    "pt": {
-      "one": "{count} item",
-      "many": "{count} itens",
-      "other": "{count} itens"
-    },
-    "zh": {
-      "other": "{count} 件物品"
-    },
-    "hi": {
-      "one": "{count} वस्तु",
-      "other": "{count} वस्तुएँ"
-    },
-    "ar": {
-      "zero": "{count} عناصر",
-      "one": "{count} عنصر",
-      "two": "{count} عنصران",
-      "few": "{count} عناصر",
-      "many": "{count} عنصرًا",
-      "other": "{count} عنصر"
-    },
-    "bn": {
-      "one": "{count}টি বস্তু",
-      "other": "{count}টি বস্তু"
-    },
-    "ru": {
-      "one": "{count} предмет",
-      "few": "{count} предмета",
-      "many": "{count} предметов",
-      "other": "{count} предмета"
-    },
-    "ja": {
-      "other": "{count} 個のアイテム"
-    },
-    "id": {
-      "other": "{count} item"
     }
   },
   "{count} affordable": {
@@ -802,5 +710,95 @@ globalThis.VC_MESSAGES = {
     "id": {
       "other": "×{count}"
     }
+  },
+  "Requires defeating {boss}": {
+    "en": "Requires defeating {boss}",
+    "cs": "Vyžaduje porazit: {boss}",
+    "de": "Erfordert den Sieg über {boss}",
+    "es": "Requiere derrotar a {boss}",
+    "fr": "Nécessite de vaincre {boss}",
+    "pt": "Requer derrotar {boss}",
+    "zh": "需要击败 {boss}",
+    "hi": "{boss} को हराना आवश्यक है",
+    "ar": "يتطلب هزيمة {boss}",
+    "bn": "{boss} কে পরাজিত করতে হবে",
+    "ru": "Требуется победить: {boss}",
+    "ja": "{boss}を倒す必要があります",
+    "id": "Perlu mengalahkan {boss}"
+  },
+  "Requires returning Hildir's {chest} chest ({boss})": {
+    "en": "Requires returning Hildir's {chest} chest ({boss})",
+    "cs": "Vyžaduje vrátit Hildiřinu {chest} truhlu ({boss})",
+    "de": "Erfordert, Hildirs {chest} Truhe zurückzugeben ({boss})",
+    "es": "Requiere devolver el cofre de {chest} de Hildir ({boss})",
+    "fr": "Nécessite de rapporter le coffre {chest} de Hildir ({boss})",
+    "pt": "Requer devolver o baú {chest} de Hildir ({boss})",
+    "zh": "需要归还 Hildir 的{chest}宝箱（{boss}）",
+    "hi": "Hildir का {chest} संदूक लौटाना आवश्यक है ({boss})",
+    "ar": "يتطلب إعادة صندوق هيلدير {chest} ({boss})",
+    "bn": "Hildir-এর {chest} সিন্দুক ফেরত দিতে হবে ({boss})",
+    "ru": "Требуется вернуть {chest} сундук Hildir ({boss})",
+    "ja": "Hildirの{chest}の宝箱を返す必要があります（{boss}）",
+    "id": "Perlu mengembalikan peti {chest} milik Hildir ({boss})"
+  },
+  "Requires killing {creature}": {
+    "en": "Requires killing {creature}",
+    "cs": "Vyžaduje zabít: {creature}",
+    "de": "Erfordert, {creature} zu töten",
+    "es": "Requiere matar a {creature}",
+    "fr": "Nécessite de tuer {creature}",
+    "pt": "Requer matar {creature}",
+    "zh": "需要击杀 {creature}",
+    "hi": "{creature} को मारना आवश्यक है",
+    "ar": "يتطلب قتل {creature}",
+    "bn": "{creature} কে হত্যা করতে হবে",
+    "ru": "Требуется убить: {creature}",
+    "ja": "{creature}を倒す必要があります",
+    "id": "Perlu membunuh {creature}"
+  },
+  "Hildir chest: silver": {
+    "en": "silver",
+    "cs": "stříbrnou",
+    "de": "silberne",
+    "es": "plata",
+    "fr": "en argent",
+    "pt": "de prata",
+    "zh": "银",
+    "hi": "चाँदी वाला",
+    "ar": "الفضي",
+    "bn": "রুপার",
+    "ru": "серебряный",
+    "ja": "銀",
+    "id": "perak"
+  },
+  "Hildir chest: bronze": {
+    "en": "bronze",
+    "cs": "bronzovou",
+    "de": "bronzene",
+    "es": "bronce",
+    "fr": "en bronze",
+    "pt": "de bronze",
+    "zh": "青铜",
+    "hi": "कांसे वाला",
+    "ar": "البرونزي",
+    "bn": "ব্রোঞ্জের",
+    "ru": "бронзовый",
+    "ja": "青銅",
+    "id": "perunggu"
+  },
+  "Hildir chest: brass": {
+    "en": "brass",
+    "cs": "mosaznou",
+    "de": "messingene",
+    "es": "latón",
+    "fr": "en laiton",
+    "pt": "de latão",
+    "zh": "黄铜",
+    "hi": "पीतल वाला",
+    "ar": "النحاسي",
+    "bn": "পিতলের",
+    "ru": "латунный",
+    "ja": "真鍮",
+    "id": "kuningan"
   }
 };
