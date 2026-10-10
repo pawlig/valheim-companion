@@ -195,8 +195,8 @@ Pole stanic. Každý záznam zapisuje jeden fetcher, který nahrazuje jen své z
 | Fetcher | Záznamy (`id`) | `type` |
 |---|---|---|
 | `fetch-stations.mjs` | smelter, blast-furnace, charcoal-kiln, spinning-wheel | smelting / kiln / processing |
-| `fetch-comfort.mjs` | artisan-table, black-forge, forge, stonecutter, workbench | dle wiki |
-| `fetch-expedition.mjs` | galdr-table (`addedBy: "expedition"`) | dle wiki |
+| `fetch-comfort.mjs` | artisan-table, black-forge, forge, stonecutter, workbench | `comfort` |
+| `fetch-expedition.mjs` | galdr-table (`addedBy: "expedition"`) | `crafting` |
 | `fetch-provisions.mjs` | cauldron … smoker | `provisions` |
 
 Společná pole: `id`, `name`, `names`, `wiki`, `type`. Pořadí v souboru je dané pořadím fetcherů (stations → comfort → expedition → provisions); `mergeStations` ve `fetch-stations.mjs` nové záznamy vkládá na začátek a existující nahrazuje na místě.
