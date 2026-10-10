@@ -109,6 +109,9 @@ class Node {
 // Expands every biome group (clicks all "Show more" buttons) and returns all rendered cards.
 function expandAll(doc) {
   const grid = doc.getElementById('items-grid');
+  for (const g of grid.querySelectorAll('.biome-group')) {
+    if (g.getAttribute('open') === null) g.querySelector('.biome-group-summary').dispatch('click');
+  }
   let more = grid.querySelectorAll('.biome-group-more');
   while (more.length) {
     for (const btn of more) btn.dispatch('click');
@@ -298,6 +301,7 @@ describe('Items Compendium UI Tests', () => {
 
   it('6. Items in unvisited biomes show locked state when spoiler filter is active', () => {
     const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
+    expandAll(doc);
     const ironCard = doc.getElementById('item-card-iron');
     assert.ok(ironCard, 'Iron card should exist');
     assert.ok(ironCard.classList.contains('is-locked'), 'Iron (Swamp) should be locked when progress is default Meadows and spoiler filter is ON');
@@ -307,6 +311,7 @@ describe('Items Compendium UI Tests', () => {
 
   it('7. Clicking Reveal unlocks the biome and renders item as unlocked', () => {
     const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
+    expandAll(doc);
     const ironCard = doc.getElementById('item-card-iron');
     assert.ok(ironCard.classList.contains('is-locked'));
     const revBtn = ironCard.querySelector('.reveal-btn');
@@ -487,6 +492,7 @@ describe('Items Compendium UI Tests', () => {
 
   it('20. Clicking a locked card opens the modal with spoiler banner and details', () => {
     const { doc } = createDomFixture();
+    expandAll(doc);
     const ironCard = doc.getElementById('item-card-iron');
     assert.ok(ironCard, 'Iron card should exist in initial view');
     ironCard.dispatch('click');
@@ -498,6 +504,7 @@ describe('Items Compendium UI Tests', () => {
 
   it('21. Toggle locked biomes button toggles showAll mode', () => {
     const { doc, storage } = createDomFixture();
+    expandAll(doc);
     const toggleBtn = doc.getElementById('toggle-locked-btn');
     assert.ok(toggleBtn, 'Toggle locked biomes button must exist');
     assert.equal(toggleBtn.textContent, 'Spoiler filter: On');
@@ -569,6 +576,7 @@ describe('Items Compendium UI Tests', () => {
 
   it('26. Default view locks unvisited biomes by progress (Ashlands cards are is-locked and toggle shows Spoiler filter: On)', () => {
     const { doc } = createDomFixture();
+    expandAll(doc);
     const toggleBtn = doc.getElementById('toggle-locked-btn');
     assert.equal(toggleBtn.textContent, 'Spoiler filter: On', 'Toggle button text must be "Spoiler filter: On"');
 
@@ -594,6 +602,7 @@ describe('Items Compendium UI Tests', () => {
 
   it('26b. Locked cards leak neither name nor image; search and deep link do not reveal or write progress', () => {
     const { doc, storage } = createDomFixture();
+    expandAll(doc);
     const locked = doc.getElementById('items-grid').querySelectorAll('.item-card').filter((c) => c.classList.contains('is-locked'));
     assert.ok(locked.length > 0);
     for (const c of locked) {
@@ -694,6 +703,7 @@ describe('Items Compendium UI Tests', () => {
 
   it('30. Modal navigation history maintains stack and Back button returns to previous item', () => {
     const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'true' });
+    expandAll(doc);
     const swordCard = doc.getElementById('item-card-iron-sword');
     assert.ok(swordCard, 'Iron sword card exists');
     swordCard.dispatch('click');
@@ -775,6 +785,7 @@ describe('Items Compendium UI Tests', () => {
   });
   it('33. Cards are grouped into biome <details> in VC_ITEMS_DATA.biomes order, no empty groups', () => {
     const { doc, ctx } = createDomFixture();
+    expandAll(doc);
     const groups = doc.getElementById('items-grid').querySelectorAll('.biome-group');
     const order = Array.from(ctx.VC_ITEMS_DATA.biomes, (b) => b.id);
     const ids = groups.map((g) => g.dataset.biome).filter((id) => id !== '__other');
@@ -832,5 +843,24 @@ describe('Items Compendium UI Tests', () => {
     assert.ok(doc.getElementById(`item-card-${target}`), 'target card rendered');
     const g = doc.getElementById('items-grid').querySelectorAll('.biome-group').find((x) => x.dataset.biome === biome);
     assert.notEqual(g.getAttribute('open'), null, 'group is open');
+  });
+  it('37. Group wrapper spans the whole #items-grid (grid-column 1 / -1)', () => {
+    const css = readFileSync(path.join(ROOT, 'apps/items/assets/styles.css'), 'utf8');
+    const rule = css.match(/\.items-grid-groups\s*\{([^}]*)\}/);
+    assert.ok(rule, '.items-grid-groups rule exists');
+    assert.match(rule[1], /grid-column:\s*1\s*\/\s*-1/);
+  });
+
+  it('38. Closed groups render no cards until opened', () => {
+    const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
+    const groups = doc.getElementById('items-grid').querySelectorAll('.biome-group');
+    const closed = groups.find((g) => g.getAttribute('open') === null);
+    assert.ok(closed);
+    assert.equal(closed.querySelectorAll('.item-card').length, 0);
+    const id = closed.dataset.biome;
+    closed.querySelector('.biome-group-summary').dispatch('click');
+    const now = doc.getElementById('items-grid').querySelectorAll('.biome-group').find((g) => g.dataset.biome === id);
+    assert.ok(now.querySelectorAll('.item-card').length > 0);
+    assert.notEqual(now.getAttribute('open'), null);
   });
 });

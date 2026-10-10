@@ -767,7 +767,6 @@
     }
 
     if (emptyNotice) emptyNotice.hidden = true;
-    grid.replaceChildren();
 
     const buildCard = (item) => {
       const revealed = isItemRevealed(item);
@@ -899,26 +898,31 @@
       const summary = el('summary', 'biome-group-summary');
       summary.append(el('span', 'biome-group-name', def.name), el('span', 'biome-group-count', ` (${number(list.length)})`));
       summary.addEventListener('click', () => {
-        groupOpenOverride.set(def.id, details.getAttribute('open') === null);
+        const opening = details.getAttribute('open') === null;
+        groupOpenOverride.set(def.id, opening);
+        // Closed groups render no cards (lazy); opening one renders it.
+        if (opening) render();
       });
       details.append(summary);
 
-      const limit = groupLimits.get(def.id) || GROUP_PAGE_SIZE;
-      const gridEl = el('div', 'items-grid');
-      for (const item of list.slice(0, limit)) gridEl.append(buildCard(item));
-      details.append(gridEl);
+      if (isOpen) {
+        const limit = groupLimits.get(def.id) || GROUP_PAGE_SIZE;
+        const gridEl = el('div', 'items-grid');
+        for (const item of list.slice(0, limit)) gridEl.append(buildCard(item));
+        details.append(gridEl);
 
-      const remaining = list.length - limit;
-      if (remaining > 0) {
-        const more = button(
-          tn('Show {count} more', Math.min(GROUP_PAGE_SIZE, remaining), { count: number(Math.min(GROUP_PAGE_SIZE, remaining)) }),
-          () => {
-            groupLimits.set(def.id, limit + GROUP_PAGE_SIZE);
-            render();
-          },
-          'biome-group-more toolbar-toggle-btn'
-        );
-        details.append(more);
+        const remaining = list.length - limit;
+        if (remaining > 0) {
+          const more = button(
+            tn('Show {count} more', Math.min(GROUP_PAGE_SIZE, remaining), { count: number(Math.min(GROUP_PAGE_SIZE, remaining)) }),
+            () => {
+              groupLimits.set(def.id, limit + GROUP_PAGE_SIZE);
+              render();
+            },
+            'biome-group-more toolbar-toggle-btn'
+          );
+          details.append(more);
+        }
       }
       container.append(details);
     }

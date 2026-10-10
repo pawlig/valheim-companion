@@ -2172,8 +2172,8 @@ globalThis.VC_MESSAGES = {
       "other": "Show {count} more"
     },
     "cs": {
-      "one": "Zobrazit dalších {count}",
-      "few": "Zobrazit dalších {count}",
+      "one": "Zobrazit další {count}",
+      "few": "Zobrazit další {count}",
       "many": "Zobrazit dalších {count}",
       "other": "Zobrazit dalších {count}"
     },
