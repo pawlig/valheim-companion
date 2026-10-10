@@ -205,6 +205,20 @@ function createDomFixture(initialHash = '', initialStorage = {}) {
   load('shared/i18n/core.js');
   load('apps/items/locales/messages.js');
   load('apps/items/data/data.js');
+  if (!ctx.VC_ITEMS_DATA?.biomes) {
+    ctx.VC_ITEMS_DATA = ctx.VC_ITEMS_DATA || {};
+    ctx.VC_ITEMS_DATA.biomes = [
+      { id: 'meadows', name: 'Meadows', order: 1 },
+      { id: 'black-forest', name: 'Black Forest', order: 2 },
+      { id: 'ocean', name: 'Ocean', order: 3 },
+      { id: 'swamp', name: 'Swamp', order: 4 },
+      { id: 'mountain', name: 'Mountain', order: 5 },
+      { id: 'plains', name: 'Plains', order: 6 },
+      { id: 'mistlands', name: 'Mistlands', order: 7 },
+      { id: 'ashlands', name: 'Ashlands', order: 8 },
+      { id: 'deep-north', name: 'Deep North', order: 9 },
+    ];
+  }
   load('shared/progress/core.js');
   load('shared/shopping/core.js');
   load('apps/items/assets/app.js');
@@ -662,5 +676,23 @@ describe('Items Compendium UI Tests', () => {
     ctx.window.location.hash = '';
     fireWindow('hashchange');
     assert.equal(modal.hidden, true, 'Modal should close when URL hash is cleared');
+  });
+
+  it('32. Biome chips render all 9 biomes from VC_ITEMS_DATA.biomes in progression order', () => {
+    const { doc } = createDomFixture();
+    const chips = doc.getElementById('biome-chips');
+    const biomeButtons = chips.querySelectorAll('.biome-chip').filter((c) => c.dataset.biome);
+    const biomeIds = biomeButtons.map((c) => c.dataset.biome);
+    assert.deepEqual(biomeIds, [
+      'meadows',
+      'black-forest',
+      'ocean',
+      'swamp',
+      'mountain',
+      'plains',
+      'mistlands',
+      'ashlands',
+      'deep-north',
+    ]);
   });
 });

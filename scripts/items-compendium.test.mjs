@@ -533,4 +533,52 @@ describe('Items Compendium Data & Inverted Index', () => {
     assert.equal(nails.category, 'material');
     assert.equal(nails.teleportable, true, 'iron-nails must be teleportable');
   });
+
+  it('45. Every item with a biome has tier === order from data/biomes.json', () => {
+    const biomesData = JSON.parse(readFileSync(path.join(ROOT, 'data', 'biomes.json'), 'utf8'));
+    const biomeOrder = Object.fromEntries(biomesData.map((b) => [b.id, b.order]));
+    const mismatched = items.filter((i) => i.biome && biomeOrder[i.biome] !== i.tier);
+    assert.equal(
+      mismatched.length,
+      0,
+      `Expected 0 items with tier !== biome order, found ${mismatched.length}: ${JSON.stringify(mismatched.slice(0, 5))}`
+    );
+  });
+
+  it('46. biomes has 9 items in order: meadows, black-forest, ocean, swamp, mountain, plains, mistlands, ashlands, deep-north', () => {
+    assert.ok(Array.isArray(compendium.biomes), 'compendium.biomes should be an array');
+    assert.equal(compendium.biomes.length, 9, 'compendium.biomes should have exactly 9 entries');
+
+    const expectedOrder = [
+      'meadows',
+      'black-forest',
+      'ocean',
+      'swamp',
+      'mountain',
+      'plains',
+      'mistlands',
+      'ashlands',
+      'deep-north',
+    ];
+    assert.deepEqual(
+      compendium.biomes.map((b) => b.id),
+      expectedOrder,
+      'compendium.biomes must be in exact order'
+    );
+    for (let i = 0; i < compendium.biomes.length; i++) {
+      assert.equal(compendium.biomes[i].order, i + 1);
+      assert.ok(compendium.biomes[i].name, `Biome ${compendium.biomes[i].id} must have a name`);
+    }
+
+    const code = readFileSync(CLIENT_BUNDLE_PATH, 'utf8');
+    const ctx = { globalThis: {} };
+    ctx.globalThis.globalThis = ctx.globalThis;
+    vm.createContext(ctx);
+    vm.runInContext(code, ctx);
+    assert.ok(Array.isArray(ctx.globalThis.VC_ITEMS_DATA.biomes), 'VC_ITEMS_DATA.biomes should be an array');
+    assert.equal(
+      Array.from(ctx.globalThis.VC_ITEMS_DATA.biomes).map((b) => b.id).join(','),
+      expectedOrder.join(',')
+    );
+  });
 });
