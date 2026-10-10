@@ -1955,5 +1955,35 @@ globalThis.VC_MESSAGES = {
     "ru": "Добавлено в корзину.",
     "ja": "ショッピングカートに追加しました。",
     "id": "Ditambahkan ke keranjang belanja."
+  },
+  "Accessories": {
+    "en": "Accessories",
+    "cs": "Doplňky",
+    "de": "Accessoires",
+    "es": "Accesorios",
+    "fr": "Accessoires",
+    "pt": "Acessórios",
+    "zh": "配饰",
+    "hi": "एक्सेसरीज़",
+    "ar": "الإكسسوارات",
+    "bn": "আনুষঙ্গিক",
+    "ru": "Аксессуары",
+    "ja": "アクセサリー",
+    "id": "Aksesori"
+  },
+  "Casting": {
+    "en": "Casting",
+    "cs": "Odlévání",
+    "de": "Guss",
+    "es": "Fundición",
+    "fr": "Moulage",
+    "pt": "Fundição",
+    "zh": "铸造",
+    "hi": "ढलाई",
+    "ar": "الصب",
+    "bn": "ঢালাই",
+    "ru": "Литьё",
+    "ja": "鋳造",
+    "id": "Pengecoran"
   }
 };

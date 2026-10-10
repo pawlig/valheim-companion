@@ -10,7 +10,7 @@
       ? globalThis.VCI18n.tn(globalThis.VC_MESSAGES || {}, key, count, { count: number(count), ...values })
       : `${count} ${key}`;
 
-  // 15 distinct categories + backward compatibility aliases
+  // 17 distinct categories + backward compatibility aliases
   const CATEGORY_FILTERS = {
     all: null,
     material: ['material'],
@@ -28,6 +28,8 @@
     building: ['building'],
     valuable: ['valuable'],
     summoning: ['summoning'],
+    accessory: ['accessory'],
+    casting: ['casting'],
     // Backward-compatibility aliases
     'weapon,tool': ['weapon', 'tool'],
     'armor,shield': ['armor', 'shield'],
@@ -51,6 +53,8 @@
     building: 'Building',
     valuable: 'Valuable',
     summoning: 'Summoning',
+    accessory: 'Accessories',
+    casting: 'Casting',
     'food-ingredient': 'Ingredient',
   };
 
@@ -71,6 +75,8 @@
     { id: 'building', label: 'Building & Furniture' },
     { id: 'valuable', label: 'Valuables & Treasures' },
     { id: 'summoning', label: 'Boss Summoning & Keys' },
+    { id: 'accessory', label: 'Accessories' },
+    { id: 'casting', label: 'Casting' },
   ];
 
   const el = (tag, className, text) => {
