@@ -3,6 +3,7 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { execFileSync } from 'node:child_process';
 
 import {
   parseAllInfoboxes,
@@ -18,8 +19,6 @@ import {
   resolveDisambiguationTitle,
 } from './fetch-armor.mjs';
 import { buildArmourerBundle } from '../build-armourer-data.mjs';
-import { statSync } from 'node:fs';
-import path from 'node:path';
 
 const SAMPLE_IRON_ARMOR = `{{InfoboxTabber
 |Head|{{infobox armor
@@ -293,10 +292,13 @@ test('resolveRecipeBiomes assigns max tier and biome from recipe materials', () 
   assert.equal(mb.tier, null);
 });
 
-test('buildArmourerBundle uses deterministic generatedAt from data/armor.json mtime', () => {
-  const stat = statSync(path.join(process.cwd(), 'data', 'armor.json'));
+test('buildArmourerBundle uses deterministic generatedAt from data/armor.json git timestamp', () => {
+  const committedAt = execFileSync('git', ['log', '-1', '--format=%cI', '--', 'data/armor.json'], {
+    cwd: process.cwd(),
+    encoding: 'utf8',
+  }).trim();
   const bundle = buildArmourerBundle();
-  assert.equal(bundle.generatedAt, stat.mtime.toISOString());
+  assert.equal(bundle.generatedAt, committedAt);
 });
 
 test('resolveDisambiguationTitle detects Root disambiguation and returns Root (item)', () => {
@@ -417,6 +419,4 @@ test('upgrade levels exist only where the wiki lists materials; no estimated arm
     }
   }
 });
-
-
 

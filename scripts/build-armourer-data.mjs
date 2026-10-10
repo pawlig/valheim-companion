@@ -1,10 +1,11 @@
 // Builds apps/smithy/data/data.js from data/*.json for the Smithy frontend.
 // Follows docs/DATA-SCHEMA.md § apps/smithy/data/data.js.
 
-import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { aliasImage } from './image-index.mjs';
+import { generatedAt } from './lib/generated-at.mjs';
 import { buildTraderIndex, withTraders } from './trader-index.mjs';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -85,17 +86,10 @@ export function buildArmourerBundle() {
     console.warn(`warning: ${missingItems.size} referenced materials missing from items.json:`, [...missingItems]);
   }
 
-  // Timestamp of last fetch: use mtime of data/armor.json
-  let generatedAt;
-  try {
-    const stat = statSync(armorPath);
-    generatedAt = stat.mtime.toISOString();
-  } catch {
-    generatedAt = new Date().toISOString();
-  }
+  const generatedAtValue = generatedAt(armorPath, path.join(ARMOURER_DATA_DIR, 'data.js'));
 
   return {
-    generatedAt,
+    generatedAt: generatedAtValue,
     source: {
       name: 'Valheim Wiki',
       url: 'https://valheim.weirdgloop.org',

@@ -342,29 +342,49 @@ test('VCI18n: plural categories, interpolation and fallback', () => {
   assert.equal(VCI18n.tn({ legacy: { en: '{count} old' } }, 'legacy', 1), '1 old');
 });
 
-test('Items and Traders catalogs have no untranslated (English-identical) values outside the whitelist', () => {
-  // Game and brand names, shared loanwords and stat names that are legitimately identical to English.
-  const whitelist = new Set([
-    '← Valheim Companion', 'Items Compendium', 'Trader Ledger', 'Wiki', 'Wiki ↗', 'Portal', 'Material', 'Metal',
-    'Sources', 'Mead', 'Eitr: {eitr}', 'Stamina: {stamina}', 'Level {level}', '{count} item',
-    'Name (A → Z)', 'Name (Z → A)',
-    'Meadows', 'Black Forest', 'Ocean', 'Swamp', 'Mountain', 'Plains', 'Mistlands', 'Ashlands', 'Deep North',
-  ]);
+function findIdenticalOffenders(messagesByApp, allow) {
   const noText = value => !/\p{L}/u.test(value.replace(/\{[a-z]+\}/g, ''));
   const offenders = [];
-  for (const app of ['items', 'traders']) {
-    const messages = JSON.parse(readFileSync(new URL(`../apps/${app}/locales/messages.json`, import.meta.url), 'utf8'));
+  for (const [app, messages] of Object.entries(messagesByApp)) {
     for (const [key, entry] of Object.entries(messages)) {
       for (const lang of Object.keys(entry)) {
         if (lang === 'en') continue;
         const forms = typeof entry[lang] === 'object' ? Object.entries(entry[lang]) : [[null, entry[lang]]];
         for (const [form, value] of forms) {
           const en = form === null ? entry.en : entry.en[form] ?? entry.en.other;
-          if (value !== en || whitelist.has(value) || noText(value) || /^x\{count\}$/.test(value)) continue;
+          const allowed = allow.has(`${app}:${lang}:${key}`) || allow.has(`*:${key}`);
+          if (value !== en || allowed || noText(value) || /^x\{count\}$/.test(value)) continue;
           offenders.push(`${app}:${lang}:${key}${form ? '#' + form : ''}`);
         }
       }
     }
   }
+
+  return offenders;
+}
+
+test('findIdenticalOffenders applies whitelist entries to app-language-key pairs', () => {
+  const messagesByApp = { items: { Foo: { en: 'Foo', cs: 'Foo', de: 'Bar' } } };
+  assert.deepEqual(findIdenticalOffenders(messagesByApp, new Set(['items:de:Foo'])), ['items:cs:Foo']);
+  assert.deepEqual(findIdenticalOffenders(messagesByApp, new Set(['*:Foo'])), []);
+});
+
+test('Items and Traders catalogs have no untranslated (English-identical) values outside the whitelist', () => {
+  const allow = new Set([
+    '*:← Valheim Companion', '*:Items Compendium', '*:Trader Ledger', '*:Wiki', '*:Wiki ↗',
+    '*:Meadows', '*:Black Forest', '*:Ocean', '*:Swamp', '*:Mountain', '*:Plains', '*:Mistlands', '*:Ashlands', '*:Deep North',
+    'items:fr:Sources', 'items:pt:{count} items', 'items:id:Level {level}',
+    'items:de:Material', 'items:es:Material', 'items:pt:Material', 'items:id:Material',
+    'items:es:Metal', 'items:pt:Metal', 'items:id:Mead', 'items:id:Stamina: {stamina}',
+    'items:cs:Eitr: {eitr}', 'items:de:Eitr: {eitr}', 'items:es:Eitr: {eitr}', 'items:pt:Eitr: {eitr}', 'items:id:Eitr: {eitr}',
+    'items:de:Name (A → Z)', 'items:de:Name (Z → A)',
+    'items:de:Portal', 'items:es:Portal', 'items:pt:Portal', 'items:id:Portal',
+  ]);
+  const messagesByApp = {};
+  for (const app of ['items', 'traders']) {
+    messagesByApp[app] = JSON.parse(readFileSync(new URL(`../apps/${app}/locales/messages.json`, import.meta.url), 'utf8'));
+  }
+
+  const offenders = findIdenticalOffenders(messagesByApp, allow);
   assert.deepEqual(offenders, []);
 });
