@@ -12,10 +12,11 @@
 //   data/raw/*.json      all wiki infoboxes (structures, tools, seeds, accessories...)
 //
 // Output: data/items-compendium.json + apps/items/data/data.js (VC_ITEMS_DATA).
-import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
+import { buildImageIndex } from './image-index.mjs';
 import { readCachedPages } from './wiki/api.mjs';
 import { parseAllInfoboxes, cleanText, slug as baseSlug, parseMaterialList } from './wiki/wikitext.mjs';
 
@@ -59,42 +60,10 @@ function inferBiome(text) {
   return null;
 }
 
-// Index all existing images across app folders
-const IMAGE_INDEX = new Map();
-const IMAGE_APP_ROOTS = ['smithy', 'provisions', 'comfort', 'bestiary', 'traders', 'progress'];
-
-for (const app of IMAGE_APP_ROOTS) {
-  const dir = path.join(APPS_DIR, app, 'img');
-  if (!existsSync(dir)) continue;
-  function walk(d, rel) {
-    for (const f of readdirSync(d)) {
-      const p = path.join(d, f);
-      const sub = rel ? `${rel}/${f}` : f;
-      if (statSync(p).isDirectory()) {
-        walk(p, sub);
-      } else {
-        const lower = f.toLowerCase();
-        if (!IMAGE_INDEX.has(lower)) IMAGE_INDEX.set(lower, `../${app}/img/${sub}`);
-        const base = slug(lower.replace(/\.[^.]+$/, ''));
-        if (!IMAGE_INDEX.has(base)) IMAGE_INDEX.set(base, `../${app}/img/${sub}`);
-      }
-    }
-  }
-  walk(dir, '');
-}
-
-// Also index items from damage-calculator public assets
-const damageCalcDir = path.join(APPS_DIR, 'damage-calculator', 'public', 'items');
-if (existsSync(damageCalcDir)) {
-  for (const f of readdirSync(damageCalcDir)) {
-    if (/\.(png|webp|jpg)$/i.test(f)) {
-      const lower = f.toLowerCase();
-      const base = slug(lower.replace(/\.[^.]+$/, ''));
-      if (!IMAGE_INDEX.has(lower)) IMAGE_INDEX.set(lower, `../damage-calculator/items/${f}`);
-      if (!IMAGE_INDEX.has(base)) IMAGE_INDEX.set(base, `../damage-calculator/items/${f}`);
-    }
-  }
-}
+// Index all existing images across app folders (plus damage-calculator public assets)
+const IMAGE_INDEX = buildImageIndex(APPS_DIR, ['smithy', 'provisions', 'comfort', 'bestiary', 'traders', 'progress'], [
+  { dir: path.join(APPS_DIR, 'damage-calculator', 'public', 'items'), urlPrefix: '../damage-calculator/items' },
+]);
 
 function resolveImage(raw, itemId) {
   if (!raw && !itemId) return null;
