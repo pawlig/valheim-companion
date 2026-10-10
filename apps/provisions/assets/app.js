@@ -307,13 +307,16 @@
         const link = el('a', '', name({ name: source.text }) + (source.biomes?.length ? ' · ' + source.biomes.map(id => name(byId(data.biomes, id))).join(', ') : ''));
         link.href = '/bestiary/#c=' + encodeURIComponent(source.creatureId);
         container.append(link);
-      } else if (source.kind === 'npc' || /witch|haldor|hildir/i.test(source.text)) {
-        let traderSlug = 'bog-witch';
-        if (/haldor/i.test(source.text)) traderSlug = 'haldor';
-        else if (/hildir/i.test(source.text)) traderSlug = 'hildir';
-        const link = el('a', '', name({ name: source.text }));
-        link.href = `/traders/#trader=${traderSlug}&item=${encodeURIComponent(item?.id || '')}`;
-        container.append(link);
+      } else if (source.kind === 'npc') {
+        if (item?.traders?.length) {
+          for (const trader of item.traders) {
+            const link = el('a', '', trader.name);
+            link.href = `/traders/#trader=${encodeURIComponent(trader.id)}&item=${encodeURIComponent(item?.id || '')}`;
+            container.append(link);
+          }
+        } else {
+          container.append(el('span', 'hint', source.text.replace(/^\*\s*/, '')));
+        }
       } else container.append(el('span', 'hint', source.text.replace(/^\*\s*/, '')));
     }
     if (!item?.sources?.length && item?.wiki) {

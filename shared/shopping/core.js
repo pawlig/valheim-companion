@@ -94,8 +94,58 @@
   const cart = Object.freeze({
     read() {
       try {
-        const parsed = JSON.parse(root.localStorage.getItem(CART_KEY) || '[]');
-        return Array.isArray(parsed) ? parsed : [];
+        const raw = root.localStorage.getItem(CART_KEY);
+        if (!raw) return [];
+        const parsed = JSON.parse(raw);
+        if (!Array.isArray(parsed)) return [];
+        let mutated = false;
+        const result = [];
+        for (const line of parsed) {
+          if (!line || typeof line !== 'object') {
+            mutated = true;
+            continue;
+          }
+          // 1. Modern material line: has materialId
+          if (typeof line.materialId === 'string' && line.materialId.trim().length > 0) {
+            const amt = Number(line.amount);
+            if (Number.isFinite(amt) && amt > 0) {
+              result.push(line);
+            } else {
+              mutated = true;
+            }
+            continue;
+          }
+          // 2. Smithy gear/weapon line: has pieceId and (have/want, isWeapon, or non-empty setId)
+          if (typeof line.pieceId === 'string' && line.pieceId.trim().length > 0 &&
+              (typeof line.have === 'number' || typeof line.want === 'number' || line.isWeapon === true ||
+               (typeof line.setId === 'string' && line.setId.trim().length > 0))) {
+            result.push(line);
+            continue;
+          }
+          // 3. Old line from Items/Traders before VC-42d: { item, pieceId, quantity, amount }
+          const matId = typeof line.item === 'string' && line.item.trim().length > 0
+            ? line.item.trim()
+            : (typeof line.pieceId === 'string' && line.pieceId.trim().length > 0 ? line.pieceId.trim() : null);
+          const rawAmt = line.amount !== undefined ? line.amount : line.quantity;
+          const amt = Number(rawAmt);
+          if (matId && Number.isFinite(amt) && amt > 0) {
+            const migrated = {
+              id: line.id || ('mat_' + matId + '_' + Math.random().toString(36).slice(2, 7)),
+              materialId: matId,
+              amount: amt,
+            };
+            if (line.name) migrated.name = String(line.name);
+            result.push(migrated);
+            mutated = true;
+            continue;
+          }
+          // 4. Invalid line
+          mutated = true;
+        }
+        if (mutated) {
+          cart.write(result);
+        }
+        return result;
       } catch { return []; }
     },
     write(lines) {

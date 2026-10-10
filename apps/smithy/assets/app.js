@@ -45,10 +45,41 @@
    * Helper to create DOM element safely without innerHTML
    */
   function el(tag, className, text) {
+    if (typeof document === 'undefined') {
+      return {
+        tagName: tag.toUpperCase(),
+        className: className || '',
+        textContent: text != null ? t(String(text)) : '',
+        href: '',
+        setAttribute(name, val) { this[name] = val; },
+        appendChild(child) { this.children = this.children || []; this.children.push(child); },
+        append(...items) { items.forEach(i => this.appendChild(i)); },
+        addEventListener() {},
+      };
+    }
     const element = document.createElement(tag);
     if (className) element.className = className;
     if (text !== undefined && text !== null) element.textContent = t(String(text));
     return element;
+  }
+
+  function traderBadges(itemId, customData) {
+    const dataSource = customData || (typeof data !== 'undefined' ? data : null) || globalThis.VA_DATA || (typeof window !== 'undefined' ? window.VA_DATA : null);
+    let traders = dataSource?.items?.[itemId]?.traders;
+    if (!traders && dataSource?.armor) {
+      for (const armor of dataSource.armor) {
+        const piece = (armor.pieces || []).find(p => p.id === itemId);
+        if (piece?.traders) {
+          traders = piece.traders;
+          break;
+        }
+      }
+    }
+    return (traders || []).map(trader => {
+      const link = el('a', 'badge badge-source', trader.name);
+      link.href = `/traders/#trader=${encodeURIComponent(trader.id)}&item=${encodeURIComponent(itemId)}`;
+      return link;
+    });
   }
 
   /**
@@ -102,6 +133,9 @@
   }
 
   function getStoredCart() {
+    if (globalThis.VCShopping?.cart?.read) {
+      return globalThis.VCShopping.cart.read();
+    }
     try {
       const raw = localStorage.getItem('va.cart');
       if (!raw) return [];
@@ -113,6 +147,10 @@
   }
 
   function setStoredCart(cart) {
+    if (globalThis.VCShopping?.cart?.write) {
+      globalThis.VCShopping.cart.write(cart);
+      return;
+    }
     try {
       localStorage.setItem('va.cart', JSON.stringify(cart));
     } catch {
@@ -1139,11 +1177,9 @@
           label.appendChild(matLink);
           matPill.appendChild(label);
 
-          if (mat.item === 'ymir-flesh' || mat.item === 'thunderstone') {
-            const traderLink = el('a', 'badge badge-source', 'Haldor');
-            traderLink.href = `/traders/#trader=haldor&item=${encodeURIComponent(mat.item)}`;
+          traderBadges(mat.item).forEach(traderLink => {
             matPill.appendChild(traderLink);
-          }
+          });
 
           if (itemData && itemData.teleportable === false) {
             const tpBadge = el('span', 'badge badge-teleport-warning', t("Can't be teleported"));
@@ -1516,11 +1552,9 @@
             label.appendChild(matLink);
             matPill.appendChild(label);
 
-            if (mat.item === 'ymir-flesh' || mat.item === 'thunderstone') {
-              const traderLink = el('a', 'badge badge-source', 'Haldor');
-              traderLink.href = `/traders/#trader=haldor&item=${encodeURIComponent(mat.item)}`;
+            traderBadges(mat.item).forEach(traderLink => {
               matPill.appendChild(traderLink);
-            }
+            });
 
             if (itemData && itemData.teleportable === false) {
               const tpBadge = el('span', 'badge badge-teleport-warning', t("Can't be teleported"));
@@ -1784,21 +1818,21 @@
         itemsContainer.appendChild(groupEl);
       });
 
-      // Raw materials and goods added from Items/Traders: "N× name", no Have/Want.
-      if (materialLines.length > 0) {
-        const goodsEl = el('div', 'cart-group cart-goods-group');
-        const goodsHeader = el('div', 'cart-group-header');
-        goodsHeader.appendChild(el('span', 'cart-group-title', 'Materials & goods'));
-        goodsEl.appendChild(goodsHeader);
-        materialLines.forEach(line => goodsEl.appendChild(renderCartMaterialRow(line)));
-        itemsContainer.appendChild(goodsEl);
-      }
-
       // Render standalone pieces
       standaloneItems.forEach(item => {
         const pieceRow = renderCartPieceRow(item, true);
         itemsContainer.appendChild(pieceRow);
       });
+
+      // Raw materials and goods added from Items/Traders: "N× name", no Have/Want.
+      if (materialLines.length > 0) {
+        const goodsEl = el('div', 'cart-group cart-goods-group');
+        const goodsHeader = el('div', 'cart-group-header');
+        goodsHeader.appendChild(el('span', 'cart-group-title', t('Materials & goods')));
+        goodsEl.appendChild(goodsHeader);
+        materialLines.forEach(line => goodsEl.appendChild(renderCartMaterialRow(line)));
+        itemsContainer.appendChild(goodsEl);
+      }
 
       cartContent.appendChild(itemsContainer);
 
@@ -1888,7 +1922,7 @@
           right.appendChild(tpBadge);
         }
 
-        renderMaterialSources(right, mat.sources);
+        renderMaterialSources(right, mat.sources, mat.item);
 
         row.appendChild(right);
         matsList.appendChild(row);
@@ -2182,31 +2216,30 @@
     renderCatalog();
     renderCart();
 
-    function renderMaterialSources(parent, sources) {
-      sources.forEach(src => {
-          if (src.kind === 'npc' || /haldor|hildir|witch/i.test(src.text)) {
-            let traderSlug = 'haldor';
-            if (/hildir/i.test(src.text)) traderSlug = 'hildir';
-            else if (/witch/i.test(src.text)) traderSlug = 'bog-witch';
-            const traderLink = el('a', 'badge badge-source', src.text);
-            traderLink.href = `/traders/#trader=${traderSlug}`;
-            parent.appendChild(traderLink);
-            return;
-          }
-          const srcClass = src.locked ? 'badge badge-source badge-source-locked' : 'badge badge-source';
-          const srcBadge = el(src.locked && src.biomeId ? 'button' : 'span', srcClass, src.text);
-          if (src.locked && src.biomeId) {
-            srcBadge.type = 'button';
-            srcBadge.addEventListener('click', () => {
-              const open = new Set(getManualOpenBiomes());
-              open.add(src.biomeId);
-              setStoredOpenBiomes([...open]);
-              renderCatalog();
-              renderCart();
-            });
-          }
-          parent.appendChild(srcBadge);
-        });
+    function renderMaterialSources(parent, sources, itemId) {
+      const badges = itemId ? traderBadges(itemId) : [];
+      const hasTraders = badges.length > 0;
+      if (hasTraders) {
+        badges.forEach(b => parent.appendChild(b));
+      }
+      (sources || []).forEach(src => {
+        if (src.kind === 'npc' && hasTraders) {
+          return;
+        }
+        const srcClass = src.locked ? 'badge badge-source badge-source-locked' : 'badge badge-source';
+        const srcBadge = el(src.locked && src.biomeId ? 'button' : 'span', srcClass, src.text);
+        if (src.locked && src.biomeId) {
+          srcBadge.type = 'button';
+          srcBadge.addEventListener('click', () => {
+            const open = new Set(getManualOpenBiomes());
+            open.add(src.biomeId);
+            setStoredOpenBiomes([...open]);
+            renderCatalog();
+            renderCart();
+          });
+        }
+        parent.appendChild(srcBadge);
+      });
     }
 
     function showMaterialCard(item) {
@@ -2226,7 +2259,7 @@
         card.appendChild(el('p', null, biomeName(biome)));
         card.appendChild(el('h3', null, t('Sources')));
         const sources = el('div', 'material-sources');
-        renderMaterialSources(sources, formatMaterialSources(item, data, { openBiomes, showAll }));
+        renderMaterialSources(sources, formatMaterialSources(item, data, { openBiomes, showAll }), item.id);
         card.appendChild(sources);
         card.appendChild(el('h3', null, t('Used in')));
         const contains = entity => (entity.levels || []).some(level =>
@@ -2481,6 +2514,7 @@
     getStoredCatalogTab,
     setStoredCatalogTab,
     getStoredFurnaces,
-    setStoredFurnaces
+    setStoredFurnaces,
+    traderBadges
   };
 });
