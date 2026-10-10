@@ -11,13 +11,13 @@ PŘEČTI NEJDŘÍV (rozpočet čtení): audit nálezy A-2, A-8, A-9, oddíl **O-
 ROZSAH: `scripts/build-items-data.mjs`, `scripts/items-compendium.test.mjs`, `data/items-compendium.json`, `apps/items/data/data.js`, a kvůli novým čipům `apps/items/assets/app.js` (jen seznam kategorií/čipů) + `apps/items/locales/messages.json` a `.js` (2 nové klíče „Accessories", „Casting" ve 13 jazycích).
 
 POSTUP: body 1–6 oddílu O-3 přesně, jak jsou napsané (Pavel 10. 10. potvrdil: kategorie `accessory` „Accessories" a `casting` „Casting"). Navíc podle rozhodnutí AUD/3:
-7. **Hildiřino zboží** (`data/traders.json`, obchodník `hildir`, 37 položek): každá položka, která v kompendiu ještě není, dostane kartu — `category: 'armor'`, `biome: 'meadows'`, `tier` = order Meadows, `crossLinks.traders: ['hildir']`, `sources.traders` se záznamem obchodníka a ceny. Položky, které už v kompendiu jsou, dostanou jen `crossLinks.traders`. Totéž (jen crossLinks/sources) pro zboží Haldora a Bog Witch.
+7. **Hildiřino zboží** (`data/traders.json`, obchodník `hildir`, 38 položek podle wiki (audit chybně uváděl 37)): každá položka, která v kompendiu ještě není, dostane kartu — `category: 'armor'`, `biome: 'meadows'`, `tier` = order Meadows, `crossLinks.traders: ['hildir']`, `sources.traders` se záznamem obchodníka a ceny. Položky, které už v kompendiu jsou, dostanou jen `crossLinks.traders`. Totéž (jen crossLinks/sources) pro zboží Haldora a Bog Witch.
 ⛔ Nesahej na spoilery, košík, CSS, mobil, Bestiary, nic mimo ROZSAH (souběžně běží VC-42e v `apps/items/assets/app.js` — měň v něm jen seznam kategorií, nic jiného).
 
 KROKY (commit po každém, značka `[CC/sonnet]`): (1) kategorie ze zdrojových sad + accessory/casting, (2) vyloučení odpadu a duplicit + Hildiřino zboží, (3) stanice a lokace, (4) testy + i18n klíče.
 
 HOTOVO, KDYŽ: všechny body „Hotovo, když" z O-3 (výstupy `node -e` vlož do zprávy) a navíc:
-- `node -e` → každé id z hildir v `data/traders.json` existuje v kompendiu s `crossLinks.traders` obsahujícím `hildir` (vypiš počet 37/37)
+- `node -e` → každé id z hildir v `data/traders.json` existuje v kompendiu s `crossLinks.traders` obsahujícím `hildir` (vypiš počet 38/38)
 - `node -e` → žádná položka nemá `category` mimo 17 kategorií (vypiš distinct seznam s počty)
 - `node --test 'scripts/**/*.test.mjs' 2>&1 | tail -8` → `fail 0`
 - `node scripts/build-items-data.mjs` 2× → `git status --short` prázdný
