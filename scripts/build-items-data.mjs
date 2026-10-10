@@ -30,17 +30,8 @@ function slug(s) {
   return baseSlug(s);
 }
 
-const BIOME_TIERS = {
-  meadows: 1,
-  'black-forest': 2,
-  swamp: 3,
-  ocean: 3,
-  mountain: 4,
-  plains: 5,
-  mistlands: 6,
-  ashlands: 7,
-  'deep-north': 8,
-};
+const BIOMES_DATA = loadJson('biomes.json');
+const BIOME_ORDER = Object.fromEntries(BIOMES_DATA.map((b) => [b.id, b.order]));
 
 function inferBiome(text) {
   if (!text) return null;
@@ -552,7 +543,7 @@ export function buildItemsData() {
       name: it.name,
       image: resolveImage(it.image, it.id),
       biome: it.biome ?? null,
-      tier: it.tier ?? (it.biome ? BIOME_TIERS[it.biome] : null),
+      tier: it.biome ? (BIOME_ORDER[it.biome] ?? null) : (it.tier ?? null),
       category,
       teleportable,
       stack: it.stack ?? provEntry?.stack ?? null,
@@ -607,7 +598,7 @@ export function buildItemsData() {
       name: w.name,
       image: resolveImage(w.image, w.id),
       biome: w.biome ?? null,
-      tier: w.tier ?? (w.biome ? BIOME_TIERS[w.biome] : null),
+      tier: w.biome ? (BIOME_ORDER[w.biome] ?? null) : (w.tier ?? null),
       category,
       teleportable: true,
       stack: w.quantity ?? null,
@@ -673,7 +664,7 @@ export function buildItemsData() {
         name: piece.name,
         image: resolveImage(piece.image, piece.id),
         biome: entry.biome ?? null,
-        tier: entry.tier ?? (entry.biome ? BIOME_TIERS[entry.biome] : null),
+        tier: entry.biome ? (BIOME_ORDER[entry.biome] ?? null) : (entry.tier ?? null),
         category: 'armor',
         teleportable: true,
         stack: null,
@@ -767,7 +758,7 @@ export function buildItemsData() {
         name: f.name,
         image: resolveImage(f.image, f.id),
         biome: f.biome ?? null,
-        tier: f.tier ?? (f.biome ? BIOME_TIERS[f.biome] : null),
+        tier: f.biome ? (BIOME_ORDER[f.biome] ?? null) : (f.tier ?? null),
         category: 'food',
         teleportable: true,
         stack: null,
@@ -819,7 +810,7 @@ export function buildItemsData() {
         name: md.name,
         image: resolveImage(md.image, md.id),
         biome: md.biome ?? null,
-        tier: md.tier ?? (md.biome ? BIOME_TIERS[md.biome] : null),
+        tier: md.biome ? (BIOME_ORDER[md.biome] ?? null) : (md.tier ?? null),
         category: 'mead',
         teleportable: true,
         stack: null,
@@ -863,7 +854,7 @@ export function buildItemsData() {
         name: cp.name,
         image: resolveImage(cp.image, cp.id),
         biome: cp.biome ?? null,
-        tier: cp.tier ?? (cp.biome ? BIOME_TIERS[cp.biome] : null),
+        tier: cp.biome ? (BIOME_ORDER[cp.biome] ?? null) : (cp.tier ?? null),
         category: 'building',
         teleportable: true,
         stack: null,
@@ -897,7 +888,7 @@ export function buildItemsData() {
       if (st.names) existing.names = { ...existing.names, ...st.names };
       if (!existing.biome && st.biome) {
         existing.biome = st.biome;
-        existing.tier = BIOME_TIERS[st.biome] ?? null;
+        existing.tier = BIOME_ORDER[st.biome] ?? null;
       }
     } else {
       ensure(st.id, {
@@ -905,7 +896,7 @@ export function buildItemsData() {
         name: st.name,
         image: resolveImage(st.image, st.id),
         biome: st.biome || null,
-        tier: st.biome ? BIOME_TIERS[st.biome] : null,
+        tier: st.biome ? (BIOME_ORDER[st.biome] ?? null) : null,
         category: 'building',
         teleportable: true,
         stack: null,
@@ -942,12 +933,13 @@ export function buildItemsData() {
         if (trItem.description && !existing.description) existing.description = trItem.description;
       } else {
         const cat = categorize(trItem.id, trItem.name, null) || 'valuable';
+        const trBiome = trItem.biome || trader.biome || null;
         ensure(trItem.id, {
           id: trItem.id,
           name: trItem.name,
           image: resolveImage(trItem.image, trItem.id),
-          biome: trItem.biome || trader.biome || null,
-          tier: trItem.tier ?? (trItem.biome ? BIOME_TIERS[trItem.biome] : null),
+          biome: trBiome,
+          tier: trBiome ? (BIOME_ORDER[trBiome] ?? null) : (trItem.tier ?? null),
           category: cat,
           teleportable: true,
           stack: trItem.stack ?? null,
@@ -974,7 +966,7 @@ export function buildItemsData() {
   // --- 8. Creature drops & trophies from creatures.json -----------------
   for (const c of creatures) {
     const cBiome = c.biomes?.[0] || null;
-    const cTier = cBiome ? BIOME_TIERS[cBiome] : null;
+    const cTier = cBiome ? (BIOME_ORDER[cBiome] ?? null) : null;
     const cSource = { id: c.id, name: c.name, biome: cBiome };
 
     // Trophy
