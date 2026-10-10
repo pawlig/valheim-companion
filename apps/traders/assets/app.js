@@ -92,7 +92,14 @@
     return { coins, valuablesTotal, total };
   }
 
+  function isBiomeRevealed(biomeId) {
+    if (!biomeId || typeof globalThis.VCProgress?.revealedBiomes !== 'function') return true;
+    const biomes = globalThis.VC_TRADERS_DATA?.biomes || [];
+    return globalThis.VCProgress.revealedBiomes(biomes).includes(biomeId);
+  }
+
   function unlockText(unlock) {
+    if (!isBiomeRevealed(unlock.biome)) return t('Requires progress in a later biome');
     if (unlock.type === 'boss') return t('Requires defeating {boss}', { boss: unlock.name || unlock.id });
     if (unlock.type === 'chest') {
       const chest = ['silver', 'bronze', 'brass'].includes(unlock.chest) ? t('Hildir chest: ' + unlock.chest) : String(unlock.chest || '');
@@ -290,11 +297,11 @@
         unlockBanner.append(lockText);
 
         // Direct boss / expedition link
-        if (item.unlockedBy.type === 'boss' && item.unlockedBy.id) {
+        if (isBiomeRevealed(item.unlockedBy.biome) && item.unlockedBy.type === 'boss' && item.unlockedBy.id) {
           const bossLink = el('a', 'link-boss-expedition', t('Boss preparation: {boss} →', { boss: item.unlockedBy.name || item.unlockedBy.id }));
           bossLink.href = `/expedition/#boss=${encodeURIComponent(item.unlockedBy.id)}`;
           unlockBanner.append(bossLink);
-        } else if (item.unlockedBy.type === 'chest' && item.unlockedBy.boss) {
+        } else if (isBiomeRevealed(item.unlockedBy.biome) && item.unlockedBy.type === 'chest' && item.unlockedBy.boss) {
           const bossLink = el('a', 'link-boss-expedition', t('Boss preparation: {boss} →', { boss: item.unlockedBy.bossName || item.unlockedBy.boss }));
           bossLink.href = `/bestiary/#c=${encodeURIComponent(item.unlockedBy.boss)}`;
           unlockBanner.append(bossLink);
@@ -480,7 +487,7 @@
         valuablesState = loadValuables();
         updateAppraisalInputs();
         render();
-      } else if (event.key === 'va.cart') {
+      } else if (event.key === 'va.cart' || event.key === 'vc.progress' || event.key === 'vc.openBiomes') {
         renderTrader();
       }
     });

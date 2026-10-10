@@ -124,7 +124,7 @@ function expandAll(doc) {
   return grid.querySelectorAll('.item-card');
 }
 
-function createDomFixture(initialHash = '', initialStorage = {}) {
+function createDomFixture(initialHash = '', initialStorage = {}, prepareData = () => {}) {
   const allNodes = [];
   const body = new Node('body');
   const doc = {
@@ -239,6 +239,7 @@ function createDomFixture(initialHash = '', initialStorage = {}) {
   }
   load('shared/progress/core.js');
   load('shared/shopping/core.js');
+  prepareData(ctx.VC_ITEMS_DATA);
   load('apps/items/assets/app.js');
 
   return {
@@ -471,6 +472,55 @@ describe('Items Compendium UI Tests', () => {
       crossLinks.map((a) => a.href).some((h) => h.includes('/bestiary/#c=deer')),
       'deer-hide must offer Open in Bestiary'
     );
+  });
+
+  it('17a. Wood hides creature drops from locked biomes and counts them on a clean profile', () => {
+    const { doc, ctx } = createDomFixture('#item=wood');
+    const body = doc.getElementById('modal-body');
+    const sources = body.querySelectorAll('section').find((s) => s.querySelector('h3')?.textContent === 'Sources');
+    const text = (node) => node.textContent + node.children.map(text).join('\n');
+    const revealed = ctx.VCProgress.revealedBiomes(ctx.VC_ITEMS_DATA.biomes);
+    const creatures = ctx.VC_ITEMS_DATA.items.find((i) => i.id === 'wood').sources.creatures;
+    const visible = creatures.filter((c) => !c.biome || revealed.includes(c.biome));
+    const hiddenCount = creatures.length - visible.length;
+    assert.ok(hiddenCount > 0);
+    assert.match(text(sources), /Dropped by:/);
+    assert.doesNotMatch(text(sources), /Deep North/);
+    assert.ok(text(sources).includes(`${hiddenCount} more in locked biomes`));
+    const hrefs = sources.querySelectorAll('a').map((a) => a.href);
+    assert.deepEqual(hrefs, Array.from(visible, (c) => `/bestiary/#c=${encodeURIComponent(c.id)}`));
+    assert.equal(body.querySelectorAll('a').some((a) => a.href.includes('greydwarf-shaman-deep-north')), false);
+  });
+
+  it('17b. Revealing Deep North restores its Wood drop source', () => {
+    const { doc } = createDomFixture('#item=wood', { 'vc.openBiomes': '["deep-north"]' });
+    assert.ok(doc.getElementById('modal-body').querySelectorAll('a').some((a) => a.href === '/bestiary/#c=greydwarf-shaman-deep-north'));
+  });
+
+  it('17c. The Bestiary action uses the first revealed source even when the first source is hidden', () => {
+    const { doc } = createDomFixture('#item=wood', {}, (data) => {
+      data.items.find((i) => i.id === 'wood').sources.creatures = [
+        { id: 'hidden-creature', name: 'Hidden creature', biome: 'deep-north' },
+        { id: 'visible-creature', name: 'Visible creature', biome: 'meadows' },
+      ];
+    });
+    const body = doc.getElementById('modal-body');
+    const bestiary = body.querySelectorAll('.cross-link-btn').find((a) => a.href?.startsWith('/bestiary/'));
+    assert.equal(bestiary?.href, '/bestiary/#c=visible-creature');
+    assert.equal(body.querySelectorAll('a').some((a) => a.href?.includes('hidden-creature')), false);
+  });
+
+  it('17d. When every creature source is locked, only the count is shown with no Bestiary action', () => {
+    const { doc } = createDomFixture('#item=wood', {}, (data) => {
+      data.items.find((i) => i.id === 'wood').sources.creatures = [
+        { id: 'hidden-creature', name: 'Hidden creature', biome: 'deep-north' },
+      ];
+    });
+    const body = doc.getElementById('modal-body');
+    const sources = body.querySelectorAll('section').find((s) => s.querySelector('h3')?.textContent === 'Sources');
+    assert.ok(sources.querySelectorAll('p').some((p) => p.textContent === '1 more in locked biomes'));
+    assert.equal(sources.querySelector('.modal-links-list'), null);
+    assert.equal(body.querySelectorAll('a').some((a) => a.href?.startsWith('/bestiary/')), false);
   });
 
   it('18. Closing the modal hides it and clears the deep-link hash', () => {
