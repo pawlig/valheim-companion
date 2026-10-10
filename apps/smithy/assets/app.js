@@ -133,6 +133,9 @@
   }
 
   function getStoredCart() {
+    if (globalThis.VCShopping?.cart?.read) {
+      return globalThis.VCShopping.cart.read();
+    }
     try {
       const raw = localStorage.getItem('va.cart');
       if (!raw) return [];
@@ -144,6 +147,10 @@
   }
 
   function setStoredCart(cart) {
+    if (globalThis.VCShopping?.cart?.write) {
+      globalThis.VCShopping.cart.write(cart);
+      return;
+    }
     try {
       localStorage.setItem('va.cart', JSON.stringify(cart));
     } catch {
