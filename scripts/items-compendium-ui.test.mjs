@@ -339,9 +339,18 @@ describe('Items Compendium UI Tests', () => {
     const parsed = JSON.parse(rawCart);
     assert.ok(Array.isArray(parsed), 'Cart should be an array');
     assert.ok(
-      parsed.some((c) => c.item === 'bronze' || c.pieceId === 'bronze'),
-      'Cart should contain bronze'
+      parsed.some((c) => c.materialId === 'bronze' && c.amount === 1 && c.pieceId === null),
+      'Cart should contain bronze as a materialId line'
     );
+  });
+
+  it('10b. Smithy gear shows Plan in Smithy instead of the cart button', () => {
+    const { doc } = createDomFixture('#item=iron-sword', { 'vc.itemsShowAll': 'true' });
+    const modalBody = doc.getElementById('modal-body');
+    assert.equal(modalBody.querySelector('.add-cart-btn'), null, 'no cart button for Smithy gear');
+    const link = modalBody.querySelector('.plan-smithy-link');
+    assert.ok(link, 'Plan in Smithy link present');
+    assert.equal(link.href, '/smithy/#item=iron-sword');
   });
 
   it('11. Non-existent search shows empty state notice', () => {
@@ -463,7 +472,7 @@ describe('Items Compendium UI Tests', () => {
     const cartBtn = doc.getElementById('modal-body').querySelector('.add-cart-btn');
     cartBtn.dispatch('click');
     const parsed = JSON.parse(storage.get('va.cart'));
-    assert.equal(parsed[0].quantity, 5, 'Cart should store quantity 5');
+    assert.equal(parsed[0].amount, 5, 'Cart should store amount 5');
   });
 
   it('20. Clicking a locked card opens the modal with spoiler banner and details', () => {

@@ -335,6 +335,9 @@ function createDomFixture(initialHash = '') {
   const dataScript = readFileSync(path.join(ROOT, 'apps', 'traders', 'data', 'data.js'), 'utf8');
   vm.runInContext(dataScript, context);
 
+  // Shared cart (VCShopping.cart) is loaded before the app, like in index.html
+  vm.runInContext(readFileSync(path.join(ROOT, 'shared', 'shopping', 'core.js'), 'utf8'), context);
+
   // Load app script
   const appScript = readFileSync(path.join(ROOT, 'apps', 'traders', 'assets', 'app.js'), 'utf8');
   vm.runInContext(appScript, context);
@@ -533,8 +536,9 @@ describe('Trader Ledger UI Test Suite (VC-40)', () => {
     assert.ok(rawCart, 'va.cart should be present in localStorage');
     const cart = JSON.parse(rawCart);
     assert.equal(cart.length, 1);
-    assert.equal(cart[0].item, 'ymir-flesh');
-    assert.equal(cart[0].quantity, 1);
+    assert.equal(cart[0].materialId, 'ymir-flesh');
+    assert.equal(cart[0].amount, 1);
+    assert.equal(cart[0].pieceId, null);
 
     // Button should now be marked as in cart
     const updatedBtn = doc.getElementById('btn-cart-ymir-flesh');
@@ -544,7 +548,17 @@ describe('Trader Ledger UI Test Suite (VC-40)', () => {
     // Click again -> increments quantity
     updatedBtn.dispatch('click');
     const cartAfter = JSON.parse(localStorage.getItem('va.cart'));
-    assert.equal(cartAfter[0].quantity, 2, 'Quantity increments on multiple clicks');
+    assert.equal(cartAfter[0].amount, 2, 'Amount increments on multiple clicks');
+  });
+
+  it('12b. Goods sold in packs add their pack quantity as amount', () => {
+    const { doc, localStorage } = createDomFixture('#trader=bog-witch');
+    const btn = doc.getElementById('btn-cart-love-potion');
+    assert.ok(btn, 'Love Potion cart button exists');
+    btn.dispatch('click');
+    const cart = JSON.parse(localStorage.getItem('va.cart'));
+    assert.equal(cart[0].materialId, 'love-potion');
+    assert.equal(cart[0].amount, 5);
   });
 
   it('13. Filter affordable items displays only merchandise within current budget and empty message when none affordable', () => {
