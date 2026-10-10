@@ -187,7 +187,7 @@ function renderControls() {
   });
   parent.append(control('Target', select));
   if (!eligible(current())) {
-    parent.append(button(t('Reveal'), () => VCProgress.visit(current().biome, true), 'reveal-boss'));
+    parent.append(button(t('Reveal'), () => VCProgress.openBiome(current().biome), 'reveal-boss'));
   }
   const players = el('input');
   players.id = 'players';

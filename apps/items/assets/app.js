@@ -167,9 +167,14 @@
     return isBiomeRevealed(item.biome) || tempRevealed.has(item.id);
   }
 
+  function biomeLabel(biomeId) {
+    const biome = biomes.find((b) => b.id === biomeId);
+    return biome ? t(biome.name) : String(biomeId).replace(/-/g, ' ');
+  }
+
   function revealBiome(biomeId) {
-    if (globalThis.VCProgress && typeof globalThis.VCProgress.visit === 'function') {
-      globalThis.VCProgress.visit(biomeId, true);
+    if (globalThis.VCProgress && typeof globalThis.VCProgress.openBiome === 'function') {
+      globalThis.VCProgress.openBiome(biomeId);
     }
   }
 
@@ -259,9 +264,7 @@
     // 0. Spoiler notice if biome is unvisited
     if (lockedItem) {
       const banner = el('div', 'modal-spoiler-banner');
-      const biomeObj = biomes.find((b) => b.id === item.biome);
-      const biomeName = biomeObj ? biomeObj.name : item.biome.replace('-', ' ');
-      banner.append(el('span', '', t('Locked until you reach this biome: {biome}', { biome: t(biomeName) })));
+      banner.append(el('span', '', t('Locked until you reach this biome: {biome}', { biome: biomeLabel(item.biome) })));
       const revBtn = button(t('Reveal'), () => {
         tempRevealed.add(item.id);
         render();
@@ -295,7 +298,7 @@
       badges.append(el('span', 'badge badge-category', t(catLabel)));
     }
     if (item.biome) {
-      const bBadge = el('span', 'badge badge-biome', item.biome.replace('-', ' '));
+      const bBadge = el('span', 'badge badge-biome', biomeLabel(item.biome));
       badges.append(bBadge);
     }
     if (item.tier != null) {
@@ -463,9 +466,15 @@
       for (const g of groups) {
         const entries = u[g.key] || [];
         if (entries.length === 0) continue;
-        usedInSection.append(el('p', 'modal-text-item', `${g.label} (${entries.length}):`));
+        // Entries pointing at items from locked biomes stay hidden (spoilers); only a count is shown.
+        const visibleEntries = entries.filter((entry) => {
+          const linked = itemsById.get(entry.itemId || entry.id);
+          return !linked || isItemRevealed(linked);
+        });
+        const hiddenCount = entries.length - visibleEntries.length;
+        usedInSection.append(el('p', 'modal-text-item', `${g.label} (${visibleEntries.length}):`));
         const list = el('div', 'modal-links-list');
-        for (const entry of entries) {
+        for (const entry of visibleEntries) {
           const label = entry.name || entry.bossName || entry.id;
           let href = null;
           let isItemLink = false;
@@ -498,6 +507,7 @@
           }
         }
         usedInSection.append(list);
+        if (hiddenCount) usedInSection.append(el('p', 'modal-text-item', tn('{count} more in locked biomes', hiddenCount, { count: hiddenCount })));
       }
     }
     modalBody.append(usedInSection);
@@ -581,40 +591,44 @@
     }
   }
 
+  function categoryAllows(categoryId, item) {
+    // An option may cover several categories.
+    const allowed = CATEGORY_FILTERS[categoryId];
+    return !allowed || allowed.includes(item.category);
+  }
+
+  // Single predicate for the card list and the category chip counts.
+  function matchesFilters(item, { ignoreCategory = false } = {}) {
+    if (!ignoreCategory && !categoryAllows(selectedCategory, item)) return false;
+    if (selectedBiome !== 'all' && item.biome !== selectedBiome) return false;
+    if (selectedTeleport === 'yes' && item.teleportable === false) return false;
+    if (selectedTeleport === 'no' && item.teleportable !== false) return false;
+    const query = searchQuery.trim().toLowerCase();
+    if (query) {
+      // A locked item must not be findable by name (search would leak its existence).
+      if (!isItemRevealed(item)) return false;
+      const nameMatch = item.name.toLowerCase().includes(query);
+      const idMatch = item.id.toLowerCase().includes(query);
+      const locNamesMatch = item.names && Object.values(item.names).some((n) => typeof n === 'string' && n.toLowerCase().includes(query));
+      if (!nameMatch && !idMatch && !locNamesMatch) return false;
+    }
+    return true;
+  }
+
   function renderCategoryChips() {
     const container = document.getElementById('category-chips');
     if (!container) return;
     container.replaceChildren();
 
-    const query = searchQuery.trim().toLowerCase();
-    const matchesQueryAndBiome = (item) => {
-      if (selectedBiome !== 'all' && item.biome !== selectedBiome) return false;
-      if (selectedTeleport === 'yes' && item.teleportable === false) return false;
-      if (selectedTeleport === 'no' && item.teleportable !== false) return false;
-      if (query) {
-        const nameMatch = item.name.toLowerCase().includes(query);
-        const idMatch = item.id.toLowerCase().includes(query);
-        const locNamesMatch = item.names && Object.values(item.names).some((n) => typeof n === 'string' && n.toLowerCase().includes(query));
-        if (!nameMatch && !idMatch && !locNamesMatch) return false;
-      }
-      return true;
-    };
-
-    const categoryCounts = new Map();
-    let totalCount = 0;
-    for (const it of itemsData) {
-      if (matchesQueryAndBiome(it)) {
-        totalCount++;
-        categoryCounts.set(it.category, (categoryCounts.get(it.category) || 0) + 1);
-      }
-    }
+    const baseMatches = itemsData.filter((item) => matchesFilters(item, { ignoreCategory: true }));
+    const countFor = (catId) => baseMatches.filter((item) => categoryAllows(catId, item)).length;
 
     for (const cat of CATEGORY_DEFS) {
       const isSelected = selectedCategory === cat.id;
       const chipClasses = ['category-chip'];
       if (isSelected) chipClasses.push('active');
 
-      const count = cat.id === 'all' ? totalCount : (categoryCounts.get(cat.id) || 0);
+      const count = countFor(cat.id);
 
       const chip = el('button', chipClasses.join(' '));
       chip.type = 'button';
@@ -657,7 +671,7 @@
       if (isSelected) chipClasses.push('active');
       if (!revealed) chipClasses.push('is-locked');
 
-      const chipText = revealed ? b.name : `🔒 ${b.name}`;
+      const chipText = revealed ? t(b.name) : `🔒 ${t(b.name)}`;
       const chip = el('button', chipClasses.join(' '), chipText);
       chip.type = 'button';
       chip.dataset.biome = b.id;
@@ -695,35 +709,7 @@
     if (!grid) return;
 
     const query = searchQuery.trim().toLowerCase();
-
-    const filtered = itemsData.filter((item) => {
-      // Category filter (an option may cover several categories)
-      const allowed = CATEGORY_FILTERS[selectedCategory];
-      if (allowed && !allowed.includes(item.category)) {
-        return false;
-      }
-      // Biome filter
-      if (selectedBiome !== 'all' && item.biome !== selectedBiome) {
-        return false;
-      }
-      // Teleportable filter
-      if (selectedTeleport === 'yes' && item.teleportable === false) {
-        return false;
-      }
-      if (selectedTeleport === 'no' && item.teleportable !== false) {
-        return false;
-      }
-      // Search query
-      if (query) {
-        // A locked item must not be findable by name (search would leak its existence).
-        if (!isItemRevealed(item)) return false;
-        const nameMatch = item.name.toLowerCase().includes(query);
-        const idMatch = item.id.toLowerCase().includes(query);
-        const locNamesMatch = item.names && Object.values(item.names).some((n) => typeof n === 'string' && n.toLowerCase().includes(query));
-        if (!nameMatch && !idMatch && !locNamesMatch) return false;
-      }
-      return true;
-    });
+    const filtered = itemsData.filter((item) => matchesFilters(item));
 
     // Sorting
     const getProgression = (it) => {
@@ -782,7 +768,7 @@
         lockedInfo.append(el('div', 'item-card-name', t('Locked item')));
         const lockedMeta = el('div', 'item-card-meta');
         if (item.biome) {
-          lockedMeta.append(el('span', 'badge badge-biome', item.biome.replace('-', ' ')));
+          lockedMeta.append(el('span', 'badge badge-biome', biomeLabel(item.biome)));
         }
         lockedInfo.append(lockedMeta);
         lockedTop.append(lockedInfo);
@@ -825,7 +811,7 @@
         meta.append(el('span', 'badge badge-category', t(catLabel)));
       }
       if (item.biome) {
-        const bBadge = el('span', 'badge badge-biome', item.biome.replace('-', ' '));
+        const bBadge = el('span', 'badge badge-biome', biomeLabel(item.biome));
         meta.append(bBadge);
       }
       if (item.tier != null) {
@@ -897,7 +883,7 @@
       const isOpen = groupOpenOverride.has(def.id) ? groupOpenOverride.get(def.id) : defaultOpen;
       if (isOpen) details.setAttribute('open', '');
       const summary = el('summary', 'biome-group-summary');
-      summary.append(el('span', 'biome-group-name', def.name), el('span', 'biome-group-count', ` (${number(list.length)})`));
+      summary.append(el('span', 'biome-group-name', t(def.name)), el('span', 'biome-group-count', ` (${number(list.length)})`));
       summary.addEventListener('click', () => {
         const opening = details.getAttribute('open') === null;
         groupOpenOverride.set(def.id, opening);

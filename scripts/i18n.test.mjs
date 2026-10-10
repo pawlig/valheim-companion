@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 
 // 1. Simulate browser environment before loading scripts
 class MockStorage {
@@ -339,4 +340,31 @@ test('VCI18n: plural categories, interpolation and fallback', () => {
   assert.equal(VCI18n.tn(catalog, '{count} units', 2, { count: '2,000' }), '2,000 units');
   assert.equal(VCI18n.tn({}, 'Missing {count}', 3), 'Missing 3');
   assert.equal(VCI18n.tn({ legacy: { en: '{count} old' } }, 'legacy', 1), '1 old');
+});
+
+test('Items and Traders catalogs have no untranslated (English-identical) values outside the whitelist', () => {
+  // Game and brand names, shared loanwords and stat names that are legitimately identical to English.
+  const whitelist = new Set([
+    '← Valheim Companion', 'Items Compendium', 'Trader Ledger', 'Wiki', 'Wiki ↗', 'Portal', 'Material', 'Metal',
+    'Sources', 'Mead', 'Eitr: {eitr}', 'Stamina: {stamina}', 'Level {level}', '{count} item',
+    'Name (A → Z)', 'Name (Z → A)',
+    'Meadows', 'Black Forest', 'Ocean', 'Swamp', 'Mountain', 'Plains', 'Mistlands', 'Ashlands', 'Deep North',
+  ]);
+  const noText = value => !/\p{L}/u.test(value.replace(/\{[a-z]+\}/g, ''));
+  const offenders = [];
+  for (const app of ['items', 'traders']) {
+    const messages = JSON.parse(readFileSync(new URL(`../apps/${app}/locales/messages.json`, import.meta.url), 'utf8'));
+    for (const [key, entry] of Object.entries(messages)) {
+      for (const lang of Object.keys(entry)) {
+        if (lang === 'en') continue;
+        const forms = typeof entry[lang] === 'object' ? Object.entries(entry[lang]) : [[null, entry[lang]]];
+        for (const [form, value] of forms) {
+          const en = form === null ? entry.en : entry.en[form] ?? entry.en.other;
+          if (value !== en || whitelist.has(value) || noText(value) || /^x\{count\}$/.test(value)) continue;
+          offenders.push(`${app}:${lang}:${key}${form ? '#' + form : ''}`);
+        }
+      }
+    }
+  }
+  assert.deepEqual(offenders, []);
 });

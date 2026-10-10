@@ -314,12 +314,15 @@ describe('Items Compendium UI Tests', () => {
   });
 
   it('7. Clicking Reveal unlocks the biome and renders item as unlocked', () => {
-    const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
+    const { doc, storage } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
     expandAll(doc);
     const ironCard = doc.getElementById('item-card-iron');
     assert.ok(ironCard.classList.contains('is-locked'));
+    const before = storage.get('vc.progress');
     const revBtn = ironCard.querySelector('.reveal-btn');
     revBtn.dispatch('click');
+    assert.equal(storage.get('vc.progress'), before, 'Reveal must not change vc.progress');
+    assert.ok(JSON.parse(storage.get('vc.openBiomes')).includes('swamp'), 'Reveal opens the biome in vc.openBiomes');
     const updatedIronCard = doc.getElementById('item-card-iron');
     assert.ok(!updatedIronCard.classList.contains('is-locked'), 'Iron card should now be unlocked');
   });
@@ -528,6 +531,7 @@ describe('Items Compendium UI Tests', () => {
     assert.equal(toggleBtn.textContent, 'Spoiler filter: On');
     const ironCardRelocked = doc.getElementById('item-card-iron');
     assert.ok(ironCardRelocked.classList.contains('is-locked'), 'Iron card should be locked again');
+    assert.ok(!storage.has('vc.progress'), 'Toggling spoilers never writes vc.progress');
   });
 
   it('22. Localized search query matches items by localized names', () => {
@@ -631,6 +635,38 @@ describe('Items Compendium UI Tests', () => {
     body.querySelector('.reveal-btn').dispatch('click');
     assert.ok(/Flametal/.test(doc.getElementById('modal-item-name').textContent), 'Reveal shows the item');
     assert.ok(!storage.has('vc.progress'), 'Reveal must not write vc.progress');
+  });
+
+  it('26d. Used in hides entries from locked biomes and counts them instead', () => {
+    const { doc, ctx } = createDomFixture('#item=boar-meat');
+    const allText = (n) => (n.textContent || '') + n.children.map(allText).join('\n');
+    const text = allText(doc.getElementById('modal-body'));
+    assert.ok(!/Sausages/.test(text), 'Sausages (Swamp) must not be listed while Swamp is locked');
+    assert.match(text, /more in locked biomes/);
+    const foodLabel = /Food \((\d+)\):/.exec(text);
+    assert.ok(foodLabel, 'group label counts only visible entries');
+    const item = ctx.VC_ITEMS_DATA.items.find((i) => i.id === 'boar-meat');
+    assert.ok(Number(foodLabel[1]) < item.usedIn.food.length, 'label count excludes hidden entries');
+  });
+
+  it('26e. Category chip counts equal the number of cards after selecting the chip (search, spoilers, teleport)', () => {
+    for (const [search, teleport] of [['', 'all'], ['iron', 'all'], ['', 'yes'], ['a', 'no']]) {
+      const { doc } = createDomFixture('', { 'vc.itemsShowAll': 'false' });
+      const searchEl = doc.getElementById('item-search');
+      searchEl.value = search;
+      searchEl.dispatch('input');
+      const tel = doc.getElementById('teleport-select');
+      tel.value = teleport;
+      tel.dispatch('change');
+      const chips = doc.getElementById('category-chips').querySelectorAll('.category-chip');
+      assert.ok(chips.length > 5);
+      const expected = chips.map((c) => [c.dataset.category, Number(c.querySelector('.chip-count').textContent.replace(/\D/g, ''))]);
+      for (const [cat, count] of expected) {
+        const chip = doc.getElementById('category-chips').querySelectorAll('.category-chip').find((c) => c.dataset.category === cat);
+        chip.dispatch('click');
+        assert.equal(expandAll(doc).length, count, `chip ${cat} (search "${search}", teleport ${teleport})`);
+      }
+    }
   });
 
   it('27. Sort select orders items by name (A → Z) and (Z → A) and persists to localStorage', () => {

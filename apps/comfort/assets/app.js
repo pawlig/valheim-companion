@@ -137,7 +137,7 @@
       const grid = el('div', 'piece-grid'); grid.append(...pieces.filter(eligible).map(pieceCard)); section.append(grid);
       const locked = el('div', 'locked-biomes');
       for (const biome of data.biomes) if (!revealed().includes(biome.id) && pieces.some(p => p.biome === biome.id)) {
-        const row = el('div', 'locked-row'); row.append(el('span', 'hint', biome.name + ' · ' + t('Locked until you reach this biome.')), button(t('Reveal'), () => VCProgress.visit(biome.id, true), '', 'reveal-' + category.id + '-' + biome.id)); locked.append(row);
+        const row = el('div', 'locked-row'); row.append(el('span', 'hint', biome.name + ' · ' + t('Locked until you reach this biome.')), button(t('Reveal'), () => VCProgress.openBiome(biome.id), '', 'reveal-' + category.id + '-' + biome.id)); locked.append(row);
       }
       if (pieces.some(p => p.tier == null)) locked.append(el('p', 'hint', t('Some wiki recipes are incomplete. Unverified pieces are excluded from recommendations.')));
       if (!state.seasonal && !category.id) locked.append(el('p', 'hint', t('Enable Include seasonal items to see seasonal bonuses.')));
@@ -149,7 +149,7 @@
     for (const source of item?.sources ?? []) {
       if (source.kind === 'creature' && source.creatureId) {
         if (source.biomes?.length && !source.biomes.some(id => revealed().includes(id))) {
-          const row = el('div', 'locked-row'); row.append(el('span', 'hint', t('Locked until you reach this biome.')), button(t('Reveal'), () => { for (const id of source.biomes) VCProgress.visit(id, true); })); container.append(row);
+          const row = el('div', 'locked-row'); row.append(el('span', 'hint', t('Locked until you reach this biome.')), button(t('Reveal'), () => { for (const id of source.biomes) VCProgress.openBiome(id); })); container.append(row);
         } else { const link = el('a', '', source.text); link.href = '/bestiary/#c=' + encodeURIComponent(source.creatureId); container.append(link); }
       } else container.append(el('span', 'hint', source.text.replace(/^\*\s*/, '')));
     }

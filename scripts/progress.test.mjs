@@ -190,3 +190,22 @@ test('Saga image paths are local WebP assets within both download budgets', () =
   assert.ok(drawerBytes <= 250000, `${drawerBytes} drawer bytes`);
   assert.ok(artBytes <= 500000, `${artBytes} artwork bytes`);
 });
+test('openBiome adds valid ids once, persists them and leaves vc.progress alone', () => {
+  const { core, localStorage } = setup();
+  const before = localStorage.getItem('vc.progress');
+  let notified = 0;
+  core.onChange(() => notified++);
+  core.openBiome('swamp'); core.openBiome('swamp'); core.openBiome('__bad id__'); core.openBiome(null);
+  assert.deepEqual(JSON.parse(localStorage.getItem('vc.openBiomes')), ['swamp']);
+  assert.equal(localStorage.getItem('vc.progress'), before);
+  assert.ok(notified >= 1);
+  assert.deepEqual(plain(core.get().visited), []);
+  assert.ok(core.revealedBiomes(biomes).includes('swamp'));
+});
+test('Reveal buttons in every section use openBiome, never visit', () => {
+  for (const app of ['items', 'comfort', 'provisions', 'expedition']) {
+    const source = readFileSync(`apps/${app}/assets/app.js`, 'utf8');
+    assert.match(source, /VCProgress\.openBiome\(/, app);
+    assert.doesNotMatch(source, /VCProgress\.visit\(/, app);
+  }
+});

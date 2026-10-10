@@ -92,6 +92,16 @@
     return { coins, valuablesTotal, total };
   }
 
+  function unlockText(unlock) {
+    if (unlock.type === 'boss') return t('Requires defeating {boss}', { boss: unlock.name || unlock.id });
+    if (unlock.type === 'chest') {
+      const chest = ['silver', 'bronze', 'brass'].includes(unlock.chest) ? t('Hildir chest: ' + unlock.chest) : String(unlock.chest || '');
+      return t("Requires returning Hildir's {chest} chest ({boss})", { chest, boss: unlock.bossName || unlock.boss });
+    }
+    if (unlock.type === 'creature') return t('Requires killing {creature}', { creature: unlock.name || unlock.id });
+    return unlock.text || t('Locked');
+  }
+
   function isUnlocked(item) {
     if (!item.unlockedBy) return true;
     if (revealedItems.has(item.id)) return true;
@@ -276,7 +286,7 @@
       // Unlock banner if locked
       if (!unlocked && item.unlockedBy) {
         const unlockBanner = el('div', 'good-unlock-banner');
-        const lockText = el('span', 'unlock-text', `🔒 ${item.unlockedBy.text || t('Locked')}`);
+        const lockText = el('span', 'unlock-text', `🔒 ${unlockText(item.unlockedBy)}`);
         unlockBanner.append(lockText);
 
         // Direct boss / expedition link
