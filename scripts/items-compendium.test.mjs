@@ -637,7 +637,7 @@ describe('Items Compendium Data & Inverted Index', () => {
 
   it('52. recipe.station is normalized to a station of data/stations.json (no levels in names)', () => {
     const known = new Map(loadData('stations.json').map((s) => [s.id, s.name]));
-    known.set('frost-foundry', 'Frost Foundry');
+    for (const [id, name] of [['frost-foundry', 'Frost Foundry'], ['windmill', 'Windmill'], ['frigid-kiln', 'Frigid Kiln'], ['eitr-refinery', 'Eitr Refinery']]) known.set(id, name);
     const names = new Set();
     for (const i of items) {
       if (!i.recipe || !i.recipe.station) continue;
@@ -646,7 +646,10 @@ describe('Items Compendium Data & Inverted Index', () => {
       assert.equal(known.get(i.recipe.stationId), i.recipe.station, `${i.id} stationId`);
       assert.equal(i.station?.id, i.recipe.stationId);
     }
-    assert.ok(names.size <= 16, `distinct stations ${names.size}`);
+    assert.ok(names.size <= 19, `distinct stations ${names.size}`);
+    for (const [id, st] of [['barley-flour', 'Windmill'], ['oat-flour', 'Windmill'], ['liquid-frost', 'Frigid Kiln'], ['refined-eitr', 'Eitr Refinery']]) {
+      assert.equal(itemsById.get(id).recipe.station, st, id);
+    }
     assert.equal(itemsById.get('cast-nord-sword').recipe.stationLevel, 4);
     assert.equal(itemsById.get('cast-nord-sword').recipe.station, 'Black Forge');
   });
@@ -667,6 +670,7 @@ describe('Items Compendium Data & Inverted Index', () => {
   });
 
   it('55. All traders\' merchandise has a card linking to its trader; Hildir 38 wares', () => {
+    const BIOME_ORDER_BY_ID = Object.fromEntries(loadData('biomes.json').map((b) => [b.id, b.order]));
     const traders = loadData('traders.json').traders;
     let hildir = 0;
     for (const t of traders) {
@@ -676,10 +680,19 @@ describe('Items Compendium Data & Inverted Index', () => {
         assert.ok(item, `${t.id}/${tr.id} must have a card`);
         assert.ok(String(item.crossLinks.traders).includes(t.id) || item.sources.traders.some((s) => s.id === t.id), `${tr.id} must link ${t.id}`);
         assert.ok(item.sources.traders.some((s) => s.id === t.id && s.price != null), `${tr.id} must carry the ${t.id} price`);
+        if (tr.unlockedBy?.biome) {
+          assert.equal(item.biome, tr.unlockedBy.biome, `${tr.id} biome follows its unlock condition`);
+          assert.equal(item.tier, BIOME_ORDER_BY_ID[item.biome], `${tr.id} tier`);
+        }
         if (t.id === 'hildir') hildir++;
       }
     }
     assert.equal(hildir, 38);
+  });
+
+  it('57. Casts keep the biome of their moulds (Deep North), not the biome of their station', () => {
+    assert.equal(itemsById.get('cast-intricate-key').biome, 'deep-north');
+    assert.equal(itemsById.get('cast-spirit-caller').biome, 'deep-north');
   });
 
   it('56. Every category is one of the 17 known categories', () => {

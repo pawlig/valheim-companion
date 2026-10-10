@@ -135,7 +135,12 @@ function prettyStationName(raw) {
 
 // Canonical crafting-station names by id. Ids come from data/stations.json (Smithy / Provisions /
 // Comfort stations); Frost Foundry is the Deep North forge that stations.json does not list.
-const EXTRA_STATIONS = { 'frost-foundry': 'Frost Foundry' };
+const EXTRA_STATIONS = {
+  'frost-foundry': 'Frost Foundry',
+  windmill: 'Windmill',
+  'frigid-kiln': 'Frigid Kiln',
+  'eitr-refinery': 'Eitr Refinery',
+};
 
 // Normalizes a raw `station` string to { id, name, level } or null (audit A-9).
 // Handles "Black Forge level 4", "Frost Foundry\nHexen" (first line wins), "Black Forge, Dvergr Buildings"
@@ -871,6 +876,7 @@ export function buildItemsData() {
     }
   }
 
+  const traderUnlockBiome = new Map();
   // --- 7. Trader merchandise from traders.json ---------------------------
   for (const trader of traders.traders || []) {
     for (const trItem of trader.items || []) {
@@ -880,6 +886,10 @@ export function buildItemsData() {
         price: trItem.price ?? null,
         unlockedBy: trItem.unlockedBy || null,
       };
+      if (trItem.unlockedBy?.biome && BIOME_ORDER[trItem.unlockedBy.biome] != null) {
+        const prev = traderUnlockBiome.get(trItem.id);
+        traderUnlockBiome.set(trItem.id, lowestBiome([prev, trItem.unlockedBy.biome]));
+      }
       const existing = registry.get(trItem.id);
       if (existing) {
         if (!existing.sources.traders.some((t) => t.id === trader.id)) {
@@ -890,7 +900,7 @@ export function buildItemsData() {
         if (trItem.description && !existing.description) existing.description = trItem.description;
       } else {
         const cat = categorize(trItem.id, trItem.name, { description: trItem.description, fallback: 'material' });
-        const trBiome = trader.biome || trItem.biome || null;
+        const trBiome = trItem.biome || trader.biome || null;
         ensure(trItem.id, {
           id: trItem.id,
           name: trItem.name,
@@ -1273,7 +1283,10 @@ export function buildItemsData() {
       if (norm) {
         rec.recipe.station = norm.name;
         rec.recipe.stationId = norm.id;
-        if (norm.level != null) rec.recipe.stationLevel = norm.level;
+        if (norm.level != null) {
+          rec.recipe.stationLevel = norm.level;
+          rec.levelInStationName = true;
+        }
       } else {
         rec.recipe.station = null;
         rec.recipe.stationId = null;
@@ -1474,7 +1487,9 @@ export function buildItemsData() {
     }
     if (!rec.biome && rec.recipe?.station) {
       const sKey = slug(rec.recipe.station);
-      if (STATION_BIOMES[sKey]) {
+      // Stations written as "<Station> level N" never mapped to a station biome; they take the biome of
+      // their materials instead (so a Deep North cast stays in the Deep North).
+      if (STATION_BIOMES[sKey] && !rec.levelInStationName) {
         rec.biome = STATION_BIOMES[sKey];
         rec.tier = BIOME_ORDER[rec.biome] ?? null;
       }
@@ -1494,6 +1509,12 @@ export function buildItemsData() {
         rec.tier = BIOME_ORDER[rec.biome] ?? null;
       }
     }
+  }
+
+  // Merchandise unlocked by a boss, creature or chest appears in the biome of that condition.
+  for (const [id, biome] of traderUnlockBiome) {
+    const rec = registry.get(id);
+    if (rec) rec.biome = biome;
   }
 
   for (const rec of registry.values()) {
@@ -1668,7 +1689,7 @@ export function buildItemsData() {
   // Final records in stable insertion order
   // -----------------------------------------------------------------------
   const compendiumItems = order.map((id) => {
-    const { biomeFromCreature, ...rec } = registry.get(id);
+    const { biomeFromCreature, levelInStationName, ...rec } = registry.get(id);
     const maps = usedInMaps.get(id);
     return {
       ...rec,
