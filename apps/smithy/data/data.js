@@ -42972,7 +42972,8 @@ window.VA_DATA = {
       },
       "otherImmunities": [],
       "drops": [
-        "Ectoplasm, Ghost Trophy"
+        "Ectoplasm",
+        "Ghost Trophy"
       ],
       "trophy": {
         "name": "Ghost Trophy",
@@ -45958,9 +45959,7 @@ window.VA_DATA = {
         "spirit": "immune"
       },
       "otherImmunities": [],
-      "drops": [
-        "None"
-      ],
+      "drops": [],
       "trophy": null,
       "summon": null,
       "location": "Deep North",
