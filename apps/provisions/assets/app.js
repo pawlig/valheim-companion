@@ -200,11 +200,15 @@
         });
         node.append(rec);
       }
-    } else if (mead.id === 'love-potion') {
+    } else if (mead.traders?.length) {
+      // Bought, not brewed (Love Potion from the Bog Witch): link to each trader from the data.
       const traderP = el('p', 'details');
-      const traderLink = el('a', 'item-link', 'The Bog Witch');
-      traderLink.href = `/traders/#trader=bog-witch&item=${encodeURIComponent(mead.id)}`;
-      traderP.append(t('Sources') + ': ', traderLink);
+      traderP.append(t('Sources') + ': ');
+      mead.traders.forEach((trader, index) => {
+        const traderLink = el('a', 'item-link', trader.name);
+        traderLink.href = `/traders/#trader=${encodeURIComponent(trader.id)}&item=${encodeURIComponent(mead.id)}`;
+        traderP.append(index ? ', ' : '', traderLink);
+      });
       node.append(traderP);
     } else node.append(el('p', 'hint', t('No crafting recipe in the data.')));
     const selected = state.meads.some(line => line.id === mead.id);

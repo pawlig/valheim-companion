@@ -263,8 +263,8 @@ globalThis.VC_MESSAGES = {
       "other": "{count} more in locked biomes"
     },
     "cs": {
-      "one": "Dalších {count} v zamčených biomech",
-      "few": "Dalších {count} v zamčených biomech",
+      "one": "Další {count} v zamčených biomech",
+      "few": "Další {count} v zamčených biomech",
       "many": "Dalších {count} v zamčených biomech",
       "other": "Dalších {count} v zamčených biomech"
     },
