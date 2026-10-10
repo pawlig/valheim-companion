@@ -572,6 +572,15 @@ Nová sekce `/items/` (`apps/items/`, statická vanilla JS aplikace jako Smithy 
 - **Smlouva URL:** `/items/#item=<id>` odroluje na položku, otevře její detail a v případě uzamčeného biomu nabídne „Reveal“.
 - **Název nástroje:** **Items Compendium** (vlastní název, nepřekládá se dle § 20).
 
+- **Rozhodnutí Pavla 10. 10. 2026 (audit `docs/audit/AUDIT-VC-39-40.md`, globální arch AUD/1–8):**
+  - AUD/1 — spoilery: **zamčeno podle postupu** (`VCProgress`), přepínač zůstává.
+  - AUD/2 — odlitky, formy a Idoly Deep North mají vlastní kategorii **Casting** (`category: "casting"`).
+  - AUD/3 — Hildiřino zboží: **každý kus má kartu v Items** (kategorie armor, odkaz na Hildira); doplní se z `data/traders.json`.
+  - AUD/4 — trinkety mají kategorii **Accessories** (`category: "accessory"`).
+  - AUD/5 — hledání: suroviny vedou **do Items Compendia** (beze změny).
+  - AUD/8 — tlačítko „Reveal“ na zamčené kartě jen odkryje obsah přes `vc.openBiomes`; postup hráče (`vc.progress`) mění jen Progress Tracker.
+  - Schéma polí a kategorií: `docs/DATA-SCHEMA.md`, oddíl `data/items-compendium.json`.
+
 ## 28. Trader Ledger: Haldor, Hildir & Bog Witch (VC-40, Pavel 9. 10. 2026)
 
 > **Pavel 9. 10. 2026:** *„určitě ten trader ledger a asi i armor calculator i ten globální shopping vault“*
