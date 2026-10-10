@@ -83,9 +83,10 @@ Zadání jsou v [`docs/zadani/`](zadani/). Hotové úlohy jsou mergnuté do `mai
 | VC-40d | **Items Compendium oprava chyb, audit a testování** (oprava pushState navigace v modalu, biomy 0 nullů, oprava plain substringů v inferBiome, přejímka prohlizec bez vad) | agy | ✅ hotovo a otestováno 9. 10. (364 testů v npm test, prohlizec kontrola bez vad, 0 konzolových chyb) |
 | VC-42a | oprava O-1: Trader Ledger z wiki tabulek (ceny, sortiment, podmínky) | Sonnet | ✅ nasazeno 10. 10. (Haldor 11, Hildir 38, Bog Witch 20; přejímka: všech 69 řádků = wiki cache, 383/383 testů, prohlizec bez vad) |
 | VC-42b | oprava O-2: Items tier = order biomu z `data/biomes.json` | Flash | ✅ nasazeno 10. 10. (241 → 0 položek s chybným tier, Ocean ve filtru; přejímka 5/5; orchestrátor: biomy nesou bosse, aby zabití bosse odemklo dosah) |
-| VC-42c | oprava O-3: kategorie (+ Accessories, Casting), duplicity, odpad, stanice, Hildiřino zboží jako karty | Sonnet | 🔄 běží |
-| VC-42e | oprava O-5: spoilery v Items zamčené podle postupu | Flash | 🔄 běží |
-| VC-42d, f… | opravy O-4, O-6 … O-10 (+ překlad podmínek odemčení `unlockedBy.text` v Traders, balení ×N v košíku) (kategorie, košík, spoilery, mobil, Bestiary odkazy, i18n, úklid, docs) | — | ⏳ po O-1/O-2, O-3 a O-5 čekají na AUD/1–4 |
+| VC-42c | oprava O-3: kategorie (+ Accessories, Casting), duplicity, odpad, stanice, Hildiřino zboží jako karty | Sonnet | ✅ nasazeno 10. 10. (17 kategorií, 0 zbraní v drop, 0 duplicit, stanice bez úrovně v názvu, 38 Hildir + 20 Bog Witch karet, zboží z truhel/bossů v biomu podmínky; 1× vráceno — biomy obchodníků byla chyba zadání; 397 testů) |
+| VC-42g | oprava O-7: Bestiary odkazy do Items jen na existující položky, čisté trofeje | Flash | 🔄 běží |
+| VC-42e | oprava O-5: spoilery v Items zamčené podle postupu | Flash | 🔍 přejímka |
+| VC-42d, f, h… | opravy O-4 (košík), O-6 (mobil), O-8 (i18n), O-9 (úklid), O-10 (docs) (+ překlad podmínek odemčení `unlockedBy.text` v Traders, balení ×N v košíku) (kategorie, košík, spoilery, mobil, Bestiary odkazy, i18n, úklid, docs) | — | ⏳ po O-1/O-2, O-3 a O-5 čekají na AUD/1–4 |
 
 ### Po frontě
 Pracovníci od 6. 10.: agy je vyčerpaný (týden 4 %, obnova 8. 10.), práci dělá **Codex Sol**. Pavel 6. 10. schválil pořadí: překlady (VC-16 až VC-18), **vylepšení stávajících nástrojů** (VC-23 až VC-27), potom **Progress Tracker** a **Provisions** (VC-19 až VC-22). Další kandidáti z [`NAVRHY-NASTROJU.md`](NAVRHY-NASTROJU.md): **Comfort Planner schválen 6. 10. (VC-35)**, **Expedition schválen 7. 10. (VC-36)**. Trader Ledger, Fishing a Taming zatím schválené nejsou.
