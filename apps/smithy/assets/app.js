@@ -45,10 +45,41 @@
    * Helper to create DOM element safely without innerHTML
    */
   function el(tag, className, text) {
+    if (typeof document === 'undefined') {
+      return {
+        tagName: tag.toUpperCase(),
+        className: className || '',
+        textContent: text != null ? t(String(text)) : '',
+        href: '',
+        setAttribute(name, val) { this[name] = val; },
+        appendChild(child) { this.children = this.children || []; this.children.push(child); },
+        append(...items) { items.forEach(i => this.appendChild(i)); },
+        addEventListener() {},
+      };
+    }
     const element = document.createElement(tag);
     if (className) element.className = className;
     if (text !== undefined && text !== null) element.textContent = t(String(text));
     return element;
+  }
+
+  function traderBadges(itemId, customData) {
+    const dataSource = customData || (typeof data !== 'undefined' ? data : null) || globalThis.VA_DATA || (typeof window !== 'undefined' ? window.VA_DATA : null);
+    let traders = dataSource?.items?.[itemId]?.traders;
+    if (!traders && dataSource?.armor) {
+      for (const armor of dataSource.armor) {
+        const piece = (armor.pieces || []).find(p => p.id === itemId);
+        if (piece?.traders) {
+          traders = piece.traders;
+          break;
+        }
+      }
+    }
+    return (traders || []).map(trader => {
+      const link = el('a', 'badge badge-source', trader.name);
+      link.href = `/traders/#trader=${encodeURIComponent(trader.id)}&item=${encodeURIComponent(itemId)}`;
+      return link;
+    });
   }
 
   /**
@@ -1139,11 +1170,9 @@
           label.appendChild(matLink);
           matPill.appendChild(label);
 
-          if (mat.item === 'ymir-flesh' || mat.item === 'thunderstone') {
-            const traderLink = el('a', 'badge badge-source', 'Haldor');
-            traderLink.href = `/traders/#trader=haldor&item=${encodeURIComponent(mat.item)}`;
+          traderBadges(mat.item).forEach(traderLink => {
             matPill.appendChild(traderLink);
-          }
+          });
 
           if (itemData && itemData.teleportable === false) {
             const tpBadge = el('span', 'badge badge-teleport-warning', t("Can't be teleported"));
@@ -1516,11 +1545,9 @@
             label.appendChild(matLink);
             matPill.appendChild(label);
 
-            if (mat.item === 'ymir-flesh' || mat.item === 'thunderstone') {
-              const traderLink = el('a', 'badge badge-source', 'Haldor');
-              traderLink.href = `/traders/#trader=haldor&item=${encodeURIComponent(mat.item)}`;
+            traderBadges(mat.item).forEach(traderLink => {
               matPill.appendChild(traderLink);
-            }
+            });
 
             if (itemData && itemData.teleportable === false) {
               const tpBadge = el('span', 'badge badge-teleport-warning', t("Can't be teleported"));
@@ -2481,6 +2508,7 @@
     getStoredCatalogTab,
     setStoredCatalogTab,
     getStoredFurnaces,
-    setStoredFurnaces
+    setStoredFurnaces,
+    traderBadges
   };
 });
