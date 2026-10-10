@@ -37,10 +37,11 @@ export function buildArmourerBundle() {
     ...b,
     image: b.image ? `../bestiary/${b.image}` : null,
   }));
-  const armor = filterSmithyArmor(JSON.parse(readFileSync(armorPath, 'utf8')));
+  const traderIndex = buildTraderIndex(path.join(DATA_DIR, 'traders.json'));
+  const armor = filterSmithyArmor(JSON.parse(readFileSync(armorPath, 'utf8')))
+    .map(entry => ({ ...entry, pieces: entry.pieces.map(piece => withTraders(piece, traderIndex)) }));
   const itemsList = JSON.parse(readFileSync(itemsPath, 'utf8')).filter(item => !item.comfort);
 
-  const traderIndex = buildTraderIndex(path.join(DATA_DIR, 'traders.json'));
   const items = {};
   for (const item of itemsList) {
     items[item.id] = withTraders(item.image ? { ...item, image: aliasImage(item.image) } : item, traderIndex);

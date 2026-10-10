@@ -1270,9 +1270,7 @@ export function buildItemsData() {
     'wood-stack': 'meadows',
     'stone-pile': 'meadows',
     'flint-pile': 'meadows',
-    'bone-stack': 'meadows',
     'coal-pile': 'meadows',
-    'finewood-stack': 'meadows',
     'corewood-stack': 'black-forest',
     'copper-stack': 'black-forest',
     'tin-stack': 'black-forest',
@@ -1288,14 +1286,9 @@ export function buildItemsData() {
     'ashwood-stack': 'ashlands',
     'grausten-pile': 'ashlands',
     'flametal-stack': 'ashlands',
-    'bloodgold-stack': 'ashlands',
-    'pile-of-skulls': 'swamp',
-    'timberwood-stack': 'ashlands',
-    'heart-of-the-forest': 'meadows',
     'wooden-protection-idol': 'meadows',
     'wooden-battle-idol': 'meadows',
     'queen-bee': 'meadows',
-    'neckstabber': 'meadows',
     'roundpole-fence': 'meadows',
     'roundpole-gate': 'meadows',
     'bronze-pendant': 'black-forest',
@@ -1313,7 +1306,6 @@ export function buildItemsData() {
     'crystal-heart': 'mountain',
     'silver-protection-idol': 'mountain',
     'silver-battle-idol': 'mountain',
-    'snow-shovel': 'mountain',
     'nimble-anklet': 'plains',
     'evasion-mantle': 'plains',
     'black-metal-protection-idol': 'plains',
@@ -1327,41 +1319,37 @@ export function buildItemsData() {
     'dvergr-extractor': 'mistlands',
     'mechanical-spring': 'mistlands',
     'ectoplasm': 'mistlands',
-    'hooded-lantern': 'mistlands',
     'hook': 'mistlands',
     'grappling-hook': 'mistlands',
     'resounding-shackle': 'ashlands',
     'pulsating-earrings': 'ashlands',
-    'witch-crown': 'ashlands',
     'flametal-protection-idol': 'ashlands',
     'flametal-battle-idol': 'ashlands',
     'bloodgold-protection-idol': 'ashlands',
     'bloodgold-battle-idol': 'ashlands',
     'jormundling': 'ashlands',
     'voidcaller': 'ashlands',
-    'spirit-caller': 'ashlands',
     'basalt-bomb': 'ashlands',
-    'ceramic-plate': 'ashlands',
+    // Wiki (Ceramic Plate): "can only be crafted after building the Artisan Press upgrade after defeating The Queen"; made from Black Marble.
+    'ceramic-plate': 'mistlands',
     'molten-core': 'ashlands',
     'asksvin-egg': 'ashlands',
-    'candle-wick': 'ashlands',
+    // Wiki (Candle wick): "can be purchased from The Bog Witch" (swamp), no condition.
+    'candle-wick': 'swamp',
     'scythe-handle': 'ashlands',
-    'barrel-hoops': 'ashlands',
+    // Wiki (Barrel hoops): "can be brought from Haldor" (black-forest), no condition.
+    'barrel-hoops': 'black-forest',
     'corked-vial': 'ashlands',
     'grausten-payload': 'ashlands',
     'explosive-payload': 'ashlands',
-    'bloodgold-payload': 'ashlands',
-    'bloodgold-missile': 'ashlands',
     'black-metal-missile': 'plains',
-    'wooden-missile': 'meadows',
     'torch': 'meadows',
     'sparkler': 'meadows',
     'salvaged-lantern': 'mistlands',
-    'rustic-drawbridge': 'meadows',
-    'timberwood-drawbridge': 'ashlands',
     'portal-stone': 'ashlands',
     'green-pots': 'ashlands',
-    'ivy-seeds': 'ashlands',
+    // Wiki (Ivy / trader table): Ivy Seeds are sold by The Bog Witch (swamp) without a condition.
+    'ivy-seeds': 'swamp',
     'timberwood-cone': 'ashlands',
     'bread-dough': 'plains',
     'coral-cod': 'ocean',
@@ -1372,14 +1360,16 @@ export function buildItemsData() {
     'zil-trophy': 'plains',
     'thungr-trophy': 'plains',
     'dvergr-tankard': 'mistlands',
-    'tankard': 'meadows',
-    'horn-of-celebration': 'meadows',
-    'mead-horn-of-odin': 'meadows',
-    'butcher-knife': 'meadows',
     'serving-tray': 'meadows',
     'scythe': 'plains',
-    'curious-axe-head': 'ashlands',
-    'mysterious-axe-head': 'ashlands',
+    // Wiki (Loot chest): "Meadows Mysterious Chest are found in version 6 of Abandoned House" (Meadows).
+    'curious-axe-head': 'meadows',
+    'mysterious-axe-head': 'meadows',
+    // Wiki (Coal): "In Cooking Stations by overcooking any type of meat" (Meadows); Surtling drop is later.
+    'coal': 'meadows',
+    // Wiki (Pine cone / Fir cone): planted in Meadows, dropped by felling Pine / Fir trees.
+    'pine-cone': 'meadows',
+    'fir-cone': 'meadows',
     'wisp': 'mistlands',
     'crown-of-roots': 'swamp',
     'dverger-circlet': 'black-forest',
@@ -1391,7 +1381,6 @@ export function buildItemsData() {
     'beech-seeds': 'meadows',
     'birch-seeds': 'meadows',
     'iron-ore': 'swamp',
-    'ivy': 'meadows',
     'scrap-bronze': 'black-forest',
     'copper-scrap': 'black-forest',
     'amber': 'black-forest',
@@ -1455,7 +1444,7 @@ export function buildItemsData() {
       let maxTier = 0;
       let maxBiome = null;
       for (const m of rec.recipe.materials) {
-        const mat = registry.get(m.item);
+        const mat = m.item === rec.id ? null : registry.get(m.item);
         if (mat?.biome && (BIOME_ORDER[mat.biome] || 0) > maxTier) {
           maxTier = BIOME_ORDER[mat.biome];
           maxBiome = mat.biome;
@@ -1485,7 +1474,7 @@ export function buildItemsData() {
       if (!rec.recipe?.materials?.length || ITEM_EXPLICIT_BIOMES[rec.id] || traderUnlockBiome.has(rec.id)) continue;
       let top = null;
       for (const m of rec.recipe.materials) {
-        const mat = registry.get(m.item);
+        const mat = m.item === rec.id ? null : registry.get(m.item); // an item that needs itself (mysterious-rock) ignores that ingredient
         if (mat?.biome && biomeRank(mat.biome) > biomeRank(top)) top = mat.biome;
       }
       if (top && biomeRank(top) > biomeRank(rec.biome)) {

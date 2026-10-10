@@ -47,6 +47,8 @@ test('Smithy and Provisions items carry the traders that sell them', () => {
   const smithy = readBundle('apps/smithy/data/data.js');
   assert.equal(smithy.items['ymir-flesh'].traders[0].id, 'haldor');
   assert.deepEqual(Object.keys(smithy.items['ymir-flesh'].traders[0]).sort(), ['id', 'name']);
+  const cosmetic = smithy.armor.flatMap((e) => e.pieces).find((p) => p.id === 'beaded-dress-blue');
+  assert.equal(cosmetic.traders[0].id, 'hildir');
   const provisions = readBundle('apps/provisions/data/data.js');
   assert.equal(provisions.items['toadstool'].traders[0].id, 'bog-witch');
   assert.equal(provisions.meads.find((m) => m.id === 'love-potion')?.traders?.[0].id ?? provisions.items['love-potion'].traders[0].id, 'bog-witch');
@@ -90,4 +92,10 @@ test('no crafted item has a lower biome than its ingredients (except explicit ex
     }
   }
   assert.deepEqual(offenders.slice(0, 20), []);
+});
+
+test('ingredient biomes follow the wiki (coal, cones, axe heads, trader goods)', () => {
+  const byId = new Map(readJson('data/items-compendium.json').items.map((i) => [i.id, i]));
+  const expected = { coal: 'meadows', 'pine-cone': 'meadows', 'fir-cone': 'meadows', 'curious-axe-head': 'meadows', 'candle-wick': 'swamp', 'barrel-hoops': 'black-forest', 'ceramic-plate': 'mistlands', 'mysterious-rock': 'meadows', 'finewood-stack': 'black-forest' };
+  for (const [id, biome] of Object.entries(expected)) assert.equal(byId.get(id).biome, biome, id);
 });
