@@ -270,7 +270,7 @@ Ruční opravy, které parser aplikuje **jako poslední krok**:
 
 `window.VA_DATA = { generatedAt, source, biomes, armor, items }`. `items` je objekt podle `id`.
 
-- `items[id].traders` (volitelné, VC-42h): `[{ id, name }]` z `data/traders.json`, pořadí jako v `traders.json`; jen položky, které některý obchodník prodává (párování podle id položky). Příklad: `items['ymir-flesh'].traders[0].id === 'haldor'`. Smithy z něj odvodí odznak obchodníka u suroviny, bez seznamu id v kódu. (Položka `thunder-stone` v datech Smithy není, žádný recept ji nepoužívá.)
+- `items[id].traders` (volitelné, VC-42h): `[{ id, name }]` z `data/traders.json`, pořadí jako v `traders.json`; jen položky, které některý obchodník prodává (párování podle id položky). Příklad: `items['ymir-flesh'].traders[0].id === 'haldor'`. Stejné pole mají i kusy zbroje v `armor[].pieces`, které obchodník prodává (kosmetika Hildir, 37 kusů). Smithy z něj odvodí odznak obchodníka u suroviny, bez seznamu id v kódu. (Položka `thunder-stone` v datech Smithy není, žádný recept ji nepoužívá.)
 - Obrázek `roots` ukazuje na `img/items/root.png` (alias `roots.png → root.png` v `scripts/image-index.mjs`; soubor `roots.png` neexistuje).
 
 ### `apps/provisions/data/data.js` (pole `traders`)
