@@ -34,7 +34,9 @@ test('Smithy excludes Bare Fists while the Bestiary source retains it', () => {
   assert.ok(bundle.armor.filter(entry => entry.biome && !['cosmetic', 'special'].includes(entry.kind)).every(entry => entry.pieces.every(hasCraftingCost)));
   for (const entry of JSON.parse(readFileSync('data/armor.json', 'utf8'))) {
     if (!entry.biome || ['cosmetic', 'special'].includes(entry.kind)) {
-      assert.deepEqual(bundle.armor.find(item => item.id === entry.id), entry);
+      // The bundle adds the optional `traders` field to pieces a trader sells; everything else is unchanged.
+      const built = bundle.armor.find(item => item.id === entry.id);
+      assert.deepEqual({ ...built, pieces: built.pieces.map(({ traders, ...piece }) => piece) }, entry);
     }
   }
 });
