@@ -7,7 +7,7 @@
 //   cache entry means the network is not touched; `--refresh` ignores the cache
 
 import { createHash } from 'node:crypto';
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -302,6 +302,35 @@ export class MwApi {
 
 // Default client for the primary wiki (valheim.weirdgloop.org).
 export const api = new MwApi();
+
+// Wikitext of the given pages straight from the on-disk cache (no network).
+// The cache is keyed by the exact query, and pages were fetched in different
+// batches, so pages are looked up by title across all cache files (sorted;
+// the first file holding a title wins). Throws listing every missing title.
+export function readCachedPages(titles, cacheDir = api.cacheDir) {
+  const wanted = new Set(titles);
+  const found = new Map();
+  const files = existsSync(cacheDir) ? readdirSync(cacheDir).filter((f) => f.endsWith('.json')).sort() : [];
+  for (const file of files) {
+    let body;
+    try {
+      body = JSON.parse(readFileSync(path.join(cacheDir, file), 'utf8'));
+    } catch {
+      continue;
+    }
+    for (const page of Object.values(body?.query?.pages ?? {})) {
+      const rev = page.revisions?.[0];
+      const wikitext = rev?.slots?.main?.content ?? rev?.['*'];
+      if (wanted.has(page.title) && typeof wikitext === 'string' && !found.has(page.title)) {
+        found.set(page.title, wikitext);
+      }
+    }
+    if (found.size === wanted.size) break;
+  }
+  const missing = [...wanted].filter((t) => !found.has(t));
+  if (missing.length) throw new Error(`wiki cache lacks page(s): ${missing.join(', ')}`);
+  return found;
+}
 
 // Keep game-name qualifiers only when the English name is also qualified.
 export function cleanLocalizedName(value, englishName) {

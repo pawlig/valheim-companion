@@ -5,7 +5,7 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { api } from './wiki/api.mjs';
+import { readCachedPages } from './wiki/api.mjs';
 import { cleanText, parseWikiTables, slug } from './wiki/wikitext.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -88,32 +88,6 @@ const CHESTS = {
 
 function loadJson(name) {
   return JSON.parse(readFileSync(path.join(DATA_DIR, name), 'utf8'));
-}
-
-// Wikitext of the given pages from the wiki cache (data/raw). The cache is keyed
-// by the exact query, and the trader pages were fetched in different batches, so
-// pages are looked up by title; the build never touches the network.
-function readCachedPages(titles) {
-  const wanted = new Set(titles);
-  const found = new Map();
-  for (const file of readdirSync(api.cacheDir).filter((f) => f.endsWith('.json')).sort()) {
-    let body;
-    try {
-      body = JSON.parse(readFileSync(path.join(api.cacheDir, file), 'utf8'));
-    } catch {
-      continue;
-    }
-    for (const page of body?.query?.pages ?? []) {
-      const wikitext = page.revisions?.[0]?.slots?.main?.content;
-      if (wanted.has(page.title) && typeof wikitext === 'string' && !found.has(page.title)) {
-        found.set(page.title, wikitext);
-      }
-    }
-    if (found.size === wanted.size) break;
-  }
-  const missing = titles.filter((t) => !found.has(t));
-  if (missing.length) throw new Error(`wiki cache lacks page(s): ${missing.join(', ')}`);
-  return found;
 }
 
 // Images are looked up in the app image folders by the file name used on the wiki

@@ -16,6 +16,7 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSy
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
+import { readCachedPages } from './wiki/api.mjs';
 import { parseAllInfoboxes, cleanText, slug as baseSlug, parseMaterialList } from './wiki/wikitext.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -203,26 +204,13 @@ export function buildItemsData() {
   const provFoodIds = new Set(provFood.map((f) => f.id));
   const provMeadIds = new Set(provMeads.map((m) => m.id));
 
-  // Load raw wiki pages from cache
-  const rawFiles = existsSync(path.join(DATA_DIR, 'raw'))
-    ? readdirSync(path.join(DATA_DIR, 'raw')).filter((f) => f.endsWith('.json'))
-    : [];
+  // Wiki pages used by the compendium: a fixed list of titles (scripts/wiki/items-pages.json)
+  // read from the wiki cache; the build never scans data/raw/ and never touches the network.
+  // To add a page: append its title to items-pages.json and cache it once with
+  // `await api.getWikitext(['<title>'])` (scripts/wiki/api.mjs), then rebuild.
   const wikiPages = new Map();
-  for (const file of rawFiles) {
-    try {
-      const data = JSON.parse(readFileSync(path.join(DATA_DIR, 'raw', file), 'utf8'));
-      if (!data.query?.pages) continue;
-      for (const page of Object.values(data.query.pages)) {
-        if (page.title && page.revisions && !page.title.startsWith('File:')) {
-          const wt = page.revisions[0]?.slots?.main?.content || page.revisions[0]?.['*'];
-          if (wt && !wikiPages.has(page.title)) {
-            wikiPages.set(page.title, { title: page.title, wt });
-          }
-        }
-      }
-    } catch {
-      // Ignore malformed cache entry
-    }
+  for (const [title, wt] of readCachedPages(JSON.parse(readFileSync(path.join(ROOT, 'scripts', 'wiki', 'items-pages.json'), 'utf8')))) {
+    wikiPages.set(title, { title, wt });
   }
 
   const summonIds = new Set([
