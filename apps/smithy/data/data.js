@@ -13515,7 +13515,6 @@ window.VA_DATA = {
       "type": "Club 1h",
       "image": "../bestiary/img/weapons/club.png",
       "station": "Workbench",
-      "finishedAt": "Player crafting menu",
       "stationLevel": 1,
       "maxQuality": 4,
       "levels": [
@@ -25938,7 +25937,6 @@ window.VA_DATA = {
       "type": "Axe 1h",
       "image": "../bestiary/img/weapons/stone-axe.png",
       "station": "Workbench",
-      "finishedAt": "Player crafting menu",
       "stationLevel": 1,
       "maxQuality": 4,
       "levels": [

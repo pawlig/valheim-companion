@@ -4,7 +4,6 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 
 ## Finishing stations
 
-- club: Workbench 1/2/3/4 — finished at Player crafting menu
 - echo-spike: Galdr Table 3/4/5/6 — finished at Frost Foundry
 - lightning-strike: Galdr Table 3/4/5/6 — finished at Frost Foundry
 - nord-atgeir: Black Forge 4/5/6/7 — finished at Frost Foundry
@@ -23,7 +22,6 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 - nord-spear: Black Forge 4/5/6/7 — finished at Frost Foundry
 - nord-sword: Black Forge 4/5/6/7 — finished at Frost Foundry
 - northern-vengeance: Galdr Table 3/4/5/6 — finished at Frost Foundry
-- stone-axe: Workbench 1/2/3/4 — finished at Player crafting menu
 
 ## Weapons per tier
 

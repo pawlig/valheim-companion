@@ -36,7 +36,9 @@ export function resolveCraftingStation(source, craftingStation, stationNames) {
   const normalizedSource = canonical(sourceName) ?? sourceName;
   return {
     station,
+    // Hand-crafted Q1 ("Player crafting menu") is not a finishing station.
     ...(station && craftingStation && normalizedSource && normalizedSource !== station
+      && !/player crafting menu|by hand/i.test(normalizedSource)
       ? { finishedAt: normalizedSource } : {}),
   };
 }

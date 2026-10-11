@@ -8,7 +8,7 @@ Quality station levels now come from the wiki quality headers for the actual pie
 
 Exactly 27 Deep North pieces retain `finishedAt: "Frost Foundry"`: 18 weapons/shields and 9 armor pieces. Their crafting/upgrade station is Black Forge or Galdr Table. Padded Cuirass and Padded Greaves retain the wiki's Forge 2/2/3/4 sequence.
 
-Club and Stone Axe have Workbench upgrade rows with `by hand=y`; following the O-2 precedence rule, their `station` is Workbench and the differing infobox source is preserved as `finishedAt: "Player crafting menu"`. Their existing quality levels remain 1/2/3/4. Bare Fists has no station and becomes `null`. Trader names become `null` stations; trader metadata is retained.
+Club and Stone Axe have Workbench upgrade rows with `by hand=y`; following the O-2 precedence rule, their `station` is Workbench; the hand-crafting source is not a finishing station, so no `finishedAt` is set (orchestrator fix). Their existing quality levels remain 1/2/3/4. Bare Fists has no station and becomes `null`. Trader names become `null` stations; trader metadata is retained.
 
 Only station, finishedAt and levels[].stationLevel changed in the source item records. The complete list below contains 81 item ids. All 73 affected wiki pages were read from `data/raw/` through `readCachedPages`, including the named regression cases and all 27 Frost Foundry pieces. Materials, combat statistics and item biomes did not change.
 
@@ -110,7 +110,7 @@ The first run regenerated the Bestiary and Smithy data bundles. The build also r
 | Item id | Before → after |
 |---|---|
 | bare-fists | station: Always available → null |
-| club | station: Player crafting menu → Workbench; finishedAt: absent → Player crafting menu |
+| club | station: Player crafting menu → Workbench |
 | dyrnwyn | station: Black forge → Black Forge |
 | echo-spike | station: Frost Foundry → Galdr Table; finishedAt: absent → Frost Foundry |
 | flametal-tower-shield | station: Black forge → Black Forge |
@@ -138,7 +138,7 @@ The first run regenerated the Bestiary and Smithy data bundles. The build also r
 | splitnir-the-bleeding | station: Black forge → Black Forge |
 | splitnir-the-primal | station: Black forge → Black Forge |
 | splitnir-the-storming | station: Black forge → Black Forge |
-| stone-axe | station: Player crafting menu → Workbench; finishedAt: absent → Player crafting menu |
+| stone-axe | station: Player crafting menu → Workbench |
 | beaded-dress-blue | station: Hildir → null |
 | beaded-dress-brown | station: Hildir → null |
 | beaded-dress-yellow | station: Hildir → null |
