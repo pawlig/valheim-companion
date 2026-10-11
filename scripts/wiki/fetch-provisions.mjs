@@ -3,6 +3,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { api, addLocalizedNames } from './api.mjs';
+import { createStationProgression } from './station-upgrades.mjs';
 import { cleanText, parseTemplates, parseInfobox, parseMaterialList, parseWikiTables, parseLinks, slug } from './wikitext.mjs';
 import { createMaterialResolver } from './materials.mjs';
 import { parseSources, parseConversionRecipe, resolveRecipeBiomes } from './items.mjs';
@@ -136,9 +137,12 @@ export async function fetchProvisions() {
   Object.assign(pages, await api.getWikitext(upgrades));
   const additions = [...stationTitles, ...upgrades].map(title => parseProvisionsStation(title, pages[title]?.wikitext ?? ''));
   const cauldron = additions.find(s => s.id === 'cauldron');
-  cauldron.maxLevel = upgrades.length + 1;
-  cauldron.levels = [{ level: 1, upgrade: null }, ...upgrades.map((title, i) => ({ level: i + 2, upgrade: slug(title) }))];
-  upgrades.forEach((title, i) => Object.assign(additions.find(s => s.id === slug(title)), { upgrades: 'cauldron', stationLevel: 1, levelIncrement: 1, progressionLevel: i + 2 }));
+  const progression = createStationProgression()('Cauldron');
+  Object.assign(cauldron, { biome: progression.station.biome, tier: progression.station.tier,
+    maxLevel: progression.station.maxLevel, levels: progression.station.levels });
+  for (const upgrade of progression.upgrades) Object.assign(additions.find(s => s.id === upgrade.id), {
+    upgrades: 'cauldron', biome: upgrade.biome, tier: upgrade.tier,
+    stationLevel: 1, levelIncrement: 1, progressionLevel: upgrade.progressionLevel });
   const stations = load('stations.json').filter(station => station.type !== 'provisions');
   const existingStationIds = new Set(stations.map(s => s.id));
   const newStations = additions.filter(s => !existingStationIds.has(s.id));

@@ -1826,9 +1826,12 @@ window.VCX_DATA = {
       {
         "id": "galdr-table",
         "name": "Galdr Table",
-        "names": {},
+        "names": {
+          "cs": "Galdrový stůl",
+          "ru": "Стол гальдров"
+        },
+        "wiki": "https://valheim.weirdgloop.org/w/Galdr_Table",
         "type": "crafting",
-        "addedBy": "expedition",
         "materials": [
           {
             "item": "black-metal",
@@ -1847,9 +1850,50 @@ window.VCX_DATA = {
             "amount": 5
           }
         ],
+        "unlock": {
+          "station": "workbench",
+          "materials": [
+            "black-metal",
+            "yggdrasil-wood",
+            "black-core",
+            "refined-eitr"
+          ]
+        },
         "biome": "mistlands",
         "tier": 7,
-        "wiki": "https://valheim.weirdgloop.org/w/Galdr_Table"
+        "maxLevel": 5,
+        "levels": [
+          {
+            "level": 1,
+            "upgrade": null,
+            "biome": "mistlands",
+            "tier": 7
+          },
+          {
+            "level": 2,
+            "upgrade": "rune-table",
+            "biome": "mistlands",
+            "tier": 7
+          },
+          {
+            "level": 3,
+            "upgrade": "unfading-candles",
+            "biome": "mistlands",
+            "tier": 7
+          },
+          {
+            "level": 4,
+            "upgrade": "feathery-wreath",
+            "biome": "ashlands",
+            "tier": 8
+          },
+          {
+            "level": 5,
+            "upgrade": "standing-loom",
+            "biome": "deep-north",
+            "tier": 9
+          }
+        ]
       }
     ]
   },

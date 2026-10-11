@@ -5032,7 +5032,8 @@ window.VCO_DATA = {
         "fr": "Table d'artisan",
         "ru": "Стол ремесленника"
       },
-      "type": "comfort",
+      "wiki": "https://valheim.weirdgloop.org/w/Artisan_Table",
+      "type": "crafting",
       "materials": [
         {
           "item": "dragon-tear",
@@ -5052,7 +5053,21 @@ window.VCO_DATA = {
       },
       "biome": "mountain",
       "tier": 5,
-      "wiki": "https://valheim.weirdgloop.org/w/Artisan_Table"
+      "maxLevel": 2,
+      "levels": [
+        {
+          "level": 1,
+          "upgrade": null,
+          "biome": "mountain",
+          "tier": 5
+        },
+        {
+          "level": 2,
+          "upgrade": "artisan-press",
+          "biome": "mistlands",
+          "tier": 7
+        }
+      ]
     },
     {
       "id": "black-forge",
@@ -5061,7 +5076,8 @@ window.VCO_DATA = {
         "cs": "Černá Kovárna",
         "ru": "Черная кузница"
       },
-      "type": "comfort",
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Forge",
+      "type": "crafting",
       "materials": [
         {
           "item": "black-marble",
@@ -5086,7 +5102,45 @@ window.VCO_DATA = {
       },
       "biome": "mistlands",
       "tier": 7,
-      "wiki": "https://valheim.weirdgloop.org/w/Black_Forge"
+      "maxLevel": 6,
+      "levels": [
+        {
+          "level": 1,
+          "upgrade": null,
+          "biome": "mistlands",
+          "tier": 7
+        },
+        {
+          "level": 2,
+          "upgrade": "black-forge-cooler",
+          "biome": "mistlands",
+          "tier": 7
+        },
+        {
+          "level": 3,
+          "upgrade": "vice",
+          "biome": "mistlands",
+          "tier": 7
+        },
+        {
+          "level": 4,
+          "upgrade": "metal-cutter",
+          "biome": "ashlands",
+          "tier": 8
+        },
+        {
+          "level": 5,
+          "upgrade": "gem-cutter",
+          "biome": "ashlands",
+          "tier": 8
+        },
+        {
+          "level": 6,
+          "upgrade": "smith-s-aprons",
+          "biome": "deep-north",
+          "tier": 9
+        }
+      ]
     },
     {
       "id": "forge",
@@ -5096,7 +5150,8 @@ window.VCO_DATA = {
         "fr": "Forge",
         "ru": "Кузница"
       },
-      "type": "comfort",
+      "wiki": "https://valheim.weirdgloop.org/w/Forge",
+      "type": "crafting",
       "materials": [
         {
           "item": "stone",
@@ -5126,7 +5181,51 @@ window.VCO_DATA = {
       },
       "biome": "black-forest",
       "tier": 2,
-      "wiki": "https://valheim.weirdgloop.org/w/Forge"
+      "maxLevel": 7,
+      "levels": [
+        {
+          "level": 1,
+          "upgrade": null,
+          "biome": "black-forest",
+          "tier": 2
+        },
+        {
+          "level": 2,
+          "upgrade": "forge-cooler",
+          "biome": "black-forest",
+          "tier": 2
+        },
+        {
+          "level": 3,
+          "upgrade": "anvils",
+          "biome": "black-forest",
+          "tier": 2
+        },
+        {
+          "level": 4,
+          "upgrade": "smith-s-anvil",
+          "biome": "swamp",
+          "tier": 4
+        },
+        {
+          "level": 5,
+          "upgrade": "forge-toolrack",
+          "biome": "swamp",
+          "tier": 4
+        },
+        {
+          "level": 6,
+          "upgrade": "forge-bellows",
+          "biome": "swamp",
+          "tier": 4
+        },
+        {
+          "level": 7,
+          "upgrade": "grinding-wheel",
+          "biome": "swamp",
+          "tier": 4
+        }
+      ]
     },
     {
       "id": "stonecutter",
@@ -5136,7 +5235,8 @@ window.VCO_DATA = {
         "fr": "Tailleur de pierre",
         "ru": "Камнерез"
       },
-      "type": "comfort",
+      "wiki": "https://valheim.weirdgloop.org/w/Stonecutter",
+      "type": "crafting",
       "materials": [
         {
           "item": "wood",
@@ -5161,7 +5261,15 @@ window.VCO_DATA = {
       },
       "biome": "swamp",
       "tier": 4,
-      "wiki": "https://valheim.weirdgloop.org/w/Stonecutter"
+      "maxLevel": 1,
+      "levels": [
+        {
+          "level": 1,
+          "upgrade": null,
+          "biome": "swamp",
+          "tier": 4
+        }
+      ]
     },
     {
       "id": "workbench",
@@ -5172,7 +5280,8 @@ window.VCO_DATA = {
         "fr": "Table de fabrication",
         "ru": "Верстак"
       },
-      "type": "comfort",
+      "wiki": "https://valheim.weirdgloop.org/w/Workbench",
+      "type": "crafting",
       "materials": [
         {
           "item": "wood",
@@ -5187,7 +5296,39 @@ window.VCO_DATA = {
       },
       "biome": "meadows",
       "tier": 1,
-      "wiki": "https://valheim.weirdgloop.org/w/Workbench"
+      "maxLevel": 5,
+      "levels": [
+        {
+          "level": 1,
+          "upgrade": null,
+          "biome": "meadows",
+          "tier": 1
+        },
+        {
+          "level": 2,
+          "upgrade": "chopping-block",
+          "biome": "meadows",
+          "tier": 1
+        },
+        {
+          "level": 3,
+          "upgrade": "tanning-rack",
+          "biome": "meadows",
+          "tier": 1
+        },
+        {
+          "level": 4,
+          "upgrade": "adze",
+          "biome": "black-forest",
+          "tier": 2
+        },
+        {
+          "level": 5,
+          "upgrade": "tool-shelf",
+          "biome": "mountain",
+          "tier": 5
+        }
+      ]
     }
   ],
   "tips": [

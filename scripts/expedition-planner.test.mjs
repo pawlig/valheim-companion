@@ -52,7 +52,11 @@ test('browser bundle supplements only new materials and preserves the three data
   assert.ok(Object.values(bundle.expedition.items).every(i=>i.addedBy==='expedition'));
   assert.ok(!bundle.expedition.items.wood);
   assert.ok(bundle.expedition.items.portal.recipe.materials.length);
-  assert.ok(bundle.expedition.stations.some(s=>s.id==='galdr-table'&&s.type==='crafting'&&s.addedBy==='expedition'));
+  const galdr = bundle.expedition.stations.find(s => s.id === 'galdr-table');
+  assert.equal(galdr.type, 'crafting');
+  assert.equal(galdr.maxLevel, 5);
+  assert.equal(galdr.levels.at(-1).biome, 'deep-north');
+  assert.equal(galdr.addedBy, undefined);
   assert.ok(Object.values(bundle.expedition.items).every(i=>!('expedition' in i)));
   assert.equal(core.nextBoss({},bundle).id,'eikthyr');
 });

@@ -1,4 +1,4 @@
-# Processing & Smelting Stations Report
+# Crafting, Processing & Smelting Stations Report
 
 Source: valheim.weirdgloop.org (MediaWiki API). Extracted deterministically from station wikitext.
 
@@ -34,4 +34,20 @@ Source: valheim.weirdgloop.org (MediaWiki API). Extracted deterministically from
 
 ### Spinning Wheel
 - **flax** → **linen-thread** (ratio 1:1)
+
+## Maximum crafting level by biome
+
+| Station | Meadows | Black Forest | Ocean | Swamp | Mountain | Plains | Mistlands | Ashlands | Deep North | Max |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Workbench | 3 | 4 | 4 | 4 | 5 | 5 | 5 | 5 | 5 | 5 |
+| Forge | — | 3 | 3 | 7 | 7 | 7 | 7 | 7 | 7 | 7 |
+| Black Forge | — | — | — | — | — | — | 3 | 5 | 6 | 6 |
+| Galdr Table | — | — | — | — | — | — | 3 | 4 | 5 | 5 |
+| Cauldron | — | 2 | 2 | 2 | 3 | 4 | 5 | 6 | 7 | 7 |
+| Artisan Table | — | — | — | — | 1 | 1 | 2 | 2 | 2 | 2 |
+
+Levels count distinct extensions available by that biome; ties retain wiki table order.
+Material biomes use items.json, falling back to items-compendium.json. Construction and manufactured-material station prerequisites are included.
+Coal uses the existing wiki-verified Comfort acquisition override until the shared material correction in O-3.
+Cauldron remains owned by fetch-provisions.mjs; its progression is calculated by the same cache-only module.
 

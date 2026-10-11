@@ -161,9 +161,7 @@ export async function fetchComfort() {
   // Station material tiers are obtained by the same shared material resolver.
   for (const s of stationDetails) tiers.set(slug(s.title), resolver(s.title));
   const stations = load('stations.json');
-  const comfortStations = stationDetails.map(s => ({ id: slug(s.title), name: s.title, names: {}, type: 'comfort', materials: s.materials,
-    unlock: { station: s.station, materials: s.materials.map(m => m.item) }, ...highest(s.materials, s.station), wiki: wiki(s.title) }));
-  const newStations = comfortStations.filter(s => !stations.some(old => old.id === s.id));
+  // Crafting stations are owned by fetch-stations; Comfort only reads them.
   const discrepancies = [], fallbacks = [];
   data.pieces = data.pieces.map(p => {
     const d = details.get(p.id);
@@ -175,7 +173,7 @@ export async function fetchComfort() {
   }).sort(sort);
   data.rules = { base: 1, shelter: 1, unshelteredCap: 1, restedBaseMinutes: 7, rangeMeters: 10,
     restedEffects: { healthRegenPercent: 50, staminaRegenPercent: 100, eitrRegenPercent: 100, xpPercent: 50 } };
-  await addLocalizedNames([...data.pieces, ...comfortItems, ...comfortStations]);
+  await addLocalizedNames([...data.pieces, ...comfortItems]);
   const images = [...data.pieces, ...comfortItems];
   const files = images.map(p => details.get(p.comfort === true ? 'material:' + p.id : p.id)?.imageFile ?? `${p.name}.png`);
   const urls = await api.getImageUrls([...new Set(files)].sort(), 128);
@@ -202,10 +200,9 @@ export async function fetchComfort() {
   // Match the existing pipelines' stable ordering without editing any record.
   const sharedItems = [...originalItems, ...additions].sort((a, b) => a.name < b.name ? -1 : a.name > b.name ? 1 : 0);
   save('data/items.json', JSON.stringify(sharedItems, null, 2) + '\n');
-  save('data/stations.json', JSON.stringify([...stations.filter(s => s.type !== 'provisions'), ...newStations, ...stations.filter(s => s.type === 'provisions')], null, 2) + '\n');
   save('data/comfort-tips.json', JSON.stringify(tips, null, 2) + '\n');
   save('data/report-comfort.md', lines.join('\n'));
-  console.log(`Comfort: ${data.pieces.length} pieces, ${additions.length} new materials, ${newStations.length} new stations. Maxima: ${JSON.stringify(maxima)}`);
+  console.log(`Comfort: ${data.pieces.length} pieces, ${additions.length} new materials, ${stations.length} existing stations. Maxima: ${JSON.stringify(maxima)}`);
   return data;
 }
 

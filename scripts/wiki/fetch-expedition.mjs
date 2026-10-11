@@ -82,17 +82,8 @@ export async function fetchExpedition() {
   const pages = await api.getWikitext(titles);
   const { events, unmatched } = parseEvents(pages.Events.wikitext, creatures);
   const expedition = bosses.map(b => parseBoss(b, pages[b.name].wikitext, pages['Forsaken power'].wikitext));
-  const stationAdditions = [];
-  for (const title of ['Galdr Table']) if (!stations.some(s => s.id === slug(title) && s.type !== 'expedition' && s.addedBy !== 'expedition')) {
-    const page = (await api.getWikitext([title]))[title];
-    const box = parseTemplates(page.wikitext ?? '', 'infobox structure')[0];
-    if (!box) throw new Error('Missing station: ' + title);
-    const materials = parseMaterialList(box.materials).map(m => ({ item: slug(m.name), amount: m.amount }));
-    stationAdditions.push({ id: slug(title), name: title, names: {}, type: 'crafting', addedBy: 'expedition', materials,
-      biome: 'mistlands', tier: 7, wiki: wiki(title) });
-  }
-  const pending = [...new Set([...expedition.flatMap(b => b.summonItems.map(m => m.id.replaceAll('-', ' '))), 'Portal',
-    ...stationAdditions.flatMap(s => s.materials.map(m => m.item.replaceAll('-', ' ')))])];
+  // Galdr Table is owned by fetch-stations; Expedition only reads stations.
+  const pending = [...new Set([...expedition.flatMap(b => b.summonItems.map(m => m.id.replaceAll('-', ' '))), 'Portal'])];
   const seen = new Set();
   const additions = [];
   while (pending.length) {
@@ -165,7 +156,6 @@ export async function fetchExpedition() {
     '- Incoming damage uses existing Bestiary attack maps; compound attack strings may not preserve every repeated component. Bestiary data is not changed.', '');
   save('events.json',events); save('expedition.json',expedition); save('expedition-tips.json',tips);
   save('items.json',[...items,...additions].sort((a,b)=>a.name<b.name?-1:a.name>b.name?1:0));
-  save('stations.json', [...stations.map(s => stationAdditions.find(added => added.id === s.id) ?? s), ...stationAdditions.filter(s => !stations.some(old => old.id === s.id))]);
   save('report-expedition.md',lines.join('\n'));
   console.log(`Expedition: ${events.length} events, ${expedition.length} bosses, ${additions.length} new items; ${stations.length} existing stations.`);
 }

@@ -1,4 +1,4 @@
-// Fetches smelting and processing stations from valheim.weirdgloop.org (MediaWiki API)
+// Fetches crafting, smelting and processing stations from valheim.weirdgloop.org (MediaWiki API)
 // and builds data/stations.json and data/report-stations.md.
 //
 // Follows docs/ANALYZA.md § 18 (VC-23) and docs/DATA-SCHEMA.md.
@@ -7,8 +7,10 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { api, addLocalizedNames } from './api.mjs';
+import { api } from './api.mjs';
 import { cleanText, parseInfobox, slug } from './wikitext.mjs';
+import { CRAFTING_STATION_PAGES, createStationProgression, addStationLocalizedNames } from './station-upgrades.mjs';
+import { BIOMES } from './biomes.mjs';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const DATA_DIR = path.join(REPO_ROOT, 'data');
@@ -21,6 +23,7 @@ export const STATION_PAGES = [
   'Blast Furnace',
   'Charcoal Kiln',
   'Spinning Wheel',
+  ...CRAFTING_STATION_PAGES,
 ];
 
 export function parseStationWikitext(title, wt) {
@@ -122,7 +125,7 @@ export function parseStationWikitext(title, wt) {
 
 export function renderStationsReport(stations) {
   const lines = [
-    '# Processing & Smelting Stations Report',
+    '# Crafting, Processing & Smelting Stations Report',
     '',
     'Source: valheim.weirdgloop.org (MediaWiki API). Extracted deterministically from station wikitext.',
     '',
@@ -132,7 +135,8 @@ export function renderStationsReport(stations) {
     '|---|---|---|---|---|---|---|',
   ];
 
-  for (const s of stations) {
+  const processing = stations.filter(s => !['crafting', 'upgrade', 'provisions'].includes(s.type));
+  for (const s of processing) {
     const fuelText = s.fuel ? `${s.fuel.name} (${s.fuel.secondsPerUnit}s)` : 'None';
     const fuelPerItem = s.fuel ? String(s.fuel.perItem) : '—';
     const inCap = s.capacity.input != null ? String(s.capacity.input) : '—';
@@ -141,7 +145,7 @@ export function renderStationsReport(stations) {
   }
 
   lines.push('', '## Conversions by station', '');
-  for (const s of stations) {
+  for (const s of processing) {
     lines.push(`### ${s.name}`);
     if (s.conversions.length === 0) {
       lines.push('(none)', '');
@@ -153,6 +157,18 @@ export function renderStationsReport(stations) {
     lines.push('');
   }
 
+  lines.push('## Maximum crafting level by biome', '',
+    `| Station | ${BIOMES.map(b => b.title).join(' | ')} | Max |`,
+    `|---|${BIOMES.map(() => '---:').join('|')}|---:|`);
+  for (const id of ['workbench', 'forge', 'black-forge', 'galdr-table', 'cauldron', 'artisan-table']) {
+    const station = stations.find(s => s.id === id);
+    const values = BIOMES.map(b => station.levels.filter(l => l.tier <= b.order).at(-1)?.level ?? '—');
+    lines.push(`| ${station.name} | ${values.join(' | ')} | ${station.maxLevel} |`);
+  }
+  lines.push('', 'Levels count distinct extensions available by that biome; ties retain wiki table order.',
+    'Material biomes use items.json, falling back to items-compendium.json. Construction and manufactured-material station prerequisites are included.',
+    'Coal uses the existing wiki-verified Comfort acquisition override until the shared material correction in O-3.',
+    'Cauldron remains owned by fetch-provisions.mjs; its progression is calculated by the same cache-only module.', '');
   return lines.join('\n') + '\n';
 }
 
@@ -181,10 +197,13 @@ function readExistingStations(outputPath) {
 
 export async function fetchStations() {
   console.log(`fetching wikitext for ${STATION_PAGES.length} stations…`);
-  const pages = await api.getWikitext(STATION_PAGES);
+  const processingTitles = STATION_PAGES.filter(t => !CRAFTING_STATION_PAGES.includes(t));
+  const pages = await api.getWikitext(processingTitles);
+  const progression = createStationProgression();
+  const crafting = CRAFTING_STATION_PAGES.map(t => progression(t));
 
   const stations = [];
-  for (const title of STATION_PAGES) {
+  for (const title of processingTitles) {
     const page = pages[title];
     if (!page || !page.wikitext) {
       console.warn(`warning: missing wikitext for ${title}`);
@@ -194,7 +213,11 @@ export async function fetchStations() {
     stations.push(parsed);
   }
 
-  await addLocalizedNames(stations);
+  // Put new extensions first so a cache-only rebuild from [] has the same
+  // order as mergeStations adding these records to the existing catalog.
+  stations.unshift(...crafting.flatMap(s => s.upgrades));
+  stations.push(...crafting.map(s => s.station));
+  await addStationLocalizedNames(stations);
 
   mkdirSync(DATA_DIR, { recursive: true });
   const outputPath = path.join(DATA_DIR, 'stations.json');
@@ -204,7 +227,7 @@ export async function fetchStations() {
     writeFileSync(outputPath, stationsJson, 'utf8');
   }
 
-  const reportMd = renderStationsReport(stations);
+  const reportMd = renderStationsReport([...stations, progression('Cauldron').station]);
   const reportPath = path.join(DATA_DIR, 'report-stations.md');
   if (!existsSync(reportPath) || readFileSync(reportPath, 'utf8') !== reportMd) {
     writeFileSync(reportPath, reportMd, 'utf8');
