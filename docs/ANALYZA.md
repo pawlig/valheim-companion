@@ -662,3 +662,17 @@ Nová sekce `/traders/` (`apps/traders/`, statická vanilla JS aplikace). Komple
   - 13 jazyků v `apps/items/locales/messages.json` i `messages.js` (0 chybějících klíčů, pluralizace `tn`).
   - Striktní CSP bez inline skriptů a stylů.
   - Mobilní layout 360 px bez vodorovného přesahu ve všech 13 jazycích.
+
+## 30. Dostupnost úrovní stanic a kvalit po biomech (VC-44, Pavel 10.–11. 10. 2026)
+
+Podnět Pavla: companion ukazoval Carapace Armor v Mistlands do Q4, ale kvalitu omezuje úroveň stanice, kterou v biomu jde postavit. Rozbor: [`docs/audit/ROZBOR-STATION-LEVELS.md`](audit/ROZBOR-STATION-LEVELS.md) (97 kusů / 103 kvalit ukázáno dřív, 71 / 76 nad maximem stanice ve hře; skripty `docs/audit/station-levels/`). Rozhodnutí Pavla v globálním archu (VC44/Q-1 … Q-9, 11. 10.):
+
+- **Q-1** Kvalita, na kterou v odhaleném biomu ještě není úroveň stanice: ukázat **zamčenou s důvodem** „Black Forge level 4 — available in Ashlands“ (stejně jako zamčené suroviny ve Smithy); při „Show all (spoilers)“ odemknout.
+- **Q-2** Kvality nad maximem stanice ve hře: zobrazit s odznakem **„Not yet available in the game“**, vyřadit z doporučení a z výchozího košíku.
+- **Q-3** Carapace Armor: platí wiki — Q1–Q3 Mistlands (Black Forge Cooler + Vice; Mechanical Spring z Artisan Table), Q4 Ashlands.
+- **Q-4** „Max“ v doporučeních zbraní (Bestiary, Damage Calculator, Expedition) = **nejvyšší kvalita vyrobitelná v biomu** bytosti/bosse; explicitní volba Q1–Q4 zůstává.
+- **Q-5** `biome` předmětu := biom, kde jde **Q1 poprvé vyrobit** (suroviny + úroveň stanice).
+- **Q-6** Deep North kusy: stanice = **Black Forge / Galdr Table** (úrovně podle wiki), „hardened in Frost Foundry“ jen jako doplňující text.
+- **Q-7** Neshoda biomu suroviny `items.json` × kompendium: vždy opravit zdroj (`scripts/wiki/materials.mjs` + `data/overrides.json`), kompendium dědí; neshoda = test selže.
+- **Q-8** Dostupnost zboží obchodníků po biomech: teď mimo rozsah.
+- **Q-9** 5 jídel z Cauldronu zařazených do Meadows: přesunout do **Black Forest**.
