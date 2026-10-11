@@ -14,7 +14,7 @@ Generated from boss drops in `data/creatures.json`. Every non-trophy drop is inc
 | Mountain | Moder | Moder Power | moder-power | — |
 | Plains | Yagluth | Torn Spirit | torn-spirit | — |
 | Plains | Yagluth | Yagluth Power | yagluth-power | — |
-| Mistlands | The Queen | Majestic Carapace | majestic-carapace | — |
+| Mistlands | The Queen | Majestic Carapace | majestic-carapace | ../smithy/img/items/majestic-carapace.png |
 | Mistlands | The Queen | The Queen's Power | the-queen-s-power | — |
 | Ashlands | Fader | Kindled Ribs | kindled-ribs | — |
 | Deep North | Kall Fimbulbringer | Sacrificial Blood | sacrificial-blood | — |

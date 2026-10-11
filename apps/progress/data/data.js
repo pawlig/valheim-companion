@@ -371,8 +371,10 @@ window.VP_DATA = {
         {
           "id": "majestic-carapace",
           "name": "Majestic Carapace",
-          "names": {},
-          "image": null,
+          "names": {
+            "ru": "Королевский панцирь"
+          },
+          "image": "../smithy/img/items/majestic-carapace.png",
           "bossId": "the-queen",
           "drop": "Majestic Carapace"
         },

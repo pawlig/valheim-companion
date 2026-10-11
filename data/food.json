@@ -37,11 +37,11 @@
       }
     ],
     "yields": 1,
-    "biome": "deep-north",
-    "tier": 9,
+    "biome": "ashlands",
+    "tier": 8,
     "isFeast": true,
     "servings": 10,
-    "availableFrom": "deep-north"
+    "availableFrom": "ashlands"
   },
   {
     "id": "baked-poteitr",
@@ -109,11 +109,11 @@
       }
     ],
     "yields": 1,
-    "biome": "swamp",
-    "tier": 4,
+    "biome": "black-forest",
+    "tier": 2,
     "isFeast": true,
     "servings": 10,
-    "availableFrom": "swamp"
+    "availableFrom": "black-forest"
   },
   {
     "id": "black-soup",
@@ -800,10 +800,10 @@
       }
     ],
     "yields": 1,
-    "biome": "black-forest",
-    "tier": 2,
+    "biome": "plains",
+    "tier": 6,
     "isFeast": false,
-    "availableFrom": "black-forest"
+    "availableFrom": "plains"
   },
   {
     "id": "cooked-hare-meat",
@@ -1241,11 +1241,11 @@
       }
     ],
     "yields": 1,
-    "biome": "plains",
-    "tier": 6,
+    "biome": "mountain",
+    "tier": 5,
     "isFeast": true,
     "servings": 10,
-    "availableFrom": "plains"
+    "availableFrom": "mountain"
   },
   {
     "id": "honey",
@@ -1921,11 +1921,11 @@
       }
     ],
     "yields": 1,
-    "biome": "ashlands",
-    "tier": 8,
+    "biome": "mistlands",
+    "tier": 7,
     "isFeast": true,
     "servings": 10,
-    "availableFrom": "ashlands"
+    "availableFrom": "mistlands"
   },
   {
     "id": "northern-morning-fare",
@@ -2257,11 +2257,11 @@
       }
     ],
     "yields": 1,
-    "biome": "mistlands",
-    "tier": 7,
+    "biome": "plains",
+    "tier": 6,
     "isFeast": true,
     "servings": 10,
-    "availableFrom": "mistlands"
+    "availableFrom": "plains"
   },
   {
     "id": "poteitr",
@@ -2510,11 +2510,11 @@
       }
     ],
     "yields": 1,
-    "biome": "swamp",
-    "tier": 4,
+    "biome": "ocean",
+    "tier": 3,
     "isFeast": true,
     "servings": 10,
-    "availableFrom": "swamp"
+    "availableFrom": "ocean"
   },
   {
     "id": "salad",
@@ -3170,11 +3170,11 @@
       }
     ],
     "yields": 1,
-    "biome": "swamp",
-    "tier": 4,
+    "biome": "black-forest",
+    "tier": 2,
     "isFeast": true,
     "servings": 10,
-    "availableFrom": "swamp"
+    "availableFrom": "black-forest"
   },
   {
     "id": "wolf-jerky",

@@ -5159,7 +5159,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "plains-pie-picnic",
             "name": "Plains Pie Picnic",
             "isFeast": true,
-            "biome": "mistlands",
+            "biome": "plains",
             "itemId": "plains-pie-picnic"
           }
         ],
@@ -5893,7 +5893,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "hearty-mountain-logger-s-stew",
             "name": "Hearty Mountain Logger's Stew",
             "isFeast": true,
-            "biome": "plains",
+            "biome": "mountain",
             "itemId": "hearty-mountain-logger-s-stew"
           },
           {
@@ -8794,7 +8794,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "plains-pie-picnic",
             "name": "Plains Pie Picnic",
             "isFeast": true,
-            "biome": "mistlands",
+            "biome": "plains",
             "itemId": "plains-pie-picnic"
           },
           {
@@ -9293,7 +9293,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "whole-roasted-meadow-boar",
             "name": "Whole Roasted Meadow Boar",
             "isFeast": true,
-            "biome": "swamp",
+            "biome": "black-forest",
             "itemId": "whole-roasted-meadow-boar"
           }
         ],
@@ -9378,7 +9378,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "whole-roasted-meadow-boar",
             "name": "Whole Roasted Meadow Boar",
             "isFeast": true,
-            "biome": "swamp",
+            "biome": "black-forest",
             "itemId": "whole-roasted-meadow-boar"
           }
         ],
@@ -9462,7 +9462,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "sailor-s-bounty",
             "name": "Sailor's Bounty",
             "isFeast": true,
-            "biome": "swamp",
+            "biome": "ocean",
             "itemId": "sailor-s-bounty"
           }
         ],
@@ -9611,7 +9611,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "sailor-s-bounty",
             "name": "Sailor's Bounty",
             "isFeast": true,
-            "biome": "swamp",
+            "biome": "ocean",
             "itemId": "sailor-s-bounty"
           },
           {
@@ -9694,7 +9694,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "ashlands-gourmet-bowl",
             "name": "Ashlands Gourmet Bowl",
             "isFeast": true,
-            "biome": "deep-north",
+            "biome": "ashlands",
             "itemId": "ashlands-gourmet-bowl"
           }
         ],
@@ -9770,7 +9770,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "mushrooms-galore-a-la-mistlands",
             "name": "Mushrooms Galore á la Mistlands",
             "isFeast": true,
-            "biome": "ashlands",
+            "biome": "mistlands",
             "itemId": "mushrooms-galore-a-la-mistlands"
           }
         ],
@@ -10696,7 +10696,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "whole-roasted-meadow-boar",
             "name": "Whole Roasted Meadow Boar",
             "isFeast": true,
-            "biome": "swamp",
+            "biome": "black-forest",
             "itemId": "whole-roasted-meadow-boar"
           }
         ],
@@ -11232,7 +11232,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "black-forest-buffet-platter",
             "name": "Black Forest Buffet Platter",
             "isFeast": true,
-            "biome": "swamp",
+            "biome": "black-forest",
             "itemId": "black-forest-buffet-platter"
           }
         ],
@@ -12058,7 +12058,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "cooked-egg",
             "name": "Cooked egg",
             "isFeast": false,
-            "biome": "black-forest",
+            "biome": "plains",
             "itemId": "cooked-egg"
           },
           {
@@ -13000,7 +13000,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "ashlands-gourmet-bowl",
             "name": "Ashlands Gourmet Bowl",
             "isFeast": true,
-            "biome": "deep-north",
+            "biome": "ashlands",
             "itemId": "ashlands-gourmet-bowl"
           }
         ],
@@ -15405,7 +15405,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "plains-pie-picnic",
             "name": "Plains Pie Picnic",
             "isFeast": true,
-            "biome": "mistlands",
+            "biome": "plains",
             "itemId": "plains-pie-picnic"
           }
         ],
@@ -16029,7 +16029,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "mushrooms-galore-a-la-mistlands",
             "name": "Mushrooms Galore á la Mistlands",
             "isFeast": true,
-            "biome": "ashlands",
+            "biome": "mistlands",
             "itemId": "mushrooms-galore-a-la-mistlands"
           }
         ],
@@ -19240,7 +19240,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "plains-pie-picnic",
             "name": "Plains Pie Picnic",
             "isFeast": true,
-            "biome": "mistlands",
+            "biome": "plains",
             "itemId": "plains-pie-picnic"
           }
         ],
@@ -19576,6 +19576,65 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "majestic-carapace",
+      "name": "Majestic Carapace",
+      "image": "../smithy/img/items/majestic-carapace.png",
+      "biome": "mistlands",
+      "tier": 7,
+      "category": "drop",
+      "teleportable": true,
+      "stack": 30,
+      "weight": 1,
+      "wiki": "https://valheim.weirdgloop.org/w/Majestic_Carapace",
+      "names": {
+        "ru": "Королевский панцирь"
+      },
+      "description": "Her majesty's will was hard and unrelenting, but this piece of carapace is perhaps even more so.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "the-queen",
+            "name": "The Queen",
+            "biome": "mistlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "The Queen",
+            "kind": "creature",
+            "creatureId": "the-queen",
+            "biomes": [
+              "mistlands"
+            ]
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "artisan-press",
+            "name": "Artisan Press",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "artisan-press"
+          }
+        ],
         "crafting": []
       },
       "crossLinks": {}
@@ -20100,8 +20159,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "mead-base-berserkir",
       "name": "Mead Base: Berserkir",
       "image": "../provisions/img/items/mead-base-berserkir.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "category": "ingredient",
       "teleportable": true,
       "stack": 1,
@@ -20160,7 +20219,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "berserkir-mead",
             "name": "Berserkir Mead",
-            "biome": "plains",
+            "biome": "mountain",
             "itemId": "berserkir-mead"
           }
         ],
@@ -21318,7 +21377,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "mushrooms-galore-a-la-mistlands",
             "name": "Mushrooms Galore á la Mistlands",
             "isFeast": true,
-            "biome": "ashlands",
+            "biome": "mistlands",
             "itemId": "mushrooms-galore-a-la-mistlands"
           }
         ],
@@ -23838,7 +23897,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "hearty-mountain-logger-s-stew",
             "name": "Hearty Mountain Logger's Stew",
             "isFeast": true,
-            "biome": "plains",
+            "biome": "mountain",
             "itemId": "hearty-mountain-logger-s-stew"
           }
         ],
@@ -23943,7 +24002,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "berserkir-mead",
             "name": "Berserkir Mead",
-            "biome": "plains",
+            "biome": "mountain",
             "itemId": "berserkir-mead"
           }
         ],
@@ -23963,7 +24022,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "mead-base-berserkir",
             "name": "Mead Base: Berserkir",
             "level": 1,
-            "biome": "plains",
+            "biome": "mountain",
             "itemId": "mead-base-berserkir"
           }
         ]
@@ -26661,8 +26720,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "onion-soup",
       "name": "Onion Soup",
       "image": "../provisions/img/items/onion-soup.png",
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "food",
       "teleportable": true,
       "stack": 10,
@@ -26719,7 +26778,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "hearty-mountain-logger-s-stew",
             "name": "Hearty Mountain Logger's Stew",
             "isFeast": true,
-            "biome": "plains",
+            "biome": "mountain",
             "itemId": "hearty-mountain-logger-s-stew"
           }
         ],
@@ -27800,7 +27859,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "black-forest-buffet-platter",
             "name": "Black Forest Buffet Platter",
             "isFeast": true,
-            "biome": "swamp",
+            "biome": "black-forest",
             "itemId": "black-forest-buffet-platter"
           }
         ],
@@ -29723,7 +29782,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "ashlands-gourmet-bowl",
             "name": "Ashlands Gourmet Bowl",
             "isFeast": true,
-            "biome": "deep-north",
+            "biome": "ashlands",
             "itemId": "ashlands-gourmet-bowl"
           }
         ],
@@ -29882,7 +29941,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "sailor-s-bounty",
             "name": "Sailor's Bounty",
             "isFeast": true,
-            "biome": "swamp",
+            "biome": "ocean",
             "itemId": "sailor-s-bounty"
           }
         ],
@@ -32345,7 +32404,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "black-forest-buffet-platter",
             "name": "Black Forest Buffet Platter",
             "isFeast": true,
-            "biome": "swamp",
+            "biome": "black-forest",
             "itemId": "black-forest-buffet-platter"
           },
           {
@@ -32359,7 +32418,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "sailor-s-bounty",
             "name": "Sailor's Bounty",
             "isFeast": true,
-            "biome": "swamp",
+            "biome": "ocean",
             "itemId": "sailor-s-bounty"
           },
           {
@@ -33260,7 +33319,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "berserkir-mead",
             "name": "Berserkir Mead",
-            "biome": "plains",
+            "biome": "mountain",
             "itemId": "berserkir-mead"
           }
         ],
@@ -33272,7 +33331,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "mead-base-berserkir",
             "name": "Mead Base: Berserkir",
             "level": 1,
-            "biome": "plains",
+            "biome": "mountain",
             "itemId": "mead-base-berserkir"
           }
         ]
@@ -33698,8 +33757,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "turnip-stew",
       "name": "Turnip Stew",
       "image": "../provisions/img/items/turnip-stew.png",
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "food",
       "teleportable": true,
       "stack": 10,
@@ -34720,7 +34779,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "ashlands-gourmet-bowl",
             "name": "Ashlands Gourmet Bowl",
             "isFeast": true,
-            "biome": "deep-north",
+            "biome": "ashlands",
             "itemId": "ashlands-gourmet-bowl"
           },
           {
@@ -35490,7 +35549,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "hearty-mountain-logger-s-stew",
             "name": "Hearty Mountain Logger's Stew",
             "isFeast": true,
-            "biome": "plains",
+            "biome": "mountain",
             "itemId": "hearty-mountain-logger-s-stew"
           }
         ],
@@ -36375,7 +36434,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "black-forest-buffet-platter",
             "name": "Black Forest Buffet Platter",
             "isFeast": true,
-            "biome": "swamp",
+            "biome": "black-forest",
             "itemId": "black-forest-buffet-platter"
           },
           {
@@ -36389,7 +36448,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "whole-roasted-meadow-boar",
             "name": "Whole Roasted Meadow Boar",
             "isFeast": true,
-            "biome": "swamp",
+            "biome": "black-forest",
             "itemId": "whole-roasted-meadow-boar"
           }
         ],
@@ -36545,7 +36604,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "berserkir-mead",
             "name": "Berserkir Mead",
-            "biome": "plains",
+            "biome": "mountain",
             "itemId": "berserkir-mead"
           },
           {
@@ -36569,7 +36628,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "mead-base-berserkir",
             "name": "Mead Base: Berserkir",
             "level": 1,
-            "biome": "plains",
+            "biome": "mountain",
             "itemId": "mead-base-berserkir"
           },
           {
@@ -36664,7 +36723,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "mushrooms-galore-a-la-mistlands",
             "name": "Mushrooms Galore á la Mistlands",
             "isFeast": true,
-            "biome": "ashlands",
+            "biome": "mistlands",
             "itemId": "mushrooms-galore-a-la-mistlands"
           }
         ],
@@ -64275,8 +64334,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "ashlands-gourmet-bowl",
       "name": "Ashlands Gourmet Bowl",
       "image": "../provisions/img/food/ashlands-gourmet-bowl.png",
-      "biome": "deep-north",
-      "tier": 9,
+      "biome": "ashlands",
+      "tier": 8,
       "category": "food",
       "teleportable": true,
       "stack": 5,
@@ -64413,8 +64472,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "black-forest-buffet-platter",
       "name": "Black Forest Buffet Platter",
       "image": "../provisions/img/food/black-forest-buffet-platter.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "food",
       "teleportable": true,
       "stack": 5,
@@ -65793,8 +65852,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "hearty-mountain-logger-s-stew",
       "name": "Hearty Mountain Logger's Stew",
       "image": "../provisions/img/food/hearty-mountain-logger-s-stew.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "category": "food",
       "teleportable": true,
       "stack": 5,
@@ -66684,8 +66743,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "mushrooms-galore-a-la-mistlands",
       "name": "Mushrooms Galore á la Mistlands",
       "image": "../provisions/img/food/mushrooms-galore-a-la-mistlands.png",
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "mistlands",
+      "tier": 7,
       "category": "food",
       "teleportable": true,
       "stack": 5,
@@ -67104,8 +67163,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "plains-pie-picnic",
       "name": "Plains Pie Picnic",
       "image": "../provisions/img/food/plains-pie-picnic.png",
-      "biome": "mistlands",
-      "tier": 7,
+      "biome": "plains",
+      "tier": 6,
       "category": "food",
       "teleportable": true,
       "stack": 5,
@@ -67366,8 +67425,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "sailor-s-bounty",
       "name": "Sailor's Bounty",
       "image": "../provisions/img/food/sailor-s-bounty.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "ocean",
+      "tier": 3,
       "category": "food",
       "teleportable": true,
       "stack": 5,
@@ -68234,8 +68293,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "whole-roasted-meadow-boar",
       "name": "Whole Roasted Meadow Boar",
       "image": "../provisions/img/food/whole-roasted-meadow-boar.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "food",
       "teleportable": true,
       "stack": 5,
@@ -68449,8 +68508,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "berserkir-mead",
       "name": "Berserkir Mead",
       "image": "../provisions/img/meads/berserkir-mead.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "category": "mead",
       "teleportable": true,
       "stack": 10,
@@ -81645,60 +81704,6 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "majestic-carapace",
-      "name": "Majestic Carapace",
-      "image": null,
-      "biome": "mistlands",
-      "tier": 7,
-      "category": "drop",
-      "teleportable": true,
-      "stack": 30,
-      "weight": 1,
-      "wiki": "https://valheim.weirdgloop.org/w/Majestic_Carapace",
-      "names": {},
-      "description": "Her majesty's will was hard and unrelenting, but this piece of carapace is perhaps even more so.",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [
-          {
-            "id": "the-queen",
-            "name": "The Queen",
-            "biome": "mistlands"
-          }
-        ],
-        "locations": [],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Dropped by The Queen",
-            "kind": "creature",
-            "creatureId": "the-queen"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [
-          {
-            "id": "artisan-press",
-            "name": "Artisan Press",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "artisan-press"
-          }
-        ],
         "crafting": []
       },
       "crossLinks": {}

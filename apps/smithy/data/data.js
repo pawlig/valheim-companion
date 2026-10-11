@@ -36974,6 +36974,28 @@ window.VA_DATA = {
         "ru": "Магмарыбка"
       }
     },
+    "majestic-carapace": {
+      "id": "majestic-carapace",
+      "name": "Majestic Carapace",
+      "image": "img/items/majestic-carapace.png",
+      "biome": "mistlands",
+      "tier": 7,
+      "sources": [
+        {
+          "text": "The Queen",
+          "kind": "creature",
+          "creatureId": "the-queen",
+          "biomes": [
+            "mistlands"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Majestic_Carapace",
+      "names": {
+        "ru": "Королевский панцирь"
+      }
+    },
     "malicious-blood": {
       "id": "malicious-blood",
       "name": "Malicious Blood",
