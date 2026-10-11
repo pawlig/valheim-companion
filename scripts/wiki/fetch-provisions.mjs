@@ -205,10 +205,25 @@ export async function fetchProvisions() {
     const biome = BIOMES[Math.max(BIOMES.findIndex(b => b.id === 'swamp'), bossBiome >= 0 ? Math.min(bossBiome + 1, BIOMES.length - 1) : 0)];
     if (title) trade.set(slug(title), { biome: biome.id, tier: biome.order, ...(boss ? { boss: boss.id } : {}) });
   }
+  // VC-45c2 (Pavel VC44/Q-7): merchandise takes the biome of its unlock condition
+  // (data/traders.json -> unlockedBy.biome, the lowest when several traders sell it), the same
+  // rule the compendium applies. It replaces the "one biome after the boss" guess above.
+  const unlockBiome = new Map();
+  for (const trader of load('traders.json').traders ?? []) {
+    for (const entry of trader.items ?? []) {
+      const b = BIOMES.find(x => x.id === entry.unlockedBy?.biome);
+      const prev = unlockBiome.get(entry.id);
+      if (b && (!prev || b.order < prev.order)) unlockBiome.set(entry.id, b);
+    }
+  }
+  for (const [id, entry] of trade) {
+    const b = unlockBiome.get(id);
+    if (b) { entry.biome = b.id; entry.tier = b.order; }
+  }
   for (const [title, page] of Object.entries(pages)) {
     const name = canonicalTitle(title);
     const box = parseTemplates(page.wikitext ?? '', 'infobox item').find(b => slug(cleanText(b.title ?? page.title)) === slug(name));
-    const bought = trade.get(slug(name));
+    const bought = trade.get(slug(name)) ?? (unlockBiome.has(slug(name)) ? { biome: unlockBiome.get(slug(name)).id, tier: unlockBiome.get(slug(name)).order } : null);
     if (bought) overrides.materials[name] = { biome: bought.biome, tier: bought.tier };
     else if (box && !parseMaterialList(box.materials).length) {
       const lead = (page.wikitext ?? '').split(/\n==/)[0];
@@ -263,6 +278,9 @@ export async function fetchProvisions() {
       entry.availableFrom = reached;
       entry.biome = reached;
       entry.tier = reached ? order[reached] : null;
+      // VC-45c2: the item record of a cooked food (Onion Soup, Turnip Stew) follows the food.
+      const record = byId.get(entry.id);
+      if (record && reached) { record.biome = reached; record.tier = order[reached]; }
     }
   }
   await addLocalizedNames([...food, ...meads, ...newItems]);

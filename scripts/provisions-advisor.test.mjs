@@ -95,8 +95,8 @@ test('actual data respects ingredient acquisition biomes and preserves feast unl
   assert.ok(combos.every(combo => combo.foods.every(f => !['cooked-asksvin-tail', 'cooked-seeker-meat', 'cooked-chicken-meat'].includes(f.id))));
   assert.equal(a.availableBiome(data.food.find(f => f.id === 'onion-soup')), 'mountain');
   assert.equal(a.availableBiome(data.food.find(f => f.id === 'carrot-soup')), 'black-forest');
-  assert.equal(a.availableBiome(data.food.find(f => f.id === 'ashlands-gourmet-bowl')), 'deep-north');
-  assert.equal(a.availableBiome(data.food.find(f => f.id === 'hearty-mountain-logger-s-stew')), 'plains');
+  assert.equal(a.availableBiome(data.food.find(f => f.id === 'ashlands-gourmet-bowl')), 'ashlands');
+  assert.equal(a.availableBiome(data.food.find(f => f.id === 'hearty-mountain-logger-s-stew')), 'mountain');
   assert.equal(a.recommendMeads(data.meads, 'boss', { id: 'swamp', unlockedBiomes: ['meadows', 'black-forest'] })[0].mead.id, 'poison-resistance-mead');
 });
 test('general tips have distinct IDs, valid activity tags, wiki sources and complete translations', () => {

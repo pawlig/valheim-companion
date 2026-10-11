@@ -381,11 +381,11 @@ window.VPR_DATA = {
         }
       ],
       "yields": 1,
-      "biome": "deep-north",
-      "tier": 9,
+      "biome": "ashlands",
+      "tier": 8,
       "isFeast": true,
       "servings": 10,
-      "availableFrom": "deep-north"
+      "availableFrom": "ashlands"
     },
     {
       "id": "baked-poteitr",
@@ -453,11 +453,11 @@ window.VPR_DATA = {
         }
       ],
       "yields": 1,
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "black-forest",
+      "tier": 2,
       "isFeast": true,
       "servings": 10,
-      "availableFrom": "swamp"
+      "availableFrom": "black-forest"
     },
     {
       "id": "black-soup",
@@ -1144,10 +1144,10 @@ window.VPR_DATA = {
         }
       ],
       "yields": 1,
-      "biome": "black-forest",
-      "tier": 2,
+      "biome": "plains",
+      "tier": 6,
       "isFeast": false,
-      "availableFrom": "black-forest"
+      "availableFrom": "plains"
     },
     {
       "id": "cooked-hare-meat",
@@ -1585,11 +1585,11 @@ window.VPR_DATA = {
         }
       ],
       "yields": 1,
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "isFeast": true,
       "servings": 10,
-      "availableFrom": "plains"
+      "availableFrom": "mountain"
     },
     {
       "id": "honey",
@@ -2265,11 +2265,11 @@ window.VPR_DATA = {
         }
       ],
       "yields": 1,
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "mistlands",
+      "tier": 7,
       "isFeast": true,
       "servings": 10,
-      "availableFrom": "ashlands"
+      "availableFrom": "mistlands"
     },
     {
       "id": "northern-morning-fare",
@@ -2601,11 +2601,11 @@ window.VPR_DATA = {
         }
       ],
       "yields": 1,
-      "biome": "mistlands",
-      "tier": 7,
+      "biome": "plains",
+      "tier": 6,
       "isFeast": true,
       "servings": 10,
-      "availableFrom": "mistlands"
+      "availableFrom": "plains"
     },
     {
       "id": "poteitr",
@@ -2854,11 +2854,11 @@ window.VPR_DATA = {
         }
       ],
       "yields": 1,
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "ocean",
+      "tier": 3,
       "isFeast": true,
       "servings": 10,
-      "availableFrom": "swamp"
+      "availableFrom": "ocean"
     },
     {
       "id": "salad",
@@ -3514,11 +3514,11 @@ window.VPR_DATA = {
         }
       ],
       "yields": 1,
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "black-forest",
+      "tier": 2,
       "isFeast": true,
       "servings": 10,
-      "availableFrom": "swamp"
+      "availableFrom": "black-forest"
     },
     {
       "id": "wolf-jerky",
@@ -3751,8 +3751,8 @@ window.VPR_DATA = {
       },
       "fermenterTime": 2400,
       "yields": 3,
-      "biome": "plains",
-      "tier": 6
+      "biome": "mountain",
+      "tier": 5
     },
     {
       "id": "brew-of-animal-whispers",
@@ -9254,8 +9254,8 @@ window.VPR_DATA = {
       "name": "Egg",
       "provisions": true,
       "image": "img/items/egg.png",
-      "biome": "black-forest",
-      "tier": 2,
+      "biome": "plains",
+      "tier": 6,
       "sources": [
         {
           "text": "Haldor",
@@ -9447,8 +9447,8 @@ window.VPR_DATA = {
       "name": "Fiery Spice Powder",
       "provisions": true,
       "image": "img/items/fiery-spice-powder.png",
-      "biome": "deep-north",
-      "tier": 9,
+      "biome": "ashlands",
+      "tier": 8,
       "sources": [
         {
           "text": "The Bog Witch",
@@ -9458,8 +9458,8 @@ window.VPR_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Fiery_Spice_Powder",
       "unlock": {
-        "biome": "deep-north",
-        "tier": 9,
+        "biome": "ashlands",
+        "tier": 8,
         "boss": "fader"
       },
       "names": {
@@ -9640,8 +9640,8 @@ window.VPR_DATA = {
       "name": "Fragrant Bundle",
       "provisions": true,
       "image": "img/items/fragrant-bundle.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "sources": [
         {
           "text": "The Bog Witch",
@@ -9651,8 +9651,8 @@ window.VPR_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Fragrant_Bundle",
       "unlock": {
-        "biome": "plains",
-        "tier": 6,
+        "biome": "mountain",
+        "tier": 5,
         "boss": "moder"
       },
       "names": {
@@ -9802,8 +9802,8 @@ window.VPR_DATA = {
       "name": "Grasslands Herbalist Harvest",
       "provisions": true,
       "image": "img/items/grasslands-herbalist-harvest.png",
-      "biome": "mistlands",
-      "tier": 7,
+      "biome": "plains",
+      "tier": 6,
       "sources": [
         {
           "text": "The Bog Witch",
@@ -9813,8 +9813,8 @@ window.VPR_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Grasslands_Herbalist_Harvest",
       "unlock": {
-        "biome": "mistlands",
-        "tier": 7,
+        "biome": "plains",
+        "tier": 6,
         "boss": "yagluth"
       },
       "names": {
@@ -9972,8 +9972,8 @@ window.VPR_DATA = {
       "name": "Herbs of the Hidden Hills",
       "provisions": true,
       "image": "img/items/herbs-of-the-hidden-hills.png",
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "mistlands",
+      "tier": 7,
       "sources": [
         {
           "text": "The Bog Witch",
@@ -9983,8 +9983,8 @@ window.VPR_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Herbs_of_the_Hidden_Hills",
       "unlock": {
-        "biome": "ashlands",
-        "tier": 8,
+        "biome": "mistlands",
+        "tier": 7,
         "boss": "the-queen"
       },
       "names": {
@@ -10497,6 +10497,28 @@ window.VPR_DATA = {
         "ru": "Магмарыбка"
       }
     },
+    "majestic-carapace": {
+      "id": "majestic-carapace",
+      "name": "Majestic Carapace",
+      "image": "../smithy/img/items/majestic-carapace.png",
+      "biome": "mistlands",
+      "tier": 7,
+      "sources": [
+        {
+          "text": "The Queen",
+          "kind": "creature",
+          "creatureId": "the-queen",
+          "biomes": [
+            "mistlands"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Majestic_Carapace",
+      "names": {
+        "ru": "Королевский панцирь"
+      }
+    },
     "malicious-blood": {
       "id": "malicious-blood",
       "name": "Malicious Blood",
@@ -10728,8 +10750,8 @@ window.VPR_DATA = {
       "name": "Mead base: Berserkir",
       "provisions": true,
       "image": "img/items/mead-base-berserkir.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "sources": [
         {
           "text": "Mead Ketill",
@@ -12173,8 +12195,8 @@ window.VPR_DATA = {
       "name": "Mountain Peak Pepper Powder",
       "provisions": true,
       "image": "img/items/mountain-peak-pepper-powder.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "sources": [
         {
           "text": "The Bog Witch",
@@ -12184,8 +12206,8 @@ window.VPR_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Mountain_Peak_Pepper_Powder",
       "unlock": {
-        "biome": "plains",
-        "tier": 6,
+        "biome": "mountain",
+        "tier": 5,
         "boss": "moder"
       },
       "names": {
@@ -12914,8 +12936,8 @@ window.VPR_DATA = {
       "name": "Onion Soup",
       "provisions": true,
       "image": "img/items/onion-soup.png",
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "sources": [
         {
           "text": "Cauldron (level 2)",
@@ -13742,8 +13764,8 @@ window.VPR_DATA = {
       "name": "Seafarer's Herbs",
       "provisions": true,
       "image": "img/items/seafarer-s-herbs.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "ocean",
+      "tier": 3,
       "sources": [
         {
           "text": "The Bog Witch",
@@ -13753,8 +13775,8 @@ window.VPR_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Seafarer's_Herbs",
       "unlock": {
-        "biome": "swamp",
-        "tier": 4
+        "biome": "ocean",
+        "tier": 3
       },
       "names": {
         "ru": "Травы мореплавателя"
@@ -14437,8 +14459,8 @@ window.VPR_DATA = {
       "name": "Toadstool",
       "provisions": true,
       "image": "img/items/toadstool.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "sources": [
         {
           "text": "The Bog Witch",
@@ -14448,8 +14470,8 @@ window.VPR_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Toadstool",
       "unlock": {
-        "biome": "plains",
-        "tier": 6,
+        "biome": "mountain",
+        "tier": 5,
         "boss": "moder"
       },
       "names": {
@@ -14585,8 +14607,8 @@ window.VPR_DATA = {
       "name": "Turnip Stew",
       "provisions": true,
       "image": "img/items/turnip-stew.png",
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "sources": [
         {
           "text": "Cauldron (level 2)",
@@ -15321,8 +15343,8 @@ window.VPR_DATA = {
       "name": "Woodland Herb Blend",
       "provisions": true,
       "image": "img/items/woodland-herb-blend.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "black-forest",
+      "tier": 2,
       "sources": [
         {
           "text": "The Bog Witch",
@@ -15332,8 +15354,8 @@ window.VPR_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Woodland_Herb_Blend",
       "unlock": {
-        "biome": "swamp",
-        "tier": 4,
+        "biome": "black-forest",
+        "tier": 2,
         "boss": "the-elder"
       },
       "names": {

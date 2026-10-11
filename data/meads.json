@@ -89,8 +89,8 @@
     },
     "fermenterTime": 2400,
     "yields": 3,
-    "biome": "plains",
-    "tier": 6
+    "biome": "mountain",
+    "tier": 5
   },
   {
     "id": "brew-of-animal-whispers",

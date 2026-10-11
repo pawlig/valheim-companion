@@ -128,7 +128,7 @@ test('generated provisions have complete recipes and all six cauldron upgrades',
   assert.ok(stations.filter(s => s.type === 'provisions').every(s => s.materials.length > 0));
   assert.deepEqual(food.filter(f => f.tier == null).map(f => f.id), ['blue-mushroom']);
   assert.ok(food.filter(f => f.isFeast).every(f => f.servings === 10 && f.duration === 3000));
-  assert.equal(food.find(f => f.id === 'whole-roasted-meadow-boar').biome, 'swamp');
+  assert.equal(food.find(f => f.id === 'whole-roasted-meadow-boar').biome, 'black-forest');
   assert.equal(byId.get('bread-dough').recipe.yields, 2);
   assert.equal(byId.get('unbaked-sweetbread').recipe.yields, 2);
   assert.equal(byId.get('cooked-boar-meat').recipe.materials[0].item, 'boar-meat');
