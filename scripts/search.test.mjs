@@ -70,13 +70,13 @@ test('search text normalization strips diacritics and normalizes case', () => {
   assert.equal(normalizeSearchText(null), '');
 });
 
-test('search index builds valid bundle under 150 kB with required fields', () => {
+test('search index builds valid bundle under 230 kB with required fields', () => {
   const items = buildSearchIndex();
   assert.ok(Array.isArray(items));
   assert.ok(items.length > 500, `Expected > 500 items, got ${items.length}`);
 
   const stat = statSync('apps/hub/data/search.js');
-  assert.ok(stat.size < 150 * 1024, `search.js size ${stat.size} bytes should be < 150 kB`);
+  assert.ok(stat.size < 230 * 1024, `search.js size ${stat.size} bytes should be < 230 kB`);
 
   const sandbox = {};
   vm.runInNewContext(readFileSync('apps/hub/data/search.js', 'utf8'), sandbox);
@@ -150,17 +150,20 @@ test('deep links route correctly to bestiary, smithy and provisions', () => {
   assert.equal(set.url, '/smithy/#set=troll-set');
 
   const piece = index.find(item => item.type === 'armor' && item.name.toLowerCase() === 'troll leather hood');
-  assert.equal(piece.url, '/smithy/#item=troll-leather-hood');
+  assert.equal(piece.url, '/items/#item=troll-leather-hood');
+  assert.ok(piece.links.includes('/smithy/#item=troll-leather-hood'));
 
   const weapon = index.find(item => item.type === 'weapon' && item.name === 'Abyssal Harpoon');
-  assert.equal(weapon.url, '/smithy/#item=abyssal-harpoon');
+  assert.equal(weapon.url, '/items/#item=abyssal-harpoon');
+  assert.ok(weapon.links.includes('/smithy/#item=abyssal-harpoon'));
 
   const food = JSON.parse(readFileSync('data/food.json', 'utf8'));
   assert.ok(food.length > 0);
   for (const provision of food) {
     const entry = index.find(item => item.type === 'food' && item.name === provision.name);
     assert.ok(entry, `${provision.name} must be searchable`);
-    assert.equal(entry.url, `/provisions/#item=${encodeURIComponent(provision.id)}`);
+    assert.equal(entry.url, `/items/#item=${encodeURIComponent(provision.id)}`);
+    assert.ok(entry.links?.includes(`/provisions/#item=${encodeURIComponent(provision.id)}`));
   }
 });
 
@@ -202,10 +205,10 @@ test('search uses Provisions acquisition biomes for every food and material', ()
     if (entry.biome !== (context.VPAdvisor.availableBiome(definition) || null)) mismatches.push(entry.url);
   }
   assert.deepEqual(mismatches, []);
-  for (const type of ['food', 'material']) {
-    assert.equal(index.find(item => item.type === type && item.name === 'Oats').biome, 'deep-north');
-
-  }
+  const oats = index.find(item => item.name === 'Oats');
+  assert.ok(oats, 'Oats must be searchable');
+  assert.equal(oats.biome, 'deep-north');
+  assert.equal(oats.type, 'food');
   assert.ok(index.filter(item => item.url.endsWith('=bukeperries')).length);
   for (const item of index.filter(item => item.url.endsWith('=bukeperries'))) assert.equal(item.biome, 'black-forest');
 });
@@ -237,12 +240,14 @@ test('every Smithy item search link targets visible gear or an item', () => {
     ...smithy.armor.flatMap(set => set.pieces.map(piece => piece.id)),
     ...Object.values(items).map(item => item.id),
   ]);
-  const missing = index.filter(item => item.url.startsWith('/smithy/#item=') &&
-    !targets.has(decodeURIComponent(item.url.split('=')[1])));
+  const smithyLinks = index.flatMap(item => (item.links || [item.url]).filter(link => link.startsWith('/smithy/#item=')));
+  const missing = smithyLinks.filter(link => !targets.has(decodeURIComponent(link.split('=')[1])));
   assert.deepEqual(missing, [], 'Smithy links without a target: ' + JSON.stringify(missing));
   const visibleWeapons = new Set(smithy.weapons.map(weapon => weapon.id));
   for (const item of index.filter(item => item.type === 'weapon')) {
-    assert.ok(visibleWeapons.has(decodeURIComponent(item.url.split('=')[1])), item.url);
+    const smithyLink = (item.links || [item.url]).find(link => link.startsWith('/smithy/#item='));
+    assert.ok(smithyLink, `Weapon ${item.name} should have a Smithy link`);
+    assert.ok(visibleWeapons.has(decodeURIComponent(smithyLink.split('=')[1])), smithyLink);
   }
 });
 
@@ -262,5 +267,31 @@ test('cross-section search index includes Haldor, Hildir and The Bog Witch', () 
   assert.ok(bogWitch, 'The Bog Witch in search index');
   assert.equal(bogWitch.url, '/traders/#trader=bog-witch');
   assert.equal(bogWitch.type, 'trader');
+});
+
+test('search index rows link to Items Compendium with ordered action links', () => {
+  const index = buildSearchIndex();
+  const LINK_ORDER = ['items', 'smithy', 'provisions', 'comfort', 'traders'];
+
+  const cookedBoar = index.filter(item => item.name === 'Cooked Boar Meat');
+  assert.equal(cookedBoar.length, 1, 'Cooked Boar Meat appears exactly once');
+  assert.equal(cookedBoar[0].type, 'food');
+  assert.equal(cookedBoar[0].url, '/items/#item=cooked-boar-meat');
+  assert.ok(cookedBoar[0].links?.includes('/provisions/#item=cooked-boar-meat'));
+
+  const carapace = index.find(item => item.name === 'Carapace Shield');
+  assert.ok(carapace, 'Carapace Shield in search index');
+  assert.equal(carapace.url, '/items/#item=carapace-shield');
+  assert.deepEqual(carapace.links, ['/items/#item=carapace-shield', '/smithy/#item=carapace-shield']);
+
+  for (const item of index) {
+    if (item.links) {
+      assert.equal(item.links[0], item.url, `links[0] must equal url for ${item.name}`);
+      for (const link of item.links) {
+        const tool = link.split('/')[1];
+        assert.ok(LINK_ORDER.includes(tool), `Tool "${tool}" in "${link}" must be in LINK_ORDER for ${item.name}`);
+      }
+    }
+  }
 });
 
