@@ -102,12 +102,15 @@ Zadání jsou v [`docs/zadani/`](zadani/). Hotové úlohy jsou mergnuté do `mai
 | VC-45c | VC-44 O-3: `availableFrom`/`availableTier` u kvalit, `biome` kusu = dostupnost Q1 (Q-5), jídla Cauldronu → Black Forest (Q-9), suroviny (Coal, Ymir Flesh, +3), test shody biomů (Q-7) | Sonnet | ✅ nasazeno 11. 10. (avail.mjs 0 rozdílů, Carapace Q1–Q3 mistlands / Q4 ashlands, Nord Q4 unreachable; biome změněn: Arbalest, 3 šipky, Skoll and Hati → mistlands, 5 jídel Cauldronu → black-forest, Coal → meadows, Ymir Flesh → black-forest; přejímka napoprvé 4/4; orchestrator fix: Sharpening Stone swamp v build-items-data). Pozor: Bestiary už ve Swampu/Plains nedoporučí kuši (Arbalest je Black Forge = Mistlands) |
 | VC-46 | podnět Pavla 11. 10.: hledání na rozcestníku — řádek otevře Items Compendium, vedle ikonky s tooltipem „Open in …“ (Compendium, Smithy, Provisions, Comfort, Traders), sloučené duplicity | Flash | ✅ nasazeno 11. 10. (842 záznamů, 171,9 kB — strop testu zvednut na 230 kB; Cooked Boar Meat 1 řádek; ↓↓Enter, 360 px, spoilery OK; přejímka napoprvé 5/5; orchestrator fix: přegenerovaný index po merge, pt „Abrir em“) |
 | VC-47 | podnět Pavla 11. 10.: Items Compendium — tabulka statů po kvalitách (poškození, block armor, durability, armor, úroveň stanice) + konstantní staty (block force, parry, váha…) | Sonnet | ✅ nasazeno 11. 10. (283 předmětů s tabulkou, 1 033 buněk proti wiki — 3 rozdíly z dat kalkulačky; Block armor známý jen pro Q1 jako čip; přejímka napoprvé 5/5) |
+| VC-45c2 | Q-7 dokončení: 7 jídelních surovin (koření Bog Witch, Egg) biom podle odemknutí u obchodníka, `majestic-carapace` do items.json, kompendium bere biom jídel z food.json, paritní test na všechny recepty | Sonnet | 🔄 běží (worktree CC, `prace/VC-45c2`, dashboard 244) |
+| — | Damage Calculator: Iron Pickaxe Mining 33/38/43/48 (scraper nepoznal řádek „Mining“) | orchestrátor | ✅ nasazeno 11. 10. (orchestrator fix, 1 alias + 1 pole) |
 | VC-45d…h | VC-44 O-4 (generátory + doporučení „Max“ = dosažitelná, Q-2 vyřadit nad maximem), O-5 Smithy, O-6 Bestiary/Expedition/kalkulačka, O-7 Items/Provisions (Q-9 jídla z Cauldronu → Black Forest), O-8 testy+dokumentace | — | ⏳ fronta; O-4 po O-3 (VC-45c), O-5/6/7 souběžně po O-4, O-8 nakonec. Zadání = rozbor § 6 + ANALYZA § 30 |
 
 ### 🔄 Předávka orchestrátora (11. 10. 2026, večer)
 
-- **Běží:** nic. VC-45c, VC-46, VC-47 nasazeny (main 479 testů). Worktree CC, CS, GM volné.
-- **Další krok:** VC-45c2 (malý, data) = jídelní suroviny × kompendium (7 neshod, viz Známé drobnosti) + onion-soup/turnip-stew v kompendiu + `majestic-carapace` + paritní test Q-7 na všechny recepty; pak VC-45d = O-4 (rozbor § 6). Oprava krumpáčů v datech kalkulačky může jít souběžně (jiné soubory).
+- **Běží:** VC-45c2 (Sonnet, `valheim-units-CC`, větev `prace/VC-45c2`). GM a CS volné.
+- **Další krok:** přejímka VC-45c2 → merge → VC-45d = O-4 (rozbor § 6).
+- ⚠️ **Deploy:** push VC-46 (16:54 UTC) se na produkci nedostal (webhook EasyPanelu nespustil), pomohl prázdný commit. Po každém pushi ověř `curl -sI https://valheim-companion.teuferon.click/app.js | grep -i last-modified`.
 - Pozn. do zadání: web nečte `?lang=` — jazyk přes `localStorage.setItem('vc.language','cs')`.
 
 ### Po frontě
@@ -117,7 +120,6 @@ Pracovníci od 6. 10.: agy je vyčerpaný (týden 4 %, obnova 8. 10.), práci d�
 
 ## Známé drobnosti (neřešené)
 - **Z přejímek VC-45c/VC-47 (kandidát na VC-45c2, před O-7):** 7 jídelních surovin má jiný biom v `items.json` a v kompendiu (fiery-spice-powder, woodland-herb-blend, egg, mountain-peak-pepper-powder, herbs-of-the-hidden-hills, grasslands-herbalist-harvest, seafarer-s-herbs) — paritní test Q-7 je zatím zúžený na suroviny zbraní/zbroje/stanic; onion-soup a turnip-stew mají v kompendiu meadows, ve `food.json` black-forest; `majestic-carapace` chybí v `items.json` a paritní test ho tiše přeskočí.
-- Damage Calculator data: Iron Pickaxe (a možná další krumpáče) mají Mining konstantní 33/33/33/33, wiki 33/38/43/48 (`apps/damage-calculator/src/data/weapons.json`) — propisuje se do tabulky VC-47.
 - Test `scripts/ui-hacks.test.mjs` (bulk Smithy) upravuje zdroj aplikace přes `.replace()` — křehké vůči změnám `app.js` (z přejímky VC-43c).
 
 
