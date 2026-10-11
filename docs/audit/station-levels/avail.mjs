@@ -14,8 +14,9 @@
 //   - armor pieces with no materials on any level (trader / boss-drop items)
 // Included: everything else, incl. kind "special" pieces with a recipe
 // (Cape of Oden, Hood of Oden, Midsummer Crown, Pointy Hat).
-// "Frost Foundry" station labels are re-attributed per the wiki
-// `Upgrade station row` template: Caller Set -> Galdr Table, else Black Forge.
+// Since VC-45c the script also compares its own computation with the
+// `levels[q].availableFrom` / `availableTier` / `unreachable` written by the
+// fetchers and prints "N differences" (must be 0).
 //
 // Usage: node docs/audit/station-levels/avail.mjs
 // Writes early-and-unreachable.md and early-and-unreachable.json next to this script.
@@ -32,24 +33,17 @@ const biomes = J('data/biomes.json');
 const ORD = Object.fromEntries(biomes.map((b) => [b.id, b.order]));
 const NAME = Object.fromEntries(biomes.map((b) => [b.order, b.id]));
 
-// station level -> biome order where that level is first reachable (§ 2)
-const STATION = {
-  'Workbench': { 1: 1, 2: 1, 3: 1, 4: 2, 5: 5 },
-  'Forge': { 1: 2, 2: 2, 3: 2, 4: 4, 5: 4, 6: 4, 7: 4 },
-  'Black Forge': { 1: 7, 2: 7, 3: 7, 4: 8, 5: 8, 6: 9 },
-  'Galdr Table': { 1: 7, 2: 7, 3: 7, 4: 8, 5: 9 },
-};
-const MAX = { 'Workbench': 5, 'Forge': 7, 'Black Forge': 6, 'Galdr Table': 5 }; // wiki Module:Crafting station/data
+// Station level -> biome comes from data/stations.json (levels[].biome, maxLevel; VC-45a),
+// the same file the fetchers use. Since VC-45b weapons/armor carry canonical station
+// names (Frost Foundry is `finishedAt`), so no re-attribution is needed any more.
+const stations = J('data/stations.json');
+const STATION = Object.fromEntries(stations.filter((st) => st.levels?.length).map((st) =>
+  [st.name, Object.fromEntries(st.levels.map((l) => [l.level, ORD[l.biome]]))]));
+const MAX = Object.fromEntries(stations.filter((st) => st.levels?.length).map((st) => [st.name, st.maxLevel]));
 
-function normStation(s, name) {
-  if (!s) return null;
-  s = s.trim();
-  if (/^black forge/i.test(s)) return 'Black Forge';
-  if (/^galdr/i.test(s)) return 'Galdr Table';
-  if (/^forge/i.test(s)) return 'Forge';
-  if (/^workbench/i.test(s)) return 'Workbench';
-  if (/frost foundry/i.test(s)) return /caller/i.test(name) ? 'Galdr Table' : 'Black Forge';
-  return s;
+// Canonical names pass through; null / unknown stations are skipped by analyze().
+function normStation(s) {
+  return s ? s.trim() : null;
 }
 const itemsById = new Map(items.map((i) => [i.id, i]));
 const compById = new Map(comp.map((i) => [i.id, i]));
@@ -59,10 +53,9 @@ function matOrder(id) {
 }
 
 const rows = [], skipped = [], anomalies = [];
-let frostFoundry = 0;
+const differences = [];
 function analyze(kind, name, id, setName, station0, levels, displayBiome) {
-  const station = normStation(station0, name);
-  if (/frost foundry/i.test(station0 || '')) frostFoundry++;
+  const station = normStation(station0);
   if (!levels?.length) { skipped.push(`${kind} ${name}: no levels`); return; }
   if (!STATION[station]) { skipped.push(`${kind} ${name}: station "${station0}"`); return; }
   const dispOrd = displayBiome ? ORD[displayBiome] : null;
@@ -78,6 +71,11 @@ function analyze(kind, name, id, setName, station0, levels, displayBiome) {
     const unreachable = l.stationLevel > MAX[station];
     const stOrd = unreachable ? null : STATION[station][l.stationLevel];
     const avail = unreachable ? null : Math.max(cumMat, stOrd);
+    const stored = { availableFrom: l.availableFrom, availableTier: l.availableTier, unreachable: l.unreachable === true };
+    const computed = { availableFrom: unreachable ? null : NAME[avail], availableTier: unreachable ? null : avail, unreachable };
+    if (JSON.stringify(stored) !== JSON.stringify(computed)) {
+      differences.push(`${kind} ${setName ? setName + ' / ' : ''}${name} Q${l.quality}: computed ${JSON.stringify(computed)} vs data ${JSON.stringify(stored)}`);
+    }
     qs.push({ q: l.quality, stationLevel: l.stationLevel, matOrd: cumMat, stOrd, avail, unreachable,
       gapEarly: avail != null && dispOrd != null && avail > dispOrd,
       gapLate: avail != null && dispOrd != null && avail < dispOrd });
@@ -106,7 +104,9 @@ const unreachQ = count((q) => q.unreachable);
 const late = rows.filter((r) => r.qs[0].gapLate);
 console.log('analyzed', tot, '| items with >=1 quality shown too early', early.length, '| qualities shown too early', earlyQ,
   '| Q1 too early', q1early.length, '| unreachable (level>max) items', unreach.length, 'quals', unreachQ,
-  '| Q1 shown later than available', late.length, '| Frost Foundry-labelled', frostFoundry);
+  '| Q1 shown later than available', late.length, '| differences vs data availableFrom', differences.length);
+console.log(`${differences.length} differences`);
+for (const d of differences) console.log('  ' + d);
 const byKind = {};
 for (const r of rows) {
   const k = byKind[r.kind] ?? (byKind[r.kind] = { items: 0, quals: 0, early: 0, earlyQ: 0, unreach: 0, unreachQ: 0 });

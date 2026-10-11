@@ -384,7 +384,8 @@ window.VPR_DATA = {
       "biome": "deep-north",
       "tier": 9,
       "isFeast": true,
-      "servings": 10
+      "servings": 10,
+      "availableFrom": "deep-north"
     },
     {
       "id": "baked-poteitr",
@@ -411,7 +412,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "black-forest-buffet-platter",
@@ -454,7 +456,8 @@ window.VPR_DATA = {
       "biome": "swamp",
       "tier": 4,
       "isFeast": true,
-      "servings": 10
+      "servings": 10,
+      "availableFrom": "swamp"
     },
     {
       "id": "black-soup",
@@ -492,7 +495,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "swamp",
       "tier": 4,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "swamp"
     },
     {
       "id": "blood-pudding",
@@ -531,7 +535,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "plains",
       "tier": 6,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "plains"
     },
     {
       "id": "blue-mushroom",
@@ -556,7 +561,8 @@ window.VPR_DATA = {
       "biome": null,
       "tier": null,
       "isFeast": false,
-      "availability": "console-only"
+      "availability": "console-only",
+      "availableFrom": null
     },
     {
       "id": "blueberries",
@@ -583,7 +589,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "black-forest",
       "tier": 2,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "black-forest"
     },
     {
       "id": "boar-jerky",
@@ -614,9 +621,10 @@ window.VPR_DATA = {
         }
       ],
       "yields": 2,
-      "biome": "meadows",
-      "tier": 1,
-      "isFeast": false
+      "biome": "black-forest",
+      "tier": 2,
+      "isFeast": false,
+      "availableFrom": "black-forest"
     },
     {
       "id": "bread",
@@ -646,7 +654,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "plains",
       "tier": 6,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "plains"
     },
     {
       "id": "bukeperries",
@@ -673,7 +682,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "plains",
       "tier": 6,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "plains"
     },
     {
       "id": "carrot",
@@ -700,7 +710,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "meadows",
       "tier": 1,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "meadows"
     },
     {
       "id": "carrot-soup",
@@ -733,9 +744,10 @@ window.VPR_DATA = {
         }
       ],
       "yields": 1,
-      "biome": "meadows",
-      "tier": 1,
-      "isFeast": false
+      "biome": "black-forest",
+      "tier": 2,
+      "isFeast": false,
+      "availableFrom": "black-forest"
     },
     {
       "id": "cloudberries",
@@ -762,7 +774,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "plains",
       "tier": 6,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "plains"
     },
     {
       "id": "cooked-bear-meat",
@@ -791,7 +804,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "meadows",
       "tier": 1,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "meadows"
     },
     {
       "id": "cooked-boar-meat",
@@ -824,7 +838,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "meadows",
       "tier": 1,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "meadows"
     },
     {
       "id": "cooked-bonemaw-meat",
@@ -854,7 +869,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "ashlands",
       "tier": 8,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "ashlands"
     },
     {
       "id": "cooked-deer-meat",
@@ -886,7 +902,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "meadows",
       "tier": 1,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "meadows"
     },
     {
       "id": "cooked-fish",
@@ -917,7 +934,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "meadows",
       "tier": 1,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "meadows"
     },
     {
       "id": "cooked-moose-meat",
@@ -944,7 +962,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "cooked-seal-blubber",
@@ -971,7 +990,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "cooked-serpent-meat",
@@ -1001,7 +1021,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "ocean",
       "tier": 3,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "ocean"
     },
     {
       "id": "cooked-wolf-meat",
@@ -1032,7 +1053,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "mountain",
       "tier": 5,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "mountain"
     },
     {
       "id": "cooked-asksvin-tail",
@@ -1062,7 +1084,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "swamp",
       "tier": 4,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "swamp"
     },
     {
       "id": "cooked-chicken-meat",
@@ -1092,7 +1115,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "meadows",
       "tier": 1,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "meadows"
     },
     {
       "id": "cooked-egg",
@@ -1122,7 +1146,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "black-forest",
       "tier": 2,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "black-forest"
     },
     {
       "id": "cooked-hare-meat",
@@ -1152,7 +1177,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "mistlands",
       "tier": 7,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "mistlands"
     },
     {
       "id": "cooked-lox-meat",
@@ -1182,7 +1208,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "swamp",
       "tier": 4,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "swamp"
     },
     {
       "id": "cooked-seeker-meat",
@@ -1212,7 +1239,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "swamp",
       "tier": 4,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "swamp"
     },
     {
       "id": "deer-stew",
@@ -1251,7 +1279,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "black-forest",
       "tier": 2,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "black-forest"
     },
     {
       "id": "eyescream",
@@ -1285,7 +1314,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "mountain",
       "tier": 5,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "mountain"
     },
     {
       "id": "fiddlehead",
@@ -1310,7 +1340,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "ashlands",
       "tier": 8,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "ashlands"
     },
     {
       "id": "fiery-svinstew",
@@ -1348,7 +1379,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "ashlands",
       "tier": 8,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "ashlands"
     },
     {
       "id": "fish-n-bread",
@@ -1378,7 +1410,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "ashlands",
       "tier": 8,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "ashlands"
     },
     {
       "id": "fish-soup",
@@ -1413,7 +1446,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "fish-wraps",
@@ -1447,7 +1481,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "plains",
       "tier": 6,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "plains"
     },
     {
       "id": "frosted-sweetbread",
@@ -1476,7 +1511,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "plains",
       "tier": 6,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "plains"
     },
     {
       "id": "grilled-neck-tail",
@@ -1508,7 +1544,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "meadows",
       "tier": 1,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "meadows"
     },
     {
       "id": "hearty-mountain-logger-s-stew",
@@ -1551,7 +1588,8 @@ window.VPR_DATA = {
       "biome": "plains",
       "tier": 6,
       "isFeast": true,
-      "servings": 10
+      "servings": 10,
+      "availableFrom": "plains"
     },
     {
       "id": "honey",
@@ -1577,7 +1615,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "meadows",
       "tier": 1,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "meadows"
     },
     {
       "id": "honey-glazed-chicken",
@@ -1607,7 +1646,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "mistlands",
       "tier": 7,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "mistlands"
     },
     {
       "id": "jotun-puffs",
@@ -1632,7 +1672,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "mistlands",
       "tier": 7,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "mistlands"
     },
     {
       "id": "kale",
@@ -1659,7 +1700,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "kale-chips",
@@ -1686,7 +1728,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "lingonberries",
@@ -1708,7 +1751,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "lingonberry-juice",
@@ -1739,7 +1783,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "lox-meat-pie",
@@ -1769,7 +1814,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "plains",
       "tier": 6,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "plains"
     },
     {
       "id": "luminous-larva",
@@ -1791,7 +1837,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "magecap",
@@ -1816,7 +1863,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "mistlands",
       "tier": 7,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "mistlands"
     },
     {
       "id": "marinated-greens",
@@ -1858,7 +1906,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "ashlands",
       "tier": 8,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "ashlands"
     },
     {
       "id": "mashed-meat",
@@ -1896,7 +1945,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "ashlands",
       "tier": 8,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "ashlands"
     },
     {
       "id": "meat-in-bread",
@@ -1935,7 +1985,8 @@ window.VPR_DATA = {
       "yields": 2,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "meat-platter",
@@ -1965,7 +2016,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "mistlands",
       "tier": 7,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "mistlands"
     },
     {
       "id": "meatballs-and-poteitr",
@@ -2000,7 +2052,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "minced-meat-sauce",
@@ -2036,9 +2089,10 @@ window.VPR_DATA = {
         }
       ],
       "yields": 1,
-      "biome": "meadows",
-      "tier": 1,
-      "isFeast": false
+      "biome": "black-forest",
+      "tier": 2,
+      "isFeast": false,
+      "availableFrom": "black-forest"
     },
     {
       "id": "misthare-supreme",
@@ -2068,7 +2122,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "mistlands",
       "tier": 7,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "mistlands"
     },
     {
       "id": "muckshake",
@@ -2106,7 +2161,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "swamp",
       "tier": 4,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "swamp"
     },
     {
       "id": "mushroom",
@@ -2133,7 +2189,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "meadows",
       "tier": 1,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "meadows"
     },
     {
       "id": "mushroom-omelette",
@@ -2167,7 +2224,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "mistlands",
       "tier": 7,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "mistlands"
     },
     {
       "id": "mushrooms-galore-a-la-mistlands",
@@ -2210,7 +2268,8 @@ window.VPR_DATA = {
       "biome": "ashlands",
       "tier": 8,
       "isFeast": true,
-      "servings": 10
+      "servings": 10,
+      "availableFrom": "ashlands"
     },
     {
       "id": "northern-morning-fare",
@@ -2250,7 +2309,8 @@ window.VPR_DATA = {
       "biome": "deep-north",
       "tier": 9,
       "isFeast": true,
-      "servings": 10
+      "servings": 10,
+      "availableFrom": "deep-north"
     },
     {
       "id": "oat-milk",
@@ -2281,7 +2341,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "oatmeal",
@@ -2316,7 +2377,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "oats",
@@ -2343,7 +2405,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "meadows",
       "tier": 1,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "meadows"
     },
     {
       "id": "onion",
@@ -2368,7 +2431,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "meadows",
       "tier": 1,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "meadows"
     },
     {
       "id": "onion-soup",
@@ -2396,9 +2460,10 @@ window.VPR_DATA = {
         }
       ],
       "yields": 1,
-      "biome": "meadows",
-      "tier": 1,
-      "isFeast": false
+      "biome": "black-forest",
+      "tier": 2,
+      "isFeast": false,
+      "availableFrom": "black-forest"
     },
     {
       "id": "oven-pancake",
@@ -2425,7 +2490,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "pancakes",
@@ -2464,7 +2530,8 @@ window.VPR_DATA = {
       "yields": 3,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "piquant-pie",
@@ -2493,7 +2560,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "ashlands",
       "tier": 8,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "ashlands"
     },
     {
       "id": "plains-pie-picnic",
@@ -2536,7 +2604,8 @@ window.VPR_DATA = {
       "biome": "mistlands",
       "tier": 7,
       "isFeast": true,
-      "servings": 10
+      "servings": 10,
+      "availableFrom": "mistlands"
     },
     {
       "id": "poteitr",
@@ -2563,7 +2632,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "meadows",
       "tier": 1,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "meadows"
     },
     {
       "id": "pulled-bear",
@@ -2598,7 +2668,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "black-forest",
       "tier": 2,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "black-forest"
     },
     {
       "id": "queen-s-jam",
@@ -2633,7 +2704,8 @@ window.VPR_DATA = {
       "yields": 4,
       "biome": "black-forest",
       "tier": 2,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "black-forest"
     },
     {
       "id": "raspberries",
@@ -2660,7 +2732,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "meadows",
       "tier": 1,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "meadows"
     },
     {
       "id": "roasted-crust-pie",
@@ -2689,7 +2762,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "ashlands",
       "tier": 8,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "ashlands"
     },
     {
       "id": "rotten-meat",
@@ -2713,7 +2787,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "plains",
       "tier": 6,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "plains"
     },
     {
       "id": "royal-jelly",
@@ -2738,7 +2813,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "mistlands",
       "tier": 7,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "mistlands"
     },
     {
       "id": "sailor-s-bounty",
@@ -2781,7 +2857,8 @@ window.VPR_DATA = {
       "biome": "swamp",
       "tier": 4,
       "isFeast": true,
-      "servings": 10
+      "servings": 10,
+      "availableFrom": "swamp"
     },
     {
       "id": "salad",
@@ -2819,7 +2896,8 @@ window.VPR_DATA = {
       "yields": 3,
       "biome": "mistlands",
       "tier": 7,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "mistlands"
     },
     {
       "id": "sausages",
@@ -2858,7 +2936,8 @@ window.VPR_DATA = {
       "yields": 4,
       "biome": "swamp",
       "tier": 4,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "swamp"
     },
     {
       "id": "scorching-medley",
@@ -2896,7 +2975,8 @@ window.VPR_DATA = {
       "yields": 3,
       "biome": "ashlands",
       "tier": 8,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "ashlands"
     },
     {
       "id": "seal-meat-soup",
@@ -2931,7 +3011,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "seeker-aspic",
@@ -2969,7 +3050,8 @@ window.VPR_DATA = {
       "yields": 2,
       "biome": "mistlands",
       "tier": 7,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "mistlands"
     },
     {
       "id": "serpent-stew",
@@ -3008,7 +3090,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "ocean",
       "tier": 3,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "ocean"
     },
     {
       "id": "sizzling-berry-broth",
@@ -3046,7 +3129,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "ashlands",
       "tier": 8,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "ashlands"
     },
     {
       "id": "smoke-puff",
@@ -3071,7 +3155,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "ashlands",
       "tier": 8,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "ashlands"
     },
     {
       "id": "smoked-fish",
@@ -3106,7 +3191,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "smoked-moose-meat",
@@ -3137,7 +3223,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "deep-north",
       "tier": 9,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "deep-north"
     },
     {
       "id": "sparkling-shroomshake",
@@ -3179,7 +3266,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "ashlands",
       "tier": 8,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "ashlands"
     },
     {
       "id": "spicy-marmalade",
@@ -3217,7 +3305,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "ashlands",
       "tier": 8,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "ashlands"
     },
     {
       "id": "stuffed-mushroom",
@@ -3247,7 +3336,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "mistlands",
       "tier": 7,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "mistlands"
     },
     {
       "id": "swamp-dweller-s-delight",
@@ -3290,7 +3380,8 @@ window.VPR_DATA = {
       "biome": "swamp",
       "tier": 4,
       "isFeast": true,
-      "servings": 10
+      "servings": 10,
+      "availableFrom": "swamp"
     },
     {
       "id": "turnip-stew",
@@ -3323,9 +3414,10 @@ window.VPR_DATA = {
         }
       ],
       "yields": 1,
-      "biome": "meadows",
-      "tier": 1,
-      "isFeast": false
+      "biome": "black-forest",
+      "tier": 2,
+      "isFeast": false,
+      "availableFrom": "black-forest"
     },
     {
       "id": "vineberry-cluster",
@@ -3350,7 +3442,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "ashlands",
       "tier": 8,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "ashlands"
     },
     {
       "id": "volture-meat",
@@ -3380,7 +3473,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "ashlands",
       "tier": 8,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "ashlands"
     },
     {
       "id": "whole-roasted-meadow-boar",
@@ -3423,7 +3517,8 @@ window.VPR_DATA = {
       "biome": "swamp",
       "tier": 4,
       "isFeast": true,
-      "servings": 10
+      "servings": 10,
+      "availableFrom": "swamp"
     },
     {
       "id": "wolf-jerky",
@@ -3456,7 +3551,8 @@ window.VPR_DATA = {
       "yields": 2,
       "biome": "mountain",
       "tier": 5,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "mountain"
     },
     {
       "id": "wolf-skewer",
@@ -3493,7 +3589,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "mountain",
       "tier": 5,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "mountain"
     },
     {
       "id": "yellow-mushroom",
@@ -3520,7 +3617,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "black-forest",
       "tier": 2,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "black-forest"
     },
     {
       "id": "yggdrasil-porridge",
@@ -3558,7 +3656,8 @@ window.VPR_DATA = {
       "yields": 1,
       "biome": "mistlands",
       "tier": 7,
-      "isFeast": false
+      "isFeast": false,
+      "availableFrom": "mistlands"
     }
   ],
   "meads": [
@@ -4350,8 +4449,8 @@ window.VPR_DATA = {
       },
       "fermenterTime": 2400,
       "yields": 6,
-      "biome": "swamp",
-      "tier": 4
+      "biome": "black-forest",
+      "tier": 2
     },
     {
       "id": "tasty-mead",
@@ -6427,6 +6526,29 @@ window.VPR_DATA = {
         "ru": "Хвост пеплозавра"
       }
     },
+    "asksvin-trophy": {
+      "id": "asksvin-trophy",
+      "name": "Asksvin Trophy",
+      "image": "../smithy/img/items/asksvin-trophy.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Asksvin",
+          "kind": "creature",
+          "creatureId": "asksvin",
+          "biomes": [
+            "ashlands"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Asksvin_Trophy",
+      "names": {
+        "cs": "Trofeje",
+        "ru": "Категория:Трофеи"
+      }
+    },
     "barley": {
       "id": "barley",
       "name": "Barley",
@@ -8312,8 +8434,8 @@ window.VPR_DATA = {
       "id": "coal",
       "name": "Coal",
       "image": "../smithy/img/items/coal.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "meadows",
+      "tier": 1,
       "sources": [
         {
           "text": "Surtling",
@@ -8781,8 +8903,8 @@ window.VPR_DATA = {
       "id": "curious-axe-head",
       "name": "Curious Axe Head",
       "image": "../smithy/img/items/curious-axe-head.png",
-      "biome": null,
-      "tier": null,
+      "biome": "meadows",
+      "tier": 1,
       "sources": [
         {
           "text": "Abandoned House (version 6)",
@@ -11029,8 +11151,8 @@ window.VPR_DATA = {
       "name": "Mead base: Poison resistance",
       "provisions": true,
       "image": "img/items/mead-base-poison-resistance.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "black-forest",
+      "tier": 2,
       "sources": [
         {
           "text": "Mead Ketill",
@@ -11137,6 +11259,39 @@ window.VPR_DATA = {
       "names": {
         "cs": "Nápoj Vananidir",
         "ru": "Напиток Вананидир"
+      }
+    },
+    "mechanical-spring": {
+      "id": "mechanical-spring",
+      "name": "Mechanical Spring",
+      "image": "../smithy/img/items/mechanical-spring.png",
+      "biome": "mistlands",
+      "tier": 7,
+      "sources": [
+        {
+          "text": "Artisan Table",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Artisan Table",
+        "materials": [
+          {
+            "item": "refined-eitr",
+            "amount": 1
+          },
+          {
+            "item": "iron",
+            "amount": 3
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mechanical_Spring",
+      "teleportable": false,
+      "names": {
+        "cs": "Mechanická pružina",
+        "ru": "Пружина"
       }
     },
     "misthare-supreme": {
@@ -12077,8 +12232,8 @@ window.VPR_DATA = {
       "id": "mysterious-axe-head",
       "name": "Mysterious Axe Head",
       "image": "../smithy/img/items/mysterious-axe-head.png",
-      "biome": null,
-      "tier": null,
+      "biome": "meadows",
+      "tier": 1,
       "sources": [
         {
           "text": "Abandoned House (version 6)",
@@ -13822,6 +13977,35 @@ window.VPR_DATA = {
         "ru": "Чешуя змея"
       }
     },
+    "sharpening-stone": {
+      "id": "sharpening-stone",
+      "name": "Sharpening Stone",
+      "image": "../smithy/img/items/sharpening-stone.png",
+      "biome": "swamp",
+      "tier": 4,
+      "sources": [
+        {
+          "text": "Stonecutter",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Stonecutter",
+        "materials": [
+          {
+            "item": "stone",
+            "amount": 5
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Sharpening_Stone",
+      "names": {
+        "cs": "Brusné kolo",
+        "fr": "Roue à aiguiser",
+        "ru": "Точильный камень"
+      }
+    },
     "silver": {
       "id": "silver",
       "name": "Silver",
@@ -14914,8 +15098,8 @@ window.VPR_DATA = {
       "id": "wisp",
       "name": "Wisp",
       "image": "../smithy/img/items/wisp.png",
-      "biome": null,
-      "tier": null,
+      "biome": "mistlands",
+      "tier": 7,
       "sources": [
         {
           "text": "Wisp Fountain",
@@ -15274,8 +15458,8 @@ window.VPR_DATA = {
       "id": "ymir-flesh",
       "name": "Ymir Flesh",
       "image": "../smithy/img/items/ymir-flesh.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "black-forest",
+      "tier": 2,
       "sources": [
         {
           "text": "Haldor",

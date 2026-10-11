@@ -4166,18 +4166,7 @@
         ]
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 8,
-      "dps": 8.1731843575419,
-      "perHit": 36.574999999999996,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 97.88106630211894,
-      "hits": 22,
-      "min": 29,
-      "max": 44
-    },
+    "crossbow": null,
     "bolts": [],
     "magic": null,
     "bomb": null,
@@ -4335,52 +4324,8 @@
         ]
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 16,
-      "dps": 16.3463687150838,
-      "perHit": 73.14999999999999,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 3.058783321941217,
-      "hits": 1,
-      "min": 57,
-      "max": 89
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 20,
-        "dps": 19.631284916201118,
-        "perHit": 87.85,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 2.5469550369948775,
-        "hits": 1,
-        "min": 69,
-        "max": 107,
-        "raw": 251,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 19,
-        "dps": 18.849162011173185,
-        "perHit": 84.35,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 2.6526378186129222,
-        "hits": 1,
-        "min": 66,
-        "max": 102,
-        "raw": 241,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -4489,18 +4434,7 @@
       "max": 11
     },
     "arrows": [],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 8,
-      "dps": 8.1731843575419,
-      "perHit": 36.574999999999996,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 611.7566643882434,
-      "hits": 137,
-      "min": 29,
-      "max": 44
-    },
+    "crossbow": null,
     "bolts": [],
     "magic": null,
     "bomb": null,
@@ -4647,48 +4581,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 3.058783321941217,
-      "hits": 1,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 2.5469550369948775,
-        "hits": 1,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 38,
-        "dps": 37.69832402234637,
-        "perHit": 168.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 2.6526378186129222,
-        "hits": 1,
-        "min": 133,
-        "max": 205,
-        "raw": 241,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -4824,48 +4718,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 6.117566643882434,
-      "hits": 2,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 5.093910073989755,
-        "hits": 2,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 38,
-        "dps": 37.69832402234637,
-        "perHit": 168.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 5.3052756372258445,
-        "hits": 2,
-        "min": 133,
-        "max": 205,
-        "raw": 241,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -5001,48 +4855,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": null,
-      "hits": null,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": null,
-        "hits": null,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 38,
-        "dps": 37.69832402234637,
-        "perHit": 168.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": null,
-        "hits": null,
-        "min": 133,
-        "max": 205,
-        "raw": 241,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [],
@@ -5177,48 +4991,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 21.411483253588518,
-      "hits": 5,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 17.828685258964143,
-        "hits": 4,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 38,
-        "dps": 37.69832402234637,
-        "perHit": 168.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 18.568464730290454,
-        "hits": 5,
-        "min": 133,
-        "max": 205,
-        "raw": 241,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [],
@@ -5352,48 +5126,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 1.83526999316473,
-      "hits": 1,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 1.5281730221969265,
-        "hits": 1,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 38,
-        "dps": 37.69832402234637,
-        "perHit": 168.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 1.5915826911677533,
-        "hits": 1,
-        "min": 133,
-        "max": 205,
-        "raw": 241,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -5543,52 +5277,8 @@
         ]
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 16,
-      "dps": 16.3463687150838,
-      "perHit": 73.14999999999999,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 9.17634996582365,
-      "hits": 3,
-      "min": 57,
-      "max": 89
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 20,
-        "dps": 19.631284916201118,
-        "perHit": 87.85,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 7.640865110984633,
-        "hits": 2,
-        "min": 69,
-        "max": 107,
-        "raw": 251,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 19,
-        "dps": 18.849162011173185,
-        "perHit": 84.35,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 7.957913455838767,
-        "hits": 2,
-        "min": 66,
-        "max": 102,
-        "raw": 241,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -5743,52 +5433,8 @@
         ]
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 16,
-      "dps": 16.3463687150838,
-      "perHit": 73.14999999999999,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 1.83526999316473,
-      "hits": 1,
-      "min": 57,
-      "max": 89
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 20,
-        "dps": 19.631284916201118,
-        "perHit": 87.85,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 1.5281730221969265,
-        "hits": 1,
-        "min": 69,
-        "max": 107,
-        "raw": 251,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 19,
-        "dps": 18.849162011173185,
-        "perHit": 84.35,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 1.5915826911677533,
-        "hits": 1,
-        "min": 66,
-        "max": 102,
-        "raw": 241,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -5926,48 +5572,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 0.6117566643882434,
-      "hits": 1,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 0.5093910073989755,
-        "hits": 1,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 38,
-        "dps": 37.69832402234637,
-        "perHit": 168.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 0.5305275637225845,
-        "hits": 1,
-        "min": 133,
-        "max": 205,
-        "raw": 241,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -6118,52 +5724,8 @@
         ]
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 16,
-      "dps": 16.3463687150838,
-      "perHit": 73.14999999999999,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 6.117566643882434,
-      "hits": 2,
-      "min": 57,
-      "max": 89
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 20,
-        "dps": 19.631284916201118,
-        "perHit": 87.85,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 5.093910073989755,
-        "hits": 2,
-        "min": 69,
-        "max": 107,
-        "raw": 251,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 19,
-        "dps": 18.849162011173185,
-        "perHit": 84.35,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 5.3052756372258445,
-        "hits": 2,
-        "min": 66,
-        "max": 102,
-        "raw": 241,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -6316,48 +5878,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 12.235133287764867,
-      "hits": 3,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 10.18782014797951,
-        "hits": 3,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 38,
-        "dps": 37.69832402234637,
-        "perHit": 168.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 10.610551274451689,
-        "hits": 3,
-        "min": 133,
-        "max": 205,
-        "raw": 241,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -6503,52 +6025,8 @@
         ]
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 16,
-      "dps": 16.3463687150838,
-      "perHit": 73.14999999999999,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 0.6117566643882434,
-      "hits": 1,
-      "min": 57,
-      "max": 89
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 20,
-        "dps": 19.631284916201118,
-        "perHit": 87.85,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 0.5093910073989755,
-        "hits": 1,
-        "min": 69,
-        "max": 107,
-        "raw": 251,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 19,
-        "dps": 18.849162011173185,
-        "perHit": 84.35,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 0.5305275637225845,
-        "hits": 1,
-        "min": 66,
-        "max": 102,
-        "raw": 241,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -6713,48 +6191,8 @@
         ]
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 6.117566643882434,
-      "hits": 2,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 5.093910073989755,
-        "hits": 2,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 38,
-        "dps": 37.69832402234637,
-        "perHit": 168.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 5.3052756372258445,
-        "hits": 2,
-        "min": 133,
-        "max": 205,
-        "raw": 241,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -6900,48 +6338,8 @@
         ]
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 3.058783321941217,
-      "hits": 1,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 2.5469550369948775,
-        "hits": 1,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 38,
-        "dps": 37.69832402234637,
-        "perHit": 168.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 2.6526378186129222,
-        "hits": 1,
-        "min": 133,
-        "max": 205,
-        "raw": 241,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -7090,48 +6488,8 @@
         ]
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 3.058783321941217,
-      "hits": 1,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 2.5469550369948775,
-        "hits": 1,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 38,
-        "dps": 37.69832402234637,
-        "perHit": 168.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 2.6526378186129222,
-        "hits": 1,
-        "min": 133,
-        "max": 205,
-        "raw": 241,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -7281,48 +6639,8 @@
         ]
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 9.17634996582365,
-      "hits": 3,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 7.640865110984633,
-        "hits": 2,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 38,
-        "dps": 37.69832402234637,
-        "perHit": 168.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 7.957913455838767,
-        "hits": 2,
-        "min": 133,
-        "max": 205,
-        "raw": 241,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -7466,48 +6784,8 @@
         ]
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 113.17498291182503,
-      "hits": 26,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 94.23733636881047,
-        "hits": 22,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 38,
-        "dps": 37.69832402234637,
-        "perHit": 168.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 98.14759928867812,
-        "hits": 22,
-        "min": 133,
-        "max": 205,
-        "raw": 241,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -7653,48 +6931,8 @@
         ]
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 229.40874914559126,
-      "hits": 52,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 191.0216277746158,
-        "hits": 43,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 38,
-        "dps": 37.69832402234637,
-        "perHit": 168.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 198.94783639596918,
-        "hits": 45,
-        "min": 133,
-        "max": 205,
-        "raw": 241,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -7832,52 +7070,8 @@
         ]
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 16,
-      "dps": 16.3463687150838,
-      "perHit": 73.14999999999999,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 1.83526999316473,
-      "hits": 2,
-      "min": 57,
-      "max": 89
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 20,
-        "dps": 19.631284916201118,
-        "perHit": 87.85,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 1.5281730221969265,
-        "hits": 1,
-        "min": 69,
-        "max": 107,
-        "raw": 251,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 19,
-        "dps": 18.849162011173185,
-        "perHit": 84.35,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 1.5915826911677533,
-        "hits": 1,
-        "min": 66,
-        "max": 102,
-        "raw": 241,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -7985,52 +7179,8 @@
       "max": 24
     },
     "arrows": [],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 16,
-      "dps": 16.3463687150838,
-      "perHit": 73.14999999999999,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 48.94053315105947,
-      "hits": 11,
-      "min": 57,
-      "max": 89
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 20,
-        "dps": 19.631284916201118,
-        "perHit": 87.85,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 40.75128059191804,
-        "hits": 10,
-        "min": 69,
-        "max": 107,
-        "raw": 251,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 19,
-        "dps": 18.849162011173185,
-        "perHit": 84.35,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 42.442205097806756,
-        "hits": 10,
-        "min": 66,
-        "max": 102,
-        "raw": 241,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -8195,48 +7345,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": null,
-      "hits": null,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": null,
-        "hits": null,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 38,
-        "dps": 37.69832402234637,
-        "perHit": 168.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": null,
-        "hits": null,
-        "min": 133,
-        "max": 205,
-        "raw": 241,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -8380,48 +7490,8 @@
         ]
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 1.5293916609706084,
-      "hits": 1,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 1.2734775184974387,
-        "hits": 1,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 38,
-        "dps": 37.69832402234637,
-        "perHit": 168.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 1.3263189093064611,
-        "hits": 1,
-        "min": 133,
-        "max": 205,
-        "raw": 241,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -8565,48 +7635,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 2.4470266575529735,
-      "hits": 1,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 2.037564029595902,
-        "hits": 1,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      },
-      {
-        "weapon": "bone-bolt",
-        "score": 38,
-        "dps": 37.69832402234637,
-        "perHit": 168.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 2.122110254890338,
-        "hits": 1,
-        "min": 133,
-        "max": 205,
-        "raw": 241,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -8641,21 +7671,6 @@
     },
     "melee": [
       {
-        "weapon": "skoll-and-hati",
-        "score": 154,
-        "dps": 154.48275862068962,
-        "perHit": 67.19999999999999,
-        "cycleSeconds": 1.74,
-        "isSecondary": false,
-        "confidence": "wiki",
-        "timeToKill": 0.06473214285714288,
-        "hits": 1,
-        "min": 53,
-        "max": 82,
-        "raw": 96,
-        "notes": []
-      },
-      {
         "weapon": "vilebone-maulclaws",
         "score": 131,
         "dps": 130.54054054054055,
@@ -8682,6 +7697,21 @@
         "hits": 1,
         "min": 186,
         "max": 288,
+        "raw": 113,
+        "notes": []
+      },
+      {
+        "weapon": "porcupine",
+        "score": 129,
+        "dps": 128.6178861788618,
+        "perHit": 79.1,
+        "cycleSeconds": 2.46,
+        "isSecondary": false,
+        "confidence": "wiki",
+        "timeToKill": 0.0777496839443742,
+        "hits": 1,
+        "min": 62,
+        "max": 96,
         "raw": 113,
         "notes": []
       }
@@ -8742,48 +7772,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 0.3058783321941217,
-      "hits": 1,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "black-metal-bolt",
-        "score": 42,
-        "dps": 42.391061452513966,
-        "perHit": 189.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 0.23589878755930416,
-        "hits": 1,
-        "min": 149,
-        "max": 230,
-        "raw": 271,
-        "notes": []
-      },
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 0.25469550369948774,
-        "hits": 1,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -8792,11 +7782,11 @@
         "mult": 0
       }
     ],
-    "tip": "No elemental weakness — best raw option: Skoll and Hati (96). Immune to Spirit.",
+    "tip": "No elemental weakness — best raw option: Vilebone Maulclaws (92). Immune to Spirit.",
     "tipData": {
       "kind": "raw",
-      "weaponName": "Skoll and Hati",
-      "score": 96,
+      "weaponName": "Vilebone Maulclaws",
+      "score": 92,
       "immuneTypes": [
         "spirit"
       ]
@@ -8818,21 +7808,6 @@
     },
     "melee": [
       {
-        "weapon": "skoll-and-hati",
-        "score": 154,
-        "dps": 154.48275862068962,
-        "perHit": 67.19999999999999,
-        "cycleSeconds": 1.74,
-        "isSecondary": false,
-        "confidence": "wiki",
-        "timeToKill": 0.06473214285714288,
-        "hits": 1,
-        "min": 53,
-        "max": 82,
-        "raw": 96,
-        "notes": []
-      },
-      {
         "weapon": "vilebone-maulclaws",
         "score": 131,
         "dps": 130.54054054054055,
@@ -8859,6 +7834,21 @@
         "hits": 1,
         "min": 186,
         "max": 288,
+        "raw": 113,
+        "notes": []
+      },
+      {
+        "weapon": "porcupine",
+        "score": 129,
+        "dps": 128.6178861788618,
+        "perHit": 79.1,
+        "cycleSeconds": 2.46,
+        "isSecondary": false,
+        "confidence": "wiki",
+        "timeToKill": 0.0777496839443742,
+        "hits": 1,
+        "min": 62,
+        "max": 96,
         "raw": 113,
         "notes": []
       }
@@ -8919,48 +7909,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 0.3058783321941217,
-      "hits": 1,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "black-metal-bolt",
-        "score": 42,
-        "dps": 42.391061452513966,
-        "perHit": 189.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 0.23589878755930416,
-        "hits": 1,
-        "min": 149,
-        "max": 230,
-        "raw": 271,
-        "notes": []
-      },
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 0.25469550369948774,
-        "hits": 1,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -8969,11 +7919,11 @@
         "mult": 0
       }
     ],
-    "tip": "No elemental weakness — best raw option: Skoll and Hati (96). Immune to Spirit.",
+    "tip": "No elemental weakness — best raw option: Vilebone Maulclaws (92). Immune to Spirit.",
     "tipData": {
       "kind": "raw",
-      "weaponName": "Skoll and Hati",
-      "score": 96,
+      "weaponName": "Vilebone Maulclaws",
+      "score": 92,
       "immuneTypes": [
         "spirit"
       ]
@@ -8994,21 +7944,6 @@
       "spirit": 0
     },
     "melee": [
-      {
-        "weapon": "skoll-and-hati",
-        "score": 154,
-        "dps": 154.48275862068962,
-        "perHit": 67.19999999999999,
-        "cycleSeconds": 1.74,
-        "isSecondary": false,
-        "confidence": "wiki",
-        "timeToKill": 1.1328125000000002,
-        "hits": 3,
-        "min": 53,
-        "max": 82,
-        "raw": 96,
-        "notes": []
-      },
       {
         "weapon": "vilebone-maulclaws",
         "score": 131,
@@ -9036,6 +7971,21 @@
         "hits": 1,
         "min": 186,
         "max": 288,
+        "raw": 113,
+        "notes": []
+      },
+      {
+        "weapon": "porcupine",
+        "score": 129,
+        "dps": 128.6178861788618,
+        "perHit": 79.1,
+        "cycleSeconds": 2.46,
+        "isSecondary": false,
+        "confidence": "wiki",
+        "timeToKill": 1.3606194690265485,
+        "hits": 3,
+        "min": 62,
+        "max": 96,
         "raw": 113,
         "notes": []
       }
@@ -9096,48 +8046,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 5.3528708133971294,
-      "hits": 2,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "black-metal-bolt",
-        "score": 42,
-        "dps": 42.391061452513966,
-        "perHit": 189.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 4.128228782287823,
-        "hits": 1,
-        "min": 149,
-        "max": 230,
-        "raw": 271,
-        "notes": []
-      },
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 4.457171314741036,
-        "hits": 1,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -9146,11 +8056,11 @@
         "mult": 0
       }
     ],
-    "tip": "No elemental weakness — best raw option: Skoll and Hati (96). Immune to Spirit.",
+    "tip": "No elemental weakness — best raw option: Vilebone Maulclaws (92). Immune to Spirit.",
     "tipData": {
       "kind": "raw",
-      "weaponName": "Skoll and Hati",
-      "score": 96,
+      "weaponName": "Vilebone Maulclaws",
+      "score": 92,
       "immuneTypes": [
         "spirit"
       ]
@@ -9171,21 +8081,6 @@
       "spirit": 0
     },
     "melee": [
-      {
-        "weapon": "skoll-and-hati",
-        "score": 154,
-        "dps": 154.48275862068962,
-        "perHit": 67.19999999999999,
-        "cycleSeconds": 1.74,
-        "isSecondary": false,
-        "confidence": "wiki",
-        "timeToKill": 5.17857142857143,
-        "hits": 12,
-        "min": 53,
-        "max": 82,
-        "raw": 96,
-        "notes": []
-      },
       {
         "weapon": "vilebone-maulclaws",
         "score": 131,
@@ -9213,6 +8108,21 @@
         "hits": 4,
         "min": 186,
         "max": 288,
+        "raw": 113,
+        "notes": []
+      },
+      {
+        "weapon": "porcupine",
+        "score": 129,
+        "dps": 128.6178861788618,
+        "perHit": 79.1,
+        "cycleSeconds": 2.46,
+        "isSecondary": false,
+        "confidence": "wiki",
+        "timeToKill": 6.219974715549936,
+        "hits": 11,
+        "min": 62,
+        "max": 96,
         "raw": 113,
         "notes": []
       }
@@ -9273,48 +8183,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 24.470266575529735,
-      "hits": 6,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "black-metal-bolt",
-        "score": 42,
-        "dps": 42.391061452513966,
-        "perHit": 189.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 18.871903004744333,
-        "hits": 5,
-        "min": 149,
-        "max": 230,
-        "raw": 271,
-        "notes": []
-      },
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 20.37564029595902,
-        "hits": 5,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -9323,11 +8193,11 @@
         "mult": 0
       }
     ],
-    "tip": "No elemental weakness — best raw option: Skoll and Hati (96). Immune to Spirit.",
+    "tip": "No elemental weakness — best raw option: Vilebone Maulclaws (92). Immune to Spirit.",
     "tipData": {
       "kind": "raw",
-      "weaponName": "Skoll and Hati",
-      "score": 96,
+      "weaponName": "Vilebone Maulclaws",
+      "score": 92,
       "immuneTypes": [
         "spirit"
       ]
@@ -9348,21 +8218,6 @@
       "spirit": 0
     },
     "melee": [
-      {
-        "weapon": "skoll-and-hati",
-        "score": 154,
-        "dps": 154.48275862068962,
-        "perHit": 67.19999999999999,
-        "cycleSeconds": 1.74,
-        "isSecondary": false,
-        "confidence": "wiki",
-        "timeToKill": 0.6473214285714287,
-        "hits": 2,
-        "min": 53,
-        "max": 82,
-        "raw": 96,
-        "notes": []
-      },
       {
         "weapon": "vilebone-maulclaws",
         "score": 131,
@@ -9390,6 +8245,21 @@
         "hits": 1,
         "min": 186,
         "max": 288,
+        "raw": 113,
+        "notes": []
+      },
+      {
+        "weapon": "porcupine",
+        "score": 129,
+        "dps": 128.6178861788618,
+        "perHit": 79.1,
+        "cycleSeconds": 2.46,
+        "isSecondary": false,
+        "confidence": "wiki",
+        "timeToKill": 0.777496839443742,
+        "hits": 2,
+        "min": 62,
+        "max": 96,
         "raw": 113,
         "notes": []
       }
@@ -9450,48 +8320,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 3.058783321941217,
-      "hits": 1,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "black-metal-bolt",
-        "score": 42,
-        "dps": 42.391061452513966,
-        "perHit": 189.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 2.3589878755930416,
-        "hits": 1,
-        "min": 149,
-        "max": 230,
-        "raw": 271,
-        "notes": []
-      },
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 2.5469550369948775,
-        "hits": 1,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -9500,11 +8330,11 @@
         "mult": 0
       }
     ],
-    "tip": "No elemental weakness — best raw option: Skoll and Hati (96). Immune to Spirit.",
+    "tip": "No elemental weakness — best raw option: Vilebone Maulclaws (92). Immune to Spirit.",
     "tipData": {
       "kind": "raw",
-      "weaponName": "Skoll and Hati",
-      "score": 96,
+      "weaponName": "Vilebone Maulclaws",
+      "score": 92,
       "immuneTypes": [
         "spirit"
       ]
@@ -9525,21 +8355,6 @@
       "spirit": 0
     },
     "melee": [
-      {
-        "weapon": "skoll-and-hati",
-        "score": 154,
-        "dps": 154.48275862068962,
-        "perHit": 67.19999999999999,
-        "cycleSeconds": 1.74,
-        "isSecondary": false,
-        "confidence": "wiki",
-        "timeToKill": null,
-        "hits": null,
-        "min": 53,
-        "max": 82,
-        "raw": 96,
-        "notes": []
-      },
       {
         "weapon": "vilebone-maulclaws",
         "score": 131,
@@ -9567,6 +8382,21 @@
         "hits": null,
         "min": 186,
         "max": 288,
+        "raw": 113,
+        "notes": []
+      },
+      {
+        "weapon": "porcupine",
+        "score": 129,
+        "dps": 128.6178861788618,
+        "perHit": 79.1,
+        "cycleSeconds": 2.46,
+        "isSecondary": false,
+        "confidence": "wiki",
+        "timeToKill": null,
+        "hits": null,
+        "min": 62,
+        "max": 96,
         "raw": 113,
         "notes": []
       }
@@ -9627,48 +8457,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": null,
-      "hits": null,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "black-metal-bolt",
-        "score": 42,
-        "dps": 42.391061452513966,
-        "perHit": 189.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": null,
-        "hits": null,
-        "min": 149,
-        "max": 230,
-        "raw": 271,
-        "notes": []
-      },
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": null,
-        "hits": null,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -9677,11 +8467,11 @@
         "mult": 0
       }
     ],
-    "tip": "No elemental weakness — best raw option: Skoll and Hati (96).",
+    "tip": "No elemental weakness — best raw option: Vilebone Maulclaws (92).",
     "tipData": {
       "kind": "raw",
-      "weaponName": "Skoll and Hati",
-      "score": 96,
+      "weaponName": "Vilebone Maulclaws",
+      "score": 92,
       "immuneTypes": []
     }
   },
@@ -9735,20 +8525,19 @@
         ]
       },
       {
-        "weapon": "skoll-and-hati",
-        "score": 77,
-        "dps": 77.24137931034481,
-        "perHit": 33.599999999999994,
-        "cycleSeconds": 1.74,
+        "weapon": "crystal-battleaxe",
+        "score": 73,
+        "dps": 73.49999999999999,
+        "perHit": 58.8,
+        "cycleSeconds": 3.2,
         "isSecondary": false,
         "confidence": "wiki",
-        "timeToKill": 1.2946428571428574,
-        "hits": 3,
-        "min": 26,
-        "max": 41,
-        "raw": 96,
+        "timeToKill": 1.360544217687075,
+        "hits": 2,
+        "min": 46,
+        "max": 71,
+        "raw": 138,
         "notes": [
-          "×0.5 Pierce",
           "×0.5 Slash"
         ]
       }
@@ -9802,52 +8591,8 @@
         ]
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 16,
-      "dps": 16.3463687150838,
-      "perHit": 73.14999999999999,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 6.117566643882434,
-      "hits": 2,
-      "min": 57,
-      "max": 89
-    },
-    "bolts": [
-      {
-        "weapon": "black-metal-bolt",
-        "score": 21,
-        "dps": 21.195530726256983,
-        "perHit": 94.85,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 4.717975751186083,
-        "hits": 2,
-        "min": 75,
-        "max": 115,
-        "raw": 271,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      },
-      {
-        "weapon": "iron-bolt",
-        "score": 20,
-        "dps": 19.631284916201118,
-        "perHit": 87.85,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 5.093910073989755,
-        "hits": 2,
-        "min": 69,
-        "max": 107,
-        "raw": 251,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -9896,21 +8641,6 @@
     },
     "melee": [
       {
-        "weapon": "skoll-and-hati",
-        "score": 154,
-        "dps": 154.48275862068962,
-        "perHit": 67.19999999999999,
-        "cycleSeconds": 1.74,
-        "isSecondary": false,
-        "confidence": "wiki",
-        "timeToKill": 0.006473214285714287,
-        "hits": 1,
-        "min": 53,
-        "max": 82,
-        "raw": 96,
-        "notes": []
-      },
-      {
         "weapon": "vilebone-maulclaws",
         "score": 131,
         "dps": 130.54054054054055,
@@ -9937,6 +8667,21 @@
         "hits": 1,
         "min": 186,
         "max": 288,
+        "raw": 113,
+        "notes": []
+      },
+      {
+        "weapon": "porcupine",
+        "score": 129,
+        "dps": 128.6178861788618,
+        "perHit": 79.1,
+        "cycleSeconds": 2.46,
+        "isSecondary": false,
+        "confidence": "wiki",
+        "timeToKill": 0.00777496839443742,
+        "hits": 1,
+        "min": 62,
+        "max": 96,
         "raw": 113,
         "notes": []
       }
@@ -9997,48 +8742,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 0.030587833219412167,
-      "hits": 1,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "black-metal-bolt",
-        "score": 42,
-        "dps": 42.391061452513966,
-        "perHit": 189.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 0.023589878755930417,
-        "hits": 1,
-        "min": 149,
-        "max": 230,
-        "raw": 271,
-        "notes": []
-      },
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 0.025469550369948777,
-        "hits": 1,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -10047,11 +8752,11 @@
         "mult": 0
       }
     ],
-    "tip": "No elemental weakness — best raw option: Skoll and Hati (96).",
+    "tip": "No elemental weakness — best raw option: Vilebone Maulclaws (92).",
     "tipData": {
       "kind": "raw",
-      "weaponName": "Skoll and Hati",
-      "score": 96,
+      "weaponName": "Vilebone Maulclaws",
+      "score": 92,
       "immuneTypes": []
     }
   },
@@ -10070,21 +8775,6 @@
       "spirit": 0
     },
     "melee": [
-      {
-        "weapon": "skoll-and-hati",
-        "score": 154,
-        "dps": 154.48275862068962,
-        "perHit": 67.19999999999999,
-        "cycleSeconds": 1.74,
-        "isSecondary": false,
-        "confidence": "wiki",
-        "timeToKill": 0.06473214285714288,
-        "hits": 1,
-        "min": 53,
-        "max": 82,
-        "raw": 96,
-        "notes": []
-      },
       {
         "weapon": "vilebone-maulclaws",
         "score": 131,
@@ -10112,6 +8802,21 @@
         "hits": 1,
         "min": 186,
         "max": 288,
+        "raw": 113,
+        "notes": []
+      },
+      {
+        "weapon": "porcupine",
+        "score": 129,
+        "dps": 128.6178861788618,
+        "perHit": 79.1,
+        "cycleSeconds": 2.46,
+        "isSecondary": false,
+        "confidence": "wiki",
+        "timeToKill": 0.0777496839443742,
+        "hits": 1,
+        "min": 62,
+        "max": 96,
         "raw": 113,
         "notes": []
       }
@@ -10172,48 +8877,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 0.3058783321941217,
-      "hits": 1,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "black-metal-bolt",
-        "score": 42,
-        "dps": 42.391061452513966,
-        "perHit": 189.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 0.23589878755930416,
-        "hits": 1,
-        "min": 149,
-        "max": 230,
-        "raw": 271,
-        "notes": []
-      },
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 0.25469550369948774,
-        "hits": 1,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -10222,11 +8887,11 @@
         "mult": 0
       }
     ],
-    "tip": "No elemental weakness — best raw option: Skoll and Hati (96). Immune to Spirit.",
+    "tip": "No elemental weakness — best raw option: Vilebone Maulclaws (92). Immune to Spirit.",
     "tipData": {
       "kind": "raw",
-      "weaponName": "Skoll and Hati",
-      "score": 96,
+      "weaponName": "Vilebone Maulclaws",
+      "score": 92,
       "immuneTypes": [
         "spirit"
       ]
@@ -10263,23 +8928,6 @@
         "notes": []
       },
       {
-        "weapon": "skoll-and-hati",
-        "score": 116,
-        "dps": 115.86206896551722,
-        "perHit": 50.39999999999999,
-        "cycleSeconds": 1.74,
-        "isSecondary": false,
-        "confidence": "wiki",
-        "timeToKill": 8.630952380952381,
-        "hits": 20,
-        "min": 40,
-        "max": 61,
-        "raw": 96,
-        "notes": [
-          "×0.5 Slash"
-        ]
-      },
-      {
         "weapon": "vilebone-maulclaws",
         "score": 108,
         "dps": 107.83783783783785,
@@ -10294,6 +8942,23 @@
         "raw": 92,
         "notes": [
           "×0.5 Slash"
+        ]
+      },
+      {
+        "weapon": "porcupine",
+        "score": 100,
+        "dps": 100.16260162601625,
+        "perHit": 61.599999999999994,
+        "cycleSeconds": 2.46,
+        "isSecondary": false,
+        "confidence": "wiki",
+        "timeToKill": 9.983766233766234,
+        "hits": 17,
+        "min": 48,
+        "max": 75,
+        "raw": 113,
+        "notes": [
+          "×0.5 Blunt"
         ]
       }
     ],
@@ -10355,48 +9020,8 @@
         ]
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 30.58783321941217,
-      "hits": 7,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "black-metal-bolt",
-        "score": 42,
-        "dps": 42.391061452513966,
-        "perHit": 189.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 23.589878755930417,
-        "hits": 6,
-        "min": 149,
-        "max": 230,
-        "raw": 271,
-        "notes": []
-      },
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 25.469550369948777,
-        "hits": 6,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -10550,52 +9175,8 @@
         ]
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 16,
-      "dps": 16.3463687150838,
-      "perHit": 73.14999999999999,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 73.4107997265892,
-      "hits": 17,
-      "min": 57,
-      "max": 89
-    },
-    "bolts": [
-      {
-        "weapon": "black-metal-bolt",
-        "score": 21,
-        "dps": 21.195530726256983,
-        "perHit": 94.85,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 56.615709014233,
-        "hits": 13,
-        "min": 75,
-        "max": 115,
-        "raw": 271,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      },
-      {
-        "weapon": "iron-bolt",
-        "score": 20,
-        "dps": 19.631284916201118,
-        "perHit": 87.85,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 61.12692088787706,
-        "hits": 14,
-        "min": 69,
-        "max": 107,
-        "raw": 251,
-        "notes": [
-          "×0.5 Pierce"
-        ]
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -10706,18 +9287,7 @@
       "max": 12
     },
     "arrows": [],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 8,
-      "dps": 8.1731843575419,
-      "perHit": 36.574999999999996,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 1223.5133287764868,
-      "hits": 274,
-      "min": 29,
-      "max": 44
-    },
+    "crossbow": null,
     "bolts": [],
     "magic": null,
     "bomb": null,
@@ -10765,21 +9335,6 @@
     },
     "melee": [
       {
-        "weapon": "skoll-and-hati",
-        "score": 154,
-        "dps": 154.48275862068962,
-        "perHit": 67.19999999999999,
-        "cycleSeconds": 1.74,
-        "isSecondary": false,
-        "confidence": "wiki",
-        "timeToKill": 42.72321428571429,
-        "hits": 99,
-        "min": 53,
-        "max": 82,
-        "raw": 96,
-        "notes": []
-      },
-      {
         "weapon": "vilebone-maulclaws",
         "score": 131,
         "dps": 130.54054054054055,
@@ -10806,6 +9361,21 @@
         "hits": 28,
         "min": 186,
         "max": 288,
+        "raw": 113,
+        "notes": []
+      },
+      {
+        "weapon": "porcupine",
+        "score": 129,
+        "dps": 128.6178861788618,
+        "perHit": 79.1,
+        "cycleSeconds": 2.46,
+        "isSecondary": false,
+        "confidence": "wiki",
+        "timeToKill": 51.314791403286975,
+        "hits": 84,
+        "min": 62,
+        "max": 96,
         "raw": 113,
         "notes": []
       }
@@ -10866,48 +9436,8 @@
         "notes": []
       }
     ],
-    "crossbow": {
-      "weapon": "arbalest",
-      "score": 33,
-      "dps": 32.6927374301676,
-      "perHit": 146.29999999999998,
-      "cycleSeconds": 4.475,
-      "confidence": "model",
-      "timeToKill": 201.87969924812032,
-      "hits": 46,
-      "min": 115,
-      "max": 178
-    },
-    "bolts": [
-      {
-        "weapon": "black-metal-bolt",
-        "score": 42,
-        "dps": 42.391061452513966,
-        "perHit": 189.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 155.69319978914075,
-        "hits": 35,
-        "min": 149,
-        "max": 230,
-        "raw": 271,
-        "notes": []
-      },
-      {
-        "weapon": "iron-bolt",
-        "score": 39,
-        "dps": 39.262569832402235,
-        "perHit": 175.7,
-        "cycleSeconds": 4.475,
-        "confidence": "model",
-        "timeToKill": 168.09903244166193,
-        "hits": 38,
-        "min": 138,
-        "max": 213,
-        "raw": 251,
-        "notes": []
-      }
-    ],
+    "crossbow": null,
+    "bolts": [],
     "magic": null,
     "bomb": null,
     "avoid": [
@@ -10916,11 +9446,11 @@
         "mult": 0
       }
     ],
-    "tip": "No elemental weakness — best raw option: Skoll and Hati (96). Immune to Spirit.",
+    "tip": "No elemental weakness — best raw option: Vilebone Maulclaws (92). Immune to Spirit.",
     "tipData": {
       "kind": "raw",
-      "weaponName": "Skoll and Hati",
-      "score": 96,
+      "weaponName": "Vilebone Maulclaws",
+      "score": 92,
       "immuneTypes": [
         "spirit"
       ]

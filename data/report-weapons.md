@@ -28,12 +28,12 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 | Tier | Biome | Count |
 |---|---|---|
 | 1 | meadows | 14 |
-| 2 | black-forest | 14 |
+| 2 | black-forest | 13 |
 | 3 | ocean | 2 |
-| 4 | swamp | 18 |
+| 4 | swamp | 16 |
 | 5 | mountain | 12 |
-| 6 | plains | 12 |
-| 7 | mistlands | 16 |
+| 6 | plains | 10 |
+| 7 | mistlands | 21 |
 | 8 | ashlands | 38 |
 | 9 | deep-north | 45 |
 | null | (none) | 0 |

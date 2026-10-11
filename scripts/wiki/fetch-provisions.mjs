@@ -8,6 +8,7 @@ import { cleanText, parseTemplates, parseInfobox, parseMaterialList, parseWikiTa
 import { createMaterialResolver } from './materials.mjs';
 import { parseSources, parseConversionRecipe, resolveRecipeBiomes } from './items.mjs';
 import { BIOMES } from './biomes.mjs';
+import { latestBiome, levelBiome, materialBiomeLookup } from './station-levels.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const load = name => JSON.parse(readFileSync(path.join(ROOT, 'data', name), 'utf8'));
@@ -248,6 +249,21 @@ export async function fetchProvisions() {
     const raw = byId.get(entity.id) ?? resolve(entity.name);
     entity.tier = highest?.tier ?? raw?.tier ?? null;
     entity.biome = highest?.biome ?? raw?.biome ?? null;
+  }
+  // Availability of food (VC-45c, Pavel VC44/Q-9): the later of the biome of all
+  // ingredients and the biome where the station level exists; it also becomes
+  // the food's biome. Stations without levels (Oven, Cooking Station…) add nothing.
+  {
+    const materialBiome = materialBiomeLookup([...oldItems, ...newItems]);
+    const order = Object.fromEntries(BIOMES.map(b => [b.id, b.order]));
+    for (const entry of food) {
+      // Raw foods have no recipe; their own item biome (resolved above) stands in.
+      const biomes = entry.materials?.length ? entry.materials.map(m => materialBiome(m.item)) : [entry.biome];
+      const reached = latestBiome([...biomes, levelBiome(stations, entry.station, entry.stationLevel)], order);
+      entry.availableFrom = reached;
+      entry.biome = reached;
+      entry.tier = reached ? order[reached] : null;
+    }
   }
   await addLocalizedNames([...food, ...meads, ...newItems]);
   // Image queries are identical on cached runs; downloads skip existing files.

@@ -781,8 +781,8 @@
     },
     "fermenterTime": 2400,
     "yields": 6,
-    "biome": "swamp",
-    "tier": 4
+    "biome": "black-forest",
+    "tier": 2
   },
   {
     "id": "tasty-mead",

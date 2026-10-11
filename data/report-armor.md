@@ -6,14 +6,14 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 
 - Total armor sets/entries: 68
 - Total armor pieces: 113
-- Total items/materials: 191
+- Total items/materials: 194
 
 ## Biome breakdown
 
 | Biome | Sets/Entries | Pieces |
 |---|---|---|
-| meadows | 1 | 2 |
-| black-forest | 5 | 15 |
+| meadows | 4 | 5 |
+| black-forest | 6 | 16 |
 | ocean | 0 | 0 |
 | swamp | 2 | 6 |
 | mountain | 2 | 7 |
@@ -21,7 +21,7 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 | mistlands | 2 | 7 |
 | ashlands | 5 | 11 |
 | deep-north | 7 | 13 |
-| (cosmetic / unresolved) | 5 | 5 |
+| (cosmetic / unresolved) | 6 | 6 |
 
 ## Station levels
 
@@ -46,11 +46,8 @@ None. All pieces with quality upgrades found in quality tables.
 
 ## Materials without source or biome
 
-- **Curious Axe Head** (sources: 1, biome: null)
 - **Frostfire Essence** (sources: 0, biome: deep-north)
-- **Mysterious Axe Head** (sources: 1, biome: null)
 - **Thunderblood Essence** (sources: 0, biome: deep-north)
-- **Wisp** (sources: 1, biome: null)
 
 ## Skipped pages
 
@@ -75,6 +72,7 @@ None. All pieces with quality upgrades found in quality tables.
 - **Flametal** (id: flametal)
 - **Flametal Ore** (id: flametal-ore)
 - **Iron** (id: iron)
+- **Mechanical Spring** (id: mechanical-spring)
 - **Petrified Tissue** (id: petrified-tissue)
 - **Scrap Iron** (id: scrap-iron)
 - **Silver** (id: silver)

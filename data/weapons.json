@@ -31,7 +31,9 @@
             "name": "Leather Scraps",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "ocean",
+        "availableTier": 3
       }
     ],
     "materials": [
@@ -64,6 +66,8 @@
     "biome": "ocean",
     "description": "The ocean's wrath.",
     "blockArmor": 21,
+    "availableFrom": "ocean",
+    "availableTier": 3,
     "names": {
       "cs": "Harpuna z hlubin",
       "fr": "Harpon abyssal",
@@ -102,7 +106,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "ocean",
+        "availableTier": 3
       },
       {
         "quality": 2,
@@ -113,7 +119,9 @@
             "name": "Chitin",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "ocean",
+        "availableTier": 3
       },
       {
         "quality": 3,
@@ -124,7 +132,9 @@
             "name": "Chitin",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": "ocean",
+        "availableTier": 3
       },
       {
         "quality": 4,
@@ -135,7 +145,9 @@
             "name": "Chitin",
             "amount": 40
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       }
     ],
     "materials": [
@@ -169,6 +181,8 @@
     "tier": 3,
     "biome": "ocean",
     "description": "A knife from the deep.",
+    "availableFrom": "ocean",
+    "availableTier": 3,
     "names": {
       "cs": "Břitva z hlubin",
       "fr": "Rasoir abyssal",
@@ -207,7 +221,9 @@
             "name": "Ancient Bark",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 2,
@@ -228,7 +244,9 @@
             "name": "Ancient Bark",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 3,
@@ -249,7 +267,9 @@
             "name": "Ancient Bark",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 4,
@@ -270,7 +290,9 @@
             "name": "Ancient Bark",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -303,6 +325,8 @@
     "biome": "swamp",
     "description": "Despite its gnarled look, this spear is strong and perfectly balanced.",
     "blockArmor": 21,
+    "availableFrom": "swamp",
+    "availableTier": 4,
     "names": {
       "cs": "Kopí ze starověkého dřeva",
       "fr": "Lance en écorce ancienne",
@@ -336,7 +360,9 @@
             "name": "Hard Antler",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       }
     ],
     "materials": [
@@ -366,6 +392,8 @@
     "tier": 1,
     "biome": "meadows",
     "description": "This tool is hard enough to crack even the most stubborn rocks.",
+    "availableFrom": "meadows",
+    "availableTier": 1,
     "names": {
       "cs": "Krumpáč z parohu",
       "ru": "Кирка из оленьего рога"
@@ -403,7 +431,9 @@
             "name": "Root",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 2,
@@ -424,7 +454,9 @@
             "name": "Root",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 3,
@@ -445,7 +477,9 @@
             "name": "Root",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 4,
@@ -466,7 +500,9 @@
             "name": "Root",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       }
     ],
     "materials": [
@@ -495,10 +531,12 @@
     "skill": "crossbows",
     "backstab": null,
     "quantity": null,
-    "tier": 4,
-    "biome": "swamp",
+    "tier": 7,
+    "biome": "mistlands",
     "description": "A slow but powerful weapon.",
     "blockForce": null,
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "ru": "Арбалет"
     }
@@ -540,7 +578,9 @@
             "name": "Bonemaw Tooth",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -566,7 +606,9 @@
             "name": "Bonemaw Tooth",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -592,7 +634,9 @@
             "name": "Bonemaw Tooth",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 4,
@@ -618,7 +662,9 @@
             "name": "Bonemaw Tooth",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       }
     ],
     "materials": [
@@ -658,6 +704,8 @@
     "biome": "ashlands",
     "description": "Risen again from the ashes, this bow holds unyielding strength.",
     "blockArmor": 3,
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Пепельный клык"
     }
@@ -689,7 +737,9 @@
             "name": "Iron",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 2,
@@ -705,7 +755,9 @@
             "name": "Iron",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 3,
@@ -721,7 +773,9 @@
             "name": "Iron",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -751,6 +805,8 @@
     "movementSpeed": "-5%",
     "recommendable": false,
     "note": null,
+    "availableFrom": "swamp",
+    "availableTier": 4,
     "names": {
       "cs": "Vyztužený štít",
       "fr": "Bouclier bandé",
@@ -829,7 +885,9 @@
             "name": "Leather Scraps",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 2,
@@ -845,7 +903,9 @@
             "name": "Iron",
             "amount": 15
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 3,
@@ -861,7 +921,9 @@
             "name": "Iron",
             "amount": 30
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 4,
@@ -877,7 +939,9 @@
             "name": "Iron",
             "amount": 60
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -912,6 +976,8 @@
     "biome": "swamp",
     "description": "Skull-splitter, a warrior's joy.",
     "blockArmor": 28,
+    "availableFrom": "swamp",
+    "availableTier": 4,
     "names": {
       "cs": "Bojová sekera",
       "de": "Streitaxt",
@@ -951,7 +1017,9 @@
             "name": "Asksvin Hide",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -967,7 +1035,9 @@
             "name": "Asksvin Hide",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -983,7 +1053,9 @@
             "name": "Asksvin Hide",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 4,
@@ -999,7 +1071,9 @@
             "name": "Asksvin Hide",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       }
     ],
     "materials": [
@@ -1041,6 +1115,8 @@
     "blockForce": 20,
     "parryBonus": 2,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "de": "Berserkir-Äxte",
       "ru": "Топоры берсеркира"
@@ -1078,7 +1154,9 @@
             "name": "Resin",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       }
     ],
     "materials": [
@@ -1115,6 +1193,8 @@
     "parryBonus": 1.5,
     "recommendable": false,
     "note": "Area/DoT damage not listed on the wiki",
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "ru": "Желчная бомба"
     }
@@ -1151,7 +1231,9 @@
             "name": "Linen Thread",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 2,
@@ -1167,7 +1249,9 @@
             "name": "Linen Thread",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 3,
@@ -1183,7 +1267,9 @@
             "name": "Linen Thread",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 4,
@@ -1199,7 +1285,9 @@
             "name": "Linen Thread",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       }
     ],
     "materials": [
@@ -1232,6 +1320,8 @@
     "biome": "plains",
     "description": "A vicious hewing-axe of almost unbreakable black metal.",
     "blockArmor": 52,
+    "availableFrom": "plains",
+    "availableTier": 6,
     "names": {
       "cs": "Atgeir z černého kovu",
       "fr": "Atgeir en sombracier",
@@ -1270,7 +1360,9 @@
             "name": "Linen Thread",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 2,
@@ -1286,7 +1378,9 @@
             "name": "Linen Thread",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 3,
@@ -1302,7 +1396,9 @@
             "name": "Linen Thread",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 4,
@@ -1318,7 +1414,9 @@
             "name": "Linen Thread",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       }
     ],
     "materials": [
@@ -1353,6 +1451,8 @@
     "biome": "plains",
     "description": "A perfectly-balanced axe forged from dark metal with an emerald sheen.",
     "blockArmor": 39,
+    "availableFrom": "plains",
+    "availableTier": 6,
     "names": {
       "cs": "Sekera z černého kovu",
       "de": "Schwarzmetall-Axt",
@@ -1392,7 +1492,9 @@
             "name": "Finewood",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 2,
@@ -1408,7 +1510,9 @@
             "name": "Black Metal",
             "amount": 15
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 3,
@@ -1424,7 +1528,9 @@
             "name": "Black Metal",
             "amount": 30
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 4,
@@ -1440,7 +1546,9 @@
             "name": "Black Metal",
             "amount": 60
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       }
     ],
     "materials": [
@@ -1476,6 +1584,8 @@
     "description": "Green shall be the last thing your foes see before you cleave them in half.",
     "blockArmor": 52,
     "movementSpeed": "-15%",
+    "availableFrom": "plains",
+    "availableTier": 6,
     "names": {
       "ru": "Боевой топор из черного металла"
     }
@@ -1512,7 +1622,9 @@
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       }
     ],
     "materials": [
@@ -1541,9 +1653,11 @@
     "skill": "crossbows",
     "backstab": null,
     "quantity": 20,
-    "tier": 6,
-    "biome": "plains",
+    "tier": 7,
+    "biome": "mistlands",
     "description": "A sleek bolt of dark metal.",
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "cs": "Šipka z černokovu",
       "ru": "Болт из черного металла"
@@ -1581,7 +1695,9 @@
             "name": "Linen Thread",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 2,
@@ -1597,7 +1713,9 @@
             "name": "Linen Thread",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 3,
@@ -1613,7 +1731,9 @@
             "name": "Linen Thread",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 4,
@@ -1629,7 +1749,9 @@
             "name": "Linen Thread",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       }
     ],
     "materials": [
@@ -1663,6 +1785,8 @@
     "tier": 6,
     "biome": "plains",
     "description": "A darkling blade. Strong and sharp.",
+    "availableFrom": "plains",
+    "availableTier": 6,
     "names": {
       "cs": "Nůž z černého kovu",
       "fr": "Couteau en sombracier",
@@ -1696,7 +1820,9 @@
             "name": "Black Metal",
             "amount": 25
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 2,
@@ -1712,7 +1838,9 @@
             "name": "Black Metal",
             "amount": 15
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 3,
@@ -1728,7 +1856,9 @@
             "name": "Black Metal",
             "amount": 30
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 4,
@@ -1744,7 +1874,9 @@
             "name": "Black Metal",
             "amount": 60
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       }
     ],
     "materials": [
@@ -1777,6 +1909,8 @@
     "tier": 7,
     "biome": "mistlands",
     "description": "A good strong pick of glistening dark metal.",
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "ru": "Кирка из черного металла"
     }
@@ -1813,7 +1947,9 @@
             "name": "Chain",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 2,
@@ -1834,7 +1970,9 @@
             "name": "Chain",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 3,
@@ -1855,7 +1993,9 @@
             "name": "Chain",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       }
     ],
     "materials": [
@@ -1887,6 +2027,8 @@
     "blockForce": 50,
     "recommendable": false,
     "note": null,
+    "availableFrom": "plains",
+    "availableTier": 6,
     "names": {
       "cs": "Štít z černého kovu",
       "fr": "Bouclier en sombracier",
@@ -1925,7 +2067,9 @@
             "name": "Linen Thread",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 2,
@@ -1941,7 +2085,9 @@
             "name": "Linen Thread",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 3,
@@ -1957,7 +2103,9 @@
             "name": "Linen Thread",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 4,
@@ -1973,7 +2121,9 @@
             "name": "Linen Thread",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       }
     ],
     "materials": [
@@ -2006,6 +2156,8 @@
     "biome": "plains",
     "description": "A thing of death and beauty. It catches the light with a greenish glow.",
     "blockArmor": 39,
+    "availableFrom": "plains",
+    "availableTier": 6,
     "names": {
       "cs": "Meč z černokovu",
       "de": "Schwarzmetall-Schwert",
@@ -2045,7 +2197,9 @@
             "name": "Chain",
             "amount": 7
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 2,
@@ -2066,7 +2220,9 @@
             "name": "Chain",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 3,
@@ -2087,7 +2243,9 @@
             "name": "Chain",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       }
     ],
     "materials": [
@@ -2119,6 +2277,8 @@
     "blockForce": 150,
     "recommendable": false,
     "note": null,
+    "availableFrom": "plains",
+    "availableTier": 6,
     "names": {
       "cs": "Pavéza z černého kovu",
       "fr": "Écu en sombracier",
@@ -2157,7 +2317,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -2173,7 +2335,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -2189,7 +2353,9 @@
             "name": "Bloodstone",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -2205,7 +2371,10 @@
             "name": "Bloodstone",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -2247,6 +2416,8 @@
     "blockForce": 20,
     "parryBonus": 2,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "cs": "Krvavé berserkské sekery",
       "de": "Blutende Berserkir-Äxte",
@@ -2286,7 +2457,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -2302,7 +2475,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -2318,7 +2493,9 @@
             "name": "Bloodstone",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -2334,7 +2511,10 @@
             "name": "Bloodstone",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -2370,6 +2550,8 @@
     "biome": "ashlands",
     "description": "Arrows loosed from this bow will tear into flesh with unmatched ferocity.",
     "blockArmor": 3,
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Кровавый клык"
     }
@@ -2406,7 +2588,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -2422,7 +2606,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -2438,7 +2624,9 @@
             "name": "Bloodstone",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -2454,7 +2642,10 @@
             "name": "Bloodstone",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -2490,6 +2681,8 @@
     "description": "The blood all but soaks into this mace, and it always yearns for more.",
     "blockArmor": 57,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "de": "Blutprügel",
       "fr": "Masse-sang",
@@ -2528,7 +2721,9 @@
             "name": "Timberwood",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       }
     ],
     "materials": [
@@ -2561,6 +2756,8 @@
     "biome": "deep-north",
     "description": "An arrow forged of perhaps the hardest materials in this world...",
     "weight": 0.1,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -2595,7 +2792,9 @@
             "name": "Timberwood",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       }
     ],
     "materials": [
@@ -2628,6 +2827,8 @@
     "biome": "deep-north",
     "description": "A bolt forged of perhaps the hardest materials in this world...",
     "weight": 0.1,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -2657,7 +2858,9 @@
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       }
     ],
     "materials": [
@@ -2682,9 +2885,11 @@
     "skill": "crossbows",
     "backstab": null,
     "quantity": 20,
-    "tier": 2,
-    "biome": "black-forest",
+    "tier": 7,
+    "biome": "mistlands",
     "description": "A crude bolt of yellowed bone.",
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "cs": "Kostěnná šipka",
       "ru": "Костяной болт"
@@ -2722,7 +2927,9 @@
             "name": "Skeleton Trophy",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 2,
@@ -2738,7 +2945,9 @@
             "name": "Bone Fragments",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 3,
@@ -2754,7 +2963,9 @@
             "name": "Bone Fragments",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       }
     ],
     "materials": [
@@ -2787,6 +2998,8 @@
     "blockForce": 100,
     "recommendable": false,
     "note": null,
+    "availableFrom": "black-forest",
+    "availableTier": 2,
     "names": {
       "cs": "Kostěná pavéza",
       "fr": "Écu en os",
@@ -2825,7 +3038,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 2,
@@ -2836,7 +3051,9 @@
             "name": "Bronze",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 3,
@@ -2847,7 +3064,9 @@
             "name": "Bronze",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 4,
@@ -2858,7 +3077,9 @@
             "name": "Bronze",
             "amount": 16
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -2891,6 +3112,8 @@
     "biome": "black-forest",
     "description": "A true warrior's tool.",
     "blockArmor": 16,
+    "availableFrom": "black-forest",
+    "availableTier": 2,
     "names": {
       "cs": "Bronzový Atgeir",
       "fr": "Atgeir en bronze",
@@ -2929,7 +3152,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 2,
@@ -2945,7 +3170,9 @@
             "name": "Leather Scraps",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 3,
@@ -2961,7 +3188,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 4,
@@ -2977,7 +3206,9 @@
             "name": "Leather Scraps",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -3012,6 +3243,8 @@
     "biome": "black-forest",
     "description": "A bright and burnished blade, curved like a smile.",
     "blockArmor": 12,
+    "availableFrom": "black-forest",
+    "availableTier": 2,
     "names": {
       "cs": "Bronzová sekera",
       "de": "Bronzeaxt",
@@ -3046,7 +3279,9 @@
             "name": "Wood",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 2,
@@ -3062,7 +3297,9 @@
             "name": "Wood",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 3,
@@ -3078,7 +3315,9 @@
             "name": "Wood",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       }
     ],
     "materials": [
@@ -3108,6 +3347,8 @@
     "parryBonus": 2.5,
     "recommendable": false,
     "note": null,
+    "availableFrom": "black-forest",
+    "availableTier": 2,
     "names": {
       "cs": "Bronzový pukléř",
       "fr": "Bouclier en bronze",
@@ -3146,7 +3387,9 @@
             "name": "Leather Scraps",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 2,
@@ -3157,7 +3400,9 @@
             "name": "Bronze",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 3,
@@ -3168,7 +3413,9 @@
             "name": "Bronze",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 4,
@@ -3179,7 +3426,9 @@
             "name": "Bronze",
             "amount": 16
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -3212,6 +3461,8 @@
     "biome": "black-forest",
     "description": "A headache on a stick.",
     "blockArmor": 12,
+    "availableFrom": "black-forest",
+    "availableTier": 2,
     "names": {
       "cs": "Bronzový palcát",
       "de": "Bronzener Streitkolben",
@@ -3246,7 +3497,9 @@
             "name": "Bronze",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 2,
@@ -3262,7 +3515,9 @@
             "name": "Bronze",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 3,
@@ -3278,7 +3533,9 @@
             "name": "Bronze",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 4,
@@ -3294,7 +3551,9 @@
             "name": "Bronze",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -3326,6 +3585,8 @@
     "tier": 2,
     "biome": "black-forest",
     "description": "A good bronze pick. Can break very hard rocks.",
+    "availableFrom": "black-forest",
+    "availableTier": 2,
     "names": {
       "cs": "Bronzový krumpáč",
       "ru": "Бронзовая кирка"
@@ -3363,7 +3624,9 @@
             "name": "Deer Hide",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 2,
@@ -3384,7 +3647,9 @@
             "name": "Deer Hide",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 3,
@@ -3405,7 +3670,9 @@
             "name": "Deer Hide",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 4,
@@ -3426,7 +3693,9 @@
             "name": "Deer Hide",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -3459,6 +3728,8 @@
     "biome": "black-forest",
     "description": "A sturdy spear with a head of burnished bronze.",
     "blockArmor": 12,
+    "availableFrom": "black-forest",
+    "availableTier": 2,
     "names": {
       "cs": "Bronzové kopí",
       "fr": "Lance en bronze",
@@ -3497,7 +3768,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 2,
@@ -3518,7 +3791,9 @@
             "name": "Leather Scraps",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 3,
@@ -3539,7 +3814,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 4,
@@ -3560,7 +3837,9 @@
             "name": "Leather Scraps",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -3593,6 +3872,8 @@
     "biome": "black-forest",
     "description": "Blood-drinker. A thirsty friend.",
     "blockArmor": 12,
+    "availableFrom": "black-forest",
+    "availableTier": 2,
     "names": {
       "cs": "Bronzový meč",
       "fr": "Épée en bronze",
@@ -3631,7 +3912,9 @@
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       }
     ],
     "materials": [
@@ -3663,6 +3946,8 @@
     "tier": 2,
     "biome": "black-forest",
     "description": "Sharper than flint. A sleek messenger of death.",
+    "availableFrom": "black-forest",
+    "availableTier": 2,
     "names": {
       "cs": "Bronzový šíp",
       "fr": "Flèche en bronze",
@@ -3701,7 +3986,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -3717,7 +4004,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -3733,7 +4022,9 @@
             "name": "Bloodstone",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -3749,7 +4040,10 @@
             "name": "Bloodstone",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -3788,6 +4082,8 @@
     "blockForce": 50,
     "parryBonus": 2,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Жестокий убийца"
     }
@@ -3824,7 +4120,9 @@
             "name": "Wood",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       }
     ],
     "materials": [
@@ -3856,6 +4154,8 @@
     "tier": 7,
     "biome": "mistlands",
     "description": "Heavy and pointy, this one's gonna hurt.",
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "ru": "Панцирная стрела"
     }
@@ -3892,7 +4192,9 @@
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       }
     ],
     "materials": [
@@ -3924,6 +4226,8 @@
     "tier": 7,
     "biome": "mistlands",
     "description": "A heavy and solid bolt.",
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "cs": "Šipka z krunýře",
       "ru": "Панцирный болт"
@@ -3961,7 +4265,9 @@
             "name": "Refined Eitr",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 2,
@@ -3982,7 +4288,9 @@
             "name": "Refined Eitr",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 3,
@@ -4003,7 +4311,9 @@
             "name": "Refined Eitr",
             "amount": 6
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       }
     ],
     "materials": [
@@ -4037,6 +4347,8 @@
     "parryBonus": 2.5,
     "recommendable": false,
     "note": null,
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "ru": "Панцирный баклер"
     }
@@ -4073,7 +4385,9 @@
             "name": "Refined Eitr",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 2,
@@ -4094,7 +4408,9 @@
             "name": "Refined Eitr",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 3,
@@ -4115,7 +4431,9 @@
             "name": "Refined Eitr",
             "amount": 6
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       }
     ],
     "materials": [
@@ -4147,6 +4465,8 @@
     "blockForce": 60,
     "recommendable": false,
     "note": null,
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "ru": "Панцирный щит"
     }
@@ -4183,7 +4503,9 @@
             "name": "Mandible",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 2,
@@ -4204,7 +4526,9 @@
             "name": "Mandible",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 3,
@@ -4225,7 +4549,9 @@
             "name": "Mandible",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 4,
@@ -4246,7 +4572,9 @@
             "name": "Mandible",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       }
     ],
     "materials": [
@@ -4280,6 +4608,8 @@
     "description": "Sharpened to jagged perfection, this spear is sure to be deadly.",
     "weight": 1.5,
     "blockArmor": 48,
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "cs": "Kopí z krunýře",
       "de": "Chitin-Speer",
@@ -4319,7 +4649,9 @@
             "name": "Ashwood",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       }
     ],
     "materials": [
@@ -4351,6 +4683,8 @@
     "tier": 8,
     "biome": "ashlands",
     "description": "This arrow has been whittled into shape from a charred femur, and it's as hard as any metal.",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Обугленная стрела"
     }
@@ -4387,7 +4721,9 @@
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       }
     ],
     "materials": [
@@ -4419,6 +4755,8 @@
     "tier": 8,
     "biome": "ashlands",
     "description": "A sturdy bone from a forearm, shaped into a deadly bolt.",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "cs": "Sežehnutá šipka",
       "ru": "Обугленный болт"
@@ -4446,7 +4784,9 @@
             "name": "Wood",
             "amount": 6
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 2,
@@ -4457,7 +4797,9 @@
             "name": "Bone Fragments",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 3,
@@ -4468,7 +4810,9 @@
             "name": "Bone Fragments",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 4,
@@ -4479,7 +4823,9 @@
             "name": "Bone Fragments",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       }
     ],
     "materials": [
@@ -4505,6 +4851,8 @@
     "description": "A crude but useful weapon.",
     "blockArmor": 3,
     "blockForce": 20,
+    "availableFrom": "meadows",
+    "availableTier": 1,
     "names": {
       "cs": "Palice",
       "de": "Keule",
@@ -4539,7 +4887,9 @@
             "name": "Copper",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 2,
@@ -4555,7 +4905,9 @@
             "name": "Copper",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 3,
@@ -4571,7 +4923,9 @@
             "name": "Copper",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 4,
@@ -4587,7 +4941,9 @@
             "name": "Copper",
             "amount": 16
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -4617,6 +4973,8 @@
     "tier": 2,
     "biome": "black-forest",
     "description": "A glittering copper knife.",
+    "availableFrom": "black-forest",
+    "availableTier": 2,
     "names": {
       "cs": "Měděný nůž",
       "fr": "Couteau en cuivre",
@@ -4650,7 +5008,9 @@
             "name": "Leather Scraps",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 2,
@@ -4671,7 +5031,9 @@
             "name": "Deer Hide",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 3,
@@ -4692,7 +5054,9 @@
             "name": "Deer Hide",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 4,
@@ -4713,7 +5077,9 @@
             "name": "Deer Hide",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       }
     ],
     "materials": [
@@ -4742,6 +5108,8 @@
     "biome": "meadows",
     "description": "A crude but functional bow.",
     "blockArmor": 3,
+    "availableFrom": "meadows",
+    "availableTier": 1,
     "names": {
       "cs": "Hrubý luk",
       "fr": "Arc",
@@ -4780,7 +5148,9 @@
             "name": "Crystal",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 2,
@@ -4796,7 +5166,9 @@
             "name": "Silver",
             "amount": 15
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 3,
@@ -4812,7 +5184,9 @@
             "name": "Silver",
             "amount": 30
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 4,
@@ -4828,7 +5202,9 @@
             "name": "Silver",
             "amount": 60
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       }
     ],
     "materials": [
@@ -4865,6 +5241,8 @@
     "biome": "mountain",
     "description": "It's see-through and tears through.",
     "blockArmor": 40,
+    "availableFrom": "mountain",
+    "availableTier": 5,
     "names": {
       "cs": "Křišťálová bitevní sekera",
       "de": "Kristallkampfaxt",
@@ -4904,7 +5282,9 @@
             "name": "Refined Eitr",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 2,
@@ -4925,7 +5305,9 @@
             "name": "Refined Eitr",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 3,
@@ -4946,7 +5328,9 @@
             "name": "Refined Eitr",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 4,
@@ -4967,7 +5351,9 @@
             "name": "Refined Eitr",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       }
     ],
     "materials": [
@@ -5000,6 +5386,8 @@
     "biome": "mistlands",
     "description": "This mighty sledge yearns to wreak havoc.",
     "blockArmor": 52,
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "ru": "Разрушитель"
     }
@@ -5041,7 +5429,9 @@
             "name": "Guck",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 2,
@@ -5067,7 +5457,9 @@
             "name": "Guck",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 3,
@@ -5093,7 +5485,9 @@
             "name": "Guck",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 4,
@@ -5119,7 +5513,9 @@
             "name": "Guck",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       }
     ],
     "materials": [
@@ -5160,6 +5556,8 @@
     "biome": "mountain",
     "description": "Dark wood strung with glistening sinew. A vicious thing.",
     "blockArmor": 3,
+    "availableFrom": "mountain",
+    "availableTier": 5,
     "names": {
       "cs": "Draugrův Tesák",
       "fr": "Croc de Draugr",
@@ -5203,7 +5601,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -5229,7 +5629,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -5255,7 +5657,9 @@
             "name": "Bloodstone",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 4,
@@ -5281,7 +5685,9 @@
             "name": "Bloodstone",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       }
     ],
     "materials": [
@@ -5324,6 +5730,8 @@
     "blockForce": 20,
     "parryBonus": 2,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Дундр"
     }
@@ -5370,7 +5778,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -5386,7 +5796,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -5402,7 +5814,9 @@
             "name": "Bloodstone",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -5418,7 +5832,10 @@
             "name": "Bloodstone",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -5466,6 +5883,8 @@
     "blockArmor": 57,
     "blockForce": 20,
     "parryBonus": 2,
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "cs": "Dyrnwyn",
       "ru": "Дирнвин"
@@ -5503,7 +5922,9 @@
             "name": "Wood",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 2,
@@ -5519,7 +5940,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 3,
@@ -5535,7 +5958,9 @@
             "name": "Leather Scraps",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 4,
@@ -5551,7 +5976,9 @@
             "name": "Leather Scraps",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       }
     ],
     "materials": [
@@ -5593,6 +6020,8 @@
     "blockForce": 20,
     "parryBonus": 2,
     "movementSpeed": "-5%",
+    "availableFrom": "meadows",
+    "availableTier": 1,
     "names": {
       "ru": "Древние топоры"
     }
@@ -5625,7 +6054,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -5646,7 +6077,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -5667,7 +6100,9 @@
             "name": "Frostfire Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -5688,7 +6123,10 @@
             "name": "Frostfire Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -5723,6 +6161,8 @@
     "blockForce": 20,
     "parryBonus": 2,
     "movementSpeed": "-5%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -5752,7 +6192,9 @@
             "name": "Embers",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       }
     ],
     "materials": [
@@ -5785,6 +6227,8 @@
     "biome": "deep-north",
     "description": "Trapped embers, ready to burst. Caution is advised.",
     "weight": 0.3,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -5824,7 +6268,9 @@
             "name": "Silver",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 2,
@@ -5850,7 +6296,9 @@
             "name": "Silver",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 3,
@@ -5876,7 +6324,9 @@
             "name": "Silver",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 4,
@@ -5902,7 +6352,9 @@
             "name": "Silver",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       }
     ],
     "materials": [
@@ -5939,6 +6391,8 @@
     "biome": "mountain",
     "description": "Even in death, the wolf's tooth aches for flesh.",
     "blockArmor": 30,
+    "availableFrom": "mountain",
+    "availableTier": 5,
     "names": {
       "cs": "Kopí z tesáku",
       "fr": "Lance en crocs",
@@ -5977,7 +6431,9 @@
             "name": "Deer Hide",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 2,
@@ -5998,7 +6454,9 @@
             "name": "Deer Hide",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 3,
@@ -6019,7 +6477,9 @@
             "name": "Deer Hide",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 4,
@@ -6040,7 +6500,9 @@
             "name": "Deer Hide",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       }
     ],
     "materials": [
@@ -6072,6 +6534,8 @@
     "tier": 2,
     "biome": "black-forest",
     "description": "A simple bow of strong and supple wood.",
+    "availableFrom": "black-forest",
+    "availableTier": 2,
     "names": {
       "cs": "Luk z jemného dřeva",
       "fr": "Arc de Bois Noble",
@@ -6110,7 +6574,9 @@
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       }
     ],
     "materials": [
@@ -6144,6 +6610,8 @@
     "tier": 1,
     "biome": "meadows",
     "description": "This arrow burns whatever it pierces.",
+    "availableFrom": "meadows",
+    "availableTier": 1,
     "names": {
       "cs": "Ohnivý šíp",
       "fr": "Flèche enflammée",
@@ -6187,7 +6655,9 @@
             "name": "Asksvin Hide",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -6213,7 +6683,9 @@
             "name": "Asksvin Hide",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -6239,7 +6711,9 @@
             "name": "Asksvin Hide",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 4,
@@ -6265,7 +6739,9 @@
             "name": "Asksvin Hide",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       }
     ],
     "materials": [
@@ -6305,6 +6781,8 @@
     "description": "Dense yet spiked flametal, perfect for bashing enemy faces in.",
     "blockArmor": 57,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "de": "Flammenkern-Streitkolben",
       "ru": "Огнеметаллическая булава"
@@ -6342,7 +6820,9 @@
             "name": "Asksvin Hide",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -6363,7 +6843,9 @@
             "name": "Asksvin Hide",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -6384,7 +6866,9 @@
             "name": "Asksvin Hide",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       }
     ],
     "materials": [
@@ -6416,6 +6900,8 @@
     "blockForce": 50,
     "recommendable": false,
     "note": null,
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Щит из огнеметалла"
     }
@@ -6452,7 +6938,9 @@
             "name": "Asksvin Hide",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -6473,7 +6961,9 @@
             "name": "Asksvin Hide",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -6494,7 +6984,9 @@
             "name": "Asksvin Hide",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       }
     ],
     "materials": [
@@ -6527,6 +7019,8 @@
     "movementSpeed": "-10%",
     "recommendable": false,
     "note": null,
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Башенный щит из огнеметалла"
     }
@@ -6563,7 +7057,9 @@
             "name": "Silver",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 2,
@@ -6584,7 +7080,9 @@
             "name": "Silver",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 3,
@@ -6605,7 +7103,9 @@
             "name": "Silver",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 4,
@@ -6626,7 +7126,9 @@
             "name": "Silver",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       }
     ],
     "materials": [
@@ -6658,6 +7160,8 @@
     "tier": 5,
     "biome": "mountain",
     "description": "If claws work for wolves, why not for a viking?",
+    "availableFrom": "mountain",
+    "availableTier": 5,
     "names": {
       "ru": "Потрошители плоти"
     }
@@ -6689,7 +7193,9 @@
             "name": "Flint",
             "amount": 6
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 2,
@@ -6705,7 +7211,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 3,
@@ -6721,7 +7229,9 @@
             "name": "Leather Scraps",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 4,
@@ -6737,7 +7247,9 @@
             "name": "Leather Scraps",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       }
     ],
     "materials": [
@@ -6769,6 +7281,8 @@
     "description": "Sharper than stone.",
     "weight": 1.5,
     "blockArmor": 4,
+    "availableFrom": "meadows",
+    "availableTier": 1,
     "names": {
       "cs": "Sekera z pazourku",
       "de": "Feuersteinaxt",
@@ -6807,7 +7321,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 2,
@@ -6818,7 +7334,9 @@
             "name": "Flint",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 3,
@@ -6829,7 +7347,9 @@
             "name": "Flint",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 4,
@@ -6840,7 +7360,9 @@
             "name": "Flint",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       }
     ],
     "materials": [
@@ -6874,6 +7396,8 @@
     "tier": 1,
     "biome": "meadows",
     "description": "Sharpened flint. A reliable tool.",
+    "availableFrom": "meadows",
+    "availableTier": 1,
     "names": {
       "cs": "Nůž z pazourku",
       "ru": "Кремневый нож"
@@ -6911,7 +7435,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 2,
@@ -6932,7 +7458,9 @@
             "name": "Leather Scraps",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 3,
@@ -6953,7 +7481,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 4,
@@ -6974,7 +7504,9 @@
             "name": "Leather Scraps",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       }
     ],
     "materials": [
@@ -7007,6 +7539,8 @@
     "biome": "meadows",
     "description": "If your eye marks a thing for death, let your arm send the messenger.",
     "blockArmor": 4,
+    "availableFrom": "meadows",
+    "availableTier": 1,
     "names": {
       "cs": "Kopí z pazourku",
       "fr": "Lance en silex",
@@ -7045,7 +7579,9 @@
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       }
     ],
     "materials": [
@@ -7077,6 +7613,8 @@
     "tier": 1,
     "biome": "meadows",
     "description": "A hide-breaker with a head of flint.",
+    "availableFrom": "meadows",
+    "availableTier": 1,
     "names": {
       "cs": "Šíp z pazourku",
       "fr": "Flèche en silex",
@@ -7120,7 +7658,9 @@
             "name": "Freeze Gland",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       }
     ],
     "materials": [
@@ -7158,6 +7698,8 @@
     "tier": 5,
     "biome": "mountain",
     "description": "A shard of piercing ice.",
+    "availableFrom": "mountain",
+    "availableTier": 5,
     "names": {
       "cs": "Mrazivý šíp",
       "fr": "Flèche de givre",
@@ -7196,7 +7738,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -7212,7 +7756,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -7228,7 +7774,9 @@
             "name": "Frostfire Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -7244,7 +7792,10 @@
             "name": "Frostfire Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -7287,6 +7838,8 @@
     "weight": 2.5,
     "blockArmor": 88,
     "movementSpeed": "-5%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -7321,7 +7874,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -7337,7 +7892,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -7353,7 +7910,9 @@
             "name": "Frostfire Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -7369,7 +7928,10 @@
             "name": "Frostfire Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -7413,6 +7975,8 @@
     "biome": "deep-north",
     "description": "Burn it all to the ground, or freeze it in an eternal moment of destruction...",
     "blockArmor": 66,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -7447,7 +8011,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -7463,7 +8029,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -7479,7 +8047,9 @@
             "name": "Frostfire Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -7495,7 +8065,10 @@
             "name": "Frostfire Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -7539,6 +8112,8 @@
     "biome": "deep-north",
     "description": "Keep your head cool as you draw, and then let your fury loose with your arrows.",
     "weight": 1.5,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -7573,7 +8148,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -7589,7 +8166,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -7605,7 +8184,9 @@
             "name": "Frostfire Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -7621,7 +8202,10 @@
             "name": "Frostfire Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -7665,6 +8249,8 @@
     "biome": "deep-north",
     "description": "If your enemies don't freeze as you take aim, they are sure to do so once they are hit.",
     "weight": 1.5,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -7699,7 +8285,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -7715,7 +8303,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -7731,7 +8321,9 @@
             "name": "Frostfire Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -7747,7 +8339,10 @@
             "name": "Frostfire Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -7791,6 +8386,8 @@
     "biome": "deep-north",
     "description": "A cut from this blade stings like ice, then burns like the flame.",
     "weight": 0.3,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -7825,7 +8422,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -7841,7 +8440,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -7857,7 +8458,9 @@
             "name": "Frostfire Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -7873,7 +8476,10 @@
             "name": "Frostfire Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -7919,6 +8525,8 @@
     "weight": 2.5,
     "blockArmor": 76,
     "movementSpeed": "-20%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -7953,7 +8561,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -7969,7 +8579,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -7985,7 +8597,9 @@
             "name": "Frostfire Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -8001,7 +8615,10 @@
             "name": "Frostfire Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -8043,6 +8660,8 @@
     "description": "The choice between a fiery end and a frozen one is simple: Both at the same time.",
     "weight": 4,
     "blockArmor": 76,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -8077,7 +8696,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -8093,7 +8714,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -8109,7 +8732,9 @@
             "name": "Frostfire Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -8125,7 +8750,10 @@
             "name": "Frostfire Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -8166,6 +8794,8 @@
     "biome": "deep-north",
     "description": "A slight risk of frostbite is inevitable.",
     "weight": 2,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -8200,7 +8830,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -8216,7 +8848,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -8232,7 +8866,9 @@
             "name": "Frostfire Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -8248,7 +8884,10 @@
             "name": "Frostfire Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -8290,6 +8929,8 @@
     "description": "Are those sparks that fly as this weapon finds its impact, or are they shards of ice?",
     "weight": 2,
     "blockArmor": 66,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -8324,7 +8965,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -8340,7 +8983,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -8356,7 +9001,9 @@
             "name": "Frostfire Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -8372,7 +9019,10 @@
             "name": "Frostfire Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -8415,6 +9065,8 @@
     "weight": 4,
     "blockArmor": 52,
     "movementSpeed": "-20%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -8449,7 +9101,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -8465,7 +9119,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -8481,7 +9137,9 @@
             "name": "Frostfire Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -8497,7 +9155,10 @@
             "name": "Frostfire Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -8539,6 +9200,8 @@
     "description": "Dipped in frozen flames, this spear spells certain doom.",
     "weight": 1.5,
     "blockArmor": 66,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -8573,7 +9236,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -8589,7 +9254,9 @@
             "name": "Frostfire Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -8605,7 +9272,9 @@
             "name": "Frostfire Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -8621,7 +9290,10 @@
             "name": "Frostfire Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -8664,6 +9336,8 @@
     "weight": 0.8,
     "blockArmor": 66,
     "movementSpeed": "-5%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -8703,7 +9377,9 @@
             "name": "Freeze Gland",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 2,
@@ -8714,7 +9390,9 @@
             "name": "Silver",
             "amount": 15
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 3,
@@ -8725,7 +9403,9 @@
             "name": "Silver",
             "amount": 30
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 4,
@@ -8736,7 +9416,9 @@
             "name": "Silver",
             "amount": 60
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       }
     ],
     "materials": [
@@ -8780,6 +9462,8 @@
     "biome": "mountain",
     "description": "The dead fear silver. Remind them why.",
     "blockArmor": 30,
+    "availableFrom": "mountain",
+    "availableTier": 5,
     "names": {
       "cs": "Frostner",
       "de": "Frostner",
@@ -8824,7 +9508,9 @@
             "name": "Mandible",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 2,
@@ -8845,7 +9531,9 @@
             "name": "Mandible",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 3,
@@ -8866,7 +9554,9 @@
             "name": "Mandible",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 4,
@@ -8887,7 +9577,9 @@
             "name": "Mandible",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       }
     ],
     "materials": [
@@ -8930,6 +9622,8 @@
     "description": "It might not be a hammer, but Thor himself would still approve of this weapon.",
     "weight": 2.5,
     "blockArmor": 64,
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "ru": "Химминафль"
     }
@@ -8971,7 +9665,9 @@
             "name": "Deer Hide",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 2,
@@ -8997,7 +9693,9 @@
             "name": "Deer Hide",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 3,
@@ -9023,7 +9721,9 @@
             "name": "Deer Hide",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 4,
@@ -9049,7 +9749,9 @@
             "name": "Deer Hide",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -9085,6 +9787,8 @@
     "tier": 4,
     "biome": "swamp",
     "description": "Finely worked and strung. A huntsman's joy.",
+    "availableFrom": "swamp",
+    "availableTier": 4,
     "names": {
       "cs": "Lovecký luk",
       "fr": "Arc de chasse",
@@ -9123,7 +9827,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 2,
@@ -9139,7 +9845,9 @@
             "name": "Leather Scraps",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 3,
@@ -9155,7 +9863,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 4,
@@ -9171,7 +9881,9 @@
             "name": "Leather Scraps",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -9204,6 +9916,8 @@
     "biome": "swamp",
     "description": "Blood-drinker, skull-cracker, death-bringer.",
     "blockArmor": 28,
+    "availableFrom": "swamp",
+    "availableTier": 4,
     "names": {
       "cs": "Železný Atgeir",
       "fr": "Atgeir en fer",
@@ -9242,7 +9956,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 2,
@@ -9258,7 +9974,9 @@
             "name": "Leather Scraps",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 3,
@@ -9274,7 +9992,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 4,
@@ -9290,7 +10010,9 @@
             "name": "Leather Scraps",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -9325,6 +10047,8 @@
     "biome": "swamp",
     "description": "Sharp and strong, a woodcutter's friend.",
     "blockArmor": 21,
+    "availableFrom": "swamp",
+    "availableTier": 4,
     "names": {
       "cs": "Železná sekera",
       "de": "Eisenaxt",
@@ -9364,7 +10088,9 @@
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       }
     ],
     "materials": [
@@ -9393,9 +10119,11 @@
     "skill": "crossbows",
     "backstab": null,
     "quantity": 20,
-    "tier": 4,
-    "biome": "swamp",
+    "tier": 7,
+    "biome": "mistlands",
     "description": "A sturdy iron missile.",
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "cs": "Železná Šipka",
       "ru": "Железный болт"
@@ -9428,7 +10156,9 @@
             "name": "Ancient Bark",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 2,
@@ -9444,7 +10174,9 @@
             "name": "Ancient Bark",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 3,
@@ -9460,7 +10192,9 @@
             "name": "Ancient Bark",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -9491,6 +10225,8 @@
     "movementSpeed": "-5%",
     "recommendable": false,
     "note": null,
+    "availableFrom": "swamp",
+    "availableTier": 4,
     "names": {
       "fr": "Bouclier en fer",
       "ru": "Железный баклер"
@@ -9528,7 +10264,9 @@
             "name": "Leather Scraps",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 2,
@@ -9539,7 +10277,9 @@
             "name": "Iron",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 3,
@@ -9550,7 +10290,9 @@
             "name": "Iron",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 4,
@@ -9561,7 +10303,9 @@
             "name": "Iron",
             "amount": 40
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -9594,6 +10338,8 @@
     "biome": "swamp",
     "description": "A fist-sized lump of iron on a wooden shaft.",
     "blockArmor": 21,
+    "availableFrom": "swamp",
+    "availableTier": 4,
     "names": {
       "cs": "Železný palcát",
       "de": "Eiserner Streitkolben",
@@ -9628,7 +10374,9 @@
             "name": "Iron",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 2,
@@ -9644,7 +10392,9 @@
             "name": "Iron",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 3,
@@ -9660,7 +10410,9 @@
             "name": "Iron",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 4,
@@ -9676,7 +10428,9 @@
             "name": "Iron",
             "amount": 40
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -9706,6 +10460,8 @@
     "tier": 4,
     "biome": "swamp",
     "description": "A sturdy tool of hardened iron.",
+    "availableFrom": "swamp",
+    "availableTier": 4,
     "names": {
       "cs": "Železný krumpáč",
       "ru": "Железная кирка"
@@ -9748,7 +10504,9 @@
             "name": "Draugr Elite Trophy",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 2,
@@ -9769,7 +10527,9 @@
             "name": "Ymir Flesh",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 3,
@@ -9790,7 +10550,9 @@
             "name": "Ymir Flesh",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 4,
@@ -9811,7 +10573,9 @@
             "name": "Ymir Flesh",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -9848,6 +10612,8 @@
     "biome": "swamp",
     "description": "A mighty hammer, worthy of a champion.",
     "blockArmor": 28,
+    "availableFrom": "swamp",
+    "availableTier": 4,
     "names": {
       "cs": "Železné velké kladivo",
       "fr": "Masse de fer",
@@ -9886,7 +10652,9 @@
             "name": "Leather Scraps",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 2,
@@ -9907,7 +10675,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 3,
@@ -9928,7 +10698,9 @@
             "name": "Leather Scraps",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 4,
@@ -9949,7 +10721,9 @@
             "name": "Leather Scraps",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -9982,6 +10756,8 @@
     "biome": "swamp",
     "description": "The straight line between life and death runs along the edge of this blade.",
     "blockArmor": 21,
+    "availableFrom": "swamp",
+    "availableTier": 4,
     "names": {
       "cs": "Železný meč",
       "de": "Eisenschwert",
@@ -10016,7 +10792,9 @@
             "name": "Iron",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 2,
@@ -10032,7 +10810,9 @@
             "name": "Iron",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 3,
@@ -10048,7 +10828,9 @@
             "name": "Iron",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -10077,6 +10859,8 @@
     "blockForce": 100,
     "recommendable": false,
     "note": null,
+    "availableFrom": "swamp",
+    "availableTier": 4,
     "names": {
       "cs": "Pavéza ze železa",
       "fr": "Écu en fer",
@@ -10115,7 +10899,9 @@
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -10147,6 +10933,8 @@
     "tier": 4,
     "biome": "swamp",
     "description": "Capped with iron and flighted with dark feathers.",
+    "availableFrom": "swamp",
+    "availableTier": 4,
     "names": {
       "cs": "Železný šíp",
       "fr": "Flèche en fer",
@@ -10190,7 +10978,9 @@
             "name": "Refined Eitr",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 2,
@@ -10211,7 +11001,9 @@
             "name": "Refined Eitr",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 3,
@@ -10232,7 +11024,9 @@
             "name": "Refined Eitr",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 4,
@@ -10253,7 +11047,9 @@
             "name": "Refined Eitr",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       }
     ],
     "materials": [
@@ -10299,6 +11095,8 @@
     "weight": 2,
     "blockArmor": 48,
     "blockForce": 20,
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "cs": "Zhouba Jótunů",
       "de": "Jotun-Fluch",
@@ -10338,7 +11136,9 @@
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -10354,7 +11154,9 @@
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -10370,7 +11172,9 @@
             "name": "Jade",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -10386,7 +11190,10 @@
             "name": "Jade",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -10424,6 +11231,8 @@
     "description": "If the force of your blow isn't enough to knock your enemies to the ground, perhaps the primal roots will hold them down for you.",
     "blockArmor": 57,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Клоссен"
     }
@@ -10460,7 +11269,9 @@
             "name": "Scale Hide",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 2,
@@ -10481,7 +11292,9 @@
             "name": "Scale Hide",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 3,
@@ -10502,7 +11315,9 @@
             "name": "Scale Hide",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 4,
@@ -10523,7 +11338,9 @@
             "name": "Scale Hide",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       }
     ],
     "materials": [
@@ -10556,6 +11373,8 @@
     "biome": "mistlands",
     "description": "As deadly as it is shiny, and it's very shiny.",
     "blockArmor": 52,
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "cs": "Krom",
       "ru": "Кром"
@@ -10589,7 +11408,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -10610,7 +11431,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -10631,7 +11454,9 @@
             "name": "Thunderblood Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -10652,7 +11477,10 @@
             "name": "Thunderblood Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -10683,6 +11511,8 @@
     "weight": 0.3,
     "blockArmor": 48,
     "blockForce": 20,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -10722,7 +11552,9 @@
             "name": "Wisp",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 2,
@@ -10743,7 +11575,9 @@
             "name": "Wisp",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 3,
@@ -10764,7 +11598,9 @@
             "name": "Wisp",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 4,
@@ -10785,7 +11621,9 @@
             "name": "Wisp",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       }
     ],
     "materials": [
@@ -10830,6 +11668,8 @@
     "blockArmor": 48,
     "blockForce": 20,
     "parryBonus": 2,
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "cs": "Mlhošlap",
       "de": "Nebelbrecher",
@@ -10864,7 +11704,9 @@
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       }
     ],
     "materials": [
@@ -10892,6 +11734,8 @@
     "tier": 6,
     "biome": "plains",
     "description": "The final stitch.",
+    "availableFrom": "plains",
+    "availableTier": 6,
     "names": {
       "cs": "Šíp z jehly",
       "fr": "Flèche aiguille",
@@ -10930,7 +11774,9 @@
             "name": "Asksvin Hide",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -10946,7 +11792,9 @@
             "name": "Asksvin Hide",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -10962,7 +11810,9 @@
             "name": "Asksvin Hide",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 4,
@@ -10978,7 +11828,9 @@
             "name": "Asksvin Hide",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       }
     ],
     "materials": [
@@ -11012,6 +11864,8 @@
     "description": "Named after the evil dragon that dwells by the roots of the world tree, this sword heralds doom for those who cross its path.",
     "blockArmor": 57,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Нидхёгг"
     }
@@ -11048,7 +11902,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -11064,7 +11920,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -11080,7 +11938,9 @@
             "name": "Bloodstone",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -11096,7 +11956,10 @@
             "name": "Bloodstone",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -11130,6 +11993,8 @@
     "description": "If you bleed, your foes are sure to do so as well.",
     "blockArmor": 57,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Кровоточащий нидхёгг"
     }
@@ -11166,7 +12031,9 @@
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -11182,7 +12049,9 @@
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -11198,7 +12067,9 @@
             "name": "Jade",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -11214,7 +12085,10 @@
             "name": "Jade",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -11250,6 +12124,8 @@
     "description": "Tangle your foes in roots, like the namesake of this blade.",
     "blockArmor": 57,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Первобытный нидхёгг"
     }
@@ -11286,7 +12162,9 @@
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -11302,7 +12180,9 @@
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -11318,7 +12198,9 @@
             "name": "Iolite",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -11334,7 +12216,10 @@
             "name": "Iolite",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -11370,6 +12255,8 @@
     "description": "The power of lightning dances along the blade of this sword, a promise of the pain to come.",
     "blockArmor": 57,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Громовой нидхёгг"
     }
@@ -11402,7 +12289,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -11418,7 +12307,9 @@
             "name": "Timberwood",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -11434,7 +12325,9 @@
             "name": "Timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -11450,7 +12343,10 @@
             "name": "Timberwood",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -11483,6 +12379,8 @@
     "weight": 2.5,
     "blockArmor": 88,
     "movementSpeed": "-5%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -11513,7 +12411,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -11529,7 +12429,9 @@
             "name": "Timberwood",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -11545,7 +12447,9 @@
             "name": "Timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -11561,7 +12465,10 @@
             "name": "Timberwood",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -11596,6 +12503,8 @@
     "weight": 2,
     "blockArmor": 66,
     "movementSpeed": "-5%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -11626,7 +12535,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -11642,7 +12553,9 @@
             "name": "Timberwood",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -11658,7 +12571,9 @@
             "name": "Timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -11674,7 +12589,10 @@
             "name": "Timberwood",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -11709,6 +12627,8 @@
     "description": "This bow shall find its target with a golden precision.",
     "weight": 1.5,
     "movementSpeed": "-5%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -11739,7 +12659,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -11755,7 +12677,9 @@
             "name": "Timberwood",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -11771,7 +12695,9 @@
             "name": "Timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       }
     ],
     "materials": [
@@ -11801,6 +12727,8 @@
     "movementSpeed": "-5%",
     "recommendable": false,
     "note": null,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -11831,7 +12759,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -11847,7 +12777,9 @@
             "name": "Timberwood",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -11863,7 +12795,9 @@
             "name": "Timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -11879,7 +12813,10 @@
             "name": "Timberwood",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -11913,6 +12850,8 @@
     "biome": "deep-north",
     "description": "An incredible force is bound to this weapon, waiting to be unleashed.",
     "movementSpeed": "-5%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -11943,7 +12882,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -11959,7 +12900,9 @@
             "name": "Timberwood",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -11975,7 +12918,9 @@
             "name": "Timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -11991,7 +12936,10 @@
             "name": "Timberwood",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -12025,6 +12973,8 @@
     "biome": "deep-north",
     "description": "A flash of gold is the last thing your foes will ever see.",
     "movementSpeed": "0%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -12055,7 +13005,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -12071,7 +13023,9 @@
             "name": "Timberwood",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -12087,7 +13041,9 @@
             "name": "Timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -12103,7 +13059,10 @@
             "name": "Timberwood",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -12138,6 +13097,8 @@
     "description": "A mighty axe fit for a mighty warrior.",
     "blockArmor": 76,
     "movementSpeed": "-20%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -12168,7 +13129,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -12184,7 +13147,9 @@
             "name": "Timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -12200,7 +13165,9 @@
             "name": "Timberwood",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       }
     ],
     "materials": [
@@ -12230,6 +13197,8 @@
     "movementSpeed": "-10%",
     "recommendable": false,
     "note": null,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -12260,7 +13229,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -12276,7 +13247,9 @@
             "name": "Frozen Branch",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -12292,7 +13265,9 @@
             "name": "Frozen Branch",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -12308,7 +13283,10 @@
             "name": "Frozen Branch",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -12339,6 +13317,8 @@
     "biome": "deep-north",
     "description": "A striking weapon, both visually and lethally.",
     "blockArmor": 76,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -12369,7 +13349,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -12385,7 +13367,9 @@
             "name": "Timberwood",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -12401,7 +13385,9 @@
             "name": "Timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -12417,7 +13403,10 @@
             "name": "Timberwood",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -12447,6 +13436,8 @@
     "tier": 9,
     "biome": "deep-north",
     "description": "Wrap your fists in the hardest of metals, to ensure your foes feel the strength behind your blows.",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -12477,7 +13468,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -12493,7 +13486,9 @@
             "name": "Timberwood",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -12509,7 +13504,9 @@
             "name": "Timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -12525,7 +13522,10 @@
             "name": "Timberwood",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -12556,6 +13556,8 @@
     "biome": "deep-north",
     "description": "Hit hard and fast, and leave your foe no time to recover.",
     "blockArmor": 66,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -12586,7 +13588,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -12602,7 +13606,9 @@
             "name": "Timberwood",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -12618,7 +13624,9 @@
             "name": "Timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       }
     ],
     "materials": [
@@ -12648,6 +13656,8 @@
     "movementSpeed": "-5%",
     "recommendable": false,
     "note": null,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -12678,7 +13688,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -12694,7 +13706,9 @@
             "name": "Timberwood",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -12710,7 +13724,9 @@
             "name": "Timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -12726,7 +13742,10 @@
             "name": "Timberwood",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -12758,6 +13777,8 @@
     "description": "With this weapon, your blows will be heavy as that of a troll.",
     "blockArmor": 52,
     "movementSpeed": "-20%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -12788,7 +13809,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -12804,7 +13827,9 @@
             "name": "Timberwood",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -12820,7 +13845,9 @@
             "name": "Timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -12836,7 +13863,10 @@
             "name": "Timberwood",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -12868,6 +13898,8 @@
     "description": "A golden opportunity to strike.",
     "blockArmor": 66,
     "movementSpeed": "-5%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -12898,7 +13930,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -12914,7 +13948,9 @@
             "name": "Timberwood",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -12930,7 +13966,9 @@
             "name": "Timberwood",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -12946,7 +13984,10 @@
             "name": "Timberwood",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -12978,6 +14019,8 @@
     "description": "Even in the faintest sunlight, this weapon glimmers.",
     "blockArmor": 66,
     "movementSpeed": "-5%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -13008,7 +14051,9 @@
             "name": "Liquid Frost",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -13024,7 +14069,9 @@
             "name": "Nornathread",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -13040,7 +14087,9 @@
             "name": "Nornathread",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -13056,7 +14105,10 @@
             "name": "Nornathread",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -13089,6 +14141,8 @@
     "weight": 0.3,
     "blockArmor": 48,
     "blockForce": 20,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -13123,7 +14177,9 @@
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       }
     ],
     "materials": [
@@ -13155,6 +14211,8 @@
     "tier": 5,
     "biome": "mountain",
     "description": "A sliver of darkness.",
+    "availableFrom": "mountain",
+    "availableTier": 5,
     "names": {
       "cs": "Obsidiánový šíp",
       "fr": "Flèche d'obsidienne",
@@ -13193,7 +14251,9 @@
             "name": "Resin",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -13230,6 +14290,8 @@
     "parryBonus": 1.5,
     "recommendable": false,
     "note": "Area/DoT damage not listed on the wiki",
+    "availableFrom": "swamp",
+    "availableTier": 4,
     "names": {
       "cs": "Bomba ze slizu",
       "fr": "Bombe puante",
@@ -13268,7 +14330,9 @@
             "name": "Leather Scraps",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 2,
@@ -13284,7 +14348,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 3,
@@ -13300,7 +14366,9 @@
             "name": "Leather Scraps",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 4,
@@ -13316,7 +14384,9 @@
             "name": "Leather Scraps",
             "amount": 6
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       }
     ],
     "materials": [
@@ -13348,6 +14418,8 @@
     "tier": 2,
     "biome": "black-forest",
     "description": "Made for tearing and rending.",
+    "availableFrom": "black-forest",
+    "availableTier": 2,
     "names": {
       "ru": "Медвежьи лапы"
     }
@@ -13389,7 +14461,9 @@
             "name": "Ooze",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       }
     ],
     "materials": [
@@ -13427,6 +14501,8 @@
     "tier": 5,
     "biome": "mountain",
     "description": "A bitter sting from afar.",
+    "availableFrom": "mountain",
+    "availableTier": 5,
     "names": {
       "cs": "Otrávený šíp",
       "fr": "Flèche empoisonnée",
@@ -13470,7 +14546,9 @@
             "name": "Linen Thread",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 2,
@@ -13486,7 +14564,9 @@
             "name": "Needle",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 3,
@@ -13502,7 +14582,9 @@
             "name": "Needle",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 4,
@@ -13518,7 +14600,9 @@
             "name": "Needle",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       }
     ],
     "materials": [
@@ -13560,6 +14644,8 @@
     "biome": "plains",
     "description": "A deadly weapon, bristling with fiendish spikes.",
     "blockArmor": 39,
+    "availableFrom": "plains",
+    "availableTier": 6,
     "names": {
       "cs": "Pichlavý palcát",
       "de": "Stachelschwein",
@@ -13599,7 +14685,9 @@
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -13615,7 +14703,9 @@
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -13631,7 +14721,9 @@
             "name": "Jade",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -13647,7 +14739,10 @@
             "name": "Jade",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -13691,6 +14786,8 @@
     "blockForce": 20,
     "parryBonus": 2,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "cs": "Prvotní berserkské sekery",
       "de": "Urweltliche Berserkir-Äxte",
@@ -13730,7 +14827,9 @@
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -13746,7 +14845,9 @@
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -13762,7 +14863,9 @@
             "name": "Jade",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -13778,7 +14881,10 @@
             "name": "Jade",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -13819,6 +14925,8 @@
     "blockForce": 50,
     "parryBonus": 2,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Первобытный убийца"
     }
@@ -13860,7 +14968,9 @@
             "name": "Bonemaw Tooth",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -13886,7 +14996,9 @@
             "name": "Bonemaw Tooth",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -13912,7 +15024,9 @@
             "name": "Bonemaw Tooth",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 4,
@@ -13938,7 +15052,9 @@
             "name": "Bonemaw Tooth",
             "amount": 16
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       }
     ],
     "materials": [
@@ -13977,6 +15093,8 @@
     "biome": "ashlands",
     "description": "Rips your foes apart, simple as that.",
     "blockForce": null,
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Разрыватель"
     }
@@ -14013,7 +15131,9 @@
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -14029,7 +15149,9 @@
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -14045,7 +15167,9 @@
             "name": "Jade",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -14061,7 +15185,10 @@
             "name": "Jade",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -14099,6 +15226,8 @@
     "biome": "ashlands",
     "description": "Like the twisting branch was made to seek the sun, this bow was made to seek the slaughter.",
     "blockArmor": 3,
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Корневой клык"
     }
@@ -14135,7 +15264,9 @@
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -14151,7 +15282,9 @@
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -14167,7 +15300,9 @@
             "name": "Jade",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -14183,7 +15318,10 @@
             "name": "Jade",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -14218,6 +15356,8 @@
     "biome": "ashlands",
     "description": "If the bolt doesn't pin your foe in place, the roots surging up from the ground surely will.",
     "blockForce": null,
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Корневой разрыватель"
     }
@@ -14254,7 +15394,9 @@
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -14270,7 +15412,9 @@
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -14286,7 +15430,9 @@
             "name": "Iolite",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -14302,7 +15448,10 @@
             "name": "Iolite",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -14343,6 +15492,8 @@
     "blockForce": 50,
     "parryBonus": 2,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Грозный убийца"
     }
@@ -14379,7 +15530,9 @@
             "name": "Serpent Scale",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 2,
@@ -14400,7 +15553,9 @@
             "name": "Serpent Scale",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 3,
@@ -14421,7 +15576,9 @@
             "name": "Serpent Scale",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -14454,6 +15611,8 @@
     "movementSpeed": "-10%",
     "recommendable": false,
     "note": null,
+    "availableFrom": "swamp",
+    "availableTier": 4,
     "names": {
       "cs": "Štít z hadích šupin",
       "fr": "Bouclier ophidien",
@@ -14487,7 +15646,9 @@
             "name": "Writhan Roots",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 2,
@@ -14503,7 +15664,9 @@
             "name": "Writhan Roots",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       },
       {
         "quality": 3,
@@ -14519,7 +15682,9 @@
             "name": "Writhan Roots",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "swamp",
+        "availableTier": 4
       }
     ],
     "materials": [
@@ -14550,6 +15715,8 @@
     "movementSpeed": "0%",
     "recommendable": false,
     "note": null,
+    "availableFrom": "swamp",
+    "availableTier": 4,
     "names": {}
   },
   {
@@ -14584,7 +15751,9 @@
             "name": "Feathers",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       }
     ],
     "materials": [
@@ -14618,6 +15787,8 @@
     "tier": 5,
     "biome": "mountain",
     "description": "A needle to calm restless spirits.",
+    "availableFrom": "mountain",
+    "availableTier": 5,
     "names": {
       "cs": "Stříbrný šíp",
       "fr": "Flèche en argent",
@@ -14661,7 +15832,9 @@
             "name": "Iron",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 2,
@@ -14687,7 +15860,9 @@
             "name": "Iron",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 3,
@@ -14713,7 +15888,9 @@
             "name": "Iron",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 4,
@@ -14739,7 +15916,9 @@
             "name": "Iron",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       }
     ],
     "materials": [
@@ -14779,6 +15958,8 @@
     "tier": 5,
     "biome": "mountain",
     "description": "A savage piece of pain.",
+    "availableFrom": "mountain",
+    "availableTier": 5,
     "names": {
       "fr": "Couteau en argent",
       "ru": "Серебряный нож"
@@ -14811,7 +15992,9 @@
             "name": "Silver",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 2,
@@ -14827,7 +16010,9 @@
             "name": "Silver",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 3,
@@ -14843,7 +16028,9 @@
             "name": "Silver",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       }
     ],
     "materials": [
@@ -14871,6 +16058,8 @@
     "blockForce": 40,
     "recommendable": false,
     "note": null,
+    "availableFrom": "mountain",
+    "availableTier": 5,
     "names": {
       "cs": "Stříbrný štít",
       "fr": "Bouclier en argent",
@@ -14914,7 +16103,9 @@
             "name": "Iron",
             "amount": 5
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 2,
@@ -14940,7 +16131,9 @@
             "name": "Iron",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 3,
@@ -14966,7 +16159,9 @@
             "name": "Iron",
             "amount": 6
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       },
       {
         "quality": 4,
@@ -14992,7 +16187,9 @@
             "name": "Iron",
             "amount": 12
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       }
     ],
     "materials": [
@@ -15034,6 +16231,8 @@
     "description": "Purest of metals, nothing unclean can abide its touch.",
     "weight": 1,
     "blockArmor": 30,
+    "availableFrom": "mountain",
+    "availableTier": 5,
     "names": {
       "cs": "Stříbrný meč",
       "de": "Silberschwert",
@@ -15073,7 +16272,9 @@
             "name": "Black Metal",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 2,
@@ -15089,7 +16290,9 @@
             "name": "Black Metal",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 3,
@@ -15105,7 +16308,9 @@
             "name": "Black Metal",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 4,
@@ -15121,7 +16326,9 @@
             "name": "Black Metal",
             "amount": 16
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       }
     ],
     "materials": [
@@ -15152,9 +16359,11 @@
     "skill": "knives",
     "backstab": null,
     "quantity": null,
-    "tier": 6,
-    "biome": "plains",
+    "tier": 7,
+    "biome": "mistlands",
     "description": "Stab once for those who've betrayed you, and twice for those you hate.",
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "ru": "Сколль и Хати"
     }
@@ -15191,7 +16400,9 @@
             "name": "Refined Eitr",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 2,
@@ -15207,7 +16418,9 @@
             "name": "Iron",
             "amount": 15
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 3,
@@ -15223,7 +16436,9 @@
             "name": "Iron",
             "amount": 30
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 4,
@@ -15239,7 +16454,9 @@
             "name": "Iron",
             "amount": 60
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       }
     ],
     "materials": [
@@ -15274,6 +16491,8 @@
     "biome": "mistlands",
     "description": "Will find skulls to split even in the thickest of mists.",
     "blockArmor": 64,
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "ru": "Крушитель черепов"
     }
@@ -15310,7 +16529,9 @@
             "name": "Morgen Sinew",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -15331,7 +16552,9 @@
             "name": "Morgen Sinew",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -15352,7 +16575,9 @@
             "name": "Morgen Sinew",
             "amount": 6
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 4,
@@ -15373,7 +16598,9 @@
             "name": "Morgen Sinew",
             "amount": 12
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       }
     ],
     "materials": [
@@ -15412,6 +16639,8 @@
     "blockForce": 50,
     "parryBonus": 2,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Убийца"
     }
@@ -15443,7 +16672,9 @@
             "name": "Asksvin Bladder",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       }
     ],
     "materials": [
@@ -15477,6 +16708,8 @@
     "parryBonus": 1.5,
     "recommendable": false,
     "note": "Area/DoT damage not listed on the wiki",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Дымовая шашка"
     }
@@ -15513,7 +16746,9 @@
             "name": "Refined Eitr",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 2,
@@ -15529,7 +16764,9 @@
             "name": "Bone Fragments",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 3,
@@ -15545,7 +16782,9 @@
             "name": "Bone Fragments",
             "amount": 40
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 4,
@@ -15561,7 +16800,9 @@
             "name": "Bone Fragments",
             "amount": 80
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       }
     ],
     "materials": [
@@ -15598,6 +16839,8 @@
     "tier": 7,
     "biome": "mistlands",
     "description": "Using this bow is backbreaking work but so worth it.",
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "ru": "Хребтолом"
     }
@@ -15639,7 +16882,9 @@
             "name": "Bonemaw Tooth",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -15665,7 +16910,9 @@
             "name": "Bonemaw Tooth",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -15691,7 +16938,9 @@
             "name": "Bonemaw Tooth",
             "amount": 6
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 4,
@@ -15717,7 +16966,9 @@
             "name": "Bonemaw Tooth",
             "amount": 12
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       }
     ],
     "materials": [
@@ -15755,6 +17006,8 @@
     "description": "Split your enemies' hearts in two.",
     "blockArmor": 57,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Расколнир"
     }
@@ -15791,7 +17044,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -15807,7 +17062,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -15823,7 +17080,9 @@
             "name": "Bloodstone",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -15839,7 +17098,10 @@
             "name": "Bloodstone",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -15873,6 +17135,8 @@
     "description": "A small sacrifice must be made for every battle...",
     "blockArmor": 57,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Кровоточащий расколнир"
     }
@@ -15909,7 +17173,9 @@
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -15925,7 +17191,9 @@
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -15941,7 +17209,9 @@
             "name": "Jade",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -15957,7 +17227,10 @@
             "name": "Jade",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -15993,6 +17266,8 @@
     "description": "Nature's forces burst through the ground wherever this spear strikes.",
     "blockArmor": 57,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Первобытный расколнир"
     }
@@ -16029,7 +17304,9 @@
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -16045,7 +17322,9 @@
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -16061,7 +17340,9 @@
             "name": "Iolite",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -16077,7 +17358,10 @@
             "name": "Iolite",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -16111,6 +17395,8 @@
     "description": "Let the crack of thunder split the air.",
     "blockArmor": 57,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Штормовой расколнир"
     }
@@ -16147,7 +17433,9 @@
             "name": "Refined Eitr",
             "amount": 16
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 2,
@@ -16168,7 +17456,9 @@
             "name": "Refined Eitr",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 3,
@@ -16189,7 +17479,9 @@
             "name": "Refined Eitr",
             "amount": 16
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 4,
@@ -16210,7 +17502,9 @@
             "name": "Refined Eitr",
             "amount": 32
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       }
     ],
     "materials": [
@@ -16249,6 +17543,8 @@
     "weight": 0.3,
     "blockArmor": 48,
     "blockForce": 20,
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "ru": "Посох огня"
     }
@@ -16285,7 +17581,9 @@
             "name": "Proustite Powder",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -16306,7 +17604,9 @@
             "name": "Proustite Powder",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -16327,7 +17627,9 @@
             "name": "Proustite Powder",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 4,
@@ -16348,7 +17650,9 @@
             "name": "Proustite Powder",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       }
     ],
     "materials": [
@@ -16389,6 +17693,8 @@
     "blockForce": 20,
     "parryBonus": 2,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Посох раскалывания"
     }
@@ -16425,7 +17731,9 @@
             "name": "Refined Eitr",
             "amount": 16
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 2,
@@ -16446,7 +17754,9 @@
             "name": "Refined Eitr",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 3,
@@ -16467,7 +17777,9 @@
             "name": "Refined Eitr",
             "amount": 16
           }
-        ]
+        ],
+        "availableFrom": "mistlands",
+        "availableTier": 7
       },
       {
         "quality": 4,
@@ -16488,7 +17800,9 @@
             "name": "Refined Eitr",
             "amount": 32
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       }
     ],
     "materials": [
@@ -16527,6 +17841,8 @@
     "blockForce": 20,
     "parryBonus": 2,
     "movementSpeed": "-5%",
+    "availableFrom": "mistlands",
+    "availableTier": 7,
     "names": {
       "ru": "Посох льда"
     }
@@ -16568,7 +17884,9 @@
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -16594,7 +17912,9 @@
             "name": "Jade",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -16620,7 +17940,9 @@
             "name": "Jade",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 4,
@@ -16646,7 +17968,9 @@
             "name": "Jade",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       }
     ],
     "materials": [
@@ -16691,6 +18015,8 @@
     "blockArmor": 48,
     "parryBonus": 2,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Посох дикой природы"
     }
@@ -16727,7 +18053,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 2,
@@ -16753,7 +18081,9 @@
             "name": "Bone Fragments",
             "amount": 10
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 3,
@@ -16779,7 +18109,9 @@
             "name": "Bone Fragments",
             "amount": 20
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       },
       {
         "quality": 4,
@@ -16805,7 +18137,9 @@
             "name": "Bone Fragments",
             "amount": 40
           }
-        ]
+        ],
+        "availableFrom": "mountain",
+        "availableTier": 5
       }
     ],
     "materials": [
@@ -16840,6 +18174,8 @@
     "biome": "black-forest",
     "description": "A weapon worthy of the Gods! If you get hit with this, you'll know it…",
     "blockArmor": 4,
+    "availableFrom": "black-forest",
+    "availableTier": 2,
     "names": {
       "cs": "Jelení palice",
       "fr": "Brise-cerf",
@@ -16873,7 +18209,9 @@
             "name": "Stone",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 2,
@@ -16884,7 +18222,9 @@
             "name": "Stone",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 3,
@@ -16895,7 +18235,9 @@
             "name": "Stone",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 4,
@@ -16906,7 +18248,9 @@
             "name": "Stone",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "black-forest",
+        "availableTier": 2
       }
     ],
     "materials": [
@@ -16938,6 +18282,8 @@
     "description": "A crude axe for tree-felling.",
     "weight": 1.5,
     "blockArmor": 3,
+    "availableFrom": "meadows",
+    "availableTier": 1,
     "names": {
       "cs": "Kamenná sekera",
       "de": "Steinaxt",
@@ -16976,7 +18322,9 @@
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -16992,7 +18340,9 @@
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -17008,7 +18358,9 @@
             "name": "Iolite",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -17024,7 +18376,10 @@
             "name": "Iolite",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -17061,6 +18416,8 @@
     "tier": 8,
     "biome": "ashlands",
     "description": "Let your arrows fly as swift as the lightning strikes.",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Штормовой клык"
     }
@@ -17097,7 +18454,9 @@
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -17113,7 +18472,9 @@
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -17129,7 +18490,9 @@
             "name": "Iolite",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -17145,7 +18508,10 @@
             "name": "Iolite",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -17180,6 +18546,8 @@
     "biome": "ashlands",
     "description": "The bolts will tear through your enemies like a particularly nasty gale.",
     "blockForce": null,
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Штормовой разрыватель"
     }
@@ -17216,7 +18584,9 @@
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -17232,7 +18602,9 @@
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -17248,7 +18620,9 @@
             "name": "Iolite",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -17264,7 +18638,10 @@
             "name": "Iolite",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -17302,6 +18679,8 @@
     "description": "Particularly effective on cloudy mornings.",
     "blockArmor": 57,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "cs": "Bouřlivá hvězda",
       "de": "Sturmstern",
@@ -17341,7 +18720,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -17357,7 +18738,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -17373,7 +18756,9 @@
             "name": "Thunderblood Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -17389,7 +18774,10 @@
             "name": "Thunderblood Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -17429,6 +18817,8 @@
     "weight": 2.5,
     "blockArmor": 88,
     "movementSpeed": "-5%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -17463,7 +18853,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -17479,7 +18871,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -17495,7 +18889,9 @@
             "name": "Thunderblood Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -17511,7 +18907,10 @@
             "name": "Thunderblood Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -17554,6 +18953,8 @@
     "weight": 2,
     "blockArmor": 66,
     "movementSpeed": "-5%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -17588,7 +18989,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -17604,7 +19007,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -17620,7 +19025,9 @@
             "name": "Thunderblood Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -17636,7 +19043,10 @@
             "name": "Thunderblood Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -17677,6 +19087,8 @@
     "biome": "deep-north",
     "description": "Lightning dances along the string, waiting to be unleashed.",
     "weight": 1.5,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -17711,7 +19123,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -17727,7 +19141,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -17743,7 +19159,9 @@
             "name": "Thunderblood Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -17759,7 +19177,10 @@
             "name": "Thunderblood Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -17800,6 +19221,8 @@
     "biome": "deep-north",
     "description": "The bow is pulled taut with unreleased power, like the air before a lightning strike.",
     "weight": 1.5,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -17834,7 +19257,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -17850,7 +19275,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -17866,7 +19293,9 @@
             "name": "Thunderblood Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -17882,7 +19311,10 @@
             "name": "Thunderblood Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -17922,6 +19354,8 @@
     "biome": "deep-north",
     "description": "The blade is already bloodied, yet it sparks in want of more.",
     "weight": 0.3,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -17956,7 +19390,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -17972,7 +19408,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -17988,7 +19426,9 @@
             "name": "Thunderblood Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -18004,7 +19444,10 @@
             "name": "Thunderblood Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -18047,6 +19490,8 @@
     "weight": 2.5,
     "blockArmor": 76,
     "movementSpeed": "-20%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -18081,7 +19526,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -18097,7 +19544,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -18113,7 +19562,9 @@
             "name": "Thunderblood Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -18129,7 +19580,10 @@
             "name": "Thunderblood Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -18168,6 +19622,8 @@
     "description": "Anyone wielding this weapon is sure to be very frightening indeed.",
     "weight": 4,
     "blockArmor": 76,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -18202,7 +19658,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -18218,7 +19676,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -18234,7 +19694,9 @@
             "name": "Thunderblood Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -18250,7 +19712,10 @@
             "name": "Thunderblood Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -18288,6 +19753,8 @@
     "biome": "deep-north",
     "description": "A fury comes over you as you fight with these weapons, your blood roaring like thunder in your ears... It seems appropriate.",
     "weight": 2,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -18322,7 +19789,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -18338,7 +19807,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -18354,7 +19825,9 @@
             "name": "Thunderblood Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -18370,7 +19843,10 @@
             "name": "Thunderblood Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -18409,6 +19885,8 @@
     "description": "A weapon to rival perhaps even that of the thunder god himself...",
     "weight": 2,
     "blockArmor": 66,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -18443,7 +19921,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -18459,7 +19939,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -18475,7 +19957,9 @@
             "name": "Thunderblood Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -18491,7 +19975,10 @@
             "name": "Thunderblood Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -18531,6 +20018,8 @@
     "weight": 4,
     "blockArmor": 52,
     "movementSpeed": "-20%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -18565,7 +20054,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -18581,7 +20072,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -18597,7 +20090,9 @@
             "name": "Thunderblood Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -18613,7 +20108,10 @@
             "name": "Thunderblood Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -18652,6 +20150,8 @@
     "description": "May it strike like lightning, quick and fierce.",
     "weight": 1.5,
     "blockArmor": 66,
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -18686,7 +20186,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 2,
@@ -18702,7 +20204,9 @@
             "name": "Thunderblood Essence",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 3,
@@ -18718,7 +20222,9 @@
             "name": "Thunderblood Essence",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -18734,7 +20240,10 @@
             "name": "Thunderblood Essence",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -18774,6 +20283,8 @@
     "weight": 0.8,
     "blockArmor": 66,
     "movementSpeed": "-5%",
+    "availableFrom": "deep-north",
+    "availableTier": 9,
     "names": {}
   },
   {
@@ -18808,7 +20319,9 @@
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -18824,7 +20337,9 @@
             "name": "Iolite",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -18840,7 +20355,9 @@
             "name": "Iolite",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -18856,7 +20373,10 @@
             "name": "Iolite",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -18900,6 +20420,8 @@
     "blockForce": 20,
     "parryBonus": 2,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "cs": "Hromové berserkské sekery",
       "de": "Donnernde Berserkir-Äxte",
@@ -18944,7 +20466,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -18970,7 +20494,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -18996,7 +20522,9 @@
             "name": "Bloodstone",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 4,
@@ -19022,7 +20550,9 @@
             "name": "Bloodstone",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       }
     ],
     "materials": [
@@ -19066,6 +20596,8 @@
     "blockArmor": 48,
     "parryBonus": 2,
     "movementSpeed": "-5%",
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Тролль-посох"
     }
@@ -19107,7 +20639,9 @@
             "name": "Linen Thread",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 2,
@@ -19133,7 +20667,9 @@
             "name": "Linen Thread",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 3,
@@ -19159,7 +20695,9 @@
             "name": "Linen Thread",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       },
       {
         "quality": 4,
@@ -19185,7 +20723,9 @@
             "name": "Linen Thread",
             "amount": 6
           }
-        ]
+        ],
+        "availableFrom": "plains",
+        "availableTier": 6
       }
     ],
     "materials": [
@@ -19223,6 +20763,8 @@
     "tier": 6,
     "biome": "plains",
     "description": "These claws will rend flesh and bone alike.",
+    "availableFrom": "plains",
+    "availableTier": 6,
     "names": {
       "ru": "Гнилокостные когти"
     }
@@ -19249,7 +20791,9 @@
             "name": "Wood",
             "amount": 8
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       }
     ],
     "materials": [
@@ -19273,6 +20817,8 @@
     "tier": 1,
     "biome": "meadows",
     "description": "An arrow of sharpened wood.",
+    "availableFrom": "meadows",
+    "availableTier": 1,
     "names": {
       "cs": "Dřevěný šíp",
       "fr": "Flèche en bois",
@@ -19311,7 +20857,9 @@
             "name": "Leather Scraps",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 2,
@@ -19332,7 +20880,9 @@
             "name": "Leather Scraps",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 3,
@@ -19353,7 +20903,9 @@
             "name": "Leather Scraps",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       }
     ],
     "materials": [
@@ -19386,6 +20938,8 @@
     "blockForce": 20,
     "recommendable": false,
     "note": null,
+    "availableFrom": "meadows",
+    "availableTier": 1,
     "names": {
       "cs": "Dřevěný štít",
       "fr": "Bouclier en bois",
@@ -19419,7 +20973,9 @@
             "name": "Leather Scraps",
             "amount": 6
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 2,
@@ -19435,7 +20991,9 @@
             "name": "Leather Scraps",
             "amount": 3
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       },
       {
         "quality": 3,
@@ -19451,7 +21009,9 @@
             "name": "Leather Scraps",
             "amount": 6
           }
-        ]
+        ],
+        "availableFrom": "meadows",
+        "availableTier": 1
       }
     ],
     "materials": [
@@ -19480,6 +21040,8 @@
     "blockForce": 100,
     "recommendable": false,
     "note": null,
+    "availableFrom": "meadows",
+    "availableTier": 1,
     "names": {
       "cs": "Pavéza",
       "fr": "Écu en bois",
@@ -19518,7 +21080,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 2,
@@ -19534,7 +21098,9 @@
             "name": "Bloodstone",
             "amount": 1
           }
-        ]
+        ],
+        "availableFrom": "ashlands",
+        "availableTier": 8
       },
       {
         "quality": 3,
@@ -19550,7 +21116,9 @@
             "name": "Bloodstone",
             "amount": 2
           }
-        ]
+        ],
+        "availableFrom": "deep-north",
+        "availableTier": 9
       },
       {
         "quality": 4,
@@ -19566,7 +21134,10 @@
             "name": "Bloodstone",
             "amount": 4
           }
-        ]
+        ],
+        "availableFrom": null,
+        "availableTier": null,
+        "unreachable": true
       }
     ],
     "materials": [
@@ -19599,6 +21170,8 @@
     "biome": "ashlands",
     "description": "Ready to rend your enemies to pieces.",
     "blockForce": null,
+    "availableFrom": "ashlands",
+    "availableTier": 8,
     "names": {
       "ru": "Ранящий разрыватель"
     }

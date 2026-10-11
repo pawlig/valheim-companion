@@ -12,7 +12,7 @@ import { fileURLToPath } from 'node:url';
 
 import { api, MwApi } from './api.mjs';
 import { cleanText, parseImage, parseInfobox, parseLinks, parseMaterialList, parseTemplates, slug } from './wikitext.mjs';
-import { parseUpgradeStation, resolveCraftingStation } from './station-levels.mjs';
+import { annotateQualities, materialBiomeLookup, parseUpgradeStation, resolveCraftingStation } from './station-levels.mjs';
 import { BIOMES, tierOf } from './biomes.mjs';
 import { BASE_MATERIAL_TABLE, createMaterialResolver } from './materials.mjs';
 
@@ -574,6 +574,31 @@ async function main() {
     const tierKey = w.tier == null ? 'null' : String(w.tier);
     report.weaponsByTier[tierKey] = (report.weaponsByTier[tierKey] || 0) + 1;
     if (w.tier == null) report.weaponsWithNullTier.push(w.name);
+  }
+
+  // 7b. Availability per quality (VC-45c): the later of the biome of all materials
+  // up to that quality and the biome where the station level exists. The piece's
+  // own biome/tier is where Q1 can first be crafted (Pavel, VC44/Q-5). Items
+  // without a levelled station (Bare Fists) keep their biome.
+  {
+    const loadJson = (name) => JSON.parse(readFileSync(path.join(DATA_DIR, name), 'utf8'));
+    const availability = {
+      stations: loadJson('stations.json'),
+      materialBiome: materialBiomeLookup(loadJson('items.json')),
+      biomeOrder: loadJson('biomes.json'),
+    };
+    for (const w of parsedWeapons) {
+      const q1 = annotateQualities(w, availability);
+      if (!q1) continue;
+      if (q1.unreachable) {
+        w.unreachable = true;
+        continue;
+      }
+      w.availableFrom = q1.availableFrom;
+      w.availableTier = q1.availableTier;
+      w.biome = q1.availableFrom;
+      w.tier = q1.availableTier;
+    }
   }
 
   // 8. Download weapon icons

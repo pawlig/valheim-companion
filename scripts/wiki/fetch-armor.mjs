@@ -23,8 +23,10 @@ import {
   resolveDisambiguationTitle,
   slug,
 } from './wikitext.mjs';
-import { parseUpgradeStation, parseArmorQualityStations, resolveCraftingStation } from './station-levels.mjs';
+import { annotateQualities, latestBiome, materialBiomeLookup, parseUpgradeStation, parseArmorQualityStations, resolveCraftingStation } from './station-levels.mjs';
 import { BIOMES } from './biomes.mjs';
+
+const STATION_UPGRADE_MATERIALS = ['Sharpening Stone', 'Mechanical Spring', 'Asksvin Trophy'];
 import { BASE_MATERIAL_TABLE, createMaterialResolver } from './materials.mjs';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -509,6 +511,10 @@ async function main() {
     }
   }
 
+  // Materials of station upgrades (data/stations.json) that no weapon or armor
+  // recipe uses; they still need an items.json record with a biome (VC-45c).
+  for (const name of STATION_UPGRADE_MATERIALS) referencedMaterials.add(name);
+
   console.log(`resolving materials (direct: ${referencedMaterials.size})…`);
   const allMaterialPages = {};
   const materialsToFetch = new Set(referencedMaterials);
@@ -764,29 +770,39 @@ async function main() {
   // 7. Compute tier and biome for armor entries
   const itemsById = new Map(allItems.map((i) => [i.id, i]));
 
+  // Availability per quality (VC-45c): later of "materials up to this quality" and
+  // "biome where the station level exists". A piece's biome/tier is where Q1 can
+  // first be crafted, a set takes the latest biome among its pieces with a
+  // recipe (Pavel, VC44/Q-5). Cosmetic sets and pieces without recipe keep null.
+  const availability = {
+    stations: JSON.parse(readFileSync(path.join(DATA_DIR, 'stations.json'), 'utf8')),
+    materialBiome: materialBiomeLookup(allItems),
+    biomeOrder: JSON.parse(readFileSync(path.join(DATA_DIR, 'biomes.json'), 'utf8')),
+  };
+  const biomeOrderById = Object.fromEntries(availability.biomeOrder.map((b) => [b.id, b.order]));
+
   for (const a of parsedArmor) {
-    if (a.kind === 'cosmetic' || a.kind === 'special') {
+    if (a.kind === 'cosmetic') {
       a.tier = null;
       a.biome = null;
       continue;
     }
 
-    let maxTier = -1;
-    let maxBiome = null;
-
+    const pieceBiomes = [];
     for (const piece of a.pieces) {
-      const q1Materials = piece.levels[0]?.materials ?? [];
-      for (const m of q1Materials) {
-        const itemObj = itemsById.get(m.item);
-        if (itemObj && itemObj.tier != null && itemObj.tier > maxTier) {
-          maxTier = itemObj.tier;
-          maxBiome = itemObj.biome;
-        }
+      const q1 = annotateQualities(piece, availability);
+      if (!q1) continue;
+      if (q1.unreachable) {
+        piece.unreachable = true;
+        continue;
       }
+      piece.availableFrom = q1.availableFrom;
+      piece.availableTier = q1.availableTier;
+      pieceBiomes.push(q1.availableFrom);
     }
 
-    a.tier = maxTier > 0 ? maxTier : null;
-    a.biome = maxBiome;
+    a.biome = latestBiome(pieceBiomes, biomeOrderById);
+    a.tier = a.biome ? biomeOrderById[a.biome] : null;
 
     // Report biome stats
     const bKey = a.biome ?? 'unresolved';

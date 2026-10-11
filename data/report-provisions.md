@@ -6,10 +6,10 @@ Foods: 99; feasts: 9; meads: 21.
 
 | Biome | Food (excluding feasts) | Meads | Feasts |
 |---|---:|---:|---:|
-| meadows | 18 | 0 | 0 |
-| black-forest | 6 | 3 | 0 |
+| meadows | 13 | 0 | 0 |
+| black-forest | 11 | 4 | 0 |
 | ocean | 2 | 0 | 0 |
-| swamp | 6 | 8 | 4 |
+| swamp | 6 | 7 | 4 |
 | mountain | 4 | 0 | 0 |
 | plains | 8 | 4 | 1 |
 | mistlands | 12 | 4 | 1 |

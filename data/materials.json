@@ -388,8 +388,8 @@
     "name": "Curious Axe Head",
     "biome": "meadows",
     "tier": 1,
-    "how": "wiki",
-    "note": "found in Abandoned House (meadows)",
+    "how": "override",
+    "note": "Curious Axe Head wiki: can be found in a chest in an Abandoned House (Meadows); matches the compendium.",
     "names": {
       "ru": "Древние топоры"
     }
@@ -722,8 +722,8 @@
     "name": "Mysterious Axe Head",
     "biome": "meadows",
     "tier": 1,
-    "how": "wiki",
-    "note": "found in Abandoned House (meadows)",
+    "how": "override",
+    "note": "Mysterious Axe Head wiki: can be found in a chest in an Abandoned House (Meadows); matches the compendium.",
     "names": {
       "ru": "Древние топоры"
     }
@@ -1097,10 +1097,10 @@
   },
   {
     "name": "Wisp",
-    "biome": "plains",
-    "tier": 6,
-    "how": "wiki",
-    "note": "structure Wisp Fountain built from Stone, Torn Spirit",
+    "biome": "mistlands",
+    "tier": 7,
+    "how": "override",
+    "note": "Wisp wiki: collected from Wisp Fountains, which spawn in Mistlands.",
     "names": {
       "cs": "Dušička",
       "ru": "Светлячок"
@@ -1150,10 +1150,10 @@
   },
   {
     "name": "Ymir Flesh",
-    "biome": "swamp",
-    "tier": 4,
+    "biome": "black-forest",
+    "tier": 2,
     "how": "wiki",
-    "note": "purchased from Haldor after The Elder",
+    "note": "purchased from Haldor after The Elder (Black Forest boss)",
     "names": {
       "cs": "Maso Ymira",
       "fr": "Chair d'Ymir",

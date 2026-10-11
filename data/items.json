@@ -320,6 +320,29 @@
     }
   },
   {
+    "id": "asksvin-trophy",
+    "name": "Asksvin Trophy",
+    "image": "img/items/asksvin-trophy.png",
+    "biome": "ashlands",
+    "tier": 8,
+    "sources": [
+      {
+        "text": "Asksvin",
+        "kind": "creature",
+        "creatureId": "asksvin",
+        "biomes": [
+          "ashlands"
+        ]
+      }
+    ],
+    "recipe": null,
+    "wiki": "https://valheim.weirdgloop.org/w/Asksvin_Trophy",
+    "names": {
+      "cs": "Trofeje",
+      "ru": "Категория:Трофеи"
+    }
+  },
+  {
     "id": "barber-kit",
     "name": "Barber Kit",
     "comfort": true,
@@ -2346,8 +2369,8 @@
     "id": "coal",
     "name": "Coal",
     "image": "img/items/coal.png",
-    "biome": "swamp",
-    "tier": 4,
+    "biome": "meadows",
+    "tier": 1,
     "sources": [
       {
         "text": "Surtling",
@@ -2809,8 +2832,8 @@
     "id": "curious-axe-head",
     "name": "Curious Axe Head",
     "image": "img/items/curious-axe-head.png",
-    "biome": null,
-    "tier": null,
+    "biome": "meadows",
+    "tier": 1,
     "sources": [
       {
         "text": "Abandoned House (version 6)",
@@ -5182,8 +5205,8 @@
     "name": "Mead base: Poison resistance",
     "provisions": true,
     "image": "../provisions/img/items/mead-base-poison-resistance.png",
-    "biome": "swamp",
-    "tier": 4,
+    "biome": "black-forest",
+    "tier": 2,
     "sources": [
       {
         "text": "Mead Ketill",
@@ -5290,6 +5313,39 @@
     "names": {
       "cs": "Nápoj Vananidir",
       "ru": "Напиток Вананидир"
+    }
+  },
+  {
+    "id": "mechanical-spring",
+    "name": "Mechanical Spring",
+    "image": "img/items/mechanical-spring.png",
+    "biome": "mistlands",
+    "tier": 7,
+    "sources": [
+      {
+        "text": "Artisan Table",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Artisan Table",
+      "materials": [
+        {
+          "item": "refined-eitr",
+          "amount": 1
+        },
+        {
+          "item": "iron",
+          "amount": 3
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Mechanical_Spring",
+    "teleportable": false,
+    "names": {
+      "cs": "Mechanická pružina",
+      "ru": "Пружина"
     }
   },
   {
@@ -6224,8 +6280,8 @@
     "id": "mysterious-axe-head",
     "name": "Mysterious Axe Head",
     "image": "img/items/mysterious-axe-head.png",
-    "biome": null,
-    "tier": null,
+    "biome": "meadows",
+    "tier": 1,
     "sources": [
       {
         "text": "Abandoned House (version 6)",
@@ -8016,6 +8072,35 @@
     }
   },
   {
+    "id": "sharpening-stone",
+    "name": "Sharpening Stone",
+    "image": "img/items/sharpening-stone.png",
+    "biome": "swamp",
+    "tier": 4,
+    "sources": [
+      {
+        "text": "Stonecutter",
+        "kind": "station"
+      }
+    ],
+    "recipe": {
+      "station": "Stonecutter",
+      "materials": [
+        {
+          "item": "stone",
+          "amount": 5
+        }
+      ],
+      "yields": 1
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Sharpening_Stone",
+    "names": {
+      "cs": "Brusné kolo",
+      "fr": "Roue à aiguiser",
+      "ru": "Точильный камень"
+    }
+  },
+  {
     "id": "silver",
     "name": "Silver",
     "image": "img/items/silver.png",
@@ -9157,8 +9242,8 @@
     "id": "wisp",
     "name": "Wisp",
     "image": "img/items/wisp.png",
-    "biome": null,
-    "tier": null,
+    "biome": "mistlands",
+    "tier": 7,
     "sources": [
       {
         "text": "Wisp Fountain",
@@ -9511,8 +9596,8 @@
     "id": "ymir-flesh",
     "name": "Ymir Flesh",
     "image": "img/items/ymir-flesh.png",
-    "biome": "swamp",
-    "tier": 4,
+    "biome": "black-forest",
+    "tier": 2,
     "sources": [
       {
         "text": "Haldor",

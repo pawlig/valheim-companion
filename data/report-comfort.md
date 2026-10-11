@@ -47,7 +47,6 @@ Pieces: 76; categories: 11; seasonal: 6.
 
 ## Comfort-only material overrides
 
-- Coal: meadows, tier 1. Coal wiki: overcook any meat at a Cooking Station. Existing Smithy Coal is Swamp-tier from Surtling drops; keep that record intact and use the early acquisition route for Comfort.
 - Barber Kit: meadows, tier 1. Barber Kit and Hildir wiki: always available from Hildir in Meadows. Barber Station still needs Black Forest Finewood and Bronze Nails.
 - Iron Pit: meadows, tier 1. Iron Pit and Hildir wiki: always available from Hildir in Meadows.
 - Charcoal Resin: ashlands, tier 8. Charcoal Resin drops from Scorched Tree; its wiki lists Ashlands.

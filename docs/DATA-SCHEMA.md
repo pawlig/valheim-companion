@@ -132,6 +132,10 @@ Pravidla:
 
 `finishedAt` (optional, string): finishing station named by the infobox when it differs from the crafting/upgrade `station` (for example `"Frost Foundry"`). `station` remains the levelled crafting station (`"Black Forge"` or `"Galdr Table"`).
 
+`levels[q].availableFrom` (od VC-45c): id biomu, kde jde kvalitu q poprvé vyrobit = pozdější z (biom všech surovin kroků 1..q podle `data/items.json`, chybí-li surovina nebo její biom, fetcher skončí chybou s jejím názvem) a (biom, kde existuje úroveň stanice `levels[q].stationLevel` podle `data/stations.json` → `levels[].biome`). `levels[q].availableTier` je `order` toho biomu. `levels[q].unreachable: true` je u kvality nad `maxLevel` stanice (ve hře zatím nedostupná) — `availableFrom` a `availableTier` jsou pak `null`. Kus bez stanice (`station: null`, např. Bare Fists) nebo bez surovin na jakékoli úrovni (obchod, boss drop, kosmetika) tato pole nemá. Výpočet: `scripts/wiki/station-levels.mjs` (`availableFrom`, `levelBiome`, `maxLevel`), ověřuje `docs/audit/station-levels/avail.mjs` (musí hlásit `0 differences`).
+
+Kus má navíc `availableFrom` = `levels[0].availableFrom`, `availableTier` = `levels[0].availableTier` a `unreachable: true`, jen když je nedostupná už kvalita 1. **Pravidlo Q-5 (Pavel, VC-44):** `biome` a `tier` kusu jsou biom a tier, kde jde Q1 poprvé vyrobit (tedy `availableFrom` / `availableTier`), ne jen biom surovin. Kusy bez stanice nebo bez receptu (Bare Fists) si `biome` ponechávají a `availableFrom` nemají.
+
 `skill` (od VC-5): `swords` | `axes` | `clubs` | `spears` | `polearms` | `knives` | `fists` | `pickaxes` | `bows` | `crossbows` | `elemental-magic` | `blood-magic` | `null` (bomby). Mapování podle ANALYZA § 9.
 `backstab` (od VC-5): číslo z pole infoboxu `backstab` (`"3x"` → 3), chybí-li → `null`.
 
@@ -272,10 +276,16 @@ Ruční opravy, které parser aplikuje **jako poslední krok**:
 - `slot`: `head` | `chest` | `legs` | `cape`. Typ `Body` je `chest`.
 - `levels[q].materials` je cena **toho kroku**: výroba pro q=1, vylepšení z q−1 na q pro q≥2. Položky s poznámkou `(Fuel)` mají navíc `"fuel": true`.
 - `pieces[].finishedAt` (optional, string): finishing station named by the infobox when it differs from the crafting/upgrade `station` (for example `"Frost Foundry"`); quality levels belong to `station`.
+- `pieces[].levels[q].availableFrom` / `availableTier` / `unreachable` a `pieces[].availableFrom` / `availableTier` / `unreachable`: stejný význam a výpočet jako u `data/weapons.json` (kus bere hodnoty z `levels[0]`). Kusy bez receptu (obchod, boss drop, kosmetika) je nemají.
+- **Pravidlo Q-5:** `biome` a `tier` kusu (set i `single`/`special`) jsou nejpozdější (největší `order`) `availableFrom` z jeho kusů s receptem; sety bez kusu s receptem (`cosmetic`) mají `null`.
 - `armorSource`: `table` | `infobox` | `estimate` (+2 za úroveň).
 - `setBonus`: `{ "name": "Sneaky", "pieces": 4, "effects": ["Sneak skill +15"] }` nebo `null`.
 - `movementSpeed`: číslo v procentech (`-5%` → -5).
 - `resistances`: pole čistých řetězců (`"Resistant vs. Frost"`).
+
+### `data/food.json` — pole `availableFrom` (VC-45c)
+
+`availableFrom` (string | null): id biomu, kde jde jídlo poprvé uvařit = pozdější z (biom všech surovin podle `data/items.json`; u syrových jídel bez receptu biom jejich vlastní položky) a (biom úrovně stanice `stationLevel` podle `data/stations.json` → `levels[].biome`; stanice bez `levels`, např. Oven nebo Cooking Station, nic nepřidávají). `biome` jídla je roven `availableFrom` (pravidlo Q-9, Pavel), `tier` je `order` toho biomu. `null` má jen konzolové Blue Mushroom bez biomu.
 
 ### `data/items.json`
 
