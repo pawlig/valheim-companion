@@ -18,6 +18,7 @@ import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
 import { buildImageIndex } from './image-index.mjs';
 import { readCachedPages } from './wiki/api.mjs';
+import { parseUpgradeInfo, parseInfoboxNumbers } from './wiki/upgrade-info.mjs';
 import { parseAllInfoboxes, cleanText, slug as baseSlug, parseMaterialList } from './wiki/wikitext.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -149,6 +150,102 @@ function cleanSourceTexts(list) {
   return out;
 }
 
+
+// --- Per-quality stats (VC-47) ------------------------------------------
+
+// Wiki page titles of weapons.json entries read from the cache; missing pages are skipped
+// (the per-quality builder then falls back to weapons.json / infobox values only).
+function readWeaponPages(weapons) {
+  const titles = [];
+  for (const w of weapons) {
+    const part = String(w.wiki || '').split('/w/')[1];
+    if (part) titles.push(decodeURIComponent(part).replace(/_/g, ' '));
+  }
+  let rest = [...new Set(titles)];
+  for (let guard = 0; guard < 500 && rest.length; guard++) {
+    try {
+      return readCachedPages(rest);
+    } catch (err) {
+      const missing = String(err.message).replace(/^.*?page\(s\):\s*/, '').split(', ');
+      rest = rest.filter((t) => !missing.includes(t));
+    }
+  }
+  return new Map();
+}
+
+function finishQualities(rows, keys) {
+  const used = keys.filter((k) => rows.some((r) => r[k] != null));
+  const out = rows.map((r) => {
+    const o = { quality: r.quality, stationLevel: r.stationLevel ?? null };
+    for (const k of used) o[k] = r[k] ?? null;
+    return o;
+  });
+  return out;
+}
+
+// Per-quality rows + constant stats of a weapons.json entry. Sources: weapons.json levels,
+// damage calculator table, wiki "Upgrade information" table, wiki infobox (in that order).
+function weaponQualityStats(w, calcBySlug, pageText) {
+  const maxQ = w.maxQuality ?? 1;
+  const upgrade = pageText ? parseUpgradeInfo(pageText) : null;
+  const box = pageText ? parseInfoboxNumbers(pageText) : {};
+  const calc = calcBySlug.get(w.id);
+  const boxPer = (base, key) => {
+    const baseVal = box[base];
+    if (baseVal == null) return null;
+    const per = box[`${base} per level`] ?? box[`${base.replace(/ /g, '_')}_per_level`];
+    return { baseVal, per: per ?? null };
+  };
+  const fromBox = (base, q) => {
+    const b = boxPer(base);
+    if (!b) return null;
+    if (q === 1) return b.baseVal;
+    return b.per == null ? null : b.baseVal + b.per * (q - 1);
+  };
+  const fromUpgrade = (label, q) => {
+    if (!upgrade) return null;
+    const idx = upgrade.qualities.indexOf(q);
+    const v = idx >= 0 ? upgrade.rows[label]?.[idx] : null;
+    return v ?? null;
+  };
+  const rows = [];
+  for (let q = 1; q <= maxQ; q++) {
+    const row = { quality: q, stationLevel: (w.levels || [])[q - 1]?.stationLevel ?? null };
+    const types = new Set([...Object.keys(w.damage || {}), ...Object.keys(calc?.damage || {})]);
+    const dmg = {};
+    for (const t of types) {
+      const fromCalc = calc?.damage?.[t]?.[q - 1];
+      dmg[t] = fromCalc ?? (w.damage?.[t] != null ? w.damage[t] + (w.perLevel?.[t] ?? 0) * (q - 1) : null);
+    }
+    row.damage = Object.keys(dmg).length ? dmg : null;
+    row.blockArmor = fromUpgrade('block armor', q) ?? fromBox('block armor', q) ?? (q === 1 ? (w.blockArmor ?? null) : null);
+    row.durability = fromUpgrade('durability', q) ?? fromBox('durability', q);
+    rows.push(row);
+  }
+  const extra = { qualities: finishQualities(rows, ['damage', 'blockArmor', 'durability']) };
+  const constants = {
+    blockForce: w.blockForce ?? box['block force'] ?? null,
+    parryBonus: w.parryBonus ?? box['parry bonus'] ?? null,
+    weight: w.weight ?? box.weight ?? null,
+    stamina: w.stamina ?? box.stamina ?? null,
+    movementSpeed: w.movementSpeed ?? box['movement speed'] ?? null,
+    knockback: w.knockback ?? box.knockback ?? null,
+    backstab: w.backstab ?? box.backstab ?? null,
+  };
+  for (const [k, v] of Object.entries(constants)) if (v != null) extra[k] = v;
+  return extra;
+}
+
+function armorQualities(piece) {
+  const rows = (piece.levels || []).map((l, i) => ({
+    quality: l.quality ?? i + 1,
+    stationLevel: l.stationLevel ?? null,
+    armor: l.armor ?? null,
+    durability: l.durability ?? null,
+  }));
+  return rows.length ? finishQualities(rows, ['armor', 'durability']) : undefined;
+}
+
 export function buildItemsData() {
   const items = loadJson('items.json');
   const weapons = loadJson('weapons.json');
@@ -158,6 +255,8 @@ export function buildItemsData() {
   const creatures = loadJson('creatures.json');
   const stations = loadJson('stations.json');
   const traders = loadJson('traders.json');
+  const calcBySlug = new Map(JSON.parse(readFileSync(path.join(APPS_DIR, 'damage-calculator', 'src', 'data', 'weapons.json'), 'utf8')).map((c) => [c.slug, c]));
+  const weaponPages = readWeaponPages(weapons);
 
   // Load provisions data via VM
   const provContext = { window: {}, globalThis: {} };
@@ -533,6 +632,11 @@ export function buildItemsData() {
         skill: w.skill || null,
         hands: w.hands || null,
         maxQuality: w.maxQuality ?? 1,
+        ...weaponQualityStats(
+          w,
+          calcBySlug,
+          weaponPages.get(decodeURIComponent(String(w.wiki || '').split('/w/')[1] || '').replace(/_/g, ' ')),
+        ),
       },
       recipe:
         mats.length > 0
@@ -600,6 +704,8 @@ export function buildItemsData() {
           resistances: piece.resistances || [],
           setBonus: entry.setBonus || null,
           maxQuality: (piece.levels || []).length || 1,
+          weight: piece.weight ?? undefined,
+          qualities: armorQualities(piece),
         },
         recipe:
           mats.length > 0
@@ -1698,6 +1804,15 @@ export function buildItemsData() {
   for (const it of compendiumItems) categoryCounts[it.category] = (categoryCounts[it.category] || 0) + 1;
 
   console.log(`Successfully built Items Compendium: ${compendiumItems.length} items.`);
+  let qItems = 0;
+  let qNulls = 0;
+  for (const it of compendiumItems) {
+    const qs = it.stats?.qualities;
+    if (!qs) continue;
+    qItems++;
+    for (const row of qs) for (const [k, v] of Object.entries(row)) if (v === null) qNulls++;
+  }
+  console.log(`  items with per-quality stats: ${qItems}, null cells: ${qNulls}`);
   console.log(`  categories: ${JSON.stringify(categoryCounts)}`);
   return outputData;
 }

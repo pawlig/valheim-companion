@@ -700,3 +700,40 @@ describe('Items Compendium Data & Inverted Index', () => {
     for (const i of items) assert.ok(VALID_CATEGORIES.has(i.category), `${i.id}: ${i.category}`);
   });
 });
+
+describe('Items Compendium per-quality stats (VC-47)', () => {
+  const compendium = JSON.parse(readFileSync(DATA_PATH, 'utf8'));
+  const byId = new Map(compendium.items.map((i) => [i.id, i]));
+  const armorData = JSON.parse(readFileSync(path.join(ROOT, 'data', 'armor.json'), 'utf8'));
+
+  it('Carapace Shield has Q1-Q3 block armor, durability, station level and block force', () => {
+    const s = byId.get('carapace-shield').stats;
+    assert.deepEqual(s.qualities.map((q) => q.quality), [1, 2, 3]);
+    assert.deepEqual(s.qualities.map((q) => q.blockArmor), [96, 102, 108]);
+    assert.deepEqual(s.qualities.map((q) => q.durability), [200, 250, 300]);
+    assert.deepEqual(s.qualities.map((q) => q.stationLevel), [1, 2, 3]);
+    assert.equal(s.blockForce, 60);
+  });
+
+  it('Carapace Spear pierce damage per quality comes from the calculator table', () => {
+    const s = byId.get('carapace-spear').stats;
+    assert.deepEqual(s.qualities.map((q) => q.damage.pierce), [115, 121, 127, 133]);
+  });
+
+  it('Carapace helmet armor and durability match data/armor.json', () => {
+    const piece = armorData.flatMap((e) => e.pieces || []).find((p) => p.id === 'carapace-helmet');
+    const s = byId.get('carapace-helmet').stats;
+    assert.deepEqual(s.qualities.map((q) => q.armor), piece.levels.map((l) => l.armor));
+    assert.deepEqual(s.qualities.map((q) => q.durability), piece.levels.map((l) => l.durability));
+  });
+
+  it('every item with qualities has one row per max quality', () => {
+    let n = 0;
+    for (const i of compendium.items) {
+      if (!i.stats?.qualities) continue;
+      n++;
+      assert.equal(i.stats.qualities.length, i.stats.maxQuality, i.id);
+    }
+    assert.ok(n > 200, `expected > 200 items with qualities, got ${n}`);
+  });
+});
