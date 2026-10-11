@@ -193,6 +193,55 @@
     return parts.length > 0 ? parts.join(' + ') : null;
   }
 
+  // Per-quality stats table (VC-47): one column per quality, one row per stat; rows that are
+  // null in every quality are left out, single nulls show as a dash.
+  function buildQualityTable(item, qualities) {
+    const stationName = item.recipe?.station || item.station?.name || '';
+    const rows = [];
+    const types = [];
+    for (const q of qualities) for (const type of Object.keys(q.damage || {})) if (!types.includes(type)) types.push(type);
+    for (const type of types) {
+      rows.push({ label: type.charAt(0).toUpperCase() + type.slice(1), get: (q) => q.damage?.[type] });
+    }
+    rows.push({ label: t('Block armor'), get: (q) => q.blockArmor });
+    rows.push({ label: t('Armor'), get: (q) => q.armor });
+    rows.push({ label: t('Durability'), get: (q) => q.durability });
+    rows.push({
+      label: t('Station level'),
+      get: (q) => (q.stationLevel == null ? null : `${stationName} ${q.stationLevel}`.trim()),
+    });
+    const visible = rows.filter((r) => qualities.some((q) => r.get(q) != null));
+    if (visible.length === 0) return null;
+
+    const wrap = el('div', 'quality-table-wrap');
+    const table = el('table', 'quality-table');
+    const head = el('tr');
+    head.append(el('th', ''));
+    for (const q of qualities) {
+      const th = el('th', '', `Q${q.quality}`);
+      th.dataset.quality = String(q.quality);
+      head.append(th);
+    }
+    const thead = el('thead');
+    thead.append(head);
+    table.append(thead);
+    const tbody = el('tbody');
+    for (const r of visible) {
+      const tr = el('tr');
+      tr.append(el('th', '', r.label));
+      for (const q of qualities) {
+        const v = r.get(q);
+        const td = el('td', '', v == null ? '—' : String(v));
+        td.dataset.quality = String(q.quality);
+        tr.append(td);
+      }
+      tbody.append(tr);
+    }
+    table.append(tbody);
+    wrap.append(table);
+    return wrap;
+  }
+
   function navigateToUrl(url) {
     try {
       if (typeof history !== 'undefined' && typeof history.pushState === 'function') {
@@ -325,23 +374,33 @@
     // 2. Stats (damage, armor, food values, effects…)
     const s = item.stats;
     const statRows = [];
+    const qualityRows = s && Array.isArray(s.qualities) && s.qualities.length > 1 ? s.qualities : null;
     if (s) {
-      const dmg = damageText(s.damage) || damageText(s.damageMax);
-      if (dmg) statRows.push(t('Damage: {damage}', { damage: dmg }));
-      if (s.blockArmor != null) statRows.push(t('Block: {block}', { block: s.blockArmor }));
+      if (!qualityRows) {
+        const dmg = damageText(s.damage) || damageText(s.damageMax);
+        if (dmg) statRows.push(t('Damage: {damage}', { damage: dmg }));
+        if (s.blockArmor != null) statRows.push(t('Block: {block}', { block: s.blockArmor }));
+      }
       if (s.skill) statRows.push(t('Skill: {skill}', { skill: s.skill }));
       if (s.hands) statRows.push(s.hands.toUpperCase());
-      if (s.maxQuality != null && s.maxQuality > 1) {
-        statRows.push(t('Max quality: {count}', { count: s.maxQuality }));
+      if (item.weight == null && s.weight != null) statRows.push(t('Weight: {weight}', { weight: s.weight }));
+      if (!qualityRows) {
+        if (s.maxQuality != null && s.maxQuality > 1) {
+          statRows.push(t('Max quality: {count}', { count: s.maxQuality }));
+        }
+        if (s.armor != null) {
+          statRows.push(
+            s.armorMax != null && s.armorMax !== s.armor
+              ? t('Armor: {armor} (max {max})', { armor: s.armor, max: s.armorMax })
+              : t('Armor: {armor}', { armor: s.armor })
+          );
+        }
+        if (s.durability != null) statRows.push(t('Durability: {durability}', { durability: s.durability }));
       }
-      if (s.armor != null) {
-        statRows.push(
-          s.armorMax != null && s.armorMax !== s.armor
-            ? t('Armor: {armor} (max {max})', { armor: s.armor, max: s.armorMax })
-            : t('Armor: {armor}', { armor: s.armor })
-        );
-      }
-      if (s.durability != null) statRows.push(t('Durability: {durability}', { durability: s.durability }));
+      if (s.blockForce != null) statRows.push(t('Block force: {value}', { value: s.blockForce }));
+      if (s.parryBonus != null) statRows.push(t('Parry bonus: {value}', { value: s.parryBonus }));
+      if (s.knockback != null) statRows.push(t('Knockback: {value}', { value: s.knockback }));
+      if (s.backstab != null) statRows.push(t('Backstab: {value}', { value: s.backstab }));
       if (s.movementSpeed) statRows.push(t('Movement speed: {speed}', { speed: s.movementSpeed }));
       if (s.setBonus) statRows.push(t('Set bonus: {bonus}', { bonus: s.setBonus }));
       if (s.health != null) statRows.push(t('Health: {health}', { health: s.health }));
@@ -355,14 +414,20 @@
       if (s.comfort != null) statRows.push(t('Comfort: {comfort}', { comfort: s.comfort }));
       if (s.furniture) statRows.push(s.furniture);
     }
-    if (statRows.length > 0) {
+    if (statRows.length > 0 || qualityRows) {
       const statsSection = el('section', 'modal-section');
       statsSection.append(el('h3', '', t('Stats')));
-      const grid = el('div', 'stat-grid');
-      for (const row of statRows) {
-        grid.append(el('span', 'stat-cell', row));
+      if (qualityRows) {
+        const table = buildQualityTable(item, qualityRows);
+        if (table) statsSection.append(table);
       }
-      statsSection.append(grid);
+      if (statRows.length > 0) {
+        const grid = el('div', 'stat-grid');
+        for (const row of statRows) {
+          grid.append(el('span', 'stat-cell', row));
+        }
+        statsSection.append(grid);
+      }
       modalBody.append(statsSection);
     }
 

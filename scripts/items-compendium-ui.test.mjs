@@ -443,7 +443,11 @@ describe('Items Compendium UI Tests', () => {
     );
     assert.ok(statSection, 'Stats section must exist for a weapon');
     const statTexts = statSection.querySelectorAll('.stat-cell').map((c) => c.textContent).join(' | ');
-    assert.match(statTexts, /Damage/);
+    assert.match(statTexts, /Skill/);
+    // VC-47: damage moved from a chip into the per-quality table.
+    const tableTexts = statSection.querySelectorAll('th').map((c) => c.textContent).join(' | ');
+    assert.match(tableTexts, /Slash/);
+    assert.match(tableTexts, /Q1/);
   });
 
   it('16. Cross-link buttons open the right tools', () => {
