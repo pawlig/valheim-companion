@@ -2149,5 +2149,20 @@
     "ru": "Удар в спину: {value}",
     "ja": "背後攻撃：{value}",
     "id": "Serangan dari belakang: {value}"
+  },
+  "Block armor: {value}": {
+    "en": "Block armor: {value}",
+    "cs": "Krytí zbroje: {value}",
+    "de": "Blockrüstung: {value}",
+    "es": "Armadura de bloqueo: {value}",
+    "fr": "Armure de blocage : {value}",
+    "pt": "Armadura de bloqueio: {value}",
+    "zh": "格挡护甲：{value}",
+    "hi": "ब्लॉक कवच: {value}",
+    "ar": "درع الصد: {value}",
+    "bn": "ব্লক বর্ম: {value}",
+    "ru": "Броня блокирования: {value}",
+    "ja": "ブロックアーマー：{value}",
+    "id": "Zirah tangkisan: {value}"
   }
 }

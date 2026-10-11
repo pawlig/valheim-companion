@@ -450,6 +450,23 @@ describe('Items Compendium UI Tests', () => {
     assert.match(tableTexts, /Q1/);
   });
 
+  it('VC-47: single-value Block armor becomes a chip, multi-value stays a table row', () => {
+    const rowLabels = (id) => {
+      const { doc } = createDomFixture(`#item=${id}`, { 'vc.itemsShowAll': 'true' });
+      const body = doc.getElementById('modal-body');
+      return {
+        rows: body.querySelectorAll('th').map((c) => c.textContent),
+        chips: body.querySelectorAll('.stat-cell').map((c) => c.textContent),
+      };
+    };
+    const spear = rowLabels('carapace-spear');
+    assert.ok(!spear.rows.includes('Block armor'), 'spear has no Block armor row');
+    assert.ok(spear.chips.includes('Block armor: 48'), spear.chips.join(' | '));
+    const shield = rowLabels('carapace-shield');
+    assert.ok(shield.rows.includes('Block armor'), 'shield keeps the Block armor row');
+    assert.ok(!shield.chips.some((c) => c.startsWith('Block armor')));
+  });
+
   it('16. Cross-link buttons open the right tools', () => {
     const { doc } = createDomFixture('#item=iron-sword', { 'vc.itemsShowAll': 'true' });
     const crossLinks = doc.getElementById('modal-body').querySelectorAll('.cross-link-btn');

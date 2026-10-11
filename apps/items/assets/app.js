@@ -193,6 +193,11 @@
     return parts.length > 0 ? parts.join(' + ') : null;
   }
 
+  // Block armor known for Q1 only (null in every higher quality): shown as a chip, not a table row.
+  function singleBlockArmor(qualities) {
+    return qualities[0]?.blockArmor != null && qualities.slice(1).every((q) => q.blockArmor == null);
+  }
+
   // Per-quality stats table (VC-47): one column per quality, one row per stat; rows that are
   // null in every quality are left out, single nulls show as a dash.
   function buildQualityTable(item, qualities) {
@@ -203,7 +208,7 @@
     for (const type of types) {
       rows.push({ label: type.charAt(0).toUpperCase() + type.slice(1), get: (q) => q.damage?.[type] });
     }
-    rows.push({ label: t('Block armor'), get: (q) => q.blockArmor });
+    if (!singleBlockArmor(qualities)) rows.push({ label: t('Block armor'), get: (q) => q.blockArmor });
     rows.push({ label: t('Armor'), get: (q) => q.armor });
     rows.push({ label: t('Durability'), get: (q) => q.durability });
     rows.push({
@@ -380,6 +385,9 @@
         const dmg = damageText(s.damage) || damageText(s.damageMax);
         if (dmg) statRows.push(t('Damage: {damage}', { damage: dmg }));
         if (s.blockArmor != null) statRows.push(t('Block: {block}', { block: s.blockArmor }));
+      }
+      if (qualityRows && singleBlockArmor(qualityRows)) {
+        statRows.push(t('Block armor: {value}', { value: qualityRows[0].blockArmor }));
       }
       if (s.skill) statRows.push(t('Skill: {skill}', { skill: s.skill }));
       if (s.hands) statRows.push(s.hands.toUpperCase());
