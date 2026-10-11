@@ -443,7 +443,28 @@ describe('Items Compendium UI Tests', () => {
     );
     assert.ok(statSection, 'Stats section must exist for a weapon');
     const statTexts = statSection.querySelectorAll('.stat-cell').map((c) => c.textContent).join(' | ');
-    assert.match(statTexts, /Damage/);
+    assert.match(statTexts, /Skill/);
+    // VC-47: damage moved from a chip into the per-quality table.
+    const tableTexts = statSection.querySelectorAll('th').map((c) => c.textContent).join(' | ');
+    assert.match(tableTexts, /Slash/);
+    assert.match(tableTexts, /Q1/);
+  });
+
+  it('VC-47: single-value Block armor becomes a chip, multi-value stays a table row', () => {
+    const rowLabels = (id) => {
+      const { doc } = createDomFixture(`#item=${id}`, { 'vc.itemsShowAll': 'true' });
+      const body = doc.getElementById('modal-body');
+      return {
+        rows: body.querySelectorAll('th').map((c) => c.textContent),
+        chips: body.querySelectorAll('.stat-cell').map((c) => c.textContent),
+      };
+    };
+    const spear = rowLabels('carapace-spear');
+    assert.ok(!spear.rows.includes('Block armor'), 'spear has no Block armor row');
+    assert.ok(spear.chips.includes('Block armor: 48'), spear.chips.join(' | '));
+    const shield = rowLabels('carapace-shield');
+    assert.ok(shield.rows.includes('Block armor'), 'shield keeps the Block armor row');
+    assert.ok(!shield.chips.some((c) => c.startsWith('Block armor')));
   });
 
   it('16. Cross-link buttons open the right tools', () => {
