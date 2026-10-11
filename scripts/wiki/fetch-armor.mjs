@@ -26,7 +26,7 @@ import {
 import { annotateQualities, latestBiome, materialBiomeLookup, parseUpgradeStation, parseArmorQualityStations, resolveCraftingStation } from './station-levels.mjs';
 import { BIOMES } from './biomes.mjs';
 
-const STATION_UPGRADE_MATERIALS = ['Sharpening Stone', 'Mechanical Spring', 'Asksvin Trophy'];
+const STATION_UPGRADE_MATERIALS = ['Sharpening Stone', 'Mechanical Spring', 'Asksvin Trophy', 'Majestic Carapace'];
 import { BASE_MATERIAL_TABLE, createMaterialResolver } from './materials.mjs';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');

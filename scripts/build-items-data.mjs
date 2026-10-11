@@ -1582,6 +1582,13 @@ export function buildItemsData() {
     }
   }
 
+  // VC-45c2 (Pavel VC44/Q-9): a food takes its biome from data/food.json (the later of its
+  // ingredients and its station level), whatever the earlier steps inferred for the same id.
+  for (const f of provFood) {
+    const rec = registry.get(f.id);
+    if (rec && f.biome && BIOME_ORDER[f.biome] != null) rec.biome = f.biome;
+  }
+
   for (const rec of registry.values()) {
     if (rec.biome && BIOME_ORDER[rec.biome] != null) {
       rec.tier = BIOME_ORDER[rec.biome];
