@@ -210,6 +210,7 @@ const LABEL_ALIASES: Record<string, DamageType> = {
   spirit: "spirit",
   chop: "chop",
   pickaxe: "pickaxe",
+  mining: "pickaxe", // Iron Pickaxe upgrade table labels the row "Mining"
 };
 
 /** Map a table row label ("Chop (trees)", "Blunt", " Pierce") to a damage type. */

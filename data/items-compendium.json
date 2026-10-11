@@ -46071,7 +46071,7 @@
             "stationLevel": 3,
             "damage": {
               "pierce": 38,
-              "pickaxe": 33
+              "pickaxe": 38
             },
             "durability": 200
           },
@@ -46080,7 +46080,7 @@
             "stationLevel": 4,
             "damage": {
               "pierce": 43,
-              "pickaxe": 33
+              "pickaxe": 43
             },
             "durability": 250
           },
@@ -46089,7 +46089,7 @@
             "stationLevel": 5,
             "damage": {
               "pierce": 48,
-              "pickaxe": 33
+              "pickaxe": 48
             },
             "durability": 300
           }
