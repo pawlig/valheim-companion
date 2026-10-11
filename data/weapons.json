@@ -766,7 +766,7 @@
     "hands": "1h",
     "type": "Fists",
     "image": "img/weapons/bare-fists.png",
-    "station": "Always available",
+    "station": null,
     "stationLevel": 1,
     "maxQuality": 1,
     "levels": [
@@ -4433,7 +4433,7 @@
     "hands": "1h",
     "type": "Club 1h",
     "image": "img/weapons/club.png",
-    "station": "Player crafting menu",
+    "station": "Workbench",
     "stationLevel": 1,
     "maxQuality": 4,
     "levels": [
@@ -5337,7 +5337,7 @@
     "hands": "1h",
     "type": "Sword",
     "image": "img/weapons/dyrnwyn.png",
-    "station": "Black forge",
+    "station": "Black Forge",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -5606,7 +5606,8 @@
     "hands": "2h",
     "type": "Blood magic",
     "image": "img/weapons/echo-spike.png",
-    "station": "Frost Foundry",
+    "station": "Galdr Table",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 3,
     "maxQuality": 4,
     "levels": [
@@ -6428,7 +6429,7 @@
     "hands": "1h",
     "type": "Shield Tower",
     "image": "img/weapons/flametal-tower-shield.png",
-    "station": "Black forge",
+    "station": "Black Forge",
     "stationLevel": 3,
     "maxQuality": 3,
     "levels": [
@@ -10314,7 +10315,7 @@
     "hands": "1h",
     "type": "Club 1h",
     "image": "img/weapons/klossen.png",
-    "station": "Black forge",
+    "station": "Black Forge",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -10569,7 +10570,8 @@
     "hands": "2h",
     "type": "Elemental magic",
     "image": "img/weapons/lightning-strike.png",
-    "station": "Frost Foundry",
+    "station": "Galdr Table",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 3,
     "maxQuality": 4,
     "levels": [
@@ -10905,7 +10907,7 @@
     "hands": "1h",
     "type": "Sword",
     "image": "img/weapons/nidhogg.png",
-    "station": "Black forge",
+    "station": "Black Forge",
     "stationLevel": 3,
     "maxQuality": 4,
     "levels": [
@@ -11381,7 +11383,8 @@
     "hands": "2h",
     "type": "Polearm",
     "image": "img/weapons/nord-atgeir.png",
-    "station": "Frost Foundry",
+    "station": "Black Forge",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -11491,7 +11494,8 @@
     "hands": "1h",
     "type": "Axe 1h",
     "image": "img/weapons/nord-axe.png",
-    "station": "Frost Foundry",
+    "station": "Black Forge",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -11603,7 +11607,8 @@
     "hands": "2h",
     "type": "Bow",
     "image": "img/weapons/nord-bow.png",
-    "station": "Frost Foundry",
+    "station": "Black Forge",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -11715,7 +11720,8 @@
     "hands": "1h",
     "type": "Shield Buckler",
     "image": "img/weapons/nord-buckler.png",
-    "station": "Frost Foundry",
+    "station": "Black Forge",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 4,
     "maxQuality": 3,
     "levels": [
@@ -11806,7 +11812,8 @@
     "hands": "2h",
     "type": "Crossbow",
     "image": "img/weapons/nord-crossbow.png",
-    "station": "Frost Foundry",
+    "station": "Black Forge",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -11917,7 +11924,8 @@
     "hands": "1h",
     "type": "Knife",
     "image": "img/weapons/nord-dagger.png",
-    "station": "Frost Foundry",
+    "station": "Black Forge",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -12028,7 +12036,8 @@
     "hands": "2h",
     "type": "Axe 2h",
     "image": "img/weapons/nord-greataxe.png",
-    "station": "Frost Foundry",
+    "station": "Black Forge",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -12140,7 +12149,8 @@
     "hands": "1h",
     "type": "Shield Tower",
     "image": "img/weapons/nord-greatshield.png",
-    "station": "Frost Foundry",
+    "station": "Black Forge",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 4,
     "maxQuality": 3,
     "levels": [
@@ -12231,7 +12241,8 @@
     "hands": "2h",
     "type": "Sword 2H",
     "image": "img/weapons/nord-greatsword.png",
-    "station": "Frost Foundry",
+    "station": "Black Forge",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -12339,7 +12350,8 @@
     "hands": "1h",
     "type": "Fists",
     "image": "img/weapons/nord-knucklechains.png",
-    "station": "Frost Foundry",
+    "station": "Black Forge",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -12446,7 +12458,8 @@
     "hands": "1h",
     "type": "Club 1h",
     "image": "img/weapons/nord-mace.png",
-    "station": "Frost Foundry",
+    "station": "Black Forge",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -12554,7 +12567,8 @@
     "hands": "1h",
     "type": "Shield Round",
     "image": "img/weapons/nord-shield.png",
-    "station": "Frost Foundry",
+    "station": "Black Forge",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 4,
     "maxQuality": 3,
     "levels": [
@@ -12645,7 +12659,8 @@
     "hands": "2h",
     "type": "Club 2h",
     "image": "img/weapons/nord-sledge.png",
-    "station": "Frost Foundry",
+    "station": "Black Forge",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -12754,7 +12769,8 @@
     "hands": "1h",
     "type": "Spear",
     "image": "img/weapons/nord-spear.png",
-    "station": "Frost Foundry",
+    "station": "Black Forge",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -12863,7 +12879,8 @@
     "hands": "1h",
     "type": "Sword",
     "image": "img/weapons/nord-sword.png",
-    "station": "Frost Foundry",
+    "station": "Black Forge",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -12972,7 +12989,8 @@
     "hands": "2h",
     "type": "Blood Magic",
     "image": "img/weapons/northern-vengeance.png",
-    "station": "Frost Foundry",
+    "station": "Galdr Table",
+    "finishedAt": "Frost Foundry",
     "stationLevel": 3,
     "maxQuality": 4,
     "levels": [
@@ -13558,7 +13576,7 @@
     "hands": "2h",
     "type": "axe dw",
     "image": "img/weapons/primal-berserkir-axes.png",
-    "station": "Black forge",
+    "station": "Black Forge",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -15593,7 +15611,7 @@
     "hands": "1h",
     "type": "Spear",
     "image": "img/weapons/splitnir.png",
-    "station": "Black forge",
+    "station": "Black Forge",
     "stationLevel": 3,
     "maxQuality": 4,
     "levels": [
@@ -15750,7 +15768,7 @@
     "hands": "1h",
     "type": "Spear",
     "image": "img/weapons/splitnir-the-bleeding.png",
-    "station": "Black forge",
+    "station": "Black Forge",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -15868,7 +15886,7 @@
     "hands": "1h",
     "type": "Spear",
     "image": "img/weapons/splitnir-the-primal.png",
-    "station": "Black forge",
+    "station": "Black Forge",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -15988,7 +16006,7 @@
     "hands": "1h",
     "type": "Spear",
     "image": "img/weapons/splitnir-the-storming.png",
-    "station": "Black forge",
+    "station": "Black Forge",
     "stationLevel": 4,
     "maxQuality": 4,
     "levels": [
@@ -16837,7 +16855,7 @@
     "hands": "1h",
     "type": "Axe 1h",
     "image": "img/weapons/stone-axe.png",
-    "station": "Player crafting menu",
+    "station": "Workbench",
     "stationLevel": 1,
     "maxQuality": 4,
     "levels": [

@@ -12,6 +12,7 @@ import { fileURLToPath } from 'node:url';
 
 import { api, MwApi } from './api.mjs';
 import { cleanText, parseImage, parseInfobox, parseLinks, parseMaterialList, parseTemplates, slug } from './wikitext.mjs';
+import { parseUpgradeStation, resolveCraftingStation } from './station-levels.mjs';
 import { BIOMES, tierOf } from './biomes.mjs';
 import { BASE_MATERIAL_TABLE, createMaterialResolver } from './materials.mjs';
 
@@ -161,6 +162,7 @@ function parseRecipe(text) {
 }
 
 async function main() {
+  const stationNames = JSON.parse(readFileSync(path.join(DATA_DIR, 'stations.json'), 'utf8')).map((station) => station.name);
   // 1. Load creatures and overrides
   const creatures = JSON.parse(readFileSync(path.join(DATA_DIR, 'creatures.json'), 'utf8'));
   const creatureByName = new Map();
@@ -335,9 +337,9 @@ async function main() {
     }
 
     // Station level and upgrade row
-    const upgradeRowMatch = wt.match(/\{\{Upgrade station row\|[^|}]*\|[^|}]*(?:\|start=(\d+))?/i);
-    const startFromRow = upgradeRowMatch && upgradeRowMatch[1] ? parseInt(upgradeRowMatch[1], 10) : null;
-    const baseCraftingLevel = startFromRow ?? (ib['crafting level'] ? parseInt(ib['crafting level'], 10) || 1 : 1);
+    const upgradeStation = parseUpgradeStation(wt);
+    const craftingStation = resolveCraftingStation(ib.source, upgradeStation?.station, stationNames);
+    const baseCraftingLevel = upgradeStation?.level ?? (ib['crafting level'] ? parseInt(ib['crafting level'], 10) || 1 : 1);
     const resolvedStationLevel = Number.isFinite(baseCraftingLevel) ? baseCraftingLevel : 1;
 
     // Parse levels
@@ -462,7 +464,7 @@ async function main() {
       type: cleanText(ib.type),
       imageFile,
       image: null,
-      station: ib.source ? cleanText(ib.source) : null,
+      ...craftingStation,
       stationLevel: resolvedStationLevel,
       maxQuality,
       levels,
@@ -659,6 +661,8 @@ async function main() {
 function renderReport(report, weapons, materials) {
   const lines = [];
   lines.push('# VC-2 weapons and materials report', '', 'Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report must be byte-identical on re-runs from cache.', '');
+
+  lines.push('## Finishing stations', '', ...weapons.filter((w) => w.finishedAt).map((w) => `- ${w.id}: ${w.station} ${w.levels.map((level) => level.stationLevel).join('/')} — finished at ${w.finishedAt}`), '');
 
   lines.push('## Weapons per tier', '', '| Tier | Biome | Count |', '|---|---|---|');
   for (const b of BIOMES) {

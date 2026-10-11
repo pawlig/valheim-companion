@@ -23,6 +23,7 @@ import {
   resolveDisambiguationTitle,
   slug,
 } from './wikitext.mjs';
+import { parseUpgradeStation, parseArmorQualityStations, resolveCraftingStation } from './station-levels.mjs';
 import { BIOMES } from './biomes.mjs';
 import { BASE_MATERIAL_TABLE, createMaterialResolver } from './materials.mjs';
 
@@ -170,6 +171,7 @@ async function resolveImageBatch(items, getFileName, client, destDir, width) {
 }
 
 async function main() {
+  const stationNames = JSON.parse(readFileSync(path.join(DATA_DIR, 'stations.json'), 'utf8')).map((station) => station.name);
   console.log('VC-7: fetching armor and materials…');
 
   // 1. Load creatures and overrides
@@ -334,7 +336,12 @@ async function main() {
       const weight = b.weight ? parseFloat(b.weight) : 0;
       const movementSpeed = parseMovementSpeed(b['movement speed']);
       const resistances = parseResistances(b.resistance || b.resistances);
-      const station = b.source ? cleanText(b.source).split(',')[0].split('<br>')[0].trim() : null;
+      // Match wiki cape qualifiers from the piece type, including legacy pieces
+      // whose stored slot was classified as head by the old 'cap' check.
+      const stationSlot = /cape|cloak|shoulder/i.test(b.type ?? '') ? 'cape' : slot;
+      const qualityStations = parseArmorQualityStations(wt, stationSlot);
+      const upgradeStation = parseUpgradeStation(wt);
+      const craftingStation = resolveCraftingStation(b.source, upgradeStation?.station ?? qualityStations.get(1)?.station, stationNames);
 
       // Extract image file name for download
       let imageFile = null;
@@ -352,7 +359,7 @@ async function main() {
 
       const baseArmor = b.armor ? parseFloat(b.armor) : 0;
       const baseDurability = b.durability ? parseInt(b.durability, 10) : null;
-      const baseCraftingLevel = b['crafting level'] ? parseInt(b['crafting level'], 10) : 1;
+      const baseCraftingLevel = qualityStations.get(1)?.level ?? upgradeStation?.level ?? (b['crafting level'] ? parseInt(b['crafting level'], 10) : 1);
 
       let usedEstimate = false;
 
@@ -385,11 +392,11 @@ async function main() {
           if (tData && tData.armor != null) {
             armorVal = tData.armor;
             durabilityVal = tData.durability ?? (baseDurability != null ? baseDurability + 200 * (q - 1) : null);
-            stationLevelVal = tData.stationLevel ?? (baseCraftingLevel + (q - 1));
+            stationLevelVal = qualityStations.get(q)?.level ?? (baseCraftingLevel + (q - 1));
           } else {
             armorVal = baseArmor + 2 * (q - 1);
             durabilityVal = (tData?.durability) ?? (baseDurability != null ? baseDurability + 200 * (q - 1) : null);
-            stationLevelVal = (tData?.stationLevel) ?? (baseCraftingLevel + (q - 1));
+            stationLevelVal = qualityStations.get(q)?.level ?? (baseCraftingLevel + (q - 1));
             usedEstimate = true;
           }
 
@@ -453,7 +460,7 @@ async function main() {
         slot,
         gameId,
         image: `img/armor/${pieceId}.png`,
-        station,
+        ...craftingStation,
         levels,
         armorSource,
         weight,
@@ -900,6 +907,8 @@ function renderReport(report, armor, items) {
   if (unresolvedStats.sets > 0) {
     lines.push(`| (cosmetic / unresolved) | ${unresolvedStats.sets} | ${unresolvedStats.pieces} |`);
   }
+
+  lines.push('', '## Station levels', '', 'Padded Cuirass and Padded Greaves retain Forge 2/2/3/4, as explicitly listed in the cached Padded Armor quality tables. This is the only intentional non +1 sequence.', '', '## Finishing stations', '', ...armor.flatMap((set) => set.pieces).filter((piece) => piece.finishedAt).map((piece) => `- ${piece.id}: ${piece.station} ${piece.levels.map((level) => level.stationLevel).join('/')} — finished at ${piece.finishedAt}`), '');
 
   lines.push('', '## Pieces with estimated armor (armorSource: estimate)', '');
   if (report.estimatedArmor.length === 0) {
