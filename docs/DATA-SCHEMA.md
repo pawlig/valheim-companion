@@ -195,11 +195,27 @@ Pole stanic. Každý záznam zapisuje jeden fetcher, který nahrazuje jen své z
 | Fetcher | Záznamy (`id`) | `type` |
 |---|---|---|
 | `fetch-stations.mjs` | smelter, blast-furnace, charcoal-kiln, spinning-wheel | smelting / kiln / processing |
-| `fetch-comfort.mjs` | artisan-table, black-forge, forge, stonecutter, workbench | `comfort` |
-| `fetch-expedition.mjs` | galdr-table (`addedBy: "expedition"`) | `crafting` |
-| `fetch-provisions.mjs` | cauldron … smoker | `provisions` |
+| `fetch-stations.mjs` | artisan-table, black-forge, forge, stonecutter, workbench, galdr-table | `crafting` |
+| `fetch-stations.mjs` | 20 rozšíření výše uvedených výrobních stanic | `upgrade` |
+| `fetch-provisions.mjs` | cauldron … smoker (včetně 6 rozšíření Cauldronu) | `provisions` |
 
-Společná pole: `id`, `name`, `names`, `wiki`, `type`. Pořadí v souboru je dané pořadím fetcherů (stations → comfort → expedition → provisions); `mergeStations` ve `fetch-stations.mjs` nové záznamy vkládá na začátek a existující nahrazuje na místě.
+`fetch-comfort.mjs` a `fetch-expedition.mjs` stanice pouze čtou. Comfort build vybírá artisan-table, black-forge, forge, stonecutter a workbench podle `id`, nikoli podle `type`.
+
+Společná pole: `id`, `name`, `names`, `wiki`, `type`. Pořadí v souboru je dané pořadím fetcherů (stations → comfort → expedition → provisions); `mergeStations` ve `fetch-stations.mjs` nové záznamy vkládá na začátek a existující nahrazuje na místě. Výrobní rozšíření jsou ve vstupu tohoto merge před původními stanicemi, takže obnova z prázdného souboru zachová stejné pořadí.
+
+Výrobní stanice a Cauldron mají:
+
+- `materials[]`: `{ item: <material-id>, amount: <number> }`, náklady na samotnou stanici.
+- `unlock`: `{ station: <station-id|null>, materials: <material-id[]> }` u `crafting`; provisions zachovává dosavadní název stanice v `unlock.station`.
+- `biome`: nejranější biom základní stanice; `tier`: jeho `order` z `data/biomes.json`.
+- `maxLevel`: 1 + počet různých rozšíření (Workbench 5, Forge 7, Black Forge 6, Galdr Table 5, Cauldron 7, Artisan Table 2, Stonecutter 1).
+- `levels[]`: `{ level, upgrade, biome, tier }`. `level` začíná 1; `upgrade` je na úrovni 1 `null`, dále ID samostatného záznamu rozšíření. `biome` a `tier` vyjadřují nejranější dostupnost dané úrovně.
+
+Rozšíření mají `upgrades: <station-id>`, `materials[]`, `unlock`, `biome`, `tier`, `stationLevel: 1`, `levelIncrement: 1` a `progressionLevel` (úroveň v doporučeném pořadí rozšíření, kompatibilní s Provisions plannerem). Cauldron rozšíření zachovávají `type: "provisions"`; ostatní mají `type: "upgrade"`. Celkem je 26 rozšíření. Artisan Press nemá samostatnou stránku v cache; recept pochází z tabulky Artisan Table.
+
+Sdílený parser `scripts/wiki/station-upgrades.mjs` používá wiki cache přes `readCachedPages` z `api.mjs`, bez síťového načítání wikitextu. Biom suroviny bere z `items.json`, při absenci z `items-compendium.json`, přes `createMaterialResolver`; zahrnuje i požadovanou stavební stanici a výrobní stanici Sharpening Stone (Stonecutter) / Mechanical Spring (Artisan Table). Coal do opravy sdíleného katalogu v O-3 používá existující wiki-ověřený Comfort override; ostatní Comfort-only overrides se zde neuplatňují. Nevyřešená surovina nebo stanice vyvolá chybu.
+
+`levels[]` řadí rozšíření podle biomu; při shodě zachovává pořadí wiki tabulky. Každá úroveň má maximum biomu základní stanice a předchozích rozšíření. Toto je doporučené pořadí, nikoli povinné pořadí stavby; duplicitní rozšíření nepřidávají úrovně.
 
 ## `data/overrides.json` (orchestrátor)
 

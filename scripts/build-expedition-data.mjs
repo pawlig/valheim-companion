@@ -5,7 +5,7 @@ export function buildExpeditionData() {
     bosses: load('expedition'),
     // Track only Expedition's additions; reuse the host recommendation bundles.
     items: Object.fromEntries(load('items').filter(i => i.addedBy === 'expedition').map(i => [i.id,i])),
-    stations: load('stations').filter(s => s.addedBy === 'expedition'),
+    stations: load('stations').filter(s => s.id === 'galdr-table'),
   }, tips: load('expedition-tips') };
   const dest = new URL('../apps/expedition/data/data.js', import.meta.url);
   mkdirSync(new URL('../apps/expedition/data/', import.meta.url), { recursive: true });

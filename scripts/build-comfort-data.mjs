@@ -17,7 +17,9 @@ export function buildComfortData() {
     for (const m of item.recipe?.materials ?? []) include(m.item);
   }
   for (const p of comfort.pieces) for (const m of p.materials) include(m.item);
-  const stations = allStations.filter(s => s.type === 'comfort');
+  // These recipes remain part of Comfort after fetch-stations takes ownership.
+  const stationIds = new Set(['artisan-table', 'black-forge', 'forge', 'stonecutter', 'workbench']);
+  const stations = allStations.filter(s => stationIds.has(s.id));
   for (const s of stations) for (const m of s.materials ?? []) include(m.item);
   const items = Object.fromEntries([...required].sort().map(id => {
     const item = allItems.get(id);
