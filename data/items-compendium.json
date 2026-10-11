@@ -698,6 +698,27 @@
         "expedition": [],
         "stations": [
           {
+            "id": "metal-cutter",
+            "name": "Metal Cutter",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "metal-cutter"
+          },
+          {
+            "id": "gem-cutter",
+            "name": "Gem Cutter",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "gem-cutter"
+          },
+          {
+            "id": "feathery-wreath",
+            "name": "Feathery Wreath",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "feathery-wreath"
+          },
+          {
             "id": "rolling-pins-and-cutting-boards",
             "name": "Rolling Pins and Cutting Boards",
             "level": 1,
@@ -717,27 +738,6 @@
             "level": 1,
             "biome": "ashlands",
             "itemId": "ashwood-bench"
-          },
-          {
-            "id": "gem-cutter",
-            "name": "Gem cutter",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "gem-cutter"
-          },
-          {
-            "id": "metal-cutter",
-            "name": "Metal cutter",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "metal-cutter"
-          },
-          {
-            "id": "feathery-wreath",
-            "name": "Feathery Wreath",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "feathery-wreath"
           },
           {
             "id": "ashwood-stakewall",
@@ -2627,6 +2627,41 @@
         "expedition": [],
         "stations": [
           {
+            "id": "artisan-press",
+            "name": "Artisan Press",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "artisan-press"
+          },
+          {
+            "id": "black-forge-cooler",
+            "name": "Black Forge Cooler",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "black-forge-cooler"
+          },
+          {
+            "id": "metal-cutter",
+            "name": "Metal Cutter",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "metal-cutter"
+          },
+          {
+            "id": "rune-table",
+            "name": "Rune Table",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "rune-table"
+          },
+          {
+            "id": "unfading-candles",
+            "name": "Unfading Candles",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "unfading-candles"
+          },
+          {
             "id": "black-forge",
             "name": "Black Forge",
             "level": 1,
@@ -2660,34 +2695,6 @@
             "level": 1,
             "biome": "mistlands",
             "itemId": "black-marble-throne"
-          },
-          {
-            "id": "black-forge-cooler",
-            "name": "Black forge cooler",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "black-forge-cooler"
-          },
-          {
-            "id": "metal-cutter",
-            "name": "Metal cutter",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "metal-cutter"
-          },
-          {
-            "id": "rune-table",
-            "name": "Rune table",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "rune-table"
-          },
-          {
-            "id": "unfading-candles",
-            "name": "Unfading Candles",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "unfading-candles"
           },
           {
             "id": "eitr-refinery",
@@ -3664,6 +3671,13 @@
         "expedition": [],
         "stations": [
           {
+            "id": "smith-s-aprons",
+            "name": "Smith's Aprons",
+            "level": 1,
+            "biome": "deep-north",
+            "itemId": "smith-s-aprons"
+          },
+          {
             "id": "smoker",
             "name": "Smoker",
             "level": 1,
@@ -3676,13 +3690,6 @@
             "level": 1,
             "biome": "deep-north",
             "itemId": "timberwood-gate"
-          },
-          {
-            "id": "smith-s-aprons",
-            "name": "Smith's Aprons",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "smith-s-aprons"
           },
           {
             "id": "timberwood-drawbridge",
@@ -4141,7 +4148,7 @@
         "stations": [
           {
             "id": "gem-cutter",
-            "name": "Gem cutter",
+            "name": "Gem Cutter",
             "level": 1,
             "biome": "ashlands",
             "itemId": "gem-cutter"
@@ -5275,6 +5282,27 @@
         "expedition": [],
         "stations": [
           {
+            "id": "artisan-press",
+            "name": "Artisan Press",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "artisan-press"
+          },
+          {
+            "id": "anvils",
+            "name": "Anvils",
+            "level": 1,
+            "biome": "black-forest",
+            "itemId": "anvils"
+          },
+          {
+            "id": "adze",
+            "name": "Adze",
+            "level": 1,
+            "biome": "black-forest",
+            "itemId": "adze"
+          },
+          {
             "id": "fermenter",
             "name": "Fermenter",
             "level": 1,
@@ -5301,20 +5329,6 @@
             "level": 1,
             "biome": "mountain",
             "itemId": "standing-brazier"
-          },
-          {
-            "id": "adze",
-            "name": "Adze",
-            "level": 1,
-            "biome": "black-forest",
-            "itemId": "adze"
-          },
-          {
-            "id": "anvils",
-            "name": "Anvils",
-            "level": 1,
-            "biome": "black-forest",
-            "itemId": "anvils"
           },
           {
             "id": "cartography-table",
@@ -7995,6 +8009,13 @@
         "expedition": [],
         "stations": [
           {
+            "id": "forge-bellows",
+            "name": "Forge Bellows",
+            "level": 1,
+            "biome": "swamp",
+            "itemId": "forge-bellows"
+          },
+          {
             "id": "iron-cooking-station",
             "name": "Iron Cooking Station",
             "level": 1,
@@ -8021,13 +8042,6 @@
             "level": 1,
             "biome": "swamp",
             "itemId": "hanging-brazier"
-          },
-          {
-            "id": "forge-bellows",
-            "name": "Forge bellows",
-            "level": 1,
-            "biome": "swamp",
-            "itemId": "forge-bellows"
           },
           {
             "id": "dvergr-pole-lantern",
@@ -8308,18 +8322,18 @@
         "expedition": [],
         "stations": [
           {
+            "id": "metal-cutter",
+            "name": "Metal Cutter",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "metal-cutter"
+          },
+          {
             "id": "bone-throne",
             "name": "Bone Throne",
             "level": 1,
             "biome": "ashlands",
             "itemId": "bone-throne"
-          },
-          {
-            "id": "metal-cutter",
-            "name": "Metal cutter",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "metal-cutter"
           }
         ],
         "crafting": [
@@ -9729,6 +9743,27 @@
         "expedition": [],
         "stations": [
           {
+            "id": "black-forge-cooler",
+            "name": "Black Forge Cooler",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "black-forge-cooler"
+          },
+          {
+            "id": "vice",
+            "name": "Vice",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "vice"
+          },
+          {
+            "id": "forge-cooler",
+            "name": "Forge Cooler",
+            "level": 1,
+            "biome": "black-forest",
+            "itemId": "forge-cooler"
+          },
+          {
             "id": "forge",
             "name": "Forge",
             "level": 1,
@@ -9792,32 +9827,11 @@
             "itemId": "obliterator"
           },
           {
-            "id": "forge-cooler",
-            "name": "Forge cooler",
-            "level": 1,
-            "biome": "black-forest",
-            "itemId": "forge-cooler"
-          },
-          {
-            "id": "black-forge-cooler",
-            "name": "Black forge cooler",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "black-forge-cooler"
-          },
-          {
             "id": "sconce",
             "name": "Sconce",
             "level": 1,
             "biome": "black-forest",
             "itemId": "sconce"
-          },
-          {
-            "id": "vice",
-            "name": "Vice",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "vice"
           },
           {
             "id": "shield-generator",
@@ -10864,6 +10878,20 @@
         "expedition": [],
         "stations": [
           {
+            "id": "forge-bellows",
+            "name": "Forge Bellows",
+            "level": 1,
+            "biome": "swamp",
+            "itemId": "forge-bellows"
+          },
+          {
+            "id": "tanning-rack",
+            "name": "Tanning Rack",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "tanning-rack"
+          },
+          {
             "id": "black-marble-throne",
             "name": "Black Marble Throne",
             "level": 1,
@@ -10897,20 +10925,6 @@
             "level": 1,
             "biome": "mountain",
             "itemId": "stone-throne"
-          },
-          {
-            "id": "tanning-rack",
-            "name": "Tanning Rack",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "tanning-rack"
-          },
-          {
-            "id": "forge-bellows",
-            "name": "Forge bellows",
-            "level": 1,
-            "biome": "swamp",
-            "itemId": "forge-bellows"
           },
           {
             "id": "longship",
@@ -13276,6 +13290,27 @@
         "expedition": [],
         "stations": [
           {
+            "id": "forge-cooler",
+            "name": "Forge Cooler",
+            "level": 1,
+            "biome": "black-forest",
+            "itemId": "forge-cooler"
+          },
+          {
+            "id": "adze",
+            "name": "Adze",
+            "level": 1,
+            "biome": "black-forest",
+            "itemId": "adze"
+          },
+          {
+            "id": "tool-shelf",
+            "name": "Tool Shelf",
+            "level": 1,
+            "biome": "mountain",
+            "itemId": "tool-shelf"
+          },
+          {
             "id": "fermenter",
             "name": "Fermenter",
             "level": 1,
@@ -13568,27 +13603,6 @@
             "level": 1,
             "biome": "plains",
             "itemId": "spinning-wheel"
-          },
-          {
-            "id": "tool-shelf",
-            "name": "Tool shelf",
-            "level": 1,
-            "biome": "mountain",
-            "itemId": "tool-shelf"
-          },
-          {
-            "id": "adze",
-            "name": "Adze",
-            "level": 1,
-            "biome": "black-forest",
-            "itemId": "adze"
-          },
-          {
-            "id": "forge-cooler",
-            "name": "Forge cooler",
-            "level": 1,
-            "biome": "black-forest",
-            "itemId": "forge-cooler"
           },
           {
             "id": "longship",
@@ -14099,6 +14113,20 @@
         "expedition": [],
         "stations": [
           {
+            "id": "metal-cutter",
+            "name": "Metal Cutter",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "metal-cutter"
+          },
+          {
+            "id": "gem-cutter",
+            "name": "Gem Cutter",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "gem-cutter"
+          },
+          {
             "id": "rolling-pins-and-cutting-boards",
             "name": "Rolling Pins and Cutting Boards",
             "level": 1,
@@ -14118,20 +14146,6 @@
             "level": 1,
             "biome": "ashlands",
             "itemId": "lava-lantern"
-          },
-          {
-            "id": "gem-cutter",
-            "name": "Gem cutter",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "gem-cutter"
-          },
-          {
-            "id": "metal-cutter",
-            "name": "Metal cutter",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "metal-cutter"
           },
           {
             "id": "battering-ram",
@@ -14550,18 +14564,18 @@
         "expedition": [],
         "stations": [
           {
+            "id": "chopping-block",
+            "name": "Chopping Block",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "chopping-block"
+          },
+          {
             "id": "tanning-rack",
             "name": "Tanning Rack",
             "level": 1,
             "biome": "meadows",
             "itemId": "tanning-rack"
-          },
-          {
-            "id": "chopping-block",
-            "name": "Chopping block",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "chopping-block"
           },
           {
             "id": "flint-pile",
@@ -16735,6 +16749,41 @@
         "expedition": [],
         "stations": [
           {
+            "id": "black-forge-cooler",
+            "name": "Black Forge Cooler",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "black-forge-cooler"
+          },
+          {
+            "id": "vice",
+            "name": "Vice",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "vice"
+          },
+          {
+            "id": "smith-s-anvil",
+            "name": "Smith's Anvil",
+            "level": 1,
+            "biome": "swamp",
+            "itemId": "smith-s-anvil"
+          },
+          {
+            "id": "forge-toolrack",
+            "name": "Forge Toolrack",
+            "level": 1,
+            "biome": "swamp",
+            "itemId": "forge-toolrack"
+          },
+          {
+            "id": "tool-shelf",
+            "name": "Tool Shelf",
+            "level": 1,
+            "biome": "mountain",
+            "itemId": "tool-shelf"
+          },
+          {
             "id": "stonecutter",
             "name": "Stonecutter",
             "level": 1,
@@ -16791,13 +16840,6 @@
             "itemId": "obliterator"
           },
           {
-            "id": "tool-shelf",
-            "name": "Tool shelf",
-            "level": 1,
-            "biome": "mountain",
-            "itemId": "tool-shelf"
-          },
-          {
             "id": "standing-green-burning-iron-torch",
             "name": "Standing green-burning iron torch",
             "level": 1,
@@ -16810,20 +16852,6 @@
             "level": 1,
             "biome": "deep-north",
             "itemId": "frost-foundry"
-          },
-          {
-            "id": "forge-toolrack",
-            "name": "Forge Toolrack",
-            "level": 1,
-            "biome": "swamp",
-            "itemId": "forge-toolrack"
-          },
-          {
-            "id": "black-forge-cooler",
-            "name": "Black forge cooler",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "black-forge-cooler"
           },
           {
             "id": "dvergr-stakewall",
@@ -16845,13 +16873,6 @@
             "level": 1,
             "biome": "swamp",
             "itemId": "iron-stack"
-          },
-          {
-            "id": "smith-s-anvil",
-            "name": "Smith's Anvil",
-            "level": 1,
-            "biome": "swamp",
-            "itemId": "smith-s-anvil"
           },
           {
             "id": "reinforced-chest",
@@ -16880,13 +16901,6 @@
             "level": 1,
             "biome": "swamp",
             "itemId": "standing-blue-burning-iron-torch"
-          },
-          {
-            "id": "vice",
-            "name": "Vice",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "vice"
           },
           {
             "id": "shield-generator",
@@ -18007,6 +18021,13 @@
         "expedition": [],
         "stations": [
           {
+            "id": "tanning-rack",
+            "name": "Tanning Rack",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "tanning-rack"
+          },
+          {
             "id": "mead-ketill",
             "name": "Mead Ketill",
             "level": 1,
@@ -18110,13 +18131,6 @@
             "level": 1,
             "biome": "plains",
             "itemId": "spinning-wheel"
-          },
-          {
-            "id": "tanning-rack",
-            "name": "Tanning Rack",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "tanning-rack"
           },
           {
             "id": "raft",
@@ -21162,6 +21176,13 @@
         "expedition": [],
         "stations": [
           {
+            "id": "smith-s-aprons",
+            "name": "Smith's Aprons",
+            "level": 1,
+            "biome": "deep-north",
+            "itemId": "smith-s-aprons"
+          },
+          {
             "id": "antler-throne",
             "name": "Antler Throne",
             "level": 1,
@@ -21174,13 +21195,6 @@
             "level": 1,
             "biome": "deep-north",
             "itemId": "carved-bench"
-          },
-          {
-            "id": "smith-s-aprons",
-            "name": "Smith's Aprons",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "smith-s-aprons"
           }
         ],
         "crafting": [
@@ -21715,7 +21729,7 @@
         "stations": [
           {
             "id": "gem-cutter",
-            "name": "Gem cutter",
+            "name": "Gem Cutter",
             "level": 1,
             "biome": "ashlands",
             "itemId": "gem-cutter"
@@ -25708,7 +25722,7 @@
         "stations": [
           {
             "id": "tool-shelf",
-            "name": "Tool shelf",
+            "name": "Tool Shelf",
             "level": 1,
             "biome": "mountain",
             "itemId": "tool-shelf"
@@ -27666,22 +27680,8 @@
         "expedition": [],
         "stations": [
           {
-            "id": "galdr-table",
-            "name": "Galdr Table",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "galdr-table"
-          },
-          {
-            "id": "feathery-wreath",
-            "name": "Feathery Wreath",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "feathery-wreath"
-          },
-          {
             "id": "rune-table",
-            "name": "Rune table",
+            "name": "Rune Table",
             "level": 1,
             "biome": "mistlands",
             "itemId": "rune-table"
@@ -27692,6 +27692,20 @@
             "level": 1,
             "biome": "mistlands",
             "itemId": "unfading-candles"
+          },
+          {
+            "id": "feathery-wreath",
+            "name": "Feathery Wreath",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "feathery-wreath"
+          },
+          {
+            "id": "galdr-table",
+            "name": "Galdr Table",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "galdr-table"
           }
         ],
         "crafting": [
@@ -27938,6 +27952,13 @@
         "expedition": [],
         "stations": [
           {
+            "id": "unfading-candles",
+            "name": "Unfading Candles",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "unfading-candles"
+          },
+          {
             "id": "fermenter",
             "name": "Fermenter",
             "level": 1,
@@ -27985,13 +28006,6 @@
             "level": 1,
             "biome": "meadows",
             "itemId": "standing-wood-torch"
-          },
-          {
-            "id": "unfading-candles",
-            "name": "Unfading Candles",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "unfading-candles"
           },
           {
             "id": "resin-candle",
@@ -31758,6 +31772,20 @@
         "expedition": [],
         "stations": [
           {
+            "id": "smith-s-aprons",
+            "name": "Smith's Aprons",
+            "level": 1,
+            "biome": "deep-north",
+            "itemId": "smith-s-aprons"
+          },
+          {
+            "id": "standing-loom",
+            "name": "Standing Loom",
+            "level": 1,
+            "biome": "deep-north",
+            "itemId": "standing-loom"
+          },
+          {
             "id": "smoker",
             "name": "Smoker",
             "level": 1,
@@ -31805,20 +31833,6 @@
             "level": 1,
             "biome": "deep-north",
             "itemId": "timberwood-gate"
-          },
-          {
-            "id": "standing-loom",
-            "name": "Standing Loom",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "standing-loom"
-          },
-          {
-            "id": "smith-s-aprons",
-            "name": "Smith's Aprons",
-            "level": 1,
-            "biome": "deep-north",
-            "itemId": "smith-s-aprons"
           },
           {
             "id": "wardrobe",
@@ -34957,6 +34971,55 @@
         "expedition": [],
         "stations": [
           {
+            "id": "anvils",
+            "name": "Anvils",
+            "level": 1,
+            "biome": "black-forest",
+            "itemId": "anvils"
+          },
+          {
+            "id": "smith-s-anvil",
+            "name": "Smith's Anvil",
+            "level": 1,
+            "biome": "swamp",
+            "itemId": "smith-s-anvil"
+          },
+          {
+            "id": "forge-toolrack",
+            "name": "Forge Toolrack",
+            "level": 1,
+            "biome": "swamp",
+            "itemId": "forge-toolrack"
+          },
+          {
+            "id": "forge-bellows",
+            "name": "Forge Bellows",
+            "level": 1,
+            "biome": "swamp",
+            "itemId": "forge-bellows"
+          },
+          {
+            "id": "grinding-wheel",
+            "name": "Grinding Wheel",
+            "level": 1,
+            "biome": "swamp",
+            "itemId": "grinding-wheel"
+          },
+          {
+            "id": "chopping-block",
+            "name": "Chopping Block",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "chopping-block"
+          },
+          {
+            "id": "tanning-rack",
+            "name": "Tanning Rack",
+            "level": 1,
+            "biome": "meadows",
+            "itemId": "tanning-rack"
+          },
+          {
             "id": "artisan-table",
             "name": "Artisan Table",
             "level": 1,
@@ -35034,13 +35097,6 @@
             "itemId": "yule-tree"
           },
           {
-            "id": "tanning-rack",
-            "name": "Tanning Rack",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "tanning-rack"
-          },
-          {
             "id": "chest",
             "name": "Chest",
             "level": 1,
@@ -35053,41 +35109,6 @@
             "level": 1,
             "biome": "meadows",
             "itemId": "beehive"
-          },
-          {
-            "id": "grinding-wheel",
-            "name": "Grinding wheel",
-            "level": 1,
-            "biome": "black-forest",
-            "itemId": "grinding-wheel"
-          },
-          {
-            "id": "forge-bellows",
-            "name": "Forge bellows",
-            "level": 1,
-            "biome": "swamp",
-            "itemId": "forge-bellows"
-          },
-          {
-            "id": "forge-toolrack",
-            "name": "Forge Toolrack",
-            "level": 1,
-            "biome": "swamp",
-            "itemId": "forge-toolrack"
-          },
-          {
-            "id": "anvils",
-            "name": "Anvils",
-            "level": 1,
-            "biome": "black-forest",
-            "itemId": "anvils"
-          },
-          {
-            "id": "chopping-block",
-            "name": "Chopping block",
-            "level": 1,
-            "biome": "meadows",
-            "itemId": "chopping-block"
           },
           {
             "id": "wood-stack",
@@ -35144,13 +35165,6 @@
             "level": 1,
             "biome": "black-forest",
             "itemId": "cart"
-          },
-          {
-            "id": "smith-s-anvil",
-            "name": "Smith's Anvil",
-            "level": 1,
-            "biome": "swamp",
-            "itemId": "smith-s-anvil"
           },
           {
             "id": "sign",
@@ -35788,6 +35802,13 @@
         "expedition": [],
         "stations": [
           {
+            "id": "rune-table",
+            "name": "Rune Table",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "rune-table"
+          },
+          {
             "id": "black-forge",
             "name": "Black Forge",
             "level": 1,
@@ -35828,13 +35849,6 @@
             "level": 1,
             "biome": "mistlands",
             "itemId": "dvergr-sharp-stakes"
-          },
-          {
-            "id": "rune-table",
-            "name": "Rune table",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "rune-table"
           },
           {
             "id": "wisp-torch",
@@ -66152,6 +66166,1157 @@
       }
     },
     {
+      "id": "artisan-press",
+      "name": "Artisan Press",
+      "image": null,
+      "biome": "mistlands",
+      "tier": 7,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Artisan_Press",
+      "names": {},
+      "description": null,
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-marble",
+            "name": "black-marble",
+            "amount": 5
+          },
+          {
+            "item": "bronze",
+            "name": "bronze",
+            "amount": 5
+          },
+          {
+            "item": "majestic-carapace",
+            "name": "majestic-carapace",
+            "amount": 1
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "black-forge-cooler",
+      "name": "Black Forge Cooler",
+      "image": null,
+      "biome": "mistlands",
+      "tier": 7,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Forge_Cooler",
+      "names": {
+        "cs": "Kalící nádrž"
+      },
+      "description": "Black forge improvement",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "iron",
+            "amount": 5
+          },
+          {
+            "item": "copper",
+            "name": "copper",
+            "amount": 5
+          },
+          {
+            "item": "black-marble",
+            "name": "black-marble",
+            "amount": 4
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "vice",
+      "name": "Vice",
+      "image": null,
+      "biome": "mistlands",
+      "tier": 7,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Vice",
+      "names": {
+        "cs": "Svěrák",
+        "ru": "Тиски"
+      },
+      "description": "Black forge improvement",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "iron",
+            "name": "iron",
+            "amount": 5
+          },
+          {
+            "item": "copper",
+            "name": "copper",
+            "amount": 8
+          },
+          {
+            "item": "mechanical-spring",
+            "name": "mechanical-spring",
+            "amount": 2
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "metal-cutter",
+      "name": "Metal Cutter",
+      "image": null,
+      "biome": "ashlands",
+      "tier": 8,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Metal_Cutter",
+      "names": {
+        "cs": "Štípač kovu"
+      },
+      "description": "Black Forge improvement",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-marble",
+            "name": "black-marble",
+            "amount": 5
+          },
+          {
+            "item": "flametal",
+            "name": "flametal",
+            "amount": 5
+          },
+          {
+            "item": "ashwood",
+            "name": "ashwood",
+            "amount": 5
+          },
+          {
+            "item": "charred-bone",
+            "name": "charred-bone",
+            "amount": 4
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "gem-cutter",
+      "name": "Gem Cutter",
+      "image": null,
+      "biome": "ashlands",
+      "tier": 8,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Gem_Cutter",
+      "names": {
+        "cs": "Bruska na drahokamy"
+      },
+      "description": "Black forge improvement",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "flametal",
+            "name": "flametal",
+            "amount": 5
+          },
+          {
+            "item": "ashwood",
+            "name": "ashwood",
+            "amount": 8
+          },
+          {
+            "item": "morgen-sinew",
+            "name": "morgen-sinew",
+            "amount": 2
+          },
+          {
+            "item": "bloodstone",
+            "name": "bloodstone",
+            "amount": 1
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "smith-s-aprons",
+      "name": "Smith's Aprons",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 9,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Smith's_Aprons",
+      "names": {},
+      "description": "When dealing with extreme temperatures, workplace safety is of the highest import.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "bloodgold",
+            "name": "bloodgold",
+            "amount": 5
+          },
+          {
+            "item": "timberwood",
+            "name": "timberwood",
+            "amount": 8
+          },
+          {
+            "item": "moose-hide",
+            "name": "moose-hide",
+            "amount": 2
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "forge-cooler",
+      "name": "Forge Cooler",
+      "image": null,
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Forge_Cooler",
+      "names": {},
+      "description": "Once a creation is done, this barrel of water will bring the metal down to a manageable temperature.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "finewood",
+            "name": "finewood",
+            "amount": 25
+          },
+          {
+            "item": "copper",
+            "name": "copper",
+            "amount": 10
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "anvils",
+      "name": "Anvils",
+      "image": null,
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Anvils",
+      "names": {
+        "cs": "Kovadlinky",
+        "fr": "Enclumes",
+        "ru": "Наковальни"
+      },
+      "description": "For more detailed work, multiple kinds of anvils can come in handy.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "wood",
+            "amount": 5
+          },
+          {
+            "item": "bronze",
+            "name": "bronze",
+            "amount": 2
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "smith-s-anvil",
+      "name": "Smith's Anvil",
+      "image": null,
+      "biome": "swamp",
+      "tier": 4,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Smith's_Anvil",
+      "names": {
+        "cs": "Kovářská kovadlina",
+        "fr": "Enclume de forgeron"
+      },
+      "description": "A large anvil for working large items. Make sure it doesn't fall on your feet.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "wood",
+            "amount": 5
+          },
+          {
+            "item": "iron",
+            "name": "iron",
+            "amount": 20
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "forge-toolrack",
+      "name": "Forge Toolrack",
+      "image": null,
+      "biome": "swamp",
+      "tier": 4,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Forge_Toolrack",
+      "names": {
+        "cs": "Stojan na nástroje",
+        "fr": "Râtelier de forge",
+        "ru": "Стойка для инструментов"
+      },
+      "description": "You need lots of different tools to work with. These conveniently come with a rack for storage.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "wood",
+            "amount": 10
+          },
+          {
+            "item": "iron",
+            "name": "iron",
+            "amount": 15
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "forge-bellows",
+      "name": "Forge Bellows",
+      "image": null,
+      "biome": "swamp",
+      "tier": 4,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Forge_Bellows",
+      "names": {
+        "fr": "Soufflet de forge",
+        "ru": "Кузнечные меха"
+      },
+      "description": "Pressing down on these bellows generates more heat, which is very helpful for smithing.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "wood",
+            "amount": 5
+          },
+          {
+            "item": "deer-hide",
+            "name": "deer-hide",
+            "amount": 5
+          },
+          {
+            "item": "chain",
+            "name": "chain",
+            "amount": 4
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "grinding-wheel",
+      "name": "Grinding Wheel",
+      "image": null,
+      "biome": "swamp",
+      "tier": 4,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Grinding_Wheel",
+      "names": {
+        "cs": "Brusný kotouč",
+        "fr": "Meule",
+        "ru": "Шлифовальный круг"
+      },
+      "description": "A grinding wheel is necessary for sharpening any kind of sword.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "wood",
+            "amount": 25
+          },
+          {
+            "item": "sharpening-stone",
+            "name": "sharpening-stone",
+            "amount": 1
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "chopping-block",
+      "name": "Chopping Block",
+      "image": null,
+      "biome": "meadows",
+      "tier": 1,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Chopping_Block",
+      "names": {
+        "cs": "Špalek na štípání",
+        "fr": "Billot",
+        "ru": "Колода для рубки"
+      },
+      "description": "An axe is a very versatile tool for crafting.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "wood",
+            "amount": 10
+          },
+          {
+            "item": "flint",
+            "name": "flint",
+            "amount": 10
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "tanning-rack",
+      "name": "Tanning Rack",
+      "image": null,
+      "biome": "meadows",
+      "tier": 1,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Tanning_Rack",
+      "names": {
+        "fr": "Support de tannage",
+        "ru": "Дубильный станок"
+      },
+      "description": "Leathers and hides need proper treatment before they can be used.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "wood",
+            "name": "wood",
+            "amount": 10
+          },
+          {
+            "item": "flint",
+            "name": "flint",
+            "amount": 15
+          },
+          {
+            "item": "leather-scraps",
+            "name": "leather-scraps",
+            "amount": 20
+          },
+          {
+            "item": "deer-hide",
+            "name": "deer-hide",
+            "amount": 5
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "adze",
+      "name": "Adze",
+      "image": null,
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Adze",
+      "names": {
+        "cs": "Skoble",
+        "fr": "Herminette",
+        "ru": "Тесло"
+      },
+      "description": "Sometimes you need to work the problem from a different angle.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "finewood",
+            "name": "finewood",
+            "amount": 10
+          },
+          {
+            "item": "bronze",
+            "name": "bronze",
+            "amount": 3
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "tool-shelf",
+      "name": "Tool Shelf",
+      "image": null,
+      "biome": "mountain",
+      "tier": 5,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Tool_Shelf",
+      "names": {
+        "cs": "Police na nářadí",
+        "fr": "Étagère à outils",
+        "ru": "Полка для инструментов"
+      },
+      "description": "Fine detail work requires fine tools to match.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "finewood",
+            "name": "finewood",
+            "amount": 10
+          },
+          {
+            "item": "iron",
+            "name": "iron",
+            "amount": 4
+          },
+          {
+            "item": "obsidian",
+            "name": "obsidian",
+            "amount": 4
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "rune-table",
+      "name": "Rune Table",
+      "image": null,
+      "biome": "mistlands",
+      "tier": 7,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Rune_Table",
+      "names": {
+        "ru": "Рунный стол"
+      },
+      "description": "Runes are a well-known tool for channeling magic, if one knows how to read them.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-marble",
+            "name": "black-marble",
+            "amount": 10
+          },
+          {
+            "item": "yggdrasil-wood",
+            "name": "yggdrasil-wood",
+            "amount": 5
+          },
+          {
+            "item": "refined-eitr",
+            "name": "refined-eitr",
+            "amount": 10
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "unfading-candles",
+      "name": "Unfading Candles",
+      "image": null,
+      "biome": "mistlands",
+      "tier": 7,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Unfading_Candles",
+      "names": {
+        "ru": "Незатухающие свечи"
+      },
+      "description": "These candles emit a strange light, urging more potent magic to coalesce around them.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "black-marble",
+            "name": "black-marble",
+            "amount": 10
+          },
+          {
+            "item": "skeleton-trophy",
+            "name": "skeleton-trophy",
+            "amount": 3
+          },
+          {
+            "item": "refined-eitr",
+            "name": "refined-eitr",
+            "amount": 10
+          },
+          {
+            "item": "resin",
+            "name": "resin",
+            "amount": 15
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "feathery-wreath",
+      "name": "Feathery Wreath",
+      "image": null,
+      "biome": "ashlands",
+      "tier": 8,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Feathery_Wreath",
+      "names": {},
+      "description": "An offering to the mysterious powers scattered across the realms. Perhaps they will lend themselves to you.",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "celestial-feather",
+            "name": "celestial-feather",
+            "amount": 8
+          },
+          {
+            "item": "asksvin-trophy",
+            "name": "asksvin-trophy",
+            "amount": 1
+          },
+          {
+            "item": "refined-eitr",
+            "name": "refined-eitr",
+            "amount": 10
+          },
+          {
+            "item": "ashwood",
+            "name": "ashwood",
+            "amount": 3
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "standing-loom",
+      "name": "Standing Loom",
+      "image": null,
+      "biome": "deep-north",
+      "tier": 9,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Standing_Loom",
+      "names": {},
+      "description": "The Norns weave the threads of fate together in a magical tapestry. What shall you weave?",
+      "stats": null,
+      "recipe": {
+        "station": null,
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "timberwood",
+            "name": "timberwood",
+            "amount": 5
+          },
+          {
+            "item": "nornathread",
+            "name": "nornathread",
+            "amount": 10
+          }
+        ],
+        "stationId": null
+      },
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": []
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
       "id": "smelter",
       "name": "Smelter",
       "image": null,
@@ -66700,7 +67865,10 @@
       "stack": null,
       "weight": null,
       "wiki": "https://valheim.weirdgloop.org/w/Galdr_Table",
-      "names": {},
+      "names": {
+        "cs": "Galdrový stůl",
+        "ru": "Стол гальдров"
+      },
       "description": "Mysterious galdr forces gather upon this altar. It's up to you to harness them...",
       "stats": null,
       "recipe": {
@@ -71991,7 +73159,15 @@
         "meads": [],
         "comfort": [],
         "expedition": [],
-        "stations": [],
+        "stations": [
+          {
+            "id": "artisan-press",
+            "name": "Artisan Press",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "artisan-press"
+          }
+        ],
         "crafting": []
       },
       "crossLinks": {}
@@ -72937,80 +74113,6 @@
       "crossLinks": {}
     },
     {
-      "id": "tanning-rack",
-      "name": "Tanning Rack",
-      "image": null,
-      "biome": "meadows",
-      "tier": 1,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Tanning_Rack",
-      "names": {},
-      "description": "Leathers and hides need proper treatment before they can be used.",
-      "stats": null,
-      "recipe": {
-        "station": "Workbench",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "wood",
-            "name": "Wood",
-            "amount": 10
-          },
-          {
-            "item": "flint",
-            "name": "Flint",
-            "amount": 15
-          },
-          {
-            "item": "leather-scraps",
-            "name": "Leather Scraps",
-            "amount": 20
-          },
-          {
-            "item": "deer-hide",
-            "name": "Deer Hide",
-            "amount": 5
-          }
-        ],
-        "stationId": "workbench"
-      },
-      "station": {
-        "id": "workbench",
-        "name": "Workbench",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Workbench",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Workbench"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
       "id": "obliterator",
       "name": "Obliterator",
       "image": null,
@@ -73356,75 +74458,6 @@
         "raw": [
           {
             "text": "Loot chests"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "tool-shelf",
-      "name": "Tool shelf",
-      "image": null,
-      "biome": "mountain",
-      "tier": 5,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Tool_Shelf",
-      "names": {},
-      "description": "Fine detail work requires fine tools to match.",
-      "stats": null,
-      "recipe": {
-        "station": "Forge",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "iron",
-            "name": "Iron",
-            "amount": 4
-          },
-          {
-            "item": "finewood",
-            "name": "Finewood",
-            "amount": 10
-          },
-          {
-            "item": "obsidian",
-            "name": "Obsidian",
-            "amount": 4
-          }
-        ],
-        "stationId": "forge"
-      },
-      "station": {
-        "id": "forge",
-        "name": "Forge",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Forge",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Forge"
           }
         ]
       },
@@ -73898,70 +74931,6 @@
       "crossLinks": {}
     },
     {
-      "id": "adze",
-      "name": "Adze",
-      "image": null,
-      "biome": "black-forest",
-      "tier": 2,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Adze",
-      "names": {},
-      "description": "Sometimes you need to work the problem from a different angle.",
-      "stats": null,
-      "recipe": {
-        "station": "Forge",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "finewood",
-            "name": "Finewood",
-            "amount": 10
-          },
-          {
-            "item": "bronze",
-            "name": "Bronze",
-            "amount": 3
-          }
-        ],
-        "stationId": "forge"
-      },
-      "station": {
-        "id": "forge",
-        "name": "Forge",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Forge",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Forge"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
       "id": "beehive",
       "name": "Beehive",
       "image": null,
@@ -73989,395 +74958,6 @@
             "item": "queen-bee",
             "name": "Queen Bee",
             "amount": 1
-          }
-        ],
-        "stationId": "workbench"
-      },
-      "station": {
-        "id": "workbench",
-        "name": "Workbench",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Workbench",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Workbench"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "grinding-wheel",
-      "name": "Grinding wheel",
-      "image": null,
-      "biome": "black-forest",
-      "tier": 2,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Grinding_Wheel",
-      "names": {},
-      "description": "A grinding wheel is necessary for sharpening any kind of sword.",
-      "stats": null,
-      "recipe": {
-        "station": "Workbench",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "wood",
-            "name": "Wood",
-            "amount": 25
-          },
-          {
-            "item": "sharpening-stone",
-            "name": "Sharpening Stone",
-            "amount": 1
-          }
-        ],
-        "stationId": "workbench"
-      },
-      "station": {
-        "id": "workbench",
-        "name": "Workbench",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Workbench",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Workbench"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "forge-bellows",
-      "name": "Forge bellows",
-      "image": null,
-      "biome": "swamp",
-      "tier": 4,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Forge_Bellows",
-      "names": {},
-      "description": "Pressing down on these bellows generates more heat, which is very helpful for smithing.",
-      "stats": null,
-      "recipe": {
-        "station": "Workbench",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "wood",
-            "name": "Wood",
-            "amount": 5
-          },
-          {
-            "item": "deer-hide",
-            "name": "Deer Hide",
-            "amount": 5
-          },
-          {
-            "item": "chain",
-            "name": "Chain",
-            "amount": 4
-          }
-        ],
-        "stationId": "workbench"
-      },
-      "station": {
-        "id": "workbench",
-        "name": "Workbench",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Workbench",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Workbench"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "forge-toolrack",
-      "name": "Forge Toolrack",
-      "image": null,
-      "biome": "swamp",
-      "tier": 4,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Forge_Toolrack",
-      "names": {},
-      "description": "You need lots of different tools to work with. These conveniently come with a rack for storage.",
-      "stats": null,
-      "recipe": {
-        "station": "Workbench",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "iron",
-            "name": "Iron",
-            "amount": 15
-          },
-          {
-            "item": "wood",
-            "name": "Wood",
-            "amount": 10
-          }
-        ],
-        "stationId": "workbench"
-      },
-      "station": {
-        "id": "workbench",
-        "name": "Workbench",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Workbench",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Workbench"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "anvils",
-      "name": "Anvils",
-      "image": null,
-      "biome": "black-forest",
-      "tier": 2,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Anvils",
-      "names": {},
-      "description": "For more detailed work, multiple kinds of anvils can come in handy.",
-      "stats": null,
-      "recipe": {
-        "station": "Workbench",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "wood",
-            "name": "Wood",
-            "amount": 5
-          },
-          {
-            "item": "bronze",
-            "name": "Bronze",
-            "amount": 2
-          }
-        ],
-        "stationId": "workbench"
-      },
-      "station": {
-        "id": "workbench",
-        "name": "Workbench",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Workbench",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Workbench"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "forge-cooler",
-      "name": "Forge cooler",
-      "image": null,
-      "biome": "black-forest",
-      "tier": 2,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Forge_Cooler",
-      "names": {},
-      "description": "Once a creation is done, this barrel of water will bring the metal down to a manageable temperature.",
-      "stats": null,
-      "recipe": {
-        "station": "Forge",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "finewood",
-            "name": "Finewood",
-            "amount": 25
-          },
-          {
-            "item": "copper",
-            "name": "Copper",
-            "amount": 10
-          }
-        ],
-        "stationId": "forge"
-      },
-      "station": {
-        "id": "forge",
-        "name": "Forge",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Forge",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Forge"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "chopping-block",
-      "name": "Chopping block",
-      "image": null,
-      "biome": "meadows",
-      "tier": 1,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Chopping_Block",
-      "names": {},
-      "description": "An axe is a very versatile tool for crafting.",
-      "stats": null,
-      "recipe": {
-        "station": "Workbench",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "wood",
-            "name": "Wood",
-            "amount": 10
-          },
-          {
-            "item": "flint",
-            "name": "Flint",
-            "amount": 10
           }
         ],
         "stationId": "workbench"
@@ -74794,75 +75374,6 @@
       "crossLinks": {}
     },
     {
-      "id": "black-forge-cooler",
-      "name": "Black forge cooler",
-      "image": null,
-      "biome": "mistlands",
-      "tier": 7,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Black_Forge_Cooler",
-      "names": {},
-      "description": "Black forge improvement",
-      "stats": null,
-      "recipe": {
-        "station": "Black Forge",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "iron",
-            "name": "Iron",
-            "amount": 5
-          },
-          {
-            "item": "copper",
-            "name": "Copper",
-            "amount": 5
-          },
-          {
-            "item": "black-marble",
-            "name": "Black Marble",
-            "amount": 4
-          }
-        ],
-        "stationId": "black-forge"
-      },
-      "station": {
-        "id": "black-forge",
-        "name": "Black Forge",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Black Forge",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Black Forge"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
       "id": "dvergr-stakewall",
       "name": "Dvergr stakewall",
       "image": null,
@@ -74991,154 +75502,6 @@
       "crossLinks": {}
     },
     {
-      "id": "gem-cutter",
-      "name": "Gem cutter",
-      "image": null,
-      "biome": "ashlands",
-      "tier": 8,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Gem_Cutter",
-      "names": {},
-      "description": "Black forge improvement",
-      "stats": null,
-      "recipe": {
-        "station": "Black Forge",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "flametal",
-            "name": "Flametal",
-            "amount": 5
-          },
-          {
-            "item": "ashwood",
-            "name": "Ashwood",
-            "amount": 8
-          },
-          {
-            "item": "morgen-sinew",
-            "name": "Morgen Sinew",
-            "amount": 2
-          },
-          {
-            "item": "bloodstone",
-            "name": "Bloodstone",
-            "amount": 1
-          }
-        ],
-        "stationId": "black-forge"
-      },
-      "station": {
-        "id": "black-forge",
-        "name": "Black Forge",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Black Forge",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Black Forge"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "metal-cutter",
-      "name": "Metal cutter",
-      "image": null,
-      "biome": "ashlands",
-      "tier": 8,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Metal_Cutter",
-      "names": {},
-      "description": "Black Forge improvement",
-      "stats": null,
-      "recipe": {
-        "station": "Black Forge",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "black-marble",
-            "name": "Black Marble",
-            "amount": 5
-          },
-          {
-            "item": "flametal",
-            "name": "Flametal",
-            "amount": 5
-          },
-          {
-            "item": "ashwood",
-            "name": "Ashwood",
-            "amount": 5
-          },
-          {
-            "item": "charred-bone",
-            "name": "Charred Bone",
-            "amount": 4
-          }
-        ],
-        "stationId": "black-forge"
-      },
-      "station": {
-        "id": "black-forge",
-        "name": "Black Forge",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Black Forge",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Black Forge"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
       "id": "pile-of-skulls",
       "name": "Pile of Skulls",
       "image": null,
@@ -75171,80 +75534,6 @@
         "locations": [],
         "traders": [],
         "raw": []
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "feathery-wreath",
-      "name": "Feathery Wreath",
-      "image": null,
-      "biome": "ashlands",
-      "tier": 8,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Feathery_Wreath",
-      "names": {},
-      "description": "An offering to the mysterious powers scattered across the realms. Perhaps they will lend themselves to you.",
-      "stats": null,
-      "recipe": {
-        "station": "Galdr Table",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "celestial-feather",
-            "name": "Celestial Feather",
-            "amount": 8
-          },
-          {
-            "item": "asksvin-trophy",
-            "name": "Asksvin Trophy",
-            "amount": 1
-          },
-          {
-            "item": "refined-eitr",
-            "name": "Refined Eitr",
-            "amount": 10
-          },
-          {
-            "item": "ashwood",
-            "name": "Ashwood",
-            "amount": 3
-          }
-        ],
-        "stationId": "galdr-table"
-      },
-      "station": {
-        "id": "galdr-table",
-        "name": "Galdr Table",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Galdr Table",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Galdr Table"
-          }
-        ]
       },
       "usedIn": {
         "weapons": [],
@@ -76135,70 +76424,6 @@
       "crossLinks": {}
     },
     {
-      "id": "smith-s-anvil",
-      "name": "Smith's Anvil",
-      "image": null,
-      "biome": "swamp",
-      "tier": 4,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Smith's_Anvil",
-      "names": {},
-      "description": "A large anvil for working large items. Make sure it doesn't fall on your feet.",
-      "stats": null,
-      "recipe": {
-        "station": "Workbench",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "iron",
-            "name": "Iron",
-            "amount": 20
-          },
-          {
-            "item": "wood",
-            "name": "Wood",
-            "amount": 5
-          }
-        ],
-        "stationId": "workbench"
-      },
-      "station": {
-        "id": "workbench",
-        "name": "Workbench",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Workbench",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Workbench"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
       "id": "ward",
       "name": "Ward",
       "image": null,
@@ -76843,62 +77068,6 @@
       "crossLinks": {}
     },
     {
-      "id": "rune-table",
-      "name": "Rune table",
-      "image": null,
-      "biome": "mistlands",
-      "tier": 7,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Rune_Table",
-      "names": {},
-      "description": "Runes are a well-known tool for channeling magic, if one knows how to read them.",
-      "stats": null,
-      "recipe": {
-        "station": null,
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "black-marble",
-            "name": "Black Marble",
-            "amount": 10
-          },
-          {
-            "item": "yggdrasil-wood",
-            "name": "Yggdrasil Wood",
-            "amount": 5
-          },
-          {
-            "item": "refined-eitr",
-            "name": "Refined Eitr",
-            "amount": 10
-          }
-        ],
-        "stationId": null
-      },
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [],
-        "traders": [],
-        "raw": []
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
       "id": "wisp-torch",
       "name": "Wisp Torch",
       "image": null,
@@ -76936,149 +77105,6 @@
         "locations": [],
         "traders": [],
         "raw": []
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "vice",
-      "name": "Vice",
-      "image": null,
-      "biome": "mistlands",
-      "tier": 7,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Template%3AInfobox_structure%2Ftestcases",
-      "names": {},
-      "description": "Black forge improvement",
-      "stats": null,
-      "recipe": {
-        "station": "Black Forge",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "iron",
-            "name": "Iron",
-            "amount": 5
-          },
-          {
-            "item": "copper",
-            "name": "Copper",
-            "amount": 8
-          },
-          {
-            "item": "mechanical-spring",
-            "name": "Mechanical spring",
-            "amount": 2
-          }
-        ],
-        "stationId": "black-forge"
-      },
-      "station": {
-        "id": "black-forge",
-        "name": "Black Forge",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Black forge",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Black forge"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "unfading-candles",
-      "name": "Unfading Candles",
-      "image": null,
-      "biome": "mistlands",
-      "tier": 7,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Unfading_Candles",
-      "names": {},
-      "description": "These candles emit a strange light, urging more potent magic to coalesce around them.",
-      "stats": null,
-      "recipe": {
-        "station": "Galdr Table",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "black-marble",
-            "name": "Black Marble",
-            "amount": 10
-          },
-          {
-            "item": "skeleton-trophy",
-            "name": "Skeleton Trophy",
-            "amount": 3
-          },
-          {
-            "item": "refined-eitr",
-            "name": "Refined Eitr",
-            "amount": 10
-          },
-          {
-            "item": "resin",
-            "name": "Resin",
-            "amount": 15
-          }
-        ],
-        "stationId": "galdr-table"
-      },
-      "station": {
-        "id": "galdr-table",
-        "name": "Galdr Table",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Galdr Table",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Galdr Table"
-          }
-        ]
       },
       "usedIn": {
         "weapons": [],
@@ -77509,139 +77535,6 @@
         "raw": [
           {
             "text": "Workbench"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "standing-loom",
-      "name": "Standing Loom",
-      "image": null,
-      "biome": "deep-north",
-      "tier": 9,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Standing_Loom",
-      "names": {},
-      "description": "The Norns weave the threads of fate together in a magical tapestry. What shall you weave?",
-      "stats": null,
-      "recipe": {
-        "station": "Galdr Table",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "timberwood",
-            "name": "Timberwood",
-            "amount": 5
-          },
-          {
-            "item": "nornathread",
-            "name": "Nornathread",
-            "amount": 10
-          }
-        ],
-        "stationId": "galdr-table"
-      },
-      "station": {
-        "id": "galdr-table",
-        "name": "Galdr Table",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Galdr Table",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Galdr Table"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "smith-s-aprons",
-      "name": "Smith's Aprons",
-      "image": null,
-      "biome": "deep-north",
-      "tier": 9,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Smith's_Aprons",
-      "names": {},
-      "description": "When dealing with extreme temperatures, workplace safety is of the highest import.",
-      "stats": null,
-      "recipe": {
-        "station": "Black Forge",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "bloodgold",
-            "name": "Bloodgold",
-            "amount": 5
-          },
-          {
-            "item": "timberwood",
-            "name": "Timberwood",
-            "amount": 8
-          },
-          {
-            "item": "moose-hide",
-            "name": "Moose Hide",
-            "amount": 2
-          }
-        ],
-        "stationId": "black-forge"
-      },
-      "station": {
-        "id": "black-forge",
-        "name": "Black Forge",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Black Forge",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Black Forge"
           }
         ]
       },
@@ -79411,9 +79304,9 @@
         "stations": [
           {
             "id": "grinding-wheel",
-            "name": "Grinding wheel",
+            "name": "Grinding Wheel",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "swamp",
             "itemId": "grinding-wheel"
           }
         ],
@@ -79637,6 +79530,13 @@
         "expedition": [],
         "stations": [
           {
+            "id": "vice",
+            "name": "Vice",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "vice"
+          },
+          {
             "id": "ballista",
             "name": "Ballista",
             "level": 1,
@@ -79649,13 +79549,6 @@
             "level": 1,
             "biome": "mistlands",
             "itemId": "trap"
-          },
-          {
-            "id": "vice",
-            "name": "Vice",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "vice"
           }
         ],
         "crafting": []
