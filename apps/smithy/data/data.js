@@ -384,7 +384,9 @@ window.VA_DATA = {
                   "item": "flametal",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 2,
@@ -396,7 +398,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 3,
@@ -408,7 +412,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 4,
@@ -420,7 +426,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             }
           ],
           "armorSource": "rendered",
@@ -428,6 +436,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Ashen cape is the combat focused Ashlands-tier Cape.",
+          "availableFrom": "ashlands",
+          "availableTier": 8,
           "names": {
             "ru": "Пепельный плащ"
           }
@@ -481,7 +491,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 2,
@@ -501,7 +513,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 3,
@@ -521,7 +535,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 4,
@@ -541,7 +557,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             }
           ],
           "armorSource": "table",
@@ -549,6 +567,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Ask Set is an Ashlands-tier armor. This set is one tier above Carapace Armor and the Eitr-weave Set, and should be considered a \"medium armor,\" as it has a lower armor value than Flametal Armor, but a higher armor value than the Embla Set. Wearing all three pieces provides the Ask's Endurance set bonus, reducing stamina usage from running, jumping, and attacking, and providing +10% Pierce dama",
+          "availableFrom": "ashlands",
+          "availableTier": 8,
           "names": {
             "ru": "Набор Аска"
           }
@@ -579,7 +599,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 2,
@@ -599,7 +621,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 3,
@@ -619,7 +643,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 4,
@@ -639,7 +665,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             }
           ],
           "armorSource": "table",
@@ -647,6 +675,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Ask Set is an Ashlands-tier armor. This set is one tier above Carapace Armor and the Eitr-weave Set, and should be considered a \"medium armor,\" as it has a lower armor value than Flametal Armor, but a higher armor value than the Embla Set. Wearing all three pieces provides the Ask's Endurance set bonus, reducing stamina usage from running, jumping, and attacking, and providing +10% Pierce dama",
+          "availableFrom": "ashlands",
+          "availableTier": 8,
           "names": {
             "ru": "Набор Аска"
           }
@@ -677,7 +707,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 2,
@@ -697,7 +729,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 3,
@@ -717,7 +751,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 4,
@@ -737,7 +773,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             }
           ],
           "armorSource": "table",
@@ -745,6 +783,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Ask Set is an Ashlands-tier armor. This set is one tier above Carapace Armor and the Eitr-weave Set, and should be considered a \"medium armor,\" as it has a lower armor value than Flametal Armor, but a higher armor value than the Embla Set. Wearing all three pieces provides the Ask's Endurance set bonus, reducing stamina usage from running, jumping, and attacking, and providing +10% Pierce dama",
+          "availableFrom": "ashlands",
+          "availableTier": 8,
           "names": {
             "ru": "Набор Аска"
           }
@@ -785,7 +825,9 @@ window.VA_DATA = {
                   "item": "morgen-sinew",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 2,
@@ -797,7 +839,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 3,
@@ -809,7 +853,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 4,
@@ -821,7 +867,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             }
           ],
           "armorSource": "rendered",
@@ -829,6 +877,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Asksvin cloak is a craftable Cape piece available in Ashlands. It offers a -15% dodge stamina usage and the Wind run effect. Wind run increases running speed up to +25% and decreases running stamina usage down to -100% based on wind direction and wind strength.",
+          "availableFrom": "ashlands",
+          "availableTier": 8,
           "names": {
             "ru": "Плащ из шкуры пеплозавра"
           }
@@ -1149,7 +1199,9 @@ window.VA_DATA = {
                   "item": "bear-trophy",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 2,
@@ -1161,7 +1213,9 @@ window.VA_DATA = {
                   "item": "bear-hide",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 3,
@@ -1173,7 +1227,9 @@ window.VA_DATA = {
                   "item": "bear-hide",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 4,
@@ -1185,7 +1241,9 @@ window.VA_DATA = {
                   "item": "bear-hide",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -1193,6 +1251,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Bear Set is a Black Forest-tier armor set. It has a lower armor value than the Bronze Armor, but a higher armor value than the Troll Set. However, wearing all 3 pieces provides the Berserk set bonus, increasing damage, stamina and health regeneration, but making the wearer slightly more vulnerable to physical damage.",
+          "availableFrom": "black-forest",
+          "availableTier": 2,
           "names": {
             "ru": "Медвежья броня"
           }
@@ -1223,7 +1283,9 @@ window.VA_DATA = {
                   "item": "blueberries",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 2,
@@ -1239,7 +1301,9 @@ window.VA_DATA = {
                   "item": "blueberries",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 3,
@@ -1255,7 +1319,9 @@ window.VA_DATA = {
                   "item": "blueberries",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 4,
@@ -1271,7 +1337,9 @@ window.VA_DATA = {
                   "item": "blueberries",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -1279,6 +1347,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Bear Set is a Black Forest-tier armor set. It has a lower armor value than the Bronze Armor, but a higher armor value than the Troll Set. However, wearing all 3 pieces provides the Berserk set bonus, increasing damage, stamina and health regeneration, but making the wearer slightly more vulnerable to physical damage.",
+          "availableFrom": "black-forest",
+          "availableTier": 2,
           "names": {
             "ru": "Медвежья броня"
           }
@@ -1305,7 +1375,9 @@ window.VA_DATA = {
                   "item": "blueberries",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 2,
@@ -1321,7 +1393,9 @@ window.VA_DATA = {
                   "item": "blueberries",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 3,
@@ -1337,7 +1411,9 @@ window.VA_DATA = {
                   "item": "blueberries",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 4,
@@ -1353,7 +1429,9 @@ window.VA_DATA = {
                   "item": "blueberries",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -1361,6 +1439,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Bear Set is a Black Forest-tier armor set. It has a lower armor value than the Bronze Armor, but a higher armor value than the Troll Set. However, wearing all 3 pieces provides the Berserk set bonus, increasing damage, stamina and health regeneration, but making the wearer slightly more vulnerable to physical damage.",
+          "availableFrom": "black-forest",
+          "availableTier": 2,
           "names": {
             "ru": "Медвежья броня"
           }
@@ -1401,7 +1481,9 @@ window.VA_DATA = {
                   "item": "deer-hide",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 2,
@@ -1413,7 +1495,9 @@ window.VA_DATA = {
                   "item": "bronze",
                   "amount": 3
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 3,
@@ -1425,7 +1509,9 @@ window.VA_DATA = {
                   "item": "bronze",
                   "amount": 6
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 4,
@@ -1437,7 +1523,9 @@ window.VA_DATA = {
                   "item": "bronze",
                   "amount": 12
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             }
           ],
           "armorSource": "table",
@@ -1445,6 +1533,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Bronze Armor is a Black Forest-tier armor. Compared with the other armor set available in the Bronze Age, the Troll Set, it provides higher armor values but reduces the player's movement speed. There is no set bonus for bronze armor.",
+          "availableFrom": "black-forest",
+          "availableTier": 2,
           "names": {
             "cs": "Bronzová zbroj",
             "ru": "Бронзовая броня"
@@ -1472,7 +1562,9 @@ window.VA_DATA = {
                   "item": "deer-hide",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 2,
@@ -1484,7 +1576,9 @@ window.VA_DATA = {
                   "item": "bronze",
                   "amount": 3
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 3,
@@ -1496,7 +1590,9 @@ window.VA_DATA = {
                   "item": "bronze",
                   "amount": 6
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 4,
@@ -1508,7 +1604,9 @@ window.VA_DATA = {
                   "item": "bronze",
                   "amount": 12
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             }
           ],
           "armorSource": "table",
@@ -1516,6 +1614,8 @@ window.VA_DATA = {
           "movementSpeed": -5,
           "resistances": [],
           "description": "Bronze Armor is a Black Forest-tier armor. Compared with the other armor set available in the Bronze Age, the Troll Set, it provides higher armor values but reduces the player's movement speed. There is no set bonus for bronze armor.",
+          "availableFrom": "black-forest",
+          "availableTier": 2,
           "names": {
             "cs": "Bronzová zbroj",
             "ru": "Бронзовая броня"
@@ -1543,7 +1643,9 @@ window.VA_DATA = {
                   "item": "deer-hide",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 2,
@@ -1555,7 +1657,9 @@ window.VA_DATA = {
                   "item": "bronze",
                   "amount": 3
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 3,
@@ -1567,7 +1671,9 @@ window.VA_DATA = {
                   "item": "bronze",
                   "amount": 6
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 4,
@@ -1579,7 +1685,9 @@ window.VA_DATA = {
                   "item": "bronze",
                   "amount": 12
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             }
           ],
           "armorSource": "rendered",
@@ -1587,6 +1695,8 @@ window.VA_DATA = {
           "movementSpeed": -5,
           "resistances": [],
           "description": "Bronze Armor is a Black Forest-tier armor. Compared with the other armor set available in the Bronze Age, the Troll Set, it provides higher armor values but reduces the player's movement speed. There is no set bonus for bronze armor.",
+          "availableFrom": "black-forest",
+          "availableTier": 2,
           "names": {
             "cs": "Bronzová zbroj",
             "ru": "Бронзовая броня"
@@ -1631,7 +1741,9 @@ window.VA_DATA = {
                   "amount": 5,
                   "fuel": true
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 2,
@@ -1651,7 +1763,9 @@ window.VA_DATA = {
                   "item": "nornathread",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 3,
@@ -1671,7 +1785,9 @@ window.VA_DATA = {
                   "item": "nornathread",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 4,
@@ -1691,7 +1807,10 @@ window.VA_DATA = {
                   "item": "nornathread",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": null,
+              "availableTier": null,
+              "unreachable": true
             }
           ],
           "armorSource": "table",
@@ -1699,6 +1818,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Caller Set is a Deep North-tier mage armor.",
+          "availableFrom": "deep-north",
+          "availableTier": 9,
           "names": {}
         },
         {
@@ -1725,7 +1846,9 @@ window.VA_DATA = {
                   "amount": 5,
                   "fuel": true
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 2,
@@ -1745,7 +1868,9 @@ window.VA_DATA = {
                   "item": "nornathread",
                   "amount": 3
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 3,
@@ -1765,7 +1890,9 @@ window.VA_DATA = {
                   "item": "nornathread",
                   "amount": 6
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 4,
@@ -1785,7 +1912,10 @@ window.VA_DATA = {
                   "item": "nornathread",
                   "amount": 12
                 }
-              ]
+              ],
+              "availableFrom": null,
+              "availableTier": null,
+              "unreachable": true
             }
           ],
           "armorSource": "table",
@@ -1795,6 +1925,8 @@ window.VA_DATA = {
             "Resistant vs Frost"
           ],
           "description": "The Caller Set is a Deep North-tier mage armor.",
+          "availableFrom": "deep-north",
+          "availableTier": 9,
           "names": {}
         },
         {
@@ -1821,7 +1953,9 @@ window.VA_DATA = {
                   "amount": 5,
                   "fuel": true
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 2,
@@ -1841,7 +1975,9 @@ window.VA_DATA = {
                   "item": "nornathread",
                   "amount": 3
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 3,
@@ -1861,7 +1997,9 @@ window.VA_DATA = {
                   "item": "nornathread",
                   "amount": 6
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 4,
@@ -1881,7 +2019,10 @@ window.VA_DATA = {
                   "item": "nornathread",
                   "amount": 12
                 }
-              ]
+              ],
+              "availableFrom": null,
+              "availableTier": null,
+              "unreachable": true
             }
           ],
           "armorSource": "table",
@@ -1889,6 +2030,8 @@ window.VA_DATA = {
           "movementSpeed": -2,
           "resistances": [],
           "description": "The Caller Set is a Deep North-tier mage armor.",
+          "availableFrom": "deep-north",
+          "availableTier": 9,
           "names": {}
         }
       ],
@@ -1900,8 +2043,8 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Cape_of_Oden",
       "kind": "special",
       "tag": "DLC",
-      "biome": null,
-      "tier": null,
+      "biome": "meadows",
+      "tier": 1,
       "setBonus": null,
       "pieces": [
         {
@@ -1926,7 +2069,9 @@ window.VA_DATA = {
                   "item": "coal",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "meadows",
+              "availableTier": 1
             },
             {
               "quality": 2,
@@ -1942,7 +2087,9 @@ window.VA_DATA = {
                   "item": "coal",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "meadows",
+              "availableTier": 1
             },
             {
               "quality": 3,
@@ -1958,7 +2105,9 @@ window.VA_DATA = {
                   "item": "coal",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "meadows",
+              "availableTier": 1
             },
             {
               "quality": 4,
@@ -1974,7 +2123,9 @@ window.VA_DATA = {
                   "item": "coal",
                   "amount": 6
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             }
           ],
           "armorSource": "rendered",
@@ -1984,6 +2135,8 @@ window.VA_DATA = {
           "description": "Cape of Oden is a DLC armor piece. It is only available for the early supporters of Valheim via a Steam code sent out in an email from Iron Gate Studios to those who signed up for the Valheim Beta. Check your email if you signed up!",
           "kind": "special",
           "tag": "DLC",
+          "availableFrom": "meadows",
+          "availableTier": 1,
           "names": {
             "cs": "Kápě Ódina",
             "ru": "Плащ Одина"
@@ -2034,7 +2187,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 15
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 2,
@@ -2058,7 +2213,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 3,
@@ -2082,7 +2239,10 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": null,
+              "availableTier": null,
+              "unreachable": true
             },
             {
               "quality": 4,
@@ -2106,7 +2266,10 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": null,
+              "availableTier": null,
+              "unreachable": true
             }
           ],
           "armorSource": "rendered",
@@ -2114,6 +2277,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Cape of the Caller is a Deep North-tier Cape crafted at the Galdr Table.",
+          "availableFrom": "deep-north",
+          "availableTier": 9,
           "names": {}
         }
       ],
@@ -2293,7 +2458,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 2,
@@ -2313,7 +2480,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 3,
@@ -2333,7 +2502,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 4,
@@ -2353,7 +2524,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             }
           ],
           "armorSource": "rendered",
@@ -2361,6 +2534,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Carapace Armor is a Mistlands-tier armor. This set is the tier above Padded Armor and is replaced by Flametal Armor, the Ask Set, and the Embla Set.",
+          "availableFrom": "mistlands",
+          "availableTier": 7,
           "names": {
             "ru": "Панцирная броня"
           }
@@ -2395,7 +2570,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 2,
@@ -2415,7 +2592,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 3,
@@ -2435,7 +2614,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 4,
@@ -2455,7 +2636,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             }
           ],
           "armorSource": "rendered",
@@ -2463,6 +2646,8 @@ window.VA_DATA = {
           "movementSpeed": -5,
           "resistances": [],
           "description": "Carapace Armor is a Mistlands-tier armor. This set is the tier above Padded Armor and is replaced by Flametal Armor, the Ask Set, and the Embla Set.",
+          "availableFrom": "mistlands",
+          "availableTier": 7,
           "names": {
             "ru": "Панцирная броня"
           }
@@ -2497,7 +2682,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 2,
@@ -2517,7 +2704,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 3,
@@ -2537,7 +2726,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 4,
@@ -2557,7 +2748,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             }
           ],
           "armorSource": "rendered",
@@ -2565,6 +2758,8 @@ window.VA_DATA = {
           "movementSpeed": -5,
           "resistances": [],
           "description": "Carapace Armor is a Mistlands-tier armor. This set is the tier above Padded Armor and is replaced by Flametal Armor, the Ask Set, and the Embla Set.",
+          "availableFrom": "mistlands",
+          "availableTier": 7,
           "names": {
             "ru": "Панцирная броня"
           }
@@ -2613,7 +2808,9 @@ window.VA_DATA = {
                   "item": "amber-pearl",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 2,
@@ -2629,7 +2826,9 @@ window.VA_DATA = {
                   "item": "bronze",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 3,
@@ -2645,7 +2844,9 @@ window.VA_DATA = {
                   "item": "bronze",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 4,
@@ -2661,7 +2862,9 @@ window.VA_DATA = {
                   "item": "bronze",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "rendered",
@@ -2669,6 +2872,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Celebratory Cap is an armor piece marking the fifth anniversary of the release of Valheim that can be crafted at a Workbench.",
+          "availableFrom": "black-forest",
+          "availableTier": 2,
           "names": {
             "ru": "Праздничная шапка"
           }
@@ -2753,7 +2958,9 @@ window.VA_DATA = {
                   "item": "crown-jewel",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             }
           ],
           "armorSource": "infobox",
@@ -2761,6 +2968,8 @@ window.VA_DATA = {
           "movementSpeed": 5,
           "resistances": [],
           "description": "Crown of Valheim is a post-Deep North helmet.",
+          "availableFrom": "deep-north",
+          "availableTier": 9,
           "names": {}
         }
       ],
@@ -2850,7 +3059,9 @@ window.VA_DATA = {
                   "item": "iron",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 2,
@@ -2866,7 +3077,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 3,
@@ -2882,7 +3095,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 4,
@@ -2898,7 +3113,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             }
           ],
           "armorSource": "rendered",
@@ -2906,6 +3123,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Eitr-weave Set is a Mistlands-tier armor. This set is the tier above Padded Armor and should be",
+          "availableFrom": "mistlands",
+          "availableTier": 7,
           "names": {
             "ru": "Сшитый из Эйтра набор"
           }
@@ -2940,7 +3159,9 @@ window.VA_DATA = {
                   "item": "scale-hide",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 2,
@@ -2956,7 +3177,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 3,
@@ -2972,7 +3195,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 4,
@@ -2988,7 +3213,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             }
           ],
           "armorSource": "rendered",
@@ -2996,6 +3223,8 @@ window.VA_DATA = {
           "movementSpeed": -2,
           "resistances": [],
           "description": "The Eitr-weave Set is a Mistlands-tier armor. This set is the tier above Padded Armor and should be",
+          "availableFrom": "mistlands",
+          "availableTier": 7,
           "names": {
             "ru": "Сшитый из Эйтра набор"
           }
@@ -3026,7 +3255,9 @@ window.VA_DATA = {
                   "item": "scale-hide",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 2,
@@ -3042,7 +3273,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 3,
@@ -3058,7 +3291,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 4,
@@ -3074,7 +3309,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             }
           ],
           "armorSource": "rendered",
@@ -3082,6 +3319,8 @@ window.VA_DATA = {
           "movementSpeed": -2,
           "resistances": [],
           "description": "The Eitr-weave Set is a Mistlands-tier armor. This set is the tier above Padded Armor and should be",
+          "availableFrom": "mistlands",
+          "availableTier": 7,
           "names": {
             "ru": "Сшитый из Эйтра набор"
           }
@@ -3112,7 +3351,9 @@ window.VA_DATA = {
                   "item": "scale-hide",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 2,
@@ -3132,7 +3373,9 @@ window.VA_DATA = {
                   "item": "scale-hide",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 3,
@@ -3152,7 +3395,9 @@ window.VA_DATA = {
                   "item": "scale-hide",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "mistlands",
+              "availableTier": 7
             },
             {
               "quality": 4,
@@ -3172,7 +3417,9 @@ window.VA_DATA = {
                   "item": "scale-hide",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             }
           ],
           "armorSource": "rendered",
@@ -3183,6 +3430,8 @@ window.VA_DATA = {
             "Very Weak (2x) vs. Fire"
           ],
           "description": "The Eitr-weave Set is a Mistlands-tier armor. This set is the tier above Padded Armor and should be",
+          "availableFrom": "mistlands",
+          "availableTier": 7,
           "names": {
             "ru": "Накидка из перьев"
           }
@@ -3227,7 +3476,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 2,
@@ -3243,7 +3494,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 3,
@@ -3259,7 +3512,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 4,
@@ -3275,7 +3530,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             }
           ],
           "armorSource": "table",
@@ -3283,6 +3540,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Embla Set is an Ashlands-tier armor. This set is the tier above Carapace Armor and the Eitr-weave Set, and should be considered a \"light armor,\" having a lower armor value than Flametal Armor and the Ask Set. The armor grants even higher Eitr regeneration than the Eitr-weave Set, which makes it the preferred armor when using magic weapons.",
+          "availableFrom": "ashlands",
+          "availableTier": 8,
           "names": {
             "ru": "Набор Эмблы"
           }
@@ -3317,7 +3576,9 @@ window.VA_DATA = {
                   "item": "flametal",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 2,
@@ -3337,7 +3598,9 @@ window.VA_DATA = {
                   "item": "flametal",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 3,
@@ -3357,7 +3620,9 @@ window.VA_DATA = {
                   "item": "flametal",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 4,
@@ -3377,7 +3642,9 @@ window.VA_DATA = {
                   "item": "flametal",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             }
           ],
           "armorSource": "table",
@@ -3385,6 +3652,8 @@ window.VA_DATA = {
           "movementSpeed": -2,
           "resistances": [],
           "description": "The Embla Set is an Ashlands-tier armor. This set is the tier above Carapace Armor and the Eitr-weave Set, and should be considered a \"light armor,\" having a lower armor value than Flametal Armor and the Ask Set. The armor grants even higher Eitr regeneration than the Eitr-weave Set, which makes it the preferred armor when using magic weapons.",
+          "availableFrom": "ashlands",
+          "availableTier": 8,
           "names": {
             "ru": "Набор Эмблы"
           }
@@ -3415,7 +3684,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 2,
@@ -3431,7 +3702,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 3,
@@ -3447,7 +3720,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 4,
@@ -3463,7 +3738,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             }
           ],
           "armorSource": "table",
@@ -3471,6 +3748,8 @@ window.VA_DATA = {
           "movementSpeed": -2,
           "resistances": [],
           "description": "The Embla Set is an Ashlands-tier armor. This set is the tier above Carapace Armor and the Eitr-weave Set, and should be considered a \"light armor,\" having a lower armor value than Flametal Armor and the Ask Set. The armor grants even higher Eitr regeneration than the Eitr-weave Set, which makes it the preferred armor when using magic weapons.",
+          "availableFrom": "ashlands",
+          "availableTier": 8,
           "names": {
             "ru": "Набор Эмблы"
           }
@@ -3612,7 +3891,9 @@ window.VA_DATA = {
                   "item": "cultist-trophy",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 2,
@@ -3628,7 +3909,9 @@ window.VA_DATA = {
                   "item": "wolf-pelt",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 3,
@@ -3644,7 +3927,9 @@ window.VA_DATA = {
                   "item": "wolf-pelt",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 4,
@@ -3660,7 +3945,9 @@ window.VA_DATA = {
                   "item": "wolf-pelt",
                   "amount": 16
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -3668,6 +3955,8 @@ window.VA_DATA = {
           "movementSpeed": 3,
           "resistances": [],
           "description": "Fenris Set is a Mountain-tier armor. This set is the tier above Root Set and Iron Armor",
+          "availableFrom": "mountain",
+          "availableTier": 5,
           "names": {
             "cs": "Fenrisova zbroj",
             "ru": "Броня Фенриса"
@@ -3699,7 +3988,9 @@ window.VA_DATA = {
                   "item": "leather-scraps",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 2,
@@ -3719,7 +4010,9 @@ window.VA_DATA = {
                   "item": "leather-scraps",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 3,
@@ -3739,7 +4032,9 @@ window.VA_DATA = {
                   "item": "leather-scraps",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 4,
@@ -3759,7 +4054,9 @@ window.VA_DATA = {
                   "item": "leather-scraps",
                   "amount": 16
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -3769,6 +4066,8 @@ window.VA_DATA = {
             "Resistant (0.5x) VS Frost"
           ],
           "description": "Fenris Set is a Mountain-tier armor. This set is the tier above Root Set and Iron Armor",
+          "availableFrom": "mountain",
+          "availableTier": 5,
           "names": {
             "cs": "Fenrisova zbroj",
             "ru": "Броня Фенриса"
@@ -3800,7 +4099,9 @@ window.VA_DATA = {
                   "item": "leather-scraps",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 2,
@@ -3820,7 +4121,9 @@ window.VA_DATA = {
                   "item": "leather-scraps",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 3,
@@ -3840,7 +4143,9 @@ window.VA_DATA = {
                   "item": "leather-scraps",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 4,
@@ -3860,7 +4165,9 @@ window.VA_DATA = {
                   "item": "leather-scraps",
                   "amount": 16
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -3868,6 +4175,8 @@ window.VA_DATA = {
           "movementSpeed": 3,
           "resistances": [],
           "description": "Fenris Set is a Mountain-tier armor. This set is the tier above Root Set and Iron Armor",
+          "availableFrom": "mountain",
+          "availableTier": 5,
           "names": {
             "cs": "Fenrisova zbroj",
             "ru": "Броня Фенриса"
@@ -3950,7 +4259,9 @@ window.VA_DATA = {
                   "item": "pufferfish",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 2,
@@ -4006,7 +4317,9 @@ window.VA_DATA = {
                   "item": "pufferfish",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 3,
@@ -4062,7 +4375,9 @@ window.VA_DATA = {
                   "item": "pufferfish",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 4,
@@ -4118,7 +4433,9 @@ window.VA_DATA = {
                   "item": "pufferfish",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             }
           ],
           "armorSource": "rendered",
@@ -4126,6 +4443,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Fishing Hat is an armor piece which can be crafted and upgraded at the Workbench. It provides a +20 skill bonus to Fishing and Swimming.",
+          "availableFrom": "deep-north",
+          "availableTier": 9,
           "names": {
             "ru": "Рыбацкая шляпа"
           }
@@ -4174,7 +4493,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 2,
@@ -4194,7 +4515,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 3,
@@ -4214,7 +4537,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 4,
@@ -4234,7 +4559,9 @@ window.VA_DATA = {
                   "item": "refined-eitr",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             }
           ],
           "armorSource": "table",
@@ -4242,6 +4569,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Flametal Armor is an Ashlands-tier armor. This set is the tier above Carapace Armor and Eitr-weave Set and currently has the highest armor value in the game. Equal level sets include Embla Set and Ask Set.",
+          "availableFrom": "ashlands",
+          "availableTier": 8,
           "names": {
             "ru": "Огнеметаллическая броня"
           }
@@ -4276,7 +4605,9 @@ window.VA_DATA = {
                   "item": "morgen-heart",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 2,
@@ -4292,7 +4623,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 3,
@@ -4308,7 +4641,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 4,
@@ -4324,7 +4659,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             }
           ],
           "armorSource": "table",
@@ -4334,6 +4671,8 @@ window.VA_DATA = {
             "Heat Resistance +20%"
           ],
           "description": "Flametal Armor is an Ashlands-tier armor. This set is the tier above Carapace Armor and Eitr-weave Set and currently has the highest armor value in the game. Equal level sets include Embla Set and Ask Set.",
+          "availableFrom": "ashlands",
+          "availableTier": 8,
           "names": {
             "ru": "Огнеметаллическая броня"
           }
@@ -4364,7 +4703,9 @@ window.VA_DATA = {
                   "item": "charred-bone",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 2,
@@ -4380,7 +4721,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 3,
@@ -4396,7 +4739,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "ashlands",
+              "availableTier": 8
             },
             {
               "quality": 4,
@@ -4412,7 +4757,9 @@ window.VA_DATA = {
                   "item": "asksvin-hide",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             }
           ],
           "armorSource": "table",
@@ -4422,6 +4769,8 @@ window.VA_DATA = {
             "Heat Resistance +20%"
           ],
           "description": "Flametal Armor is an Ashlands-tier armor. This set is the tier above Carapace Armor and Eitr-weave Set and currently has the highest armor value in the game. Equal level sets include Embla Set and Ask Set.",
+          "availableFrom": "ashlands",
+          "availableTier": 8,
           "names": {
             "ru": "Огнеметаллическая броня"
           }
@@ -4678,8 +5027,8 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Hood_of_Oden",
       "kind": "special",
       "tag": "DLC",
-      "biome": null,
-      "tier": null,
+      "biome": "meadows",
+      "tier": 1,
       "setBonus": null,
       "pieces": [
         {
@@ -4704,7 +5053,9 @@ window.VA_DATA = {
                   "item": "coal",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "meadows",
+              "availableTier": 1
             },
             {
               "quality": 2,
@@ -4720,7 +5071,9 @@ window.VA_DATA = {
                   "item": "coal",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "meadows",
+              "availableTier": 1
             },
             {
               "quality": 3,
@@ -4736,7 +5089,9 @@ window.VA_DATA = {
                   "item": "coal",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "meadows",
+              "availableTier": 1
             },
             {
               "quality": 4,
@@ -4752,7 +5107,9 @@ window.VA_DATA = {
                   "item": "coal",
                   "amount": 6
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             }
           ],
           "armorSource": "rendered",
@@ -4762,6 +5119,8 @@ window.VA_DATA = {
           "description": "Hood of Oden is a DLC armor piece. It is only available for the early supporters of Valheim via a Steam code sent out in an email from Iron Gate Studios to those who signed up for the Valheim Beta. Check your email if you signed up!",
           "kind": "special",
           "tag": "DLC",
+          "availableFrom": "meadows",
+          "availableTier": 1,
           "names": {
             "cs": "Kapuce Ódina",
             "ru": "Шлем Одина"
@@ -4804,7 +5163,9 @@ window.VA_DATA = {
                   "item": "deer-hide",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 2,
@@ -4816,7 +5177,9 @@ window.VA_DATA = {
                   "item": "iron",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 3,
@@ -4828,7 +5191,9 @@ window.VA_DATA = {
                   "item": "iron",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 4,
@@ -4840,7 +5205,9 @@ window.VA_DATA = {
                   "item": "iron",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             }
           ],
           "armorSource": "table",
@@ -4848,6 +5215,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Iron Armor is a Swamp-tier armor. This set is the tier above the Troll Set,",
+          "availableFrom": "swamp",
+          "availableTier": 4,
           "names": {
             "cs": "Železná zbroj",
             "ru": "Железная броня"
@@ -4875,7 +5244,9 @@ window.VA_DATA = {
                   "item": "deer-hide",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 2,
@@ -4887,7 +5258,9 @@ window.VA_DATA = {
                   "item": "iron",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 3,
@@ -4899,7 +5272,9 @@ window.VA_DATA = {
                   "item": "iron",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 4,
@@ -4911,7 +5286,9 @@ window.VA_DATA = {
                   "item": "iron",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             }
           ],
           "armorSource": "table",
@@ -4919,6 +5296,8 @@ window.VA_DATA = {
           "movementSpeed": -5,
           "resistances": [],
           "description": "Iron Armor is a Swamp-tier armor. This set is the tier above the Troll Set,",
+          "availableFrom": "swamp",
+          "availableTier": 4,
           "names": {
             "cs": "Železná zbroj",
             "ru": "Железная броня"
@@ -4946,7 +5325,9 @@ window.VA_DATA = {
                   "item": "deer-hide",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 2,
@@ -4958,7 +5339,9 @@ window.VA_DATA = {
                   "item": "iron",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 3,
@@ -4970,7 +5353,9 @@ window.VA_DATA = {
                   "item": "iron",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 4,
@@ -4982,7 +5367,9 @@ window.VA_DATA = {
                   "item": "iron",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             }
           ],
           "armorSource": "table",
@@ -4990,6 +5377,8 @@ window.VA_DATA = {
           "movementSpeed": -5,
           "resistances": [],
           "description": "Iron Armor is a Swamp-tier armor. This set is the tier above the Troll Set,",
+          "availableFrom": "swamp",
+          "availableTier": 4,
           "names": {
             "cs": "Železná zbroj",
             "ru": "Железная броня"
@@ -5028,7 +5417,9 @@ window.VA_DATA = {
                   "item": "deer-hide",
                   "amount": 6
                 }
-              ]
+              ],
+              "availableFrom": "meadows",
+              "availableTier": 1
             },
             {
               "quality": 2,
@@ -5044,7 +5435,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 3,
@@ -5060,7 +5453,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 4,
@@ -5076,7 +5471,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -5084,6 +5481,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Leather Armor is a Meadows-tier armor. It is superior to Rag Armor and is replaced by the Troll Set or Bronze Armor. There are no set bonus effects for leather armor.",
+          "availableFrom": "meadows",
+          "availableTier": 1,
           "names": {
             "cs": "Kožená zbroj",
             "ru": "Кожаная броня"
@@ -5107,7 +5506,9 @@ window.VA_DATA = {
                   "item": "deer-hide",
                   "amount": 6
                 }
-              ]
+              ],
+              "availableFrom": "meadows",
+              "availableTier": 1
             },
             {
               "quality": 2,
@@ -5123,7 +5524,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 3,
@@ -5139,7 +5542,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 4,
@@ -5155,7 +5560,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -5163,6 +5570,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Leather Armor is a Meadows-tier armor. It is superior to Rag Armor and is replaced by the Troll Set or Bronze Armor. There are no set bonus effects for leather armor.",
+          "availableFrom": "meadows",
+          "availableTier": 1,
           "names": {
             "cs": "Kožená zbroj",
             "ru": "Кожаная броня"
@@ -5186,7 +5595,9 @@ window.VA_DATA = {
                   "item": "deer-hide",
                   "amount": 6
                 }
-              ]
+              ],
+              "availableFrom": "meadows",
+              "availableTier": 1
             },
             {
               "quality": 2,
@@ -5202,7 +5613,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 3,
@@ -5218,7 +5631,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 4,
@@ -5234,7 +5649,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -5242,6 +5659,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Leather Armor is a Meadows-tier armor. It is superior to Rag Armor and is replaced by the Troll Set or Bronze Armor. There are no set bonus effects for leather armor.",
+          "availableFrom": "meadows",
+          "availableTier": 1,
           "names": {
             "cs": "Kožená zbroj",
             "ru": "Кожаная броня"
@@ -5269,7 +5688,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 2,
@@ -5285,7 +5706,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 3,
@@ -5301,7 +5724,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 4,
@@ -5317,7 +5742,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -5325,6 +5752,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Leather Armor is a Meadows-tier armor. It is superior to Rag Armor and is replaced by the Troll Set or Bronze Armor. There are no set bonus effects for leather armor.",
+          "availableFrom": "black-forest",
+          "availableTier": 2,
           "names": {}
         }
       ],
@@ -5375,7 +5804,9 @@ window.VA_DATA = {
                   "item": "writhan-roots",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 2,
@@ -5395,7 +5826,9 @@ window.VA_DATA = {
                   "item": "writhan-roots",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 3,
@@ -5415,7 +5848,9 @@ window.VA_DATA = {
                   "item": "writhan-roots",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 4,
@@ -5435,7 +5870,9 @@ window.VA_DATA = {
                   "item": "writhan-roots",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             }
           ],
           "armorSource": "table",
@@ -5443,6 +5880,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Lox Fur Set is a Plains-tier armor. This set is the tier above Wolf Armor and Fenris Set, and is replaced by Carapace Armor and Eitr-weave Set, respectively.",
+          "availableFrom": "plains",
+          "availableTier": 6,
           "names": {}
         },
         {
@@ -5471,7 +5910,9 @@ window.VA_DATA = {
                   "item": "roots",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 2,
@@ -5491,7 +5932,9 @@ window.VA_DATA = {
                   "item": "roots",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 3,
@@ -5511,7 +5954,9 @@ window.VA_DATA = {
                   "item": "roots",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 4,
@@ -5531,7 +5976,9 @@ window.VA_DATA = {
                   "item": "roots",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             }
           ],
           "armorSource": "table",
@@ -5539,6 +5986,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Lox Fur Set is a Plains-tier armor. This set is the tier above Wolf Armor and Fenris Set, and is replaced by Carapace Armor and Eitr-weave Set, respectively.",
+          "availableFrom": "plains",
+          "availableTier": 6,
           "names": {}
         },
         {
@@ -5567,7 +6016,9 @@ window.VA_DATA = {
                   "item": "roots",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 2,
@@ -5587,7 +6038,9 @@ window.VA_DATA = {
                   "item": "roots",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 3,
@@ -5607,7 +6060,9 @@ window.VA_DATA = {
                   "item": "roots",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 4,
@@ -5627,7 +6082,9 @@ window.VA_DATA = {
                   "item": "roots",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             }
           ],
           "armorSource": "table",
@@ -5635,6 +6092,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Lox Fur Set is a Plains-tier armor. This set is the tier above Wolf Armor and Fenris Set, and is replaced by Carapace Armor and Eitr-weave Set, respectively.",
+          "availableFrom": "plains",
+          "availableTier": 6,
           "names": {}
         },
         {
@@ -5659,7 +6118,9 @@ window.VA_DATA = {
                   "item": "silver",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 2,
@@ -5671,7 +6132,9 @@ window.VA_DATA = {
                   "item": "lox-pelt",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 3,
@@ -5683,7 +6146,9 @@ window.VA_DATA = {
                   "item": "lox-pelt",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 4,
@@ -5695,7 +6160,9 @@ window.VA_DATA = {
                   "item": "lox-pelt",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             }
           ],
           "armorSource": "table",
@@ -5705,6 +6172,8 @@ window.VA_DATA = {
             "Resistant (0.5x) VS Frost"
           ],
           "description": "The Lox Fur Set is a Plains-tier armor. This set is the tier above Wolf Armor and Fenris Set, and is replaced by Carapace Armor and Eitr-weave Set, respectively.",
+          "availableFrom": "plains",
+          "availableTier": 6,
           "names": {
             "cs": "Plášť z Loxe",
             "fr": "Cape de Lox",
@@ -5720,8 +6189,8 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Midsummer_Crown",
       "kind": "special",
       "tag": "Midsummer",
-      "biome": null,
-      "tier": null,
+      "biome": "meadows",
+      "tier": 1,
       "setBonus": null,
       "pieces": [
         {
@@ -5742,7 +6211,9 @@ window.VA_DATA = {
                   "item": "dandelion",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "meadows",
+              "availableTier": 1
             }
           ],
           "armorSource": "infobox",
@@ -5752,6 +6223,8 @@ window.VA_DATA = {
           "description": "Midsummer crown is a seasonal armor piece available during midsummer.",
           "kind": "special",
           "tag": "Midsummer",
+          "availableFrom": "meadows",
+          "availableTier": 1,
           "names": {
             "ru": "Корона летнего солнцестояния"
           }
@@ -5796,7 +6269,9 @@ window.VA_DATA = {
                   "item": "bloodgold",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 2,
@@ -5816,7 +6291,9 @@ window.VA_DATA = {
                   "item": "bloodgold",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 3,
@@ -5836,7 +6313,9 @@ window.VA_DATA = {
                   "item": "bloodgold",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 4,
@@ -5856,7 +6335,10 @@ window.VA_DATA = {
                   "item": "bloodgold",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": null,
+              "availableTier": null,
+              "unreachable": true
             }
           ],
           "armorSource": "rendered",
@@ -5864,6 +6346,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Moose Hide Cape is the combat focused Deep North-tier Cape.",
+          "availableFrom": "deep-north",
+          "availableTier": 9,
           "names": {}
         }
       ],
@@ -5900,7 +6384,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 15
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 2,
@@ -5916,7 +6402,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 3,
@@ -5932,7 +6420,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 4,
@@ -5948,7 +6438,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 40
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             }
           ],
           "armorSource": "table",
@@ -5956,6 +6448,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Padded Armor is a Plains-tier armor. This set is the tier above Fenris Set and Wolf Armor and is replaced by Carapace Armor or Eitr-weave Set.",
+          "availableFrom": "plains",
+          "availableTier": 6,
           "names": {
             "cs": "Prošívaná zbroj",
             "ru": "Обитая броня"
@@ -5983,7 +6477,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 2,
@@ -5999,7 +6495,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 3,
@@ -6015,7 +6513,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 4,
@@ -6031,7 +6531,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 40
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             }
           ],
           "armorSource": "table",
@@ -6039,6 +6541,8 @@ window.VA_DATA = {
           "movementSpeed": -5,
           "resistances": [],
           "description": "Padded Armor is a Plains-tier armor. This set is the tier above Fenris Set and Wolf Armor and is replaced by Carapace Armor or Eitr-weave Set.",
+          "availableFrom": "plains",
+          "availableTier": 6,
           "names": {
             "cs": "Prošívaná zbroj",
             "ru": "Обитая броня"
@@ -6066,7 +6570,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 2,
@@ -6082,7 +6588,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 3,
@@ -6098,7 +6606,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 4,
@@ -6114,7 +6624,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 40
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             }
           ],
           "armorSource": "table",
@@ -6122,6 +6634,8 @@ window.VA_DATA = {
           "movementSpeed": -5,
           "resistances": [],
           "description": "Padded Armor is a Plains-tier armor. This set is the tier above Fenris Set and Wolf Armor and is replaced by Carapace Armor or Eitr-weave Set.",
+          "availableFrom": "plains",
+          "availableTier": 6,
           "names": {
             "cs": "Prošívaná zbroj",
             "ru": "Обитая броня"
@@ -6149,7 +6663,9 @@ window.VA_DATA = {
                   "item": "silver",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 2,
@@ -6161,7 +6677,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 3,
@@ -6173,7 +6691,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 4,
@@ -6185,7 +6705,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 16
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             }
           ],
           "armorSource": "table",
@@ -6193,6 +6715,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Padded Armor is a Plains-tier armor. This set is the tier above Fenris Set and Wolf Armor and is replaced by Carapace Armor or Eitr-weave Set.",
+          "availableFrom": "plains",
+          "availableTier": 6,
           "names": {
             "cs": "Lněný plášť",
             "fr": "Cape en tissu",
@@ -6211,8 +6735,8 @@ window.VA_DATA = {
       "wiki": "https://valheim.weirdgloop.org/w/Pointy_Hat",
       "kind": "special",
       "tag": "Halloween",
-      "biome": null,
-      "tier": null,
+      "biome": "black-forest",
+      "tier": 2,
       "setBonus": null,
       "pieces": [
         {
@@ -6241,7 +6765,9 @@ window.VA_DATA = {
                   "item": "deer-hide",
                   "amount": 3
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 2,
@@ -6253,7 +6779,9 @@ window.VA_DATA = {
                   "item": "deer-hide",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 3,
@@ -6265,7 +6793,9 @@ window.VA_DATA = {
                   "item": "deer-hide",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 4,
@@ -6277,7 +6807,9 @@ window.VA_DATA = {
                   "item": "deer-hide",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             }
           ],
           "armorSource": "rendered",
@@ -6287,6 +6819,8 @@ window.VA_DATA = {
           "description": "Pointy hat is an armor piece which can be crafted and upgraded at the Workbench. It is only available during the Halloween seasonal event, – .",
           "kind": "special",
           "tag": "Halloween",
+          "availableFrom": "black-forest",
+          "availableTier": 2,
           "names": {
             "ru": "Ведьмовская шляпа"
           }
@@ -6329,7 +6863,9 @@ window.VA_DATA = {
                   "amount": 5,
                   "fuel": true
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 2,
@@ -6345,7 +6881,9 @@ window.VA_DATA = {
                   "item": "moose-hide",
                   "amount": 3
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 3,
@@ -6361,7 +6899,9 @@ window.VA_DATA = {
                   "item": "moose-hide",
                   "amount": 6
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 4,
@@ -6377,7 +6917,10 @@ window.VA_DATA = {
                   "item": "moose-hide",
                   "amount": 12
                 }
-              ]
+              ],
+              "availableFrom": null,
+              "availableTier": null,
+              "unreachable": true
             }
           ],
           "armorSource": "table",
@@ -6385,6 +6928,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Protector Armor is a Deep North-tier armor.",
+          "availableFrom": "deep-north",
+          "availableTier": 9,
           "names": {}
         },
         {
@@ -6411,7 +6956,9 @@ window.VA_DATA = {
                   "amount": 5,
                   "fuel": true
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 2,
@@ -6431,7 +6978,9 @@ window.VA_DATA = {
                   "item": "leather-straps",
                   "amount": 3
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 3,
@@ -6451,7 +7000,9 @@ window.VA_DATA = {
                   "item": "leather-straps",
                   "amount": 6
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 4,
@@ -6471,7 +7022,10 @@ window.VA_DATA = {
                   "item": "leather-straps",
                   "amount": 12
                 }
-              ]
+              ],
+              "availableFrom": null,
+              "availableTier": null,
+              "unreachable": true
             }
           ],
           "armorSource": "table",
@@ -6481,6 +7035,8 @@ window.VA_DATA = {
             "Resistant vs. Frost"
           ],
           "description": "The Protector Armor is a Deep North-tier armor.",
+          "availableFrom": "deep-north",
+          "availableTier": 9,
           "names": {}
         },
         {
@@ -6507,7 +7063,9 @@ window.VA_DATA = {
                   "amount": 5,
                   "fuel": true
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 2,
@@ -6527,7 +7085,9 @@ window.VA_DATA = {
                   "item": "leather-straps",
                   "amount": 3
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 3,
@@ -6547,7 +7107,9 @@ window.VA_DATA = {
                   "item": "leather-straps",
                   "amount": 6
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 4,
@@ -6567,7 +7129,10 @@ window.VA_DATA = {
                   "item": "leather-straps",
                   "amount": 12
                 }
-              ]
+              ],
+              "availableFrom": null,
+              "availableTier": null,
+              "unreachable": true
             }
           ],
           "armorSource": "table",
@@ -6575,6 +7140,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Protector Armor is a Deep North-tier armor.",
+          "availableFrom": "deep-north",
+          "availableTier": 9,
           "names": {}
         }
       ],
@@ -6607,7 +7174,9 @@ window.VA_DATA = {
                   "item": "leather-scraps",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "meadows",
+              "availableTier": 1
             },
             {
               "quality": 2,
@@ -6619,7 +7188,9 @@ window.VA_DATA = {
                   "item": "leather-scraps",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "meadows",
+              "availableTier": 1
             }
           ],
           "armorSource": "rendered",
@@ -6627,6 +7198,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Rag Armor is a Meadows-tier armor and the most basic armor that can be acquired. It is statistically inferior to Leather Armor, and provides minimal protection. There are no set bonuses for rag armor. Every player starts with a Rag Tunic equipped.",
+          "availableFrom": "meadows",
+          "availableTier": 1,
           "names": {
             "cs": "Hadrová zbroj",
             "ru": "Холщовая броня"
@@ -6650,7 +7223,9 @@ window.VA_DATA = {
                   "item": "leather-scraps",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "meadows",
+              "availableTier": 1
             },
             {
               "quality": 2,
@@ -6662,7 +7237,9 @@ window.VA_DATA = {
                   "item": "leather-scraps",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "meadows",
+              "availableTier": 1
             }
           ],
           "armorSource": "table",
@@ -6670,6 +7247,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Rag Armor is a Meadows-tier armor and the most basic armor that can be acquired. It is statistically inferior to Leather Armor, and provides minimal protection. There are no set bonuses for rag armor. Every player starts with a Rag Tunic equipped.",
+          "availableFrom": "meadows",
+          "availableTier": 1,
           "names": {
             "cs": "Hadrová zbroj",
             "ru": "Холщовая броня"
@@ -6722,7 +7301,9 @@ window.VA_DATA = {
                   "item": "leather-scraps",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 2,
@@ -6738,7 +7319,9 @@ window.VA_DATA = {
                   "item": "ancient-bark",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 3,
@@ -6754,7 +7337,9 @@ window.VA_DATA = {
                   "item": "ancient-bark",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 4,
@@ -6770,7 +7355,9 @@ window.VA_DATA = {
                   "item": "ancient-bark",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -6781,6 +7368,8 @@ window.VA_DATA = {
             "Weak (1.5x) VS Fire"
           ],
           "description": "The Root Set is a Swamp-tier armor. This set is in the tier above Bronze Armor and the Troll Set. It provides less armor points, but also a lower movement speed penalty compared to the other swamp-tier armor, Iron Armor. Each piece provides weakness to fire, but individual parts give resistance to pierce (in the harnesk) and poison (in the mask). Its unique set bonus increases the wearer's Bow ski",
+          "availableFrom": "swamp",
+          "availableTier": 4,
           "names": {
             "cs": "Zbroj z kořenů",
             "ru": "Корневая броня"
@@ -6812,7 +7401,9 @@ window.VA_DATA = {
                   "item": "deer-hide",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 2,
@@ -6828,7 +7419,9 @@ window.VA_DATA = {
                   "item": "ancient-bark",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 3,
@@ -6844,7 +7437,9 @@ window.VA_DATA = {
                   "item": "ancient-bark",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 4,
@@ -6860,7 +7455,9 @@ window.VA_DATA = {
                   "item": "ancient-bark",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -6871,6 +7468,8 @@ window.VA_DATA = {
             "Weak (1.5x) VS Fire"
           ],
           "description": "The Root Set is a Swamp-tier armor. This set is in the tier above Bronze Armor and the Troll Set. It provides less armor points, but also a lower movement speed penalty compared to the other swamp-tier armor, Iron Armor. Each piece provides weakness to fire, but individual parts give resistance to pierce (in the harnesk) and poison (in the mask). Its unique set bonus increases the wearer's Bow ski",
+          "availableFrom": "swamp",
+          "availableTier": 4,
           "names": {
             "cs": "Zbroj z kořenů",
             "ru": "Корневая броня"
@@ -6902,7 +7501,9 @@ window.VA_DATA = {
                   "item": "deer-hide",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 2,
@@ -6918,7 +7519,9 @@ window.VA_DATA = {
                   "item": "ancient-bark",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 3,
@@ -6934,7 +7537,9 @@ window.VA_DATA = {
                   "item": "ancient-bark",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "swamp",
+              "availableTier": 4
             },
             {
               "quality": 4,
@@ -6950,7 +7555,9 @@ window.VA_DATA = {
                   "item": "ancient-bark",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -6960,6 +7567,8 @@ window.VA_DATA = {
             "Weak (1.5x) vs Fire"
           ],
           "description": "The Root Set is a Swamp-tier armor. This set is in the tier above Bronze Armor and the Troll Set. It provides less armor points, but also a lower movement speed penalty compared to the other swamp-tier armor, Iron Armor. Each piece provides weakness to fire, but individual parts give resistance to pierce (in the harnesk) and poison (in the mask). Its unique set bonus increases the wearer's Bow ski",
+          "availableFrom": "swamp",
+          "availableTier": 4,
           "names": {
             "cs": "Zbroj z kořenů",
             "ru": "Корневая броня"
@@ -7732,7 +8341,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 3
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 2,
@@ -7748,7 +8359,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 3,
@@ -7764,7 +8377,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 4,
@@ -7780,7 +8395,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -7788,6 +8405,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Troll Set is a Black Forest-tier armor. Compared to the other armors available in the Bronze Age, Bronze Armor and Bear Set, the Troll Set has lower armor values but does not reduce movement speed. Simultaneously wearing all four pieces provides the Sneaky Effect.",
+          "availableFrom": "black-forest",
+          "availableTier": 2,
           "names": {
             "cs": "Trollí zbroj",
             "ru": "Броня из кожи тролля"
@@ -7811,7 +8430,9 @@ window.VA_DATA = {
                   "item": "troll-hide",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 2,
@@ -7823,7 +8444,9 @@ window.VA_DATA = {
                   "item": "troll-hide",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 3,
@@ -7835,7 +8458,9 @@ window.VA_DATA = {
                   "item": "troll-hide",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 4,
@@ -7847,7 +8472,9 @@ window.VA_DATA = {
                   "item": "troll-hide",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -7855,6 +8482,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Troll Set is a Black Forest-tier armor. Compared to the other armors available in the Bronze Age, Bronze Armor and Bear Set, the Troll Set has lower armor values but does not reduce movement speed. Simultaneously wearing all four pieces provides the Sneaky Effect.",
+          "availableFrom": "black-forest",
+          "availableTier": 2,
           "names": {
             "cs": "Trollí zbroj",
             "ru": "Броня из кожи тролля"
@@ -7878,7 +8507,9 @@ window.VA_DATA = {
                   "item": "troll-hide",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 2,
@@ -7890,7 +8521,9 @@ window.VA_DATA = {
                   "item": "troll-hide",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 3,
@@ -7902,7 +8535,9 @@ window.VA_DATA = {
                   "item": "troll-hide",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 4,
@@ -7914,7 +8549,9 @@ window.VA_DATA = {
                   "item": "troll-hide",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -7922,6 +8559,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Troll Set is a Black Forest-tier armor. Compared to the other armors available in the Bronze Age, Bronze Armor and Bear Set, the Troll Set has lower armor values but does not reduce movement speed. Simultaneously wearing all four pieces provides the Sneaky Effect.",
+          "availableFrom": "black-forest",
+          "availableTier": 2,
           "names": {
             "cs": "Trollí zbroj",
             "ru": "Броня из кожи тролля"
@@ -7949,7 +8588,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 2,
@@ -7965,7 +8606,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 3,
@@ -7981,7 +8624,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "black-forest",
+              "availableTier": 2
             },
             {
               "quality": 4,
@@ -7997,7 +8642,9 @@ window.VA_DATA = {
                   "item": "bone-fragments",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -8005,6 +8652,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Troll Set is a Black Forest-tier armor. Compared to the other armors available in the Bronze Age, Bronze Armor and Bear Set, the Troll Set has lower armor values but does not reduce movement speed. Simultaneously wearing all four pieces provides the Sneaky Effect.",
+          "availableFrom": "black-forest",
+          "availableTier": 2,
           "names": {
             "cs": "Plášť z trollí kůže",
             "ru": "Плащ из шкуры тролля"
@@ -8149,7 +8798,9 @@ window.VA_DATA = {
                   "amount": 5,
                   "fuel": true
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 2,
@@ -8169,7 +8820,9 @@ window.VA_DATA = {
                   "item": "moose-sinew",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 3,
@@ -8189,7 +8842,9 @@ window.VA_DATA = {
                   "item": "moose-sinew",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 4,
@@ -8209,7 +8864,10 @@ window.VA_DATA = {
                   "item": "moose-sinew",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": null,
+              "availableTier": null,
+              "unreachable": true
             }
           ],
           "armorSource": "table",
@@ -8217,6 +8875,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Vanguard Set is a Deep North-tier armor.",
+          "availableFrom": "deep-north",
+          "availableTier": 9,
           "names": {}
         },
         {
@@ -8243,7 +8903,9 @@ window.VA_DATA = {
                   "amount": 5,
                   "fuel": true
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 2,
@@ -8263,7 +8925,9 @@ window.VA_DATA = {
                   "item": "leather-straps",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 3,
@@ -8283,7 +8947,9 @@ window.VA_DATA = {
                   "item": "leather-straps",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 4,
@@ -8303,7 +8969,10 @@ window.VA_DATA = {
                   "item": "leather-straps",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": null,
+              "availableTier": null,
+              "unreachable": true
             }
           ],
           "armorSource": "table",
@@ -8313,6 +8982,8 @@ window.VA_DATA = {
             "Resistant vs Frost"
           ],
           "description": "The Vanguard Set is a Deep North-tier armor.",
+          "availableFrom": "deep-north",
+          "availableTier": 9,
           "names": {}
         },
         {
@@ -8339,7 +9010,9 @@ window.VA_DATA = {
                   "amount": 5,
                   "fuel": true
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 2,
@@ -8359,7 +9032,9 @@ window.VA_DATA = {
                   "item": "seal-pelt",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 3,
@@ -8379,7 +9054,9 @@ window.VA_DATA = {
                   "item": "seal-pelt",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "deep-north",
+              "availableTier": 9
             },
             {
               "quality": 4,
@@ -8399,7 +9076,10 @@ window.VA_DATA = {
                   "item": "seal-pelt",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": null,
+              "availableTier": null,
+              "unreachable": true
             }
           ],
           "armorSource": "table",
@@ -8407,6 +9087,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Vanguard Set is a Deep North-tier armor.",
+          "availableFrom": "deep-north",
+          "availableTier": 9,
           "names": {}
         }
       ],
@@ -8453,7 +9135,9 @@ window.VA_DATA = {
                   "item": "vile-trophy",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 2,
@@ -8465,7 +9149,9 @@ window.VA_DATA = {
                   "item": "bear-hide",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 3,
@@ -8477,7 +9163,9 @@ window.VA_DATA = {
                   "item": "bear-hide",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 4,
@@ -8489,7 +9177,9 @@ window.VA_DATA = {
                   "item": "bear-hide",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             }
           ],
           "armorSource": "table",
@@ -8497,6 +9187,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Vilebone Set is a Plains-tier armor set. It has a lower armor value than Padded Armor, but wearing all 3 pieces provides the Vilebone Wrath set bonus, increasing damage and regeneration, but making the wearer slightly more vulnerable to physical damage.",
+          "availableFrom": "plains",
+          "availableTier": 6,
           "names": {
             "ru": "Гнилокостная броня"
           }
@@ -8527,7 +9219,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 2,
@@ -8547,7 +9241,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 3,
@@ -8567,7 +9263,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 4,
@@ -8587,7 +9285,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             }
           ],
           "armorSource": "table",
@@ -8595,6 +9295,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Vilebone Set is a Plains-tier armor set. It has a lower armor value than Padded Armor, but wearing all 3 pieces provides the Vilebone Wrath set bonus, increasing damage and regeneration, but making the wearer slightly more vulnerable to physical damage.",
+          "availableFrom": "plains",
+          "availableTier": 6,
           "names": {
             "ru": "Гнилокостная броня"
           }
@@ -8625,7 +9327,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 2,
@@ -8645,7 +9349,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 3,
@@ -8665,7 +9371,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             },
             {
               "quality": 4,
@@ -8685,7 +9393,9 @@ window.VA_DATA = {
                   "item": "linen-thread",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "plains",
+              "availableTier": 6
             }
           ],
           "armorSource": "table",
@@ -8693,6 +9403,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "The Vilebone Set is a Plains-tier armor set. It has a lower armor value than Padded Armor, but wearing all 3 pieces provides the Vilebone Wrath set bonus, increasing damage and regeneration, but making the wearer slightly more vulnerable to physical damage.",
+          "availableFrom": "plains",
+          "availableTier": 6,
           "names": {
             "ru": "Гнилокостная броня"
           }
@@ -8737,7 +9449,9 @@ window.VA_DATA = {
                   "item": "drake-trophy",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 2,
@@ -8749,7 +9463,9 @@ window.VA_DATA = {
                   "item": "silver",
                   "amount": 5
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 3,
@@ -8761,7 +9477,9 @@ window.VA_DATA = {
                   "item": "silver",
                   "amount": 10
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 4,
@@ -8773,7 +9491,9 @@ window.VA_DATA = {
                   "item": "silver",
                   "amount": 20
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -8781,6 +9501,8 @@ window.VA_DATA = {
           "movementSpeed": 0,
           "resistances": [],
           "description": "Wolf Armor is a Mountain-tier armor. This set is the tier above Iron Armor and Root Set, and is replaced by Padded Armor and Vilebone Set, respectively.",
+          "availableFrom": "mountain",
+          "availableTier": 5,
           "names": {
             "cs": "Vlčí zbroj",
             "ru": "Волчья броня"
@@ -8812,7 +9534,9 @@ window.VA_DATA = {
                   "item": "chain",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 2,
@@ -8828,7 +9552,9 @@ window.VA_DATA = {
                   "item": "wolf-pelt",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 3,
@@ -8844,7 +9570,9 @@ window.VA_DATA = {
                   "item": "wolf-pelt",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 4,
@@ -8860,7 +9588,9 @@ window.VA_DATA = {
                   "item": "wolf-pelt",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -8870,6 +9600,8 @@ window.VA_DATA = {
             "Resistant (0.5x) VS Frost"
           ],
           "description": "Wolf Armor is a Mountain-tier armor. This set is the tier above Iron Armor and Root Set, and is replaced by Padded Armor and Vilebone Set, respectively.",
+          "availableFrom": "mountain",
+          "availableTier": 5,
           "names": {
             "cs": "Vlčí zbroj",
             "ru": "Волчья броня"
@@ -8901,7 +9633,9 @@ window.VA_DATA = {
                   "item": "wolf-fang",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 2,
@@ -8921,7 +9655,9 @@ window.VA_DATA = {
                   "item": "wolf-fang",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 3,
@@ -8941,7 +9677,9 @@ window.VA_DATA = {
                   "item": "wolf-fang",
                   "amount": 2
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 4,
@@ -8961,7 +9699,9 @@ window.VA_DATA = {
                   "item": "wolf-fang",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -8969,6 +9709,8 @@ window.VA_DATA = {
           "movementSpeed": -5,
           "resistances": [],
           "description": "Wolf Armor is a Mountain-tier armor. This set is the tier above Iron Armor and Root Set, and is replaced by Padded Armor and Vilebone Set, respectively.",
+          "availableFrom": "mountain",
+          "availableTier": 5,
           "names": {
             "cs": "Vlčí zbroj",
             "ru": "Волчья броня"
@@ -9000,7 +9742,9 @@ window.VA_DATA = {
                   "item": "wolf-trophy",
                   "amount": 1
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 2,
@@ -9016,7 +9760,9 @@ window.VA_DATA = {
                   "item": "wolf-pelt",
                   "amount": 4
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 3,
@@ -9032,7 +9778,9 @@ window.VA_DATA = {
                   "item": "wolf-pelt",
                   "amount": 8
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             },
             {
               "quality": 4,
@@ -9048,7 +9796,9 @@ window.VA_DATA = {
                   "item": "wolf-pelt",
                   "amount": 16
                 }
-              ]
+              ],
+              "availableFrom": "mountain",
+              "availableTier": 5
             }
           ],
           "armorSource": "table",
@@ -9058,6 +9808,8 @@ window.VA_DATA = {
             "Resistant (0.5x) VS Frost"
           ],
           "description": "Wolf Armor is a Mountain-tier armor. This set is the tier above Iron Armor and Root Set, and is replaced by Padded Armor and Vilebone Set, respectively.",
+          "availableFrom": "mountain",
+          "availableTier": 5,
           "names": {
             "fr": "Cape en fourrure de loup",
             "ru": "Плащ из шкуры волка"
@@ -9152,7 +9904,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "ocean",
+          "availableTier": 3
         }
       ],
       "materials": [
@@ -9185,6 +9939,8 @@ window.VA_DATA = {
       "biome": "ocean",
       "description": "The ocean's wrath.",
       "blockArmor": 21,
+      "availableFrom": "ocean",
+      "availableTier": 3,
       "names": {
         "cs": "Harpuna z hlubin",
         "fr": "Harpon abyssal",
@@ -9223,7 +9979,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "ocean",
+          "availableTier": 3
         },
         {
           "quality": 2,
@@ -9234,7 +9992,9 @@ window.VA_DATA = {
               "name": "Chitin",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "ocean",
+          "availableTier": 3
         },
         {
           "quality": 3,
@@ -9245,7 +10005,9 @@ window.VA_DATA = {
               "name": "Chitin",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": "ocean",
+          "availableTier": 3
         },
         {
           "quality": 4,
@@ -9256,7 +10018,9 @@ window.VA_DATA = {
               "name": "Chitin",
               "amount": 40
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         }
       ],
       "materials": [
@@ -9290,6 +10054,8 @@ window.VA_DATA = {
       "tier": 3,
       "biome": "ocean",
       "description": "A knife from the deep.",
+      "availableFrom": "ocean",
+      "availableTier": 3,
       "names": {
         "cs": "Břitva z hlubin",
         "fr": "Rasoir abyssal",
@@ -9328,7 +10094,9 @@ window.VA_DATA = {
               "name": "Ancient Bark",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 2,
@@ -9349,7 +10117,9 @@ window.VA_DATA = {
               "name": "Ancient Bark",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 3,
@@ -9370,7 +10140,9 @@ window.VA_DATA = {
               "name": "Ancient Bark",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 4,
@@ -9391,7 +10163,9 @@ window.VA_DATA = {
               "name": "Ancient Bark",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -9424,6 +10198,8 @@ window.VA_DATA = {
       "biome": "swamp",
       "description": "Despite its gnarled look, this spear is strong and perfectly balanced.",
       "blockArmor": 21,
+      "availableFrom": "swamp",
+      "availableTier": 4,
       "names": {
         "cs": "Kopí ze starověkého dřeva",
         "fr": "Lance en écorce ancienne",
@@ -9457,7 +10233,9 @@ window.VA_DATA = {
               "name": "Hard Antler",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         }
       ],
       "materials": [
@@ -9487,6 +10265,8 @@ window.VA_DATA = {
       "tier": 1,
       "biome": "meadows",
       "description": "This tool is hard enough to crack even the most stubborn rocks.",
+      "availableFrom": "meadows",
+      "availableTier": 1,
       "names": {
         "cs": "Krumpáč z parohu",
         "ru": "Кирка из оленьего рога"
@@ -9524,7 +10304,9 @@ window.VA_DATA = {
               "name": "Root",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 2,
@@ -9545,7 +10327,9 @@ window.VA_DATA = {
               "name": "Root",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 3,
@@ -9566,7 +10350,9 @@ window.VA_DATA = {
               "name": "Root",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 4,
@@ -9587,7 +10373,9 @@ window.VA_DATA = {
               "name": "Root",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         }
       ],
       "materials": [
@@ -9616,10 +10404,12 @@ window.VA_DATA = {
       "skill": "crossbows",
       "backstab": null,
       "quantity": null,
-      "tier": 4,
-      "biome": "swamp",
+      "tier": 7,
+      "biome": "mistlands",
       "description": "A slow but powerful weapon.",
       "blockForce": null,
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "ru": "Арбалет"
       }
@@ -9661,7 +10451,9 @@ window.VA_DATA = {
               "name": "Bonemaw Tooth",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -9687,7 +10479,9 @@ window.VA_DATA = {
               "name": "Bonemaw Tooth",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -9713,7 +10507,9 @@ window.VA_DATA = {
               "name": "Bonemaw Tooth",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 4,
@@ -9739,7 +10535,9 @@ window.VA_DATA = {
               "name": "Bonemaw Tooth",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         }
       ],
       "materials": [
@@ -9779,6 +10577,8 @@ window.VA_DATA = {
       "biome": "ashlands",
       "description": "Risen again from the ashes, this bow holds unyielding strength.",
       "blockArmor": 3,
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Пепельный клык"
       }
@@ -9810,7 +10610,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 2,
@@ -9826,7 +10628,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 3,
@@ -9842,7 +10646,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -9872,6 +10678,8 @@ window.VA_DATA = {
       "movementSpeed": "-5%",
       "recommendable": false,
       "note": null,
+      "availableFrom": "swamp",
+      "availableTier": 4,
       "names": {
         "cs": "Vyztužený štít",
         "fr": "Bouclier bandé",
@@ -9910,7 +10718,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 2,
@@ -9926,7 +10736,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 15
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 3,
@@ -9942,7 +10754,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 30
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 4,
@@ -9958,7 +10772,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 60
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -9993,6 +10809,8 @@ window.VA_DATA = {
       "biome": "swamp",
       "description": "Skull-splitter, a warrior's joy.",
       "blockArmor": 28,
+      "availableFrom": "swamp",
+      "availableTier": 4,
       "names": {
         "cs": "Bojová sekera",
         "de": "Streitaxt",
@@ -10032,7 +10850,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -10048,7 +10868,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -10064,7 +10886,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 4,
@@ -10080,7 +10904,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         }
       ],
       "materials": [
@@ -10122,6 +10948,8 @@ window.VA_DATA = {
       "blockForce": 20,
       "parryBonus": 2,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "de": "Berserkir-Äxte",
         "ru": "Топоры берсеркира"
@@ -10159,7 +10987,9 @@ window.VA_DATA = {
               "name": "Resin",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         }
       ],
       "materials": [
@@ -10196,6 +11026,8 @@ window.VA_DATA = {
       "parryBonus": 1.5,
       "recommendable": false,
       "note": "Area/DoT damage not listed on the wiki",
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "ru": "Желчная бомба"
       }
@@ -10232,7 +11064,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 2,
@@ -10248,7 +11082,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 3,
@@ -10264,7 +11100,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 4,
@@ -10280,7 +11118,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         }
       ],
       "materials": [
@@ -10313,6 +11153,8 @@ window.VA_DATA = {
       "biome": "plains",
       "description": "A vicious hewing-axe of almost unbreakable black metal.",
       "blockArmor": 52,
+      "availableFrom": "plains",
+      "availableTier": 6,
       "names": {
         "cs": "Atgeir z černého kovu",
         "fr": "Atgeir en sombracier",
@@ -10351,7 +11193,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 2,
@@ -10367,7 +11211,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 3,
@@ -10383,7 +11229,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 4,
@@ -10399,7 +11247,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         }
       ],
       "materials": [
@@ -10434,6 +11284,8 @@ window.VA_DATA = {
       "biome": "plains",
       "description": "A perfectly-balanced axe forged from dark metal with an emerald sheen.",
       "blockArmor": 39,
+      "availableFrom": "plains",
+      "availableTier": 6,
       "names": {
         "cs": "Sekera z černého kovu",
         "de": "Schwarzmetall-Axt",
@@ -10473,7 +11325,9 @@ window.VA_DATA = {
               "name": "Finewood",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 2,
@@ -10489,7 +11343,9 @@ window.VA_DATA = {
               "name": "Black Metal",
               "amount": 15
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 3,
@@ -10505,7 +11361,9 @@ window.VA_DATA = {
               "name": "Black Metal",
               "amount": 30
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 4,
@@ -10521,7 +11379,9 @@ window.VA_DATA = {
               "name": "Black Metal",
               "amount": 60
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         }
       ],
       "materials": [
@@ -10557,6 +11417,8 @@ window.VA_DATA = {
       "description": "Green shall be the last thing your foes see before you cleave them in half.",
       "blockArmor": 52,
       "movementSpeed": "-15%",
+      "availableFrom": "plains",
+      "availableTier": 6,
       "names": {
         "ru": "Боевой топор из черного металла"
       }
@@ -10593,7 +11455,9 @@ window.VA_DATA = {
               "name": "Feathers",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         }
       ],
       "materials": [
@@ -10622,9 +11486,11 @@ window.VA_DATA = {
       "skill": "crossbows",
       "backstab": null,
       "quantity": 20,
-      "tier": 6,
-      "biome": "plains",
+      "tier": 7,
+      "biome": "mistlands",
       "description": "A sleek bolt of dark metal.",
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "cs": "Šipka z černokovu",
         "ru": "Болт из черного металла"
@@ -10662,7 +11528,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 2,
@@ -10678,7 +11546,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 3,
@@ -10694,7 +11564,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 4,
@@ -10710,7 +11582,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         }
       ],
       "materials": [
@@ -10744,6 +11618,8 @@ window.VA_DATA = {
       "tier": 6,
       "biome": "plains",
       "description": "A darkling blade. Strong and sharp.",
+      "availableFrom": "plains",
+      "availableTier": 6,
       "names": {
         "cs": "Nůž z černého kovu",
         "fr": "Couteau en sombracier",
@@ -10777,7 +11653,9 @@ window.VA_DATA = {
               "name": "Black Metal",
               "amount": 25
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 2,
@@ -10793,7 +11671,9 @@ window.VA_DATA = {
               "name": "Black Metal",
               "amount": 15
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 3,
@@ -10809,7 +11689,9 @@ window.VA_DATA = {
               "name": "Black Metal",
               "amount": 30
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 4,
@@ -10825,7 +11707,9 @@ window.VA_DATA = {
               "name": "Black Metal",
               "amount": 60
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         }
       ],
       "materials": [
@@ -10858,6 +11742,8 @@ window.VA_DATA = {
       "tier": 7,
       "biome": "mistlands",
       "description": "A good strong pick of glistening dark metal.",
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "ru": "Кирка из черного металла"
       }
@@ -10894,7 +11780,9 @@ window.VA_DATA = {
               "name": "Chain",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 2,
@@ -10915,7 +11803,9 @@ window.VA_DATA = {
               "name": "Chain",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 3,
@@ -10936,7 +11826,9 @@ window.VA_DATA = {
               "name": "Chain",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         }
       ],
       "materials": [
@@ -10968,6 +11860,8 @@ window.VA_DATA = {
       "blockForce": 50,
       "recommendable": false,
       "note": null,
+      "availableFrom": "plains",
+      "availableTier": 6,
       "names": {
         "cs": "Štít z černého kovu",
         "fr": "Bouclier en sombracier",
@@ -11006,7 +11900,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 2,
@@ -11022,7 +11918,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 3,
@@ -11038,7 +11936,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 4,
@@ -11054,7 +11954,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         }
       ],
       "materials": [
@@ -11087,6 +11989,8 @@ window.VA_DATA = {
       "biome": "plains",
       "description": "A thing of death and beauty. It catches the light with a greenish glow.",
       "blockArmor": 39,
+      "availableFrom": "plains",
+      "availableTier": 6,
       "names": {
         "cs": "Meč z černokovu",
         "de": "Schwarzmetall-Schwert",
@@ -11126,7 +12030,9 @@ window.VA_DATA = {
               "name": "Chain",
               "amount": 7
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 2,
@@ -11147,7 +12053,9 @@ window.VA_DATA = {
               "name": "Chain",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 3,
@@ -11168,7 +12076,9 @@ window.VA_DATA = {
               "name": "Chain",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         }
       ],
       "materials": [
@@ -11200,6 +12110,8 @@ window.VA_DATA = {
       "blockForce": 150,
       "recommendable": false,
       "note": null,
+      "availableFrom": "plains",
+      "availableTier": 6,
       "names": {
         "cs": "Pavéza z černého kovu",
         "fr": "Écu en sombracier",
@@ -11238,7 +12150,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -11254,7 +12168,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -11270,7 +12186,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -11286,7 +12204,10 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -11328,6 +12249,8 @@ window.VA_DATA = {
       "blockForce": 20,
       "parryBonus": 2,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "cs": "Krvavé berserkské sekery",
         "de": "Blutende Berserkir-Äxte",
@@ -11367,7 +12290,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -11383,7 +12308,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -11399,7 +12326,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -11415,7 +12344,10 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -11451,6 +12383,8 @@ window.VA_DATA = {
       "biome": "ashlands",
       "description": "Arrows loosed from this bow will tear into flesh with unmatched ferocity.",
       "blockArmor": 3,
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Кровавый клык"
       }
@@ -11487,7 +12421,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -11503,7 +12439,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -11519,7 +12457,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -11535,7 +12475,10 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -11571,6 +12514,8 @@ window.VA_DATA = {
       "description": "The blood all but soaks into this mace, and it always yearns for more.",
       "blockArmor": 57,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "de": "Blutprügel",
         "fr": "Masse-sang",
@@ -11609,7 +12554,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         }
       ],
       "materials": [
@@ -11642,6 +12589,8 @@ window.VA_DATA = {
       "biome": "deep-north",
       "description": "An arrow forged of perhaps the hardest materials in this world...",
       "weight": 0.1,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -11676,7 +12625,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         }
       ],
       "materials": [
@@ -11709,6 +12660,8 @@ window.VA_DATA = {
       "biome": "deep-north",
       "description": "A bolt forged of perhaps the hardest materials in this world...",
       "weight": 0.1,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -11738,7 +12691,9 @@ window.VA_DATA = {
               "name": "Feathers",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         }
       ],
       "materials": [
@@ -11763,9 +12718,11 @@ window.VA_DATA = {
       "skill": "crossbows",
       "backstab": null,
       "quantity": 20,
-      "tier": 2,
-      "biome": "black-forest",
+      "tier": 7,
+      "biome": "mistlands",
       "description": "A crude bolt of yellowed bone.",
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "cs": "Kostěnná šipka",
         "ru": "Костяной болт"
@@ -11803,7 +12760,9 @@ window.VA_DATA = {
               "name": "Skeleton Trophy",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 2,
@@ -11819,7 +12778,9 @@ window.VA_DATA = {
               "name": "Bone Fragments",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 3,
@@ -11835,7 +12796,9 @@ window.VA_DATA = {
               "name": "Bone Fragments",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         }
       ],
       "materials": [
@@ -11868,6 +12831,8 @@ window.VA_DATA = {
       "blockForce": 100,
       "recommendable": false,
       "note": null,
+      "availableFrom": "black-forest",
+      "availableTier": 2,
       "names": {
         "cs": "Kostěná pavéza",
         "fr": "Écu en os",
@@ -11906,7 +12871,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 2,
@@ -11917,7 +12884,9 @@ window.VA_DATA = {
               "name": "Bronze",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 3,
@@ -11928,7 +12897,9 @@ window.VA_DATA = {
               "name": "Bronze",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 4,
@@ -11939,7 +12910,9 @@ window.VA_DATA = {
               "name": "Bronze",
               "amount": 16
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -11972,6 +12945,8 @@ window.VA_DATA = {
       "biome": "black-forest",
       "description": "A true warrior's tool.",
       "blockArmor": 16,
+      "availableFrom": "black-forest",
+      "availableTier": 2,
       "names": {
         "cs": "Bronzový Atgeir",
         "fr": "Atgeir en bronze",
@@ -12010,7 +12985,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 2,
@@ -12026,7 +13003,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 3,
@@ -12042,7 +13021,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 4,
@@ -12058,7 +13039,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -12093,6 +13076,8 @@ window.VA_DATA = {
       "biome": "black-forest",
       "description": "A bright and burnished blade, curved like a smile.",
       "blockArmor": 12,
+      "availableFrom": "black-forest",
+      "availableTier": 2,
       "names": {
         "cs": "Bronzová sekera",
         "de": "Bronzeaxt",
@@ -12127,7 +13112,9 @@ window.VA_DATA = {
               "name": "Wood",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 2,
@@ -12143,7 +13130,9 @@ window.VA_DATA = {
               "name": "Wood",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 3,
@@ -12159,7 +13148,9 @@ window.VA_DATA = {
               "name": "Wood",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         }
       ],
       "materials": [
@@ -12189,6 +13180,8 @@ window.VA_DATA = {
       "parryBonus": 2.5,
       "recommendable": false,
       "note": null,
+      "availableFrom": "black-forest",
+      "availableTier": 2,
       "names": {
         "cs": "Bronzový pukléř",
         "fr": "Bouclier en bronze",
@@ -12227,7 +13220,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 2,
@@ -12238,7 +13233,9 @@ window.VA_DATA = {
               "name": "Bronze",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 3,
@@ -12249,7 +13246,9 @@ window.VA_DATA = {
               "name": "Bronze",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 4,
@@ -12260,7 +13259,9 @@ window.VA_DATA = {
               "name": "Bronze",
               "amount": 16
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -12293,6 +13294,8 @@ window.VA_DATA = {
       "biome": "black-forest",
       "description": "A headache on a stick.",
       "blockArmor": 12,
+      "availableFrom": "black-forest",
+      "availableTier": 2,
       "names": {
         "cs": "Bronzový palcát",
         "de": "Bronzener Streitkolben",
@@ -12327,7 +13330,9 @@ window.VA_DATA = {
               "name": "Bronze",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 2,
@@ -12343,7 +13348,9 @@ window.VA_DATA = {
               "name": "Bronze",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 3,
@@ -12359,7 +13366,9 @@ window.VA_DATA = {
               "name": "Bronze",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 4,
@@ -12375,7 +13384,9 @@ window.VA_DATA = {
               "name": "Bronze",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -12407,6 +13418,8 @@ window.VA_DATA = {
       "tier": 2,
       "biome": "black-forest",
       "description": "A good bronze pick. Can break very hard rocks.",
+      "availableFrom": "black-forest",
+      "availableTier": 2,
       "names": {
         "cs": "Bronzový krumpáč",
         "ru": "Бронзовая кирка"
@@ -12444,7 +13457,9 @@ window.VA_DATA = {
               "name": "Deer Hide",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 2,
@@ -12465,7 +13480,9 @@ window.VA_DATA = {
               "name": "Deer Hide",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 3,
@@ -12486,7 +13503,9 @@ window.VA_DATA = {
               "name": "Deer Hide",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 4,
@@ -12507,7 +13526,9 @@ window.VA_DATA = {
               "name": "Deer Hide",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -12540,6 +13561,8 @@ window.VA_DATA = {
       "biome": "black-forest",
       "description": "A sturdy spear with a head of burnished bronze.",
       "blockArmor": 12,
+      "availableFrom": "black-forest",
+      "availableTier": 2,
       "names": {
         "cs": "Bronzové kopí",
         "fr": "Lance en bronze",
@@ -12578,7 +13601,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 2,
@@ -12599,7 +13624,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 3,
@@ -12620,7 +13647,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 4,
@@ -12641,7 +13670,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -12674,6 +13705,8 @@ window.VA_DATA = {
       "biome": "black-forest",
       "description": "Blood-drinker. A thirsty friend.",
       "blockArmor": 12,
+      "availableFrom": "black-forest",
+      "availableTier": 2,
       "names": {
         "cs": "Bronzový meč",
         "fr": "Épée en bronze",
@@ -12712,7 +13745,9 @@ window.VA_DATA = {
               "name": "Feathers",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         }
       ],
       "materials": [
@@ -12744,6 +13779,8 @@ window.VA_DATA = {
       "tier": 2,
       "biome": "black-forest",
       "description": "Sharper than flint. A sleek messenger of death.",
+      "availableFrom": "black-forest",
+      "availableTier": 2,
       "names": {
         "cs": "Bronzový šíp",
         "fr": "Flèche en bronze",
@@ -12782,7 +13819,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -12798,7 +13837,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -12814,7 +13855,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -12830,7 +13873,10 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -12869,6 +13915,8 @@ window.VA_DATA = {
       "blockForce": 50,
       "parryBonus": 2,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Жестокий убийца"
       }
@@ -12905,7 +13953,9 @@ window.VA_DATA = {
               "name": "Wood",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         }
       ],
       "materials": [
@@ -12937,6 +13987,8 @@ window.VA_DATA = {
       "tier": 7,
       "biome": "mistlands",
       "description": "Heavy and pointy, this one's gonna hurt.",
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "ru": "Панцирная стрела"
       }
@@ -12973,7 +14025,9 @@ window.VA_DATA = {
               "name": "Feathers",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         }
       ],
       "materials": [
@@ -13005,6 +14059,8 @@ window.VA_DATA = {
       "tier": 7,
       "biome": "mistlands",
       "description": "A heavy and solid bolt.",
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "cs": "Šipka z krunýře",
         "ru": "Панцирный болт"
@@ -13042,7 +14098,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 2,
@@ -13063,7 +14121,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 3,
@@ -13084,7 +14144,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 6
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         }
       ],
       "materials": [
@@ -13118,6 +14180,8 @@ window.VA_DATA = {
       "parryBonus": 2.5,
       "recommendable": false,
       "note": null,
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "ru": "Панцирный баклер"
       }
@@ -13154,7 +14218,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 2,
@@ -13175,7 +14241,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 3,
@@ -13196,7 +14264,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 6
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         }
       ],
       "materials": [
@@ -13228,6 +14298,8 @@ window.VA_DATA = {
       "blockForce": 60,
       "recommendable": false,
       "note": null,
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "ru": "Панцирный щит"
       }
@@ -13264,7 +14336,9 @@ window.VA_DATA = {
               "name": "Mandible",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 2,
@@ -13285,7 +14359,9 @@ window.VA_DATA = {
               "name": "Mandible",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 3,
@@ -13306,7 +14382,9 @@ window.VA_DATA = {
               "name": "Mandible",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 4,
@@ -13327,7 +14405,9 @@ window.VA_DATA = {
               "name": "Mandible",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         }
       ],
       "materials": [
@@ -13361,6 +14441,8 @@ window.VA_DATA = {
       "description": "Sharpened to jagged perfection, this spear is sure to be deadly.",
       "weight": 1.5,
       "blockArmor": 48,
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "cs": "Kopí z krunýře",
         "de": "Chitin-Speer",
@@ -13400,7 +14482,9 @@ window.VA_DATA = {
               "name": "Ashwood",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         }
       ],
       "materials": [
@@ -13432,6 +14516,8 @@ window.VA_DATA = {
       "tier": 8,
       "biome": "ashlands",
       "description": "This arrow has been whittled into shape from a charred femur, and it's as hard as any metal.",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Обугленная стрела"
       }
@@ -13468,7 +14554,9 @@ window.VA_DATA = {
               "name": "Feathers",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         }
       ],
       "materials": [
@@ -13500,6 +14588,8 @@ window.VA_DATA = {
       "tier": 8,
       "biome": "ashlands",
       "description": "A sturdy bone from a forearm, shaped into a deadly bolt.",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "cs": "Sežehnutá šipka",
         "ru": "Обугленный болт"
@@ -13527,7 +14617,9 @@ window.VA_DATA = {
               "name": "Wood",
               "amount": 6
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 2,
@@ -13538,7 +14630,9 @@ window.VA_DATA = {
               "name": "Bone Fragments",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 3,
@@ -13549,7 +14643,9 @@ window.VA_DATA = {
               "name": "Bone Fragments",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 4,
@@ -13560,7 +14656,9 @@ window.VA_DATA = {
               "name": "Bone Fragments",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         }
       ],
       "materials": [
@@ -13586,6 +14684,8 @@ window.VA_DATA = {
       "description": "A crude but useful weapon.",
       "blockArmor": 3,
       "blockForce": 20,
+      "availableFrom": "meadows",
+      "availableTier": 1,
       "names": {
         "cs": "Palice",
         "de": "Keule",
@@ -13620,7 +14720,9 @@ window.VA_DATA = {
               "name": "Copper",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 2,
@@ -13636,7 +14738,9 @@ window.VA_DATA = {
               "name": "Copper",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 3,
@@ -13652,7 +14756,9 @@ window.VA_DATA = {
               "name": "Copper",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 4,
@@ -13668,7 +14774,9 @@ window.VA_DATA = {
               "name": "Copper",
               "amount": 16
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -13698,6 +14806,8 @@ window.VA_DATA = {
       "tier": 2,
       "biome": "black-forest",
       "description": "A glittering copper knife.",
+      "availableFrom": "black-forest",
+      "availableTier": 2,
       "names": {
         "cs": "Měděný nůž",
         "fr": "Couteau en cuivre",
@@ -13731,7 +14841,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 2,
@@ -13752,7 +14864,9 @@ window.VA_DATA = {
               "name": "Deer Hide",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 3,
@@ -13773,7 +14887,9 @@ window.VA_DATA = {
               "name": "Deer Hide",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 4,
@@ -13794,7 +14910,9 @@ window.VA_DATA = {
               "name": "Deer Hide",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         }
       ],
       "materials": [
@@ -13823,6 +14941,8 @@ window.VA_DATA = {
       "biome": "meadows",
       "description": "A crude but functional bow.",
       "blockArmor": 3,
+      "availableFrom": "meadows",
+      "availableTier": 1,
       "names": {
         "cs": "Hrubý luk",
         "fr": "Arc",
@@ -13861,7 +14981,9 @@ window.VA_DATA = {
               "name": "Crystal",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 2,
@@ -13877,7 +14999,9 @@ window.VA_DATA = {
               "name": "Silver",
               "amount": 15
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 3,
@@ -13893,7 +15017,9 @@ window.VA_DATA = {
               "name": "Silver",
               "amount": 30
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 4,
@@ -13909,7 +15035,9 @@ window.VA_DATA = {
               "name": "Silver",
               "amount": 60
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         }
       ],
       "materials": [
@@ -13946,6 +15074,8 @@ window.VA_DATA = {
       "biome": "mountain",
       "description": "It's see-through and tears through.",
       "blockArmor": 40,
+      "availableFrom": "mountain",
+      "availableTier": 5,
       "names": {
         "cs": "Křišťálová bitevní sekera",
         "de": "Kristallkampfaxt",
@@ -13985,7 +15115,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 2,
@@ -14006,7 +15138,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 3,
@@ -14027,7 +15161,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 4,
@@ -14048,7 +15184,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         }
       ],
       "materials": [
@@ -14081,6 +15219,8 @@ window.VA_DATA = {
       "biome": "mistlands",
       "description": "This mighty sledge yearns to wreak havoc.",
       "blockArmor": 52,
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "ru": "Разрушитель"
       }
@@ -14122,7 +15262,9 @@ window.VA_DATA = {
               "name": "Guck",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 2,
@@ -14148,7 +15290,9 @@ window.VA_DATA = {
               "name": "Guck",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 3,
@@ -14174,7 +15318,9 @@ window.VA_DATA = {
               "name": "Guck",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 4,
@@ -14200,7 +15346,9 @@ window.VA_DATA = {
               "name": "Guck",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         }
       ],
       "materials": [
@@ -14241,6 +15389,8 @@ window.VA_DATA = {
       "biome": "mountain",
       "description": "Dark wood strung with glistening sinew. A vicious thing.",
       "blockArmor": 3,
+      "availableFrom": "mountain",
+      "availableTier": 5,
       "names": {
         "cs": "Draugrův Tesák",
         "fr": "Croc de Draugr",
@@ -14284,7 +15434,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -14310,7 +15462,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -14336,7 +15490,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 4,
@@ -14362,7 +15518,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         }
       ],
       "materials": [
@@ -14405,6 +15563,8 @@ window.VA_DATA = {
       "blockForce": 20,
       "parryBonus": 2,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Дундр"
       }
@@ -14451,7 +15611,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -14467,7 +15629,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -14483,7 +15647,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -14499,7 +15665,10 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -14547,6 +15716,8 @@ window.VA_DATA = {
       "blockArmor": 57,
       "blockForce": 20,
       "parryBonus": 2,
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "cs": "Dyrnwyn",
         "ru": "Дирнвин"
@@ -14584,7 +15755,9 @@ window.VA_DATA = {
               "name": "Wood",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 2,
@@ -14600,7 +15773,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 3,
@@ -14616,7 +15791,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 4,
@@ -14632,7 +15809,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         }
       ],
       "materials": [
@@ -14674,6 +15853,8 @@ window.VA_DATA = {
       "blockForce": 20,
       "parryBonus": 2,
       "movementSpeed": "-5%",
+      "availableFrom": "meadows",
+      "availableTier": 1,
       "names": {
         "ru": "Древние топоры"
       }
@@ -14706,7 +15887,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -14727,7 +15910,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -14748,7 +15933,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -14769,7 +15956,10 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -14804,6 +15994,8 @@ window.VA_DATA = {
       "blockForce": 20,
       "parryBonus": 2,
       "movementSpeed": "-5%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -14833,7 +16025,9 @@ window.VA_DATA = {
               "name": "Embers",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         }
       ],
       "materials": [
@@ -14866,6 +16060,8 @@ window.VA_DATA = {
       "biome": "deep-north",
       "description": "Trapped embers, ready to burst. Caution is advised.",
       "weight": 0.3,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -14905,7 +16101,9 @@ window.VA_DATA = {
               "name": "Silver",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 2,
@@ -14931,7 +16129,9 @@ window.VA_DATA = {
               "name": "Silver",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 3,
@@ -14957,7 +16157,9 @@ window.VA_DATA = {
               "name": "Silver",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 4,
@@ -14983,7 +16185,9 @@ window.VA_DATA = {
               "name": "Silver",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         }
       ],
       "materials": [
@@ -15020,6 +16224,8 @@ window.VA_DATA = {
       "biome": "mountain",
       "description": "Even in death, the wolf's tooth aches for flesh.",
       "blockArmor": 30,
+      "availableFrom": "mountain",
+      "availableTier": 5,
       "names": {
         "cs": "Kopí z tesáku",
         "fr": "Lance en crocs",
@@ -15058,7 +16264,9 @@ window.VA_DATA = {
               "name": "Deer Hide",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 2,
@@ -15079,7 +16287,9 @@ window.VA_DATA = {
               "name": "Deer Hide",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 3,
@@ -15100,7 +16310,9 @@ window.VA_DATA = {
               "name": "Deer Hide",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 4,
@@ -15121,7 +16333,9 @@ window.VA_DATA = {
               "name": "Deer Hide",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         }
       ],
       "materials": [
@@ -15153,6 +16367,8 @@ window.VA_DATA = {
       "tier": 2,
       "biome": "black-forest",
       "description": "A simple bow of strong and supple wood.",
+      "availableFrom": "black-forest",
+      "availableTier": 2,
       "names": {
         "cs": "Luk z jemného dřeva",
         "fr": "Arc de Bois Noble",
@@ -15191,7 +16407,9 @@ window.VA_DATA = {
               "name": "Feathers",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         }
       ],
       "materials": [
@@ -15225,6 +16443,8 @@ window.VA_DATA = {
       "tier": 1,
       "biome": "meadows",
       "description": "This arrow burns whatever it pierces.",
+      "availableFrom": "meadows",
+      "availableTier": 1,
       "names": {
         "cs": "Ohnivý šíp",
         "fr": "Flèche enflammée",
@@ -15268,7 +16488,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -15294,7 +16516,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -15320,7 +16544,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 4,
@@ -15346,7 +16572,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         }
       ],
       "materials": [
@@ -15386,6 +16614,8 @@ window.VA_DATA = {
       "description": "Dense yet spiked flametal, perfect for bashing enemy faces in.",
       "blockArmor": 57,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "de": "Flammenkern-Streitkolben",
         "ru": "Огнеметаллическая булава"
@@ -15423,7 +16653,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -15444,7 +16676,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -15465,7 +16699,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         }
       ],
       "materials": [
@@ -15497,6 +16733,8 @@ window.VA_DATA = {
       "blockForce": 50,
       "recommendable": false,
       "note": null,
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Щит из огнеметалла"
       }
@@ -15533,7 +16771,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -15554,7 +16794,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -15575,7 +16817,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         }
       ],
       "materials": [
@@ -15608,6 +16852,8 @@ window.VA_DATA = {
       "movementSpeed": "-10%",
       "recommendable": false,
       "note": null,
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Башенный щит из огнеметалла"
       }
@@ -15644,7 +16890,9 @@ window.VA_DATA = {
               "name": "Silver",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 2,
@@ -15665,7 +16913,9 @@ window.VA_DATA = {
               "name": "Silver",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 3,
@@ -15686,7 +16936,9 @@ window.VA_DATA = {
               "name": "Silver",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 4,
@@ -15707,7 +16959,9 @@ window.VA_DATA = {
               "name": "Silver",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         }
       ],
       "materials": [
@@ -15739,6 +16993,8 @@ window.VA_DATA = {
       "tier": 5,
       "biome": "mountain",
       "description": "If claws work for wolves, why not for a viking?",
+      "availableFrom": "mountain",
+      "availableTier": 5,
       "names": {
         "ru": "Потрошители плоти"
       }
@@ -15770,7 +17026,9 @@ window.VA_DATA = {
               "name": "Flint",
               "amount": 6
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 2,
@@ -15786,7 +17044,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 3,
@@ -15802,7 +17062,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 4,
@@ -15818,7 +17080,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         }
       ],
       "materials": [
@@ -15850,6 +17114,8 @@ window.VA_DATA = {
       "description": "Sharper than stone.",
       "weight": 1.5,
       "blockArmor": 4,
+      "availableFrom": "meadows",
+      "availableTier": 1,
       "names": {
         "cs": "Sekera z pazourku",
         "de": "Feuersteinaxt",
@@ -15888,7 +17154,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 2,
@@ -15899,7 +17167,9 @@ window.VA_DATA = {
               "name": "Flint",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 3,
@@ -15910,7 +17180,9 @@ window.VA_DATA = {
               "name": "Flint",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 4,
@@ -15921,7 +17193,9 @@ window.VA_DATA = {
               "name": "Flint",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         }
       ],
       "materials": [
@@ -15955,6 +17229,8 @@ window.VA_DATA = {
       "tier": 1,
       "biome": "meadows",
       "description": "Sharpened flint. A reliable tool.",
+      "availableFrom": "meadows",
+      "availableTier": 1,
       "names": {
         "cs": "Nůž z pazourku",
         "ru": "Кремневый нож"
@@ -15992,7 +17268,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 2,
@@ -16013,7 +17291,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 3,
@@ -16034,7 +17314,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 4,
@@ -16055,7 +17337,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         }
       ],
       "materials": [
@@ -16088,6 +17372,8 @@ window.VA_DATA = {
       "biome": "meadows",
       "description": "If your eye marks a thing for death, let your arm send the messenger.",
       "blockArmor": 4,
+      "availableFrom": "meadows",
+      "availableTier": 1,
       "names": {
         "cs": "Kopí z pazourku",
         "fr": "Lance en silex",
@@ -16126,7 +17412,9 @@ window.VA_DATA = {
               "name": "Feathers",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         }
       ],
       "materials": [
@@ -16158,6 +17446,8 @@ window.VA_DATA = {
       "tier": 1,
       "biome": "meadows",
       "description": "A hide-breaker with a head of flint.",
+      "availableFrom": "meadows",
+      "availableTier": 1,
       "names": {
         "cs": "Šíp z pazourku",
         "fr": "Flèche en silex",
@@ -16201,7 +17491,9 @@ window.VA_DATA = {
               "name": "Freeze Gland",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         }
       ],
       "materials": [
@@ -16239,6 +17531,8 @@ window.VA_DATA = {
       "tier": 5,
       "biome": "mountain",
       "description": "A shard of piercing ice.",
+      "availableFrom": "mountain",
+      "availableTier": 5,
       "names": {
         "cs": "Mrazivý šíp",
         "fr": "Flèche de givre",
@@ -16277,7 +17571,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -16293,7 +17589,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -16309,7 +17607,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -16325,7 +17625,10 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -16368,6 +17671,8 @@ window.VA_DATA = {
       "weight": 2.5,
       "blockArmor": 88,
       "movementSpeed": "-5%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -16402,7 +17707,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -16418,7 +17725,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -16434,7 +17743,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -16450,7 +17761,10 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -16494,6 +17808,8 @@ window.VA_DATA = {
       "biome": "deep-north",
       "description": "Burn it all to the ground, or freeze it in an eternal moment of destruction...",
       "blockArmor": 66,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -16528,7 +17844,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -16544,7 +17862,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -16560,7 +17880,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -16576,7 +17898,10 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -16620,6 +17945,8 @@ window.VA_DATA = {
       "biome": "deep-north",
       "description": "Keep your head cool as you draw, and then let your fury loose with your arrows.",
       "weight": 1.5,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -16654,7 +17981,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -16670,7 +17999,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -16686,7 +18017,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -16702,7 +18035,10 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -16746,6 +18082,8 @@ window.VA_DATA = {
       "biome": "deep-north",
       "description": "If your enemies don't freeze as you take aim, they are sure to do so once they are hit.",
       "weight": 1.5,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -16780,7 +18118,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -16796,7 +18136,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -16812,7 +18154,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -16828,7 +18172,10 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -16872,6 +18219,8 @@ window.VA_DATA = {
       "biome": "deep-north",
       "description": "A cut from this blade stings like ice, then burns like the flame.",
       "weight": 0.3,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -16906,7 +18255,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -16922,7 +18273,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -16938,7 +18291,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -16954,7 +18309,10 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -17000,6 +18358,8 @@ window.VA_DATA = {
       "weight": 2.5,
       "blockArmor": 76,
       "movementSpeed": "-20%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -17034,7 +18394,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -17050,7 +18412,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -17066,7 +18430,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -17082,7 +18448,10 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -17124,6 +18493,8 @@ window.VA_DATA = {
       "description": "The choice between a fiery end and a frozen one is simple: Both at the same time.",
       "weight": 4,
       "blockArmor": 76,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -17158,7 +18529,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -17174,7 +18547,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -17190,7 +18565,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -17206,7 +18583,10 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -17247,6 +18627,8 @@ window.VA_DATA = {
       "biome": "deep-north",
       "description": "A slight risk of frostbite is inevitable.",
       "weight": 2,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -17281,7 +18663,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -17297,7 +18681,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -17313,7 +18699,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -17329,7 +18717,10 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -17371,6 +18762,8 @@ window.VA_DATA = {
       "description": "Are those sparks that fly as this weapon finds its impact, or are they shards of ice?",
       "weight": 2,
       "blockArmor": 66,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -17405,7 +18798,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -17421,7 +18816,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -17437,7 +18834,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -17453,7 +18852,10 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -17496,6 +18898,8 @@ window.VA_DATA = {
       "weight": 4,
       "blockArmor": 52,
       "movementSpeed": "-20%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -17530,7 +18934,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -17546,7 +18952,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -17562,7 +18970,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -17578,7 +18988,10 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -17620,6 +19033,8 @@ window.VA_DATA = {
       "description": "Dipped in frozen flames, this spear spells certain doom.",
       "weight": 1.5,
       "blockArmor": 66,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -17654,7 +19069,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -17670,7 +19087,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -17686,7 +19105,9 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -17702,7 +19123,10 @@ window.VA_DATA = {
               "name": "Frostfire Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -17745,6 +19169,8 @@ window.VA_DATA = {
       "weight": 0.8,
       "blockArmor": 66,
       "movementSpeed": "-5%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -17784,7 +19210,9 @@ window.VA_DATA = {
               "name": "Freeze Gland",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 2,
@@ -17795,7 +19223,9 @@ window.VA_DATA = {
               "name": "Silver",
               "amount": 15
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 3,
@@ -17806,7 +19236,9 @@ window.VA_DATA = {
               "name": "Silver",
               "amount": 30
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 4,
@@ -17817,7 +19249,9 @@ window.VA_DATA = {
               "name": "Silver",
               "amount": 60
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         }
       ],
       "materials": [
@@ -17861,6 +19295,8 @@ window.VA_DATA = {
       "biome": "mountain",
       "description": "The dead fear silver. Remind them why.",
       "blockArmor": 30,
+      "availableFrom": "mountain",
+      "availableTier": 5,
       "names": {
         "cs": "Frostner",
         "de": "Frostner",
@@ -17905,7 +19341,9 @@ window.VA_DATA = {
               "name": "Mandible",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 2,
@@ -17926,7 +19364,9 @@ window.VA_DATA = {
               "name": "Mandible",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 3,
@@ -17947,7 +19387,9 @@ window.VA_DATA = {
               "name": "Mandible",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 4,
@@ -17968,7 +19410,9 @@ window.VA_DATA = {
               "name": "Mandible",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         }
       ],
       "materials": [
@@ -18011,6 +19455,8 @@ window.VA_DATA = {
       "description": "It might not be a hammer, but Thor himself would still approve of this weapon.",
       "weight": 2.5,
       "blockArmor": 64,
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "ru": "Химминафль"
       }
@@ -18052,7 +19498,9 @@ window.VA_DATA = {
               "name": "Deer Hide",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 2,
@@ -18078,7 +19526,9 @@ window.VA_DATA = {
               "name": "Deer Hide",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 3,
@@ -18104,7 +19554,9 @@ window.VA_DATA = {
               "name": "Deer Hide",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 4,
@@ -18130,7 +19582,9 @@ window.VA_DATA = {
               "name": "Deer Hide",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -18166,6 +19620,8 @@ window.VA_DATA = {
       "tier": 4,
       "biome": "swamp",
       "description": "Finely worked and strung. A huntsman's joy.",
+      "availableFrom": "swamp",
+      "availableTier": 4,
       "names": {
         "cs": "Lovecký luk",
         "fr": "Arc de chasse",
@@ -18204,7 +19660,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 2,
@@ -18220,7 +19678,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 3,
@@ -18236,7 +19696,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 4,
@@ -18252,7 +19714,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -18285,6 +19749,8 @@ window.VA_DATA = {
       "biome": "swamp",
       "description": "Blood-drinker, skull-cracker, death-bringer.",
       "blockArmor": 28,
+      "availableFrom": "swamp",
+      "availableTier": 4,
       "names": {
         "cs": "Železný Atgeir",
         "fr": "Atgeir en fer",
@@ -18323,7 +19789,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 2,
@@ -18339,7 +19807,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 3,
@@ -18355,7 +19825,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 4,
@@ -18371,7 +19843,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -18406,6 +19880,8 @@ window.VA_DATA = {
       "biome": "swamp",
       "description": "Sharp and strong, a woodcutter's friend.",
       "blockArmor": 21,
+      "availableFrom": "swamp",
+      "availableTier": 4,
       "names": {
         "cs": "Železná sekera",
         "de": "Eisenaxt",
@@ -18445,7 +19921,9 @@ window.VA_DATA = {
               "name": "Feathers",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         }
       ],
       "materials": [
@@ -18474,9 +19952,11 @@ window.VA_DATA = {
       "skill": "crossbows",
       "backstab": null,
       "quantity": 20,
-      "tier": 4,
-      "biome": "swamp",
+      "tier": 7,
+      "biome": "mistlands",
       "description": "A sturdy iron missile.",
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "cs": "Železná Šipka",
         "ru": "Железный болт"
@@ -18509,7 +19989,9 @@ window.VA_DATA = {
               "name": "Ancient Bark",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 2,
@@ -18525,7 +20007,9 @@ window.VA_DATA = {
               "name": "Ancient Bark",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 3,
@@ -18541,7 +20025,9 @@ window.VA_DATA = {
               "name": "Ancient Bark",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -18572,6 +20058,8 @@ window.VA_DATA = {
       "movementSpeed": "-5%",
       "recommendable": false,
       "note": null,
+      "availableFrom": "swamp",
+      "availableTier": 4,
       "names": {
         "fr": "Bouclier en fer",
         "ru": "Железный баклер"
@@ -18609,7 +20097,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 2,
@@ -18620,7 +20110,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 3,
@@ -18631,7 +20123,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 4,
@@ -18642,7 +20136,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 40
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -18675,6 +20171,8 @@ window.VA_DATA = {
       "biome": "swamp",
       "description": "A fist-sized lump of iron on a wooden shaft.",
       "blockArmor": 21,
+      "availableFrom": "swamp",
+      "availableTier": 4,
       "names": {
         "cs": "Železný palcát",
         "de": "Eiserner Streitkolben",
@@ -18709,7 +20207,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 2,
@@ -18725,7 +20225,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 3,
@@ -18741,7 +20243,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 4,
@@ -18757,7 +20261,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 40
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -18787,6 +20293,8 @@ window.VA_DATA = {
       "tier": 4,
       "biome": "swamp",
       "description": "A sturdy tool of hardened iron.",
+      "availableFrom": "swamp",
+      "availableTier": 4,
       "names": {
         "cs": "Železný krumpáč",
         "ru": "Железная кирка"
@@ -18829,7 +20337,9 @@ window.VA_DATA = {
               "name": "Draugr Elite Trophy",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 2,
@@ -18850,7 +20360,9 @@ window.VA_DATA = {
               "name": "Ymir Flesh",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 3,
@@ -18871,7 +20383,9 @@ window.VA_DATA = {
               "name": "Ymir Flesh",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 4,
@@ -18892,7 +20406,9 @@ window.VA_DATA = {
               "name": "Ymir Flesh",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -18929,6 +20445,8 @@ window.VA_DATA = {
       "biome": "swamp",
       "description": "A mighty hammer, worthy of a champion.",
       "blockArmor": 28,
+      "availableFrom": "swamp",
+      "availableTier": 4,
       "names": {
         "cs": "Železné velké kladivo",
         "fr": "Masse de fer",
@@ -18967,7 +20485,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 2,
@@ -18988,7 +20508,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 3,
@@ -19009,7 +20531,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 4,
@@ -19030,7 +20554,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -19063,6 +20589,8 @@ window.VA_DATA = {
       "biome": "swamp",
       "description": "The straight line between life and death runs along the edge of this blade.",
       "blockArmor": 21,
+      "availableFrom": "swamp",
+      "availableTier": 4,
       "names": {
         "cs": "Železný meč",
         "de": "Eisenschwert",
@@ -19097,7 +20625,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 2,
@@ -19113,7 +20643,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 3,
@@ -19129,7 +20661,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -19158,6 +20692,8 @@ window.VA_DATA = {
       "blockForce": 100,
       "recommendable": false,
       "note": null,
+      "availableFrom": "swamp",
+      "availableTier": 4,
       "names": {
         "cs": "Pavéza ze železa",
         "fr": "Écu en fer",
@@ -19196,7 +20732,9 @@ window.VA_DATA = {
               "name": "Feathers",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -19228,6 +20766,8 @@ window.VA_DATA = {
       "tier": 4,
       "biome": "swamp",
       "description": "Capped with iron and flighted with dark feathers.",
+      "availableFrom": "swamp",
+      "availableTier": 4,
       "names": {
         "cs": "Železný šíp",
         "fr": "Flèche en fer",
@@ -19271,7 +20811,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 2,
@@ -19292,7 +20834,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 3,
@@ -19313,7 +20857,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 4,
@@ -19334,7 +20880,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         }
       ],
       "materials": [
@@ -19380,6 +20928,8 @@ window.VA_DATA = {
       "weight": 2,
       "blockArmor": 48,
       "blockForce": 20,
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "cs": "Zhouba Jótunů",
         "de": "Jotun-Fluch",
@@ -19419,7 +20969,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -19435,7 +20987,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -19451,7 +21005,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -19467,7 +21023,10 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -19505,6 +21064,8 @@ window.VA_DATA = {
       "description": "If the force of your blow isn't enough to knock your enemies to the ground, perhaps the primal roots will hold them down for you.",
       "blockArmor": 57,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Клоссен"
       }
@@ -19541,7 +21102,9 @@ window.VA_DATA = {
               "name": "Scale Hide",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 2,
@@ -19562,7 +21125,9 @@ window.VA_DATA = {
               "name": "Scale Hide",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 3,
@@ -19583,7 +21148,9 @@ window.VA_DATA = {
               "name": "Scale Hide",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 4,
@@ -19604,7 +21171,9 @@ window.VA_DATA = {
               "name": "Scale Hide",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         }
       ],
       "materials": [
@@ -19637,6 +21206,8 @@ window.VA_DATA = {
       "biome": "mistlands",
       "description": "As deadly as it is shiny, and it's very shiny.",
       "blockArmor": 52,
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "cs": "Krom",
         "ru": "Кром"
@@ -19670,7 +21241,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -19691,7 +21264,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -19712,7 +21287,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -19733,7 +21310,10 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -19764,6 +21344,8 @@ window.VA_DATA = {
       "weight": 0.3,
       "blockArmor": 48,
       "blockForce": 20,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -19803,7 +21385,9 @@ window.VA_DATA = {
               "name": "Wisp",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 2,
@@ -19824,7 +21408,9 @@ window.VA_DATA = {
               "name": "Wisp",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 3,
@@ -19845,7 +21431,9 @@ window.VA_DATA = {
               "name": "Wisp",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 4,
@@ -19866,7 +21454,9 @@ window.VA_DATA = {
               "name": "Wisp",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         }
       ],
       "materials": [
@@ -19911,6 +21501,8 @@ window.VA_DATA = {
       "blockArmor": 48,
       "blockForce": 20,
       "parryBonus": 2,
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "cs": "Mlhošlap",
         "de": "Nebelbrecher",
@@ -19945,7 +21537,9 @@ window.VA_DATA = {
               "name": "Feathers",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         }
       ],
       "materials": [
@@ -19973,6 +21567,8 @@ window.VA_DATA = {
       "tier": 6,
       "biome": "plains",
       "description": "The final stitch.",
+      "availableFrom": "plains",
+      "availableTier": 6,
       "names": {
         "cs": "Šíp z jehly",
         "fr": "Flèche aiguille",
@@ -20011,7 +21607,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -20027,7 +21625,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -20043,7 +21643,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 4,
@@ -20059,7 +21661,9 @@ window.VA_DATA = {
               "name": "Asksvin Hide",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         }
       ],
       "materials": [
@@ -20093,6 +21697,8 @@ window.VA_DATA = {
       "description": "Named after the evil dragon that dwells by the roots of the world tree, this sword heralds doom for those who cross its path.",
       "blockArmor": 57,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Нидхёгг"
       }
@@ -20129,7 +21735,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -20145,7 +21753,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -20161,7 +21771,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -20177,7 +21789,10 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -20211,6 +21826,8 @@ window.VA_DATA = {
       "description": "If you bleed, your foes are sure to do so as well.",
       "blockArmor": 57,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Кровоточащий нидхёгг"
       }
@@ -20247,7 +21864,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -20263,7 +21882,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -20279,7 +21900,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -20295,7 +21918,10 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -20331,6 +21957,8 @@ window.VA_DATA = {
       "description": "Tangle your foes in roots, like the namesake of this blade.",
       "blockArmor": 57,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Первобытный нидхёгг"
       }
@@ -20367,7 +21995,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -20383,7 +22013,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -20399,7 +22031,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -20415,7 +22049,10 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -20451,6 +22088,8 @@ window.VA_DATA = {
       "description": "The power of lightning dances along the blade of this sword, a promise of the pain to come.",
       "blockArmor": 57,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Громовой нидхёгг"
       }
@@ -20483,7 +22122,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -20499,7 +22140,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -20515,7 +22158,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -20531,7 +22176,10 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -20564,6 +22212,8 @@ window.VA_DATA = {
       "weight": 2.5,
       "blockArmor": 88,
       "movementSpeed": "-5%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -20594,7 +22244,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -20610,7 +22262,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -20626,7 +22280,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -20642,7 +22298,10 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -20677,6 +22336,8 @@ window.VA_DATA = {
       "weight": 2,
       "blockArmor": 66,
       "movementSpeed": "-5%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -20707,7 +22368,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -20723,7 +22386,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -20739,7 +22404,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -20755,7 +22422,10 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -20790,6 +22460,8 @@ window.VA_DATA = {
       "description": "This bow shall find its target with a golden precision.",
       "weight": 1.5,
       "movementSpeed": "-5%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -20820,7 +22492,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -20836,7 +22510,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -20852,7 +22528,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         }
       ],
       "materials": [
@@ -20882,6 +22560,8 @@ window.VA_DATA = {
       "movementSpeed": "-5%",
       "recommendable": false,
       "note": null,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -20912,7 +22592,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -20928,7 +22610,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -20944,7 +22628,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -20960,7 +22646,10 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -20994,6 +22683,8 @@ window.VA_DATA = {
       "biome": "deep-north",
       "description": "An incredible force is bound to this weapon, waiting to be unleashed.",
       "movementSpeed": "-5%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -21024,7 +22715,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -21040,7 +22733,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -21056,7 +22751,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -21072,7 +22769,10 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -21106,6 +22806,8 @@ window.VA_DATA = {
       "biome": "deep-north",
       "description": "A flash of gold is the last thing your foes will ever see.",
       "movementSpeed": "0%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -21136,7 +22838,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -21152,7 +22856,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -21168,7 +22874,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -21184,7 +22892,10 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -21219,6 +22930,8 @@ window.VA_DATA = {
       "description": "A mighty axe fit for a mighty warrior.",
       "blockArmor": 76,
       "movementSpeed": "-20%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -21249,7 +22962,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -21265,7 +22980,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -21281,7 +22998,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         }
       ],
       "materials": [
@@ -21311,6 +23030,8 @@ window.VA_DATA = {
       "movementSpeed": "-10%",
       "recommendable": false,
       "note": null,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -21341,7 +23062,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -21357,7 +23080,9 @@ window.VA_DATA = {
               "name": "Frozen Branch",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -21373,7 +23098,9 @@ window.VA_DATA = {
               "name": "Frozen Branch",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -21389,7 +23116,10 @@ window.VA_DATA = {
               "name": "Frozen Branch",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -21420,6 +23150,8 @@ window.VA_DATA = {
       "biome": "deep-north",
       "description": "A striking weapon, both visually and lethally.",
       "blockArmor": 76,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -21450,7 +23182,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -21466,7 +23200,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -21482,7 +23218,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -21498,7 +23236,10 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -21528,6 +23269,8 @@ window.VA_DATA = {
       "tier": 9,
       "biome": "deep-north",
       "description": "Wrap your fists in the hardest of metals, to ensure your foes feel the strength behind your blows.",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -21558,7 +23301,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -21574,7 +23319,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -21590,7 +23337,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -21606,7 +23355,10 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -21637,6 +23389,8 @@ window.VA_DATA = {
       "biome": "deep-north",
       "description": "Hit hard and fast, and leave your foe no time to recover.",
       "blockArmor": 66,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -21667,7 +23421,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -21683,7 +23439,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -21699,7 +23457,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         }
       ],
       "materials": [
@@ -21729,6 +23489,8 @@ window.VA_DATA = {
       "movementSpeed": "-5%",
       "recommendable": false,
       "note": null,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -21759,7 +23521,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -21775,7 +23539,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -21791,7 +23557,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -21807,7 +23575,10 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -21839,6 +23610,8 @@ window.VA_DATA = {
       "description": "With this weapon, your blows will be heavy as that of a troll.",
       "blockArmor": 52,
       "movementSpeed": "-20%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -21869,7 +23642,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -21885,7 +23660,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -21901,7 +23678,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -21917,7 +23696,10 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -21949,6 +23731,8 @@ window.VA_DATA = {
       "description": "A golden opportunity to strike.",
       "blockArmor": 66,
       "movementSpeed": "-5%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -21979,7 +23763,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -21995,7 +23781,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -22011,7 +23799,9 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -22027,7 +23817,10 @@ window.VA_DATA = {
               "name": "Timberwood",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -22059,6 +23852,8 @@ window.VA_DATA = {
       "description": "Even in the faintest sunlight, this weapon glimmers.",
       "blockArmor": 66,
       "movementSpeed": "-5%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -22089,7 +23884,9 @@ window.VA_DATA = {
               "name": "Liquid Frost",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -22105,7 +23902,9 @@ window.VA_DATA = {
               "name": "Nornathread",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -22121,7 +23920,9 @@ window.VA_DATA = {
               "name": "Nornathread",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -22137,7 +23938,10 @@ window.VA_DATA = {
               "name": "Nornathread",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -22170,6 +23974,8 @@ window.VA_DATA = {
       "weight": 0.3,
       "blockArmor": 48,
       "blockForce": 20,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -22204,7 +24010,9 @@ window.VA_DATA = {
               "name": "Feathers",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         }
       ],
       "materials": [
@@ -22236,6 +24044,8 @@ window.VA_DATA = {
       "tier": 5,
       "biome": "mountain",
       "description": "A sliver of darkness.",
+      "availableFrom": "mountain",
+      "availableTier": 5,
       "names": {
         "cs": "Obsidiánový šíp",
         "fr": "Flèche d'obsidienne",
@@ -22274,7 +24084,9 @@ window.VA_DATA = {
               "name": "Resin",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -22311,6 +24123,8 @@ window.VA_DATA = {
       "parryBonus": 1.5,
       "recommendable": false,
       "note": "Area/DoT damage not listed on the wiki",
+      "availableFrom": "swamp",
+      "availableTier": 4,
       "names": {
         "cs": "Bomba ze slizu",
         "fr": "Bombe puante",
@@ -22349,7 +24163,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 2,
@@ -22365,7 +24181,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 3,
@@ -22381,7 +24199,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 4,
@@ -22397,7 +24217,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 6
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         }
       ],
       "materials": [
@@ -22429,6 +24251,8 @@ window.VA_DATA = {
       "tier": 2,
       "biome": "black-forest",
       "description": "Made for tearing and rending.",
+      "availableFrom": "black-forest",
+      "availableTier": 2,
       "names": {
         "ru": "Медвежьи лапы"
       }
@@ -22470,7 +24294,9 @@ window.VA_DATA = {
               "name": "Ooze",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         }
       ],
       "materials": [
@@ -22508,6 +24334,8 @@ window.VA_DATA = {
       "tier": 5,
       "biome": "mountain",
       "description": "A bitter sting from afar.",
+      "availableFrom": "mountain",
+      "availableTier": 5,
       "names": {
         "cs": "Otrávený šíp",
         "fr": "Flèche empoisonnée",
@@ -22551,7 +24379,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 2,
@@ -22567,7 +24397,9 @@ window.VA_DATA = {
               "name": "Needle",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 3,
@@ -22583,7 +24415,9 @@ window.VA_DATA = {
               "name": "Needle",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 4,
@@ -22599,7 +24433,9 @@ window.VA_DATA = {
               "name": "Needle",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         }
       ],
       "materials": [
@@ -22641,6 +24477,8 @@ window.VA_DATA = {
       "biome": "plains",
       "description": "A deadly weapon, bristling with fiendish spikes.",
       "blockArmor": 39,
+      "availableFrom": "plains",
+      "availableTier": 6,
       "names": {
         "cs": "Pichlavý palcát",
         "de": "Stachelschwein",
@@ -22680,7 +24518,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -22696,7 +24536,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -22712,7 +24554,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -22728,7 +24572,10 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -22772,6 +24619,8 @@ window.VA_DATA = {
       "blockForce": 20,
       "parryBonus": 2,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "cs": "Prvotní berserkské sekery",
         "de": "Urweltliche Berserkir-Äxte",
@@ -22811,7 +24660,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -22827,7 +24678,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -22843,7 +24696,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -22859,7 +24714,10 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -22900,6 +24758,8 @@ window.VA_DATA = {
       "blockForce": 50,
       "parryBonus": 2,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Первобытный убийца"
       }
@@ -22941,7 +24801,9 @@ window.VA_DATA = {
               "name": "Bonemaw Tooth",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -22967,7 +24829,9 @@ window.VA_DATA = {
               "name": "Bonemaw Tooth",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -22993,7 +24857,9 @@ window.VA_DATA = {
               "name": "Bonemaw Tooth",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 4,
@@ -23019,7 +24885,9 @@ window.VA_DATA = {
               "name": "Bonemaw Tooth",
               "amount": 16
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         }
       ],
       "materials": [
@@ -23058,6 +24926,8 @@ window.VA_DATA = {
       "biome": "ashlands",
       "description": "Rips your foes apart, simple as that.",
       "blockForce": null,
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Разрыватель"
       }
@@ -23094,7 +24964,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -23110,7 +24982,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -23126,7 +25000,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -23142,7 +25018,10 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -23180,6 +25059,8 @@ window.VA_DATA = {
       "biome": "ashlands",
       "description": "Like the twisting branch was made to seek the sun, this bow was made to seek the slaughter.",
       "blockArmor": 3,
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Корневой клык"
       }
@@ -23216,7 +25097,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -23232,7 +25115,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -23248,7 +25133,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -23264,7 +25151,10 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -23299,6 +25189,8 @@ window.VA_DATA = {
       "biome": "ashlands",
       "description": "If the bolt doesn't pin your foe in place, the roots surging up from the ground surely will.",
       "blockForce": null,
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Корневой разрыватель"
       }
@@ -23335,7 +25227,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -23351,7 +25245,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -23367,7 +25263,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -23383,7 +25281,10 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -23424,6 +25325,8 @@ window.VA_DATA = {
       "blockForce": 50,
       "parryBonus": 2,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Грозный убийца"
       }
@@ -23460,7 +25363,9 @@ window.VA_DATA = {
               "name": "Serpent Scale",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 2,
@@ -23481,7 +25386,9 @@ window.VA_DATA = {
               "name": "Serpent Scale",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 3,
@@ -23502,7 +25409,9 @@ window.VA_DATA = {
               "name": "Serpent Scale",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -23535,6 +25444,8 @@ window.VA_DATA = {
       "movementSpeed": "-10%",
       "recommendable": false,
       "note": null,
+      "availableFrom": "swamp",
+      "availableTier": 4,
       "names": {
         "cs": "Štít z hadích šupin",
         "fr": "Bouclier ophidien",
@@ -23568,7 +25479,9 @@ window.VA_DATA = {
               "name": "Writhan Roots",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 2,
@@ -23584,7 +25497,9 @@ window.VA_DATA = {
               "name": "Writhan Roots",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         },
         {
           "quality": 3,
@@ -23600,7 +25515,9 @@ window.VA_DATA = {
               "name": "Writhan Roots",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "swamp",
+          "availableTier": 4
         }
       ],
       "materials": [
@@ -23631,6 +25548,8 @@ window.VA_DATA = {
       "movementSpeed": "0%",
       "recommendable": false,
       "note": null,
+      "availableFrom": "swamp",
+      "availableTier": 4,
       "names": {}
     },
     {
@@ -23665,7 +25584,9 @@ window.VA_DATA = {
               "name": "Feathers",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         }
       ],
       "materials": [
@@ -23699,6 +25620,8 @@ window.VA_DATA = {
       "tier": 5,
       "biome": "mountain",
       "description": "A needle to calm restless spirits.",
+      "availableFrom": "mountain",
+      "availableTier": 5,
       "names": {
         "cs": "Stříbrný šíp",
         "fr": "Flèche en argent",
@@ -23742,7 +25665,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 2,
@@ -23768,7 +25693,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 3,
@@ -23794,7 +25721,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 4,
@@ -23820,7 +25749,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         }
       ],
       "materials": [
@@ -23860,6 +25791,8 @@ window.VA_DATA = {
       "tier": 5,
       "biome": "mountain",
       "description": "A savage piece of pain.",
+      "availableFrom": "mountain",
+      "availableTier": 5,
       "names": {
         "fr": "Couteau en argent",
         "ru": "Серебряный нож"
@@ -23892,7 +25825,9 @@ window.VA_DATA = {
               "name": "Silver",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 2,
@@ -23908,7 +25843,9 @@ window.VA_DATA = {
               "name": "Silver",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 3,
@@ -23924,7 +25861,9 @@ window.VA_DATA = {
               "name": "Silver",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         }
       ],
       "materials": [
@@ -23952,6 +25891,8 @@ window.VA_DATA = {
       "blockForce": 40,
       "recommendable": false,
       "note": null,
+      "availableFrom": "mountain",
+      "availableTier": 5,
       "names": {
         "cs": "Stříbrný štít",
         "fr": "Bouclier en argent",
@@ -23995,7 +25936,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 5
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 2,
@@ -24021,7 +25964,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 3,
@@ -24047,7 +25992,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 6
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         },
         {
           "quality": 4,
@@ -24073,7 +26020,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 12
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         }
       ],
       "materials": [
@@ -24115,6 +26064,8 @@ window.VA_DATA = {
       "description": "Purest of metals, nothing unclean can abide its touch.",
       "weight": 1,
       "blockArmor": 30,
+      "availableFrom": "mountain",
+      "availableTier": 5,
       "names": {
         "cs": "Stříbrný meč",
         "de": "Silberschwert",
@@ -24154,7 +26105,9 @@ window.VA_DATA = {
               "name": "Black Metal",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 2,
@@ -24170,7 +26123,9 @@ window.VA_DATA = {
               "name": "Black Metal",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 3,
@@ -24186,7 +26141,9 @@ window.VA_DATA = {
               "name": "Black Metal",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 4,
@@ -24202,7 +26159,9 @@ window.VA_DATA = {
               "name": "Black Metal",
               "amount": 16
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         }
       ],
       "materials": [
@@ -24233,9 +26192,11 @@ window.VA_DATA = {
       "skill": "knives",
       "backstab": null,
       "quantity": null,
-      "tier": 6,
-      "biome": "plains",
+      "tier": 7,
+      "biome": "mistlands",
       "description": "Stab once for those who've betrayed you, and twice for those you hate.",
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "ru": "Сколль и Хати"
       }
@@ -24272,7 +26233,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 2,
@@ -24288,7 +26251,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 15
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 3,
@@ -24304,7 +26269,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 30
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 4,
@@ -24320,7 +26287,9 @@ window.VA_DATA = {
               "name": "Iron",
               "amount": 60
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         }
       ],
       "materials": [
@@ -24355,6 +26324,8 @@ window.VA_DATA = {
       "biome": "mistlands",
       "description": "Will find skulls to split even in the thickest of mists.",
       "blockArmor": 64,
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "ru": "Крушитель черепов"
       }
@@ -24391,7 +26362,9 @@ window.VA_DATA = {
               "name": "Morgen Sinew",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -24412,7 +26385,9 @@ window.VA_DATA = {
               "name": "Morgen Sinew",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -24433,7 +26408,9 @@ window.VA_DATA = {
               "name": "Morgen Sinew",
               "amount": 6
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 4,
@@ -24454,7 +26431,9 @@ window.VA_DATA = {
               "name": "Morgen Sinew",
               "amount": 12
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         }
       ],
       "materials": [
@@ -24493,6 +26472,8 @@ window.VA_DATA = {
       "blockForce": 50,
       "parryBonus": 2,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Убийца"
       }
@@ -24524,7 +26505,9 @@ window.VA_DATA = {
               "name": "Asksvin Bladder",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         }
       ],
       "materials": [
@@ -24558,6 +26541,8 @@ window.VA_DATA = {
       "parryBonus": 1.5,
       "recommendable": false,
       "note": "Area/DoT damage not listed on the wiki",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Дымовая шашка"
       }
@@ -24594,7 +26579,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 2,
@@ -24610,7 +26597,9 @@ window.VA_DATA = {
               "name": "Bone Fragments",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 3,
@@ -24626,7 +26615,9 @@ window.VA_DATA = {
               "name": "Bone Fragments",
               "amount": 40
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 4,
@@ -24642,7 +26633,9 @@ window.VA_DATA = {
               "name": "Bone Fragments",
               "amount": 80
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         }
       ],
       "materials": [
@@ -24679,6 +26672,8 @@ window.VA_DATA = {
       "tier": 7,
       "biome": "mistlands",
       "description": "Using this bow is backbreaking work but so worth it.",
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "ru": "Хребтолом"
       }
@@ -24720,7 +26715,9 @@ window.VA_DATA = {
               "name": "Bonemaw Tooth",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -24746,7 +26743,9 @@ window.VA_DATA = {
               "name": "Bonemaw Tooth",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -24772,7 +26771,9 @@ window.VA_DATA = {
               "name": "Bonemaw Tooth",
               "amount": 6
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 4,
@@ -24798,7 +26799,9 @@ window.VA_DATA = {
               "name": "Bonemaw Tooth",
               "amount": 12
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         }
       ],
       "materials": [
@@ -24836,6 +26839,8 @@ window.VA_DATA = {
       "description": "Split your enemies' hearts in two.",
       "blockArmor": 57,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Расколнир"
       }
@@ -24872,7 +26877,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -24888,7 +26895,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -24904,7 +26913,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -24920,7 +26931,10 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -24954,6 +26968,8 @@ window.VA_DATA = {
       "description": "A small sacrifice must be made for every battle...",
       "blockArmor": 57,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Кровоточащий расколнир"
       }
@@ -24990,7 +27006,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -25006,7 +27024,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -25022,7 +27042,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -25038,7 +27060,10 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -25074,6 +27099,8 @@ window.VA_DATA = {
       "description": "Nature's forces burst through the ground wherever this spear strikes.",
       "blockArmor": 57,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Первобытный расколнир"
       }
@@ -25110,7 +27137,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -25126,7 +27155,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -25142,7 +27173,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -25158,7 +27191,10 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -25192,6 +27228,8 @@ window.VA_DATA = {
       "description": "Let the crack of thunder split the air.",
       "blockArmor": 57,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Штормовой расколнир"
       }
@@ -25228,7 +27266,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 16
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 2,
@@ -25249,7 +27289,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 3,
@@ -25270,7 +27312,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 16
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 4,
@@ -25291,7 +27335,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 32
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         }
       ],
       "materials": [
@@ -25330,6 +27376,8 @@ window.VA_DATA = {
       "weight": 0.3,
       "blockArmor": 48,
       "blockForce": 20,
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "ru": "Посох огня"
       }
@@ -25366,7 +27414,9 @@ window.VA_DATA = {
               "name": "Proustite Powder",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -25387,7 +27437,9 @@ window.VA_DATA = {
               "name": "Proustite Powder",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -25408,7 +27460,9 @@ window.VA_DATA = {
               "name": "Proustite Powder",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 4,
@@ -25429,7 +27483,9 @@ window.VA_DATA = {
               "name": "Proustite Powder",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         }
       ],
       "materials": [
@@ -25470,6 +27526,8 @@ window.VA_DATA = {
       "blockForce": 20,
       "parryBonus": 2,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Посох раскалывания"
       }
@@ -25506,7 +27564,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 16
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 2,
@@ -25527,7 +27587,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 3,
@@ -25548,7 +27610,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 16
             }
-          ]
+          ],
+          "availableFrom": "mistlands",
+          "availableTier": 7
         },
         {
           "quality": 4,
@@ -25569,7 +27633,9 @@ window.VA_DATA = {
               "name": "Refined Eitr",
               "amount": 32
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         }
       ],
       "materials": [
@@ -25608,6 +27674,8 @@ window.VA_DATA = {
       "blockForce": 20,
       "parryBonus": 2,
       "movementSpeed": "-5%",
+      "availableFrom": "mistlands",
+      "availableTier": 7,
       "names": {
         "ru": "Посох льда"
       }
@@ -25649,7 +27717,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -25675,7 +27745,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -25701,7 +27773,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 4,
@@ -25727,7 +27801,9 @@ window.VA_DATA = {
               "name": "Jade",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         }
       ],
       "materials": [
@@ -25772,6 +27848,8 @@ window.VA_DATA = {
       "blockArmor": 48,
       "parryBonus": 2,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Посох дикой природы"
       }
@@ -25808,7 +27886,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 2,
@@ -25834,7 +27914,9 @@ window.VA_DATA = {
               "name": "Bone Fragments",
               "amount": 10
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 3,
@@ -25860,7 +27942,9 @@ window.VA_DATA = {
               "name": "Bone Fragments",
               "amount": 20
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         },
         {
           "quality": 4,
@@ -25886,7 +27970,9 @@ window.VA_DATA = {
               "name": "Bone Fragments",
               "amount": 40
             }
-          ]
+          ],
+          "availableFrom": "mountain",
+          "availableTier": 5
         }
       ],
       "materials": [
@@ -25921,6 +28007,8 @@ window.VA_DATA = {
       "biome": "black-forest",
       "description": "A weapon worthy of the Gods! If you get hit with this, you'll know it…",
       "blockArmor": 4,
+      "availableFrom": "black-forest",
+      "availableTier": 2,
       "names": {
         "cs": "Jelení palice",
         "fr": "Brise-cerf",
@@ -25954,7 +28042,9 @@ window.VA_DATA = {
               "name": "Stone",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 2,
@@ -25965,7 +28055,9 @@ window.VA_DATA = {
               "name": "Stone",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 3,
@@ -25976,7 +28068,9 @@ window.VA_DATA = {
               "name": "Stone",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 4,
@@ -25987,7 +28081,9 @@ window.VA_DATA = {
               "name": "Stone",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "black-forest",
+          "availableTier": 2
         }
       ],
       "materials": [
@@ -26019,6 +28115,8 @@ window.VA_DATA = {
       "description": "A crude axe for tree-felling.",
       "weight": 1.5,
       "blockArmor": 3,
+      "availableFrom": "meadows",
+      "availableTier": 1,
       "names": {
         "cs": "Kamenná sekera",
         "de": "Steinaxt",
@@ -26057,7 +28155,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -26073,7 +28173,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -26089,7 +28191,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -26105,7 +28209,10 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -26142,6 +28249,8 @@ window.VA_DATA = {
       "tier": 8,
       "biome": "ashlands",
       "description": "Let your arrows fly as swift as the lightning strikes.",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Штормовой клык"
       }
@@ -26178,7 +28287,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -26194,7 +28305,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -26210,7 +28323,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -26226,7 +28341,10 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -26261,6 +28379,8 @@ window.VA_DATA = {
       "biome": "ashlands",
       "description": "The bolts will tear through your enemies like a particularly nasty gale.",
       "blockForce": null,
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Штормовой разрыватель"
       }
@@ -26297,7 +28417,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -26313,7 +28435,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -26329,7 +28453,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -26345,7 +28471,10 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -26383,6 +28512,8 @@ window.VA_DATA = {
       "description": "Particularly effective on cloudy mornings.",
       "blockArmor": 57,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "cs": "Bouřlivá hvězda",
         "de": "Sturmstern",
@@ -26422,7 +28553,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -26438,7 +28571,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -26454,7 +28589,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -26470,7 +28607,10 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -26510,6 +28650,8 @@ window.VA_DATA = {
       "weight": 2.5,
       "blockArmor": 88,
       "movementSpeed": "-5%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -26544,7 +28686,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -26560,7 +28704,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -26576,7 +28722,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -26592,7 +28740,10 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -26635,6 +28786,8 @@ window.VA_DATA = {
       "weight": 2,
       "blockArmor": 66,
       "movementSpeed": "-5%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -26669,7 +28822,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -26685,7 +28840,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -26701,7 +28858,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -26717,7 +28876,10 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -26758,6 +28920,8 @@ window.VA_DATA = {
       "biome": "deep-north",
       "description": "Lightning dances along the string, waiting to be unleashed.",
       "weight": 1.5,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -26792,7 +28956,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -26808,7 +28974,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -26824,7 +28992,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -26840,7 +29010,10 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -26881,6 +29054,8 @@ window.VA_DATA = {
       "biome": "deep-north",
       "description": "The bow is pulled taut with unreleased power, like the air before a lightning strike.",
       "weight": 1.5,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -26915,7 +29090,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -26931,7 +29108,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -26947,7 +29126,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -26963,7 +29144,10 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -27003,6 +29187,8 @@ window.VA_DATA = {
       "biome": "deep-north",
       "description": "The blade is already bloodied, yet it sparks in want of more.",
       "weight": 0.3,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -27037,7 +29223,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -27053,7 +29241,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -27069,7 +29259,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -27085,7 +29277,10 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -27128,6 +29323,8 @@ window.VA_DATA = {
       "weight": 2.5,
       "blockArmor": 76,
       "movementSpeed": "-20%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -27162,7 +29359,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -27178,7 +29377,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -27194,7 +29395,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -27210,7 +29413,10 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -27249,6 +29455,8 @@ window.VA_DATA = {
       "description": "Anyone wielding this weapon is sure to be very frightening indeed.",
       "weight": 4,
       "blockArmor": 76,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -27283,7 +29491,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -27299,7 +29509,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -27315,7 +29527,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -27331,7 +29545,10 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -27369,6 +29586,8 @@ window.VA_DATA = {
       "biome": "deep-north",
       "description": "A fury comes over you as you fight with these weapons, your blood roaring like thunder in your ears... It seems appropriate.",
       "weight": 2,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -27403,7 +29622,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -27419,7 +29640,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -27435,7 +29658,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -27451,7 +29676,10 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -27490,6 +29718,8 @@ window.VA_DATA = {
       "description": "A weapon to rival perhaps even that of the thunder god himself...",
       "weight": 2,
       "blockArmor": 66,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -27524,7 +29754,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -27540,7 +29772,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -27556,7 +29790,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -27572,7 +29808,10 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -27612,6 +29851,8 @@ window.VA_DATA = {
       "weight": 4,
       "blockArmor": 52,
       "movementSpeed": "-20%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -27646,7 +29887,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -27662,7 +29905,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -27678,7 +29923,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -27694,7 +29941,10 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -27733,6 +29983,8 @@ window.VA_DATA = {
       "description": "May it strike like lightning, quick and fierce.",
       "weight": 1.5,
       "blockArmor": 66,
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -27767,7 +30019,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 2,
@@ -27783,7 +30037,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 3,
@@ -27799,7 +30055,9 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -27815,7 +30073,10 @@ window.VA_DATA = {
               "name": "Thunderblood Essence",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -27855,6 +30116,8 @@ window.VA_DATA = {
       "weight": 0.8,
       "blockArmor": 66,
       "movementSpeed": "-5%",
+      "availableFrom": "deep-north",
+      "availableTier": 9,
       "names": {}
     },
     {
@@ -27889,7 +30152,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -27905,7 +30170,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -27921,7 +30188,9 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -27937,7 +30206,10 @@ window.VA_DATA = {
               "name": "Iolite",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -27981,6 +30253,8 @@ window.VA_DATA = {
       "blockForce": 20,
       "parryBonus": 2,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "cs": "Hromové berserkské sekery",
         "de": "Donnernde Berserkir-Äxte",
@@ -28025,7 +30299,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -28051,7 +30327,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -28077,7 +30355,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 4,
@@ -28103,7 +30383,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         }
       ],
       "materials": [
@@ -28147,6 +30429,8 @@ window.VA_DATA = {
       "blockArmor": 48,
       "parryBonus": 2,
       "movementSpeed": "-5%",
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Тролль-посох"
       }
@@ -28188,7 +30472,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 2,
@@ -28214,7 +30500,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 3,
@@ -28240,7 +30528,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         },
         {
           "quality": 4,
@@ -28266,7 +30556,9 @@ window.VA_DATA = {
               "name": "Linen Thread",
               "amount": 6
             }
-          ]
+          ],
+          "availableFrom": "plains",
+          "availableTier": 6
         }
       ],
       "materials": [
@@ -28304,6 +30596,8 @@ window.VA_DATA = {
       "tier": 6,
       "biome": "plains",
       "description": "These claws will rend flesh and bone alike.",
+      "availableFrom": "plains",
+      "availableTier": 6,
       "names": {
         "ru": "Гнилокостные когти"
       }
@@ -28330,7 +30624,9 @@ window.VA_DATA = {
               "name": "Wood",
               "amount": 8
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         }
       ],
       "materials": [
@@ -28354,6 +30650,8 @@ window.VA_DATA = {
       "tier": 1,
       "biome": "meadows",
       "description": "An arrow of sharpened wood.",
+      "availableFrom": "meadows",
+      "availableTier": 1,
       "names": {
         "cs": "Dřevěný šíp",
         "fr": "Flèche en bois",
@@ -28392,7 +30690,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 2,
@@ -28413,7 +30713,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 3,
@@ -28434,7 +30736,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         }
       ],
       "materials": [
@@ -28467,6 +30771,8 @@ window.VA_DATA = {
       "blockForce": 20,
       "recommendable": false,
       "note": null,
+      "availableFrom": "meadows",
+      "availableTier": 1,
       "names": {
         "cs": "Dřevěný štít",
         "fr": "Bouclier en bois",
@@ -28500,7 +30806,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 6
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 2,
@@ -28516,7 +30824,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 3
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         },
         {
           "quality": 3,
@@ -28532,7 +30842,9 @@ window.VA_DATA = {
               "name": "Leather Scraps",
               "amount": 6
             }
-          ]
+          ],
+          "availableFrom": "meadows",
+          "availableTier": 1
         }
       ],
       "materials": [
@@ -28561,6 +30873,8 @@ window.VA_DATA = {
       "blockForce": 100,
       "recommendable": false,
       "note": null,
+      "availableFrom": "meadows",
+      "availableTier": 1,
       "names": {
         "cs": "Pavéza",
         "fr": "Écu en bois",
@@ -28599,7 +30913,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 2,
@@ -28615,7 +30931,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 1
             }
-          ]
+          ],
+          "availableFrom": "ashlands",
+          "availableTier": 8
         },
         {
           "quality": 3,
@@ -28631,7 +30949,9 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 2
             }
-          ]
+          ],
+          "availableFrom": "deep-north",
+          "availableTier": 9
         },
         {
           "quality": 4,
@@ -28647,7 +30967,10 @@ window.VA_DATA = {
               "name": "Bloodstone",
               "amount": 4
             }
-          ]
+          ],
+          "availableFrom": null,
+          "availableTier": null,
+          "unreachable": true
         }
       ],
       "materials": [
@@ -28680,12 +31003,745 @@ window.VA_DATA = {
       "biome": "ashlands",
       "description": "Ready to rend your enemies to pieces.",
       "blockForce": null,
+      "availableFrom": "ashlands",
+      "availableTier": 8,
       "names": {
         "ru": "Ранящий разрыватель"
       }
     }
   ],
   "stations": [
+    {
+      "id": "artisan-press",
+      "name": "Artisan Press",
+      "names": {},
+      "wiki": "https://valheim.weirdgloop.org/w/Artisan_Press",
+      "type": "upgrade",
+      "upgrades": "artisan-table",
+      "materials": [
+        {
+          "item": "black-marble",
+          "amount": 5
+        },
+        {
+          "item": "bronze",
+          "amount": 5
+        },
+        {
+          "item": "majestic-carapace",
+          "amount": 1
+        }
+      ],
+      "unlock": {
+        "station": "artisan-table",
+        "materials": [
+          "black-marble",
+          "bronze",
+          "majestic-carapace"
+        ]
+      },
+      "biome": "mistlands",
+      "tier": 7,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 2
+    },
+    {
+      "id": "black-forge-cooler",
+      "name": "Black Forge Cooler",
+      "names": {
+        "cs": "Kalící nádrž"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Forge_Cooler",
+      "type": "upgrade",
+      "upgrades": "black-forge",
+      "materials": [
+        {
+          "item": "iron",
+          "amount": 5
+        },
+        {
+          "item": "copper",
+          "amount": 5
+        },
+        {
+          "item": "black-marble",
+          "amount": 4
+        }
+      ],
+      "unlock": {
+        "station": "black-forge",
+        "materials": [
+          "iron",
+          "copper",
+          "black-marble"
+        ]
+      },
+      "biome": "mistlands",
+      "tier": 7,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 2
+    },
+    {
+      "id": "vice",
+      "name": "Vice",
+      "names": {
+        "cs": "Svěrák",
+        "ru": "Тиски"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Vice",
+      "type": "upgrade",
+      "upgrades": "black-forge",
+      "materials": [
+        {
+          "item": "iron",
+          "amount": 5
+        },
+        {
+          "item": "copper",
+          "amount": 8
+        },
+        {
+          "item": "mechanical-spring",
+          "amount": 2
+        }
+      ],
+      "unlock": {
+        "station": "black-forge",
+        "materials": [
+          "iron",
+          "copper",
+          "mechanical-spring"
+        ]
+      },
+      "biome": "mistlands",
+      "tier": 7,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 3
+    },
+    {
+      "id": "metal-cutter",
+      "name": "Metal Cutter",
+      "names": {
+        "cs": "Štípač kovu"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Metal_Cutter",
+      "type": "upgrade",
+      "upgrades": "black-forge",
+      "materials": [
+        {
+          "item": "black-marble",
+          "amount": 5
+        },
+        {
+          "item": "flametal",
+          "amount": 5
+        },
+        {
+          "item": "ashwood",
+          "amount": 5
+        },
+        {
+          "item": "charred-bone",
+          "amount": 4
+        }
+      ],
+      "unlock": {
+        "station": "black-forge",
+        "materials": [
+          "black-marble",
+          "flametal",
+          "ashwood",
+          "charred-bone"
+        ]
+      },
+      "biome": "ashlands",
+      "tier": 8,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 4
+    },
+    {
+      "id": "gem-cutter",
+      "name": "Gem Cutter",
+      "names": {
+        "cs": "Bruska na drahokamy"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Gem_Cutter",
+      "type": "upgrade",
+      "upgrades": "black-forge",
+      "materials": [
+        {
+          "item": "flametal",
+          "amount": 5
+        },
+        {
+          "item": "ashwood",
+          "amount": 8
+        },
+        {
+          "item": "morgen-sinew",
+          "amount": 2
+        },
+        {
+          "item": "bloodstone",
+          "amount": 1
+        }
+      ],
+      "unlock": {
+        "station": "black-forge",
+        "materials": [
+          "flametal",
+          "ashwood",
+          "morgen-sinew",
+          "bloodstone"
+        ]
+      },
+      "biome": "ashlands",
+      "tier": 8,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 5
+    },
+    {
+      "id": "smith-s-aprons",
+      "name": "Smith's Aprons",
+      "names": {},
+      "wiki": "https://valheim.weirdgloop.org/w/Smith's_Aprons",
+      "type": "upgrade",
+      "upgrades": "black-forge",
+      "materials": [
+        {
+          "item": "bloodgold",
+          "amount": 5
+        },
+        {
+          "item": "timberwood",
+          "amount": 8
+        },
+        {
+          "item": "moose-hide",
+          "amount": 2
+        }
+      ],
+      "unlock": {
+        "station": "black-forge",
+        "materials": [
+          "bloodgold",
+          "timberwood",
+          "moose-hide"
+        ]
+      },
+      "biome": "deep-north",
+      "tier": 9,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 6
+    },
+    {
+      "id": "forge-cooler",
+      "name": "Forge Cooler",
+      "names": {},
+      "wiki": "https://valheim.weirdgloop.org/w/Forge_Cooler",
+      "type": "upgrade",
+      "upgrades": "forge",
+      "materials": [
+        {
+          "item": "finewood",
+          "amount": 25
+        },
+        {
+          "item": "copper",
+          "amount": 10
+        }
+      ],
+      "unlock": {
+        "station": "forge",
+        "materials": [
+          "finewood",
+          "copper"
+        ]
+      },
+      "biome": "black-forest",
+      "tier": 2,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 2
+    },
+    {
+      "id": "anvils",
+      "name": "Anvils",
+      "names": {
+        "cs": "Kovadlinky",
+        "fr": "Enclumes",
+        "ru": "Наковальни"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Anvils",
+      "type": "upgrade",
+      "upgrades": "forge",
+      "materials": [
+        {
+          "item": "wood",
+          "amount": 5
+        },
+        {
+          "item": "bronze",
+          "amount": 2
+        }
+      ],
+      "unlock": {
+        "station": "workbench",
+        "materials": [
+          "wood",
+          "bronze"
+        ]
+      },
+      "biome": "black-forest",
+      "tier": 2,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 3
+    },
+    {
+      "id": "smith-s-anvil",
+      "name": "Smith's Anvil",
+      "names": {
+        "cs": "Kovářská kovadlina",
+        "fr": "Enclume de forgeron"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Smith's_Anvil",
+      "type": "upgrade",
+      "upgrades": "forge",
+      "materials": [
+        {
+          "item": "wood",
+          "amount": 5
+        },
+        {
+          "item": "iron",
+          "amount": 20
+        }
+      ],
+      "unlock": {
+        "station": "workbench",
+        "materials": [
+          "wood",
+          "iron"
+        ]
+      },
+      "biome": "swamp",
+      "tier": 4,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 4
+    },
+    {
+      "id": "forge-toolrack",
+      "name": "Forge Toolrack",
+      "names": {
+        "cs": "Stojan na nástroje",
+        "fr": "Râtelier de forge",
+        "ru": "Стойка для инструментов"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Forge_Toolrack",
+      "type": "upgrade",
+      "upgrades": "forge",
+      "materials": [
+        {
+          "item": "wood",
+          "amount": 10
+        },
+        {
+          "item": "iron",
+          "amount": 15
+        }
+      ],
+      "unlock": {
+        "station": "workbench",
+        "materials": [
+          "wood",
+          "iron"
+        ]
+      },
+      "biome": "swamp",
+      "tier": 4,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 5
+    },
+    {
+      "id": "forge-bellows",
+      "name": "Forge Bellows",
+      "names": {
+        "fr": "Soufflet de forge",
+        "ru": "Кузнечные меха"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Forge_Bellows",
+      "type": "upgrade",
+      "upgrades": "forge",
+      "materials": [
+        {
+          "item": "wood",
+          "amount": 5
+        },
+        {
+          "item": "deer-hide",
+          "amount": 5
+        },
+        {
+          "item": "chain",
+          "amount": 4
+        }
+      ],
+      "unlock": {
+        "station": "workbench",
+        "materials": [
+          "wood",
+          "deer-hide",
+          "chain"
+        ]
+      },
+      "biome": "swamp",
+      "tier": 4,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 6
+    },
+    {
+      "id": "grinding-wheel",
+      "name": "Grinding Wheel",
+      "names": {
+        "cs": "Brusný kotouč",
+        "fr": "Meule",
+        "ru": "Шлифовальный круг"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Grinding_Wheel",
+      "type": "upgrade",
+      "upgrades": "forge",
+      "materials": [
+        {
+          "item": "wood",
+          "amount": 25
+        },
+        {
+          "item": "sharpening-stone",
+          "amount": 1
+        }
+      ],
+      "unlock": {
+        "station": "workbench",
+        "materials": [
+          "wood",
+          "sharpening-stone"
+        ]
+      },
+      "biome": "swamp",
+      "tier": 4,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 7
+    },
+    {
+      "id": "chopping-block",
+      "name": "Chopping Block",
+      "names": {
+        "cs": "Špalek na štípání",
+        "fr": "Billot",
+        "ru": "Колода для рубки"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Chopping_Block",
+      "type": "upgrade",
+      "upgrades": "workbench",
+      "materials": [
+        {
+          "item": "wood",
+          "amount": 10
+        },
+        {
+          "item": "flint",
+          "amount": 10
+        }
+      ],
+      "unlock": {
+        "station": "workbench",
+        "materials": [
+          "wood",
+          "flint"
+        ]
+      },
+      "biome": "meadows",
+      "tier": 1,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 2
+    },
+    {
+      "id": "tanning-rack",
+      "name": "Tanning Rack",
+      "names": {
+        "fr": "Support de tannage",
+        "ru": "Дубильный станок"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Tanning_Rack",
+      "type": "upgrade",
+      "upgrades": "workbench",
+      "materials": [
+        {
+          "item": "wood",
+          "amount": 10
+        },
+        {
+          "item": "flint",
+          "amount": 15
+        },
+        {
+          "item": "leather-scraps",
+          "amount": 20
+        },
+        {
+          "item": "deer-hide",
+          "amount": 5
+        }
+      ],
+      "unlock": {
+        "station": "workbench",
+        "materials": [
+          "wood",
+          "flint",
+          "leather-scraps",
+          "deer-hide"
+        ]
+      },
+      "biome": "meadows",
+      "tier": 1,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 3
+    },
+    {
+      "id": "adze",
+      "name": "Adze",
+      "names": {
+        "cs": "Skoble",
+        "fr": "Herminette",
+        "ru": "Тесло"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Adze",
+      "type": "upgrade",
+      "upgrades": "workbench",
+      "materials": [
+        {
+          "item": "finewood",
+          "amount": 10
+        },
+        {
+          "item": "bronze",
+          "amount": 3
+        }
+      ],
+      "unlock": {
+        "station": "forge",
+        "materials": [
+          "finewood",
+          "bronze"
+        ]
+      },
+      "biome": "black-forest",
+      "tier": 2,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 4
+    },
+    {
+      "id": "tool-shelf",
+      "name": "Tool Shelf",
+      "names": {
+        "cs": "Police na nářadí",
+        "fr": "Étagère à outils",
+        "ru": "Полка для инструментов"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Tool_Shelf",
+      "type": "upgrade",
+      "upgrades": "workbench",
+      "materials": [
+        {
+          "item": "finewood",
+          "amount": 10
+        },
+        {
+          "item": "iron",
+          "amount": 4
+        },
+        {
+          "item": "obsidian",
+          "amount": 4
+        }
+      ],
+      "unlock": {
+        "station": "forge",
+        "materials": [
+          "finewood",
+          "iron",
+          "obsidian"
+        ]
+      },
+      "biome": "mountain",
+      "tier": 5,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 5
+    },
+    {
+      "id": "rune-table",
+      "name": "Rune Table",
+      "names": {
+        "ru": "Рунный стол"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Rune_Table",
+      "type": "upgrade",
+      "upgrades": "galdr-table",
+      "materials": [
+        {
+          "item": "black-marble",
+          "amount": 10
+        },
+        {
+          "item": "yggdrasil-wood",
+          "amount": 5
+        },
+        {
+          "item": "refined-eitr",
+          "amount": 10
+        }
+      ],
+      "unlock": {
+        "station": null,
+        "materials": [
+          "black-marble",
+          "yggdrasil-wood",
+          "refined-eitr"
+        ]
+      },
+      "biome": "mistlands",
+      "tier": 7,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 2
+    },
+    {
+      "id": "unfading-candles",
+      "name": "Unfading Candles",
+      "names": {
+        "ru": "Незатухающие свечи"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Unfading_Candles",
+      "type": "upgrade",
+      "upgrades": "galdr-table",
+      "materials": [
+        {
+          "item": "black-marble",
+          "amount": 10
+        },
+        {
+          "item": "skeleton-trophy",
+          "amount": 3
+        },
+        {
+          "item": "refined-eitr",
+          "amount": 10
+        },
+        {
+          "item": "resin",
+          "amount": 15
+        }
+      ],
+      "unlock": {
+        "station": "galdr-table",
+        "materials": [
+          "black-marble",
+          "skeleton-trophy",
+          "refined-eitr",
+          "resin"
+        ]
+      },
+      "biome": "mistlands",
+      "tier": 7,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 3
+    },
+    {
+      "id": "feathery-wreath",
+      "name": "Feathery Wreath",
+      "names": {},
+      "wiki": "https://valheim.weirdgloop.org/w/Feathery_Wreath",
+      "type": "upgrade",
+      "upgrades": "galdr-table",
+      "materials": [
+        {
+          "item": "celestial-feather",
+          "amount": 8
+        },
+        {
+          "item": "asksvin-trophy",
+          "amount": 1
+        },
+        {
+          "item": "refined-eitr",
+          "amount": 10
+        },
+        {
+          "item": "ashwood",
+          "amount": 3
+        }
+      ],
+      "unlock": {
+        "station": "galdr-table",
+        "materials": [
+          "celestial-feather",
+          "asksvin-trophy",
+          "refined-eitr",
+          "ashwood"
+        ]
+      },
+      "biome": "ashlands",
+      "tier": 8,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 4
+    },
+    {
+      "id": "standing-loom",
+      "name": "Standing Loom",
+      "names": {},
+      "wiki": "https://valheim.weirdgloop.org/w/Standing_Loom",
+      "type": "upgrade",
+      "upgrades": "galdr-table",
+      "materials": [
+        {
+          "item": "timberwood",
+          "amount": 5
+        },
+        {
+          "item": "nornathread",
+          "amount": 10
+        }
+      ],
+      "unlock": {
+        "station": "galdr-table",
+        "materials": [
+          "timberwood",
+          "nornathread"
+        ]
+      },
+      "biome": "deep-north",
+      "tier": 9,
+      "stationLevel": 1,
+      "levelIncrement": 1,
+      "progressionLevel": 5
+    },
     {
       "id": "smelter",
       "name": "Smelter",
@@ -28840,11 +31896,320 @@ window.VA_DATA = {
       }
     },
     {
+      "id": "artisan-table",
+      "name": "Artisan Table",
+      "names": {
+        "cs": "Řemeslnický stůl",
+        "fr": "Table d'artisan",
+        "ru": "Стол ремесленника"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Artisan_Table",
+      "type": "crafting",
+      "materials": [
+        {
+          "item": "dragon-tear",
+          "amount": 2
+        },
+        {
+          "item": "wood",
+          "amount": 10
+        }
+      ],
+      "unlock": {
+        "station": null,
+        "materials": [
+          "dragon-tear",
+          "wood"
+        ]
+      },
+      "biome": "mountain",
+      "tier": 5,
+      "maxLevel": 2,
+      "levels": [
+        {
+          "level": 1,
+          "upgrade": null,
+          "biome": "mountain",
+          "tier": 5
+        },
+        {
+          "level": 2,
+          "upgrade": "artisan-press",
+          "biome": "mistlands",
+          "tier": 7
+        }
+      ]
+    },
+    {
+      "id": "black-forge",
+      "name": "Black Forge",
+      "names": {
+        "cs": "Černá Kovárna",
+        "ru": "Черная кузница"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Black_Forge",
+      "type": "crafting",
+      "materials": [
+        {
+          "item": "black-marble",
+          "amount": 10
+        },
+        {
+          "item": "yggdrasil-wood",
+          "amount": 10
+        },
+        {
+          "item": "black-core",
+          "amount": 5
+        }
+      ],
+      "unlock": {
+        "station": "workbench",
+        "materials": [
+          "black-marble",
+          "yggdrasil-wood",
+          "black-core"
+        ]
+      },
+      "biome": "mistlands",
+      "tier": 7,
+      "maxLevel": 6,
+      "levels": [
+        {
+          "level": 1,
+          "upgrade": null,
+          "biome": "mistlands",
+          "tier": 7
+        },
+        {
+          "level": 2,
+          "upgrade": "black-forge-cooler",
+          "biome": "mistlands",
+          "tier": 7
+        },
+        {
+          "level": 3,
+          "upgrade": "vice",
+          "biome": "mistlands",
+          "tier": 7
+        },
+        {
+          "level": 4,
+          "upgrade": "metal-cutter",
+          "biome": "ashlands",
+          "tier": 8
+        },
+        {
+          "level": 5,
+          "upgrade": "gem-cutter",
+          "biome": "ashlands",
+          "tier": 8
+        },
+        {
+          "level": 6,
+          "upgrade": "smith-s-aprons",
+          "biome": "deep-north",
+          "tier": 9
+        }
+      ]
+    },
+    {
+      "id": "forge",
+      "name": "Forge",
+      "names": {
+        "cs": "Kovárna",
+        "fr": "Forge",
+        "ru": "Кузница"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Forge",
+      "type": "crafting",
+      "materials": [
+        {
+          "item": "stone",
+          "amount": 4
+        },
+        {
+          "item": "coal",
+          "amount": 4
+        },
+        {
+          "item": "wood",
+          "amount": 10
+        },
+        {
+          "item": "copper",
+          "amount": 6
+        }
+      ],
+      "unlock": {
+        "station": "workbench",
+        "materials": [
+          "stone",
+          "coal",
+          "wood",
+          "copper"
+        ]
+      },
+      "biome": "black-forest",
+      "tier": 2,
+      "maxLevel": 7,
+      "levels": [
+        {
+          "level": 1,
+          "upgrade": null,
+          "biome": "black-forest",
+          "tier": 2
+        },
+        {
+          "level": 2,
+          "upgrade": "forge-cooler",
+          "biome": "black-forest",
+          "tier": 2
+        },
+        {
+          "level": 3,
+          "upgrade": "anvils",
+          "biome": "black-forest",
+          "tier": 2
+        },
+        {
+          "level": 4,
+          "upgrade": "smith-s-anvil",
+          "biome": "swamp",
+          "tier": 4
+        },
+        {
+          "level": 5,
+          "upgrade": "forge-toolrack",
+          "biome": "swamp",
+          "tier": 4
+        },
+        {
+          "level": 6,
+          "upgrade": "forge-bellows",
+          "biome": "swamp",
+          "tier": 4
+        },
+        {
+          "level": 7,
+          "upgrade": "grinding-wheel",
+          "biome": "swamp",
+          "tier": 4
+        }
+      ]
+    },
+    {
+      "id": "stonecutter",
+      "name": "Stonecutter",
+      "names": {
+        "cs": "Lamač kamene",
+        "fr": "Tailleur de pierre",
+        "ru": "Камнерез"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Stonecutter",
+      "type": "crafting",
+      "materials": [
+        {
+          "item": "wood",
+          "amount": 10
+        },
+        {
+          "item": "iron",
+          "amount": 2
+        },
+        {
+          "item": "stone",
+          "amount": 4
+        }
+      ],
+      "unlock": {
+        "station": "workbench",
+        "materials": [
+          "wood",
+          "iron",
+          "stone"
+        ]
+      },
+      "biome": "swamp",
+      "tier": 4,
+      "maxLevel": 1,
+      "levels": [
+        {
+          "level": 1,
+          "upgrade": null,
+          "biome": "swamp",
+          "tier": 4
+        }
+      ]
+    },
+    {
+      "id": "workbench",
+      "name": "Workbench",
+      "names": {
+        "cs": "Pracovní stůl",
+        "de": "Werkbank",
+        "fr": "Table de fabrication",
+        "ru": "Верстак"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Workbench",
+      "type": "crafting",
+      "materials": [
+        {
+          "item": "wood",
+          "amount": 10
+        }
+      ],
+      "unlock": {
+        "station": null,
+        "materials": [
+          "wood"
+        ]
+      },
+      "biome": "meadows",
+      "tier": 1,
+      "maxLevel": 5,
+      "levels": [
+        {
+          "level": 1,
+          "upgrade": null,
+          "biome": "meadows",
+          "tier": 1
+        },
+        {
+          "level": 2,
+          "upgrade": "chopping-block",
+          "biome": "meadows",
+          "tier": 1
+        },
+        {
+          "level": 3,
+          "upgrade": "tanning-rack",
+          "biome": "meadows",
+          "tier": 1
+        },
+        {
+          "level": 4,
+          "upgrade": "adze",
+          "biome": "black-forest",
+          "tier": 2
+        },
+        {
+          "level": 5,
+          "upgrade": "tool-shelf",
+          "biome": "mountain",
+          "tier": 5
+        }
+      ]
+    },
+    {
       "id": "galdr-table",
       "name": "Galdr Table",
-      "names": {},
+      "names": {
+        "cs": "Galdrový stůl",
+        "ru": "Стол гальдров"
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Galdr_Table",
       "type": "crafting",
-      "addedBy": "expedition",
       "materials": [
         {
           "item": "black-metal",
@@ -28863,9 +32228,50 @@ window.VA_DATA = {
           "amount": 5
         }
       ],
+      "unlock": {
+        "station": "workbench",
+        "materials": [
+          "black-metal",
+          "yggdrasil-wood",
+          "black-core",
+          "refined-eitr"
+        ]
+      },
       "biome": "mistlands",
       "tier": 7,
-      "wiki": "https://valheim.weirdgloop.org/w/Galdr_Table"
+      "maxLevel": 5,
+      "levels": [
+        {
+          "level": 1,
+          "upgrade": null,
+          "biome": "mistlands",
+          "tier": 7
+        },
+        {
+          "level": 2,
+          "upgrade": "rune-table",
+          "biome": "mistlands",
+          "tier": 7
+        },
+        {
+          "level": 3,
+          "upgrade": "unfading-candles",
+          "biome": "mistlands",
+          "tier": 7
+        },
+        {
+          "level": 4,
+          "upgrade": "feathery-wreath",
+          "biome": "ashlands",
+          "tier": 8
+        },
+        {
+          "level": 5,
+          "upgrade": "standing-loom",
+          "biome": "deep-north",
+          "tier": 9
+        }
+      ]
     },
     {
       "id": "cauldron",
@@ -28888,35 +32294,51 @@ window.VA_DATA = {
           "tin"
         ]
       },
+      "biome": "black-forest",
+      "tier": 2,
       "maxLevel": 7,
       "levels": [
         {
           "level": 1,
-          "upgrade": null
+          "upgrade": null,
+          "biome": "black-forest",
+          "tier": 2
         },
         {
           "level": 2,
-          "upgrade": "spice-rack"
+          "upgrade": "spice-rack",
+          "biome": "black-forest",
+          "tier": 2
         },
         {
           "level": 3,
-          "upgrade": "butcher-s-table"
+          "upgrade": "butcher-s-table",
+          "biome": "mountain",
+          "tier": 5
         },
         {
           "level": 4,
-          "upgrade": "pots-and-pans"
+          "upgrade": "pots-and-pans",
+          "biome": "plains",
+          "tier": 6
         },
         {
           "level": 5,
-          "upgrade": "mortar-and-pestle"
+          "upgrade": "mortar-and-pestle",
+          "biome": "mistlands",
+          "tier": 7
         },
         {
           "level": 6,
-          "upgrade": "rolling-pins-and-cutting-boards"
+          "upgrade": "rolling-pins-and-cutting-boards",
+          "biome": "ashlands",
+          "tier": 8
         },
         {
           "level": 7,
-          "upgrade": "smoker"
+          "upgrade": "smoker",
+          "biome": "deep-north",
+          "tier": 9
         }
       ]
     },
@@ -29141,6 +32563,8 @@ window.VA_DATA = {
         ]
       },
       "upgrades": "cauldron",
+      "biome": "black-forest",
+      "tier": 2,
       "stationLevel": 1,
       "levelIncrement": 1,
       "progressionLevel": 2
@@ -29183,6 +32607,8 @@ window.VA_DATA = {
         ]
       },
       "upgrades": "cauldron",
+      "biome": "mountain",
+      "tier": 5,
       "stationLevel": 1,
       "levelIncrement": 1,
       "progressionLevel": 3
@@ -29225,6 +32651,8 @@ window.VA_DATA = {
         ]
       },
       "upgrades": "cauldron",
+      "biome": "plains",
+      "tier": 6,
       "stationLevel": 1,
       "levelIncrement": 1,
       "progressionLevel": 4
@@ -29260,6 +32688,8 @@ window.VA_DATA = {
         ]
       },
       "upgrades": "cauldron",
+      "biome": "mistlands",
+      "tier": 7,
       "stationLevel": 1,
       "levelIncrement": 1,
       "progressionLevel": 5
@@ -29295,6 +32725,8 @@ window.VA_DATA = {
         ]
       },
       "upgrades": "cauldron",
+      "biome": "ashlands",
+      "tier": 8,
       "stationLevel": 1,
       "levelIncrement": 1,
       "progressionLevel": 6
@@ -29323,6 +32755,8 @@ window.VA_DATA = {
         ]
       },
       "upgrades": "cauldron",
+      "biome": "deep-north",
+      "tier": 9,
       "stationLevel": 1,
       "levelIncrement": 1,
       "progressionLevel": 7
@@ -29567,6 +33001,29 @@ window.VA_DATA = {
       "names": {
         "cs": "Asksvinův ocas",
         "ru": "Хвост пеплозавра"
+      }
+    },
+    "asksvin-trophy": {
+      "id": "asksvin-trophy",
+      "name": "Asksvin Trophy",
+      "image": "img/items/asksvin-trophy.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "sources": [
+        {
+          "text": "Asksvin",
+          "kind": "creature",
+          "creatureId": "asksvin",
+          "biomes": [
+            "ashlands"
+          ]
+        }
+      ],
+      "recipe": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Asksvin_Trophy",
+      "names": {
+        "cs": "Trofeje",
+        "ru": "Категория:Трофеи"
       }
     },
     "barley": {
@@ -31454,8 +34911,8 @@ window.VA_DATA = {
       "id": "coal",
       "name": "Coal",
       "image": "img/items/coal.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "meadows",
+      "tier": 1,
       "sources": [
         {
           "text": "Surtling",
@@ -31923,8 +35380,8 @@ window.VA_DATA = {
       "id": "curious-axe-head",
       "name": "Curious Axe Head",
       "image": "img/items/curious-axe-head.png",
-      "biome": null,
-      "tier": null,
+      "biome": "meadows",
+      "tier": 1,
       "sources": [
         {
           "text": "Abandoned House (version 6)",
@@ -34171,8 +37628,8 @@ window.VA_DATA = {
       "name": "Mead base: Poison resistance",
       "provisions": true,
       "image": "../provisions/img/items/mead-base-poison-resistance.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "black-forest",
+      "tier": 2,
       "sources": [
         {
           "text": "Mead Ketill",
@@ -34279,6 +37736,39 @@ window.VA_DATA = {
       "names": {
         "cs": "Nápoj Vananidir",
         "ru": "Напиток Вананидир"
+      }
+    },
+    "mechanical-spring": {
+      "id": "mechanical-spring",
+      "name": "Mechanical Spring",
+      "image": "img/items/mechanical-spring.png",
+      "biome": "mistlands",
+      "tier": 7,
+      "sources": [
+        {
+          "text": "Artisan Table",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Artisan Table",
+        "materials": [
+          {
+            "item": "refined-eitr",
+            "amount": 1
+          },
+          {
+            "item": "iron",
+            "amount": 3
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Mechanical_Spring",
+      "teleportable": false,
+      "names": {
+        "cs": "Mechanická pružina",
+        "ru": "Пружина"
       }
     },
     "misthare-supreme": {
@@ -35219,8 +38709,8 @@ window.VA_DATA = {
       "id": "mysterious-axe-head",
       "name": "Mysterious Axe Head",
       "image": "img/items/mysterious-axe-head.png",
-      "biome": null,
-      "tier": null,
+      "biome": "meadows",
+      "tier": 1,
       "sources": [
         {
           "text": "Abandoned House (version 6)",
@@ -36964,6 +40454,35 @@ window.VA_DATA = {
         "ru": "Чешуя змея"
       }
     },
+    "sharpening-stone": {
+      "id": "sharpening-stone",
+      "name": "Sharpening Stone",
+      "image": "img/items/sharpening-stone.png",
+      "biome": "swamp",
+      "tier": 4,
+      "sources": [
+        {
+          "text": "Stonecutter",
+          "kind": "station"
+        }
+      ],
+      "recipe": {
+        "station": "Stonecutter",
+        "materials": [
+          {
+            "item": "stone",
+            "amount": 5
+          }
+        ],
+        "yields": 1
+      },
+      "wiki": "https://valheim.weirdgloop.org/w/Sharpening_Stone",
+      "names": {
+        "cs": "Brusné kolo",
+        "fr": "Roue à aiguiser",
+        "ru": "Точильный камень"
+      }
+    },
     "silver": {
       "id": "silver",
       "name": "Silver",
@@ -38056,8 +41575,8 @@ window.VA_DATA = {
       "id": "wisp",
       "name": "Wisp",
       "image": "img/items/wisp.png",
-      "biome": null,
-      "tier": null,
+      "biome": "mistlands",
+      "tier": 7,
       "sources": [
         {
           "text": "Wisp Fountain",
@@ -38416,8 +41935,8 @@ window.VA_DATA = {
       "id": "ymir-flesh",
       "name": "Ymir Flesh",
       "image": "img/items/ymir-flesh.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "black-forest",
+      "tier": 2,
       "sources": [
         {
           "text": "Haldor",

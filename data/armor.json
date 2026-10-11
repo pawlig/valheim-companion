@@ -34,7 +34,9 @@
                 "item": "flametal",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 2,
@@ -46,7 +48,9 @@
                 "item": "asksvin-hide",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 3,
@@ -58,7 +62,9 @@
                 "item": "asksvin-hide",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 4,
@@ -70,7 +76,9 @@
                 "item": "asksvin-hide",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           }
         ],
         "armorSource": "rendered",
@@ -78,6 +86,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Ashen cape is the combat focused Ashlands-tier Cape.",
+        "availableFrom": "ashlands",
+        "availableTier": 8,
         "names": {
           "ru": "Пепельный плащ"
         }
@@ -131,7 +141,9 @@
                 "item": "asksvin-hide",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 2,
@@ -151,7 +163,9 @@
                 "item": "asksvin-hide",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 3,
@@ -171,7 +185,9 @@
                 "item": "asksvin-hide",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 4,
@@ -191,7 +207,9 @@
                 "item": "asksvin-hide",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           }
         ],
         "armorSource": "table",
@@ -199,6 +217,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Ask Set is an Ashlands-tier armor. This set is one tier above Carapace Armor and the Eitr-weave Set, and should be considered a \"medium armor,\" as it has a lower armor value than Flametal Armor, but a higher armor value than the Embla Set. Wearing all three pieces provides the Ask's Endurance set bonus, reducing stamina usage from running, jumping, and attacking, and providing +10% Pierce dama",
+        "availableFrom": "ashlands",
+        "availableTier": 8,
         "names": {
           "ru": "Набор Аска"
         }
@@ -229,7 +249,9 @@
                 "item": "asksvin-hide",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 2,
@@ -249,7 +271,9 @@
                 "item": "asksvin-hide",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 3,
@@ -269,7 +293,9 @@
                 "item": "asksvin-hide",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 4,
@@ -289,7 +315,9 @@
                 "item": "asksvin-hide",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           }
         ],
         "armorSource": "table",
@@ -297,6 +325,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Ask Set is an Ashlands-tier armor. This set is one tier above Carapace Armor and the Eitr-weave Set, and should be considered a \"medium armor,\" as it has a lower armor value than Flametal Armor, but a higher armor value than the Embla Set. Wearing all three pieces provides the Ask's Endurance set bonus, reducing stamina usage from running, jumping, and attacking, and providing +10% Pierce dama",
+        "availableFrom": "ashlands",
+        "availableTier": 8,
         "names": {
           "ru": "Набор Аска"
         }
@@ -327,7 +357,9 @@
                 "item": "asksvin-hide",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 2,
@@ -347,7 +379,9 @@
                 "item": "asksvin-hide",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 3,
@@ -367,7 +401,9 @@
                 "item": "asksvin-hide",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 4,
@@ -387,7 +423,9 @@
                 "item": "asksvin-hide",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           }
         ],
         "armorSource": "table",
@@ -395,6 +433,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Ask Set is an Ashlands-tier armor. This set is one tier above Carapace Armor and the Eitr-weave Set, and should be considered a \"medium armor,\" as it has a lower armor value than Flametal Armor, but a higher armor value than the Embla Set. Wearing all three pieces provides the Ask's Endurance set bonus, reducing stamina usage from running, jumping, and attacking, and providing +10% Pierce dama",
+        "availableFrom": "ashlands",
+        "availableTier": 8,
         "names": {
           "ru": "Набор Аска"
         }
@@ -435,7 +475,9 @@
                 "item": "morgen-sinew",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 2,
@@ -447,7 +489,9 @@
                 "item": "asksvin-hide",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 3,
@@ -459,7 +503,9 @@
                 "item": "asksvin-hide",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 4,
@@ -471,7 +517,9 @@
                 "item": "asksvin-hide",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           }
         ],
         "armorSource": "rendered",
@@ -479,6 +527,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Asksvin cloak is a craftable Cape piece available in Ashlands. It offers a -15% dodge stamina usage and the Wind run effect. Wind run increases running speed up to +25% and decreases running stamina usage down to -100% based on wind direction and wind strength.",
+        "availableFrom": "ashlands",
+        "availableTier": 8,
         "names": {
           "ru": "Плащ из шкуры пеплозавра"
         }
@@ -763,7 +813,9 @@
                 "item": "bear-trophy",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 2,
@@ -775,7 +827,9 @@
                 "item": "bear-hide",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 3,
@@ -787,7 +841,9 @@
                 "item": "bear-hide",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 4,
@@ -799,7 +855,9 @@
                 "item": "bear-hide",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -807,6 +865,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Bear Set is a Black Forest-tier armor set. It has a lower armor value than the Bronze Armor, but a higher armor value than the Troll Set. However, wearing all 3 pieces provides the Berserk set bonus, increasing damage, stamina and health regeneration, but making the wearer slightly more vulnerable to physical damage.",
+        "availableFrom": "black-forest",
+        "availableTier": 2,
         "names": {
           "ru": "Медвежья броня"
         }
@@ -837,7 +897,9 @@
                 "item": "blueberries",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 2,
@@ -853,7 +915,9 @@
                 "item": "blueberries",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 3,
@@ -869,7 +933,9 @@
                 "item": "blueberries",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 4,
@@ -885,7 +951,9 @@
                 "item": "blueberries",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -893,6 +961,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Bear Set is a Black Forest-tier armor set. It has a lower armor value than the Bronze Armor, but a higher armor value than the Troll Set. However, wearing all 3 pieces provides the Berserk set bonus, increasing damage, stamina and health regeneration, but making the wearer slightly more vulnerable to physical damage.",
+        "availableFrom": "black-forest",
+        "availableTier": 2,
         "names": {
           "ru": "Медвежья броня"
         }
@@ -919,7 +989,9 @@
                 "item": "blueberries",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 2,
@@ -935,7 +1007,9 @@
                 "item": "blueberries",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 3,
@@ -951,7 +1025,9 @@
                 "item": "blueberries",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 4,
@@ -967,7 +1043,9 @@
                 "item": "blueberries",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -975,6 +1053,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Bear Set is a Black Forest-tier armor set. It has a lower armor value than the Bronze Armor, but a higher armor value than the Troll Set. However, wearing all 3 pieces provides the Berserk set bonus, increasing damage, stamina and health regeneration, but making the wearer slightly more vulnerable to physical damage.",
+        "availableFrom": "black-forest",
+        "availableTier": 2,
         "names": {
           "ru": "Медвежья броня"
         }
@@ -1015,7 +1095,9 @@
                 "item": "deer-hide",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 2,
@@ -1027,7 +1109,9 @@
                 "item": "bronze",
                 "amount": 3
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 3,
@@ -1039,7 +1123,9 @@
                 "item": "bronze",
                 "amount": 6
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 4,
@@ -1051,7 +1137,9 @@
                 "item": "bronze",
                 "amount": 12
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           }
         ],
         "armorSource": "table",
@@ -1059,6 +1147,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Bronze Armor is a Black Forest-tier armor. Compared with the other armor set available in the Bronze Age, the Troll Set, it provides higher armor values but reduces the player's movement speed. There is no set bonus for bronze armor.",
+        "availableFrom": "black-forest",
+        "availableTier": 2,
         "names": {
           "cs": "Bronzová zbroj",
           "ru": "Бронзовая броня"
@@ -1086,7 +1176,9 @@
                 "item": "deer-hide",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 2,
@@ -1098,7 +1190,9 @@
                 "item": "bronze",
                 "amount": 3
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 3,
@@ -1110,7 +1204,9 @@
                 "item": "bronze",
                 "amount": 6
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 4,
@@ -1122,7 +1218,9 @@
                 "item": "bronze",
                 "amount": 12
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           }
         ],
         "armorSource": "table",
@@ -1130,6 +1228,8 @@
         "movementSpeed": -5,
         "resistances": [],
         "description": "Bronze Armor is a Black Forest-tier armor. Compared with the other armor set available in the Bronze Age, the Troll Set, it provides higher armor values but reduces the player's movement speed. There is no set bonus for bronze armor.",
+        "availableFrom": "black-forest",
+        "availableTier": 2,
         "names": {
           "cs": "Bronzová zbroj",
           "ru": "Бронзовая броня"
@@ -1157,7 +1257,9 @@
                 "item": "deer-hide",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 2,
@@ -1169,7 +1271,9 @@
                 "item": "bronze",
                 "amount": 3
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 3,
@@ -1181,7 +1285,9 @@
                 "item": "bronze",
                 "amount": 6
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 4,
@@ -1193,7 +1299,9 @@
                 "item": "bronze",
                 "amount": 12
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           }
         ],
         "armorSource": "rendered",
@@ -1201,6 +1309,8 @@
         "movementSpeed": -5,
         "resistances": [],
         "description": "Bronze Armor is a Black Forest-tier armor. Compared with the other armor set available in the Bronze Age, the Troll Set, it provides higher armor values but reduces the player's movement speed. There is no set bonus for bronze armor.",
+        "availableFrom": "black-forest",
+        "availableTier": 2,
         "names": {
           "cs": "Bronzová zbroj",
           "ru": "Бронзовая броня"
@@ -1245,7 +1355,9 @@
                 "amount": 5,
                 "fuel": true
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 2,
@@ -1265,7 +1377,9 @@
                 "item": "nornathread",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 3,
@@ -1285,7 +1399,9 @@
                 "item": "nornathread",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 4,
@@ -1305,7 +1421,10 @@
                 "item": "nornathread",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": null,
+            "availableTier": null,
+            "unreachable": true
           }
         ],
         "armorSource": "table",
@@ -1313,6 +1432,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Caller Set is a Deep North-tier mage armor.",
+        "availableFrom": "deep-north",
+        "availableTier": 9,
         "names": {}
       },
       {
@@ -1339,7 +1460,9 @@
                 "amount": 5,
                 "fuel": true
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 2,
@@ -1359,7 +1482,9 @@
                 "item": "nornathread",
                 "amount": 3
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 3,
@@ -1379,7 +1504,9 @@
                 "item": "nornathread",
                 "amount": 6
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 4,
@@ -1399,7 +1526,10 @@
                 "item": "nornathread",
                 "amount": 12
               }
-            ]
+            ],
+            "availableFrom": null,
+            "availableTier": null,
+            "unreachable": true
           }
         ],
         "armorSource": "table",
@@ -1409,6 +1539,8 @@
           "Resistant vs Frost"
         ],
         "description": "The Caller Set is a Deep North-tier mage armor.",
+        "availableFrom": "deep-north",
+        "availableTier": 9,
         "names": {}
       },
       {
@@ -1435,7 +1567,9 @@
                 "amount": 5,
                 "fuel": true
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 2,
@@ -1455,7 +1589,9 @@
                 "item": "nornathread",
                 "amount": 3
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 3,
@@ -1475,7 +1611,9 @@
                 "item": "nornathread",
                 "amount": 6
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 4,
@@ -1495,7 +1633,10 @@
                 "item": "nornathread",
                 "amount": 12
               }
-            ]
+            ],
+            "availableFrom": null,
+            "availableTier": null,
+            "unreachable": true
           }
         ],
         "armorSource": "table",
@@ -1503,6 +1644,8 @@
         "movementSpeed": -2,
         "resistances": [],
         "description": "The Caller Set is a Deep North-tier mage armor.",
+        "availableFrom": "deep-north",
+        "availableTier": 9,
         "names": {}
       }
     ],
@@ -1514,8 +1657,8 @@
     "wiki": "https://valheim.weirdgloop.org/w/Cape_of_Oden",
     "kind": "special",
     "tag": "DLC",
-    "biome": null,
-    "tier": null,
+    "biome": "meadows",
+    "tier": 1,
     "setBonus": null,
     "pieces": [
       {
@@ -1540,7 +1683,9 @@
                 "item": "coal",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "meadows",
+            "availableTier": 1
           },
           {
             "quality": 2,
@@ -1556,7 +1701,9 @@
                 "item": "coal",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "meadows",
+            "availableTier": 1
           },
           {
             "quality": 3,
@@ -1572,7 +1719,9 @@
                 "item": "coal",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "meadows",
+            "availableTier": 1
           },
           {
             "quality": 4,
@@ -1588,7 +1737,9 @@
                 "item": "coal",
                 "amount": 6
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           }
         ],
         "armorSource": "rendered",
@@ -1598,6 +1749,8 @@
         "description": "Cape of Oden is a DLC armor piece. It is only available for the early supporters of Valheim via a Steam code sent out in an email from Iron Gate Studios to those who signed up for the Valheim Beta. Check your email if you signed up!",
         "kind": "special",
         "tag": "DLC",
+        "availableFrom": "meadows",
+        "availableTier": 1,
         "names": {
           "cs": "Kápě Ódina",
           "ru": "Плащ Одина"
@@ -1648,7 +1801,9 @@
                 "item": "refined-eitr",
                 "amount": 15
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 2,
@@ -1672,7 +1827,9 @@
                 "item": "refined-eitr",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 3,
@@ -1696,7 +1853,10 @@
                 "item": "refined-eitr",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": null,
+            "availableTier": null,
+            "unreachable": true
           },
           {
             "quality": 4,
@@ -1720,7 +1880,10 @@
                 "item": "refined-eitr",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": null,
+            "availableTier": null,
+            "unreachable": true
           }
         ],
         "armorSource": "rendered",
@@ -1728,6 +1891,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Cape of the Caller is a Deep North-tier Cape crafted at the Galdr Table.",
+        "availableFrom": "deep-north",
+        "availableTier": 9,
         "names": {}
       }
     ],
@@ -1889,7 +2054,9 @@
                 "item": "refined-eitr",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 2,
@@ -1909,7 +2076,9 @@
                 "item": "refined-eitr",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 3,
@@ -1929,7 +2098,9 @@
                 "item": "refined-eitr",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 4,
@@ -1949,7 +2120,9 @@
                 "item": "refined-eitr",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           }
         ],
         "armorSource": "rendered",
@@ -1957,6 +2130,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Carapace Armor is a Mistlands-tier armor. This set is the tier above Padded Armor and is replaced by Flametal Armor, the Ask Set, and the Embla Set.",
+        "availableFrom": "mistlands",
+        "availableTier": 7,
         "names": {
           "ru": "Панцирная броня"
         }
@@ -1991,7 +2166,9 @@
                 "item": "refined-eitr",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 2,
@@ -2011,7 +2188,9 @@
                 "item": "refined-eitr",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 3,
@@ -2031,7 +2210,9 @@
                 "item": "refined-eitr",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 4,
@@ -2051,7 +2232,9 @@
                 "item": "refined-eitr",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           }
         ],
         "armorSource": "rendered",
@@ -2059,6 +2242,8 @@
         "movementSpeed": -5,
         "resistances": [],
         "description": "Carapace Armor is a Mistlands-tier armor. This set is the tier above Padded Armor and is replaced by Flametal Armor, the Ask Set, and the Embla Set.",
+        "availableFrom": "mistlands",
+        "availableTier": 7,
         "names": {
           "ru": "Панцирная броня"
         }
@@ -2093,7 +2278,9 @@
                 "item": "refined-eitr",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 2,
@@ -2113,7 +2300,9 @@
                 "item": "refined-eitr",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 3,
@@ -2133,7 +2322,9 @@
                 "item": "refined-eitr",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 4,
@@ -2153,7 +2344,9 @@
                 "item": "refined-eitr",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           }
         ],
         "armorSource": "rendered",
@@ -2161,6 +2354,8 @@
         "movementSpeed": -5,
         "resistances": [],
         "description": "Carapace Armor is a Mistlands-tier armor. This set is the tier above Padded Armor and is replaced by Flametal Armor, the Ask Set, and the Embla Set.",
+        "availableFrom": "mistlands",
+        "availableTier": 7,
         "names": {
           "ru": "Панцирная броня"
         }
@@ -2209,7 +2404,9 @@
                 "item": "amber-pearl",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 2,
@@ -2225,7 +2422,9 @@
                 "item": "bronze",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 3,
@@ -2241,7 +2440,9 @@
                 "item": "bronze",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 4,
@@ -2257,7 +2458,9 @@
                 "item": "bronze",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "rendered",
@@ -2265,6 +2468,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Celebratory Cap is an armor piece marking the fifth anniversary of the release of Valheim that can be crafted at a Workbench.",
+        "availableFrom": "black-forest",
+        "availableTier": 2,
         "names": {
           "ru": "Праздничная шапка"
         }
@@ -2343,7 +2548,9 @@
                 "item": "crown-jewel",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           }
         ],
         "armorSource": "infobox",
@@ -2351,6 +2558,8 @@
         "movementSpeed": 5,
         "resistances": [],
         "description": "Crown of Valheim is a post-Deep North helmet.",
+        "availableFrom": "deep-north",
+        "availableTier": 9,
         "names": {}
       }
     ],
@@ -2434,7 +2643,9 @@
                 "item": "iron",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 2,
@@ -2450,7 +2661,9 @@
                 "item": "refined-eitr",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 3,
@@ -2466,7 +2679,9 @@
                 "item": "refined-eitr",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 4,
@@ -2482,7 +2697,9 @@
                 "item": "refined-eitr",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           }
         ],
         "armorSource": "rendered",
@@ -2490,6 +2707,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Eitr-weave Set is a Mistlands-tier armor. This set is the tier above Padded Armor and should be",
+        "availableFrom": "mistlands",
+        "availableTier": 7,
         "names": {
           "ru": "Сшитый из Эйтра набор"
         }
@@ -2524,7 +2743,9 @@
                 "item": "scale-hide",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 2,
@@ -2540,7 +2761,9 @@
                 "item": "refined-eitr",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 3,
@@ -2556,7 +2779,9 @@
                 "item": "refined-eitr",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 4,
@@ -2572,7 +2797,9 @@
                 "item": "refined-eitr",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           }
         ],
         "armorSource": "rendered",
@@ -2580,6 +2807,8 @@
         "movementSpeed": -2,
         "resistances": [],
         "description": "The Eitr-weave Set is a Mistlands-tier armor. This set is the tier above Padded Armor and should be",
+        "availableFrom": "mistlands",
+        "availableTier": 7,
         "names": {
           "ru": "Сшитый из Эйтра набор"
         }
@@ -2610,7 +2839,9 @@
                 "item": "scale-hide",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 2,
@@ -2626,7 +2857,9 @@
                 "item": "refined-eitr",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 3,
@@ -2642,7 +2875,9 @@
                 "item": "refined-eitr",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 4,
@@ -2658,7 +2893,9 @@
                 "item": "refined-eitr",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           }
         ],
         "armorSource": "rendered",
@@ -2666,6 +2903,8 @@
         "movementSpeed": -2,
         "resistances": [],
         "description": "The Eitr-weave Set is a Mistlands-tier armor. This set is the tier above Padded Armor and should be",
+        "availableFrom": "mistlands",
+        "availableTier": 7,
         "names": {
           "ru": "Сшитый из Эйтра набор"
         }
@@ -2696,7 +2935,9 @@
                 "item": "scale-hide",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 2,
@@ -2716,7 +2957,9 @@
                 "item": "scale-hide",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 3,
@@ -2736,7 +2979,9 @@
                 "item": "scale-hide",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "mistlands",
+            "availableTier": 7
           },
           {
             "quality": 4,
@@ -2756,7 +3001,9 @@
                 "item": "scale-hide",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           }
         ],
         "armorSource": "rendered",
@@ -2767,6 +3014,8 @@
           "Very Weak (2x) vs. Fire"
         ],
         "description": "The Eitr-weave Set is a Mistlands-tier armor. This set is the tier above Padded Armor and should be",
+        "availableFrom": "mistlands",
+        "availableTier": 7,
         "names": {
           "ru": "Накидка из перьев"
         }
@@ -2811,7 +3060,9 @@
                 "item": "asksvin-hide",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 2,
@@ -2827,7 +3078,9 @@
                 "item": "refined-eitr",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 3,
@@ -2843,7 +3096,9 @@
                 "item": "refined-eitr",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 4,
@@ -2859,7 +3114,9 @@
                 "item": "refined-eitr",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           }
         ],
         "armorSource": "table",
@@ -2867,6 +3124,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Embla Set is an Ashlands-tier armor. This set is the tier above Carapace Armor and the Eitr-weave Set, and should be considered a \"light armor,\" having a lower armor value than Flametal Armor and the Ask Set. The armor grants even higher Eitr regeneration than the Eitr-weave Set, which makes it the preferred armor when using magic weapons.",
+        "availableFrom": "ashlands",
+        "availableTier": 8,
         "names": {
           "ru": "Набор Эмблы"
         }
@@ -2901,7 +3160,9 @@
                 "item": "flametal",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 2,
@@ -2921,7 +3182,9 @@
                 "item": "flametal",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 3,
@@ -2941,7 +3204,9 @@
                 "item": "flametal",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 4,
@@ -2961,7 +3226,9 @@
                 "item": "flametal",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           }
         ],
         "armorSource": "table",
@@ -2969,6 +3236,8 @@
         "movementSpeed": -2,
         "resistances": [],
         "description": "The Embla Set is an Ashlands-tier armor. This set is the tier above Carapace Armor and the Eitr-weave Set, and should be considered a \"light armor,\" having a lower armor value than Flametal Armor and the Ask Set. The armor grants even higher Eitr regeneration than the Eitr-weave Set, which makes it the preferred armor when using magic weapons.",
+        "availableFrom": "ashlands",
+        "availableTier": 8,
         "names": {
           "ru": "Набор Эмблы"
         }
@@ -2999,7 +3268,9 @@
                 "item": "asksvin-hide",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 2,
@@ -3015,7 +3286,9 @@
                 "item": "refined-eitr",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 3,
@@ -3031,7 +3304,9 @@
                 "item": "refined-eitr",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 4,
@@ -3047,7 +3322,9 @@
                 "item": "refined-eitr",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           }
         ],
         "armorSource": "table",
@@ -3055,6 +3332,8 @@
         "movementSpeed": -2,
         "resistances": [],
         "description": "The Embla Set is an Ashlands-tier armor. This set is the tier above Carapace Armor and the Eitr-weave Set, and should be considered a \"light armor,\" having a lower armor value than Flametal Armor and the Ask Set. The armor grants even higher Eitr regeneration than the Eitr-weave Set, which makes it the preferred armor when using magic weapons.",
+        "availableFrom": "ashlands",
+        "availableTier": 8,
         "names": {
           "ru": "Набор Эмблы"
         }
@@ -3184,7 +3463,9 @@
                 "item": "cultist-trophy",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 2,
@@ -3200,7 +3481,9 @@
                 "item": "wolf-pelt",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 3,
@@ -3216,7 +3499,9 @@
                 "item": "wolf-pelt",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 4,
@@ -3232,7 +3517,9 @@
                 "item": "wolf-pelt",
                 "amount": 16
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -3240,6 +3527,8 @@
         "movementSpeed": 3,
         "resistances": [],
         "description": "Fenris Set is a Mountain-tier armor. This set is the tier above Root Set and Iron Armor",
+        "availableFrom": "mountain",
+        "availableTier": 5,
         "names": {
           "cs": "Fenrisova zbroj",
           "ru": "Броня Фенриса"
@@ -3271,7 +3560,9 @@
                 "item": "leather-scraps",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 2,
@@ -3291,7 +3582,9 @@
                 "item": "leather-scraps",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 3,
@@ -3311,7 +3604,9 @@
                 "item": "leather-scraps",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 4,
@@ -3331,7 +3626,9 @@
                 "item": "leather-scraps",
                 "amount": 16
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -3341,6 +3638,8 @@
           "Resistant (0.5x) VS Frost"
         ],
         "description": "Fenris Set is a Mountain-tier armor. This set is the tier above Root Set and Iron Armor",
+        "availableFrom": "mountain",
+        "availableTier": 5,
         "names": {
           "cs": "Fenrisova zbroj",
           "ru": "Броня Фенриса"
@@ -3372,7 +3671,9 @@
                 "item": "leather-scraps",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 2,
@@ -3392,7 +3693,9 @@
                 "item": "leather-scraps",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 3,
@@ -3412,7 +3715,9 @@
                 "item": "leather-scraps",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 4,
@@ -3432,7 +3737,9 @@
                 "item": "leather-scraps",
                 "amount": 16
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -3440,6 +3747,8 @@
         "movementSpeed": 3,
         "resistances": [],
         "description": "Fenris Set is a Mountain-tier armor. This set is the tier above Root Set and Iron Armor",
+        "availableFrom": "mountain",
+        "availableTier": 5,
         "names": {
           "cs": "Fenrisova zbroj",
           "ru": "Броня Фенриса"
@@ -3522,7 +3831,9 @@
                 "item": "pufferfish",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 2,
@@ -3578,7 +3889,9 @@
                 "item": "pufferfish",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 3,
@@ -3634,7 +3947,9 @@
                 "item": "pufferfish",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 4,
@@ -3690,7 +4005,9 @@
                 "item": "pufferfish",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           }
         ],
         "armorSource": "rendered",
@@ -3698,6 +4015,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Fishing Hat is an armor piece which can be crafted and upgraded at the Workbench. It provides a +20 skill bonus to Fishing and Swimming.",
+        "availableFrom": "deep-north",
+        "availableTier": 9,
         "names": {
           "ru": "Рыбацкая шляпа"
         }
@@ -3746,7 +4065,9 @@
                 "item": "refined-eitr",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 2,
@@ -3766,7 +4087,9 @@
                 "item": "refined-eitr",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 3,
@@ -3786,7 +4109,9 @@
                 "item": "refined-eitr",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 4,
@@ -3806,7 +4131,9 @@
                 "item": "refined-eitr",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           }
         ],
         "armorSource": "table",
@@ -3814,6 +4141,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Flametal Armor is an Ashlands-tier armor. This set is the tier above Carapace Armor and Eitr-weave Set and currently has the highest armor value in the game. Equal level sets include Embla Set and Ask Set.",
+        "availableFrom": "ashlands",
+        "availableTier": 8,
         "names": {
           "ru": "Огнеметаллическая броня"
         }
@@ -3848,7 +4177,9 @@
                 "item": "morgen-heart",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 2,
@@ -3864,7 +4195,9 @@
                 "item": "asksvin-hide",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 3,
@@ -3880,7 +4213,9 @@
                 "item": "asksvin-hide",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 4,
@@ -3896,7 +4231,9 @@
                 "item": "asksvin-hide",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           }
         ],
         "armorSource": "table",
@@ -3906,6 +4243,8 @@
           "Heat Resistance +20%"
         ],
         "description": "Flametal Armor is an Ashlands-tier armor. This set is the tier above Carapace Armor and Eitr-weave Set and currently has the highest armor value in the game. Equal level sets include Embla Set and Ask Set.",
+        "availableFrom": "ashlands",
+        "availableTier": 8,
         "names": {
           "ru": "Огнеметаллическая броня"
         }
@@ -3936,7 +4275,9 @@
                 "item": "charred-bone",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 2,
@@ -3952,7 +4293,9 @@
                 "item": "asksvin-hide",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 3,
@@ -3968,7 +4311,9 @@
                 "item": "asksvin-hide",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "ashlands",
+            "availableTier": 8
           },
           {
             "quality": 4,
@@ -3984,7 +4329,9 @@
                 "item": "asksvin-hide",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           }
         ],
         "armorSource": "table",
@@ -3994,6 +4341,8 @@
           "Heat Resistance +20%"
         ],
         "description": "Flametal Armor is an Ashlands-tier armor. This set is the tier above Carapace Armor and Eitr-weave Set and currently has the highest armor value in the game. Equal level sets include Embla Set and Ask Set.",
+        "availableFrom": "ashlands",
+        "availableTier": 8,
         "names": {
           "ru": "Огнеметаллическая броня"
         }
@@ -4220,8 +4569,8 @@
     "wiki": "https://valheim.weirdgloop.org/w/Hood_of_Oden",
     "kind": "special",
     "tag": "DLC",
-    "biome": null,
-    "tier": null,
+    "biome": "meadows",
+    "tier": 1,
     "setBonus": null,
     "pieces": [
       {
@@ -4246,7 +4595,9 @@
                 "item": "coal",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "meadows",
+            "availableTier": 1
           },
           {
             "quality": 2,
@@ -4262,7 +4613,9 @@
                 "item": "coal",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "meadows",
+            "availableTier": 1
           },
           {
             "quality": 3,
@@ -4278,7 +4631,9 @@
                 "item": "coal",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "meadows",
+            "availableTier": 1
           },
           {
             "quality": 4,
@@ -4294,7 +4649,9 @@
                 "item": "coal",
                 "amount": 6
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           }
         ],
         "armorSource": "rendered",
@@ -4304,6 +4661,8 @@
         "description": "Hood of Oden is a DLC armor piece. It is only available for the early supporters of Valheim via a Steam code sent out in an email from Iron Gate Studios to those who signed up for the Valheim Beta. Check your email if you signed up!",
         "kind": "special",
         "tag": "DLC",
+        "availableFrom": "meadows",
+        "availableTier": 1,
         "names": {
           "cs": "Kapuce Ódina",
           "ru": "Шлем Одина"
@@ -4346,7 +4705,9 @@
                 "item": "deer-hide",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 2,
@@ -4358,7 +4719,9 @@
                 "item": "iron",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 3,
@@ -4370,7 +4733,9 @@
                 "item": "iron",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 4,
@@ -4382,7 +4747,9 @@
                 "item": "iron",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           }
         ],
         "armorSource": "table",
@@ -4390,6 +4757,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Iron Armor is a Swamp-tier armor. This set is the tier above the Troll Set,",
+        "availableFrom": "swamp",
+        "availableTier": 4,
         "names": {
           "cs": "Železná zbroj",
           "ru": "Железная броня"
@@ -4417,7 +4786,9 @@
                 "item": "deer-hide",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 2,
@@ -4429,7 +4800,9 @@
                 "item": "iron",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 3,
@@ -4441,7 +4814,9 @@
                 "item": "iron",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 4,
@@ -4453,7 +4828,9 @@
                 "item": "iron",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           }
         ],
         "armorSource": "table",
@@ -4461,6 +4838,8 @@
         "movementSpeed": -5,
         "resistances": [],
         "description": "Iron Armor is a Swamp-tier armor. This set is the tier above the Troll Set,",
+        "availableFrom": "swamp",
+        "availableTier": 4,
         "names": {
           "cs": "Železná zbroj",
           "ru": "Железная броня"
@@ -4488,7 +4867,9 @@
                 "item": "deer-hide",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 2,
@@ -4500,7 +4881,9 @@
                 "item": "iron",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 3,
@@ -4512,7 +4895,9 @@
                 "item": "iron",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 4,
@@ -4524,7 +4909,9 @@
                 "item": "iron",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           }
         ],
         "armorSource": "table",
@@ -4532,6 +4919,8 @@
         "movementSpeed": -5,
         "resistances": [],
         "description": "Iron Armor is a Swamp-tier armor. This set is the tier above the Troll Set,",
+        "availableFrom": "swamp",
+        "availableTier": 4,
         "names": {
           "cs": "Železná zbroj",
           "ru": "Железная броня"
@@ -4570,7 +4959,9 @@
                 "item": "deer-hide",
                 "amount": 6
               }
-            ]
+            ],
+            "availableFrom": "meadows",
+            "availableTier": 1
           },
           {
             "quality": 2,
@@ -4586,7 +4977,9 @@
                 "item": "bone-fragments",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 3,
@@ -4602,7 +4995,9 @@
                 "item": "bone-fragments",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 4,
@@ -4618,7 +5013,9 @@
                 "item": "bone-fragments",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -4626,6 +5023,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Leather Armor is a Meadows-tier armor. It is superior to Rag Armor and is replaced by the Troll Set or Bronze Armor. There are no set bonus effects for leather armor.",
+        "availableFrom": "meadows",
+        "availableTier": 1,
         "names": {
           "cs": "Kožená zbroj",
           "ru": "Кожаная броня"
@@ -4649,7 +5048,9 @@
                 "item": "deer-hide",
                 "amount": 6
               }
-            ]
+            ],
+            "availableFrom": "meadows",
+            "availableTier": 1
           },
           {
             "quality": 2,
@@ -4665,7 +5066,9 @@
                 "item": "bone-fragments",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 3,
@@ -4681,7 +5084,9 @@
                 "item": "bone-fragments",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 4,
@@ -4697,7 +5102,9 @@
                 "item": "bone-fragments",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -4705,6 +5112,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Leather Armor is a Meadows-tier armor. It is superior to Rag Armor and is replaced by the Troll Set or Bronze Armor. There are no set bonus effects for leather armor.",
+        "availableFrom": "meadows",
+        "availableTier": 1,
         "names": {
           "cs": "Kožená zbroj",
           "ru": "Кожаная броня"
@@ -4728,7 +5137,9 @@
                 "item": "deer-hide",
                 "amount": 6
               }
-            ]
+            ],
+            "availableFrom": "meadows",
+            "availableTier": 1
           },
           {
             "quality": 2,
@@ -4744,7 +5155,9 @@
                 "item": "bone-fragments",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 3,
@@ -4760,7 +5173,9 @@
                 "item": "bone-fragments",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 4,
@@ -4776,7 +5191,9 @@
                 "item": "bone-fragments",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -4784,6 +5201,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Leather Armor is a Meadows-tier armor. It is superior to Rag Armor and is replaced by the Troll Set or Bronze Armor. There are no set bonus effects for leather armor.",
+        "availableFrom": "meadows",
+        "availableTier": 1,
         "names": {
           "cs": "Kožená zbroj",
           "ru": "Кожаная броня"
@@ -4811,7 +5230,9 @@
                 "item": "bone-fragments",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 2,
@@ -4827,7 +5248,9 @@
                 "item": "bone-fragments",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 3,
@@ -4843,7 +5266,9 @@
                 "item": "bone-fragments",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 4,
@@ -4859,7 +5284,9 @@
                 "item": "bone-fragments",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -4867,6 +5294,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Leather Armor is a Meadows-tier armor. It is superior to Rag Armor and is replaced by the Troll Set or Bronze Armor. There are no set bonus effects for leather armor.",
+        "availableFrom": "black-forest",
+        "availableTier": 2,
         "names": {}
       }
     ],
@@ -4917,7 +5346,9 @@
                 "item": "writhan-roots",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 2,
@@ -4937,7 +5368,9 @@
                 "item": "writhan-roots",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 3,
@@ -4957,7 +5390,9 @@
                 "item": "writhan-roots",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 4,
@@ -4977,7 +5412,9 @@
                 "item": "writhan-roots",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           }
         ],
         "armorSource": "table",
@@ -4985,6 +5422,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Lox Fur Set is a Plains-tier armor. This set is the tier above Wolf Armor and Fenris Set, and is replaced by Carapace Armor and Eitr-weave Set, respectively.",
+        "availableFrom": "plains",
+        "availableTier": 6,
         "names": {}
       },
       {
@@ -5013,7 +5452,9 @@
                 "item": "roots",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 2,
@@ -5033,7 +5474,9 @@
                 "item": "roots",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 3,
@@ -5053,7 +5496,9 @@
                 "item": "roots",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 4,
@@ -5073,7 +5518,9 @@
                 "item": "roots",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           }
         ],
         "armorSource": "table",
@@ -5081,6 +5528,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Lox Fur Set is a Plains-tier armor. This set is the tier above Wolf Armor and Fenris Set, and is replaced by Carapace Armor and Eitr-weave Set, respectively.",
+        "availableFrom": "plains",
+        "availableTier": 6,
         "names": {}
       },
       {
@@ -5109,7 +5558,9 @@
                 "item": "roots",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 2,
@@ -5129,7 +5580,9 @@
                 "item": "roots",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 3,
@@ -5149,7 +5602,9 @@
                 "item": "roots",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 4,
@@ -5169,7 +5624,9 @@
                 "item": "roots",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           }
         ],
         "armorSource": "table",
@@ -5177,6 +5634,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Lox Fur Set is a Plains-tier armor. This set is the tier above Wolf Armor and Fenris Set, and is replaced by Carapace Armor and Eitr-weave Set, respectively.",
+        "availableFrom": "plains",
+        "availableTier": 6,
         "names": {}
       },
       {
@@ -5201,7 +5660,9 @@
                 "item": "silver",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 2,
@@ -5213,7 +5674,9 @@
                 "item": "lox-pelt",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 3,
@@ -5225,7 +5688,9 @@
                 "item": "lox-pelt",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 4,
@@ -5237,7 +5702,9 @@
                 "item": "lox-pelt",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           }
         ],
         "armorSource": "table",
@@ -5247,6 +5714,8 @@
           "Resistant (0.5x) VS Frost"
         ],
         "description": "The Lox Fur Set is a Plains-tier armor. This set is the tier above Wolf Armor and Fenris Set, and is replaced by Carapace Armor and Eitr-weave Set, respectively.",
+        "availableFrom": "plains",
+        "availableTier": 6,
         "names": {
           "cs": "Plášť z Loxe",
           "fr": "Cape de Lox",
@@ -5262,8 +5731,8 @@
     "wiki": "https://valheim.weirdgloop.org/w/Midsummer_Crown",
     "kind": "special",
     "tag": "Midsummer",
-    "biome": null,
-    "tier": null,
+    "biome": "meadows",
+    "tier": 1,
     "setBonus": null,
     "pieces": [
       {
@@ -5284,7 +5753,9 @@
                 "item": "dandelion",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "meadows",
+            "availableTier": 1
           }
         ],
         "armorSource": "infobox",
@@ -5294,6 +5765,8 @@
         "description": "Midsummer crown is a seasonal armor piece available during midsummer.",
         "kind": "special",
         "tag": "Midsummer",
+        "availableFrom": "meadows",
+        "availableTier": 1,
         "names": {
           "ru": "Корона летнего солнцестояния"
         }
@@ -5338,7 +5811,9 @@
                 "item": "bloodgold",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 2,
@@ -5358,7 +5833,9 @@
                 "item": "bloodgold",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 3,
@@ -5378,7 +5855,9 @@
                 "item": "bloodgold",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 4,
@@ -5398,7 +5877,10 @@
                 "item": "bloodgold",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": null,
+            "availableTier": null,
+            "unreachable": true
           }
         ],
         "armorSource": "rendered",
@@ -5406,6 +5888,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Moose Hide Cape is the combat focused Deep North-tier Cape.",
+        "availableFrom": "deep-north",
+        "availableTier": 9,
         "names": {}
       }
     ],
@@ -5442,7 +5926,9 @@
                 "item": "linen-thread",
                 "amount": 15
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 2,
@@ -5458,7 +5944,9 @@
                 "item": "linen-thread",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 3,
@@ -5474,7 +5962,9 @@
                 "item": "linen-thread",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 4,
@@ -5490,7 +5980,9 @@
                 "item": "linen-thread",
                 "amount": 40
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           }
         ],
         "armorSource": "table",
@@ -5498,6 +5990,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Padded Armor is a Plains-tier armor. This set is the tier above Fenris Set and Wolf Armor and is replaced by Carapace Armor or Eitr-weave Set.",
+        "availableFrom": "plains",
+        "availableTier": 6,
         "names": {
           "cs": "Prošívaná zbroj",
           "ru": "Обитая броня"
@@ -5525,7 +6019,9 @@
                 "item": "linen-thread",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 2,
@@ -5541,7 +6037,9 @@
                 "item": "linen-thread",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 3,
@@ -5557,7 +6055,9 @@
                 "item": "linen-thread",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 4,
@@ -5573,7 +6073,9 @@
                 "item": "linen-thread",
                 "amount": 40
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           }
         ],
         "armorSource": "table",
@@ -5581,6 +6083,8 @@
         "movementSpeed": -5,
         "resistances": [],
         "description": "Padded Armor is a Plains-tier armor. This set is the tier above Fenris Set and Wolf Armor and is replaced by Carapace Armor or Eitr-weave Set.",
+        "availableFrom": "plains",
+        "availableTier": 6,
         "names": {
           "cs": "Prošívaná zbroj",
           "ru": "Обитая броня"
@@ -5608,7 +6112,9 @@
                 "item": "linen-thread",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 2,
@@ -5624,7 +6130,9 @@
                 "item": "linen-thread",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 3,
@@ -5640,7 +6148,9 @@
                 "item": "linen-thread",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 4,
@@ -5656,7 +6166,9 @@
                 "item": "linen-thread",
                 "amount": 40
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           }
         ],
         "armorSource": "table",
@@ -5664,6 +6176,8 @@
         "movementSpeed": -5,
         "resistances": [],
         "description": "Padded Armor is a Plains-tier armor. This set is the tier above Fenris Set and Wolf Armor and is replaced by Carapace Armor or Eitr-weave Set.",
+        "availableFrom": "plains",
+        "availableTier": 6,
         "names": {
           "cs": "Prošívaná zbroj",
           "ru": "Обитая броня"
@@ -5691,7 +6205,9 @@
                 "item": "silver",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 2,
@@ -5703,7 +6219,9 @@
                 "item": "linen-thread",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 3,
@@ -5715,7 +6233,9 @@
                 "item": "linen-thread",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 4,
@@ -5727,7 +6247,9 @@
                 "item": "linen-thread",
                 "amount": 16
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           }
         ],
         "armorSource": "table",
@@ -5735,6 +6257,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Padded Armor is a Plains-tier armor. This set is the tier above Fenris Set and Wolf Armor and is replaced by Carapace Armor or Eitr-weave Set.",
+        "availableFrom": "plains",
+        "availableTier": 6,
         "names": {
           "cs": "Lněný plášť",
           "fr": "Cape en tissu",
@@ -5753,8 +6277,8 @@
     "wiki": "https://valheim.weirdgloop.org/w/Pointy_Hat",
     "kind": "special",
     "tag": "Halloween",
-    "biome": null,
-    "tier": null,
+    "biome": "black-forest",
+    "tier": 2,
     "setBonus": null,
     "pieces": [
       {
@@ -5783,7 +6307,9 @@
                 "item": "deer-hide",
                 "amount": 3
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 2,
@@ -5795,7 +6321,9 @@
                 "item": "deer-hide",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 3,
@@ -5807,7 +6335,9 @@
                 "item": "deer-hide",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 4,
@@ -5819,7 +6349,9 @@
                 "item": "deer-hide",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           }
         ],
         "armorSource": "rendered",
@@ -5829,6 +6361,8 @@
         "description": "Pointy hat is an armor piece which can be crafted and upgraded at the Workbench. It is only available during the Halloween seasonal event, – .",
         "kind": "special",
         "tag": "Halloween",
+        "availableFrom": "black-forest",
+        "availableTier": 2,
         "names": {
           "ru": "Ведьмовская шляпа"
         }
@@ -5871,7 +6405,9 @@
                 "amount": 5,
                 "fuel": true
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 2,
@@ -5887,7 +6423,9 @@
                 "item": "moose-hide",
                 "amount": 3
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 3,
@@ -5903,7 +6441,9 @@
                 "item": "moose-hide",
                 "amount": 6
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 4,
@@ -5919,7 +6459,10 @@
                 "item": "moose-hide",
                 "amount": 12
               }
-            ]
+            ],
+            "availableFrom": null,
+            "availableTier": null,
+            "unreachable": true
           }
         ],
         "armorSource": "table",
@@ -5927,6 +6470,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Protector Armor is a Deep North-tier armor.",
+        "availableFrom": "deep-north",
+        "availableTier": 9,
         "names": {}
       },
       {
@@ -5953,7 +6498,9 @@
                 "amount": 5,
                 "fuel": true
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 2,
@@ -5973,7 +6520,9 @@
                 "item": "leather-straps",
                 "amount": 3
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 3,
@@ -5993,7 +6542,9 @@
                 "item": "leather-straps",
                 "amount": 6
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 4,
@@ -6013,7 +6564,10 @@
                 "item": "leather-straps",
                 "amount": 12
               }
-            ]
+            ],
+            "availableFrom": null,
+            "availableTier": null,
+            "unreachable": true
           }
         ],
         "armorSource": "table",
@@ -6023,6 +6577,8 @@
           "Resistant vs. Frost"
         ],
         "description": "The Protector Armor is a Deep North-tier armor.",
+        "availableFrom": "deep-north",
+        "availableTier": 9,
         "names": {}
       },
       {
@@ -6049,7 +6605,9 @@
                 "amount": 5,
                 "fuel": true
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 2,
@@ -6069,7 +6627,9 @@
                 "item": "leather-straps",
                 "amount": 3
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 3,
@@ -6089,7 +6649,9 @@
                 "item": "leather-straps",
                 "amount": 6
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 4,
@@ -6109,7 +6671,10 @@
                 "item": "leather-straps",
                 "amount": 12
               }
-            ]
+            ],
+            "availableFrom": null,
+            "availableTier": null,
+            "unreachable": true
           }
         ],
         "armorSource": "table",
@@ -6117,6 +6682,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Protector Armor is a Deep North-tier armor.",
+        "availableFrom": "deep-north",
+        "availableTier": 9,
         "names": {}
       }
     ],
@@ -6149,7 +6716,9 @@
                 "item": "leather-scraps",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "meadows",
+            "availableTier": 1
           },
           {
             "quality": 2,
@@ -6161,7 +6730,9 @@
                 "item": "leather-scraps",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "meadows",
+            "availableTier": 1
           }
         ],
         "armorSource": "rendered",
@@ -6169,6 +6740,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Rag Armor is a Meadows-tier armor and the most basic armor that can be acquired. It is statistically inferior to Leather Armor, and provides minimal protection. There are no set bonuses for rag armor. Every player starts with a Rag Tunic equipped.",
+        "availableFrom": "meadows",
+        "availableTier": 1,
         "names": {
           "cs": "Hadrová zbroj",
           "ru": "Холщовая броня"
@@ -6192,7 +6765,9 @@
                 "item": "leather-scraps",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "meadows",
+            "availableTier": 1
           },
           {
             "quality": 2,
@@ -6204,7 +6779,9 @@
                 "item": "leather-scraps",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "meadows",
+            "availableTier": 1
           }
         ],
         "armorSource": "table",
@@ -6212,6 +6789,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Rag Armor is a Meadows-tier armor and the most basic armor that can be acquired. It is statistically inferior to Leather Armor, and provides minimal protection. There are no set bonuses for rag armor. Every player starts with a Rag Tunic equipped.",
+        "availableFrom": "meadows",
+        "availableTier": 1,
         "names": {
           "cs": "Hadrová zbroj",
           "ru": "Холщовая броня"
@@ -6264,7 +6843,9 @@
                 "item": "leather-scraps",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 2,
@@ -6280,7 +6861,9 @@
                 "item": "ancient-bark",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 3,
@@ -6296,7 +6879,9 @@
                 "item": "ancient-bark",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 4,
@@ -6312,7 +6897,9 @@
                 "item": "ancient-bark",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -6323,6 +6910,8 @@
           "Weak (1.5x) VS Fire"
         ],
         "description": "The Root Set is a Swamp-tier armor. This set is in the tier above Bronze Armor and the Troll Set. It provides less armor points, but also a lower movement speed penalty compared to the other swamp-tier armor, Iron Armor. Each piece provides weakness to fire, but individual parts give resistance to pierce (in the harnesk) and poison (in the mask). Its unique set bonus increases the wearer's Bow ski",
+        "availableFrom": "swamp",
+        "availableTier": 4,
         "names": {
           "cs": "Zbroj z kořenů",
           "ru": "Корневая броня"
@@ -6354,7 +6943,9 @@
                 "item": "deer-hide",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 2,
@@ -6370,7 +6961,9 @@
                 "item": "ancient-bark",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 3,
@@ -6386,7 +6979,9 @@
                 "item": "ancient-bark",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 4,
@@ -6402,7 +6997,9 @@
                 "item": "ancient-bark",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -6413,6 +7010,8 @@
           "Weak (1.5x) VS Fire"
         ],
         "description": "The Root Set is a Swamp-tier armor. This set is in the tier above Bronze Armor and the Troll Set. It provides less armor points, but also a lower movement speed penalty compared to the other swamp-tier armor, Iron Armor. Each piece provides weakness to fire, but individual parts give resistance to pierce (in the harnesk) and poison (in the mask). Its unique set bonus increases the wearer's Bow ski",
+        "availableFrom": "swamp",
+        "availableTier": 4,
         "names": {
           "cs": "Zbroj z kořenů",
           "ru": "Корневая броня"
@@ -6444,7 +7043,9 @@
                 "item": "deer-hide",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 2,
@@ -6460,7 +7061,9 @@
                 "item": "ancient-bark",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 3,
@@ -6476,7 +7079,9 @@
                 "item": "ancient-bark",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "swamp",
+            "availableTier": 4
           },
           {
             "quality": 4,
@@ -6492,7 +7097,9 @@
                 "item": "ancient-bark",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -6502,6 +7109,8 @@
           "Weak (1.5x) vs Fire"
         ],
         "description": "The Root Set is a Swamp-tier armor. This set is in the tier above Bronze Armor and the Troll Set. It provides less armor points, but also a lower movement speed penalty compared to the other swamp-tier armor, Iron Armor. Each piece provides weakness to fire, but individual parts give resistance to pierce (in the harnesk) and poison (in the mask). Its unique set bonus increases the wearer's Bow ski",
+        "availableFrom": "swamp",
+        "availableTier": 4,
         "names": {
           "cs": "Zbroj z kořenů",
           "ru": "Корневая броня"
@@ -7178,7 +7787,9 @@
                 "item": "bone-fragments",
                 "amount": 3
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 2,
@@ -7194,7 +7805,9 @@
                 "item": "bone-fragments",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 3,
@@ -7210,7 +7823,9 @@
                 "item": "bone-fragments",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 4,
@@ -7226,7 +7841,9 @@
                 "item": "bone-fragments",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -7234,6 +7851,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Troll Set is a Black Forest-tier armor. Compared to the other armors available in the Bronze Age, Bronze Armor and Bear Set, the Troll Set has lower armor values but does not reduce movement speed. Simultaneously wearing all four pieces provides the Sneaky Effect.",
+        "availableFrom": "black-forest",
+        "availableTier": 2,
         "names": {
           "cs": "Trollí zbroj",
           "ru": "Броня из кожи тролля"
@@ -7257,7 +7876,9 @@
                 "item": "troll-hide",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 2,
@@ -7269,7 +7890,9 @@
                 "item": "troll-hide",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 3,
@@ -7281,7 +7904,9 @@
                 "item": "troll-hide",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 4,
@@ -7293,7 +7918,9 @@
                 "item": "troll-hide",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -7301,6 +7928,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Troll Set is a Black Forest-tier armor. Compared to the other armors available in the Bronze Age, Bronze Armor and Bear Set, the Troll Set has lower armor values but does not reduce movement speed. Simultaneously wearing all four pieces provides the Sneaky Effect.",
+        "availableFrom": "black-forest",
+        "availableTier": 2,
         "names": {
           "cs": "Trollí zbroj",
           "ru": "Броня из кожи тролля"
@@ -7324,7 +7953,9 @@
                 "item": "troll-hide",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 2,
@@ -7336,7 +7967,9 @@
                 "item": "troll-hide",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 3,
@@ -7348,7 +7981,9 @@
                 "item": "troll-hide",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 4,
@@ -7360,7 +7995,9 @@
                 "item": "troll-hide",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -7368,6 +8005,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Troll Set is a Black Forest-tier armor. Compared to the other armors available in the Bronze Age, Bronze Armor and Bear Set, the Troll Set has lower armor values but does not reduce movement speed. Simultaneously wearing all four pieces provides the Sneaky Effect.",
+        "availableFrom": "black-forest",
+        "availableTier": 2,
         "names": {
           "cs": "Trollí zbroj",
           "ru": "Броня из кожи тролля"
@@ -7395,7 +8034,9 @@
                 "item": "bone-fragments",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 2,
@@ -7411,7 +8052,9 @@
                 "item": "bone-fragments",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 3,
@@ -7427,7 +8070,9 @@
                 "item": "bone-fragments",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "black-forest",
+            "availableTier": 2
           },
           {
             "quality": 4,
@@ -7443,7 +8088,9 @@
                 "item": "bone-fragments",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -7451,6 +8098,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Troll Set is a Black Forest-tier armor. Compared to the other armors available in the Bronze Age, Bronze Armor and Bear Set, the Troll Set has lower armor values but does not reduce movement speed. Simultaneously wearing all four pieces provides the Sneaky Effect.",
+        "availableFrom": "black-forest",
+        "availableTier": 2,
         "names": {
           "cs": "Plášť z trollí kůže",
           "ru": "Плащ из шкуры тролля"
@@ -7583,7 +8232,9 @@
                 "amount": 5,
                 "fuel": true
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 2,
@@ -7603,7 +8254,9 @@
                 "item": "moose-sinew",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 3,
@@ -7623,7 +8276,9 @@
                 "item": "moose-sinew",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 4,
@@ -7643,7 +8298,10 @@
                 "item": "moose-sinew",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": null,
+            "availableTier": null,
+            "unreachable": true
           }
         ],
         "armorSource": "table",
@@ -7651,6 +8309,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Vanguard Set is a Deep North-tier armor.",
+        "availableFrom": "deep-north",
+        "availableTier": 9,
         "names": {}
       },
       {
@@ -7677,7 +8337,9 @@
                 "amount": 5,
                 "fuel": true
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 2,
@@ -7697,7 +8359,9 @@
                 "item": "leather-straps",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 3,
@@ -7717,7 +8381,9 @@
                 "item": "leather-straps",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 4,
@@ -7737,7 +8403,10 @@
                 "item": "leather-straps",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": null,
+            "availableTier": null,
+            "unreachable": true
           }
         ],
         "armorSource": "table",
@@ -7747,6 +8416,8 @@
           "Resistant vs Frost"
         ],
         "description": "The Vanguard Set is a Deep North-tier armor.",
+        "availableFrom": "deep-north",
+        "availableTier": 9,
         "names": {}
       },
       {
@@ -7773,7 +8444,9 @@
                 "amount": 5,
                 "fuel": true
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 2,
@@ -7793,7 +8466,9 @@
                 "item": "seal-pelt",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 3,
@@ -7813,7 +8488,9 @@
                 "item": "seal-pelt",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "deep-north",
+            "availableTier": 9
           },
           {
             "quality": 4,
@@ -7833,7 +8510,10 @@
                 "item": "seal-pelt",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": null,
+            "availableTier": null,
+            "unreachable": true
           }
         ],
         "armorSource": "table",
@@ -7841,6 +8521,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Vanguard Set is a Deep North-tier armor.",
+        "availableFrom": "deep-north",
+        "availableTier": 9,
         "names": {}
       }
     ],
@@ -7887,7 +8569,9 @@
                 "item": "vile-trophy",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 2,
@@ -7899,7 +8583,9 @@
                 "item": "bear-hide",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 3,
@@ -7911,7 +8597,9 @@
                 "item": "bear-hide",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 4,
@@ -7923,7 +8611,9 @@
                 "item": "bear-hide",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           }
         ],
         "armorSource": "table",
@@ -7931,6 +8621,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Vilebone Set is a Plains-tier armor set. It has a lower armor value than Padded Armor, but wearing all 3 pieces provides the Vilebone Wrath set bonus, increasing damage and regeneration, but making the wearer slightly more vulnerable to physical damage.",
+        "availableFrom": "plains",
+        "availableTier": 6,
         "names": {
           "ru": "Гнилокостная броня"
         }
@@ -7961,7 +8653,9 @@
                 "item": "linen-thread",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 2,
@@ -7981,7 +8675,9 @@
                 "item": "linen-thread",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 3,
@@ -8001,7 +8697,9 @@
                 "item": "linen-thread",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 4,
@@ -8021,7 +8719,9 @@
                 "item": "linen-thread",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           }
         ],
         "armorSource": "table",
@@ -8029,6 +8729,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Vilebone Set is a Plains-tier armor set. It has a lower armor value than Padded Armor, but wearing all 3 pieces provides the Vilebone Wrath set bonus, increasing damage and regeneration, but making the wearer slightly more vulnerable to physical damage.",
+        "availableFrom": "plains",
+        "availableTier": 6,
         "names": {
           "ru": "Гнилокостная броня"
         }
@@ -8059,7 +8761,9 @@
                 "item": "linen-thread",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 2,
@@ -8079,7 +8783,9 @@
                 "item": "linen-thread",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 3,
@@ -8099,7 +8805,9 @@
                 "item": "linen-thread",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           },
           {
             "quality": 4,
@@ -8119,7 +8827,9 @@
                 "item": "linen-thread",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "plains",
+            "availableTier": 6
           }
         ],
         "armorSource": "table",
@@ -8127,6 +8837,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "The Vilebone Set is a Plains-tier armor set. It has a lower armor value than Padded Armor, but wearing all 3 pieces provides the Vilebone Wrath set bonus, increasing damage and regeneration, but making the wearer slightly more vulnerable to physical damage.",
+        "availableFrom": "plains",
+        "availableTier": 6,
         "names": {
           "ru": "Гнилокостная броня"
         }
@@ -8171,7 +8883,9 @@
                 "item": "drake-trophy",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 2,
@@ -8183,7 +8897,9 @@
                 "item": "silver",
                 "amount": 5
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 3,
@@ -8195,7 +8911,9 @@
                 "item": "silver",
                 "amount": 10
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 4,
@@ -8207,7 +8925,9 @@
                 "item": "silver",
                 "amount": 20
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -8215,6 +8935,8 @@
         "movementSpeed": 0,
         "resistances": [],
         "description": "Wolf Armor is a Mountain-tier armor. This set is the tier above Iron Armor and Root Set, and is replaced by Padded Armor and Vilebone Set, respectively.",
+        "availableFrom": "mountain",
+        "availableTier": 5,
         "names": {
           "cs": "Vlčí zbroj",
           "ru": "Волчья броня"
@@ -8246,7 +8968,9 @@
                 "item": "chain",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 2,
@@ -8262,7 +8986,9 @@
                 "item": "wolf-pelt",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 3,
@@ -8278,7 +9004,9 @@
                 "item": "wolf-pelt",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 4,
@@ -8294,7 +9022,9 @@
                 "item": "wolf-pelt",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -8304,6 +9034,8 @@
           "Resistant (0.5x) VS Frost"
         ],
         "description": "Wolf Armor is a Mountain-tier armor. This set is the tier above Iron Armor and Root Set, and is replaced by Padded Armor and Vilebone Set, respectively.",
+        "availableFrom": "mountain",
+        "availableTier": 5,
         "names": {
           "cs": "Vlčí zbroj",
           "ru": "Волчья броня"
@@ -8335,7 +9067,9 @@
                 "item": "wolf-fang",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 2,
@@ -8355,7 +9089,9 @@
                 "item": "wolf-fang",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 3,
@@ -8375,7 +9111,9 @@
                 "item": "wolf-fang",
                 "amount": 2
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 4,
@@ -8395,7 +9133,9 @@
                 "item": "wolf-fang",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -8403,6 +9143,8 @@
         "movementSpeed": -5,
         "resistances": [],
         "description": "Wolf Armor is a Mountain-tier armor. This set is the tier above Iron Armor and Root Set, and is replaced by Padded Armor and Vilebone Set, respectively.",
+        "availableFrom": "mountain",
+        "availableTier": 5,
         "names": {
           "cs": "Vlčí zbroj",
           "ru": "Волчья броня"
@@ -8434,7 +9176,9 @@
                 "item": "wolf-trophy",
                 "amount": 1
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 2,
@@ -8450,7 +9194,9 @@
                 "item": "wolf-pelt",
                 "amount": 4
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 3,
@@ -8466,7 +9212,9 @@
                 "item": "wolf-pelt",
                 "amount": 8
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           },
           {
             "quality": 4,
@@ -8482,7 +9230,9 @@
                 "item": "wolf-pelt",
                 "amount": 16
               }
-            ]
+            ],
+            "availableFrom": "mountain",
+            "availableTier": 5
           }
         ],
         "armorSource": "table",
@@ -8492,6 +9242,8 @@
           "Resistant (0.5x) VS Frost"
         ],
         "description": "Wolf Armor is a Mountain-tier armor. This set is the tier above Iron Armor and Root Set, and is replaced by Padded Armor and Vilebone Set, respectively.",
+        "availableFrom": "mountain",
+        "availableTier": 5,
         "names": {
           "fr": "Cape en fourrure de loup",
           "ru": "Плащ из шкуры волка"

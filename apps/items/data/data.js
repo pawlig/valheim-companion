@@ -1442,6 +1442,66 @@ globalThis.VC_ITEMS_DATA = {
       "crossLinks": {}
     },
     {
+      "id": "asksvin-trophy",
+      "name": "Asksvin Trophy",
+      "image": "../smithy/img/items/asksvin-trophy.png",
+      "biome": "ashlands",
+      "tier": 8,
+      "category": "trophy",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Asksvin_Trophy",
+      "names": {
+        "cs": "Trofeje",
+        "ru": "Категория:Трофеи"
+      },
+      "description": null,
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [
+          {
+            "id": "asksvin",
+            "name": "Asksvin",
+            "biome": "ashlands"
+          }
+        ],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Asksvin",
+            "kind": "creature",
+            "creatureId": "asksvin",
+            "biomes": [
+              "ashlands"
+            ]
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "feathery-wreath",
+            "name": "Feathery Wreath",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "feathery-wreath"
+          }
+        ],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
       "id": "barber-kit",
       "name": "Barber Kit",
       "image": "../comfort/img/items/barber-kit.png",
@@ -2797,7 +2857,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "black-metal-bolt",
             "name": "Black Metal Bolt",
-            "biome": "plains",
+            "biome": "mistlands",
             "itemId": "black-metal-bolt"
           },
           {
@@ -2838,7 +2898,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "skoll-and-hati",
             "name": "Skoll and Hati",
             "level": 1,
-            "biome": "plains",
+            "biome": "mistlands",
             "itemId": "skoll-and-hati"
           },
           {
@@ -2924,7 +2984,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "black-metal-bolt",
             "name": "Black Metal Bolt",
             "level": 2,
-            "biome": "plains",
+            "biome": "mistlands",
             "itemId": "black-metal-bolt"
           },
           {
@@ -4540,7 +4600,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "boar-jerky",
             "name": "Boar Jerky",
             "isFeast": false,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "boar-jerky"
           },
           {
@@ -4554,7 +4614,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "minced-meat-sauce",
             "name": "Minced Meat Sauce",
             "isFeast": false,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "minced-meat-sauce"
           },
           {
@@ -4568,7 +4628,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "turnip-stew",
             "name": "Turnip Stew",
             "isFeast": false,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "turnip-stew"
           }
         ],
@@ -4656,7 +4716,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "bone-bolt",
             "name": "Bone Bolt",
-            "biome": "black-forest",
+            "biome": "mistlands",
             "itemId": "bone-bolt"
           },
           {
@@ -4805,7 +4865,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "bone-bolt",
             "name": "Bone Bolt",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "mistlands",
             "itemId": "bone-bolt"
           }
         ]
@@ -5728,7 +5788,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "carrot-soup",
             "name": "Carrot Soup",
             "isFeast": false,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "carrot-soup"
           },
           {
@@ -5749,7 +5809,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "minced-meat-sauce",
             "name": "Minced Meat Sauce",
             "isFeast": false,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "minced-meat-sauce"
           },
           {
@@ -8883,7 +8943,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "poison-resistance-mead",
             "name": "Poison Resistance Mead",
-            "biome": "swamp",
+            "biome": "black-forest",
             "itemId": "poison-resistance-mead"
           }
         ],
@@ -8995,7 +9055,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "mead-base-poison-resistance",
             "name": "Mead Base: Poison Resistance",
             "level": 1,
-            "biome": "swamp",
+            "biome": "black-forest",
             "itemId": "mead-base-poison-resistance"
           }
         ]
@@ -12234,7 +12294,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "black-metal-bolt",
             "name": "Black Metal Bolt",
-            "biome": "plains",
+            "biome": "mistlands",
             "itemId": "black-metal-bolt"
           },
           {
@@ -12252,7 +12312,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "bone-bolt",
             "name": "Bone Bolt",
-            "biome": "black-forest",
+            "biome": "mistlands",
             "itemId": "bone-bolt"
           },
           {
@@ -12313,7 +12373,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "iron-bolt",
             "name": "Iron Bolt",
-            "biome": "swamp",
+            "biome": "mistlands",
             "itemId": "iron-bolt"
           },
           {
@@ -12403,7 +12463,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "black-metal-bolt",
             "name": "Black Metal Bolt",
             "level": 2,
-            "biome": "plains",
+            "biome": "mistlands",
             "itemId": "black-metal-bolt"
           },
           {
@@ -12424,7 +12484,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "bone-bolt",
             "name": "Bone Bolt",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "mistlands",
             "itemId": "bone-bolt"
           },
           {
@@ -12487,7 +12547,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "iron-bolt",
             "name": "Iron Bolt",
             "level": 1,
-            "biome": "swamp",
+            "biome": "mistlands",
             "itemId": "iron-bolt"
           },
           {
@@ -13040,7 +13100,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "skoll-and-hati",
             "name": "Skoll and Hati",
             "level": 1,
-            "biome": "plains",
+            "biome": "mistlands",
             "itemId": "skoll-and-hati"
           },
           {
@@ -15293,18 +15353,18 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "grausten-chest"
           },
           {
-            "id": "grausten-pile",
-            "name": "Grausten Pile",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "grausten-pile"
-          },
-          {
             "id": "portal-stone",
             "name": "Portal – Stone",
             "level": 1,
             "biome": "ashlands",
             "itemId": "portal-stone"
+          },
+          {
+            "id": "grausten-pile",
+            "name": "Grausten Pile",
+            "level": 1,
+            "biome": "ashlands",
+            "itemId": "grausten-pile"
           }
         ],
         "crafting": [
@@ -15985,7 +16045,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "boar-jerky",
             "name": "Boar Jerky",
             "isFeast": false,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "boar-jerky"
           },
           {
@@ -16062,7 +16122,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "poison-resistance-mead",
             "name": "Poison Resistance Mead",
-            "biome": "swamp",
+            "biome": "black-forest",
             "itemId": "poison-resistance-mead"
           },
           {
@@ -16149,7 +16209,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "mead-base-poison-resistance",
             "name": "Mead Base: Poison Resistance",
             "level": 1,
-            "biome": "swamp",
+            "biome": "black-forest",
             "itemId": "mead-base-poison-resistance"
           },
           {
@@ -16508,7 +16568,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "arbalest",
             "name": "Arbalest",
             "level": 1,
-            "biome": "swamp",
+            "biome": "mistlands",
             "itemId": "arbalest"
           },
           {
@@ -16556,7 +16616,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "iron-bolt",
             "name": "Iron Bolt",
-            "biome": "swamp",
+            "biome": "mistlands",
             "itemId": "iron-bolt"
           },
           {
@@ -16659,7 +16719,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "skoll-and-hati",
             "name": "Skoll and Hati",
             "level": 1,
-            "biome": "plains",
+            "biome": "mistlands",
             "itemId": "skoll-and-hati"
           },
           {
@@ -16926,10 +16986,17 @@ globalThis.VC_ITEMS_DATA = {
             "itemId": "iron-nails"
           },
           {
+            "id": "mechanical-spring",
+            "name": "Mechanical Spring",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "mechanical-spring"
+          },
+          {
             "id": "iron-bolt",
             "name": "Iron Bolt",
             "level": 1,
-            "biome": "swamp",
+            "biome": "mistlands",
             "itemId": "iron-bolt"
           },
           {
@@ -16945,13 +17012,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 2,
             "biome": "swamp",
             "itemId": "ironhead-arrow"
-          },
-          {
-            "id": "mechanical-spring",
-            "name": "Mechanical Spring",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "mechanical-spring"
           },
           {
             "id": "horn-of-celebration",
@@ -20754,8 +20814,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "mead-base-poison-resistance",
       "name": "Mead Base: Poison Resistance",
       "image": "../provisions/img/items/mead-base-poison-resistance.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "ingredient",
       "teleportable": true,
       "stack": 1,
@@ -20819,7 +20879,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "poison-resistance-mead",
             "name": "Poison Resistance Mead",
-            "biome": "swamp",
+            "biome": "black-forest",
             "itemId": "poison-resistance-mead"
           }
         ],
@@ -20976,6 +21036,91 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "mechanical-spring",
+      "name": "Mechanical Spring",
+      "image": "../smithy/img/items/mechanical-spring.png",
+      "biome": "mistlands",
+      "tier": 7,
+      "category": "material",
+      "teleportable": false,
+      "stack": 10,
+      "weight": 5,
+      "wiki": "https://valheim.weirdgloop.org/w/Mechanical_Spring",
+      "names": {
+        "cs": "Mechanická pružina",
+        "ru": "Пружина"
+      },
+      "description": "A mysterious contraption built by the Dvergr. Used to build traps.",
+      "stats": null,
+      "recipe": {
+        "station": "Artisan Table",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "refined-eitr",
+            "name": "refined-eitr",
+            "amount": 1
+          },
+          {
+            "item": "iron",
+            "name": "iron",
+            "amount": 3
+          }
+        ],
+        "stationId": "artisan-table"
+      },
+      "station": {
+        "id": "artisan-table",
+        "name": "Artisan Table",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Artisan Table",
+            "kind": "station"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "vice",
+            "name": "Vice",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "vice"
+          },
+          {
+            "id": "ballista",
+            "name": "Ballista",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "ballista"
+          },
+          {
+            "id": "trap",
+            "name": "Trap",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "trap"
+          }
+        ],
         "crafting": []
       },
       "crossLinks": {}
@@ -23645,7 +23790,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "carrot-soup",
             "name": "Carrot Soup",
             "isFeast": false,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "carrot-soup"
           },
           {
@@ -23807,7 +23952,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "minced-meat-sauce",
             "name": "Minced Meat Sauce",
             "isFeast": false,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "minced-meat-sauce"
           }
         ],
@@ -23815,7 +23960,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "poison-resistance-mead",
             "name": "Poison Resistance Mead",
-            "biome": "swamp",
+            "biome": "black-forest",
             "itemId": "poison-resistance-mead"
           }
         ],
@@ -23827,7 +23972,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "mead-base-poison-resistance",
             "name": "Mead Base: Poison Resistance",
             "level": 1,
-            "biome": "swamp",
+            "biome": "black-forest",
             "itemId": "mead-base-poison-resistance"
           }
         ]
@@ -25812,7 +25957,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "onion-soup",
             "name": "Onion Soup",
             "isFeast": false,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "onion-soup"
           },
           {
@@ -27710,18 +27855,18 @@ globalThis.VC_ITEMS_DATA = {
         ],
         "crafting": [
           {
-            "id": "grappling-hook",
-            "name": "Grappling Hook",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "grappling-hook"
-          },
-          {
             "id": "mechanical-spring",
             "name": "Mechanical Spring",
             "level": 1,
             "biome": "mistlands",
             "itemId": "mechanical-spring"
+          },
+          {
+            "id": "grappling-hook",
+            "name": "Grappling Hook",
+            "level": 1,
+            "biome": "mistlands",
+            "itemId": "grappling-hook"
           },
           {
             "id": "resounding-shackle",
@@ -28206,7 +28351,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "arbalest",
             "name": "Arbalest",
             "level": 1,
-            "biome": "swamp",
+            "biome": "mistlands",
             "itemId": "arbalest"
           }
         ],
@@ -29710,6 +29855,73 @@ globalThis.VC_ITEMS_DATA = {
       "crossLinks": {}
     },
     {
+      "id": "sharpening-stone",
+      "name": "Sharpening Stone",
+      "image": "../smithy/img/items/sharpening-stone.png",
+      "biome": "black-forest",
+      "tier": 2,
+      "category": "material",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 6,
+      "wiki": "https://valheim.weirdgloop.org/w/Sharpening_Stone",
+      "names": {
+        "cs": "Brusné kolo",
+        "fr": "Roue à aiguiser",
+        "ru": "Точильный камень"
+      },
+      "description": "A whetstone wheel ready to spin.",
+      "stats": null,
+      "recipe": {
+        "station": "Stonecutter",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "stone",
+            "name": "stone",
+            "amount": 5
+          }
+        ],
+        "stationId": "stonecutter"
+      },
+      "station": {
+        "id": "stonecutter",
+        "name": "Stonecutter",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Stonecutter",
+            "kind": "station"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [
+          {
+            "id": "grinding-wheel",
+            "name": "Grinding Wheel",
+            "level": 1,
+            "biome": "swamp",
+            "itemId": "grinding-wheel"
+          }
+        ],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
       "id": "silver",
       "name": "Silver",
       "image": "../smithy/img/items/silver.png",
@@ -30820,6 +31032,13 @@ globalThis.VC_ITEMS_DATA = {
         ],
         "crafting": [
           {
+            "id": "sharpening-stone",
+            "name": "Sharpening Stone",
+            "level": 1,
+            "biome": "black-forest",
+            "itemId": "sharpening-stone"
+          },
+          {
             "id": "hammer",
             "name": "Hammer",
             "level": 1,
@@ -30832,13 +31051,6 @@ globalThis.VC_ITEMS_DATA = {
             "level": 1,
             "biome": "meadows",
             "itemId": "hoe"
-          },
-          {
-            "id": "sharpening-stone",
-            "name": "Sharpening Stone",
-            "level": 1,
-            "biome": "black-forest",
-            "itemId": "sharpening-stone"
           }
         ]
       },
@@ -31395,7 +31607,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "poison-resistance-mead",
             "name": "Poison Resistance Mead",
-            "biome": "swamp",
+            "biome": "black-forest",
             "itemId": "poison-resistance-mead"
           }
         ],
@@ -31458,7 +31670,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "mead-base-poison-resistance",
             "name": "Mead Base: Poison Resistance",
             "level": 1,
-            "biome": "swamp",
+            "biome": "black-forest",
             "itemId": "mead-base-poison-resistance"
           }
         ]
@@ -32666,7 +32878,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "turnip-stew",
             "name": "Turnip Stew",
             "isFeast": false,
-            "biome": "meadows",
+            "biome": "black-forest",
             "itemId": "turnip-stew"
           }
         ],
@@ -34678,13 +34890,13 @@ globalThis.VC_ITEMS_DATA = {
             "id": "arbalest",
             "name": "Arbalest",
             "level": 1,
-            "biome": "swamp",
+            "biome": "mistlands",
             "itemId": "arbalest"
           },
           {
             "id": "black-metal-bolt",
             "name": "Black Metal Bolt",
-            "biome": "plains",
+            "biome": "mistlands",
             "itemId": "black-metal-bolt"
           },
           {
@@ -34838,7 +35050,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "iron-bolt",
             "name": "Iron Bolt",
-            "biome": "swamp",
+            "biome": "mistlands",
             "itemId": "iron-bolt"
           },
           {
@@ -35214,7 +35426,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "black-metal-bolt",
             "name": "Black Metal Bolt",
             "level": 2,
-            "biome": "plains",
+            "biome": "mistlands",
             "itemId": "black-metal-bolt"
           },
           {
@@ -35263,7 +35475,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "iron-bolt",
             "name": "Iron Bolt",
             "level": 1,
-            "biome": "swamp",
+            "biome": "mistlands",
             "itemId": "iron-bolt"
           },
           {
@@ -36285,8 +36497,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "arbalest",
       "name": "Arbalest",
       "image": "../bestiary/img/weapons/arbalest.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "mistlands",
+      "tier": 7,
       "category": "weapon",
       "teleportable": true,
       "stack": null,
@@ -36824,8 +37036,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "black-metal-bolt",
       "name": "Black Metal Bolt",
       "image": "../bestiary/img/weapons/black-metal-bolt.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mistlands",
+      "tier": 7,
       "category": "ammo",
       "teleportable": true,
       "stack": 20,
@@ -37664,8 +37876,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "bone-bolt",
       "name": "Bone Bolt",
       "image": "../bestiary/img/weapons/bone-bolt.png",
-      "biome": "black-forest",
-      "tier": 2,
+      "biome": "mistlands",
+      "tier": 7,
       "category": "ammo",
       "teleportable": true,
       "stack": 20,
@@ -42098,8 +42310,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "iron-bolt",
       "name": "Iron Bolt",
       "image": "../bestiary/img/weapons/iron-bolt.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "mistlands",
+      "tier": 7,
       "category": "ammo",
       "teleportable": true,
       "stack": 20,
@@ -44930,8 +45142,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "skoll-and-hati",
       "name": "Skoll and Hati",
       "image": "../bestiary/img/weapons/skoll-and-hati.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mistlands",
+      "tier": 7,
       "category": "weapon",
       "teleportable": true,
       "stack": null,
@@ -56107,8 +56319,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "boar-jerky",
       "name": "Boar Jerky",
       "image": "../provisions/img/food/boar-jerky.png",
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "food",
       "teleportable": true,
       "stack": 20,
@@ -56239,8 +56451,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "carrot-soup",
       "name": "Carrot Soup",
       "image": "../provisions/img/food/carrot-soup.png",
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "food",
       "teleportable": true,
       "stack": 10,
@@ -57893,8 +58105,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "minced-meat-sauce",
       "name": "Minced Meat Sauce",
       "image": "../provisions/img/food/minced-meat-sauce.png",
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "food",
       "teleportable": true,
       "stack": 10,
@@ -61059,8 +61271,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "poison-resistance-mead",
       "name": "Poison Resistance Mead",
       "image": "../provisions/img/meads/poison-resistance-mead.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "black-forest",
+      "tier": 2,
       "category": "mead",
       "teleportable": true,
       "stack": 10,
@@ -69599,60 +69811,6 @@ globalThis.VC_ITEMS_DATA = {
       "crossLinks": {}
     },
     {
-      "id": "asksvin-trophy",
-      "name": "Asksvin Trophy",
-      "image": "../bestiary/img/creatures/asksvin-trophy.png",
-      "biome": "ashlands",
-      "tier": 8,
-      "category": "trophy",
-      "teleportable": true,
-      "stack": 20,
-      "weight": 2,
-      "wiki": null,
-      "names": {},
-      "description": null,
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [
-          {
-            "id": "asksvin",
-            "name": "Asksvin",
-            "biome": "ashlands"
-          }
-        ],
-        "locations": [],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Dropped by Asksvin",
-            "kind": "creature",
-            "creatureId": "asksvin"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [
-          {
-            "id": "feathery-wreath",
-            "name": "Feathery Wreath",
-            "level": 1,
-            "biome": "ashlands",
-            "itemId": "feathery-wreath"
-          }
-        ],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
       "id": "barka-trophy",
       "name": "Barka Trophy",
       "image": "../bestiary/img/creatures/barka-trophy.png",
@@ -78065,6 +78223,118 @@ globalThis.VC_ITEMS_DATA = {
       "crossLinks": {}
     },
     {
+      "id": "portal-stone",
+      "name": "Portal – Stone",
+      "image": null,
+      "biome": "ashlands",
+      "tier": 8,
+      "category": "building",
+      "teleportable": true,
+      "stack": null,
+      "weight": null,
+      "wiki": "https://valheim.weirdgloop.org/w/Portal_Stone",
+      "names": {},
+      "description": "The powerful energy source lets you pass through even with the most valuable of items.",
+      "stats": null,
+      "recipe": {
+        "station": "Stonecutter",
+        "stationLevel": 1,
+        "yields": 1,
+        "materials": [
+          {
+            "item": "greydwarf-eye",
+            "name": "Greydwarf Eye",
+            "amount": 10
+          },
+          {
+            "item": "grausten",
+            "name": "Grausten",
+            "amount": 30
+          },
+          {
+            "item": "molten-core",
+            "name": "Molten Core",
+            "amount": 2
+          }
+        ],
+        "stationId": "stonecutter"
+      },
+      "station": {
+        "id": "stonecutter",
+        "name": "Stonecutter",
+        "level": 1
+      },
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Stonecutter",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Stonecutter"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
+      "id": "flametal-battle-idol",
+      "name": "Flametal Battle Idol",
+      "image": null,
+      "biome": "ashlands",
+      "tier": 8,
+      "category": "casting",
+      "teleportable": true,
+      "stack": 20,
+      "weight": 0.5,
+      "wiki": "https://valheim.weirdgloop.org/w/Flametal_Battle_Idol",
+      "names": {},
+      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
+      "stats": null,
+      "recipe": null,
+      "station": null,
+      "sources": {
+        "creatures": [],
+        "locations": [
+          {
+            "text": "Loot chests",
+            "kind": "location"
+          }
+        ],
+        "traders": [],
+        "raw": [
+          {
+            "text": "Loot chests"
+          }
+        ]
+      },
+      "usedIn": {
+        "weapons": [],
+        "armor": [],
+        "food": [],
+        "meads": [],
+        "comfort": [],
+        "expedition": [],
+        "stations": [],
+        "crafting": []
+      },
+      "crossLinks": {}
+    },
+    {
       "id": "barrel",
       "name": "Barrel",
       "image": null,
@@ -79256,73 +79526,6 @@ globalThis.VC_ITEMS_DATA = {
       "crossLinks": {}
     },
     {
-      "id": "sharpening-stone",
-      "name": "Sharpening Stone",
-      "image": null,
-      "biome": "black-forest",
-      "tier": 2,
-      "category": "material",
-      "teleportable": true,
-      "stack": 20,
-      "weight": 6,
-      "wiki": "https://valheim.weirdgloop.org/w/Sharpening_Stone",
-      "names": {},
-      "description": "A whetstone wheel ready to spin.",
-      "stats": null,
-      "recipe": {
-        "station": "Stonecutter",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "stone",
-            "name": "Stone",
-            "amount": 5
-          }
-        ],
-        "stationId": "stonecutter"
-      },
-      "station": {
-        "id": "stonecutter",
-        "name": "Stonecutter",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Stonecutter",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Stonecutter"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [
-          {
-            "id": "grinding-wheel",
-            "name": "Grinding Wheel",
-            "level": 1,
-            "biome": "swamp",
-            "itemId": "grinding-wheel"
-          }
-        ],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
       "id": "onion-seeds",
       "name": "Onion seeds",
       "image": null,
@@ -79473,92 +79676,6 @@ globalThis.VC_ITEMS_DATA = {
         "comfort": [],
         "expedition": [],
         "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "mechanical-spring",
-      "name": "Mechanical Spring",
-      "image": null,
-      "biome": "mistlands",
-      "tier": 7,
-      "category": "material",
-      "teleportable": false,
-      "stack": 10,
-      "weight": 5,
-      "wiki": "https://valheim.weirdgloop.org/w/Mechanical_Spring",
-      "names": {},
-      "description": "A mysterious contraption built by the Dvergr. Used to build traps.",
-      "stats": null,
-      "recipe": {
-        "station": "Artisan Table",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "refined-eitr",
-            "name": "Refined Eitr",
-            "amount": 1
-          },
-          {
-            "item": "iron",
-            "name": "Iron",
-            "amount": 3
-          }
-        ],
-        "stationId": "artisan-table"
-      },
-      "station": {
-        "id": "artisan-table",
-        "name": "Artisan Table",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Artisan Table",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Artisan Table"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [
-          {
-            "id": "vice",
-            "name": "Vice",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "vice"
-          },
-          {
-            "id": "ballista",
-            "name": "Ballista",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "ballista"
-          },
-          {
-            "id": "trap",
-            "name": "Trap",
-            "level": 1,
-            "biome": "mistlands",
-            "itemId": "trap"
-          }
-        ],
         "crafting": []
       },
       "crossLinks": {}
@@ -83894,118 +84011,6 @@ globalThis.VC_ITEMS_DATA = {
         "locations": [],
         "traders": [],
         "raw": []
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "portal-stone",
-      "name": "Portal – Stone",
-      "image": null,
-      "biome": "ashlands",
-      "tier": 8,
-      "category": "building",
-      "teleportable": true,
-      "stack": null,
-      "weight": null,
-      "wiki": "https://valheim.weirdgloop.org/w/Portal_Stone",
-      "names": {},
-      "description": "The powerful energy source lets you pass through even with the most valuable of items.",
-      "stats": null,
-      "recipe": {
-        "station": "Stonecutter",
-        "stationLevel": 1,
-        "yields": 1,
-        "materials": [
-          {
-            "item": "greydwarf-eye",
-            "name": "Greydwarf Eye",
-            "amount": 10
-          },
-          {
-            "item": "grausten",
-            "name": "Grausten",
-            "amount": 30
-          },
-          {
-            "item": "molten-core",
-            "name": "Molten Core",
-            "amount": 2
-          }
-        ],
-        "stationId": "stonecutter"
-      },
-      "station": {
-        "id": "stonecutter",
-        "name": "Stonecutter",
-        "level": 1
-      },
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Stonecutter",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Stonecutter"
-          }
-        ]
-      },
-      "usedIn": {
-        "weapons": [],
-        "armor": [],
-        "food": [],
-        "meads": [],
-        "comfort": [],
-        "expedition": [],
-        "stations": [],
-        "crafting": []
-      },
-      "crossLinks": {}
-    },
-    {
-      "id": "flametal-battle-idol",
-      "name": "Flametal Battle Idol",
-      "image": null,
-      "biome": "ashlands",
-      "tier": 8,
-      "category": "casting",
-      "teleportable": true,
-      "stack": 20,
-      "weight": 0.5,
-      "wiki": "https://valheim.weirdgloop.org/w/Flametal_Battle_Idol",
-      "names": {},
-      "description": "This mysterious idol is brimming with the potential of the gods. It could grant a powerful boon, or demand a great sacrifice.",
-      "stats": null,
-      "recipe": null,
-      "station": null,
-      "sources": {
-        "creatures": [],
-        "locations": [
-          {
-            "text": "Loot chests",
-            "kind": "location"
-          }
-        ],
-        "traders": [],
-        "raw": [
-          {
-            "text": "Loot chests"
-          }
-        ]
       },
       "usedIn": {
         "weapons": [],

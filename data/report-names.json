@@ -11,9 +11,9 @@
       "percent": 42.1
     },
     "items": {
-      "count": 164,
-      "total": 312,
-      "percent": 52.6
+      "count": 167,
+      "total": 315,
+      "percent": 53
     },
     "armor": {
       "count": 35,
@@ -31,9 +31,9 @@
       "percent": 100
     },
     "stations": {
-      "count": 11,
-      "total": 18,
-      "percent": 61.1
+      "count": 28,
+      "total": 43,
+      "percent": 65.1
     }
   },
   "de": {
@@ -49,8 +49,8 @@
     },
     "items": {
       "count": 68,
-      "total": 312,
-      "percent": 21.8
+      "total": 315,
+      "percent": 21.6
     },
     "armor": {
       "count": 2,
@@ -68,9 +68,9 @@
       "percent": 44.4
     },
     "stations": {
-      "count": 1,
-      "total": 18,
-      "percent": 5.6
+      "count": 2,
+      "total": 43,
+      "percent": 4.7
     }
   },
   "es": {
@@ -86,7 +86,7 @@
     },
     "items": {
       "count": 0,
-      "total": 312,
+      "total": 315,
       "percent": 0
     },
     "armor": {
@@ -106,7 +106,7 @@
     },
     "stations": {
       "count": 0,
-      "total": 18,
+      "total": 43,
       "percent": 0
     }
   },
@@ -122,9 +122,9 @@
       "percent": 36.3
     },
     "items": {
-      "count": 79,
-      "total": 312,
-      "percent": 25.3
+      "count": 80,
+      "total": 315,
+      "percent": 25.4
     },
     "armor": {
       "count": 5,
@@ -142,9 +142,9 @@
       "percent": 66.7
     },
     "stations": {
-      "count": 6,
-      "total": 18,
-      "percent": 33.3
+      "count": 19,
+      "total": 43,
+      "percent": 44.2
     }
   },
   "pt": {
@@ -160,7 +160,7 @@
     },
     "items": {
       "count": 2,
-      "total": 312,
+      "total": 315,
       "percent": 0.6
     },
     "armor": {
@@ -180,7 +180,7 @@
     },
     "stations": {
       "count": 0,
-      "total": 18,
+      "total": 43,
       "percent": 0
     }
   },
@@ -197,7 +197,7 @@
     },
     "items": {
       "count": 0,
-      "total": 312,
+      "total": 315,
       "percent": 0
     },
     "armor": {
@@ -217,7 +217,7 @@
     },
     "stations": {
       "count": 0,
-      "total": 18,
+      "total": 43,
       "percent": 0
     }
   },
@@ -234,7 +234,7 @@
     },
     "items": {
       "count": 0,
-      "total": 312,
+      "total": 315,
       "percent": 0
     },
     "armor": {
@@ -254,7 +254,7 @@
     },
     "stations": {
       "count": 0,
-      "total": 18,
+      "total": 43,
       "percent": 0
     }
   },
@@ -271,7 +271,7 @@
     },
     "items": {
       "count": 0,
-      "total": 312,
+      "total": 315,
       "percent": 0
     },
     "armor": {
@@ -291,7 +291,7 @@
     },
     "stations": {
       "count": 0,
-      "total": 18,
+      "total": 43,
       "percent": 0
     }
   },
@@ -308,7 +308,7 @@
     },
     "items": {
       "count": 0,
-      "total": 312,
+      "total": 315,
       "percent": 0
     },
     "armor": {
@@ -328,7 +328,7 @@
     },
     "stations": {
       "count": 0,
-      "total": 18,
+      "total": 43,
       "percent": 0
     }
   },
@@ -344,9 +344,9 @@
       "percent": 72.5
     },
     "items": {
-      "count": 208,
-      "total": 312,
-      "percent": 66.7
+      "count": 211,
+      "total": 315,
+      "percent": 67
     },
     "armor": {
       "count": 96,
@@ -364,9 +364,9 @@
       "percent": 100
     },
     "stations": {
-      "count": 16,
-      "total": 18,
-      "percent": 88.9
+      "count": 33,
+      "total": 43,
+      "percent": 76.7
     }
   },
   "ja": {
@@ -382,7 +382,7 @@
     },
     "items": {
       "count": 0,
-      "total": 312,
+      "total": 315,
       "percent": 0
     },
     "armor": {
@@ -402,7 +402,7 @@
     },
     "stations": {
       "count": 0,
-      "total": 18,
+      "total": 43,
       "percent": 0
     }
   },
@@ -419,7 +419,7 @@
     },
     "items": {
       "count": 0,
-      "total": 312,
+      "total": 315,
       "percent": 0
     },
     "armor": {
@@ -439,7 +439,7 @@
     },
     "stations": {
       "count": 0,
-      "total": 18,
+      "total": 43,
       "percent": 0
     }
   }
