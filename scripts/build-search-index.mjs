@@ -22,6 +22,45 @@ function cleanNames() {
   return {};
 }
 
+// VC-46: rows point to the Items Compendium; every other tool that has the item becomes an action link.
+const LINKED_TYPES = ['weapon', 'armor', 'food', 'material', 'comfort']; // also merge priority
+const LINK_ORDER = ['items', 'smithy', 'provisions', 'comfort', 'traders'];
+
+function attachCompendiumLinks(index, compendiumItems) {
+  const byId = new Map(compendiumItems.map((item) => [item.id, item]));
+  const merged = new Map();
+  const result = [];
+  for (const entry of index) {
+    const hashId = entry.url.includes('#item=') ? decodeURIComponent(entry.url.split('#item=')[1]) : null;
+    const comp = hashId && LINKED_TYPES.includes(entry.type) ? byId.get(hashId) : null;
+    if (!comp) {
+      result.push(entry);
+      continue;
+    }
+    const urls = [`/items/#item=${encodeURIComponent(comp.id)}`, entry.url, ...Object.values(comp.crossLinks || {})];
+    const previous = merged.get(comp.id);
+    if (previous) {
+      previous.links.push(...urls);
+      if (LINKED_TYPES.indexOf(entry.type) < LINKED_TYPES.indexOf(previous.type)) {
+        Object.assign(previous, { type: entry.type, image: entry.image || previous.image, biome: entry.biome, order: entry.order });
+      }
+      continue;
+    }
+    const row = { ...entry, url: urls[0], links: urls };
+    merged.set(comp.id, row);
+    result.push(row);
+  }
+  for (const row of merged.values()) {
+    const byTool = new Map();
+    for (const url of row.links) {
+      const tool = url.split('/')[1];
+      if (!byTool.has(tool)) byTool.set(tool, url); // first wins: the item's own link beats a set link
+    }
+    row.links = LINK_ORDER.filter((tool) => byTool.has(tool)).map((tool) => byTool.get(tool));
+  }
+  return result;
+}
+
 export function buildSearchIndex() {
   console.log('building cross-section search index…');
 
@@ -48,7 +87,7 @@ export function buildSearchIndex() {
   const advisorContext = vm.createContext({});
   vm.runInContext(readFileSync(path.join(REPO_ROOT, 'apps/provisions/assets/advisor.js'), 'utf8'), advisorContext);
   const availableBiome = advisorContext.VPAdvisor.availableBiome;
-  const index = [];
+  let index = [];
 
   // 1. Creatures (/bestiary/#c=<id>)
   const creaturesPath = path.join(DATA_DIR, 'creatures.json');
@@ -230,6 +269,12 @@ export function buildSearchIndex() {
         order: Math.max(1, ...requiredBiomes.map(id => biomeOrder[id])), url: '/expedition/#raids', image: null });
     }
   }
+
+  const compendiumPath = path.join(DATA_DIR, 'items-compendium.json');
+  const compendiumItems = existsSync(compendiumPath)
+    ? (JSON.parse(readFileSync(compendiumPath, 'utf8')).items || [])
+    : [];
+  index = attachCompendiumLinks(index, compendiumItems);
 
   // Sort by progression order (order ascending), then alphabetically by English name
   index.sort((a, b) => {

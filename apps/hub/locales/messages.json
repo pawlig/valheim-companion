@@ -904,5 +904,20 @@
     "ru": "Торговцы",
     "ja": "商人",
     "id": "Pedagang"
+  },
+  "Open in {tool}": {
+    "en": "Open in {tool}",
+    "cs": "Otevřít v {tool}",
+    "de": "In {tool} öffnen",
+    "es": "Abrir en {tool}",
+    "fr": "Ouvrir dans {tool}",
+    "pt": "Abrir em {tool}",
+    "zh": "在 {tool} 中打开",
+    "hi": "{tool} में खोलें",
+    "ar": "فتح في {tool}",
+    "bn": "{tool}-তে খুলুন",
+    "ru": "Открыть в {tool}",
+    "ja": "{tool}で開く",
+    "id": "Buka di {tool}"
   }
 }

@@ -46,6 +46,30 @@
     { type: 'trader', label: 'Traders' },
   ];
 
+  // VC-46: action icons in search results (tool names stay English).
+  const SEARCH_TOOLS = {
+    items: { label: 'Items Compendium', icon: '<path d="M5 4h11a2 2 0 0 1 2 2v14H7a2 2 0 0 1-2-2zM5 18a2 2 0 0 1 2-2h11M9 8h6"/>' },
+    smithy: { label: 'Smithy', icon: '<path d="M4 8h12l-2 4H9v3h4v3H6v-3h1v-3H6a2 2 0 0 1-2-2zM16 8l4-2v6l-4-2"/>' },
+    provisions: { label: 'Provisions', icon: '<path d="M4 12h16a8 8 0 0 1-16 0zM9 8c0-2 2-2 2-4M14 8c0-2 2-2 2-4"/>' },
+    comfort: { label: 'Comfort Planner', icon: '<path d="M3 18V7M3 13h18v5M21 13v-2a3 3 0 0 0-3-3h-7v5M6 10.5h2"/>' },
+    traders: { label: 'Trader Ledger', icon: '<circle cx="12" cy="12" r="8"/><path d="M12 7v10M9.5 9.5h4a1.5 1.5 0 0 1 0 3h-3a1.5 1.5 0 0 0 0 3h4"/>' },
+    bestiary: { label: 'Bestiary', icon: '<path d="M12 3a7 7 0 0 0-7 7v4l2 2v3h10v-3l2-2v-4a7 7 0 0 0-7-7zM9 11h.01M15 11h.01M10 19v-2M14 19v-2"/>' },
+    expedition: { label: 'Expedition', icon: '<path d="M5 21V4h11l-2 4 2 4H5"/>' },
+  };
+
+  function searchActionLink(url) {
+    const tool = SEARCH_TOOLS[url.split('/')[1]];
+    if (!tool) return null;
+    const link = document.createElement('a');
+    link.className = 'hub-search-action';
+    link.href = url;
+    const tip = t('Open in {tool}', { tool: tool.label });
+    link.setAttribute('aria-label', tip);
+    link.dataset.tip = tip;
+    link.innerHTML = `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${tool.icon}</svg>`;
+    return link;
+  }
+
   function initSearch() {
     const input = document.getElementById('hub-search-input');
     const resultsContainer = document.getElementById('hub-search-results');
@@ -147,10 +171,12 @@
 
         for (const item of items) {
           visibleCount++;
+          const row = document.createElement('div');
+          row.className = 'hub-search-item';
+          row.setAttribute('role', 'option');
           const a = document.createElement('a');
-          a.className = 'hub-search-item';
+          a.className = 'hub-search-item-main';
           a.href = item.url;
-          a.setAttribute('role', 'option');
 
           if (item.image) {
             const img = document.createElement('img');
@@ -179,7 +205,18 @@
           }
 
           a.appendChild(infoDiv);
-          itemsDiv.appendChild(a);
+          row.appendChild(a);
+          const actions = document.createElement('div');
+          actions.className = 'hub-search-actions';
+          for (const url of item.links || [item.url]) {
+            const link = searchActionLink(url);
+            if (link) actions.appendChild(link);
+          }
+          row.appendChild(actions);
+          row.addEventListener('click', (event) => {
+            if (!event.target.closest('a')) a.click();
+          });
+          itemsDiv.appendChild(row);
         }
 
         groupDiv.appendChild(itemsDiv);
@@ -264,7 +301,7 @@
         e.preventDefault();
         const target = selectedIndex >= 0 ? items[selectedIndex] : items[0];
         if (target) {
-          target.click();
+          (target.querySelector('.hub-search-item-main') || target).click();
         }
       } else if (e.key === 'Escape') {
         e.preventDefault();
