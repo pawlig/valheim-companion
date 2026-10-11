@@ -2,7 +2,7 @@
 // Wiki access stays cache-only, including extension construction prerequisites.
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { readCachedPages } from './api.mjs';
+import { api, addLocalizedNames, readCachedPages } from './api.mjs';
 import { cleanText, parseInfobox, parseLinks, parseMaterialList, parseWikiTables, slug } from './wikitext.mjs';
 import { createMaterialResolver } from './materials.mjs';
 
@@ -11,6 +11,13 @@ export const CRAFTING_STATION_PAGES = [
 ];
 const wiki = title => `https://valheim.weirdgloop.org/w/${encodeURIComponent(title.replaceAll(' ', '_'))}`;
 const recipe = value => parseMaterialList(String(value ?? '').replace(/\{\{\s*Item link\|([^|}]+)\|(\d+)\}\}/gi, '$2 [[$1]]'));
+
+export async function addStationLocalizedNames(stations, client = api) {
+  // Group pages and section links do not name the individual station.
+  await addLocalizedNames(stations, {
+    getLangLinks: titles => client.getLangLinks(titles, { excludeRedirects: true, excludeFragments: true }),
+  });
+}
 
 export function parseStationUpgrades(title, wikitext) {
   const section = wikitext.match(/^==\s*Upgrades\s*==\s*$([\s\S]*?)(?=^==[^=]|$(?![\s\S]))/mi)?.[1] ?? '';

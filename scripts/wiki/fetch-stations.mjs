@@ -7,9 +7,9 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { api, addLocalizedNames } from './api.mjs';
+import { api } from './api.mjs';
 import { cleanText, parseInfobox, slug } from './wikitext.mjs';
-import { CRAFTING_STATION_PAGES, createStationProgression } from './station-upgrades.mjs';
+import { CRAFTING_STATION_PAGES, createStationProgression, addStationLocalizedNames } from './station-upgrades.mjs';
 import { BIOMES } from './biomes.mjs';
 
 const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -217,7 +217,7 @@ export async function fetchStations() {
   // order as mergeStations adding these records to the existing catalog.
   stations.unshift(...crafting.flatMap(s => s.upgrades));
   stations.push(...crafting.map(s => s.station));
-  await addLocalizedNames(stations);
+  await addStationLocalizedNames(stations);
 
   mkdirSync(DATA_DIR, { recursive: true });
   const outputPath = path.join(DATA_DIR, 'stations.json');

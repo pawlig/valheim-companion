@@ -179,7 +179,7 @@ export class MwApi {
 
   // Requested English title -> supported local names. Continuations can split
   // a page's links across responses; normalization and redirects are retained.
-  async getLangLinks(titles) {
+  async getLangLinks(titles, { excludeRedirects = false, excludeFragments = false } = {}) {
     const out = {};
     const supported = new Set(['cs', 'de', 'fr', 'ru', 'es', 'ja', 'pt', 'zh', 'id', 'hi', 'bn', 'ar']);
     const priority = { 'pt-br': 2, pt: 1, 'zh-cn': 3, zh: 2, 'zh-tw': 1 };
@@ -207,12 +207,17 @@ export class MwApi {
       for (const requested of batch) {
         const names = {};
         const chosen = {};
-        for (const link of pages.get(resolveTitle(requested, normalized, redirects)) ?? []) {
+        const resolved = resolveTitle(requested, normalized, redirects);
+        if (excludeRedirects && resolved !== resolveTitle(requested, normalized, [])) {
+          out[requested] = names;
+          continue;
+        }
+        for (const link of pages.get(resolved) ?? []) {
           const lang = link.lang === 'pt-br' ? 'pt' : /^zh-(cn|tw)$/.test(link.lang) ? 'zh' : link.lang;
           if (!supported.has(lang)) continue;
           const rank = priority[link.lang] ?? 1;
           const text = link.title ?? link['*'];
-          if (!text || rank <= (chosen[lang] ?? 0)) continue;
+          if (!text || (excludeFragments && text.includes('#')) || rank <= (chosen[lang] ?? 0)) continue;
           names[lang] = cleanLocalizedName(text, requested);
           chosen[lang] = rank;
         }

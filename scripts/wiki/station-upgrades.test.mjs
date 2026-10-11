@@ -1,11 +1,45 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readCachedPages } from './api.mjs';
-import { parseStationUpgrades, createStationProgression, CRAFTING_STATION_PAGES } from './station-upgrades.mjs';
+import { MwApi, addLocalizedNames, readCachedPages } from './api.mjs';
+import { parseStationUpgrades, createStationProgression, CRAFTING_STATION_PAGES, addStationLocalizedNames } from './station-upgrades.mjs';
 import { mergeStations } from './fetch-stations.mjs';
 import { BIOMES } from './biomes.mjs';
 
 const progression = createStationProgression();
+
+test('station names reject redirects and fragments but accept normalized page titles', async () => {
+  const client = new MwApi();
+  client.request = async params => params.llcontinue ? {
+    query: { pages: [{ title: 'Metal Cutter', langlinks: [{ lang: 'cs', title: 'Štípač kovu' }] }] },
+  } : {
+    continue: { llcontinue: 'next', continue: '||' },
+    query: {
+      normalized: [{ from: 'metal cutter', to: 'Metal Cutter' }],
+      redirects: [{ from: 'Artisan Press', to: 'Artisan Table' }],
+      pages: [
+        { title: 'Artisan Table', langlinks: [{ lang: 'cs', title: 'Řemeslnický stůl' }] },
+        { title: 'Metal Cutter', langlinks: [
+          { lang: 'ru', title: 'Черная кузница#Улучшение кузницы:' },
+          { lang: 'pt', title: 'Cortador de metal' },
+          { lang: 'pt-br', title: 'Forja negra#Melhorias' },
+        ] },
+      ],
+    },
+  };
+  const stations = ['Artisan Press', 'Artisan Table', 'Metal Cutter'].map(name => ({
+    name, names: { ru: 'Stale name' },
+    wiki: `https://valheim.weirdgloop.org/w/${name === 'Metal Cutter' ? 'metal_cutter' : name.replaceAll(' ', '_')}`,
+  }));
+  await addStationLocalizedNames(stations, client);
+  assert.deepEqual(stations.map(s => s.names), [
+    {}, { cs: 'Řemeslnický stůl' }, { pt: 'Cortador de metal', cs: 'Štípač kovu' },
+  ]);
+  // Other fetchers retain the original redirect and fragment behavior.
+  await addLocalizedNames(stations, client);
+  assert.deepEqual(stations[0].names, stations[1].names);
+  assert.equal(stations[2].names.ru, 'Черная кузница#Улучшение кузницы:');
+  assert.equal(stations[2].names.pt, 'Forja negra#Melhorias');
+});
 
 test('Black Forge cache has five extensions and both recipe formats parse amounts', () => {
   const wt = readCachedPages(['Black Forge']).get('Black Forge');

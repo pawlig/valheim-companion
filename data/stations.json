@@ -2,11 +2,7 @@
   {
     "id": "artisan-press",
     "name": "Artisan Press",
-    "names": {
-      "cs": "Řemeslnický stůl",
-      "fr": "Table d'artisan",
-      "ru": "Стол ремесленника"
-    },
+    "names": {},
     "wiki": "https://valheim.weirdgloop.org/w/Artisan_Press",
     "type": "upgrade",
     "upgrades": "artisan-table",
@@ -117,8 +113,7 @@
     "id": "metal-cutter",
     "name": "Metal Cutter",
     "names": {
-      "cs": "Štípač kovu",
-      "ru": "Черная кузница#Улучшение кузницы:"
+      "cs": "Štípač kovu"
     },
     "wiki": "https://valheim.weirdgloop.org/w/Metal_Cutter",
     "type": "upgrade",
@@ -160,8 +155,7 @@
     "id": "gem-cutter",
     "name": "Gem Cutter",
     "names": {
-      "cs": "Bruska na drahokamy",
-      "ru": "Черная кузница#Улучшение кузницы:"
+      "cs": "Bruska na drahokamy"
     },
     "wiki": "https://valheim.weirdgloop.org/w/Gem_Cutter",
     "type": "upgrade",
@@ -202,9 +196,7 @@
   {
     "id": "smith-s-aprons",
     "name": "Smith's Aprons",
-    "names": {
-      "ru": "Черная кузница#Улучшение кузницы:"
-    },
+    "names": {},
     "wiki": "https://valheim.weirdgloop.org/w/Smith's_Aprons",
     "type": "upgrade",
     "upgrades": "black-forge",
@@ -671,9 +663,7 @@
   {
     "id": "feathery-wreath",
     "name": "Feathery Wreath",
-    "names": {
-      "ru": "Стол гальдров#Улучшение стола"
-    },
+    "names": {},
     "wiki": "https://valheim.weirdgloop.org/w/Feathery_Wreath",
     "type": "upgrade",
     "upgrades": "galdr-table",
