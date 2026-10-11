@@ -1,5 +1,746 @@
 [
   {
+    "id": "artisan-press",
+    "name": "Artisan Press",
+    "names": {
+      "cs": "Řemeslnický stůl",
+      "fr": "Table d'artisan",
+      "ru": "Стол ремесленника"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Artisan_Press",
+    "type": "upgrade",
+    "upgrades": "artisan-table",
+    "materials": [
+      {
+        "item": "black-marble",
+        "amount": 5
+      },
+      {
+        "item": "bronze",
+        "amount": 5
+      },
+      {
+        "item": "majestic-carapace",
+        "amount": 1
+      }
+    ],
+    "unlock": {
+      "station": "artisan-table",
+      "materials": [
+        "black-marble",
+        "bronze",
+        "majestic-carapace"
+      ]
+    },
+    "biome": "mistlands",
+    "tier": 7,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 2
+  },
+  {
+    "id": "black-forge-cooler",
+    "name": "Black Forge Cooler",
+    "names": {
+      "cs": "Kalící nádrž"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Black_Forge_Cooler",
+    "type": "upgrade",
+    "upgrades": "black-forge",
+    "materials": [
+      {
+        "item": "iron",
+        "amount": 5
+      },
+      {
+        "item": "copper",
+        "amount": 5
+      },
+      {
+        "item": "black-marble",
+        "amount": 4
+      }
+    ],
+    "unlock": {
+      "station": "black-forge",
+      "materials": [
+        "iron",
+        "copper",
+        "black-marble"
+      ]
+    },
+    "biome": "mistlands",
+    "tier": 7,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 2
+  },
+  {
+    "id": "vice",
+    "name": "Vice",
+    "names": {
+      "cs": "Svěrák",
+      "ru": "Тиски"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Vice",
+    "type": "upgrade",
+    "upgrades": "black-forge",
+    "materials": [
+      {
+        "item": "iron",
+        "amount": 5
+      },
+      {
+        "item": "copper",
+        "amount": 8
+      },
+      {
+        "item": "mechanical-spring",
+        "amount": 2
+      }
+    ],
+    "unlock": {
+      "station": "black-forge",
+      "materials": [
+        "iron",
+        "copper",
+        "mechanical-spring"
+      ]
+    },
+    "biome": "mistlands",
+    "tier": 7,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 3
+  },
+  {
+    "id": "metal-cutter",
+    "name": "Metal Cutter",
+    "names": {
+      "cs": "Štípač kovu",
+      "ru": "Черная кузница#Улучшение кузницы:"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Metal_Cutter",
+    "type": "upgrade",
+    "upgrades": "black-forge",
+    "materials": [
+      {
+        "item": "black-marble",
+        "amount": 5
+      },
+      {
+        "item": "flametal",
+        "amount": 5
+      },
+      {
+        "item": "ashwood",
+        "amount": 5
+      },
+      {
+        "item": "charred-bone",
+        "amount": 4
+      }
+    ],
+    "unlock": {
+      "station": "black-forge",
+      "materials": [
+        "black-marble",
+        "flametal",
+        "ashwood",
+        "charred-bone"
+      ]
+    },
+    "biome": "ashlands",
+    "tier": 8,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 4
+  },
+  {
+    "id": "gem-cutter",
+    "name": "Gem Cutter",
+    "names": {
+      "cs": "Bruska na drahokamy",
+      "ru": "Черная кузница#Улучшение кузницы:"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Gem_Cutter",
+    "type": "upgrade",
+    "upgrades": "black-forge",
+    "materials": [
+      {
+        "item": "flametal",
+        "amount": 5
+      },
+      {
+        "item": "ashwood",
+        "amount": 8
+      },
+      {
+        "item": "morgen-sinew",
+        "amount": 2
+      },
+      {
+        "item": "bloodstone",
+        "amount": 1
+      }
+    ],
+    "unlock": {
+      "station": "black-forge",
+      "materials": [
+        "flametal",
+        "ashwood",
+        "morgen-sinew",
+        "bloodstone"
+      ]
+    },
+    "biome": "ashlands",
+    "tier": 8,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 5
+  },
+  {
+    "id": "smith-s-aprons",
+    "name": "Smith's Aprons",
+    "names": {
+      "ru": "Черная кузница#Улучшение кузницы:"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Smith's_Aprons",
+    "type": "upgrade",
+    "upgrades": "black-forge",
+    "materials": [
+      {
+        "item": "bloodgold",
+        "amount": 5
+      },
+      {
+        "item": "timberwood",
+        "amount": 8
+      },
+      {
+        "item": "moose-hide",
+        "amount": 2
+      }
+    ],
+    "unlock": {
+      "station": "black-forge",
+      "materials": [
+        "bloodgold",
+        "timberwood",
+        "moose-hide"
+      ]
+    },
+    "biome": "deep-north",
+    "tier": 9,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 6
+  },
+  {
+    "id": "forge-cooler",
+    "name": "Forge Cooler",
+    "names": {},
+    "wiki": "https://valheim.weirdgloop.org/w/Forge_Cooler",
+    "type": "upgrade",
+    "upgrades": "forge",
+    "materials": [
+      {
+        "item": "finewood",
+        "amount": 25
+      },
+      {
+        "item": "copper",
+        "amount": 10
+      }
+    ],
+    "unlock": {
+      "station": "forge",
+      "materials": [
+        "finewood",
+        "copper"
+      ]
+    },
+    "biome": "black-forest",
+    "tier": 2,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 2
+  },
+  {
+    "id": "anvils",
+    "name": "Anvils",
+    "names": {
+      "cs": "Kovadlinky",
+      "fr": "Enclumes",
+      "ru": "Наковальни"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Anvils",
+    "type": "upgrade",
+    "upgrades": "forge",
+    "materials": [
+      {
+        "item": "wood",
+        "amount": 5
+      },
+      {
+        "item": "bronze",
+        "amount": 2
+      }
+    ],
+    "unlock": {
+      "station": "workbench",
+      "materials": [
+        "wood",
+        "bronze"
+      ]
+    },
+    "biome": "black-forest",
+    "tier": 2,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 3
+  },
+  {
+    "id": "smith-s-anvil",
+    "name": "Smith's Anvil",
+    "names": {
+      "cs": "Kovářská kovadlina",
+      "fr": "Enclume de forgeron"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Smith's_Anvil",
+    "type": "upgrade",
+    "upgrades": "forge",
+    "materials": [
+      {
+        "item": "wood",
+        "amount": 5
+      },
+      {
+        "item": "iron",
+        "amount": 20
+      }
+    ],
+    "unlock": {
+      "station": "workbench",
+      "materials": [
+        "wood",
+        "iron"
+      ]
+    },
+    "biome": "swamp",
+    "tier": 4,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 4
+  },
+  {
+    "id": "forge-toolrack",
+    "name": "Forge Toolrack",
+    "names": {
+      "cs": "Stojan na nástroje",
+      "fr": "Râtelier de forge",
+      "ru": "Стойка для инструментов"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Forge_Toolrack",
+    "type": "upgrade",
+    "upgrades": "forge",
+    "materials": [
+      {
+        "item": "wood",
+        "amount": 10
+      },
+      {
+        "item": "iron",
+        "amount": 15
+      }
+    ],
+    "unlock": {
+      "station": "workbench",
+      "materials": [
+        "wood",
+        "iron"
+      ]
+    },
+    "biome": "swamp",
+    "tier": 4,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 5
+  },
+  {
+    "id": "forge-bellows",
+    "name": "Forge Bellows",
+    "names": {
+      "fr": "Soufflet de forge",
+      "ru": "Кузнечные меха"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Forge_Bellows",
+    "type": "upgrade",
+    "upgrades": "forge",
+    "materials": [
+      {
+        "item": "wood",
+        "amount": 5
+      },
+      {
+        "item": "deer-hide",
+        "amount": 5
+      },
+      {
+        "item": "chain",
+        "amount": 4
+      }
+    ],
+    "unlock": {
+      "station": "workbench",
+      "materials": [
+        "wood",
+        "deer-hide",
+        "chain"
+      ]
+    },
+    "biome": "swamp",
+    "tier": 4,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 6
+  },
+  {
+    "id": "grinding-wheel",
+    "name": "Grinding Wheel",
+    "names": {
+      "cs": "Brusný kotouč",
+      "fr": "Meule",
+      "ru": "Шлифовальный круг"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Grinding_Wheel",
+    "type": "upgrade",
+    "upgrades": "forge",
+    "materials": [
+      {
+        "item": "wood",
+        "amount": 25
+      },
+      {
+        "item": "sharpening-stone",
+        "amount": 1
+      }
+    ],
+    "unlock": {
+      "station": "workbench",
+      "materials": [
+        "wood",
+        "sharpening-stone"
+      ]
+    },
+    "biome": "swamp",
+    "tier": 4,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 7
+  },
+  {
+    "id": "chopping-block",
+    "name": "Chopping Block",
+    "names": {
+      "cs": "Špalek na štípání",
+      "fr": "Billot",
+      "ru": "Колода для рубки"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Chopping_Block",
+    "type": "upgrade",
+    "upgrades": "workbench",
+    "materials": [
+      {
+        "item": "wood",
+        "amount": 10
+      },
+      {
+        "item": "flint",
+        "amount": 10
+      }
+    ],
+    "unlock": {
+      "station": "workbench",
+      "materials": [
+        "wood",
+        "flint"
+      ]
+    },
+    "biome": "meadows",
+    "tier": 1,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 2
+  },
+  {
+    "id": "tanning-rack",
+    "name": "Tanning Rack",
+    "names": {
+      "fr": "Support de tannage",
+      "ru": "Дубильный станок"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Tanning_Rack",
+    "type": "upgrade",
+    "upgrades": "workbench",
+    "materials": [
+      {
+        "item": "wood",
+        "amount": 10
+      },
+      {
+        "item": "flint",
+        "amount": 15
+      },
+      {
+        "item": "leather-scraps",
+        "amount": 20
+      },
+      {
+        "item": "deer-hide",
+        "amount": 5
+      }
+    ],
+    "unlock": {
+      "station": "workbench",
+      "materials": [
+        "wood",
+        "flint",
+        "leather-scraps",
+        "deer-hide"
+      ]
+    },
+    "biome": "meadows",
+    "tier": 1,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 3
+  },
+  {
+    "id": "adze",
+    "name": "Adze",
+    "names": {
+      "cs": "Skoble",
+      "fr": "Herminette",
+      "ru": "Тесло"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Adze",
+    "type": "upgrade",
+    "upgrades": "workbench",
+    "materials": [
+      {
+        "item": "finewood",
+        "amount": 10
+      },
+      {
+        "item": "bronze",
+        "amount": 3
+      }
+    ],
+    "unlock": {
+      "station": "forge",
+      "materials": [
+        "finewood",
+        "bronze"
+      ]
+    },
+    "biome": "black-forest",
+    "tier": 2,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 4
+  },
+  {
+    "id": "tool-shelf",
+    "name": "Tool Shelf",
+    "names": {
+      "cs": "Police na nářadí",
+      "fr": "Étagère à outils",
+      "ru": "Полка для инструментов"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Tool_Shelf",
+    "type": "upgrade",
+    "upgrades": "workbench",
+    "materials": [
+      {
+        "item": "finewood",
+        "amount": 10
+      },
+      {
+        "item": "iron",
+        "amount": 4
+      },
+      {
+        "item": "obsidian",
+        "amount": 4
+      }
+    ],
+    "unlock": {
+      "station": "forge",
+      "materials": [
+        "finewood",
+        "iron",
+        "obsidian"
+      ]
+    },
+    "biome": "mountain",
+    "tier": 5,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 5
+  },
+  {
+    "id": "rune-table",
+    "name": "Rune Table",
+    "names": {
+      "ru": "Рунный стол"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Rune_Table",
+    "type": "upgrade",
+    "upgrades": "galdr-table",
+    "materials": [
+      {
+        "item": "black-marble",
+        "amount": 10
+      },
+      {
+        "item": "yggdrasil-wood",
+        "amount": 5
+      },
+      {
+        "item": "refined-eitr",
+        "amount": 10
+      }
+    ],
+    "unlock": {
+      "station": null,
+      "materials": [
+        "black-marble",
+        "yggdrasil-wood",
+        "refined-eitr"
+      ]
+    },
+    "biome": "mistlands",
+    "tier": 7,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 2
+  },
+  {
+    "id": "unfading-candles",
+    "name": "Unfading Candles",
+    "names": {
+      "ru": "Незатухающие свечи"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Unfading_Candles",
+    "type": "upgrade",
+    "upgrades": "galdr-table",
+    "materials": [
+      {
+        "item": "black-marble",
+        "amount": 10
+      },
+      {
+        "item": "skeleton-trophy",
+        "amount": 3
+      },
+      {
+        "item": "refined-eitr",
+        "amount": 10
+      },
+      {
+        "item": "resin",
+        "amount": 15
+      }
+    ],
+    "unlock": {
+      "station": "galdr-table",
+      "materials": [
+        "black-marble",
+        "skeleton-trophy",
+        "refined-eitr",
+        "resin"
+      ]
+    },
+    "biome": "mistlands",
+    "tier": 7,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 3
+  },
+  {
+    "id": "feathery-wreath",
+    "name": "Feathery Wreath",
+    "names": {
+      "ru": "Стол гальдров#Улучшение стола"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Feathery_Wreath",
+    "type": "upgrade",
+    "upgrades": "galdr-table",
+    "materials": [
+      {
+        "item": "celestial-feather",
+        "amount": 8
+      },
+      {
+        "item": "asksvin-trophy",
+        "amount": 1
+      },
+      {
+        "item": "refined-eitr",
+        "amount": 10
+      },
+      {
+        "item": "ashwood",
+        "amount": 3
+      }
+    ],
+    "unlock": {
+      "station": "galdr-table",
+      "materials": [
+        "celestial-feather",
+        "asksvin-trophy",
+        "refined-eitr",
+        "ashwood"
+      ]
+    },
+    "biome": "ashlands",
+    "tier": 8,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 4
+  },
+  {
+    "id": "standing-loom",
+    "name": "Standing Loom",
+    "names": {},
+    "wiki": "https://valheim.weirdgloop.org/w/Standing_Loom",
+    "type": "upgrade",
+    "upgrades": "galdr-table",
+    "materials": [
+      {
+        "item": "timberwood",
+        "amount": 5
+      },
+      {
+        "item": "nornathread",
+        "amount": 10
+      }
+    ],
+    "unlock": {
+      "station": "galdr-table",
+      "materials": [
+        "timberwood",
+        "nornathread"
+      ]
+    },
+    "biome": "deep-north",
+    "tier": 9,
+    "stationLevel": 1,
+    "levelIncrement": 1,
+    "progressionLevel": 5
+  },
+  {
     "id": "smelter",
     "name": "Smelter",
     "wiki": "https://valheim.weirdgloop.org/w/Smelter",
@@ -160,7 +901,8 @@
       "fr": "Table d'artisan",
       "ru": "Стол ремесленника"
     },
-    "type": "comfort",
+    "wiki": "https://valheim.weirdgloop.org/w/Artisan_Table",
+    "type": "crafting",
     "materials": [
       {
         "item": "dragon-tear",
@@ -180,7 +922,21 @@
     },
     "biome": "mountain",
     "tier": 5,
-    "wiki": "https://valheim.weirdgloop.org/w/Artisan_Table"
+    "maxLevel": 2,
+    "levels": [
+      {
+        "level": 1,
+        "upgrade": null,
+        "biome": "mountain",
+        "tier": 5
+      },
+      {
+        "level": 2,
+        "upgrade": "artisan-press",
+        "biome": "mistlands",
+        "tier": 7
+      }
+    ]
   },
   {
     "id": "black-forge",
@@ -189,7 +945,8 @@
       "cs": "Černá Kovárna",
       "ru": "Черная кузница"
     },
-    "type": "comfort",
+    "wiki": "https://valheim.weirdgloop.org/w/Black_Forge",
+    "type": "crafting",
     "materials": [
       {
         "item": "black-marble",
@@ -214,7 +971,45 @@
     },
     "biome": "mistlands",
     "tier": 7,
-    "wiki": "https://valheim.weirdgloop.org/w/Black_Forge"
+    "maxLevel": 6,
+    "levels": [
+      {
+        "level": 1,
+        "upgrade": null,
+        "biome": "mistlands",
+        "tier": 7
+      },
+      {
+        "level": 2,
+        "upgrade": "black-forge-cooler",
+        "biome": "mistlands",
+        "tier": 7
+      },
+      {
+        "level": 3,
+        "upgrade": "vice",
+        "biome": "mistlands",
+        "tier": 7
+      },
+      {
+        "level": 4,
+        "upgrade": "metal-cutter",
+        "biome": "ashlands",
+        "tier": 8
+      },
+      {
+        "level": 5,
+        "upgrade": "gem-cutter",
+        "biome": "ashlands",
+        "tier": 8
+      },
+      {
+        "level": 6,
+        "upgrade": "smith-s-aprons",
+        "biome": "deep-north",
+        "tier": 9
+      }
+    ]
   },
   {
     "id": "forge",
@@ -224,7 +1019,8 @@
       "fr": "Forge",
       "ru": "Кузница"
     },
-    "type": "comfort",
+    "wiki": "https://valheim.weirdgloop.org/w/Forge",
+    "type": "crafting",
     "materials": [
       {
         "item": "stone",
@@ -254,7 +1050,51 @@
     },
     "biome": "black-forest",
     "tier": 2,
-    "wiki": "https://valheim.weirdgloop.org/w/Forge"
+    "maxLevel": 7,
+    "levels": [
+      {
+        "level": 1,
+        "upgrade": null,
+        "biome": "black-forest",
+        "tier": 2
+      },
+      {
+        "level": 2,
+        "upgrade": "forge-cooler",
+        "biome": "black-forest",
+        "tier": 2
+      },
+      {
+        "level": 3,
+        "upgrade": "anvils",
+        "biome": "black-forest",
+        "tier": 2
+      },
+      {
+        "level": 4,
+        "upgrade": "smith-s-anvil",
+        "biome": "swamp",
+        "tier": 4
+      },
+      {
+        "level": 5,
+        "upgrade": "forge-toolrack",
+        "biome": "swamp",
+        "tier": 4
+      },
+      {
+        "level": 6,
+        "upgrade": "forge-bellows",
+        "biome": "swamp",
+        "tier": 4
+      },
+      {
+        "level": 7,
+        "upgrade": "grinding-wheel",
+        "biome": "swamp",
+        "tier": 4
+      }
+    ]
   },
   {
     "id": "stonecutter",
@@ -264,7 +1104,8 @@
       "fr": "Tailleur de pierre",
       "ru": "Камнерез"
     },
-    "type": "comfort",
+    "wiki": "https://valheim.weirdgloop.org/w/Stonecutter",
+    "type": "crafting",
     "materials": [
       {
         "item": "wood",
@@ -289,7 +1130,15 @@
     },
     "biome": "swamp",
     "tier": 4,
-    "wiki": "https://valheim.weirdgloop.org/w/Stonecutter"
+    "maxLevel": 1,
+    "levels": [
+      {
+        "level": 1,
+        "upgrade": null,
+        "biome": "swamp",
+        "tier": 4
+      }
+    ]
   },
   {
     "id": "workbench",
@@ -300,7 +1149,8 @@
       "fr": "Table de fabrication",
       "ru": "Верстак"
     },
-    "type": "comfort",
+    "wiki": "https://valheim.weirdgloop.org/w/Workbench",
+    "type": "crafting",
     "materials": [
       {
         "item": "wood",
@@ -315,14 +1165,49 @@
     },
     "biome": "meadows",
     "tier": 1,
-    "wiki": "https://valheim.weirdgloop.org/w/Workbench"
+    "maxLevel": 5,
+    "levels": [
+      {
+        "level": 1,
+        "upgrade": null,
+        "biome": "meadows",
+        "tier": 1
+      },
+      {
+        "level": 2,
+        "upgrade": "chopping-block",
+        "biome": "meadows",
+        "tier": 1
+      },
+      {
+        "level": 3,
+        "upgrade": "tanning-rack",
+        "biome": "meadows",
+        "tier": 1
+      },
+      {
+        "level": 4,
+        "upgrade": "adze",
+        "biome": "black-forest",
+        "tier": 2
+      },
+      {
+        "level": 5,
+        "upgrade": "tool-shelf",
+        "biome": "mountain",
+        "tier": 5
+      }
+    ]
   },
   {
     "id": "galdr-table",
     "name": "Galdr Table",
-    "names": {},
+    "names": {
+      "cs": "Galdrový stůl",
+      "ru": "Стол гальдров"
+    },
+    "wiki": "https://valheim.weirdgloop.org/w/Galdr_Table",
     "type": "crafting",
-    "addedBy": "expedition",
     "materials": [
       {
         "item": "black-metal",
@@ -341,9 +1226,50 @@
         "amount": 5
       }
     ],
+    "unlock": {
+      "station": "workbench",
+      "materials": [
+        "black-metal",
+        "yggdrasil-wood",
+        "black-core",
+        "refined-eitr"
+      ]
+    },
     "biome": "mistlands",
     "tier": 7,
-    "wiki": "https://valheim.weirdgloop.org/w/Galdr_Table"
+    "maxLevel": 5,
+    "levels": [
+      {
+        "level": 1,
+        "upgrade": null,
+        "biome": "mistlands",
+        "tier": 7
+      },
+      {
+        "level": 2,
+        "upgrade": "rune-table",
+        "biome": "mistlands",
+        "tier": 7
+      },
+      {
+        "level": 3,
+        "upgrade": "unfading-candles",
+        "biome": "mistlands",
+        "tier": 7
+      },
+      {
+        "level": 4,
+        "upgrade": "feathery-wreath",
+        "biome": "ashlands",
+        "tier": 8
+      },
+      {
+        "level": 5,
+        "upgrade": "standing-loom",
+        "biome": "deep-north",
+        "tier": 9
+      }
+    ]
   },
   {
     "id": "cauldron",
@@ -366,35 +1292,51 @@
         "tin"
       ]
     },
+    "biome": "black-forest",
+    "tier": 2,
     "maxLevel": 7,
     "levels": [
       {
         "level": 1,
-        "upgrade": null
+        "upgrade": null,
+        "biome": "black-forest",
+        "tier": 2
       },
       {
         "level": 2,
-        "upgrade": "spice-rack"
+        "upgrade": "spice-rack",
+        "biome": "black-forest",
+        "tier": 2
       },
       {
         "level": 3,
-        "upgrade": "butcher-s-table"
+        "upgrade": "butcher-s-table",
+        "biome": "mountain",
+        "tier": 5
       },
       {
         "level": 4,
-        "upgrade": "pots-and-pans"
+        "upgrade": "pots-and-pans",
+        "biome": "plains",
+        "tier": 6
       },
       {
         "level": 5,
-        "upgrade": "mortar-and-pestle"
+        "upgrade": "mortar-and-pestle",
+        "biome": "mistlands",
+        "tier": 7
       },
       {
         "level": 6,
-        "upgrade": "rolling-pins-and-cutting-boards"
+        "upgrade": "rolling-pins-and-cutting-boards",
+        "biome": "ashlands",
+        "tier": 8
       },
       {
         "level": 7,
-        "upgrade": "smoker"
+        "upgrade": "smoker",
+        "biome": "deep-north",
+        "tier": 9
       }
     ]
   },
@@ -619,6 +1561,8 @@
       ]
     },
     "upgrades": "cauldron",
+    "biome": "black-forest",
+    "tier": 2,
     "stationLevel": 1,
     "levelIncrement": 1,
     "progressionLevel": 2
@@ -661,6 +1605,8 @@
       ]
     },
     "upgrades": "cauldron",
+    "biome": "mountain",
+    "tier": 5,
     "stationLevel": 1,
     "levelIncrement": 1,
     "progressionLevel": 3
@@ -703,6 +1649,8 @@
       ]
     },
     "upgrades": "cauldron",
+    "biome": "plains",
+    "tier": 6,
     "stationLevel": 1,
     "levelIncrement": 1,
     "progressionLevel": 4
@@ -738,6 +1686,8 @@
       ]
     },
     "upgrades": "cauldron",
+    "biome": "mistlands",
+    "tier": 7,
     "stationLevel": 1,
     "levelIncrement": 1,
     "progressionLevel": 5
@@ -773,6 +1723,8 @@
       ]
     },
     "upgrades": "cauldron",
+    "biome": "ashlands",
+    "tier": 8,
     "stationLevel": 1,
     "levelIncrement": 1,
     "progressionLevel": 6
@@ -801,6 +1753,8 @@
       ]
     },
     "upgrades": "cauldron",
+    "biome": "deep-north",
+    "tier": 9,
     "stationLevel": 1,
     "levelIncrement": 1,
     "progressionLevel": 7
