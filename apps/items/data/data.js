@@ -30547,8 +30547,8 @@ globalThis.VC_ITEMS_DATA = {
       "id": "sharpening-stone",
       "name": "Sharpening Stone",
       "image": "../smithy/img/items/sharpening-stone.png",
-      "biome": "black-forest",
-      "tier": 2,
+      "biome": "swamp",
+      "tier": 4,
       "category": "material",
       "teleportable": true,
       "stack": 20,
@@ -31808,7 +31808,7 @@ globalThis.VC_ITEMS_DATA = {
             "id": "sharpening-stone",
             "name": "Sharpening Stone",
             "level": 1,
-            "biome": "black-forest",
+            "biome": "swamp",
             "itemId": "sharpening-stone"
           },
           {

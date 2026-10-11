@@ -1402,7 +1402,7 @@ export function buildItemsData() {
     'bronze-battle-idol': 'black-forest',
     'thunder-stone': 'black-forest',
     'coins': 'meadows',
-    'sharpening-stone': 'black-forest',
+    'sharpening-stone': 'swamp', // Stonecutter needs Iron (VC-45c)
     'cartography-table': 'black-forest',
     'stone-fence': 'meadows',
     'iron-brooch': 'swamp',

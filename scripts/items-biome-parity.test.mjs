@@ -14,10 +14,8 @@ for (const weapon of load('weapons')) for (const level of weapon.levels) for (co
 for (const set of load('armor')) for (const piece of set.pieces) for (const level of piece.levels) for (const m of level.materials) used.add(m.item);
 for (const station of load('stations')) for (const m of station.materials ?? []) used.add(m.item);
 
-// Known open mismatch: ITEM_EXPLICIT_BIOMES in scripts/build-items-data.mjs pins
-// sharpening-stone to black-forest, while the wiki source (Stonecutter needs Iron)
-// gives swamp. Remove the entry here once that script follows items.json.
-const KNOWN_OPEN = new Set(['sharpening-stone']);
+// Known open mismatches (none since the VC-45c orchestrator fix for sharpening-stone).
+const KNOWN_OPEN = new Set();
 
 test('items.json and the compendium agree on the biome of every material used in a weapon, armor or station recipe', () => {
   assert.ok(used.size > 100);
