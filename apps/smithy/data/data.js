@@ -35731,8 +35731,8 @@ window.VA_DATA = {
       "name": "Egg",
       "provisions": true,
       "image": "../provisions/img/items/egg.png",
-      "biome": "black-forest",
-      "tier": 2,
+      "biome": "plains",
+      "tier": 6,
       "sources": [
         {
           "text": "Haldor",
@@ -35924,8 +35924,8 @@ window.VA_DATA = {
       "name": "Fiery Spice Powder",
       "provisions": true,
       "image": "../provisions/img/items/fiery-spice-powder.png",
-      "biome": "deep-north",
-      "tier": 9,
+      "biome": "ashlands",
+      "tier": 8,
       "sources": [
         {
           "text": "The Bog Witch",
@@ -35935,8 +35935,8 @@ window.VA_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Fiery_Spice_Powder",
       "unlock": {
-        "biome": "deep-north",
-        "tier": 9,
+        "biome": "ashlands",
+        "tier": 8,
         "boss": "fader"
       },
       "names": {
@@ -36117,8 +36117,8 @@ window.VA_DATA = {
       "name": "Fragrant Bundle",
       "provisions": true,
       "image": "../provisions/img/items/fragrant-bundle.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "sources": [
         {
           "text": "The Bog Witch",
@@ -36128,8 +36128,8 @@ window.VA_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Fragrant_Bundle",
       "unlock": {
-        "biome": "plains",
-        "tier": 6,
+        "biome": "mountain",
+        "tier": 5,
         "boss": "moder"
       },
       "names": {
@@ -36279,8 +36279,8 @@ window.VA_DATA = {
       "name": "Grasslands Herbalist Harvest",
       "provisions": true,
       "image": "../provisions/img/items/grasslands-herbalist-harvest.png",
-      "biome": "mistlands",
-      "tier": 7,
+      "biome": "plains",
+      "tier": 6,
       "sources": [
         {
           "text": "The Bog Witch",
@@ -36290,8 +36290,8 @@ window.VA_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Grasslands_Herbalist_Harvest",
       "unlock": {
-        "biome": "mistlands",
-        "tier": 7,
+        "biome": "plains",
+        "tier": 6,
         "boss": "yagluth"
       },
       "names": {
@@ -36449,8 +36449,8 @@ window.VA_DATA = {
       "name": "Herbs of the Hidden Hills",
       "provisions": true,
       "image": "../provisions/img/items/herbs-of-the-hidden-hills.png",
-      "biome": "ashlands",
-      "tier": 8,
+      "biome": "mistlands",
+      "tier": 7,
       "sources": [
         {
           "text": "The Bog Witch",
@@ -36460,8 +36460,8 @@ window.VA_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Herbs_of_the_Hidden_Hills",
       "unlock": {
-        "biome": "ashlands",
-        "tier": 8,
+        "biome": "mistlands",
+        "tier": 7,
         "boss": "the-queen"
       },
       "names": {
@@ -37227,8 +37227,8 @@ window.VA_DATA = {
       "name": "Mead base: Berserkir",
       "provisions": true,
       "image": "../provisions/img/items/mead-base-berserkir.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "sources": [
         {
           "text": "Mead Ketill",
@@ -38672,8 +38672,8 @@ window.VA_DATA = {
       "name": "Mountain Peak Pepper Powder",
       "provisions": true,
       "image": "../provisions/img/items/mountain-peak-pepper-powder.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "sources": [
         {
           "text": "The Bog Witch",
@@ -38683,8 +38683,8 @@ window.VA_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Mountain_Peak_Pepper_Powder",
       "unlock": {
-        "biome": "plains",
-        "tier": 6,
+        "biome": "mountain",
+        "tier": 5,
         "boss": "moder"
       },
       "names": {
@@ -39413,8 +39413,8 @@ window.VA_DATA = {
       "name": "Onion Soup",
       "provisions": true,
       "image": "../provisions/img/items/onion-soup.png",
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "sources": [
         {
           "text": "Cauldron (level 2)",
@@ -40241,8 +40241,8 @@ window.VA_DATA = {
       "name": "Seafarer's Herbs",
       "provisions": true,
       "image": "../provisions/img/items/seafarer-s-herbs.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "ocean",
+      "tier": 3,
       "sources": [
         {
           "text": "The Bog Witch",
@@ -40252,8 +40252,8 @@ window.VA_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Seafarer's_Herbs",
       "unlock": {
-        "biome": "swamp",
-        "tier": 4
+        "biome": "ocean",
+        "tier": 3
       },
       "names": {
         "ru": "Травы мореплавателя"
@@ -40936,8 +40936,8 @@ window.VA_DATA = {
       "name": "Toadstool",
       "provisions": true,
       "image": "../provisions/img/items/toadstool.png",
-      "biome": "plains",
-      "tier": 6,
+      "biome": "mountain",
+      "tier": 5,
       "sources": [
         {
           "text": "The Bog Witch",
@@ -40947,8 +40947,8 @@ window.VA_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Toadstool",
       "unlock": {
-        "biome": "plains",
-        "tier": 6,
+        "biome": "mountain",
+        "tier": 5,
         "boss": "moder"
       },
       "names": {
@@ -41084,8 +41084,8 @@ window.VA_DATA = {
       "name": "Turnip Stew",
       "provisions": true,
       "image": "../provisions/img/items/turnip-stew.png",
-      "biome": "meadows",
-      "tier": 1,
+      "biome": "black-forest",
+      "tier": 2,
       "sources": [
         {
           "text": "Cauldron (level 2)",
@@ -41820,8 +41820,8 @@ window.VA_DATA = {
       "name": "Woodland Herb Blend",
       "provisions": true,
       "image": "../provisions/img/items/woodland-herb-blend.png",
-      "biome": "swamp",
-      "tier": 4,
+      "biome": "black-forest",
+      "tier": 2,
       "sources": [
         {
           "text": "The Bog Witch",
@@ -41831,8 +41831,8 @@ window.VA_DATA = {
       "recipe": null,
       "wiki": "https://valheim.weirdgloop.org/w/Woodland_Herb_Blend",
       "unlock": {
-        "biome": "swamp",
-        "tier": 4,
+        "biome": "black-forest",
+        "tier": 2,
         "boss": "the-elder"
       },
       "names": {
