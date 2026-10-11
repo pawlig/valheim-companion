@@ -1,5 +1,5 @@
 window.VA_DATA = {
-  "generatedAt": "2026-10-06T14:02:36+02:00",
+  "generatedAt": "2026-10-11T11:58:10+02:00",
   "source": {
     "name": "Valheim Wiki",
     "url": "https://valheim.weirdgloop.org",
@@ -853,7 +853,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorDress6",
           "image": "img/armor/beaded-dress-blue.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -898,7 +898,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorDress3",
           "image": "img/armor/beaded-dress-brown.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -943,7 +943,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorDress9",
           "image": "img/armor/beaded-dress-yellow.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -988,7 +988,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorTunic3",
           "image": "img/armor/beaded-tunic-blue.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -1033,7 +1033,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorTunic6",
           "image": "img/armor/beaded-tunic-red.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -1078,7 +1078,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorTunic9",
           "image": "img/armor/beaded-tunic-yellow.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -1613,13 +1613,14 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetDNMage",
           "image": "img/armor/headdress-of-the-caller.png",
-          "station": "Frost Foundry",
+          "station": "Galdr Table",
+          "finishedAt": "Frost Foundry",
           "levels": [
             {
               "quality": 1,
               "armor": 22,
               "durability": 1000,
-              "stationLevel": 1,
+              "stationLevel": 3,
               "materials": [
                 {
                   "item": "cast-headdress-of-the-caller",
@@ -1706,13 +1707,14 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorDeepNorthMageChest",
           "image": "img/armor/robes-of-the-caller.png",
-          "station": "Frost Foundry",
+          "station": "Galdr Table",
+          "finishedAt": "Frost Foundry",
           "levels": [
             {
               "quality": 1,
               "armor": 22,
               "durability": 1000,
-              "stationLevel": 1,
+              "stationLevel": 3,
               "materials": [
                 {
                   "item": "cast-robes-of-the-caller",
@@ -1801,13 +1803,14 @@ window.VA_DATA = {
           "slot": "legs",
           "gameId": "ArmorDeepNorthMagelegs",
           "image": "img/armor/trousers-of-the-caller.png",
-          "station": "Frost Foundry",
+          "station": "Galdr Table",
+          "finishedAt": "Frost Foundry",
           "levels": [
             {
               "quality": 1,
               "armor": 22,
               "durability": 1000,
-              "stationLevel": 1,
+              "stationLevel": 3,
               "materials": [
                 {
                   "item": "cast-trousers-of-the-caller",
@@ -2131,7 +2134,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorTunic2",
           "image": "img/armor/cape-tunic-blue.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -2176,7 +2179,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorTunic5",
           "image": "img/armor/cape-tunic-red.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -2221,7 +2224,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorTunic8",
           "image": "img/armor/cape-tunic-yellow.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -2691,7 +2694,7 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetRootCrown",
           "image": "img/armor/crown-of-roots.png",
-          "station": "The Bog Witch",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -2778,7 +2781,7 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetDverger",
           "image": "img/armor/dverger-circlet.png",
-          "station": "Haldor",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -3492,7 +3495,7 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetHat4",
           "image": "img/armor/extravagant-cap-green.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -3537,7 +3540,7 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetHat9",
           "image": "img/armor/extravagant-cap-orange.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -4177,7 +4180,7 @@ window.VA_DATA = {
               "quality": 2,
               "armor": 40,
               "durability": 1000,
-              "stationLevel": 3,
+              "stationLevel": 4,
               "materials": [
                 {
                   "item": "flametal",
@@ -4197,7 +4200,7 @@ window.VA_DATA = {
               "quality": 3,
               "armor": 42,
               "durability": 1200,
-              "stationLevel": 3,
+              "stationLevel": 5,
               "materials": [
                 {
                   "item": "flametal",
@@ -4217,7 +4220,7 @@ window.VA_DATA = {
               "quality": 4,
               "armor": 44,
               "durability": 1400,
-              "stationLevel": 3,
+              "stationLevel": 6,
               "materials": [
                 {
                   "item": "flametal",
@@ -4279,7 +4282,7 @@ window.VA_DATA = {
               "quality": 2,
               "armor": 40,
               "durability": 1200,
-              "stationLevel": 10,
+              "stationLevel": 4,
               "materials": [
                 {
                   "item": "flametal",
@@ -4295,7 +4298,7 @@ window.VA_DATA = {
               "quality": 3,
               "armor": 42,
               "durability": 1400,
-              "stationLevel": 10,
+              "stationLevel": 5,
               "materials": [
                 {
                   "item": "flametal",
@@ -4311,7 +4314,7 @@ window.VA_DATA = {
               "quality": 4,
               "armor": 44,
               "durability": 1600,
-              "stationLevel": 10,
+              "stationLevel": 6,
               "materials": [
                 {
                   "item": "flametal",
@@ -4367,7 +4370,7 @@ window.VA_DATA = {
               "quality": 2,
               "armor": 40,
               "durability": 1200,
-              "stationLevel": 10,
+              "stationLevel": 4,
               "materials": [
                 {
                   "item": "flametal",
@@ -4383,7 +4386,7 @@ window.VA_DATA = {
               "quality": 3,
               "armor": 42,
               "durability": 1400,
-              "stationLevel": 10,
+              "stationLevel": 5,
               "materials": [
                 {
                   "item": "flametal",
@@ -4399,7 +4402,7 @@ window.VA_DATA = {
               "quality": 4,
               "armor": 44,
               "durability": 1600,
-              "stationLevel": 10,
+              "stationLevel": 6,
               "materials": [
                 {
                   "item": "flametal",
@@ -4443,7 +4446,7 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetHat3",
           "image": "img/armor/fur-cap-brown.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -4488,7 +4491,7 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetHat8",
           "image": "img/armor/fur-cap-grey.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -4537,7 +4540,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorHarvester2",
           "image": "img/armor/harvest-dress.png",
-          "station": "Sold by Hildir after returning her Brass chest",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -4590,7 +4593,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorHarvester1",
           "image": "img/armor/harvest-tunic.png",
-          "station": "Sold by Hildir after returning her Brass chest",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -4639,7 +4642,7 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetSweatBand",
           "image": "img/armor/headband.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -6136,7 +6139,7 @@ window.VA_DATA = {
               "quality": 1,
               "armor": 1,
               "durability": 1500,
-              "stationLevel": 2,
+              "stationLevel": 1,
               "materials": [
                 {
                   "item": "linen-thread",
@@ -6308,7 +6311,8 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetDNHeavy",
           "image": "img/armor/helmet-of-the-protector.png",
-          "station": "Frost Foundry",
+          "station": "Black Forge",
+          "finishedAt": "Frost Foundry",
           "levels": [
             {
               "quality": 1,
@@ -6389,7 +6393,8 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorDeepNorthHeavyChest",
           "image": "img/armor/breastplate-of-the-protector.png",
-          "station": "Frost Foundry",
+          "station": "Black Forge",
+          "finishedAt": "Frost Foundry",
           "levels": [
             {
               "quality": 1,
@@ -6484,7 +6489,8 @@ window.VA_DATA = {
           "slot": "legs",
           "gameId": "ArmorDeepNorthHeavylegs",
           "image": "img/armor/trousers-of-the-protector.png",
-          "station": "Frost Foundry",
+          "station": "Black Forge",
+          "finishedAt": "Frost Foundry",
           "levels": [
             {
               "quality": 1,
@@ -6980,7 +6986,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorDress5",
           "image": "img/armor/shawl-dress-blue.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -7025,7 +7031,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorDress2",
           "image": "img/armor/shawl-dress-brown.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -7070,7 +7076,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorDress8",
           "image": "img/armor/shawl-dress-yellow.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -7115,7 +7121,7 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetHat10",
           "image": "img/armor/simple-cap-purple.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -7160,7 +7166,7 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetHat5",
           "image": "img/armor/simple-cap-red.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -7205,7 +7211,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorDress4",
           "image": "img/armor/simple-dress-blue.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -7250,7 +7256,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorDress1",
           "image": "img/armor/simple-dress-brown.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -7295,7 +7301,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorDress10",
           "image": "img/armor/simple-dress-natural.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -7340,7 +7346,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorDress7",
           "image": "img/armor/simple-dress-yellow.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -7385,7 +7391,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorTunic1",
           "image": "img/armor/simple-tunic-blue.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -7430,7 +7436,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorTunic10",
           "image": "img/armor/simple-tunic-natural.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -7475,7 +7481,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorTunic4",
           "image": "img/armor/simple-tunic-red.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -7520,7 +7526,7 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorTunic7",
           "image": "img/armor/simple-tunic-yellow.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -7569,7 +7575,7 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetStrawHat",
           "image": "img/armor/straw-hat.png",
-          "station": "Sold by Hildir after returning her Brass chest",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -7614,7 +7620,7 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetHat1",
           "image": "img/armor/tied-headscarf-blue.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -7659,7 +7665,7 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetHat6",
           "image": "img/armor/tied-headscarf-yellow.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -8025,7 +8031,7 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetHat2",
           "image": "img/armor/twisted-headscarf-green.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -8070,7 +8076,7 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetHat7",
           "image": "img/armor/twisted-headscarf-red.png",
-          "station": "Hildir",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -8125,7 +8131,8 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetDNMediumHood",
           "image": "img/armor/hood-of-the-vanguard.png",
-          "station": "Frost Foundry",
+          "station": "Black Forge",
+          "finishedAt": "Frost Foundry",
           "levels": [
             {
               "quality": 1,
@@ -8218,7 +8225,8 @@ window.VA_DATA = {
           "slot": "chest",
           "gameId": "ArmorDeepNorthMediumChest",
           "image": "img/armor/chestpiece-of-the-vanguard.png",
-          "station": "Frost Foundry",
+          "station": "Black Forge",
+          "finishedAt": "Frost Foundry",
           "levels": [
             {
               "quality": 1,
@@ -8313,7 +8321,8 @@ window.VA_DATA = {
           "slot": "legs",
           "gameId": "ArmorDeepNorthMediumlegs",
           "image": "img/armor/trousers-of-the-vanguard.png",
-          "station": "Frost Foundry",
+          "station": "Black Forge",
+          "finishedAt": "Frost Foundry",
           "levels": [
             {
               "quality": 1,
@@ -8734,7 +8743,7 @@ window.VA_DATA = {
               "quality": 2,
               "armor": 22,
               "durability": 1200,
-              "stationLevel": 3,
+              "stationLevel": 2,
               "materials": [
                 {
                   "item": "silver",
@@ -8746,7 +8755,7 @@ window.VA_DATA = {
               "quality": 3,
               "armor": 24,
               "durability": 1400,
-              "stationLevel": 4,
+              "stationLevel": 3,
               "materials": [
                 {
                   "item": "silver",
@@ -8758,7 +8767,7 @@ window.VA_DATA = {
               "quality": 4,
               "armor": 26,
               "durability": 1600,
-              "stationLevel": 5,
+              "stationLevel": 4,
               "materials": [
                 {
                   "item": "silver",
@@ -9075,7 +9084,7 @@ window.VA_DATA = {
           "slot": "head",
           "gameId": "HelmetYule",
           "image": "img/armor/yule-hat.png",
-          "station": "Haldor",
+          "station": null,
           "levels": [
             {
               "quality": 1,
@@ -13505,7 +13514,8 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Club 1h",
       "image": "../bestiary/img/weapons/club.png",
-      "station": "Player crafting menu",
+      "station": "Workbench",
+      "finishedAt": "Player crafting menu",
       "stationLevel": 1,
       "maxQuality": 4,
       "levels": [
@@ -14409,7 +14419,7 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Sword",
       "image": "../bestiary/img/weapons/dyrnwyn.png",
-      "station": "Black forge",
+      "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -14678,7 +14688,8 @@ window.VA_DATA = {
       "hands": "2h",
       "type": "Blood magic",
       "image": "../bestiary/img/weapons/echo-spike.png",
-      "station": "Frost Foundry",
+      "station": "Galdr Table",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 3,
       "maxQuality": 4,
       "levels": [
@@ -15500,7 +15511,7 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Shield Tower",
       "image": "../bestiary/img/weapons/flametal-tower-shield.png",
-      "station": "Black forge",
+      "station": "Black Forge",
       "stationLevel": 3,
       "maxQuality": 3,
       "levels": [
@@ -19386,7 +19397,7 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Club 1h",
       "image": "../bestiary/img/weapons/klossen.png",
-      "station": "Black forge",
+      "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -19641,7 +19652,8 @@ window.VA_DATA = {
       "hands": "2h",
       "type": "Elemental magic",
       "image": "../bestiary/img/weapons/lightning-strike.png",
-      "station": "Frost Foundry",
+      "station": "Galdr Table",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 3,
       "maxQuality": 4,
       "levels": [
@@ -19977,7 +19989,7 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Sword",
       "image": "../bestiary/img/weapons/nidhogg.png",
-      "station": "Black forge",
+      "station": "Black Forge",
       "stationLevel": 3,
       "maxQuality": 4,
       "levels": [
@@ -20453,7 +20465,8 @@ window.VA_DATA = {
       "hands": "2h",
       "type": "Polearm",
       "image": "../bestiary/img/weapons/nord-atgeir.png",
-      "station": "Frost Foundry",
+      "station": "Black Forge",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -20563,7 +20576,8 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Axe 1h",
       "image": "../bestiary/img/weapons/nord-axe.png",
-      "station": "Frost Foundry",
+      "station": "Black Forge",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -20675,7 +20689,8 @@ window.VA_DATA = {
       "hands": "2h",
       "type": "Bow",
       "image": "../bestiary/img/weapons/nord-bow.png",
-      "station": "Frost Foundry",
+      "station": "Black Forge",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -20787,7 +20802,8 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Shield Buckler",
       "image": "../bestiary/img/weapons/nord-buckler.png",
-      "station": "Frost Foundry",
+      "station": "Black Forge",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 3,
       "levels": [
@@ -20878,7 +20894,8 @@ window.VA_DATA = {
       "hands": "2h",
       "type": "Crossbow",
       "image": "../bestiary/img/weapons/nord-crossbow.png",
-      "station": "Frost Foundry",
+      "station": "Black Forge",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -20989,7 +21006,8 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Knife",
       "image": "../bestiary/img/weapons/nord-dagger.png",
-      "station": "Frost Foundry",
+      "station": "Black Forge",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -21100,7 +21118,8 @@ window.VA_DATA = {
       "hands": "2h",
       "type": "Axe 2h",
       "image": "../bestiary/img/weapons/nord-greataxe.png",
-      "station": "Frost Foundry",
+      "station": "Black Forge",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -21212,7 +21231,8 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Shield Tower",
       "image": "../bestiary/img/weapons/nord-greatshield.png",
-      "station": "Frost Foundry",
+      "station": "Black Forge",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 3,
       "levels": [
@@ -21303,7 +21323,8 @@ window.VA_DATA = {
       "hands": "2h",
       "type": "Sword 2H",
       "image": "../bestiary/img/weapons/nord-greatsword.png",
-      "station": "Frost Foundry",
+      "station": "Black Forge",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -21411,7 +21432,8 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Fists",
       "image": "../bestiary/img/weapons/nord-knucklechains.png",
-      "station": "Frost Foundry",
+      "station": "Black Forge",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -21518,7 +21540,8 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Club 1h",
       "image": "../bestiary/img/weapons/nord-mace.png",
-      "station": "Frost Foundry",
+      "station": "Black Forge",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -21626,7 +21649,8 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Shield Round",
       "image": "../bestiary/img/weapons/nord-shield.png",
-      "station": "Frost Foundry",
+      "station": "Black Forge",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 3,
       "levels": [
@@ -21717,7 +21741,8 @@ window.VA_DATA = {
       "hands": "2h",
       "type": "Club 2h",
       "image": "../bestiary/img/weapons/nord-sledge.png",
-      "station": "Frost Foundry",
+      "station": "Black Forge",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -21826,7 +21851,8 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Spear",
       "image": "../bestiary/img/weapons/nord-spear.png",
-      "station": "Frost Foundry",
+      "station": "Black Forge",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -21935,7 +21961,8 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Sword",
       "image": "../bestiary/img/weapons/nord-sword.png",
-      "station": "Frost Foundry",
+      "station": "Black Forge",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -22044,7 +22071,8 @@ window.VA_DATA = {
       "hands": "2h",
       "type": "Blood Magic",
       "image": "../bestiary/img/weapons/northern-vengeance.png",
-      "station": "Frost Foundry",
+      "station": "Galdr Table",
+      "finishedAt": "Frost Foundry",
       "stationLevel": 3,
       "maxQuality": 4,
       "levels": [
@@ -22630,7 +22658,7 @@ window.VA_DATA = {
       "hands": "2h",
       "type": "axe dw",
       "image": "../bestiary/img/weapons/primal-berserkir-axes.png",
-      "station": "Black forge",
+      "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -24665,7 +24693,7 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Spear",
       "image": "../bestiary/img/weapons/splitnir.png",
-      "station": "Black forge",
+      "station": "Black Forge",
       "stationLevel": 3,
       "maxQuality": 4,
       "levels": [
@@ -24822,7 +24850,7 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Spear",
       "image": "../bestiary/img/weapons/splitnir-the-bleeding.png",
-      "station": "Black forge",
+      "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -24940,7 +24968,7 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Spear",
       "image": "../bestiary/img/weapons/splitnir-the-primal.png",
-      "station": "Black forge",
+      "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -25060,7 +25088,7 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Spear",
       "image": "../bestiary/img/weapons/splitnir-the-storming.png",
-      "station": "Black forge",
+      "station": "Black Forge",
       "stationLevel": 4,
       "maxQuality": 4,
       "levels": [
@@ -25909,7 +25937,8 @@ window.VA_DATA = {
       "hands": "1h",
       "type": "Axe 1h",
       "image": "../bestiary/img/weapons/stone-axe.png",
-      "station": "Player crafting menu",
+      "station": "Workbench",
+      "finishedAt": "Player crafting menu",
       "stationLevel": 1,
       "maxQuality": 4,
       "levels": [

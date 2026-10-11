@@ -6094,7 +6094,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "headdress-of-the-caller",
             "name": "Headdress of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "headdress-of-the-caller"
           }
@@ -7574,7 +7574,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "robes-of-the-caller",
             "name": "Robes of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "robes-of-the-caller"
           }
@@ -7652,7 +7652,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "trousers-of-the-caller",
             "name": "Trousers of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "trousers-of-the-caller"
           }
@@ -18410,7 +18410,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "linen-cape",
             "name": "Linen Cape",
-            "level": 2,
+            "level": 1,
             "biome": "plains",
             "itemId": "linen-cape"
           },
@@ -18749,21 +18749,21 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "headdress-of-the-caller",
             "name": "Headdress of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "headdress-of-the-caller"
           },
           {
             "id": "robes-of-the-caller",
             "name": "Robes of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "robes-of-the-caller"
           },
           {
             "id": "trousers-of-the-caller",
             "name": "Trousers of the Caller",
-            "level": 1,
+            "level": 3,
             "biome": "deep-north",
             "itemId": "trousers-of-the-caller"
           },
@@ -24024,7 +24024,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -24039,11 +24039,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -24115,7 +24115,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -24130,11 +24130,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -24206,7 +24206,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -24221,11 +24221,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -24297,7 +24297,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -24312,11 +24312,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -24388,7 +24388,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -24403,11 +24403,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -24479,7 +24479,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -24494,11 +24494,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -24568,7 +24568,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -24583,11 +24583,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -24657,7 +24657,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -24672,11 +24672,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -24746,7 +24746,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -24761,11 +24761,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -24835,7 +24835,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -24850,11 +24850,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -24924,7 +24924,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -24939,11 +24939,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -25013,7 +25013,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -25028,11 +25028,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -29822,7 +29822,7 @@ globalThis.VC_ITEMS_DATA = {
           {
             "id": "linen-cape",
             "name": "Linen Cape",
-            "level": 2,
+            "level": 1,
             "biome": "plains",
             "itemId": "linen-cape"
           },
@@ -39044,7 +39044,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": null,
+        "station": "Workbench",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -39054,9 +39054,13 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 6
           }
         ],
-        "stationId": null
+        "stationId": "workbench"
       },
-      "station": null,
+      "station": {
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 1
+      },
       "sources": {
         "creatures": [],
         "locations": [],
@@ -39746,7 +39750,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Galdr Table",
         "stationLevel": 3,
         "yields": 1,
         "materials": [
@@ -39761,11 +39765,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "galdr-table"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "galdr-table",
+        "name": "Galdr Table",
         "level": 3
       },
       "sources": {
@@ -42953,7 +42957,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Galdr Table",
         "stationLevel": 3,
         "yields": 1,
         "materials": [
@@ -42968,11 +42972,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "galdr-table"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "galdr-table",
+        "name": "Galdr Table",
         "level": 3
       },
       "sources": {
@@ -43409,7 +43413,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 3
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -43424,11 +43428,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -43474,7 +43478,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 3
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -43489,11 +43493,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -43539,7 +43543,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 3
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -43554,11 +43558,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -43608,7 +43612,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Galdr Table",
         "stationLevel": 3,
         "yields": 1,
         "materials": [
@@ -43623,11 +43627,11 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "galdr-table"
       },
       "station": {
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "galdr-table",
+        "name": "Galdr Table",
         "level": 3
       },
       "sources": {
@@ -45871,7 +45875,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": null,
+        "station": "Workbench",
         "stationLevel": 1,
         "yields": 1,
         "materials": [
@@ -45886,9 +45890,13 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 4
           }
         ],
-        "stationId": null
+        "stationId": "workbench"
       },
-      "station": null,
+      "station": {
+        "id": "workbench",
+        "name": "Workbench",
+        "level": 1
+      },
       "sources": {
         "creatures": [],
         "locations": [],
@@ -48859,8 +48867,8 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
-        "stationLevel": 1,
+        "station": "Galdr Table",
+        "stationLevel": 3,
         "yields": 1,
         "materials": [
           {
@@ -48874,14 +48882,14 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "galdr-table"
       },
       "station": {
         "set": "caller-set",
         "setName": "Caller Set",
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
-        "level": 1
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -48929,8 +48937,8 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
-        "stationLevel": 1,
+        "station": "Galdr Table",
+        "stationLevel": 3,
         "yields": 1,
         "materials": [
           {
@@ -48944,14 +48952,14 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "galdr-table"
       },
       "station": {
         "set": "caller-set",
         "setName": "Caller Set",
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
-        "level": 1
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -48997,8 +49005,8 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
-        "stationLevel": 1,
+        "station": "Galdr Table",
+        "stationLevel": 3,
         "yields": 1,
         "materials": [
           {
@@ -49012,14 +49020,14 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "galdr-table"
       },
       "station": {
         "set": "caller-set",
         "setName": "Caller Set",
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
-        "level": 1
+        "id": "galdr-table",
+        "name": "Galdr Table",
+        "level": 3
       },
       "sources": {
         "creatures": [],
@@ -52709,7 +52717,7 @@ globalThis.VC_ITEMS_DATA = {
       },
       "recipe": {
         "station": "Workbench",
-        "stationLevel": 2,
+        "stationLevel": 1,
         "yields": 1,
         "materials": [
           {
@@ -52730,7 +52738,7 @@ globalThis.VC_ITEMS_DATA = {
         "setName": "Padded Armor",
         "id": "workbench",
         "name": "Workbench",
-        "level": 2
+        "level": 1
       },
       "sources": {
         "creatures": [],
@@ -52849,7 +52857,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -52864,13 +52872,13 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
         "set": "protector-armor",
         "setName": "Protector Armor",
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -52919,7 +52927,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -52934,13 +52942,13 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
         "set": "protector-armor",
         "setName": "Protector Armor",
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -52987,7 +52995,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -53002,13 +53010,13 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
         "set": "protector-armor",
         "setName": "Protector Armor",
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -54855,7 +54863,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -54870,13 +54878,13 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
         "set": "vanguard-set",
         "setName": "Vanguard Set",
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -54935,7 +54943,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -54950,13 +54958,13 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
         "set": "vanguard-set",
         "setName": "Vanguard Set",
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
@@ -55013,7 +55021,7 @@ globalThis.VC_ITEMS_DATA = {
         "maxQuality": 4
       },
       "recipe": {
-        "station": "Frost Foundry",
+        "station": "Black Forge",
         "stationLevel": 4,
         "yields": 1,
         "materials": [
@@ -55028,13 +55036,13 @@ globalThis.VC_ITEMS_DATA = {
             "amount": 5
           }
         ],
-        "stationId": "frost-foundry"
+        "stationId": "black-forge"
       },
       "station": {
         "set": "vanguard-set",
         "setName": "Vanguard Set",
-        "id": "frost-foundry",
-        "name": "Frost Foundry",
+        "id": "black-forge",
+        "name": "Black Forge",
         "level": 4
       },
       "sources": {
