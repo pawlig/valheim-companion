@@ -40,6 +40,8 @@ export const BASE_MATERIAL_TABLE = {
   'Hard Antler': { biome: 'meadows' },
   Raspberries: { biome: 'meadows' },
   Honey: { biome: 'meadows' },
+  // Overcook any meat at a Cooking Station (wiki: Coal); Cooking Station is 2 Wood.
+  Coal: { biome: 'meadows' },
   // black-forest
   Copper: { biome: 'black-forest' },
   Tin: { biome: 'black-forest' },
@@ -187,7 +189,7 @@ export function createMaterialResolver({
 
     // Haldor special for Ymir Flesh if not in overrides
     if (name.toLowerCase() === 'ymir flesh') {
-      const res = { name, biome: 'swamp', tier: tierOf('swamp'), how: 'wiki', note: 'purchased from Haldor after The Elder' };
+      const res = { name, biome: 'black-forest', tier: tierOf('black-forest'), how: 'wiki', note: 'purchased from Haldor after The Elder (Black Forest boss)' };
       materialCache.set(name, res);
       return res;
     }

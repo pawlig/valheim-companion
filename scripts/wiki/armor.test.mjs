@@ -336,7 +336,7 @@ test('DLC and seasonal armor pieces have kind special and appropriate tag; Crown
   assert.ok(capeOden, 'Cape of Oden exists');
   assert.equal(capeOden.kind, 'special');
   assert.equal(capeOden.tag, 'DLC');
-  assert.equal(capeOden.biome, null);
+  assert.equal(capeOden.biome, 'meadows'); // VC-45c Q-5: biome = where Q1 can first be crafted
   assert.equal(capeOden.pieces[0].kind, 'special');
   assert.equal(capeOden.pieces[0].tag, 'DLC');
 
@@ -344,19 +344,19 @@ test('DLC and seasonal armor pieces have kind special and appropriate tag; Crown
   assert.ok(hoodOden, 'Hood of Oden exists');
   assert.equal(hoodOden.kind, 'special');
   assert.equal(hoodOden.tag, 'DLC');
-  assert.equal(hoodOden.biome, null);
+  assert.equal(hoodOden.biome, 'meadows'); // VC-45c Q-5: biome = where Q1 can first be crafted
 
   const pointyHat = armor.find((a) => a.name === 'Pointy Hat');
   assert.ok(pointyHat, 'Pointy Hat exists');
   assert.equal(pointyHat.kind, 'special');
   assert.equal(pointyHat.tag, 'Halloween');
-  assert.equal(pointyHat.biome, null);
+  assert.equal(pointyHat.biome, 'black-forest'); // VC-45c Q-5: biome = where Q1 can first be crafted
 
   const midsummer = armor.find((a) => a.name === 'Midsummer Crown');
   assert.ok(midsummer, 'Midsummer Crown exists');
   assert.equal(midsummer.kind, 'special');
   assert.equal(midsummer.tag, 'Midsummer');
-  assert.equal(midsummer.biome, null);
+  assert.equal(midsummer.biome, 'meadows'); // VC-45c Q-5: biome = where Q1 can first be crafted
 
   const crownValheim = armor.find((a) => a.name === 'Crown of Valheim');
   assert.ok(crownValheim, 'Crown of Valheim exists');

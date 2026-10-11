@@ -22,7 +22,28 @@
       "reason": "Grown chicken, see chicken."
     }
   },
-  "materials": {},
+  "materials": {
+    "Curious Axe Head": {
+      "biome": "meadows",
+      "tier": 1,
+      "reason": "Curious Axe Head wiki: can be found in a chest in an Abandoned House (Meadows); matches the compendium."
+    },
+    "Mysterious Axe Head": {
+      "biome": "meadows",
+      "tier": 1,
+      "reason": "Mysterious Axe Head wiki: can be found in a chest in an Abandoned House (Meadows); matches the compendium."
+    },
+    "Wisp": {
+      "biome": "mistlands",
+      "tier": 7,
+      "reason": "Wisp wiki: collected from Wisp Fountains, which spawn in Mistlands."
+    },
+    "Sharpening Stone": {
+      "biome": "swamp",
+      "tier": 4,
+      "reason": "Sharpening Stone wiki: crafted at a Stonecutter, which needs Iron (Swamp)."
+    }
+  },
   "exclude": {
     "creatures": [
       "fish",
@@ -43,11 +64,6 @@
   },
   "comfort": {
     "materials": {
-      "Coal": {
-        "biome": "meadows",
-        "tier": 1,
-        "reason": "Coal wiki: overcook any meat at a Cooking Station. Existing Smithy Coal is Swamp-tier from Surtling drops; keep that record intact and use the early acquisition route for Comfort."
-      },
       "Barber Kit": {
         "biome": "meadows",
         "tier": 1,
