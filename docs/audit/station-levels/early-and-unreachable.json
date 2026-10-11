@@ -1,21 +1,21 @@
 {
  "totals": {
-  "items": 244,
-  "quals": 872,
-  "itemsEarly": 97,
+  "items": 246,
+  "quals": 880,
+  "itemsEarly": 101,
   "qualitiesEarly": 103,
-  "itemsUnreachable": 71,
-  "qualitiesUnreachable": 76,
+  "itemsUnreachable": 72,
+  "qualitiesUnreachable": 73,
   "q1Late": 3
  },
  "byKind": {
   "weapon": {
-   "items": 122,
-   "quals": 485,
-   "early": 59,
-   "earlyQ": 65,
-   "unreach": 58,
-   "unreachQ": 58
+   "items": 124,
+   "quals": 493,
+   "early": 61,
+   "earlyQ": 63,
+   "unreach": 61,
+   "unreachQ": 61
   },
   "tool": {
    "items": 4,
@@ -36,38 +36,33 @@
   "ammo": {
    "items": 23,
    "quals": 23,
-   "early": 3,
-   "earlyQ": 3,
+   "early": 0,
+   "earlyQ": 0,
    "unreach": 0,
    "unreachQ": 0
   },
   "armor": {
    "items": 76,
    "quals": 294,
-   "early": 33,
-   "earlyQ": 33,
-   "unreach": 13,
-   "unreachQ": 18
+   "early": 38,
+   "earlyQ": 38,
+   "unreach": 11,
+   "unreachQ": 12
   }
  },
  "earlyByStation": {
-  "Workbench": 24,
-  "Black Forge": 55,
+  "Workbench": 30,
+  "Black Forge": 49,
   "Forge": 10,
   "Galdr Table": 14
  },
  "shownToActual": {
   "ocean→mountain": 1,
-  "swamp→mistlands": 4,
-  "swamp→ashlands": 1,
-  "ashlands→deep-north": 41,
-  "plains→mistlands": 4,
-  "black-forest→mistlands": 1,
+  "mistlands→ashlands": 19,
+  "ashlands→deep-north": 44,
   "black-forest→mountain": 15,
   "black-forest→swamp": 10,
-  "mistlands→ashlands": 17,
-  "meadows→black-forest": 5,
-  "plains→ashlands": 1,
+  "meadows→black-forest": 11,
   "swamp→mountain": 3
  },
  "items": [
@@ -119,14 +114,14 @@
    "id": "arbalest",
    "station": "Black Forge",
    "effectiveStation": "Black Forge",
-   "shown": "swamp",
+   "shown": "mistlands",
    "qualities": [
     {
      "q": 1,
      "stationLevel": 1,
      "availableFrom": "mistlands",
      "unreachable": false,
-     "shownTooEarly": true,
+     "shownTooEarly": false,
      "shownTooLate": false
     },
     {
@@ -134,7 +129,7 @@
      "stationLevel": 2,
      "availableFrom": "mistlands",
      "unreachable": false,
-     "shownTooEarly": true,
+     "shownTooEarly": false,
      "shownTooLate": false
     },
     {
@@ -142,7 +137,7 @@
      "stationLevel": 3,
      "availableFrom": "mistlands",
      "unreachable": false,
-     "shownTooEarly": true,
+     "shownTooEarly": false,
      "shownTooLate": false
     },
     {
@@ -233,24 +228,6 @@
      "q": 4,
      "stationLevel": 6,
      "availableFrom": "deep-north",
-     "unreachable": false,
-     "shownTooEarly": true,
-     "shownTooLate": false
-    }
-   ]
-  },
-  {
-   "kind": "ammo",
-   "item": "Black Metal Bolt",
-   "id": "black-metal-bolt",
-   "station": "Black Forge",
-   "effectiveStation": "Black Forge",
-   "shown": "plains",
-   "qualities": [
-    {
-     "q": 1,
-     "stationLevel": 2,
-     "availableFrom": "mistlands",
      "unreachable": false,
      "shownTooEarly": true,
      "shownTooLate": false
@@ -379,24 +356,6 @@
      "availableFrom": null,
      "unreachable": true,
      "shownTooEarly": false,
-     "shownTooLate": false
-    }
-   ]
-  },
-  {
-   "kind": "ammo",
-   "item": "Bone Bolt",
-   "id": "bone-bolt",
-   "station": "Black Forge",
-   "effectiveStation": "Black Forge",
-   "shown": "black-forest",
-   "qualities": [
-    {
-     "q": 1,
-     "stationLevel": 1,
-     "availableFrom": "mistlands",
-     "unreachable": false,
-     "shownTooEarly": true,
      "shownTooLate": false
     }
    ]
@@ -773,6 +732,48 @@
   },
   {
    "kind": "weapon",
+   "item": "Club",
+   "id": "club",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "meadows",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
    "item": "Copper Knife",
    "id": "copper-knife",
    "station": "Forge",
@@ -943,7 +944,7 @@
    "kind": "weapon",
    "item": "Dyrnwyn",
    "id": "dyrnwyn",
-   "station": "Black forge",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "ashlands",
    "qualities": [
@@ -1019,6 +1020,48 @@
      "availableFrom": "black-forest",
      "unreachable": false,
      "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Echo Spike",
+   "id": "echo-spike",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
      "shownTooLate": false
     }
    ]
@@ -1738,24 +1781,6 @@
    ]
   },
   {
-   "kind": "ammo",
-   "item": "Iron Bolt",
-   "id": "iron-bolt",
-   "station": "Black Forge",
-   "effectiveStation": "Black Forge",
-   "shown": "swamp",
-   "qualities": [
-    {
-     "q": 1,
-     "stationLevel": 1,
-     "availableFrom": "mistlands",
-     "unreachable": false,
-     "shownTooEarly": true,
-     "shownTooLate": false
-    }
-   ]
-  },
-  {
    "kind": "weapon",
    "item": "Jotun Bane",
    "id": "jotun-bane",
@@ -1801,7 +1826,7 @@
    "kind": "weapon",
    "item": "Klossen",
    "id": "klossen",
-   "station": "Black forge",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "ashlands",
    "qualities": [
@@ -1883,6 +1908,48 @@
   },
   {
    "kind": "weapon",
+   "item": "Lightning Strike",
+   "id": "lightning-strike",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
    "item": "Mistwalker",
    "id": "mistwalker",
    "station": "Black Forge",
@@ -1927,7 +1994,7 @@
    "kind": "weapon",
    "item": "Nidhögg",
    "id": "nidhogg",
-   "station": "Black forge",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "ashlands",
    "qualities": [
@@ -2095,7 +2162,7 @@
    "kind": "weapon",
    "item": "Nord Atgeir",
    "id": "nord-atgeir",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -2137,7 +2204,7 @@
    "kind": "weapon",
    "item": "Nord Axe",
    "id": "nord-axe",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -2179,7 +2246,7 @@
    "kind": "weapon",
    "item": "Nord Bow",
    "id": "nord-bow",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -2221,7 +2288,7 @@
    "kind": "weapon",
    "item": "Nord Crossbow",
    "id": "nord-crossbow",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -2263,7 +2330,7 @@
    "kind": "weapon",
    "item": "Nord Dagger",
    "id": "nord-dagger",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -2305,7 +2372,7 @@
    "kind": "weapon",
    "item": "Nord Greataxe",
    "id": "nord-greataxe",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -2347,7 +2414,7 @@
    "kind": "weapon",
    "item": "Nord Greatsword",
    "id": "nord-greatsword",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -2389,7 +2456,7 @@
    "kind": "weapon",
    "item": "Nord Knucklechains",
    "id": "nord-knucklechains",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -2431,7 +2498,7 @@
    "kind": "weapon",
    "item": "Nord Mace",
    "id": "nord-mace",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -2473,7 +2540,7 @@
    "kind": "weapon",
    "item": "Nord Sledge",
    "id": "nord-sledge",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -2515,7 +2582,7 @@
    "kind": "weapon",
    "item": "Nord Spear",
    "id": "nord-spear",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -2557,7 +2624,7 @@
    "kind": "weapon",
    "item": "Nord Sword",
    "id": "nord-sword",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -2588,6 +2655,48 @@
     {
      "q": 4,
      "stationLevel": 7,
+     "availableFrom": null,
+     "unreachable": true,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Northern Vengeance",
+   "id": "northern-vengeance",
+   "station": "Galdr Table",
+   "effectiveStation": "Galdr Table",
+   "shown": "deep-north",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
      "availableFrom": null,
      "unreachable": true,
      "shownTooEarly": false,
@@ -2641,7 +2750,7 @@
    "kind": "weapon",
    "item": "Primal Berserkir Axes",
    "id": "primal-berserkir-axes",
-   "station": "Black forge",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "ashlands",
    "qualities": [
@@ -2895,14 +3004,14 @@
    "id": "skoll-and-hati",
    "station": "Black Forge",
    "effectiveStation": "Black Forge",
-   "shown": "plains",
+   "shown": "mistlands",
    "qualities": [
     {
      "q": 1,
      "stationLevel": 1,
      "availableFrom": "mistlands",
      "unreachable": false,
-     "shownTooEarly": true,
+     "shownTooEarly": false,
      "shownTooLate": false
     },
     {
@@ -2910,7 +3019,7 @@
      "stationLevel": 2,
      "availableFrom": "mistlands",
      "unreachable": false,
-     "shownTooEarly": true,
+     "shownTooEarly": false,
      "shownTooLate": false
     },
     {
@@ -2918,7 +3027,7 @@
      "stationLevel": 3,
      "availableFrom": "mistlands",
      "unreachable": false,
-     "shownTooEarly": true,
+     "shownTooEarly": false,
      "shownTooLate": false
     },
     {
@@ -3061,7 +3170,7 @@
    "kind": "weapon",
    "item": "Splitnir",
    "id": "splitnir",
-   "station": "Black forge",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "ashlands",
    "qualities": [
@@ -3103,7 +3212,7 @@
    "kind": "weapon",
    "item": "Splitnir the Bleeding",
    "id": "splitnir-the-bleeding",
-   "station": "Black forge",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "ashlands",
    "qualities": [
@@ -3145,7 +3254,7 @@
    "kind": "weapon",
    "item": "Splitnir the Primal",
    "id": "splitnir-the-primal",
-   "station": "Black forge",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "ashlands",
    "qualities": [
@@ -3187,7 +3296,7 @@
    "kind": "weapon",
    "item": "Splitnir the Storming",
    "id": "splitnir-the-storming",
-   "station": "Black forge",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "ashlands",
    "qualities": [
@@ -3429,6 +3538,48 @@
      "q": 4,
      "stationLevel": 5,
      "availableFrom": "mountain",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "weapon",
+   "item": "Stone Axe",
+   "id": "stone-axe",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "meadows",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
      "unreachable": false,
      "shownTooEarly": true,
      "shownTooLate": false
@@ -4657,13 +4808,13 @@
    "kind": "armor",
    "item": "Caller Set / Headdress of the Caller",
    "id": "headdress-of-the-caller",
-   "station": "Frost Foundry",
+   "station": "Galdr Table",
    "effectiveStation": "Galdr Table",
    "shown": "deep-north",
    "qualities": [
     {
      "q": 1,
-     "stationLevel": 1,
+     "stationLevel": 3,
      "availableFrom": "deep-north",
      "unreachable": false,
      "shownTooEarly": false,
@@ -4699,13 +4850,13 @@
    "kind": "armor",
    "item": "Caller Set / Robes of the Caller",
    "id": "robes-of-the-caller",
-   "station": "Frost Foundry",
+   "station": "Galdr Table",
    "effectiveStation": "Galdr Table",
    "shown": "deep-north",
    "qualities": [
     {
      "q": 1,
-     "stationLevel": 1,
+     "stationLevel": 3,
      "availableFrom": "deep-north",
      "unreachable": false,
      "shownTooEarly": false,
@@ -4741,13 +4892,13 @@
    "kind": "armor",
    "item": "Caller Set / Trousers of the Caller",
    "id": "trousers-of-the-caller",
-   "station": "Frost Foundry",
+   "station": "Galdr Table",
    "effectiveStation": "Galdr Table",
    "shown": "deep-north",
    "qualities": [
     {
      "q": 1,
-     "stationLevel": 1,
+     "stationLevel": 3,
      "availableFrom": "deep-north",
      "unreachable": false,
      "shownTooEarly": false,
@@ -4775,6 +4926,48 @@
      "availableFrom": null,
      "unreachable": true,
      "shownTooEarly": false,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Cape of Oden / Cape of Oden",
+   "id": "cape-of-oden",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "meadows",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": true,
      "shownTooLate": false
     }
    ]
@@ -5285,6 +5478,48 @@
   },
   {
    "kind": "armor",
+   "item": "Flametal Armor / Flametal Helmet",
+   "id": "flametal-helmet",
+   "station": "Black Forge",
+   "effectiveStation": "Black Forge",
+   "shown": "ashlands",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 3,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
    "item": "Flametal Armor / Flametal Breastplate",
    "id": "flametal-breastplate",
    "station": "Black Forge",
@@ -5301,26 +5536,26 @@
     },
     {
      "q": 2,
-     "stationLevel": 10,
-     "availableFrom": null,
-     "unreachable": true,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
      "shownTooEarly": false,
      "shownTooLate": false
     },
     {
      "q": 3,
-     "stationLevel": 10,
-     "availableFrom": null,
-     "unreachable": true,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
      "shownTooEarly": false,
      "shownTooLate": false
     },
     {
      "q": 4,
-     "stationLevel": 10,
-     "availableFrom": null,
-     "unreachable": true,
-     "shownTooEarly": false,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
      "shownTooLate": false
     }
    ]
@@ -5343,26 +5578,68 @@
     },
     {
      "q": 2,
-     "stationLevel": 10,
-     "availableFrom": null,
-     "unreachable": true,
+     "stationLevel": 4,
+     "availableFrom": "ashlands",
+     "unreachable": false,
      "shownTooEarly": false,
      "shownTooLate": false
     },
     {
      "q": 3,
-     "stationLevel": 10,
-     "availableFrom": null,
-     "unreachable": true,
+     "stationLevel": 5,
+     "availableFrom": "ashlands",
+     "unreachable": false,
      "shownTooEarly": false,
      "shownTooLate": false
     },
     {
      "q": 4,
-     "stationLevel": 10,
-     "availableFrom": null,
-     "unreachable": true,
+     "stationLevel": 6,
+     "availableFrom": "deep-north",
+     "unreachable": false,
+     "shownTooEarly": true,
+     "shownTooLate": false
+    }
+   ]
+  },
+  {
+   "kind": "armor",
+   "item": "Hood of Oden / Hood of Oden",
+   "id": "hood-of-oden",
+   "station": "Workbench",
+   "effectiveStation": "Workbench",
+   "shown": "meadows",
+   "qualities": [
+    {
+     "q": 1,
+     "stationLevel": 1,
+     "availableFrom": "meadows",
+     "unreachable": false,
      "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 2,
+     "stationLevel": 2,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 3,
+     "stationLevel": 3,
+     "availableFrom": "meadows",
+     "unreachable": false,
+     "shownTooEarly": false,
+     "shownTooLate": false
+    },
+    {
+     "q": 4,
+     "stationLevel": 4,
+     "availableFrom": "black-forest",
+     "unreachable": false,
+     "shownTooEarly": true,
      "shownTooLate": false
     }
    ]
@@ -5581,7 +5858,7 @@
    "kind": "armor",
    "item": "Protector Armor / Helmet of the Protector",
    "id": "helmet-of-the-protector",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -5623,7 +5900,7 @@
    "kind": "armor",
    "item": "Protector Armor / Breastplate of the Protector",
    "id": "breastplate-of-the-protector",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -5665,7 +5942,7 @@
    "kind": "armor",
    "item": "Protector Armor / Trousers of the Protector",
    "id": "trousers-of-the-protector",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -6001,7 +6278,7 @@
    "kind": "armor",
    "item": "Vanguard Set / Hood of the Vanguard",
    "id": "hood-of-the-vanguard",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -6043,7 +6320,7 @@
    "kind": "armor",
    "item": "Vanguard Set / Chestpiece of the Vanguard",
    "id": "chestpiece-of-the-vanguard",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -6085,7 +6362,7 @@
    "kind": "armor",
    "item": "Vanguard Set / Trousers of the Vanguard",
    "id": "trousers-of-the-vanguard",
-   "station": "Frost Foundry",
+   "station": "Black Forge",
    "effectiveStation": "Black Forge",
    "shown": "deep-north",
    "qualities": [
@@ -6125,21 +6402,11 @@
   }
  ],
  "anomalies": [
-  "armor Caller Set / Headdress of the Caller: stationLevel 1/4/5/6",
-  "armor Caller Set / Robes of the Caller: stationLevel 1/4/5/6",
-  "armor Caller Set / Trousers of the Caller: stationLevel 1/4/5/6",
-  "armor Flametal Armor / Flametal Helmet: stationLevel 3/3/3/3",
-  "armor Flametal Armor / Flametal Breastplate: stationLevel 3/10/10/10",
-  "armor Flametal Armor / Flametal Greaves: stationLevel 3/10/10/10",
   "armor Padded Armor / Padded Cuirass: stationLevel 2/2/3/4",
-  "armor Padded Armor / Padded Greaves: stationLevel 2/2/3/4",
-  "armor Padded Armor / Linen Cape: stationLevel 2/2/3/4",
-  "armor Wolf Armor / Drake Helmet: stationLevel 1/3/4/5"
+  "armor Padded Armor / Padded Greaves: stationLevel 2/2/3/4"
  ],
  "skipped": [
-  "weapon Bare Fists: station \"Always available\"",
-  "weapon Club: station \"Player crafting menu\"",
-  "weapon Stone Axe: station \"Player crafting menu\"",
+  "weapon Bare Fists: station \"null\"",
   "armor set Beaded dress blue: kind cosmetic (1 pieces)",
   "armor set Beaded dress brown: kind cosmetic (1 pieces)",
   "armor set Beaded dress yellow: kind cosmetic (1 pieces)",
@@ -6149,14 +6416,14 @@
   "armor set Cape tunic blue: kind cosmetic (1 pieces)",
   "armor set Cape tunic red: kind cosmetic (1 pieces)",
   "armor set Cape tunic yellow: kind cosmetic (1 pieces)",
-  "armor Crown of Roots / Crown of Roots: no materials (The Bog Witch)",
-  "armor Dverger Circlet / Dverger Circlet: no materials (Haldor)",
+  "armor Crown of Roots / Crown of Roots: no materials (null)",
+  "armor Dverger Circlet / Dverger Circlet: no materials (null)",
   "armor set Extravagant cap green: kind cosmetic (1 pieces)",
   "armor set Extravagant cap orange: kind cosmetic (1 pieces)",
   "armor set Fur cap brown: kind cosmetic (1 pieces)",
   "armor set Fur cap grey: kind cosmetic (1 pieces)",
-  "armor Harvest dress / Harvest dress: no materials (Sold by Hildir after returning her Brass chest)",
-  "armor Harvest tunic / Harvest tunic: no materials (Sold by Hildir after returning her Brass chest)",
+  "armor Harvest dress / Harvest dress: no materials (null)",
+  "armor Harvest tunic / Harvest tunic: no materials (null)",
   "armor set Headband: kind cosmetic (1 pieces)",
   "armor set Shawl dress blue: kind cosmetic (1 pieces)",
   "armor set Shawl dress brown: kind cosmetic (1 pieces)",
@@ -6171,11 +6438,11 @@
   "armor set Simple tunic natural: kind cosmetic (1 pieces)",
   "armor set Simple tunic red: kind cosmetic (1 pieces)",
   "armor set Simple tunic yellow: kind cosmetic (1 pieces)",
-  "armor Straw hat / Straw hat: no materials (Sold by Hildir after returning her Brass chest)",
+  "armor Straw hat / Straw hat: no materials (null)",
   "armor set Tied headscarf blue: kind cosmetic (1 pieces)",
   "armor set Tied headscarf yellow: kind cosmetic (1 pieces)",
   "armor set Twisted headscarf green: kind cosmetic (1 pieces)",
   "armor set Twisted headscarf red: kind cosmetic (1 pieces)",
-  "armor Yule Hat / Yule Hat: no materials (Haldor)"
+  "armor Yule Hat / Yule Hat: no materials (null)"
  ]
 }
