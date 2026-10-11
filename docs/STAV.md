@@ -1,7 +1,7 @@
 # Stav projektu Valheim Companion
 
 > **Živý dokument.** Orchestrátor ho aktualizuje po každé přejímce, merge nebo změně fronty. Nová session začíná tady.
-> Poslední aktualizace: **10. 10. 2026**
+> Poslední aktualizace: **11. 10. 2026**
 
 > ✅ **Audit 10. 10. (Fable) — opraveno:** Items Compendium a Trader Ledger (VC-39 … VC-40f) dělal agy bez zadání; 16 nálezů (3 kritické), [`docs/audit/AUDIT-VC-39-40.md`](audit/AUDIT-VC-39-40.md). Balíky O-1 … O-10 a AUD/8 opraveny a nasazeny 10. 10. jako VC-42a … VC-42k. AUD/6 jako VC-42l. Zbývají drobnosti v „Známé drobnosti“.
 
@@ -99,14 +99,16 @@ Zadání jsou v [`docs/zadani/`](zadani/). Hotové úlohy jsou mergnuté do `mai
 | VC-44 | rozbor (podnět Pavla 10. 10.): dostupnost úrovní stanic a kvalit předmětů po biomech (Carapace v Mistlands jen Q2, Black Forge lvl 3 nedostupná) → `docs/audit/ROZBOR-STATION-LEVELS.md` + balíky oprav | Fable | ✅ rozbor hotový 10. 10. (97 kusů / 103 kvalit ukázáno dřív, 71 / 76 nad maximem stanice; 8 balíků O-1…O-8 v § 6; přejímka: 1 kolo drobností). Pavel odpověděl 11. 10. → ANALYZA § 30 (vše dle doporučení rozboru). Balíky O-1…O-8 jako VC-45a… |
 | VC-45a | VC-44 O-1: úrovně stanic + biom úrovní v `data/stations.json` (fetch-stations přebírá crafting stanice, parser rozšíření) | Sol | ✅ nasazeno 11. 10. (max úrovně stanic × biom = rozbor § 2, 26 rozšíření s biomem, ověřeno proti wiki; přejímka: 1 kolo — necommitnutý build výstup a ru názvy s `#`/přes přesměrování). Známé pro O-4: compendium u rozšíření `recipe.station` null, materiály s názvem = id, chybí `sources` (i u spice-rack/workbench) |
 | VC-45b | VC-44 O-2: opravy `stationLevel` (Drake, Flametal, Caller, Linen Cape) a Frost Foundry → Black Forge/Galdr + `finishedAt` | Sol | ✅ nasazeno 11. 10. (81 kusů: station 76×, finishedAt 27× Frost Foundry, stationLevel 16 buněk — vše ověřeno proti wiki; přejímka napoprvé; orchestrator fix: bez finishedAt u ručně vyráběných Q1). Pozn. pro O-3: `scripts/wiki/station-levels.mjs` už existuje (rozšířit, ne zakládat); Bare Fists/Club/Stone Axe mají nově station null/Workbench — `avail.mjs` přepočítat |
-| VC-45c…h | VC-44 O-3 (availableFrom + suroviny, Q-5 biom := Q1 dostupnost, Q-7 test shody), O-4 (generátory + doporučení „Max“ = dosažitelná, Q-2 vyřadit nad maximem), O-5 Smithy, O-6 Bestiary/Expedition/kalkulačka, O-7 Items/Provisions (Q-9 jídla z Cauldronu → Black Forest), O-8 testy+dokumentace | — | ⏳ fronta; O-3 po VC-45a+b, O-4 po O-3, O-5/6/7 souběžně po O-4, O-8 nakonec. Zadání = rozbor § 6 + ANALYZA § 30 |
+| VC-45c | VC-44 O-3: `availableFrom`/`availableTier` u kvalit, `biome` kusu = dostupnost Q1 (Q-5), jídla Cauldronu → Black Forest (Q-9), suroviny (Coal, Ymir Flesh, +3), test shody biomů (Q-7) | Sonnet | 🔄 běží (worktree CC, větev `prace/VC-45c`, dashboard 235) |
+| VC-46 | podnět Pavla 11. 10.: hledání na rozcestníku — řádek otevře Items Compendium, vedle ikonky s tooltipem „Open in …“ (Compendium, Smithy, Provisions, Comfort, Traders), sloučené duplicity | Flash | 🔄 běží (worktree GM, `prace/VC-46`, dashboard 236) |
+| VC-47 | podnět Pavla 11. 10.: Items Compendium — tabulka statů po kvalitách (poškození, block armor, durability, armor, úroveň stanice) + konstantní staty (block force, parry, váha…) | Sonnet | 🔄 běží (worktree CS, `prace/VC-47`, dashboard 237) |
+| VC-45d…h | VC-44 O-4 (generátory + doporučení „Max“ = dosažitelná, Q-2 vyřadit nad maximem), O-5 Smithy, O-6 Bestiary/Expedition/kalkulačka, O-7 Items/Provisions (Q-9 jídla z Cauldronu → Black Forest), O-8 testy+dokumentace | — | ⏳ fronta; O-4 po O-3 (VC-45c), O-5/6/7 souběžně po O-4, O-8 nakonec. Zadání = rozbor § 6 + ANALYZA § 30 |
 
-### 🔄 Předávka orchestrátora (11. 10. 2026, ~12:30)
+### 🔄 Předávka orchestrátora (11. 10. 2026, odpoledne)
 
-- **Běží:** nic. VC-45a i VC-45b nasazeny (main 460 testů, build i řetězec fetcherů čisté). **Další krok:** zadání VC-45c = O-3 (rozbor § 6 O-3 + ANALYZA § 30 Q-5/Q-7/Q-9; `scripts/wiki/station-levels.mjs` rozšířit, ne zakládat; regenerované `apps/*/data/data.js` výslovně povolit a commitovat; přepočet `docs/audit/station-levels/avail.mjs` po změnách Bare Fists/Club/Stone Axe), prováděč Sol (Codex týden 100 %) — balíky O-1 a O-2 z rozboru VC-44. Po doběhnutí: přejímka (`prejimka`), merge, pak zadání VC-45c = O-3 (rozbor § 6 + ANALYZA § 30: Q-5 biom := dostupnost Q1, Q-7 test shody items × kompendium, Q-9 jídla Cauldronu → Black Forest).
-- **Další kandidáti** (nic z toho Pavel zatím nezadal jako prioritu): drobnosti v „Známé drobnosti“ (generatedAt z mtime, Greydwarf Shaman Deep North u wood, spoilerové bannery v Traders, háčky pro testy v produkčním kódu Smithy/Expedition, hromadné „Chci“ Q3 ve skupině setu vs. select kusu); návrh: odznak obchodníka u kosmetických kusů zbroje v katalogu Smithy (data už mají `traders`).
-- **Pracovníci 10. 10. večer:** Claude týden ~93 %, Flash týden ~58 %, Codex a GLM vyčerpané do 13./12. 10. Sonnet spolehlivý (VC-42f vráceno 3×, ostatní 1 kolo nebo napoprvé), Flash VC-42j napoprvé, Haiku dokumentace s 1 kolem.
-- Worktree: `valheim-units-CC` a `valheim-units-GM` volné. node_modules pro damage-calculator a signs jsou v obou nalinkované.
+- **Běží:** VC-45c (Sonnet, `valheim-units-CC`), VC-46 (Flash, `valheim-units-GM`), VC-47 (Sonnet, `valheim-units-CS`). Zadání v `docs/zadani/`. Codex a GLM vyčerpané (Codex obnova ~17. 10., GLM 12. 10.).
+- **Merge pořadí:** VC-45c první; VC-46 a VC-47 pak rebase/merge — konflikty jen v generovaných souborech (`data/items-compendium.json`, `apps/*/data/*.js`, `apps/hub/data/search.js`) → přegenerovat `npm run build`, ne ručně.
+- **Po VC-45c:** VC-45d = O-4 (rozbor § 6). VC-47 tabulka nese `data-quality` u buněk → O-7 na ni naváže zámky kvalit.
 
 ### Po frontě
 Pracovníci od 6. 10.: agy je vyčerpaný (týden 4 %, obnova 8. 10.), práci dělá **Codex Sol**. Pavel 6. 10. schválil pořadí: překlady (VC-16 až VC-18), **vylepšení stávajících nástrojů** (VC-23 až VC-27), potom **Progress Tracker** a **Provisions** (VC-19 až VC-22). Další kandidáti z [`NAVRHY-NASTROJU.md`](NAVRHY-NASTROJU.md): **Comfort Planner schválen 6. 10. (VC-35)**, **Expedition schválen 7. 10. (VC-36)**. Trader Ledger, Fishing a Taming zatím schválené nejsou.
