@@ -23,6 +23,23 @@ Source: valheim.weirdgloop.org (MediaWiki API). No dates on purpose: the report 
 | deep-north | 7 | 13 |
 | (cosmetic / unresolved) | 5 | 5 |
 
+## Station levels
+
+Padded Cuirass and Padded Greaves retain Forge 2/2/3/4, as explicitly listed in the cached Padded Armor quality tables. This is the only intentional non +1 sequence.
+
+## Finishing stations
+
+- headdress-of-the-caller: Galdr Table 3/4/5/6 — finished at Frost Foundry
+- robes-of-the-caller: Galdr Table 3/4/5/6 — finished at Frost Foundry
+- trousers-of-the-caller: Galdr Table 3/4/5/6 — finished at Frost Foundry
+- helmet-of-the-protector: Black Forge 4/5/6/7 — finished at Frost Foundry
+- breastplate-of-the-protector: Black Forge 4/5/6/7 — finished at Frost Foundry
+- trousers-of-the-protector: Black Forge 4/5/6/7 — finished at Frost Foundry
+- hood-of-the-vanguard: Black Forge 4/5/6/7 — finished at Frost Foundry
+- chestpiece-of-the-vanguard: Black Forge 4/5/6/7 — finished at Frost Foundry
+- trousers-of-the-vanguard: Black Forge 4/5/6/7 — finished at Frost Foundry
+
+
 ## Pieces with estimated armor (armorSource: estimate)
 
 None. All pieces with quality upgrades found in quality tables.

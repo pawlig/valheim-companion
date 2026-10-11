@@ -130,6 +130,8 @@ Pravidla:
 ]
 ```
 
+`finishedAt` (optional, string): finishing station named by the infobox when it differs from the crafting/upgrade `station` (for example `"Frost Foundry"`). `station` remains the levelled crafting station (`"Black Forge"` or `"Galdr Table"`).
+
 `skill` (od VC-5): `swords` | `axes` | `clubs` | `spears` | `polearms` | `knives` | `fists` | `pickaxes` | `bows` | `crossbows` | `elemental-magic` | `blood-magic` | `null` (bomby). Mapování podle ANALYZA § 9.
 `backstab` (od VC-5): číslo z pole infoboxu `backstab` (`"3x"` → 3), chybí-li → `null`.
 
@@ -253,6 +255,7 @@ Ruční opravy, které parser aplikuje **jako poslední krok**:
 - `kind`: `set` (stránka s víc díly nebo s `set pieces`) | `single` (samostatný plášť nebo čepice) | `cosmetic` (bez receptu).
 - `slot`: `head` | `chest` | `legs` | `cape`. Typ `Body` je `chest`.
 - `levels[q].materials` je cena **toho kroku**: výroba pro q=1, vylepšení z q−1 na q pro q≥2. Položky s poznámkou `(Fuel)` mají navíc `"fuel": true`.
+- `pieces[].finishedAt` (optional, string): finishing station named by the infobox when it differs from the crafting/upgrade `station` (for example `"Frost Foundry"`); quality levels belong to `station`.
 - `armorSource`: `table` | `infobox` | `estimate` (+2 za úroveň).
 - `setBonus`: `{ "name": "Sneaky", "pieces": 4, "effects": ["Sneak skill +15"] }` nebo `null`.
 - `movementSpeed`: číslo v procentech (`-5%` → -5).
