@@ -1,5 +1,5 @@
 window.VA_DATA = {
-  "generatedAt": "2026-10-11T11:58:10+02:00",
+  "generatedAt": "2026-10-11T18:21:42+02:00",
   "source": {
     "name": "Valheim Wiki",
     "url": "https://valheim.weirdgloop.org",
